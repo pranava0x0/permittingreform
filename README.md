@@ -1,4 +1,4 @@
-# Permitting Reform Tracker
+# Permitting Reform
 
 A static site that indexes the Bipartisan American Affordability and Jobs Act of 2026, the 417-page permitting bill four senators released on September 30, 2026.
 

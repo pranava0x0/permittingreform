@@ -1,4 +1,4 @@
-/* Permitting Reform Tracker. Palette and type are borrowed from the Senate EPW
+/* Permitting Reform. Palette and type are borrowed from the Senate EPW
    committee site (see design.md). Every color lives in the two token blocks
    below; nothing else in this file names one. */
 
@@ -42,15 +42,18 @@
   --measure: 72ch;
 }
 
+[data-theme="light"] { color-scheme: light; }
+
 [data-theme="dark"] {
-  --bg: #121A11;
-  --surface: #19231A;
-  --border: #3A4636;
-  --rule: #97C17C;
+  color-scheme: dark;
+  --bg: #151A16;
+  --surface: #202821;
+  --border: #71806F;
+  --rule: #B2D894;
   --text: #F4F2EC;
-  --text-muted: #AEB3A6;
-  --accent: #8ECDE1;
-  --accent-weak: #1E2B1C;
+  --text-muted: #D0D6CC;
+  --accent: #A6DDED;
+  --accent-weak: #2B382B;
   --brand: #1B3317;
   --on-brand: #F4F2EC;
   --on-brand-muted: #BFD3B4;
@@ -59,7 +62,7 @@
   --stance-supports: #97C17C;
   --stance-opposes: #F0998C;
   --stance-mixed: #E3B55A;
-  --stance-neutral: #AEB3A6;
+  --stance-neutral: #D0D6CC;
 }
 
 * { box-sizing: border-box; }
@@ -99,11 +102,16 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .masthead-top, .tabs, main, .footer p { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 16px; padding-right: 16px; }
 .masthead-top { display: flex; align-items: center; gap: 12px; padding-top: 16px; padding-bottom: 8px; }
 .brand { text-decoration: none; color: var(--on-brand); display: flex; flex-direction: column; margin-right: auto; min-width: 0; }
-.brand-name { font-family: var(--font-head); font-size: 1.7rem; font-weight: 800; line-height: 1.1; letter-spacing: 0.01em; }
+.brand-name { font-family: var(--font-head); font-size: clamp(1.1rem, 5.4vw, 1.5rem); font-weight: 800; line-height: 1.1; white-space: nowrap; }
 .theme-toggle {
-  font: inherit; font-size: 0.8rem; cursor: pointer; background: transparent; color: var(--on-brand);
-  border: 1px solid var(--on-brand-muted); border-radius: 2px; padding: 5px 10px; flex: none;
+  cursor: pointer; background: transparent; color: var(--on-brand);
+  border: 0; padding: 0; flex: 0 0 44px; width: 44px; height: 44px;
+  display: inline-flex; align-items: center; justify-content: center;
 }
+.theme-toggle:hover { background: var(--brand); outline: 1px solid var(--on-brand-muted); }
+.theme-sun, [data-theme="dark"] .theme-moon { display: none; }
+[data-theme="dark"] .theme-sun { display: block; }
+
 .tabs { display: flex; flex-wrap: wrap; gap: 0 2px; }
 .tabs a {
   color: var(--on-brand); text-decoration: none; padding: 8px 12px 7px; font-family: var(--font-head);
@@ -155,7 +163,7 @@ main:focus { outline: none; }
 }
 .chip:hover { border-color: var(--rule); }
 .chip[aria-pressed="true"], .chip[aria-current="true"] { background: var(--brand); color: var(--on-brand); border-color: var(--brand); }
-.chip-count { opacity: 0.8; margin-left: 5px; font-size: 0.78rem; }
+.chip-count { margin-left: 5px; font-size: 0.78rem; }
 
 .stance { font-size: 0.82rem; font-weight: 700; white-space: nowrap; }
 .stance-supports { color: var(--stance-supports); }
@@ -373,4 +381,23 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
   .masthead { background: none; color: inherit; }
   .brand { color: inherit; }
   body { background: none; }
+}
+
+/* Compact overview: sources stay available without delaying the provisions. */
+.bill-heading { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+.bill-details { font-size: 0.85rem; }
+.bill-details summary { cursor: pointer; color: var(--accent); padding: 6px 0; }
+.bill-details[open] { flex-basis: 100%; max-width: var(--measure); }
+.overview-lede + .block { margin-top: 18px; }
+input::placeholder { color: var(--text-muted); opacity: 1; }
+[data-theme="dark"] .chip[aria-pressed="true"],
+[data-theme="dark"] .chip[aria-current="true"],
+[data-theme="dark"] .search button { background: var(--rule); color: var(--bg); border-color: var(--rule); }
+
+@media (max-width: 639px) {
+  .masthead-top { gap: 6px; padding-top: 6px; padding-bottom: 2px; }
+  .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
+  .tabs a { flex: none; padding: 8px 10px 7px; font-size: 0.88rem; }
+  main { padding-top: 16px; }
+  .sec-meta .topics, .sec-meta .tag-major, .index-tags { display: none; }
 }

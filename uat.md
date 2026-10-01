@@ -16,3 +16,5 @@ October 1, 2026. Local Google Chrome, headless Playwright. Served `site/` at por
 | Visual inspection | Phone overview and section; desktop comparison; restrained typography, readable tables and citations |
 
 Captures are local under `uat-screenshots/`; machine results are in `.test-artifacts/uat.json`. The runner repeats the checks without those artifacts. This pass does not assert full screen-reader compatibility or independently verify every research claim.
+
+October 1 mobile refinement: one-line title, compact theme icon, collapsible bill details and first provision above 400px at 375px width verified in both themes. Dark secondary text reaches 7:1; control borders reach 3:1.

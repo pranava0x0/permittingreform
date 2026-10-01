@@ -39,7 +39,7 @@ PAIRS = [
     ("text", "bg"), ("text-muted", "bg"), ("accent", "bg"),
     ("text", "surface"), ("text-muted", "surface"), ("accent", "surface"),
     ("text", "accent-weak"), ("text-muted", "accent-weak"), ("accent", "accent-weak"),
-    ("on-brand", "brand"), ("on-brand-muted", "brand"), ("on-mark", "mark"),
+    ("bg", "rule"), ("on-brand", "brand"), ("on-brand-muted", "brand"), ("on-mark", "mark"),
     ("stance-supports", "bg"), ("stance-opposes", "bg"), ("stance-mixed", "bg"), ("stance-neutral", "bg"),
     ("stance-supports", "surface"), ("stance-opposes", "surface"), ("stance-mixed", "surface"),
     ("stance-neutral", "surface"),
@@ -65,6 +65,12 @@ class Tokens(unittest.TestCase):
             for fg, bg in NON_TEXT:
                 ratio = contrast(theme[fg], theme[bg])
                 self.assertGreaterEqual(ratio, 3.0, f"{name}: --{fg} on --{bg} is {ratio:.2f}:1")
+
+    def test_dark_secondary_text_and_controls_have_clear_contrast(self):
+        dark = tokens('[data-theme="dark"]')
+        for bg in ("bg", "surface", "accent-weak"):
+            self.assertGreaterEqual(contrast(dark["text-muted"], dark[bg]), 7)
+        self.assertGreaterEqual(contrast(dark["border"], dark["surface"]), 3)
 
     def test_every_color_token_is_used(self):
         for name in tokens(":root"):

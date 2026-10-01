@@ -25,6 +25,14 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           const count = await page.locator(selector).count();
           assert.ok(count > 0,route+' empty');
           if (expected) assert.equal(count,expected,route);
+          if (route === 'overview') {
+            assert.equal(await page.locator('.brand-name').innerText(), 'Permitting Reform');
+            assert.ok(await page.locator('.brand-name').evaluate(el => el.getBoundingClientRect().height < parseFloat(getComputedStyle(el).lineHeight) * 1.5));
+            if (width === 375) assert.ok((await page.locator('.provisions li').first().boundingBox()).y < 400, 'first provision appears early on mobile');
+            await page.locator('.bill-details summary').click();
+            assert.ok(await page.locator('.bill-details a[href="bill.pdf#page=1"]').isVisible());
+            await page.locator('.bill-details summary').click();
+          }
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           results.push({width,theme,route,count});

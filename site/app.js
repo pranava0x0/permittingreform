@@ -1,4 +1,4 @@
-/* Permitting Reform Tracker: views and routing. Data comes from data/core.js (window.PR_DATA)
+/* Permitting Reform: views and routing. Data comes from data/core.js (window.PR_DATA)
    and, on demand, data/bill.js (window.PR_BILL). Every data string is set as text, never as HTML. */
 (function () {
   "use strict";
@@ -153,7 +153,7 @@
     if (!billPromise) {
       billPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/bill.js?v=3";
+        tag.src = "data/bill.js?v=4";
         tag.onload = () => (window.PR_BILL ? resolve(window.PR_BILL) : reject(new Error("bill text did not load")));
         tag.onerror = () => { billPromise = null; reject(new Error("bill text could not be fetched")); };
         document.head.appendChild(tag);
@@ -177,14 +177,16 @@
   function renderOverview() {
     const o = D.overview;
     const m = D.meta;
-    const head = el("div", { class: "lede" },
-      el("h1", null, "BAAJA"),
-      el("p", { class: "bill-title" }, m.short_title),
-      el("p", { class: "facts" }, num(m.pages) + " pages · " + m.sections + " sections · released " + S.formatDate(m.released) + " · no bill number yet"),
-      el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")),
-      searchBox(""),
-      D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ?
-        el("p", { class: "note" }, "Summary review remains incomplete. ", el("a", { href: "#/method" }, "Review status")) : null);
+    const head = el("div", { class: "lede overview-lede" },
+      el("div", { class: "bill-heading" }, el("h1", null, "BAAJA"),
+        el("details", { class: "bill-details" },
+          el("summary", null, "Bill details"),
+          el("p", null, m.short_title),
+          el("p", { class: "facts" }, num(m.pages) + " pages · " + m.sections + " sections · released " + S.formatDate(m.released)),
+          el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")))),
+      el("p", { class: "note" }, "Proposed law", " · ",
+        el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),
+      searchBox(""));
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
       el("h2", { id: "h-status" }, "Status"),
@@ -193,7 +195,6 @@
 
     const provisions = el("section", { class: "block", "aria-labelledby": "h-prov" },
       el("h2", { id: "h-prov" }, "Main provisions"),
-      el("p", { class: "note" }, "Proposed changes in the September 30 draft. These provisions are not enacted law."),
       el("ol", { class: "provisions" }, o.headlines.map((h) =>
         el("li", null,
           el("h3", null, el("a", { href: secHref(h.sections[0]) }, h.title)),
@@ -413,7 +414,7 @@
         return;
       }
       const res = S.searchBill(D.sections, bill, q);
-      document.title = "“" + q.raw + "” · Permitting Reform Tracker";
+      document.title = "“" + q.raw + "” · Permitting Reform";
       if (!res.sections.length) {
         fill(host,
           el("h1", null, "No matches for “" + q.raw + "”"),
@@ -759,7 +760,7 @@
       else a.removeAttribute("aria-current");
     });
     const h1 = view.querySelector("h1");
-    document.title = (h1 && tab !== "overview" ? h1.firstChild.textContent + " · " : "") + "Permitting Reform Tracker";
+    document.title = (h1 && tab !== "overview" ? h1.firstChild.textContent + " · " : "") + "Permitting Reform";
     const path = location.hash;
     if (path !== lastPath && !keepScroll) window.scrollTo(0, 0);
     lastPath = path;
@@ -778,7 +779,7 @@
   const toggle = document.getElementById("theme-toggle");
   function paintToggle() {
     const dark = document.documentElement.getAttribute("data-theme") === "dark";
-    toggle.textContent = dark ? "Light" : "Dark";
+    toggle.setAttribute("title", dark ? "Light theme" : "Dark theme");
     toggle.setAttribute("aria-pressed", dark ? "true" : "false");
     toggle.setAttribute("aria-label", dark ? "Light theme" : "Dark theme");
   }
