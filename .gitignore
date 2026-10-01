@@ -1,0 +1,18 @@
+# secrets
+.env
+.env.local
+credentials.json
+secrets/
+
+# caches and build scratch
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.test-artifacts/
+
+# fetched pages: reproducible from the URLs, large, and third-party content
+data/cache/
+
+# UAT captures: reproducible with tools/uat_shots.py
+uat-screenshots/

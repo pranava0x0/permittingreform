@@ -1,0 +1,346 @@
+{
+ "_about": "Edits applied on top of the research agents' files by tools/integrate_research.py. 'set' overrides fields; 'drop' removes the record. Every entry carries a reason.",
+ "timeline": {
+  "2025-04-23-interior-emergency-permitting-procedures": {
+   "reason": "House style: state the targets as numbers.",
+   "set": {
+    "summary": "Citing the national energy emergency, Interior announced alternative NEPA procedures for energy and critical-minerals projects, with targets of 14 days for environmental assessments and 28 days for environmental impact statements. It also set expedited ESA Section 7 consultation and a seven-day Section 106 comment window under the National Historic Preservation Act."
+   }
+  },
+  "2024-07-31-senate-enr-advances-energy-permitting-reform-act": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Paired limits on lawsuits with transmission and fossil-fuel permitting, the trade the 2026 Senate bill returns to."
+   }
+  },
+  "2025-01-20-eo-14156-national-energy-emergency": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Agencies cited it for their compressed emergency reviews of energy and minerals projects."
+   }
+  },
+  "2025-04-16-empire-wind-stop-work-order": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "A permitted project was halted mid-construction. Democrats later demanded permit certainty in statute."
+   }
+  },
+  "2025-05-19-empire-wind-stop-work-lifted": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "The order ended through talks with the administration; no court ruled on it."
+   }
+  },
+  "2025-05-29-seven-county-v-eagle-county": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Made NEPA challenges harder to win. The Senate bill writes the same deference into the statute."
+   }
+  },
+  "2025-07-04-one-big-beautiful-bill-act-nepa-opt-in-fee": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Added a statutory option to pay for a faster NEPA review, which CEQ's September 2025 guidance put into practice."
+   }
+  },
+  "2025-08-22-revolution-wind-stop-work-order": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Halted a permitted project under construction. Orsted, Connecticut and Rhode Island sued."
+   }
+  },
+  "2025-09-22-revolution-wind-preliminary-injunction": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "The first injunction against an offshore wind stop-work order; five more followed in January and February 2026."
+   }
+  },
+  "2025-12-09-senate-democrats-oppose-passing-house-speed-act": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Democrats named renewables and transmission as their conditions for a Senate deal."
+   }
+  },
+  "2026-01-12-courts-enjoin-offshore-wind-stop-work-orders": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "No court accepted the national-security rationale for the December halt."
+   }
+  },
+  "2026-03-23-interior-totalenergies-offshore-wind-lease-buyout": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Talks continued. Whitehouse said such actions could accumulate to a breaking point."
+   }
+  },
+  "2026-05-13-burgum-says-interior-will-appeal-wind-solar-injunction": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Interior kept defending its secretary-review policy while Democrats asked for its repeal."
+   }
+  },
+  "2026-09-24-permitting-talks-stall-vote-slips-past-midterms": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "The open issue was wind and solar 'regular order'. The Senate was not due back until November 9."
+   }
+  },
+  "2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "The first full bipartisan Senate text since the 2024 Manchin-Barrasso bill. The wind and solar question is unresolved."
+   }
+  },
+  "2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Applied Seven County deference to an environmental assessment."
+   }
+  },
+  "2026-06-18-ferc-large-load-show-cause-orders": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "FERC chose regional tariff changes over one national rule. The Senate bill would set a national cost rule by statute."
+   }
+  },
+  "2025-07-23-eo-14318-data-center-permitting": {
+   "reason": "House style: a plainer significance line that states what happened next.",
+   "set": {
+    "significance": "Tied federal permitting to data-center construction. The Senate bill addresses who pays for their power lines."
+   }
+  }
+ },
+ "people": {
+  "shelley-moore-capito": {
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "set": {
+    "position": "Co-negotiated and co-introduced the bill. She says its reforms will 'transform our nation's ability to power our economy' while protecting land, water and wildlife, and that a permitting bill must be bipartisan and 'project neutral.'"
+   }
+  },
+  "mike-lee": {
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "set": {
+    "position": "Co-introduced the bill, describing a permitting system that 'takes too long and costs too much.' He says the deal should hold through the midterm elections."
+   }
+  },
+  "sheldon-whitehouse": {
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "set": {
+    "position": "Co-introduced the bill and ties final Democratic support to the administration's treatment of wind and solar, calling the question of 'returning to regular order' unresolved. He and Heinrich ended talks in December 2025 over the offshore wind halt."
+   }
+  },
+  "martin-heinrich": {
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "set": {
+    "position": "Co-introduced the bill, saying it will help projects get to 'yes' or 'no' faster while protecting environmental safeguards and Tribal consultation, and make data centers pay for the grid upgrades they require. He has pressed Burgum to rescind the July 2025 wind and solar directive."
+   }
+  },
+  "john-thune": {
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "set": {
+    "position": "Says Republicans and the White House 'closed the deal' on permitting legislation that 'incorporated essentially all' of Democrats' asks, and accuses Democrats of wanting to deny Republicans a legislative win before the midterms."
+   }
+  },
+  "jared-golden": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Co-led the SPEED Act with Chairman Westerman and won committee adoption of an amendment blocking the executive branch from revoking energy permits after approval, noting both Trump and Biden used that tactic. No statement on the Senate bill was found."
+   }
+  },
+  "john-barrasso": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Co-wrote the 2024 Manchin-Barrasso permitting bill. In September 2026 he said Republicans are '100% committed to permitting reform' and blamed Schumer and Democrats for the stall. He is not a sponsor of the Senate bill."
+   }
+  },
+  "chuck-schumer": {
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "set": {
+    "position": "No public position on the Senate bill was found. He joined Whitehouse on September 24 to release a staff report on fossil fuel industry political spending and called the House-passed Ratepayer Protection Act 'toothless'. Barrasso and Thune accuse him of blocking permitting reform."
+   }
+  },
+  "katherine-scarlett": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Signed CEQ's removal of its NEPA regulations and the guidance that replaced them, and backs legislation to digitize permitting. CEQ has not commented on the Senate bill."
+   }
+  },
+  "donald-trump": {
+   "reason": "The White House issued a statement of support on September 30, 2026 (AP); the stance is the position on the Senate bill.",
+   "set": {
+    "stance": "supports",
+    "position": "Signed the executive orders that began the NEPA rollback and declared an energy emergency, while his administration froze wind permitting and halted offshore wind projects. The White House said on September 30, 2026 that the Senate bill would “deliver transformative policies to lower Americans’ energy and housing costs”. Its offer to ease the hold on wind and solar projects is still being negotiated with Senate Democrats.",
+    "sources": [
+     {
+      "title": "Unleashing American Energy (Executive Order 14154)",
+      "publisher": "The White House",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/",
+      "date": "2025-01-20"
+     },
+     {
+      "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
+      "publisher": "Associated Press (PBS NewsHour)",
+      "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
+      "date": "2026-09-30"
+     },
+     {
+      "title": "Senate unveils bipartisan deal tackling energy and data centers, but wind and solar questions remain",
+      "publisher": "Deseret News",
+      "url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/",
+      "date": "2026-09-30"
+     }
+    ]
+   }
+  },
+  "doug-burgum": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Drove Interior's emergency permitting procedures for energy and minerals while his department froze and slowed wind and solar approvals. He told the House in May 2026 that Interior would appeal the injunction against those policies. Interior's wind and solar 'regular order' terms are still being negotiated with Senate Democrats."
+   }
+  },
+  "chris-wright": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Used Section 403 of the DOE Organization Act to direct FERC to start a large-load interconnection rulemaking aimed at data centers, asking for final action by April 30, 2026. Whitehouse has accused the Energy and Interior secretaries of misstating the cost of the halted wind projects."
+   }
+  },
+  "emily-domenech": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Runs the FAST-41 permitting process and has signed federal-state agreements that commit states to opt in to FAST-41 and align state and federal review timelines. She was the top House Republican staffer on permitting and energy policy."
+   }
+  },
+  "mike-johnson": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Framed the House's December 2025 permitting package, including the SPEED Act, as fixing a 'broken permitting system' and codifying President Trump's executive orders. He also backed the Ratepayer Protection Act on data-center costs. No statement on the Senate bill was found."
+   }
+  },
+  "jared-huffman": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Opposed the SPEED Act in committee and on the floor, calling the administration's posture on renewable permitting a 'war on renewable energy' and criticizing the last-minute offshore wind changes. No statement on the Senate bill was found."
+   }
+  },
+  "scott-peters": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Long-time advocate of NEPA changes who co-led the ePermit Act, which passed the House unanimously. He opposed the SPEED Act as passed, calling one provision a codification of a 'broken permitting status quo', and said the bill would not be fixed until it reaches the Senate. No statement on the Senate bill was found."
+   }
+  },
+  "brian-schatz": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Joined Heinrich and Whitehouse in December 2025 in opposing passage of the House SPEED Act over its treatment of renewables and transmission, and publicly criticized American Clean Power for endorsing it without transmission provisions. No statement on the Senate bill was found."
+   }
+  },
+  "john-hickenlooper": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Predicted in December 2025 that a Senate agreement could come in the first quarter of 2026 and signaled he was willing to lose some environmental-group support. No statement on the Senate bill was found."
+   }
+  },
+  "alan-armstrong": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Pipeline-industry executive appointed to Markwayne Mullin's seat after Mullin became Homeland Security Secretary; Oklahoma's governor said his perspective would help move permitting reform. In September 2026 he said Democratic leadership was blocking permitting reform to deny Republicans a win before the midterms."
+   }
+  },
+  "hakeem-jeffries": {
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "set": {
+    "position": "No public position on the Senate bill was found. He called the House-passed Ratepayer Protection Act 'a step forward' but said more needed to be done. On December 18, 2025, 195 of the 206 House Democrats voting opposed the SPEED Act."
+   }
+  },
+  "brent-booker": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Told the Senate EPW Committee in January 2026 that LIUNA, representing more than 530,000 construction workers, has supported permitting reform for more than a decade and that fully permitted projects are routinely derailed by litigation. No LIUNA statement on the Senate bill was found."
+   }
+  },
+  "lee-zeldin": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "EPA under Zeldin issued a May 2025 memorandum limiting states' and tribes' use of Clean Water Act Section 401 to water-quality purposes and proposed revised Section 401 rules in January 2026. EPA has not commented on the Senate bill."
+   }
+  },
+  "brent-gardner": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "AFP celebrated House passage of the SPEED Act as the most significant NEPA reform in more than 50 years and urged the Senate to take it up. No AFP statement on the Senate bill was found."
+   }
+  },
+  "joe-manchin": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "set": {
+    "stance": "neutral",
+    "position": "Co-wrote the 2024 Energy Permitting Reform Act with John Barrasso. It cleared the Senate Energy Committee 15-4 and never reached a floor vote. He has left office, and no statement from him on the Senate bill was found."
+   }
+  },
+  "liza-reed": {
+   "reason": "House style: the paraphrase repeated a register word from the quote, which is kept verbatim below it.",
+   "set": {
+    "position": "Niskanen backed the Senate bill for its transmission provisions and urged Congress to pass it. Reed testified at the March 2026 Senate Energy hearing on the grid."
+   }
+  },
+  "aidan-mackenzie": {
+   "reason": "House style: cut a tail that characterized a movement and added no fact.",
+   "set": {
+    "position": "Called the Senate deal the best permitting bill yet."
+   }
+  },
+  "rich-powell": {
+   "reason": "House style: the paraphrase borrowed the release's superlative without quotation marks.",
+   "set": {
+    "position": "CEBA backed the Senate bill for faster permitting and better transmission planning. It had criticized the December 2025 House floor changes to the SPEED Act."
+   }
+  },
+  "rodney-davis": {
+   "reason": "House style: shorter.",
+   "set": {
+    "position": "Said the Senate's progress toward a bipartisan deal brings the country closer to fixing a process that holds up energy, water, road, broadband and manufacturing projects, and urged Congress to act quickly. The Chamber's Global Energy Institute, led by Marty Durbin, has also pressed for permitting reform."
+   }
+  },
+  "jael-holzman": {
+   "set": {
+    "social": {}
+   },
+   "reason": "The X profile link returned 404 on 2026-10-01 and no working handle was found."
+  }
+ },
+ "media": {
+  "2026-09-30-niskanen-center-supports-affordability-jobs-act": {
+   "reason": "House style: plain verb in place of caption register.",
+   "set": {
+    "summary": "Niskanen Center supports the bill and calls its transmission planning and siting provisions the most consequential congressional transmission policy in two decades."
+   }
+  },
+  "2025-12-19-bpc-whats-in-the-speed-act": {
+   "reason": "House style: plain verb in place of caption register.",
+   "set": {
+    "summary": "BPC issue brief, updated for the House-passed text, explaining the SPEED Act's changes to NEPA procedures and judicial review."
+   }
+  },
+  "2025-02-19-youtube-epw-gop-capito-consensus-nepa-permitting-reform": {
+   "reason": "House style: plain verb in place of caption register.",
+   "set": {
+    "summary": "Capito's remarks at an EPW hearing on improving federal environmental review and permitting processes, noting agreement across the committee on the need for legislation."
+   }
+  }
+ }
+}

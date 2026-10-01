@@ -1,0 +1,15 @@
+{
+  "exclude": [
+    "data/research",
+    "data/cache",
+    "data/checks",
+    "data/prior_bills",
+    "data/bill/sections.json",
+    "data/bill/bill_raw.txt",
+    "site/data",
+    "site/llms.txt",
+    "tools/slopcheck.py",
+    "tools/designcheck.py",
+    "tools/govfetch.py"
+  ]
+}

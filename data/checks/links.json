@@ -1,0 +1,2350 @@
+{
+ "checked": "2026-10-01",
+ "results": {
+  "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting"
+   ]
+  },
+  "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.ray-long.source",
+    "people.ray-long.quote",
+    "media.2026-09-30-acore-statement-supporting-affordability-jobs-act"
+   ]
+  },
+  "https://americansforprosperity.org/press-release/americans-for-prosperity-celebrates-bipartisan-passage-of-the-speed-act-in-the-house/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.brent-gardner.source",
+    "people.brent-gardner.quote"
+   ]
+  },
+  "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.brett-hartl.source",
+    "people.brett-hartl.quote",
+    "media.2026-09-30-cbd-democrats-abandon-environmental-laws-permitting-reform"
+   ]
+  },
+  "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/": {
+   "browser": "2026-10-01",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2025-12-19-bpc-whats-in-the-speed-act"
+   ]
+  },
+  "https://bpcaction.org/bpc-action-urges-congress-to-pass-the-bipartisan-american-affordability-and-jobs-act/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.michele-stockwell.source",
+    "people.michele-stockwell.quote",
+    "media.2026-09-30-bpc-action-urges-congress-to-pass-the-bill"
+   ]
+  },
+  "https://bsky.app/profile/biologicaldiversity.org/post/3mwrcfvoxc22g": {
+   "cls": "ok",
+   "kind": "bluesky",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-bluesky-cbd-guise-of-helping-renewable-energy"
+   ]
+  },
+  "https://bsky.app/profile/earthjusticeaction.bsky.social/post/3maemzzwcd22b": {
+   "cls": "ok",
+   "kind": "bluesky",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-12-19-bluesky-earthjusticeaction-speed-act-contaminated-air-water"
+   ]
+  },
+  "https://bsky.app/profile/emilypont.bsky.social/post/3mac7yqhze22b": {
+   "cls": "ok",
+   "kind": "bluesky",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-12-18-bluesky-emilypont-house-passed-speed-act"
+   ]
+  },
+  "https://bsky.app/profile/epw.senate.gov/post/3mwqrjs5qjc2o": {
+   "cls": "ok",
+   "kind": "bluesky",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-bluesky-epw-democrats-permitting-plan-lower-bills"
+   ]
+  },
+  "https://bsky.app/profile/heinrich.senate.gov": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "people.martin-heinrich.social.bluesky"
+   ]
+  },
+  "https://bsky.app/profile/hickenlooper.senate.gov": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "people.john-hickenlooper.social.bluesky"
+   ]
+  },
+  "https://bsky.app/profile/rephuffman.bsky.social": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "people.jared-huffman.social.bluesky"
+   ]
+  },
+  "https://bsky.app/profile/robinsonmeyer.bsky.social/post/3mwr2e5aux22n": {
+   "cls": "ok",
+   "kind": "bluesky",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-bluesky-robinsonmeyer-data-center-energy-reporting"
+   ]
+  },
+  "https://bsky.app/profile/sammyroth.bsky.social/post/3mwmaemdha22u": {
+   "cls": "ok",
+   "kind": "bluesky",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-28-bluesky-sammyroth-naive-trump-guarantee"
+   ]
+  },
+  "https://bsky.app/profile/schumer.senate.gov": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "people.chuck-schumer.social.bluesky"
+   ]
+  },
+  "https://bsky.app/profile/whitehouse.senate.gov": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "people.sheldon-whitehouse.social.bluesky"
+   ]
+  },
+  "https://bsky.app/profile/willpoffwebster.bsky.social/post/3mwr4y7milk2t": {
+   "cls": "ok",
+   "kind": "bluesky",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-bluesky-willpoffwebster-ambitious-permitting-bill"
+   ]
+  },
+  "https://ceba.org/statement-from-ceba-ceo-rich-powell-on-the-bipartisan-american-affordability-and-jobs-act/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.rich-powell.source",
+    "people.rich-powell.quote"
+   ]
+  },
+  "https://cen.acs.org/policy/legislation-/permitting-reform-nepa-esa-energy-renewable-pipeline/104/web/2026/05": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-05-27-cen-bipartisan-drive-for-permitting-reform-outlook-murky"
+   ]
+  },
+  "https://citizensclimatelobby.org/blog/policy/ccl-welcomes-introduction-of-bipartisan-permitting-package/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-ccl-welcomes-bipartisan-permitting-package"
+   ]
+  },
+  "https://cleanpower.org/news/acp-statement-on-bipartisan-american-affordability-and-jobs-act/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.jason-grumet.source",
+    "people.jason-grumet.quote"
+   ]
+  },
+  "https://cleanpower.org/news/acp-statement-on-house-natural-resources-committee-advancing-permitting-bill/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-11-20-acp-statement-house-natural-resources-committee-advancing-permitting-bill"
+   ]
+  },
+  "https://clerk.house.gov/Votes/2025356": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-18-house-passes-speed-act-221-196.source",
+    "people.hakeem-jeffries.source"
+   ]
+  },
+  "https://ctmirror.org/2026/07/22/tweed-new-haven-airport-expansion/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference.source"
+   ]
+  },
+  "https://ctnewsjunkie.com/2026/06/16/trump-administration-abandons-fight-against-wind-energy-as-clean-energy-output-surges/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-15-first-circuit-dismisses-wind-freeze-appeal.source"
+   ]
+  },
+  "https://dailycaller.com/2026/08/18/environmental-groups-speed-act-senate/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-08-18-daily-caller-permitting-bill-tied-up-in-senate"
+   ]
+  },
+  "https://dailycaller.com/2026/09/30/senate-passes-ratepayer-protection-act/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-30-senate-rejects-cloture-on-ratepayer-protection-act.source",
+    "timeline.2026-09-30-senate-rejects-cloture-on-ratepayer-protection-act.quote"
+   ]
+  },
+  "https://dailyenergyinsider.com/featured/53944-u-s-senate-leaders-reach-deal-on-bipartisan-permitting-reform-bill/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.tim-pawlenty.source",
+    "people.tim-pawlenty.quote"
+   ]
+  },
+  "https://dustyjohnson.house.gov/media/press-releases/johnsons-bipartisan-digital-permitting-bill-passes-us-house": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-11-house-passes-permit-act-and-companion-bills.source",
+    "timeline.2025-12-11-house-passes-permit-act-and-companion-bills.quote",
+    "people.katherine-scarlett.quote"
+   ]
+  },
+  "https://earthjustice.org/press/2025/earthjustice-statement-on-westerman-golden-permitting-reform-bill": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-07-28-earthjustice-statement-on-westerman-golden-permitting-reform-bill"
+   ]
+  },
+  "https://eelp.law.harvard.edu/tracker/ceq-finalized-phase-2-rule-implementing-national-environmental-policy-act/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-02-25-ceq-interim-final-rule-removes-nepa-regulations.source",
+    "timeline.2025-09-29-ceq-updated-nepa-guidance-and-template.source",
+    "timeline.2026-01-08-ceq-final-rule-removes-nepa-regulations.source",
+    "timeline.2026-06-29-ceq-withdraws-18-guidance-documents.source"
+   ]
+  },
+  "https://eelp.law.harvard.edu/tracker/regional-transmission-planning-rule/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-04-11-ferc-order-1920-b-rehearing.source"
+   ]
+  },
+  "https://eelp.law.harvard.edu/tracker/rollback-agencies-significantly-narrowed-nepa-requirements-changes-effective-immediately/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-03-agencies-issue-interim-final-nepa-rules.source"
+   ]
+  },
+  "https://gcaptain.com/orsteds-revolution-wind-project-hit-with-federal-stop-work-order-at-80-completion/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-08-22-revolution-wind-stop-work-order.source"
+   ]
+  },
+  "https://golden.house.gov/media/press-releases/golden-introduces-permitting-reform-bill-with-natural-resources-committee-chairman-westerman": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-25-speed-act-introduced-hr-4776.source"
+   ]
+  },
+  "https://golden.house.gov/media/press-releases/golden-s-bipartisan-permitting-reform-bill-passes-house-natural-resources-committee": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-11-20-house-natural-resources-advances-speed-act.source",
+    "timeline.2025-11-20-house-natural-resources-advances-speed-act.quote",
+    "people.jared-golden.source"
+   ]
+  },
+  "https://governor.iowa.gov/press-release/2026-08-06/gov-reynolds-permitting-council-announce-agreement-streamline-permitting": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-02-19-permitting-council-signs-first-state-fast-41-mous.source",
+    "people.emily-domenech.source",
+    "people.emily-domenech.quote"
+   ]
+  },
+  "https://grist.org/politics/permitting-reform-data-centers-senate-gas-solar/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-24-grist-gas-solar-tech-companies-want-this-bill"
+   ]
+  },
+  "https://heatmap.news/podcast/shift-key-s2-e42-nepa-kavanaugh": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-06-04-podcast-shift-key-supreme-court-double-edged-change-to-permitting-law"
+   ]
+  },
+  "https://heatmap.news/podcast/shift-key-s3-e26-martin-heinrich": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-02-09-podcast-shift-key-what-senator-heinrich-needs-to-see-in-permitting-deal"
+   ]
+  },
+  "https://heatmap.news/politics/bipartisan-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained"
+   ]
+  },
+  "https://heatmap.news/politics/schatz-whitehouse-heinrich-speed-act": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-09-senate-democrats-oppose-passing-house-speed-act.source",
+    "timeline.2025-12-09-senate-democrats-oppose-passing-house-speed-act.quote",
+    "people.brian-schatz.source",
+    "people.brian-schatz.quote",
+    "people.jael-holzman.source",
+    "media.2025-12-09-heatmap-exclusive-key-senate-democrats-oppose-permitting-bill"
+   ]
+  },
+  "https://ifp.org/breaking-the-nepa-litigation-doom-loop/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-02-19-ifp-breaking-the-nepa-litigation-doom-loop"
+   ]
+  },
+  "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "timeout: The read operation timed out",
+   "status": 200,
+   "where": [
+    "timeline.2024-11-12-marin-audubon-dc-circuit-ceq-authority.source",
+    "timeline.2024-11-12-marin-audubon-dc-circuit-ceq-authority.quote"
+   ]
+  },
+  "https://media.cadc.uscourts.gov/opinions/docs/2026/07/24-1028-2184183.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference.source",
+    "timeline.2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference.quote",
+    "people.brett-kavanaugh.source"
+   ]
+  },
+  "https://mikejohnson.house.gov/news/documentsingle.aspx?DocumentID=2802": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.mike-johnson.source",
+    "people.mike-johnson.quote"
+   ]
+  },
+  "https://nam.org/bipartisan-senate-deal-answers-manufacturers-call-for-permitting-reform/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-nam-bipartisan-senate-deal-statement"
+   ]
+  },
+  "https://nam.org/house-passes-speed-act-35434/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.jay-timmons.source"
+   ]
+  },
+  "https://nam.org/timmons-manufacturers-are-all-in-on-permitting-reform-deal/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.jay-timmons.source",
+    "people.jay-timmons.quote"
+   ]
+  },
+  "https://naturalresources.house.gov/news/documentsingle.aspx?DocumentID=418297": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-25-speed-act-introduced-hr-4776.source",
+    "timeline.2025-07-25-speed-act-introduced-hr-4776.quote",
+    "people.jared-golden.source",
+    "people.jared-golden.quote"
+   ]
+  },
+  "https://naturalresources.house.gov/news/documentsingle.aspx?DocumentID=418526": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "people.bruce-westerman.source",
+    "media.2025-12-18-house-natural-resources-house-passes-speed-act"
+   ]
+  },
+  "https://oklahoma.gov/governor/newsroom/newsroom/2026/governor-stitt-appoints-alan-armstrong-as-us-senator.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.alan-armstrong.source"
+   ]
+  },
+  "https://prospect.org/2026/04/08/apr-2026-magazine-nepa-and-its-discontents-environmental-law/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-04-08-american-prospect-nepa-and-its-discontents"
+   ]
+  },
+  "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-24-permitting-talks-stall-vote-slips-past-midterms.source",
+    "timeline.2026-09-24-permitting-talks-stall-vote-slips-past-midterms.quote",
+    "people.john-thune.source",
+    "people.john-thune.quote",
+    "people.chuck-schumer.source",
+    "media.2026-09-24-roll-call-permitting-bill-off-until-after-midterms"
+   ]
+  },
+  "https://semafor.com/article/09/29/2026/democrats-flex-filibuster-muscle-ahead-of-election": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.john-thune.source"
+   ]
+  },
+  "https://thebreakthrough.org/issues/environmental-regulatory-reform/the-fall-of-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-11-18-breakthrough-institute-fall-of-permitting-reform"
+   ]
+  },
+  "https://thebreakthrough.org/press/release-breakthrough-institute-statement-on-the-bipartisan-american-affordability-and-jobs-act-of-2026": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.marc-levitt.source",
+    "people.marc-levitt.quote",
+    "media.2026-09-30-breakthrough-institute-supports-affordability-jobs-act"
+   ]
+  },
+  "https://thehill.com/policy/energy-environment/6120853-permitting-reform-bipartisan-deal-infrastructure-energy-projects/": {
+   "browser": "2026-10-01",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-09-30-the-hill-senators-reach-bipartisan-deal-permitting"
+   ]
+  },
+  "https://totalenergies.com/newsroom/united-states-totalenergies-signs-agreements-with-us-department-of-interior-to-end-its-us-offshore-wind-projects/?lang=eng": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-03-23-interior-totalenergies-offshore-wind-lease-buyout.source"
+   ]
+  },
+  "https://weact.org/updates/environmental-groups-push-back-against-deregulatory-speed-act/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-11-20-we-act-environmental-groups-oppose-speed-act"
+   ]
+  },
+  "https://westernlaw.org/73-western-groups-to-senate-leadership-no-deal-with-devil-on-permit-reform/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-04-16-welc-73-western-groups-no-deal-with-devil-on-permit-reform"
+   ]
+  },
+  "https://wvmetronews.com/2026/09/30/capito-and-colleagues-praise-bipartisan-permitting-reform-deal-look-ahead-to-a-vote/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-wv-metronews-capito-colleagues-praise-deal"
+   ]
+  },
+  "https://www.api.org/news-policy-and-issues/news/2026/09/30/api-welcomes-bipartisan-american-affordability-and-jobs-act-to-modernize-permitt": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.mike-sommers.source",
+    "people.mike-sommers.quote",
+    "media.2026-09-30-api-welcomes-affordability-jobs-act"
+   ]
+  },
+  "https://www.asaonline.com/2026/09/30/permitting-reform/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-asa-permitting-reform"
+   ]
+  },
+  "https://www.ashurstperkinscoie.com/en/insights/ferc-issues-large-load-interconnection-show-cause-orders-to-each-rto-and-iso/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-18-ferc-large-load-show-cause-orders.source",
+    "people.laura-swett.source"
+   ]
+  },
+  "https://www.boem.gov/renewable-energy/directorsorder-20250822pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-08-22-revolution-wind-stop-work-order.source",
+    "timeline.2025-08-22-revolution-wind-stop-work-order.quote"
+   ]
+  },
+  "https://www.c2es.org/document/federal-permitting-reform-in-the-119th-congress/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-06-02-c2es-federal-permitting-reform-119th-congress-certain-freedom-speed"
+   ]
+  },
+  "https://www.catf.us/2025/08/rolling-back-nepa-puts-clean-energy-progress-and-public-trust-at-risk/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-08-20-catf-rolling-back-nepa-clean-energy-public-trust"
+   ]
+  },
+  "https://www.cbsnews.com/news/house-bill-data-center-energy-costs/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-16-house-passes-ratepayer-protection-act-417-3.source",
+    "timeline.2026-09-16-house-passes-ratepayer-protection-act-417-3.quote",
+    "people.mike-johnson.source",
+    "people.hakeem-jeffries.source"
+   ]
+  },
+  "https://www.climatesolutionslaw.com/2026/07/ferc-targets-large-load-interconnection-rules-across-all-regional-grid-operators/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-18-ferc-large-load-show-cause-orders.source"
+   ]
+  },
+  "https://www.cnbc.com/2025/05/20/trump-allows-new-york-offshore-wind-project-after-apparent-gas-pipeline-compromise-with-state.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-04-16-empire-wind-stop-work-order.source",
+    "timeline.2025-04-16-empire-wind-stop-work-order.quote",
+    "timeline.2025-05-19-empire-wind-stop-work-lifted.source"
+   ]
+  },
+  "https://www.cnbc.com/2025/07/17/solar-wind-permit-interior-department-burgum-trump.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-04-one-big-beautiful-bill-act-nepa-opt-in-fee.source",
+    "timeline.2025-07-15-interior-memo-secretary-review-wind-solar.source",
+    "timeline.2025-07-15-interior-memo-secretary-review-wind-solar.quote"
+   ]
+  },
+  "https://www.cnbc.com/2025/12/08/trump-ban-on-wind-power-projects-overturned-by-federal-judge.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-08-new-york-v-trump-wind-memo-vacated.source",
+    "timeline.2025-12-08-new-york-v-trump-wind-memo-vacated.quote"
+   ]
+  },
+  "https://www.cnbc.com/2025/12/18/house-passes-permit-reform-bill-ai.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.scott-peters.source"
+   ]
+  },
+  "https://www.cnbc.com/2026/09/30/permitting-deal-congress-election.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-cnbc-senators-clinch-construction-permitting-deal"
+   ]
+  },
+  "https://www.crowell.com/en/insights/client-alerts/federal-court-blocks-trump-administration-policies-restricting-wind-and-solar-permitting": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-04-21-casper-enjoins-directives-stalling-wind-and-solar-permits.source"
+   ]
+  },
+  "https://www.deseret.com/politics/2026/09/24/permitting-reform-talks-fall-apart-in-senate/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-24-permitting-talks-stall-vote-slips-past-midterms.source",
+    "people.john-barrasso.source",
+    "people.john-barrasso.quote",
+    "people.alan-armstrong.source",
+    "people.alan-armstrong.quote",
+    "media.2026-09-24-deseret-permitting-talks-fall-apart-deal-punted"
+   ]
+  },
+  "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "timeline.2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act.source",
+    "timeline.2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act.quote",
+    "people.shelley-moore-capito.quote",
+    "people.mike-lee.source",
+    "people.mike-lee.quote",
+    "people.donald-trump.source",
+    "media.2026-09-30-deseret-senate-unveils-deal-energy-data-centers"
+   ]
+  },
+  "https://www.doi.gov/pressreleases/department-interior-curbs-preferential-treatment-wind-energy": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-07-29-doi-curbs-preferential-treatment-wind-energy"
+   ]
+  },
+  "https://www.doi.gov/pressreleases/department-interior-implements-emergency-permitting-procedures-strengthen-domestic": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-04-23-interior-emergency-permitting-procedures.source",
+    "timeline.2025-04-23-interior-emergency-permitting-procedures.quote",
+    "people.doug-burgum.source"
+   ]
+  },
+  "https://www.doi.gov/pressreleases/trump-administration-adds-key-mining-projects-fast-41": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-04-18-doi-adds-key-mining-projects-to-fast-41"
+   ]
+  },
+  "https://www.doi.gov/pressreleases/trump-administration-protects-us-national-security-pausing-offshore-wind-leases": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-22-interior-pauses-five-offshore-wind-leases.source",
+    "timeline.2025-12-22-interior-pauses-five-offshore-wind-leases.quote"
+   ]
+  },
+  "https://www.eei.org/en/news/news/all/eei-statement-on-house-passage-of-the-speed-act": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-12-18-eei-statement-on-house-passage-of-speed-act"
+   ]
+  },
+  "https://www.eenews.net/articles/clean-water-act-permitting-bill-clears-the-house/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-11-house-passes-permit-act-and-companion-bills.source"
+   ]
+  },
+  "https://www.eenews.net/articles/house-approves-permitting-bill-after-tumultuous-week/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-12-18-ee-news-house-approves-permitting-bill-after-tumultuous-week"
+   ]
+  },
+  "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-18-house-passes-speed-act-221-196.source",
+    "timeline.2025-12-18-house-passes-speed-act-221-196.quote",
+    "people.jared-huffman.source",
+    "people.jared-huffman.quote",
+    "people.scott-peters.source",
+    "people.scott-peters.quote",
+    "media.2025-12-17-ee-news-how-republicans-saved-speed-act-from-oblivion"
+   ]
+  },
+  "https://www.eenews.net/articles/lawmakers-question-clean-energy-groups-tactics-on-permitting/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-09-senate-democrats-oppose-passing-house-speed-act.source",
+    "people.brian-schatz.source",
+    "people.jason-grumet.source",
+    "people.ray-long.source",
+    "people.rich-powell.source"
+   ]
+  },
+  "https://www.eenews.net/articles/senate-lawmakers-debate-ideas-for-grid-upgrades/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-03-25-senate-enr-hearing-state-of-the-grid.source"
+   ]
+  },
+  "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.josh-siegel.source"
+   ]
+  },
+  "https://www.eenews.net/articles/states-claim-victory-as-trump-admin-ends-wind-court-fight-3/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-15-first-circuit-dismisses-wind-freeze-appeal.source",
+    "timeline.2026-06-15-first-circuit-dismisses-wind-freeze-appeal.quote"
+   ]
+  },
+  "https://www.eenews.net/articles/why-democrats-arent-pulling-the-plug-on-permitting-talks/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-22-senate-democrats-end-permitting-talks-over-offshore-wind.source",
+    "timeline.2026-03-05-whitehouse-heinrich-reopen-permitting-negotiations.source",
+    "timeline.2026-03-23-interior-totalenergies-offshore-wind-lease-buyout.source",
+    "timeline.2026-03-23-interior-totalenergies-offshore-wind-lease-buyout.quote"
+   ]
+  },
+  "https://www.einpresswire.com/article/946448954/westerman-statement-on-senate-permitting-reform-agreement": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.bruce-westerman.source",
+    "people.bruce-westerman.quote"
+   ]
+  },
+  "https://www.energy.gov/articles/energy-secretary-announces-updated-nepa-procedures-end-permitting-paralysis-and-unleash": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-06-30-doe-updated-nepa-procedures-end-permitting-paralysis"
+   ]
+  },
+  "https://www.energy.senate.gov/2024/7/barrasso-permitting-reform-act-will-boost-american-energy-production-lower-costs-for-families": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.john-barrasso.source"
+   ]
+  },
+  "https://www.energy.senate.gov/2026/3/heinrich-and-whitehouse-joint-statement-on-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-03-05-whitehouse-heinrich-reopen-permitting-negotiations.source",
+    "timeline.2026-03-05-whitehouse-heinrich-reopen-permitting-negotiations.quote",
+    "media.2026-03-05-enr-heinrich-whitehouse-joint-statement-permitting-reform"
+   ]
+  },
+  "https://www.energy.senate.gov/press/dem/heinrich-lee-capito-and-whitehouse-introduce-bipartisan-american-affordability-and-jobs-act-of-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.martin-heinrich.source",
+    "people.martin-heinrich.quote"
+   ]
+  },
+  "https://www.energy.senate.gov/press/dem/heinrich-questions-experts-on-the-power-grid-highlighting-need-to-expand-transmission-and-efficiently-power-data-centers-to-help-lower-costs-for-consumers/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-03-25-senate-enr-hearing-state-of-the-grid.source",
+    "timeline.2026-03-25-senate-enr-hearing-state-of-the-grid.quote",
+    "people.liza-reed.source"
+   ]
+  },
+  "https://www.energy.senate.gov/press/dem/with-electricity-costs-rising-nationwide-heinrich-leads-letter-with-wyden-van-hollen-and-rosen-in-calling-on-burgum-to-revoke-july-directive-blocking-new-cheaper-energy-from-the-grid/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.martin-heinrich.source"
+   ]
+  },
+  "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-introduce-bipartisan-american-affordability-and-jobs-act-of-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.mike-lee.source"
+   ]
+  },
+  "https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "meta.mirror_pdfs",
+    "timeline.2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act.source"
+   ]
+  },
+  "https://www.energy.senate.gov/wp-content/uploads/2026/09/KAT26642FINAL.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "meta.mirror_pdfs"
+   ]
+  },
+  "https://www.environmentallawandpolicy.com/2025/02/a-hard-look-at-ceqs-hard-luck-north-dakota-court-decision-accelerates-nepa-regulations-rapid-fall/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-02-03-iowa-v-ceq-north-dakota-vacates-phase-2-rule.source"
+   ]
+  },
+  "https://www.epa.gov/newsreleases/epa-proposes-cwa-section-401-rule-streamline-permitting-unleash-economic-growth-and": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-13-epa-proposes-cwa-section-401-rule"
+   ]
+  },
+  "https://www.epa.gov/newsreleases/epa-reinforces-alignment-clean-water-act-section-401-powering-great-american-comeback": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-01-15-epa-proposes-section-401-certification-rule.source",
+    "timeline.2026-01-15-epa-proposes-section-401-certification-rule.quote",
+    "people.lee-zeldin.source",
+    "people.lee-zeldin.quote"
+   ]
+  },
+  "https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "meta.source_pdf"
+   ]
+  },
+  "https://www.epw.senate.gov/public/_cache/files/a/9/a99fa191-51ec-433e-b7b1-ebee3409471a/BAB28A9720FCB677BECB159BF0F8F3D61C2E42BFE3B856E1EBC17A754B2464FE.01-28-2026-booker-testimony.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.brent-booker.source",
+    "people.brent-booker.quote"
+   ]
+  },
+  "https://www.epw.senate.gov/public/index.cfm/2025/2/chairman-capito-highlights-consensus-on-need-for-nepa-and-permitting-reform-legislation": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-02-19-epw-capito-highlights-consensus-on-nepa-permitting-reform-legislation"
+   ]
+  },
+  "https://www.epw.senate.gov/public/index.cfm/2026/1/hearing-to-improve-the-federal-environmental-review-and-permitting-processes-part-ii": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-01-28-senate-epw-permitting-hearing-part-ii.source",
+    "people.mike-sommers.source",
+    "people.brent-booker.source"
+   ]
+  },
+  "https://www.epw.senate.gov/public/index.cfm/2026/1/whitehouse-opening-statement-at-permitting-reform-hearing": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-28-epw-whitehouse-opening-statement-permitting-reform-hearing"
+   ]
+  },
+  "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "compare.versions.senate"
+   ]
+  },
+  "https://www.epw.senate.gov/public/index.cfm/press-releases-democratic?ID=4B732BD5-283C-48CF-8A78-DE96E56C22B4": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.sheldon-whitehouse.source",
+    "people.sheldon-whitehouse.quote"
+   ]
+  },
+  "https://www.epw.senate.gov/public/index.cfm/press-releases-republican?ID=BFE522D6-6A58-4EF5-80A1-4DAD5BA6AE75": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-28-epw-capito-opening-statement-permitting-hearing"
+   ]
+  },
+  "https://www.epw.senate.gov/public/index.cfm/press-releases-republican?ID=D3555B5D-34C2-4D95-B99B-5B460BB9895D": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.shelley-moore-capito.source"
+   ]
+  },
+  "https://www.equinor.com/news/20250519-empire-wind-project-resumes-construction": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-04-16-empire-wind-stop-work-order.source",
+    "timeline.2025-05-19-empire-wind-stop-work-lifted.source",
+    "timeline.2025-05-19-empire-wind-stop-work-lifted.quote"
+   ]
+  },
+  "https://www.everycrsreport.com/reports/IF13180.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-03-10-crs-in-focus-if13180-speed-act-as-passed-by-the-house"
+   ]
+  },
+  "https://www.federalregister.gov/documents/2025/02/25/2025-03014/removal-of-national-environmental-policy-act-implementing-regulations": {
+   "cls": "ok",
+   "kind": "federal_register",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-02-25-federal-register-ceq-interim-final-rule-removal-nepa-regulations"
+   ]
+  },
+  "https://www.federalregister.gov/documents/2025/07/28/2025-14212/accelerating-federal-permitting-of-data-center-infrastructure": {
+   "cls": "ok",
+   "kind": "federal_register",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-07-28-federal-register-eo-14318-data-center-permitting"
+   ]
+  },
+  "https://www.federalregister.gov/documents/2026/01/08/2026-00178/removal-of-national-environmental-policy-act-implementing-regulations": {
+   "cls": "ok",
+   "kind": "federal_register",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-08-federal-register-ceq-final-rule-removal-nepa-regulations"
+   ]
+  },
+  "https://www.foodandwaterwatch.org/2026/09/30/bipartisan-permitting-reform-plan-is-danger-to-public-health-enviro-protection-states-rights/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.jim-walsh.source",
+    "people.jim-walsh.quote"
+   ]
+  },
+  "https://www.gibsondunn.com/secretary-of-energy-directs-ferc-to-initiate-rulemaking-to-expedite-data-center-and-large-load-interconnection/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-10-23-doe-directs-ferc-large-load-interconnection-rulemaking.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-118s4753rs/html/BILLS-118s4753rs.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "meta.prior_bills",
+    "compare.versions.epra",
+    "compare.skip.epra",
+    "compare.after.epra",
+    "compare.sol.epra",
+    "compare.remedy.epra",
+    "compare.court-clock.epra",
+    "compare.energy-sol.epra",
+    "compare.non-nepa.epra",
+    "compare.esa.epra",
+    "compare.106.epra",
+    "compare.backstop.epra",
+    "compare.planning.epra",
+    "compare.cost.epra",
+    "compare.corridor.epra",
+    "compare.gets.epra",
+    "compare.oilgas.epra",
+    "compare.coal.epra",
+    "compare.renewables.epra",
+    "compare.offshore.epra",
+    "compare.lng.epra",
+    "compare.geothermal.epra",
+    "compare.hydro.epra",
+    "compare.mining.epra",
+    "compare.tribal.epra",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "meta.prior_bills",
+    "compare.versions.speed",
+    "compare.purpose.speed",
+    "compare.mfa.speed",
+    "compare.scope.speed",
+    "compare.skip.speed",
+    "compare.deadlines.speed",
+    "compare.after.speed",
+    "compare.science.speed",
+    "compare.alternatives.speed",
+    "compare.missed.speed",
+    "compare.programmatic.speed",
+    "compare.sol.speed",
+    "compare.standing.speed",
+    "compare.remedy.speed",
+    "compare.court-clock.speed",
+    "compare.revoke.speed",
+    "compare.reopened.speed",
+    "compare.tribal.speed",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped",
+    "compare.dropped"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-02-03-iowa-v-ceq-north-dakota-vacates-phase-2-rule.source",
+    "timeline.2025-02-25-ceq-interim-final-rule-removes-nepa-regulations.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2025-05-28/pdf/2025-09569.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-05-28-ceq-withdraws-ghg-nepa-guidance.source",
+    "timeline.2025-05-28-ceq-withdraws-ghg-nepa-guidance.quote"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2025-07-03/pdf/2025-12433.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-03-agencies-issue-interim-final-nepa-rules.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2025-07-28/pdf/2025-14212.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-23-eo-14318-data-center-permitting.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2025-10-02/pdf/2025-19236.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-09-29-ceq-updated-nepa-guidance-and-template.source",
+    "timeline.2025-09-29-ceq-updated-nepa-guidance-and-template.quote"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-01-08/pdf/2026-00178.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-01-08-ceq-final-rule-removes-nepa-regulations.source",
+    "people.katherine-scarlett.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00754.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-01-15-epa-proposes-section-401-certification-rule.source",
+    "people.lee-zeldin.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-04-13/pdf/2026-07115.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-04-09-ceq-categorical-exclusions-guidance.source",
+    "timeline.2026-04-09-ceq-categorical-exclusions-guidance.quote"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/2026-13079.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-29-ceq-withdraws-18-guidance-documents.source",
+    "timeline.2026-06-29-ceq-withdraws-18-guidance-documents.quote",
+    "people.katherine-scarlett.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/PLAW-118publ5/pdf/PLAW-118publ5.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2023-06-03-fiscal-responsibility-act-nepa-amendments.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/PLAW-119publ21/pdf/PLAW-119publ21.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-04-one-big-beautiful-bill-act-nepa-opt-in-fee.source"
+   ]
+  },
+  "https://www.gtlaw-environmentalandenergy.com/2025/12/articles/offshore-wind/federal-judge-vacates-trump-administrations-halt-to-wind-energy-permitting/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-08-new-york-v-trump-wind-memo-vacated.source"
+   ]
+  },
+  "https://www.gtlaw-environmentalandenergy.com/2026/01/articles/offshore-wind/court-lifts-stop-work-orders-for-three-paused-offshore-wind-projects/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-09-22-revolution-wind-preliminary-injunction.source",
+    "timeline.2026-01-12-courts-enjoin-offshore-wind-stop-work-orders.source",
+    "timeline.2026-01-12-courts-enjoin-offshore-wind-stop-work-orders.quote"
+   ]
+  },
+  "https://www.hklaw.com/en/insights/publications/2024/08/energy-chairman-manchins-permitting-bill-moves-through-committee": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2024-07-31-senate-enr-advances-energy-permitting-reform-act.source",
+    "timeline.2024-07-31-senate-enr-advances-energy-permitting-reform-act.quote",
+    "people.joe-manchin.source",
+    "people.joe-manchin.quote"
+   ]
+  },
+  "https://www.husted.senate.gov/media/press-releases/husted-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers-blocked-from-passage/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-16-house-passes-ratepayer-protection-act-417-3.source"
+   ]
+  },
+  "https://www.klgates.com/DOE-Directs-FERC-to-Take-Action-on-Large-Load-Interconnection-10-30-2025": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-10-23-doe-directs-ferc-large-load-interconnection-rulemaking.source",
+    "people.chris-wright.source"
+   ]
+  },
+  "https://www.klgates.com/Department-of-the-Interior-Issues-Flurry-of-Actions-Targeting-Wind-and-Solar-Energy-Projects-8-25-2025": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-15-interior-memo-secretary-review-wind-solar.source"
+   ]
+  },
+  "https://www.latitudemedia.com/news/a-judge-blocked-trumps-clean-energy-blockade-are-projects-out-of-limbo/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-04-21-casper-enjoins-directives-stalling-wind-and-solar-permits.source"
+   ]
+  },
+  "https://www.latitudemedia.com/news/burgum-doi-will-fight-judges-ruling-lifting-renewable-energy-blockade/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-05-13-burgum-says-interior-will-appeal-wind-solar-injunction.source",
+    "timeline.2026-05-13-burgum-says-interior-will-appeal-wind-solar-injunction.quote",
+    "people.doug-burgum.source",
+    "people.doug-burgum.quote"
+   ]
+  },
+  "https://www.latitudemedia.com/news/exclusive-heinrich-proposes-30-credit-for-long-haul-transmission/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-23-latitude-media-exclusive-heinrich-30-percent-credit-long-haul-transmission"
+   ]
+  },
+  "https://www.latitudemedia.com/news/house-passes-speed-act-a-first-step-toward-broader-permitting-reform/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.john-hickenlooper.source",
+    "people.john-hickenlooper.quote",
+    "people.catherine-boudreau.source"
+   ]
+  },
+  "https://www.latitudemedia.com/news/senators-strike-bipartisan-permitting-deal/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.chuck-schumer.source",
+    "people.drew-maloney.source",
+    "people.drew-maloney.quote",
+    "people.catherine-boudreau.source",
+    "media.2026-09-30-latitude-media-senators-strike-permitting-deal"
+   ]
+  },
+  "https://www.law.cornell.edu/supremecourt/text/23-975": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-05-29-seven-county-v-eagle-county.source",
+    "timeline.2025-05-29-seven-county-v-eagle-county.quote",
+    "people.brett-kavanaugh.source",
+    "people.brett-kavanaugh.quote",
+    "media.2025-05-29-supreme-court-seven-county-infrastructure-coalition-v-eagle-county"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/15/717b": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.lng.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/16/1536": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.esa.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/16/797": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.hydro.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/16/824p": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.backstop.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/25/323": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.tribal.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/28/2401": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.sol.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/30/1003": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.geothermal.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/30/226": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.oilgas.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/30/42": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.mining.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/33/1341": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.401.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/33/1342": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.404.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/42/4321": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.purpose.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/42/4332": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.scope.current",
+    "compare.alternatives.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/42/4336": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.skip.current",
+    "compare.science.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/42/4336a": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.deadlines.current",
+    "compare.missed.current",
+    "compare.ceq.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/42/4336b": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.programmatic.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/42/4336e": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.mfa.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/43/3004": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.renewables.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/43/3006": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.offshore.current"
+   ]
+  },
+  "https://www.law.cornell.edu/uscode/text/54/306108": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.106.current"
+   ]
+  },
+  "https://www.lcv.org/media-center/lcv-statement-on-senate-permitting-deal/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-lcv-statement-on-senate-permitting-deal"
+   ]
+  },
+  "https://www.liuna.org/news/story/move-infrastructure-good-jobs-and-the-nation-forward-by-getting-politics-and-needless-delays-out-of-permitting-leader-of-largest-union-of-construction": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-28-liuna-booker-move-infrastructure-good-jobs-out-of-politics-permitting"
+   ]
+  },
+  "https://www.liuna.org/news/story/unchain-nations-march-toward-complete-energy-independence-liuna-says-in-testimony-before-senate-environment-and-public-works-committee": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-02-19-liuna-booker-testimony-energy-independence-frivolous-litigation"
+   ]
+  },
+  "https://www.morganlewis.com/pubs/2025/01/executive-orders-move-oil-gas-development-permitting-reform-to-top-of-trump-vance-energy-agenda": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-01-27-morgan-lewis-executive-orders-move-oil-gas-permitting-reform-to-top-of-agenda"
+   ]
+  },
+  "https://www.niskanencenter.org/niskanen-center-supports-introduction-of-the-bipartisan-american-affordability-and-jobs-act-of-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.liza-reed.source",
+    "people.liza-reed.quote",
+    "media.2026-09-30-niskanen-center-supports-affordability-jobs-act"
+   ]
+  },
+  "https://www.niskanencenter.org/permitting-reform-is-back-and-heres-how-congress-can-get-it-done-this-time/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-10-14-niskanen-permitting-reform-is-back-how-congress-can-get-it-done"
+   ]
+  },
+  "https://www.nrdc.org/press-releases/permitting-bill-desperately-needed-must-improve": {
+   "browser": "2026-10-01",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-09-30-nrdc-permitting-bill-desperately-needed-must-improve"
+   ]
+  },
+  "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "overview.status",
+    "people.donald-trump.source",
+    "media.2026-09-30-ap-pbs-senate-reaches-bipartisan-deal"
+   ]
+  },
+  "https://www.permitting.gov/about/leadership": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.emily-domenech.source"
+   ]
+  },
+  "https://www.permitting.gov/newsroom/press-releases/permitting-council-announces-latest-federal-state-agreements-streamline": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-02-19-permitting-council-signs-first-state-fast-41-mous.source",
+    "people.emily-domenech.source"
+   ]
+  },
+  "https://www.pillsburylaw.com/en/news-and-insights/ceq-rescission-nepa-implementing-regulations.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-16-pillsbury-ceq-finalizes-rescission-of-nepa-implementing-regulations"
+   ]
+  },
+  "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.ross-marchand.source",
+    "people.ross-marchand.quote",
+    "media.2026-09-30-tpa-taxpayer-watchdog-welcomes-permitting-deal"
+   ]
+  },
+  "https://www.publicpower.org/periodical/article/house-natural-resources-committee-passes-speed-act": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-11-20-house-natural-resources-advances-speed-act.source",
+    "people.jared-huffman.source"
+   ]
+  },
+  "https://www.publicpower.org/periodical/article/senate-energy-natural-resources-committee-passes-permitting-bill": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2024-07-31-senate-enr-advances-energy-permitting-reform-act.source",
+    "people.joe-manchin.source"
+   ]
+  },
+  "https://www.rstreet.org/commentary/low-energy-fridays-permitting-reform-remains-close-but-so-far/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-18-r-street-low-energy-fridays-permitting-reform-remains-close"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-30-senate-rejects-cloture-on-ratepayer-protection-act.source"
+   ]
+  },
+  "https://www.solarpowerworldonline.com/2026/04/federal-court-halts-trump-administrations-orders-impeding-solar-wind-development/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.tim-pawlenty.source"
+   ]
+  },
+  "https://www.troutmanenergyreport.com/2025/04/order-no-1920-b-affirms-fercs-long-term-transmission-planning-and-cost-allocation-rule/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-04-11-ferc-order-1920-b-rehearing.source"
+   ]
+  },
+  "https://www.upstreamonline.com/environment/us-senators-unveil-400-page-bill-to-speed-up-energy-permitting/2-1-2052062": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-upstream-senators-unveil-400-page-bill"
+   ]
+  },
+  "https://www.uschamber.com/energy/u-s-chamber-hails-senate-progress-on-bipartisan-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.rodney-davis.source",
+    "people.rodney-davis.quote",
+    "media.2026-09-30-us-chamber-hails-senate-progress-permitting-reform"
+   ]
+  },
+  "https://www.utilitydive.com/news/revolution-wind-orsted-offshore-wind-stop-work-trump-construction/760803/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-09-22-revolution-wind-preliminary-injunction.source",
+    "timeline.2025-09-22-revolution-wind-preliminary-injunction.quote"
+   ]
+  },
+  "https://www.utilitydive.com/news/senate-democrats-permitting-reform-offshore-wind/808580/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-12-22-interior-pauses-five-offshore-wind-leases.source",
+    "timeline.2025-12-22-senate-democrats-end-permitting-talks-over-offshore-wind.source",
+    "timeline.2025-12-22-senate-democrats-end-permitting-talks-over-offshore-wind.quote",
+    "people.sheldon-whitehouse.source",
+    "media.2025-12-23-utility-dive-senate-democrats-end-permitting-talks-offshore-wind"
+   ]
+  },
+  "https://www.utilitydive.com/news/senate-permitting-reform-project-certainty/810827/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-01-12-courts-enjoin-offshore-wind-stop-work-orders.source",
+    "timeline.2026-01-28-senate-epw-permitting-hearing-part-ii.source",
+    "timeline.2026-01-28-senate-epw-permitting-hearing-part-ii.quote",
+    "people.shelley-moore-capito.source",
+    "media.2026-01-29-utility-dive-senators-call-for-project-certainty-at-hearing"
+   ]
+  },
+  "https://www.utilitydive.com/news/trump-taps-swett-to-lead-ferc/803735/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.laura-swett.source",
+    "people.laura-swett.quote"
+   ]
+  },
+  "https://www.washingtonexaminer.com/daily-on-energy/4749078/daily-on-energy-the-long-awaited-permitting-reform-bill-is-here/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-washington-examiner-daily-on-energy-bill-is-here"
+   ]
+  },
+  "https://www.washingtonsun.com/congress/senators-release-bipartisan-american-affordability-and-jobs-act-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.aidan-mackenzie.source",
+    "people.aidan-mackenzie.quote",
+    "media.2026-09-30-washington-sun-senators-have-deal-little-time"
+   ]
+  },
+  "https://www.washingtontimes.com/news/2026/sep/30/senate-committee-leaders-announce-permitting-overhaul-deal-spur/": {
+   "browser": "2026-10-01",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-09-30-washington-times-committee-leaders-announce-deal"
+   ]
+  },
+  "https://www.whitehouse.gov/articles/2026/01/ceq-fixes-decades-long-permitting-failure-through-deregulation/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-07-white-house-ceq-removes-nepa-regulations"
+   ]
+  },
+  "https://www.whitehouse.gov/presidential-actions/2025/01/declaring-a-national-energy-emergency/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-01-20-eo-14156-national-energy-emergency.source"
+   ]
+  },
+  "https://www.whitehouse.gov/presidential-actions/2025/01/temporary-withdrawal-of-all-areas-on-the-outer-continental-shelf-from-offshore-wind-leasing-and-review-of-the-federal-governments-leasing-and-permitting-practices-for-wind-projects/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-01-20-presidential-memo-wind-leasing-withdrawal.source"
+   ]
+  },
+  "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-01-20-eo-14154-unleashing-american-energy.source",
+    "timeline.2025-01-20-eo-14154-unleashing-american-energy.quote",
+    "people.donald-trump.source",
+    "people.donald-trump.quote"
+   ]
+  },
+  "https://www.whitehouse.gov/presidential-actions/2025/02/establishing-the-national-energy-dominance-council/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.doug-burgum.source",
+    "people.chris-wright.source"
+   ]
+  },
+  "https://www.whitehouse.gov/presidential-actions/2025/04/updating-permitting-technology-for-the-21st-century": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-04-15-presidential-memo-permitting-technology.source"
+   ]
+  },
+  "https://www.whitehouse.gov/presidential-actions/2025/07/accelerating-federal-permitting-of-data-center-infrastructure/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-07-23-eo-14318-data-center-permitting.source"
+   ]
+  },
+  "https://www.whitehouse.gov/wp-content/uploads/2025/04/Memorandum-CEQ-Establishment-of-Permitting-Innovation-Center_4.30.2025.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-04-15-presidential-memo-permitting-technology.source"
+   ]
+  },
+  "https://www.worldoil.com/news/2026/9/30/u-s-oil-and-gas-groups-back-bipartisan-senate-permitting-reform/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-world-oil-oil-and-gas-groups-back-senate-bill"
+   ]
+  },
+  "https://www.yahoo.com/news/politics/articles/senate-negotiators-reach-deal-permitting-002542659.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-29-politico-senate-negotiators-reach-deal-permitting-text"
+   ]
+  },
+  "https://www.yalejreg.com/nc/d-c-circuit-upends-ceqs-nepa-rules/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2024-11-12-marin-audubon-dc-circuit-ceq-authority.source"
+   ]
+  },
+  "https://www.youtube.com/watch?v=CUC6eb7sZF8": {
+   "cls": "ok",
+   "kind": "youtube",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-28-youtube-whitehouse-obstruction-is-in-the-white-house"
+   ]
+  },
+  "https://www.youtube.com/watch?v=_myge2aE50A": {
+   "cls": "ok",
+   "kind": "youtube",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-11-21-conference-c2es-keeping-the-lights-on-permitting-reform"
+   ]
+  },
+  "https://www.youtube.com/watch?v=cq9Phcuxi1k": {
+   "cls": "ok",
+   "kind": "youtube",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-youtube-whitehouse-wins-from-this-could-be-very-big"
+   ]
+  },
+  "https://www.youtube.com/watch?v=mBHXVqzIKLs": {
+   "cls": "ok",
+   "kind": "youtube",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-28-youtube-epw-full-hearing-permitting-reform-no-certainty-no-reform"
+   ]
+  },
+  "https://www.youtube.com/watch?v=nae1YjVzFew": {
+   "cls": "ok",
+   "kind": "youtube",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-02-19-youtube-epw-gop-capito-consensus-nepa-permitting-reform"
+   ]
+  },
+  "https://www.youtube.com/watch?v=qV0iDtRflDw": {
+   "cls": "ok",
+   "kind": "youtube",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-07-30-youtube-forbes-capito-whitehouse-urge-support-permitting-reform"
+   ]
+  },
+  "https://www.youtube.com/watch?v=vI_b38GLlbw": {
+   "cls": "ok",
+   "kind": "youtube",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-08-03-youtube-politico-heinrich-permitting-energy-affordability"
+   ]
+  },
+  "https://x.com/AidanRMackenzie": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.aidan-mackenzie.social.x"
+   ]
+  },
+  "https://x.com/AlecStapp/status/2079946048672293354": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-07-22-x-alecstapp-nhpa-reform-clean-energy"
+   ]
+  },
+  "https://x.com/JaneAFlegal/status/2076669679045681322": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-07-13-x-janeaflegal-nhpa-transmission-deal"
+   ]
+  },
+  "https://x.com/LeaderJohnThune": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.john-thune.social.x"
+   ]
+  },
+  "https://x.com/RepHuffman": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.jared-huffman.social.x"
+   ]
+  },
+  "https://x.com/RepJeffries": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.hakeem-jeffries.social.x"
+   ]
+  },
+  "https://x.com/RepScottPeters": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.scott-peters.social.x"
+   ]
+  },
+  "https://x.com/RepWesterman": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.bruce-westerman.social.x"
+   ]
+  },
+  "https://x.com/SenCapito": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.shelley-moore-capito.social.x"
+   ]
+  },
+  "https://x.com/SenMikeLee": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.mike-lee.social.x"
+   ]
+  },
+  "https://x.com/SenMikeLee/status/2105333969286037895": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-x-senmikelee-introduce-affordability-jobs-act"
+   ]
+  },
+  "https://x.com/SenSchumer": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.chuck-schumer.social.x"
+   ]
+  },
+  "https://x.com/SenWhitehouse": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.sheldon-whitehouse.social.x"
+   ]
+  },
+  "https://x.com/SenatorHeinrich": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.martin-heinrich.social.x"
+   ]
+  },
+  "https://x.com/SiegelScribe": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.josh-siegel.social.x"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/1996598962111889598": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-12-04-x-siegelscribe-schatz-demands-as-house-takes-up-permitting"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2001744497361981836": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-12-18-x-siegelscribe-house-passes-speed-act"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2105273084173484140": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.josh-siegel.source"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2105335750539534695": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-x-siegelscribe-capito-leads-off-presser"
+   ]
+  },
+  "https://x.com/WHCEQ47/status/2008908645837250964": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-01-07-x-whceq47-ceq-final-rule-nepa-regulations"
+   ]
+  },
+  "https://x.com/brianschatz": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.brian-schatz.social.x"
+   ]
+  },
+  "https://x.com/kelseytam/status/2029698808179785935": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-03-05-x-kelseytam-permitting-talks-back-on"
+   ]
+  },
+  "https://x.com/senatorhick": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.john-hickenlooper.social.x"
+   ]
+  },
+  "https://x.com/senjohnbarrasso": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.john-barrasso.social.x"
+   ]
+  },
+  "https://x.com/speakerjohnson": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.mike-johnson.social.x"
+   ]
+  }
+ }
+}

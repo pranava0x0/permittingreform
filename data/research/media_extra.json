@@ -1,0 +1,84 @@
+{
+ "generated": "2026-10-01",
+ "note": "Found by the main session's own searches after the agent sweep; each page was fetched and read.",
+ "items": [
+  {
+   "id": "2026-09-30-ccl-welcomes-bipartisan-permitting-package",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "Citizens' Climate Lobby",
+   "title": "CCL welcomes introduction of bipartisan permitting package",
+   "url": "https://citizensclimatelobby.org/blog/policy/ccl-welcomes-introduction-of-bipartisan-permitting-package/",
+   "verified": true,
+   "summary": "Citizens' Climate Lobby thanked the four senators and said it has supported permitting reform since 2022.",
+   "stance": "supports",
+   "quote": {
+    "text": "We thank the senators and their staff for their sustained work on this important legislation",
+    "speaker": "Jennifer Tyler, Citizens' Climate Lobby"
+   },
+   "topics": [
+    "senate-deal"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2026-09-30-world-oil-oil-and-gas-groups-back-senate-bill",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "World Oil",
+   "title": "U.S. oil and gas groups back bipartisan Senate permitting reform",
+   "url": "https://www.worldoil.com/news/2026/9/30/u-s-oil-and-gas-groups-back-bipartisan-senate-permitting-reform/",
+   "verified": true,
+   "summary": "Reports that the Energy Workforce and Technology Council and the Independent Petroleum Association of America backed the bill.",
+   "stance": "reporting",
+   "quote": {
+    "text": "This bill is an excellent bipartisan permitting reform package that goes a long way in ensuring that America can start building again",
+    "speaker": "Tim Tarpley, Energy Workforce and Technology Council"
+   },
+   "topics": [
+    "senate-deal",
+    "fossil"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-bpc-action-urges-congress-to-pass-the-bill",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "BPC Action",
+   "title": "BPC Action Urges Congress to Pass the Bipartisan American Affordability and Jobs Act This Year",
+   "url": "https://bpcaction.org/bpc-action-urges-congress-to-pass-the-bipartisan-american-affordability-and-jobs-act/",
+   "verified": true,
+   "summary": "BPC Action endorsed the bill and urged Congress to pass it this year.",
+   "stance": "supports",
+   "quote": {
+    "text": "BPC Action is proud to endorse the Bipartisan American Affordability and Jobs Act",
+    "speaker": "Michele Stockwell, BPC Action"
+   },
+   "topics": [
+    "senate-deal"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-09-30-ap-pbs-senate-reaches-bipartisan-deal",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Associated Press (PBS NewsHour)",
+   "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
+   "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
+   "verified": true,
+   "summary": "AP reports that a vote will wait until after the midterm elections, that Lee expects passage in a November lame-duck session, and that the White House issued a statement backing the bill.",
+   "stance": "reporting",
+   "quote": {
+    "text": "A vote on the bill won't happen until after the midterm elections",
+    "speaker": "Associated Press"
+   },
+   "topics": [
+    "senate-deal",
+    "white-house"
+   ],
+   "sector": "press"
+  }
+ ]
+}

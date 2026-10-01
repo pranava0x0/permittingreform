@@ -1,0 +1,1821 @@
+{
+ "generated": "2026-10-01",
+ "items": [
+  {
+   "id": "2026-09-30-youtube-whitehouse-wins-from-this-could-be-very-big",
+   "date": "2026-09-30",
+   "type": "youtube",
+   "outlet": "YouTube / Senator Sheldon Whitehouse",
+   "author": "Sen. Sheldon Whitehouse",
+   "title": "“The wins from this could be very big.” Sen. Whitehouse Speaks on Bipartisan Permitting Reform Deal",
+   "url": "https://www.youtube.com/watch?v=cq9Phcuxi1k",
+   "verified": true,
+   "summary": "Whitehouse's remarks, about six minutes, at the Sept. 30 press conference with Heinrich, Capito and Lee announcing the permitting reform deal.",
+   "stance": "supports",
+   "topics": [
+    "congress"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-09-30-x-siegelscribe-capito-leads-off-presser",
+   "date": "2026-09-30",
+   "type": "social_x",
+   "outlet": "X / @SiegelScribe",
+   "author": "Joshua Siegel",
+   "title": "EPW Chair Capito leads off the permitting reform presser, touting the \"Bipartisan American Affordability and Jobs Act of 2026,\"",
+   "url": "https://x.com/SiegelScribe/status/2105335750539534695",
+   "verified": true,
+   "summary": "Reporter Joshua Siegel posts from the Sept. 30 press conference, where Capito opened by describing the bill as a bipartisan agreement to reform federal environmental review and permitting.",
+   "stance": "reporting",
+   "quote": {
+    "text": "historic bipartisan agreement to reform America's federal environmental review and permitting processes.",
+    "speaker": "Shelley Moore Capito, as quoted by Joshua Siegel"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-x-senmikelee-introduce-affordability-jobs-act",
+   "date": "2026-09-30",
+   "type": "social_x",
+   "outlet": "X / @SenMikeLee",
+   "author": "Sen. Mike Lee",
+   "title": "Lee, Capito, Heinrich, and Whitehouse Introduce Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://x.com/SenMikeLee/status/2105333969286037895",
+   "verified": true,
+   "summary": "Sen. Lee, who chairs Senate Energy and Natural Resources, posts the title of the joint release introducing the bill with a link to the committee's press release.",
+   "stance": "supports",
+   "topics": [
+    "congress"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-09-30-wv-metronews-capito-colleagues-praise-deal",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "WV MetroNews",
+   "author": "Brad McElhinny",
+   "title": "Capito and colleagues praise bipartisan permitting reform deal; look ahead to a vote",
+   "url": "https://wvmetronews.com/2026/09/30/capito-and-colleagues-praise-bipartisan-permitting-reform-deal-look-ahead-to-a-vote/",
+   "verified": true,
+   "summary": "Reports Sen. Capito and her Republican and Democratic co-negotiators announcing the permitting deal and looking ahead to a Senate vote after the midterm elections.",
+   "stance": "reporting",
+   "topics": [
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-world-oil-oil-and-gas-groups-back-senate-bill",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "World Oil",
+   "title": "U.S. oil and gas groups back bipartisan Senate permitting reform",
+   "url": "https://www.worldoil.com/news/2026/9/30/u-s-oil-and-gas-groups-back-bipartisan-senate-permitting-reform/",
+   "verified": true,
+   "summary": "Reports that the Energy Workforce and Technology Council and the Independent Petroleum Association of America backed the bill.",
+   "stance": "reporting",
+   "quote": {
+    "text": "This bill is an excellent bipartisan permitting reform package that goes a long way in ensuring that America can start building again",
+    "speaker": "Tim Tarpley, Energy Workforce and Technology Council"
+   },
+   "topics": [
+    "congress",
+    "fossil"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-washington-times-committee-leaders-announce-deal",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "The Washington Times",
+   "author": "Lindsey McPherson",
+   "title": "Senate committee leaders announce permitting overhaul deal to spur energy development",
+   "url": "https://www.washingtontimes.com/news/2026/sep/30/senate-committee-leaders-announce-permitting-overhaul-deal-spur/",
+   "verified": true,
+   "summary": "Reports the bipartisan announcement of the 417-page bill, its updates to NEPA, the Clean Water Act and the Endangered Species Act, and plans to make changes through a manager's amendment when the bill reaches the floor in November.",
+   "stance": "reporting",
+   "quote": {
+    "text": "There is nothing sufficiently objectionable in this bill that I think either party would want to change, regardless of the outcome of the election",
+    "speaker": "Sen. Mike Lee"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "clean-water-act",
+    "esa"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-washington-sun-senators-have-deal-little-time",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "The Washington Sun",
+   "author": "Mara Hoplamazian and Anna Kramer",
+   "title": "Senators Have a Bipartisan Permitting Reform Deal but Little Time to Pass It",
+   "url": "https://www.washingtonsun.com/congress/senators-release-bipartisan-american-affordability-and-jobs-act-permitting-reform",
+   "verified": true,
+   "summary": "Reports the bill's 150-day limit on NEPA lawsuits and data center grid-cost provisions, and notes only a few legislative weeks remain before January leadership changes could scuttle a deal.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We’re motivated by one central shared concern: We want to make it easier in America to build things",
+    "speaker": "Sen. Mike Lee"
+   },
+   "topics": [
+    "congress",
+    "courts",
+    "data-centers",
+    "transmission"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-washington-examiner-daily-on-energy-bill-is-here",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Washington Examiner",
+   "author": "Callie Patteson and Maydeen Merino",
+   "title": "Daily on Energy: The long-awaited permitting reform bill is here",
+   "url": "https://www.washingtonexaminer.com/daily-on-energy/4749078/daily-on-energy-the-long-awaited-permitting-reform-bill-is-here/",
+   "verified": true,
+   "summary": "Newsletter item on the release of the 417-page bill, including its 150-day limit on legal challenges and a White House statement backing the deal.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We support this deal, which will deliver transformative policies to lower Americans’ energy and housing costs",
+    "speaker": "White House official"
+   },
+   "topics": [
+    "congress",
+    "courts",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-us-chamber-hails-senate-progress-permitting-reform",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "U.S. Chamber of Commerce",
+   "author": "Rodney Davis",
+   "title": "U.S. Chamber Hails Senate Progress on Bipartisan Permitting Reform",
+   "url": "https://www.uschamber.com/energy/u-s-chamber-hails-senate-progress-on-bipartisan-permitting-reform",
+   "verified": true,
+   "summary": "The Chamber praises Senate progress on a bipartisan permitting deal and urges swift congressional action to send legislation to the President.",
+   "stance": "supports",
+   "quote": {
+    "text": "We appreciate the leadership of Senators Capito, Whitehouse, Lee, and Heinrich to bring us to this point",
+    "speaker": "Rodney Davis, U.S. Chamber of Commerce"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-09-30-upstream-senators-unveil-400-page-bill",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Upstream",
+   "author": "Robert Stewart",
+   "title": "US senators unveil 400-page bill to speed up energy permitting",
+   "url": "https://www.upstreamonline.com/environment/us-senators-unveil-400-page-bill-to-speed-up-energy-permitting/2-1-2052062",
+   "verified": true,
+   "summary": "Oil and gas trade outlet reports the unveiling of the roughly 400-page bipartisan permitting bill; its standfirst says critics are wary of the legislation's benefits for the oil and gas industry. Body text is behind a subscriber paywall.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "fossil"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-tpa-taxpayer-watchdog-welcomes-permitting-deal",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "Taxpayers Protection Alliance",
+   "title": "Taxpayer Watchdog Welcomes Bipartisan Permitting Deal",
+   "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
+   "verified": true,
+   "summary": "TPA welcomes the bill's faster environmental reviews and deadlines for legal challenges but raises concerns that its data center cost-allocation provisions could unfairly burden the industry.",
+   "stance": "mixed",
+   "quote": {
+    "text": "Projects should not spend years or even decades navigating duplicative reviews and regulatory uncertainty before construction can begin.",
+    "speaker": "Ross Marchand, Taxpayers Protection Alliance"
+   },
+   "topics": [
+    "congress",
+    "data-centers",
+    "courts"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-09-30-the-hill-senators-reach-bipartisan-deal-permitting",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "The Hill",
+   "author": "Rachel Frazin",
+   "title": "Senators reach bipartisan deal on permitting reform",
+   "url": "https://thehill.com/policy/energy-environment/6120853-permitting-reform-bipartisan-deal-infrastructure-energy-projects/",
+   "verified": true,
+   "summary": "Reports the four senators announced the deal and expect a lame-duck vote, that Whitehouse says wind and solar permitting under the Trump administration remains unresolved, and that a White House official expressed support.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Our goal is to have it be the first vote when we come back — at least to begin the process",
+    "speaker": "Sen. Shelley Moore Capito"
+   },
+   "topics": [
+    "congress",
+    "wind-solar",
+    "white-house",
+    "data-centers"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-nrdc-permitting-bill-desperately-needed-must-improve",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "NRDC",
+   "author": "Manish Bapna",
+   "title": "Permitting Bill: “Desperately Needed” But Must Improve",
+   "url": "https://www.nrdc.org/press-releases/permitting-bill-desperately-needed-must-improve",
+   "verified": true,
+   "summary": "NRDC's president says the bill's transmission provisions are needed but weighs them against rollbacks to the Clean Water Act, Endangered Species Act and NEPA, and says any deal must end the administration's actions against clean energy.",
+   "stance": "mixed",
+   "quote": {
+    "text": "The transmission provisions contained in the bill are desperately needed; the question is do those benefits outweigh the cost of the rollbacks to the foundational environmental laws of this country.",
+    "speaker": "Manish Bapna, NRDC President and CEO"
+   },
+   "topics": [
+    "congress",
+    "transmission",
+    "clean-water-act",
+    "esa"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2026-09-30-niskanen-center-supports-affordability-jobs-act",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "Niskanen Center",
+   "author": "Liza Reed",
+   "title": "Niskanen Center supports introduction of the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://www.niskanencenter.org/niskanen-center-supports-introduction-of-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "verified": true,
+   "summary": "Niskanen Center supports the bill and calls its transmission planning and siting provisions the most consequential congressional transmission policy in two decades.",
+   "stance": "supports",
+   "quote": {
+    "text": "The U.S. must dramatically accelerate transmission buildout to bring Americans reliable power at a lower cost.",
+    "speaker": "Liza Reed, Niskanen Center"
+   },
+   "topics": [
+    "congress",
+    "transmission"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-09-30-nam-bipartisan-senate-deal-statement",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "National Association of Manufacturers",
+   "title": "Bipartisan Senate Deal Answers Manufacturers’ Call for Permitting Reform",
+   "url": "https://nam.org/bipartisan-senate-deal-answers-manufacturers-call-for-permitting-reform/",
+   "verified": true,
+   "summary": "NAM welcomes the Bipartisan American Affordability and Jobs Act of 2026 and says it answers the group's call for faster, more predictable federal reviews and NEPA reform.",
+   "stance": "supports",
+   "quote": {
+    "text": "Comprehensive permitting reform will unleash growth and investment across the board.",
+    "speaker": "Jay Timmons, NAM President and CEO"
+   },
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-09-30-lcv-statement-on-senate-permitting-deal",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "League of Conservation Voters",
+   "author": "Sara Chieffo",
+   "title": "LCV Statement on Senate Permitting Deal",
+   "url": "https://www.lcv.org/media-center/lcv-statement-on-senate-permitting-deal/",
+   "verified": true,
+   "summary": "LCV calls the bill significant and complex, says it will analyze it with affected stakeholders, and lists tests including clean energy scale-up and protection of clean air and water, public lands and community input.",
+   "stance": "mixed",
+   "quote": {
+    "text": "This is significant and complex legislation and we will be taking the time to analyze and understand its full impacts",
+    "speaker": "Sara Chieffo, LCV Senior Vice President of Government Affairs"
+   },
+   "topics": [
+    "congress",
+    "data-centers",
+    "clean-water-act"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2026-09-30-latitude-media-senators-strike-permitting-deal",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Latitude Media",
+   "author": "Catherine Boudreau",
+   "title": "Senators strike bipartisan permitting deal",
+   "url": "https://www.latitudemedia.com/news/senators-strike-bipartisan-permitting-deal/",
+   "verified": true,
+   "summary": "Reports the package covers renewables, fossil fuels and transmission and includes language meant to stop future administrations from blocking classes of generation, while Whitehouse says the question of the Trump administration returning to regular order on wind and solar permits is unresolved.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "wind-solar",
+    "transmission",
+    "data-centers"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained",
+   "date": "2026-09-30",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "The Senate’s Big Bipartisan Permitting Deal, Explained",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "verified": true,
+   "summary": "Heatmap's guide to the Bipartisan American Affordability and Jobs Act, which it says would remove longstanding roadblocks to expanding the power grid and developing new energy infrastructure.",
+   "stance": "neutral",
+   "quote": {
+    "text": "We have had what I would consider to be a very reasonable opening proposal from the Trump administration",
+    "speaker": "Sen. Sheldon Whitehouse"
+   },
+   "topics": [
+    "congress",
+    "transmission",
+    "data-centers",
+    "nepa"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-deseret-senate-unveils-deal-energy-data-centers",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Deseret News",
+   "author": "Cami Mondeaux",
+   "title": "Senate unveils bipartisan deal tackling energy and data centers — but wind and solar questions remain",
+   "url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/",
+   "verified": true,
+   "summary": "Reports the 417-page bipartisan text, its permitting speedups and data center cost provisions, and that wind and solar language tied to the Trump administration remains unresolved.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We cannot meet this moment with a permitting system that is stuck in the past",
+    "speaker": "Sen. Shelley Moore Capito"
+   },
+   "topics": [
+    "congress",
+    "data-centers",
+    "wind-solar"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-cnbc-senators-clinch-construction-permitting-deal",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "CNBC",
+   "author": "Garrett Downs and Karen James Sloan",
+   "title": "Senators clinch construction permitting reform deal before election",
+   "url": "https://www.cnbc.com/2026/09/30/permitting-deal-congress-election.html",
+   "verified": true,
+   "summary": "Reports senators reached the permitting deal just before leaving for the midterm recess, that the bill makes data center developers pay their own transmission costs, and that negotiators want it to be the first vote in the lame-duck session.",
+   "stance": "reporting",
+   "quote": {
+    "text": "If we can pass this bill, we will flood the grid with clean, affordable energy and make data centers start paying their fair share",
+    "speaker": "Sen. Sheldon Whitehouse"
+   },
+   "topics": [
+    "congress",
+    "data-centers",
+    "transmission"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-ccl-welcomes-bipartisan-permitting-package",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "Citizens' Climate Lobby",
+   "title": "CCL welcomes introduction of bipartisan permitting package",
+   "url": "https://citizensclimatelobby.org/blog/policy/ccl-welcomes-introduction-of-bipartisan-permitting-package/",
+   "verified": true,
+   "summary": "Citizens' Climate Lobby thanked the four senators and said it has supported permitting reform since 2022.",
+   "stance": "supports",
+   "quote": {
+    "text": "We thank the senators and their staff for their sustained work on this important legislation",
+    "speaker": "Jennifer Tyler, Citizens' Climate Lobby"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2026-09-30-cbd-democrats-abandon-environmental-laws-permitting-reform",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "Center for Biological Diversity",
+   "author": "Brett Hartl",
+   "title": "Democrats Abandon Environmental Laws to Advance Pro-Fossil Fuel ‘Permitting Reform’",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/",
+   "verified": true,
+   "summary": "The Center for Biological Diversity opposes the bill, saying it weakens Endangered Species Act and Clean Water Act protections and benefits the fossil fuel industry.",
+   "stance": "opposes",
+   "quote": {
+    "text": "This is a climate kill shot that condemns our most vulnerable communities to suffer decades more fossil fuel pollution.",
+    "speaker": "Brett Hartl, Center for Biological Diversity"
+   },
+   "topics": [
+    "congress",
+    "esa",
+    "clean-water-act",
+    "fossil"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2026-09-30-breakthrough-institute-supports-affordability-jobs-act",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "The Breakthrough Institute",
+   "author": "Marc Levitt",
+   "title": "RELEASE: Breakthrough Institute Proudly Supports the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://thebreakthrough.org/press/release-breakthrough-institute-statement-on-the-bipartisan-american-affordability-and-jobs-act-of-2026",
+   "verified": true,
+   "summary": "The Breakthrough Institute endorses the bill, citing changes to NEPA, Clean Water Act and National Historic Preservation Act reviews, and urges Congress to pass it.",
+   "stance": "supports",
+   "quote": {
+    "text": "The Bipartisan American Affordability and Jobs Act of 2026 is a true, heroic breakthrough for permitting reform",
+    "speaker": "Marc Levitt, Breakthrough Institute"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "clean-water-act"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-09-30-bpc-action-urges-congress-to-pass-the-bill",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "BPC Action",
+   "title": "BPC Action Urges Congress to Pass the Bipartisan American Affordability and Jobs Act This Year",
+   "url": "https://bpcaction.org/bpc-action-urges-congress-to-pass-the-bipartisan-american-affordability-and-jobs-act/",
+   "verified": true,
+   "summary": "BPC Action endorsed the bill and urged Congress to pass it this year.",
+   "stance": "supports",
+   "quote": {
+    "text": "BPC Action is proud to endorse the Bipartisan American Affordability and Jobs Act",
+    "speaker": "Michele Stockwell, BPC Action"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-09-30-bluesky-willpoffwebster-ambitious-permitting-bill",
+   "date": "2026-09-30",
+   "type": "social_bluesky",
+   "outlet": "Bluesky / @willpoffwebster.bsky.social",
+   "author": "Will Poff-Webster",
+   "title": "Ambitious permitting bill out today!",
+   "url": "https://bsky.app/profile/willpoffwebster.bsky.social/post/3mwr4y7milk2t",
+   "verified": true,
+   "summary": "An Institute for Progress infrastructure policy director calls the bill ambitious and quotes Heinrich on the cost of delay, including a warning of 20-30% electricity price increases.",
+   "stance": "supports",
+   "quote": {
+    "text": "We need to be able to build big things in this country again",
+    "speaker": "Sen. Martin Heinrich, as quoted by Will Poff-Webster"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-09-30-bluesky-robinsonmeyer-data-center-energy-reporting",
+   "date": "2026-09-30",
+   "type": "social_bluesky",
+   "outlet": "Bluesky / @robinsonmeyer.bsky.social",
+   "author": "Robinson Meyer",
+   "title": "Under the new bipartisan permitting bill, AI data centers and crypto miners would have to",
+   "url": "https://bsky.app/profile/robinsonmeyer.bsky.social/post/3mwr2e5aux22n",
+   "verified": true,
+   "summary": "Reporter Robinson Meyer notes the bill would require AI data centers and crypto miners to report their energy use to the federal government for the first time.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-bluesky-epw-democrats-permitting-plan-lower-bills",
+   "date": "2026-09-30",
+   "type": "social_bluesky",
+   "outlet": "Bluesky / @epw.senate.gov",
+   "author": "Senate EPW Democrats",
+   "title": "The American people want lower energy bills, and they want more clean energy.",
+   "url": "https://bsky.app/profile/epw.senate.gov/post/3mwqrjs5qjc2o",
+   "verified": true,
+   "summary": "The Senate EPW Democrats' account presents the permitting plan as a way to lower energy bills and add clean energy, linking a video of the Sept. 30 press conference.",
+   "stance": "supports",
+   "quote": {
+    "text": "Our permitting reform plan gets us a long way toward both of those goals.",
+    "speaker": "Senate EPW Democrats"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-09-30-bluesky-cbd-guise-of-helping-renewable-energy",
+   "date": "2026-09-30",
+   "type": "social_bluesky",
+   "outlet": "Bluesky / @biologicaldiversity.org",
+   "author": "Center for Biological Diversity",
+   "title": "Under the guise of helping renewable energy, a new legislative package, cynically titled",
+   "url": "https://bsky.app/profile/biologicaldiversity.org/post/3mwrcfvoxc22g",
+   "verified": true,
+   "summary": "The Center for Biological Diversity says the bill would give the fossil fuel industry long-term structural advantages and lock in thousands of fossil fuel projects.",
+   "stance": "opposes",
+   "topics": [
+    "congress",
+    "fossil"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2026-09-30-asa-permitting-reform",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "American Subcontractors Association",
+   "title": "Permitting Reform",
+   "url": "https://www.asaonline.com/2026/09/30/permitting-reform/",
+   "verified": true,
+   "summary": "Trade association page, dated the morning of the announcement, says the parties had paused talks on a permitting bill that would unfreeze wind and solar projects in exchange for streamlined federal permit review, and that it could be revived in the lame-duck session.",
+   "stance": "neutral",
+   "topics": [
+    "congress",
+    "wind-solar"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-09-30-api-welcomes-affordability-jobs-act",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "American Petroleum Institute",
+   "author": "Mike Sommers",
+   "title": "API Welcomes Bipartisan American Affordability and Jobs Act to Modernize Permitting",
+   "url": "https://www.api.org/news-policy-and-issues/news/2026/09/30/api-welcomes-bipartisan-american-affordability-and-jobs-act-to-modernize-permitt",
+   "verified": true,
+   "summary": "API welcomes the bill, citing enforceable review timelines and fewer litigation delays, and urges Congress to pass it.",
+   "stance": "supports",
+   "quote": {
+    "text": "Congress should seize this moment and finish the job",
+    "speaker": "Mike Sommers, API President and CEO"
+   },
+   "topics": [
+    "congress",
+    "fossil",
+    "nepa"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-09-30-ap-pbs-senate-reaches-bipartisan-deal",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Associated Press (PBS NewsHour)",
+   "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
+   "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
+   "verified": true,
+   "summary": "AP reports that a vote will wait until after the midterm elections, that Lee expects passage in a November lame-duck session, and that the White House issued a statement backing the bill.",
+   "stance": "reporting",
+   "quote": {
+    "text": "A vote on the bill won't happen until after the midterm elections",
+    "speaker": "Associated Press"
+   },
+   "topics": [
+    "congress",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Associated Press (via ABC News)",
+   "author": "Matthew Daly",
+   "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
+   "url": "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583",
+   "verified": true,
+   "summary": "AP reports the senators' announced deal, with Capito's description of it, a White House statement of support, and criticism from the Conservation Law Foundation.",
+   "stance": "reporting",
+   "quote": {
+    "text": "appears to adopt a fossil fuel industry wish-list",
+    "speaker": "Brad Campbell, Conservation Law Foundation"
+   },
+   "topics": [
+    "congress",
+    "fossil",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-30-acore-statement-supporting-affordability-jobs-act",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "ACORE",
+   "title": "ACORE Statement Supporting the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "verified": true,
+   "summary": "ACORE supports the bill, saying it would speed clean energy and transmission deployment through more efficient permitting, protection against arbitrary project cancellations, and streamlined transmission planning and interconnection.",
+   "stance": "supports",
+   "quote": {
+    "text": "Clean energy builders and financers have made it clear they intend to keep investing in clean energy.",
+    "speaker": "Ray Long, ACORE President and CEO"
+   },
+   "topics": [
+    "congress",
+    "transmission",
+    "wind-solar"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-09-29-politico-senate-negotiators-reach-deal-permitting-text",
+   "date": "2026-09-29",
+   "type": "news",
+   "outlet": "POLITICO (via Yahoo News)",
+   "author": "Nico Portuondo and Anthony Cruz",
+   "title": "Senate negotiators reach deal on permitting text",
+   "url": "https://www.yahoo.com/news/politics/articles/senate-negotiators-reach-deal-permitting-002542659.html",
+   "verified": true,
+   "summary": "Reports Senate negotiators from both parties reached a deal on bill text, with release expected that week and no vote before the scheduled recess.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We have reached a deal on text",
+    "speaker": "Aide to Sen. Martin Heinrich, quoted anonymously"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-28-bluesky-sammyroth-naive-trump-guarantee",
+   "date": "2026-09-28",
+   "type": "social_bluesky",
+   "outlet": "Bluesky / @sammyroth.bsky.social",
+   "author": "Sammy Roth",
+   "title": "Big fan of Sheldon Whitehouse. But the idea that any guarantee the Trump White House",
+   "url": "https://bsky.app/profile/sammyroth.bsky.social/post/3mwmaemdha22u",
+   "verified": true,
+   "summary": "Climate journalist Sammy Roth says any guarantee that the White House would stop blocking renewables in exchange for a permitting law seems naive, linking a Grist story on the bill's prospects.",
+   "stance": "mixed",
+   "quote": {
+    "text": "the idea that any guarantee the Trump White House would stop blocking renewables in exchange for a permitting reform law feels incredibly naive to me",
+    "speaker": "Sammy Roth"
+   },
+   "topics": [
+    "congress",
+    "wind-solar",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-24-roll-call-permitting-bill-off-until-after-midterms",
+   "date": "2026-09-24",
+   "type": "news",
+   "outlet": "Roll Call",
+   "author": "David Jordan and Kelly Livingston",
+   "title": "Permitting bill off until after midterms even as talks close in",
+   "url": "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/",
+   "verified": true,
+   "summary": "Reports Whitehouse saying a vote will likely slip to the November lame-duck session and that negotiators were close to finalizing text.",
+   "stance": "reporting",
+   "quote": {
+    "text": "over the hump on the deal-break issues",
+    "speaker": "Sen. Sheldon Whitehouse"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-24-grist-gas-solar-tech-companies-want-this-bill",
+   "date": "2026-09-24",
+   "type": "news",
+   "outlet": "Grist",
+   "author": "Austin Corona",
+   "title": "Gas, solar, and tech companies all want this bill. Will Congress pass it?",
+   "url": "https://grist.org/politics/permitting-reform-data-centers-senate-gas-solar/",
+   "verified": true,
+   "summary": "Reports that a bipartisan Senate group says it is close to a permitting deal, and that polling suggests tying reform to data centers is politically costly.",
+   "stance": "reporting",
+   "quote": {
+    "text": "If you phrase permitting reform as serving data centers, the polling results get way worse",
+    "speaker": "Alex Lundry, Redbud Consulting"
+   },
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-24-deseret-permitting-talks-fall-apart-deal-punted",
+   "date": "2026-09-24",
+   "type": "news",
+   "outlet": "Deseret News",
+   "author": "Cami Mondeaux",
+   "title": "Permitting reform talks fall apart in the Senate, deal punted until after midterms",
+   "url": "https://www.deseret.com/politics/2026/09/24/permitting-reform-talks-fall-apart-in-senate/",
+   "verified": true,
+   "summary": "Reports Senate permitting negotiations stalled and a deal was pushed past the midterm elections; quotes Majority Whip Barrasso blaming Democrats. Article was updated Sept. 29.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Republicans are 100% committed to permitting reform. The Democrats – specifically Chuck Schumer – don’t seem to care at all",
+    "speaker": "Sen. John Barrasso"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-23-latitude-media-exclusive-heinrich-30-percent-credit-long-haul-transmission",
+   "date": "2026-09-23",
+   "type": "news",
+   "outlet": "Latitude Media",
+   "author": "Lisa Martine Jenkins and Catherine Boudreau",
+   "title": "Exclusive: Heinrich proposes 30% credit for long-haul transmission",
+   "url": "https://www.latitudemedia.com/news/exclusive-heinrich-proposes-30-credit-for-long-haul-transmission/",
+   "verified": true,
+   "summary": "Reports Heinrich introducing a bill for a 30% investment tax credit on long-haul transmission lines, as President Trump suggests he is willing to remove some barriers to permitting reform.",
+   "stance": "reporting",
+   "topics": [
+    "transmission",
+    "congress",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-09-18-r-street-low-energy-fridays-permitting-reform-remains-close",
+   "date": "2026-09-18",
+   "type": "analysis",
+   "outlet": "R Street Institute",
+   "author": "Josiah Neeley",
+   "title": "Low Energy Fridays: Permitting Reform Remains Close, But So Far",
+   "url": "https://www.rstreet.org/commentary/low-energy-fridays-permitting-reform-remains-close-but-so-far/",
+   "verified": true,
+   "summary": "R Street's Low-Energy Fridays newsletter on the state of permitting reform talks as Congress returned from the August recess.",
+   "stance": "neutral",
+   "topics": [
+    "congress"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-08-18-daily-caller-permitting-bill-tied-up-in-senate",
+   "date": "2026-08-18",
+   "type": "news",
+   "outlet": "Daily Caller",
+   "author": "Nicole Silverio",
+   "title": "Major Permitting Bill Has Been Tied-Up In Senate For Months. What’s The Holdup?",
+   "url": "https://dailycaller.com/2026/08/18/environmental-groups-speed-act-senate/",
+   "verified": true,
+   "summary": "Reports the House-passed SPEED Act remains stalled in the Senate while environmental groups lobby against it and Republicans and business groups press for passage.",
+   "stance": "reporting",
+   "topics": [
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-08-03-youtube-politico-heinrich-permitting-energy-affordability",
+   "date": "2026-08-03",
+   "type": "youtube",
+   "outlet": "YouTube / POLITICO",
+   "author": "Josh Siegel",
+   "title": "Sen. Martin Heinrich on permitting reform, energy affordability and Trump's agenda",
+   "url": "https://www.youtube.com/watch?v=vI_b38GLlbw",
+   "verified": true,
+   "summary": "POLITICO Energy's Josh Siegel interviews Sen. Heinrich, the top Democrat on Senate Energy and Natural Resources, on permitting reform, rising energy costs and the Trump agenda (about 21 minutes).",
+   "stance": "neutral",
+   "topics": [
+    "congress",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-07-22-x-alecstapp-nhpa-reform-clean-energy",
+   "date": "2026-07-22",
+   "type": "social_x",
+   "outlet": "X / @AlecStapp",
+   "author": "Alec Stapp",
+   "title": "Senate Republicans are interested in reforming the National Historic Preservation Act (NHPA)",
+   "url": "https://x.com/AlecStapp/status/2079946048672293354",
+   "verified": true,
+   "summary": "Alec Stapp of the Institute for Progress says Senate Republicans want National Historic Preservation Act reform in a permitting deal while Democrats are reluctant, and cites new research on how the reforms would affect clean energy versus fossil fuel projects.",
+   "stance": "supports",
+   "topics": [
+    "congress",
+    "transmission",
+    "wind-solar"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-07-13-x-janeaflegal-nhpa-transmission-deal",
+   "date": "2026-07-13",
+   "type": "social_x",
+   "outlet": "X / @JaneAFlegal",
+   "author": "Jane Flegal",
+   "title": "Let me just say, if Democrats reject a permitting deal with a robust transmission provision",
+   "url": "https://x.com/JaneAFlegal/status/2076669679045681322",
+   "verified": true,
+   "summary": "Responding to a Siegel report that NHPA is the main sticking point between negotiators, Flegal says she would be disappointed if Democrats reject a deal with strong transmission provisions over NHPA concerns.",
+   "stance": "supports",
+   "quote": {
+    "text": "if Democrats reject a permitting deal with a robust transmission provision because of NHPA angst, I will be very, very disappointed.",
+    "speaker": "Jane Flegal"
+   },
+   "topics": [
+    "congress",
+    "transmission"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-06-02-c2es-federal-permitting-reform-119th-congress-certain-freedom-speed",
+   "date": "2026-06-02",
+   "type": "analysis",
+   "outlet": "Center for Climate and Energy Solutions",
+   "title": "Federal Permitting Reform in the 119th Congress: Comparing the CERTAIN, FREEDOM, and SPEED Acts",
+   "url": "https://www.c2es.org/document/federal-permitting-reform-in-the-119th-congress/",
+   "verified": true,
+   "summary": "C2ES compares three House permitting bills in the 119th Congress: the CERTAIN Act, the FREEDOM Act and the SPEED Act.",
+   "stance": "neutral",
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-05-27-cen-bipartisan-drive-for-permitting-reform-outlook-murky",
+   "date": "2026-05-27",
+   "type": "news",
+   "outlet": "Chemical & Engineering News",
+   "author": "Alex Music",
+   "title": "Bipartisan drive for permitting reform grows, but outlook is still murky",
+   "url": "https://cen.acs.org/policy/legislation-/permitting-reform-nepa-esa-energy-renewable-pipeline/104/web/2026/05",
+   "verified": true,
+   "summary": "Reports Republicans and Democrats share ground on permitting certainty while recent Trump administration moves impede negotiations.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "wind-solar",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-04-16-welc-73-western-groups-no-deal-with-devil-on-permit-reform",
+   "date": "2026-04-16",
+   "type": "org_statement",
+   "outlet": "Western Environmental Law Center",
+   "title": "73 western groups to Senate leadership: No deal with devil on permit reform",
+   "url": "https://westernlaw.org/73-western-groups-to-senate-leadership-no-deal-with-devil-on-permit-reform/",
+   "verified": true,
+   "summary": "Seventy-three western community, conservation, faith and Indigenous groups send a joint letter to Schumer, Heinrich, Whitehouse and Jeffries urging them to reconsider pursuing permitting legislation under the current Congress and administration.",
+   "stance": "opposes",
+   "quote": {
+    "text": "The first rule of negotiation is that it’s impossible to reach workable solutions with bad-faith actors",
+    "speaker": "Erik Schlenker-Goodrich, Western Environmental Law Center"
+   },
+   "topics": [
+    "congress",
+    "tribal"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2026-04-08-american-prospect-nepa-and-its-discontents",
+   "date": "2026-04-08",
+   "type": "analysis",
+   "outlet": "The American Prospect",
+   "author": "Hannah Story Brown",
+   "title": "NEPA and Its Discontents",
+   "url": "https://prospect.org/2026/04/08/apr-2026-magazine-nepa-and-its-discontents-environmental-law/",
+   "verified": true,
+   "summary": "Magazine feature on how NEPA has been rewritten by the last three administrations and what it says is missing from the political debate over permitting reform, including the SPEED Act's limits on the law.",
+   "stance": "mixed",
+   "quote": {
+    "text": "It would be more honest for them to just say they want to repeal NEPA, because the SPEED Act constrains it so much",
+    "speaker": "Ana Unruh Cohen, former Biden administration NEPA official"
+   },
+   "topics": [
+    "nepa",
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-03-10-crs-in-focus-if13180-speed-act-as-passed-by-the-house",
+   "date": "2026-03-10",
+   "type": "analysis",
+   "outlet": "Congressional Research Service (via EveryCRSReport.com)",
+   "title": "H.R. 4776, Standardizing Permitting and Expediting Economic Development Act (SPEED Act), as Passed by the House",
+   "url": "https://www.everycrsreport.com/reports/IF13180.html",
+   "verified": true,
+   "summary": "CRS In Focus (IF13180) summarizing H.R. 4776 as engrossed in the House on Dec. 18, 2025, including its amendments to NEPA.",
+   "stance": "neutral",
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-03-05-x-kelseytam-permitting-talks-back-on",
+   "date": "2026-03-05",
+   "type": "social_x",
+   "outlet": "X / @kelseytam",
+   "author": "Kelsey Tamborrino",
+   "title": "Key Dems @SenatorHeinrich and @SenWhitehouse make it official: Permitting reform talks are back on",
+   "url": "https://x.com/kelseytam/status/2029698808179785935",
+   "verified": true,
+   "summary": "Reporter Kelsey Tamborrino relays that Sens. Heinrich and Whitehouse formally announced permitting reform talks had resumed.",
+   "stance": "reporting",
+   "topics": [
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-03-05-enr-heinrich-whitehouse-joint-statement-permitting-reform",
+   "date": "2026-03-05",
+   "type": "gov_press_release",
+   "outlet": "Senate Energy and Natural Resources Committee (Minority)",
+   "author": "Martin Heinrich and Sheldon Whitehouse",
+   "title": "Heinrich and Whitehouse Joint Statement on Permitting Reform",
+   "url": "https://www.energy.senate.gov/2026/3/heinrich-and-whitehouse-joint-statement-on-permitting-reform",
+   "verified": true,
+   "summary": "Sens. Heinrich and Whitehouse say permitting talks are resuming, conditioned on the administration continuing to approve renewable energy permits.",
+   "stance": "mixed",
+   "quote": {
+    "text": "Seeing permits continuing to be approved by the administration is critical for ensuring that talks can continue.",
+    "speaker": "Sens. Martin Heinrich and Sheldon Whitehouse"
+   },
+   "topics": [
+    "congress",
+    "wind-solar",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-02-19-ifp-breaking-the-nepa-litigation-doom-loop",
+   "date": "2026-02-19",
+   "type": "analysis",
+   "outlet": "Institute for Progress",
+   "author": "Ben Schifman",
+   "title": "Breaking the NEPA Litigation Doom Loop",
+   "url": "https://ifp.org/breaking-the-nepa-litigation-doom-loop/",
+   "verified": true,
+   "summary": "IFP argues that vacatur as the default remedy in NEPA cases drives a cycle of review, litigation and re-review, and proposes reforming court remedies; it notes agencies prevail in about 80% of cases involving environmental impact statements.",
+   "stance": "supports",
+   "quote": {
+    "text": "It does not mandate that agencies choose environmentally friendly alternatives or prohibit projects with significant impacts.",
+    "speaker": "Ben Schifman, Institute for Progress"
+   },
+   "topics": [
+    "nepa",
+    "courts"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-02-09-podcast-shift-key-what-senator-heinrich-needs-to-see-in-permitting-deal",
+   "date": "2026-02-09",
+   "type": "podcast",
+   "outlet": "Heatmap News (Shift Key)",
+   "author": "Robinson Meyer",
+   "title": "What Senator Martin Heinrich Needs to See in a Permitting Deal",
+   "url": "https://heatmap.news/podcast/shift-key-s3-e26-martin-heinrich",
+   "verified": true,
+   "summary": "Robinson Meyer interviews Sen. Heinrich on the state of play on permitting reform, what a bipartisan energy deal would need to do on transmission, and lessons from passing and partly repealing the Inflation Reduction Act.",
+   "stance": "neutral",
+   "topics": [
+    "congress",
+    "transmission"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-01-29-utility-dive-senators-call-for-project-certainty-at-hearing",
+   "date": "2026-01-29",
+   "type": "news",
+   "outlet": "Utility Dive",
+   "author": "Ethan Howland",
+   "title": "Republican, Democratic senators call for project certainty at permitting reform hearing",
+   "url": "https://www.utilitydive.com/news/senate-permitting-reform-project-certainty/810827/",
+   "verified": true,
+   "summary": "Reports on the Jan. 28 EPW hearing, where senators of both parties backed reform but Whitehouse said progress depends on the administration ending its moves against wind and solar projects.",
+   "stance": "reporting",
+   "quote": {
+    "text": "It makes no sense to pass a bipartisan permitting reform that gets illegally butchered by a lawless executive branch",
+    "speaker": "Sen. Sheldon Whitehouse"
+   },
+   "topics": [
+    "congress",
+    "wind-solar",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-01-28-youtube-whitehouse-obstruction-is-in-the-white-house",
+   "date": "2026-01-28",
+   "type": "youtube",
+   "outlet": "YouTube / Senate Environment & Public Works Committee",
+   "author": "Sen. Sheldon Whitehouse",
+   "title": "Permitting reform obstruction isn't in the Senate. It's in the White House",
+   "url": "https://www.youtube.com/watch?v=CUC6eb7sZF8",
+   "verified": true,
+   "summary": "Ranking Member Whitehouse's remarks, about 12 minutes, at the Jan. 28 EPW hearing on bipartisan permitting reform.",
+   "stance": "mixed",
+   "topics": [
+    "congress",
+    "white-house",
+    "wind-solar"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-01-28-youtube-epw-full-hearing-permitting-reform-no-certainty-no-reform",
+   "date": "2026-01-28",
+   "type": "youtube",
+   "outlet": "YouTube / Senate Environment & Public Works Committee",
+   "title": "Trump’s lawlessness halts permitting reform in the Senate. No certainty, no reform.",
+   "url": "https://www.youtube.com/watch?v=mBHXVqzIKLs",
+   "verified": true,
+   "summary": "Full-committee EPW hearing on bipartisan permitting reform (about 2 hours), uploaded by the committee's Democratic channel under a title that criticizes the administration's blockade of clean energy projects.",
+   "stance": "mixed",
+   "topics": [
+    "congress",
+    "wind-solar",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-01-28-liuna-booker-move-infrastructure-good-jobs-out-of-politics-permitting",
+   "date": "2026-01-28",
+   "type": "org_statement",
+   "outlet": "LIUNA (Laborers’ International Union of North America)",
+   "author": "Brent Booker",
+   "title": "Move Infrastructure, Good Jobs and the Nation Forward By Getting Politics and Needless Delays Out of Permitting, Leader of Largest Union of Construction Laborers Tells Senate Committee",
+   "url": "https://www.liuna.org/news/story/move-infrastructure-good-jobs-and-the-nation-forward-by-getting-politics-and-needless-delays-out-of-permitting-leader-of-largest-union-of-construction",
+   "verified": true,
+   "summary": "LIUNA's general president testifies at the Jan. 28 EPW hearing in favor of bipartisan permitting reform, citing court delays and the politics of permit cancellations as threats to project certainty.",
+   "stance": "supports",
+   "quote": {
+    "text": "Today the greatest threat to project certainty is not litigation alone, it is the politics being played with our members’ jobs",
+    "speaker": "Brent Booker, LIUNA General President"
+   },
+   "topics": [
+    "congress",
+    "clean-water-act",
+    "offshore"
+   ],
+   "sector": "labor"
+  },
+  {
+   "id": "2026-01-28-epw-whitehouse-opening-statement-permitting-reform-hearing",
+   "date": "2026-01-28",
+   "type": "gov_press_release",
+   "outlet": "Senate EPW Committee (Minority)",
+   "author": "Sheldon Whitehouse",
+   "title": "Whitehouse Opening Statement at Permitting Reform Hearing",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/1/whitehouse-opening-statement-at-permitting-reform-hearing",
+   "verified": true,
+   "summary": "Whitehouse's opening statement at the Jan. 28 EPW hearing says he wants strong bipartisan permitting reform but that a trust problem with the administration's behavior must be solved first.",
+   "stance": "mixed",
+   "quote": {
+    "text": "The responsibility for resuscitating permitting reform rests now upon the executive branch, upon credible confidence that the nonsense will stop",
+    "speaker": "Sen. Sheldon Whitehouse"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "wind-solar"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-01-28-epw-capito-opening-statement-permitting-hearing",
+   "date": "2026-01-28",
+   "type": "gov_press_release",
+   "outlet": "Senate EPW Committee (Majority)",
+   "author": "Shelley Moore Capito",
+   "title": "Chairman Capito Opening Statement at Hearing to Examine Federal Permitting Processes",
+   "url": "https://www.epw.senate.gov/public/index.cfm/press-releases-republican?ID=BFE522D6-6A58-4EF5-80A1-4DAD5BA6AE75",
+   "verified": true,
+   "summary": "Capito's opening statement for the Jan. 28 EPW hearing on federal environmental review and permitting, calling for bipartisan reforms that make permitting more predictable.",
+   "stance": "supports",
+   "quote": {
+    "text": "remove the politics from permitting once and for all.",
+    "speaker": "Sen. Shelley Moore Capito"
+   },
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-01-16-pillsbury-ceq-finalizes-rescission-of-nepa-implementing-regulations",
+   "date": "2026-01-16",
+   "type": "analysis",
+   "outlet": "Pillsbury Winthrop Shaw Pittman",
+   "title": "CEQ Finalizes Rescission of NEPA Implementing Regulations",
+   "url": "https://www.pillsburylaw.com/en/news-and-insights/ceq-rescission-nepa-implementing-regulations.html",
+   "verified": true,
+   "summary": "Law firm client alert on CEQ's January 2026 final rule rescinding its NEPA regulations, saying agency-specific NEPA procedures now serve as the primary operational framework.",
+   "stance": "neutral",
+   "topics": [
+    "ceq",
+    "nepa"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-01-13-epa-proposes-cwa-section-401-rule",
+   "date": "2026-01-13",
+   "type": "gov_press_release",
+   "outlet": "U.S. Environmental Protection Agency",
+   "author": "Lee Zeldin",
+   "title": "EPA Proposes CWA Section 401 Rule to Streamline Permitting, Unleash Economic Growth, and Protect America’s Waterways",
+   "url": "https://www.epa.gov/newsreleases/epa-proposes-cwa-section-401-rule-streamline-permitting-unleash-economic-growth-and",
+   "verified": true,
+   "summary": "EPA proposes a Clean Water Act Section 401 rule it says would stop states from using water quality certification to block infrastructure for unrelated reasons; the release carries supportive statements from Sen. Capito and Rep. Graves.",
+   "stance": "supports",
+   "topics": [
+    "clean-water-act",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-01-08-federal-register-ceq-final-rule-removal-nepa-regulations",
+   "date": "2026-01-08",
+   "type": "gov_document",
+   "outlet": "Federal Register (Council on Environmental Quality)",
+   "title": "Removal of National Environmental Policy Act Implementing Regulations",
+   "url": "https://www.federalregister.gov/documents/2026/01/08/2026-00178/removal-of-national-environmental-policy-act-implementing-regulations",
+   "verified": true,
+   "summary": "CEQ's final rule (91 FR 618) adopts without changes its February 2025 interim final rule that removed the agency's NEPA implementing regulations from the Code of Federal Regulations.",
+   "stance": "neutral",
+   "topics": [
+    "ceq",
+    "nepa",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-01-07-x-whceq47-ceq-final-rule-nepa-regulations",
+   "date": "2026-01-07",
+   "type": "social_x",
+   "outlet": "X / @WHCEQ47",
+   "author": "White House CEQ",
+   "title": "NEWS: CEQ Fixes Decades-Long Permitting Failure Through Deregulation Today, CEQ affirmed the removal",
+   "url": "https://x.com/WHCEQ47/status/2008908645837250964",
+   "verified": true,
+   "summary": "The Council on Environmental Quality's account announces a final rule affirming removal of the agency's NEPA implementing regulations.",
+   "stance": "supports",
+   "topics": [
+    "ceq",
+    "nepa",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-01-07-white-house-ceq-removes-nepa-regulations",
+   "date": "2026-01-07",
+   "type": "gov_press_release",
+   "outlet": "The White House",
+   "title": "CEQ Fixes Decades-Long Permitting Failure Through Deregulation",
+   "url": "https://www.whitehouse.gov/articles/2026/01/ceq-fixes-decades-long-permitting-failure-through-deregulation/",
+   "verified": true,
+   "summary": "The White House announces CEQ has finalized the removal of its NEPA implementing regulations, completing the administration's effort to rescind the rules.",
+   "stance": "supports",
+   "quote": {
+    "text": "NEPA’s regulatory reign of terror has ended",
+    "speaker": "Katherine Scarlett, CEQ Chairman"
+   },
+   "topics": [
+    "ceq",
+    "nepa",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-12-23-utility-dive-senate-democrats-end-permitting-talks-offshore-wind",
+   "date": "2025-12-23",
+   "type": "news",
+   "outlet": "Utility Dive",
+   "author": "Ethan Howland",
+   "title": "Senate Democrats end permitting reform talks over offshore wind freeze",
+   "url": "https://www.utilitydive.com/news/senate-democrats-permitting-reform-offshore-wind/808580/",
+   "verified": true,
+   "summary": "Reports that Sens. Whitehouse and Heinrich ended permitting negotiations after the Trump administration halted work on five offshore wind projects totaling about 7 GW.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The illegal attacks on fully permitted renewable energy projects must be reversed if there is to be any chance that permitting talks resume",
+    "speaker": "Sens. Sheldon Whitehouse and Martin Heinrich"
+   },
+   "topics": [
+    "offshore",
+    "congress",
+    "white-house"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2025-12-19-bpc-whats-in-the-speed-act",
+   "date": "2025-12-19",
+   "type": "analysis",
+   "outlet": "Bipartisan Policy Center",
+   "author": "Marcel Akhame, Daniel Elizalde and Xan Fishman",
+   "title": "What’s in the SPEED Act?",
+   "url": "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/",
+   "verified": true,
+   "summary": "BPC issue brief, updated for the House-passed text, explaining the SPEED Act's changes to NEPA procedures and judicial review.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The SPEED Act marks the first major bipartisan permitting reform proposal in the 119th Congress.",
+    "speaker": "Bipartisan Policy Center"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "courts"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2025-12-19-bluesky-earthjusticeaction-speed-act-contaminated-air-water",
+   "date": "2025-12-19",
+   "type": "social_bluesky",
+   "outlet": "Bluesky / @earthjusticeaction.bsky.social",
+   "author": "Earthjustice Action",
+   "title": "\"The SPEED Act will only result in an abundance of contaminated air and water, dirty projects",
+   "url": "https://bsky.app/profile/earthjusticeaction.bsky.social/post/3maemzzwcd22b",
+   "verified": true,
+   "summary": "Earthjustice Action quotes opposition to the SPEED Act after House passage, saying it would mean more pollution and fewer chances to hold polluters accountable in court, and links AP coverage.",
+   "stance": "opposes",
+   "topics": [
+    "congress",
+    "courts"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2025-12-18-x-siegelscribe-house-passes-speed-act",
+   "date": "2025-12-18",
+   "type": "social_x",
+   "outlet": "X / @SiegelScribe",
+   "author": "Joshua Siegel",
+   "title": "SPEED story: House passes major GOP-led permitting overhaul after late drama.",
+   "url": "https://x.com/SiegelScribe/status/2001744497361981836",
+   "verified": true,
+   "summary": "Siegel posts his report on the House passing the SPEED Act and sending permitting legislation to the Senate.",
+   "stance": "reporting",
+   "topics": [
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2025-12-18-house-natural-resources-house-passes-speed-act",
+   "date": "2025-12-18",
+   "type": "gov_press_release",
+   "outlet": "House Committee on Natural Resources",
+   "author": "Bruce Westerman",
+   "title": "House Passes Historic Bipartisan Permitting Reform Legislation",
+   "url": "https://naturalresources.house.gov/news/documentsingle.aspx?DocumentID=418526",
+   "verified": true,
+   "summary": "The committee announces House passage of H.R. 4776, the SPEED Act, which it says modernizes NEPA to shorten reviews and curb litigation delays.",
+   "stance": "supports",
+   "quote": {
+    "text": "The passage of the SPEED Act is a win for America.",
+    "speaker": "Rep. Bruce Westerman, committee chairman"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "courts"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-12-18-eei-statement-on-house-passage-of-speed-act",
+   "date": "2025-12-18",
+   "type": "org_statement",
+   "outlet": "Edison Electric Institute",
+   "author": "Drew Maloney",
+   "title": "EEI Statement on House Passage of the SPEED Act",
+   "url": "https://www.eei.org/en/news/news/all/eei-statement-on-house-passage-of-the-speed-act",
+   "verified": true,
+   "summary": "EEI's president and CEO calls House passage of the SPEED Act an important first step toward cutting red tape and lowering customer costs, and says EEI will keep working on a more predictable and durable permitting system for all energy forms.",
+   "stance": "supports",
+   "quote": {
+    "text": "The House passage of the Speed Act is an important first step toward cutting red tape, lowering customer costs, and delivering reliable, affordable electricity to American families and businesses.",
+    "speaker": "Drew Maloney, EEI President and CEO"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2025-12-18-ee-news-house-approves-permitting-bill-after-tumultuous-week",
+   "date": "2025-12-18",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Kelsey Brugger and Amelia Davidson",
+   "title": "House approves permitting bill after tumultuous week",
+   "url": "https://www.eenews.net/articles/house-approves-permitting-bill-after-tumultuous-week/",
+   "verified": true,
+   "summary": "Reports the House passed the SPEED Act 221-196 with 11 Democrats in support, with Westerman and Huffman offering opposing views of the bill on the floor.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2025-12-18-bluesky-emilypont-house-passed-speed-act",
+   "date": "2025-12-18",
+   "type": "social_bluesky",
+   "outlet": "Bluesky / @emilypont.bsky.social",
+   "author": "Emily Pontecorvo",
+   "title": "The House passed the SPEED Act today, which would make sweeping changes to NEPA.",
+   "url": "https://bsky.app/profile/emilypont.bsky.social/post/3mac7yqhze22b",
+   "verified": true,
+   "summary": "Heatmap reporter Emily Pontecorvo notes the House passed the SPEED Act, that a last-minute tweak on previously approved renewable projects angered many, and that a Senate deal will not be easy.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "nepa",
+    "wind-solar"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2025-12-17-ee-news-how-republicans-saved-speed-act-from-oblivion",
+   "date": "2025-12-17",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Kelsey Brugger",
+   "title": "How Republicans saved the ‘SPEED Act’ from oblivion",
+   "url": "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/",
+   "verified": true,
+   "summary": "Reports House leaders agreed to amend the SPEED Act to win over offshore wind opponents who had threatened to block floor debate.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "offshore"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2025-12-09-heatmap-exclusive-key-senate-democrats-oppose-permitting-bill",
+   "date": "2025-12-09",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Jael Holzman",
+   "title": "Exclusive: Key Senate Democrats Oppose Permitting Bill",
+   "url": "https://heatmap.news/politics/schatz-whitehouse-heinrich-speed-act",
+   "verified": true,
+   "summary": "Reports that Sens. Heinrich, Whitehouse and Schatz came out against passing the House SPEED Act, citing how it would apply to renewable energy and transmission.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We are committed to streamlining the permitting process — but only if it ensures we can build out transmission and cheap, clean energy.",
+    "speaker": "Sens. Heinrich, Whitehouse and Schatz, joint statement"
+   },
+   "topics": [
+    "congress",
+    "transmission",
+    "wind-solar"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2025-12-04-x-siegelscribe-schatz-demands-as-house-takes-up-permitting",
+   "date": "2025-12-04",
+   "type": "social_x",
+   "outlet": "X / @SiegelScribe",
+   "author": "Joshua Siegel",
+   "title": "Key Senate Dems are laying out their demands as House takes up permitting.",
+   "url": "https://x.com/SiegelScribe/status/1996598962111889598",
+   "verified": true,
+   "summary": "Siegel reports Sen. Schatz says any bipartisan reform should address Trump's attacks on clean energy, including canceled or stalled projects, and should include transmission action.",
+   "stance": "reporting",
+   "quote": {
+    "text": "truly address Trump’s attacks on clean energy",
+    "speaker": "Sen. Brian Schatz, as quoted by Joshua Siegel"
+   },
+   "topics": [
+    "congress",
+    "wind-solar"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2025-11-21-conference-c2es-keeping-the-lights-on-permitting-reform",
+   "date": "2025-11-21",
+   "type": "conference",
+   "outlet": "Center for Climate and Energy Solutions (YouTube)",
+   "title": "Keeping the Lights On: Can permitting reform unlock affordable, reliable energy?",
+   "url": "https://www.youtube.com/watch?v=_myge2aE50A",
+   "verified": true,
+   "summary": "C2ES event (about 70 minutes) on permitting reform proposals before the 119th Congress and their implications for the power sector.",
+   "stance": "neutral",
+   "topics": [
+    "congress",
+    "transmission"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2025-11-20-we-act-environmental-groups-oppose-speed-act",
+   "date": "2025-11-20",
+   "type": "org_statement",
+   "outlet": "WE ACT for Environmental Justice",
+   "title": "Environmental Groups Speak Out Against Deregulatory SPEED Act",
+   "url": "https://weact.org/updates/environmental-groups-push-back-against-deregulatory-speed-act/",
+   "verified": true,
+   "summary": "WE ACT publishes statements from environmental and community organizations opposing H.R. 4776, the SPEED Act, saying it would limit environmental review and public input and speed approval of fossil fuel projects.",
+   "stance": "opposes",
+   "quote": {
+    "text": "The SPEED Act would do the opposite, adding more dangerous fossil fuel projects to the backyards of communities",
+    "speaker": "WE ACT for Environmental Justice"
+   },
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2025-11-20-acp-statement-house-natural-resources-committee-advancing-permitting-bill",
+   "date": "2025-11-20",
+   "type": "org_statement",
+   "outlet": "American Clean Power Association",
+   "author": "Jason Grumet",
+   "title": "ACP Statement on House Natural Resources Committee Advancing Permitting Bill",
+   "url": "https://cleanpower.org/news/acp-statement-on-house-natural-resources-committee-advancing-permitting-bill/",
+   "verified": true,
+   "summary": "ACP's CEO welcomes the 25-18 House Natural Resources Committee vote advancing the SPEED Act, citing its milestones and technology neutrality.",
+   "stance": "supports",
+   "quote": {
+    "text": "Today’s bipartisan action in the House Natural Resources Committee is an essential step toward modernizing American energy infrastructure.",
+    "speaker": "Jason Grumet, ACP CEO"
+   },
+   "topics": [
+    "congress",
+    "wind-solar"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2025-11-18-breakthrough-institute-fall-of-permitting-reform",
+   "date": "2025-11-18",
+   "type": "analysis",
+   "outlet": "The Breakthrough Institute",
+   "author": "Elizabeth McCarthy",
+   "title": "The Fall of Permitting Reform",
+   "url": "https://thebreakthrough.org/issues/environmental-regulatory-reform/the-fall-of-permitting-reform",
+   "verified": true,
+   "summary": "Breakthrough Institute analysis of why permitting reform has stalled despite broad agreement, citing Democratic wariness of NEPA changes and jurisdiction split across two House and two Senate committees.",
+   "stance": "neutral",
+   "quote": {
+    "text": "No chair can carry a comprehensive deal alone.",
+    "speaker": "Elizabeth McCarthy, Breakthrough Institute"
+   },
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2025-10-14-niskanen-permitting-reform-is-back-how-congress-can-get-it-done",
+   "date": "2025-10-14",
+   "type": "analysis",
+   "outlet": "Niskanen Center",
+   "author": "Rachel Levine",
+   "title": "Permitting reform is back, and here’s how Congress can get it done this time",
+   "url": "https://www.niskanencenter.org/permitting-reform-is-back-and-heres-how-congress-can-get-it-done-this-time/",
+   "verified": true,
+   "summary": "Niskanen argues Congress could pass a package combining support for clean-firm generation, common-sense NEPA updates and faster approval of major transmission lines, citing demand growth from AI.",
+   "stance": "supports",
+   "topics": [
+    "nepa",
+    "transmission",
+    "congress"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2025-08-20-catf-rolling-back-nepa-clean-energy-public-trust",
+   "date": "2025-08-20",
+   "type": "analysis",
+   "outlet": "Clean Air Task Force",
+   "author": "Sammie Firth",
+   "title": "Rolling back NEPA puts clean energy progress—and public trust—at risk",
+   "url": "https://www.catf.us/2025/08/rolling-back-nepa-puts-clean-energy-progress-and-public-trust-at-risk/",
+   "verified": true,
+   "summary": "CATF argues that agencies' new NEPA procedures, issued largely as nonbinding guidance after CEQ rescinded its regulations, limit public engagement and create uncertainty for clean energy projects.",
+   "stance": "mixed",
+   "topics": [
+    "nepa",
+    "ceq"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2025-07-30-youtube-forbes-capito-whitehouse-urge-support-permitting-reform",
+   "date": "2025-07-30",
+   "type": "youtube",
+   "outlet": "YouTube / Forbes Breaking News",
+   "title": "Shelley Moore Capito And Sheldon Whitehouse Urge Support For Federal Permitting Reform",
+   "url": "https://www.youtube.com/watch?v=qV0iDtRflDw",
+   "verified": true,
+   "summary": "Senate floor remarks in which Sens. Capito and Whitehouse speak in support of permitting reform, posted by Forbes Breaking News.",
+   "stance": "supports",
+   "topics": [
+    "congress"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-07-29-doi-curbs-preferential-treatment-wind-energy",
+   "date": "2025-07-29",
+   "type": "gov_press_release",
+   "outlet": "U.S. Department of the Interior",
+   "author": "Doug Burgum",
+   "title": "Department of the Interior Curbs Preferential Treatment for Wind Energy",
+   "url": "https://www.doi.gov/pressreleases/department-interior-curbs-preferential-treatment-wind-energy",
+   "verified": true,
+   "summary": "Interior announces policy measures, including Secretary's Order 3437, to end what it calls preferential treatment for wind and solar in departmental decision-making and to review offshore wind rules.",
+   "stance": "neutral",
+   "quote": {
+    "text": "These policy changes represent a commonsense approach to energy that puts Americans’ interests first",
+    "speaker": "Doug Burgum, Interior Secretary"
+   },
+   "topics": [
+    "wind-solar",
+    "offshore",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-07-28-federal-register-eo-14318-data-center-permitting",
+   "date": "2025-07-28",
+   "type": "gov_document",
+   "outlet": "Federal Register (Executive Office of the President)",
+   "title": "Accelerating Federal Permitting of Data Center Infrastructure",
+   "url": "https://www.federalregister.gov/documents/2025/07/28/2025-14212/accelerating-federal-permitting-of-data-center-infrastructure",
+   "verified": true,
+   "summary": "Executive Order 14318, signed July 23, 2025 and published in the Federal Register July 28, 2025, on accelerating federal permitting of data center infrastructure.",
+   "stance": "neutral",
+   "topics": [
+    "data-centers",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-07-28-earthjustice-statement-on-westerman-golden-permitting-reform-bill",
+   "date": "2025-07-28",
+   "type": "org_statement",
+   "outlet": "Earthjustice",
+   "title": "Earthjustice Statement on Westerman-Golden Permitting Reform Bill",
+   "url": "https://earthjustice.org/press/2025/earthjustice-statement-on-westerman-golden-permitting-reform-bill",
+   "verified": true,
+   "summary": "Earthjustice opposes the newly introduced SPEED Act, saying it would further the administration's fossil fuel push and bring more pollution and dirty air and water.",
+   "stance": "opposes",
+   "quote": {
+    "text": "This proposal will only result in more pollution, poorer health outcomes, and dirty air and water for everyone.",
+    "speaker": "Earthjustice"
+   },
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "environmental"
+  },
+  {
+   "id": "2025-06-30-doe-updated-nepa-procedures-end-permitting-paralysis",
+   "date": "2025-06-30",
+   "type": "gov_press_release",
+   "outlet": "U.S. Department of Energy",
+   "author": "Chris Wright",
+   "title": "Energy Secretary Announces Updated NEPA Procedures to End Permitting Paralysis and Unleash American Energy",
+   "url": "https://www.energy.gov/articles/energy-secretary-announces-updated-nepa-procedures-end-permitting-paralysis-and-unleash",
+   "verified": true,
+   "summary": "DOE announces updated NEPA procedures that it says cut red tape, with firm review deadlines and page limits for environmental reviews.",
+   "stance": "supports",
+   "quote": {
+    "text": "America can and will build big things again, but we must cut the red tape that has brought American energy innovation to a standstill",
+    "speaker": "Chris Wright, Energy Secretary"
+   },
+   "topics": [
+    "nepa"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-06-04-podcast-shift-key-supreme-court-double-edged-change-to-permitting-law",
+   "date": "2025-06-04",
+   "type": "podcast",
+   "outlet": "Heatmap News (Shift Key)",
+   "author": "Robinson Meyer and Jesse D. Jenkins",
+   "title": "The Supreme Court’s Double-Edged Change to Permitting Law",
+   "url": "https://heatmap.news/podcast/shift-key-s2-e42-nepa-kavanaugh",
+   "verified": true,
+   "summary": "Hosts Robinson Meyer and Jesse Jenkins discuss Justice Kavanaugh's NEPA opinion in the Seven County case with University of Michigan law professor Nicholas Bagley.",
+   "stance": "neutral",
+   "topics": [
+    "nepa",
+    "courts"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2025-05-29-supreme-court-seven-county-infrastructure-coalition-v-eagle-county",
+   "date": "2025-05-29",
+   "type": "court_filing",
+   "outlet": "Supreme Court of the United States (via Cornell LII)",
+   "title": "SEVEN COUNTY INFRASTRUCTURE COALITION v. EAGLE COUNTY",
+   "url": "https://www.law.cornell.edu/supremecourt/text/23-975",
+   "verified": true,
+   "summary": "The Court's 8-0 opinion by Justice Kavanaugh reversing the D.C. Circuit, holding that courts must give agencies substantial deference in NEPA cases and that NEPA review need not cover effects of separate upstream or downstream projects.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The D. C. Circuit failed to afford the Board the substantial judicial deference required in NEPA cases",
+    "speaker": "Supreme Court syllabus"
+   },
+   "topics": [
+    "nepa",
+    "courts"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-04-18-doi-adds-key-mining-projects-to-fast-41",
+   "date": "2025-04-18",
+   "type": "gov_press_release",
+   "outlet": "U.S. Department of the Interior",
+   "author": "Adam Suess",
+   "title": "Trump Administration Adds Key Mining Projects to FAST-41",
+   "url": "https://www.doi.gov/pressreleases/trump-administration-adds-key-mining-projects-fast-41",
+   "verified": true,
+   "summary": "Interior announces five critical minerals mining projects added to the FAST-41 transparency program to speed federal reviews.",
+   "stance": "supports",
+   "topics": [
+    "mining",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-02-25-federal-register-ceq-interim-final-rule-removal-nepa-regulations",
+   "date": "2025-02-25",
+   "type": "gov_document",
+   "outlet": "Federal Register (Council on Environmental Quality)",
+   "title": "Removal of National Environmental Policy Act Implementing Regulations",
+   "url": "https://www.federalregister.gov/documents/2025/02/25/2025-03014/removal-of-national-environmental-policy-act-implementing-regulations",
+   "verified": true,
+   "summary": "CEQ's interim final rule (90 FR 10610, effective April 11, 2025) removes its NEPA implementing regulations from the Code of Federal Regulations and requests comments.",
+   "stance": "neutral",
+   "topics": [
+    "ceq",
+    "nepa",
+    "white-house"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-02-19-youtube-epw-gop-capito-consensus-nepa-permitting-reform",
+   "date": "2025-02-19",
+   "type": "youtube",
+   "outlet": "YouTube / EPW GOP",
+   "author": "Sen. Shelley Moore Capito",
+   "title": "Chairman Capito Highlights Consensus on Need for NEPA and Permitting Reform Legislation",
+   "url": "https://www.youtube.com/watch?v=nae1YjVzFew",
+   "verified": true,
+   "summary": "Capito's remarks at an EPW hearing on improving federal environmental review and permitting processes, noting agreement across the committee on the need for legislation.",
+   "stance": "supports",
+   "topics": [
+    "nepa",
+    "congress"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-02-19-liuna-booker-testimony-energy-independence-frivolous-litigation",
+   "date": "2025-02-19",
+   "type": "org_statement",
+   "outlet": "LIUNA (Laborers’ International Union of North America)",
+   "author": "Brent Booker",
+   "title": "Unchain Nation’s March Toward Complete Energy Independence, LIUNA Says In Testimony Before Senate Environment and Public Works Committee",
+   "url": "https://www.liuna.org/news/story/unchain-nations-march-toward-complete-energy-independence-liuna-says-in-testimony-before-senate-environment-and-public-works-committee",
+   "verified": true,
+   "summary": "LIUNA tells the Senate EPW Committee that frivolous litigation and distortion of the regulatory process cost its members blue-collar jobs and block energy projects, and calls for permitting reform.",
+   "stance": "supports",
+   "quote": {
+    "text": "A project can be permitted, fully funded and ready to go one day, then on the next day, out of nowhere, it gets hit with a lawsuit",
+    "speaker": "Brent Booker, LIUNA General President"
+   },
+   "topics": [
+    "courts",
+    "nepa"
+   ],
+   "sector": "labor"
+  },
+  {
+   "id": "2025-02-19-epw-capito-highlights-consensus-on-nepa-permitting-reform-legislation",
+   "date": "2025-02-19",
+   "type": "gov_press_release",
+   "outlet": "Senate EPW Committee (Majority)",
+   "author": "Shelley Moore Capito",
+   "title": "Chairman Capito Highlights Consensus on Need for NEPA and Permitting Reform Legislation",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2025/2/chairman-capito-highlights-consensus-on-need-for-nepa-and-permitting-reform-legislation",
+   "verified": true,
+   "summary": "Capito's release on the Feb. 19, 2025 EPW hearing, where she questioned industry and organization witnesses about project delays and the need for legislation on federal environmental review.",
+   "stance": "supports",
+   "topics": [
+    "nepa",
+    "congress"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2025-01-27-morgan-lewis-executive-orders-move-oil-gas-permitting-reform-to-top-of-agenda",
+   "date": "2025-01-27",
+   "type": "analysis",
+   "outlet": "Morgan Lewis",
+   "title": "Executive Orders Move Oil & Gas Development, Permitting Reform to Top of Trump-Vance Energy Agenda",
+   "url": "https://www.morganlewis.com/pubs/2025/01/executive-orders-move-oil-gas-development-permitting-reform-to-top-of-trump-vance-energy-agenda",
+   "verified": true,
+   "summary": "Law firm client alert on the energy executive orders signed Jan. 20, 2025, which direct agencies to act on infrastructure and energy supply and to speed development of domestic fossil fuel resources.",
+   "stance": "neutral",
+   "topics": [
+    "white-house",
+    "fossil"
+   ],
+   "sector": "industry"
+  }
+ ]
+}

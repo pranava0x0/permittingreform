@@ -1,0 +1,33 @@
+{
+ "inference": {
+  "cached_only": true,
+  "checked": "2026-10-01",
+  "flagged": 12,
+  "input_sha256": "1c52d93587a5ea1c3475c72dfa8d28bb5fcd0c85bc16e200800c5e33098b8272",
+  "model": "sonnet",
+  "supported": 401,
+  "total": 540,
+  "unchecked": 127
+ },
+ "links": {
+  "blocked": 4,
+  "browser": 4,
+  "checked": "2026-10-01",
+  "dead": 0,
+  "error": 0,
+  "ok": 232,
+  "total": 236
+ },
+ "quotes": {
+  "bill_total": 112,
+  "bill_verified": 112,
+  "browser": 4,
+  "checked": "2026-10-01",
+  "missing": 0,
+  "near": 0,
+  "total": 128,
+  "unreachable": 0,
+  "unverifiable": 0,
+  "verified": 124
+ }
+}

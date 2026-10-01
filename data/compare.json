@@ -1,0 +1,1158 @@
+{
+ "generated": "2026-10-01",
+ "versions": [
+  {
+   "key": "current",
+   "label": "Current law",
+   "sub": "Baseline as of October 1, 2026."
+  },
+  {
+   "key": "epra",
+   "label": "EPRA 2024",
+   "sub": "S. 4753 (Manchin, Barrasso). Reported July 31, 2024. No floor vote.",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-118s4753rs/html/BILLS-118s4753rs.htm"
+  },
+  {
+   "key": "speed",
+   "label": "SPEED Act",
+   "sub": "H.R. 4776 (Westerman, Golden). Passed the House 221-196 on December 18, 2025.",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"
+  },
+  {
+   "key": "senate",
+   "label": "BAAJA",
+   "sub": "Released September 30, 2026.",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026"
+  }
+ ],
+ "groups": [
+  {
+   "id": "nepa",
+   "label": "Environmental review",
+   "rows": [
+    {
+     "id": "purpose",
+     "topic": "Purpose statement",
+     "current": {
+      "text": "States purposes only.",
+      "cite": "42 U.S.C. 4321"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "Adds that NEPA is 'a purely procedural statute' that 'does not mandate particular results'.",
+      "cite": "Sec. 2(a)"
+     },
+     "senate": {
+      "text": "Adds that NEPA prescribes a procedure that ends in an informational document, and that nothing in it mandates a particular outcome.",
+      "sections": [
+       "1101"
+      ]
+     }
+    },
+    {
+     "id": "mfa",
+     "topic": "Actions outside NEPA",
+     "current": {
+      "text": "Seven exclusions since 2023, including projects with minimal federal funding and loans where the agency lacks sufficient control.",
+      "cite": "42 U.S.C. 4336e(10)"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "Adds grants and cost-share awards, Farm Service Agency loans, and actions another agency already reviewed. Federal money alone cannot make an action major.",
+      "cite": "Sec. 2(f)"
+     },
+     "senate": {
+      "text": "Fourteen exclusions. Adds loan-only projects, routine actions up to $10 million, lifeline infrastructure repair, geothermal test wells, in-corridor grid and gas pipeline work, previously reviewed actions, and Corps projects up to a $50 million federal share.",
+      "sections": [
+       "1102",
+       "2102"
+      ]
+     }
+    },
+    {
+     "id": "scope",
+     "topic": "Effects an agency must study",
+     "current": {
+      "text": "'Reasonably foreseeable' effects. The Supreme Court held in 2025 that agencies need not study separate upstream or downstream projects.",
+      "cite": "42 U.S.C. 4332(2)(C); Seven County v. Eagle County"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "Only effects proximately caused by the project itself. Speculative effects and effects of separate projects are excluded.",
+      "cite": "Sec. 2(b), 2(f)"
+     },
+     "senate": {
+      "text": "No statutory limit on scope. Courts must give agencies substantial deference on the scope and contents of the document.",
+      "sections": [
+       "1110"
+      ]
+     }
+    },
+    {
+     "id": "skip",
+     "topic": "Ways to skip a full review",
+     "current": {
+      "text": "An agency's own categorical exclusions, or another agency's after consultation and public notice.",
+      "cite": "42 U.S.C. 4336(a), 4336c"
+     },
+     "epra": {
+      "text": "Orders new categorical exclusions for renewable, geothermal and grid work on federal land.",
+      "cite": "Secs. 206, 208, 209"
+     },
+     "speed": {
+      "text": "Adds exclusions enacted by Congress. Another statute or a state or tribal review can stand in for NEPA. A lead agency's finding that no document is needed binds other agencies.",
+      "cite": "Sec. 2(b), 2(e)"
+     },
+     "senate": {
+      "text": "Same substitutes and the same binding rule, plus combining several exclusions on one project and a public CEQ register of every exclusion.",
+      "sections": [
+       "1105",
+       "1108"
+      ]
+     }
+    },
+    {
+     "id": "deadlines",
+     "topic": "Review deadlines",
+     "current": {
+      "text": "EIS in 2 years and EA in 1 year, counted from the earliest of the agency's determination, a complete application, or the notice of intent. Page limits of 150 and 75.",
+      "cite": "42 U.S.C. 4336a(e), (g)"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "Keeps the 2023 deadlines. Adds 60 days to judge an application complete and 60 days to pick the level of review.",
+      "cite": "Sec. 2(c)"
+     },
+     "senate": {
+      "text": "Same 2-year and 1-year deadlines and page limits, counted from the earlier of the agency's determination or a complete application. Same two 60-day front-end clocks.",
+      "sections": [
+       "1106",
+       "1109"
+      ]
+     }
+    },
+    {
+     "id": "after",
+     "topic": "Decisions after the review",
+     "current": {
+      "text": "No general deadline for the record of decision or for other agencies' permits."
+     },
+     "epra": {
+      "text": "Project-specific clocks, such as 30 days to decide a renewable right-of-way once reviews are done.",
+      "cite": "Sec. 206"
+     },
+     "speed": {
+      "text": "Final agency action within 30 days of the finished EIS or EA.",
+      "cite": "Sec. 2(c)"
+     },
+     "senate": {
+      "text": "Finding of no significant impact within 7 days of an EA. Record of decision within 45 days of an EIS. All federal permits within 90 days, or 120 days for agencies outside the review.",
+      "sections": [
+       "1106"
+      ]
+     }
+    },
+    {
+     "id": "science",
+     "topic": "New science during a review",
+     "current": {
+      "text": "Agencies need not do new research unless it is essential and the cost and time are reasonable.",
+      "cite": "42 U.S.C. 4336(b)(3)"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "No new research after an application arrives. No duty to consider research published after the earlier of the application or the notice of intent.",
+      "cite": "Sec. 2(b), 2(c)"
+     },
+     "senate": {
+      "text": "No duty to consider research published after the notice of intent, and no delay to wait for it.",
+      "sections": [
+       "1106"
+      ]
+     }
+    },
+    {
+     "id": "alternatives",
+     "topic": "Alternatives",
+     "current": {
+      "text": "A reasonable range of alternatives that are feasible and meet the purpose and need.",
+      "cite": "42 U.S.C. 4332(2)(C)(iii)"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "The statement of purpose and need must meet the applicant's goals.",
+      "cite": "Sec. 2(c)"
+     },
+     "senate": {
+      "text": "The lead agency must drop any alternative that misses the purpose and need or the non-federal sponsor's goals. The no-action alternative stays.",
+      "sections": [
+       "1106"
+      ]
+     }
+    },
+    {
+     "id": "missed",
+     "topic": "Missed deadlines",
+     "current": {
+      "text": "A sponsor may petition a court, which can order the agency to act within 90 days.",
+      "cite": "42 U.S.C. 4336a(g)(3)"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "Extensions only with the applicant's approval. A sponsor that approved one cannot petition a court unless the agency misses the new deadline.",
+      "cite": "Sec. 2(c)"
+     },
+     "senate": {
+      "text": "Once a deadline is 60 days overdue the agency head may not travel more than 25 miles from the duty station. Senior staff must spend half the workweek on the review when the agency has defied a CEQ dispute order. Courts must rule on a sponsor's petition within 120 days and can order a decision in 60.",
+      "sections": [
+       "1106"
+      ]
+     }
+    },
+    {
+     "id": "ceq",
+     "topic": "CEQ's role",
+     "current": {
+      "text": "Designates a lead agency within 40 days when agencies disagree. CEQ removed its own NEPA regulations in 2025 and 2026.",
+      "cite": "42 U.S.C. 4336a(a)(5)"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "No structural change."
+     },
+     "senate": {
+      "text": "The Chairman names lead agencies in 21 days and settles interagency disputes by final orders no court can review. CEQ runs a public permitting tracker, an ePermit portal targeted for December 1, 2028, and a $20 million-a-year improvement fund.",
+      "sections": [
+       "1106",
+       "1121",
+       "1132",
+       "1133"
+      ]
+     }
+    },
+    {
+     "id": "programmatic",
+     "topic": "Programmatic reviews",
+     "current": {
+      "text": "Reliable for 5 years without reevaluation.",
+      "cite": "42 U.S.C. 4336b"
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "10 years. Agencies may also reuse an earlier review of a substantially similar action.",
+      "cite": "Sec. 2(d)"
+     },
+     "senate": {
+      "text": "10 years.",
+      "sections": [
+       "1107"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "courts",
+   "label": "Lawsuits",
+   "rows": [
+    {
+     "id": "sol",
+     "topic": "Time limit for a NEPA suit",
+     "current": {
+      "text": "6 years by default, 2 years for FAST-41 projects, 150 days for highways and transit.",
+      "cite": "28 U.S.C. 2401(a); 42 U.S.C. 4370m-6; 23 U.S.C. 139(l)"
+     },
+     "epra": {
+      "text": "150 days for energy and mineral project decisions.",
+      "cite": "Sec. 101"
+     },
+     "speed": {
+      "text": "150 days.",
+      "cite": "Sec. 3"
+     },
+     "senate": {
+      "text": "150 days.",
+      "sections": [
+       "1110"
+      ]
+     }
+    },
+    {
+     "id": "standing",
+     "topic": "Who can sue",
+     "current": {
+      "text": "Any party with standing that is adversely affected. No statutory comment requirement outside FAST-41."
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "Only a party that filed a substantive and unique comment and suffers direct harm. No challenges to the creation of a categorical exclusion.",
+      "cite": "Sec. 3"
+     },
+     "senate": {
+      "text": "Only a party alleging an actual or imminent injury amounting to direct harm. Where a comment period was offered, it must also have filed a detailed substantive comment.",
+      "sections": [
+       "1110"
+      ]
+     }
+    },
+    {
+     "id": "venue",
+     "topic": "Which court",
+     "current": {
+      "text": "District court, unless another statute sends the case to a court of appeals."
+     },
+     "epra": {
+      "text": "No change."
+     },
+     "speed": {
+      "text": "No change."
+     },
+     "senate": {
+      "text": "The court of appeals for the circuit where the project sits, with randomly assigned judges.",
+      "sections": [
+       "1110"
+      ]
+     }
+    },
+    {
+     "id": "remedy",
+     "topic": "Remedy for a flawed review",
+     "current": {
+      "text": "Courts may vacate the approval or enjoin the project."
+     },
+     "epra": {
+      "text": "Ordinary remedies. An agency gets no more than 180 days on remand.",
+      "cite": "Sec. 101"
+     },
+     "speed": {
+      "text": "Remand only, without vacatur or injunction, with a fix due in 180 days. Applies to earlier court orders too.",
+      "cite": "Sec. 3"
+     },
+     "senate": {
+      "text": "Remand only, without vacatur or injunction, with a fix due in 180 days. Work may continue during the remand. A preliminary injunction is possible when a different federal law is likely violated.",
+      "sections": [
+       "1110"
+      ]
+     }
+    },
+    {
+     "id": "court-clock",
+     "topic": "Court timetable",
+     "current": {
+      "text": "None."
+     },
+     "epra": {
+      "text": "Expedited consideration.",
+      "cite": "Sec. 101"
+     },
+     "speed": {
+      "text": "Judgment within 180 days of the agency record. Appeals decided in 180 days.",
+      "cite": "Sec. 3"
+     },
+     "senate": {
+      "text": "Final judgment 'as expeditiously as possible'. No fixed deadline.",
+      "sections": [
+       "1110"
+      ]
+     }
+    },
+    {
+     "id": "energy-sol",
+     "topic": "Suits over energy and mineral permits under any law",
+     "current": {
+      "text": "6 years by default."
+     },
+     "epra": {
+      "text": "150 days. Remand capped at 180 days.",
+      "cite": "Sec. 101"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "150 days. Remand capped at 180 days.",
+      "sections": [
+       "2201"
+      ]
+     }
+    },
+    {
+     "id": "other-sol",
+     "topic": "Suits under water, wildlife and historic preservation laws",
+     "current": {
+      "text": "6 years, in district court, with ordinary remedies."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "150 days for section 404 permits, biological opinions and section 106 decisions. Biological opinions go to the D.C. Circuit. Remand without vacatur for section 404 and section 106.",
+      "sections": [
+       "1205",
+       "1305",
+       "2301"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "certainty",
+   "label": "Permit certainty",
+   "rows": [
+    {
+     "id": "revoke",
+     "topic": "Revoking an issued permit",
+     "current": {
+      "text": "Allowed under each statute and permit, subject to ordinary court review."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Barred except for a court order, breach, fraud, a specific and immediate harm, or the holder's request. Review in the court of appeals. The bill sets out no money damages.",
+      "cite": "Sec. 2(b)"
+     },
+     "senate": {
+      "text": "Barred, with the same five exceptions, for permits in effect on or after September 16, 2026. The agency carries the burden by clear and convincing evidence. A winning sponsor recovers fees, delay costs and 25 to 50 percent of project costs.",
+      "sections": [
+       "1401"
+      ]
+     }
+    },
+    {
+     "id": "reopened",
+     "topic": "Approvals reopened since January 2025",
+     "current": {
+      "text": "Agencies may ask a court to send their own approvals back."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Exempt. The bill does not apply to any action an agency moved to reconsider after January 20, 2025.",
+      "cite": "Sec. 4"
+     },
+     "senate": {
+      "text": "No exemption. Where a stop-work order from the year before enactment was enjoined, the same judge hears any new attempt.",
+      "sections": [
+       "1401"
+      ]
+     }
+    },
+    {
+     "id": "disparate",
+     "topic": "Unequal treatment of energy types",
+     "current": {
+      "text": "No cause of action."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Applicants in 46 named project types, plus any similar type a court certifies, can sue over an intentional pattern of delays or denials aimed at their project type. Damages run from 50 to 100 percent of expected construction cost.",
+      "sections": [
+       "1402"
+      ]
+     }
+    },
+    {
+     "id": "non-nepa",
+     "topic": "Permits that need no environmental document",
+     "current": {
+      "text": "No general deadline."
+     },
+     "epra": {
+      "text": "No general deadline. Clocks for particular permits only, such as wind, solar and geothermal applications.",
+      "cite": "Secs. 206, 208"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Decision within 1 year of a complete application for the listed project types, enforceable in court.",
+      "sections": [
+       "1402",
+       "1403"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "statutes",
+   "label": "Water, wildlife and historic sites",
+   "rows": [
+    {
+     "id": "401",
+     "topic": "State water quality certification",
+     "current": {
+      "text": "States certify compliance with water quality standards and other appropriate state law within a reasonable period of up to 1 year.",
+      "cite": "33 U.S.C. 1341"
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Scope limited to water quality requirements. Denials and conditions need clear and convincing evidence. One-year cap, extendable only if the applicant and the state both agree in writing. Interstate pipelines and transmission lines get 9 months and are reviewed only for direct point-source discharges.",
+      "sections": [
+       "1202"
+      ]
+     }
+    },
+    {
+     "id": "404",
+     "topic": "Clean Water Act permits",
+     "current": {
+      "text": "EPA may veto a fill site at any time. Nationwide permits and state discharge permits last 5 years. A 2020 court ruling required wildlife consultation to reissue a nationwide permit.",
+      "cite": "33 U.S.C. 1342, 1344"
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "EPA veto limited to the period between a complete application and the permit. Nationwide and discharge permits last 10 years. Nationwide permits that keep their preconstruction requirements are reissued without consultation, and fills under 2 acres count as minimal.",
+      "sections": [
+       "1203",
+       "1204"
+      ]
+     }
+    },
+    {
+     "id": "esa",
+     "topic": "Endangered species consultation",
+     "current": {
+      "text": "Formal consultation in 90 days, extendable. Only the federal wildlife agencies issue biological opinions.",
+      "cite": "16 U.S.C. 1536"
+     },
+     "epra": {
+      "text": "No change to consultation. Interior's approval of tribal right-of-way rules is exempt from the Act.",
+      "cite": "Sec. 205"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "60 days, and no later than the NEPA deadline absent extraordinary circumstances. States may take over consultation under an agreement with Interior. $150 million a year authorized.",
+      "sections": [
+       "1302",
+       "1304",
+       "1307"
+      ]
+     }
+    },
+    {
+     "id": "106",
+     "topic": "Historic preservation review",
+     "current": {
+      "text": "Agencies 'take into account' effects on historic properties under Advisory Council rules. No statutory deadlines. Visual and audible effects count.",
+      "cite": "54 U.S.C. 306108; 36 CFR part 800"
+     },
+     "epra": {
+      "text": "No change to the review. Interior's approval of tribal right-of-way rules is exempt from it.",
+      "cite": "Sec. 205"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Statutory deadlines from start to finish. Adverse effects limited to direct alteration. Loans and grants alone do not trigger review. An agency may proceed when a preservation officer is silent for 30 days.",
+      "sections": [
+       "2301"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "grid",
+   "label": "Transmission and the grid",
+   "rows": [
+    {
+     "id": "backstop",
+     "topic": "Federal siting of interstate lines",
+     "current": {
+      "text": "FERC can site a line only inside a corridor the Energy Department has designated, and only where a state lacks authority, has held an application for more than 1 year, or has set uneconomic conditions.",
+      "cite": "16 U.S.C. 824p"
+     },
+     "epra": {
+      "text": "FERC may permit lines of 100 kilovolts and up without a corridor.",
+      "cite": "Sec. 401"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "FERC shall permit lines of 230 kilovolts and up without a corridor. The state's clock starts on the day the application is filed with the state. Developers of lines of 345 kilovolts and up may file at FERC and the state together.",
+      "sections": [
+       "2101"
+      ]
+     }
+    },
+    {
+     "id": "planning",
+     "topic": "Regional and interregional planning",
+     "current": {
+      "text": "Regional planning required by FERC Orders 1000 and 1920. Interregional work is coordination only."
+     },
+     "epra": {
+      "text": "Joint interregional plans required within 2 years. FERC resolves disputes and can impose a plan.",
+      "cite": "Sec. 402"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Regional and interregional planning processes required within 2 years. Order No. 1920 compliance counts for the regional part. FERC can extend a late filing by 6 months.",
+      "sections": [
+       "2103"
+      ]
+     }
+    },
+    {
+     "id": "cost",
+     "topic": "Who pays for new lines",
+     "current": {
+      "text": "Beneficiaries pay, roughly in proportion to benefits, under FERC and court precedent."
+     },
+     "epra": {
+      "text": "Beneficiaries pay under the cost-causation principle. No involuntary charges for trivial benefits.",
+      "cite": "Secs. 401, 402"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Same rule, with costs 'at least roughly commensurate' with six listed benefits.",
+      "sections": [
+       "2101",
+       "2103"
+      ]
+     }
+    },
+    {
+     "id": "corridor",
+     "topic": "Upgrades in existing corridors",
+     "current": {
+      "text": "Covered by agency categorical exclusions in some cases."
+     },
+     "epra": {
+      "text": "Interior and Agriculture adopt categorical exclusions within 180 days.",
+      "cite": "Sec. 209"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Reconductoring, voltage increases and added circuits in existing rights-of-way are outside NEPA and section 106 by statute. So are gas pipeline looping and compression in existing corridors.",
+      "sections": [
+       "2102",
+       "2214"
+      ]
+     }
+    },
+    {
+     "id": "datacenters",
+     "topic": "Data centers and other large loads",
+     "current": {
+      "text": "No federal rule. Costs are set in state rate cases and utility tariffs."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Loads of 20 megawatts and up pay the full incremental cost of serving them. States may auction access, require new generation, and require curtailable service. The Energy Information Administration must report data center load.",
+      "sections": [
+       "2107",
+       "2114"
+      ]
+     }
+    },
+    {
+     "id": "queue",
+     "topic": "Interconnection queues",
+     "current": {
+      "text": "Cluster studies under FERC Order No. 2023."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Interconnection planned with transmission over 20 years, with published per-megawatt prices and nonrefundable deposits. Automation required in queue studies. Grid data due in 15 days.",
+      "sections": [
+       "2106",
+       "2110",
+       "2111"
+      ]
+     }
+    },
+    {
+     "id": "gets",
+     "topic": "Advanced transmission technologies",
+     "current": {
+      "text": "Planners must consider them under Order No. 1920."
+     },
+     "epra": {
+      "text": "Advanced conductors eligible for backstop permits.",
+      "cite": "Sec. 401"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Utilities must deploy them when benefits exceed costs, or face a lower return on equity.",
+      "sections": [
+       "2109"
+      ]
+     }
+    },
+    {
+     "id": "rofr",
+     "topic": "Right of first refusal",
+     "current": {
+      "text": "FERC removed the federal right in 2011 and allowed it again for some replacement lines in Order No. 1920."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Banned for regionally or interregionally planned lines.",
+      "sections": [
+       "2105"
+      ]
+     }
+    },
+    {
+     "id": "local",
+     "topic": "Local transmission spending",
+     "current": {
+      "text": "Little federal review of projects a utility plans for itself."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "States can refer a utility to FERC. Remedies include a lower return and fines up to $5 million per facility.",
+      "sections": [
+       "2104"
+      ]
+     }
+    },
+    {
+     "id": "der",
+     "topic": "Customer-sited batteries and generators",
+     "current": {
+      "text": "Wholesale market access by rule under FERC Order No. 2222."
+     },
+     "epra": {
+      "text": "Not addressed."
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Statutory wholesale market access for aggregations of 100 kilowatts and up, with a ban on double payment.",
+      "sections": [
+       "2108"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "resources",
+   "label": "Energy on federal land and water",
+   "rows": [
+    {
+     "id": "oilgas",
+     "topic": "Oil and gas",
+     "current": {
+      "text": "A federal drilling permit is required whenever a well taps federal minerals. Five routine activities get a rebuttable categorical exclusion.",
+      "cite": "30 U.S.C. 226; 42 U.S.C. 15942"
+     },
+     "epra": {
+      "text": "No federal permit where the federal mineral share is under 50 percent on non-federal land. Lease nominations offered as submitted. Drilling permits last 4 years.",
+      "cite": "Secs. 201 to 203"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "No federal permit where the federal mineral share is under 50 percent on non-federal land. The five routine activities are outside NEPA entirely.",
+      "sections": [
+       "2211",
+       "2229"
+      ]
+     }
+    },
+    {
+     "id": "coal",
+     "topic": "Coal",
+     "current": {
+      "text": "Leasing at Interior's discretion, with no decision deadlines."
+     },
+     "epra": {
+      "text": "Deadlines for coal lease reviews and decisions.",
+      "cite": "Sec. 204"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "No leasing provisions. Coal appears only in the list of project types protected from unequal treatment.",
+      "sections": [
+       "1402"
+      ]
+     }
+    },
+    {
+     "id": "renewables",
+     "topic": "Wind, solar and storage on public land",
+     "current": {
+      "text": "No application deadlines. A 2020 goal of 25 gigawatts by 2025.",
+      "cite": "43 U.S.C. 3004"
+     },
+     "epra": {
+      "text": "30-day clocks, small-project exclusions, and a goal of 50 gigawatts by 2030.",
+      "cite": "Secs. 206, 207"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "The same 30-day clocks and small-project exclusions. No gigawatt goal.",
+      "sections": [
+       "2213"
+      ]
+     }
+    },
+    {
+     "id": "offshore",
+     "topic": "Offshore leasing",
+     "current": {
+      "text": "Offshore wind leasing is tied to oil and gas lease sales by the Inflation Reduction Act.",
+      "cite": "43 U.S.C. 3006(b)(2)"
+     },
+     "epra": {
+      "text": "One oil and gas sale and one wind sale every year through 2029, 400,000 acres of wind a year, and a 30-gigawatt wind goal.",
+      "cite": "Secs. 301, 302"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "No lease sale mandates. Changes Interior's offshore wind test to 'unreasonable interference' with other uses and orders planned offshore transmission routes.",
+      "sections": [
+       "2251",
+       "2252"
+      ]
+     }
+    },
+    {
+     "id": "lng",
+     "topic": "LNG exports",
+     "current": {
+      "text": "Energy Department public-interest review with no deadline.",
+      "cite": "15 U.S.C. 717b"
+     },
+     "epra": {
+      "text": "Decision within 90 days of the environmental review, or the application is deemed granted.",
+      "cite": "Secs. 601, 602"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "No export provisions. LNG projects appear in the list of project types protected from unequal treatment.",
+      "sections": [
+       "1402"
+      ]
+     }
+    },
+    {
+     "id": "geothermal",
+     "topic": "Geothermal",
+     "current": {
+      "text": "Lease sales at least every 2 years.",
+      "cite": "30 U.S.C. 1003"
+     },
+     "epra": {
+      "text": "Annual lease sales, 30-day permit decisions, an ombudsman, and exclusions for test wells.",
+      "cite": "Sec. 208"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "All of that, plus a per-plant royalty clock, no federal permit on minority-interest land, processing during lawsuits, and a NEPA exemption for routine drilling.",
+      "sections": [
+       "2221",
+       "2222",
+       "2223",
+       "2224",
+       "2225",
+       "2226",
+       "2229"
+      ]
+     }
+    },
+    {
+     "id": "hydro",
+     "topic": "Hydropower",
+     "current": {
+      "text": "Federal land agencies set mandatory license conditions.",
+      "cite": "16 U.S.C. 797(e)"
+     },
+     "epra": {
+      "text": "License extensions, a market barriers report, and aligned timetables.",
+      "cite": "Secs. 701 to 703"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "The market barriers report, a limit on mandatory conditions, no approval for routine maintenance, and a 1-year deadline for FERC to decide small hydrokinetic licenses.",
+      "sections": [
+       "2231",
+       "2232",
+       "2233",
+       "2234"
+      ]
+     }
+    },
+    {
+     "id": "mining",
+     "topic": "Hardrock mining",
+     "current": {
+      "text": "Mill sites are capped at 5 acres each. A 2022 appeals court ruling barred waste storage on claims without valuable minerals.",
+      "cite": "30 U.S.C. 42"
+     },
+     "epra": {
+      "text": "As many mill sites as reasonably necessary, with fees paid into a cleanup fund.",
+      "cite": "Sec. 210"
+     },
+     "speed": {
+      "text": "Not addressed."
+     },
+     "senate": {
+      "text": "Same as EPRA 2024.",
+      "sections": [
+       "2215"
+      ]
+     }
+    },
+    {
+     "id": "tribal",
+     "topic": "Tribal lands",
+     "current": {
+      "text": "Interior must approve rights-of-way across tribal land.",
+      "cite": "25 U.S.C. 323 to 328"
+     },
+     "epra": {
+      "text": "Tribes may grant their own rights-of-way under approved tribal rules.",
+      "cite": "Sec. 205"
+     },
+     "speed": {
+      "text": "No NEPA suits over tribal trust resource projects except by the tribe. The no-action alternative is presumed harmful for tribe-initiated projects.",
+      "cite": "Secs. 2(b), 3"
+     },
+     "senate": {
+      "text": "Both: tribal rights-of-way, the limit on NEPA suits, and the no-action presumption.",
+      "sections": [
+       "2212",
+       "1110",
+       "1106"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "added": [
+  {
+   "text": "Money damages when an agency unlawfully pulls a permit, and a cause of action for unequal treatment of 46 named project types.",
+   "sections": [
+    "1401",
+    "1402"
+   ]
+  },
+  {
+   "text": "Cost rules for data centers of 20 megawatts and up, and federal data on their electricity use.",
+   "sections": [
+    "2107",
+    "2114"
+   ]
+  },
+  {
+   "text": "Clean Water Act changes: state certification, EPA's veto, permit terms, nationwide permits.",
+   "sections": [
+    "1201",
+    "1202",
+    "1203",
+    "1204",
+    "1205"
+   ]
+  },
+  {
+   "text": "Endangered Species Act changes: shorter consultation, state assumption, a definition of best available data.",
+   "sections": [
+    "1301",
+    "1302",
+    "1304"
+   ]
+  },
+  {
+   "text": "A rewrite of historic preservation review under section 106.",
+   "sections": [
+    "2301"
+   ]
+  },
+  {
+   "text": "CEQ dispute orders, sanctions for missed deadlines, a public tracker and the ePermit portal.",
+   "sections": [
+    "1106",
+    "1121",
+    "1132"
+   ]
+  },
+  {
+   "text": "NEPA exemptions for gas pipeline work in existing corridors and for routine oil, gas and geothermal drilling.",
+   "sections": [
+    "2102",
+    "2229"
+   ]
+  },
+  {
+   "text": "Grid rules: local transmission oversight, the right-of-first-refusal ban, joint interconnection planning, mandatory advanced technologies, grid data access.",
+   "sections": [
+    "2104",
+    "2105",
+    "2106",
+    "2109",
+    "2111"
+   ]
+  },
+  {
+   "text": "Wholesale market access for aggregated customer-sited storage and generation.",
+   "sections": [
+    "2108"
+   ]
+  }
+ ],
+ "dropped": [
+  {
+   "from": "speed",
+   "text": "The limit on effects an agency may study to those proximately caused by the project.",
+   "cite": "Sec. 2(b), 2(f)"
+  },
+  {
+   "from": "speed",
+   "text": "The exemption for approvals an agency moved to reconsider after January 20, 2025.",
+   "cite": "Sec. 4"
+  },
+  {
+   "from": "speed",
+   "text": "The bar on suits challenging the creation of a categorical exclusion.",
+   "cite": "Sec. 3"
+  },
+  {
+   "from": "speed",
+   "text": "Fixed 180-day deadlines for court judgments and appeals.",
+   "cite": "Sec. 3"
+  },
+  {
+   "from": "speed",
+   "text": "Applying the remand-only rule to court orders issued before enactment.",
+   "cite": "Sec. 3"
+  },
+  {
+   "from": "speed",
+   "text": "The ban on withdrawing a finished environmental document, and on seeking a voluntary remand without the sponsor's consent.",
+   "cite": "Sec. 2(b)"
+  },
+  {
+   "from": "epra",
+   "text": "Annual offshore oil and gas and offshore wind lease sales through 2029, and the 30-gigawatt offshore wind goal.",
+   "cite": "Secs. 301, 302"
+  },
+  {
+   "from": "epra",
+   "text": "The 90-day deadline for LNG export decisions.",
+   "cite": "Secs. 601, 602"
+  },
+  {
+   "from": "epra",
+   "text": "The goal of 50 gigawatts of renewable energy on federal land by 2030.",
+   "cite": "Sec. 207"
+  },
+  {
+   "from": "epra",
+   "text": "Onshore oil and gas lease nomination changes and 4-year drilling permits.",
+   "cite": "Secs. 201, 202"
+  },
+  {
+   "from": "epra",
+   "text": "Deadlines for coal lease decisions.",
+   "cite": "Sec. 204"
+  },
+  {
+   "from": "epra",
+   "text": "Reliability assessments of other agencies' proposed rules.",
+   "cite": "Sec. 501"
+  },
+  {
+   "from": "epra",
+   "text": "FERC's power to settle disputes between planning regions and impose an interregional plan.",
+   "cite": "Sec. 402"
+  },
+  {
+   "from": "epra",
+   "text": "Hydropower license extensions and aligned licensing timetables.",
+   "cite": "Secs. 701, 703"
+  }
+ ]
+}

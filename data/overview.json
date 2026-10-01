@@ -1,0 +1,260 @@
+{
+ "status": {
+  "points": [
+   {
+    "text": "Sponsors: Shelley Moore Capito (R-W.Va.) and Sheldon Whitehouse (D-R.I.) of Environment and Public Works; Mike Lee (R-Utah) and Martin Heinrich (D-N.M.) of Energy and Natural Resources.",
+    "source": {
+     "label": "Senate EPW Committee",
+     "url": "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026"
+    }
+   },
+   {
+    "text": "As reported September 30, no vote was expected before the November 3, 2026 midterm elections. Lee said he expected passage in the subsequent lame-duck session.",
+    "source": {
+     "label": "Associated Press",
+     "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects"
+    }
+   },
+   {
+    "text": "The White House said the bill would “deliver transformative policies to lower Americans’ energy and housing costs”.",
+    "source": {
+     "label": "Associated Press",
+     "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects"
+    }
+   },
+   {
+    "text": "Language on wind and solar permits is still being negotiated with the White House. The sponsors expect amendments before the vote.",
+    "source": {
+     "label": "Deseret News",
+     "url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/"
+    }
+   },
+   {
+    "text": "The House passed its own bill, the SPEED Act, 221-196 on December 18, 2025. The two chambers would have to agree on one text.",
+    "source": {
+     "label": "House Natural Resources Committee",
+     "url": "https://naturalresources.house.gov/news/documentsingle.aspx?DocumentID=418526"
+    }
+   }
+  ]
+ },
+ "headlines": [
+  {
+   "id": "deadlines",
+   "title": "Review deadlines",
+   "text": "Sets 2-year EIS and 1-year assessment deadlines, followed by deadlines for agency decisions. Extensions and enforcement conditions apply; the travel sanction limits official trips beyond 25 miles after a qualifying deadline is 60 days overdue.",
+   "sections": [
+    "1106",
+    "1109"
+   ]
+  },
+  {
+   "id": "lawsuits",
+   "title": "Lawsuit limits",
+   "text": "Generally allows 150 days for NEPA challenges in a court of appeals, with direct-harm and conditional comment requirements. Limits remedies to remand, with a fix due within 180 days; preliminary injunctions remain available under specified conditions involving other law.",
+   "sections": [
+    "1110",
+    "2201"
+   ]
+  },
+  {
+   "id": "certainty",
+   "title": "Permit certainty",
+   "text": "Restricts interference with permits in effect on or after September 16, 2026, subject to listed exceptions including the holder’s request. If the agency fails to meet its burden in court, the sponsor is entitled to specified relief, including a court-determined 25 to 50 percent of incurred project costs not otherwise recovered.",
+   "sections": [
+    "1401",
+    "1402"
+   ]
+  },
+  {
+   "id": "datacenters",
+   "title": "Data center costs",
+   "text": "Newly connected data-center loads of 20 megawatts or more must cover their incremental electricity costs. Previously approved service arrangements remain in effect. The bill recognizes state authority to require new generation.",
+   "sections": [
+    "2107",
+    "2114"
+   ]
+  },
+  {
+   "id": "transmission",
+   "title": "Transmission siting",
+   "text": "FERC permits interstate lines of 230 kilovolts and up when a state has not decided within a year, and planning regions must plan lines with their neighbors.",
+   "sections": [
+    "2101",
+    "2103"
+   ]
+  },
+  {
+   "id": "exemptions",
+   "title": "Actions outside NEPA",
+   "text": "Excludes specified loan-only actions, qualifying work in existing grid and pipeline corridors, and listed oil, gas and geothermal activities from NEPA. Each exclusion has its own scope and conditions.",
+   "sections": [
+    "1102",
+    "2102",
+    "2229"
+   ]
+  },
+  {
+   "id": "water",
+   "title": "Clean Water Act",
+   "text": "Narrows state water-quality certification review and generally limits it to one year; extensions require written agreement. Extends nationwide permits to 10 years.",
+   "sections": [
+    "1202",
+    "1204"
+   ]
+  },
+  {
+   "id": "species",
+   "title": "Endangered Species Act",
+   "text": "Cuts the standard formal consultation period from 90 days to 60, with extension rules. Lets approved state programs assume specified consultation responsibilities; applicants can opt for federal consultation.",
+   "sections": [
+    "1302",
+    "1304"
+   ]
+  },
+  {
+   "id": "historic",
+   "title": "Historic preservation",
+   "text": "Narrows the effects covered by historic-preservation review and sets deadlines. Adds a 150-day challenge window and limits remedies, with separate rules for missed deadlines.",
+   "sections": [
+    "2301",
+    "2302"
+   ]
+  },
+  {
+   "id": "digital",
+   "title": "Digital permitting",
+   "text": "Requires a tracker for reviews subject to NEPA’s EIS requirement and targets December 1, 2028 for an interagency ePermit system, to the maximum extent practicable.",
+   "sections": [
+    "1121",
+    "1132"
+   ]
+  }
+ ],
+ "clocks": [
+  {
+   "clock": "2 years",
+   "what": "Environmental impact statement",
+   "section": "1106",
+   "quote": "not later than the date that is 2 years after the earlier of"
+  },
+  {
+   "clock": "1 year",
+   "what": "Environmental assessment",
+   "section": "1106",
+   "quote": "is 1 year after the earlier of"
+  },
+  {
+   "clock": "60 + 60 days",
+   "what": "Application judged complete, then level of review chosen",
+   "section": "1109",
+   "quote": "not later than 60 days after the date on which the project sponsor submits the application"
+  },
+  {
+   "clock": "45 days",
+   "what": "Record of decision after the impact statement",
+   "section": "1106",
+   "quote": "later than 45 days after the date on which the lead agency publishes an environmental impact statement"
+  },
+  {
+   "clock": "90 days",
+   "what": "Decisions on outstanding federal authorizations after the EIS or assessment; extensions may apply",
+   "section": "1106",
+   "quote": "later than 90 days after the date on which the lead agency publishes an environmental impact statement"
+  },
+  {
+   "clock": "150 days",
+   "what": "Window to file a NEPA lawsuit",
+   "section": "1110",
+   "quote": "is filed not later than 150 days after the date on which"
+  },
+  {
+   "clock": "180 days",
+   "what": "Agency fix after a court remand",
+   "section": "1110",
+   "quote": "which shall not exceed 180 days after the date on which the order of the court was entered"
+  },
+  {
+   "clock": "60 days",
+   "what": "Endangered Species Act formal consultation",
+   "section": "1302",
+   "quote": "by striking “90-day” and inserting “60-day”"
+  },
+  {
+   "clock": "1 year",
+   "what": "State water quality certification (9 months for interstate pipelines and power lines)",
+   "section": "1202",
+   "quote": "not to exceed 1 year from the date of receipt of the certification application"
+  },
+  {
+   "clock": "1 year",
+   "what": "Energy permits that need no environmental document",
+   "section": "1402",
+   "quote": "not later than 1 year after the date on which the latest of the covered applications is determined to be complete"
+  },
+  {
+   "clock": "180 days",
+   "what": "Agencies rewrite their NEPA procedures",
+   "section": "1103",
+   "quote": "Not later than 180 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026, each agency of the Federal Government shall make any changes"
+  },
+  {
+   "clock": "December 1, 2028",
+   "what": "ePermit interagency data system, to the maximum extent practicable",
+   "section": "1121",
+   "quote": "not later than December 1, 2028, the Chairman shall develop and implement the ePermit unified interagency data system"
+  }
+ ],
+ "money": [
+  {
+   "amount": "$200 million a year",
+   "what": "Historic Preservation Fund",
+   "years": "2027 to 2036",
+   "section": "2302",
+   "quote": "$200,000,000 for each of fiscal years 2027 through 2036"
+  },
+  {
+   "amount": "$150 million a year",
+   "what": "Endangered Species Act consultation and state programs",
+   "years": "2027 to 2031",
+   "section": "1307",
+   "quote": "There is authorized to be appropriated $150,000,000 for each of fiscal years 2027 through 2031"
+  },
+  {
+   "amount": "$50 million a year",
+   "what": "Coastal State Fund at the National Fish and Wildlife Foundation",
+   "years": "2028 to 2032",
+   "section": "1308",
+   "quote": "There is authorized to be appropriated to carry out the program $50,000,000 for each of fiscal years 2028 through 2032"
+  },
+  {
+   "amount": "$20 million a year",
+   "what": "Permitting Improvement Fund for agency staff",
+   "years": "2027 to 2033",
+   "section": "1133",
+   "quote": "There is authorized to be appropriated to the Fund $20,000,000 for each of fiscal years 2027 through 2033"
+  },
+  {
+   "amount": "$20 million a year",
+   "what": "Tribal historic preservation databases",
+   "years": "2027 to 2030",
+   "section": "2302",
+   "quote": "$20,000,000 for each of fiscal years 2027 through 2030"
+  },
+  {
+   "amount": "$20 million a year",
+   "what": "Local permitting for rooftop solar, batteries and chargers",
+   "years": "2026 to 2031",
+   "section": "2108",
+   "quote": "$20,000,000 for each of fiscal years 2026 through 2031"
+  },
+  {
+   "amount": "$5 million a year",
+   "what": "CEQ's NEPA work",
+   "years": "every year",
+   "section": "1121",
+   "quote": "There is authorized to be appropriated to carry out this Act $5,000,000 for each fiscal year"
+  }
+ ],
+ "money_note": "These are authorizations. Congress would still have to appropriate the money."
+}

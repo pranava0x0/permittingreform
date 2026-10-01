@@ -1,0 +1,21 @@
+{
+ "nepa": "NEPA",
+ "ceq": "CEQ",
+ "categorical-exclusions": "Exclusions",
+ "courts": "Lawsuits",
+ "permit-certainty": "Permit certainty",
+ "clean-water-act": "Clean Water Act",
+ "esa": "Endangered Species Act",
+ "historic-preservation": "Historic preservation",
+ "transmission": "Transmission",
+ "data-centers": "Data centers",
+ "wind-solar": "Wind and solar",
+ "offshore": "Offshore",
+ "fossil": "Oil, gas and pipelines",
+ "mining": "Mining",
+ "geothermal": "Geothermal",
+ "hydropower": "Hydropower",
+ "tribal": "Tribal",
+ "congress": "Congress",
+ "white-house": "White House"
+}

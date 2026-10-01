@@ -1,0 +1,1946 @@
+{
+ "generated": "2026-10-01",
+ "events": [
+  {
+   "id": "2023-06-03-fiscal-responsibility-act-nepa-amendments",
+   "date": "2023-06-03",
+   "title": "Fiscal Responsibility Act writes NEPA deadlines and page limits into law (BUILDER Act)",
+   "branch": "congress_house",
+   "summary": "Public Law 118-5, signed June 3, 2023, added NEPA Section 107 through its Title III 'Builder Act' (Sec. 321): lead-agency rules, a two-year deadline for environmental impact statements, page limits of 150 pages (300 for extraordinary complexity) for EISs and 75 for environmental assessments, and sponsor-prepared documents. Title III also covered energy storage permitting and the Mountain Valley Pipeline.",
+   "significance": "Put NEPA deadlines and page limits in statute, the baseline that EO 14154 told CEQ and agencies to meet.",
+   "actors": [
+    "Joe Biden (President)",
+    "118th Congress"
+   ],
+   "topics": [
+    "nepa"
+   ],
+   "milestone": false,
+   "background": true,
+   "sources": [
+    {
+     "title": "Public Law 118-5, Fiscal Responsibility Act of 2023, Title III (Permitting Reform), Sec. 321",
+     "publisher": "U.S. Government Publishing Office (GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/PLAW-118publ5/pdf/PLAW-118publ5.pdf",
+     "date": "2023-06-03",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "1106"
+   ]
+  },
+  {
+   "id": "2024-07-31-senate-enr-advances-energy-permitting-reform-act",
+   "date": "2024-07-31",
+   "title": "Senate ENR Committee advances the Manchin-Barrasso Energy Permitting Reform Act, 15-4",
+   "branch": "congress_senate",
+   "summary": "The Senate Energy and Natural Resources Committee advanced S. 4753, the Energy Permitting Reform Act of 2024, by 15-4; Sens. Sanders, Wyden, Hirono and Hawley voted no. Chairman Joe Manchin and ranking member John Barrasso had released it on July 22 and introduced it July 23. It never received a floor vote and died with the 118th Congress.",
+   "significance": "Paired limits on lawsuits with transmission and fossil-fuel permitting, the trade the 2026 Senate bill returns to.",
+   "actors": [
+    "Joe Manchin (Senator, I-W.Va.; then ENR Chairman)",
+    "John Barrasso (Senator, R-Wyo.; then ENR ranking member)",
+    "Senate Energy and Natural Resources Committee"
+   ],
+   "topics": [
+    "nepa",
+    "courts",
+    "transmission",
+    "fossil"
+   ],
+   "milestone": false,
+   "background": true,
+   "sources": [
+    {
+     "title": "Senate Energy & Natural Resources Committee Passes Permitting Bill",
+     "publisher": "American Public Power Association",
+     "url": "https://www.publicpower.org/periodical/article/senate-energy-natural-resources-committee-passes-permitting-bill",
+     "date": "2024-08-01",
+     "verified": true
+    },
+    {
+     "title": "Energy Chairman Manchin's Permitting Bill Moves Through Committee in Careful Balancing Act",
+     "publisher": "Holland & Knight",
+     "url": "https://www.hklaw.com/en/insights/publications/2024/08/energy-chairman-manchins-permitting-bill-moves-through-committee",
+     "date": "2024-08-05",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "meaningful and reasonable changes when it comes to both energy production and emissions reductions",
+    "speaker": "Joe Manchin (as quoted by Holland & Knight)",
+    "source_url": "https://www.hklaw.com/en/insights/publications/2024/08/energy-chairman-manchins-permitting-bill-moves-through-committee"
+   },
+   "sections": [
+    "2101",
+    "2201"
+   ]
+  },
+  {
+   "id": "2024-11-12-marin-audubon-dc-circuit-ceq-authority",
+   "date": "2024-11-12",
+   "title": "D.C. Circuit panel says CEQ has no authority to issue binding NEPA regulations",
+   "branch": "court",
+   "summary": "In Marin Audubon Society v. FAA, a divided D.C. Circuit panel vacated an air tour management plan for four Bay Area parks. In Part II, Senior Judge Randolph wrote that NEPA gives CEQ no authority to issue binding regulations; Chief Judge Srinivasan dissented from that part.",
+   "significance": "Gave the incoming administration a judicial basis to argue that CEQ's 1978 NEPA regulations were not binding law.",
+   "actors": [
+    "A. Raymond Randolph (Senior Circuit Judge, D.C. Circuit)",
+    "Sri Srinivasan (Chief Judge, D.C. Circuit)",
+    "Council on Environmental Quality",
+    "Federal Aviation Administration"
+   ],
+   "topics": [
+    "ceq",
+    "nepa",
+    "courts"
+   ],
+   "milestone": false,
+   "background": true,
+   "sources": [
+    {
+     "title": "Marin Audubon Society v. FAA, No. 23-1067 (slip opinion)",
+     "publisher": "U.S. Court of Appeals for the D.C. Circuit",
+     "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf",
+     "date": "2024-11-12",
+     "verified": true
+    },
+    {
+     "title": "D.C. Circuit Upends CEQ's NEPA Rules",
+     "publisher": "Yale Journal on Regulation (Notice & Comment)",
+     "url": "https://www.yalejreg.com/nc/d-c-circuit-upends-ceqs-nepa-rules/",
+     "date": "2024-11-12",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "No statutory language states or suggests that Congress empowered CEQ to issue rules binding on other agencies—that is, to act as a regulatory agency rather than as an advisory agency.",
+    "speaker": "Senior Judge A. Raymond Randolph (opinion for the court)",
+    "source_url": "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf"
+   }
+  },
+  {
+   "id": "2025-01-20-eo-14154-unleashing-american-energy",
+   "date": "2025-01-20",
+   "title": "EO 14154 'Unleashing American Energy' directs CEQ to propose rescinding its NEPA rules",
+   "branch": "executive",
+   "summary": "On his first day, President Trump signed EO 14154, which revoked Carter-era EO 11991 (the basis for CEQ's binding NEPA regulations) and ordered the CEQ Chairman to issue NEPA guidance and propose rescinding CEQ's regulations within 30 days. It also told agencies to prioritize 'efficiency and certainty' in permitting and to streamline judicial review of NEPA.",
+   "significance": "Started the executive-branch rollback of the NEPA regulatory framework that permitting legislation would later try to codify or replace.",
+   "actors": [
+    "Donald J. Trump (President)",
+    "Council on Environmental Quality",
+    "Executive Office of the President"
+   ],
+   "topics": [
+    "nepa",
+    "ceq",
+    "courts"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Unleashing American Energy (Executive Order 14154)",
+     "publisher": "The White House",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/",
+     "date": "2025-01-20",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "propose rescinding CEQ’s NEPA regulations found at 40 CFR 1500 et seq.",
+    "speaker": "Executive Order 14154, Sec. 5(b)",
+    "source_url": "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/"
+   }
+  },
+  {
+   "id": "2025-01-20-eo-14156-national-energy-emergency",
+   "date": "2025-01-20",
+   "title": "EO 14156 declares a national energy emergency and calls for emergency permitting",
+   "branch": "executive",
+   "summary": "EO 14156 declared a national emergency under the National Emergencies Act and told agencies to use emergency and other lawful authorities to expedite energy projects. It singled out the Army Corps' emergency permitting provisions, ESA emergency consultation regulations, and the ESA Committee.",
+   "significance": "Agencies cited it for their compressed emergency reviews of energy and minerals projects.",
+   "actors": [
+    "Donald J. Trump (President)",
+    "Department of the Interior",
+    "U.S. Army Corps of Engineers"
+   ],
+   "topics": [
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "fossil"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Declaring a National Energy Emergency (Executive Order 14156)",
+     "publisher": "The White House",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/01/declaring-a-national-energy-emergency/",
+     "date": "2025-01-20",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2025-01-20-presidential-memo-wind-leasing-withdrawal",
+   "date": "2025-01-20",
+   "title": "Presidential memo halts new wind leasing and orders review of wind permitting",
+   "branch": "executive",
+   "summary": "A presidential memorandum temporarily withdrew all Outer Continental Shelf areas from new or renewed wind leasing and ordered a review of existing wind leases. It also barred agencies from issuing new or renewed approvals, rights of way, permits, leases or loans for onshore and offshore wind projects pending a review of federal wind permitting practices.",
+   "significance": "Opened the administration's wind-permitting freeze, which later became a major sticking point for Senate Democrats in permitting talks.",
+   "actors": [
+    "Donald J. Trump (President)",
+    "Department of the Interior",
+    "Department of Energy",
+    "Environmental Protection Agency"
+   ],
+   "topics": [
+    "offshore",
+    "wind-solar",
+    "nepa"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Temporary Withdrawal of All Areas on the Outer Continental Shelf from Offshore Wind Leasing and Review of the Federal Government's Leasing and Permitting Practices for Wind Projects",
+     "publisher": "The White House",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/01/temporary-withdrawal-of-all-areas-on-the-outer-continental-shelf-from-offshore-wind-leasing-and-review-of-the-federal-governments-leasing-and-permitting-practices-for-wind-projects/",
+     "date": "2025-01-20",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2025-02-03-iowa-v-ceq-north-dakota-vacates-phase-2-rule",
+   "date": "2025-02-03",
+   "title": "North Dakota court vacates CEQ's 2024 NEPA rule, finds CEQ lacks rulemaking authority",
+   "branch": "court",
+   "summary": "In Iowa v. Council on Environmental Quality, the U.S. District Court for the District of North Dakota granted summary judgment to the plaintiff states and vacated CEQ's 2024 'Phase 2' NEPA rule. The court found that CEQ lacks statutory authority to promulgate binding rules implementing NEPA.",
+   "significance": "A second court ruling that CEQ's NEPA rules lacked legal force; CEQ cited it when it removed its regulations three weeks later.",
+   "actors": [
+    "U.S. District Court for the District of North Dakota",
+    "Council on Environmental Quality",
+    "State of Iowa and co-plaintiff states"
+   ],
+   "topics": [
+    "ceq",
+    "nepa",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Removal of National Environmental Policy Act Implementing Regulations (interim final rule, 90 FR 10610)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf",
+     "date": "2025-02-25",
+     "verified": true
+    },
+    {
+     "title": "A Hard Look at CEQ's Hard Luck: North Dakota Court Decision Accelerates NEPA Regulations' Rapid Fall",
+     "publisher": "Troutman Pepper Locke, Environmental Law & Policy blog",
+     "url": "https://www.environmentallawandpolicy.com/2025/02/a-hard-look-at-ceqs-hard-luck-north-dakota-court-decision-accelerates-nepa-regulations-rapid-fall/",
+     "date": "2025-02-06",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2025-02-25-ceq-interim-final-rule-removes-nepa-regulations",
+   "date": "2025-02-25",
+   "title": "CEQ interim final rule removes its NEPA implementing regulations from the CFR",
+   "branch": "agency",
+   "summary": "CEQ published an interim final rule (90 FR 10610) removing its NEPA regulations, 40 CFR parts 1500-1508, effective April 11, 2025, with comments due March 27, 2025. The rule cited EO 14154, Marin Audubon and Iowa v. CEQ.",
+   "significance": "Ended the government-wide NEPA regulations in place since 1978, leaving each agency to rely on its own procedures.",
+   "actors": [
+    "Katherine R. Scarlett (Chairman, Council on Environmental Quality)",
+    "Council on Environmental Quality"
+   ],
+   "topics": [
+    "ceq",
+    "nepa"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Removal of National Environmental Policy Act Implementing Regulations (interim final rule, 90 FR 10610)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf",
+     "date": "2025-02-25",
+     "verified": true
+    },
+    {
+     "title": "CEQ Rescinded Rule Implementing NEPA",
+     "publisher": "Harvard Law School Environmental & Energy Law Program",
+     "url": "https://eelp.law.harvard.edu/tracker/ceq-finalized-phase-2-rule-implementing-national-environmental-policy-act/",
+     "date": "2026-06-29",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "1103"
+   ]
+  },
+  {
+   "id": "2025-04-11-ferc-order-1920-b-rehearing",
+   "date": "2025-04-11",
+   "title": "FERC Order No. 1920-B affirms the long-term transmission planning rule on rehearing",
+   "branch": "agency",
+   "summary": "FERC issued Order No. 1920-B, resolving rehearing of Order No. 1920-A (November 21, 2024), which had expanded states' role in the 20-year regional transmission planning rule first issued in May 2024. It clarified that transmission providers need not plan for unenrolled non-jurisdictional providers and kept the requirements tied to state-agreed cost allocation methods. Court challenges are consolidated in the Fourth Circuit.",
+   "significance": "Kept the federal long-term transmission planning framework in place while the 2026 Senate bill proposes statutory changes to transmission planning and siting.",
+   "actors": [
+    "Federal Energy Regulatory Commission",
+    "Relevant State Entities (state regulators)"
+   ],
+   "topics": [
+    "transmission",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Order No. 1920-B Affirms FERC's Long-Term Transmission Planning and Cost Allocation Rule",
+     "publisher": "Troutman Pepper Locke, Washington Energy Report",
+     "url": "https://www.troutmanenergyreport.com/2025/04/order-no-1920-b-affirms-fercs-long-term-transmission-planning-and-cost-allocation-rule/",
+     "date": "2025-04-23",
+     "verified": true
+    },
+    {
+     "title": "Regional Transmission Planning Rule",
+     "publisher": "Harvard Law School Environmental & Energy Law Program",
+     "url": "https://eelp.law.harvard.edu/tracker/regional-transmission-planning-rule/",
+     "date": "2025-04-11",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2025-04-15-presidential-memo-permitting-technology",
+   "date": "2025-04-15",
+   "title": "Presidential memo orders permitting technology plan and CEQ Permitting Innovation Center",
+   "branch": "executive",
+   "summary": "A presidential memorandum told agencies to make maximum use of technology in environmental review and permitting. It ordered the CEQ Chairman to issue a Permitting Technology Action Plan within 45 days and to establish an interagency Permitting Innovation Center within 15 days.",
+   "significance": "Put CEQ in charge of a government-wide data and technology standard for NEPA and permit applications, a digital track alongside the regulatory rollbacks.",
+   "actors": [
+    "Donald J. Trump (President)",
+    "Katherine R. Scarlett (Chairman, Council on Environmental Quality)",
+    "National Energy Dominance Council"
+   ],
+   "topics": [
+    "ceq",
+    "nepa"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Updating Permitting Technology for the 21st Century (presidential memorandum)",
+     "publisher": "The White House",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/04/updating-permitting-technology-for-the-21st-century",
+     "date": "2025-04-15",
+     "verified": true
+    },
+    {
+     "title": "Memorandum: CEQ Establishment of Permitting Innovation Center",
+     "publisher": "The White House / Council on Environmental Quality",
+     "url": "https://www.whitehouse.gov/wp-content/uploads/2025/04/Memorandum-CEQ-Establishment-of-Permitting-Innovation-Center_4.30.2025.pdf",
+     "date": "2025-04-30",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "1121"
+   ]
+  },
+  {
+   "id": "2025-04-16-empire-wind-stop-work-order",
+   "date": "2025-04-16",
+   "title": "Interior orders construction stopped on Empire Wind off New York",
+   "branch": "agency",
+   "summary": "Interior Secretary Doug Burgum ordered Equinor to stop construction of Empire Wind 1, an 810-MW offshore wind project approved in 2024, alleging the Biden administration approved it without sufficient analysis or consultation among agencies. The project was more than 30% complete.",
+   "significance": "A permitted project was halted mid-construction. Democrats later demanded permit certainty in statute.",
+   "actors": [
+    "Doug Burgum (Secretary of the Interior)",
+    "Equinor",
+    "Kathy Hochul (Governor of New York)"
+   ],
+   "topics": [
+    "offshore",
+    "wind-solar"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Trump allows New York offshore wind project after apparent gas pipeline compromise with state",
+     "publisher": "CNBC",
+     "url": "https://www.cnbc.com/2025/05/20/trump-allows-new-york-offshore-wind-project-after-apparent-gas-pipeline-compromise-with-state.html",
+     "date": "2025-05-20",
+     "verified": true
+    },
+    {
+     "title": "Stop work order lifted, Empire Wind project resumes construction",
+     "publisher": "Equinor",
+     "url": "https://www.equinor.com/news/20250519-empire-wind-project-resumes-construction",
+     "date": "2025-05-19",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "without sufficient analysis or consultation among the relevant agencies as relates to the potential effects.",
+    "speaker": "Doug Burgum (stop-work order, as quoted by CNBC)",
+    "source_url": "https://www.cnbc.com/2025/05/20/trump-allows-new-york-offshore-wind-project-after-apparent-gas-pipeline-compromise-with-state.html"
+   },
+   "sections": [
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-04-23-interior-emergency-permitting-procedures",
+   "date": "2025-04-23",
+   "title": "Interior adopts emergency permitting procedures with 14- to 28-day energy reviews",
+   "branch": "agency",
+   "summary": "Citing the national energy emergency, Interior announced alternative NEPA procedures for energy and critical-minerals projects, with targets of 14 days for environmental assessments and 28 days for environmental impact statements. It also set expedited ESA Section 7 consultation and a seven-day Section 106 comment window under the National Historic Preservation Act.",
+   "significance": "Turned the energy emergency declaration into compressed review timelines for oil, gas, coal, uranium, geothermal and critical-minerals projects on Interior-managed lands and waters.",
+   "actors": [
+    "Doug Burgum (Secretary of the Interior)",
+    "U.S. Department of the Interior"
+   ],
+   "topics": [
+    "nepa",
+    "esa",
+    "historic-preservation",
+    "fossil"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Department of the Interior Implements Emergency Permitting Procedures to Strengthen Domestic Energy Supply",
+     "publisher": "U.S. Department of the Interior",
+     "url": "https://www.doi.gov/pressreleases/department-interior-implements-emergency-permitting-procedures-strengthen-domestic",
+     "date": "2025-04-23",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "By reducing a multi-year permitting process down to just 28 days, the Department will lead with urgency, resolve, and a clear focus on strengthening the nation’s energy independence.",
+    "speaker": "Doug Burgum",
+    "source_url": "https://www.doi.gov/pressreleases/department-interior-implements-emergency-permitting-procedures-strengthen-domestic"
+   }
+  },
+  {
+   "id": "2025-05-19-empire-wind-stop-work-lifted",
+   "date": "2025-05-19",
+   "title": "Interior lifts Empire Wind stop-work order; Burgum cites New York pipeline capacity",
+   "branch": "agency",
+   "summary": "BOEM told Equinor the April 16 stop-work order had been lifted and construction could resume. New York Gov. Kathy Hochul said Burgum and President Trump had agreed to let the project proceed; Burgum said he was encouraged by Hochul's willingness to move forward on pipeline capacity, while Hochul's statement did not mention gas.",
+   "significance": "The order ended through talks with the administration; no court ruled on it.",
+   "actors": [
+    "Doug Burgum (Secretary of the Interior)",
+    "Kathy Hochul (Governor of New York)",
+    "Anders Opedal (CEO, Equinor)",
+    "Bureau of Ocean Energy Management"
+   ],
+   "topics": [
+    "offshore",
+    "wind-solar"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Stop work order lifted, Empire Wind project resumes construction",
+     "publisher": "Equinor",
+     "url": "https://www.equinor.com/news/20250519-empire-wind-project-resumes-construction",
+     "date": "2025-05-19",
+     "verified": true
+    },
+    {
+     "title": "Trump allows New York offshore wind project after apparent gas pipeline compromise with state",
+     "publisher": "CNBC",
+     "url": "https://www.cnbc.com/2025/05/20/trump-allows-new-york-offshore-wind-project-after-apparent-gas-pipeline-compromise-with-state.html",
+     "date": "2025-05-20",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "I would like to thank President Trump for finding a solution that saves thousands of American jobs and provides for continued investments in energy infrastructure in the U.S.",
+    "speaker": "Anders Opedal (CEO, Equinor)",
+    "source_url": "https://www.equinor.com/news/20250519-empire-wind-project-resumes-construction"
+   },
+   "sections": [
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-05-28-ceq-withdraws-ghg-nepa-guidance",
+   "date": "2025-05-28",
+   "title": "CEQ withdraws Biden-era NEPA guidance on greenhouse gas emissions and climate change",
+   "branch": "agency",
+   "summary": "CEQ published a notice withdrawing its January 9, 2023 interim guidance on considering greenhouse gas emissions and climate change in NEPA reviews, effective May 28, 2025. It said the guidance was inconsistent with EO 14154 and cited that order's criticism of the social cost of carbon.",
+   "significance": "Removed the federal guidance on how agencies should consider greenhouse gas emissions and climate change in NEPA reviews.",
+   "actors": [
+    "Katherine R. Scarlett (Chairman, Council on Environmental Quality)",
+    "Jomar Maldonado (Director for NEPA, Council on Environmental Quality)"
+   ],
+   "topics": [
+    "ceq",
+    "nepa"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Withdrawal of National Environmental Policy Act Guidance on Consideration of Greenhouse Gas Emissions and Climate Change (90 FR 22472)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-05-28/pdf/2025-09569.pdf",
+     "date": "2025-05-28",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "CEQ has concluded that the January 9, 2023, Interim Guidance is inconsistent with these policy objectives.",
+    "speaker": "Council on Environmental Quality (Federal Register notice)",
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2025-05-28/pdf/2025-09569.pdf"
+   }
+  },
+  {
+   "id": "2025-05-29-seven-county-v-eagle-county",
+   "date": "2025-05-29",
+   "title": "Supreme Court, 8-0 in the judgment, narrows NEPA review in Seven County v. Eagle County",
+   "branch": "court",
+   "summary": "The Supreme Court reversed the D.C. Circuit's vacatur of the Surface Transportation Board's environmental impact statement for the Uinta Basin Railway. Justice Kavanaugh's opinion says courts must give agencies substantial deference on NEPA reviews and that agencies need not analyze effects of separate upstream or downstream projects; Justice Gorsuch took no part.",
+   "significance": "Made NEPA challenges harder to win. The Senate bill writes the same deference into the statute.",
+   "actors": [
+    "Brett Kavanaugh (Associate Justice, U.S. Supreme Court)",
+    "Seven County Infrastructure Coalition",
+    "Eagle County, Colorado",
+    "Surface Transportation Board"
+   ],
+   "topics": [
+    "nepa",
+    "courts"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Seven County Infrastructure Coalition v. Eagle County, No. 23-975 (opinion)",
+     "publisher": "Legal Information Institute, Cornell Law School (Supreme Court text)",
+     "url": "https://www.law.cornell.edu/supremecourt/text/23-975",
+     "date": "2025-05-29",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "Simply stated, NEPA is a procedural cross-check, not a substantive roadblock. The goal of the law is to inform agency decisionmaking, not to paralyze it.",
+    "speaker": "Justice Brett Kavanaugh (opinion of the Court)",
+    "source_url": "https://www.law.cornell.edu/supremecourt/text/23-975"
+   },
+   "sections": [
+    "1110"
+   ]
+  },
+  {
+   "id": "2025-07-03-agencies-issue-interim-final-nepa-rules",
+   "date": "2025-07-03",
+   "title": "Interior, DOE, USDA, DOT and Army Corps replace NEPA rules with streamlined procedures",
+   "branch": "agency",
+   "summary": "Following CEQ's rescission, the Departments of the Interior, Energy, Agriculture, Transportation (FHWA, FRA, FTA), Commerce and Defense, including the Army Corps, published interim final rules or new procedures on July 3, 2025; several moved most NEPA procedures into non-binding guidance. FERC's revised NEPA rules took effect August 18, 2025.",
+   "significance": "Shifted NEPA implementation from government-wide binding rules to agency-specific procedures that, per Harvard's tracker, potentially exclude more projects from review and limit public comment.",
+   "actors": [
+    "Department of the Interior",
+    "Department of Energy",
+    "Department of Agriculture",
+    "Department of Transportation",
+    "U.S. Army Corps of Engineers",
+    "Federal Energy Regulatory Commission"
+   ],
+   "topics": [
+    "nepa",
+    "ceq",
+    "categorical-exclusions"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "National Environmental Policy Act Implementing Regulations (Interior interim final rule, 90 FR 29498)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-07-03/pdf/2025-12433.pdf",
+     "date": "2025-07-03",
+     "verified": true
+    },
+    {
+     "title": "Agencies Significantly Narrowed NEPA Requirements, Changes Effective Immediately",
+     "publisher": "Harvard Law School Environmental & Energy Law Program",
+     "url": "https://eelp.law.harvard.edu/tracker/rollback-agencies-significantly-narrowed-nepa-requirements-changes-effective-immediately/",
+     "date": "2026-04-03",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2025-07-04-one-big-beautiful-bill-act-nepa-opt-in-fee",
+   "date": "2025-07-04",
+   "title": "One Big Beautiful Bill Act adds a paid, faster NEPA review option (Sec. 60026)",
+   "branch": "executive",
+   "summary": "Public Law 119-21, signed July 4, 2025, added NEPA Section 112 through Sec. 60026: a project sponsor can pay a fee of 125 percent of anticipated costs to have an environmental assessment finished within 180 days of payment or an EIS within one year of the notice of intent. Sec. 60023 rescinded unobligated environmental review implementation funds, and the law also ended key wind and solar tax incentives.",
+   "significance": "Added a statutory option to pay for a faster NEPA review, which CEQ's September 2025 guidance put into practice.",
+   "actors": [
+    "Donald J. Trump (President)",
+    "119th Congress",
+    "Council on Environmental Quality"
+   ],
+   "topics": [
+    "nepa",
+    "ceq",
+    "wind-solar"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Public Law 119-21 (One Big Beautiful Bill Act), Sec. 60023 and Sec. 60026",
+     "publisher": "U.S. Government Publishing Office (GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/pdf/PLAW-119publ21.pdf",
+     "date": "2025-07-04",
+     "verified": true
+    },
+    {
+     "title": "Trump targets solar and wind with tighter federal permitting in another blow to renewable industry",
+     "publisher": "CNBC",
+     "url": "https://www.cnbc.com/2025/07/17/solar-wind-permit-interior-department-burgum-trump.html",
+     "date": "2025-07-17",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2025-07-15-interior-memo-secretary-review-wind-solar",
+   "date": "2025-07-15",
+   "title": "Interior memo routes every wind and solar decision to the Secretary for final review",
+   "branch": "agency",
+   "summary": "An Interior memorandum dated July 15, 2025 required all department decisions, actions, consultations and undertakings on wind and solar facilities to go through the Executive Secretariat and Regulatory Affairs, then the Office of the Deputy Secretary, with final review by the Secretary's office. Interior published it on July 17.",
+   "significance": "Gave the Secretary's office a final-review role over wind and solar approvals on federal land, a policy Democratic senators later asked Burgum to rescind.",
+   "actors": [
+    "Doug Burgum (Secretary of the Interior)",
+    "U.S. Department of the Interior",
+    "Jason Grumet (CEO, American Clean Power Association)"
+   ],
+   "topics": [
+    "wind-solar",
+    "nepa",
+    "esa"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Department of the Interior Issues Flurry of Actions Targeting Wind and Solar Energy Projects",
+     "publisher": "K&L Gates",
+     "url": "https://www.klgates.com/Department-of-the-Interior-Issues-Flurry-of-Actions-Targeting-Wind-and-Solar-Energy-Projects-8-25-2025",
+     "date": "2025-08-25",
+     "verified": true
+    },
+    {
+     "title": "Trump targets solar and wind with tighter federal permitting in another blow to renewable industry",
+     "publisher": "CNBC",
+     "url": "https://www.cnbc.com/2025/07/17/solar-wind-permit-interior-department-burgum-trump.html",
+     "date": "2025-07-17",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "This isn't oversight. It's obstruction that will needlessly harm the fastest growing sources of electric power",
+    "speaker": "Jason Grumet (CEO, American Clean Power Association)",
+    "source_url": "https://www.cnbc.com/2025/07/17/solar-wind-permit-interior-department-burgum-trump.html"
+   }
+  },
+  {
+   "id": "2025-07-23-eo-14318-data-center-permitting",
+   "date": "2025-07-23",
+   "title": "EO 14318 directs faster federal permitting for data centers and their power supply",
+   "branch": "executive",
+   "summary": "EO 14318 defined a 'Data Center Project' as a facility needing more than 100 MW of new load for AI uses and told agencies to speed environmental reviews, including by identifying existing categorical exclusions and working with CEQ on new ones. It also called for FAST-41 transparency-project status through the Permitting Council and revoked Biden's EO 14141 on AI infrastructure.",
+   "significance": "Tied federal permitting to data-center construction. The Senate bill addresses who pays for their power lines.",
+   "actors": [
+    "Donald J. Trump (President)",
+    "Council on Environmental Quality",
+    "Federal Permitting Improvement Steering Council",
+    "Office of Science and Technology Policy"
+   ],
+   "topics": [
+    "data-centers",
+    "nepa",
+    "categorical-exclusions"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Accelerating Federal Permitting of Data Center Infrastructure (Executive Order 14318)",
+     "publisher": "The White House",
+     "url": "https://www.whitehouse.gov/presidential-actions/2025/07/accelerating-federal-permitting-of-data-center-infrastructure/",
+     "date": "2025-07-23",
+     "verified": true
+    },
+    {
+     "title": "Accelerating Federal Permitting of Data Center Infrastructure (90 FR 35385)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-07-28/pdf/2025-14212.pdf",
+     "date": "2025-07-28",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2107",
+    "2114"
+   ]
+  },
+  {
+   "id": "2025-07-25-speed-act-introduced-hr-4776",
+   "date": "2025-07-25",
+   "title": "Westerman and Golden introduce the SPEED Act (H.R. 4776) to rewrite NEPA",
+   "branch": "congress_house",
+   "summary": "House Natural Resources Chairman Bruce Westerman (R-Ark.) and Rep. Jared Golden (D-Maine) introduced the Standardizing Permitting and Expediting Economic Development (SPEED) Act. The bill clarifies what counts as a 'major federal action,' simplifies NEPA documents and sets judicial review limits including a 150-day deadline for filing claims.",
+   "significance": "Became the House's vehicle for a NEPA overhaul, which passed the chamber in December 2025.",
+   "actors": [
+    "Bruce Westerman (Representative, R-Ark.; Chairman, House Natural Resources Committee)",
+    "Jared Golden (Representative, D-Maine)"
+   ],
+   "topics": [
+    "nepa",
+    "courts"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Westerman and Golden Introduce Bipartisan Permitting Reform Legislation",
+     "publisher": "House Committee on Natural Resources",
+     "url": "https://naturalresources.house.gov/news/documentsingle.aspx?DocumentID=418297",
+     "date": "2025-07-25",
+     "verified": true
+    },
+    {
+     "title": "Golden introduces permitting reform bill with Natural Resources Committee Chairman Westerman",
+     "publisher": "Office of Rep. Jared Golden",
+     "url": "https://golden.house.gov/media/press-releases/golden-introduces-permitting-reform-bill-with-natural-resources-committee-chairman-westerman",
+     "date": "2025-07-25",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "With commonsense upgrades, we can cut red tape and enable the United States to build once again while setting the standard for environmental stewardship.",
+    "speaker": "Bruce Westerman",
+    "source_url": "https://naturalresources.house.gov/news/documentsingle.aspx?DocumentID=418297"
+   },
+   "sections": [
+    "1110",
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-08-22-revolution-wind-stop-work-order",
+   "date": "2025-08-22",
+   "title": "BOEM orders Revolution Wind to halt all offshore activity at about 80% completion",
+   "branch": "agency",
+   "summary": "BOEM's Acting Director issued a Director's Order requiring Orsted's Revolution Wind to halt all ongoing outer continental shelf activities while Interior reviewed concerns under the January 20, 2025 wind memorandum, citing national security and interference with other ocean uses. The 700-MW project off Rhode Island was roughly 80% complete.",
+   "significance": "Halted a permitted project under construction. Orsted, Connecticut and Rhode Island sued.",
+   "actors": [
+    "Matthew N. Giacona (Acting Director, Bureau of Ocean Energy Management)",
+    "Doug Burgum (Secretary of the Interior)",
+    "Orsted"
+   ],
+   "topics": [
+    "offshore",
+    "wind-solar",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Director's Order to Revolution Wind, LLC (August 22, 2025)",
+     "publisher": "Bureau of Ocean Energy Management",
+     "url": "https://www.boem.gov/renewable-energy/directorsorder-20250822pdf",
+     "date": "2025-08-22",
+     "verified": true
+    },
+    {
+     "title": "Orsted's Revolution Wind Project Hit with Federal Stop-Work Order at 80% Completion",
+     "publisher": "gCaptain",
+     "url": "https://gcaptain.com/orsteds-revolution-wind-project-hit-with-federal-stop-work-order-at-80-completion/",
+     "date": "2025-08-24",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "to halt all ongoing activities related to the Revolution Wind Project on the outer continental shelf (OCS)",
+    "speaker": "BOEM Director's Order, Aug. 22, 2025",
+    "source_url": "https://www.boem.gov/renewable-energy/directorsorder-20250822pdf"
+   },
+   "sections": [
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-09-22-revolution-wind-preliminary-injunction",
+   "date": "2025-09-22",
+   "title": "Judge Lamberth enjoins the Revolution Wind stop-work order",
+   "branch": "court",
+   "summary": "Judge Royce Lamberth of the U.S. District Court for the District of Columbia granted Revolution Wind a preliminary injunction against the August stop-work order, finding the project likely to succeed on the merits and likely to suffer irreparable harm. Orsted said construction would resume as soon as possible.",
+   "significance": "The first injunction against an offshore wind stop-work order; five more followed in January and February 2026.",
+   "actors": [
+    "Royce C. Lamberth (Judge, U.S. District Court for the District of Columbia)",
+    "Orsted",
+    "Bureau of Ocean Energy Management"
+   ],
+   "topics": [
+    "offshore",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Revolution Wind to resume construction after judge grants injunction",
+     "publisher": "Utility Dive",
+     "url": "https://www.utilitydive.com/news/revolution-wind-orsted-offshore-wind-stop-work-trump-construction/760803/",
+     "date": "2025-09-23",
+     "verified": true
+    },
+    {
+     "title": "UPDATED: Court Lifts Stop-Work Orders for Three Paused Offshore Wind Projects",
+     "publisher": "Greenberg Traurig E2 Law Blog",
+     "url": "https://www.gtlaw-environmentalandenergy.com/2026/01/articles/offshore-wind/court-lifts-stop-work-orders-for-three-paused-offshore-wind-projects/",
+     "date": "2026-01-26",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "Revolution Wind has demonstrated likelihood of success on the merits of its underlying claims",
+    "speaker": "Judge Royce C. Lamberth",
+    "source_url": "https://www.utilitydive.com/news/revolution-wind-orsted-offshore-wind-stop-work-trump-construction/760803/"
+   },
+   "sections": [
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-09-29-ceq-updated-nepa-guidance-and-template",
+   "date": "2025-09-29",
+   "title": "CEQ issues updated NEPA guidance and a template for agency NEPA procedures",
+   "branch": "agency",
+   "summary": "CEQ's September 29, 2025 memorandum 'Implementation of the National Environmental Policy Act' updated and replaced its February 19, 2025 guidance and attached a template agencies could use to write or revise NEPA procedures. Harvard's tracker reports it tells agencies to consider only the proposed action at hand, citing Seven County, and explains the new opt-in fee process.",
+   "significance": "Gave agencies a common, nonbinding blueprint for rewriting their NEPA procedures after CEQ's regulations were removed.",
+   "actors": [
+    "Katherine R. Scarlett (Chairman, Council on Environmental Quality)",
+    "Jomar Maldonado (Director for NEPA, Council on Environmental Quality)"
+   ],
+   "topics": [
+    "ceq",
+    "nepa",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Implementation of the National Environmental Policy Act Guidance (notice of availability)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-10-02/pdf/2025-19236.pdf",
+     "date": "2025-10-02",
+     "verified": true
+    },
+    {
+     "title": "CEQ Rescinded Rule Implementing NEPA",
+     "publisher": "Harvard Law School Environmental & Energy Law Program",
+     "url": "https://eelp.law.harvard.edu/tracker/ceq-finalized-phase-2-rule-implementing-national-environmental-policy-act/",
+     "date": "2026-06-29",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "The guidance and the associated template are not mandatory or binding on Federal agencies.",
+    "speaker": "Katherine R. Scarlett (CEQ Chairman), Federal Register notice",
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2025-10-02/pdf/2025-19236.pdf"
+   }
+  },
+  {
+   "id": "2025-10-23-doe-directs-ferc-large-load-interconnection-rulemaking",
+   "date": "2025-10-23",
+   "title": "DOE directs FERC to start a large-load interconnection rulemaking for data centers",
+   "branch": "agency",
+   "summary": "Energy Secretary Chris Wright used Section 403 of the DOE Organization Act to send FERC an advance notice of proposed rulemaking on interconnecting retail loads above 20 MW to transmission facilities, and asked for final action by April 30, 2026. The proposal would make large loads pay for the network upgrades they trigger.",
+   "significance": "Opened a federal large-load interconnection track at FERC that runs parallel to the data-center cost provisions in the permitting bills.",
+   "actors": [
+    "Chris Wright (Secretary of Energy)",
+    "Federal Energy Regulatory Commission",
+    "U.S. Department of Energy"
+   ],
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "DOE Directs FERC to Take Action on Large Load Interconnection",
+     "publisher": "K&L Gates",
+     "url": "https://www.klgates.com/DOE-Directs-FERC-to-Take-Action-on-Large-Load-Interconnection-10-30-2025",
+     "date": "2025-10-30",
+     "verified": true
+    },
+    {
+     "title": "Secretary of Energy Directs FERC to Initiate Rulemaking to Expedite Data Center and Large Load Interconnection",
+     "publisher": "Gibson Dunn",
+     "url": "https://www.gibsondunn.com/secretary-of-energy-directs-ferc-to-initiate-rulemaking-to-expedite-data-center-and-large-load-interconnection/",
+     "date": "2025-10-29",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2107"
+   ]
+  },
+  {
+   "id": "2025-11-20-house-natural-resources-advances-speed-act",
+   "date": "2025-11-20",
+   "title": "House Natural Resources Committee advances the SPEED Act 25-18",
+   "branch": "congress_house",
+   "summary": "The committee advanced H.R. 4776 by 25-18 after debating dozens of amendments; only Chairman Westerman's substitute and Rep. Golden's amendment were adopted. Golden's amendment bars revocation of project authorizations except by court order or at the sponsor's request. Many Democrats cited Interior's policy requiring Secretary Burgum's personal approval of wind and solar projects as their reason for opposing the bill.",
+   "significance": "Added statutory permit-certainty language to the House bill, the concept that became Title IV of the 2026 Senate bill.",
+   "actors": [
+    "Bruce Westerman (Representative, R-Ark.; Chairman, House Natural Resources Committee)",
+    "Jared Golden (Representative, D-Maine)",
+    "Jared Huffman (Representative, D-Calif.; Ranking Member, House Natural Resources Committee)",
+    "Adam Gray (Representative, D-Calif.)"
+   ],
+   "topics": [
+    "nepa",
+    "courts",
+    "wind-solar"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "House Natural Resources Committee Passes SPEED Act",
+     "publisher": "American Public Power Association",
+     "url": "https://www.publicpower.org/periodical/article/house-natural-resources-committee-passes-speed-act",
+     "date": "2025-11-20",
+     "verified": true
+    },
+    {
+     "title": "Golden's bipartisan permitting reform bill passes House Natural Resources Committee",
+     "publisher": "Office of Rep. Jared Golden",
+     "url": "https://golden.house.gov/media/press-releases/golden-s-bipartisan-permitting-reform-bill-passes-house-natural-resources-committee",
+     "date": "2025-11-20",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "Both parties have agreed on this problem for years, and today’s support from the Committee gives me hope that Congress is finally ready to take the win.",
+    "speaker": "Jared Golden",
+    "source_url": "https://golden.house.gov/media/press-releases/golden-s-bipartisan-permitting-reform-bill-passes-house-natural-resources-committee"
+   },
+   "sections": [
+    "1110",
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-12-08-new-york-v-trump-wind-memo-vacated",
+   "date": "2025-12-08",
+   "title": "Federal judge vacates Trump's wind permitting freeze as arbitrary and capricious",
+   "branch": "court",
+   "summary": "In New York v. Trump, Judge Patti Saris of the U.S. District Court for the District of Massachusetts ruled the January 20 wind memorandum 'arbitrary and capricious and contrary to law' and set it aside. Seventeen states led by New York Attorney General Letitia James had sued in May 2025.",
+   "significance": "Struck down the government-wide wind freeze, though Interior paused five offshore wind leases on national-security grounds two weeks later.",
+   "actors": [
+    "Patti B. Saris (Judge, U.S. District Court for the District of Massachusetts)",
+    "Letitia James (Attorney General of New York)",
+    "Donald J. Trump (President)"
+   ],
+   "topics": [
+    "wind-solar",
+    "offshore",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Trump ban on wind power projects overturned by federal judge",
+     "publisher": "CNBC",
+     "url": "https://www.cnbc.com/2025/12/08/trump-ban-on-wind-power-projects-overturned-by-federal-judge.html",
+     "date": "2025-12-08",
+     "verified": true
+    },
+    {
+     "title": "Federal Judge Vacates Trump Administration's Halt to Wind Energy Permitting",
+     "publisher": "Greenberg Traurig E2 Law Blog",
+     "url": "https://www.gtlaw-environmentalandenergy.com/2025/12/articles/offshore-wind/federal-judge-vacates-trump-administrations-halt-to-wind-energy-permitting/",
+     "date": "2025-12-17",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "arbitrary and capricious and contrary to law",
+    "speaker": "Judge Patti B. Saris (as quoted by CNBC)",
+    "source_url": "https://www.cnbc.com/2025/12/08/trump-ban-on-wind-power-projects-overturned-by-federal-judge.html"
+   }
+  },
+  {
+   "id": "2025-12-09-senate-democrats-oppose-passing-house-speed-act",
+   "date": "2025-12-09",
+   "title": "Heinrich, Whitehouse and Schatz publicly oppose passing the House SPEED Act",
+   "branch": "congress_senate",
+   "summary": "In an exclusive joint statement to Heatmap News, Senate ENR ranking member Martin Heinrich, EPW ranking member Sheldon Whitehouse and Sen. Brian Schatz (D-Hawaii) came out against passing the SPEED Act, citing how it would apply to renewable energy and transmission. Schatz also criticized American Clean Power for backing the bill without transmission provisions.",
+   "significance": "Democrats named renewables and transmission as their conditions for a Senate deal.",
+   "actors": [
+    "Martin Heinrich (Senator, D-N.M.)",
+    "Sheldon Whitehouse (Senator, D-R.I.)",
+    "Brian Schatz (Senator, D-Hawaii)",
+    "American Clean Power Association"
+   ],
+   "topics": [
+    "nepa",
+    "transmission",
+    "wind-solar"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Exclusive: Key Senate Democrats Oppose Permitting Bill",
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/politics/schatz-whitehouse-heinrich-speed-act",
+     "date": "2025-12-09",
+     "verified": true
+    },
+    {
+     "title": "Lawmakers question clean energy group's tactics on permitting",
+     "publisher": "E&E News by POLITICO",
+     "url": "https://www.eenews.net/articles/lawmakers-question-clean-energy-groups-tactics-on-permitting/",
+     "date": "2025-12-19",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "Congratulations to ‘American Clean Power’ for cutting a deal with the American Petroleum Institute, but to enact a law both the house and the Senate have to agree, and Senators are finding out about this for the first time",
+    "speaker": "Brian Schatz",
+    "source_url": "https://heatmap.news/politics/schatz-whitehouse-heinrich-speed-act"
+   },
+   "sections": [
+    "1110",
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-12-11-house-passes-permit-act-and-companion-bills",
+   "date": "2025-12-11",
+   "title": "House passes the PERMIT Act 221-205 after unanimous ePermit Act vote",
+   "branch": "congress_house",
+   "summary": "The House passed the PERMIT Act (H.R. 3898), which makes more than a dozen Clean Water Act changes and limits states' authority to block infrastructure, by 221-205; six Democrats voted yes and one Republican voted no. Two days earlier it passed the ePermit Act (H.R. 4503) unanimously, and smaller NEPA and pipeline-review bills also passed in the preceding weeks.",
+   "significance": "Extended the House permitting package to Clean Water Act permitting and state certification, issues that reappear in Title II of the 2026 Senate bill.",
+   "actors": [
+    "Sam Graves (Representative, R-Mo.; Chairman, House Transportation and Infrastructure Committee)",
+    "Dusty Johnson (Representative, R-S.D.)",
+    "Scott Peters (Representative, D-Calif.)"
+   ],
+   "topics": [
+    "clean-water-act",
+    "nepa",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Clean Water Act permitting bill clears the House",
+     "publisher": "E&E News by POLITICO",
+     "url": "https://www.eenews.net/articles/clean-water-act-permitting-bill-clears-the-house/",
+     "date": "2025-12-11",
+     "verified": true
+    },
+    {
+     "title": "Johnson's Bipartisan Digital Permitting Bill Passes U.S. House",
+     "publisher": "Office of Rep. Dusty Johnson",
+     "url": "https://dustyjohnson.house.gov/media/press-releases/johnsons-bipartisan-digital-permitting-bill-passes-us-house",
+     "date": "2025-12-09",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "Passing this bill out of the House represents a major breakthrough in our effort to finally modernize an outdated permitting system",
+    "speaker": "Scott Peters",
+    "source_url": "https://dustyjohnson.house.gov/media/press-releases/johnsons-bipartisan-digital-permitting-bill-passes-us-house"
+   }
+  },
+  {
+   "id": "2025-12-18-house-passes-speed-act-221-196",
+   "date": "2025-12-18",
+   "title": "House passes the SPEED Act 221-196 after text changes demanded by offshore wind opponents",
+   "branch": "congress_house",
+   "summary": "The House passed H.R. 4776 on Roll Call 356 by 221-196: 210 Republicans and 11 Democrats voted yes, 195 Democrats and one Republican voted no. Before the rule vote, leaders agreed to text exempting agency decisions since January 20, 2025 to reopen permits from the bill's anti-revocation language, at the urging of offshore wind opponents including Reps. Andy Harris and Jeff Van Drew.",
+   "significance": "Sent a NEPA and judicial-review overhaul to the Senate, where Democrats ended talks four days later over the administration's offshore wind halt.",
+   "actors": [
+    "Bruce Westerman (Representative, R-Ark.)",
+    "Jared Golden (Representative, D-Maine)",
+    "Andy Harris (Representative, R-Md.; Chair, House Freedom Caucus)",
+    "Jeff Van Drew (Representative, R-N.J.)",
+    "Jared Huffman (Representative, D-Calif.)"
+   ],
+   "topics": [
+    "nepa",
+    "courts",
+    "offshore"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Roll Call 356, H.R. 4776 (SPEED Act), On Passage",
+     "publisher": "Office of the Clerk, U.S. House of Representatives",
+     "url": "https://clerk.house.gov/Votes/2025356",
+     "date": "2025-12-18",
+     "verified": true
+    },
+    {
+     "title": "How Republicans saved the 'SPEED Act' from oblivion",
+     "publisher": "E&E News by POLITICO",
+     "url": "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/",
+     "date": "2025-12-17",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "speaks volumes just about the complete inability to deal with Trump’s war on clean energy",
+    "speaker": "Jared Huffman",
+    "source_url": "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/"
+   },
+   "sections": [
+    "1110",
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-12-22-interior-pauses-five-offshore-wind-leases",
+   "date": "2025-12-22",
+   "title": "Interior pauses leases for five offshore wind projects under construction",
+   "branch": "agency",
+   "summary": "Interior announced it was pausing, effective immediately, the leases for all large-scale offshore wind projects under construction: Vineyard Wind 1, Revolution Wind, Coastal Virginia Offshore Wind, Sunrise Wind and Empire Wind 1, together about 7 GW. It cited national security risks, including radar interference, identified in classified Department of War reports.",
+   "significance": "Halted every offshore wind project then under construction days after the House passed the SPEED Act, and prompted Senate Democrats to end permitting talks.",
+   "actors": [
+    "Doug Burgum (Secretary of the Interior)",
+    "Department of War",
+    "Bureau of Ocean Energy Management"
+   ],
+   "topics": [
+    "offshore",
+    "wind-solar",
+    "courts"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "The Trump Administration Protects U.S. National Security by Pausing Offshore Wind Leases",
+     "publisher": "U.S. Department of the Interior",
+     "url": "https://www.doi.gov/pressreleases/trump-administration-protects-us-national-security-pausing-offshore-wind-leases",
+     "date": "2025-12-22",
+     "verified": true
+    },
+    {
+     "title": "Senate Democrats end permitting reform talks over offshore wind freeze",
+     "publisher": "Utility Dive",
+     "url": "https://www.utilitydive.com/news/senate-democrats-permitting-reform-offshore-wind/808580/",
+     "date": "2025-12-23",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "The prime duty of the United States government is to protect the American people",
+    "speaker": "Doug Burgum",
+    "source_url": "https://www.doi.gov/pressreleases/trump-administration-protects-us-national-security-pausing-offshore-wind-leases"
+   },
+   "sections": [
+    "1401"
+   ]
+  },
+  {
+   "id": "2025-12-22-senate-democrats-end-permitting-talks-over-offshore-wind",
+   "date": "2025-12-22",
+   "title": "Senate Democrats Whitehouse and Heinrich end permitting talks over offshore wind halt",
+   "branch": "congress_senate",
+   "summary": "Sens. Sheldon Whitehouse (D-R.I.) and Martin Heinrich (D-N.M.), the ranking members of the EPW and ENR committees, announced they were ending permitting reform discussions after the administration halted five offshore wind projects. They said talks could resume only if the attacks on fully permitted projects were reversed, and thanked Sens. Capito and Lee for good-faith negotiating.",
+   "significance": "Made administration treatment of permitted wind and solar projects the explicit condition for any Senate permitting deal and shaped the permit-certainty language in the 2026 bill.",
+   "actors": [
+    "Sheldon Whitehouse (Senator, D-R.I.; Ranking Member, Senate EPW Committee)",
+    "Martin Heinrich (Senator, D-N.M.; Ranking Member, Senate ENR Committee)",
+    "Shelley Moore Capito (Senator, R-W.Va.)",
+    "Mike Lee (Senator, R-Utah)"
+   ],
+   "topics": [
+    "offshore",
+    "wind-solar",
+    "courts"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Senate Democrats end permitting reform talks over offshore wind freeze",
+     "publisher": "Utility Dive",
+     "url": "https://www.utilitydive.com/news/senate-democrats-permitting-reform-offshore-wind/808580/",
+     "date": "2025-12-23",
+     "verified": true
+    },
+    {
+     "title": "Why Democrats aren't pulling the plug on permitting talks",
+     "publisher": "E&E News by POLITICO",
+     "url": "https://www.eenews.net/articles/why-democrats-arent-pulling-the-plug-on-permitting-talks/",
+     "date": "2026-03-24",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "There is no path to permitting reform if this administration refuses to follow the law.",
+    "speaker": "Sheldon Whitehouse and Martin Heinrich (joint statement)",
+    "source_url": "https://www.utilitydive.com/news/senate-democrats-permitting-reform-offshore-wind/808580/"
+   }
+  },
+  {
+   "id": "2026-01-08-ceq-final-rule-removes-nepa-regulations",
+   "date": "2026-01-08",
+   "title": "CEQ finalizes removal of its NEPA regulations, adopting the 2025 interim rule unchanged",
+   "branch": "agency",
+   "summary": "CEQ published a final rule (91 FR 618), effective January 8, 2026, adopting its February 2025 interim final rule without changes and responding to public comments. It confirms removal of all versions of CEQ's NEPA regulations from the CFR.",
+   "significance": "Made the rescission permanent, leaving the statute as amended in 2023, agency procedures and CEQ guidance as the working NEPA framework.",
+   "actors": [
+    "Katherine R. Scarlett (Chairman, Council on Environmental Quality)",
+    "Council on Environmental Quality"
+   ],
+   "topics": [
+    "ceq",
+    "nepa"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Removal of National Environmental Policy Act Implementing Regulations (final rule, 91 FR 618)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2026-01-08/pdf/2026-00178.pdf",
+     "date": "2026-01-08",
+     "verified": true
+    },
+    {
+     "title": "CEQ Rescinded Rule Implementing NEPA",
+     "publisher": "Harvard Law School Environmental & Energy Law Program",
+     "url": "https://eelp.law.harvard.edu/tracker/ceq-finalized-phase-2-rule-implementing-national-environmental-policy-act/",
+     "date": "2026-06-29",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "1103"
+   ]
+  },
+  {
+   "id": "2026-01-12-courts-enjoin-offshore-wind-stop-work-orders",
+   "date": "2026-01-12",
+   "title": "Federal judges enjoin all five offshore wind stop-work orders between Jan. 12 and Feb. 2",
+   "branch": "court",
+   "summary": "Judge Royce Lamberth enjoined the December 22 order for Revolution Wind on January 12, Judge Carl Nichols did so for Empire Wind on January 15, and Judge Jamar Walker for Coastal Virginia Offshore Wind on January 16. Vineyard Wind won an injunction on January 27 and Sunrise Wind on February 2, so all five projects could resume construction while the suits continue.",
+   "significance": "No court accepted the national-security rationale for the December halt.",
+   "actors": [
+    "Royce C. Lamberth (Judge, U.S. District Court for the District of Columbia)",
+    "Carl Nichols (Judge, U.S. District Court for the District of Columbia)",
+    "Jamar Walker (Judge, U.S. District Court for the Eastern District of Virginia)",
+    "Orsted",
+    "Equinor",
+    "Dominion Energy"
+   ],
+   "topics": [
+    "offshore",
+    "courts"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "UPDATED: Court Lifts Stop-Work Orders for Three Paused Offshore Wind Projects",
+     "publisher": "Greenberg Traurig E2 Law Blog",
+     "url": "https://www.gtlaw-environmentalandenergy.com/2026/01/articles/offshore-wind/court-lifts-stop-work-orders-for-three-paused-offshore-wind-projects/",
+     "date": "2026-01-26",
+     "verified": true
+    },
+    {
+     "title": "Republican, Democratic senators call for project certainty at permitting reform hearing",
+     "publisher": "Utility Dive",
+     "url": "https://www.utilitydive.com/news/senate-permitting-reform-project-certainty/810827/",
+     "date": "2026-01-29",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "purportedly new classified information does not constitute a sufficient explanation for the bureau’s decision to entirely stop work on the Revolution Wind project",
+    "speaker": "Judge Royce C. Lamberth (as quoted by Greenberg Traurig)",
+    "source_url": "https://www.gtlaw-environmentalandenergy.com/2026/01/articles/offshore-wind/court-lifts-stop-work-orders-for-three-paused-offshore-wind-projects/"
+   },
+   "sections": [
+    "1401"
+   ]
+  },
+  {
+   "id": "2026-01-15-epa-proposes-section-401-certification-rule",
+   "date": "2026-01-15",
+   "title": "EPA proposes revised Clean Water Act Section 401 certification rules",
+   "branch": "agency",
+   "summary": "EPA's proposed rule 'Updating the Water Quality Certification Regulations' (91 FR 2008, published January 15, 2026) would revise 40 CFR part 121 on the scope of certification, the contents of requests and decisions, and withdrawal and resubmittal of requests. Comments closed February 17, 2026; the proposal followed a July 2025 request for input on the 2023 rule and EPA's May 2025 memo on the limits of Section 401.",
+   "significance": "Moved the state-certification limits that Title II of the 2026 Senate bill also addresses into rulemaking, narrowing a tool states had used to condition energy projects.",
+   "actors": [
+    "Lee Zeldin (EPA Administrator)",
+    "Environmental Protection Agency"
+   ],
+   "topics": [
+    "clean-water-act",
+    "nepa"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Updating the Water Quality Certification Regulations (proposed rule, 91 FR 2008)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00754.pdf",
+     "date": "2026-01-15",
+     "verified": true
+    },
+    {
+     "title": "EPA Reinforces Alignment of Clean Water Act Section 401 with 'Powering the Great American Comeback' Initiative",
+     "publisher": "U.S. Environmental Protection Agency",
+     "url": "https://www.epa.gov/newsreleases/epa-reinforces-alignment-clean-water-act-section-401-powering-great-american-comeback",
+     "date": "2025-05-22",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "With this memorandum, EPA is reinforcing the limits on Clean Water Act section 401 certification to support energy, critical mineral, and infrastructure projects",
+    "speaker": "Lee Zeldin (EPA memorandum release, May 22, 2025)",
+    "source_url": "https://www.epa.gov/newsreleases/epa-reinforces-alignment-clean-water-act-section-401-powering-great-american-comeback"
+   }
+  },
+  {
+   "id": "2026-01-28-senate-epw-permitting-hearing-part-ii",
+   "date": "2026-01-28",
+   "title": "Senate EPW permitting hearing: Whitehouse ties progress to administration's wind policy",
+   "branch": "congress_senate",
+   "summary": "The Senate Environment and Public Works Committee held 'Hearing to Examine the Federal Environmental Review and Permitting Processes, Part II,' with witnesses from Business Roundtable, LIUNA, API, SEIA and NASEO. Chairman Capito said she called it to get talks back on the path to compromise; Ranking Member Whitehouse said reviving a deal depended on 'credible confidence that the nonsense will stop.'",
+   "significance": "Reopened the public Senate track a month after the December pause, with both sides stating project certainty as the central issue.",
+   "actors": [
+    "Shelley Moore Capito (Senator, R-W.Va.; Chairman, Senate EPW Committee)",
+    "Sheldon Whitehouse (Senator, D-R.I.; Ranking Member, Senate EPW Committee)",
+    "Brent Booker (General President, LIUNA)",
+    "Abigail Ross Hopper (President and CEO, SEIA)",
+    "Dustin Meyer (SVP, American Petroleum Institute)"
+   ],
+   "topics": [
+    "nepa",
+    "courts",
+    "wind-solar"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Hearing to Examine the Federal Environmental Review and Permitting Processes, Part II",
+     "publisher": "U.S. Senate Committee on Environment and Public Works",
+     "url": "https://www.epw.senate.gov/public/index.cfm/2026/1/hearing-to-improve-the-federal-environmental-review-and-permitting-processes-part-ii",
+     "date": "2026-01-28",
+     "verified": true
+    },
+    {
+     "title": "Republican, Democratic senators call for project certainty at permitting reform hearing",
+     "publisher": "Utility Dive",
+     "url": "https://www.utilitydive.com/news/senate-permitting-reform-project-certainty/810827/",
+     "date": "2026-01-29",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "It makes no sense to pass a bipartisan permitting reform that gets illegally butchered by a lawless executive branch",
+    "speaker": "Sheldon Whitehouse",
+    "source_url": "https://www.utilitydive.com/news/senate-permitting-reform-project-certainty/810827/"
+   }
+  },
+  {
+   "id": "2026-02-19-permitting-council-signs-first-state-fast-41-mous",
+   "date": "2026-02-19",
+   "title": "Permitting Council signs first state FAST-41 agreements with Idaho and Tennessee",
+   "branch": "agency",
+   "summary": "Permitting Council Executive Director Emily Domenech, at an event hosted by Interior Secretary Burgum, signed memorandums of understanding with Idaho Gov. Brad Little and Tennessee Gov. Bill Lee committing the states to opt in to FAST-41 and align state and federal environmental review timelines. Iowa became the eighth such state in August 2026.",
+   "significance": "Began statewide agreements that opt states into FAST-41, a Permitting Council power the Iowa governor's office says no earlier administration had used.",
+   "actors": [
+    "Emily Domenech (Executive Director, Permitting Council)",
+    "Doug Burgum (Secretary of the Interior)",
+    "Brad Little (Governor of Idaho)",
+    "Bill Lee (Governor of Tennessee)"
+   ],
+   "topics": [
+    "nepa"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Permitting Council Announces Latest Federal-State Agreements to Streamline Permitting",
+     "publisher": "Permitting Council",
+     "url": "https://www.permitting.gov/newsroom/press-releases/permitting-council-announces-latest-federal-state-agreements-streamline",
+     "date": "2026-02-19",
+     "verified": true
+    },
+    {
+     "title": "Gov. Reynolds, Permitting Council announce agreement to streamline permitting",
+     "publisher": "Office of Iowa Governor Kim Reynolds",
+     "url": "https://governor.iowa.gov/press-release/2026-08-06/gov-reynolds-permitting-council-announce-agreement-streamline-permitting",
+     "date": "2026-08-06",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-03-05-whitehouse-heinrich-reopen-permitting-negotiations",
+   "date": "2026-03-05",
+   "title": "Whitehouse and Heinrich reopen permitting negotiations, warning against 'further mischief'",
+   "branch": "congress_senate",
+   "summary": "In a joint statement, Heinrich and Whitehouse said that after talking with colleagues they had decided to reopen negotiations on permitting reform, citing positive developments from the administration. They said they expect no further interference with permitted wind projects and faster solar approvals, and warned that continued permit approvals were critical to keeping talks going.",
+   "significance": "Ended the freeze that began December 22 and made the administration's handling of wind and solar permits the stated condition for continuing talks.",
+   "actors": [
+    "Martin Heinrich (Senator, D-N.M.; Ranking Member, Senate ENR Committee)",
+    "Sheldon Whitehouse (Senator, D-R.I.; Ranking Member, Senate EPW Committee)"
+   ],
+   "topics": [
+    "wind-solar",
+    "offshore",
+    "nepa"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Heinrich and Whitehouse Joint Statement on Permitting Reform",
+     "publisher": "U.S. Senate Committee on Energy and Natural Resources (Democratic press)",
+     "url": "https://www.energy.senate.gov/2026/3/heinrich-and-whitehouse-joint-statement-on-permitting-reform",
+     "date": "2026-03-05",
+     "verified": true
+    },
+    {
+     "title": "Why Democrats aren't pulling the plug on permitting talks",
+     "publisher": "E&E News by POLITICO",
+     "url": "https://www.eenews.net/articles/why-democrats-arent-pulling-the-plug-on-permitting-talks/",
+     "date": "2026-03-24",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "Further mischief will undo our willingness to resume negotiations.",
+    "speaker": "Martin Heinrich and Sheldon Whitehouse (joint statement)",
+    "source_url": "https://www.energy.senate.gov/2026/3/heinrich-and-whitehouse-joint-statement-on-permitting-reform"
+   }
+  },
+  {
+   "id": "2026-03-23-interior-totalenergies-offshore-wind-lease-buyout",
+   "date": "2026-03-23",
+   "title": "Interior and TotalEnergies sign deal to cancel two offshore wind leases; talks continue",
+   "branch": "agency",
+   "summary": "At CERAWeek, Interior Secretary Burgum and TotalEnergies signed settlements ending its Carolina Long Bay and New York Bight offshore wind leases; TotalEnergies recovers its lease fees and invests an equal amount in U.S. gas and LNG. Sen. Whitehouse called the deal 'not good' but stopped short of declaring permitting talks off again.",
+   "significance": "Talks continued. Whitehouse said such actions could accumulate to a breaking point.",
+   "actors": [
+    "Doug Burgum (Secretary of the Interior)",
+    "Patrick Pouyanne (Chairman and CEO, TotalEnergies)",
+    "Sheldon Whitehouse (Senator, D-R.I.)"
+   ],
+   "topics": [
+    "offshore",
+    "wind-solar",
+    "fossil"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "United States: TotalEnergies Signs Agreements with U.S. Department of Interior to End its U.S. Offshore Wind Projects",
+     "publisher": "TotalEnergies",
+     "url": "https://totalenergies.com/newsroom/united-states-totalenergies-signs-agreements-with-us-department-of-interior-to-end-its-us-offshore-wind-projects/?lang=eng",
+     "date": "2026-03-23",
+     "verified": true
+    },
+    {
+     "title": "Why Democrats aren't pulling the plug on permitting talks",
+     "publisher": "E&E News by POLITICO",
+     "url": "https://www.eenews.net/articles/why-democrats-arent-pulling-the-plug-on-permitting-talks/",
+     "date": "2026-03-24",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "If stupid stuff like that continues to pile up, there is a point",
+    "speaker": "Sheldon Whitehouse",
+    "source_url": "https://www.eenews.net/articles/why-democrats-arent-pulling-the-plug-on-permitting-talks/"
+   }
+  },
+  {
+   "id": "2026-03-25-senate-enr-hearing-state-of-the-grid",
+   "date": "2026-03-25",
+   "title": "Senate ENR hearing on the bulk power system takes up transmission and data centers",
+   "branch": "congress_senate",
+   "summary": "The Energy and Natural Resources Committee, chaired by Mike Lee with Martin Heinrich as ranking member, held a hearing on the state of the grid. Heinrich questioned witnesses from the Niskanen Center, the Cato Institute and the Electric Power Supply Association on interregional transmission and data-center costs, shortly after Democrats floated draft legislation to speed new transmission lines.",
+   "significance": "Put transmission siting and federal-versus-state authority, described by E&E News as the thorniest issue in the talks, on the open Senate record.",
+   "actors": [
+    "Mike Lee (Senator, R-Utah; Chairman, Senate ENR Committee)",
+    "Martin Heinrich (Senator, D-N.M.; Ranking Member, Senate ENR Committee)",
+    "Liza Reed (Director of Climate and Energy Policy, Niskanen Center)",
+    "Travis Fisher (Director of Energy and Environmental Policy Studies, Cato Institute)",
+    "Todd Snitchler (President and CEO, Electric Power Supply Association)"
+   ],
+   "topics": [
+    "transmission",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Heinrich Questions Experts on the Power Grid, Highlighting Need to Expand Transmission and Efficiently Power Data Centers to Help Lower Costs for Consumers",
+     "publisher": "U.S. Senate Committee on Energy and Natural Resources (Democratic press)",
+     "url": "https://www.energy.senate.gov/press/dem/heinrich-questions-experts-on-the-power-grid-highlighting-need-to-expand-transmission-and-efficiently-power-data-centers-to-help-lower-costs-for-consumers/",
+     "date": "2026-03-30",
+     "verified": true
+    },
+    {
+     "title": "Senate lawmakers debate ideas for grid upgrades",
+     "publisher": "E&E News by POLITICO",
+     "url": "https://www.eenews.net/articles/senate-lawmakers-debate-ideas-for-grid-upgrades/",
+     "date": "2026-03-26",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "do any of you think that we are building enough interregional transmission to service the existing grid and the kind of growth that we would hope for both the electric sector and the economy?",
+    "speaker": "Martin Heinrich",
+    "source_url": "https://www.energy.senate.gov/press/dem/heinrich-questions-experts-on-the-power-grid-highlighting-need-to-expand-transmission-and-efficiently-power-data-centers-to-help-lower-costs-for-consumers/"
+   }
+  },
+  {
+   "id": "2026-04-09-ceq-categorical-exclusions-guidance",
+   "date": "2026-04-09",
+   "title": "CEQ issues new categorical exclusion guidance, replacing its 2010 guidance",
+   "branch": "agency",
+   "summary": "CEQ's April 9, 2026 memorandum on establishing, revising, adopting and applying categorical exclusions replaced the December 2010 guidance, which had rested on CEQ's now-removed 1978 regulations. It tells agencies to create categorical exclusions for categories of actions that normally lack significant effects, adopt other agencies' exclusions where appropriate, and consider exclusions before developing an EA or EIS.",
+   "significance": "Pushed agencies toward wider use of categorical exclusions, the fastest NEPA track, under the 2023 statutory definition and adoption process.",
+   "actors": [
+    "Katherine R. Scarlett (Chairman, Council on Environmental Quality)",
+    "Jomar Maldonado (Director for NEPA, Council on Environmental Quality)"
+   ],
+   "topics": [
+    "ceq",
+    "nepa",
+    "categorical-exclusions"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Implementation of the National Environmental Policy Act Guidance (categorical exclusions, notice of availability)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2026-04-13/pdf/2026-07115.pdf",
+     "date": "2026-04-13",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "agencies should establish categorical exclusions to cover such categories of actions, adopt other agencies’ categorical exclusions where appropriate",
+    "speaker": "Council on Environmental Quality (Federal Register notice)",
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-04-13/pdf/2026-07115.pdf"
+   }
+  },
+  {
+   "id": "2026-04-21-casper-enjoins-directives-stalling-wind-and-solar-permits",
+   "date": "2026-04-21",
+   "title": "Judge Casper enjoins five directives that stalled federal wind and solar permitting",
+   "branch": "court",
+   "summary": "Chief Judge Denise Casper of the U.S. District Court for the District of Massachusetts preliminarily enjoined five agency actions as likely violating the Administrative Procedure Act: Interior's July 15, 2025 secretary-review memo, a Fish and Wildlife Service database restriction, Secretarial Order 3438's capacity-density standard, an Army Corps memo and an Interior offshore order. Regional clean energy trade groups brought the case; the relief is limited to the plaintiffs and their members.",
+   "significance": "Blocked, for the plaintiffs, the directives behind the de facto wind and solar blockade, though the injunction was narrow and subject to appeal.",
+   "actors": [
+    "Denise J. Casper (Chief Judge, U.S. District Court for the District of Massachusetts)",
+    "RENEW Northeast",
+    "Interwest Energy Alliance",
+    "Southern Renewable Energy Association",
+    "Doug Burgum (Secretary of the Interior)"
+   ],
+   "topics": [
+    "wind-solar",
+    "offshore",
+    "courts",
+    "nepa"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "A judge blocked Trump's clean energy blockade. Are projects out of limbo?",
+     "publisher": "Latitude Media",
+     "url": "https://www.latitudemedia.com/news/a-judge-blocked-trumps-clean-energy-blockade-are-projects-out-of-limbo/",
+     "date": "2026-04-22",
+     "verified": true
+    },
+    {
+     "title": "Federal Court Blocks Trump Administration Policies Restricting Wind and Solar Permitting",
+     "publisher": "Crowell & Moring",
+     "url": "https://www.crowell.com/en/insights/client-alerts/federal-court-blocks-trump-administration-policies-restricting-wind-and-solar-permitting",
+     "date": "2026-05-01",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-05-13-burgum-says-interior-will-appeal-wind-solar-injunction",
+   "date": "2026-05-13",
+   "title": "Burgum says Interior will appeal wind/solar injunction; Democrats link July memo to deal",
+   "branch": "agency",
+   "summary": "Testifying to the House Natural Resources Committee, Interior Secretary Burgum said the administration would appeal Judge Casper's April injunction, rejecting its 'whole premise.' Rep. Susie Lee (D-Nev.) told him that rescinding the July 15 memo would let Congress pass permitting reform this Congress, and Latitude Media reported that two key senators had made their support conditional on Interior approving wind and solar projects after the ruling.",
+   "significance": "Interior kept defending its secretary-review policy while Democrats asked for its repeal.",
+   "actors": [
+    "Doug Burgum (Secretary of the Interior)",
+    "Susie Lee (Representative, D-Nev.)",
+    "House Committee on Natural Resources"
+   ],
+   "topics": [
+    "wind-solar",
+    "nepa",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Burgum: DOI will fight judge's ruling lifting renewable energy blockade",
+     "publisher": "Latitude Media",
+     "url": "https://www.latitudemedia.com/news/burgum-doi-will-fight-judges-ruling-lifting-renewable-energy-blockade/",
+     "date": "2026-05-13",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "The idea that a single judge could decide what the process that we’re supposed to go through internally to make sure that we’re complying with the law through a complex permitting process is absurd",
+    "speaker": "Doug Burgum",
+    "source_url": "https://www.latitudemedia.com/news/burgum-doi-will-fight-judges-ruling-lifting-renewable-energy-blockade/"
+   }
+  },
+  {
+   "id": "2026-06-15-first-circuit-dismisses-wind-freeze-appeal",
+   "date": "2026-06-15",
+   "title": "Interior drops appeal of ruling voiding the wind freeze; First Circuit dismisses case",
+   "branch": "court",
+   "summary": "The Justice Department moved on June 10 to voluntarily dismiss its appeal of the December 8 New York v. Trump ruling, and the First Circuit granted the request on June 15. Interior gave no explanation in its filing; the attorneys general in the 18-member coalition led by New York called the outcome a win.",
+   "significance": "Closed the legal fight over the January 2025 wind directive, one of the administration actions Democrats had cited as blocking a permitting deal.",
+   "actors": [
+    "Letitia James (Attorney General of New York)",
+    "Andrea Joy Campbell (Attorney General of Massachusetts)",
+    "U.S. Department of Justice",
+    "U.S. Court of Appeals for the First Circuit"
+   ],
+   "topics": [
+    "wind-solar",
+    "offshore",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "States claim victory as Trump admin ends wind court fight",
+     "publisher": "E&E News by POLITICO",
+     "url": "https://www.eenews.net/articles/states-claim-victory-as-trump-admin-ends-wind-court-fight-3/",
+     "date": "2026-06-16",
+     "verified": true
+    },
+    {
+     "title": "Trump Administration Abandons Fight Against Wind Energy As Clean Energy Output Surges",
+     "publisher": "CT News Junkie (Inside Climate News)",
+     "url": "https://ctnewsjunkie.com/2026/06/16/trump-administration-abandons-fight-against-wind-energy-as-clean-energy-output-surges/",
+     "date": "2026-06-16",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "New York’s wind projects will create jobs, strengthen our economy, and bring down New Yorkers’ electric bills",
+    "speaker": "Letitia James",
+    "source_url": "https://www.eenews.net/articles/states-claim-victory-as-trump-admin-ends-wind-court-fight-3/"
+   }
+  },
+  {
+   "id": "2026-06-18-ferc-large-load-show-cause-orders",
+   "date": "2026-06-18",
+   "title": "FERC issues show cause orders to all six RTOs on large-load interconnection",
+   "branch": "agency",
+   "summary": "In place of a single national rule, FERC voted unanimously on June 18, 2026 to issue Section 206 show cause orders to PJM, MISO, SPP, CAISO, ISO-NE and NYISO, preliminarily finding their tariffs may be unjust and unreasonable for lacking clear large-load and co-location provisions. Responses were due in 60 days, with generation-adequacy reports due in 30 days; DOE had asked for final action on its October 2025 proposal by April 30.",
+   "significance": "FERC chose regional tariff changes over one national rule. The Senate bill would set a national cost rule by statute.",
+   "actors": [
+    "Federal Energy Regulatory Commission",
+    "Chris Wright (Secretary of Energy)",
+    "PJM Interconnection",
+    "Midcontinent Independent System Operator",
+    "Southwest Power Pool"
+   ],
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "FERC Issues Large Load Interconnection Show Cause Orders to Each RTO/ISO",
+     "publisher": "Ashurst Perkins Coie",
+     "url": "https://www.ashurstperkinscoie.com/en/insights/ferc-issues-large-load-interconnection-show-cause-orders-to-each-rto-and-iso/",
+     "date": "2026-06-29",
+     "verified": true
+    },
+    {
+     "title": "FERC Targets Large Load Interconnection Rules Across All Regional Grid Operators",
+     "publisher": "Climate Solutions Legal Digest",
+     "url": "https://www.climatesolutionslaw.com/2026/07/ferc-targets-large-load-interconnection-rules-across-all-regional-grid-operators/",
+     "date": "2026-07-07",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2107"
+   ]
+  },
+  {
+   "id": "2026-06-29-ceq-withdraws-18-guidance-documents",
+   "date": "2026-06-29",
+   "title": "CEQ withdraws 18 NEPA guidance documents, including Forty Questions and 1997 EJ memo",
+   "branch": "agency",
+   "summary": "A Federal Register notice signed by CEQ Chairman Katherine Scarlett withdrew nine previously published guidance documents and nine agency memoranda, effective June 29, 2026, as obsolete after CEQ's rescission of its NEPA regulations, NEPA amendments, revoked executive orders and case law. They include the 1981 'Forty Most Asked Questions,' the 1997 environmental justice guidance and the June 2024 memo on the Phase 2 rule; CEQ will review whether any should be reissued.",
+   "significance": "Cleared decades of CEQ guidance tied to the removed regulations, leaving the statute, agency procedures and CEQ's 2025-26 guidance as the NEPA framework.",
+   "actors": [
+    "Katherine R. Scarlett (Chairman, Council on Environmental Quality)",
+    "Council on Environmental Quality"
+   ],
+   "topics": [
+    "ceq",
+    "nepa"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Notification of Withdrawal of Guidance Documents (91 FR 39086)",
+     "publisher": "Federal Register (via GovInfo)",
+     "url": "https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/2026-13079.pdf",
+     "date": "2026-06-29",
+     "verified": true
+    },
+    {
+     "title": "CEQ Rescinded Rule Implementing NEPA",
+     "publisher": "Harvard Law School Environmental & Energy Law Program",
+     "url": "https://eelp.law.harvard.edu/tracker/ceq-finalized-phase-2-rule-implementing-national-environmental-policy-act/",
+     "date": "2026-06-29",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "many guidance documents previously issued by CEQ are facially obsolete or are otherwise unaligned with the current state of the law or with Administration policy",
+    "speaker": "Council on Environmental Quality (Federal Register notice)",
+    "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/2026-13079.pdf"
+   }
+  },
+  {
+   "id": "2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference",
+   "date": "2026-07-21",
+   "title": "D.C. Circuit rejects NEPA challenge to New Haven airport expansion, citing Seven County",
+   "branch": "court",
+   "summary": "In Save the Sound v. FAA, a D.C. Circuit panel of Chief Judge Srinivasan and Judges Wilkins and Katsas denied petitions challenging the FAA's environmental assessment and finding of no significant impact for a Tweed New Haven Airport expansion. Judge Katsas's opinion applied Seven County's call for a modest judicial role and deference to reasonable agency judgments.",
+   "significance": "Applied Seven County deference to an environmental assessment.",
+   "actors": [
+    "Gregory G. Katsas (Circuit Judge, D.C. Circuit)",
+    "Save the Sound",
+    "Federal Aviation Administration"
+   ],
+   "topics": [
+    "nepa",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Save the Sound, Inc. v. FAA, No. 24-1028 (slip opinion)",
+     "publisher": "U.S. Court of Appeals for the D.C. Circuit",
+     "url": "https://media.cadc.uscourts.gov/opinions/docs/2026/07/24-1028-2184183.pdf",
+     "date": "2026-07-21",
+     "verified": true
+    },
+    {
+     "title": "Court upholds Tweed New Haven airport expansion approval",
+     "publisher": "CT Mirror",
+     "url": "https://ctmirror.org/2026/07/22/tweed-new-haven-airport-expansion/",
+     "date": "2026-07-22",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "Neither NEPA nor the Administrative Procedure Act permits this, so we deny the petitions for review.",
+    "speaker": "Judge Gregory G. Katsas (opinion for the court)",
+    "source_url": "https://media.cadc.uscourts.gov/opinions/docs/2026/07/24-1028-2184183.pdf"
+   },
+   "sections": [
+    "1110"
+   ]
+  },
+  {
+   "id": "2026-09-16-house-passes-ratepayer-protection-act-417-3",
+   "date": "2026-09-16",
+   "title": "House passes the Ratepayer Protection Act 417-3 on data-center electricity costs",
+   "branch": "congress_house",
+   "summary": "The House passed the Ratepayer Protection Act, introduced by Rep. Gabe Evans (R-Colo.), by 417-3 under a fast-track procedure requiring two-thirds. The bill encourages state utility regulators to set standards so large-load customers such as data centers pay for the new generation and infrastructure they require. House Minority Leader Hakeem Jeffries called it 'a step forward' that needed more.",
+   "significance": "Gave the data-center cost debate a House-passed vehicle that Senate Democrats viewed as weaker than the mandatory language in the Senate permitting bill.",
+   "actors": [
+    "Gabe Evans (Representative, R-Colo.)",
+    "Mike Johnson (Speaker of the House)",
+    "Hakeem Jeffries (House Minority Leader)",
+    "Brett Guthrie (Representative, R-Ky.; Chairman, House Energy and Commerce Committee)",
+    "Frank Pallone (Representative, D-N.J.)"
+   ],
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "House passes bill to shield Americans from data center energy costs",
+     "publisher": "CBS News",
+     "url": "https://www.cbsnews.com/news/house-bill-data-center-energy-costs/",
+     "date": "2026-09-16",
+     "verified": true
+    },
+    {
+     "title": "Husted bill to protect Americans from footing the bill for new data centers blocked from passage",
+     "publisher": "Office of Sen. Jon Husted",
+     "url": "https://www.husted.senate.gov/media/press-releases/husted-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers-blocked-from-passage/",
+     "date": "2026-09-17",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "The Ratepayer Protection Act guarantees hardworking American families won't foot the bill for the buildout of AI infrastructure",
+    "speaker": "Mike Johnson",
+    "source_url": "https://www.cbsnews.com/news/house-bill-data-center-energy-costs/"
+   },
+   "sections": [
+    "2107"
+   ]
+  },
+  {
+   "id": "2026-09-24-permitting-talks-stall-vote-slips-past-midterms",
+   "date": "2026-09-24",
+   "title": "Senate permitting talks stall; deal and vote expected to slip past the midterms",
+   "branch": "congress_senate",
+   "summary": "Roll Call and Deseret News reported that Senate permitting talks had stalled and a vote would likely come after the midterms. Whitehouse said negotiators were 'over the hump on the deal-break issues' and that colleagues' feedback could go into a manager's amendment, but wanted clarity on 'regular order' for wind and solar; Thune and Barrasso accused Democrats of backing away.",
+   "significance": "The open issue was wind and solar 'regular order'. The Senate was not due back until November 9.",
+   "actors": [
+    "Sheldon Whitehouse (Senator, D-R.I.)",
+    "John Thune (Senate Majority Leader, R-S.D.)",
+    "John Barrasso (Senate Majority Whip, R-Wyo.)",
+    "John Curtis (Senator, R-Utah)",
+    "Martin Heinrich (Senator, D-N.M.)"
+   ],
+   "topics": [
+    "wind-solar",
+    "offshore",
+    "courts"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Permitting reform talks fall apart in the Senate, deal punted until after midterms",
+     "publisher": "Deseret News",
+     "url": "https://www.deseret.com/politics/2026/09/24/permitting-reform-talks-fall-apart-in-senate/",
+     "date": "2026-09-24",
+     "verified": true
+    },
+    {
+     "title": "Permitting bill off until after midterms even as talks close in",
+     "publisher": "Roll Call",
+     "url": "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/",
+     "date": "2026-09-24",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "We’re waiting for a clearer explanation from the administration of what a return to regular order for wind and solar permitting looks like",
+    "speaker": "Sheldon Whitehouse",
+    "source_url": "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/"
+   }
+  },
+  {
+   "id": "2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act",
+   "date": "2026-09-30",
+   "title": "Senate leaders release the 417-page Bipartisan American Affordability and Jobs Act",
+   "branch": "congress_senate",
+   "summary": "Sens. Capito, Lee, Whitehouse and Heinrich released the 417-page bill at a press conference. It sets a 150-day limit for NEPA claims, bars agencies from revoking issued permits except in listed cases (Sec. 1401), and requires data centers to pay their transmission costs. Wind and solar 'regular order' terms remain under negotiation with the White House, with amendment work in parallel and a vote aimed for after the Senate returns in November.",
+   "significance": "The first full bipartisan Senate text since the 2024 Manchin-Barrasso bill. The wind and solar question is unresolved.",
+   "actors": [
+    "Shelley Moore Capito (Senator, R-W.Va.; Chairman, Senate EPW Committee)",
+    "Mike Lee (Senator, R-Utah; Chairman, Senate ENR Committee)",
+    "Sheldon Whitehouse (Senator, D-R.I.; Ranking Member, Senate EPW Committee)",
+    "Martin Heinrich (Senator, D-N.M.; Ranking Member, Senate ENR Committee)"
+   ],
+   "topics": [
+    "nepa",
+    "courts",
+    "transmission",
+    "data-centers"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Bipartisan American Affordability and Jobs Act of 2026 (bill text, 417 pages)",
+     "publisher": "U.S. Senate Committee on Energy and Natural Resources",
+     "url": "https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+     "date": "2026-09-30",
+     "verified": true
+    },
+    {
+     "title": "Senate unveils bipartisan deal tackling energy and data centers, but wind and solar questions remain",
+     "publisher": "Deseret News",
+     "url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/",
+     "date": "2026-09-30",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "We cannot meet this moment with a permitting system that is stuck in the past",
+    "speaker": "Shelley Moore Capito",
+    "source_url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/"
+   },
+   "sections": [
+    "1101"
+   ]
+  },
+  {
+   "id": "2026-09-30-senate-rejects-cloture-on-ratepayer-protection-act",
+   "date": "2026-09-30",
+   "title": "Senate rejects cloture 57-43 on the House-passed Ratepayer Protection Act",
+   "branch": "congress_senate",
+   "summary": "The Senate rejected cloture on the motion to proceed to H.R. 9340, the Ratepayer Protection Act, by 57-43, short of the 60 votes needed. Sen. Jon Husted (R-Ohio) had sought unanimous consent on September 17, when Sen. Martin Heinrich objected, arguing that Congress needs legislation that requires, not merely asks states to consider, that data centers pay for grid upgrades.",
+   "significance": "Contrasted a voluntary state-standards approach with the mandatory data-center transmission-cost language in the permitting bill released the same day.",
+   "actors": [
+    "Jon Husted (Senator, R-Ohio)",
+    "Martin Heinrich (Senator, D-N.M.)",
+    "John Thune (Senate Majority Leader, R-S.D.)"
+   ],
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Roll Call Votes, 119th Congress, 2nd Session (Vote 254, September 30, 2026)",
+     "publisher": "U.S. Senate",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm",
+     "date": "2026-09-30",
+     "verified": true
+    },
+    {
+     "title": "Senate Fails To Advance GOP-Led Data Center Bill That Had No Teeth",
+     "publisher": "The Daily Caller",
+     "url": "https://dailycaller.com/2026/09/30/senate-passes-ratepayer-protection-act/",
+     "date": "2026-09-30",
+     "verified": true
+    }
+   ],
+   "quote": {
+    "text": "Rather than making pledges or suggestions to states, Congress needs to pass real legislation with real teeth.",
+    "speaker": "Martin Heinrich",
+    "source_url": "https://dailycaller.com/2026/09/30/senate-passes-ratepayer-protection-act/"
+   },
+   "sections": [
+    "2107"
+   ]
+  }
+ ]
+}

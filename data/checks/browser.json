@@ -1,0 +1,33 @@
+{
+ "_about": "Pages that refuse scripts (HTTP 403) and were opened by hand in a browser. check_links.py and check_quotes.py read this file. An entry counts only while the script is still refused, and a quote counts only while its text is unchanged. Add a page here after opening it yourself; never copy a status from memory.",
+ "pages": {
+  "https://thehill.com/policy/energy-environment/6120853-permitting-reform-bipartisan-deal-infrastructure-energy-projects/": {
+   "opened": "2026-10-01",
+   "title": "Senators reach bipartisan deal on permitting reform",
+   "quotes": [
+    "Our goal is to have it be the first vote when we come back — at least to begin the process"
+   ]
+  },
+  "https://www.washingtontimes.com/news/2026/sep/30/senate-committee-leaders-announce-permitting-overhaul-deal-spur/": {
+   "opened": "2026-10-01",
+   "title": "Senate committee leaders announce permitting overhaul deal to spur energy development",
+   "quotes": [
+    "There is nothing sufficiently objectionable in this bill that I think either party would want to change, regardless of the outcome of the election"
+   ]
+  },
+  "https://www.nrdc.org/press-releases/permitting-bill-desperately-needed-must-improve": {
+   "opened": "2026-10-01",
+   "title": "Permitting Bill: “Desperately Needed” But Must Improve",
+   "quotes": [
+    "The transmission provisions contained in the bill are desperately needed; the question is do those benefits outweigh the cost of the rollbacks to the foundational environmental laws of this country."
+   ]
+  },
+  "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/": {
+   "opened": "2026-10-01",
+   "title": "What’s in the SPEED Act?",
+   "quotes": [
+    "The SPEED Act marks the first major bipartisan permitting reform proposal in the 119th Congress."
+   ]
+  }
+ }
+}
