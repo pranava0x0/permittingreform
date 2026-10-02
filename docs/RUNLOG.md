@@ -8,6 +8,8 @@ Recovered six findings from the completed Python review; fixed them and added re
 
 Sonnet inference and a small availability probe were blocked by the subscription limit. No new inference verdicts were created. Cached verdict reconciliation exposes the unfinished coverage. Verdict: recovery and inline review were useful; further calls during the limit would add no evidence.
 
+- 2026-10-02: PR 1 code/source review and follow-up agent access. Tools: git/gh, GitHub review API, primary-source web reads, browser source images/threads, Python checks, Node search tests and Playwright UAT. Tokens: not exposed by this session. No subagents. Useful: three inline defects corrected during concurrent merge; all sections now retrievable without JavaScript. Evidence: docs/reviews/pr-1.md.
+
 ## 2026-10-02 — PR 3 review and remediation
 
 - Why: requested PR comments, fixes, data-center evaluation, full Claude parent transcript review and less phone scrolling.

@@ -43,6 +43,39 @@ class Build(unittest.TestCase):
         self.assertEqual({s["n"] for s in CORE["sections"]}, bill)
         self.assertEqual(set(PARAS), bill)
 
+    def test_agent_exports_match_the_browser_data_and_all_sections(self):
+        self.assertEqual(json.loads((ROOT / "site/data/core.json").read_text()), CORE)
+        self.assertEqual(json.loads((ROOT / "site/data/bill.json").read_text()), PARAS)
+        self.assertEqual((ROOT / "site/llms-full.txt").read_text(), build.llms_full(CORE, PARAS))
+        self.assertEqual((ROOT / "site/reading.html").read_text(), build.reading_html(CORE))
+        self.assertEqual({p.stem for p in (ROOT / "site/sections").glob("*.md")}, set(PARAS))
+        for sec in CORE["sections"]:
+            text = (ROOT / f"site/sections/{sec['n']}.md").read_text()
+            self.assertEqual(text, build.section_markdown(CORE, PARAS, sec))
+            self.assertIn(f"sections/{sec['n']}.md", build.llms_txt(CORE))
+            self.assertIn(f"sections/{sec['n']}.md", build.reading_html(CORE))
+            for page, line, _, paragraph in PARAS[sec["n"]]:
+                self.assertIn(paragraph, text)
+                self.assertIn(f"p. {page}, line {line}", text)
+
+    def test_full_export_keeps_every_community_quote_citation(self):
+        full = build.llms_full(CORE, PARAS)
+        rows = CORE["communities"]["rows"]
+        self.assertTrue(rows)
+        for row in rows:
+            self.assertIn(row["quote"], full)
+            self.assertIn(build.pdf_citation(CORE["meta"]["site_url"], row["c"]), full, row["id"])
+
+    def test_agent_exports_disclose_stale_and_incomplete_review(self):
+        import copy
+        core = copy.deepcopy(CORE)
+        core["checks"]["inference"].update(stale=True, flagged=3, unchecked=9)
+        for text in (build.llms_txt(core), build.reading_html(core), build.section_markdown(core, PARAS, core["sections"][0])):
+            self.assertIn("stale: true", text)
+            self.assertIn("3 flagged", text)
+            self.assertIn("9 unchecked", text)
+            self.assertIn("not enacted law" if text.startswith("# Bipartisan") else "proposed" if text.startswith("# Sec.") else "Proposed", text)
+
     def test_every_quote_cite_falls_inside_its_section(self):
         checked = 0
         for s in CORE["sections"]:

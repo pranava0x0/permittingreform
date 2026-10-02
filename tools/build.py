@@ -4,7 +4,12 @@ Reads the source-of-truth files under data/ and writes (site/bill.pdf, the
 same-origin copy that makes #page=N links work, is committed as is):
   site/data/core.js   window.PR_DATA  (summaries, comparison, timeline, people, media)
   site/data/bill.js   window.PR_BILL  (full bill text as paragraphs with page and line cites)
-  site/llms.txt       plain-text digest for agent readers
+  site/llms.txt       compact agent index
+  site/llms-full.txt  full text and analysis
+  site/sections/*.md  cited analysis and statutory text, one section per file
+  site/data/*.json    browser-equivalent JSON
+  site/reading.html   section index without JavaScript
+  site/sitemap.xml    crawlable HTML entry points
 
 Fails loud (exit 1) on any dangling reference or unverifiable bill quote.
 Standard library only. Output is deterministic: running it twice changes nothing.
@@ -12,6 +17,7 @@ Standard library only. Output is deterministic: running it twice changes nothing
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import re
 import sys
@@ -268,15 +274,152 @@ def llms_txt(core: dict) -> str:
         f"- Bill PDF (official): {m['source_pdf']}",
         f"- Source data: {m['repo_url']}",
         "",
+        "## Reading and retrieval",
+        "",
+        "Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.",
+        "PDF citations use printed bill pages and lines. A matching quote proves occurrence; it does not validate nearby interpretations. Source positions describe the cited item, not every position held by its author.",
+        f"- [No-JavaScript section index]({m['site_url']}reading.html)",
+        f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
+        f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
+        f"- [Bill paragraph JSON]({m['site_url']}data/bill.json): section number to [printed page, line, indent level, text] arrays.",
+        "- Fetch sections/{number}.md for one section. Each file includes its summary, cited key points, quotes, comparison notes and full statutory text.",
+        "- Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.",
+        "",
+        "## Check coverage",
+        "",
+        review_coverage(core),
+        "",
         "## Sections",
         "",
     ]
     for s in core["sections"]:
-        out.append(f"- Sec. {s['n']}. {s['h']} (pp. {s['p1']} to {s['p2']}): {s['plain']}")
-    out += ["", "## Timeline", ""]
-    for e in core["timeline"]:
-        out.append(f"- {e['date']}: {e['title']}")
+        topics = ", ".join(core["topics"].get(t, t) for t in s["topics"])
+        out.append(f"- [Sec. {s['n']}. {s['h']}]({m['site_url']}sections/{s['n']}.md) (pp. {s['p1']} to {s['p2']}; {topics})")
+    out += ["", "## Research", "",
+            f"- [Data center bills and Communities]({m['site_url']}llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.",
+            f"- [Timeline, people and media]({m['site_url']}llms-full.txt): dated records with source links and attributed positions.",
+            f"- [Method and check status]({m['site_url']}#/method): browser view; equivalent checks are in data/core.json.",
+            f"- [Subject comparisons]({m['site_url']}#/compare): browser view; retrieve the compare object in data/core.json without JavaScript."]
     return "\n".join(out) + "\n"
+
+
+def review_coverage(core: dict) -> str:
+    checks = core["checks"]
+    inf = checks.get("inference", {})
+    return (f"Saved AI review: {inf.get('supported', 0)} supported, {inf.get('flagged', 0)} flagged, "
+            f"{inf.get('unchecked', 0)} unchecked of {inf.get('total', 0)} statements; "
+            f"checked {inf.get('checked', 'unknown')}; stale: {str(inf.get('stale', True)).lower()}. "
+            "Coverage excludes current-law comparison cells and some research paraphrases. "
+            "Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.")
+
+
+def pdf_citation(base: str, c: list) -> str:
+    """A printed page-and-line range as a Markdown link to that PDF page."""
+    p1, l1, p2, l2 = c
+    return f"[p. {p1}, line {l1} to p. {p2}, line {l2}]({base}bill.pdf#page={p1})"
+
+
+def section_markdown(core: dict, paras: dict, sec: dict) -> str:
+    base = core["meta"]["site_url"]
+
+    def citation(c: list) -> str:
+        return pdf_citation(base, c)
+
+    out = [f"# Sec. {sec['n']}. {sec['h']}", "", "BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.",
+           "", review_coverage(core), "", f"[Official PDF]({core['meta']['source_pdf']}) · [Browser section]({base}#/bill/sec/{sec['n']})",
+           "", "## Summary", "", sec["plain"], "", "## Key points", ""]
+    for point in sec["points"]:
+        out.append(f"- {point['t']} ({citation(point['c'])})")
+    out += ["", "## Selected statutory quotes", ""]
+    for q in sec["quotes"]:
+        out += [f"> {q['t']}", "", citation(q["c"]), "", q.get("why", ""), ""]
+    out += ["## Comparison notes", ""]
+    out += [f"- [{p['label']}]({p['url']})" for p in core["meta"]["prior_bills"]]
+    out += [""]
+    for key, label in (("current", "Current law"), ("epra", "EPRA 2024 (reported S. 4753)"), ("speed", "SPEED Act (House-passed H.R. 4776)")):
+        out += [f"### {label}", "", sec["vs"].get(key) or "No note recorded.", ""]
+    out += ["## Full statutory text", "", "Extracted from the official PDF; line cites mark paragraph starts. Consult the PDF for exact layout.", ""]
+    for page, line, level, text in paras[sec["n"]]:
+        out += [f"[p. {page}, line {line}]({base}bill.pdf#page={page}) (indent level {level})", "", text, ""]
+    return "\n".join(out) + "\n"
+
+
+def llms_full(core: dict, paras: dict) -> str:
+    out = [llms_txt(core)]
+    out += [section_markdown(core, paras, sec) for sec in core["sections"]]
+    out += ["## Subject comparisons", ""]
+    for group in core["compare"]["groups"]:
+        for row in group["rows"]:
+            out += [f"### {row['topic']}", ""]
+            for key in ("current", "epra", "speed", "senate", "note"):
+                if key not in row:
+                    continue
+                cell = row[key]
+                out.append(f"- {key}: {cell['text']}")
+                if cell.get("url"):
+                    out.append(f"  Source: [{cell.get('cite', 'Source')}]({cell['url']})")
+                for source in cell.get("sources", []):
+                    out.append(f"  Source: [{source.get('cite', 'Source')}]({source['url']})")
+                for n in cell.get("sections", []):
+                    out.append(f"  Bill: [{n}]({core['meta']['site_url']}sections/{n}.md)")
+    bills = core["compare"].get("bills")
+    if bills:
+        out += ["", f"## {bills['label']}", "", bills.get("intro", ""), ""]
+        out += [f"- {v['label']}: {v['sub']} [{v['label']}]({v['url']})" for v in bills["versions"]]
+        for row in bills["rows"]:
+            out += ["", f"### {row['topic']}", ""]
+            for v in bills["versions"]:
+                cell = row.get(v["key"])
+                if not cell:
+                    continue
+                out.append(f"- {v['label']}: {cell['text']}")
+                if cell.get("url"):
+                    out.append(f"  Source: [{cell.get('cite', 'Source')}]({cell['url']})")
+                if cell.get("quote"):
+                    out.append(f"  Quote: \"{cell['quote']}\"")
+                for n in cell.get("sections", []):
+                    out.append(f"  Bill: [{n}]({core['meta']['site_url']}sections/{n}.md)")
+        if bills.get("others"):
+            out += ["", f"### {bills.get('others_label', 'Other bills')}", "", "```json", json.dumps(bills["others"], ensure_ascii=False), "```"]
+    comm = core.get("communities")
+    if comm:
+        out += ["", "## Communities: who can comment, consult, plan or sue", "", comm["intro"], ""]
+        for row in comm["rows"]:
+            who = ", ".join(comm["who"].get(w, w) for w in row["who"])
+            out += [f"### {row['topic']}", "", f"- Effect: {row['effect']}; affects: {who}",
+                    f"- Now: {row['now']}" + (f" Source: [{row['now_cite']}]({row['now_url']})" if row.get("now_url") else ""),
+                    f"- BAAJA: {row['baaja']}",
+                    "- Bill: " + ", ".join(f"[{n}]({core['meta']['site_url']}sections/{n}.md)" for n in row.get("sections", []))]
+            if row.get("quote"):
+                where = f" (Sec. {row['quote_section']})" if row.get("quote_section") else ""
+                cite = f", {pdf_citation(core['meta']['site_url'], row['c'])}" if row.get("c") else ""
+                out.append(f"- Quote{where}: \"{row['quote']}\"{cite}")
+            out.append("")
+    out += ["", "## Added and dropped provisions", "", "```json", json.dumps({k: core["compare"][k] for k in ("added", "dropped")}, ensure_ascii=False), "```", ""]
+    for label, rows in (("Timeline", core["timeline"]), ("People", core["people"]), ("Media", core["media"])):
+        out += ["", f"## {label}", ""]
+        for row in rows:
+            # JSON preserves all provenance, position tags and conditional fields.
+            out += ["```json", json.dumps(row, ensure_ascii=False), "```", ""]
+    return "\n".join(out) + "\n"
+
+
+def reading_html(core: dict) -> str:
+    esc = html.escape
+    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
+           '<meta name="viewport" content="width=device-width,initial-scale=1">',
+           '<title>Section index · Permitting Reform</title>',
+           f'<link rel="canonical" href="{SITE_URL}reading.html">',
+           '<link rel="stylesheet" href="styles.css"></head><body>',
+           '<main id="main"><h1>Permitting Reform: section index</h1>',
+           '<p>September 30, 2026 BAAJA draft. Proposed changes; AI-assisted summaries.</p>',
+           f'<p>{esc(review_coverage(core))}</p>',
+           '<p><a href="index.html">Interactive tracker</a> · <a href="llms.txt">Agent index</a> · <a href="llms-full.txt">Full text and analysis</a> · <a href="data/core.json">Tracker JSON</a></p>']
+    for sec in core["sections"]:
+        out += [f'<section id="sec-{sec["n"]}"><h2>Sec. {sec["n"]}. {esc(sec["h"])}</h2>',
+                f'<p>{esc(sec["plain"])}</p>',
+                f'<p><a href="sections/{sec["n"]}.md">Text and cited analysis</a> · <a href="bill.pdf#page={sec["p1"]}">PDF page {sec["p1"]}</a></p></section>']
+    return "\n".join(out + ['</main></body></html>']) + "\n"
 
 
 def main() -> int:
@@ -290,6 +433,15 @@ def main() -> int:
     (SITE / "data/core.js").write_text(dump_js("PR_DATA", core), encoding="utf-8")
     (SITE / "data/bill.js").write_text(dump_js("PR_BILL", paras), encoding="utf-8")
     (SITE / "llms.txt").write_text(llms_txt(core), encoding="utf-8")
+    (SITE / "llms-full.txt").write_text(llms_full(core, paras), encoding="utf-8")
+    (SITE / "reading.html").write_text(reading_html(core), encoding="utf-8")
+    for name, data in (("core", core), ("bill", paras)):
+        (SITE / f"data/{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
+    (SITE / "sections").mkdir(exist_ok=True)
+    for sec in core["sections"]:
+        (SITE / f"sections/{sec['n']}.md").write_text(section_markdown(core, paras, sec), encoding="utf-8")
+    (SITE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+                                    "\n".join(f"<url><loc>{SITE_URL}{path}</loc></url>" for path in ("", "reading.html")) + "\n</urlset>\n", encoding="utf-8")
     if not (SITE / PDF_NAME).exists():
         print(f"build: site/{PDF_NAME} is missing; download it from {core['meta']['source_pdf']}", file=sys.stderr)
         return 1

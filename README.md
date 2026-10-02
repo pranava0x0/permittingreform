@@ -70,3 +70,9 @@ The fresh Sonnet review remains incomplete: 401 saved supported statements, 12 f
 Run browser checks with an existing Playwright installation and Google Chrome: `node tests/uat.cjs` while `make serve` runs. It checks all views in both themes at three widths, then exercises search, filters, load-more, source passages, comparison switching, viewport transitions, keyboard navigation and a delayed-load regression.
 
 `node tests/clicks.cjs` loads every view and all 71 sections at 375 and 1280 pixels, then clicks every control on the main views from a fresh load, opening folded parents first. It fails on page errors, sideways overflow, controls that do nothing or are covered, a milestone symbol that opens the wrong event, and any load or click over 20 seconds. Results go to `.test-artifacts/clicks.json`.
+
+## Agent and text access
+
+`make build` generates `site/llms.txt`, the section index at `site/reading.html`, `site/llms-full.txt`, and `site/sections/{number}.md`. Each section file carries full bill text, summary, key points and page-line citations. `site/data/core.json` and `site/data/bill.json` expose the browser data without executing JavaScript. The JSON keys match `PR_DATA` and `PR_BILL`.
+
+Use the official PDF for legal claims. Exports show the draft version, source URLs and saved review coverage, including stale results and unchecked statements. Hash routes need a browser; the text and JSON files are ordinary HTTP resources. `site/sitemap.xml` lists the site and static section index. Search accepts section numbers, printed pages, quoted phrases and hyphenated terms such as data-center.

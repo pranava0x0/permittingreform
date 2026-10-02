@@ -214,6 +214,19 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.equal(await page.evaluate(()=>document.activeElement.id),'main');
       await page.close();
     }
+    const textContext = await browser.newContext({javaScriptEnabled:false, viewport:{width:375,height:812}});
+    const textPage = await textContext.newPage();
+    await textPage.goto(base+'reading.html');
+    const textSections = await textPage.locator('main section').count();
+    assert.equal(textSections, JSON.parse(fs.readFileSync('site/data/core.json','utf8')).sections.length);
+    assert.ok(await textPage.locator('#sec-2107').innerText().then(t=>t.includes('Ratepayer')));
+    assert.ok(await textPage.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1));
+    await textPage.screenshot({path:'uat-screenshots/375-text-index.png'});
+    await textPage.setViewportSize({width:1280,height:800});
+    await textPage.goto(base+'reading.html');
+    await textPage.evaluate(() => document.fonts.ready);
+    await textPage.screenshot({path:'uat-screenshots/1280-text-index.png'});
+    await textContext.close();
     const race = await browser.newPage();
     await race.route('**/data/bill.js*', async route => {
       await new Promise(resolve => setTimeout(resolve, 250));
