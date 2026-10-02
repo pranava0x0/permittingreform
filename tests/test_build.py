@@ -58,6 +58,14 @@ class Build(unittest.TestCase):
                 self.assertIn(paragraph, text)
                 self.assertIn(f"p. {page}, line {line}", text)
 
+    def test_full_export_keeps_every_community_quote_citation(self):
+        full = build.llms_full(CORE, PARAS)
+        rows = CORE["communities"]["rows"]
+        self.assertTrue(rows)
+        for row in rows:
+            self.assertIn(row["quote"], full)
+            self.assertIn(build.pdf_citation(CORE["meta"]["site_url"], row["c"]), full, row["id"])
+
     def test_agent_exports_disclose_stale_and_incomplete_review(self):
         import copy
         core = copy.deepcopy(CORE)

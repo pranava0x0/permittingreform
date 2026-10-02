@@ -313,12 +313,17 @@ def review_coverage(core: dict) -> str:
             "Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.")
 
 
+def pdf_citation(base: str, c: list) -> str:
+    """A printed page-and-line range as a Markdown link to that PDF page."""
+    p1, l1, p2, l2 = c
+    return f"[p. {p1}, line {l1} to p. {p2}, line {l2}]({base}bill.pdf#page={p1})"
+
+
 def section_markdown(core: dict, paras: dict, sec: dict) -> str:
     base = core["meta"]["site_url"]
 
     def citation(c: list) -> str:
-        p1, l1, p2, l2 = c
-        return f"[p. {p1}, line {l1} to p. {p2}, line {l2}]({base}bill.pdf#page={p1})"
+        return pdf_citation(base, c)
 
     out = [f"# Sec. {sec['n']}. {sec['h']}", "", "BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.",
            "", review_coverage(core), "", f"[Official PDF]({core['meta']['source_pdf']}) · [Browser section]({base}#/bill/sec/{sec['n']})",
@@ -386,7 +391,9 @@ def llms_full(core: dict, paras: dict) -> str:
                     f"- BAAJA: {row['baaja']}",
                     "- Bill: " + ", ".join(f"[{n}]({core['meta']['site_url']}sections/{n}.md)" for n in row.get("sections", []))]
             if row.get("quote"):
-                out.append(f"- Quote: \"{row['quote']}\"")
+                where = f" (Sec. {row['quote_section']})" if row.get("quote_section") else ""
+                cite = f", {pdf_citation(core['meta']['site_url'], row['c'])}" if row.get("c") else ""
+                out.append(f"- Quote{where}: \"{row['quote']}\"{cite}")
             out.append("")
     out += ["", "## Added and dropped provisions", "", "```json", json.dumps({k: core["compare"][k] for k in ("added", "dropped")}, ensure_ascii=False), "```", ""]
     for label, rows in (("Timeline", core["timeline"]), ("People", core["people"]), ("Media", core["media"])):
