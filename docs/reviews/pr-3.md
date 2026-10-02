@@ -47,4 +47,4 @@ Browser: 60 rendered states at 375×812, 768×800 and 1280×800, in light and da
 
 Measurements describe initial views; expanding or loading more grows them. Full statutory text remains available in the bill view. All 179 media items are reachable through the batches. General Compare keeps all 58 substantive rows in the DOM; folded groups and mobile counterpart selection control visibility.
 
-Review dimensions: security — text-only DOM construction and existing safe-URL checks retained; performance — smaller initial lists, no added dependencies; correctness — scope, counts and breakpoint defects fixed; maintainability — shared disclosures and executable browser gates. Residual risk: broad legal paraphrases and earlier inference flags remain only partially reviewed.
+Review dimensions: security: text-only DOM construction and existing safe-URL checks retained; performance: smaller initial lists, no added dependencies; correctness: scope, counts and breakpoint defects fixed; maintainability: shared disclosures and executable browser gates. Residual risk: broad legal paraphrases and earlier inference flags remain only partially reviewed.
