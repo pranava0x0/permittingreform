@@ -16,3 +16,8 @@
 | 2026-10-01 | parser and citations | Six saved review findings: merged clauses, indentation, partial-word matches, split-heading cite offsets, extraction artifacts and stale PDF cache. | Parser and validator gaps. | Fixed; see docs/reviews/resolution.md and regression tests. |
 | 2026-10-01 | search | Key-point objects were joined as strings; delayed page searches could redirect after a tab change. | Data shape and async lifecycle bugs. | Fixed; search regression and browser delayed-load test. |
 | 2026-10-01 | verification | Fresh summary review blocked by Sonnet subscription limit. | External quota. | Open; 401 supported, 12 flagged, 127 unchecked. Visible on Overview and Method. |
+| 2026-10-02 | link check | `check_links.py --only X` replaced `data/checks/links.json` with the one matching URL, dropping 240 saved results. | Code bug: a partial run wrote its subset as the whole file. | Fixed: a partial run merges into the saved results. |
+| 2026-10-02 | data | Compare, data centers: the current-law cell said there was no federal rule. FERC's 1994 pricing policy already charges a new load the higher of embedded or incremental transmission cost, and the BAAJA cell left out the charge for both. | Written before the 1994 policy was checked. | Fixed in both cells, with a source. |
+| 2026-10-02 | data | People listed Josh Siegel at E&E News; he moved to Punchbowl News in late September 2026. | Stale affiliation. | Fixed in curation with the Talking Biz News source. |
+| 2026-10-02 | tests | `tests/uat.cjs` hard-coded 45 comparison rows and 94 media items. | Literal mirroring the data. | Fixed: counts come from `window.PR_DATA`. |
+
