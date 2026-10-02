@@ -163,6 +163,15 @@ def build() -> tuple[dict, dict, list[str]]:
                     url = cite_url(key, r[key]["cite"], prior)
                     if url:
                         r[key]["url"] = url
+    bills = compare.get("bills")
+    if bills:
+        keys = [v["key"] for v in bills["versions"]]
+        for r in bills["rows"]:
+            for k in keys:
+                cell = r.get(k) or {}
+                if not cell.get("text"):
+                    errors.append(f"compare bills {r['id']}: empty cell {k}")
+                check_refs(f"compare bills {r['id']}", cell.get("sections", []))
     for a in compare["added"]:
         check_refs("compare added", a["sections"])
     for item in compare["dropped"]:

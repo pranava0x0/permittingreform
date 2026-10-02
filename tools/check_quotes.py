@@ -114,6 +114,11 @@ def web_quotes(core: dict) -> list[dict]:
         q = it.get("quote")
         if q:
             rows.append({"where": f"media.{it['id']}", "text": q["text"], "speaker": q.get("speaker", ""), "url": it["url"]})
+    bills = core["compare"].get("bills") or {"rows": []}
+    for r in bills["rows"]:
+        for k, cell in r.items():
+            if isinstance(cell, dict) and cell.get("quote"):
+                rows.append({"where": f"compare.bills.{r['id']}.{k}", "text": cell["quote"], "speaker": "", "url": cell["url"]})
     return rows
 
 

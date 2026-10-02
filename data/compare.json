@@ -706,7 +706,7 @@
      },
      "note": {
       "label": "Earlier bill",
-      "text": "The Ratepayer Protection Act (H.R. 9340) would have asked state regulators to consider making loads of 100 megawatts or more pay the full incremental cost of upgrades, including after they leave, with financial assurance before construction. States did not have to adopt it. It passed the House 417-3 on September 16, 2026, and the Senate rejected cloture 57-43 on September 30. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts, and section 2107(a) adds an embedded-cost charge for transmission.",
+      "text": "The Ratepayer Protection Act (H.R. 9340) would ask state regulators to consider making data centers of 100 megawatts or more pay the full incremental cost of upgrades, including after they leave, with financial assurance before construction. States would not have to adopt it. It passed the House 417-3 on September 16, 2026, and the Senate rejected cloture 57-43 on September 30. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts, and section 2107(a) adds an embedded-cost charge for transmission.",
       "sources": [
        {
         "cite": "H.R. 9340, as passed by the House",
@@ -1174,5 +1174,548 @@
    "text": "Hydropower license extensions and aligned licensing timetables.",
    "cite": "Secs. 701, 703"
   }
- ]
+ ],
+ "bills": {
+  "id": "data-center-bills",
+  "label": "Data center bills",
+  "intro": "BAAJA's data center rules beside the federal bills that would make large computing loads pay for the grid they use. Each cell links to the text it summarizes.",
+  "versions": [
+   {
+    "key": "policy",
+    "label": "Current policy",
+    "sub": "The White House Ratepayer Protection Pledge (March 2026) and FERC's June 18, 2026 show cause orders. FERC set no large-load rule.",
+    "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/"
+   },
+   {
+    "key": "senate",
+    "label": "BAAJA",
+    "sub": "Released September 30, 2026. Sections 2107 and 2114.",
+    "url": "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026"
+   },
+   {
+    "key": "rpa",
+    "label": "Ratepayer Protection Act (H.R. 9340)",
+    "sub": "Evans (R-Colo.) and Castor (D-Fla.). Passed the House 417-3 on September 16, 2026; Senate cloture failed 57-43 on September 30.",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm"
+   },
+   {
+    "key": "grid_savings",
+    "label": "GRID Savings Act (S. 5199)",
+    "sub": "Heinrich (D-N.M.), August 2026. In committee; a unanimous-consent request failed September 17.",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm"
+   },
+   {
+    "key": "pftp",
+    "label": "Power for the People Act (S. 3682)",
+    "sub": "Van Hollen (D-Md.), January 2026; House companion H.R. 8241 (Tonko). In committee.",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm"
+   },
+   {
+    "key": "grid_act",
+    "label": "GRID Act (S. 3852)",
+    "sub": "Hawley (R-Mo.) and Blumenthal (D-Conn.), February 11, 2026. In committee.",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm"
+   }
+  ],
+  "rows": [
+   {
+    "id": "scope",
+    "topic": "Who is covered",
+    "policy": {
+     "text": "The Pledge: seven hyperscalers and AI companies, later joined by governors, developers and power providers. FERC's June 2026 orders: the six regional grid operators.",
+     "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+     "cite": "White House, Ratepayer Protection Pledge",
+     "quote": "President Trump is calling on the leading United States hyperscalers and AI companies to build, bring, or buy all of the energy needed for building and operating data centers"
+    },
+    "rpa": {
+     "text": "Data centers with 100 MW or more of peak demand at one site or campus, contracting after enactment. The introduced bill covered any 100 MW load; committee narrowed it.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+     "cite": "H.R. 9340, House-passed text",
+     "quote": "require electric energy primarily to operate information technology infrastructure and related systems pertaining to data storage and computational applications and services"
+    },
+    "grid_savings": {
+     "text": "Any new or expanded non-residential load of 150 MW or more at one interconnection, counting affiliated sites and phases. Not limited to data centers.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "has an aggregate requested or projected peak electric demand of not less than 150 megawatts behind a single point of interconnection"
+    },
+    "pftp": {
+     "text": "Data centers drawing more than 50 MW, counting same-owner facilities in one utility area. Crypto mines are defined separately.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "has an energy demand greater than 50 megawatts"
+    },
+    "grid_act": {
+     "text": "Private data centers of 20 MW or more, existing or planned within 5 years. Federal data centers excluded.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "with a power demand of 20 megawatts or more that is not owned, operated, or maintained"
+    },
+    "senate": {
+     "text": "Section 228: data centers and high-density computing, including crypto mining, of 20 MW or more at one site or at commonly controlled sites, counting phased buildouts. Section 2107(a) pricing: any computational load on the bulk-power system, no size threshold.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "binding",
+    "topic": "Binding or optional",
+    "policy": {
+     "text": "Mostly voluntary. The Pledge creates no legal duty. FERC's June 18 orders find grid operators' tariffs may be unjust and make them justify or rewrite them. No final FERC rule.",
+     "url": "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation",
+     "cite": "Proclamation, 91 FR 11439",
+     "quote": "The Ratepayer Protection Pledge and the commitments embodied therein effectuate the national policy of the United States."
+    },
+    "rpa": {
+     "text": "Optional. A PURPA standard each state must consider within 1 year and decide within 2. States need not adopt it.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+     "cite": "H.R. 9340, House-passed text",
+     "quote": "shall commence consideration under section 111, or set a hearing date for consideration"
+    },
+    "grid_savings": {
+     "text": "Binding. New Federal Power Act section 224 gives FERC jurisdiction over large-load interconnection; final rule within 1 year.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "the Commission shall issue a final rule, applicable to each transmitting utility, establishing standards and procedures for the interconnection of covered large loads"
+    },
+    "pftp": {
+     "text": "Mixed. FERC must order transmission cost tariffs (120 days) and a data center queue rule (180 days). The rate class is a PURPA standard states must consider.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "the Commission shall issue a rule requiring all covered interconnection entities to create, for the purpose of addressing reliability and affordability concerns from new data center loads"
+    },
+    "grid_act": {
+     "text": "Binding prohibition enforced by DOE, with penalties of at least $1 million a day.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "a covered entity may not build, own, operate, or maintain a data center unless the data center derives all of its energy"
+    },
+    "senate": {
+     "text": "Binding. Section 228 is a federal floor in the Federal Power Act. Section 2107(a) orders FERC to revise its 1994 pricing policy in 270 days, propose a rule 270 days later and finish within a year.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "incremental",
+    "topic": "Cost of serving the load",
+    "policy": {
+     "text": "Pledge signers say they will pay for the new generation and grid upgrades their data centers need. Retail costs otherwise follow state rate cases.",
+     "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+     "cite": "White House, Ratepayer Protection Pledge",
+     "quote": "Companies will pay for all new power delivery infrastructure upgrades required to service their data centers"
+    },
+    "rpa": {
+     "text": "Rates recover from the data center the full incremental cost of generation, transmission or distribution upgrades needed to serve it.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+     "cite": "H.R. 9340, House-passed text",
+     "quote": "shall be designed to recover from the large-load customer the full, incremental cost of any generation, transmission, or distribution upgrade necessary to serve the load of such large-load customer"
+    },
+    "grid_savings": {
+     "text": "The load pays all interconnection and direct-assignment costs. Network upgrades are charged to it and credited back against its transmission bills, as for generators. Generation and distribution are not covered.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "directly assigned to, and fully borne by, the applicable covered large-load customer"
+    },
+    "pftp": {
+     "text": "Data centers pay local transmission upgrades that exist only because of them. States must consider a rate class that recovers the full cost of upgrades.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "allocate to each interconnecting data center local transmission upgrade costs that, but for the existence of the data center, would not be needed"
+    },
+    "grid_act": {
+     "text": "No cost allocation rule. New data centers must be off the grid; existing ones must show they do not raise rates or pay credits.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "will not increase the electrical rates paid by ratepayers"
+    },
+    "senate": {
+     "text": "No incremental cost of serving a covered load (generation, storage, transmission, distribution) may be recovered from other customers.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "transmission",
+    "topic": "Transmission pricing",
+    "policy": {
+     "text": "FERC asked grid operators to prevent cost shifting among transmission customers. Its 1994 pricing policy lets a utility charge the higher of embedded or incremental cost, not both.",
+     "url": "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf",
+     "cite": "FERC pricing policy statement, 59 FR 55031 (1994)"
+    },
+    "rpa": {
+     "text": "Transmission upgrades fall under the state standard. No FERC role and no embedded-cost charge.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+     "cite": "H.R. 9340, House-passed text",
+     "quote": "any generation, transmission, or distribution upgrade necessary to serve the load of such large-load customer"
+    },
+    "grid_savings": {
+     "text": "FERC classifies and allocates facilities under interconnection rules adapted for loads. A load may fund regional lines in exchange for transmission rights.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "to voluntarily fund all or a portion of a transmission facility selected in a regional or interregional transmission plan"
+    },
+    "pftp": {
+     "text": "Two parts: direct assignment of local upgrades, plus rates reflecting the embedded cost of the grid.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "require data centers to pay transmission rates applicable to their rate class that reflect the embedded cost of the integrated grid"
+    },
+    "grid_act": {
+     "text": "No transmission pricing rule and no FERC role.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "how interconnection costs and other infrastructure costs needed to supply the data center with power from the electric grid are allocated"
+    },
+    "senate": {
+     "text": "Computational loads pay both the embedded and the incremental cost of transmission. Incremental payments are credited to the utility's revenue requirement so other customers are not charged twice.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "exit",
+    "topic": "If the data center leaves",
+    "policy": {
+     "text": "Pledge signers say they will pay negotiated rates whether or not they use the power.",
+     "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+     "cite": "White House, Ratepayer Protection Pledge",
+     "quote": "Importantly, they will pay these rates for the power and related infrastructure that are brought online to service their data centers, whether they use the electricity or not"
+    },
+    "rpa": {
+     "text": "Recovery continues if the customer ends its contract or stops buying power.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+     "cite": "H.R. 9340, House-passed text",
+     "quote": "including in the event of such large-load customer terminating a contract or other agreement with the electric utility"
+    },
+    "grid_savings": {
+     "text": "Financial security must protect other customers if the load fails to proceed or perform.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "financial security designed to protect any customer from unrecovered costs if a covered large load fails to proceed or perform"
+    },
+    "pftp": {
+     "text": "States must consider longer minimum contracts and minimum demand charges.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "an extension of minimum utility contract lengths for data center customers to ensure that data center load does not leave utilities and ratepayers with stranded costs"
+    },
+    "grid_act": {
+     "text": "Not addressed."
+    },
+    "senate": {
+     "text": "Recovery continues if the data center ends its contract or stops buying power before the incremental cost is paid off.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "assurance",
+    "topic": "Up-front collateral",
+    "policy": {
+     "text": "FERC's June orders call for rising readiness requirements to deter speculative requests.",
+     "url": "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/",
+     "cite": "Utility Dive on FERC's June 2026 orders",
+     "quote": "We target speculative projects by establishing escalating readiness requirements for distinct phases of the study process to deter duplicative or speculative requests for transmission service,"
+    },
+    "rpa": {
+     "text": "The utility must require assurances or contributions before building an upgrade.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+     "cite": "H.R. 9340, House-passed text",
+     "quote": "an electric utility shall require the large-load customer provide to the electric utility financial assurances or contributions to cover the cost of such upgrade"
+    },
+    "grid_savings": {
+     "text": "FERC's rule sets payment and security requirements.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "financial security designed to protect any customer from unrecovered costs if a covered large load fails to proceed or perform"
+    },
+    "pftp": {
+     "text": "States must consider higher study fees, deposits or collateral, and up-front construction contributions.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "an increase in up-front interconnection study costs, deposit amounts, or collateral requirements for data center projects"
+    },
+    "grid_act": {
+     "text": "Not addressed."
+    },
+    "senate": {
+     "text": "Before building or upgrading generation, transmission or distribution for the load, the utility must collect assurances or contributions covering the cost.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "rate-class",
+    "topic": "Separate rate class",
+    "policy": {
+     "text": "Pledge signers say they will negotiate separate rate structures with utilities and states.",
+     "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+     "cite": "White House, Ratepayer Protection Pledge",
+     "quote": "Companies will voluntarily negotiate new, separate rate structures with their utilities and relevant State governments wherever they build data centers."
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Not addressed."
+    },
+    "pftp": {
+     "text": "States must consider a data center rate class. DOE grants help them.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "establishing a rate class specific to data centers to ensure that data center owners and operators are covering the full cost of the generation, transmission, and distribution upgrades necessary to serve data centers"
+    },
+    "grid_act": {
+     "text": "DOE must put residential customers' rates ahead of every other class.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "the Secretary shall prioritize the electrical rates paid by residential ratepayers over all other ratepayer classes"
+    },
+    "senate": {
+     "text": "States may make data centers a separate class with rates, terms and interconnection priorities less favorable than other large industrial loads.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "queue",
+    "topic": "Who connects first",
+    "policy": {
+     "text": "FERC wants standard large-load applications and studies in each region.",
+     "url": "https://rmi.org/resources/understanding-fercs-large-load-orders/",
+     "cite": "RMI on FERC's June 2026 orders",
+     "quote": "Develop standardized transmission service applications and study processes for large loads"
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Study timelines and readiness requirements against speculative requests. No open seasons.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "protect other customers from the costs of speculative or duplicative requests"
+    },
+    "pftp": {
+     "text": "Grid operators run a data center queue that favors those offsetting their demand, and may delay or deny connections that hurt reliability or affordability.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "a data center that is not already interconnected with the electric grid may not interconnect with the electric grid unless the data center has fully advanced through the applicable data center load queue system"
+    },
+    "grid_act": {
+     "text": "Not addressed."
+    },
+    "senate": {
+     "text": "States may run open seasons that award service by greatest benefit to other ratepayers, whatever the order of requests.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "own-power",
+    "topic": "Bring your own power",
+    "policy": {
+     "text": "Pledge signers say they will build, bring or buy new generation. FERC told grid operators to address co-location.",
+     "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+     "cite": "White House, Ratepayer Protection Pledge",
+     "quote": "Companies will build, bring, or buy the new generation resources and electricity needed to satisfy their new energy demands"
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Optional. A load may be studied with its own generation, storage or flexibility.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "the study and interconnection, separately or together, of a covered large load and any associated generation, energy storage, or verifiable load flexibility"
+    },
+    "pftp": {
+     "text": "Queue priority for data centers that bring new low- or no-carbon supply they pay for. Not required.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "are designated for the service of, and paid for by, the data center owner or operator, including through a power purchase agreement or another bilateral contract"
+    },
+    "grid_act": {
+     "text": "180 days after enactment, every data center's power, including backup, must come from sources separate from the grid.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "derives all of its energy, including back-up energy, from a captive power plant, on-site power generation, or some other source or combination of sources separate from, and not deriving power from, the electric grid"
+    },
+    "senate": {
+     "text": "States may require the data center to procure, build or contract for new generation sufficient to serve it.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "flexibility",
+    "topic": "Curtailable service",
+    "policy": {
+     "text": "FERC asked grid operators for new transmission services for flexible large loads.",
+     "url": "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/",
+     "cite": "Utility Dive on FERC's June 2026 orders",
+     "quote": "new transmission services for flexible large loads"
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Flexible and phased interconnection service at the customer's election.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "flexible interconnection service, subject to enforceable operating limits"
+    },
+    "pftp": {
+     "text": "Flexibility agreements let the operator curtail data centers before other users and can count toward the supply they must bring.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "data centers may be interrupted by the covered interconnection entity"
+    },
+    "grid_act": {
+     "text": "Not addressed."
+    },
+    "senate": {
+     "text": "States may require service that limits how much or when the load draws power. FERC must price non-firm transmission service lower.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "credits",
+    "topic": "Surplus returned to other customers",
+    "policy": {
+     "text": "Not addressed."
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Upgrade payments are credited back to the paying load, not to other customers.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "those costs shall be credited back against transmission service charges"
+    },
+    "pftp": {
+     "text": "Not addressed."
+    },
+    "grid_act": {
+     "text": "Grid-connected data centers can pay Rate Effect Credits to offset their effect on rates.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "a credit paid by a covered entity to an appropriate party, as determined by the Secretary, that offsets the effect that a data center would otherwise have on the electrical rates paid by ratepayers"
+    },
+    "senate": {
+     "text": "States may charge more than cost and credit the surplus to other customers.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "existing",
+    "topic": "Existing data centers",
+    "policy": {
+     "text": "The Pledge covers new demand only.",
+     "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+     "cite": "White House, Ratepayer Protection Pledge",
+     "quote": "satisfy their new energy demands"
+    },
+    "rpa": {
+     "text": "Applies to customers that request service or contract after enactment. States that already acted on a comparable standard are exempt.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+     "cite": "H.R. 9340, House-passed text",
+     "quote": "on or after the date of the enactment of this paragraph, requests to enter into, or enters into, a contract or other agreement"
+    },
+    "grid_savings": {
+     "text": "New or expanded loads only.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "a new or expanded nonresidential electric load"
+    },
+    "pftp": {
+     "text": "The queue covers data centers not yet connected. The text does not say how the tariff or rate class treats existing sites.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "a data center that is not already interconnected with the electric grid may not interconnect"
+    },
+    "grid_act": {
+     "text": "Existing data centers get 10 years to leave the grid, operating meanwhile under one-year DOE certificates.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "Until the date that is 10 years after the date of enactment of this Act, a covered entity that owns, operates, or maintains an existing data center that derives any of its energy from the electric grid"
+    },
+    "senate": {
+     "text": "Section 228 applies to loads that interconnect after enactment; arrangements approved earlier stay in effect.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "data",
+    "topic": "Reporting",
+    "policy": {
+     "text": "FERC found grid operators' upgrade costs are not transparent. No EIA change.",
+     "url": "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/",
+     "cite": "Utility Dive on FERC's June 2026 orders",
+     "quote": "lack of transparency in how RTOs and ISOs determine how network upgrades are assigned and paid for"
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Each load, state commission and FERC get the classification, costs and alternatives studied.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text",
+     "quote": "Disclosure to the applicable covered large-load customer, each applicable State commission, and the Commission of"
+    },
+    "pftp": {
+     "text": "FERC sets disclosure rules for interconnection requests. DOE helps with load forecasts.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text",
+     "quote": "the Commission shall establish transparency and disclosure requirements for data center load interconnection requests"
+    },
+    "grid_act": {
+     "text": "DOE sets public disclosure of usage, property deals and utility agreements.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "cite": "S. 3852 text",
+     "quote": "the Secretary shall establish a national requirement for covered entities to provide to the public"
+    },
+    "senate": {
+     "text": "EIA must add data center load to Form 861.",
+     "sections": [
+      "2114"
+     ]
+    }
+   }
+  ],
+  "others_label": "Other data center bills",
+  "others": [
+   {
+    "text": "Data Center Transparency Act (H.R. 6984; Menendez, Casar): EIA would collect each data center's energy use every six months; EPA would report on water use and emissions. No cost rules.",
+    "cite": "H.R. 6984 text",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr6984ih/html/BILLS-119hr6984ih.htm"
+   },
+   {
+    "text": "Protecting Ratepayers Act (H.R. 9777; Donalds): data centers of 5 MW or more, existing ones included, would have to take all power and water from sources separate from the public grid and water system within 180 days, and the Pledge proclamation would gain the force of law.",
+    "cite": "H.R. 9777 text",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9777ih/html/BILLS-119hr9777ih.htm"
+   },
+   {
+    "text": "Clean Cloud Act (S. 1475; Whitehouse, Fetterman): an EPA emissions standard and fee for data centers and crypto mines over 100 kW, with annual EIA reporting. A utility may not pass the fee to other customers.",
+    "cite": "S. 1475 text",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119s1475is/html/BILLS-119s1475is.htm"
+   }
+  ]
+ }
 }
