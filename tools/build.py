@@ -28,7 +28,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-10-01"
+DATA_AS_OF = "2026-10-02"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
