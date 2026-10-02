@@ -687,9 +687,9 @@
      "id": "datacenters",
      "topic": "Data centers and other large loads",
      "current": {
-      "text": "No federal floor. Retail costs are set in state rate cases and utility tariffs. For transmission service, FERC's 1994 pricing policy lets a utility charge a new load the higher of the embedded or the incremental cost, not both.",
-      "cite": "Utility Dive on FERC's 1994 pricing policy",
-      "url": "https://www.utilitydive.com/news/ferc-transmission-policy-white-house-ratepayer-protection-peskoe/815438/"
+      "text": "No federal floor. Retail costs are set in state rate cases and utility tariffs. FERC's 1994 transmission pricing policy lets a utility charge a new transmission customer the higher of embedded cost or incremental expansion cost, not the sum of the two. It may price separate lines on different bases.",
+      "cite": "FERC pricing policy statement, 59 FR 55031 (1994)",
+      "url": "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf"
      },
      "epra": {
       "text": "Not addressed."
@@ -698,7 +698,7 @@
       "text": "Not addressed."
      },
      "senate": {
-      "text": "Loads of 20 megawatts and up pay the full incremental cost of serving them, even after they leave. FERC must charge these loads both the embedded and the incremental cost of transmission. States may auction access, require new generation, and require curtailable service. The Energy Information Administration must collect data center load.",
+      "text": "New Federal Power Act section 228 covers data center and high-density computing loads of 20 megawatts or more, counting phased buildouts and commonly controlled sites. Those that connect after enactment pay the full incremental cost of serving them, even after they leave; arrangements approved earlier stay in effect. States may auction access, require new generation, and require curtailable service. Separately, and with no size threshold, FERC must charge computing loads both the embedded and the incremental cost of transmission service. The Energy Information Administration must collect data center load.",
       "sections": [
        "2107",
        "2114"
@@ -706,7 +706,7 @@
      },
      "note": {
       "label": "Earlier bill",
-      "text": "The Ratepayer Protection Act (H.R. 9340) would have asked state regulators to consider making loads of 100 megawatts or more pay the full incremental cost of upgrades, including after they leave, with financial assurance before construction. States did not have to adopt it. It passed the House 417-3 on September 16, 2026, and the Senate rejected cloture 57-43 on September 30. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts and adds an embedded-cost charge for transmission.",
+      "text": "The Ratepayer Protection Act (H.R. 9340) would have asked state regulators to consider making loads of 100 megawatts or more pay the full incremental cost of upgrades, including after they leave, with financial assurance before construction. States did not have to adopt it. It passed the House 417-3 on September 16, 2026, and the Senate rejected cloture 57-43 on September 30. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts, and section 2107(a) adds an embedded-cost charge for transmission.",
       "sources": [
        {
         "cite": "H.R. 9340, as passed by the House",

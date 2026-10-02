@@ -31,6 +31,15 @@
     "people.brent-gardner.quote"
    ]
   },
+  "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.datacenters.current"
+   ]
+  },
   "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/": {
    "cls": "ok",
    "kind": "page",
