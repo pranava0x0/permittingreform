@@ -707,8 +707,20 @@
      "note": {
       "label": "Earlier bill",
       "text": "The Ratepayer Protection Act (H.R. 9340) would have asked state regulators to consider making loads of 100 megawatts or more pay the full incremental cost of upgrades, including after they leave, with financial assurance before construction. States did not have to adopt it. It passed the House 417-3 on September 16, 2026, and the Senate rejected cloture 57-43 on September 30. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts and adds an embedded-cost charge for transmission.",
-      "cite": "H.R. 9340, as passed by the House",
-      "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm"
+      "sources": [
+       {
+        "cite": "H.R. 9340, as passed by the House",
+        "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm"
+       },
+       {
+        "cite": "CBS News on the 417-3 House vote",
+        "url": "https://www.cbsnews.com/news/house-bill-data-center-energy-costs/"
+       },
+       {
+        "cite": "Senate roll call vote 254",
+        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm"
+       }
+      ]
      }
     },
     {

@@ -26,6 +26,42 @@
    "sector": "press"
   },
   {
+   "id": "2026-10-01-x-shanumathew93-five-notable-terms",
+   "date": "2026-10-01",
+   "type": "social_x",
+   "outlet": "X / @ShanuMathew93",
+   "author": "Shanu Mathew",
+   "title": "Senate’s permitting deal could make power infrastructure easier to finance while requiring data centers to commit more capital to secure electricity.",
+   "url": "https://x.com/ShanuMathew93/status/2105682239128314310",
+   "verified": true,
+   "summary": "Mathew, an investor and portfolio manager who writes on energy and infrastructure, lists five terms: the 150-day NEPA challenge window, FERC backstop siting with beneficiary-pays cost allocation, the end of the federal right of first refusal, limits on permit revocation with damages, and data center cost responsibility. His data center description matches the text: loads of 20 MW or more bear incremental generation, storage and grid costs, with financial assurance before construction and recovery continuing if the load exits (section 2107, new FPA section 228).",
+   "stance": "neutral",
+   "quote": {
+    "text": "Senate’s permitting deal could make power infrastructure easier to finance while requiring data centers to commit more capital to secure electricity.",
+    "speaker": "Shanu Mathew"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "transmission",
+    "permit-certainty",
+    "data-centers"
+   ],
+   "sector": "industry",
+   "visuals": [
+    {
+     "title": "Permitting and transmission",
+     "text": "Six terms (the 150-day challenge window, remand without vacatur, permit durability, FERC backstop siting, beneficiary pays and the right-of-first-refusal ban), each with what the bill does and why it matters for project risk.",
+     "url": "https://x.com/ShanuMathew93/status/2105682239128314310/photo/1"
+    },
+    {
+     "title": "Data-center power commitments",
+     "text": "Five terms from section 2107 (the 20 MW threshold, incremental costs, financial assurance, exit liability and existing agreements), showing who pays and when.",
+     "url": "https://x.com/ShanuMathew93/status/2105682239128314310/photo/2"
+    }
+   ]
+  },
+  {
    "id": "2026-10-01-x-janeaflegal-data-center-language-best-yet",
    "date": "2026-10-01",
    "type": "social_x",
@@ -64,6 +100,94 @@
     "courts"
    ],
    "sector": "government"
+  },
+  {
+   "id": "2026-10-01-x-aidanrmackenzie-interregional-transmission",
+   "date": "2026-10-01",
+   "type": "social_x",
+   "outlet": "X / @AidanRMackenzie",
+   "author": "Aidan Mackenzie",
+   "title": "So how will the permitting reform deal (BAAJA) get big transmission lines built?",
+   "url": "https://x.com/AidanRMackenzie/status/2105726682300629441",
+   "verified": true,
+   "summary": "Mackenzie, an infrastructure fellow at the Institute for Progress, explains how the bill would fix interregional transmission: neighboring regions must complete joint planning on a common set of benefits, FERC approves cost allocation for the lines they select, and FERC can site qualifying lines when states deny them without a designated corridor. These points match sections 2101 and 2103. His figures on Order 1000 projects and merchant lines are not sourced in the thread and are not checked against the bill.",
+   "stance": "supports",
+   "quote": {
+    "text": "So how will the permitting reform deal (BAAJA) get big transmission lines built?",
+    "speaker": "Aidan Mackenzie"
+   },
+   "topics": [
+    "transmission"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-10-01-heatmap-data-center-double-tap",
+   "date": "2026-10-01",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "The Senate Permitting Deal Contains a Data Center Double Tap",
+   "url": "https://heatmap.news/daily/data-center-permitting-deal",
+   "verified": true,
+   "summary": "Meyer explains the bill's ratepayer provisions for data centers and crypto miners. FERC would have to price transmission service for these customers at both embedded and incremental cost, a new Federal Power Act section would bar shifting incremental costs to other customers for loads of 20 megawatts or more, and states could set less favorable rates and run open seasons. The piece says the changes would apply to \"future data centers\" but does not state that section 228 covers only loads that interconnect after enactment and leaves existing arrangements in place.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Call it the data center double tap.",
+    "speaker": "Robinson Meyer"
+   },
+   "topics": [
+    "data-centers",
+    "transmission",
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-10-01-heatmap-climate-tech-winners-losers",
+   "date": "2026-10-01",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Katie Brigham",
+   "title": "The Climate Tech Winners and Losers of the Senate’s Permitting Bill",
+   "url": "https://heatmap.news/climate-tech/baaja-climate-tech",
+   "verified": true,
+   "summary": "Brigham sorts the bill's effects by climate tech sector and concludes most sectors gain. She names geothermal, grid-enhancing technologies, virtual power plants and critical minerals as winners, and says data center costs would shift from ratepayers to developers. The data center point is stated without noting that the ratepayer section applies only to loads that connect after enactment.",
+   "stance": "mixed",
+   "quote": {
+    "text": "The bill requires utilities to conduct recurring evaluations on technologies that could increase the capacity of existing transmission infrastructure",
+    "speaker": "Katie Brigham"
+   },
+   "topics": [
+    "transmission",
+    "geothermal",
+    "data-centers",
+    "mining",
+    "congress"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-10-01-heatmap-am-permitting-reform-bill-dropped",
+   "date": "2026-10-01",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Alexander C. Kaufman",
+   "title": "The Permitting Reform Bill Just Dropped",
+   "url": "https://heatmap.news/am/permitting-reform-baaja",
+   "verified": true,
+   "summary": "The morning newsletter's lead item reports the 417-page bill and links Heatmap's explainer. It says the bill would change how data centers are built and whether transmission lines get constructed, then focuses on passage odds: House Democrats are weighing whether to wait past the November election, and a Republican source says the House will not be called back to vote before it.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Most Democrats will want to see how things go on Nov. 3 and then do a reality check",
+    "speaker": "Rep. Jared Huffman"
+   },
+   "topics": [
+    "congress",
+    "data-centers",
+    "transmission"
+   ],
+   "sector": "press"
   },
   {
    "id": "2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right",
@@ -179,6 +303,58 @@
     "transmission",
     "nepa",
     "data-centers"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-09-30-x-hausfath-permitting-cheat-sheet",
+   "date": "2026-09-30",
+   "type": "social_x",
+   "outlet": "X / @hausfath",
+   "author": "Zeke Hausfather",
+   "title": "Confused by all the debate about the new permitting reform bill?",
+   "url": "https://x.com/hausfath/status/2105398276681785416",
+   "verified": true,
+   "summary": "Hausfather, a climate scientist who writes The Climate Brink, posts a one-page table of the bill's main provisions grouped by whom they help, with his own estimate of each one's effect on emissions. Transmission, renewables and geothermal on public land, historic preservation and offshore wind leasing mostly help clean energy; NEPA deadlines and lawsuit limits, permit certainty and the discrimination damages cut both ways; pipeline, drilling and narrower NEPA scope changes mostly help fossil fuels. The section numbers match the text. His line that courts cannot cancel permits applies to NEPA claims (section 1110), and the emissions sizes are his judgment.",
+   "stance": "mixed",
+   "quote": {
+    "text": "Here is a quick cheat-sheet of the most important provisions, and their likely impact on emissions",
+    "speaker": "Zeke Hausfather"
+   },
+   "topics": [
+    "transmission",
+    "nepa",
+    "permit-certainty",
+    "wind-solar",
+    "fossil",
+    "courts"
+   ],
+   "sector": "think_tank",
+   "visuals": [
+    {
+     "title": "What's in the Senate permitting deal",
+     "text": "Ten provisions sorted into mostly helps clean energy, cuts both ways and mostly helps fossil fuels, each with its section numbers and an emissions estimate from small to large.",
+     "url": "https://x.com/hausfath/status/2105398276681785416/photo/1"
+    }
+   ]
+  },
+  {
+   "id": "2026-09-30-x-aidanrmackenzie-we-have-a-permitting-deal",
+   "date": "2026-09-30",
+   "type": "social_x",
+   "outlet": "X / @AidanRMackenzie",
+   "author": "Aidan Mackenzie",
+   "title": "WE HAVE A PERMITTING DEAL",
+   "url": "https://x.com/AidanRMackenzie/status/2105344770335703483",
+   "verified": true,
+   "summary": "Mackenzie, an infrastructure fellow at the Institute for Progress, announces the bill and calls it the best permitting bill the country has gotten. He says both parties got a lot and that it is much bigger than the 2022 Manchin package. The visible opening of the thread describes the bill as 400+ pages, which fits the 417-page text; later posts in the thread were not read.",
+   "stance": "supports",
+   "quote": {
+    "text": "it is easily the best permitting bill we've ever gotten",
+    "speaker": "Aidan Mackenzie"
+   },
+   "topics": [
+    "congress"
    ],
    "sector": "think_tank"
   },
@@ -494,6 +670,31 @@
     "nepa"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2026-09-30-green-tape-permitting-grand-bargain-is-here",
+   "date": "2026-09-30",
+   "type": "analysis",
+   "outlet": "Green Tape",
+   "author": "Thomas Hochman",
+   "title": "The Permitting Grand Bargain Is Here",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "verified": true,
+   "summary": "Hochman walks through each title of the bill and calls it more aggressive than he expected on both grid and conventional permitting reform. He highlights the 150-day NEPA limitations period, the end of injunctions and vacatur for NEPA-only claims, new revocation limits with damages, FERC backstop siting without a designated corridor, and the state referral power over local transmission spending. He expects Senate and House votes in the lame duck. His account of the NEPA remedies, revocation damages and FERC siting matches the text (sections 1110, 1401 and 2101).",
+   "stance": "supports",
+   "quote": {
+    "text": "Third and most importantly, injunctions and vacatur are eliminated outright for NEPA-specific claims.",
+    "speaker": "Thomas Hochman"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "permit-certainty",
+    "transmission",
+    "clean-water-act",
+    "congress"
+   ],
+   "sector": "think_tank"
   },
   {
    "id": "2026-09-30-deseret-senate-unveils-deal-energy-data-centers",
