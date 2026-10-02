@@ -583,7 +583,7 @@
     if (!brief) return null;
     return el("button", { type: "button", class: "more-toggle", "aria-expanded": "false", onclick: (ev) => {
       const b = ev.currentTarget;
-      const open = b.closest(".event, .media-item, .person, .cm-row").classList.toggle("open");
+      const open = b.closest(".event, .media-item, .person").classList.toggle("open");
       b.setAttribute("aria-expanded", open ? "true" : "false");
       b.textContent = open ? "Less" : "More";
     } }, "More");
@@ -616,16 +616,25 @@
       return el("section", { class: "block" },
         el("h2", { id: "cg-" + g.id }, g.label),
         g.note ? el("p", { class: "muted" }, g.note) : null,
-        el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => el("article", { class: "cm-row", id: "cm-" + r.id },
-          el("h3", null, r.topic, " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])),
-          el("p", { class: "cm-who" }, r.who.map((w) => c.who[w]).join(" · ")),
-          el("p", { class: "lead" }, el("strong", null, "BAAJA: "), r.baaja),
-          el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
-            r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
-          el("p", { class: "where" }, secLinks(r.sections), r.quote ? moreButton() : null),
-          r.quote ? el("figure", { class: "quote small" },
-            el("blockquote", null, r.quote),
-            r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null))));
+        el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => {
+          const head = [el("span", { class: "cm-topic" }, r.topic), " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])];
+          return el("article", { class: "cm-row", id: "cm-" + r.id },
+            el("h3", null, brief
+              ? el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": "cb-" + r.id, onclick: (ev) => {
+                  const open = ev.currentTarget.closest(".cm-row").classList.toggle("open");
+                  ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
+                } }, head)
+              : head),
+            el("div", { class: "cm-body", id: "cb-" + r.id },
+              el("p", { class: "cm-who" }, r.who.map((w) => c.who[w]).join(" · ")),
+              el("p", null, el("strong", null, "BAAJA: "), r.baaja),
+              el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
+                r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
+              el("p", { class: "where" }, secLinks(r.sections)),
+              r.quote ? el("figure", { class: "quote small" },
+                el("blockquote", null, r.quote),
+                r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null));
+        })));
     });
     return [
       el("div", { class: "lede" }, el("h1", null, "Communities", el("span", { class: "credit-inline" }, "AI-written")),

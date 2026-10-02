@@ -37,4 +37,4 @@ Most readers use a phone. For every UI change, measure page height in screen-hei
 - Pages with three or more headings get an "On this page" row of jump links.
 - The Timeline opens with a swipeable milestone strip, scrolled to the newest milestone.
 
-Measured October 2, 2026 at 375×812, in screen-heights: Compare 43 to 9, data center bills 13 to 2, Timeline 14 to 7, People 20 to 6, bill index 16 to 1.
+Measured October 2, 2026 at 375×812, in screen-heights: Compare 43 to 9, data center bills 13 to 2, Timeline 14 to 7, People 20 to 6, bill index 16 to 1, Communities 28 to 4 (one line per change).

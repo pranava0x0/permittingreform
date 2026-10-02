@@ -1,6 +1,6 @@
 {
- "generated": "2026-10-02",
- "intro": "This view lists the provisions of the Bipartisan American Affordability and Jobs Act of 2026 that change how people outside the project sponsor and the lead agency can comment, be consulted, take part, object or sue. Each row says who is affected, what current law allows and what the bill would change.",
+ "_about": "Curated from data/research/communities.json (a Sonnet reading of the bill text, 2026-10-02). The build checks each quote against the cited section.",
+ "intro": "How the bill changes who can comment, be consulted, take part in planning or go to court. Each row gives current law, the change and the sections that make it.",
  "who": {
   "public": "The public",
   "tribes": "Tribes",
@@ -83,7 +83,7 @@
    "now": "NEPA excludes seven kinds of action from 'major Federal action', including projects with no or minimal federal funding or involvement and non-discretionary actions.",
    "now_cite": "42 U.S.C. 4336e(10)",
    "now_url": "https://www.law.cornell.edu/uscode/text/42/4336e",
-   "baaja": "The list would grow to fourteen. New entries include projects whose only federal involvement is a loan or loan guarantee, routine agency actions costing up to $10,000,000, lifeline infrastructure repair that does not raise capacity by more than 20 percent, geothermal observation test projects, grid work in existing rights-of-way, gas pipeline work in covered areas, actions another agency already evaluated under NEPA, and certain Corps projects with a federal share of up to $50,000,000. These actions fall outside the Act's review requirements.",
+   "baaja": "The list would grow to fourteen. New entries include projects whose only federal involvement is a loan or loan guarantee, and routine agency actions costing up to $10,000,000. Others cover lifeline infrastructure repair that adds no more than 20 percent capacity, geothermal observation tests, grid work in existing rights-of-way and gas pipeline work in covered areas. Actions another agency already evaluated under NEPA, and some Corps projects with a federal share of up to $50,000,000, also qualify. These actions fall outside the Act's review requirements.",
    "sections": [
     "1102"
    ],
@@ -547,7 +547,7 @@
    "now": "A permit holder that cannot agree on compensation, and that FERC finds made good-faith efforts to engage landowners early, may use eminent domain in federal or state court. Federal procedure follows state practice as nearly as practicable. Just compensation is fair market value including severance damages.",
    "now_cite": "16 U.S.C. 824p(e), (f)",
    "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
-   "baaja": "Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. Section 2101(e) also strikes subsection (f) of section 216, which is the current 'Compensation' subsection, and replaces it with a cost allocation subsection. As written, the statutory fair market value language would no longer appear in section 216.",
+   "baaja": "Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. Section 2101(e) also strikes subsection (f) of section 216, which is the current 'Compensation' subsection, and replaces it with a cost allocation subsection. As written, the statutory fair market value language would no longer appear in section 216. The Fifth Amendment's just-compensation requirement still applies.",
    "sections": [
     "2101"
    ],
@@ -599,7 +599,7 @@
     "public"
    ],
    "effect": "narrows",
-   "now": "FERC must find, case by case, that a line is in the public interest, protects or benefits consumers and meets the other findings before issuing a siting permit.",
+   "now": "For each permit, FERC must find that a line is in the public interest, protects or benefits consumers and meets the other findings before issuing a siting permit.",
    "now_cite": "16 U.S.C. 824p(b)",
    "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
    "baaja": "A project selected in a regional or joint interregional plan would be considered to satisfy the findings in paragraphs (2) through (5) and, if applicable, (6) of section 216(b). The planning section lists required process elements, and none addresses state or public participation. Approval of a planning process is not a major Federal action under NEPA.",
@@ -859,7 +859,7 @@
    ],
    "effect": "narrows",
    "now": "The statute says nothing about programmatic agreements. The Advisory Council's rules allow them.",
-   "baaja": "A party that is not a signatory could not bring a civil action to challenge how a programmatic agreement is implemented, and no court would have jurisdiction. Federal agencies must develop programmatic agreements for routine and repetitive categories, and a state or tribal officer's agreement for the same category would apply.",
+   "baaja": "Only signatories could sue over how a programmatic agreement is implemented; no court would have jurisdiction over a suit by anyone else. Federal agencies must develop programmatic agreements for routine and repetitive categories, and a state or tribal officer's agreement for the same category would apply.",
    "sections": [
     "2301"
    ],
@@ -917,7 +917,7 @@
    "now": "The Secretary of the Interior grants rights-of-way across Indian land.",
    "now_cite": "25 U.S.C. 323",
    "now_url": "https://www.law.cornell.edu/uscode/text/25/323",
-   "baaja": "An interested party that has exhausted tribal remedies could petition Interior to review a tribe's compliance with its approved regulation. If Interior finds a violation it may act, including rescinding approval of the regulation, after the tribe gets an on-the-record hearing and a chance to cure.",
+   "baaja": "An interested party that has exhausted tribal remedies could petition Interior to review a tribe's compliance with its approved regulation. If Interior finds a violation it may act, including rescinding approval of the regulation, after the tribe gets a formal hearing and a chance to cure.",
    "sections": [
     "2212"
    ],
@@ -944,20 +944,5 @@
    ],
    "quote": "shall be subject to judicial review in the same courts in which an order of the Commission is subject to judicial review under section 313"
   }
- ],
- "notes": [
-  "Counts and labels: 'who' and 'effect' are analyst labels, not bill text. 'narrows' means less time, fewer avenues or a higher bar for the listed parties; rows where the bill both shortens and lengthens something are labeled 'changes'.",
-  "Section 1110(e) bars claims over 'any omission from the list described in section 3(22)(B)'. In the bill's definitions, section 3(22)(B) is the sponsor's list of pre-application engagement with state, local and tribal officials and local community entities. The row reads the cross-reference literally; the bill does not state the intent.",
-  "Section 2101(e)(1) strikes subsection (f) of Federal Power Act section 216 and inserts a cost allocation subsection. In the current code subsection (f) is 'Compensation' (just compensation at fair market value, including severance damages). The row reports what the text does as written. This may be a drafting error; it has not been checked against any other version of the bill.",
-  "Section 2212 strikes the references to the 1934 and 1936 Acts from the tribal consent sentence in 25 U.S.C. 324. The leftover sentence is awkward, and the row reads it as extending the consent rule to lands of any tribe. Current-law baseline fetched from law.cornell.edu.",
-  "Research cutoff (section 1106): the cutoff date is the notice of intent, and the EIS comment period runs 45 to 75 days after that notice. Research that surfaces during the comment period therefore falls after the cutoff. Subparagraph (C) says the paragraph does not affect Administrative Procedure Act review of information in comments received. The bill does not say how the two fit together.",
-  "Section 106 consulting parties: the new 54 U.S.C. 306108(c) names preservation officers, tribes, Native Hawaiian organizations, local governments and applicants. It does not mention the additional consulting parties and public participation that 36 CFR 800.2(c)(5) and (d) provide. The row states only that the text does not name them, not that the rules are repealed.",
-  "Section 1106 sets the time limits for EIS and EA review and keeps the page limits. The 150-page EIS limit (300 for extraordinary complexity) and the 75-page EA limit in 42 U.S.C. 4336a(e) are only renumbered. The 2-year and 1-year deadlines stay, counted from the earlier of the agency's determination or a complete application. The bill adds clocks after the review: finding of no significant impact within 7 days of an EA, record of decision within 45 days of an EIS, and permits within 90 days (agencies in the review) or 120 days (others). Nothing in the bill adds a public comment period on an EA or a draft EIS.",
-  "Left out as not clearly about outside participation: CEQ's public record of categorical exclusions and the 7-day and 30-day agency notices (section 1108, which adds a public record and notices between agencies but no new participation right); the lead agency's threshold decision binding other agencies (1105(c)); a sponsor's right to force an EIS in place of an EA (1105(b)); the Chairman's final, unreviewable dispute orders, which also count as full compliance with interagency consultation duties for that dispute (1106(g)(1)(C)); only a project sponsor may petition a court to enforce NEPA deadlines (1106(g)(4)) and 1403; sponsor-side claims in 1401 and 1402.",
-  "Left out: section 2107 and 2114 (state power to set rates for data center loads) because they concern rate design, not comment or challenge rights; sections 2108 and 2109; section 2224; 2226 (geothermal applications processed despite a pending suit unless a court vacates or enjoins); 2231 (hydropower report with public comment); 2233; 2251 and 2252; 2211 and 2225 (landowner consent and state permits for wells on non-federal surface, because the current-law baseline was not confirmed); 1306 (state-collected data in ESA listings); 1133(d)(5) (improvement fund may be used to improve public engagement); 2213 and 2214 (directed categorical exclusions that keep extraordinary-circumstances language); and the section 224 state and tribal comment on the transmission study, which carries over the current 16 U.S.C. 824p(a) comment right.",
-  "Section 2101(g) changes the interstate compact rule in 16 U.S.C. 824p(i)(4). The amended sentence is hard to read after the strikes, so no row covers compacts.",
-  "State assumption of ESA consultation (1304) deems an assuming state agency to be a federal agency for 28 U.S.C. 2412. The bill does not say what that means for fee awards to plaintiffs, so the row omits it.",
-  "Current-law baselines confirmed by fetch from law.cornell.edu on 2026-10-02: 25 U.S.C. 324, 33 U.S.C. 1341, 33 U.S.C. 1314, 54 U.S.C. 306108, 54 U.S.C. 303103, 42 U.S.C. 4370m-6, 28 U.S.C. 2401(a), 36 CFR 800.2. 23 U.S.C. 139(l) could not be retrieved and is not cited. Local files covered 42 U.S.C. 4336 to 4336e and 16 U.S.C. 824p. The 4332(2)(C)(iii), 42 U.S.C. 15942, 33 U.S.C. 1344(e), 16 U.S.C. 1536 and 16 U.S.C. 824s baselines come from the existing compare table and general knowledge and were not re-read.",
-  "Court review of a missed deadline: the bill gives deadline-enforcement suits only to project sponsors. Communities have no corresponding avenue, which is a design choice and not shown as a row."
  ]
 }
