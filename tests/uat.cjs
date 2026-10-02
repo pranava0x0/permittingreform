@@ -166,11 +166,12 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.equal(await page.locator('.tl-mark').count(), ms.length);
       assert.ok(ms.length < await page.evaluate(()=>PR_DATA.timeline.length), 'the line marks some events, not all');
       const lastMs = ms[ms.length-1];
-      // Every symbol, clustered or not, opens its own milestone when tapped where it is drawn.
+      // Every symbol, clustered or not, opens its own milestone when tapped anywhere it is drawn.
       for (const m of ms) {
         await page.locator('.tl-line').scrollIntoViewIfNeeded();
         const sym = await page.locator('.tl-mark[data-id="'+m.id+'"] .tl-sym').boundingBox();
-        await page.mouse.click(sym.x+sym.width/2, sym.y+sym.height/2);
+        // Tap near the bottom edge of the drawn symbol: half of a bottom-row symbol hangs below the line.
+        await page.mouse.click(sym.x+sym.width/2, sym.y+sym.height-1);
         await page.waitForSelector('.tl-mark.sel[data-id="'+m.id+'"]');
       }
       await page.getByRole('button',{name:'All events'}).click();

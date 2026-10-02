@@ -41,7 +41,8 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
     const state = () => page.evaluate(() => ({
       hash: location.hash, html: document.getElementById('view').innerHTML.length + ':' + document.querySelectorAll('[open], .open, [aria-expanded="true"], [aria-pressed="true"]').length,
       theme: document.documentElement.dataset.theme || '', y: Math.round(scrollY),
-      focus: document.activeElement ? document.activeElement.outerHTML.slice(0, 80) : '',
+      /* Clicking a control focuses it; focus on the page body or on the clicked control is not a change. */
+      focus: (() => { const a = document.activeElement; return !a || a === document.body || a.dataset.crawled === '1' ? 'none' : a.outerHTML.slice(0, 80); })(),
       overflow: document.documentElement.scrollWidth > innerWidth + 1,
     }));
 
@@ -93,6 +94,10 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
           try { await loc.click({ trial: true, timeout: 3000 }); }
           catch (e) { problem({ ...rec, kind: 'obscured: cannot be tapped', error: e.message.split('\n').find((l) => /intercepts|not visible|outside/.test(l)) || e.message.split('\n')[0] }); continue; }
         }
+        /* A control that is already current (this tab, this section, the pressed filter) may rightly do nothing. */
+        const current = await loc.evaluate((el) => el.matches('[aria-pressed="true"], [aria-current]:not([aria-current="false"])') ||
+          (el.tagName === 'A' && el.getAttribute('href') === location.hash));
+        await loc.evaluate((el) => { el.dataset.crawled = '1'; });
         const before = await state();
         errors = [];
         const t0 = Date.now();
@@ -124,7 +129,8 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
         else if (ms > SLOW_MS) report.slow.push({ ...r, kind: 'click' });
         if (errors.length) problem({ ...r, kind: 'page error after click', errors });
         if (after.overflow) problem({ ...r, kind: 'overflow after click' });
-        if (!changed.length) problem({ ...r, kind: 'dead click' });
+        if (!changed.length && current) r.result = 'current: no-op by design';
+        else if (!changed.length) problem({ ...r, kind: 'dead click' });
       }
     }
 
