@@ -1228,6 +1228,36 @@
    ]
   },
   {
+   "id": "2026-01-08-data-center-transparency-act-introduced",
+   "date": "2026-01-08",
+   "title": "Menendez and Casar introduce Data Center Transparency Act (H.R. 6984)",
+   "branch": "congress_house",
+   "summary": "Would require EIA to collect data center energy use every 6 months and EPA to report quarterly on water and emissions.",
+   "significance": "The EIA data-collection model also appears in BAAJA section 2114 and the Clean Cloud Act.",
+   "actors": [
+    "Rep. Robert Menendez",
+    "Rep. Greg Casar"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "H.R. 6984 (IH) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr6984ih/html/BILLS-119hr6984ih.htm",
+     "date": "2026-01-08",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2107",
+    "2114"
+   ]
+  },
+  {
    "id": "2026-01-12-courts-enjoin-offshore-wind-stop-work-orders",
    "date": "2026-01-12",
    "title": "Federal judges enjoin all five offshore wind stop-work orders between Jan. 12 and Feb. 2",
@@ -1311,6 +1341,38 @@
    }
   },
   {
+   "id": "2026-01-15-power-for-the-people-act-introduced",
+   "date": "2026-01-15",
+   "title": "Van Hollen introduces Power for the People Act (S. 3682)",
+   "branch": "congress_senate",
+   "summary": "Bill would have FERC require data center load queues and local transmission cost allocation, and have states consider data-center rate classes. Eight Democratic cosponsors.",
+   "significance": "The most detailed Democratic data center cost bill; combines FERC and state levers.",
+   "actors": [
+    "Sen. Chris Van Hollen"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "S. 3682 (IS) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "date": "2026-01-15",
+     "verified": true
+    },
+    {
+     "title": "Van Hollen Leads New Bill to Ensure Americans Aren't Footing the Bill for Big Data Centers",
+     "publisher": "Sen. Chris Van Hollen",
+     "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-leads-new-bill-to-ensure-americans-arent-footing-the-bill-for-big-data-centers",
+     "date": "2026-01-15",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "2026-01-28-senate-epw-permitting-hearing-part-ii",
    "date": "2026-01-28",
    "title": "Senate EPW permitting hearing: Whitehouse ties progress to administration's wind policy",
@@ -1353,6 +1415,39 @@
    }
   },
   {
+   "id": "2026-02-11-grid-act-introduced",
+   "date": "2026-02-11",
+   "title": "Hawley and Blumenthal introduce the GRID Act (S. 3852)",
+   "branch": "congress_senate",
+   "summary": "Bill would require data centers of 20 MW or more to run off the grid within 180 days, give existing sites 10 years via annual Zero Rate Effect Certificates, and set public reporting rules.",
+   "significance": "First bipartisan Senate bill on data center electricity costs this Congress, per E&E News; takes the off-grid route rather than cost allocation.",
+   "actors": [
+    "Sen. Josh Hawley",
+    "Sen. Richard Blumenthal"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "S. 3852 (IS) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
+     "date": "2026-02-11",
+     "verified": true
+    },
+    {
+     "title": "Hawley, Blumenthal Introduce Bill to Prevent Data Centers from Increasing Electricity Costs for Americans",
+     "publisher": "Sen. Josh Hawley",
+     "url": "https://www.hawley.senate.gov/hawley-blumenthal-introduce-bill-to-prevent-data-centers-from-increasing-electricity-costs-for-americans",
+     "date": "2026-02-11",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "2026-02-19-permitting-council-signs-first-state-fast-41-mous",
    "date": "2026-02-19",
    "title": "Permitting Council signs first state FAST-41 agreements with Idaho and Tennessee",
@@ -1384,6 +1479,55 @@
      "date": "2026-08-06",
      "verified": true
     }
+   ]
+  },
+  {
+   "id": "2026-03-04-ratepayer-protection-pledge-signed",
+   "date": "2026-03-04",
+   "title": "Seven hyperscalers sign White House Ratepayer Protection Pledge",
+   "branch": "executive",
+   "summary": "Amazon, Google, Meta, Microsoft, OpenAI, Oracle and xAI signed. President Trump issued a proclamation saying the Pledge effectuates national policy. The Federal Register published it on 2026-03-09 (91 FR 11439).",
+   "significance": "The voluntary baseline that H.R. 9340 would partly codify and H.R. 9777 would make law.",
+   "actors": [
+    "President Trump",
+    "Amazon",
+    "Google",
+    "Meta",
+    "Microsoft",
+    "OpenAI",
+    "Oracle",
+    "xAI"
+   ],
+   "topics": [
+    "data-centers",
+    "white-house"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Ratepayer Protection Pledge",
+     "publisher": "White House",
+     "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+     "date": "2026-03-04",
+     "verified": true
+    },
+    {
+     "title": "Ratepayer Protection Pledge Proclamation",
+     "publisher": "White House",
+     "url": "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation",
+     "date": "2026-03-04",
+     "verified": true
+    },
+    {
+     "title": "Ratepayer Protection Pledge",
+     "publisher": "Federal Register",
+     "url": "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge",
+     "date": "2026-03-09",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2107"
    ]
   },
   {
@@ -1539,6 +1683,32 @@
    }
   },
   {
+   "id": "2026-04-09-power-for-the-people-act-house-companion",
+   "date": "2026-04-09",
+   "title": "Tonko introduces House companion H.R. 8241",
+   "branch": "congress_house",
+   "summary": "Rep. Paul Tonko introduced the House version of the Power for the People Act with Rep. Kathy Castor and others.",
+   "significance": "Castor co-leads the Republican-led Ratepayer Protection Act and is also on this stronger Democratic bill.",
+   "actors": [
+    "Rep. Paul Tonko",
+    "Rep. Kathy Castor"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "H.R. 8241 (IH) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr8241ih/html/BILLS-119hr8241ih.htm",
+     "date": "2026-04-09",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "2026-04-21-casper-enjoins-directives-stalling-wind-and-solar-permits",
    "date": "2026-04-21",
    "title": "Judge Casper enjoins five directives that stalled federal wind and solar permitting",
@@ -1690,6 +1860,32 @@
    ]
   },
   {
+   "id": "2026-06-18-hr9340-introduced",
+   "date": "2026-06-18",
+   "title": "Reps. Evans and Castor introduce the Ratepayer Protection Act (H.R. 9340)",
+   "branch": "congress_house",
+   "summary": "H.R. 9340 would add a PURPA 111(d) standard for large loads of 100 MW or more: full incremental upgrade costs recovered from the customer, with financial assurances. Referred to Energy and Commerce.",
+   "significance": "A bipartisan House bill that sets a consider-and-decide standard for states rather than a binding federal rule.",
+   "actors": [
+    "Rep. Gabe Evans",
+    "Rep. Kathy Castor"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "H.R. 9340 (IH) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340ih/html/BILLS-119hr9340ih.htm",
+     "date": "2026-06-18",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "2026-06-29-ceq-withdraws-18-guidance-documents",
    "date": "2026-06-29",
    "title": "CEQ withdraws 18 NEPA guidance documents, including Forty Questions and 1997 EJ memo",
@@ -1726,6 +1922,121 @@
     "speaker": "Council on Environmental Quality (Federal Register notice)",
     "source_url": "https://www.govinfo.gov/content/pkg/FR-2026-06-29/pdf/2026-13079.pdf"
    }
+  },
+  {
+   "id": "2026-07-16-s5028-introduced",
+   "date": "2026-07-16",
+   "title": "Sen. Husted introduces Senate companion S. 5028",
+   "branch": "congress_senate",
+   "summary": "Sen. Jon Husted (R-OH) introduced S. 5028, the Senate version of the Ratepayer Protection Act. Referred to Energy and Natural Resources.",
+   "significance": "Gave the House bill a Senate vehicle; Husted is in a competitive Ohio race where data centers are an issue.",
+   "actors": [
+    "Sen. Jon Husted"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "S. 5028 (IS) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5028is/html/BILLS-119s5028is.htm",
+     "date": "2026-07-16",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-07-17-ratepayer-advocates-challenge-ferc-pjm-show-cause",
+   "date": "2026-07-17",
+   "title": "State ratepayer advocates say FERC's PJM show cause order leaves data center transmission costs with other customers",
+   "branch": "agency",
+   "summary": "Advocates from Delaware, Illinois, Maryland, Ohio and Pennsylvania filed at FERC, arguing the order does not fix cost allocation of network upgrades for large loads.",
+   "significance": "Shows the gap between FERC's June process and the full-cost standard in the bills.",
+   "actors": [
+    "Delaware, Illinois, Maryland and Ohio ratepayer advocates",
+    "Pennsylvania Office of Consumer Advocate",
+    "FERC"
+   ],
+   "topics": [
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "FERC fails to shield PJM consumers from data center transmission costs: ratepayer advocates",
+     "publisher": "Utility Dive",
+     "url": "https://www.utilitydive.com/news/ferc-data-center-pjm-transmission-costs/825760/",
+     "date": "2026-07-21",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-07-20-donalds-protecting-ratepayers-act",
+   "date": "2026-07-20",
+   "title": "Rep. Donalds introduces Protecting Ratepayers Act (H.R. 9777)",
+   "branch": "congress_house",
+   "summary": "Would bar new and existing data centers of 5 MW or more from using the grid or public water and would give the Ratepayer Protection Pledge proclamation the force of law.",
+   "significance": "A Republican off-grid bill that goes further than the Ratepayer Protection Act; Donalds is running for Florida governor.",
+   "actors": [
+    "Rep. Byron Donalds"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "H.R. 9777 (IH) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9777ih/html/BILLS-119hr9777ih.htm",
+     "date": "2026-07-20",
+     "verified": true
+    },
+    {
+     "title": "Byron Donalds, running for Florida governor, announces data center legislation",
+     "publisher": "Fortune",
+     "url": "https://fortune.com/2026/07/21/byron-donalds-ai-data-centers-florida-desantis/",
+     "date": "2026-07-21",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-07-20-rtos-file-large-load-informational-reports",
+   "date": "2026-07-20",
+   "title": "Six grid operators file large-load informational reports at FERC",
+   "branch": "agency",
+   "summary": "Each RTO/ISO described its plan for resource adequacy for large loads, a first step under the June 18 show cause orders. Substantive responses were due August 17.",
+   "significance": "Regional answers rather than a national rule.",
+   "actors": [
+    "PJM",
+    "SPP",
+    "MISO",
+    "CAISO",
+    "ISO-NE",
+    "NYISO"
+   ],
+   "topics": [
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "RTOs and ISOs Answer: A National Preview of How All Six Grid Operators Plan to Respond to the Large Load Surge",
+     "publisher": "Climate Solutions Legal Digest",
+     "url": "https://www.climatesolutionslaw.com/2026/07/rtos-and-isos-answer-a-national-preview-of-how-all-six-grid-operators-plan-to-respond-to-the-large-load-surge/",
+     "date": "2026-07-27",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2107"
+   ]
   },
   {
    "id": "2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference",
@@ -1767,6 +2078,142 @@
    },
    "sections": [
     "1110"
+   ]
+  },
+  {
+   "id": "2026-07-21-rpa-energy-commerce-52-0",
+   "date": "2026-07-21",
+   "title": "House Energy and Commerce approves Ratepayer Protection Act 52-0, narrowed to data centers",
+   "branch": "congress_house",
+   "summary": "Committee adopted an Evans substitute by voice vote that limited the definition to data centers at 100 MW or more, then approved the bill 52-0. The Data Center Coalition objected that the change singled out data centers; steel and industrial customer groups backed it.",
+   "significance": "Shows the fight over whether large-load rules should cover all big users or only data centers.",
+   "actors": [
+    "Rep. Gabe Evans",
+    "Rep. Brett Guthrie",
+    "Rep. Frank Pallone",
+    "Data Center Coalition"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "House committee narrows data center energy bill",
+     "publisher": "E&E News",
+     "url": "https://www.eenews.net/articles/house-committee-narrows-data-center-energy-bill-3/",
+     "date": "2026-07-21",
+     "verified": true
+    },
+    {
+     "title": "Data center lobby grumbles about reworked Ratepayer Protection Act",
+     "publisher": "E&E News",
+     "url": "https://www.eenews.net/articles/data-center-lobby-grumbles-about-reworked-ratepayer-protection-act-2/",
+     "date": "2026-07-22",
+     "verified": true
+    },
+    {
+     "title": "House Energy and Commerce Advances Energy Bills ... Ratepayer Protection Act Clears 52-0",
+     "publisher": "Daily Energy Insider",
+     "url": "https://dailyenergyinsider.com/hearing-summaries/53136-house-energy-and-commerce-advances-seven-energy-bills-aimed-at-data-center-costs-grid-modernization-and-pipeline-safety-ratepayer-protection-act-clears-52-0/",
+     "date": "2026-07-21",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-07-23-ratepayer-protection-pledge-expanded",
+   "date": "2026-07-23",
+   "title": "Trump expands Ratepayer Protection Pledge to governors, legislators, developers and power providers",
+   "branch": "executive",
+   "summary": "At EPA headquarters, the President announced the expansion; EPA says the Pledge will cover 80 percent of power delivered to homes and businesses.",
+   "significance": "Extends the voluntary approach beyond the hyperscalers to the parties that set rates and approve projects.",
+   "actors": [
+    "President Trump",
+    "EPA Administrator Lee Zeldin",
+    "Energy Secretary Chris Wright"
+   ],
+   "topics": [
+    "data-centers",
+    "white-house"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "President Trump Expands Historic Ratepayer Protection Pledge to Protect American Ratepayers, Lower Electricity Prices",
+     "publisher": "EPA",
+     "url": "https://www.epa.gov/newsreleases/president-trump-expands-historic-ratepayer-protection-pledge-protect-american",
+     "date": "2026-07-23",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2107"
+   ]
+  },
+  {
+   "id": "2026-08-03-grid-savings-act-introduced",
+   "date": "2026-08-03",
+   "title": "Heinrich introduces GRID Savings Act (S. 5199)",
+   "branch": "congress_senate",
+   "summary": "Bill would add Federal Power Act section 224, giving FERC jurisdiction over interconnection of loads of 150 MW or more and requiring a final rule within a year that assigns interconnection and direct-assignment costs to the large load and requires financial security.",
+   "significance": "Democratic ENR ranking member's answer to the Ratepayer Protection Pledge; reopens whether FERC controls large-load interconnection.",
+   "actors": [
+    "Sen. Martin Heinrich"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Heinrich Introduces Legislation to Ensure Large Users of Electricity Pay for Grid Upgrades",
+     "publisher": "Sen. Martin Heinrich",
+     "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-introduces-legislation-to-ensure-large-users-of-electricity-pay-for-grid-upgrades-protect-customers-from-costs-of-data-center-expansion",
+     "date": "2026-08-03",
+     "verified": true
+    },
+    {
+     "title": "One Senate Democrat's answer to Trump's 'ratepayer protection pledge'",
+     "publisher": "Latitude Media",
+     "url": "https://www.latitudemedia.com/news/one-senate-democrats-answer-to-trumps-ratepayer-protection-pledge/",
+     "date": "2026-08-04",
+     "verified": true
+    },
+    {
+     "title": "S. 5199 (IS) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "date": "2026-07-30",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-09-10-hr9340-reported",
+   "date": "2026-09-10",
+   "title": "Energy and Commerce reports H.R. 9340 (H. Rept. 119-814)",
+   "branch": "congress_house",
+   "summary": "The reported version carries the data-center-only definition and added cosponsors.",
+   "significance": "Clears the bill for a House floor vote.",
+   "actors": [
+    "House Energy and Commerce Committee"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "H.R. 9340 (RH) text",
+     "publisher": "GovInfo",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340rh/html/BILLS-119hr9340rh.htm",
+     "date": "2026-09-10",
+     "verified": true
+    }
    ]
   },
   {
@@ -1814,6 +2261,33 @@
    ]
   },
   {
+   "id": "2026-09-17-heinrich-objects-rpa-uc-moreno-objects-grid-savings",
+   "date": "2026-09-17",
+   "title": "Heinrich blocks Ratepayer Protection Act by unanimous consent; Moreno blocks Heinrich's GRID Savings Act request",
+   "branch": "congress_senate",
+   "summary": "Heinrich said the Husted bill falls short and asked to pass his GRID Savings Act instead. Sen. Bernie Moreno (R-OH) objected.",
+   "significance": "Both parties' lead bills were blocked on the same day, each side calling the other's version inadequate.",
+   "actors": [
+    "Sen. Martin Heinrich",
+    "Sen. Jon Husted",
+    "Sen. Bernie Moreno"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Senate Democrat blocks House-passed bill to shield Americans from data center energy costs, proposing alternate measure",
+     "publisher": "CBS News",
+     "url": "https://www.cbsnews.com/news/senate-data-center-energy-bill-martin-heinrich/",
+     "date": "2026-09-17",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "2026-09-24-permitting-talks-stall-vote-slips-past-midterms",
    "date": "2026-09-24",
    "title": "Senate permitting talks stall; deal and vote expected to slip past the midterms",
@@ -1854,6 +2328,47 @@
     "speaker": "Sheldon Whitehouse",
     "source_url": "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/"
    }
+  },
+  {
+   "id": "2026-09-29-ferc-pjm-reliability-backstop-order",
+   "date": "2026-09-29",
+   "title": "FERC accepts but suspends PJM reliability backstop procurement for five months",
+   "branch": "agency",
+   "summary": "FERC found cost allocation, transmission owner exit rules and load-serving entity collateral may be unjust and unreasonable and suggested fixes. New effective date 2027-02-28. PJM pulled its 2026-09-30 auction.",
+   "significance": "A capacity fix driven by data center demand; FERC pressed that costs go to the customers who drive the need.",
+   "actors": [
+    "FERC",
+    "Laura Swett",
+    "Commissioner Lindsay See",
+    "PJM"
+   ],
+   "topics": [
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "FERC Suspends PJM's Backstop Procurement Five Months and PJM Pulls Its September 30 Auction",
+     "publisher": "mGrid",
+     "url": "https://mgrid.org/2026/09/29/ferc-suspends-pjm-backstop-procurement-five-months-auction-pulled/",
+     "date": "2026-09-29",
+     "verified": true
+    },
+    {
+     "title": "FERC chair slams PJM 'mess' as country's largest grid operator delays power auction",
+     "publisher": "Utility Dive",
+     "url": "https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/",
+     "date": "2026-09-30",
+     "verified": true
+    },
+    {
+     "title": "FERC Accepts PJM Reliability Backstop Proposal",
+     "publisher": "PJM Inside Lines",
+     "url": "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/",
+     "date": "2026-09-29",
+     "verified": true
+    }
+   ]
   },
   {
    "id": "2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act",
@@ -1940,6 +2455,36 @@
    },
    "sections": [
     "2107"
+   ]
+  },
+  {
+   "id": "2026-10-01-blunt-rochester-curtis-data-center-transparency",
+   "date": "2026-10-01",
+   "title": "Blunt Rochester and Curtis introduce two Senate bills on data center disclosure",
+   "branch": "congress_senate",
+   "summary": "Senate version of the transparency bill, plus a DOE technical-assistance program for communities. House companion led by Rep. Menendez.",
+   "significance": "Bipartisan Senate push for data center energy, water and environmental reporting.",
+   "actors": [
+    "Sen. Lisa Blunt Rochester",
+    "Sen. John Curtis"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Senators Blunt Rochester, Curtis Introduce Bills to Help Public Understand Impacts of Data Centers",
+     "publisher": "Sen. Lisa Blunt Rochester",
+     "url": "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/",
+     "date": "2026-10-01",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2107",
+    "2114"
    ]
   }
  ]
