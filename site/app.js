@@ -483,9 +483,11 @@
       el("h2", null, g.label),
       el("div", { class: "table-wrap" }, el("table", { class: "compare" },
         el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), c.versions.map((v) => el("th", { scope: "col", class: "col-" + v.key }, v.label)))),
-        el("tbody", null, g.rows.map((r) => el("tr", null,
+        el("tbody", null, g.rows.map((r) => [el("tr", null,
           el("th", { scope: "row" }, r.topic),
-          keys.map((k) => el("td", { class: "col-" + k, "data-label": versionLabel(k) }, compareCell(r[k]))))))))));
+          keys.map((k) => el("td", { class: "col-" + k, "data-label": versionLabel(k) }, compareCell(r[k])))),
+          r.note ? el("tr", { class: "row-note" },
+            el("td", { colspan: keys.length + 1 }, el("strong", null, r.note.label + ". "), compareCell(r.note))) : null]))))));
 
     const lists = el("section", { class: "block" },
       el("div", { class: "two-col" },
@@ -622,6 +624,7 @@
   ];
   let mediaType = "all";
   let mediaStance = "all";
+  let mediaTopic = "all";
   let mediaText = "";
 
   function mediaGroup(type) {
@@ -634,6 +637,7 @@
     return D.media.filter((it) =>
       (mediaType === "all" || mediaGroup(it.type) === mediaType) &&
       (mediaStance === "all" || it.stance === mediaStance) &&
+      (mediaTopic === "all" || (it.topics || []).indexOf(mediaTopic) >= 0) &&
       (!needle || (it.title + " " + it.outlet + " " + (it.summary || "") + " " + (it.author || "")).toLowerCase().indexOf(needle) >= 0))
       .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   }
@@ -645,12 +649,12 @@
       return el("li", { class: "media-item" },
         el("h3", null, ext(it.url, it.title)),
         el("p", { class: "feed-meta" }, it.outlet + (it.author ? " · " + it.author : "") + " · " + S.formatDate(it.date) + " · " + g[1]),
+        el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
+          it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null),
         it.summary ? el("p", null, it.summary) : null,
         it.quote && it.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, it.quote.text),
-          it.quote.speaker ? el("figcaption", null, it.quote.speaker) : null) : null,
-        el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
-          it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null));
+          it.quote.speaker ? el("figcaption", null, it.quote.speaker) : null) : null);
     }));
   }
 
@@ -674,8 +678,16 @@
       el("label", { class: "sr-only", "for": "media-filter" }, "Filter by word"),
       el("input", { id: "media-filter", type: "search", class: "inline-filter", placeholder: "Filter by word", value: mediaText,
         oninput: (ev) => { mediaText = ev.target.value; refresh(); } }));
+    const topicCounts = {};
+    D.media.forEach((it) => (it.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
+    const topicChips = el("div", { class: "filters", role: "group", "aria-label": "Topic" },
+      chip("All topics", mediaTopic === "all", () => { mediaTopic = "all"; route(); }),
+      Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
+        chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; route(); }, topicCounts[t])));
+    const topicBox = el("details", { class: "filter-wrap", open: mediaTopic !== "all" || window.matchMedia("(min-width: 640px)").matches },
+      el("summary", null, "Topics"), topicChips);
     refresh();
-    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), typeChips, stanceChips, listHost];
+    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), typeChips, stanceChips, topicBox, listHost];
   }
 
   /* ---------- method ---------- */

@@ -275,6 +275,7 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
 .compare td.col-senate { background: var(--accent-weak); padding-left: 10px; }
 .cell-text { display: block; }
 .cell-cite { display: block; font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
+.row-note td { font-size: 0.88rem; color: var(--text-muted); background: none; padding-top: 0; }
 
 /* ---------- timeline ---------- */
 
@@ -298,8 +299,8 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
 
 .media-item { padding: 12px 0; border-bottom: 1px solid var(--border); max-width: 90ch; }
 .media-item h3 { margin: 0 0 2px; font-size: 1.02rem; }
-.media-item .feed-meta { margin-bottom: 4px; }
-.media-tags { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; margin: 4px 0 0; }
+.media-item .feed-meta { margin-bottom: 2px; }
+.media-tags { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; margin: 0 0 6px; }
 
 /* ---------- footer ---------- */
 

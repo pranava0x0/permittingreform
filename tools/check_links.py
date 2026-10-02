@@ -62,6 +62,8 @@ def collect(core: dict) -> dict[str, list[str]]:
         for r in g["rows"]:
             for key in ("current", "epra", "speed"):
                 add(r[key].get("url"), f"compare.{r['id']}.{key}")
+            if r.get("note"):
+                add(r["note"].get("url"), f"compare.{r['id']}.note")
     for item in core["compare"]["dropped"]:
         add(item.get("url"), "compare.dropped")
     for e in core["timeline"]:
@@ -135,7 +137,11 @@ def main() -> int:
     in_browser = sum(1 for row in results.values() if "browser" in row)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     checked = time.strftime("%Y-%m-%d", time.gmtime())
-    OUT.write_text(json.dumps({"checked": checked, "results": results}, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    saved = results
+    if args.only and OUT.exists():  # a partial run updates its URLs; it must not erase the rest
+        saved = json.loads(OUT.read_text(encoding="utf-8"))["results"]
+        saved.update(results)
+    OUT.write_text(json.dumps({"checked": checked, "results": saved}, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     summary = {"checked": checked, "total": len(pages), **{c: counts[c] for c in ("ok", "blocked", "dead", "error")},
                "browser": in_browser}
     if not args.only:

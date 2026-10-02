@@ -52,6 +52,8 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     for g in core["compare"]["groups"]:
         for r in g["rows"]:
             out += [(f"compare {r['id']} {k}", r[k]["text"]) for k in ("current", "epra", "speed", "senate")]
+            if r.get("note"):
+                out.append((f"compare {r['id']} note", r["note"]["text"]))
     out += [("compare added", a["text"]) for a in core["compare"]["added"]]
     out += [("compare dropped", a["text"]) for a in core["compare"]["dropped"]]
     for e in core["timeline"]:
@@ -94,6 +96,9 @@ def check(core: dict) -> tuple[list[str], dict]:
             for k in ("current", "epra", "speed", "senate"):
                 if not (r.get(k) or {}).get("text"):
                     errs.append(f"compare {r['id']}: empty cell {k}")
+            note = r.get("note")
+            if note and not (note.get("label") and note.get("text") and str(note.get("url", "")).startswith("https://")):
+                errs.append(f"compare {r['id']}: a note needs a label, text and a source link")
 
     def http(url) -> bool:
         return isinstance(url, str) and url.lower().startswith(("http://", "https://"))

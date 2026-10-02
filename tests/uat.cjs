@@ -13,10 +13,13 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       for (const theme of ['light', 'dark']) {
         await page.goto(base);
         await page.evaluate(t => {sessionStorage.setItem('pr-theme',t);document.documentElement.dataset.theme=t;},theme);
+        const n = await page.evaluate(() => ({
+          compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0),
+          media: window.PR_DATA.media.length }));
         const routes = [
           ['overview','.provisions li',10], ['bill','.index li',71],
-          ['bill/sec/1106','.para',null], ['compare','.compare tbody tr',45],
-          ['timeline','.event',50], ['people','.person',null], ['media','.media-item',94], ['method','.versus dd',null]
+          ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
+          ['timeline','.event',50], ['people','.person',null], ['media','.media-item',n.media], ['method','.versus dd',null]
         ];
         for (const [route, selector, expected] of routes) {
           await page.goto(base+'#/'+route);
