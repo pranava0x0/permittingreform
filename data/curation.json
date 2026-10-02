@@ -321,6 +321,36 @@
     "social": {}
    },
    "reason": "The X profile link returned 404 on 2026-10-01 and no working handle was found."
+  },
+  "josh-siegel": {
+   "reason": "He moved to Punchbowl News in late September 2026; his earlier employer was POLITICO, whose E&E News carried his August reporting.",
+   "set": {
+    "role": "Senior energy reporter, Punchbowl News",
+    "affiliation": "Punchbowl News (earlier POLITICO)",
+    "sources": [
+     {
+      "title": "Senators outline future of permitting talks",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/",
+      "date": "2026-08-07",
+      "verified": true
+     },
+     {
+      "title": "Post by Joshua Siegel (@SiegelScribe) on the permitting deal, Sept. 30, 2026",
+      "publisher": "X",
+      "url": "https://x.com/SiegelScribe/status/2105273084173484140",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Punchbowl News hires Siegel to cover energy",
+      "publisher": "Talking Biz News",
+      "url": "https://talkingbiznews.com/media-news/punchbowl-news-hires-siegel-to-cover-energy/",
+      "date": "2026-09-28",
+      "verified": true
+     }
+    ]
+   }
   }
  },
  "media": {

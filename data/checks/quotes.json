@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-01",
+ "checked": "2026-10-02",
  "bill": {
   "total": 112,
   "verified": 112
@@ -21,7 +21,7 @@
    "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf",
    "result": "verified",
    "share": 1.0,
-   "note": "timeout: The read operation timed out"
+   "note": ""
   },
   {
    "where": "timeline.2025-01-20-eo-14154-unleashing-american-energy",
@@ -672,6 +672,42 @@
    "note": ""
   },
   {
+   "where": "media.2026-10-01-x-siegelscribe-whats-next-for-permitting",
+   "text": "Negotiators say they struck a difficult balance that'll be hard to defeat. But landmines are here.",
+   "speaker": "Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2105617558644875344",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-01-x-janeaflegal-data-center-language-best-yet",
+   "text": "forces data centers to pay full costs they cause AND their share of the existing grid.",
+   "speaker": "Jane Flegal",
+   "url": "https://x.com/JaneAFlegal/status/2105596840544751982",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right",
+   "text": "Most importantly, BAAJA gives FERC more statutory cover to take aggressive actions on grid development.",
+   "speaker": "Chirag Lala, Center for Public Enterprise",
+   "url": "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-09-30-x-toddntucker-juristocracy-vetocracy",
+   "text": "it'll re-empower elected officials to do things we elected them to do and save us money and jobs.",
+   "speaker": "Todd N. Tucker",
+   "url": "https://x.com/toddntucker/status/2105389425978917174",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-09-30-x-siegelscribe-capito-leads-off-presser",
    "text": "historic bipartisan agreement to reform America's federal environmental review and permitting processes.",
    "speaker": "Shelley Moore Capito, as quoted by Joshua Siegel",
@@ -1045,9 +1081,9 @@
    "text": "The SPEED Act marks the first major bipartisan permitting reform proposal in the 119th Congress.",
    "speaker": "Bipartisan Policy Center",
    "url": "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-01"
+   "note": ""
   },
   {
    "where": "media.2025-12-18-house-natural-resources-house-passes-speed-act",

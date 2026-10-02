@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-01",
+ "checked": "2026-10-02",
  "results": {
   "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583": {
    "cls": "ok",
@@ -43,11 +43,10 @@
    ]
   },
   "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/": {
-   "browser": "2026-10-01",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "media.2025-12-19-bpc-whats-in-the-speed-act"
    ]
@@ -427,7 +426,7 @@
   "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf": {
    "cls": "ok",
    "kind": "pdf",
-   "note": "timeout: The read operation timed out",
+   "note": "",
    "status": 200,
    "where": [
     "timeline.2024-11-12-marin-audubon-dc-circuit-ceq-authority.source",
@@ -524,6 +523,15 @@
     "media.2026-04-08-american-prospect-nepa-and-its-discontents"
    ]
   },
+  "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right"
+   ]
+  },
   "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/": {
    "cls": "ok",
    "kind": "page",
@@ -545,6 +553,15 @@
    "status": 200,
    "where": [
     "people.john-thune.source"
+   ]
+  },
+  "https://talkingbiznews.com/media-news/punchbowl-news-hires-siegel-to-cover-energy/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.josh-siegel.source"
    ]
   },
   "https://thebreakthrough.org/issues/environmental-regulatory-reform/the-fall-of-permitting-reform": {
@@ -1268,6 +1285,15 @@
     "compare.dropped"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.datacenters.note"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf": {
    "cls": "ok",
    "kind": "pdf",
@@ -1879,6 +1905,15 @@
     "media.2026-09-30-us-chamber-hails-senate-progress-permitting-reform"
    ]
   },
+  "https://www.utilitydive.com/news/ferc-transmission-policy-white-house-ratepayer-protection-peskoe/815438/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.datacenters.current"
+   ]
+  },
   "https://www.utilitydive.com/news/revolution-wind-orsted-offshore-wind-stop-work-trump-construction/760803/": {
    "cls": "ok",
    "kind": "page",
@@ -2139,6 +2174,15 @@
     "media.2026-07-22-x-alecstapp-nhpa-reform-clean-energy"
    ]
   },
+  "https://x.com/ChrisBarnardDL/status/2105749671180165608": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-01-x-chrisbarnarddl-white-house-public-liaison-email"
+   ]
+  },
   "https://x.com/JaneAFlegal/status/2076669679045681322": {
    "cls": "ok",
    "kind": "x",
@@ -2146,6 +2190,24 @@
    "status": 200,
    "where": [
     "media.2026-07-13-x-janeaflegal-nhpa-transmission-deal"
+   ]
+  },
+  "https://x.com/JaneAFlegal/status/2105337590320615654": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-x-janeaflegal-permitting-bill-thread"
+   ]
+  },
+  "https://x.com/JaneAFlegal/status/2105596840544751982": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-01-x-janeaflegal-data-center-language-best-yet"
    ]
   },
   "https://x.com/LeaderJohnThune": {
@@ -2292,6 +2354,15 @@
     "media.2026-09-30-x-siegelscribe-capito-leads-off-presser"
    ]
   },
+  "https://x.com/SiegelScribe/status/2105617558644875344": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-01-x-siegelscribe-whats-next-for-permitting"
+   ]
+  },
   "https://x.com/WHCEQ47/status/2008908645837250964": {
    "cls": "ok",
    "kind": "x",
@@ -2344,6 +2415,15 @@
    "status": 200,
    "where": [
     "people.mike-johnson.social.x"
+   ]
+  },
+  "https://x.com/toddntucker/status/2105389425978917174": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-30-x-toddntucker-juristocracy-vetocracy"
    ]
   }
  }

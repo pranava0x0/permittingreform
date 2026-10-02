@@ -2,6 +2,92 @@
  "generated": "2026-10-01",
  "items": [
   {
+   "id": "2026-10-01-x-siegelscribe-whats-next-for-permitting",
+   "date": "2026-10-01",
+   "type": "social_x",
+   "outlet": "X / @SiegelScribe",
+   "author": "Joshua Siegel",
+   "title": "New in @PunchbowlNews: What's next for permitting",
+   "url": "https://x.com/SiegelScribe/status/2105617558644875344",
+   "verified": true,
+   "summary": "Siegel posts his Punchbowl News item on what comes next. Utilities may push to weaken the expanded FERC backstop siting authority and the mandatory data center cost language, which the item calls stronger than the voluntary Ratepayer Protection Act that Senate Democrats blocked. Environmental groups are expected to contest the limits on NEPA remedies and the Clean Water Act section 401 changes, and Rep. Jared Huffman said progressives may hold out for more next Congress.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Negotiators say they struck a difficult balance that'll be hard to defeat. But landmines are here.",
+    "speaker": "Joshua Siegel"
+   },
+   "topics": [
+    "congress",
+    "transmission",
+    "data-centers",
+    "courts",
+    "clean-water-act"
+   ],
+   "sector": "press"
+  },
+  {
+   "id": "2026-10-01-x-janeaflegal-data-center-language-best-yet",
+   "date": "2026-10-01",
+   "type": "social_x",
+   "outlet": "X / @JaneAFlegal",
+   "author": "Jane Flegal",
+   "title": "The data center language in the permitting deal is the best yet",
+   "url": "https://x.com/JaneAFlegal/status/2105596840544751982",
+   "verified": true,
+   "summary": "Flegal says the bill makes data centers pay both the full cost of the upgrades they cause and a share of the existing grid. Section 2107 does both for transmission: FERC must charge these loads embedded plus incremental cost, and new Federal Power Act section 228 keeps incremental costs off other customers. Her estimate of billions of dollars a year for ratepayers is her own; the bill gives no figure.",
+   "stance": "supports",
+   "quote": {
+    "text": "forces data centers to pay full costs they cause AND their share of the existing grid.",
+    "speaker": "Jane Flegal"
+   },
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-10-01-x-chrisbarnarddl-white-house-public-liaison-email",
+   "date": "2026-10-01",
+   "type": "social_x",
+   "outlet": "X / @ChrisBarnardDL",
+   "author": "Christopher Barnard",
+   "title": "Really positive & good faith statement on permitting reform out of the White House Office of Public Liaison",
+   "url": "https://x.com/ChrisBarnardDL/status/2105749671180165608",
+   "verified": true,
+   "summary": "Barnard posts a screenshot of a White House Office of Public Liaison email saying the bill advances the President's agenda. The email lists permit certainty, judicial review changes and transmission permitting among its key provisions. Its claim that issued permits are protected from being overturned is broader than section 1401, which restrains agencies but still lets a court order a revocation.",
+   "stance": "supports",
+   "topics": [
+    "white-house",
+    "permit-certainty",
+    "transmission",
+    "courts"
+   ],
+   "sector": "government"
+  },
+  {
+   "id": "2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right",
+   "date": "2026-10-01",
+   "type": "analysis",
+   "outlet": "Center for Public Enterprise",
+   "author": "Chirag Lala",
+   "title": "The bipartisan permitting bill gets transmission right",
+   "url": "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/",
+   "verified": true,
+   "summary": "A brief on the bill's grid title. It says the bill goes further than the 2024 EPRA bill: FERC must permit qualifying interstate lines when a state has not approved them within a year, DOE-identified congested areas replace national interest corridors, and costs follow a beneficiary-pays rule. It also covers the data center cost rule, the right-of-first-refusal ban and advanced transmission technologies, and notes that DOE's transmission loan program needs new money because the One Big Beautiful Bill Act rescinded its funding.",
+   "stance": "supports",
+   "quote": {
+    "text": "Most importantly, BAAJA gives FERC more statutory cover to take aggressive actions on grid development.",
+    "speaker": "Chirag Lala, Center for Public Enterprise"
+   },
+   "topics": [
+    "transmission",
+    "data-centers",
+    "congress"
+   ],
+   "sector": "think_tank"
+  },
+  {
    "id": "2026-09-30-youtube-whitehouse-wins-from-this-could-be-very-big",
    "date": "2026-09-30",
    "type": "youtube",
@@ -16,6 +102,29 @@
     "congress"
    ],
    "sector": "government"
+  },
+  {
+   "id": "2026-09-30-x-toddntucker-juristocracy-vetocracy",
+   "date": "2026-09-30",
+   "type": "social_x",
+   "outlet": "X / @toddntucker",
+   "author": "Todd N. Tucker",
+   "title": "Lots of good in BAAJA, including shrinking our juristocracy & vetocracy",
+   "url": "https://x.com/toddntucker/status/2105389425978917174",
+   "verified": true,
+   "summary": "Tucker, of the Roosevelt Institute, lists backstop federal siting, NEPA judicial review limits and deadlines, and an end to the administration's actions against wind as gains that return decisions to elected officials. The wind point goes further than the text: the wind and solar side agreement is not in the bill, and section 1402 suits cannot be filed until 180 or 280 days after enactment.",
+   "stance": "supports",
+   "quote": {
+    "text": "it'll re-empower elected officials to do things we elected them to do and save us money and jobs.",
+    "speaker": "Todd N. Tucker"
+   },
+   "topics": [
+    "transmission",
+    "nepa",
+    "courts",
+    "wind-solar"
+   ],
+   "sector": "think_tank"
   },
   {
    "id": "2026-09-30-x-siegelscribe-capito-leads-off-presser",
@@ -52,6 +161,26 @@
     "congress"
    ],
    "sector": "government"
+  },
+  {
+   "id": "2026-09-30-x-janeaflegal-permitting-bill-thread",
+   "date": "2026-09-30",
+   "type": "social_x",
+   "outlet": "X / @JaneAFlegal",
+   "author": "Jane Flegal",
+   "title": "The permitting bill is out and it’s awesome",
+   "url": "https://x.com/JaneAFlegal/status/2105337590320615654",
+   "verified": true,
+   "summary": "A 15-post thread. Flegal credits Whitehouse and Heinrich, calls the permit certainty sections a guard against future administrations, and praises the transmission title's regional and interregional planning, backstop siting and cost allocation rules. She cites C2ES and Greenline Insights modeling of 71 million fewer tons of CO2 in 2035 across the regions studied. Two posts go beyond the text: section 1401 pays delay costs plus 25 to 50 percent of costs incurred, not full reimbursement, and the new EIA reporting falls on utilities, not data centers.",
+   "stance": "supports",
+   "topics": [
+    "congress",
+    "permit-certainty",
+    "transmission",
+    "nepa",
+    "data-centers"
+   ],
+   "sector": "think_tank"
   },
   {
    "id": "2026-09-30-wv-metronews-capito-colleagues-praise-deal",
