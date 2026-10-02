@@ -272,7 +272,7 @@
         el("div", null,
           el("h2", null, "Milestones"),
           el("ul", { class: "feed" }, milestones.map((e) => el("li", null,
-            el("a", { href: "#/timeline", class: "feed-title" }, e.title),
+            el("a", { href: "#/timeline/" + monthKey(e) + "/" + e.id, class: "feed-title" }, e.title),
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.timeline.length + " events")))));
 
@@ -684,39 +684,86 @@
   let tlMilestones = false;
   let tlTopic = "all";
   let tlLimit = 12;
+  let tlRefocus = null; /* the control to focus after the milestone line re-renders */
 
   function branchLabel(key) {
     const b = BRANCHES.find((x) => x[0] === key);
     return b ? b[1] : "Other";
   }
 
-  function renderTimeline() {
+  /* The milestone line starts at the administration's first month; earlier background events group as "early". */
+  const AXIS_START = "2025-01";
+  function monthKey(e) {
+    return e.date < AXIS_START ? "early" : e.date.slice(0, 7);
+  }
+  function monthName(key, short) {
+    if (key === "early") return "Before 2025";
+    const name = S.months[Number(key.slice(5, 7)) - 1];
+    return (short ? name.slice(0, 3) : name) + " " + key.slice(0, 4);
+  }
+  function shortDate(iso) {
+    return S.months[Number(iso.slice(5, 7)) - 1].slice(0, 3) + " " + Number(iso.slice(8, 10));
+  }
+  function axisKeys() {
+    const keys = D.timeline.some((e) => e.date < AXIS_START) ? ["early"] : [];
+    const last = D.timeline.reduce((m, e) => (e.date > m ? e.date : m), AXIS_START).slice(0, 7);
+    let y = Number(AXIS_START.slice(0, 4));
+    let m = Number(AXIS_START.slice(5, 7));
+    for (;;) {
+      const k = y + "-" + String(m).padStart(2, "0");
+      keys.push(k);
+      if (k >= last) break;
+      m += 1;
+      if (m > 12) { m = 1; y += 1; }
+    }
+    return keys;
+  }
+
+  /* Open a listed event. From the milestone line, focus stays on the line and the page stays put. */
+  function openEvent(id, fromLine) {
+    const node = document.getElementById("ev-" + id);
+    if (!node) return;
+    node.classList.add("open");
+    const t = node.querySelector(".event-toggle");
+    if (t) t.setAttribute("aria-expanded", "true");
+    if (fromLine) return;
+    if (t) t.focus({ preventScroll: true });
+    node.scrollIntoView({ block: "start" });
+  }
+
+  function renderTimeline(monthParam, picked) {
+    const keys = axisKeys();
+    const month = keys.indexOf(monthParam) >= 0 ? monthParam : null;
     const all = D.timeline.slice().sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
     const counts = {};
     all.forEach((e) => { counts[e.branch] = (counts[e.branch] || 0) + 1; });
-    const list = all.filter((e) => (tlBranch === "all" || e.branch === tlBranch) && (!tlMilestones || e.milestone) &&
+    const matching = all.filter((e) => (tlBranch === "all" || e.branch === tlBranch) && (!tlMilestones || e.milestone) &&
       (tlTopic === "all" || (e.topics || []).indexOf(tlTopic) >= 0));
+    const list = month ? matching.filter((e) => monthKey(e) === month) : matching;
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Branch" },
       BRANCHES.filter((b) => b[0] === "all" || counts[b[0]]).map((b) =>
-        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])),
-      el("span", { class: "filter-gap" }),
-      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = 12; route(); }, all.filter((e) => e.milestone).length),
-      briefChip());
+        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
     const topicCounts = {};
     all.forEach((e) => (e.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
-    const topicBox = el("details", { class: "filter-wrap", open: true },
-      el("summary", null, "Topics"),
-      el("div", { class: "filters", role: "group", "aria-label": "Topic" },
-        chip("All topics", tlTopic === "all", () => { tlTopic = "all"; tlLimit = 12; route(); }),
-        Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
-          chip(D.topics[t], tlTopic === t, () => { tlTopic = t; tlLimit = 12; route(); }, topicCounts[t]))));
+    const topicSelect = el("select", { class: "chip chip-select", "aria-label": "Topic", onchange: (ev) => {
+      tlTopic = ev.currentTarget.value; tlLimit = 12; route();
+      const again = view.querySelector(".chip-select");
+      if (again) again.focus({ preventScroll: true });
+    } },
+      el("option", { value: "all" }, "All topics"),
+      Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
+        el("option", { value: t, selected: tlTopic === t }, D.topics[t] + " (" + topicCounts[t] + ")")));
+    const more = el("div", { class: "filters", role: "group", "aria-label": "Topic and detail" },
+      topicSelect,
+      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = 12; route(); }, all.filter((e) => e.milestone).length),
+      briefChip());
     const out = [];
     let year = null;
     list.slice(0, tlLimit).forEach((e) => {
       const y = e.date.slice(0, 4);
       if (y !== year) { year = y; out.push(el("h2", { class: "year", id: "y-" + y }, y)); }
       const body = el("div", { class: "event-body", id: "eb-" + e.id },
-        el("p", { class: "event-meta" }, branchLabel(e.branch) + (e.background ? " · before 2025" : "") + (e.milestone ? " · milestone" : "")),
+        el("p", { class: "event-meta" }, S.formatDate(e.date) + " · " + branchLabel(e.branch) + (e.background ? " · before 2025" : "") + (e.milestone ? " · milestone" : "")),
         el("p", null, e.summary),
         e.sections && e.sections.length ? el("p", { class: "where" }, "In the bill: ", secLinks(e.sections)) : null,
         e.significance ? el("p", { class: "signif" }, e.significance) : null,
@@ -724,7 +771,8 @@
           el("blockquote", null, e.quote.text),
           el("figcaption", null, safeUrl(e.quote.source_url) ? ext(e.quote.source_url, e.quote.speaker || "Source") : e.quote.speaker)) : null,
         sourceList(e.sources));
-      const head = [el("span", { class: "event-date" }, S.formatDate(e.date)), el("span", { class: "event-title" }, e.title)];
+      const head = el("span", { class: "event-head" },
+        el("span", { class: "event-date" }, shortDate(e.date)), " ", el("span", { class: "event-title" }, e.title));
       out.push(el("article", { class: "event" + (e.milestone ? " milestone" : ""), id: "ev-" + e.id },
         el("h3", null, brief
           ? el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": "eb-" + e.id, onclick: (ev) => {
@@ -734,10 +782,13 @@
           : head),
         body));
     });
+    const status = month
+      ? monthName(month, true) + ": " + list.length + (list.length === 1 ? " event" : " events")
+      : "Newest " + Math.min(tlLimit, list.length) + " of " + list.length + (list.length === all.length ? " events" : " matching events (" + all.length + " total)");
     return [
-      el("div", { class: "lede" }, el("h1", null, "Timeline"), el("p", { class: "facts", role: "status" }, "Showing " + Math.min(tlLimit, list.length) + " of " + list.length + " matching events (" + all.length + " total)")),
-      milestoneStrip(all),
-      filters, topicBox,
+      el("div", { class: "lede" }, el("h1", null, "Timeline")),
+      timelineLine(month, picked, status),
+      filters, more,
       list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
       list.length > tlLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
         const next = list[tlLimit].id; tlLimit += 12; route();
@@ -745,26 +796,99 @@
       } }, "Show " + Math.min(12, list.length - tlLimit) + " more events") : null];
   }
 
-  /* The milestones as a swipeable strip, oldest first; a tap opens the event in the list. */
-  function milestoneStrip(all) {
-    const ms = all.filter((e) => e.milestone).reverse();
-    if (!ms.length) return null;
-    return el("nav", { class: "tl-strip", "aria-label": "Milestones" },
-      el("ol", null, ms.map((e) => el("li", null,
-        el("button", { type: "button", onclick: () => {
-          if (!document.getElementById("ev-" + e.id)) {
-            tlBranch = "all"; tlTopic = "all"; tlMilestones = false;
-            tlLimit = Math.ceil((all.findIndex((x) => x.id === e.id) + 1) / 12) * 12; route();
-          }
-          const node = document.getElementById("ev-" + e.id);
-          if (!node) return;
-          node.classList.add("open");
-          const t = node.querySelector(".event-toggle");
-          if (t) { t.setAttribute("aria-expanded", "true"); t.focus({ preventScroll: true }); }
-          node.scrollIntoView({ block: "start" });
-        } },
-          el("span", { class: "strip-date" }, S.formatDate(e.date)),
-          el("span", { class: "strip-title" }, e.title))))));
+  /* Milestones on one line, placed by date; the shape says who acted. A tap opens the event in its month. */
+  const SHAPES = { congress_house: "circle", congress_senate: "circle", executive: "square", agency: "square", court: "diamond" };
+  function timelineLine(month, picked, status) {
+    const ms = D.timeline.filter((e) => e.milestone).sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+    const day = (iso) => Date.UTC(Number(iso.slice(0, 4)), Number(iso.slice(5, 7)) - 1, Number(iso.slice(8, 10)));
+    const t0 = day(AXIS_START + "-01");
+    const lastDate = D.timeline.reduce((m, e) => (e.date > m ? e.date : m), AXIS_START + "-01");
+    const t1 = day(lastDate) + 20 * 864e5;
+    const pos = (iso) => ((day(iso) - t0) / (t1 - t0)) * 100;
+    const sel = ms.findIndex((e) => e.id === picked);
+    const open = (e, refocus) => { tlRefocus = refocus || null; location.hash = "#/timeline/" + monthKey(e) + "/" + e.id; };
+
+    /* Neighbours closer than 4.5% of the width stack upward so each symbol stays tappable. */
+    const lanes = [];
+    const marks = ms.map((e, i) => {
+      const x = pos(e.date);
+      let lane = 0;
+      while (lanes[lane] != null && x - lanes[lane] < 4.5) lane += 1;
+      lanes[lane] = x;
+      return el("button", {
+        type: "button", class: "tl-mark" + (i === sel ? " sel" : ""),
+        style: "left:" + x.toFixed(2) + "%;--lane:" + lane, "data-id": e.id,
+        tabindex: i === (sel >= 0 ? sel : ms.length - 1) ? "0" : "-1", "aria-current": i === sel ? "true" : null,
+        "aria-label": S.formatDate(e.date) + ": " + e.title, title: S.formatDate(e.date) + ": " + e.title,
+        onclick: () => open(e, '.tl-mark[data-id="' + e.id + '"]'),
+      }, el("span", { class: "tl-sym " + (SHAPES[e.branch] || "circle"), "aria-hidden": "true" }));
+    });
+    const ticks = [];
+    for (let y = Number(AXIS_START.slice(0, 4)); day(y + "-01-01") < t1; y += 1) {
+      for (let m = 1; m <= 12; m += 1) {
+        const iso = y + "-" + String(m).padStart(2, "0") + "-01";
+        if (day(iso) < t0 || day(iso) >= t1) continue;
+        ticks.push(el("span", { class: "tl-tick" + (m === 1 ? " tl-year" : ""), style: "left:" + pos(iso).toFixed(2) + "%", "aria-hidden": "true" },
+          m === 1 ? String(y) : S.months[m - 1].charAt(0)));
+      }
+    }
+    /* Clustered symbols are smaller than a fingertip, so a pointer picks the nearest symbol within 28px.
+       The buttons themselves take keyboard and screen reader input. */
+    const nearest = (ev) => {
+      let best = null;
+      let bestD = 28;
+      marks.forEach((m, i) => {
+        const r = m.firstChild.getBoundingClientRect();
+        const d = Math.hypot(ev.clientX - (r.left + r.width / 2), ev.clientY - (r.top + r.height / 2));
+        if (d < bestD) { bestD = d; best = i; }
+      });
+      return best;
+    };
+    const line = el("div", { class: "tl-line", role: "group", "aria-label": "Milestones", style: "--lanes:" + lanes.length,
+      onclick: (ev) => {
+        if (ev.target.closest(".tl-mark")) return;
+        const i = nearest(ev);
+        if (i !== null) open(ms[i], '.tl-mark[data-id="' + ms[i].id + '"]');
+      },
+      onmousemove: (ev) => {
+        const i = nearest(ev);
+        preview(i === null ? null : ms[i]);
+        line.classList.toggle("near", i !== null);
+        marks.forEach((m, j) => m.classList.toggle("hover", j === i));
+      },
+      onmouseleave: () => { preview(null); line.classList.remove("near"); marks.forEach((m) => m.classList.remove("hover")); },
+      onkeydown: (ev) => {
+        const i = marks.indexOf(document.activeElement);
+        if (i < 0) return;
+        const j = ev.key === "ArrowLeft" ? i - 1 : ev.key === "ArrowRight" ? i + 1 : ev.key === "Home" ? 0 : ev.key === "End" ? marks.length - 1 : -2;
+        if (j === -2 || !marks[j]) return;
+        ev.preventDefault();
+        marks[i].tabIndex = -1; marks[j].tabIndex = 0; marks[j].focus();
+      } }, ticks, marks);
+
+    const prev = sel > 0 ? ms[sel - 1] : sel < 0 ? ms[ms.length - 1] : null;
+    const next = sel >= 0 && sel < ms.length - 1 ? ms[sel + 1] : null;
+    const stepBtn = (e, label, text) => el("button", { type: "button", class: "chip tl-step", "aria-label": label, disabled: !e,
+      onclick: () => open(e, '[aria-label="' + label + '"]:not([disabled])') }, text);
+    const current = sel >= 0
+      ? el("p", { class: "tl-pick" }, el("span", { class: "event-date" }, S.formatDate(ms[sel].date)), " ", ms[sel].title)
+      : el("p", { class: "tl-pick muted" }, status);
+    /* Hovering a symbol shows its title where the picked one would be. */
+    function preview(e) {
+      const shown = e || (sel >= 0 ? ms[sel] : null);
+      if (shown) fill(current, el("span", { class: "event-date" }, S.formatDate(shown.date)), " ", shown.title);
+      else fill(current, status);
+      current.classList.toggle("muted", !shown);
+    }
+    return el("section", { class: "tl-overview", "aria-label": "Milestones by date" },
+      line,
+      el("p", { class: "tl-key", "aria-hidden": "true" },
+        el("span", { class: "tl-sym circle" }), " Congress ", el("span", { class: "tl-sym square" }), " White House and agencies ",
+        el("span", { class: "tl-sym diamond" }), " Courts"),
+      el("div", { class: "tl-caption" }, stepBtn(prev, "Earlier milestone", "‹"), current, stepBtn(next, "Later milestone", "›")),
+      month || sel >= 0 ? el("p", { class: "tl-status-row" }, el("span", { class: "tl-status", role: "status" }, status),
+        el("button", { type: "button", class: "chip tl-all", onclick: () => { tlRefocus = ".tl-mark[tabindex=\"0\"]"; location.hash = "#/timeline"; } }, "All events"))
+        : el("span", { class: "sr-only", role: "status" }, status));
   }
 
   /* ---------- people ---------- */
@@ -1020,7 +1144,10 @@
     else if (tab === "bill") nodes = renderBillIndex();
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
     else if (tab === "communities") nodes = renderCommunities();
-    else if (tab === "timeline") nodes = renderTimeline();
+    else if (tab === "timeline") {
+      /* Arriving at a linked event clears filters that could hide it; later filter changes still apply. */
+      if (parts[2] && location.hash !== lastPath) { tlBranch = "all"; tlTopic = "all"; tlMilestones = false; }
+      nodes = renderTimeline(parts[1], parts[2]); keepScroll = Boolean(lastPath && lastPath.indexOf("#/timeline") === 0); }
     else if (tab === "people") nodes = renderPeople();
     else if (tab === "media") nodes = renderMedia();
     else if (tab === "method") nodes = renderMethod();
@@ -1030,8 +1157,10 @@
     if (tab === "overview") jumpRow(view.querySelector(".lede"));
     else if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
     else if (tab === "people" || tab === "timeline" || tab === "communities") jumpRow(view.querySelector(".lede"));
-    const strip = view.querySelector(".tl-strip");
-    if (strip) strip.scrollLeft = strip.scrollWidth;
+    if (tab === "timeline") {
+      const target = tlRefocus && view.querySelector(tlRefocus);
+      if (target && lastPath && lastPath.indexOf("#/timeline") === 0) target.focus({ preventScroll: true });
+    }
     if (tab === "compare" && parts[2]) {
       const row = document.getElementById("row-" + parts[2]);
       if (row) {
@@ -1051,6 +1180,8 @@
     document.title = (h1 && tab !== "overview" ? h1.firstChild.textContent + " · " : "") + "Permitting Reform";
     const path = location.hash;
     if (path !== lastPath && !keepScroll) window.scrollTo(0, 0);
+    if (tab === "timeline" && parts[2] && path !== lastPath) openEvent(parts[2], Boolean(tlRefocus));
+    tlRefocus = null;
     lastPath = path;
   }
 
