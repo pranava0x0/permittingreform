@@ -706,7 +706,7 @@
      },
      "note": {
       "label": "Earlier bill",
-      "text": "The Ratepayer Protection Act (H.R. 9340) would ask state regulators to consider making data centers of 100 megawatts or more pay the full incremental cost of upgrades, including after they leave, with financial assurance before construction. States would not have to adopt it. It passed the House 417-3 on September 16, 2026, and the Senate rejected cloture 57-43 on September 30. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts, and section 2107(a) adds an embedded-cost charge for transmission.",
+      "text": "The Ratepayer Protection Act (H.R. 9340) would ask state regulators to consider making data centers of 100 megawatts or more pay the full incremental cost of upgrades, including after they leave, with financial assurance before construction. States would not have to adopt it. It passed the House 417-3 on September 16, 2026, and the Senate rejected cloture 57-43 on September 30. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts, and section 2107(a) adds an embedded-cost charge for transmission. Harvard's Ari Peskoe called the House bill's consider standard 'largely symbolic', since Congress cannot force state regulators to act, and called BAAJA's data center rules 'an improvement on the status quo'.",
       "sources": [
        {
         "cite": "H.R. 9340, as passed by the House",
@@ -719,6 +719,14 @@
        {
         "cite": "Senate roll call vote 254",
         "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00254.htm"
+       },
+       {
+        "cite": "Heatmap on the Ratepayer Protection Act",
+        "url": "https://heatmap.news/politics/ratepayer-protection-act-explained"
+       },
+       {
+        "cite": "Heatmap on the Senate bill's data center rules",
+        "url": "https://heatmap.news/daily/data-center-permitting-deal"
        }
       ]
      }

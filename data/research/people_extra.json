@@ -253,6 +253,260 @@
      "url": "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/"
     }
    ]
+  },
+  {
+   "id": "angus-king",
+   "name": "Angus King",
+   "role": "U.S. Senator and member of the Senate Energy and Natural Resources Committee",
+   "affiliation": "U.S. Senate (I-Maine)",
+   "sector": "congress",
+   "party": "I",
+   "inside_government": true,
+   "stance": "neutral",
+   "position": "Independent who caucuses with Democrats. In July he said talks could not finish until the administration stopped favoring some energy sources over others. On Sept. 30 he said all issues were solved in concept and the work left was drafting language.",
+   "key_actions": [
+    "2026-07-17: Told POLITICO that negotiators had made progress but the administration had to take its thumb off the scale",
+    "2026-09-30: Said that all issues were solved in concept and legislative language was still needed"
+   ],
+   "quote": {
+    "text": "All the issues are solved in concept",
+    "source_url": "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791"
+   },
+   "sources": [
+    {
+     "title": "Capitol agenda: One day more?",
+     "url": "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791"
+    },
+    {
+     "title": "Permitting deal deadline remains elusive",
+     "url": "https://www.eenews.net/articles/permitting-deal-deadline-remains-elusive/"
+    }
+   ]
+  },
+  {
+   "id": "catherine-cortez-masto",
+   "name": "Catherine Cortez Masto",
+   "role": "U.S. Senator and member of the Senate Energy and Natural Resources Committee",
+   "affiliation": "U.S. Senate (D-Nev.)",
+   "sector": "congress",
+   "party": "D",
+   "inside_government": true,
+   "stance": "neutral",
+   "position": "Led the Senate Democrats' push for permit certainty: a June letter to appropriators asking for riders that bar technology-specific permitting barriers, and the June 16 Senate FREEDOM Act with Sen. Tom Cotton. Her position on the final bill was not found in the sources read.",
+   "key_actions": [
+    "2026-06-08: Led an ENR Democrats' letter urging fiscal 2027 spending-bill language on fair permitting of solar and wind",
+    "2026-06-16: Released the Senate FREEDOM Act with Sen. Tom Cotton (R-Ark.)"
+   ],
+   "quote": {
+    "text": "directs the agencies under your jurisdiction to permit energy projects fairly and without arbitrary technology-specific barriers",
+    "source_url": "https://www.eenews.net/articles/senate-dems-push-spending-rider-on-wind-solar-permits/"
+   },
+   "sources": [
+    {
+     "title": "Senate Dems push spending riders on wind, solar permits",
+     "url": "https://www.eenews.net/articles/senate-dems-push-spending-rider-on-wind-solar-permits/"
+    },
+    {
+     "title": "Freedom (It Won't Slow You Down)",
+     "url": "https://heatmap.news/daily/senate-bipartisan-permitting-reform"
+    }
+   ]
+  },
+  {
+   "id": "brett-guthrie",
+   "name": "Brett Guthrie",
+   "role": "Chair, House Energy and Commerce Committee",
+   "affiliation": "U.S. House of Representatives (R-Ky.)",
+   "sector": "congress",
+   "party": "R",
+   "inside_government": true,
+   "stance": "neutral",
+   "position": "Backed the Ratepayer Protection Act as a way to build power for AI responsibly. POLITICO reported on Oct. 1 that he had not endorsed the Senate permitting bill.",
+   "key_actions": [
+    "2026-06-24: Praised the Ratepayer Protection Act before the Energy and Commerce markup",
+    "2026-10-01: Reported by POLITICO as not yet endorsing the Senate deal"
+   ],
+   "quote": {
+    "text": "Winning the race to AI dominance is essential to securing America’s future global leadership, and that means expeditiously building the power infrastructure needed to support new technologies, while doing so in a responsible way.",
+    "source_url": "https://heatmap.news/politics/ratepayer-protection-act-explained"
+   },
+   "sources": [
+    {
+     "title": "The Mystery of the Ratepayer Protection Act",
+     "url": "https://heatmap.news/politics/ratepayer-protection-act-explained"
+    },
+    {
+     "title": "Senate bipartisan permitting deal faces a House buzz saw",
+     "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247"
+    }
+   ]
+  },
+  {
+   "id": "teresa-leger-fernandez",
+   "name": "Teresa Leger Fernández",
+   "role": "U.S. Representative and member of the House Natural Resources Committee",
+   "affiliation": "U.S. House of Representatives (D-N.M.)",
+   "sector": "congress",
+   "party": "D",
+   "inside_government": true,
+   "stance": "neutral",
+   "position": "Skeptical of changing the National Historic Preservation Act. She says the law does not prevent development but requires consultation before building, and that Republicans use long delays to try to wipe out the underlying law. Her view of the final bill was not found.",
+   "key_actions": [
+    "2026-06-09: Told POLITICO she wanted to preserve the National Historic Preservation Act"
+   ],
+   "quote": {
+    "text": "We want to preserve the National Historic Preservation Act.",
+    "source_url": "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/"
+   },
+   "sources": [
+    {
+     "title": "Debate over preservation law tripping up permitting talks",
+     "url": "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/"
+    }
+   ]
+  },
+  {
+   "id": "daniel-palken",
+   "name": "Daniel Palken",
+   "role": "Director of Infrastructure for Energy and Permitting, Arnold Ventures",
+   "affiliation": "Arnold Ventures",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "neutral",
+   "position": "Former Senate staffer for Whitehouse, Hickenlooper and Manchin. Described the 2026 talks as four-corners negotiations among the EPW and ENR leaders, sorted a deal into six buckets, and named the administration's permit cancellations and withholding as the biggest obstacle to Democratic buy-in.",
+   "key_actions": [
+    "2026-07-29: Appeared on Heatmap's Shift Key to explain the likely contents of a deal"
+   ],
+   "quote": {
+    "text": "all four parties are really sincerely interested in good faith in getting to a deal",
+    "source_url": "https://heatmap.news/podcast/permitting-reform-arnold-ventures-daniel-palken"
+   },
+   "sources": [
+    {
+     "title": "What a Permitting Reform Deal Could Look Like (Shift Key)",
+     "url": "https://heatmap.news/podcast/permitting-reform-arnold-ventures-daniel-palken"
+    }
+   ]
+  },
+  {
+   "id": "jarrod-agen",
+   "name": "Jarrod Agen",
+   "role": "Executive Director, National Energy Dominance Council",
+   "affiliation": "The White House",
+   "sector": "white_house",
+   "inside_government": true,
+   "stance": "neutral",
+   "position": "Said in June the administration wants a permitting deal but would not give up good projects for bad ones, and blamed Democrats and New York's Clean Water Act review for blocking gas pipelines.",
+   "key_actions": [
+    "2026-06-10: Spoke at POLITICO's Energy Summit on permitting reform and the Constitution pipeline"
+   ],
+   "quote": {
+    "text": "We’re not going to give bad projects at the cost of good projects",
+    "source_url": "https://www.politico.com/newsletters/power-switch/2026/06/10/special-edition-politicos-energy-summit-kicks-off-hot-permitting-summer-00957736"
+   },
+   "sources": [
+    {
+     "title": "Special edition: POLITICO's Energy Summit kicks off hot permitting summer",
+     "url": "https://www.politico.com/newsletters/power-switch/2026/06/10/special-edition-politicos-energy-summit-kicks-off-hot-permitting-summer-00957736"
+    }
+   ]
+  },
+  {
+   "id": "frank-macchiarola",
+   "name": "Frank Macchiarola",
+   "role": "Chief Advocacy Officer, American Clean Power Association",
+   "affiliation": "American Clean Power Association (ACP)",
+   "sector": "trade_association",
+   "inside_government": false,
+   "stance": "neutral",
+   "position": "Said in August that ACP wanted negotiators to take time to get it right and was aligned with Democrats who needed a commitment from the administration to permit renewables; he called the Pentagon's stalling of wind approvals a red line.",
+   "key_actions": [
+    "2026-08-07: Told E&E News that Pentagon stalling of wind approvals is a red line"
+   ],
+   "quote": {
+    "text": "negotiators were smart to push back their timeline for a deal in order to “get it right.”",
+    "source_url": "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/"
+   },
+   "sources": [
+    {
+     "title": "Senators outline future of permitting talks",
+     "url": "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/"
+    }
+   ]
+  },
+  {
+   "id": "travis-fisher",
+   "name": "Travis Fisher",
+   "role": "Director of Energy and Environmental Policy Studies, Cato Institute",
+   "affiliation": "Cato Institute",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "neutral",
+   "position": "Libertarian analyst who said conservatives are becoming more comfortable with transmission when it is about load growth and a stronger grid rather than green policy. He also said state regulators have a political interest in acting on large-load tariffs.",
+   "key_actions": [
+    "2026-07-13: Quoted by E&E News on right-of-center views of transmission",
+    "2026-06-23: Quoted by Heatmap on state regulators and the Ratepayer Protection Act"
+   ],
+   "quote": {
+    "text": "In general, the right of center is getting much more comfortable with transmission.",
+    "source_url": "https://www.eenews.net/articles/where-the-permitting-talks-stand/"
+   },
+   "sources": [
+    {
+     "title": "Where the permitting talks stand",
+     "url": "https://www.eenews.net/articles/where-the-permitting-talks-stand/"
+    },
+    {
+     "title": "The Mystery of the Ratepayer Protection Act",
+     "url": "https://heatmap.news/politics/ratepayer-protection-act-explained"
+    }
+   ]
+  },
+  {
+   "id": "ari-peskoe",
+   "name": "Ari Peskoe",
+   "role": "Director, Electricity Law Initiative, Harvard Law School",
+   "affiliation": "Harvard Law School",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "neutral",
+   "position": "Critic of the voluntary approach: he called the House Ratepayer Protection Act's PURPA standard largely symbolic because Congress cannot force state regulators to act, and criticized the White House pledge for leaving out utilities and regulators.",
+   "key_actions": [
+    "2026-06-23: Told Heatmap the Ratepayer Protection Act's PURPA section is largely symbolic"
+   ],
+   "quote": {
+    "text": "largely symbolic",
+    "source_url": "https://heatmap.news/politics/ratepayer-protection-act-explained"
+   },
+   "sources": [
+    {
+     "title": "The Mystery of the Ratepayer Protection Act",
+     "url": "https://heatmap.news/politics/ratepayer-protection-act-explained"
+    }
+   ]
+  },
+  {
+   "id": "alex-epstein",
+   "name": "Alex Epstein",
+   "role": "Author and fossil fuel advocate",
+   "affiliation": "Center for Industrial Progress",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "neutral",
+   "position": "Joined the May dinner with Wright and Republican lawmakers and pushed Congress for a permitting deal covering all forms of energy, including restraining the administration from blocking solar and wind approvals.",
+   "key_actions": [
+    "2026-05-19: Attended Wright's dinner with Republican lawmakers on permitting"
+   ],
+   "quote": {
+    "text": "I’m against any sort of technology-related crackdown of any kind by any administration",
+    "source_url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/"
+   },
+   "sources": [
+    {
+     "title": "Wright meets with Republicans on permitting, but deal remains elusive as ever",
+     "url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/"
+    }
+   ]
   }
  ]
 }

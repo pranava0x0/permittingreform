@@ -8,9 +8,33 @@
    }
   },
   "2024-07-31-senate-enr-advances-energy-permitting-reform-act": {
-   "reason": "House style: a plainer significance line that states what happened next.",
+   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "significance": "Paired limits on lawsuits with transmission and fossil-fuel permitting, the trade the 2026 Senate bill returns to."
+    "significance": "Paired limits on lawsuits with transmission and fossil-fuel permitting, the trade the 2026 Senate bill returns to.",
+    "summary": "The Senate Energy and Natural Resources Committee advanced S. 4753, the Energy Permitting Reform Act of 2024, by 15-4; Sens. Sanders, Wyden, Hirono and Hawley voted no. Chairman Joe Manchin and ranking member John Barrasso had released it on July 22 and introduced it July 23. It never received a floor vote and died with the 118th Congress. House Republicans rejected it, in part over provisions easing large power lines, and co-ops and public power providers lobbied against wider FERC jurisdiction.",
+    "sources": [
+     {
+      "title": "Senate Energy & Natural Resources Committee Passes Permitting Bill",
+      "publisher": "American Public Power Association",
+      "url": "https://www.publicpower.org/periodical/article/senate-energy-natural-resources-committee-passes-permitting-bill",
+      "date": "2024-08-01",
+      "verified": true
+     },
+     {
+      "title": "Energy Chairman Manchin's Permitting Bill Moves Through Committee in Careful Balancing Act",
+      "publisher": "Holland & Knight",
+      "url": "https://www.hklaw.com/en/insights/publications/2024/08/energy-chairman-manchins-permitting-bill-moves-through-committee",
+      "date": "2024-08-05",
+      "verified": true
+     },
+     {
+      "title": null,
+      "publisher": null,
+      "url": "https://www.eenews.net/articles/where-the-permitting-talks-stand/",
+      "date": null,
+      "verified": true
+     }
+    ]
    }
   },
   "2025-01-20-eo-14156-national-energy-emergency": {
@@ -80,15 +104,63 @@
    }
   },
   "2026-09-24-permitting-talks-stall-vote-slips-past-midterms": {
-   "reason": "House style: a plainer significance line that states what happened next.",
+   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "significance": "The open issue was wind and solar 'regular order'. The Senate was not due back until November 9."
+    "significance": "The open issue was wind and solar 'regular order'. The Senate was not due back until November 9.",
+    "summary": "Roll Call and Deseret News reported that Senate permitting talks had stalled and a vote would likely come after the midterms. Whitehouse said negotiators were 'over the hump on the deal-break issues' and that colleagues' feedback could go into a manager's amendment, but wanted clarity on 'regular order' for wind and solar; Thune and Barrasso accused Democrats of backing away. POLITICO reported that Democrats wanted strong interstate transmission measures and limits on the administration's power to cancel projects, and Republicans wanted to limit state reviews under Clean Water Act section 401.",
+    "sources": [
+     {
+      "title": "Permitting reform talks fall apart in the Senate, deal punted until after midterms",
+      "publisher": "Deseret News",
+      "url": "https://www.deseret.com/politics/2026/09/24/permitting-reform-talks-fall-apart-in-senate/",
+      "date": "2026-09-24",
+      "verified": true
+     },
+     {
+      "title": "Permitting bill off until after midterms even as talks close in",
+      "publisher": "Roll Call",
+      "url": "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/",
+      "date": "2026-09-24",
+      "verified": true
+     },
+     {
+      "title": "Permitting won't get vote ahead of election",
+      "publisher": "POLITICO",
+      "url": "https://www.politico.com/live-updates/2026/09/24/congress/permitting-deal-fails-ahead-of-senate-break-01089500",
+      "date": "2026-09-24",
+      "verified": true
+     }
+    ]
    }
   },
   "2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act": {
-   "reason": "House style: a plainer significance line that states what happened next.",
+   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "significance": "The first full bipartisan Senate text since the 2024 Manchin-Barrasso bill. The wind and solar question is unresolved."
+    "significance": "The first full bipartisan Senate text since the 2024 Manchin-Barrasso bill. The wind and solar question is unresolved.",
+    "summary": "Sens. Capito, Lee, Whitehouse and Heinrich released the 417-page bill at a press conference. It sets a 150-day limit for NEPA claims, bars agencies from revoking issued permits except in listed cases (Sec. 1401), and requires data centers to pay their transmission costs. Wind and solar 'regular order' terms remain under negotiation with the White House, with amendment work in parallel and a vote aimed for after the Senate returns in November. In the House, Natural Resources ranking member Jared Huffman said most Democrats would not support the bill as written, and Energy and Commerce Chair Brett Guthrie had not endorsed it.",
+    "sources": [
+     {
+      "title": "Bipartisan American Affordability and Jobs Act of 2026 (bill text, 417 pages)",
+      "publisher": "U.S. Senate Committee on Energy and Natural Resources",
+      "url": "https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Senate unveils bipartisan deal tackling energy and data centers, but wind and solar questions remain",
+      "publisher": "Deseret News",
+      "url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Senate bipartisan permitting deal faces a House buzz saw",
+      "publisher": "POLITICO",
+      "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247",
+      "date": "2026-10-01",
+      "verified": true
+     }
+    ]
    }
   },
   "2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference": {
@@ -98,9 +170,33 @@
    }
   },
   "2026-06-18-ferc-large-load-show-cause-orders": {
-   "reason": "House style: a plainer significance line that states what happened next.",
+   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "significance": "FERC chose regional tariff changes over one national rule. The Senate bill would set a national cost rule by statute."
+    "significance": "FERC chose regional tariff changes over one national rule. The Senate bill would set a national cost rule by statute.",
+    "summary": "In place of a single national rule, FERC voted unanimously on June 18, 2026 to issue Section 206 show cause orders to PJM, MISO, SPP, CAISO, ISO-NE and NYISO, preliminarily finding their tariffs may be unjust and unreasonable for lacking clear large-load and co-location provisions. Responses were due in 60 days, with generation-adequacy reports due in 30 days; DOE had asked for final action on its October 2025 proposal by April 30. The vote was 5-0. The orders cover five areas: study rules, safeguards against cost shifts, co-location, flexible service and generation near load.",
+    "sources": [
+     {
+      "title": "FERC Issues Large Load Interconnection Show Cause Orders to Each RTO/ISO",
+      "publisher": "Ashurst Perkins Coie",
+      "url": "https://www.ashurstperkinscoie.com/en/insights/ferc-issues-large-load-interconnection-show-cause-orders-to-each-rto-and-iso/",
+      "date": "2026-06-29",
+      "verified": true
+     },
+     {
+      "title": "FERC Targets Large Load Interconnection Rules Across All Regional Grid Operators",
+      "publisher": "Climate Solutions Legal Digest",
+      "url": "https://www.climatesolutionslaw.com/2026/07/ferc-targets-large-load-interconnection-rules-across-all-regional-grid-operators/",
+      "date": "2026-07-07",
+      "verified": true
+     },
+     {
+      "title": "FERC Has a New Plan for Data Centers",
+      "publisher": "Heatmap News",
+      "url": "https://heatmap.news/energy/ferc-data-center-plan",
+      "date": "2026-06-18",
+      "verified": true
+     }
+    ]
    }
   },
   "2025-07-23-eo-14318-data-center-permitting": {
@@ -114,37 +210,270 @@
    "set": {
     "title": "Blunt Rochester and Curtis introduce two Senate bills on data center disclosure"
    }
+  },
+  "2026-09-30-senate-rejects-cloture-on-ratepayer-protection-act": {
+   "reason": "Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "set": {
+    "summary": "The Senate rejected cloture on the motion to proceed to H.R. 9340, the Ratepayer Protection Act, by 57-43, short of the 60 votes needed. Sen. Jon Husted (R-Ohio) had sought unanimous consent on September 17, when Sen. Martin Heinrich objected, arguing that Congress needs legislation that requires, not merely asks states to consider, that data centers pay for grid upgrades. Democratic Sens. Ossoff, Warnock, Klobuchar and Hassan voted yes with all Republicans.",
+    "sources": [
+     {
+      "title": "Roll Call Votes, 119th Congress, 2nd Session (Vote 254, September 30, 2026)",
+      "publisher": "U.S. Senate",
+      "url": "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Senate Fails To Advance GOP-Led Data Center Bill That Had No Teeth",
+      "publisher": "The Daily Caller",
+      "url": "https://dailycaller.com/2026/09/30/senate-passes-ratepayer-protection-act/",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Capitol agenda: One day more? (Inside Congress live updates)",
+      "publisher": "POLITICO",
+      "url": "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791",
+      "date": "2026-09-30",
+      "verified": true
+     }
+    ]
+   }
   }
  },
  "people": {
   "shelley-moore-capito": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "position": "Co-negotiated and co-introduced the bill. She says its reforms will 'transform our nation's ability to power our economy' while protecting land, water and wildlife, and that a permitting bill must be bipartisan and 'project neutral.'"
+    "position": "Co-negotiated and co-introduced the bill. She says its reforms will 'transform our nation's ability to power our economy' while protecting land, water and wildlife, and that a permitting bill must be bipartisan and 'project neutral.'",
+    "key_actions": [
+     "2026-01-28: Chaired the EPW hearing 'Federal Environmental Review and Permitting Processes, Part II' to get talks 'back on the path to fruitful compromise'",
+     "2026-06-10: Warned the White House that favoring some projects over others could cost the deal",
+     "2026-08-07: Said a September deal would be a policy and political win for both parties",
+     "2026-09-17: Said a deal was 'very close' and that the floor vote could slip",
+     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act; said at the press conference that negotiators want it to be the first vote when the Senate returns"
+    ],
+    "sources": [
+     {
+      "title": "Capito, Lee, Whitehouse, and Heinrich Introduce Bipartisan American Affordability and Jobs Act of 2026",
+      "publisher": "U.S. Senate Committee on Environment and Public Works",
+      "url": "https://www.epw.senate.gov/public/index.cfm/press-releases-republican?ID=D3555B5D-34C2-4D95-B99B-5B460BB9895D",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Republican, Democratic senators call for project certainty at permitting reform hearing",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/senate-permitting-reform-project-certainty/810827/",
+      "date": "2026-01-29",
+      "verified": true
+     },
+     {
+      "title": "Special edition: POLITICO's Energy Summit kicks off hot permitting summer (Power Switch)",
+      "publisher": "POLITICO",
+      "url": "https://www.politico.com/newsletters/power-switch/2026/06/10/special-edition-politicos-energy-summit-kicks-off-hot-permitting-summer-00957736",
+      "date": "2026-06-10"
+     },
+     {
+      "title": "Senators outline future of permitting talks",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/",
+      "date": "2026-08-07"
+     },
+     {
+      "title": "Permitting talks reach 'final' stages",
+      "publisher": "POLITICO Pro",
+      "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
+      "date": "2026-09-17"
+     }
+    ]
    }
   },
   "mike-lee": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "position": "Co-introduced the bill, describing a permitting system that 'takes too long and costs too much.' He says the deal should hold through the midterm elections."
+    "position": "Co-introduced the bill, describing a permitting system that 'takes too long and costs too much.' He says the deal should hold through the midterm elections.",
+    "key_actions": [
+     "2026-03-25: Chaired the ENR hearing on the state of the bulk power system, a transmission and data-center cost discussion tied to the permitting talks",
+     "2026-06-09: Pressed for National Historic Preservation Act changes in the talks, with limits on lawsuits as a priority",
+     "2026-07-21: Said data center legislation was not currently a priority",
+     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act and posted the bill text on X"
+    ],
+    "sources": [
+     {
+      "title": "Lee, Capito, Heinrich, and Whitehouse Introduce Bipartisan American Affordability and Jobs Act of 2026",
+      "publisher": "U.S. Senate Committee on Energy and Natural Resources",
+      "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-introduce-bipartisan-american-affordability-and-jobs-act-of-2026/",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Senate unveils bipartisan deal tackling energy and data centers, but wind and solar questions remain",
+      "publisher": "Deseret News",
+      "url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Debate over preservation law tripping up permitting talks",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/",
+      "date": "2026-06-09"
+     },
+     {
+      "title": "Can Congress get behind this data center bill? (Power Switch)",
+      "publisher": "POLITICO",
+      "url": "https://www.politico.com/newsletters/power-switch/2026/07/21/can-congress-get-behind-this-data-center-bill-01006436",
+      "date": "2026-07-21"
+     }
+    ]
    }
   },
   "sheldon-whitehouse": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "position": "Co-introduced the bill and ties final Democratic support to the administration's treatment of wind and solar, calling the question of 'returning to regular order' unresolved. He and Heinrich ended talks in December 2025 over the offshore wind halt."
+    "position": "Co-introduced the bill and ties final Democratic support to the administration's treatment of wind and solar, calling the question of 'returning to regular order' unresolved. He and Heinrich ended talks in December 2025 over the offshore wind halt.",
+    "key_actions": [
+     "2025-12-22: With Heinrich, ended permitting talks after Interior paused five offshore wind projects",
+     "2026-01-28: Told the EPW hearing that reviving talks needs 'credible confidence that the nonsense will stop'",
+     "2026-03-12: Said any appeal of the Revolution Wind ruling would be inconsistent with progress on permitting; the administration did not appeal",
+     "2026-03-23: Called the Interior-TotalEnergies lease buyout 'not good' but did not end talks again",
+     "2026-06-10: Said it was hard to ask his caucus to trust the administration to carry out even a good bill",
+     "2026-08-07: Said Democrats had a strong hand in the talks and he preferred not to push the deal into the lame duck",
+     "2026-09-17: Said talks were in final wrap-up, with the hardest issues resolved last",
+     "2026-09-24: Said negotiators were 'over the hump on the deal-break issues'",
+     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act"
+    ],
+    "sources": [
+     {
+      "title": "Whitehouse, Capito, Heinrich, Lee Introduce Bipartisan American Affordability and Jobs Act of 2026",
+      "publisher": "U.S. Senate Committee on Environment and Public Works (Minority News)",
+      "url": "https://www.epw.senate.gov/public/index.cfm/press-releases-democratic?ID=4B732BD5-283C-48CF-8A78-DE96E56C22B4",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Senate Democrats end permitting reform talks over offshore wind freeze",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/senate-democrats-permitting-reform-offshore-wind/808580/",
+      "date": "2025-12-23",
+      "verified": true
+     },
+     {
+      "title": "Permitting talks live on as DOJ declines to appeal ruling favoring Revolution Wind",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/permitting-talks-live-on-as-doj-declines-to-appeal-ruling-favoring-revolution-wind/",
+      "date": "2026-03-16"
+     },
+     {
+      "title": "Special edition: POLITICO's Energy Summit kicks off hot permitting summer (Power Switch)",
+      "publisher": "POLITICO",
+      "url": "https://www.politico.com/newsletters/power-switch/2026/06/10/special-edition-politicos-energy-summit-kicks-off-hot-permitting-summer-00957736",
+      "date": "2026-06-10"
+     },
+     {
+      "title": "Senators outline future of permitting talks",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/",
+      "date": "2026-08-07"
+     },
+     {
+      "title": "Permitting talks reach 'final' stages",
+      "publisher": "POLITICO Pro",
+      "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
+      "date": "2026-09-17"
+     }
+    ]
    }
   },
   "martin-heinrich": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "position": "Co-introduced the bill, saying it will help projects get to 'yes' or 'no' faster while protecting environmental safeguards and Tribal consultation, and make data centers pay for the grid upgrades they require. He has pressed Burgum to rescind the July 2025 wind and solar directive."
+    "position": "Co-introduced the bill, saying it will help projects get to 'yes' or 'no' faster while protecting environmental safeguards and Tribal consultation, and make data centers pay for the grid upgrades they require. He has pressed Burgum to rescind the July 2025 wind and solar directive.",
+    "key_actions": [
+     "2025-12-22: With Whitehouse, ended permitting talks over the offshore wind halt",
+     "2026-01-23: Led a letter with Sens. Wyden, Van Hollen and Rosen asking Burgum to revoke the July 15, 2025 wind and solar review directive",
+     "2026-03-25: Questioned Niskanen, Cato and EPSA witnesses at the ENR hearing on the grid",
+     "2026-05-22: Named the administration's stalled solar, wind and battery permits as the biggest threat to a deal",
+     "2026-07-16: Introduced a bill letting new power plants connect faster in return for accepting curtailment, as in Texas",
+     "2026-08-03: Released the GRID Savings Act (S. 5199), under which FERC would make large loads pay for the grid upgrades needed to connect them",
+     "2026-09-17: Objected to a unanimous-consent request on the House-passed Ratepayer Protection Act, arguing for mandatory data-center cost rules",
+     "2026-09-25: Said with Whitehouse that getting the deal right had to matter more than election-year deadlines",
+     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act"
+    ],
+    "sources": [
+     {
+      "title": "Heinrich, Lee, Capito, and Whitehouse Introduce Bipartisan American Affordability and Jobs Act of 2026",
+      "publisher": "U.S. Senate Committee on Energy and Natural Resources (Democratic press)",
+      "url": "https://www.energy.senate.gov/press/dem/heinrich-lee-capito-and-whitehouse-introduce-bipartisan-american-affordability-and-jobs-act-of-2026/",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "With Electricity Costs Rising Nationwide, Heinrich Leads Letter with Wyden, Van Hollen, and Rosen in Calling on Burgum to Revoke July Directive Blocking New, Cheaper Energy From the Grid",
+      "publisher": "U.S. Senate Committee on Energy and Natural Resources (Democratic press)",
+      "url": "https://www.energy.senate.gov/press/dem/with-electricity-costs-rising-nationwide-heinrich-leads-letter-with-wyden-van-hollen-and-rosen-in-calling-on-burgum-to-revoke-july-directive-blocking-new-cheaper-energy-from-the-grid/",
+      "date": "2026-01-23",
+      "verified": true
+     },
+     {
+      "title": "Wright meets with Republicans on permitting, but deal remains elusive as ever",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/",
+      "date": "2026-05-22"
+     },
+     {
+      "title": "Scoop: A Key Democrat Wants to Break America's Worst Energy Bottleneck",
+      "publisher": "Heatmap News",
+      "url": "https://heatmap.news/daily/heinrich-texas-power-permitting",
+      "date": "2026-07-16"
+     },
+     {
+      "title": "Heinrich releases data center energy plan",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/heinrich-releases-data-center-energy-plan/",
+      "date": "2026-08-03"
+     },
+     {
+      "title": "The Wright Interview and Permitting's Peril",
+      "publisher": "Heatmap News",
+      "url": "https://heatmap.news/daily/wright-recording-permitting",
+      "date": "2026-09-25"
+     }
+    ]
    }
   },
   "john-thune": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "position": "Says Republicans and the White House 'closed the deal' on permitting legislation that 'incorporated essentially all' of Democrats' asks, and accuses Democrats of wanting to deny Republicans a legislative win before the midterms."
+    "position": "Says Republicans and the White House 'closed the deal' on permitting legislation that 'incorporated essentially all' of Democrats' asks, and accuses Democrats of wanting to deny Republicans a legislative win before the midterms.",
+    "key_actions": [
+     "2026-09-22: Set a deadline for negotiators to strike a deal; it passed without one",
+     "2026-09-24: Told the Senate that Democrats 'can't take yes for an answer' on permitting reform",
+     "2026-09-30: The Senate rejected cloture 57-43 on the House-passed Ratepayer Protection Act, which Republican leaders brought to the floor that week"
+    ],
+    "sources": [
+     {
+      "title": "Permitting bill off until after midterms even as talks close in",
+      "publisher": "Roll Call",
+      "url": "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/",
+      "date": "2026-09-24",
+      "verified": true
+     },
+     {
+      "title": "Democrats flex filibuster muscle ahead of election",
+      "publisher": "Semafor",
+      "url": "https://semafor.com/article/09/29/2026/democrats-flex-filibuster-muscle-ahead-of-election",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Trump will green-light wind energy projects to strike permitting deal",
+      "publisher": "POLITICO Pro",
+      "url": "https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842",
+      "date": "2026-09-22"
+     }
+    ]
    }
   },
   "jared-golden": {
@@ -162,9 +491,40 @@
    }
   },
   "chuck-schumer": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "position": "No public position on the Senate bill was found. He joined Whitehouse on September 24 to release a staff report on fossil fuel industry political spending and called the House-passed Ratepayer Protection Act 'toothless'. Barrasso and Thune accuse him of blocking permitting reform."
+    "position": "No public position on the Senate permitting bill was found. On September 29 he called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud', saying data center cost rules should be mandatory, not optional. He joined Whitehouse on September 24 to release a staff report on fossil fuel industry political spending.",
+    "key_actions": [
+     "2026-09-24: Joined Sen. Whitehouse at a news conference on a 79-page staff report on oil and gas industry political spending",
+     "2026-09-29: Called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud' on the Senate floor"
+    ],
+    "sources": [
+     {
+      "title": "Permitting bill off until after midterms even as talks close in",
+      "publisher": "Roll Call",
+      "url": "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/",
+      "date": "2026-09-24",
+      "verified": true
+     },
+     {
+      "title": "Senators strike bipartisan permitting deal",
+      "publisher": "Latitude Media",
+      "url": "https://www.latitudemedia.com/news/senators-strike-bipartisan-permitting-deal/",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
+      "title": "Senate Democrats sink 'toothless' stock trading ban, data center bill in last act before election recess",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html",
+      "date": "2026-09-30"
+     }
+    ],
+    "quote": {
+     "text": "I can sum up the shortcomings of Republicans' data center bill with one word: optional",
+     "source_url": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html",
+     "date": "2026-09-29"
+    }
    }
   },
   "katherine-scarlett": {
@@ -175,7 +535,7 @@
    }
   },
   "donald-trump": {
-   "reason": "The White House issued a statement of support on September 30, 2026 (AP); the stance is the position on the Senate bill.",
+   "reason": "The White House issued a statement of support on September 30, 2026 (AP); the stance is the position on the Senate bill. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
     "stance": "supports",
     "position": "Signed the executive orders that began the NEPA rollback and declared an energy emergency, while his administration froze wind permitting and halted offshore wind projects. The White House said on September 30, 2026 that the Senate bill would “deliver transformative policies to lower Americans’ energy and housing costs”. Its offer to ease the hold on wind and solar projects is still being negotiated with Senate Democrats.",
@@ -197,7 +557,20 @@
       "publisher": "Deseret News",
       "url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/",
       "date": "2026-09-30"
+     },
+     {
+      "title": "Trump will green-light wind energy projects to strike permitting deal",
+      "publisher": "POLITICO Pro",
+      "url": "https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842",
+      "date": "2026-09-22"
      }
+    ],
+    "key_actions": [
+     "2025-01-20: Signed EO 14154 (Unleashing American Energy), EO 14156 (national energy emergency) and the memorandum pausing wind leasing and permitting",
+     "2025-04-15: Signed the memorandum on permitting technology",
+     "2025-07-04: Signed the One Big Beautiful Bill Act, which added NEPA's paid expedited-review option",
+     "2025-07-23: Signed EO 14318 on federal permitting of data center infrastructure",
+     "2026-09-21: Told advisers he would direct the Defense Department to start clearing delayed onshore wind projects to close a permitting deal (POLITICO Pro, two unnamed sources)"
     ]
    }
   },
@@ -209,10 +582,37 @@
    }
   },
   "chris-wright": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
     "stance": "neutral",
-    "position": "Used Section 403 of the DOE Organization Act to direct FERC to start a large-load interconnection rulemaking aimed at data centers, asking for final action by April 30, 2026. Whitehouse has accused the Energy and Interior secretaries of misstating the cost of the halted wind projects."
+    "position": "Used Section 403 of the DOE Organization Act to direct FERC to start a large-load interconnection rulemaking aimed at data centers, asking for final action by April 30, 2026. Whitehouse has accused the Energy and Interior secretaries of misstating the cost of the halted wind projects.",
+    "key_actions": [
+     "2025-02-14: Named Vice Chair of the National Energy Dominance Council",
+     "2025-10-23: Sent FERC an advance notice of proposed rulemaking on interconnecting loads above 20 MW, citing data-center growth",
+     "2026-09-23: Told Heatmap a permitting deal would change the playing field for everything built in the country, including wind"
+    ],
+    "sources": [
+     {
+      "title": "DOE Directs FERC to Take Action on Large Load Interconnection",
+      "publisher": "K&L Gates",
+      "url": "https://www.klgates.com/DOE-Directs-FERC-to-Take-Action-on-Large-Load-Interconnection-10-30-2025",
+      "date": "2025-10-30",
+      "verified": true
+     },
+     {
+      "title": "Establishing the National Energy Dominance Council",
+      "publisher": "The White House",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/02/establishing-the-national-energy-dominance-council/",
+      "date": "2025-02-14",
+      "verified": true
+     },
+     {
+      "title": "Offshore Wind's Existential Crisis at Climate Week",
+      "publisher": "Heatmap News",
+      "url": "https://heatmap.news/plus/the-fight/spotlight/offshore-wind-permitting-reform",
+      "date": "2026-09-25"
+     }
+    ]
    }
   },
   "emily-domenech": {
@@ -230,24 +630,118 @@
    }
   },
   "jared-huffman": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
-    "stance": "neutral",
-    "position": "Opposed the SPEED Act in committee and on the floor, calling the administration's posture on renewable permitting a 'war on renewable energy' and criticizing the last-minute offshore wind changes. No statement on the Senate bill was found."
+    "stance": "opposes",
+    "position": "Opposed the SPEED Act in committee and on the floor, calling the administration's posture on renewable permitting a 'war on renewable energy'. On September 30 he said most House Democrats will not support the Senate bill as written and urged them to resume talks after the midterms.",
+    "key_actions": [
+     "2025-11-20: Voiced opposition as the House Natural Resources Committee advanced the SPEED Act 25-18",
+     "2025-12-17: Said the House deal on offshore wind language spoke volumes about the inability to deal with Trump's war on clean energy",
+     "2026-09-30: Said most House Democrats will not back the Senate bill as written and should reassess after the November 3 election"
+    ],
+    "sources": [
+     {
+      "title": "House Natural Resources Committee Passes SPEED Act",
+      "publisher": "American Public Power Association",
+      "url": "https://www.publicpower.org/periodical/article/house-natural-resources-committee-passes-speed-act",
+      "date": "2025-11-20",
+      "verified": true
+     },
+     {
+      "title": "How Republicans saved the 'SPEED Act' from oblivion",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/",
+      "date": "2025-12-17",
+      "verified": true
+     },
+     {
+      "title": "Senate bipartisan permitting deal faces a House buzz saw",
+      "publisher": "POLITICO",
+      "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247",
+      "date": "2026-10-01"
+     },
+     {
+      "title": "The Permitting Reform Bill Just Dropped",
+      "publisher": "Heatmap News",
+      "url": "https://heatmap.news/am/permitting-reform-baaja",
+      "date": "2026-10-01"
+     }
+    ]
    }
   },
   "scott-peters": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
     "stance": "neutral",
-    "position": "Long-time advocate of NEPA changes who co-led the ePermit Act, which passed the House unanimously. He opposed the SPEED Act as passed, calling one provision a codification of a 'broken permitting status quo', and said the bill would not be fixed until it reaches the Senate. No statement on the Senate bill was found."
+    "position": "Long-time advocate of NEPA changes who co-led the ePermit Act, which passed the House unanimously. He opposed the SPEED Act as passed and said it would not be fixed until it reached the Senate. On September 18, before the text was out, he said the Senate package was coming together and expected NEPA timelines, limits on presidents cancelling projects and Section 401 changes. No statement on the released bill was found.",
+    "key_actions": [
+     "2025-12-09: The ePermit Act he co-led with Rep. Dusty Johnson passed the House unanimously",
+     "2025-12-17: Said of the SPEED Act that it was progress but would not be fixed until it reached the Senate",
+     "2026-09-18: With Rep. Gabe Evans, released the CLEAR Act to hold transmission lawsuits to the Federal Power Act standard for gas and hydropower projects"
+    ],
+    "sources": [
+     {
+      "title": "How Republicans saved the 'SPEED Act' from oblivion",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/",
+      "date": "2025-12-17",
+      "verified": true
+     },
+     {
+      "title": "AI: House passes permit reform bill Big Tech wants",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2025/12/18/house-passes-permit-reform-bill-ai.html",
+      "date": "2025-12-18",
+      "verified": true
+     },
+     {
+      "title": "The Bipartisan Buddies With a Plan to Fix Transmission",
+      "publisher": "Heatmap News",
+      "url": "https://heatmap.news/politics/evans-peters-transmission",
+      "date": "2026-09-18"
+     }
+    ]
    }
   },
   "brian-schatz": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
    "set": {
     "stance": "neutral",
-    "position": "Joined Heinrich and Whitehouse in December 2025 in opposing passage of the House SPEED Act over its treatment of renewables and transmission, and publicly criticized American Clean Power for endorsing it without transmission provisions. No statement on the Senate bill was found."
+    "position": "Joined Heinrich and Whitehouse in December 2025 in opposing the House SPEED Act over its treatment of renewables and transmission. Before the Senate text was released he said he could not whip votes for any bill while the administration stalled solar and wind permits, and that a deal could come together in five days once that changed. No statement on the released bill was found.",
+    "key_actions": [
+     "2025-12-09: Issued, with Heinrich and Whitehouse, a joint statement opposing passage of the SPEED Act (Heatmap exclusive)",
+     "2025-12: Posted on X criticizing American Clean Power's deal with the American Petroleum Institute on the House bill",
+     "2026-05-22: Said he could not whip votes for any permitting bill while the administration stalled solar and wind permits",
+     "2026-08-03: Said a deal could come together quickly once the administration lifted its holds"
+    ],
+    "sources": [
+     {
+      "title": "Exclusive: Key Senate Democrats Oppose Permitting Bill",
+      "publisher": "Heatmap News",
+      "url": "https://heatmap.news/politics/schatz-whitehouse-heinrich-speed-act",
+      "date": "2025-12-09",
+      "verified": true
+     },
+     {
+      "title": "Lawmakers question clean energy group's tactics on permitting",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/lawmakers-question-clean-energy-groups-tactics-on-permitting/",
+      "date": "2025-12-19",
+      "verified": true
+     },
+     {
+      "title": "Wright meets with Republicans on permitting, but deal remains elusive as ever",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/",
+      "date": "2026-05-22"
+     },
+     {
+      "title": "Permitting deal may come after recess. Negotiators say that's OK.",
+      "publisher": "E&E News by POLITICO",
+      "url": "https://www.eenews.net/articles/permitting-deal-may-come-after-recess-negotiators-say-thats-ok/",
+      "date": "2026-08-03"
+     }
+    ]
    }
   },
   "john-hickenlooper": {
@@ -377,6 +871,22 @@
    "set": {
     "summary": "Capito's remarks at an EPW hearing on improving federal environmental review and permitting processes, noting agreement across the committee on the need for legislation."
    }
+  },
+  "2026-06-23-heatmap-the-mystery-of-the-ratepayer-protection-act": {
+   "reason": "House style: no unnamed attribution; the analysts' point is dropped and the named source kept.",
+   "set": {
+    "summary": "Explains why hyperscalers back the bill. Harvard's Ari Peskoe calls its PURPA standard largely symbolic because Congress cannot force state regulators to act."
+   }
+  },
+  "2026-06-18-heatmap-heinrich-interview-sunzia-and-permitting-reform": {
+   "reason": "House style: cut the intensifier, keep the fact.",
+   "set": {
+    "summary": "In an interview marking SunZia's completion, Heinrich said he was working to get to yes and that transmission is an essential piece of a balanced package that could reach 65 or 70 votes."
+   }
+  },
+  "2026-09-28-politico-senate-negotiators-reach-deal-on-permitting-text": {
+   "reason": "Same story as the held Yahoo syndication, which is readable in full; this copy was read only as a preview.",
+   "drop": true
   }
  }
 }
