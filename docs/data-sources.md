@@ -12,6 +12,8 @@ Checked 2026-10-01. A route marked dead should not be retried without a new idea
 | Federal Register | `federalregister.gov/api/v1/documents/<number>.json` | The HTML pages refuse scripts; the API does not. `govfetch.resolve_api_escape` rewrites the URL. |
 | X posts | `publish.twitter.com/oembed?url=<post url>` | Returns the post text and author, no key. |
 | Bluesky posts | `public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=at://<handle>/app.bsky.feed.post/<id>` | Returns the post text, no key. |
+| POLITICO, POLITICO Pro, E&E News | `https://r.jina.ai/<url>` | Returns the free part of the page: live-update pages and some E&E stories whole, politico.com stories and Pro articles as their first paragraphs. Mark such items as read from a preview. `rss.politico.com/energy.xml` and `congress.xml` list recent headlines. Checked 2026-10-02. |
+| Heatmap News | Plain GET | Free, including most Plus pieces. `heatmap.news/sitemap.xml` lists only the last 1,500 URLs. |
 | YouTube | `youtube.com/oembed?format=json&url=<video url>` | Title and channel only. Quotes from video cannot be machine-checked. |
 
 ## Walls
@@ -22,7 +24,8 @@ Checked 2026-10-01. A route marked dead should not be retried without a new idea
 | `congress.gov` | 403 to scripts. | Use govinfo for text. |
 | `uscode.house.gov` | Timed out on every request. | Use govinfo or Cornell. |
 | `thehill.com`, `nrdc.org`, `washingtontimes.com`, `punchbowl.news`, `bipartisanpolicy.org`, `nmpoliticalreport.com`, `energynow.com` | 403 to scripts; open in a browser. | The link checker lists them as blocked and the site says so beside each link. |
-| `politico.com`, `nytimes.com`, `reuters.com`, `wsj.com`, `apnews.com` | Not reachable by the search tool. | AP is cited through PBS and ABC; Politico through Yahoo syndication. |
+| `politico.com`, `nytimes.com`, `reuters.com`, `wsj.com`, `apnews.com` | Not reachable by the search tool; politico.com gives curl a Cloudflare 403. | AP is cited through PBS and ABC; Politico through Yahoo syndication or the r.jina.ai reader. |
+| Wayback Machine for POLITICO | The CDX index lists 2026 politico.com and Pro URLs, but every capture is a 403 or a paywall preview. | Use the index to find URLs, not text. |
 | Apple Podcasts | TLS handshake fails from Python 3.9. | `webfetch` falls back to `curl`. |
 
 ## Not found

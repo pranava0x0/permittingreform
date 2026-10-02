@@ -4,6 +4,8 @@ A static site that indexes the Bipartisan American Affordability and Jobs Act of
 
 - **BAAJA.** All 71 substantive sections: a summary, key points, verbatim quotes, and the full text. Each passage carries its page and line in the printed bill and links to that page of the PDF.
 - **Compare.** Current law, the 2024 Senate bill (S. 4753), the House-passed SPEED Act (H.R. 4776) and the 2026 Senate text, subject against subject.
+- **Data center bills.** BAAJA sections 2107 and 2114 beside current policy, the Ratepayer Protection Act (H.R. 9340), the GRID Savings Act, the Power for the People Act and the GRID Act, on Compare.
+- **Communities.** What BAAJA changes about who can comment, be consulted, take part in planning or go to court: the public, tribes, states, local governments, landowners and consulting parties.
 - **Timeline, People, Media.** Events since January 2025, the people and groups involved, and coverage, each with a source link.
 
 ## Run it
@@ -24,7 +26,8 @@ Open http://127.0.0.1:8766. The site has no backend and loads nothing from anoth
 | `data/bill/sections.json` | The parsed bill: every printed line with its page and line number. |
 | `data/bill/analysis.json` | Summaries, key points, quotes and notes on earlier versions, by section. |
 | `data/bill/point_cites.json` | The passage that backs each key point. |
-| `data/compare.json`, `data/overview.json` | The comparison table and the overview page. |
+| `data/compare.json`, `data/overview.json` | The comparison tables (including `bills`, the data center bills table) and the overview page. |
+| `data/communities.json` | The Communities view: one row per change to comment, consultation, planning or court rights, with a quoted passage the build checks. |
 | `data/research/` | What the research agents returned, unedited. |
 | `data/curation.json` | Edits to the research, each with a reason. |
 | `data/timeline.json`, `people.json`, `media.json` | Research after curation. The build reads these. |

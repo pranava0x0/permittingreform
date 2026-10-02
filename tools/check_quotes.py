@@ -107,6 +107,13 @@ def bill_quotes() -> tuple[int, list[str]]:
     return total, bad
 
 
+def from_browser(row: dict, opened: dict) -> None:
+    """Mark a quote the script could not read as read in a browser, if a browser record holds its text."""
+    seen = opened.get(row["url"])
+    if seen and canon(row["text"]) in {canon(q) for q in seen.get("quotes", [])}:
+        row["result"], row["share"], row["note"] = "browser", 1.0, f"read in a browser on {seen['opened']}"
+
+
 def web_quotes(core: dict) -> list[dict]:
     rows = []
     for e in core["timeline"]:
@@ -159,9 +166,8 @@ def main() -> int:
         page = pages[r["url"]]
         if page.cls != "ok":
             r["result"], r["share"], r["note"] = "unreachable", 0.0, f"{page.cls}: {page.note}"
-            seen = opened.get(r["url"])
-            if page.cls == "blocked" and seen and canon(r["text"]) in {canon(q) for q in seen.get("quotes", [])}:
-                r["result"], r["share"], r["note"] = "browser", 1.0, f"read in a browser on {seen['opened']}"
+            if page.cls == "blocked":
+                from_browser(r, opened)
         elif page.kind == "youtube":
             r["result"], r["share"], r["note"] = "unverifiable", 0.0, "video: only the title is machine-readable"
         else:
@@ -169,6 +175,7 @@ def main() -> int:
             r["note"] = page.note
             if r["result"] == "missing" and len(page.text) < 1500:
                 r["result"], r["note"] = "unreachable", "page returned too little text to search (script-rendered)"
+                from_browser(r, opened)
 
     counts = Counter(r["result"] for r in rows)
     checked = time.strftime("%Y-%m-%d", time.gmtime())

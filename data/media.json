@@ -1723,30 +1723,6 @@
    "sector": "press"
   },
   {
-   "id": "2026-08-03-heatmap-shift-key-heinrich-and-granholm",
-   "date": "2026-08-03",
-   "type": "podcast",
-   "outlet": "Heatmap News",
-   "author": "Robinson Meyer",
-   "title": "Permitting Reform, Data Centers, and More With Senator Heinrich and Secretary Granholm (Shift Key)",
-   "url": "https://heatmap.news/podcast/shift-key-heinrich-granholm",
-   "verified": true,
-   "summary": "Recorded in late July. Heinrich said talks were active and that the White House was the biggest wild card, citing new historic preservation regulations, offshore wind stop-work orders and the Pentagon's halt on wind reviews. He also described his connect-and-manage interconnection bill and said he would 'get what you can done' in this Congress.",
-   "stance": "reporting",
-   "quote": {
-    "text": "I think the biggest wild card is actually and challenge is the White House because the White House continues to do things that sort of poison the well.",
-    "speaker": "Sen. Martin Heinrich (D-N.M.)"
-   },
-   "topics": [
-    "congress",
-    "white-house",
-    "transmission",
-    "historic-preservation",
-    "data-centers"
-   ],
-   "sector": "media"
-  },
-  {
    "id": "2026-08-03-ee-news-permitting-deal-may-come-after-recess",
    "date": "2026-08-03",
    "type": "news",
@@ -1788,29 +1764,6 @@
     "data-centers",
     "transmission",
     "congress"
-   ],
-   "sector": "media"
-  },
-  {
-   "id": "2026-07-29-heatmap-shift-key-what-a-permitting-reform-deal-could-look-like",
-   "date": "2026-07-29",
-   "type": "podcast",
-   "outlet": "Heatmap News",
-   "author": "Robinson Meyer",
-   "title": "What a Permitting Reform Deal Could Look Like (Shift Key, with Daniel Palken)",
-   "url": "https://heatmap.news/podcast/permitting-reform-arnold-ventures-daniel-palken",
-   "verified": true,
-   "summary": "Arnold Ventures' Daniel Palken walks through the history of permitting deals and the six buckets of the current talks, which he calls four-corner negotiations among the EPW and ENR leaders. He says the administration's cancellations and withheld permits are the biggest obstacle to Democratic buy-in.",
-   "stance": "reporting",
-   "quote": {
-    "text": "all four parties are really sincerely interested in good faith in getting to a deal",
-    "speaker": "Daniel Palken, Arnold Ventures"
-   },
-   "topics": [
-    "congress",
-    "nepa",
-    "transmission",
-    "permit-certainty"
    ],
    "sector": "media"
   },

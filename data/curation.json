@@ -851,6 +851,10 @@
      }
     ]
    }
+  },
+  "daniel-palken": {
+   "reason": "The Heatmap podcast page does not carry the transcript the research agent summarized; neither the quote nor the summary could be found on the page. His entry rests only on that episode.",
+   "drop": true
   }
  },
  "media": {
@@ -886,6 +890,14 @@
   },
   "2026-09-28-politico-senate-negotiators-reach-deal-on-permitting-text": {
    "reason": "Same story as the held Yahoo syndication, which is readable in full; this copy was read only as a preview.",
+   "drop": true
+  },
+  "2026-08-03-heatmap-shift-key-heinrich-and-granholm": {
+   "reason": "The Heatmap podcast page does not carry the transcript the research agent summarized; neither the quote nor the summary could be found on the page.",
+   "drop": true
+  },
+  "2026-07-29-heatmap-shift-key-what-a-permitting-reform-deal-could-look-like": {
+   "reason": "The Heatmap podcast page does not carry the transcript the research agent summarized; neither the quote nor the summary could be found on the page.",
    "drop": true
   }
  }

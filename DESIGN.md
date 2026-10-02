@@ -25,3 +25,16 @@ Use BAAJA for the September 30, 2026 draft; SPEED Act for the House-passed H.R. 
 AI-assisted summaries are labeled. Verbatim text uses the source's words. A matching quotation proves occurrence, not the accuracy of every nearby claim. Show incomplete review coverage on Method. Do not describe a partial AI check as complete verification.
 
 Dark mode uses brighter secondary text (at least 7:1 against reading surfaces), explicit placeholder colors, visible control borders and pale-green selected controls. Topic badges are omitted from the mobile index and section metadata.
+
+## Phones first
+
+Most readers use a phone. For every UI change, measure page height in screen-heights at 375×812 and the taps needed to reach the key fact, before and after.
+
+- The tabs stay pinned; the title row scrolls away. Clicking the current tab returns to the top.
+- Long lists open brief: one line per timeline event, two lines of summary for media and people, a More button for the rest. "Full entries" turns brief mode off.
+- On phones, each comparison row opens on tap and shows BAAJA beside one version picked with the "BAAJA vs." chips.
+- Filter chips sit in one swipeable row on phones.
+- Pages with three or more headings get an "On this page" row of jump links.
+- The Timeline opens with a swipeable milestone strip, scrolled to the newest milestone.
+
+Measured October 2, 2026 at 375×812, in screen-heights: Compare 43 to 9, data center bills 13 to 2, Timeline 14 to 7, People 20 to 6, bill index 16 to 1.

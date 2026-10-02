@@ -153,7 +153,7 @@ main:focus { outline: none; }
 }
 .inline-filter { border: 1px solid var(--border); border-radius: 2px; flex: 0 1 220px; padding: 5px 10px; }
 .word-filter { margin: 8px 0; }
-.with-chips, .versions-wrap > summary { display: none; }
+.filters.with-chips, .versions-wrap > summary { display: none; }
 .with-label { font-family: var(--font-head); font-weight: 700; font-size: 0.9rem; }
 details.index-group > summary { cursor: pointer; list-style: none; padding: 8px 0; border-bottom: 1px solid var(--border); }
 details.index-group > summary::-webkit-details-marker { display: none; }
@@ -468,7 +468,7 @@ input::placeholder { color: var(--text-muted); opacity: 1; }
   .masthead-top { gap: 6px; padding-top: 6px; padding-bottom: 2px; }
   .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
   .filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; padding-bottom: 2px; }
-  .with-chips { display: flex; }
+  .filters.with-chips { display: flex; }
   .compare .off-phone { display: none; }
   .compare tr { display: flex; flex-direction: column; }
   .compare td.col-senate { order: -1; }
