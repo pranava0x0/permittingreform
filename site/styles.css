@@ -300,6 +300,8 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
 .media-item { padding: 12px 0; border-bottom: 1px solid var(--border); max-width: 90ch; }
 .media-item h3 { margin: 0 0 2px; font-size: 1.02rem; }
 .media-item .feed-meta { margin-bottom: 2px; }
+.visuals { list-style: none; margin: 4px 0 8px; padding: 0 0 0 12px; border-left: 3px solid var(--accent-weak); font-size: 0.92rem; }
+.visuals li + li { margin-top: 4px; }
 .media-tags { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; margin: 0 0 6px; }
 
 /* ---------- footer ---------- */

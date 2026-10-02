@@ -75,6 +75,11 @@ class Routes(unittest.TestCase):
         self.assertIn("at%3A%2F%2Fexample.bsky.social%2Fapp.bsky.feed.post%2F3abc", target)
         self.assertEqual(webfetch.route("https://www.youtube.com/watch?v=abc")[0], "youtube")
 
+    def test_an_x_photo_link_is_checked_through_its_post(self):
+        post = webfetch.route("https://x.com/hausfath/status/2105398276681785416")
+        self.assertEqual(webfetch.route("https://x.com/hausfath/status/2105398276681785416/photo/1"), post)
+        self.assertEqual(webfetch.route("https://x.com/hausfath/status/2105398276681785416/video/2"), post)
+
     def test_an_ordinary_page_and_a_profile_are_fetched_directly(self):
         self.assertEqual(webfetch.route("https://www.epw.senate.gov/public/"), ("page", "https://www.epw.senate.gov/public/"))
         self.assertEqual(webfetch.route("https://x.com/SenCapito")[0], "page")

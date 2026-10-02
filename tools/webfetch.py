@@ -77,7 +77,8 @@ def route(url: str) -> tuple[str, str]:
     parts = urlsplit(url)
     host = parts.netloc.lower().removeprefix("www.").removeprefix("mobile.")
     if host in ("x.com", "twitter.com") and "/status/" in parts.path:
-        return "x", "https://publish.twitter.com/oembed?omit_script=1&dnt=1&url=" + quote(url, safe="")
+        post = re.sub(r"(/status/\d+)/(?:photo|video)/\d+/?$", r"\1", url)  # oEmbed knows the post, not its media pages
+        return "x", "https://publish.twitter.com/oembed?omit_script=1&dnt=1&url=" + quote(post, safe="")
     m = re.match(r"^/profile/([^/]+)/post/([^/?#]+)", parts.path)
     if host == "bsky.app" and m:
         uri = f"at://{m.group(1)}/app.bsky.feed.post/{m.group(2)}"

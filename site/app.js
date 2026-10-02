@@ -487,7 +487,8 @@
           el("th", { scope: "row" }, r.topic),
           keys.map((k) => el("td", { class: "col-" + k, "data-label": versionLabel(k) }, compareCell(r[k])))),
           r.note ? el("tr", { class: "row-note" },
-            el("td", { colspan: keys.length + 1 }, el("strong", null, r.note.label + ". "), compareCell(r.note))) : null]))))));
+            el("td", { colspan: keys.length + 1 }, el("strong", null, r.note.label + ". "), el("span", { class: "cell-text" }, r.note.text),
+              el("span", { class: "cell-cite" }, r.note.sources.map((src, i) => [i ? " · " : null, citeNode(src)])))) : null]))))));
 
     const lists = el("section", { class: "block" },
       el("div", { class: "two-col" },
@@ -625,6 +626,7 @@
   let mediaType = "all";
   let mediaStance = "all";
   let mediaTopic = "all";
+  let mediaVisual = false;
   let mediaText = "";
 
   function mediaGroup(type) {
@@ -638,6 +640,7 @@
       (mediaType === "all" || mediaGroup(it.type) === mediaType) &&
       (mediaStance === "all" || it.stance === mediaStance) &&
       (mediaTopic === "all" || (it.topics || []).indexOf(mediaTopic) >= 0) &&
+      (!mediaVisual || (it.visuals && it.visuals.length)) &&
       (!needle || (it.title + " " + it.outlet + " " + (it.summary || "") + " " + (it.author || "")).toLowerCase().indexOf(needle) >= 0))
       .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   }
@@ -652,6 +655,8 @@
         el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
           it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null),
         it.summary ? el("p", null, it.summary) : null,
+        it.visuals && it.visuals.length ? el("ul", { class: "visuals" }, it.visuals.map((v) => el("li", null,
+          el("strong", null, "Cheat sheet: " + v.title + ". "), v.text + " ", ext(v.url, "View image")))) : null,
         it.quote && it.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, it.quote.text),
           it.quote.speaker ? el("figcaption", null, it.quote.speaker) : null) : null);
@@ -668,8 +673,11 @@
       fill(listHost, mediaItems(list));
       countHost.textContent = list.length + " of " + D.media.length + " items";
     };
+    const visualCount = D.media.filter((it) => it.visuals && it.visuals.length).length;
     const typeChips = el("div", { class: "filters", role: "group", "aria-label": "Source type" },
-      MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; route(); }, counts[t[0]])));
+      MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; route(); }, counts[t[0]])),
+      visualCount ? [el("span", { class: "filter-gap" }),
+        chip("Cheat sheets", mediaVisual, () => { mediaVisual = !mediaVisual; route(); }, visualCount)] : null);
     const stanceChips = el("div", { class: "filters", role: "group", "aria-label": "Position" },
       chip("All positions", mediaStance === "all", () => { mediaStance = "all"; route(); }),
       ["supports", "mixed", "opposes", "reporting", "neutral"].filter((k) => D.media.some((it) => it.stance === k)).map((k) =>
