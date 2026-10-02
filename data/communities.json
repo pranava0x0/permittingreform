@@ -1,0 +1,948 @@
+{
+ "_about": "Curated from data/research/communities.json (a Sonnet reading of the bill text, 2026-10-02). The build checks each quote against the cited section.",
+ "intro": "How the bill changes who can comment, be consulted, take part in planning or go to court. Each row gives current law, the change and the sections that make it.",
+ "who": {
+  "public": "The public",
+  "tribes": "Tribes",
+  "states": "States",
+  "local": "Local governments",
+  "landowners": "Landowners",
+  "consulting": "Consulting parties"
+ },
+ "groups": [
+  {
+   "id": "comment",
+   "label": "Comment and notice"
+  },
+  {
+   "id": "consult",
+   "label": "Consultation"
+  },
+  {
+   "id": "plan",
+   "label": "Planning and siting"
+  },
+  {
+   "id": "challenge",
+   "label": "Challenges in court"
+  }
+ ],
+ "rows": [
+  {
+   "id": "eis-comment-period",
+   "group": "comment",
+   "topic": "Comment period on a notice of intent for an EIS",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local",
+    "landowners"
+   ],
+   "effect": "changes",
+   "now": "Each notice of intent to prepare an environmental impact statement must request public comment on alternatives, impacts and relevant studies. The statute sets no minimum or maximum comment period.",
+   "now_cite": "42 U.S.C. 4336a(c)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4336a",
+   "baaja": "Each notice of intent would be published in the Federal Register with a request for comment. The lead agency would set a comment period of 45 to 60 days after publication, or up to 75 days if the lead agency and the project sponsor agree.",
+   "sections": [
+    "1106"
+   ],
+   "quote": "The lead agency shall establish a comment period of not less than 45 days and not more than 60 days after the date on which the notice to prepare an environmental impact statement is published in the Federal Register"
+  },
+  {
+   "id": "ce-combine",
+   "group": "comment",
+   "topic": "Combining categorical exclusions to skip a review",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "An agency need not prepare an environmental document if the action fits one of its own categorical exclusions, another agency's exclusion adopted under section 109, or another provision of law.",
+   "now_cite": "42 U.S.C. 4336(a)(2)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4336",
+   "baaja": "A lead agency could rely on one exclusion or a combination of several. Repeated use of the same or similar exclusions based on size, acreage or dollar thresholds would not count as a combination. An exclusion established by Congress would also qualify. The text adds no notice or comment step for relying on an exclusion.",
+   "sections": [
+    "1105"
+   ],
+   "quote": "1 or a combination of multiple categorical exclusions (excluding multiple applications of the same or similar categorical exclusions that are based on size, acreage, or dollar amount thresholds) of the agency"
+  },
+  {
+   "id": "not-major-action",
+   "group": "comment",
+   "topic": "Actions defined as not a major Federal action",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "NEPA excludes seven kinds of action from 'major Federal action', including projects with no or minimal federal funding or involvement and non-discretionary actions.",
+   "now_cite": "42 U.S.C. 4336e(10)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4336e",
+   "baaja": "The list would grow to fourteen. New entries include projects whose only federal involvement is a loan or loan guarantee, and routine agency actions costing up to $10,000,000. Others cover lifeline infrastructure repair that adds no more than 20 percent capacity, geothermal observation tests, grid work in existing rights-of-way and gas pipeline work in covered areas. Actions another agency already evaluated under NEPA, and some Corps projects with a federal share of up to $50,000,000, also qualify. These actions fall outside the Act's review requirements.",
+   "sections": [
+    "1102"
+   ],
+   "quote": "a proposed agency action, the effects of which were previously evaluated by another agency in compliance with this Act"
+  },
+  {
+   "id": "state-tribal-substitute",
+   "group": "comment",
+   "topic": "State or tribal review standing in for NEPA",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "changes",
+   "now": "An agency need not prepare an environmental document when the action is excluded under a categorical exclusion or 'another provision of law'. The threshold test does not refer to state or tribal reviews.",
+   "now_cite": "42 U.S.C. 4336(a)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4336",
+   "baaja": "An agency would not need an environmental document if the action was reviewed under a state or tribal environmental review law or policy and the lead agency finds the review serves a similar function. The same applies where another federal law serves a similar function. On a sponsor's request the lead agency must also consider, and as appropriate adopt, state or tribal analysis. The text does not say what notice or comment the earlier review must have had.",
+   "sections": [
+    "1105",
+    "1106"
+   ],
+   "quote": "the proposed agency action relates to a project or action that has been reviewed pursuant to a State environmental review statute or a Tribal environmental review statute, ordinance, resolution, regulation, or formally adopted policy",
+   "quote_section": "1105"
+  },
+  {
+   "id": "research-cutoff",
+   "group": "comment",
+   "topic": "New science that arrives after a notice of intent",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "Agencies may use any reliable data source and need not do new research unless it is essential to a reasoned choice among alternatives and the cost and time are not unreasonable. The statute sets no cutoff date for outside information.",
+   "now_cite": "42 U.S.C. 4336(b)(3)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4336",
+   "baaja": "No federal agency would have to consider research that becomes public after the notice of intent or the decision to prepare an environmental document, and an agency could not delay past a deadline to wait for it. A savings clause leaves in place Administrative Procedure Act review of information in comments received during a comment period.",
+   "sections": [
+    "1106"
+   ],
+   "quote": "No Federal agency shall be required to consider any scientific or technical research that becomes publicly available after the date of publication of a notice of intent or decision to prepare an environmental document"
+  },
+  {
+   "id": "alternatives-scope",
+   "group": "comment",
+   "topic": "Alternatives the public can ask an agency to study",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "An environmental impact statement studies a reasonable range of alternatives that are technically and economically feasible and meet the purpose and need.",
+   "now_cite": "42 U.S.C. 4332(2)(C)(iii)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4332",
+   "baaja": "The lead agency must eliminate any alternative, except no-action, that does not fulfill the purpose and need or meet the goals of an applicable non-federal sponsor. Cooperating agencies must consider only the alternatives the lead agency found reasonable. The statement of purpose and need would include the sponsor's goals.",
+   "sections": [
+    "1106",
+    "1102"
+   ],
+   "quote": "a cooperating agency shall be bound by the purpose and need of the proposed agency action and consider only those alternatives to the proposed agency action that the lead agency has, consistent with paragraph (1)(C), determined are reasonable",
+   "quote_section": "1106"
+  },
+  {
+   "id": "tracker-portal",
+   "group": "comment",
+   "topic": "Public tracker and portal for large reviews",
+   "who": [
+    "public",
+    "local",
+    "landowners",
+    "tribes"
+   ],
+   "effect": "expands",
+   "now": "The 2023 NEPA amendments called for a study of an online permitting portal, not for a portal or a project tracker.",
+   "now_cite": "42 U.S.C. 4336d",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4336d",
+   "baaja": "CEQ would keep a public tracker with an entry for every project needing an EIS, and for any EA still open 13 months after its deadline. Entries show location, purpose and need, contacts for the sponsor and lead agency, schedule changes and litigation status. A common authorization portal, targeted for December 1, 2028, must include a way to tell local communities about notices of intent, public meetings and project status.",
+   "sections": [
+    "1132",
+    "1121"
+   ],
+   "quote": "include a mechanism for the dissemination of relevant information (such as a notice of intent for public comment, public meetings, project statuses, or a notice of intent to begin an environmental review) to local communities, as applicable",
+   "quote_section": "1121"
+  },
+  {
+   "id": "stakeholder-record",
+   "group": "comment",
+   "topic": "Record of the sponsor's outreach before applying",
+   "who": [
+    "local",
+    "tribes",
+    "public",
+    "states"
+   ],
+   "effect": "changes",
+   "now": "The NEPA statute does not require a sponsor to file a record of its community outreach with an application.",
+   "baaja": "A sponsor would file, with its application, a record of stakeholder engagement of up to 20 pages. It lists pre-application contacts with state, local and tribal officials and community entities, the meeting dates, a brief summary of feedback and how feedback shaped the proposal. The bill requires the record, not any particular outreach.",
+   "sections": [
+    "1109",
+    "1102"
+   ],
+   "quote": "a record of stakeholder engagement for the proposed agency action as of the date of the application",
+   "quote_section": "1109"
+  },
+  {
+   "id": "statutory-exemptions",
+   "group": "comment",
+   "topic": "Corridor work and routine drilling placed outside NEPA",
+   "who": [
+    "public",
+    "tribes",
+    "landowners",
+    "consulting",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "Agencies can use categorical exclusions for some of this work. Five routine oil and gas activities on public land have a categorical exclusion that can be set aside in extraordinary circumstances.",
+   "now_cite": "42 U.S.C. 15942",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/15942",
+   "baaja": "Grid capacity work in or next to an existing right-of-way, and interstate gas pipeline repair, looping and compression in covered areas, would be outside NEPA and would not be a section 106 undertaking. Routine oil, gas and geothermal drilling activities on public and national forest land would not be a major Federal action and would carry no NEPA requirements. Clean Water Act and Clean Air Act duties remain for pipelines.",
+   "sections": [
+    "2102",
+    "2229"
+   ],
+   "quote": "shall not be considered an undertaking for purposes of section 306108 of title 54, United States Code, if the covered activity remains within a covered area",
+   "quote_section": "2102"
+  },
+  {
+   "id": "water-criteria-rulemaking",
+   "group": "comment",
+   "topic": "Public comment on federal water quality criteria",
+   "who": [
+    "public",
+    "states",
+    "tribes"
+   ],
+   "effect": "expands",
+   "now": "EPA develops and publishes water quality criteria after consulting federal and state agencies and other interested persons. The statute does not require notice-and-comment rulemaking.",
+   "now_cite": "33 U.S.C. 1314(a)(1)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/33/1314",
+   "baaja": "EPA would have to use rulemaking under 5 U.S.C. 553 when it develops any section 304(a) criterion. Final criteria, and a definition of waters of the United States, would be added to the actions reviewed first in the courts of appeals under section 509(b)(1).",
+   "sections": [
+    "1201"
+   ],
+   "quote": "In developing any criterion under this subsection, the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code."
+  },
+  {
+   "id": "tribal-row-review",
+   "group": "comment",
+   "topic": "Environmental review of tribal rights-of-way",
+   "who": [
+    "tribes",
+    "public",
+    "landowners"
+   ],
+   "effect": "changes",
+   "now": "The Secretary of the Interior grants rights-of-way across Indian land under the 1948 Act, as a federal decision.",
+   "now_cite": "25 U.S.C. 323",
+   "now_url": "https://www.law.cornell.edu/uscode/text/25/323",
+   "baaja": "A tribe could grant rights-of-way over its own land without Interior's approval if it follows a tribal regulation Interior has approved. The regulation must provide an environmental review that informs the public, gives a reasonable opportunity to comment and requires the tribe to answer each relevant and substantive comment before approval. Interior's approval of a tribal regulation is not subject to NEPA, section 106 or the Endangered Species Act.",
+   "sections": [
+    "2212"
+   ],
+   "quote": "the Indian tribe provides a response to each relevant and substantive public comment on the significant environmental impacts identified by the Indian tribe under subclause (I) before the Indian tribe approves the right-of-way"
+  },
+  {
+   "id": "cooperating-agencies",
+   "group": "consult",
+   "topic": "State, tribal and local governments as cooperating agencies",
+   "who": [
+    "states",
+    "tribes",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "A lead agency may designate any federal, state, tribal or local agency with jurisdiction by law or special expertise over an environmental impact as a cooperating agency. It may comment by the date in the schedule.",
+   "now_cite": "42 U.S.C. 4336a(a)(3)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4336a",
+   "baaja": "The designation test names jurisdiction by law over an environmental effect and drops special expertise. The lead agency must identify and invite likely agencies within 30 days of the notice of intent or EA decision, and each has 7 days to accept or decline. A cooperating agency's comments are limited to matters within its jurisdiction by law, and designation gives it no authority over the action.",
+   "sections": [
+    "1106"
+   ],
+   "quote": "Comments submitted by a cooperating agency under clause (i) shall be limited to matters relating to the jurisdiction by law of the cooperating agency"
+  },
+  {
+   "id": "s106-who",
+   "group": "consult",
+   "topic": "Who is consulted under section 106",
+   "who": [
+    "consulting",
+    "tribes",
+    "states",
+    "local",
+    "public"
+   ],
+   "effect": "narrows",
+   "now": "The statute says only that agencies must take into account effects on historic properties and give the Advisory Council a chance to comment. The Advisory Council's rules let individuals and organizations with a demonstrated interest join as consulting parties and require the agency to seek public input.",
+   "now_cite": "54 U.S.C. 306108; 36 CFR 800.2(c)(5), (d)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/54/306108",
+   "baaja": "The new consultation steps name state and tribal historic preservation officers, Indian tribes, Native Hawaiian organizations, local governments and the applicant. They do not name other consulting parties or the public. The agency 'may' consult the named parties on the area of effects and on historic properties, and must incorporate their information if received within 30 days of a request. The agency's duty is limited to the area of potential effects it identifies.",
+   "sections": [
+    "2301"
+   ],
+   "quote": "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes, or Native Hawaiian organizations, local governments, and project, activity, or program applicants"
+  },
+  {
+   "id": "s106-scope",
+   "group": "consult",
+   "topic": "What counts as an effect or an undertaking under section 106",
+   "who": [
+    "consulting",
+    "tribes",
+    "states",
+    "local",
+    "public"
+   ],
+   "effect": "narrows",
+   "now": "Review covers federal or federally assisted undertakings and federally licensed ones. Under the Advisory Council's rules, visual, atmospheric and audible effects can count.",
+   "now_cite": "54 U.S.C. 306108; 36 CFR part 800",
+   "now_url": "https://www.law.cornell.edu/uscode/text/54/306108",
+   "baaja": "An adverse effect must be reasonably foreseeable and directly alter a property's characteristics. Visual, atmospheric or audible elements count only if they directly and significantly diminish the property's eligible characteristics. An undertaking would exclude work where the only federal involvement is a loan, loan guarantee or grant, and the area of potential effects would exclude areas affected only by a non-federal part of a project.",
+   "sections": [
+    "2301"
+   ],
+   "quote": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics of the historic property"
+  },
+  {
+   "id": "s106-clocks",
+   "group": "consult",
+   "topic": "Deadlines in section 106 consultation",
+   "who": [
+    "consulting",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "The statute sets no deadlines for consultation.",
+   "now_cite": "54 U.S.C. 306108",
+   "now_url": "https://www.law.cornell.edu/uscode/text/54/306108",
+   "baaja": "The agency has 30 days to decide whether a proposal is an undertaking and 60 days after that to send a report when there are adverse effects. It then has 90 days to find the effects acceptable or reach an agreement, followed by 60 days of consultation, 45 days for formal Advisory Council comments and 30 days for a final determination. Consultation must end by the date the environmental document is due, unless the Secretary approves an extension for extraordinary circumstances.",
+   "sections": [
+    "2301"
+   ],
+   "quote": "The consultation process initiated under subparagraph (A) shall be completed not later than the date on which the applicable environmental document under section 107(g) of the National Environmental Policy Act of 1969"
+  },
+  {
+   "id": "s106-objections",
+   "group": "consult",
+   "topic": "Silence and objections in section 106 consultation",
+   "who": [
+    "consulting",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "The statute requires the agency to take effects into account and give the Council a chance to comment. It does not address silence or objections.",
+   "now_cite": "54 U.S.C. 306108",
+   "now_url": "https://www.law.cornell.edu/uscode/text/54/306108",
+   "baaja": "If a preservation officer, tribe, Native Hawaiian organization or local government does not respond within 30 days of a request to review a report or finding, the agency proceeds. If a party raises substantive objections within 30 days, the agency has 30 days to explain how it considered them, and its duty to consult on that report is then fulfilled. The agency may decide, in its sole discretion, that other considerations outweigh historic preservation.",
+   "sections": [
+    "2301"
+   ],
+   "quote": "shall provide a response explaining how the Federal agency has considered the substantive objections in the report"
+  },
+  {
+   "id": "s106-offices",
+   "group": "consult",
+   "topic": "Funding and oversight of state and tribal preservation offices",
+   "who": [
+    "states",
+    "tribes"
+   ],
+   "effect": "changes",
+   "now": "Money in the Historic Preservation Fund is available for expenditure only when Congress appropriates it.",
+   "now_cite": "54 U.S.C. 303103",
+   "now_url": "https://www.law.cornell.edu/uscode/text/54/303103",
+   "baaja": "The bill authorizes $200,000,000 a year for the Fund for fiscal years 2027 to 2036 and makes deposits available from fiscal year 2028 without further appropriation. It adds $20,000,000 a year for fiscal years 2027 to 2030 in competitive grants for tribal preservation officers' online databases. Programs would be evaluated at least every 2 years, and a program that does not regularly meet consultation timelines is not consistent, which can lead to suspended grants and the Secretary taking over the officer's functions.",
+   "sections": [
+    "2302",
+    "2301"
+   ],
+   "quote": "shall be made available for expenditure for fiscal year 2028 and each fiscal year thereafter, without further appropriation or fiscal year limitation",
+   "quote_section": "2302"
+  },
+  {
+   "id": "esa-clock",
+   "group": "consult",
+   "topic": "Time for Endangered Species Act section 7 consultation",
+   "who": [
+    "states",
+    "tribes",
+    "public"
+   ],
+   "effect": "narrows",
+   "now": "Formal consultation concludes within 90 days, and an extension to 150 days or more needs the applicant's consent. Consultation is between the wildlife agency, the federal agency and the permit applicant.",
+   "now_cite": "16 U.S.C. 1536(b)(1)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/16/1536",
+   "baaja": "The 90-day period becomes 60 days and the 150-day mark becomes 100 days. An applicant becomes eligible for relief under 5 U.S.C. 706(1) if an extended consultation passes 145 days without the required statement or consent. When an environmental document is required, consultation must finish by the date that document is due, unless the Secretary approves an extension for extraordinary circumstances.",
+   "sections": [
+    "1302"
+   ],
+   "quote": "the consultation process under subsection (a)(2) shall be completed by not later than the date on which the applicable environmental document (as so defined) for the agency action is completed"
+  },
+  {
+   "id": "esa-state-assumption",
+   "group": "consult",
+   "topic": "State takeover of Endangered Species Act consultation",
+   "who": [
+    "states",
+    "public"
+   ],
+   "effect": "expands",
+   "now": "Only the federal wildlife agencies consult under section 7. States cannot take over that role.",
+   "now_cite": "16 U.S.C. 1536(a)(2), (b)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/16/1536",
+   "baaja": "Interior could assign its consultation duties to a state by written agreement of up to 10 years, for projects within that state. The state must publish its complete application at least 60 days before filing, take public comment for at least 30 days and respond to comments. Audits for the first 4 years go out for public comment and Interior must respond within 60 days. District courts would hear suits against a state that fails to carry out its duties, under the same standards as against Interior. A permit applicant may still choose to consult Interior.",
+   "sections": [
+    "1304"
+   ],
+   "quote": "a State shall be required to respond to public comments received under subparagraph (A)(ii)"
+  },
+  {
+   "id": "s401-scope",
+   "group": "consult",
+   "topic": "What a state can deny or condition under Clean Water Act section 401",
+   "who": [
+    "states",
+    "tribes",
+    "local",
+    "public"
+   ],
+   "effect": "narrows",
+   "now": "A state certifies that a federally permitted project meets water quality standards and other appropriate state law. Conditions it sets become conditions of the federal permit.",
+   "now_cite": "33 U.S.C. 1341(a), (d)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/33/1341",
+   "baaja": "Scope would be limited to 'water quality requirements', meaning sections 301, 302, 303, 306 and 307 and the federal, state and tribal laws implementing them. A certifying authority could deny only on clear and convincing evidence that no modification or reasonable condition would allow certification. Each condition needs clear and convincing evidence that it is necessary, the least burdensome and consistent with the federal permit.",
+   "sections": [
+    "1202"
+   ],
+   "quote": "deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements"
+  },
+  {
+   "id": "s401-time",
+   "group": "consult",
+   "topic": "Time for a state to act on a section 401 certification",
+   "who": [
+    "states",
+    "tribes",
+    "public",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "A state must act within a reasonable period, not over one year, or the certification requirement is waived. States must set procedures for public notice of all applications and for public hearings to the extent they deem appropriate.",
+   "now_cite": "33 U.S.C. 1341(a)(1)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/33/1341",
+   "baaja": "The federal agency sets a reasonable period of up to 1 year that must account for time needed under state or tribal law for public notice and comment. An extension needs the applicant's written request and the state's written concurrence. Certifying authorities must keep procedures for public notice of all applications and, as they see fit, hearings. For interstate gas pipelines and interstate transmission lines the period is up to 9 months and certification covers only direct point-source discharges.",
+   "sections": [
+    "1202"
+   ],
+   "quote": "a licensing or permitting agency shall, categorically or on a case-by-case basis for each certification application, establish a reasonable period of time (not to exceed 9 months from the date of receipt of the certification application)"
+  },
+  {
+   "id": "nwp-reissue",
+   "group": "consult",
+   "topic": "Reissuing nationwide Clean Water Act permits",
+   "who": [
+    "states",
+    "tribes",
+    "public",
+    "consulting"
+   ],
+   "effect": "narrows",
+   "now": "Nationwide permits and state discharge permits last 5 years. A 2020 court ruling required wildlife consultation to reissue a nationwide permit.",
+   "now_cite": "33 U.S.C. 1344(e)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/33/1344",
+   "baaja": "Reissuing a nationwide permit would need no state consultation under ESA section 6(a), no federal consultation under ESA section 7(a)(2) and no section 106 consultation, and NEPA would be met by a programmatic assessment, if the permit does not narrow or raise the threshold for preconstruction requirements. The Corps would consider only effects on water quality requirements and treat a discharge into less than 2 acres as minimal. General permits would last 10 years.",
+   "sections": [
+    "1204",
+    "1203"
+   ],
+   "quote": "no consultation with a Federal agency pursuant to section 7(a)(2) of that Act (16 U.S.C. 1536(a)(2)) is required",
+   "quote_section": "1204"
+  },
+  {
+   "id": "tribal-consent",
+   "group": "plan",
+   "topic": "Tribal consent to rights-of-way across tribal land",
+   "who": [
+    "tribes"
+   ],
+   "effect": "expands",
+   "now": "A right-of-way across land of a tribe organized under the 1934 and 1936 Acts needs the consent of the proper tribal officials.",
+   "now_cite": "25 U.S.C. 324",
+   "now_url": "https://www.law.cornell.edu/uscode/text/25/324",
+   "baaja": "The bill strikes the references to the 1934 and 1936 Acts from that sentence, which as amended reads as covering lands of any tribe. A tribe could also grant rights-of-way itself under an approved regulation and set compensation and terms by negotiation or regulation. An approved regulation does not stop a tribe from consenting to a grant by Interior.",
+   "sections": [
+    "2212"
+   ],
+   "quote": "organized under the Act of June 18, 1934 (48 Stat. 984), as amended; the Act of May 1, 1936 (49 Stat. 1250); or the Act of June 26, 1936 (49 Stat. 1967),"
+  },
+  {
+   "id": "ferc-backstop",
+   "group": "plan",
+   "topic": "FERC siting of a line over a state's objection",
+   "who": [
+    "states",
+    "local",
+    "landowners",
+    "tribes",
+    "public"
+   ],
+   "effect": "narrows",
+   "now": "FERC can permit a line only in a national interest corridor the Energy Department has designated, and only if the state lacks authority, has not decided within 1 year, has set conditions that make the line uneconomic, or has denied the application.",
+   "now_cite": "16 U.S.C. 824p(b)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
+   "baaja": "The corridor requirement is dropped. FERC 'shall' issue a permit for lines of 230 kilovolts or more that meet the findings, including one of the state-related triggers. The state's 1-year clock starts when the application is filed with the state. Developers of lines of 345 kilovolts or more could file at FERC at the same time as at the state, but FERC may not issue a permit until it makes one of the state-related findings.",
+   "sections": [
+    "2101"
+   ],
+   "quote": "the electric transmission facilities are capable of transmitting electric energy at a voltage of not less than 230 kilovolts"
+  },
+  {
+   "id": "ferc-voices",
+   "group": "plan",
+   "topic": "Views before FERC in a siting case",
+   "who": [
+    "public",
+    "states",
+    "tribes",
+    "landowners",
+    "local"
+   ],
+   "effect": "expands",
+   "now": "FERC must give each state, affected federal agency and tribe, private property owners and other interested persons a reasonable opportunity to present views on need and impact. The statute sets no minimum comment period.",
+   "now_cite": "16 U.S.C. 824p(d)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
+   "baaja": "FERC must hold a public comment period of at least 45 days and must take landowner input into account. Affected landowners include owners of land crossed, used as a facility site or abutting the right-of-way, owners of a residence within 500 feet of the right-of-way, and federal, state and local governments. A state may file any part of its state record, and FERC must consider it.",
+   "sections": [
+    "2101"
+   ],
+   "quote": "In authorizing the construction or modification of an electric transmission facility under subsection (b), the Commission shall take into account landowner input."
+  },
+  {
+   "id": "eminent-domain",
+   "group": "plan",
+   "topic": "Eminent domain and compensation for a FERC-permitted line",
+   "who": [
+    "landowners",
+    "local"
+   ],
+   "effect": "changes",
+   "now": "A permit holder that cannot agree on compensation, and that FERC finds made good-faith efforts to engage landowners early, may use eminent domain in federal or state court. Federal procedure follows state practice as nearly as practicable. Just compensation is fair market value including severance damages.",
+   "now_cite": "16 U.S.C. 824p(e), (f)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
+   "baaja": "Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. Section 2101(e) also strikes subsection (f) of section 216, which is the current 'Compensation' subsection, and replaces it with a cost allocation subsection. As written, the statutory fair market value language would no longer appear in section 216. The Fifth Amendment's just-compensation requirement still applies.",
+   "sections": [
+    "2101"
+   ],
+   "quote": "shall be in accordance with rule 71.1 of the Federal Rules of Civil Procedure"
+  },
+  {
+   "id": "jurisdiction-payments",
+   "group": "plan",
+   "topic": "Payments to places a transmission line crosses",
+   "who": [
+    "local",
+    "states"
+   ],
+   "effect": "expands",
+   "now": "Section 219(b)(4) lists categories of costs FERC may allow utilities to recover as transmission rate incentives.",
+   "now_cite": "16 U.S.C. 824s(b)(4)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/16/824s",
+   "baaja": "The list would add all prudently incurred costs of payments to jurisdictions impacted by lines developed under section 216 or 225. The text does not require any payment or set an amount.",
+   "sections": [
+    "2101"
+   ],
+   "quote": "all prudently incurred costs associated with payments to jurisdictions impacted by electric transmission facilities developed pursuant to section 216 or 225"
+  },
+  {
+   "id": "state-referral",
+   "group": "plan",
+   "topic": "States referring a utility's local transmission planning to FERC",
+   "who": [
+    "states",
+    "public",
+    "local"
+   ],
+   "effect": "expands",
+   "now": "There is little federal review of transmission a utility plans for itself within its service territory.",
+   "baaja": "Within 1 year FERC must set procedures for states to refer a public utility for investigation of its local transmission planning. FERC must notice the investigation for public comment and certify a team that includes up to 3 state-appointed members, then notice the team's report for comment. Remedies include changed processes, a lower return on equity, loss of the prudence presumption and a fine of up to $5,000,000 per facility paid to the referring state.",
+   "sections": [
+    "2104"
+   ],
+   "quote": "the Commission shall, by rule, establish procedures by which 1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities"
+  },
+  {
+   "id": "selected-projects-deemed",
+   "group": "plan",
+   "topic": "Selected regional projects and FERC siting findings",
+   "who": [
+    "states",
+    "local",
+    "landowners",
+    "public"
+   ],
+   "effect": "narrows",
+   "now": "For each permit, FERC must find that a line is in the public interest, protects or benefits consumers and meets the other findings before issuing a siting permit.",
+   "now_cite": "16 U.S.C. 824p(b)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
+   "baaja": "A project selected in a regional or joint interregional plan would be considered to satisfy the findings in paragraphs (2) through (5) and, if applicable, (6) of section 216(b). The planning section lists required process elements, and none addresses state or public participation. Approval of a planning process is not a major Federal action under NEPA.",
+   "sections": [
+    "2103"
+   ],
+   "quote": "a project that is selected by 1 or more transmission planning regions pursuant to a regional or joint interregional transmission plan in accordance with this section shall be considered to satisfy paragraphs (2) through (5)"
+  },
+  {
+   "id": "nepa-sol",
+   "group": "challenge",
+   "topic": "Time to sue over a NEPA decision",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local",
+    "landowners"
+   ],
+   "effect": "narrows",
+   "now": "A suit against a federal agency generally must be filed within 6 years. Projects covered by FAST-41 have a 2-year limit.",
+   "now_cite": "28 U.S.C. 2401(a); 42 U.S.C. 4370m-6",
+   "now_url": "https://www.law.cornell.edu/uscode/text/28/2401",
+   "baaja": "A claim that an environmental review was not properly conducted under NEPA would be barred unless filed within 150 days after the authorization is published in the Federal Register (where an EIS was prepared) or made public (any other case), unless a shorter deadline applies. A supplemental document required by court order starts a new 150-day clock, and the claim is limited to information not in the earlier document.",
+   "sections": [
+    "1110"
+   ],
+   "quote": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law"
+  },
+  {
+   "id": "nepa-who-can-sue",
+   "group": "challenge",
+   "topic": "Who can bring a NEPA claim",
+   "who": [
+    "public",
+    "tribes",
+    "local",
+    "landowners"
+   ],
+   "effect": "narrows",
+   "now": "Any party with standing who is adversely affected may sue. The comment-first requirement applies to FAST-41 covered projects, not to NEPA claims generally.",
+   "now_cite": "42 U.S.C. 4370m-6",
+   "now_url": "https://www.law.cornell.edu/uscode/text/42/4370m-6",
+   "baaja": "Where an opportunity for comment was provided, the plaintiff must have submitted a substantive comment, detailed enough to put the agency on notice of the issue, during a public comment period. The plaintiff, or one of its members, must allege an actual or imminent injury in fact amounting to a direct harm. The section says it does not create a cause of action.",
+   "sections": [
+    "1110"
+   ],
+   "quote": "in the case of an authorization for which an opportunity for comment was provided, the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization"
+  },
+  {
+   "id": "nepa-court",
+   "group": "challenge",
+   "topic": "Which court hears a NEPA claim",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local",
+    "landowners"
+   ],
+   "effect": "changes",
+   "now": "Claims go to a federal district court unless another statute sends them to a court of appeals.",
+   "baaja": "The court of appeals for the circuit where the project will be built or operated would have original and exclusive jurisdiction, with supplemental jurisdiction over related claims on the authorization's validity. Judges are to be randomly assigned to the maximum extent practicable. Courts must give substantial deference to the agency on the scope and contents of the document and must rule 'as expeditiously as possible', with no fixed deadline.",
+   "sections": [
+    "1110"
+   ],
+   "quote": "The court of appeals of the United States for the circuit in which a project subject to an authorization will be constructed, expanded, or operated shall have original and exclusive jurisdiction over a claim."
+  },
+  {
+   "id": "nepa-remedy",
+   "group": "challenge",
+   "topic": "Remedy when a court finds a NEPA violation",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local",
+    "landowners"
+   ],
+   "effect": "narrows",
+   "now": "Courts may vacate the approval or enjoin the project.",
+   "baaja": "The only remedy would be a remand without vacatur or injunction, with instructions and a deadline of no more than 180 days. The authorization stays in effect and the project may proceed during the remand. A preliminary injunction is allowed only if the authorization is likely to violate a federal law other than NEPA and the National Historic Preservation Act, and the usual harm, equity and public interest tests are met.",
+   "sections": [
+    "1110"
+   ],
+   "quote": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction"
+  },
+  {
+   "id": "nepa-tribal-trust",
+   "group": "challenge",
+   "topic": "NEPA challenges to actions on tribal trust land",
+   "who": [
+    "tribes",
+    "public",
+    "states",
+    "local"
+   ],
+   "effect": "changes",
+   "now": "There is no separate rule for actions on tribal trust land. The general NEPA rules apply.",
+   "baaja": "For an action authorizing use of land, minerals or other resources held in trust for a tribe, there would be no administrative or judicial review based on a failure to comply with NEPA. The exceptions are a claim by the tribe whose trust resources are used and a claim about reasonably foreseeable effects outside those resources. For tribe-initiated actions, the lead agency must presume the no-action alternative has negative effects.",
+   "sections": [
+    "1110",
+    "1106"
+   ],
+   "quote": "there shall be no administrative or judicial review of such final agency action based on a claim of failure to comply with the requirements of this Act",
+   "quote_section": "1110"
+  },
+  {
+   "id": "nepa-outreach-record",
+   "group": "challenge",
+   "topic": "Claims over gaps in the sponsor's outreach record",
+   "who": [
+    "public",
+    "local",
+    "tribes"
+   ],
+   "effect": "narrows",
+   "now": "No such record is required today, so no claim arises over it.",
+   "baaja": "There would be no claim or judicial review of whether a final agency action complies with NEPA for any omission from the list described in section 3(22)(B). In the bill's definitions that list is the sponsor's pre-application engagement with state, local and tribal officials and community entities.",
+   "sections": [
+    "1110",
+    "1102"
+   ],
+   "quote": "there shall not be a claim or judicial review of whether a final agency action complies with the requirements of this Act for any omission from the list described in section 3(22)(B)",
+   "quote_section": "1110"
+  },
+  {
+   "id": "energy-sol",
+   "group": "challenge",
+   "topic": "Time to sue over energy and mineral permits under any federal law",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local",
+    "landowners"
+   ],
+   "effect": "narrows",
+   "now": "A suit against a federal agency generally must be filed within 6 years.",
+   "now_cite": "28 U.S.C. 2401(a)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/28/2401",
+   "baaja": "A civil action under federal law seeking review of a final agency action granting or denying an authorization for an energy, carbon capture or mineral project would be barred unless filed within 150 days after the action is made public, which must happen within 3 days of the action. Courts must expedite, and a remand deadline is up to 180 days unless a longer time is needed to comply with law.",
+   "sections": [
+    "2201"
+   ],
+   "quote": "a civil action arising under Federal law seeking judicial review of a final agency action granting or denying an authorization shall be barred unless the civil action is filed by the date that is 150 days after"
+  },
+  {
+   "id": "s404-courts",
+   "group": "challenge",
+   "topic": "Challenges to Clean Water Act section 404 permits",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local",
+    "landowners"
+   ],
+   "effect": "narrows",
+   "now": "A suit generally has a 6-year limit, is heard in district court, and the ordinary remedies apply.",
+   "now_cite": "28 U.S.C. 2401(a)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/28/2401",
+   "baaja": "Suits over individual and general permits, verifications under a general permit, and EPA approval of a state permit program would be barred unless filed within 150 days. Where a draft was published in the Federal Register with at least 30 days of comment, the plaintiff must have filed a detailed comment and the claim must relate to it. A court must remand and may not vacate or enjoin a permit unless activities would present an imminent and substantial danger to human health or the environment.",
+   "sections": [
+    "1205"
+   ],
+   "quote": "of an individual permit or general permit issued under this section shall be filed not later than the date that is 150 days after the date on which the permit was issued"
+  },
+  {
+   "id": "esa-biop-suit",
+   "group": "challenge",
+   "topic": "Time and court for challenges to biological opinions",
+   "who": [
+    "public",
+    "states",
+    "tribes",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "Challenges to a biological opinion are brought under general law with a 6-year default limit.",
+   "now_cite": "28 U.S.C. 2401(a)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/28/2401",
+   "baaja": "Any person could seek review of a biological opinion only in the D.C. Circuit, by a petition filed within 150 days after the opinion is made public on the agency's website.",
+   "sections": [
+    "1305"
+   ],
+   "quote": "in the United States Court of Appeals for the District of Columbia Circuit by filing in such court not later than 150 days after the date on which the opinion is made public a written petition for review"
+  },
+  {
+   "id": "s106-suit",
+   "group": "challenge",
+   "topic": "Time, comment and court rules for section 106 claims",
+   "who": [
+    "consulting",
+    "public",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "A section 106 decision is challenged under the Administrative Procedure Act with a 6-year default limit. The statute has no comment-first rule.",
+   "now_cite": "28 U.S.C. 2401(a)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/28/2401",
+   "baaja": "A claim would be barred unless filed within 150 days after the later of the final agency action being made public and the preservation officer being notified. The plaintiff must have suffered or imminently will suffer direct harm and, where there was a comment period, filed a substantive and unique comment by the noticed deadline on the same subject. Claims go to the courts of appeals, with substantial deference to the agency.",
+   "sections": [
+    "2301"
+   ],
+   "quote": "the claim is filed not later than 150 days after the later of"
+  },
+  {
+   "id": "s106-gov-exemption",
+   "group": "challenge",
+   "topic": "Governments that raise issues in consultation keep their right to sue",
+   "who": [
+    "tribes",
+    "states",
+    "local",
+    "consulting"
+   ],
+   "effect": "changes",
+   "now": "No comment-first rule applies today to section 106 claims.",
+   "baaja": "The direct-harm and comment requirements would not apply where a state or tribal preservation officer, tribe, Native Hawaiian organization or local government gave detailed written notice during consultation that identified the issues. The exemption does not name other consulting parties or the public.",
+   "sections": [
+    "2301"
+   ],
+   "quote": "a claim in which a State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government has provided detailed notice in writing during the consultation process"
+  },
+  {
+   "id": "s106-remedy",
+   "group": "challenge",
+   "topic": "Remedy when a court finds a section 106 violation",
+   "who": [
+    "consulting",
+    "public",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "Courts may vacate or enjoin under ordinary remedies.",
+   "baaja": "The only remedy would be a remand without vacatur or injunction, with a deadline of no more than 180 days. A preliminary injunction is allowed only if the action likely violates a federal law other than the historic preservation division of title 54 or NEPA, and the usual tests are met.",
+   "sections": [
+    "2301"
+   ],
+   "quote": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction, the applicable agency action to the Federal agency"
+  },
+  {
+   "id": "s106-programmatic",
+   "group": "challenge",
+   "topic": "Challenges to section 106 programmatic agreements",
+   "who": [
+    "consulting",
+    "tribes",
+    "public",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "The statute says nothing about programmatic agreements. The Advisory Council's rules allow them.",
+   "baaja": "Only signatories could sue over how a programmatic agreement is implemented; no court would have jurisdiction over a suit by anyone else. Federal agencies must develop programmatic agreements for routine and repetitive categories, and a state or tribal officer's agreement for the same category would apply.",
+   "sections": [
+    "2301"
+   ],
+   "quote": "A party that is not a signatory to a programmatic agreement entered into for purposes of this subsection may not bring a civil action to challenge the implementation of the programmatic agreement."
+  },
+  {
+   "id": "s401-courts",
+   "group": "challenge",
+   "topic": "Court review of state certification decisions",
+   "who": [
+    "states",
+    "tribes",
+    "public",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "Section 401 sets no burden of proof for review of a denial or condition.",
+   "now_cite": "33 U.S.C. 1341",
+   "now_url": "https://www.law.cornell.edu/uscode/text/33/1341",
+   "baaja": "A court reviewing a denial must put the burden on the certifying authority to show by clear and convincing evidence that no reasonable modification or condition would allow certification. For a challenged condition, the authority must show by clear and convincing evidence that it is necessary, least burdensome and consistent with the federal permit. A waiver of certification would not be subject to judicial review.",
+   "sections": [
+    "1202"
+   ],
+   "quote": "a court shall place the burden of proof on the certifying authority to demonstrate, by clear and convincing evidence, that no reasonable modifications to or reasonable conditions on the certification would make it possible to grant the certification"
+  },
+  {
+   "id": "permit-revocation",
+   "group": "challenge",
+   "topic": "Asking an agency to revoke or change an issued permit",
+   "who": [
+    "public",
+    "tribes",
+    "states",
+    "local"
+   ],
+   "effect": "narrows",
+   "now": "Agencies may revoke, suspend or amend authorizations under their own statutes and permit terms, subject to court review.",
+   "baaja": "For projects with non-federal sponsors, a federal agency could not take new action to revoke, suspend, amend or alter an authorization in effect on or after September 16, 2026, except in five cases. These include a court order, a material breach or violation of law, fraud, a need to prevent specific, urgent, substantial and proximate harm based on new information, or a request from the holder. The agency carries the burden by clear and convincing evidence.",
+   "sections": [
+    "1401"
+   ],
+   "quote": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026"
+  },
+  {
+   "id": "tribal-row-petition",
+   "group": "challenge",
+   "topic": "Objecting to a tribe's handling of a right-of-way",
+   "who": [
+    "public",
+    "landowners",
+    "local",
+    "tribes"
+   ],
+   "effect": "expands",
+   "now": "The Secretary of the Interior grants rights-of-way across Indian land.",
+   "now_cite": "25 U.S.C. 323",
+   "now_url": "https://www.law.cornell.edu/uscode/text/25/323",
+   "baaja": "An interested party that has exhausted tribal remedies could petition Interior to review a tribe's compliance with its approved regulation. If Interior finds a violation it may act, including rescinding approval of the regulation, after the tribe gets a formal hearing and a chance to cure.",
+   "sections": [
+    "2212"
+   ],
+   "quote": "An interested party, after exhaustion of any applicable Tribal remedies, may submit a petition to the Secretary of the Interior"
+  },
+  {
+   "id": "transmission-courts",
+   "group": "challenge",
+   "topic": "Courts for challenges to transmission authorizations",
+   "who": [
+    "states",
+    "public",
+    "local",
+    "landowners",
+    "tribes"
+   ],
+   "effect": "changes",
+   "now": "Section 216(h) has no judicial review provision. Review follows each underlying law.",
+   "now_cite": "16 U.S.C. 824p(h)",
+   "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
+   "baaja": "Any order of a federal agency, or of a state agency acting under federal law, to issue, condition or deny a federal authorization for a transmission facility would be reviewed in the courts that review FERC orders under Federal Power Act section 313. 'Federal authorization' would include a Clean Water Act section 401 certification and other state approvals required under federal law, except under the Coastal Zone Management Act.",
+   "sections": [
+    "2101"
+   ],
+   "quote": "shall be subject to judicial review in the same courts in which an order of the Commission is subject to judicial review under section 313"
+  }
+ ]
+}

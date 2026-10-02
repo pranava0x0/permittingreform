@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-10-01.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-10-02.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -153,6 +153,7 @@ Courts give substantial deference and may only remand without vacatur or injunct
 - 2025-08-22: BOEM orders Revolution Wind to halt all offshore activity at about 80% completion
 - 2025-09-22: Judge Lamberth enjoins the Revolution Wind stop-work order
 - 2025-09-29: CEQ issues updated NEPA guidance and a template for agency NEPA procedures
+- 2025-10-22: Whitehouse says it makes little sense to pursue permitting reform if the administration won't faithfully execute it
 - 2025-10-23: DOE directs FERC to start a large-load interconnection rulemaking for data centers
 - 2025-11-20: House Natural Resources Committee advances the SPEED Act 25-18
 - 2025-12-08: Federal judge vacates Trump's wind permitting freeze as arbitrary and capricious
@@ -162,21 +163,57 @@ Courts give substantial deference and may only remand without vacatur or injunct
 - 2025-12-22: Interior pauses leases for five offshore wind projects under construction
 - 2025-12-22: Senate Democrats Whitehouse and Heinrich end permitting talks over offshore wind halt
 - 2026-01-08: CEQ finalizes removal of its NEPA regulations, adopting the 2025 interim rule unchanged
+- 2026-01-08: Menendez and Casar introduce Data Center Transparency Act (H.R. 6984)
 - 2026-01-12: Federal judges enjoin all five offshore wind stop-work orders between Jan. 12 and Feb. 2
 - 2026-01-15: EPA proposes revised Clean Water Act Section 401 certification rules
+- 2026-01-15: Van Hollen introduces Power for the People Act (S. 3682)
 - 2026-01-28: Senate EPW permitting hearing: Whitehouse ties progress to administration's wind policy
+- 2026-02-03: House members introduce FREEDOM Act to bar presidents from revoking permits
+- 2026-02-11: Hawley and Blumenthal introduce the GRID Act (S. 3852)
 - 2026-02-19: Permitting Council signs first state FAST-41 agreements with Idaho and Tennessee
+- 2026-03-04: Seven hyperscalers sign White House Ratepayer Protection Pledge
 - 2026-03-05: Whitehouse and Heinrich reopen permitting negotiations, warning against 'further mischief'
+- 2026-03-13: Administration does not appeal ruling against the Revolution Wind stop-work order
 - 2026-03-23: Interior and TotalEnergies sign deal to cancel two offshore wind leases; talks continue
 - 2026-03-25: Senate ENR hearing on the bulk power system takes up transmission and data centers
 - 2026-04-09: CEQ issues new categorical exclusion guidance, replacing its 2010 guidance
+- 2026-04-09: Tonko introduces House companion H.R. 8241
 - 2026-04-21: Judge Casper enjoins five directives that stalled federal wind and solar permitting
 - 2026-05-13: Burgum says Interior will appeal wind/solar injunction; Democrats link July memo to deal
+- 2026-05-19: Wright dines with Republican lawmakers on permitting after a dinner of the four Senate negotiators
+- 2026-06-09: Lee's push to overhaul the National Historic Preservation Act becomes a sticking point in permitting talks
+- 2026-06-10: Capito and Whitehouse tell the White House at POLITICO's Energy Summit to stop attacking renewables
 - 2026-06-15: Interior drops appeal of ruling voiding the wind freeze; First Circuit dismisses case
+- 2026-06-16: Senate Armed Services releases NDAA with King amendment on Pentagon wind reviews
+- 2026-06-16: Cortez Masto and Cotton release Senate FREEDOM Act on permit certainty
 - 2026-06-18: FERC issues show cause orders to all six RTOs on large-load interconnection
+- 2026-06-18: Reps. Evans and Castor introduce the Ratepayer Protection Act (H.R. 9340)
+- 2026-06-24: EPA proposes changes to its NEPA procedures
+- 2026-06-24: Pallone calls for a national data center moratorium
 - 2026-06-29: CEQ withdraws 18 NEPA guidance documents, including Forty Questions and 1997 EJ memo
+- 2026-07-01: EPA draft rule would end federal public-notice requirement for minor New Source Review permits
+- 2026-07-01: Nearly 60 groups urge Senate EPW not to limit state and tribal Section 401 reviews
+- 2026-07-13: Republicans reported to have made a broad permitting offer to Democrats before the July Fourth recess
+- 2026-07-16: Heinrich introduces connect-and-manage interconnection bill
+- 2026-07-16: Sen. Husted introduces Senate companion S. 5028
+- 2026-07-17: State ratepayer advocates say FERC's PJM show cause order leaves data center transmission costs with other customers
+- 2026-07-20: Rep. Donalds introduces Protecting Ratepayers Act (H.R. 9777)
+- 2026-07-20: Six grid operators file large-load informational reports at FERC
 - 2026-07-21: D.C. Circuit rejects NEPA challenge to New Haven airport expansion, citing Seven County
+- 2026-07-21: House Energy and Commerce approves Ratepayer Protection Act 52-0, narrowed to data centers
+- 2026-07-23: Trump expands Ratepayer Protection Pledge to governors, legislators, developers and power providers
+- 2026-08-03: Heinrich introduces GRID Savings Act (S. 5199)
+- 2026-08-04: Negotiators move their permitting deal target to September
+- 2026-08-06: Oregon federal judge temporarily orders Pentagon to complete stalled onshore wind reviews
+- 2026-09-10: Energy and Commerce reports H.R. 9340 (H. Rept. 119-814)
 - 2026-09-16: House passes the Ratepayer Protection Act 417-3 on data-center electricity costs
+- 2026-09-17: Capito and Whitehouse say permitting talks are in their final stages
+- 2026-09-17: Heinrich blocks Ratepayer Protection Act by unanimous consent; Moreno blocks Heinrich's GRID Savings Act request
+- 2026-09-22: Trump tells advisers he will direct Defense to clear its wind queue to close a permitting deal
 - 2026-09-24: Senate permitting talks stall; deal and vote expected to slip past the midterms
+- 2026-09-29: FERC accepts but suspends PJM reliability backstop procurement for five months
+- 2026-09-29: Wind developers tell the Oregon court the Pentagon can clear projects as part of the permitting deal
+- 2026-09-30: Huffman says most House Democrats oppose the Senate permitting deal as written
 - 2026-09-30: Senate leaders release the 417-page Bipartisan American Affordability and Jobs Act
 - 2026-09-30: Senate rejects cloture 57-43 on the House-passed Ratepayer Protection Act
+- 2026-10-01: Blunt Rochester and Curtis introduce two Senate bills on data center disclosure

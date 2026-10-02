@@ -28,7 +28,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-10-01"
+DATA_AS_OF = "2026-10-02"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -36,6 +36,7 @@ PRIOR_BILLS = [
 ]
 
 OPTIONAL = {"timeline": "events", "people": "people", "media": "items"}
+EFFECTS = {"narrows", "expands", "changes"}
 
 
 def load(path: Path):
@@ -163,10 +164,42 @@ def build() -> tuple[dict, dict, list[str]]:
                     url = cite_url(key, r[key]["cite"], prior)
                     if url:
                         r[key]["url"] = url
+    bills = compare.get("bills")
+    if bills:
+        keys = [v["key"] for v in bills["versions"]]
+        for r in bills["rows"]:
+            for k in keys:
+                cell = r.get(k) or {}
+                if not cell.get("text"):
+                    errors.append(f"compare bills {r['id']}: empty cell {k}")
+                check_refs(f"compare bills {r['id']}", cell.get("sections", []))
     for a in compare["added"]:
         check_refs("compare added", a["sections"])
     for item in compare["dropped"]:
         item["url"] = cite_url(item["from"], item["cite"], prior)
+
+    # Communities: how the bill changes who can comment, consult, take part or sue.
+    comm_path = DATA / "communities.json"
+    communities = load(comm_path) if comm_path.exists() else None
+    if communities:
+        gids = {g["id"] for g in communities["groups"]}
+        for r in communities["rows"]:
+            where = f"communities {r['id']}"
+            if r["group"] not in gids:
+                errors.append(f"{where}: unknown group {r['group']!r}")
+            for w in r["who"]:
+                if w not in communities["who"]:
+                    errors.append(f"{where}: unknown party {w!r}")
+            if r["effect"] not in EFFECTS:
+                errors.append(f"{where}: effect {r['effect']!r} is not one of {sorted(EFFECTS)}")
+            check_refs(where, r["sections"])
+            if r.get("quote"):
+                sec = by_num.get(r.get("quote_section", r["sections"][0]))
+                loc = billtext.locate(sec["lines"], r["quote"]) if sec else None
+                if not loc:
+                    errors.append(f"{where}: quote not found in section {r.get('quote_section', r['sections'][0])}")
+                else:
+                    r["c"] = cite(loc)
 
     extra = {}
     for name, key in OPTIONAL.items():
@@ -215,6 +248,7 @@ def build() -> tuple[dict, dict, list[str]]:
         "sections": sections,
         "overview": overview,
         "compare": compare,
+        "communities": communities,
         "timeline": extra["timeline"],
         "people": extra["people"],
         "media": extra["media"],

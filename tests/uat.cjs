@@ -6,6 +6,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
 (async () => {
   const browser = await chromium.launch({ channel: 'chrome', headless: true });
   const results = [], errors = [];
+  fs.mkdirSync("uat-screenshots", {recursive:true});
   try {
     for (const width of [375, 768, 1280]) {
       const page = await browser.newPage({ viewport: { width, height: width === 375 ? 812 : 800 }, hasTouch: width === 375 });
@@ -14,16 +15,19 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
         await page.goto(base);
         await page.evaluate(t => {sessionStorage.setItem('pr-theme',t);document.documentElement.dataset.theme=t;},theme);
         const n = await page.evaluate(() => ({
-          compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0),
-          media: window.PR_DATA.media.length }));
+          compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0) + (window.PR_DATA.compare.bills ? window.PR_DATA.compare.bills.rows.length : 0),
+          media: Math.min(12,window.PR_DATA.media.length), timeline: Math.min(12,window.PR_DATA.timeline.length),
+          communities: window.PR_DATA.communities.rows.length, bills: window.PR_DATA.compare.bills.rows.length,
+          people: Math.min(12,window.PR_DATA.people.filter(p=>p.inside_government).length) }));
         const routes = [
           ['overview','.provisions li',10], ['bill','.index li',71],
           ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
-          ['timeline','.event',50], ['people','.person',null], ['media','.media-item',n.media], ['method','.versus dd',null]
+          ['communities','.cm-row',n.communities], ['compare/data-center-bills','.compare tbody tr',n.bills],
+          ['timeline','.event',n.timeline], ['people','.person',n.people], ['media','.media-item',n.media], ['method','.versus dd',null]
         ];
         for (const [route, selector, expected] of routes) {
           await page.goto(base+'#/'+route);
-          await page.waitForSelector(selector);
+          await page.waitForSelector(selector,{state:'attached'});
           await page.evaluate(() => document.fonts.ready);
           const count = await page.locator(selector).count();
           assert.ok(count > 0,route+' empty');
@@ -31,15 +35,22 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           if (route === 'overview') {
             assert.equal(await page.locator('.brand-name').innerText(), 'Permitting Reform');
             assert.ok(await page.locator('.brand-name').evaluate(el => el.getBoundingClientRect().height < parseFloat(getComputedStyle(el).lineHeight) * 1.5));
-            if (width === 375) assert.ok((await page.locator('.provisions li').first().boundingBox()).y < 400, 'first provision appears early on mobile');
+            if (width === 375) assert.ok((await page.locator('.provisions li').first().boundingBox()).y < page.viewportSize().height / 2, 'first provision appears early on mobile: '+JSON.stringify(await page.locator('.provisions li').first().boundingBox()));
             await page.locator('.bill-details summary').click();
             assert.ok(await page.locator('.bill-details a[href="bill.pdf#page=1"]').isVisible());
             await page.locator('.bill-details summary').click();
+            await page.locator('.provision-detail summary').first().click();
+            assert.ok(await page.locator('.provision-detail .where a').first().isVisible());
+            await page.locator('.provision-detail summary').first().click();
+            assert.equal(await page.locator('a[href="#/compare/data-center-bills"]').count(),1);
           }
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
-          results.push({width,theme,route,count});
-          if (['overview','bill/sec/1106','compare'].includes(route))
+          const height = await page.evaluate(()=>document.documentElement.scrollHeight);
+          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,timeline:3,people:4.5,media:5};
+          if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
+          results.push({width,theme,route,count,height});
+          if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')
             await page.screenshot({path:`uat-screenshots/${width}-${theme}-${route.replaceAll('/','-')}.png`,fullPage:false});
         }
       }
@@ -57,7 +68,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.locator('#media-filter').fill('zzzznoresult');
       assert.equal(await page.locator('.media-item').count(),0);
       await page.locator('#media-filter').fill('');
-      assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>PR_DATA.media.length));
+      assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>Math.min(12,PR_DATA.media.length)));
       await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').nth(1).click();
       assert.ok(await page.locator('.media-item').count() < await page.evaluate(()=>PR_DATA.media.length));
       await page.goto(base+'#/media');
@@ -65,15 +76,93 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.evaluate(()=>document.querySelectorAll('details.filter-wrap').forEach(d=>{d.open=true;}));
       await page.getByRole('group',{name:'Topic',exact:true}).getByRole('button',{name:/^Data centers/}).click();
       await page.getByRole('group',{name:'Position',exact:true}).getByRole('button',{name:'Mixed',exact:true}).click();
-      assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>PR_DATA.media.filter(x=>x.stance==='mixed'&&x.topics.includes('data-centers')).length));
+      assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>Math.min(12,PR_DATA.media.filter(x=>x.stance==='mixed'&&x.topics.includes('data-centers')).length)));
       await page.getByRole('group',{name:'Topic',exact:true}).getByRole('button',{name:'All topics'}).click();
       await page.getByRole('group',{name:'Position',exact:true}).getByRole('button',{name:'All positions'}).click();
+      await page.goto(base+'#/media');
+      const mediaCount = await page.evaluate(()=>PR_DATA.media.length);
+      await page.locator('.show-rest').click();
+      assert.equal(await page.locator('.media-item').count(),Math.min(24,mediaCount));
+      assert.equal(await page.evaluate(()=>document.activeElement.className),'media-item');
+      while (await page.locator('.show-rest').count()) await page.locator('.show-rest').click();
+      assert.equal(await page.locator('.media-item').count(),mediaCount);
+      await page.locator('#media-filter').fill('zzzznoresult');
+      await page.locator('#media-filter').fill('');
+      assert.equal(await page.locator('.media-item').count(),Math.min(12,mediaCount));
+      await page.goto(base+'#/communities');
+      await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:/^States/}).click();
+      assert.equal(await page.locator('.cm-row').count(),await page.evaluate(()=>PR_DATA.communities.rows.filter(r=>r.who.includes('states')).length));
+      assert.ok(await page.locator('.cm-row').first().isVisible(), 'Communities rows are visible without opening a fold');
+      await page.locator('.cm-row .event-toggle').first().click();
+      assert.ok(await page.locator('.cm-row.open .cm-body').first().isVisible());
+      assert.ok(await page.locator('.cm-row.open a[href*="bill.pdf#page="]').first().isVisible());
+      await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:/^Everyone/}).click();
+      // A filter that empties a whole group must still render (regression: null group passed to foldBlock).
+      for (const who of await page.evaluate(()=>Object.keys(PR_DATA.communities.who))) {
+        await page.goto(base+'#/communities');
+        await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:new RegExp('^'+(await page.evaluate(w=>PR_DATA.communities.who[w],who)))}).click();
+        const want=await page.evaluate(w=>PR_DATA.communities.rows.filter(r=>r.who.includes(w)).length,who);
+        assert.equal(await page.locator('.cm-row').count(),want,'communities filter '+who);
+      }
+      await page.goto(base+'#/compare/data-center-bills');
+      assert.equal(await page.locator('.compare tbody tr').count(),13);
+      // Tables stack below 1024px, so phones and tablets get tap-to-open rows and one counterpart.
+      if (width < 1024) {
+        const row = page.locator('#row-bills-existing');
+        await row.locator('.row-toggle').click();
+        assert.equal(await row.locator('td:visible').count(),2);
+        await page.getByRole('group',{name:'Compare BAAJA with'}).getByRole('button',{name:'Current policy',exact:true}).click();
+        assert.equal(await row.locator('.row-toggle').getAttribute('aria-expanded'),'true');
+        assert.ok(await row.locator('.col-policy').isVisible());
+        assert.equal(await row.locator('td:visible').count(),2);
+        assert.equal(await page.evaluate(()=>document.activeElement.textContent),'Current policy');
+        await page.setViewportSize({width:1280,height:800});
+        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
+        assert.equal(await row.locator('td:visible').count(),6);
+        assert.ok(await page.locator('.versions').isVisible());
+        await page.setViewportSize({width:375,height:812});
+        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
+        assert.equal(await row.locator('td:visible').count(),2);
+        await row.locator('.row-toggle').click();
+        assert.equal(await row.locator('td:visible').count(),0);
+        await row.locator('.row-toggle').focus(); await page.keyboard.press('Enter');
+        assert.equal(await row.locator('td:visible').count(),2);
+      } else {
+        await page.setViewportSize({width:375,height:812});
+        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
+        assert.equal(await page.locator('.row-toggle').count(),13);
+        await page.locator('.row-toggle').first().click();
+        assert.equal(await page.locator('.compare tbody tr').first().locator('td:visible').count(),2);
+        await page.setViewportSize({width,height:800});
+        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
+        assert.equal(await page.locator('.compare tbody tr').first().locator('td:visible').count(),6);
+      }
+      await page.locator('.cell-source summary:visible').first().click();
+      assert.ok(await page.locator('.cell-source[open] blockquote').first().isVisible());
+      if (width < 1024) {
+        await page.goto(base+'#/compare');
+        await page.locator('.section-fold summary').first().click();
+        const first = page.locator('.section-fold').first();
+        await first.locator('.row-toggle').first().click();
+        await page.locator('[data-comparison="main"]').getByRole('button',{name:'SPEED Act',exact:true}).click();
+        assert.ok(await first.evaluate(d=>d.open));
+        assert.ok(await first.locator('.compare tbody tr').first().locator('.col-speed').isVisible());
+      }
       await page.goto(base+'#/people');
       await page.getByRole('button',{name:/Outside government/}).click();
-      assert.equal(await page.locator('.person').count(), await page.evaluate(()=>PR_DATA.people.filter(x=>!x.inside_government).length));
+      assert.equal(await page.locator('.person').count(), await page.evaluate(()=>Math.min(12,PR_DATA.people.filter(x=>!x.inside_government).length)));
+      await page.locator('.show-rest').click();
+      assert.equal(await page.locator('.person').count(),await page.evaluate(()=>Math.min(24,PR_DATA.people.filter(x=>!x.inside_government).length)));
+      assert.ok((await page.evaluate(()=>document.activeElement.id)).startsWith('person-'));
       await page.goto(base+'#/timeline');
       await page.getByRole('button',{name:/Milestones/}).click();
-      assert.equal(await page.locator('.event').count(), await page.evaluate(()=>PR_DATA.timeline.filter(x=>x.milestone).length));
+      assert.equal(await page.locator('.event').count(), await page.evaluate(()=>Math.min(12,PR_DATA.timeline.filter(x=>x.milestone).length)));
+      await page.getByRole('button',{name:/Milestones/}).click();
+      await page.locator('.show-rest').click();
+      assert.equal(await page.locator('.event').count(),24);
+      await page.locator('.tl-strip button').first().click();
+      assert.ok(await page.locator('.event.open').count());
+      assert.ok(await page.locator('.event.open .event-body').first().isVisible());
       const before = await page.locator('html').getAttribute('data-theme');
       await page.locator('#theme-toggle').click();
       assert.notEqual(await page.locator('html').getAttribute('data-theme'),before);
