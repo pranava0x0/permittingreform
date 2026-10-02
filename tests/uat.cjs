@@ -13,10 +13,13 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       for (const theme of ['light', 'dark']) {
         await page.goto(base);
         await page.evaluate(t => {sessionStorage.setItem('pr-theme',t);document.documentElement.dataset.theme=t;},theme);
+        const n = await page.evaluate(() => ({
+          compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0),
+          media: window.PR_DATA.media.length }));
         const routes = [
           ['overview','.provisions li',10], ['bill','.index li',71],
-          ['bill/sec/1106','.para',null], ['compare','.compare tbody tr',45],
-          ['timeline','.event',50], ['people','.person',null], ['media','.media-item',94], ['method','.versus dd',null]
+          ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
+          ['timeline','.event',50], ['people','.person',null], ['media','.media-item',n.media], ['method','.versus dd',null]
         ];
         for (const [route, selector, expected] of routes) {
           await page.goto(base+'#/'+route);
@@ -54,9 +57,17 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.locator('#media-filter').fill('zzzznoresult');
       assert.equal(await page.locator('.media-item').count(),0);
       await page.locator('#media-filter').fill('');
-      assert.equal(await page.locator('.media-item').count(),94);
+      assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>PR_DATA.media.length));
       await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').nth(1).click();
-      assert.ok(await page.locator('.media-item').count() < 94);
+      assert.ok(await page.locator('.media-item').count() < await page.evaluate(()=>PR_DATA.media.length));
+      await page.goto(base+'#/media');
+      await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').first().click();
+      await page.evaluate(()=>document.querySelectorAll('details.filter-wrap').forEach(d=>{d.open=true;}));
+      await page.getByRole('group',{name:'Topic',exact:true}).getByRole('button',{name:/^Data centers/}).click();
+      await page.getByRole('group',{name:'Position',exact:true}).getByRole('button',{name:'Mixed',exact:true}).click();
+      assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>PR_DATA.media.filter(x=>x.stance==='mixed'&&x.topics.includes('data-centers')).length));
+      await page.getByRole('group',{name:'Topic',exact:true}).getByRole('button',{name:'All topics'}).click();
+      await page.getByRole('group',{name:'Position',exact:true}).getByRole('button',{name:'All positions'}).click();
       await page.goto(base+'#/people');
       await page.getByRole('button',{name:/Outside government/}).click();
       assert.equal(await page.locator('.person').count(), await page.evaluate(()=>PR_DATA.people.filter(x=>!x.inside_government).length));

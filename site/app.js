@@ -483,9 +483,12 @@
       el("h2", null, g.label),
       el("div", { class: "table-wrap" }, el("table", { class: "compare" },
         el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), c.versions.map((v) => el("th", { scope: "col", class: "col-" + v.key }, v.label)))),
-        el("tbody", null, g.rows.map((r) => el("tr", null,
+        el("tbody", null, g.rows.map((r) => [el("tr", null,
           el("th", { scope: "row" }, r.topic),
-          keys.map((k) => el("td", { class: "col-" + k, "data-label": versionLabel(k) }, compareCell(r[k]))))))))));
+          keys.map((k) => el("td", { class: "col-" + k, "data-label": versionLabel(k) }, compareCell(r[k])))),
+          r.note ? el("tr", { class: "row-note" },
+            el("td", { colspan: keys.length + 1 }, el("strong", null, r.note.label + ". "), el("span", { class: "cell-text" }, r.note.text),
+              el("span", { class: "cell-cite" }, r.note.sources.map((src, i) => [i ? " · " : null, citeNode(src)])))) : null]))))));
 
     const lists = el("section", { class: "block" },
       el("div", { class: "two-col" },
@@ -622,6 +625,8 @@
   ];
   let mediaType = "all";
   let mediaStance = "all";
+  let mediaTopic = "all";
+  let mediaVisual = false;
   let mediaText = "";
 
   function mediaGroup(type) {
@@ -634,6 +639,8 @@
     return D.media.filter((it) =>
       (mediaType === "all" || mediaGroup(it.type) === mediaType) &&
       (mediaStance === "all" || it.stance === mediaStance) &&
+      (mediaTopic === "all" || (it.topics || []).indexOf(mediaTopic) >= 0) &&
+      (!mediaVisual || (it.visuals && it.visuals.length)) &&
       (!needle || (it.title + " " + it.outlet + " " + (it.summary || "") + " " + (it.author || "")).toLowerCase().indexOf(needle) >= 0))
       .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   }
@@ -645,12 +652,14 @@
       return el("li", { class: "media-item" },
         el("h3", null, ext(it.url, it.title)),
         el("p", { class: "feed-meta" }, it.outlet + (it.author ? " · " + it.author : "") + " · " + S.formatDate(it.date) + " · " + g[1]),
+        el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
+          it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null),
         it.summary ? el("p", null, it.summary) : null,
+        it.visuals && it.visuals.length ? el("ul", { class: "visuals" }, it.visuals.map((v) => el("li", null,
+          el("strong", null, "Cheat sheet: " + v.title + ". "), v.text + " ", ext(v.url, "View image")))) : null,
         it.quote && it.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, it.quote.text),
-          it.quote.speaker ? el("figcaption", null, it.quote.speaker) : null) : null,
-        el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
-          it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null));
+          it.quote.speaker ? el("figcaption", null, it.quote.speaker) : null) : null);
     }));
   }
 
@@ -664,8 +673,11 @@
       fill(listHost, mediaItems(list));
       countHost.textContent = list.length + " of " + D.media.length + " items";
     };
+    const visualCount = D.media.filter((it) => it.visuals && it.visuals.length).length;
     const typeChips = el("div", { class: "filters", role: "group", "aria-label": "Source type" },
-      MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; route(); }, counts[t[0]])));
+      MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; route(); }, counts[t[0]])),
+      visualCount ? [el("span", { class: "filter-gap" }),
+        chip("Cheat sheets", mediaVisual, () => { mediaVisual = !mediaVisual; route(); }, visualCount)] : null);
     const stanceChips = el("div", { class: "filters", role: "group", "aria-label": "Position" },
       chip("All positions", mediaStance === "all", () => { mediaStance = "all"; route(); }),
       ["supports", "mixed", "opposes", "reporting", "neutral"].filter((k) => D.media.some((it) => it.stance === k)).map((k) =>
@@ -674,8 +686,16 @@
       el("label", { class: "sr-only", "for": "media-filter" }, "Filter by word"),
       el("input", { id: "media-filter", type: "search", class: "inline-filter", placeholder: "Filter by word", value: mediaText,
         oninput: (ev) => { mediaText = ev.target.value; refresh(); } }));
+    const topicCounts = {};
+    D.media.forEach((it) => (it.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
+    const topicChips = el("div", { class: "filters", role: "group", "aria-label": "Topic" },
+      chip("All topics", mediaTopic === "all", () => { mediaTopic = "all"; route(); }),
+      Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
+        chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; route(); }, topicCounts[t])));
+    const topicBox = el("details", { class: "filter-wrap", open: mediaTopic !== "all" || window.matchMedia("(min-width: 640px)").matches },
+      el("summary", null, "Topics"), topicChips);
     refresh();
-    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), typeChips, stanceChips, listHost];
+    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), typeChips, stanceChips, topicBox, listHost];
   }
 
   /* ---------- method ---------- */

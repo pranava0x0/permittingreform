@@ -52,6 +52,8 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     for g in core["compare"]["groups"]:
         for r in g["rows"]:
             out += [(f"compare {r['id']} {k}", r[k]["text"]) for k in ("current", "epra", "speed", "senate")]
+            if r.get("note"):
+                out.append((f"compare {r['id']} note", r["note"]["text"]))
     out += [("compare added", a["text"]) for a in core["compare"]["added"]]
     out += [("compare dropped", a["text"]) for a in core["compare"]["dropped"]]
     for e in core["timeline"]:
@@ -62,6 +64,7 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out += [(f"people {p['id']} role", p["role"]), (f"people {p['id']} position", p["position"])]
         out += [(f"people {p['id']} action", a) for a in p.get("key_actions", [])]
     out += [(f"media {it['id']} summary", it["summary"]) for it in core["media"] if it.get("summary")]
+    out += [(f"media {it['id']} visual", v["title"] + ". " + v["text"]) for it in core["media"] for v in it.get("visuals", [])]
     return out
 
 
@@ -94,6 +97,10 @@ def check(core: dict) -> tuple[list[str], dict]:
             for k in ("current", "epra", "speed", "senate"):
                 if not (r.get(k) or {}).get("text"):
                     errs.append(f"compare {r['id']}: empty cell {k}")
+            note = r.get("note")
+            if note and not (note.get("label") and note.get("text") and note.get("sources")
+                             and all(src.get("cite") and str(src.get("url", "")).startswith("https://") for src in note["sources"])):
+                errs.append(f"compare {r['id']}: a note needs a label, text and sources, each with a cite and a link")
 
     def http(url) -> bool:
         return isinstance(url, str) and url.lower().startswith(("http://", "https://"))
@@ -157,6 +164,9 @@ def check(core: dict) -> tuple[list[str], dict]:
         urls.add(key)
         if not it.get("outlet") or not it.get("title"):
             errs.append(f"{w}: needs an outlet and a title")
+        for v in it.get("visuals", []):
+            if not (v.get("title") and v.get("text") and http(v.get("url"))):
+                errs.append(f"{w}: a cheat sheet needs a title, a description and an image link")
 
     for where, text in prose_fields(core):
         counts["prose strings"] += 1

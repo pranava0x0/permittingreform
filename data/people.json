@@ -1486,8 +1486,8 @@
   {
    "id": "josh-siegel",
    "name": "Josh Siegel",
-   "role": "Energy reporter, E&E News by POLITICO",
-   "affiliation": "E&E News by POLITICO",
+   "role": "Senior energy reporter, Punchbowl News",
+   "affiliation": "Punchbowl News (earlier POLITICO)",
    "sector": "media",
    "inside_government": false,
    "stance": "neutral",
@@ -1512,6 +1512,13 @@
      "publisher": "X",
      "url": "https://x.com/SiegelScribe/status/2105273084173484140",
      "date": "2026-09-30",
+     "verified": true
+    },
+    {
+     "title": "Punchbowl News hires Siegel to cover energy",
+     "publisher": "Talking Biz News",
+     "url": "https://talkingbiznews.com/media-news/punchbowl-news-hires-siegel-to-cover-energy/",
+     "date": "2026-09-28",
      "verified": true
     }
    ]
