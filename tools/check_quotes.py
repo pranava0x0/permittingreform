@@ -91,6 +91,13 @@ def bill_quotes() -> tuple[int, list[str]]:
             total += 1
             if n not in by_num or not billtext.locate(by_num[n]["lines"], q["text"]):
                 bad.append(f"section {n}: {q['text'][:80]!r}")
+    cpath = ROOT / "data/communities.json"
+    for r in (json.loads(cpath.read_text(encoding="utf-8"))["rows"] if cpath.exists() else []):
+        if r.get("quote"):
+            total += 1
+            n = r.get("quote_section", r["sections"][0])
+            if n not in by_num or not billtext.locate(by_num[n]["lines"], r["quote"]):
+                bad.append(f"communities {r['id']}, section {n}: {r['quote'][:80]!r}")
     for kind in ("clocks", "money"):
         for row in overview[kind]:
             total += 1
@@ -98,6 +105,13 @@ def bill_quotes() -> tuple[int, list[str]]:
             if not sec or not billtext.locate(sec["lines"], row["quote"]):
                 bad.append(f"overview {kind}, section {row['section']}: {row['quote'][:80]!r}")
     return total, bad
+
+
+def from_browser(row: dict, opened: dict) -> None:
+    """Mark a quote the script could not read as read in a browser, if a browser record holds its text."""
+    seen = opened.get(row["url"])
+    if seen and canon(row["text"]) in {canon(q) for q in seen.get("quotes", [])}:
+        row["result"], row["share"], row["note"] = "browser", 1.0, f"read in a browser on {seen['opened']}"
 
 
 def web_quotes(core: dict) -> list[dict]:
@@ -114,6 +128,11 @@ def web_quotes(core: dict) -> list[dict]:
         q = it.get("quote")
         if q:
             rows.append({"where": f"media.{it['id']}", "text": q["text"], "speaker": q.get("speaker", ""), "url": it["url"]})
+    bills = core["compare"].get("bills") or {"rows": []}
+    for r in bills["rows"]:
+        for k, cell in r.items():
+            if isinstance(cell, dict) and cell.get("quote"):
+                rows.append({"where": f"compare.bills.{r['id']}.{k}", "text": cell["quote"], "speaker": "", "url": cell["url"]})
     return rows
 
 
@@ -147,9 +166,8 @@ def main() -> int:
         page = pages[r["url"]]
         if page.cls != "ok":
             r["result"], r["share"], r["note"] = "unreachable", 0.0, f"{page.cls}: {page.note}"
-            seen = opened.get(r["url"])
-            if page.cls == "blocked" and seen and canon(r["text"]) in {canon(q) for q in seen.get("quotes", [])}:
-                r["result"], r["share"], r["note"] = "browser", 1.0, f"read in a browser on {seen['opened']}"
+            if page.cls == "blocked":
+                from_browser(r, opened)
         elif page.kind == "youtube":
             r["result"], r["share"], r["note"] = "unverifiable", 0.0, "video: only the title is machine-readable"
         else:
@@ -157,6 +175,7 @@ def main() -> int:
             r["note"] = page.note
             if r["result"] == "missing" and len(page.text) < 1500:
                 r["result"], r["note"] = "unreachable", "page returned too little text to search (script-rendered)"
+                from_browser(r, opened)
 
     counts = Counter(r["result"] for r in rows)
     checked = time.strftime("%Y-%m-%d", time.gmtime())

@@ -41,6 +41,7 @@ See [docs/data-sources.md](docs/data-sources.md) for sources that refuse scripts
 - 2026-10-02. X search: `since:` plus `min_faves:` on the Top tab returns about 10 to 20 posts per query, so run several narrow queries (data centers, transmission, Ratepayer Protection Act, utilities, opponents) instead of one broad one. Bookmarks now sit under History at `/i/history`.
 - 2026-10-02. Port 8766 may already be serving the main checkout. From a worktree, check `lsof -a -p <pid> -d cwd` before trusting a page on that port, and preview on another port.
 - 2026-10-02. Cheat sheets: a media item may carry `visuals: [{title, text, url}]` for a summary image. The site links to the image on X and describes what it sorts; it does not copy the image. Read the image in a browser and check its claims against the bill before writing the description.
-
-
+- 2026-10-02. Paywalled POLITICO and Pro stories: read the free part through `https://r.jina.ai/<url>` and record the item as read from a preview; use facts only from the readable part. Wayback holds no readable 2026 capture. Find URLs through the Wayback CDX index or `rss.politico.com`.
+- 2026-10-02. A research agent's `stance` field drifts toward "position on reform" unless the brief says "stance on the September 30 bill". Re-check stances for new people before integrating.
+- 2026-10-02. New rows the main session selects from an agent file go in `data/research/<name>_extra.json`; edits to held rows go in `data/curation.json` with a reason. Run the duplicate check (URL, title, same-day events) after integrating.
 - 2026-10-02. Agent exports come from tools/build.py. Rebuild Markdown, HTML, JSON and sitemap together; do not edit generated files. Each section Markdown file includes the saved review limits. Run the export parity tests before publishing.

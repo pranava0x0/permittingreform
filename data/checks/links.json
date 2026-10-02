@@ -283,6 +283,25 @@
     "people.tim-pawlenty.quote"
    ]
   },
+  "https://dailyenergyinsider.com/hearing-summaries/53136-house-energy-and-commerce-advances-seven-energy-bills-aimed-at-data-center-costs-grid-modernization-and-pipeline-safety-ratepayer-protection-act-clears-52-0/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-21-rpa-energy-commerce-52-0.source",
+    "media.dei-2026-07-21-ec-markup"
+   ]
+  },
+  "https://datainnovation.org/2026/02/the-grid-act-is-the-wrong-way-to-protect-consumers-from-price-spikes/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.itif-2026-02-19-grid-act-wrong"
+   ]
+  },
   "https://dustyjohnson.house.gov/media/press-releases/johnsons-bipartisan-digital-permitting-bill-passes-us-house": {
    "cls": "ok",
    "kind": "page",
@@ -331,6 +350,41 @@
    "status": 200,
    "where": [
     "timeline.2025-07-03-agencies-issue-interim-final-nepa-rules.source"
+   ]
+  },
+  "https://fitzpatrick.house.gov/2026/9/fitzpatrick-led-effort-to-shield-ratepayers-from-data-center-costs-passes-house": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.brian-fitzpatrick.source",
+    "people.brian-fitzpatrick.quote"
+   ]
+  },
+  "https://fortune.com/2026/07/21/byron-donalds-ai-data-centers-florida-desantis/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-20-donalds-protecting-ratepayers-act.source",
+    "people.byron-donalds.source",
+    "people.byron-donalds.quote",
+    "media.fortune-2026-07-21-donalds"
+   ]
+  },
+  "https://gabeevans.house.gov/media/press-releases/congressman-gabe-evans-bipartisan-ratepayer-protection-act-passes-house": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.gabe-evans.source",
+    "people.gabe-evans.quote",
+    "people.kathy-castor.source",
+    "people.kathy-castor.quote",
+    "media.evans-2026-09-16-house-passes"
    ]
   },
   "https://gcaptain.com/orsteds-revolution-wind-project-hit-with-federal-stop-work-order-at-80-completion/": {
@@ -388,7 +442,35 @@
    "note": "",
    "status": 200,
    "where": [
+    "people.jared-huffman.source",
     "media.2026-10-01-heatmap-am-permitting-reform-bill-dropped"
+   ]
+  },
+  "https://heatmap.news/am/permitting-reform-deal": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-29-heatmap-am-senate-reaches-a-permitting-deal"
+   ]
+  },
+  "https://heatmap.news/am/permitting-reform-stumble": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-25-heatmap-am-permitting-reform-talks-trail-off"
+   ]
+  },
+  "https://heatmap.news/am/trump-wind-pause": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-08-06-oregon-judge-orders-pentagon-to-complete-onshore-wind-reviews.source"
    ]
   },
   "https://heatmap.news/climate-tech/baaja-climate-tech": {
@@ -406,7 +488,97 @@
    "note": "",
    "status": 200,
    "where": [
+    "compare.datacenters.note",
     "media.2026-10-01-heatmap-data-center-double-tap"
+   ]
+  },
+  "https://heatmap.news/daily/exelon-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-09-22-heatmap-daily-whats-a-utility-to-do-when-everyone-is-mad-at-them"
+   ]
+  },
+  "https://heatmap.news/daily/heinrich-texas-power-permitting": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-16-heinrich-introduces-connect-and-manage-interconnection-bill.source",
+    "people.martin-heinrich.source",
+    "media.2026-07-16-heatmap-daily-scoop-heinrich-connect-and-manage-bill"
+   ]
+  },
+  "https://heatmap.news/daily/meta-microsoft-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-07-29-heatmap-daily-meta-down-permitting-odds-up"
+   ]
+  },
+  "https://heatmap.news/daily/senate-bipartisan-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-16-senate-freedom-act-released-cortez-masto-cotton.source",
+    "people.catherine-cortez-masto.source",
+    "media.2026-06-16-heatmap-daily-freedom-senate-permit-certainty-bill"
+   ]
+  },
+  "https://heatmap.news/daily/sunzia-martin-heinrich": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-06-18-heatmap-heinrich-interview-sunzia-and-permitting-reform"
+   ]
+  },
+  "https://heatmap.news/daily/wright-recording-permitting": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.martin-heinrich.source",
+    "media.2026-09-25-heatmap-daily-the-wright-interview-and-permittings-peril"
+   ]
+  },
+  "https://heatmap.news/energy/ferc-data-center-plan": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-18-ferc-large-load-show-cause-orders.source",
+    "media.2026-06-18-heatmap-ferc-has-a-new-plan-for-data-centers"
+   ]
+  },
+  "https://heatmap.news/plus/the-fight/qa/ray-long-permitting": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-06-05-heatmap-the-fight-ray-long-ai-and-the-permitting-deal"
+   ]
+  },
+  "https://heatmap.news/plus/the-fight/spotlight/offshore-wind-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-22-trump-tells-advisers-he-will-clear-defense-wind-queue-to-close-permitting-deal.source",
+    "people.chris-wright.source",
+    "media.2026-09-25-heatmap-the-fight-offshore-wind-existential-crisis-at-climate-week"
    ]
   },
   "https://heatmap.news/podcast/shift-key-s2-e42-nepa-kavanaugh": {
@@ -433,7 +605,61 @@
    "note": "",
    "status": 200,
    "where": [
+    "timeline.2026-09-29-wind-developers-tell-oregon-court-pentagon-could-clear-projects-in-permitting-deal.source",
     "media.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained"
+   ]
+  },
+  "https://heatmap.news/politics/evans-peters-transmission": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.scott-peters.source",
+    "media.2026-09-18-heatmap-the-bipartisan-buddies-with-a-plan-to-fix-transmission"
+   ]
+  },
+  "https://heatmap.news/politics/freedom-act": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-02-03-house-freedom-act-introduced.source",
+    "media.2026-02-03-heatmap-scoop-house-freedom-act-would-keep-president-from-yanking-permits"
+   ]
+  },
+  "https://heatmap.news/politics/permitting-reform-speed-act": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-12-05-heatmap-permitting-reform-is-back-what-are-we-even-talking-about"
+   ]
+  },
+  "https://heatmap.news/politics/permitting-reform-trump-speed-act": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-11-25-heatmap-trump-is-the-biggest-wild-card-in-permitting-reform"
+   ]
+  },
+  "https://heatmap.news/politics/ratepayer-protection-act-explained": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.datacenters.note",
+    "people.brett-guthrie.source",
+    "people.brett-guthrie.quote",
+    "people.travis-fisher.source",
+    "people.ari-peskoe.source",
+    "people.ari-peskoe.quote",
+    "media.2026-06-23-heatmap-the-mystery-of-the-ratepayer-protection-act"
    ]
   },
   "https://heatmap.news/politics/schatz-whitehouse-heinrich-speed-act": {
@@ -450,6 +676,15 @@
     "media.2025-12-09-heatmap-exclusive-key-senate-democrats-oppose-permitting-bill"
    ]
   },
+  "https://heatmap.news/sparks/speed-act-passes-house": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2025-12-18-heatmap-the-house-just-passed-permitting-reform"
+   ]
+  },
   "https://ifp.org/breaking-the-nepa-litigation-doom-loop/": {
    "cls": "ok",
    "kind": "page",
@@ -457,6 +692,15 @@
    "status": 200,
    "where": [
     "media.2026-02-19-ifp-breaking-the-nepa-litigation-doom-loop"
+   ]
+  },
+  "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-09-29-ferc-pjm-reliability-backstop-order.source"
    ]
   },
   "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf": {
@@ -478,6 +722,16 @@
     "timeline.2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference.source",
     "timeline.2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference.quote",
     "people.brett-kavanaugh.source"
+   ]
+  },
+  "https://mgrid.org/2026/09/29/ferc-suspends-pjm-backstop-procurement-five-months-auction-pulled/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-29-ferc-pjm-reliability-backstop-order.source",
+    "media.mgrid-2026-09-29-ferc-pjm-backstop"
    ]
   },
   "https://mikejohnson.house.gov/news/documentsingle.aspx?DocumentID=2802": {
@@ -568,6 +822,15 @@
     "media.2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right"
    ]
   },
+  "https://rmi.org/resources/understanding-fercs-large-load-orders/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.rmi-2026-07-06-ferc-large-load-orders"
+   ]
+  },
   "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/": {
    "cls": "ok",
    "kind": "page",
@@ -582,6 +845,15 @@
     "media.2026-09-24-roll-call-permitting-bill-off-until-after-midterms"
    ]
   },
+  "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.rollcall-2026-09-30-voluntary-rpa"
+   ]
+  },
   "https://semafor.com/article/09/29/2026/democrats-flex-filibuster-muscle-ahead-of-election": {
    "cls": "ok",
    "kind": "page",
@@ -589,6 +861,48 @@
    "status": 200,
    "where": [
     "people.john-thune.source"
+   ]
+  },
+  "https://subscriber.politicopro.com/article/2026/07/new-england-gas-crunch-puts-sheldon-whitehouse-in-a-bind-pro-00992265": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "media.2026-07-16-politico-pro-new-england-gas-crunch-puts-whitehouse-in-a-bind"
+   ]
+  },
+  "https://subscriber.politicopro.com/article/2026/07/where-the-permitting-talks-stand-pro-00993596": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "media.2026-07-13-politico-where-the-permitting-talks-stand"
+   ]
+  },
+  "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-17-capito-and-whitehouse-say-permitting-talks-in-final-stages.source",
+    "people.shelley-moore-capito.source",
+    "people.sheldon-whitehouse.source",
+    "media.2026-09-17-politico-pro-permitting-talks-reach-final-stages"
+   ]
+  },
+  "https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-22-trump-tells-advisers-he-will-clear-defense-wind-queue-to-close-permitting-deal.source",
+    "people.john-thune.source",
+    "people.donald-trump.source",
+    "media.2026-09-22-politico-pro-trump-will-green-light-wind-energy-projects"
    ]
   },
   "https://talkingbiznews.com/media-news/punchbowl-news-hires-siegel-to-cover-energy/": {
@@ -696,6 +1010,20 @@
     "people.laura-swett.source"
    ]
   },
+  "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-01-blunt-rochester-curtis-data-center-transparency.source",
+    "people.lisa-blunt-rochester.source",
+    "people.lisa-blunt-rochester.quote",
+    "people.john-curtis.source",
+    "people.john-curtis.quote",
+    "media.brc-2026-10-01-transparency"
+   ]
+  },
   "https://www.boem.gov/renewable-energy/directorsorder-20250822pdf": {
    "cls": "ok",
    "kind": "pdf",
@@ -737,6 +1065,16 @@
     "people.hakeem-jeffries.source"
    ]
   },
+  "https://www.cbsnews.com/news/senate-data-center-energy-bill-martin-heinrich/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-17-heinrich-objects-rpa-uc-moreno-objects-grid-savings.source",
+    "media.cbs-2026-09-17-heinrich-blocks-rpa"
+   ]
+  },
   "https://www.climatesolutionslaw.com/2026/07/ferc-targets-large-load-interconnection-rules-across-all-regional-grid-operators/": {
    "cls": "ok",
    "kind": "page",
@@ -744,6 +1082,16 @@
    "status": 200,
    "where": [
     "timeline.2026-06-18-ferc-large-load-show-cause-orders.source"
+   ]
+  },
+  "https://www.climatesolutionslaw.com/2026/07/rtos-and-isos-answer-a-national-preview-of-how-all-six-grid-operators-plan-to-respond-to-the-large-load-surge/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-20-rtos-file-large-load-informational-reports.source",
+    "media.climatesolutionslaw-2026-07-27-rto-reports"
    ]
   },
   "https://www.cnbc.com/2025/05/20/trump-allows-new-york-offshore-wind-project-after-apparent-gas-pipeline-compromise-with-state.html": {
@@ -794,6 +1142,27 @@
    "status": 200,
    "where": [
     "media.2026-09-30-cnbc-senators-clinch-construction-permitting-deal"
+   ]
+  },
+  "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.chuck-schumer.source",
+    "people.chuck-schumer.quote",
+    "media.cnbc-2026-09-30-rpa-senate-vote"
+   ]
+  },
+  "https://www.cnn.com/2026/09/30/politics/data-centers-affordability-senate": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.jon-husted.source",
+    "media.cnn-2026-09-30-rpa-senate-vote"
    ]
   },
   "https://www.crowell.com/en/insights/client-alerts/federal-court-blocks-trump-administration-policies-restricting-wind-and-solar-permitting": {
@@ -883,6 +1252,15 @@
     "media.2025-12-18-eei-statement-on-house-passage-of-speed-act"
    ]
   },
+  "https://www.eenews.net/articles/bipartisan-bill-would-force-data-centers-to-find-own-power-sources/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.eenews-2026-02-13-grid-act"
+   ]
+  },
   "https://www.eenews.net/articles/clean-water-act-permitting-bill-clears-the-house/": {
    "cls": "ok",
    "kind": "page",
@@ -892,6 +1270,79 @@
     "timeline.2025-12-11-house-passes-permit-act-and-companion-bills.source"
    ]
   },
+  "https://www.eenews.net/articles/data-center-energy-bill-hits-speed-bump/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-24-pallone-calls-for-national-data-center-moratorium.source",
+    "media.2026-06-25-ee-news-data-center-energy-bill-hits-speed-bump"
+   ]
+  },
+  "https://www.eenews.net/articles/data-center-lobby-grumbles-about-reworked-ratepayer-protection-act-2/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-21-rpa-energy-commerce-52-0.source",
+    "media.eenews-2026-07-22-dcc-grumbles"
+   ]
+  },
+  "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-09-lee-nhpa-overhaul-becomes-sticking-point-in-senate-permitting-talks.source",
+    "people.mike-lee.source",
+    "people.teresa-leger-fernandez.source",
+    "people.teresa-leger-fernandez.quote",
+    "media.2026-06-09-ee-news-debate-over-preservation-law-tripping-up-permitting-talks"
+   ]
+  },
+  "https://www.eenews.net/articles/epa-floats-changes-to-nepa-implementation-rules/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-24-epa-proposes-changes-to-nepa-implementing-procedures.source",
+    "media.2026-06-24-ee-news-epa-floats-changes-to-nepa-implementation-rules"
+   ]
+  },
+  "https://www.eenews.net/articles/epa-proposal-could-sideline-the-public-on-data-center-permits/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-01-epa-draft-rule-ends-federal-public-notice-for-minor-nsr-permits.source",
+    "media.2026-07-29-ee-news-epa-proposal-could-sideline-the-public-on-data-center-permits"
+   ]
+  },
+  "https://www.eenews.net/articles/groups-urge-lawmakers-to-protect-state-water-reviews-in-permitting-talks/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-01-nearly-60-groups-urge-senate-epw-to-protect-section-401.source",
+    "media.2026-07-02-ee-news-groups-urge-lawmakers-to-protect-state-water-reviews"
+   ]
+  },
+  "https://www.eenews.net/articles/heinrich-releases-data-center-energy-plan/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.martin-heinrich.source",
+    "media.2026-08-03-ee-news-heinrich-releases-data-center-energy-plan"
+   ]
+  },
   "https://www.eenews.net/articles/house-approves-permitting-bill-after-tumultuous-week/": {
    "cls": "ok",
    "kind": "page",
@@ -899,6 +1350,18 @@
    "status": 200,
    "where": [
     "media.2025-12-18-ee-news-house-approves-permitting-bill-after-tumultuous-week"
+   ]
+  },
+  "https://www.eenews.net/articles/house-committee-narrows-data-center-energy-bill-3/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-21-rpa-energy-commerce-52-0.source",
+    "people.paul-tonko.source",
+    "people.paul-tonko.quote",
+    "media.eenews-2026-07-21-house-committee-narrows"
    ]
   },
   "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/": {
@@ -916,6 +1379,15 @@
     "media.2025-12-17-ee-news-how-republicans-saved-speed-act-from-oblivion"
    ]
   },
+  "https://www.eenews.net/articles/its-official-permitting-deal-wont-happen-this-week/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-08-04-negotiators-move-permitting-target-to-september.source"
+   ]
+  },
   "https://www.eenews.net/articles/lawmakers-question-clean-energy-groups-tactics-on-permitting/": {
    "cls": "ok",
    "kind": "page",
@@ -929,6 +1401,47 @@
     "people.rich-powell.source"
    ]
   },
+  "https://www.eenews.net/articles/permitting-deal-deadline-remains-elusive/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.angus-king.source",
+    "media.2026-07-17-ee-news-permitting-deal-deadline-remains-elusive"
+   ]
+  },
+  "https://www.eenews.net/articles/permitting-deal-may-come-after-recess-negotiators-say-thats-ok/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.brian-schatz.source",
+    "media.2026-08-03-ee-news-permitting-deal-may-come-after-recess"
+   ]
+  },
+  "https://www.eenews.net/articles/permitting-talks-live-on-as-doj-declines-to-appeal-ruling-favoring-revolution-wind/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-03-13-doj-declines-to-appeal-revolution-wind-ruling.source",
+    "people.sheldon-whitehouse.source",
+    "media.2026-03-16-ee-news-permitting-talks-live-on-as-doj-declines-to-appeal-revolution-wind"
+   ]
+  },
+  "https://www.eenews.net/articles/senate-dems-push-spending-rider-on-wind-solar-permits/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.catherine-cortez-masto.source",
+    "people.catherine-cortez-masto.quote"
+   ]
+  },
   "https://www.eenews.net/articles/senate-lawmakers-debate-ideas-for-grid-upgrades/": {
    "cls": "ok",
    "kind": "page",
@@ -938,13 +1451,29 @@
     "timeline.2026-03-25-senate-enr-hearing-state-of-the-grid.source"
    ]
   },
+  "https://www.eenews.net/articles/senate-releases-ndaa-with-permitting-amendment/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-16-senate-armed-services-ndaa-includes-king-amendment-on-pentagon-wind-reviews.source",
+    "media.2026-06-17-ee-news-senate-releases-ndaa-with-permitting-amendment"
+   ]
+  },
   "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/": {
    "cls": "ok",
    "kind": "page",
    "note": "",
    "status": 200,
    "where": [
-    "people.josh-siegel.source"
+    "timeline.2026-08-06-oregon-judge-orders-pentagon-to-complete-onshore-wind-reviews.source",
+    "people.shelley-moore-capito.source",
+    "people.sheldon-whitehouse.source",
+    "people.josh-siegel.source",
+    "people.frank-macchiarola.source",
+    "people.frank-macchiarola.quote",
+    "media.2026-08-07-ee-news-senators-outline-future-of-permitting-talks"
    ]
   },
   "https://www.eenews.net/articles/states-claim-victory-as-trump-admin-ends-wind-court-fight-3/": {
@@ -957,6 +1486,28 @@
     "timeline.2026-06-15-first-circuit-dismisses-wind-freeze-appeal.quote"
    ]
   },
+  "https://www.eenews.net/articles/where-the-permitting-talks-stand/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2024-07-31-senate-enr-advances-energy-permitting-reform-act.source",
+    "timeline.2026-07-13-republicans-reported-to-have-made-broad-permitting-offer-to-democrats.source",
+    "people.travis-fisher.source",
+    "people.travis-fisher.quote"
+   ]
+  },
+  "https://www.eenews.net/articles/whitehouse-threatens-to-blow-up-permitting-talks/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2025-10-22-whitehouse-questions-bipartisan-permitting-reform-under-trump.source",
+    "media.2025-10-23-ee-news-whitehouse-threatens-to-blow-up-permitting-talks"
+   ]
+  },
   "https://www.eenews.net/articles/why-democrats-arent-pulling-the-plug-on-permitting-talks/": {
    "cls": "ok",
    "kind": "page",
@@ -967,6 +1518,20 @@
     "timeline.2026-03-05-whitehouse-heinrich-reopen-permitting-negotiations.source",
     "timeline.2026-03-23-interior-totalenergies-offshore-wind-lease-buyout.source",
     "timeline.2026-03-23-interior-totalenergies-offshore-wind-lease-buyout.quote"
+   ]
+  },
+  "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-05-19-wright-dines-with-republican-lawmakers-on-permitting.source",
+    "people.martin-heinrich.source",
+    "people.brian-schatz.source",
+    "people.alex-epstein.source",
+    "people.alex-epstein.quote",
+    "media.2026-05-22-ee-news-wright-meets-with-republicans-on-permitting"
    ]
   },
   "https://www.einpresswire.com/article/946448954/westerman-statement-on-senate-permitting-reform-agreement": {
@@ -1094,6 +1659,16 @@
     "timeline.2026-01-15-epa-proposes-section-401-certification-rule.quote",
     "people.lee-zeldin.source",
     "people.lee-zeldin.quote"
+   ]
+  },
+  "https://www.epa.gov/newsreleases/president-trump-expands-historic-ratepayer-protection-pledge-protect-american": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-23-ratepayer-protection-pledge-expanded.source",
+    "media.epa-2026-07-23-pledge-expansion"
    ]
   },
   "https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf": {
@@ -1229,6 +1804,15 @@
     "media.2026-01-08-federal-register-ceq-final-rule-removal-nepa-regulations"
    ]
   },
+  "https://www.federalregister.gov/documents/2026/03/09/2026-04645/ratepayer-protection-pledge": {
+   "cls": "ok",
+   "kind": "federal_register",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-03-04-ratepayer-protection-pledge-signed.source"
+   ]
+  },
   "https://www.foodandwaterwatch.org/2026/09/30/bipartisan-permitting-reform-plan-is-danger-to-public-health-enviro-protection-states-rights/": {
    "cls": "ok",
    "kind": "page",
@@ -1322,6 +1906,25 @@
     "compare.dropped"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr6984ih/html/BILLS-119hr6984ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-01-08-data-center-transparency-act-introduced.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr8241ih/html/BILLS-119hr8241ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-04-09-power-for-the-people-act-house-companion.source",
+    "people.paul-tonko.source"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm": {
    "cls": "ok",
    "kind": "page",
@@ -1329,6 +1932,69 @@
    "status": 200,
    "where": [
     "compare.datacenters.note"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr9340ih/html/BILLS-119hr9340ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-06-18-hr9340-introduced.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr9340rh/html/BILLS-119hr9340rh.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-10-hr9340-reported.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr9777ih/html/BILLS-119hr9777ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-20-donalds-protecting-ratepayers-act.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-01-15-power-for-the-people-act-introduced.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-02-11-grid-act-introduced.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s5028is/html/BILLS-119s5028is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-16-s5028-introduced.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-08-03-grid-savings-act-introduced.source"
    ]
   },
   "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf": {
@@ -1467,6 +2133,37 @@
     "timeline.2026-01-12-courts-enjoin-offshore-wind-stop-work-orders.quote"
    ]
   },
+  "https://www.hawley.senate.gov/hawley-blumenthal-introduce-bill-to-prevent-data-centers-from-increasing-electricity-costs-for-americans": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-02-11-grid-act-introduced.source",
+    "people.josh-hawley.source",
+    "people.josh-hawley.quote",
+    "media.hawley-2026-02-11-grid-act"
+   ]
+  },
+  "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-introduces-legislation-to-ensure-large-users-of-electricity-pay-for-grid-upgrades-protect-customers-from-costs-of-data-center-expansion": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-08-03-grid-savings-act-introduced.source",
+    "media.heinrich-2026-08-03-grid-savings"
+   ]
+  },
+  "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-statement-on-vote-against-husted-backed-bill-that-fails-to-make-data-centers-pay-for-grid-upgrades": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.heinrich-2026-09-30-statement-rpa-vote"
+   ]
+  },
   "https://www.hklaw.com/en/insights/publications/2024/08/energy-chairman-manchins-permitting-bill-moves-through-committee": {
    "cls": "ok",
    "kind": "page",
@@ -1485,7 +2182,19 @@
    "note": "",
    "status": 200,
    "where": [
-    "timeline.2026-09-16-house-passes-ratepayer-protection-act-417-3.source"
+    "timeline.2026-09-16-house-passes-ratepayer-protection-act-417-3.source",
+    "people.jon-husted.source",
+    "people.jon-husted.quote",
+    "media.husted-2026-09-17-uc-blocked"
+   ]
+  },
+  "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.husted-2026-07-20-introduction"
    ]
   },
   "https://www.klgates.com/DOE-Directs-FERC-to-Take-Action-on-Large-Load-Interconnection-10-30-2025": {
@@ -1546,6 +2255,16 @@
     "people.john-hickenlooper.source",
     "people.john-hickenlooper.quote",
     "people.catherine-boudreau.source"
+   ]
+  },
+  "https://www.latitudemedia.com/news/one-senate-democrats-answer-to-trumps-ratepayer-protection-pledge/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-08-03-grid-savings-act-introduced.source",
+    "media.latitude-2026-08-04-grid-savings-vs-pledge"
    ]
   },
   "https://www.latitudemedia.com/news/senators-strike-bipartisan-permitting-deal/": {
@@ -1864,6 +2583,100 @@
     "media.2026-01-16-pillsbury-ceq-finalizes-rescission-of-nepa-implementing-regulations"
    ]
   },
+  "https://www.politico.com/live-updates/2026/09/24/congress/permitting-deal-fails-ahead-of-senate-break-01089500": {
+   "browser": "2026-10-02",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-09-24-permitting-talks-stall-vote-slips-past-midterms.source",
+    "media.2026-09-24-politico-permitting-wont-get-vote-ahead-of-election"
+   ]
+  },
+  "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791": {
+   "browser": "2026-10-02",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-09-30-senate-rejects-cloture-on-ratepayer-protection-act.source",
+    "people.angus-king.source",
+    "people.angus-king.quote",
+    "media.2026-09-30-politico-capitol-agenda-one-day-more"
+   ]
+  },
+  "https://www.politico.com/news/2026/09/18/senate-competing-data-center-bills-01083204": {
+   "browser": "2026-10-02",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-09-18-politico-senate-roadblock-sparks-competition-over-data-center-bills"
+   ]
+  },
+  "https://www.politico.com/news/2026/09/29/democrats-gear-up-to-oppose-data-center-legislation-01098045": {
+   "browser": "2026-10-02",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-09-29-politico-democrats-gear-up-to-oppose-data-center-legislation"
+   ]
+  },
+  "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247": {
+   "browser": "2026-10-02",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-09-30-huffman-says-most-house-democrats-oppose-senate-permitting-deal.source",
+    "timeline.2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act.source",
+    "people.jared-huffman.source",
+    "people.brett-guthrie.source",
+    "media.2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw"
+   ]
+  },
+  "https://www.politico.com/newsletters/power-switch/2026/06/10/special-edition-politicos-energy-summit-kicks-off-hot-permitting-summer-00957736": {
+   "browser": "2026-10-02",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-06-10-capito-and-whitehouse-urge-white-house-to-stop-attacks-on-renewables.source",
+    "people.shelley-moore-capito.source",
+    "people.sheldon-whitehouse.source",
+    "people.jarrod-agen.source",
+    "people.jarrod-agen.quote",
+    "media.2026-06-10-politico-power-switch-energy-summit-hot-permitting-summer"
+   ]
+  },
+  "https://www.politico.com/newsletters/power-switch/2026/07/21/can-congress-get-behind-this-data-center-bill-01006436": {
+   "browser": "2026-10-02",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "people.mike-lee.source",
+    "media.2026-07-21-politico-power-switch-can-congress-get-behind-this-data-center-bill"
+   ]
+  },
+  "https://www.politico.com/newsletters/power-switch/2026/07/23/signed-sealed-can-trumps-ratepayer-pledge-deliver-01009331": {
+   "browser": "2026-10-02",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-07-23-politico-power-switch-can-trumps-ratepayer-pledge-deliver"
+   ]
+  },
   "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/": {
    "cls": "ok",
    "kind": "page",
@@ -1960,6 +2773,44 @@
     "media.2026-09-30-us-chamber-hails-senate-progress-permitting-reform"
    ]
   },
+  "https://www.utilitydive.com/news/ferc-data-center-pjm-transmission-costs/825760/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-07-17-ratepayer-advocates-challenge-ferc-pjm-show-cause.source",
+    "media.utilitydive-2026-07-21-advocates-ferc-pjm"
+   ]
+  },
+  "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.utilitydive-2026-06-22-ferc-takeaways"
+   ]
+  },
+  "https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.utilitydive-2026-09-house-passes-rpa"
+   ]
+  },
+  "https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-29-ferc-pjm-reliability-backstop-order.source",
+    "media.utilitydive-2026-09-30-ferc-pjm-backstop"
+   ]
+  },
   "https://www.utilitydive.com/news/revolution-wind-orsted-offshore-wind-stop-work-trump-construction/760803/": {
    "cls": "ok",
    "kind": "page",
@@ -2006,6 +2857,18 @@
     "people.laura-swett.quote"
    ]
   },
+  "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-leads-new-bill-to-ensure-americans-arent-footing-the-bill-for-big-data-centers": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-01-15-power-for-the-people-act-introduced.source",
+    "people.chris-van-hollen.source",
+    "people.chris-van-hollen.quote",
+    "media.vanhollen-2026-01-15-pftp"
+   ]
+  },
   "https://www.washingtonexaminer.com/daily-on-energy/4749078/daily-on-energy-the-long-awaited-permitting-reform-bill-is-here/": {
    "cls": "ok",
    "kind": "page",
@@ -2034,6 +2897,15 @@
    "status": 403,
    "where": [
     "media.2026-09-30-washington-times-committee-leaders-announce-deal"
+   ]
+  },
+  "https://www.wflx.com/2026/07/28/florida-rep-byron-donalds-pushes-bill-requiring-ai-data-centers-supply-their-own-power-water/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.wflx-2026-07-28-donalds"
    ]
   },
   "https://www.whitehouse.gov/articles/2026/01/ceq-fixes-decades-long-permitting-failure-through-deregulation/": {
@@ -2101,6 +2973,25 @@
    "status": 200,
    "where": [
     "timeline.2025-07-23-eo-14318-data-center-permitting.source"
+   ]
+  },
+  "https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-03-04-ratepayer-protection-pledge-signed.source"
+   ]
+  },
+  "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-03-04-ratepayer-protection-pledge-signed.source",
+    "media.whitehouse-2026-03-04-ratepayer-protection-pledge"
    ]
   },
   "https://www.whitehouse.gov/wp-content/uploads/2025/04/Memorandum-CEQ-Establishment-of-Permitting-Innovation-Center_4.30.2025.pdf": {

@@ -168,7 +168,7 @@
 
   var api = {
     parseQuery: parseQuery, ranges: ranges, snippet: snippet, searchBill: searchBill,
-    sectionForPage: sectionForPage, formatCite: formatCite, formatPages: formatPages, formatDate: formatDate
+    sectionForPage: sectionForPage, formatCite: formatCite, formatPages: formatPages, formatDate: formatDate, months: MONTHS
   };
   root.PRSearch = api;
   if (typeof module !== "undefined" && module.exports) module.exports = api;

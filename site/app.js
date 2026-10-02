@@ -93,7 +93,20 @@
   }
 
   function chip(label, pressed, onclick, count) {
-    return el("button", { type: "button", class: "chip", "aria-pressed": pressed ? "true" : "false", onclick: onclick },
+    return el("button", { type: "button", class: "chip", "data-chip-label": label, "aria-pressed": pressed ? "true" : "false", onclick: (ev) => {
+      const group = ev.currentTarget.closest('[role="group"]');
+      const name = group && group.getAttribute("aria-label");
+      const comparison = group && group.getAttribute("data-comparison");
+      onclick(ev);
+      if (!ev.currentTarget.isConnected) {
+        const replacement = Array.from(view.querySelectorAll(".chip")).find((b) => {
+          const g = b.closest('[role="group"]');
+          return b.getAttribute("data-chip-label") === label && g &&
+            g.getAttribute("aria-label") === name && g.getAttribute("data-comparison") === comparison;
+        });
+        if (replacement) replacement.focus({ preventScroll: true });
+      }
+    } },
       label, count == null ? null : el("span", { class: "chip-count" }, count));
   }
 
@@ -138,7 +151,15 @@
     return el("form", { class: "search", role: "search", autocomplete: "off", onsubmit: (ev) => {
       ev.preventDefault();
       const q = input.value.trim();
-      location.hash = q ? "#/bill/search/" + encodeURIComponent(q) : "#/bill";
+      /* An empty box takes the cursor; the same query again returns to the results heading. */
+      if (!q) { input.focus(); return; }
+      const next = "#/bill/search/" + encodeURIComponent(q);
+      if (location.hash === next) {
+        const h = view.querySelector("h1");
+        if (h) { h.tabIndex = -1; h.scrollIntoView({ block: "start" }); h.focus({ preventScroll: true }); }
+        return;
+      }
+      location.hash = next;
     } },
       el("label", { class: "sr-only", "for": "search-input" }, "Search the bill text"),
       input,
@@ -172,6 +193,16 @@
       el("p", null, el("a", { href: D.meta.pdf }, "Open the PDF")));
   }
 
+  const foldOpen = new Set();
+  function foldBlock(block) {
+    const heading = block.querySelector("h2");
+    heading.remove();
+    const key = location.hash.split("/")[1] + ":" + heading.textContent;
+    return el("details", { class: "section-fold", "data-fold": key, open: foldOpen.has(key), ontoggle: (ev) => {
+      if (ev.currentTarget.open) foldOpen.add(key); else foldOpen.delete(key);
+    } }, el("summary", null, heading), block);
+  }
+
   /* ---------- overview ---------- */
 
   function renderOverview() {
@@ -186,7 +217,8 @@
           el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")))),
       el("p", { class: "note" }, "Proposed law", " · ",
         el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),
-      searchBox(""));
+      searchBox(""),
+      D.compare.bills ? el("p", { class: "sec-links" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Data center bills: compare costs, connection and reporting")) : null);
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
       el("h2", { id: "h-status" }, "Status"),
@@ -197,9 +229,10 @@
       el("h2", { id: "h-prov" }, "Main provisions"),
       el("ol", { class: "provisions" }, o.headlines.map((h) =>
         el("li", null,
-          el("h3", null, el("a", { href: secHref(h.sections[0]) }, h.title)),
-          el("p", null, h.text),
-          el("p", { class: "where" }, secLinks(h.sections))))));
+          el("details", { class: "provision-detail" },
+            el("summary", null, el("h3", null, h.title)),
+            el("p", null, h.text),
+            el("p", { class: "where" }, secLinks(h.sections)))))));
 
     const clocks = el("section", { class: "block", "aria-labelledby": "h-clocks" },
       el("h2", { id: "h-clocks" }, "Deadlines"),
@@ -247,11 +280,11 @@
         el("div", null,
           el("h2", null, "Milestones"),
           el("ul", { class: "feed" }, milestones.map((e) => el("li", null,
-            el("a", { href: "#/timeline", class: "feed-title" }, e.title),
+            el("a", { href: "#/timeline/" + monthKey(e) + "/" + e.id, class: "feed-title" }, e.title),
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.timeline.length + " events")))));
 
-    return [head, provisions, status, el("div", { class: "two-col wide-left" }, clocks, money), changes, latest];
+    return [head, provisions, foldBlock(status), foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest)];
   }
 
   /* ---------- bill: index, section, search ---------- */
@@ -295,8 +328,9 @@
       el("span", { class: "filter-gap" }),
       chip("Major provisions", billMajor, () => { billMajor = !billMajor; route(); }, majors));
 
-    const body = list.length ? structureGroups(list).map((g) => el("section", { class: "index-group" },
-      el("h2", null, groupLabel(g)),
+    const fold = PHONE.matches && billTopic === "all" && !billMajor;
+    const body = list.length ? structureGroups(list).map((g) => el(fold ? "details" : "section", { class: "index-group" },
+      fold ? el("summary", null, el("h2", null, groupLabel(g), el("span", { class: "chip-count" }, g.sections.length))) : el("h2", null, groupLabel(g)),
       el("ul", { class: "index" }, g.sections.map((s) => el("li", { class: s.imp === 3 ? "major" : null },
         el("a", { href: secHref(s.n), class: "index-head" },
           el("span", { class: "index-num" }, s.n),
@@ -307,7 +341,7 @@
       : el("p", { class: "empty" }, "No sections match.");
 
     const active = billTopic !== "all" || billMajor;
-    const filterBox = el("details", { class: "filter-wrap", open: active || window.matchMedia("(min-width: 640px)").matches },
+    const filterBox = el("details", { class: "filter-wrap", open: true },
       el("summary", null, "Topics"), filters);
     return [el("div", { class: "lede" }, el("h1", null, "BAAJA sections"), searchBox("")), filterBox, body];
   }
@@ -341,6 +375,21 @@
       el("dl", { class: "versus" }, rows.map((r) => [el("dt", null, r[0]), el("dd", null, paras(r[1]))])));
   }
 
+  /* Comparison rows whose BAAJA cell cites section n, as direct links. */
+  function compareLinks(n) {
+    const c = D.compare;
+    const cites = (cell) => cell && (cell.sections || []).indexOf(n) >= 0;
+    const links = [];
+    c.groups.forEach((g) => g.rows.forEach((r) => {
+      if (cites(r.senate)) links.push(el("a", { href: "#/compare/" + g.id + "/" + r.id }, r.topic));
+    }));
+    if (c.bills && c.bills.rows.some((r) => Object.keys(r).some((k) => cites(r[k])))) {
+      links.push(el("a", { href: "#/compare/" + c.bills.id }, c.bills.label));
+    }
+    if (!links.length) return null;
+    return el("p", { class: "sec-links" }, "Compare: ", links.map((a, i) => [i ? " · " : null, a]));
+  }
+
   function renderSection(n, anchor, query) {
     const s = byNum[n];
     if (!s) return [el("div", { class: "notice" }, el("p", null, "No section " + n + "."), el("p", null, el("a", { href: "#/bill" }, "All sections")))];
@@ -357,6 +406,7 @@
         pdfLink(s.p1, S.formatPages(s.p1, s.p2)), "·", el("span", null, num(s.words) + " words"),
         s.imp === 3 ? ["·", el("span", { class: "tag-major" }, "Major")] : null,
         topicTags(s.topics)),
+      compareLinks(s.n),
       el("section", { class: "sec-part machine", "aria-labelledby": "h-sum" },
         el("h2", { id: "h-sum" }, "Summary", el("span", { class: "credit-inline" }, "AI-written")),
         paras(s.plain, "summary"),
@@ -464,29 +514,87 @@
     const kids = [el("span", { class: "cell-text" }, cell.text)];
     if (cell.sections && cell.sections.length) kids.push(el("span", { class: "cell-cite" }, secLinks(cell.sections)));
     else if (cell.cite) kids.push(el("span", { class: "cell-cite" }, citeNode(cell)));
+    if (cell.quote) kids.push(el("details", { class: "cell-source" },
+      el("summary", null, "Source passage"), el("blockquote", null, cell.quote)));
     return kids;
+  }
+
+  /* Below 1024px a comparison shows BAAJA beside one chosen version; the chips pick it. */
+  const cmpWith = { main: "current", bills: "rpa" };
+  const cmpOpen = new Set();
+  function withChips(which, versions) {
+    return el("div", { class: "filters with-chips", "data-comparison": which, role: "group", "aria-label": "Compare BAAJA with" },
+      el("span", { class: "with-label" }, "BAAJA vs."),
+      versions.filter((v) => v.key !== "senate").map((v) =>
+        chip(v.label, cmpWith[which] === v.key, () => { cmpWith[which] = v.key; route();
+          const active = view.querySelector(`[data-comparison="${which}"] .chip[aria-pressed="true"]`);
+          if (active) active.focus({ preventScroll: true }); })));
+  }
+  function phoneClass(which, key) {
+    return "col-" + key + (key === "senate" || key === cmpWith[which] ? "" : " off-phone");
+  }
+
+  /* A table of other bills on one subject, with its own columns (data centers). */
+  /* Below 1024px each comparison row opens on tap; the subject alone says what it covers. */
+  const PHONE = window.matchMedia("(max-width: 1023px)"); /* where comparison tables stack */
+  function rowHead(topic, id) {
+    if (!PHONE.matches) return topic;
+    return el("button", { type: "button", class: "row-toggle", "aria-expanded": cmpOpen.has(id) ? "true" : "false", onclick: (ev) => {
+      const tr = ev.currentTarget.closest("tr");
+      const open = tr.classList.toggle("open");
+      if (open) cmpOpen.add(id); else cmpOpen.delete(id);
+      const note = tr.nextElementSibling;
+      if (note && note.classList.contains("row-note")) note.classList.toggle("open", open);
+      ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
+    } }, topic);
+  }
+
+  function versionList(vs) {
+    return el("details", { class: "versions-wrap", open: !PHONE.matches },
+      el("summary", null, "Versions compared"),
+      el("dl", { class: "versions" }, vs.map((v) => el("div", null,
+        el("dt", null, safeUrl(v.url) ? ext(v.url, v.label) : v.label),
+        el("dd", null, v.sub)))));
+  }
+
+  function renderBills(b) {
+    const keys = b.versions.map((v) => v.key);
+    return el("section", { class: "block", id: b.id },
+      el("h2", null, b.label),
+      b.intro ? el("p", { class: "muted" }, b.intro) : null,
+      el("p", { class: "note" }, "Proposed laws. Related BAAJA provisions: ", secLinks(["2102", "2108"])),
+      versionList(b.versions),
+      withChips("bills", b.versions),
+      el("div", { class: "table-wrap" }, el("table", { class: "compare compare-bills" },
+        el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), b.versions.map((v) => el("th", { scope: "col", class: phoneClass("bills", v.key) }, v.label)))),
+        el("tbody", null, b.rows.map((r) => el("tr", { id: "row-bills-" + r.id, class: cmpOpen.has("bills-" + r.id) ? "open" : null },
+          el("th", { scope: "row" }, rowHead(r.topic, "bills-" + r.id)),
+          keys.map((k) => el("td", { class: phoneClass("bills", k), "data-label": b.versions.find((v) => v.key === k).label }, compareCell(r[k])))))))),
+      b.others && b.others.length ? [el("h3", null, b.others_label),
+        el("ul", { class: "plain-list" }, b.others.map((o) => el("li", null, o.text + " ", el("span", { class: "where" }, citeNode(o)))))] : null);
   }
 
   function renderCompare(groupId) {
     const c = D.compare;
-    const groups = groupId && c.groups.some((g) => g.id === groupId) ? c.groups.filter((g) => g.id === groupId) : c.groups;
+    const bills = c.bills || null;
+    const billsOnly = bills && groupId === bills.id;
+    const groups = billsOnly ? [] : groupId && c.groups.some((g) => g.id === groupId) ? c.groups.filter((g) => g.id === groupId) : c.groups;
     const keys = c.versions.map((v) => v.key);
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Subject" },
-      el("a", { class: "chip", href: "#/compare", "aria-current": groups.length === c.groups.length ? "true" : null }, "All"),
-      c.groups.map((g) => el("a", { class: "chip", href: "#/compare/" + g.id, "aria-current": groups.length === 1 && groups[0].id === g.id ? "true" : null }, g.label)));
+      el("a", { class: "chip", href: "#/compare", "aria-current": !groupId || (!billsOnly && groups.length === c.groups.length) ? "true" : null }, "All"),
+      c.groups.map((g) => el("a", { class: "chip", href: "#/compare/" + g.id, "aria-current": groups.length === 1 && groups[0].id === g.id ? "true" : null }, g.label)),
+      bills ? el("a", { class: "chip", href: "#/compare/" + bills.id, "aria-current": billsOnly ? "true" : null }, bills.label) : null);
 
-    const versions = el("dl", { class: "versions" }, c.versions.map((v) => el("div", null,
-      el("dt", null, safeUrl(v.url) ? ext(v.url, v.label) : v.label),
-      el("dd", null, v.sub))));
+    const versions = versionList(c.versions);
 
     const tables = groups.map((g) => el("section", { class: "block" },
       el("h2", null, g.label),
       el("div", { class: "table-wrap" }, el("table", { class: "compare" },
-        el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), c.versions.map((v) => el("th", { scope: "col", class: "col-" + v.key }, v.label)))),
-        el("tbody", null, g.rows.map((r) => [el("tr", null,
-          el("th", { scope: "row" }, r.topic),
-          keys.map((k) => el("td", { class: "col-" + k, "data-label": versionLabel(k) }, compareCell(r[k])))),
-          r.note ? el("tr", { class: "row-note" },
+        el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), c.versions.map((v) => el("th", { scope: "col", class: phoneClass("main", v.key) }, v.label)))),
+        el("tbody", null, g.rows.map((r) => [el("tr", { id: "row-" + r.id, class: cmpOpen.has(r.id) ? "open" : null },
+          el("th", { scope: "row" }, rowHead(r.topic, r.id)),
+          keys.map((k) => el("td", { class: phoneClass("main", k), "data-label": versionLabel(k) }, compareCell(r[k])))),
+          r.note ? el("tr", { class: "row-note" + (cmpOpen.has(r.id) ? " open" : "") },
             el("td", { colspan: keys.length + 1 }, el("strong", null, r.note.label + ". "), el("span", { class: "cell-text" }, r.note.text),
               el("span", { class: "cell-cite" }, r.note.sources.map((src, i) => [i ? " · " : null, citeNode(src)])))) : null]))))));
 
@@ -503,7 +611,78 @@
 
     return [
       el("div", { class: "lede" }, el("h1", null, "Comparison", el("span", { class: "credit-inline" }, "AI-written"))),
-      versions, filters, tables, groupId ? null : lists];
+      billsOnly ? null : versions, filters, billsOnly ? null : withChips("main", c.versions),
+      groupId ? tables : tables.map(foldBlock), bills && (billsOnly || !groupId) ? renderBills(bills) : null, groupId ? null : foldBlock(lists)];
+  }
+
+  /* Long lists open brief: two lines of summary, the rest behind More. */
+  let brief = true;
+  function briefChip() {
+    return chip("Full entries", !brief, () => { brief = !brief; route(); });
+  }
+  function moreButton() {
+    if (!brief) return null;
+    return el("button", { type: "button", class: "more-toggle", "aria-expanded": "false", onclick: (ev) => {
+      const b = ev.currentTarget;
+      const open = b.closest(".event, .media-item, .person").classList.toggle("open");
+      b.setAttribute("aria-expanded", open ? "true" : "false");
+      b.textContent = open ? "Less" : "More";
+    } }, "More");
+  }
+
+  /* ---------- communities ---------- */
+
+  const EFFECT = { narrows: "Narrows", expands: "Expands", changes: "Changes" };
+  let cmWho = "all";
+  let cmEffect = "all";
+
+  function renderCommunities() {
+    const c = D.communities;
+    if (!c) return [el("div", { class: "lede" }, el("h1", null, "Communities")), el("p", { class: "empty" }, "Not yet compiled.")];
+    const rows = c.rows.filter((r) => (cmWho === "all" || r.who.indexOf(cmWho) >= 0) && (cmEffect === "all" || r.effect === cmEffect));
+    const whoCount = {};
+    c.rows.forEach((r) => r.who.forEach((w) => { whoCount[w] = (whoCount[w] || 0) + 1; }));
+    const effCount = {};
+    c.rows.forEach((r) => { effCount[r.effect] = (effCount[r.effect] || 0) + 1; });
+    const whoChips = el("div", { class: "filters", role: "group", "aria-label": "Who" },
+      chip("Everyone", cmWho === "all", () => { cmWho = "all"; route(); }, c.rows.length),
+      Object.keys(c.who).filter((w) => whoCount[w]).map((w) => chip(c.who[w], cmWho === w, () => { cmWho = w; route(); }, whoCount[w])));
+    const effectChips = el("div", { class: "filters", role: "group", "aria-label": "Effect" },
+      chip("All changes", cmEffect === "all", () => { cmEffect = "all"; route(); }),
+      Object.keys(EFFECT).filter((k) => effCount[k]).map((k) => chip(EFFECT[k], cmEffect === k, () => { cmEffect = k; route(); }, effCount[k])),
+      briefChip());
+    const body = c.groups.map((g) => {
+      const list = rows.filter((r) => r.group === g.id);
+      if (!list.length) return null;
+      return el("section", { class: "block" },
+        el("h2", { id: "cg-" + g.id }, g.label, el("span", { class: "chip-count" }, list.length)),
+        g.note ? el("p", { class: "muted" }, g.note) : null,
+        el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => {
+          const head = [el("span", { class: "cm-topic" }, r.topic), " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])];
+          return el("article", { class: "cm-row", id: "cm-" + r.id },
+            el("h3", null, brief
+              ? el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": "cb-" + r.id, onclick: (ev) => {
+                  const open = ev.currentTarget.closest(".cm-row").classList.toggle("open");
+                  ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
+                } }, head)
+              : head),
+            el("div", { class: "cm-body", id: "cb-" + r.id },
+              el("p", { class: "cm-who" }, r.who.map((w) => c.who[w]).join(" · ")),
+              el("p", null, el("strong", null, "BAAJA: "), r.baaja),
+              el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
+                r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
+              el("p", { class: "where" }, secLinks(r.sections)),
+              r.quote ? el("figure", { class: "quote small" },
+                el("blockquote", null, r.quote),
+                r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null));
+        })));
+    });
+    return [
+      el("div", { class: "lede" }, el("h1", null, "Communities", el("span", { class: "credit-inline" }, "AI-written")),
+        c.intro ? el("p", null, c.intro) : null,
+        el("p", { class: "facts", role: "status" }, rows.length + " of " + c.rows.length + " changes")),
+      whoChips, effectChips,
+      rows.length ? body : el("p", { class: "empty" }, "No changes match.")];
   }
 
   /* ---------- timeline ---------- */
@@ -511,42 +690,218 @@
   const BRANCHES = [["all", "All"], ["executive", "White House"], ["agency", "Agencies"], ["congress_house", "House"], ["congress_senate", "Senate"], ["court", "Courts"], ["states", "States"], ["other", "Other"]];
   let tlBranch = "all";
   let tlMilestones = false;
+  let tlTopic = "all";
+  let tlLimit = 12;
+  let tlRefocus = null; /* the control to focus after the milestone line re-renders */
 
   function branchLabel(key) {
     const b = BRANCHES.find((x) => x[0] === key);
     return b ? b[1] : "Other";
   }
 
-  function renderTimeline() {
+  /* The milestone line starts at the administration's first month; earlier background events group as "early". */
+  const AXIS_START = "2025-01";
+  function monthKey(e) {
+    return e.date < AXIS_START ? "early" : e.date.slice(0, 7);
+  }
+  function monthName(key, short) {
+    if (key === "early") return "Before 2025";
+    const name = S.months[Number(key.slice(5, 7)) - 1];
+    return (short ? name.slice(0, 3) : name) + " " + key.slice(0, 4);
+  }
+  function shortDate(iso) {
+    return S.months[Number(iso.slice(5, 7)) - 1].slice(0, 3) + " " + Number(iso.slice(8, 10));
+  }
+  function axisKeys() {
+    const keys = D.timeline.some((e) => e.date < AXIS_START) ? ["early"] : [];
+    const last = D.timeline.reduce((m, e) => (e.date > m ? e.date : m), AXIS_START).slice(0, 7);
+    let y = Number(AXIS_START.slice(0, 4));
+    let m = Number(AXIS_START.slice(5, 7));
+    for (;;) {
+      const k = y + "-" + String(m).padStart(2, "0");
+      keys.push(k);
+      if (k >= last) break;
+      m += 1;
+      if (m > 12) { m = 1; y += 1; }
+    }
+    return keys;
+  }
+
+  /* Open a listed event. From the milestone line, focus stays on the line and the page stays put. */
+  function openEvent(id, fromLine) {
+    const node = document.getElementById("ev-" + id);
+    if (!node) return;
+    node.classList.add("open");
+    const t = node.querySelector(".event-toggle");
+    if (t) t.setAttribute("aria-expanded", "true");
+    if (fromLine) return;
+    if (t) t.focus({ preventScroll: true });
+    node.scrollIntoView({ block: "start" });
+  }
+
+  function renderTimeline(monthParam, picked) {
+    const keys = axisKeys();
+    const month = keys.indexOf(monthParam) >= 0 ? monthParam : null;
     const all = D.timeline.slice().sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
     const counts = {};
     all.forEach((e) => { counts[e.branch] = (counts[e.branch] || 0) + 1; });
-    const list = all.filter((e) => (tlBranch === "all" || e.branch === tlBranch) && (!tlMilestones || e.milestone));
+    const matching = all.filter((e) => (tlBranch === "all" || e.branch === tlBranch) && (!tlMilestones || e.milestone) &&
+      (tlTopic === "all" || (e.topics || []).indexOf(tlTopic) >= 0));
+    const list = month ? matching.filter((e) => monthKey(e) === month) : matching;
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Branch" },
       BRANCHES.filter((b) => b[0] === "all" || counts[b[0]]).map((b) =>
-        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; route(); }, b[0] === "all" ? all.length : counts[b[0]])),
-      el("span", { class: "filter-gap" }),
-      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; route(); }, all.filter((e) => e.milestone).length));
+        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
+    const topicCounts = {};
+    all.forEach((e) => (e.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
+    const topicSelect = el("select", { class: "chip chip-select", "aria-label": "Topic", onchange: (ev) => {
+      tlTopic = ev.currentTarget.value; tlLimit = 12; route();
+      const again = view.querySelector(".chip-select");
+      if (again) again.focus({ preventScroll: true });
+    } },
+      el("option", { value: "all" }, "All topics"),
+      Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
+        el("option", { value: t, selected: tlTopic === t }, D.topics[t] + " (" + topicCounts[t] + ")")));
+    const more = el("div", { class: "filters", role: "group", "aria-label": "Topic and detail" },
+      topicSelect,
+      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = 12; route(); }, all.filter((e) => e.milestone).length),
+      briefChip());
     const out = [];
     let year = null;
-    list.forEach((e) => {
+    list.slice(0, tlLimit).forEach((e) => {
       const y = e.date.slice(0, 4);
-      if (y !== year) { year = y; out.push(el("h2", { class: "year" }, y)); }
-      out.push(el("article", { class: "event" + (e.milestone ? " milestone" : "") },
-        el("h3", null, e.title),
-        el("p", { class: "event-meta" }, S.formatDate(e.date) + " · " + branchLabel(e.branch) + (e.background ? " · before 2025" : "")),
+      if (y !== year) { year = y; out.push(el("h2", { class: "year", id: "y-" + y }, y)); }
+      const body = el("div", { class: "event-body", id: "eb-" + e.id },
+        el("p", { class: "event-meta" }, S.formatDate(e.date) + " · " + branchLabel(e.branch) + (e.background ? " · before 2025" : "") + (e.milestone ? " · milestone" : "")),
         el("p", null, e.summary),
+        e.sections && e.sections.length ? el("p", { class: "where" }, "In the bill: ", secLinks(e.sections)) : null,
         e.significance ? el("p", { class: "signif" }, e.significance) : null,
         e.quote && e.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, e.quote.text),
           el("figcaption", null, safeUrl(e.quote.source_url) ? ext(e.quote.source_url, e.quote.speaker || "Source") : e.quote.speaker)) : null,
-        e.sections && e.sections.length ? el("p", { class: "where" }, "In the bill: ", secLinks(e.sections)) : null,
-        sourceList(e.sources)));
+        sourceList(e.sources));
+      const head = el("span", { class: "event-head" },
+        el("span", { class: "event-date" }, shortDate(e.date)), " ", el("span", { class: "event-title" }, e.title));
+      out.push(el("article", { class: "event" + (e.milestone ? " milestone" : ""), id: "ev-" + e.id },
+        el("h3", null, brief
+          ? el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": "eb-" + e.id, onclick: (ev) => {
+              const open = ev.currentTarget.closest(".event").classList.toggle("open");
+              ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
+            } }, head)
+          : head),
+        body));
     });
+    const status = month
+      ? monthName(month, true) + ": " + list.length + (list.length === 1 ? " event" : " events")
+      : "Newest " + Math.min(tlLimit, list.length) + " of " + list.length + (list.length === all.length ? " events" : " matching events (" + all.length + " total)");
     return [
       el("div", { class: "lede" }, el("h1", null, "Timeline")),
-      filters,
-      list.length ? el("div", { class: "timeline" }, out) : el("p", { class: "empty" }, "No events match.")];
+      timelineLine(month, picked, status),
+      filters, more,
+      list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
+      list.length > tlLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+        const next = list[tlLimit].id; tlLimit += 12; route();
+        const node = document.getElementById("ev-" + next); node.tabIndex = -1; node.focus();
+      } }, "Show " + Math.min(12, list.length - tlLimit) + " more events") : null];
+  }
+
+  /* Milestones on one line, placed by date; the shape says who acted. A tap opens the event in its month. */
+  const SHAPES = { congress_house: "circle", congress_senate: "circle", executive: "square", agency: "square", court: "diamond" };
+  function timelineLine(month, picked, status) {
+    const ms = D.timeline.filter((e) => e.milestone).sort((a, b) => (a.date < b.date ? -1 : a.date > b.date ? 1 : 0));
+    const day = (iso) => Date.UTC(Number(iso.slice(0, 4)), Number(iso.slice(5, 7)) - 1, Number(iso.slice(8, 10)));
+    const t0 = day(AXIS_START + "-01");
+    const lastDate = D.timeline.reduce((m, e) => (e.date > m ? e.date : m), AXIS_START + "-01");
+    const t1 = day(lastDate) + 20 * 864e5;
+    const pos = (iso) => ((day(iso) - t0) / (t1 - t0)) * 100;
+    const sel = ms.findIndex((e) => e.id === picked);
+    const open = (e, refocus) => { tlRefocus = refocus || null; location.hash = "#/timeline/" + monthKey(e) + "/" + e.id; };
+
+    /* Neighbours closer than 4.5% of the width stack upward so each symbol stays tappable. */
+    const lanes = [];
+    const marks = ms.map((e, i) => {
+      const x = pos(e.date);
+      let lane = 0;
+      while (lanes[lane] != null && x - lanes[lane] < 4.5) lane += 1;
+      lanes[lane] = x;
+      return el("button", {
+        type: "button", class: "tl-mark" + (i === sel ? " sel" : ""),
+        style: "left:" + x.toFixed(2) + "%;--lane:" + lane, "data-id": e.id,
+        tabindex: i === (sel >= 0 ? sel : ms.length - 1) ? "0" : "-1", "aria-current": i === sel ? "true" : null,
+        "aria-label": S.formatDate(e.date) + ": " + e.title, title: S.formatDate(e.date) + ": " + e.title,
+        onclick: () => open(e, '.tl-mark[data-id="' + e.id + '"]'),
+      }, el("span", { class: "tl-sym " + (SHAPES[e.branch] || "circle"), "aria-hidden": "true" }));
+    });
+    const ticks = [];
+    for (let y = Number(AXIS_START.slice(0, 4)); day(y + "-01-01") < t1; y += 1) {
+      for (let m = 1; m <= 12; m += 1) {
+        const iso = y + "-" + String(m).padStart(2, "0") + "-01";
+        if (day(iso) < t0 || day(iso) >= t1) continue;
+        ticks.push(el("span", { class: "tl-tick" + (m === 1 ? " tl-year" : ""), style: "left:" + pos(iso).toFixed(2) + "%", "aria-hidden": "true" },
+          m === 1 ? String(y) : S.months[m - 1].charAt(0)));
+      }
+    }
+    /* Clustered symbols are smaller than a fingertip: a pointer on a drawn symbol picks it, and one in a gap
+       picks the nearest symbol within 28px.
+       The buttons themselves take keyboard and screen reader input. */
+    const nearest = (ev) => {
+      for (let i = marks.length - 1; i >= 0; i -= 1) {
+        const r = marks[i].firstChild.getBoundingClientRect();
+        if (ev.clientX >= r.left && ev.clientX <= r.right && ev.clientY >= r.top && ev.clientY <= r.bottom) return i;
+      }
+      let best = null;
+      let bestD = 28;
+      marks.forEach((m, i) => {
+        const r = m.firstChild.getBoundingClientRect();
+        const d = Math.hypot(ev.clientX - (r.left + r.width / 2), ev.clientY - (r.top + r.height / 2));
+        if (d < bestD) { bestD = d; best = i; }
+      });
+      return best;
+    };
+    const line = el("div", { class: "tl-line", role: "group", "aria-label": "Milestones", style: "--lanes:" + lanes.length,
+      onclick: (ev) => {
+        if (ev.target.closest(".tl-mark")) return;
+        const i = nearest(ev);
+        if (i !== null) open(ms[i], '.tl-mark[data-id="' + ms[i].id + '"]');
+      },
+      onmousemove: (ev) => {
+        const i = nearest(ev);
+        preview(i === null ? null : ms[i]);
+        line.classList.toggle("near", i !== null);
+        marks.forEach((m, j) => m.classList.toggle("hover", j === i));
+      },
+      onmouseleave: () => { preview(null); line.classList.remove("near"); marks.forEach((m) => m.classList.remove("hover")); },
+      onkeydown: (ev) => {
+        const i = marks.indexOf(document.activeElement);
+        if (i < 0) return;
+        const j = ev.key === "ArrowLeft" ? i - 1 : ev.key === "ArrowRight" ? i + 1 : ev.key === "Home" ? 0 : ev.key === "End" ? marks.length - 1 : -2;
+        if (j === -2 || !marks[j]) return;
+        ev.preventDefault();
+        marks[i].tabIndex = -1; marks[j].tabIndex = 0; marks[j].focus();
+      } }, ticks, marks);
+
+    const prev = sel > 0 ? ms[sel - 1] : sel < 0 ? ms[ms.length - 1] : null;
+    const next = sel >= 0 && sel < ms.length - 1 ? ms[sel + 1] : null;
+    const stepBtn = (e, label, text) => el("button", { type: "button", class: "chip tl-step", "aria-label": label, disabled: !e,
+      onclick: () => open(e, '[aria-label="' + label + '"]:not([disabled])') }, text);
+    const current = sel >= 0
+      ? el("p", { class: "tl-pick" }, el("span", { class: "event-date" }, S.formatDate(ms[sel].date)), " ", ms[sel].title)
+      : el("p", { class: "tl-pick muted" }, status);
+    /* Hovering a symbol shows its title where the picked one would be. */
+    function preview(e) {
+      const shown = e || (sel >= 0 ? ms[sel] : null);
+      if (shown) fill(current, el("span", { class: "event-date" }, S.formatDate(shown.date)), " ", shown.title);
+      else fill(current, status);
+      current.classList.toggle("muted", !shown);
+    }
+    return el("section", { class: "tl-overview", "aria-label": "Milestones by date" },
+      line,
+      el("p", { class: "tl-key", "aria-hidden": "true" },
+        el("span", { class: "tl-sym circle" }), " Congress ", el("span", { class: "tl-sym square" }), " White House and agencies ",
+        el("span", { class: "tl-sym diamond" }), " Courts"),
+      el("div", { class: "tl-caption" }, stepBtn(prev, "Earlier milestone", "‹"), current, stepBtn(next, "Later milestone", "›")),
+      month || sel >= 0 ? el("p", { class: "tl-status-row" }, el("span", { class: "tl-status", role: "status" }, status),
+        el("button", { type: "button", class: "chip tl-all", onclick: () => { tlRefocus = ".tl-mark[tabindex=\"0\"]"; location.hash = "#/timeline"; } }, "All events"))
+        : el("span", { class: "sr-only", role: "status" }, status));
   }
 
   /* ---------- people ---------- */
@@ -559,6 +914,7 @@
   };
   let pplSide = "inside";
   let pplStance = "all";
+  let pplLimit = 12;
 
   /* "2026-01-28: Chaired the hearing" -> "January 28, 2026: Chaired the hearing" */
   function datedAction(text) {
@@ -575,26 +931,27 @@
     const stanceCounts = {};
     pool.forEach((p) => { stanceCounts[p.stance] = (stanceCounts[p.stance] || 0) + 1; });
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Group and position" },
-      chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; route(); }, inside.length),
-      chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; route(); }, outside.length),
+      chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; pplLimit = 12; route(); }, inside.length),
+      chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; pplLimit = 12; route(); }, outside.length),
       el("span", { class: "filter-gap" }),
-      chip("All positions", pplStance === "all", () => { pplStance = "all"; route(); }),
+      chip("All positions", pplStance === "all", () => { pplStance = "all"; pplLimit = 12; route(); }),
       ["supports", "mixed", "opposes", "neutral"].filter((k) => stanceCounts[k]).map((k) =>
-        chip(STANCE[k], pplStance === k, () => { pplStance = k; route(); }, stanceCounts[k])));
+        chip(STANCE[k], pplStance === k, () => { pplStance = k; pplLimit = 12; route(); }, stanceCounts[k])),
+      briefChip());
     const GOV = { congress: 1, white_house: 1, agency: 1, court: 1 };
     const groups = {};
-    list.forEach((p) => {
+    list.slice(0, pplLimit).forEach((p) => {
       const key = !p.inside_government && GOV[p.sector] ? "former" : p.sector;
       (groups[key] = groups[key] || []).push(p);
     });
     const order = Object.keys(SECTORS).filter((k) => groups[k]);
     const body = order.map((k) => el("section", { class: "block" },
       el("h2", null, SECTORS[k]),
-      el("div", { class: "people" }, groups[k].map((p) => el("article", { class: "person" },
+      el("div", { class: "people" + (brief ? " brief" : "") }, groups[k].map((p) => el("article", { class: "person", id: "person-" + p.id },
         el("h3", null, p.name, p.party ? el("span", { class: "party" }, " (" + p.party + ")") : null),
         el("p", { class: "role" }, [p.role, p.affiliation].filter(Boolean).join(", ")),
-        el("p", { class: "person-stance" }, stanceTag(p.stance)),
-        el("p", null, p.position),
+        el("p", { class: "lead" }, p.position),
+        el("p", { class: "person-stance" }, stanceTag(p.stance), moreButton()),
         p.key_actions && p.key_actions.length ? el("ul", { class: "actions" }, p.key_actions.map((a) => el("li", null, datedAction(a)))) : null,
         p.quote && p.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, p.quote.text),
@@ -605,9 +962,13 @@
           safeUrl(p.social.bluesky) ? ext(p.social.bluesky, "Bluesky") : null) : null,
         sourceList(p.sources))))));
     return [
-      el("div", { class: "lede" }, el("h1", null, "People"), el("p", { class: "facts" }, "Positions as of " + S.formatDate(D.meta.as_of))),
+      el("div", { class: "lede" }, el("h1", null, "People"), el("p", { class: "facts", role: "status" }, "Showing " + Math.min(pplLimit, list.length) + " of " + list.length + " people · " + S.formatDate(D.meta.as_of))),
       filters,
-      list.length ? body : el("p", { class: "empty" }, "No entries match.")];
+      list.length ? body : el("p", { class: "empty" }, "No entries match."),
+      list.length > pplLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+        const next = list[pplLimit].id; pplLimit += 12; route();
+        const node = document.getElementById("person-" + next); node.tabIndex = -1; node.focus();
+      } }, "Show " + Math.min(12, list.length - pplLimit) + " more people") : null];
   }
 
   /* ---------- media ---------- */
@@ -628,6 +989,8 @@
   let mediaTopic = "all";
   let mediaVisual = false;
   let mediaText = "";
+  const MEDIA_PAGE = 12;
+  let mediaLimit = MEDIA_PAGE;
 
   function mediaGroup(type) {
     const g = MEDIA_TYPES.find((t) => t[2] && t[2].indexOf(type) >= 0);
@@ -647,14 +1010,15 @@
 
   function mediaItems(list) {
     if (!list.length) return el("p", { class: "empty" }, "No items match.");
-    return el("ul", { class: "media-list" }, list.map((it) => {
+    return el("ul", { class: "media-list" + (brief ? " brief" : "") }, list.map((it) => {
       const g = MEDIA_TYPES.find((t) => t[0] === mediaGroup(it.type));
       return el("li", { class: "media-item" },
         el("h3", null, ext(it.url, it.title)),
         el("p", { class: "feed-meta" }, it.outlet + (it.author ? " · " + it.author : "") + " · " + S.formatDate(it.date) + " · " + g[1]),
+        it.summary ? el("p", { class: "lead" }, it.summary) : null,
         el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
-          it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null),
-        it.summary ? el("p", null, it.summary) : null,
+          it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null,
+          (it.summary || "").length > 180 || (it.quote && it.quote.text) || (it.visuals && it.visuals.length) ? moreButton() : null),
         it.visuals && it.visuals.length ? el("ul", { class: "visuals" }, it.visuals.map((v) => el("li", null,
           el("strong", null, "Cheat sheet: " + v.title + ". "), v.text + " ", ext(v.url, "View image")))) : null,
         it.quote && it.quote.text ? el("figure", { class: "quote small" },
@@ -670,32 +1034,38 @@
     const countHost = el("p", { class: "facts", role: "status" });
     const refresh = () => {
       const list = mediaList();
-      fill(listHost, mediaItems(list));
-      countHost.textContent = list.length + " of " + D.media.length + " items";
+      const rest = Math.max(0, list.length - mediaLimit);
+      fill(listHost, mediaItems(rest > 0 ? list.slice(0, mediaLimit) : list),
+        rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+          const next = mediaLimit; mediaLimit += MEDIA_PAGE; refresh();
+          const node = listHost.querySelectorAll(".media-item")[next]; node.tabIndex = -1; node.focus();
+        } }, "Show " + Math.min(MEDIA_PAGE, rest) + " more items") : null);
+      countHost.textContent = "Showing " + Math.min(mediaLimit, list.length) + " of " + list.length + " matching items (" + D.media.length + " total)";
     };
     const visualCount = D.media.filter((it) => it.visuals && it.visuals.length).length;
     const typeChips = el("div", { class: "filters", role: "group", "aria-label": "Source type" },
-      MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; route(); }, counts[t[0]])),
+      MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; mediaLimit = MEDIA_PAGE; route(); }, counts[t[0]])),
       visualCount ? [el("span", { class: "filter-gap" }),
-        chip("Cheat sheets", mediaVisual, () => { mediaVisual = !mediaVisual; route(); }, visualCount)] : null);
-    const stanceChips = el("div", { class: "filters", role: "group", "aria-label": "Position" },
-      chip("All positions", mediaStance === "all", () => { mediaStance = "all"; route(); }),
-      ["supports", "mixed", "opposes", "reporting", "neutral"].filter((k) => D.media.some((it) => it.stance === k)).map((k) =>
-        chip(STANCE[k], mediaStance === k, () => { mediaStance = k; route(); })),
-      el("span", { class: "filter-gap" }),
+        chip("Cheat sheets", mediaVisual, () => { mediaVisual = !mediaVisual; mediaLimit = MEDIA_PAGE; route(); }, visualCount)] : null,
+      briefChip());
+    const wordFilter = el("div", { class: "word-filter" },
       el("label", { class: "sr-only", "for": "media-filter" }, "Filter by word"),
       el("input", { id: "media-filter", type: "search", class: "inline-filter", placeholder: "Filter by word", value: mediaText,
-        oninput: (ev) => { mediaText = ev.target.value; refresh(); } }));
+        oninput: (ev) => { mediaText = ev.target.value; mediaLimit = MEDIA_PAGE; refresh(); } }));
+    const stanceChips = el("div", { class: "filters", role: "group", "aria-label": "Position" },
+      chip("All positions", mediaStance === "all", () => { mediaStance = "all"; mediaLimit = MEDIA_PAGE; route(); }),
+      ["supports", "mixed", "opposes", "reporting", "neutral"].filter((k) => D.media.some((it) => it.stance === k)).map((k) =>
+        chip(STANCE[k], mediaStance === k, () => { mediaStance = k; mediaLimit = MEDIA_PAGE; route(); })));
     const topicCounts = {};
     D.media.forEach((it) => (it.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
     const topicChips = el("div", { class: "filters", role: "group", "aria-label": "Topic" },
-      chip("All topics", mediaTopic === "all", () => { mediaTopic = "all"; route(); }),
+      chip("All topics", mediaTopic === "all", () => { mediaTopic = "all"; mediaLimit = MEDIA_PAGE; route(); }),
       Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
-        chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; route(); }, topicCounts[t])));
-    const topicBox = el("details", { class: "filter-wrap", open: mediaTopic !== "all" || window.matchMedia("(min-width: 640px)").matches },
+        chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; mediaLimit = MEDIA_PAGE; route(); }, topicCounts[t])));
+    const topicBox = el("details", { class: "filter-wrap", open: true },
       el("summary", null, "Topics"), topicChips);
     refresh();
-    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), typeChips, stanceChips, topicBox, listHost];
+    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), wordFilter, typeChips, stanceChips, topicBox, listHost];
   }
 
   /* ---------- method ---------- */
@@ -703,7 +1073,9 @@
   function renderMethod() {
     const m = D.meta;
     const ck = D.checks || {};
-    const rows = [["Bill quotes", m.quotes + " of " + m.quotes + " match the PDF text word for word."]];
+    const billTotal = ck.quotes ? ck.quotes.bill_total : m.quotes;
+    const billVerified = ck.quotes ? ck.quotes.bill_verified : m.quotes;
+    const rows = [["Bill quotes", billVerified + " of " + billTotal + " match the PDF text word for word."]];
     if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " carry a passage from the bill, matched the same way."]);
     if (ck.inference) {
       const i = ck.inference;
@@ -712,6 +1084,7 @@
         (i.cached_only ? "Saved results were reconciled with the current wording; the fresh Sonnet review is unfinished. " : "") +
         "This check covers section summaries, key points and selected comparison cells. It does not verify all site prose or establish legal accuracy."]);
     }
+    if (D.communities || D.compare.bills) rows.push(["New views", "Data-center bill cells and Communities paraphrases have not had a second-model review. Their quoted passages are checked against sources; that does not verify every nearby claim."]);
     if (ck.quotes) {
       const q = ck.quotes;
       const parts = [q.verified + " of " + q.total + " found on the cited page by script."];
@@ -753,9 +1126,24 @@
         el("p", null, ext(m.repo_url, "Data and scripts on GitHub"), " · ", el("a", { href: "llms.txt" }, "Plain-text digest")))];
   }
 
+  /* A row of jumps to the page's h2 headings, inserted after `after`. */
+  function jumpRow(after) {
+    if (!after) return;
+    const heads = Array.prototype.slice.call(view.querySelectorAll("h2"));
+    if (heads.length < 3) return;
+    after.after(el("nav", { class: "jumps", "aria-label": "On this page" },
+      heads.map((h) => el("button", { type: "button", onclick: () => {
+        const fold = h.closest("details.section-fold");
+        if (fold) fold.open = true;
+        h.setAttribute("tabindex", "-1");
+        h.scrollIntoView({ block: "start" });
+        h.focus({ preventScroll: true });
+      } }, h.firstChild.textContent))));
+  }
+
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", timeline: "Timeline", people: "People", media: "Media", method: "Method" };
+  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", timeline: "Timeline", people: "People", media: "Media", method: "Method" };
   let lastPath = null;
 
   function route() {
@@ -767,14 +1155,36 @@
     if (tab === "bill" && parts[1] === "sec") { nodes = renderSection(parts[2], parts[3], parts[4]); keepScroll = Boolean(parts[3]); }
     else if (tab === "bill" && parts[1] === "search") nodes = renderSearch(parts.slice(2).join("/"));
     else if (tab === "bill") nodes = renderBillIndex();
-    else if (tab === "compare") nodes = renderCompare(parts[1]);
-    else if (tab === "timeline") nodes = renderTimeline();
+    else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
+    else if (tab === "communities") nodes = renderCommunities();
+    else if (tab === "timeline") {
+      /* Arriving at a linked event clears filters that could hide it; later filter changes still apply. */
+      if (parts[2] && location.hash !== lastPath) { tlBranch = "all"; tlTopic = "all"; tlMilestones = false; }
+      nodes = renderTimeline(parts[1], parts[2]); keepScroll = Boolean(lastPath && lastPath.indexOf("#/timeline") === 0); }
     else if (tab === "people") nodes = renderPeople();
     else if (tab === "media") nodes = renderMedia();
     else if (tab === "method") nodes = renderMethod();
     else nodes = renderOverview();
     fill(view, nodes);
     view.className = "view view-" + tab;
+    if (tab === "overview") jumpRow(view.querySelector(".lede"));
+    else if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
+    else if (tab === "people" || tab === "timeline" || tab === "communities") jumpRow(view.querySelector(".lede"));
+    if (tab === "timeline") {
+      const target = tlRefocus && view.querySelector(tlRefocus);
+      if (target && lastPath && lastPath.indexOf("#/timeline") === 0) target.focus({ preventScroll: true });
+    }
+    if (tab === "compare" && parts[2]) {
+      const row = document.getElementById("row-" + parts[2]);
+      if (row) {
+        row.classList.add("target");
+        const t = row.querySelector(".row-toggle");
+        if (t && t.getAttribute("aria-expanded") !== "true") t.click();
+        const bar = view.querySelector(".filters");
+        const cover = masthead.offsetHeight + parseInt(masthead.style.top || "0", 10) + (bar ? bar.offsetHeight : 0);
+        window.scrollTo(0, row.getBoundingClientRect().top + window.scrollY - cover - 8);
+      }
+    }
     document.querySelectorAll(".tabs a").forEach((a) => {
       if (a.getAttribute("data-tab") === tab) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
@@ -783,8 +1193,26 @@
     document.title = (h1 && tab !== "overview" ? h1.firstChild.textContent + " · " : "") + "Permitting Reform";
     const path = location.hash;
     if (path !== lastPath && !keepScroll) window.scrollTo(0, 0);
+    if (tab === "timeline" && parts[2] && path !== lastPath) openEvent(parts[2], Boolean(tlRefocus));
+    tlRefocus = null;
     lastPath = path;
   }
+
+  /* The title row scrolls away; the tabs stay pinned. --pinned is the height left on screen. */
+  const masthead = document.querySelector(".masthead");
+  function pinMasthead() {
+    const top = masthead.querySelector(".masthead-top").offsetHeight;
+    masthead.style.top = -top + "px";
+    document.documentElement.style.setProperty("--pinned", (masthead.offsetHeight - top) + "px");
+  }
+  PHONE.addEventListener("change", () => {
+    route();
+  });
+  window.addEventListener("resize", pinMasthead);
+  pinMasthead();
+  document.querySelectorAll(".tabs a").forEach((a) => a.addEventListener("click", () => {
+    if (a.getAttribute("href") === location.hash) window.scrollTo(0, 0);
+  }));
 
   document.addEventListener("keydown", (ev) => {
     const tag = (ev.target.tagName || "").toLowerCase();

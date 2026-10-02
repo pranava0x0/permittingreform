@@ -34,7 +34,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-10-01"
+DATA_AS_OF = "2026-10-02"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -42,6 +42,7 @@ PRIOR_BILLS = [
 ]
 
 OPTIONAL = {"timeline": "events", "people": "people", "media": "items"}
+EFFECTS = {"narrows", "expands", "changes"}
 
 
 def load(path: Path):
@@ -169,10 +170,42 @@ def build() -> tuple[dict, dict, list[str]]:
                     url = cite_url(key, r[key]["cite"], prior)
                     if url:
                         r[key]["url"] = url
+    bills = compare.get("bills")
+    if bills:
+        keys = [v["key"] for v in bills["versions"]]
+        for r in bills["rows"]:
+            for k in keys:
+                cell = r.get(k) or {}
+                if not cell.get("text"):
+                    errors.append(f"compare bills {r['id']}: empty cell {k}")
+                check_refs(f"compare bills {r['id']}", cell.get("sections", []))
     for a in compare["added"]:
         check_refs("compare added", a["sections"])
     for item in compare["dropped"]:
         item["url"] = cite_url(item["from"], item["cite"], prior)
+
+    # Communities: how the bill changes who can comment, consult, take part or sue.
+    comm_path = DATA / "communities.json"
+    communities = load(comm_path) if comm_path.exists() else None
+    if communities:
+        gids = {g["id"] for g in communities["groups"]}
+        for r in communities["rows"]:
+            where = f"communities {r['id']}"
+            if r["group"] not in gids:
+                errors.append(f"{where}: unknown group {r['group']!r}")
+            for w in r["who"]:
+                if w not in communities["who"]:
+                    errors.append(f"{where}: unknown party {w!r}")
+            if r["effect"] not in EFFECTS:
+                errors.append(f"{where}: effect {r['effect']!r} is not one of {sorted(EFFECTS)}")
+            check_refs(where, r["sections"])
+            if r.get("quote"):
+                sec = by_num.get(r.get("quote_section", r["sections"][0]))
+                loc = billtext.locate(sec["lines"], r["quote"]) if sec else None
+                if not loc:
+                    errors.append(f"{where}: quote not found in section {r.get('quote_section', r['sections'][0])}")
+                else:
+                    r["c"] = cite(loc)
 
     extra = {}
     for name, key in OPTIONAL.items():
@@ -221,6 +254,7 @@ def build() -> tuple[dict, dict, list[str]]:
         "sections": sections,
         "overview": overview,
         "compare": compare,
+        "communities": communities,
         "timeline": extra["timeline"],
         "people": extra["people"],
         "media": extra["media"],
@@ -262,6 +296,7 @@ def llms_txt(core: dict) -> str:
         topics = ", ".join(core["topics"].get(t, t) for t in s["topics"])
         out.append(f"- [Sec. {s['n']}. {s['h']}]({m['site_url']}sections/{s['n']}.md) (pp. {s['p1']} to {s['p2']}; {topics})")
     out += ["", "## Research", "",
+            f"- [Data center bills and Communities]({m['site_url']}llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.",
             f"- [Timeline, people and media]({m['site_url']}llms-full.txt): dated records with source links and attributed positions.",
             f"- [Method and check status]({m['site_url']}#/method): browser view; equivalent checks are in data/core.json.",
             f"- [Subject comparisons]({m['site_url']}#/compare): browser view; retrieve the compare object in data/core.json without JavaScript."]
@@ -322,6 +357,37 @@ def llms_full(core: dict, paras: dict) -> str:
                     out.append(f"  Source: [{source.get('cite', 'Source')}]({source['url']})")
                 for n in cell.get("sections", []):
                     out.append(f"  Bill: [{n}]({core['meta']['site_url']}sections/{n}.md)")
+    bills = core["compare"].get("bills")
+    if bills:
+        out += ["", f"## {bills['label']}", "", bills.get("intro", ""), ""]
+        out += [f"- {v['label']}: {v['sub']} [{v['label']}]({v['url']})" for v in bills["versions"]]
+        for row in bills["rows"]:
+            out += ["", f"### {row['topic']}", ""]
+            for v in bills["versions"]:
+                cell = row.get(v["key"])
+                if not cell:
+                    continue
+                out.append(f"- {v['label']}: {cell['text']}")
+                if cell.get("url"):
+                    out.append(f"  Source: [{cell.get('cite', 'Source')}]({cell['url']})")
+                if cell.get("quote"):
+                    out.append(f"  Quote: \"{cell['quote']}\"")
+                for n in cell.get("sections", []):
+                    out.append(f"  Bill: [{n}]({core['meta']['site_url']}sections/{n}.md)")
+        if bills.get("others"):
+            out += ["", f"### {bills.get('others_label', 'Other bills')}", "", "```json", json.dumps(bills["others"], ensure_ascii=False), "```"]
+    comm = core.get("communities")
+    if comm:
+        out += ["", "## Communities: who can comment, consult, plan or sue", "", comm["intro"], ""]
+        for row in comm["rows"]:
+            who = ", ".join(comm["who"].get(w, w) for w in row["who"])
+            out += [f"### {row['topic']}", "", f"- Effect: {row['effect']}; affects: {who}",
+                    f"- Now: {row['now']}" + (f" Source: [{row['now_cite']}]({row['now_url']})" if row.get("now_url") else ""),
+                    f"- BAAJA: {row['baaja']}",
+                    "- Bill: " + ", ".join(f"[{n}]({core['meta']['site_url']}sections/{n}.md)" for n in row.get("sections", []))]
+            if row.get("quote"):
+                out.append(f"- Quote: \"{row['quote']}\"")
+            out.append("")
     out += ["", "## Added and dropped provisions", "", "```json", json.dumps({k: core["compare"][k] for k in ("added", "dropped")}, ensure_ascii=False), "```", ""]
     for label, rows in (("Timeline", core["timeline"]), ("People", core["people"]), ("Media", core["media"])):
         out += ["", f"## {label}", ""]

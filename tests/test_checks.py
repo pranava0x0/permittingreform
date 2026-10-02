@@ -169,3 +169,16 @@ class Inference(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class BrowserRecords(unittest.TestCase):
+    def test_a_browser_record_counts_only_for_its_own_text(self):
+        import check_quotes
+        opened = {"https://example.org/a": {"opened": "2026-10-02", "quotes": ["The exact words"]}}
+        hit = {"url": "https://example.org/a", "text": "the exact  words", "result": "unreachable"}
+        miss = {"url": "https://example.org/a", "text": "other words", "result": "unreachable"}
+        other = {"url": "https://example.org/b", "text": "The exact words", "result": "unreachable"}
+        for row in (hit, miss, other):
+            check_quotes.from_browser(row, opened)
+        self.assertEqual([hit["result"], miss["result"], other["result"]], ["browser", "unreachable", "unreachable"])
+

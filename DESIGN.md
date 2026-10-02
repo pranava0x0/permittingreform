@@ -25,3 +25,24 @@ Use BAAJA for the September 30, 2026 draft; SPEED Act for the House-passed H.R. 
 AI-assisted summaries are labeled. Verbatim text uses the source's words. A matching quotation proves occurrence, not the accuracy of every nearby claim. Show incomplete review coverage on Method. Do not describe a partial AI check as complete verification.
 
 Dark mode uses brighter secondary text (at least 7:1 against reading surfaces), explicit placeholder colors, visible control borders and pale-green selected controls. Topic badges are omitted from the mobile index and section metadata.
+
+## Phones first
+
+Most readers use a phone. For every UI change, measure page height in screen-heights at 375×812 and the taps needed to reach the key fact, before and after.
+
+- The tabs stay pinned; the title row scrolls away. Clicking the current tab returns to the top.
+- Long lists open brief: one line per timeline event, two lines of summary for media and people, a More button for the rest. "Full entries" turns brief mode off.
+- Below 1024px, where comparison tables stack (phones and tablets), each comparison row opens on tap and shows BAAJA beside one version picked with the "BAAJA vs." chips. The bill index folds by title at the same width.
+- Filter chips sit in one swipeable row on phones.
+- Pages with three or more headings get an "On this page" row of jump links.
+- The Timeline opens with one horizontal dated line that marks only the milestones (circle Congress, square White House and agencies, diamond courts). A mark opens its event inside its month (`#/timeline/<month>/<id>`); arrows step between milestones. Event rows show a short date and a two-line title. Do not chart every event: a per-month bar chart was tried and rejected on 2026-10-02.
+
+Measured October 2, 2026 at 375×812, in screen-heights: Timeline 2.2 to 1.7 after the milestone line (first screen shows 6 events, was 3); Compare 43 to 9, data center bills 13 to 2, Timeline 14 to 7, People 20 to 6, bill index 16 to 1, Communities 28 to 4 (one line per change).
+
+## PR 3 reading flow
+
+Overview provisions and secondary sections use native disclosures. Communities and general comparison groups fold by subject. Overview links directly to the data-center table. Long lists start with 12 entries; each load-more adds at most 12 and focuses the first new entry. Filters restart at 12. Milestone jumps reveal events outside the batch. Comparison rows retain their open state when the counterpart changes and stay operable after rotation. Source passages expand within comparison cells.
+
+Communities groups stay open with a count in each heading; the rows themselves are one line each. Folding both the groups and the rows hid all 46 changes behind closed headings (2026-10-02).
+
+Measured October 2, 2026 at 768×1024 after the tablet change: Compare 2.3 screens (was 11.9), data center bills 1.8 (was 11.3), bill index 1.0 (was 9.4). `tests/uat.cjs` enforces scroll budgets at 375 and 768.

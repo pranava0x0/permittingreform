@@ -2,6 +2,25 @@
  "generated": "2026-10-01",
  "items": [
   {
+   "id": "brc-2026-10-01-transparency",
+   "date": "2026-10-01",
+   "type": "gov_press_release",
+   "outlet": "Sen. Lisa Blunt Rochester",
+   "title": "NEWS: Senators Blunt Rochester, Curtis Introduce Bills to Help Public Understand Impacts of Data Centers",
+   "url": "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/",
+   "verified": true,
+   "summary": "Release describing the Senate transparency bill (EPA and EIA collection) and a community technical-assistance bill.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The answer to that distrust is transparency.",
+    "speaker": "Sen. John Curtis"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
+  },
+  {
    "id": "2026-10-01-x-siegelscribe-whats-next-for-permitting",
    "date": "2026-10-01",
    "type": "social_x",
@@ -122,6 +141,26 @@
    "sector": "think_tank"
   },
   {
+   "id": "2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw",
+   "date": "2026-10-01",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Nico Portuondo",
+   "title": "Senate bipartisan permitting deal faces a House buzz saw",
+   "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247",
+   "verified": true,
+   "summary": "House Natural Resources ranking member Jared Huffman said most House Democrats will not support the Senate bill as written and urged talks to resume after the midterms. The report says Energy and Commerce Chair Brett Guthrie had not endorsed it.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Folding our hand now or in the lame duck makes no sense when we can keep working on this and, in a few more months, have a much better deal that works for everyone.",
+    "speaker": "Rep. Jared Huffman (D-Calif.)"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
    "id": "2026-10-01-heatmap-data-center-double-tap",
    "date": "2026-10-01",
    "type": "analysis",
@@ -210,6 +249,103 @@
     "congress"
    ],
    "sector": "think_tank"
+  },
+  {
+   "id": "utilitydive-2026-09-30-ferc-pjm-backstop",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Utility Dive",
+   "author": "Ethan Howland",
+   "title": "FERC chair slams PJM 'mess' as country's largest grid operator delays power auction",
+   "url": "https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/",
+   "verified": true,
+   "summary": "Reports FERC's partial approval of PJM's reliability backstop and PJM's decision to delay its auction.",
+   "stance": "reporting",
+   "quote": {
+    "text": "This commission will not be forced into accepting a deeply flawed, eleventh-hour procurement mechanism with billion-dollar implications for consumers.",
+    "speaker": "FERC Chairman Laura Swett"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "rollcall-2026-09-30-voluntary-rpa",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Roll Call",
+   "title": "Voluntary ratepayer protection bill blocked in Senate again",
+   "url": "https://rollcall.com/2026/09/30/voluntary-ratepayer-protection-bill-blocked-in-senate-again/",
+   "verified": true,
+   "summary": "Reports the 57-43 cloture failure, the four Democratic votes, Schumer's objection that the bill is voluntary, and that states need only start consideration within a year and finish within two.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The bill would not require states to adopt any particular standard, only start the process to consider new rules within one year of its enactment and complete it within two.",
+    "speaker": "Roll Call"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "heinrich-2026-09-30-statement-rpa-vote",
+   "date": "2026-09-30",
+   "type": "gov_press_release",
+   "outlet": "Sen. Martin Heinrich",
+   "title": "Heinrich Statement on Vote Against Husted-Backed Bill that Fails to Make Data Centers Pay for Grid Upgrades",
+   "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-statement-on-vote-against-husted-backed-bill-that-fails-to-make-data-centers-pay-for-grid-upgrades",
+   "verified": true,
+   "summary": "Heinrich explains his no vote and points to the GRID Savings Act.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The Ratepayer Protection Act is exactly what Congress is known for: all message and no substance.",
+    "speaker": "Sen. Martin Heinrich"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "cnn-2026-09-30-rpa-senate-vote",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "CNN",
+   "title": "Republicans' last-ditch effort to lower costs ahead of midterms fails in key Senate vote",
+   "url": "https://www.cnn.com/2026/09/30/politics/data-centers-affordability-senate",
+   "verified": true,
+   "summary": "Covers the Senate vote and the Husted-Brown Ohio race. Democrats called the standard optional and without enforcement.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Here we need some real action on data centers and what does the Republican senator from Ohio come up with? Something that is optional,",
+    "speaker": "Sen. Chuck Schumer"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "cnbc-2026-09-30-rpa-senate-vote",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "CNBC",
+   "author": "Irit Skulnik",
+   "title": "Senate Democrats sink 'toothless' stock trading ban, data center bill in last act before election recess",
+   "url": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html",
+   "verified": true,
+   "summary": "Reports the 57-43 vote, Warren's call for a moratorium, and that Heinrich blocked the unanimous-consent request earlier in September.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The bill is a fraud. I can sum up the shortcomings of Republicans' data center bill with one word: optional,",
+    "speaker": "Sen. Chuck Schumer"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-09-30-youtube-whitehouse-wins-from-this-could-be-very-big",
@@ -542,6 +678,27 @@
     "data-centers"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2026-09-30-politico-capitol-agenda-one-day-more",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "POLITICO staff (Nico Portuondo and Pavan Acharya contributed)",
+   "title": "Capitol agenda: One day more? (Inside Congress live updates)",
+   "url": "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791",
+   "verified": true,
+   "summary": "Live-update page for the day the bill text was due and the Ratepayer Protection Act went to a cloture vote. A summary of the permitting package had circulated and senators wanted the text, especially on issues that could decide votes in a lame-duck session. The cloture vote failed 57-43; four Democrats joined all Republicans in favor.",
+   "stance": "reporting",
+   "quote": {
+    "text": "All the issues are solved in concept",
+    "speaker": "Sen. Angus King (I-Maine)"
+   },
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-09-30-nrdc-permitting-bill-desperately-needed-must-improve",
@@ -999,6 +1156,26 @@
    "sector": "industry"
   },
   {
+   "id": "mgrid-2026-09-29-ferc-pjm-backstop",
+   "date": "2026-09-29",
+   "type": "news",
+   "outlet": "mGrid",
+   "author": "Marin Holt",
+   "title": "FERC Suspends PJM's Backstop Procurement Five Months and PJM Pulls Its September 30 Auction",
+   "url": "https://mgrid.org/2026/09/29/ferc-suspends-pjm-backstop-procurement-five-months-auction-pulled/",
+   "verified": true,
+   "summary": "Key facts of the order: 6,831 MW target, new effective date February 28, 2027, three parts that may be unjust and unreasonable.",
+   "stance": "reporting",
+   "quote": {
+    "text": "did not adequately ensure that the procurement’s costs will be allocated to the customers who drive its need",
+    "speaker": "Commissioner Lindsay See"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
    "id": "2026-09-29-politico-senate-negotiators-reach-deal-permitting-text",
    "date": "2026-09-29",
    "type": "news",
@@ -1017,6 +1194,48 @@
     "congress"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2026-09-29-politico-democrats-gear-up-to-oppose-data-center-legislation",
+   "date": "2026-09-29",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Amelia Davidson",
+   "title": "Democrats gear up to tank data center legislation",
+   "url": "https://www.politico.com/news/2026/09/29/democrats-gear-up-to-oppose-data-center-legislation-01098045",
+   "verified": true,
+   "summary": "Senate Democrats prepared to sink the House-passed Ratepayer Protection Act at a Wednesday cloture vote. Schumer called it a fraud and pointed to the Van Hollen and Heinrich bills as stronger options.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We’re very united in opposition to the bill, whether it’s on cloture or at some other point",
+    "speaker": "Sen. Richard Blumenthal (D-Conn.)"
+   },
+   "topics": [
+    "data-centers",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-29-heatmap-am-senate-reaches-a-permitting-deal",
+   "date": "2026-09-29",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Alexander C. Kaufman",
+   "title": "The Senate reaches a permitting deal (Heatmap AM, item 1)",
+   "url": "https://heatmap.news/am/permitting-reform-deal",
+   "verified": true,
+   "summary": "Heatmap's morning newsletter led with the Senate deal on text. Whitehouse told Politico he needed more clarity from the administration on easing its blockade of wind and solar approvals. Text was due that week.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Neither Democrats nor Republicans released text of the bill, which both parties said should come out this week.",
+    "speaker": "Heatmap AM"
+   },
+   "topics": [
+    "congress",
+    "wind-solar"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-09-28-bluesky-sammyroth-naive-trump-guarantee",
@@ -1041,6 +1260,71 @@
    "sector": "press"
   },
   {
+   "id": "2026-09-25-heatmap-the-fight-offshore-wind-existential-crisis-at-climate-week",
+   "date": "2026-09-25",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Jael Holzman",
+   "title": "Offshore Wind's Existential Crisis at Climate Week",
+   "url": "https://heatmap.news/plus/the-fight/spotlight/offshore-wind-permitting-reform",
+   "verified": true,
+   "summary": "California and New York officials said at Climate Week that the administration's offshore wind actions were illegal, while NYSERDA's CEO said litigation could not fix investor doubts. It also records Wright declining to confirm Politico's report that Trump would lift the wind blockade.",
+   "stance": "reporting",
+   "quote": {
+    "text": "I do believe a successful permitting reform thing changes the playing field for anything you want to build in this country, including wind.",
+    "speaker": "Energy Secretary Chris Wright"
+   },
+   "topics": [
+    "offshore",
+    "wind-solar",
+    "white-house",
+    "courts"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-25-heatmap-daily-the-wright-interview-and-permittings-peril",
+   "date": "2026-09-25",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "The Wright Interview and Permitting's Peril",
+   "url": "https://heatmap.news/daily/wright-recording-permitting",
+   "verified": true,
+   "summary": "Meyer summarizes the week: the White House wanted a quick deal, Senate Democrats slowed down on Sept. 23, and Heinrich and Whitehouse said getting the deal right mattered more than election-year deadlines. He argues Democrats should not let the chance pass.",
+   "stance": "mixed",
+   "quote": {
+    "text": "We believe there is a good deal to be had",
+    "speaker": "Sens. Martin Heinrich and Sheldon Whitehouse, joint statement"
+   },
+   "topics": [
+    "congress",
+    "white-house"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-25-heatmap-am-permitting-reform-talks-trail-off",
+   "date": "2026-09-25",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Alexander C. Kaufman",
+   "title": "Permitting Reform Talks Trail Off",
+   "url": "https://heatmap.news/am/permitting-reform-stumble",
+   "verified": true,
+   "summary": "Reports that talks stalled on Sept. 24 and that the White House signaled its concessions may not outlast November. Betting markets still gave permitting reform about a 78 percent chance of passing before 2027.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The White House, meanwhile, has indicated that President Donald Trump’s concessions to Democrats to make the bill may no longer be on the table after November.",
+    "speaker": "Heatmap AM"
+   },
+   "topics": [
+    "congress",
+    "white-house"
+   ],
+   "sector": "media"
+  },
+  {
    "id": "2026-09-24-roll-call-permitting-bill-off-until-after-midterms",
    "date": "2026-09-24",
    "type": "news",
@@ -1059,6 +1343,30 @@
     "congress"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2026-09-24-politico-permitting-wont-get-vote-ahead-of-election",
+   "date": "2026-09-24",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "POLITICO staff (Amelia Davidson contributed)",
+   "title": "Permitting won't get vote ahead of election",
+   "url": "https://www.politico.com/live-updates/2026/09/24/congress/permitting-deal-fails-ahead-of-senate-break-01089500",
+   "verified": true,
+   "summary": "Senate negotiators did not close a deal that week, so a permitting vote would wait until after the elections. Democrats wanted more review time and firmer assurances that the administration would stop attacking clean energy projects. The story lists Section 401, NEPA limits and NHPA as likely parts of any package.",
+   "stance": "reporting",
+   "quote": {
+    "text": "we need just a bit more clarity on exactly what return to regular order for wind and solar projects looks like",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "wind-solar",
+    "clean-water-act",
+    "historic-preservation"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-09-24-grist-gas-solar-tech-companies-want-this-bill",
@@ -1120,6 +1428,49 @@
    "sector": "press"
   },
   {
+   "id": "2026-09-22-politico-pro-trump-will-green-light-wind-energy-projects",
+   "date": "2026-09-22",
+   "type": "news",
+   "outlet": "POLITICO Pro",
+   "author": "Josh Siegel",
+   "title": "Trump will green-light wind energy projects to strike permitting deal",
+   "url": "https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842",
+   "verified": true,
+   "summary": "Trump told advisers he would direct the Defense Department to start clearing its queue of delayed onshore wind projects to close a permitting deal. Thune had set a Tuesday deadline for a deal so a bill could move before senators left to campaign.",
+   "stance": "reporting",
+   "quote": {
+    "text": "President Donald Trump signaled he would ease his administration's blockade on renewable energy projects to entice Democrats to agree to a permitting deal.",
+    "speaker": "POLITICO Pro (Josh Siegel)"
+   },
+   "topics": [
+    "white-house",
+    "wind-solar",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-22-heatmap-daily-whats-a-utility-to-do-when-everyone-is-mad-at-them",
+   "date": "2026-09-22",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Matthew Zeitlin",
+   "title": "What's a Utility to Do When Everyone Is Mad at Them?",
+   "url": "https://heatmap.news/daily/exelon-permitting-reform",
+   "verified": true,
+   "summary": "Industry insiders told Heatmap that utilities' political weakness is one reason a deal could pass, because interregional transmission reform could threaten utility spending in their own territories. EEI has backed permitting reform publicly since last year.",
+   "stance": "reporting",
+   "quote": {
+    "text": "They are gonna get smoked in the Senate permitting deal",
+    "speaker": "An energy industry figure following the negotiations, anonymous"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
    "id": "2026-09-18-r-street-low-energy-fridays-permitting-reform-remains-close",
    "date": "2026-09-18",
    "type": "analysis",
@@ -1136,6 +1487,146 @@
    "sector": "think_tank"
   },
   {
+   "id": "2026-09-18-politico-senate-roadblock-sparks-competition-over-data-center-bills",
+   "date": "2026-09-18",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Nico Portuondo, Amelia Davidson and Pavan Acharya",
+   "title": "Senate roadblock sparks new competition over data center bills",
+   "url": "https://www.politico.com/news/2026/09/18/senate-competing-data-center-bills-01083204",
+   "verified": true,
+   "summary": "After Heinrich objected to Husted's unanimous-consent request on the Ratepayer Protection Act, Blumenthal and Hawley pitched their GRID Act in a letter to Energy and Natural Resources leaders. The story frames the House-passed bill as stalled in the Senate.",
+   "stance": "reporting",
+   "quote": {
+    "text": "those hopes were dashed Thursday after Sen. Martin Heinrich (D-N.M.) objected to Sen. Jon Husted’s (R-Ohio) unanimous consent request",
+    "speaker": "POLITICO"
+   },
+   "topics": [
+    "data-centers",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-18-heatmap-the-bipartisan-buddies-with-a-plan-to-fix-transmission",
+   "date": "2026-09-18",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Matthew Zeitlin",
+   "title": "The Bipartisan Buddies With a Plan to Fix Transmission",
+   "url": "https://heatmap.news/politics/evans-peters-transmission",
+   "verified": true,
+   "summary": "Reps. Gabe Evans and Scott Peters released the CLEAR Act, which would apply to transmission lawsuits the stricter standards used for gas and hydropower projects. Peters expected a Senate package to include NEPA changes, limits on presidents canceling projects, and Section 401 reform.",
+   "stance": "reporting",
+   "quote": {
+    "text": "I think it’s coming together pretty well",
+    "speaker": "Rep. Scott Peters (D-Calif.)"
+   },
+   "topics": [
+    "transmission",
+    "courts",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "husted-2026-09-17-uc-blocked",
+   "date": "2026-09-17",
+   "type": "gov_press_release",
+   "outlet": "Sen. Jon Husted",
+   "title": "Husted bill to protect Americans from footing the bill for new data centers blocked from passage",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers-blocked-from-passage/",
+   "verified": true,
+   "summary": "Husted's account of the failed unanimous-consent request; says the bill would require state regulators to consider the standard.",
+   "stance": "neutral",
+   "quote": {
+    "text": "In plain language, if you create the cost, you should pay the cost.",
+    "speaker": "Sen. Jon Husted"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "cbs-2026-09-17-heinrich-blocks-rpa",
+   "date": "2026-09-17",
+   "type": "news",
+   "outlet": "CBS News",
+   "author": "Caitlin Yilek",
+   "title": "Senate Democrat blocks House-passed bill to shield Americans from data center energy costs, proposing alternate measure",
+   "url": "https://www.cbsnews.com/news/senate-data-center-energy-bill-martin-heinrich/",
+   "verified": true,
+   "summary": "Report on the Sept 17 floor exchange: Heinrich objects, offers GRID Savings Act, Moreno objects.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Congress needs to pass real legislation with real teeth,",
+    "speaker": "Sen. Martin Heinrich"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-17-politico-pro-permitting-talks-reach-final-stages",
+   "date": "2026-09-17",
+   "type": "news",
+   "outlet": "POLITICO Pro",
+   "author": "Josh Siegel",
+   "title": "Permitting talks reach 'final' stages",
+   "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
+   "verified": true,
+   "summary": "Capito said a deal was very close and Whitehouse said talks were in their final wrap-up, with the hardest issues resolved last. Capito conceded the floor vote could slip a week from the timeline she and Thune had set.",
+   "stance": "reporting",
+   "quote": {
+    "text": "in final wrap up, but some of the most difficult issues are the last ones resolved",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "utilitydive-2026-09-house-passes-rpa",
+   "date": "2026-09-16",
+   "type": "news",
+   "outlet": "Utility Dive",
+   "title": "House passes ratepayer protection bill to limit data center cost shifts",
+   "url": "https://www.utilitydive.com/news/house-passes-ratepayer-protection-bill-data-centers/830658/",
+   "verified": true,
+   "summary": "Covers House passage and notes critiques: the Center for Data Innovation wants one 100 MW standard for all large loads, and Heinrich says the House bill does not go far enough.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Congress should apply the standard uniformly to any customer at 100 MW or more",
+    "speaker": "Michelle Lopes Maldonado, Center for Data Innovation"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "evans-2026-09-16-house-passes",
+   "date": "2026-09-16",
+   "type": "gov_press_release",
+   "outlet": "Rep. Gabe Evans",
+   "title": "Congressman Gabe Evans' Bipartisan Ratepayer Protection Act Passes the House",
+   "url": "https://gabeevans.house.gov/media/press-releases/congressman-gabe-evans-bipartisan-ratepayer-protection-act-passes-house",
+   "verified": true,
+   "summary": "Sponsor release on 417-3 passage, with quotes from Evans, Castor and Chairman Guthrie.",
+   "stance": "neutral",
+   "quote": {
+    "text": "My bipartisan Ratepayer Protection Act ensures large data centers pay for the infrastructure they require while giving states the flexibility to determine what works best for their communities.",
+    "speaker": "Rep. Gabe Evans"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
+  },
+  {
    "id": "2026-08-18-daily-caller-permitting-bill-tied-up-in-senate",
    "date": "2026-08-18",
    "type": "news",
@@ -1150,6 +1641,69 @@
     "congress"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2026-08-07-ee-news-senators-outline-future-of-permitting-talks",
+   "date": "2026-08-07",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "E&E News staff",
+   "title": "Senators outline future of permitting talks",
+   "url": "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/",
+   "verified": true,
+   "summary": "After missing the August target, negotiators set September as the new deadline. Whitehouse wanted to avoid the lame duck and said the administration was 'not even close' on wind and solar. A federal judge in Oregon ordered the Pentagon to complete stalled onshore wind reviews. Environmental groups were wary, especially over how far to limit state Clean Water Act authority.",
+   "stance": "reporting",
+   "quote": {
+    "text": "There’s a major reset that they need to get to",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "wind-solar",
+    "clean-water-act",
+    "courts"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "latitude-2026-08-04-grid-savings-vs-pledge",
+   "date": "2026-08-04",
+   "type": "analysis",
+   "outlet": "Latitude Media",
+   "author": "Lisa Martine Jenkins",
+   "title": "One Senate Democrat's answer to Trump's 'ratepayer protection pledge'",
+   "url": "https://www.latitudemedia.com/news/one-senate-democrats-answer-to-trumps-ratepayer-protection-pledge/",
+   "verified": true,
+   "summary": "Compares the GRID Savings Act with H.R. 9340: the Senate bill is binding and FERC-run but covers transmission only and effectively skips ERCOT; the House bill covers generation, transmission and distribution and uses state commissions.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The GRID Savings Act, should it become law, would reopen those sticky jurisdictional questions.",
+    "speaker": "Lisa Martine Jenkins, Latitude Media"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "heinrich-2026-08-03-grid-savings",
+   "date": "2026-08-03",
+   "type": "gov_press_release",
+   "outlet": "Sen. Martin Heinrich",
+   "title": "Heinrich Introduces Legislation to Ensure Large Users of Electricity Pay for Grid Upgrades, Protect Customers From Costs of Data Center Expansion",
+   "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-introduces-legislation-to-ensure-large-users-of-electricity-pay-for-grid-upgrades-protect-customers-from-costs-of-data-center-expansion",
+   "verified": true,
+   "summary": "Sponsor release: applies to very large new electricity users the same basic approach long used for new power plants.",
+   "stance": "neutral",
+   "quote": {
+    "text": "If a company is driving the need for expensive new facilities, that company should pay for it — not families and small businesses.",
+    "speaker": "Sen. Martin Heinrich"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
   },
   {
    "id": "2026-08-03-youtube-politico-heinrich-permitting-energy-affordability",
@@ -1169,6 +1723,197 @@
    "sector": "press"
   },
   {
+   "id": "2026-08-03-ee-news-permitting-deal-may-come-after-recess",
+   "date": "2026-08-03",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "E&E News staff",
+   "title": "Permitting deal may come after recess. Negotiators say that's OK.",
+   "url": "https://www.eenews.net/articles/permitting-deal-may-come-after-recess-negotiators-say-thats-ok/",
+   "verified": true,
+   "summary": "Heinrich said talks would likely run past the August recess and that the White House's attacks on renewables and its proposal to roll back tribal consultation under the historic preservation law made a deal harder. Schatz said a deal could come together in five days once the administration lifts its ban on clean energy. Whitehouse and Heinrich planned to meet Capito and Lee that week.",
+   "stance": "reporting",
+   "quote": {
+    "text": "I don’t think it’s too late",
+    "speaker": "Sen. Martin Heinrich (D-N.M.)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "historic-preservation",
+    "wind-solar"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-08-03-ee-news-heinrich-releases-data-center-energy-plan",
+   "date": "2026-08-03",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "E&E News staff",
+   "title": "Heinrich releases data center energy plan",
+   "url": "https://www.eenews.net/articles/heinrich-releases-data-center-energy-plan/",
+   "verified": true,
+   "summary": "Heinrich previewed his GRID Savings Act, which would have FERC require large power users to pay for grid upgrades needed to connect. He said Democrats would make it a priority if he chairs the Energy Committee next year, and he opposed moratoria because they push data centers to places with the weakest rules.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Pledges are great, but show me the reality.",
+    "speaker": "Sen. Martin Heinrich (D-N.M.)"
+   },
+   "topics": [
+    "data-centers",
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-29-heatmap-daily-meta-down-permitting-odds-up",
+   "date": "2026-07-29",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "Meta Down, Permitting Odds Up",
+   "url": "https://heatmap.news/daily/meta-microsoft-permitting-reform",
+   "verified": true,
+   "summary": "Meyer lays out the six buckets of a likely deal (NEPA and judicial review, transmission, Clean Water Act, permit certainty, historic preservation, everything else) and says Lee's NHPA interest comes from his committee's jurisdiction. Prediction markets jumped to 77 percent that day.",
+   "stance": "neutral",
+   "quote": {
+    "text": "A permitting reform deal will probably have six buckets.",
+    "speaker": "Robinson Meyer, Heatmap"
+   },
+   "topics": [
+    "nepa",
+    "transmission",
+    "clean-water-act",
+    "permit-certainty",
+    "historic-preservation",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-29-ee-news-epa-proposal-could-sideline-the-public-on-data-center-permits",
+   "date": "2026-07-29",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Jean Chemnick",
+   "title": "EPA proposal could sideline the public on data center permits",
+   "url": "https://www.eenews.net/articles/epa-proposal-could-sideline-the-public-on-data-center-permits/",
+   "verified": true,
+   "summary": "A July 1 EPA draft rule would drop federal requirements for public notice and comment when states permit minor pollution sources under Clean Air Act New Source Review. Advocates said it could let states permit data centers and power plants without telling nearby communities.",
+   "stance": "reporting",
+   "quote": {
+    "text": "EPA says it will empower states. Environmentalists say it will silence communities.",
+    "speaker": "E&E News"
+   },
+   "topics": [
+    "data-centers",
+    "nepa"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "wflx-2026-07-28-donalds",
+   "date": "2026-07-28",
+   "type": "news",
+   "outlet": "WFLX (Fox 29)",
+   "author": "Michael Hoffman",
+   "title": "Florida Rep. Byron Donalds pushes bill requiring AI data centers to supply their own power, water",
+   "url": "https://www.wflx.com/2026/07/28/florida-rep-byron-donalds-pushes-bill-requiring-ai-data-centers-supply-their-own-power-water/",
+   "verified": true,
+   "summary": "Local report on H.R. 9777, calling it a move past voluntary commitments.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Donalds’ legislation would move beyond voluntary commitments by creating federal requirements for large-scale AI data centers.",
+    "speaker": "WFLX"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "climatesolutionslaw-2026-07-27-rto-reports",
+   "date": "2026-07-27",
+   "type": "analysis",
+   "outlet": "Climate Solutions Legal Digest",
+   "author": "Ryan McKeever, Emily Starobin, Sylvia Bartell, Michael Blackwell and Linda Walsh",
+   "title": "RTOs and ISOs Answer: A National Preview of How All Six Grid Operators Plan to Respond to the Large Load Surge",
+   "url": "https://www.climatesolutionslaw.com/2026/07/rtos-and-isos-answer-a-national-preview-of-how-all-six-grid-operators-plan-to-respond-to-the-large-load-surge/",
+   "verified": true,
+   "summary": "Law-firm summary of the six July 20 informational reports and what to expect in the August 17 show cause responses.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The nation’s six regional grid operators recently told FERC how they plan to keep the lights on as large loads reshape the grid.",
+    "speaker": "Climate Solutions Legal Digest"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "epa-2026-07-23-pledge-expansion",
+   "date": "2026-07-23",
+   "type": "gov_press_release",
+   "outlet": "EPA",
+   "title": "President Trump Expands Historic Ratepayer Protection Pledge to Protect American Ratepayers, Lower Electricity Prices",
+   "url": "https://www.epa.gov/newsreleases/president-trump-expands-historic-ratepayer-protection-pledge-protect-american",
+   "verified": true,
+   "summary": "Announces the expansion and recaps the Pledge's five obligations.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Today’s expansion includes governors, state legislators, developers, and power providers.",
+    "speaker": "EPA"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "gov"
+  },
+  {
+   "id": "2026-07-23-politico-power-switch-can-trumps-ratepayer-pledge-deliver",
+   "date": "2026-07-23",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Jason Plautz",
+   "title": "Signed, sealed: Can Trump's ratepayer pledge deliver? (Power Switch)",
+   "url": "https://www.politico.com/newsletters/power-switch/2026/07/23/signed-sealed-can-trumps-ratepayer-pledge-deliver-01009331",
+   "verified": true,
+   "summary": "Twenty-three Republican governors and more than 200 utilities, co-ops, developers and state officials signed the nonbinding Ratepayer Protection Pledge. A law professor said what 'fair share' means is decided at the state utility regulator level.",
+   "stance": "reporting",
+   "quote": {
+    "text": "What ‘fair share’ looks like, when push comes to shove, gets answered at the state utility regulatory level.",
+    "speaker": "Cale Jaffe, University of Virginia law professor"
+   },
+   "topics": [
+    "data-centers",
+    "white-house"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "eenews-2026-07-22-dcc-grumbles",
+   "date": "2026-07-22",
+   "type": "news",
+   "outlet": "E&E News",
+   "author": "Amelia Davidson",
+   "title": "Data center lobby grumbles about reworked Ratepayer Protection Act",
+   "url": "https://www.eenews.net/articles/data-center-lobby-grumbles-about-reworked-ratepayer-protection-act-2/",
+   "verified": true,
+   "summary": "The Data Center Coalition said it backed the original version and objected that the narrowed bill singles out data centers; steel and industrial energy consumer groups endorsed the change.",
+   "stance": "reporting",
+   "quote": {
+    "text": "the Energy & Commerce Committee’s changes to the bill narrow its scope to single out the data center industry",
+    "speaker": "Josh Levi, Data Center Coalition"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
    "id": "2026-07-22-x-alecstapp-nhpa-reform-clean-energy",
    "date": "2026-07-22",
    "type": "social_x",
@@ -1185,6 +1930,188 @@
     "wind-solar"
    ],
    "sector": "think_tank"
+  },
+  {
+   "id": "utilitydive-2026-07-21-advocates-ferc-pjm",
+   "date": "2026-07-21",
+   "type": "news",
+   "outlet": "Utility Dive",
+   "author": "Ethan Howland",
+   "title": "FERC fails to shield PJM consumers from data center transmission costs: ratepayer advocates",
+   "url": "https://www.utilitydive.com/news/ferc-data-center-pjm-transmission-costs/825760/",
+   "verified": true,
+   "summary": "State ratepayer advocates say the PJM show cause order fails to address network upgrade cost allocation; RTOs had 60 days to respond, with possible 90-day extensions.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Each network upgrade added to a transmission owner’s revenue requirement while these questions remain open embeds another cost shift",
+    "speaker": "State ratepayer advocates (Delaware, Illinois, Maryland, Ohio)"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "fortune-2026-07-21-donalds",
+   "date": "2026-07-21",
+   "type": "news",
+   "outlet": "Fortune",
+   "title": "Trump-backed hopeful to succeed DeSantis unveils plan to protect local water, electricity from data centers",
+   "url": "https://fortune.com/2026/07/21/byron-donalds-ai-data-centers-florida-desantis/",
+   "verified": true,
+   "summary": "Reports Donalds's bill would require data centers to get all electricity and water from private sources, and notes it is unclear whether the voluntary pledge is legally enforceable.",
+   "stance": "reporting",
+   "quote": {
+    "text": "But given the expected increase in demand, it’s unclear if the voluntary agreement is legally enforceable.",
+    "speaker": "Fortune"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "eenews-2026-07-21-house-committee-narrows",
+   "date": "2026-07-21",
+   "type": "news",
+   "outlet": "E&E News",
+   "author": "Amelia Davidson",
+   "title": "House committee narrows data center energy bill",
+   "url": "https://www.eenews.net/articles/house-committee-narrows-data-center-energy-bill-3/",
+   "verified": true,
+   "summary": "Explains that committee leaders narrowed H.R. 9340 from any 100 MW load to data centers only, ahead of the markup.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Previously, the bill language could be applied to projects with a peak electricity demand of 100 megawatts or more.",
+    "speaker": "E&E News"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "dei-2026-07-21-ec-markup",
+   "date": "2026-07-21",
+   "type": "news",
+   "outlet": "Daily Energy Insider",
+   "title": "House Energy and Commerce Advances Energy Bills Aimed at Data Center Costs, Grid Modernization, and Pipeline Safety; Ratepayer Protection Act Clears 52-0",
+   "url": "https://dailyenergyinsider.com/hearing-summaries/53136-house-energy-and-commerce-advances-seven-energy-bills-aimed-at-data-center-costs-grid-modernization-and-pipeline-safety-ratepayer-protection-act-clears-52-0/",
+   "verified": true,
+   "summary": "Markup summary: the Evans substitute narrowed the definition to data centers; states keep authority over rate structures; members cite state large-load tariffs.",
+   "stance": "reporting",
+   "quote": {
+    "text": "An amendment in the nature of a substitute offered by Evans, which narrowed the definition of a large-load customer to data centers and hyperscalers above 100 megawatts of peak demand, was adopted by voice vote.",
+    "speaker": "Daily Energy Insider"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-21-politico-power-switch-can-congress-get-behind-this-data-center-bill",
+   "date": "2026-07-21",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Joel Kirkland",
+   "title": "Can Congress get behind this data center bill? (Power Switch)",
+   "url": "https://www.politico.com/newsletters/power-switch/2026/07/21/can-congress-get-behind-this-data-center-bill-01006436",
+   "verified": true,
+   "summary": "After the 52-0 committee vote on the Ratepayer Protection Act, the newsletter notes the bill echoes a voluntary White House pledge and has a shot in the Senate, though Mike Lee had called data center legislation not a priority. It also reports Sen. David McCormick in line to chair the Energy Committee next Congress.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Energy and Natural Resources Chair Mike Lee (R-Utah) has said data center legislation is not currently a “priority”",
+    "speaker": "POLITICO Power Switch"
+   },
+   "topics": [
+    "data-centers",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "husted-2026-07-20-introduction",
+   "date": "2026-07-20",
+   "type": "gov_press_release",
+   "outlet": "Sen. Jon Husted",
+   "title": "Husted leads bill to protect Americans from footing the bill for new data centers",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers/",
+   "verified": true,
+   "summary": "Sponsor release: the bill would codify key elements of the White House Ratepayer Protection Pledge and sets a 100 MW threshold.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The Ratepayer Protection Act would codify key elements of that pledge.",
+    "speaker": "Sen. Jon Husted"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-07-17-ee-news-permitting-deal-deadline-remains-elusive",
+   "date": "2026-07-17",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Josh Siegel",
+   "title": "Permitting deal deadline remains elusive",
+   "url": "https://www.eenews.net/articles/permitting-deal-deadline-remains-elusive/",
+   "verified": true,
+   "summary": "The August recess goal for a deal was slipping. Democratic negotiators were pressing for transmission measures and limits on the administration's power to cancel approved projects; King said the administration had to take its thumb off the scale.",
+   "stance": "reporting",
+   "quote": {
+    "text": "until the administration takes their thumb off the scale, we’re not going to be able to do it",
+    "speaker": "Sen. Angus King (I-Maine)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "transmission",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-16-politico-pro-new-england-gas-crunch-puts-whitehouse-in-a-bind",
+   "date": "2026-07-16",
+   "type": "news",
+   "outlet": "POLITICO Pro",
+   "author": "Nico Portuondo",
+   "title": "New England gas crunch puts Sheldon Whitehouse in a bind",
+   "url": "https://subscriber.politicopro.com/article/2026/07/new-england-gas-crunch-puts-sheldon-whitehouse-in-a-bind-pro-00992265",
+   "verified": true,
+   "summary": "High power prices and offshore wind delays had New England Democrats split on new gas pipelines. Whitehouse, a lead permitting negotiator, said the pipeline question needed consideration.",
+   "stance": "reporting",
+   "quote": {
+    "text": "the pipeline question requires some consideration",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "fossil",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-16-heatmap-daily-scoop-heinrich-connect-and-manage-bill",
+   "date": "2026-07-16",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "Scoop: A Key Democrat Wants to Break America's Worst Energy Bottleneck",
+   "url": "https://heatmap.news/daily/heinrich-texas-power-permitting",
+   "verified": true,
+   "summary": "Heinrich introduced a bill letting new power plants of any type skip full interconnection studies in exchange for curtailing output when the grid is congested, copying the Texas approach. Heatmap saw it as the kind of technology-neutral bill that could slot into a permitting package.",
+   "stance": "reporting",
+   "quote": {
+    "text": "would make it easier for new power plants to hook up to electricity markets across the country",
+    "speaker": "Heatmap (Robinson Meyer)"
+   },
+   "topics": [
+    "transmission"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-07-13-x-janeaflegal-nhpa-transmission-deal",
@@ -1206,6 +2133,309 @@
     "transmission"
    ],
    "sector": "think_tank"
+  },
+  {
+   "id": "2026-07-13-politico-where-the-permitting-talks-stand",
+   "date": "2026-07-13",
+   "type": "news",
+   "outlet": "POLITICO Pro",
+   "author": "Josh Siegel",
+   "title": "Where the permitting talks stand",
+   "url": "https://subscriber.politicopro.com/article/2026/07/where-the-permitting-talks-stand-pro-00993596",
+   "verified": true,
+   "summary": "Negotiators agreed on the broad contours but were haggling over details. A Democrat close to the talks said Republicans made a broad offer before the July Fourth recess covering faster environmental and historic preservation reviews, some transmission permitting and GOP priorities. Democrats wanted stronger transmission and limits on the president's power to cancel permits, and advocates worried the vote would slip to the lame duck.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The window of opportunity there is starting to close this Congress",
+    "speaker": "Jason Grumet, American Clean Power Association"
+   },
+   "topics": [
+    "congress",
+    "transmission",
+    "permit-certainty",
+    "nepa",
+    "historic-preservation"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "rmi-2026-07-06-ferc-large-load-orders",
+   "date": "2026-07-06",
+   "type": "analysis",
+   "outlet": "RMI",
+   "author": "Sarah Wang and Tyler Farrell",
+   "title": "Understanding FERC's Large Load Orders",
+   "url": "https://rmi.org/resources/understanding-fercs-large-load-orders/",
+   "verified": true,
+   "summary": "Summary of FERC's six June orders, their deadlines, and the five reform categories.",
+   "stance": "neutral",
+   "quote": {
+    "text": "FERC’s show cause orders apply only to RTOs",
+    "speaker": "RMI"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-07-02-ee-news-groups-urge-lawmakers-to-protect-state-water-reviews",
+   "date": "2026-07-02",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Miranda Willson",
+   "title": "Groups urge lawmakers to protect state water reviews in permitting talks",
+   "url": "https://www.eenews.net/articles/groups-urge-lawmakers-to-protect-state-water-reviews-in-permitting-talks/",
+   "verified": true,
+   "summary": "Nearly 60 national and regional groups wrote to the Senate EPW Committee against limiting state and tribal Section 401 water reviews. Republicans and the administration say blue states have used Section 401 to slow or block energy projects.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Environmental advocates are pushing back on a top Republican priority in ongoing energy permitting reform negotiations.",
+    "speaker": "E&E News (Miranda Willson)"
+   },
+   "topics": [
+    "clean-water-act",
+    "tribal",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-25-ee-news-data-center-energy-bill-hits-speed-bump",
+   "date": "2026-06-25",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "E&E News staff",
+   "title": "Data center energy bill hits speed bump",
+   "url": "https://www.eenews.net/articles/data-center-energy-bill-hits-speed-bump/",
+   "verified": true,
+   "summary": "Frank Pallone's call for a national data center moratorium overshadowed the Energy and Commerce vote on the Ratepayer Protection Act. The bill would require states to consider a federal cost standard that state regulators could reject. Google, Microsoft and the Data Center Coalition backed it; environmental groups opposed it.",
+   "stance": "reporting",
+   "quote": {
+    "text": "we need action, not toothless promises from Big Tech",
+    "speaker": "Rep. Frank Pallone (D-N.J.)"
+   },
+   "topics": [
+    "data-centers",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-24-ee-news-epa-floats-changes-to-nepa-implementation-rules",
+   "date": "2026-06-24",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "E&E News staff",
+   "title": "EPA floats changes to NEPA implementation rules",
+   "url": "https://www.eenews.net/articles/epa-floats-changes-to-nepa-implementation-rules/",
+   "verified": true,
+   "summary": "EPA proposed changes to its NEPA procedures to follow the 2023 Fiscal Responsibility Act (two-year, 150-page limits for impact statements), the One Big Beautiful Bill Act fee for faster reviews, and last year's Supreme Court ruling that narrowed the scope of review. CEQ data cited: final impact statements took 2.8 years and 661 pages on average.",
+   "stance": "reporting",
+   "quote": {
+    "text": "In recent years, final EISs took an average of 2.8 years to complete while clocking in at an average of 661 pages, according to CEQ reviews.",
+    "speaker": "E&E News"
+   },
+   "topics": [
+    "nepa",
+    "ceq",
+    "white-house"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-23-heatmap-the-mystery-of-the-ratepayer-protection-act",
+   "date": "2026-06-23",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Matthew Zeitlin",
+   "title": "The Mystery of the Ratepayer Protection Act",
+   "url": "https://heatmap.news/politics/ratepayer-protection-act-explained",
+   "verified": true,
+   "summary": "Explains why hyperscalers back the bill. Harvard's Ari Peskoe calls its PURPA standard largely symbolic because Congress cannot force state regulators to act.",
+   "stance": "mixed",
+   "quote": {
+    "text": "largely symbolic",
+    "speaker": "Ari Peskoe, Harvard Law School"
+   },
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "utilitydive-2026-06-22-ferc-takeaways",
+   "date": "2026-06-22",
+   "type": "news",
+   "outlet": "Utility Dive",
+   "author": "Ethan Howland",
+   "title": "6 takeaways from FERC's data center interconnection decision",
+   "url": "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/",
+   "verified": true,
+   "summary": "Explains the six show cause orders, the five reform areas, the regional approach, and that FERC avoided state retail jurisdiction.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Nothing in this order is intended to intrude upon state authority over retail service to large loads.",
+    "speaker": "FERC (PJM show cause order)"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-18-heatmap-heinrich-interview-sunzia-and-permitting-reform",
+   "date": "2026-06-18",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "'We Proved That America Can Still Build Big Things' (Heinrich on SunZia)",
+   "url": "https://heatmap.news/daily/sunzia-martin-heinrich",
+   "verified": true,
+   "summary": "In an interview marking SunZia's completion, Heinrich said he was working to get to yes and that transmission is an essential piece of a balanced package that could reach 65 or 70 votes.",
+   "stance": "mixed",
+   "quote": {
+    "text": "We have to make sure that it’s an effectively balanced package — that’s how you get to 65, 70 votes.",
+    "speaker": "Sen. Martin Heinrich (D-N.M.)"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-18-heatmap-ferc-has-a-new-plan-for-data-centers",
+   "date": "2026-06-18",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Matthew Zeitlin",
+   "title": "FERC Has a New Plan for Data Centers",
+   "url": "https://heatmap.news/energy/ferc-data-center-plan",
+   "verified": true,
+   "summary": "FERC voted 5-0 to send show cause orders to six grid operators, covering study rules, cost-shift safeguards, co-location, flexible service and proximate generation. FERC chose region-by-region orders over a national rule.",
+   "stance": "reporting",
+   "quote": {
+    "text": "If new infrastructure is built to accommodate a data center, and that data center doesn’t show up, residential customers are not left on the hook to pay the costs",
+    "speaker": "FERC Commissioner David Rosner"
+   },
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-17-ee-news-senate-releases-ndaa-with-permitting-amendment",
+   "date": "2026-06-17",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Josh Siegel",
+   "title": "Senate releases NDAA with permitting amendment",
+   "url": "https://www.eenews.net/articles/senate-releases-ndaa-with-permitting-amendment/",
+   "verified": true,
+   "summary": "The Senate Armed Services Committee released its fiscal 2027 defense bill with an amendment by Sen. Angus King to curb the Pentagon's delay in processing wind project permits. Chair Roger Wicker said the dispute needed to be resolved.",
+   "stance": "reporting",
+   "quote": {
+    "text": "It needs to be resolved and there’s bipartisan support for that",
+    "speaker": "Sen. Roger Wicker (R-Miss.)"
+   },
+   "topics": [
+    "wind-solar",
+    "congress",
+    "white-house"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-16-heatmap-daily-freedom-senate-permit-certainty-bill",
+   "date": "2026-06-16",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "Freedom (It Won't Slow You Down)",
+   "url": "https://heatmap.news/daily/senate-bipartisan-permitting-reform",
+   "verified": true,
+   "summary": "Cortez Masto and Cotton released a Senate version of the FREEDOM Act that keeps future presidents from interfering with permitted projects. It dropped the House bill's de-risking compensation program and lets a court appoint a contractor to finish a stalled permit. Heatmap calls such a provision essential to any deal.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Most importantly, it jettisons a de-risking compensation program.",
+    "speaker": "Heatmap (Robinson Meyer)"
+   },
+   "topics": [
+    "permit-certainty",
+    "congress",
+    "courts"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-10-politico-power-switch-energy-summit-hot-permitting-summer",
+   "date": "2026-06-10",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Emily Yehle",
+   "title": "Special edition: POLITICO's Energy Summit kicks off hot permitting summer (Power Switch)",
+   "url": "https://www.politico.com/newsletters/power-switch/2026/06/10/special-edition-politicos-energy-summit-kicks-off-hot-permitting-summer-00957736",
+   "verified": true,
+   "summary": "At POLITICO's Energy Summit, Capito and Whitehouse both urged the White House to stop attacking renewables, and White House energy council director Jarrod Agen blamed Democrats for opposing gas pipelines and called New York's water-permit review the kind of rule permitting reform would fix. FERC's Swett said a data center cost action was days away.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The governor of New York is using regulation to stop a pipeline — using a water regulation that we’re trying to fix in this permitting reform",
+    "speaker": "Jarrod Agen, White House National Energy Dominance Council"
+   },
+   "topics": [
+    "clean-water-act",
+    "white-house",
+    "fossil",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-09-ee-news-debate-over-preservation-law-tripping-up-permitting-talks",
+   "date": "2026-06-09",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Josh Siegel",
+   "title": "Debate over preservation law tripping up permitting talks",
+   "url": "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/",
+   "verified": true,
+   "summary": "Mike Lee's push to change the National Historic Preservation Act had become a major sticking point. Lee wanted limits on lawsuits; some Democrats were wary because the law matters to tribes and preservation groups. Heinrich said the aim was to preserve the law's intent while making reviews more predictable.",
+   "stance": "reporting",
+   "quote": {
+    "text": "how do you find that balance of where you preserve the intent, but make things more predictable and efficient?",
+    "speaker": "Sen. Martin Heinrich (D-N.M.)"
+   },
+   "topics": [
+    "historic-preservation",
+    "tribal",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-05-heatmap-the-fight-ray-long-ai-and-the-permitting-deal",
+   "date": "2026-06-05",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Jael Holzman",
+   "title": "How Has the Rise of AI Changed the Odds of a Permitting Deal? (Q&A with ACORE's Ray Long)",
+   "url": "https://heatmap.news/plus/the-fight/qa/ray-long-permitting",
+   "verified": true,
+   "summary": "ACORE's Ray Long says data center load is a catalyst for permitting reform. He cites 166 gigawatts of needed power over four years, about half for data centers, and says a bill would have to come from a Senate deal in an election year.",
+   "stance": "supports",
+   "quote": {
+    "text": "The data center load is a part of the catalyst to get people talking about it",
+    "speaker": "Ray Long, ACORE"
+   },
+   "topics": [
+    "data-centers",
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-06-02-c2es-federal-permitting-reform-119th-congress-certain-freedom-speed",
@@ -1240,6 +2470,29 @@
     "white-house"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2026-05-22-ee-news-wright-meets-with-republicans-on-permitting",
+   "date": "2026-05-22",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "E&E News staff",
+   "title": "Wright meets with Republicans on permitting, but deal remains elusive as ever",
+   "url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/",
+   "verified": true,
+   "summary": "After a dinner of the four Senate committee leaders and a separate Wright dinner with Republicans, E&E reported broad support for a deal but no clear path. Heinrich said the administration's stalled solar, wind and battery permits were the biggest threat. Whitehouse said Democrats would hold a caucus vote before moving any bill.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The thing that is the biggest threat to permitting reform right now is that the Trump administration backslid into a series of stalled-out permits",
+    "speaker": "Sen. Martin Heinrich (D-N.M.)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "wind-solar",
+    "permit-certainty"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-04-16-welc-73-western-groups-no-deal-with-devil-on-permit-reform",
@@ -1281,6 +2534,29 @@
     "congress"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2026-03-16-ee-news-permitting-talks-live-on-as-doj-declines-to-appeal-revolution-wind",
+   "date": "2026-03-16",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "E&E News staff",
+   "title": "Permitting talks live on as DOJ declines to appeal ruling favoring Revolution Wind",
+   "url": "https://www.eenews.net/articles/permitting-talks-live-on-as-doj-declines-to-appeal-ruling-favoring-revolution-wind/",
+   "verified": true,
+   "summary": "The administration let the deadline pass without appealing a ruling that blocked the Interior stop-work order on Revolution Wind. Whitehouse had threatened to pause talks again if the administration kept attacking renewables and said an appeal would be inconsistent with progress.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We are watching those and would view any appeal as inconsistent with further progress on permitting reform",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "offshore",
+    "courts",
+    "congress",
+    "white-house"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-03-10-crs-in-focus-if13180-speed-act-as-passed-by-the-house",
@@ -1337,6 +2613,45 @@
    "sector": "government"
   },
   {
+   "id": "whitehouse-2026-03-04-ratepayer-protection-pledge",
+   "date": "2026-03-04",
+   "type": "gov_document",
+   "outlet": "White House",
+   "title": "Ratepayer Protection Pledge",
+   "url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+   "verified": true,
+   "summary": "Five voluntary commitments by signers: new power supply, paying for delivery upgrades, paying whether or not they use the power, local workforce, and grid resilience.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Companies will voluntarily negotiate new, separate rate structures with their utilities and relevant State governments wherever they build data centers.",
+    "speaker": "White House"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "gov"
+  },
+  {
+   "id": "itif-2026-02-19-grid-act-wrong",
+   "date": "2026-02-19",
+   "type": "analysis",
+   "outlet": "Information Technology and Innovation Foundation",
+   "author": "Hodan Omaar",
+   "title": "The Grid Act Is the Wrong Way to Protect Consumers from Price Spikes",
+   "url": "https://datainnovation.org/2026/02/the-grid-act-is-the-wrong-way-to-protect-consumers-from-price-spikes/",
+   "verified": true,
+   "summary": "Think-tank critique: the GRID Act's credits and penalties single out data centers instead of reforming how markets handle large loads. Its summary of the DOE study and credits is the author's reading of the bill.",
+   "stance": "neutral",
+   "quote": {
+    "text": "the GRID Act imposes a punitive tax-and-subsidize regime exclusively for data centers",
+    "speaker": "Hodan Omaar, ITIF"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "think_tank"
+  },
+  {
    "id": "2026-02-19-ifp-breaking-the-nepa-litigation-doom-loop",
    "date": "2026-02-19",
    "type": "analysis",
@@ -1358,6 +2673,45 @@
    "sector": "think_tank"
   },
   {
+   "id": "eenews-2026-02-13-grid-act",
+   "date": "2026-02-13",
+   "type": "news",
+   "outlet": "E&E News",
+   "author": "Amelia Davidson",
+   "title": "Bipartisan bill would force data centers to find own power sources",
+   "url": "https://www.eenews.net/articles/bipartisan-bill-would-force-data-centers-to-find-own-power-sources/",
+   "verified": true,
+   "summary": "News report on the GRID Act; calls it the first bipartisan proposal to keep data centers from raising consumer energy costs.",
+   "stance": "reporting",
+   "quote": {
+    "text": "is the first bipartisan proposal intended to stop the artificial intelligence infrastructure from increasing energy costs for consumers",
+    "speaker": "E&E News"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "hawley-2026-02-11-grid-act",
+   "date": "2026-02-11",
+   "type": "gov_press_release",
+   "outlet": "Sen. Josh Hawley",
+   "title": "Hawley, Blumenthal Introduce Bill to Prevent Data Centers from Increasing Electricity Costs for Americans",
+   "url": "https://www.hawley.senate.gov/hawley-blumenthal-introduce-bill-to-prevent-data-centers-from-increasing-electricity-costs-for-americans",
+   "verified": true,
+   "summary": "Sponsor release with a bullet summary of the GRID Act.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Senator Hawley’s new bill would require data centers to have their own power sources, ensuring that the costs of their business are not passed on to American consumers.",
+    "speaker": "Sen. Josh Hawley release"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
+  },
+  {
    "id": "2026-02-09-podcast-shift-key-what-senator-heinrich-needs-to-see-in-permitting-deal",
    "date": "2026-02-09",
    "type": "podcast",
@@ -1373,6 +2727,28 @@
     "transmission"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2026-02-03-heatmap-scoop-house-freedom-act-would-keep-president-from-yanking-permits",
+   "date": "2026-02-03",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Alexander C. Kaufman",
+   "title": "Scoop: New Bipartisan House Bill Would Keep President From Yanking Permits",
+   "url": "https://heatmap.news/politics/freedom-act",
+   "verified": true,
+   "summary": "Reps. Harder, Gray, Lawler, Bacon and Edwards introduced the FREEDOM Act, a 77-page bill barring agencies from halting fully permitted projects and creating a compensation fund. Heatmap notes the SPEED Act passed the House with only 11 Democratic votes after an offshore wind carve-out.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The FREEDOM Act delivers the smart, pro-growth certainty that critical energy projects desperately need by cutting delays, fast-tracking approvals, and holding federal agencies accountable",
+    "speaker": "Rep. Josh Harder (D-Calif.)"
+   },
+   "topics": [
+    "permit-certainty",
+    "congress",
+    "offshore"
+   ],
+   "sector": "media"
   },
   {
    "id": "2026-01-29-utility-dive-senators-call-for-project-certainty-at-hearing",
@@ -1511,6 +2887,25 @@
     "nepa"
    ],
    "sector": "industry"
+  },
+  {
+   "id": "vanhollen-2026-01-15-pftp",
+   "date": "2026-01-15",
+   "type": "gov_press_release",
+   "outlet": "Sen. Chris Van Hollen",
+   "title": "Van Hollen Leads New Bill to Ensure Americans Aren't Footing the Bill for Big Data Centers",
+   "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-leads-new-bill-to-ensure-americans-arent-footing-the-bill-for-big-data-centers",
+   "verified": true,
+   "summary": "Sponsor release with PJM cost figures and a list of supporting consumer groups.",
+   "stance": "neutral",
+   "quote": {
+    "text": "the huge corporations building and running data centers should cover the costs of the energy they need – not push those costs onto the backs of consumers",
+    "speaker": "Sen. Chris Van Hollen"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
   },
   {
    "id": "2026-01-13-epa-proposes-cwa-section-401-rule",
@@ -1685,6 +3080,30 @@
    "sector": "government"
   },
   {
+   "id": "2025-12-18-heatmap-the-house-just-passed-permitting-reform",
+   "date": "2025-12-18",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Emily Pontecorvo",
+   "title": "The House Just Passed Permitting Reform. Now Comes the Hard Part.",
+   "url": "https://heatmap.news/sparks/speed-act-passes-house",
+   "verified": true,
+   "summary": "The House passed the SPEED Act 221-196 after a late change that exempted agency actions between Jan. 20 and enactment from the bill's anti-revocation language. ACP withdrew its support; Huffman said it was going nowhere in the Senate; Rep. Adam Gray voted yes expecting the Senate to fix it.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Even if the House passes this bill today, it is going nowhere in the Senate",
+    "speaker": "Rep. Jared Huffman (D-Calif.)"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "permit-certainty",
+    "offshore",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
    "id": "2025-12-18-eei-statement-on-house-passage-of-speed-act",
    "date": "2025-12-18",
    "type": "org_statement",
@@ -1779,6 +3198,28 @@
    "sector": "press"
   },
   {
+   "id": "2025-12-05-heatmap-permitting-reform-is-back-what-are-we-even-talking-about",
+   "date": "2025-12-05",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Emily Pontecorvo",
+   "title": "Permitting Reform is Back. What Are We Even Talking About This Time?",
+   "url": "https://heatmap.news/politics/permitting-reform-speed-act",
+   "verified": true,
+   "summary": "A guide to the SPEED Act: it would cut the NEPA suit window from up to six years to 150 days, limit suits to people who commented, and set court timelines. Heatmap says Democrats would not agree to a deal that does not bar the president from pulling approved permits.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Democrats have said they won’t agree to a deal that doesn’t bar the president from pulling previously-approved permits or otherwise level the playing field for renewable energy.",
+    "speaker": "Heatmap (Emily Pontecorvo)"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
    "id": "2025-12-04-x-siegelscribe-schatz-demands-as-house-takes-up-permitting",
    "date": "2025-12-04",
    "type": "social_x",
@@ -1798,6 +3239,29 @@
     "wind-solar"
    ],
    "sector": "press"
+  },
+  {
+   "id": "2025-11-25-heatmap-trump-is-the-biggest-wild-card-in-permitting-reform",
+   "date": "2025-11-25",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Jael Holzman",
+   "title": "Trump Is the Biggest Wild Card in Permitting Reform",
+   "url": "https://heatmap.news/politics/permitting-reform-trump-speed-act",
+   "verified": true,
+   "summary": "After the House Natural Resources vote of 25-18, Holzman reports that Democrats in both chambers would not back a deal without limits on the president's power over wind and solar permits. Reps. Levin and Casten proposed a parity rule between fossil and non-fossil projects; Golden's no-rescission language was added in committee.",
+   "stance": "mixed",
+   "quote": {
+    "text": "Any deal hinges on the Trump administration providing assurances they’re not going to kill every single clean energy project in existence",
+    "speaker": "Rep. Mike Levin (D-Calif.)"
+   },
+   "topics": [
+    "permit-certainty",
+    "wind-solar",
+    "congress",
+    "white-house"
+   ],
+   "sector": "media"
   },
   {
    "id": "2025-11-21-conference-c2es-keeping-the-lights-on-permitting-reform",
@@ -1876,6 +3340,28 @@
     "nepa"
    ],
    "sector": "think_tank"
+  },
+  {
+   "id": "2025-10-23-ee-news-whitehouse-threatens-to-blow-up-permitting-talks",
+   "date": "2025-10-23",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "E&E News staff",
+   "title": "Whitehouse threatens to blow up permitting talks",
+   "url": "https://www.eenews.net/articles/whitehouse-threatens-to-blow-up-permitting-talks/",
+   "verified": true,
+   "summary": "At an EPW hearing Whitehouse said it made little sense to pursue bipartisan permitting reform while the administration would not faithfully execute the law, citing the Revolution Wind stop-work order and canceled solar approvals. He even threatened to oppose routine water and highway bills.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Why would we want to do bipartisan permitting reform during an administration that won’t faithfully execute that law?",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "permit-certainty"
+   ],
+   "sector": "media"
   },
   {
    "id": "2025-10-14-niskanen-permitting-reform-is-back-how-congress-can-get-it-done",
