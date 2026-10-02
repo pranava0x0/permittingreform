@@ -511,7 +511,7 @@
     return kids;
   }
 
-  /* On phones a comparison shows BAAJA beside one chosen version; the chips pick it. */
+  /* Below 1024px a comparison shows BAAJA beside one chosen version; the chips pick it. */
   const cmpWith = { main: "current", bills: "rpa" };
   const cmpOpen = new Set();
   function withChips(which, versions) {
@@ -527,8 +527,8 @@
   }
 
   /* A table of other bills on one subject, with its own columns (data centers). */
-  /* On phones each comparison row opens on tap; the subject alone says what it covers. */
-  const PHONE = window.matchMedia("(max-width: 639px)");
+  /* Below 1024px each comparison row opens on tap; the subject alone says what it covers. */
+  const PHONE = window.matchMedia("(max-width: 1023px)"); /* where comparison tables stack */
   function rowHead(topic, id) {
     if (!PHONE.matches) return topic;
     return el("button", { type: "button", class: "row-toggle", "aria-expanded": cmpOpen.has(id) ? "true" : "false", onclick: (ev) => {
@@ -542,7 +542,7 @@
   }
 
   function versionList(vs) {
-    return el("details", { class: "versions-wrap", open: window.matchMedia("(min-width: 640px)").matches },
+    return el("details", { class: "versions-wrap", open: !PHONE.matches },
       el("summary", null, "Versions compared"),
       el("dl", { class: "versions" }, vs.map((v) => el("div", null,
         el("dt", null, safeUrl(v.url) ? ext(v.url, v.label) : v.label),
@@ -647,7 +647,7 @@
       const list = rows.filter((r) => r.group === g.id);
       if (!list.length) return null;
       return el("section", { class: "block" },
-        el("h2", { id: "cg-" + g.id }, g.label),
+        el("h2", { id: "cg-" + g.id }, g.label, el("span", { class: "chip-count" }, list.length)),
         g.note ? el("p", { class: "muted" }, g.note) : null,
         el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => {
           const head = [el("span", { class: "cm-topic" }, r.topic), " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])];
@@ -674,7 +674,7 @@
         c.intro ? el("p", null, c.intro) : null,
         el("p", { class: "facts", role: "status" }, rows.length + " of " + c.rows.length + " changes")),
       whoChips, effectChips,
-      rows.length ? body.map(foldBlock) : el("p", { class: "empty" }, "No changes match.")];
+      rows.length ? body : el("p", { class: "empty" }, "No changes match.")];
   }
 
   /* ---------- timeline ---------- */

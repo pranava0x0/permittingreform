@@ -284,7 +284,12 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
 .compare th[scope="row"] { font-family: var(--font-head); font-size: 0.95rem; width: 15%; min-width: 130px; }
 .compare td { width: 21%; min-width: 190px; }
 .compare td.col-senate { background: var(--accent-weak); padding-left: 10px; }
-.compare-bills td { width: auto; min-width: 170px; }
+.compare-bills td { width: auto; min-width: 120px; }
+.compare-bills th[scope="row"] { min-width: 96px; width: 10%; }
+@media (min-width: 640px) {
+  .compare-bills { table-layout: fixed; width: 100%; }
+  .compare-bills td, .compare-bills th { min-width: 0; overflow-wrap: anywhere; }
+}
 .cell-text { display: block; }
 .cell-cite { display: block; font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
 .row-note td { font-size: 0.88rem; color: var(--text-muted); background: none; padding-top: 0; }
@@ -442,6 +447,8 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
   .chip, .tabs a, .theme-toggle, .search button, .search input, .outline summary, .outline-toggle, .filter-wrap > summary { min-height: 44px; }
   .tabs a, .theme-toggle { display: inline-flex; align-items: center; }
   .outline li a { padding-top: 10px; padding-bottom: 10px; }
+  .event-toggle, .row-toggle { min-height: 44px; }
+  .versions dt a { display: inline-block; padding: 6px 0; }
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -470,6 +477,15 @@ input::placeholder { color: var(--text-muted); opacity: 1; }
   .masthead-top { gap: 6px; padding-top: 6px; padding-bottom: 2px; }
   .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
   .filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; padding-bottom: 2px; }
+  .filters .chip, .filters .inline-filter { white-space: nowrap; flex: 0 0 auto; }
+  .filters .filter-gap { display: none; }
+  .tabs a { flex: none; padding: 8px 10px 7px; font-size: 0.88rem; }
+  main { padding-top: 16px; }
+  .sec-meta .topics, .sec-meta .tag-major, .index-tags { display: none; }
+}
+
+/* Where comparison tables stack (below 1024px), rows open on tap and show BAAJA beside one chosen version. */
+@media (max-width: 1023px) {
   .filters.with-chips { display: flex; }
   .compare .off-phone { display: none; }
   .compare tr { display: flex; flex-direction: column; }
@@ -484,11 +500,6 @@ input::placeholder { color: var(--text-muted); opacity: 1; }
   .compare tbody tr { padding: 2px 0; }
   .compare th[scope="row"] { order: -2; }
   .versions-wrap > summary { display: list-item; cursor: pointer; font-family: var(--font-head); font-weight: 700; padding: 6px 0; min-height: 44px; }
-  .filters .chip, .filters .inline-filter { white-space: nowrap; flex: 0 0 auto; }
-  .filters .filter-gap { display: none; }
-  .tabs a { flex: none; padding: 8px 10px 7px; font-size: 0.88rem; }
-  main { padding-top: 16px; }
-  .sec-meta .topics, .sec-meta .tag-major, .index-tags { display: none; }
 }
 
 /* Native disclosures keep the reading room short and keyboard operable. */

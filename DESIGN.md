@@ -32,7 +32,7 @@ Most readers use a phone. For every UI change, measure page height in screen-hei
 
 - The tabs stay pinned; the title row scrolls away. Clicking the current tab returns to the top.
 - Long lists open brief: one line per timeline event, two lines of summary for media and people, a More button for the rest. "Full entries" turns brief mode off.
-- On phones, each comparison row opens on tap and shows BAAJA beside one version picked with the "BAAJA vs." chips.
+- Below 1024px, where comparison tables stack (phones and tablets), each comparison row opens on tap and shows BAAJA beside one version picked with the "BAAJA vs." chips. The bill index folds by title at the same width.
 - Filter chips sit in one swipeable row on phones.
 - Pages with three or more headings get an "On this page" row of jump links.
 - The Timeline opens with a swipeable milestone strip, scrolled to the newest milestone.
@@ -42,3 +42,7 @@ Measured October 2, 2026 at 375×812, in screen-heights: Compare 43 to 9, data c
 ## PR 3 reading flow
 
 Overview provisions and secondary sections use native disclosures. Communities and general comparison groups fold by subject. Overview links directly to the data-center table. Long lists start with 12 entries; each load-more adds at most 12 and focuses the first new entry. Filters restart at 12. Milestone jumps reveal events outside the batch. Comparison rows retain their open state when the counterpart changes and stay operable after rotation. Source passages expand within comparison cells.
+
+Communities groups stay open with a count in each heading; the rows themselves are one line each. Folding both the groups and the rows hid all 46 changes behind closed headings (2026-10-02).
+
+Measured October 2, 2026 at 768×1024 after the tablet change: Compare 2.3 screens (was 11.9), data center bills 1.8 (was 11.3), bill index 1.0 (was 9.4). `tests/uat.cjs` enforces scroll budgets at 375 and 768.

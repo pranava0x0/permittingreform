@@ -47,8 +47,8 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
-          const budget = {overview:2.5,compare:4,communities:2,timeline:3,people:4.5,media:5};
-          if (width === 375 && budget[route]) assert.ok(height <= 812 * budget[route], route+' scroll budget: '+height);
+          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,timeline:3,people:4.5,media:5};
+          if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')
             await page.screenshot({path:`uat-screenshots/${width}-${theme}-${route.replaceAll('/','-')}.png`,fullPage:false});
@@ -92,14 +92,22 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.goto(base+'#/communities');
       await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:/^States/}).click();
       assert.equal(await page.locator('.cm-row').count(),await page.evaluate(()=>PR_DATA.communities.rows.filter(r=>r.who.includes('states')).length));
-      await page.locator('.section-fold summary').first().click();
+      assert.ok(await page.locator('.cm-row').first().isVisible(), 'Communities rows are visible without opening a fold');
       await page.locator('.cm-row .event-toggle').first().click();
       assert.ok(await page.locator('.cm-row.open .cm-body').first().isVisible());
       assert.ok(await page.locator('.cm-row.open a[href*="bill.pdf#page="]').first().isVisible());
       await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:/^Everyone/}).click();
+      // A filter that empties a whole group must still render (regression: null group passed to foldBlock).
+      for (const who of await page.evaluate(()=>Object.keys(PR_DATA.communities.who))) {
+        await page.goto(base+'#/communities');
+        await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:new RegExp('^'+(await page.evaluate(w=>PR_DATA.communities.who[w],who)))}).click();
+        const want=await page.evaluate(w=>PR_DATA.communities.rows.filter(r=>r.who.includes(w)).length,who);
+        assert.equal(await page.locator('.cm-row').count(),want,'communities filter '+who);
+      }
       await page.goto(base+'#/compare/data-center-bills');
       assert.equal(await page.locator('.compare tbody tr').count(),13);
-      if (width === 375) {
+      // Tables stack below 1024px, so phones and tablets get tap-to-open rows and one counterpart.
+      if (width < 1024) {
         const row = page.locator('#row-bills-existing');
         await row.locator('.row-toggle').click();
         assert.equal(await row.locator('td:visible').count(),2);
@@ -109,11 +117,11 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
         assert.equal(await row.locator('td:visible').count(),2);
         assert.equal(await page.evaluate(()=>document.activeElement.textContent),'Current policy');
         await page.setViewportSize({width:1280,height:800});
-        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 639px)").matches);
+        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
         assert.equal(await row.locator('td:visible').count(),6);
         assert.ok(await page.locator('.versions').isVisible());
         await page.setViewportSize({width:375,height:812});
-        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 639px)").matches);
+        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
         assert.equal(await row.locator('td:visible').count(),2);
         await row.locator('.row-toggle').click();
         assert.equal(await row.locator('td:visible').count(),0);
@@ -121,17 +129,17 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
         assert.equal(await row.locator('td:visible').count(),2);
       } else {
         await page.setViewportSize({width:375,height:812});
-        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 639px)").matches);
+        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
         assert.equal(await page.locator('.row-toggle').count(),13);
         await page.locator('.row-toggle').first().click();
         assert.equal(await page.locator('.compare tbody tr').first().locator('td:visible').count(),2);
         await page.setViewportSize({width,height:800});
-        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 639px)").matches);
+        await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
         assert.equal(await page.locator('.compare tbody tr').first().locator('td:visible').count(),6);
       }
       await page.locator('.cell-source summary:visible').first().click();
       assert.ok(await page.locator('.cell-source[open] blockquote').first().isVisible());
-      if (width === 375) {
+      if (width < 1024) {
         await page.goto(base+'#/compare');
         await page.locator('.section-fold summary').first().click();
         const first = page.locator('.section-fold').first();
