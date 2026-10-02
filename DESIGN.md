@@ -38,3 +38,7 @@ Most readers use a phone. For every UI change, measure page height in screen-hei
 - The Timeline opens with a swipeable milestone strip, scrolled to the newest milestone.
 
 Measured October 2, 2026 at 375×812, in screen-heights: Compare 43 to 9, data center bills 13 to 2, Timeline 14 to 7, People 20 to 6, bill index 16 to 1, Communities 28 to 4 (one line per change).
+
+## PR 3 reading flow
+
+Overview provisions and secondary sections use native disclosures. Communities and general comparison groups fold by subject. Overview links directly to the data-center table. Long lists start with 12 entries; each load-more adds at most 12 and focuses the first new entry. Filters restart at 12. Milestone jumps reveal events outside the batch. Comparison rows retain their open state when the counterpart changes and stay operable after rotation. Source passages expand within comparison cells.

@@ -93,7 +93,20 @@
   }
 
   function chip(label, pressed, onclick, count) {
-    return el("button", { type: "button", class: "chip", "aria-pressed": pressed ? "true" : "false", onclick: onclick },
+    return el("button", { type: "button", class: "chip", "data-chip-label": label, "aria-pressed": pressed ? "true" : "false", onclick: (ev) => {
+      const group = ev.currentTarget.closest('[role="group"]');
+      const name = group && group.getAttribute("aria-label");
+      const comparison = group && group.getAttribute("data-comparison");
+      onclick(ev);
+      if (!ev.currentTarget.isConnected) {
+        const replacement = Array.from(view.querySelectorAll(".chip")).find((b) => {
+          const g = b.closest('[role="group"]');
+          return b.getAttribute("data-chip-label") === label && g &&
+            g.getAttribute("aria-label") === name && g.getAttribute("data-comparison") === comparison;
+        });
+        if (replacement) replacement.focus({ preventScroll: true });
+      }
+    } },
       label, count == null ? null : el("span", { class: "chip-count" }, count));
   }
 
@@ -172,6 +185,16 @@
       el("p", null, el("a", { href: D.meta.pdf }, "Open the PDF")));
   }
 
+  const foldOpen = new Set();
+  function foldBlock(block) {
+    const heading = block.querySelector("h2");
+    heading.remove();
+    const key = location.hash.split("/")[1] + ":" + heading.textContent;
+    return el("details", { class: "section-fold", "data-fold": key, open: foldOpen.has(key), ontoggle: (ev) => {
+      if (ev.currentTarget.open) foldOpen.add(key); else foldOpen.delete(key);
+    } }, el("summary", null, heading), block);
+  }
+
   /* ---------- overview ---------- */
 
   function renderOverview() {
@@ -186,7 +209,8 @@
           el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")))),
       el("p", { class: "note" }, "Proposed law", " · ",
         el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),
-      searchBox(""));
+      searchBox(""),
+      D.compare.bills ? el("p", { class: "sec-links" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Data center bills: compare costs, connection and reporting")) : null);
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
       el("h2", { id: "h-status" }, "Status"),
@@ -197,9 +221,10 @@
       el("h2", { id: "h-prov" }, "Main provisions"),
       el("ol", { class: "provisions" }, o.headlines.map((h) =>
         el("li", null,
-          el("h3", null, el("a", { href: secHref(h.sections[0]) }, h.title)),
-          el("p", null, h.text),
-          el("p", { class: "where" }, secLinks(h.sections))))));
+          el("details", { class: "provision-detail" },
+            el("summary", null, el("h3", null, h.title)),
+            el("p", null, h.text),
+            el("p", { class: "where" }, secLinks(h.sections)))))));
 
     const clocks = el("section", { class: "block", "aria-labelledby": "h-clocks" },
       el("h2", { id: "h-clocks" }, "Deadlines"),
@@ -251,7 +276,7 @@
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.timeline.length + " events")))));
 
-    return [head, provisions, status, el("div", { class: "two-col wide-left" }, clocks, money), changes, latest];
+    return [head, provisions, foldBlock(status), foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest)];
   }
 
   /* ---------- bill: index, section, search ---------- */
@@ -481,16 +506,21 @@
     const kids = [el("span", { class: "cell-text" }, cell.text)];
     if (cell.sections && cell.sections.length) kids.push(el("span", { class: "cell-cite" }, secLinks(cell.sections)));
     else if (cell.cite) kids.push(el("span", { class: "cell-cite" }, citeNode(cell)));
+    if (cell.quote) kids.push(el("details", { class: "cell-source" },
+      el("summary", null, "Source passage"), el("blockquote", null, cell.quote)));
     return kids;
   }
 
   /* On phones a comparison shows BAAJA beside one chosen version; the chips pick it. */
   const cmpWith = { main: "current", bills: "rpa" };
+  const cmpOpen = new Set();
   function withChips(which, versions) {
-    return el("div", { class: "filters with-chips", role: "group", "aria-label": "Compare BAAJA with" },
+    return el("div", { class: "filters with-chips", "data-comparison": which, role: "group", "aria-label": "Compare BAAJA with" },
       el("span", { class: "with-label" }, "BAAJA vs."),
       versions.filter((v) => v.key !== "senate").map((v) =>
-        chip(v.label, cmpWith[which] === v.key, () => { cmpWith[which] = v.key; route(); })));
+        chip(v.label, cmpWith[which] === v.key, () => { cmpWith[which] = v.key; route();
+          const active = view.querySelector(`[data-comparison="${which}"] .chip[aria-pressed="true"]`);
+          if (active) active.focus({ preventScroll: true }); })));
   }
   function phoneClass(which, key) {
     return "col-" + key + (key === "senate" || key === cmpWith[which] ? "" : " off-phone");
@@ -499,11 +529,12 @@
   /* A table of other bills on one subject, with its own columns (data centers). */
   /* On phones each comparison row opens on tap; the subject alone says what it covers. */
   const PHONE = window.matchMedia("(max-width: 639px)");
-  function rowHead(topic) {
+  function rowHead(topic, id) {
     if (!PHONE.matches) return topic;
-    return el("button", { type: "button", class: "row-toggle", "aria-expanded": "false", onclick: (ev) => {
+    return el("button", { type: "button", class: "row-toggle", "aria-expanded": cmpOpen.has(id) ? "true" : "false", onclick: (ev) => {
       const tr = ev.currentTarget.closest("tr");
       const open = tr.classList.toggle("open");
+      if (open) cmpOpen.add(id); else cmpOpen.delete(id);
       const note = tr.nextElementSibling;
       if (note && note.classList.contains("row-note")) note.classList.toggle("open", open);
       ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
@@ -523,12 +554,13 @@
     return el("section", { class: "block", id: b.id },
       el("h2", null, b.label),
       b.intro ? el("p", { class: "muted" }, b.intro) : null,
+      el("p", { class: "note" }, "Proposed laws. Related BAAJA provisions: ", secLinks(["2102", "2108"])),
       versionList(b.versions),
       withChips("bills", b.versions),
       el("div", { class: "table-wrap" }, el("table", { class: "compare compare-bills" },
         el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), b.versions.map((v) => el("th", { scope: "col", class: phoneClass("bills", v.key) }, v.label)))),
-        el("tbody", null, b.rows.map((r) => el("tr", { id: "row-bills-" + r.id },
-          el("th", { scope: "row" }, rowHead(r.topic)),
+        el("tbody", null, b.rows.map((r) => el("tr", { id: "row-bills-" + r.id, class: cmpOpen.has("bills-" + r.id) ? "open" : null },
+          el("th", { scope: "row" }, rowHead(r.topic, "bills-" + r.id)),
           keys.map((k) => el("td", { class: phoneClass("bills", k), "data-label": b.versions.find((v) => v.key === k).label }, compareCell(r[k])))))))),
       b.others && b.others.length ? [el("h3", null, b.others_label),
         el("ul", { class: "plain-list" }, b.others.map((o) => el("li", null, o.text + " ", el("span", { class: "where" }, citeNode(o)))))] : null);
@@ -551,10 +583,10 @@
       el("h2", null, g.label),
       el("div", { class: "table-wrap" }, el("table", { class: "compare" },
         el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), c.versions.map((v) => el("th", { scope: "col", class: phoneClass("main", v.key) }, v.label)))),
-        el("tbody", null, g.rows.map((r) => [el("tr", { id: "row-" + r.id },
-          el("th", { scope: "row" }, rowHead(r.topic)),
+        el("tbody", null, g.rows.map((r) => [el("tr", { id: "row-" + r.id, class: cmpOpen.has(r.id) ? "open" : null },
+          el("th", { scope: "row" }, rowHead(r.topic, r.id)),
           keys.map((k) => el("td", { class: phoneClass("main", k), "data-label": versionLabel(k) }, compareCell(r[k])))),
-          r.note ? el("tr", { class: "row-note" },
+          r.note ? el("tr", { class: "row-note" + (cmpOpen.has(r.id) ? " open" : "") },
             el("td", { colspan: keys.length + 1 }, el("strong", null, r.note.label + ". "), el("span", { class: "cell-text" }, r.note.text),
               el("span", { class: "cell-cite" }, r.note.sources.map((src, i) => [i ? " · " : null, citeNode(src)])))) : null]))))));
 
@@ -571,7 +603,8 @@
 
     return [
       el("div", { class: "lede" }, el("h1", null, "Comparison", el("span", { class: "credit-inline" }, "AI-written"))),
-      billsOnly ? null : versions, filters, billsOnly ? null : withChips("main", c.versions), tables, bills && (billsOnly || !groupId) ? renderBills(bills) : null, groupId ? null : lists];
+      billsOnly ? null : versions, filters, billsOnly ? null : withChips("main", c.versions),
+      groupId ? tables : tables.map(foldBlock), bills && (billsOnly || !groupId) ? renderBills(bills) : null, groupId ? null : foldBlock(lists)];
   }
 
   /* Long lists open brief: two lines of summary, the rest behind More. */
@@ -641,7 +674,7 @@
         c.intro ? el("p", null, c.intro) : null,
         el("p", { class: "facts", role: "status" }, rows.length + " of " + c.rows.length + " changes")),
       whoChips, effectChips,
-      rows.length ? body : el("p", { class: "empty" }, "No changes match.")];
+      rows.length ? body.map(foldBlock) : el("p", { class: "empty" }, "No changes match.")];
   }
 
   /* ---------- timeline ---------- */
@@ -650,6 +683,7 @@
   let tlBranch = "all";
   let tlMilestones = false;
   let tlTopic = "all";
+  let tlLimit = 12;
 
   function branchLabel(key) {
     const b = BRANCHES.find((x) => x[0] === key);
@@ -664,21 +698,21 @@
       (tlTopic === "all" || (e.topics || []).indexOf(tlTopic) >= 0));
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Branch" },
       BRANCHES.filter((b) => b[0] === "all" || counts[b[0]]).map((b) =>
-        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; route(); }, b[0] === "all" ? all.length : counts[b[0]])),
+        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])),
       el("span", { class: "filter-gap" }),
-      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; route(); }, all.filter((e) => e.milestone).length),
+      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = 12; route(); }, all.filter((e) => e.milestone).length),
       briefChip());
     const topicCounts = {};
     all.forEach((e) => (e.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
     const topicBox = el("details", { class: "filter-wrap", open: true },
       el("summary", null, "Topics"),
       el("div", { class: "filters", role: "group", "aria-label": "Topic" },
-        chip("All topics", tlTopic === "all", () => { tlTopic = "all"; route(); }),
+        chip("All topics", tlTopic === "all", () => { tlTopic = "all"; tlLimit = 12; route(); }),
         Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
-          chip(D.topics[t], tlTopic === t, () => { tlTopic = t; route(); }, topicCounts[t]))));
+          chip(D.topics[t], tlTopic === t, () => { tlTopic = t; tlLimit = 12; route(); }, topicCounts[t]))));
     const out = [];
     let year = null;
-    list.forEach((e) => {
+    list.slice(0, tlLimit).forEach((e) => {
       const y = e.date.slice(0, 4);
       if (y !== year) { year = y; out.push(el("h2", { class: "year", id: "y-" + y }, y)); }
       const body = el("div", { class: "event-body", id: "eb-" + e.id },
@@ -701,10 +735,14 @@
         body));
     });
     return [
-      el("div", { class: "lede" }, el("h1", null, "Timeline"), el("p", { class: "facts", role: "status" }, list.length + " of " + all.length + " events")),
+      el("div", { class: "lede" }, el("h1", null, "Timeline"), el("p", { class: "facts", role: "status" }, "Showing " + Math.min(tlLimit, list.length) + " of " + list.length + " matching events (" + all.length + " total)")),
       milestoneStrip(all),
       filters, topicBox,
-      list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match.")];
+      list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
+      list.length > tlLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+        const next = list[tlLimit].id; tlLimit += 12; route();
+        const node = document.getElementById("ev-" + next); node.tabIndex = -1; node.focus();
+      } }, "Show " + Math.min(12, list.length - tlLimit) + " more events") : null];
   }
 
   /* The milestones as a swipeable strip, oldest first; a tap opens the event in the list. */
@@ -714,7 +752,10 @@
     return el("nav", { class: "tl-strip", "aria-label": "Milestones" },
       el("ol", null, ms.map((e) => el("li", null,
         el("button", { type: "button", onclick: () => {
-          if (!document.getElementById("ev-" + e.id)) { tlBranch = "all"; tlTopic = "all"; tlMilestones = false; route(); }
+          if (!document.getElementById("ev-" + e.id)) {
+            tlBranch = "all"; tlTopic = "all"; tlMilestones = false;
+            tlLimit = Math.ceil((all.findIndex((x) => x.id === e.id) + 1) / 12) * 12; route();
+          }
           const node = document.getElementById("ev-" + e.id);
           if (!node) return;
           node.classList.add("open");
@@ -736,6 +777,7 @@
   };
   let pplSide = "inside";
   let pplStance = "all";
+  let pplLimit = 12;
 
   /* "2026-01-28: Chaired the hearing" -> "January 28, 2026: Chaired the hearing" */
   function datedAction(text) {
@@ -752,23 +794,23 @@
     const stanceCounts = {};
     pool.forEach((p) => { stanceCounts[p.stance] = (stanceCounts[p.stance] || 0) + 1; });
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Group and position" },
-      chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; route(); }, inside.length),
-      chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; route(); }, outside.length),
+      chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; pplLimit = 12; route(); }, inside.length),
+      chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; pplLimit = 12; route(); }, outside.length),
       el("span", { class: "filter-gap" }),
-      chip("All positions", pplStance === "all", () => { pplStance = "all"; route(); }),
+      chip("All positions", pplStance === "all", () => { pplStance = "all"; pplLimit = 12; route(); }),
       ["supports", "mixed", "opposes", "neutral"].filter((k) => stanceCounts[k]).map((k) =>
-        chip(STANCE[k], pplStance === k, () => { pplStance = k; route(); }, stanceCounts[k])),
+        chip(STANCE[k], pplStance === k, () => { pplStance = k; pplLimit = 12; route(); }, stanceCounts[k])),
       briefChip());
     const GOV = { congress: 1, white_house: 1, agency: 1, court: 1 };
     const groups = {};
-    list.forEach((p) => {
+    list.slice(0, pplLimit).forEach((p) => {
       const key = !p.inside_government && GOV[p.sector] ? "former" : p.sector;
       (groups[key] = groups[key] || []).push(p);
     });
     const order = Object.keys(SECTORS).filter((k) => groups[k]);
     const body = order.map((k) => el("section", { class: "block" },
       el("h2", null, SECTORS[k]),
-      el("div", { class: "people" + (brief ? " brief" : "") }, groups[k].map((p) => el("article", { class: "person" },
+      el("div", { class: "people" + (brief ? " brief" : "") }, groups[k].map((p) => el("article", { class: "person", id: "person-" + p.id },
         el("h3", null, p.name, p.party ? el("span", { class: "party" }, " (" + p.party + ")") : null),
         el("p", { class: "role" }, [p.role, p.affiliation].filter(Boolean).join(", ")),
         el("p", { class: "lead" }, p.position),
@@ -783,9 +825,13 @@
           safeUrl(p.social.bluesky) ? ext(p.social.bluesky, "Bluesky") : null) : null,
         sourceList(p.sources))))));
     return [
-      el("div", { class: "lede" }, el("h1", null, "People"), el("p", { class: "facts" }, "Positions as of " + S.formatDate(D.meta.as_of))),
+      el("div", { class: "lede" }, el("h1", null, "People"), el("p", { class: "facts", role: "status" }, "Showing " + Math.min(pplLimit, list.length) + " of " + list.length + " people · " + S.formatDate(D.meta.as_of))),
       filters,
-      list.length ? body : el("p", { class: "empty" }, "No entries match.")];
+      list.length ? body : el("p", { class: "empty" }, "No entries match."),
+      list.length > pplLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+        const next = list[pplLimit].id; pplLimit += 12; route();
+        const node = document.getElementById("person-" + next); node.tabIndex = -1; node.focus();
+      } }, "Show " + Math.min(12, list.length - pplLimit) + " more people") : null];
   }
 
   /* ---------- media ---------- */
@@ -806,8 +852,8 @@
   let mediaTopic = "all";
   let mediaVisual = false;
   let mediaText = "";
-  const MEDIA_PAGE = 25;
-  let mediaAll = false;
+  const MEDIA_PAGE = 12;
+  let mediaLimit = MEDIA_PAGE;
 
   function mediaGroup(type) {
     const g = MEDIA_TYPES.find((t) => t[2] && t[2].indexOf(type) >= 0);
@@ -851,31 +897,34 @@
     const countHost = el("p", { class: "facts", role: "status" });
     const refresh = () => {
       const list = mediaList();
-      const rest = mediaAll ? 0 : list.length - MEDIA_PAGE;
-      fill(listHost, mediaItems(rest > 0 ? list.slice(0, MEDIA_PAGE) : list),
-        rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: () => { mediaAll = true; refresh(); } }, "Show " + rest + " more") : null);
-      countHost.textContent = list.length + " of " + D.media.length + " items";
+      const rest = Math.max(0, list.length - mediaLimit);
+      fill(listHost, mediaItems(rest > 0 ? list.slice(0, mediaLimit) : list),
+        rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+          const next = mediaLimit; mediaLimit += MEDIA_PAGE; refresh();
+          const node = listHost.querySelectorAll(".media-item")[next]; node.tabIndex = -1; node.focus();
+        } }, "Show " + Math.min(MEDIA_PAGE, rest) + " more items") : null);
+      countHost.textContent = "Showing " + Math.min(mediaLimit, list.length) + " of " + list.length + " matching items (" + D.media.length + " total)";
     };
     const visualCount = D.media.filter((it) => it.visuals && it.visuals.length).length;
     const typeChips = el("div", { class: "filters", role: "group", "aria-label": "Source type" },
-      MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; route(); }, counts[t[0]])),
+      MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; mediaLimit = MEDIA_PAGE; route(); }, counts[t[0]])),
       visualCount ? [el("span", { class: "filter-gap" }),
-        chip("Cheat sheets", mediaVisual, () => { mediaVisual = !mediaVisual; route(); }, visualCount)] : null,
+        chip("Cheat sheets", mediaVisual, () => { mediaVisual = !mediaVisual; mediaLimit = MEDIA_PAGE; route(); }, visualCount)] : null,
       briefChip());
     const wordFilter = el("div", { class: "word-filter" },
       el("label", { class: "sr-only", "for": "media-filter" }, "Filter by word"),
       el("input", { id: "media-filter", type: "search", class: "inline-filter", placeholder: "Filter by word", value: mediaText,
-        oninput: (ev) => { mediaText = ev.target.value; refresh(); } }));
+        oninput: (ev) => { mediaText = ev.target.value; mediaLimit = MEDIA_PAGE; refresh(); } }));
     const stanceChips = el("div", { class: "filters", role: "group", "aria-label": "Position" },
-      chip("All positions", mediaStance === "all", () => { mediaStance = "all"; route(); }),
+      chip("All positions", mediaStance === "all", () => { mediaStance = "all"; mediaLimit = MEDIA_PAGE; route(); }),
       ["supports", "mixed", "opposes", "reporting", "neutral"].filter((k) => D.media.some((it) => it.stance === k)).map((k) =>
-        chip(STANCE[k], mediaStance === k, () => { mediaStance = k; route(); })));
+        chip(STANCE[k], mediaStance === k, () => { mediaStance = k; mediaLimit = MEDIA_PAGE; route(); })));
     const topicCounts = {};
     D.media.forEach((it) => (it.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
     const topicChips = el("div", { class: "filters", role: "group", "aria-label": "Topic" },
-      chip("All topics", mediaTopic === "all", () => { mediaTopic = "all"; route(); }),
+      chip("All topics", mediaTopic === "all", () => { mediaTopic = "all"; mediaLimit = MEDIA_PAGE; route(); }),
       Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
-        chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; route(); }, topicCounts[t])));
+        chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; mediaLimit = MEDIA_PAGE; route(); }, topicCounts[t])));
     const topicBox = el("details", { class: "filter-wrap", open: true },
       el("summary", null, "Topics"), topicChips);
     refresh();
@@ -887,7 +936,9 @@
   function renderMethod() {
     const m = D.meta;
     const ck = D.checks || {};
-    const rows = [["Bill quotes", m.quotes + " of " + m.quotes + " match the PDF text word for word."]];
+    const billTotal = ck.quotes ? ck.quotes.bill_total : m.quotes;
+    const billVerified = ck.quotes ? ck.quotes.bill_verified : m.quotes;
+    const rows = [["Bill quotes", billVerified + " of " + billTotal + " match the PDF text word for word."]];
     if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " carry a passage from the bill, matched the same way."]);
     if (ck.inference) {
       const i = ck.inference;
@@ -896,6 +947,7 @@
         (i.cached_only ? "Saved results were reconciled with the current wording; the fresh Sonnet review is unfinished. " : "") +
         "This check covers section summaries, key points and selected comparison cells. It does not verify all site prose or establish legal accuracy."]);
     }
+    if (D.communities || D.compare.bills) rows.push(["New views", "Data-center bill cells and Communities paraphrases have not had a second-model review. Their quoted passages are checked against sources; that does not verify every nearby claim."]);
     if (ck.quotes) {
       const q = ck.quotes;
       const parts = [q.verified + " of " + q.total + " found on the cited page by script."];
@@ -944,6 +996,8 @@
     if (heads.length < 3) return;
     after.after(el("nav", { class: "jumps", "aria-label": "On this page" },
       heads.map((h) => el("button", { type: "button", onclick: () => {
+        const fold = h.closest("details.section-fold");
+        if (fold) fold.open = true;
         h.setAttribute("tabindex", "-1");
         h.scrollIntoView({ block: "start" });
         h.focus({ preventScroll: true });
@@ -983,7 +1037,7 @@
       if (row) {
         row.classList.add("target");
         const t = row.querySelector(".row-toggle");
-        if (t) t.click();
+        if (t && t.getAttribute("aria-expanded") !== "true") t.click();
         const bar = view.querySelector(".filters");
         const cover = masthead.offsetHeight + parseInt(masthead.style.top || "0", 10) + (bar ? bar.offsetHeight : 0);
         window.scrollTo(0, row.getBoundingClientRect().top + window.scrollY - cover - 8);
@@ -1007,6 +1061,9 @@
     masthead.style.top = -top + "px";
     document.documentElement.style.setProperty("--pinned", (masthead.offsetHeight - top) + "px");
   }
+  PHONE.addEventListener("change", () => {
+    route();
+  });
   window.addEventListener("resize", pinMasthead);
   pinMasthead();
   document.querySelectorAll(".tabs a").forEach((a) => a.addEventListener("click", () => {
