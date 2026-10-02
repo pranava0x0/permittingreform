@@ -352,6 +352,8 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
   pointer-events: none;
 }
 .tl-line.near { cursor: pointer; }
+/* The line takes taps for every symbol, so its hit area reaches past the symbols on all sides. */
+.tl-line::before { content: ""; position: absolute; top: -16px; bottom: -30px; left: -14px; right: -14px; }
 .tl-sym { display: inline-block; width: 10px; height: 10px; background: var(--rule); border: 2px solid var(--bg); box-sizing: content-box; vertical-align: -2px; }
 .tl-sym.circle { border-radius: 50%; }
 .tl-sym.diamond { transform: rotate(45deg) scale(0.85); }

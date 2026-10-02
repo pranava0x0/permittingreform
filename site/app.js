@@ -151,7 +151,15 @@
     return el("form", { class: "search", role: "search", autocomplete: "off", onsubmit: (ev) => {
       ev.preventDefault();
       const q = input.value.trim();
-      location.hash = q ? "#/bill/search/" + encodeURIComponent(q) : "#/bill";
+      /* An empty box takes the cursor; the same query again returns to the results heading. */
+      if (!q) { input.focus(); return; }
+      const next = "#/bill/search/" + encodeURIComponent(q);
+      if (location.hash === next) {
+        const h = view.querySelector("h1");
+        if (h) { h.tabIndex = -1; h.scrollIntoView({ block: "start" }); h.focus({ preventScroll: true }); }
+        return;
+      }
+      location.hash = next;
     } },
       el("label", { class: "sr-only", "for": "search-input" }, "Search the bill text"),
       input,
@@ -832,9 +840,14 @@
           m === 1 ? String(y) : S.months[m - 1].charAt(0)));
       }
     }
-    /* Clustered symbols are smaller than a fingertip, so a pointer picks the nearest symbol within 28px.
+    /* Clustered symbols are smaller than a fingertip: a pointer on a drawn symbol picks it, and one in a gap
+       picks the nearest symbol within 28px.
        The buttons themselves take keyboard and screen reader input. */
     const nearest = (ev) => {
+      for (let i = marks.length - 1; i >= 0; i -= 1) {
+        const r = marks[i].firstChild.getBoundingClientRect();
+        if (ev.clientX >= r.left && ev.clientX <= r.right && ev.clientY >= r.top && ev.clientY <= r.bottom) return i;
+      }
       let best = null;
       let bestD = 28;
       marks.forEach((m, i) => {
