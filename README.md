@@ -61,10 +61,10 @@ When the sponsors post a new text, or to bring the timeline and coverage current
 
 Push to `main`, then run the `pages` workflow by hand. It deploys `site/` to GitHub Pages.
 
-## Review status, October 1, 2026
+## Review status, October 2, 2026
 
-Offline gates and browser acceptance checks pass. All 159 key points have matched passages; 112 bill quotations match. Web checks found 124 quotations in cached source pages and retain four browser-verification records from the prior session. Links: 232 answered a script; four have prior browser records; none reported dead.
+Offline gates and browser acceptance checks pass. All 159 key points have matched passages; 158 bill quotations match, including Communities. Web checks found 265 quotations in cached source pages and retain 17 browser-verification records. Saved link results: 331 answered a script; 12 refused scripts; none reported dead.
 
-The fresh Sonnet review remains incomplete: 401 saved supported statements, 12 flagged evidence spans and 127 unchecked statements out of 540 current claims. Edited statements do not inherit old verdicts. The subscription limit prevented a fresh call; `make infer` resumes through its batch cache after access returns. Current-law cells, per-section earlier-version notes and research paraphrases are outside that check's coverage.
+The fresh Sonnet review remains incomplete: 401 saved supported statements, 12 flagged evidence spans and 127 unchecked statements out of 540 current claims. Edited statements do not inherit old verdicts. The subscription limit prevented a fresh call; `make infer` resumes through its batch cache after access returns. Current-law cells, per-section earlier-version notes, data-center bill cells, Communities and research paraphrases are outside that check's coverage.
 
-Run browser checks with an existing Playwright installation and Google Chrome: `node tests/uat.cjs` while `make serve` runs. It checks all views in both themes at three widths, then exercises search, filters, keyboard navigation and a delayed-load regression.
+Run browser checks with an existing Playwright installation and Google Chrome: `node tests/uat.cjs` while `make serve` runs. It checks all views in both themes at three widths, then exercises search, filters, load-more, source passages, comparison switching, viewport transitions, keyboard navigation and a delayed-load regression.

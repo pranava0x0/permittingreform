@@ -1203,7 +1203,7 @@
    {
     "key": "rpa",
     "label": "Ratepayer Protection Act (H.R. 9340)",
-    "sub": "Evans (R-Colo.) and Castor (D-Fla.). Passed the House 417-3 on September 16, 2026; Senate cloture failed 57-43 on September 30.",
+    "sub": "Evans (R-Colo.) and Castor (D-Fla.). House-passed text, September 16, 2026. Senate cloture failed September 30; vote sources are in the large-load comparison note.",
     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm"
    },
    {
@@ -1260,7 +1260,7 @@
      "quote": "with a power demand of 20 megawatts or more that is not owned, operated, or maintained"
     },
     "senate": {
-     "text": "Section 228: data centers and high-density computing, including crypto mining, of 20 MW or more at one site or at commonly controlled sites, counting phased buildouts. Section 2107(a) pricing: any computational load on the bulk-power system, no size threshold.",
+     "text": "Section 228: data centers and high-density computing, including crypto mining, of 20 MW or more at one site or at commonly controlled sites, counting phased buildouts. Section 2107(a) pricing: any computational load on the bulk-power system, no size threshold. Ancillary computing at other commercial or industrial facilities is excluded from section 228.",
      "sections": [
       "2107"
      ]
@@ -1350,7 +1350,7 @@
     "id": "transmission",
     "topic": "Transmission pricing",
     "policy": {
-     "text": "FERC asked grid operators to prevent cost shifting among transmission customers. Its 1994 pricing policy lets a utility charge the higher of embedded or incremental cost, not both.",
+     "text": "FERC's 1994 transmission pricing policy allows the higher of embedded cost or incremental expansion cost for a service, rather than their sum. Separate lines may be priced on different bases.",
      "url": "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf",
      "cite": "FERC pricing policy statement, 59 FR 55031 (1994)"
     },
@@ -1552,7 +1552,7 @@
      "quote": "are designated for the service of, and paid for by, the data center owner or operator, including through a power purchase agreement or another bilateral contract"
     },
     "grid_act": {
-     "text": "180 days after enactment, every data center's power, including backup, must come from sources separate from the grid.",
+     "text": "Starting 180 days after enactment, new data centers must take all power, including backup, from sources separate from the grid. Existing grid-connected centers have a 10-year transition under DOE certificates.",
      "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm",
      "cite": "S. 3852 text",
      "quote": "derives all of its energy, including back-up energy, from a captive power plant, on-site power generation, or some other source or combination of sources separate from, and not deriving power from, the electric grid"
@@ -1663,7 +1663,7 @@
      "quote": "Until the date that is 10 years after the date of enactment of this Act, a covered entity that owns, operates, or maintains an existing data center that derives any of its energy from the electric grid"
     },
     "senate": {
-     "text": "Section 228 applies to loads that interconnect after enactment; arrangements approved earlier stay in effect.",
+     "text": "Section 228(b) cost protection and (c) state open-season authority apply to covered loads interconnecting on or after enactment. Previously approved service arrangements remain in effect. Section 2107(a) transmission pricing has no express existing-load exemption; its scope is separate.",
      "sections": [
       "2107"
      ]
@@ -1700,7 +1700,7 @@
      "quote": "the Secretary shall establish a national requirement for covered entities to provide to the public"
     },
     "senate": {
-     "text": "EIA must add data center load to Form 861.",
+     "text": "EIA must add data center load to Form 861, with no 20 MW threshold in section 2114. Revision is due at least 90 days before the first April 1 after enactment.",
      "sections": [
       "2114"
      ]

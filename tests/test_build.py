@@ -76,6 +76,15 @@ class Build(unittest.TestCase):
         communities = sum(1 for r in (CORE.get("communities") or {"rows": []})["rows"] if r.get("quote"))
         self.assertEqual(total, CORE["meta"]["quotes"] + len(CORE["overview"]["clocks"]) + len(CORE["overview"]["money"]) + communities)
 
+    def test_saved_bill_quote_totals_cover_current_inputs(self):
+        total, bad = check_quotes.bill_quotes()
+        self.assertEqual(bad, [])
+        saved = json.loads((ROOT / "data/checks/quotes.json").read_text())
+        summary = json.loads((ROOT / "data/checks.json").read_text())["quotes"]
+        self.assertEqual(saved["bill"], {"total": total, "verified": total})
+        self.assertEqual(summary["bill_total"], total)
+        self.assertEqual(summary["bill_verified"], total)
+
     def test_every_communities_quote_carries_a_computed_cite(self):
         rows = (CORE.get("communities") or {"rows": []})["rows"]
         self.assertTrue(rows, "data/communities.json produced no rows")
