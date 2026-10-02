@@ -15,7 +15,7 @@
     var phrase = (quoted ? quoted[1] : q).toLowerCase();
     var tokens = [];
     if (!quoted) {
-      phrase.split(" ").forEach(function (t) {
+      phrase.split(/[\s-]+/).forEach(function (t) {
         t = t.replace(/^[^a-z0-9$]+|[^a-z0-9%]+$/g, "");
         if (t && !STOP[t] && tokens.indexOf(t) < 0) tokens.push(t);
       });

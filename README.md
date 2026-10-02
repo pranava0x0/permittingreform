@@ -65,3 +65,9 @@ Offline gates and browser acceptance checks pass. All 159 key points have matche
 The fresh Sonnet review remains incomplete: 401 saved supported statements, 12 flagged evidence spans and 127 unchecked statements out of 540 current claims. Edited statements do not inherit old verdicts. The subscription limit prevented a fresh call; `make infer` resumes through its batch cache after access returns. Current-law cells, per-section earlier-version notes and research paraphrases are outside that check's coverage.
 
 Run browser checks with an existing Playwright installation and Google Chrome: `node tests/uat.cjs` while `make serve` runs. It checks all views in both themes at three widths, then exercises search, filters, keyboard navigation and a delayed-load regression.
+
+## Agent and text access
+
+`make build` generates `site/llms.txt`, the section index at `site/reading.html`, `site/llms-full.txt`, and `site/sections/{number}.md`. Each section file carries full bill text, summary, key points and page-line citations. `site/data/core.json` and `site/data/bill.json` expose the browser data without executing JavaScript. The JSON keys match `PR_DATA` and `PR_BILL`.
+
+Use the official PDF for legal claims. Exports show the draft version, source URLs and saved review coverage, including stale results and unchecked statements. Hash routes need a browser; the text and JSON files are ordinary HTTP resources. `site/sitemap.xml` lists the site and static section index. Search accepts section numbers, printed pages, quoted phrases and hyphenated terms such as data-center.

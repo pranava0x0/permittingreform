@@ -113,3 +113,7 @@ test("search finds a phrase present only in a structured key point", () => {
   assert.equal(r.sections.length, 1);
   assert.equal(r.sections[0].inSummary, true);
 });
+
+ test("hyphenated data-center queries find the ratepayer provision", () => {
+  assert.ok(search("data-center").sections.some(s => s.n === "2107"));
+});
