@@ -35,9 +35,9 @@ Most readers use a phone. For every UI change, measure page height in screen-hei
 - Below 1024px, where comparison tables stack (phones and tablets), each comparison row opens on tap and shows BAAJA beside one version picked with the "BAAJA vs." chips. The bill index folds by title at the same width.
 - Filter chips sit in one swipeable row on phones.
 - Pages with three or more headings get an "On this page" row of jump links.
-- The Timeline opens with a swipeable milestone strip, scrolled to the newest milestone.
+- The Timeline opens with one horizontal dated line that marks only the milestones (circle Congress, square White House and agencies, diamond courts). A mark opens its event inside its month (`#/timeline/<month>/<id>`); arrows step between milestones. Event rows show a short date and a two-line title. Do not chart every event: a per-month bar chart was tried and rejected on 2026-10-02.
 
-Measured October 2, 2026 at 375×812, in screen-heights: Compare 43 to 9, data center bills 13 to 2, Timeline 14 to 7, People 20 to 6, bill index 16 to 1, Communities 28 to 4 (one line per change).
+Measured October 2, 2026 at 375×812, in screen-heights: Timeline 2.2 to 1.7 after the milestone line (first screen shows 6 events, was 3); Compare 43 to 9, data center bills 13 to 2, Timeline 14 to 7, People 20 to 6, bill index 16 to 1, Communities 28 to 4 (one line per change).
 
 ## PR 3 reading flow
 

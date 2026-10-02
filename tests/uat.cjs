@@ -47,7 +47,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
-          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,timeline:3,people:4.5,media:5};
+          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,timeline:2,people:4.5,media:5};
           if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')
@@ -160,9 +160,50 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.getByRole('button',{name:/Milestones/}).click();
       await page.locator('.show-rest').click();
       assert.equal(await page.locator('.event').count(),24);
-      await page.locator('.tl-strip button').first().click();
-      assert.ok(await page.locator('.event.open').count());
-      assert.ok(await page.locator('.event.open .event-body').first().isVisible());
+      // Milestone line: only milestones are marked; a mark opens its event in that month; arrows step; All events clears.
+      await page.goto(base+'#/timeline');
+      const ms = await page.evaluate(()=>PR_DATA.timeline.filter(e=>e.milestone).sort((a,b)=>a.date<b.date?-1:a.date>b.date?1:0).map(e=>({id:e.id,month:e.date.slice(0,7)})));
+      assert.equal(await page.locator('.tl-mark').count(), ms.length);
+      assert.ok(ms.length < await page.evaluate(()=>PR_DATA.timeline.length), 'the line marks some events, not all');
+      const lastMs = ms[ms.length-1];
+      // Every symbol, clustered or not, opens its own milestone when tapped anywhere it is drawn.
+      for (const m of ms) {
+        await page.locator('.tl-line').scrollIntoViewIfNeeded();
+        const sym = await page.locator('.tl-mark[data-id="'+m.id+'"] .tl-sym').boundingBox();
+        // Tap near the bottom edge of the drawn symbol: half of a bottom-row symbol hangs below the line.
+        await page.mouse.click(sym.x+sym.width/2, sym.y+sym.height-1);
+        await page.waitForSelector('.tl-mark.sel[data-id="'+m.id+'"]');
+      }
+      await page.getByRole('button',{name:'All events'}).click();
+      await page.waitForSelector('.tl-mark.sel',{state:'detached'});
+      await page.locator('.tl-line').scrollIntoViewIfNeeded();
+      const lastSym = await page.locator('.tl-mark[data-id="'+lastMs.id+'"] .tl-sym').boundingBox();
+      await page.mouse.click(lastSym.x+lastSym.width/2, lastSym.y+lastSym.height/2);
+      await page.waitForURL(u=>u.hash==='#/timeline/'+lastMs.month+'/'+lastMs.id);
+      await page.waitForSelector('#ev-'+lastMs.id+'.open');
+      assert.ok(await page.locator('#ev-'+lastMs.id+' .event-body').isVisible());
+      assert.equal(await page.evaluate(()=>document.activeElement.dataset.id), lastMs.id);
+      assert.equal(await page.evaluate(m=>[...document.querySelectorAll('.event')].every(n=>n.querySelector('.event-body p').textContent.length>0)&&document.querySelectorAll('.event').length<=PR_DATA.timeline.filter(e=>e.date.slice(0,7)===m).length, lastMs.month), true);
+      if (width === 375) assert.ok((await page.locator('.tl-caption').boundingBox()).height <= 48, 'milestone caption stays within two lines');
+      // Filters still work while a milestone is picked.
+      await page.locator('.filters[aria-label="Branch"] .chip').nth(1).click();
+      await page.waitForSelector('.filters[aria-label="Branch"] .chip[aria-pressed="true"]:not(:first-child)');
+      await page.locator('.filters[aria-label="Branch"] .chip').first().click();
+      await page.waitForSelector('.filters[aria-label="Branch"] .chip:first-child[aria-pressed="true"]');
+      await page.getByRole('button',{name:'Earlier milestone'}).click();
+      await page.waitForSelector('.tl-mark.sel[data-id="'+ms[ms.length-2].id+'"]');
+      assert.equal(await page.evaluate(()=>document.activeElement.getAttribute('aria-label')),'Earlier milestone');
+      await page.getByRole('button',{name:'All events'}).click();
+      await page.waitForSelector('.tl-mark.sel',{state:'detached'});
+      assert.equal(await page.evaluate(()=>location.hash),'#/timeline');
+      // A milestone link on Overview opens its month with the event expanded and on screen.
+      await page.goto(base+'#/overview');
+      const link = page.locator('a.feed-title[href^="#/timeline/"]').first();
+      await link.evaluate(a=>{const d=a.closest('details'); if (d) d.open=true;});
+      await link.click();
+      await page.waitForSelector('.event.open');
+      const box = await page.locator('.event.open').boundingBox();
+      assert.ok(box.y >= 0 && box.y < page.viewportSize().height, 'linked event on screen: '+box.y);
       const before = await page.locator('html').getAttribute('data-theme');
       await page.locator('#theme-toggle').click();
       assert.notEqual(await page.locator('html').getAttribute('data-theme'),before);
