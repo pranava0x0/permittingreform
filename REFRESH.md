@@ -40,3 +40,5 @@ See [docs/data-sources.md](docs/data-sources.md) for sources that refuse scripts
 - 2026-10-02. X: `webfetch.read` (oEmbed) returns only the first post of a thread and cuts long posts at about 280 characters. Read threads, long posts and attached screenshots in a browser; numbering can skip (Flegal's 15-post thread has no post 9). Expand t.co links with `curl -sI` to find the article a post cites.
 - 2026-10-02. X search: `since:` plus `min_faves:` on the Top tab returns about 10 to 20 posts per query, so run several narrow queries (data centers, transmission, Ratepayer Protection Act, utilities, opponents) instead of one broad one. Bookmarks now sit under History at `/i/history`.
 - 2026-10-02. Port 8766 may already be serving the main checkout. From a worktree, check `lsof -a -p <pid> -d cwd` before trusting a page on that port, and preview on another port.
+- 2026-10-02. Cheat sheets: a media item may carry `visuals: [{title, text, url}]` for a summary image. The site links to the image on X and describes what it sorts; it does not copy the image. Read the image in a browser and check its claims against the bill before writing the description.
+

@@ -20,4 +20,6 @@
 | 2026-10-02 | data | Compare, data centers: the current-law cell said there was no federal rule. FERC's 1994 pricing policy already charges a new load the higher of embedded or incremental transmission cost, and the BAAJA cell left out the charge for both. | Written before the 1994 policy was checked. | Fixed in both cells, with a source. |
 | 2026-10-02 | data | People listed Josh Siegel at E&E News; he moved to Punchbowl News in late September 2026. | Stale affiliation. | Fixed in curation with the Talking Biz News source. |
 | 2026-10-02 | tests | `tests/uat.cjs` hard-coded 45 comparison rows and 94 media items. | Literal mirroring the data. | Fixed: counts come from `window.PR_DATA`. |
+| 2026-10-02 | link check | X image links (`/status/<id>/photo/1`) reported dead. | Code bug: oEmbed accepts the post URL only. | Fixed: `webfetch.route` checks a photo or video link through its post; regression test added. |
+| 2026-10-02 | data | The H.R. 9340 note in Compare stated vote counts that its only source, the bill text, cannot show (Codex review). | One citation for several claims. | Fixed: notes carry a list of sources; the Senate roll call and CBS's House vote report are cited. |
 
