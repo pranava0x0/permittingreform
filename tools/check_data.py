@@ -57,6 +57,11 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     bills = core["compare"].get("bills") or {"rows": [], "versions": []}
     out += [(f"compare bills {r['id']} {v['key']}", r[v["key"]]["text"]) for r in bills["rows"] for v in bills["versions"]]
     out += [("compare bills intro", bills.get("intro", ""))] + [("compare bills other", o["text"]) for o in bills.get("others", [])]
+    cm = core.get("communities") or {"rows": []}
+    if cm.get("intro"):
+        out.append(("communities intro", cm["intro"]))
+    for r in cm["rows"]:
+        out += [(f"communities {r['id']} topic", r["topic"]), (f"communities {r['id']} now", r["now"]), (f"communities {r['id']} baaja", r["baaja"])]
     out += [("compare added", a["text"]) for a in core["compare"]["added"]]
     out += [("compare dropped", a["text"]) for a in core["compare"]["dropped"]]
     for e in core["timeline"]:
@@ -117,6 +122,13 @@ def check(core: dict) -> tuple[list[str], dict]:
                     errs.append(f"compare bills {r['id']} {v['key']}: a cell that states a provision needs bill sections or a source link")
                 if cell.get("quote") and not str(cell.get("url", "")).startswith("https://"):
                     errs.append(f"compare bills {r['id']} {v['key']}: a quote needs the link it was copied from")
+
+    for r in (core.get("communities") or {"rows": []})["rows"]:
+        for f in ("id", "group", "topic", "who", "effect", "now", "baaja", "sections"):
+            if not r.get(f):
+                errs.append(f"communities {r.get('id')}: missing {f}")
+        if r.get("now_cite") and not str(r.get("now_url", "")).startswith("https://"):
+            errs.append(f"communities {r['id']}: a current-law cite needs a link")
 
     def http(url) -> bool:
         return isinstance(url, str) and url.lower().startswith(("http://", "https://"))

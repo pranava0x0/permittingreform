@@ -307,6 +307,17 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
 .brief > .person:not(.open) > .actions, .brief > .person:not(.open) > .quote,
 .brief > .person:not(.open) > .social, .brief > .person:not(.open) > .sources { display: none; }
 .person-stance .more-toggle { display: inline; margin-left: 8px; }
+.cm-row { padding: 10px 0; border-bottom: 1px solid var(--border); max-width: 86ch; }
+.cm-row h3 { font-size: 1rem; margin: 0 0 2px; }
+.cm-row p { margin: 4px 0; }
+.cm-who { font-size: 0.82rem; color: var(--text-muted); }
+.cm-now { color: var(--text-muted); font-size: 0.93rem; }
+.cm-row .where .more-toggle { display: inline; margin-left: 10px; }
+.effect { font-family: var(--font-body); font-size: 0.75rem; font-weight: 700; padding: 1px 6px; border: 1px solid currentColor; border-radius: 2px; vertical-align: 2px; white-space: nowrap; }
+.effect-narrows { color: var(--stance-opposes); }
+.effect-expands { color: var(--stance-supports); }
+.effect-changes { color: var(--stance-mixed); }
+.brief > .cm-row:not(.open) > .quote { display: none; }
 
 /* Timeline: one row per event, opened in place. */
 .event h3 { font-size: 0.97rem; font-weight: 600; line-height: 1.35; margin: 0; }

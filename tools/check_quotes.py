@@ -91,6 +91,13 @@ def bill_quotes() -> tuple[int, list[str]]:
             total += 1
             if n not in by_num or not billtext.locate(by_num[n]["lines"], q["text"]):
                 bad.append(f"section {n}: {q['text'][:80]!r}")
+    cpath = ROOT / "data/communities.json"
+    for r in (json.loads(cpath.read_text(encoding="utf-8"))["rows"] if cpath.exists() else []):
+        if r.get("quote"):
+            total += 1
+            n = r.get("quote_section", r["sections"][0])
+            if n not in by_num or not billtext.locate(by_num[n]["lines"], r["quote"]):
+                bad.append(f"communities {r['id']}, section {n}: {r['quote'][:80]!r}")
     for kind in ("clocks", "money"):
         for row in overview[kind]:
             total += 1

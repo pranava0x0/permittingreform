@@ -583,10 +583,56 @@
     if (!brief) return null;
     return el("button", { type: "button", class: "more-toggle", "aria-expanded": "false", onclick: (ev) => {
       const b = ev.currentTarget;
-      const open = b.closest(".event, .media-item, .person").classList.toggle("open");
+      const open = b.closest(".event, .media-item, .person, .cm-row").classList.toggle("open");
       b.setAttribute("aria-expanded", open ? "true" : "false");
       b.textContent = open ? "Less" : "More";
     } }, "More");
+  }
+
+  /* ---------- communities ---------- */
+
+  const EFFECT = { narrows: "Narrows", expands: "Expands", changes: "Changes" };
+  let cmWho = "all";
+  let cmEffect = "all";
+
+  function renderCommunities() {
+    const c = D.communities;
+    if (!c) return [el("div", { class: "lede" }, el("h1", null, "Communities")), el("p", { class: "empty" }, "Not yet compiled.")];
+    const rows = c.rows.filter((r) => (cmWho === "all" || r.who.indexOf(cmWho) >= 0) && (cmEffect === "all" || r.effect === cmEffect));
+    const whoCount = {};
+    c.rows.forEach((r) => r.who.forEach((w) => { whoCount[w] = (whoCount[w] || 0) + 1; }));
+    const effCount = {};
+    c.rows.forEach((r) => { effCount[r.effect] = (effCount[r.effect] || 0) + 1; });
+    const whoChips = el("div", { class: "filters", role: "group", "aria-label": "Who" },
+      chip("Everyone", cmWho === "all", () => { cmWho = "all"; route(); }, c.rows.length),
+      Object.keys(c.who).filter((w) => whoCount[w]).map((w) => chip(c.who[w], cmWho === w, () => { cmWho = w; route(); }, whoCount[w])));
+    const effectChips = el("div", { class: "filters", role: "group", "aria-label": "Effect" },
+      chip("All changes", cmEffect === "all", () => { cmEffect = "all"; route(); }),
+      Object.keys(EFFECT).filter((k) => effCount[k]).map((k) => chip(EFFECT[k], cmEffect === k, () => { cmEffect = k; route(); }, effCount[k])),
+      briefChip());
+    const body = c.groups.map((g) => {
+      const list = rows.filter((r) => r.group === g.id);
+      if (!list.length) return null;
+      return el("section", { class: "block" },
+        el("h2", { id: "cg-" + g.id }, g.label),
+        g.note ? el("p", { class: "muted" }, g.note) : null,
+        el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => el("article", { class: "cm-row", id: "cm-" + r.id },
+          el("h3", null, r.topic, " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])),
+          el("p", { class: "cm-who" }, r.who.map((w) => c.who[w]).join(" · ")),
+          el("p", { class: "lead" }, el("strong", null, "BAAJA: "), r.baaja),
+          el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
+            r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
+          el("p", { class: "where" }, secLinks(r.sections), r.quote ? moreButton() : null),
+          r.quote ? el("figure", { class: "quote small" },
+            el("blockquote", null, r.quote),
+            r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null))));
+    });
+    return [
+      el("div", { class: "lede" }, el("h1", null, "Communities", el("span", { class: "credit-inline" }, "AI-written")),
+        c.intro ? el("p", null, c.intro) : null,
+        el("p", { class: "facts", role: "status" }, rows.length + " of " + c.rows.length + " changes")),
+      whoChips, effectChips,
+      rows.length ? body : el("p", { class: "empty" }, "No changes match.")];
   }
 
   /* ---------- timeline ---------- */
@@ -897,7 +943,7 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", timeline: "Timeline", people: "People", media: "Media", method: "Method" };
+  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", timeline: "Timeline", people: "People", media: "Media", method: "Method" };
   let lastPath = null;
 
   function route() {
@@ -910,6 +956,7 @@
     else if (tab === "bill" && parts[1] === "search") nodes = renderSearch(parts.slice(2).join("/"));
     else if (tab === "bill") nodes = renderBillIndex();
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
+    else if (tab === "communities") nodes = renderCommunities();
     else if (tab === "timeline") nodes = renderTimeline();
     else if (tab === "people") nodes = renderPeople();
     else if (tab === "media") nodes = renderMedia();
@@ -919,7 +966,7 @@
     view.className = "view view-" + tab;
     if (tab === "overview") jumpRow(view.querySelector(".lede"));
     else if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
-    else if (tab === "people" || tab === "timeline") jumpRow(view.querySelector(".lede"));
+    else if (tab === "people" || tab === "timeline" || tab === "communities") jumpRow(view.querySelector(".lede"));
     const strip = view.querySelector(".tl-strip");
     if (strip) strip.scrollLeft = strip.scrollWidth;
     if (tab === "compare" && parts[2]) {

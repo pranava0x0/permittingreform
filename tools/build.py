@@ -36,6 +36,7 @@ PRIOR_BILLS = [
 ]
 
 OPTIONAL = {"timeline": "events", "people": "people", "media": "items"}
+EFFECTS = {"narrows", "expands", "changes"}
 
 
 def load(path: Path):
@@ -177,6 +178,29 @@ def build() -> tuple[dict, dict, list[str]]:
     for item in compare["dropped"]:
         item["url"] = cite_url(item["from"], item["cite"], prior)
 
+    # Communities: how the bill changes who can comment, consult, take part or sue.
+    comm_path = DATA / "communities.json"
+    communities = load(comm_path) if comm_path.exists() else None
+    if communities:
+        gids = {g["id"] for g in communities["groups"]}
+        for r in communities["rows"]:
+            where = f"communities {r['id']}"
+            if r["group"] not in gids:
+                errors.append(f"{where}: unknown group {r['group']!r}")
+            for w in r["who"]:
+                if w not in communities["who"]:
+                    errors.append(f"{where}: unknown party {w!r}")
+            if r["effect"] not in EFFECTS:
+                errors.append(f"{where}: effect {r['effect']!r} is not one of {sorted(EFFECTS)}")
+            check_refs(where, r["sections"])
+            if r.get("quote"):
+                sec = by_num.get(r.get("quote_section", r["sections"][0]))
+                loc = billtext.locate(sec["lines"], r["quote"]) if sec else None
+                if not loc:
+                    errors.append(f"{where}: quote not found in section {r.get('quote_section', r['sections'][0])}")
+                else:
+                    r["c"] = cite(loc)
+
     extra = {}
     for name, key in OPTIONAL.items():
         path = DATA / f"{name}.json"
@@ -224,6 +248,7 @@ def build() -> tuple[dict, dict, list[str]]:
         "sections": sections,
         "overview": overview,
         "compare": compare,
+        "communities": communities,
         "timeline": extra["timeline"],
         "people": extra["people"],
         "media": extra["media"],

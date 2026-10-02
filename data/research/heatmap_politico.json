@@ -1,0 +1,922 @@
+{
+ "generated": "2026-10-02",
+ "articles_read": [
+  {
+   "url": "https://www.politico.com/news/2026/09/28/senate-negotiators-reach-deal-on-permitting-text-01096441",
+   "outlet": "POLITICO",
+   "date": "2026-09-28",
+   "title": "Senate negotiators reach deal on permitting text",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/09/28/senate-negotiators-reach-deal-on-permitting-text-01096441"
+  },
+  {
+   "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247",
+   "outlet": "POLITICO",
+   "date": "2026-10-01",
+   "title": "Senate bipartisan permitting deal faces a House buzz saw",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247"
+  },
+  {
+   "url": "https://www.politico.com/news/2026/09/29/democrats-gear-up-to-oppose-data-center-legislation-01098045",
+   "outlet": "POLITICO",
+   "date": "2026-09-29",
+   "title": "Democrats gear up to tank data center legislation",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/09/29/democrats-gear-up-to-oppose-data-center-legislation-01098045"
+  },
+  {
+   "url": "https://www.politico.com/live-updates/2026/09/24/congress/permitting-deal-fails-ahead-of-senate-break-01089500",
+   "outlet": "POLITICO",
+   "date": "2026-09-24",
+   "title": "Permitting won't get vote ahead of election (Inside Congress live updates)",
+   "access": "full",
+   "read_via": "https://r.jina.ai/https://www.politico.com/live-updates/2026/09/24/congress/permitting-deal-fails-ahead-of-senate-break-01089500"
+  },
+  {
+   "url": "https://www.politico.com/news/2026/09/18/senate-competing-data-center-bills-01083204",
+   "outlet": "POLITICO",
+   "date": "2026-09-18",
+   "title": "Senate roadblock sparks new competition over data center bills",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/09/18/senate-competing-data-center-bills-01083204"
+  },
+  {
+   "url": "https://www.politico.com/news/2026/09/16/house-passes-bill-data-center-power-costs-01076743",
+   "outlet": "POLITICO",
+   "date": "2026-09-16",
+   "title": "House overwhelmingly passes bill to shield ratepayers from data centers",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/09/16/house-passes-bill-data-center-power-costs-01076743"
+  },
+  {
+   "url": "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791",
+   "outlet": "POLITICO",
+   "date": "2026-09-30",
+   "title": "Capitol agenda: One day more? (Inside Congress live updates)",
+   "access": "full",
+   "read_via": "https://r.jina.ai/https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791"
+  },
+  {
+   "url": "https://www.politico.com/news/2026/09/27/john-husted-data-centers-sherrod-brown-01094285",
+   "outlet": "POLITICO",
+   "date": "2026-09-27",
+   "title": "Jon Husted faces a moment of truth in the Senate",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/09/27/john-husted-data-centers-sherrod-brown-01094285"
+  },
+  {
+   "url": "https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842",
+   "outlet": "POLITICO Pro",
+   "date": "2026-09-22",
+   "title": "Trump will green-light wind energy projects to strike permitting deal",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842"
+  },
+  {
+   "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
+   "outlet": "POLITICO Pro",
+   "date": "2026-09-17",
+   "title": "Permitting talks reach 'final' stages",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362"
+  },
+  {
+   "url": "https://subscriber.politicopro.com/article/2026/09/senate-weighs-data-center-vote-pro-01090400",
+   "outlet": "POLITICO Pro",
+   "date": "2026-09-23",
+   "title": "Senators weigh staying in town to vote on data center bill",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/09/senate-weighs-data-center-vote-pro-01090400"
+  },
+  {
+   "url": "https://subscriber.politicopro.com/article/2026/07/where-the-permitting-talks-stand-pro-00993596",
+   "outlet": "POLITICO Pro",
+   "date": "2026-07-13",
+   "title": "Where the permitting talks stand",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/07/where-the-permitting-talks-stand-pro-00993596"
+  },
+  {
+   "url": "https://subscriber.politicopro.com/article/2026/07/permitting-deal-deadline-remains-elusive-pro-01002355",
+   "outlet": "POLITICO Pro",
+   "date": "2026-07-17",
+   "title": "Permitting deal deadline remains elusive",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/07/permitting-deal-deadline-remains-elusive-pro-01002355"
+  },
+  {
+   "url": "https://subscriber.politicopro.com/article/2026/07/new-england-gas-crunch-puts-sheldon-whitehouse-in-a-bind-pro-00992265",
+   "outlet": "POLITICO Pro",
+   "date": "2026-07-16",
+   "title": "New England gas crunch puts Sheldon Whitehouse in a bind",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/07/new-england-gas-crunch-puts-sheldon-whitehouse-in-a-bind-pro-00992265"
+  },
+  {
+   "url": "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/",
+   "outlet": "E&E News by POLITICO",
+   "date": "2026-06-09",
+   "title": "Debate over preservation law tripping up permitting talks",
+   "access": "full",
+   "read_via": "https://r.jina.ai/https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/"
+  },
+  {
+   "url": "https://www.eenews.net/articles/senate-dems-push-spending-rider-on-wind-solar-permits/",
+   "outlet": "E&E News by POLITICO",
+   "date": "2026-06-09",
+   "title": "Senate Dems push spending riders on wind, solar permits",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.eenews.net/articles/senate-dems-push-spending-rider-on-wind-solar-permits/"
+  },
+  {
+   "url": "https://www.eenews.net/articles/markup-rekindles-lee-heinrich-tensions/",
+   "outlet": "E&E News by POLITICO",
+   "date": "2026-06-10",
+   "title": "Markup rekindles Lee, Heinrich tensions",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.eenews.net/articles/markup-rekindles-lee-heinrich-tensions/"
+  },
+  {
+   "url": "https://www.eenews.net/articles/groups-urge-lawmakers-to-protect-state-water-reviews-in-permitting-talks/",
+   "outlet": "E&E News by POLITICO",
+   "date": "2026-07-02",
+   "title": "Groups urge lawmakers to protect state water reviews in permitting talks",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.eenews.net/articles/groups-urge-lawmakers-to-protect-state-water-reviews-in-permitting-talks/"
+  },
+  {
+   "url": "https://www.eenews.net/articles/permitting-deal-deadline-remains-elusive/",
+   "outlet": "E&E News by POLITICO",
+   "date": "2026-07-17",
+   "title": "Permitting deal deadline remains elusive",
+   "access": "preview",
+   "read_via": "https://r.jina.ai/https://www.eenews.net/articles/permitting-deal-deadline-remains-elusive/"
+  },
+  {
+   "url": "https://heatmap.news/am/permitting-reform-deal",
+   "outlet": "Heatmap News",
+   "date": "2026-09-29",
+   "title": "The TVA's Big Nuclear Project Gets the Green Light (Heatmap AM; item 1: Senate reaches a permitting deal)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/am/permitting-reform-stumble",
+   "outlet": "Heatmap News",
+   "date": "2026-09-25",
+   "title": "Permitting Reform Talks Trail Off (Heatmap AM)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/daily/wright-recording-permitting",
+   "outlet": "Heatmap News",
+   "date": "2026-09-25",
+   "title": "The Wright Interview and Permitting's Peril (Heatmap Daily)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/plus/the-fight/spotlight/offshore-wind-permitting-reform",
+   "outlet": "Heatmap News",
+   "date": "2026-09-25",
+   "title": "Offshore Wind's Existential Crisis at Climate Week (The Fight)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/daily/exelon-permitting-reform",
+   "outlet": "Heatmap News",
+   "date": "2026-09-22",
+   "title": "What's a Utility to Do When Everyone Is Mad at Them? (Heatmap Daily)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/politics/evans-peters-transmission",
+   "outlet": "Heatmap News",
+   "date": "2026-09-18",
+   "title": "The Bipartisan Buddies With a Plan to Fix Transmission",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/am/trump-data-center-hoax",
+   "outlet": "Heatmap News",
+   "date": "2026-09-16",
+   "title": "Trump's New Data Center Defense: 'It's a Hoax' (Heatmap AM)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/daily/meta-microsoft-permitting-reform",
+   "outlet": "Heatmap News",
+   "date": "2026-07-29",
+   "title": "Meta Down, Permitting Odds Up (Heatmap Daily)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/podcast/permitting-reform-arnold-ventures-daniel-palken-transcript",
+   "outlet": "Heatmap News",
+   "date": "2026-07-29",
+   "title": "Transcript: What a Permitting Reform Deal Could Look Like (Shift Key)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/podcast/shift-key-heinrich-granholm-transcript",
+   "outlet": "Heatmap News",
+   "date": "2026-08-03",
+   "title": "Transcript: Permitting Reform, Data Centers, and More With Senator Heinrich and Secretary Granholm (Shift Key)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/daily/heinrich-texas-power-permitting",
+   "outlet": "Heatmap News",
+   "date": "2026-07-16",
+   "title": "Scoop: A Key Democrat Wants to Break America's Worst Energy Bottleneck (Heatmap Daily)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/daily/senate-bipartisan-permitting-reform",
+   "outlet": "Heatmap News",
+   "date": "2026-06-16",
+   "title": "Freedom (It Won't Slow You Down) (Heatmap Daily)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/politics/ratepayer-protection-act-explained",
+   "outlet": "Heatmap News",
+   "date": "2026-06-23",
+   "title": "The Mystery of the Ratepayer Protection Act",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/energy/ferc-data-center-plan",
+   "outlet": "Heatmap News",
+   "date": "2026-06-18",
+   "title": "FERC Has a New Plan for Data Centers",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/plus/the-fight/qa/ray-long-permitting",
+   "outlet": "Heatmap News",
+   "date": "2026-06-05",
+   "title": "How Has the Rise of AI Changed the Odds of a Permitting Deal? (The Fight Q&A)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/daily/how-different-is-anyones-data-center-plan-really",
+   "outlet": "Heatmap News",
+   "date": "2026-08-04",
+   "title": "How Different Is Anyone's Data Center Plan, Really? (Heatmap Daily)",
+   "access": "full"
+  },
+  {
+   "url": "https://heatmap.news/am/trump-wind-pause",
+   "outlet": "Heatmap News",
+   "date": "2026-08-06",
+   "title": "Trump May Be Forced to Resume Wind Project Permits (Heatmap AM)",
+   "access": "full"
+  }
+ ],
+ "media": [
+  {
+   "id": "2026-09-28-politico-senate-negotiators-reach-deal-on-permitting-text",
+   "date": "2026-09-28",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Nico Portuondo and Anthony Cruz",
+   "title": "Senate negotiators reach deal on permitting text",
+   "url": "https://www.politico.com/news/2026/09/28/senate-negotiators-reach-deal-on-permitting-text-01096441",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/09/28/senate-negotiators-reach-deal-on-permitting-text-01096441",
+   "access": "preview",
+   "verified": true,
+   "summary": "First report that the four Senate negotiators had a deal on text. Heinrich and Whitehouse were holding back endorsements while they discussed 'the last five yards,' and Democrats still had doubts about Trump's commitment to more renewable projects. Text was expected that week.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We have reached a deal on text",
+    "speaker": "An aide for Sen. Martin Heinrich, speaking anonymously"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "wind-solar"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw",
+   "date": "2026-10-01",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Nico Portuondo",
+   "title": "Senate bipartisan permitting deal faces a House buzz saw",
+   "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247",
+   "access": "preview",
+   "verified": true,
+   "summary": "House Natural Resources ranking member Jared Huffman said most House Democrats will not support the Senate bill as written and urged talks to resume after the midterms. The report says Energy and Commerce Chair Brett Guthrie had not endorsed it.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Folding our hand now or in the lame duck makes no sense when we can keep working on this and, in a few more months, have a much better deal that works for everyone.",
+    "speaker": "Rep. Jared Huffman (D-Calif.)"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-29-politico-democrats-gear-up-to-oppose-data-center-legislation",
+   "date": "2026-09-29",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Amelia Davidson",
+   "title": "Democrats gear up to tank data center legislation",
+   "url": "https://www.politico.com/news/2026/09/29/democrats-gear-up-to-oppose-data-center-legislation-01098045",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/09/29/democrats-gear-up-to-oppose-data-center-legislation-01098045",
+   "access": "preview",
+   "verified": true,
+   "summary": "Senate Democrats prepared to sink the House-passed Ratepayer Protection Act at a Wednesday cloture vote. Schumer called it a fraud and pointed to the Van Hollen and Heinrich bills as stronger options.",
+   "stance": "reporting",
+   "quote": {
+    "text": "We’re very united in opposition to the bill, whether it’s on cloture or at some other point",
+    "speaker": "Sen. Richard Blumenthal (D-Conn.)"
+   },
+   "topics": [
+    "data-centers",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-24-politico-permitting-wont-get-vote-ahead-of-election",
+   "date": "2026-09-24",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Nico Portuondo and Amelia Davidson",
+   "title": "Permitting won't get vote ahead of election",
+   "url": "https://www.politico.com/live-updates/2026/09/24/congress/permitting-deal-fails-ahead-of-senate-break-01089500",
+   "read_via": "https://r.jina.ai/https://www.politico.com/live-updates/2026/09/24/congress/permitting-deal-fails-ahead-of-senate-break-01089500",
+   "access": "full",
+   "verified": true,
+   "summary": "Senate negotiators did not close a deal that week, so a permitting vote would wait until after the elections. Democrats wanted more review time and firmer assurances that the administration would stop attacking clean energy projects. The story lists Section 401, NEPA limits and NHPA as likely parts of any package.",
+   "stance": "reporting",
+   "quote": {
+    "text": "we need just a bit more clarity on exactly what return to regular order for wind and solar projects looks like",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "wind-solar",
+    "clean-water-act",
+    "historic-preservation"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-30-politico-capitol-agenda-one-day-more",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Inside Congress staff",
+   "title": "Capitol agenda: One day more? (Inside Congress live updates)",
+   "url": "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791",
+   "read_via": "https://r.jina.ai/https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791",
+   "access": "full",
+   "verified": true,
+   "summary": "Live-update page for the day the bill text was due and the Ratepayer Protection Act went to a cloture vote. A summary of the permitting package had circulated and senators wanted the text, especially on issues that could decide votes in a lame-duck session. The cloture vote failed 57-43; four Democrats joined all Republicans in favor.",
+   "stance": "reporting",
+   "quote": {
+    "text": "All the issues are solved in concept",
+    "speaker": "Sen. Angus King (I-Maine)"
+   },
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-22-politico-pro-trump-will-green-light-wind-energy-projects",
+   "date": "2026-09-22",
+   "type": "news",
+   "outlet": "POLITICO Pro",
+   "author": "Josh Siegel",
+   "title": "Trump will green-light wind energy projects to strike permitting deal",
+   "url": "https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842",
+   "access": "preview",
+   "verified": true,
+   "summary": "Trump told advisers he would direct the Defense Department to start clearing its queue of delayed onshore wind projects to close a permitting deal. Thune had set a Tuesday deadline for a deal so a bill could move before senators left to campaign.",
+   "stance": "reporting",
+   "quote": {
+    "text": "President Donald Trump signaled he would ease his administration's blockade on renewable energy projects to entice Democrats to agree to a permitting deal.",
+    "speaker": "POLITICO Pro (Josh Siegel)"
+   },
+   "topics": [
+    "white-house",
+    "wind-solar",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-17-politico-pro-permitting-talks-reach-final-stages",
+   "date": "2026-09-17",
+   "type": "news",
+   "outlet": "POLITICO Pro",
+   "author": "Josh Siegel",
+   "title": "Permitting talks reach 'final' stages",
+   "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
+   "access": "preview",
+   "verified": true,
+   "summary": "Capito said a deal was very close and Whitehouse said talks were in their final wrap-up, with the hardest issues resolved last. Capito conceded the floor vote could slip a week from the timeline she and Thune had set.",
+   "stance": "reporting",
+   "quote": {
+    "text": "in final wrap up, but some of the most difficult issues are the last ones resolved",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-18-politico-senate-roadblock-sparks-competition-over-data-center-bills",
+   "date": "2026-09-18",
+   "type": "news",
+   "outlet": "POLITICO",
+   "author": "Nico Portuondo, Amelia Davidson and Pavan Acharya",
+   "title": "Senate roadblock sparks new competition over data center bills",
+   "url": "https://www.politico.com/news/2026/09/18/senate-competing-data-center-bills-01083204",
+   "read_via": "https://r.jina.ai/https://www.politico.com/news/2026/09/18/senate-competing-data-center-bills-01083204",
+   "access": "preview",
+   "verified": true,
+   "summary": "After Heinrich objected to Husted's unanimous-consent request on the Ratepayer Protection Act, Blumenthal and Hawley pitched their GRID Act in a letter to Energy and Natural Resources leaders. The story frames the House-passed bill as stalled in the Senate.",
+   "stance": "reporting",
+   "quote": {
+    "text": "those hopes were dashed Thursday after Sen. Martin Heinrich (D-N.M.) objected to Sen. Jon Husted’s (R-Ohio) unanimous consent request",
+    "speaker": "POLITICO"
+   },
+   "topics": [
+    "data-centers",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-09-ee-news-debate-over-preservation-law-tripping-up-permitting-talks",
+   "date": "2026-06-09",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Josh Siegel",
+   "title": "Debate over preservation law tripping up permitting talks",
+   "url": "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/",
+   "read_via": "https://r.jina.ai/https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/",
+   "access": "full",
+   "verified": true,
+   "summary": "Mike Lee's push to change the National Historic Preservation Act had become a major sticking point. Lee wanted limits on lawsuits; some Democrats were wary because the law matters to tribes and preservation groups. Heinrich said the aim was to preserve the law's intent while making reviews more predictable.",
+   "stance": "reporting",
+   "quote": {
+    "text": "how do you find that balance of where you preserve the intent, but make things more predictable and efficient?",
+    "speaker": "Sen. Martin Heinrich (D-N.M.)"
+   },
+   "topics": [
+    "historic-preservation",
+    "tribal",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-17-ee-news-permitting-deal-deadline-remains-elusive",
+   "date": "2026-07-17",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Josh Siegel",
+   "title": "Permitting deal deadline remains elusive",
+   "url": "https://www.eenews.net/articles/permitting-deal-deadline-remains-elusive/",
+   "read_via": "https://r.jina.ai/https://www.eenews.net/articles/permitting-deal-deadline-remains-elusive/",
+   "access": "preview",
+   "verified": true,
+   "summary": "The August recess goal for a deal was slipping. Democratic negotiators were pressing for transmission measures and limits on the administration's power to cancel approved projects; King said the administration had to take its thumb off the scale.",
+   "stance": "reporting",
+   "quote": {
+    "text": "until the administration takes their thumb off the scale, we’re not going to be able to do it",
+    "speaker": "Sen. Angus King (I-Maine)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "transmission",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-02-ee-news-groups-urge-lawmakers-to-protect-state-water-reviews",
+   "date": "2026-07-02",
+   "type": "news",
+   "outlet": "E&E News by POLITICO",
+   "author": "Miranda Willson",
+   "title": "Groups urge lawmakers to protect state water reviews in permitting talks",
+   "url": "https://www.eenews.net/articles/groups-urge-lawmakers-to-protect-state-water-reviews-in-permitting-talks/",
+   "read_via": "https://r.jina.ai/https://www.eenews.net/articles/groups-urge-lawmakers-to-protect-state-water-reviews-in-permitting-talks/",
+   "access": "preview",
+   "verified": true,
+   "summary": "Nearly 60 national and regional groups wrote to the Senate EPW Committee against limiting state and tribal Section 401 water reviews. Republicans and the administration say blue states have used Section 401 to slow or block energy projects.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Environmental advocates are pushing back on a top Republican priority in ongoing energy permitting reform negotiations.",
+    "speaker": "E&E News (Miranda Willson)"
+   },
+   "topics": [
+    "clean-water-act",
+    "tribal",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-13-politico-pro-where-the-permitting-talks-stand",
+   "date": "2026-07-13",
+   "type": "news",
+   "outlet": "POLITICO Pro",
+   "author": "Josh Siegel",
+   "title": "Where the permitting talks stand",
+   "url": "https://subscriber.politicopro.com/article/2026/07/where-the-permitting-talks-stand-pro-00993596",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/07/where-the-permitting-talks-stand-pro-00993596",
+   "access": "preview",
+   "verified": true,
+   "summary": "Advocates warned that senators were running out of time to reach a deal by the August recess. Staff from the ENR and EPW committees met during the July Fourth recess week. ACP's Jason Grumet said the window was starting to close.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The window of opportunity there is starting to close this Congress",
+    "speaker": "Jason Grumet, American Clean Power Association"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-16-politico-pro-new-england-gas-crunch-puts-whitehouse-in-a-bind",
+   "date": "2026-07-16",
+   "type": "news",
+   "outlet": "POLITICO Pro",
+   "author": "Nico Portuondo",
+   "title": "New England gas crunch puts Sheldon Whitehouse in a bind",
+   "url": "https://subscriber.politicopro.com/article/2026/07/new-england-gas-crunch-puts-sheldon-whitehouse-in-a-bind-pro-00992265",
+   "read_via": "https://r.jina.ai/https://subscriber.politicopro.com/article/2026/07/new-england-gas-crunch-puts-sheldon-whitehouse-in-a-bind-pro-00992265",
+   "access": "preview",
+   "verified": true,
+   "summary": "High power prices and offshore wind delays had New England Democrats split on new gas pipelines. Whitehouse, a lead permitting negotiator, said the pipeline question needed consideration.",
+   "stance": "reporting",
+   "quote": {
+    "text": "the pipeline question requires some consideration",
+    "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"
+   },
+   "topics": [
+    "fossil",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-29-heatmap-am-senate-reaches-a-permitting-deal",
+   "date": "2026-09-29",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Alexander C. Kaufman",
+   "title": "The Senate reaches a permitting deal (Heatmap AM, item 1)",
+   "url": "https://heatmap.news/am/permitting-reform-deal",
+   "read_via": "https://heatmap.news/am/permitting-reform-deal",
+   "access": "full",
+   "verified": true,
+   "summary": "Heatmap's morning newsletter led with the Senate deal on text. Whitehouse told Politico he needed more clarity from the administration on easing its blockade of wind and solar approvals. Text was due that week.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Neither Democrats nor Republicans released text of the bill, which both parties said should come out this week.",
+    "speaker": "Heatmap AM"
+   },
+   "topics": [
+    "congress",
+    "wind-solar"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-25-heatmap-am-permitting-reform-talks-trail-off",
+   "date": "2026-09-25",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Alexander C. Kaufman",
+   "title": "Permitting Reform Talks Trail Off",
+   "url": "https://heatmap.news/am/permitting-reform-stumble",
+   "read_via": "https://heatmap.news/am/permitting-reform-stumble",
+   "access": "full",
+   "verified": true,
+   "summary": "Reports that talks stalled on Sept. 24 and that the White House signaled its concessions may not outlast November. Betting markets still gave permitting reform about a 78 percent chance of passing before 2027.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The White House, meanwhile, has indicated that President Donald Trump’s concessions to Democrats to make the bill may no longer be on the table after November.",
+    "speaker": "Heatmap AM"
+   },
+   "topics": [
+    "congress",
+    "white-house"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-25-heatmap-daily-the-wright-interview-and-permittings-peril",
+   "date": "2026-09-25",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "The Wright Interview and Permitting's Peril",
+   "url": "https://heatmap.news/daily/wright-recording-permitting",
+   "read_via": "https://heatmap.news/daily/wright-recording-permitting",
+   "access": "full",
+   "verified": true,
+   "summary": "Meyer summarizes the week: the White House wanted a quick deal, Senate Democrats slowed down on Sept. 23, and Heinrich and Whitehouse said getting the deal right mattered more than election-year deadlines. He argues Democrats should not let the chance pass.",
+   "stance": "mixed",
+   "quote": {
+    "text": "We believe there is a good deal to be had",
+    "speaker": "Sens. Martin Heinrich and Sheldon Whitehouse, joint statement"
+   },
+   "topics": [
+    "congress",
+    "white-house"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-25-heatmap-the-fight-offshore-wind-existential-crisis-at-climate-week",
+   "date": "2026-09-25",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Jael Holzman",
+   "title": "Offshore Wind's Existential Crisis at Climate Week",
+   "url": "https://heatmap.news/plus/the-fight/spotlight/offshore-wind-permitting-reform",
+   "read_via": "https://heatmap.news/plus/the-fight/spotlight/offshore-wind-permitting-reform",
+   "access": "full",
+   "verified": true,
+   "summary": "California and New York officials said at Climate Week that the administration's offshore wind actions were illegal, while NYSERDA's CEO said litigation could not fix investor doubts. It also records Wright declining to confirm Politico's report that Trump would lift the wind blockade.",
+   "stance": "reporting",
+   "quote": {
+    "text": "I do believe a successful permitting reform thing changes the playing field for anything you want to build in this country, including wind.",
+    "speaker": "Energy Secretary Chris Wright"
+   },
+   "topics": [
+    "offshore",
+    "wind-solar",
+    "white-house",
+    "courts"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-22-heatmap-daily-whats-a-utility-to-do-when-everyone-is-mad-at-them",
+   "date": "2026-09-22",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Matthew Zeitlin",
+   "title": "What's a Utility to Do When Everyone Is Mad at Them?",
+   "url": "https://heatmap.news/daily/exelon-permitting-reform",
+   "read_via": "https://heatmap.news/daily/exelon-permitting-reform",
+   "access": "full",
+   "verified": true,
+   "summary": "Industry insiders told Heatmap that utilities' political weakness is one reason a deal could pass, because interregional transmission reform could threaten utility spending in their own territories. EEI has backed permitting reform publicly since last year.",
+   "stance": "reporting",
+   "quote": {
+    "text": "They are gonna get smoked in the Senate permitting deal",
+    "speaker": "An energy industry figure following the negotiations, anonymous"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-09-18-heatmap-the-bipartisan-buddies-with-a-plan-to-fix-transmission",
+   "date": "2026-09-18",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Matthew Zeitlin",
+   "title": "The Bipartisan Buddies With a Plan to Fix Transmission",
+   "url": "https://heatmap.news/politics/evans-peters-transmission",
+   "read_via": "https://heatmap.news/politics/evans-peters-transmission",
+   "access": "full",
+   "verified": true,
+   "summary": "Reps. Gabe Evans and Scott Peters released the CLEAR Act, which would apply to transmission lawsuits the stricter standards used for gas and hydropower projects. Peters expected a Senate package to include NEPA changes, limits on presidents canceling projects, and Section 401 reform.",
+   "stance": "reporting",
+   "quote": {
+    "text": "I think it’s coming together pretty well",
+    "speaker": "Rep. Scott Peters (D-Calif.)"
+   },
+   "topics": [
+    "transmission",
+    "courts",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-29-heatmap-daily-meta-down-permitting-odds-up",
+   "date": "2026-07-29",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "Meta Down, Permitting Odds Up",
+   "url": "https://heatmap.news/daily/meta-microsoft-permitting-reform",
+   "read_via": "https://heatmap.news/daily/meta-microsoft-permitting-reform",
+   "access": "full",
+   "verified": true,
+   "summary": "Meyer lays out the six buckets of a likely deal (NEPA and judicial review, transmission, Clean Water Act, permit certainty, historic preservation, everything else) and says Lee's NHPA interest comes from his committee's jurisdiction. Prediction markets jumped to 77 percent that day.",
+   "stance": "neutral",
+   "quote": {
+    "text": "A permitting reform deal will probably have six buckets.",
+    "speaker": "Robinson Meyer, Heatmap"
+   },
+   "topics": [
+    "nepa",
+    "transmission",
+    "clean-water-act",
+    "permit-certainty",
+    "historic-preservation",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-29-heatmap-shift-key-what-a-permitting-reform-deal-could-look-like",
+   "date": "2026-07-29",
+   "type": "podcast",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "What a Permitting Reform Deal Could Look Like (Shift Key, with Daniel Palken)",
+   "url": "https://heatmap.news/podcast/permitting-reform-arnold-ventures-daniel-palken",
+   "read_via": "https://heatmap.news/podcast/permitting-reform-arnold-ventures-daniel-palken-transcript",
+   "access": "full",
+   "verified": true,
+   "summary": "Arnold Ventures' Daniel Palken walks through the history of permitting deals and the six buckets of the current talks, which he calls four-corner negotiations among the EPW and ENR leaders. He says the administration's cancellations and withheld permits are the biggest obstacle to Democratic buy-in.",
+   "stance": "neutral",
+   "quote": {
+    "text": "all four parties are really sincerely interested in good faith in getting to a deal",
+    "speaker": "Daniel Palken, Arnold Ventures"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "transmission",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-08-03-heatmap-shift-key-heinrich-and-granholm",
+   "date": "2026-08-03",
+   "type": "podcast",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "Permitting Reform, Data Centers, and More With Senator Heinrich and Secretary Granholm (Shift Key)",
+   "url": "https://heatmap.news/podcast/shift-key-heinrich-granholm",
+   "read_via": "https://heatmap.news/podcast/shift-key-heinrich-granholm-transcript",
+   "access": "full",
+   "verified": true,
+   "summary": "Recorded in late July. Heinrich said talks were active and that the White House was the biggest wild card, citing new historic preservation regulations, offshore wind stop-work orders and the Pentagon's halt on wind reviews. He also described his connect-and-manage interconnection bill and said he would 'get what you can done' in this Congress.",
+   "stance": "mixed",
+   "quote": {
+    "text": "I think the biggest wild card is actually and challenge is the White House because the White House continues to do things that sort of poison the well.",
+    "speaker": "Sen. Martin Heinrich (D-N.M.)"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "transmission",
+    "historic-preservation",
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-07-16-heatmap-daily-scoop-heinrich-connect-and-manage-bill",
+   "date": "2026-07-16",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "Scoop: A Key Democrat Wants to Break America's Worst Energy Bottleneck",
+   "url": "https://heatmap.news/daily/heinrich-texas-power-permitting",
+   "read_via": "https://heatmap.news/daily/heinrich-texas-power-permitting",
+   "access": "full",
+   "verified": true,
+   "summary": "Heinrich introduced a bill letting new power plants of any type skip full interconnection studies in exchange for curtailing output when the grid is congested, copying the Texas approach. Heatmap saw it as the kind of technology-neutral bill that could slot into a permitting package.",
+   "stance": "reporting",
+   "quote": {
+    "text": "would make it easier for new power plants to hook up to electricity markets across the country",
+    "speaker": "Heatmap (Robinson Meyer)"
+   },
+   "topics": [
+    "transmission"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-16-heatmap-daily-freedom-senate-permit-certainty-bill",
+   "date": "2026-06-16",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "Freedom (It Won't Slow You Down)",
+   "url": "https://heatmap.news/daily/senate-bipartisan-permitting-reform",
+   "read_via": "https://heatmap.news/daily/senate-bipartisan-permitting-reform",
+   "access": "full",
+   "verified": true,
+   "summary": "Cortez Masto and Cotton released a Senate version of the FREEDOM Act that keeps future presidents from interfering with permitted projects. It dropped the House bill's $5 million de-risking compensation and lets a court appoint a contractor to finish a stalled permit. Heatmap calls such a provision essential to any deal.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Most importantly, it jettisons a de-risking compensation program.",
+    "speaker": "Heatmap (Robinson Meyer)"
+   },
+   "topics": [
+    "permit-certainty",
+    "congress",
+    "courts"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-23-heatmap-the-mystery-of-the-ratepayer-protection-act",
+   "date": "2026-06-23",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Matthew Zeitlin",
+   "title": "The Mystery of the Ratepayer Protection Act",
+   "url": "https://heatmap.news/politics/ratepayer-protection-act-explained",
+   "read_via": "https://heatmap.news/politics/ratepayer-protection-act-explained",
+   "access": "full",
+   "verified": true,
+   "summary": "Explains why hyperscalers back the bill. Harvard's Ari Peskoe calls the PURPA standard largely symbolic because Congress cannot force state regulators to act, and analysts say data centers are not yet the main driver of past price increases.",
+   "stance": "mixed",
+   "quote": {
+    "text": "largely symbolic",
+    "speaker": "Ari Peskoe, Harvard Law School"
+   },
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-18-heatmap-ferc-has-a-new-plan-for-data-centers",
+   "date": "2026-06-18",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Matthew Zeitlin",
+   "title": "FERC Has a New Plan for Data Centers",
+   "url": "https://heatmap.news/energy/ferc-data-center-plan",
+   "read_via": "https://heatmap.news/energy/ferc-data-center-plan",
+   "access": "full",
+   "verified": true,
+   "summary": "FERC voted 5-0 to send show cause orders to six grid operators, covering study rules, cost-shift safeguards, co-location, flexible service and proximate generation. FERC chose region-by-region orders over a national rule.",
+   "stance": "reporting",
+   "quote": {
+    "text": "If new infrastructure is built to accommodate a data center, and that data center doesn’t show up, residential customers are not left on the hook to pay the costs",
+    "speaker": "FERC Commissioner David Rosner"
+   },
+   "topics": [
+    "data-centers",
+    "transmission"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-06-05-heatmap-the-fight-ray-long-ai-and-the-permitting-deal",
+   "date": "2026-06-05",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Jael Holzman",
+   "title": "How Has the Rise of AI Changed the Odds of a Permitting Deal? (Q&A with ACORE's Ray Long)",
+   "url": "https://heatmap.news/plus/the-fight/qa/ray-long-permitting",
+   "read_via": "https://heatmap.news/plus/the-fight/qa/ray-long-permitting",
+   "access": "full",
+   "verified": true,
+   "summary": "ACORE's Ray Long says data center load is a catalyst for permitting reform. He cites 166 gigawatts of needed power over four years, about half for data centers, and says a bill would have to come from a Senate deal in an election year.",
+   "stance": "supports",
+   "quote": {
+    "text": "The data center load is a part of the catalyst to get people talking about it",
+    "speaker": "Ray Long, ACORE"
+   },
+   "topics": [
+    "data-centers",
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
+  }
+ ],
+ "item_updates": [],
+ "events": [],
+ "people": [],
+ "notes": []
+}
