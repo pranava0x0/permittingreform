@@ -141,6 +141,26 @@
    "sector": "think_tank"
   },
   {
+   "id": "2026-10-01-utility-dive-senate-permitting-bill-transmission-siting",
+   "date": "2026-10-01",
+   "type": "news",
+   "outlet": "Utility Dive",
+   "title": "Senate permitting bill would expand federal role in transmission siting",
+   "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/",
+   "verified": true,
+   "summary": "Reports on BAAJA expanding FERC authority to permit interstate transmission lines, eliminating NIETCs and the federal right of first refusal, with reactions from Rob Gramlich and Devin Hartman.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The transmission title as well as the impact of the other sections on transmission development are very well-crafted.",
+    "speaker": "Rob Gramlich, Grid Strategies"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "industry"
+  },
+  {
    "id": "2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw",
    "date": "2026-10-01",
    "type": "news",
@@ -246,6 +266,27 @@
    "topics": [
     "transmission",
     "data-centers",
+    "congress"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-10-01-artificial-weights-permitting-bill-procedural-reforms",
+   "date": "2026-10-01",
+   "type": "analysis",
+   "outlet": "Artificial Weights",
+   "title": "The Permitting Bill: Its Procedural Reforms, Explained",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "verified": true,
+   "summary": "Alex Mechanick analyzes BAAJA procedural overhaul, focusing on the end of project-stopping injunctions under NEPA and NHPA in favor of remand to correct errors while projects proceed.",
+   "stance": "supports",
+   "quote": {
+    "text": "The most important reform in BAAJA is that violations of NEPA and NHPA can no longer be the basis for stopping a project. Instead, if a court finds a violation, it remands to the agency to correct the error",
+    "speaker": "Alex Mechanick"
+   },
+   "topics": [
+    "courts",
+    "nepa",
     "congress"
    ],
    "sector": "think_tank"
@@ -680,6 +721,27 @@
    "sector": "press"
   },
   {
+   "id": "2026-09-30-sierra-club-reaction-permitting-bill-introduction",
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "Sierra Club",
+   "title": "Sierra Club Reaction to Permitting Bill Introduction",
+   "url": "https://www.sierraclub.org/press-releases/2026/09/sierra-club-reaction-permitting-bill-introduction",
+   "verified": true,
+   "summary": "Sierra Club notes the urgency of transmission and clean energy but raises concern over fossil fuel infrastructure acceleration without deployment guarantees.",
+   "stance": "opposes",
+   "quote": {
+    "text": "There is no task more urgent than building clean energy and transmission. Congress must act to lower energy bills, protect clean air and water, and transition off of fossil fuels, and that means making it faster and easier to build transmission and clean energy.",
+    "speaker": "Holly Bender, Sierra Club"
+   },
+   "topics": [
+    "transmission",
+    "congress",
+    "nepa"
+   ],
+   "sector": "environmental"
+  },
+  {
    "id": "2026-09-30-politico-capitol-agenda-one-day-more",
    "date": "2026-09-30",
    "type": "news",
@@ -938,6 +1000,47 @@
     "fossil"
    ],
    "sector": "environmental"
+  },
+  {
+   "id": "2026-09-30-canary-media-senate-permitting-bill-power-lines",
+   "date": "2026-09-30",
+   "type": "news",
+   "outlet": "Canary Media",
+   "title": "Senate permitting bill could greatly expand power lines and clean energy",
+   "url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines",
+   "verified": true,
+   "summary": "Reports that BAAJA transmission directives and advanced grid tech mandates could streamline power line buildouts and unblock clean energy for data centers and load growth.",
+   "stance": "reporting",
+   "quote": {
+    "text": "If Congress wanted to expand and de-congest the nation’s transmission grid, these are the policy changes that can get that done",
+    "speaker": "Rob Gramlich, Grid Strategies"
+   },
+   "topics": [
+    "transmission",
+    "data-centers",
+    "congress"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-09-30-c2es-transmission-reforms-modeling-analysis",
+   "date": "2026-09-30",
+   "type": "analysis",
+   "outlet": "Center for Climate and Energy Solutions",
+   "title": "New Analysis Finds Federal Transmission Reforms Would Slash Power Sector Emissions, Boost Grid Reliability, and Save Consumers Billions",
+   "url": "https://www.c2es.org/press-release/new-analysis-finds-federal-transmission-reforms-would-slash-power-sector-emissions-boost-grid-reliability-and-save-consumers-billions/",
+   "verified": true,
+   "summary": "C2ES and Greenline Insights model nationwide permitting and transmission reforms, finding $125 billion in cumulative grid savings and $19 billion in lower residential bills through 2040.",
+   "stance": "supports",
+   "quote": {
+    "text": "This analysis shows that practical reforms to transmission planning and interconnection processes can unlock more clean energy, reduce our reliance on natural gas, lower costs for consumers, and help build a cleaner, more reliable electric grid.",
+    "speaker": "Nat Keohane, C2ES"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "think_tank"
   },
   {
    "id": "2026-09-30-breakthrough-institute-supports-affordability-jobs-act",

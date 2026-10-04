@@ -1186,7 +1186,7 @@
  "bills": {
   "id": "data-center-bills",
   "label": "Data center bills",
-  "intro": "BAAJA's data center rules beside the federal bills that would make large computing loads pay for the grid they use. Each cell links to the text it summarizes.",
+  "intro": "BAAJA's data center and load-growth rules beside the federal bills that would regulate large computing loads, transmission pricing, and interconnection speed. EPRA 2024 and the SPEED Act did not address data center ratepayer rules or non-firm transmission service. Each cell links to the text it summarizes.",
   "versions": [
    {
     "key": "policy",
@@ -1703,6 +1703,124 @@
      "text": "EIA must add data center load to Form 861, with no 20 MW threshold in section 2114. Revision is due at least 90 days before the first April 1 after enactment.",
      "sections": [
       "2114"
+     ]
+    }
+   },
+   {
+    "id": "non-firm",
+    "topic": "Non-firm rate discount",
+    "policy": {
+     "text": "FERC's 1994 pricing policy allows discounted or negotiated rates, but sets no mandatory transmission rate discount for flexible or non-firm computing loads.",
+     "url": "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf",
+     "cite": "FERC pricing policy statement, 59 FR 55031 (1994)"
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Directs FERC to provide flexible interconnection service, but establishes no statutory rate discount for non-firm service.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text"
+    },
+    "pftp": {
+     "text": "Allows curtailable service agreements to satisfy clean energy requirements, but specifies no discounted transmission rate.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text"
+    },
+    "grid_act": {
+     "text": "Not addressed."
+    },
+    "senate": {
+     "text": "FERC must revise its transmission pricing policy within 270 days to provide a lower transmission price for computational loads electing non-firm service. Studies must evaluate standardized cost-reduction options to avoid network upgrades.",
+     "sections": [
+      "2107"
+     ]
+    }
+   },
+   {
+    "id": "queue-speed",
+    "topic": "Queue speed and study automation",
+    "policy": {
+     "text": "Order 2023 set cluster studies and study deadlines; FERC's June 2026 show cause orders asked grid operators for large-load study timelines, but set no automation requirements.",
+     "url": "https://rmi.org/resources/understanding-fercs-large-load-orders/",
+     "cite": "RMI on FERC's June 2026 orders"
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Sets study schedules and readiness requirements to curb speculative requests, but mandates no AI or automation in study software.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm",
+     "cite": "S. 5199 text"
+    },
+    "pftp": {
+     "text": "Creates a dedicated data center queue; grid operators may delay or deny studies for loads that threaten reliability.",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm",
+     "cite": "S. 3682 text"
+    },
+    "grid_act": {
+     "text": "Not addressed."
+    },
+    "senate": {
+     "text": "Directs FERC within 1 year to require AI and automation in interconnection study evaluations. Mandates 15-day grid data turnaround (backed by section 316A reliability penalties for public utilities and FERC compliance orders for other entities), and requires a joint FERC/DOE reference spec for fully automated studies within 1 year.",
+     "sections": [
+      "2110",
+      "2111"
+     ]
+    }
+   },
+   {
+    "id": "att-reconductoring",
+    "topic": "Grid-enhancing tech and reconductoring",
+    "policy": {
+     "text": "FERC Order No. 1920 requires transmission planners to evaluate dynamic line ratings, advanced power flow control, and advanced conductors, but deployment is voluntary.",
+     "url": "https://www.federalregister.gov/documents/2024/06/11/2024-10609/building-for-the-future-through-electric-regional-transmission-planning-and-cost-allocation",
+     "cite": "FERC Order No. 1920, 89 FR 49704 (2024)"
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Not addressed."
+    },
+    "pftp": {
+     "text": "Not addressed."
+    },
+    "grid_act": {
+     "text": "Not addressed."
+    },
+    "senate": {
+     "text": "Utilities must deploy advanced transmission technologies whenever benefits exceed costs, backed by ROE reduction penalties. In-corridor reconductoring and grid capacity expansions are categorically excluded from NEPA and NHPA reviews.",
+     "sections": [
+      "2102",
+      "2109"
+     ]
+    }
+   },
+   {
+    "id": "btm-power",
+    "topic": "Behind-the-meter generation and storage",
+    "policy": {
+     "text": "FERC Order No. 2222 directed grid operators to accommodate distributed energy resource aggregations by administrative rule, but establishes no direct statutory right in the Federal Power Act.",
+     "url": "https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional",
+     "cite": "FERC Order No. 2222, 85 FR 67094 (2020)"
+    },
+    "rpa": {
+     "text": "Not addressed."
+    },
+    "grid_savings": {
+     "text": "Not addressed."
+    },
+    "pftp": {
+     "text": "Not addressed."
+    },
+    "grid_act": {
+     "text": "Not addressed."
+    },
+    "senate": {
+     "text": "Effective 18 months after enactment, bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.",
+     "sections": [
+      "2108"
      ]
     }
    }

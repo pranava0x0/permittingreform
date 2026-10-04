@@ -207,6 +207,29 @@ def build() -> tuple[dict, dict, list[str]]:
                 else:
                     r["c"] = cite(loc)
 
+    # Data centers: computing loads, transmission rates and interconnection speed.
+    dc_path = DATA / "datacenters.json"
+    datacenters = load(dc_path) if dc_path.exists() else None
+    if datacenters:
+        gids = {g["id"] for g in datacenters["groups"]}
+        for r in datacenters["rows"]:
+            where = f"datacenters {r['id']}"
+            if r["group"] not in gids:
+                errors.append(f"{where}: unknown group {r['group']!r}")
+            for w in r["who"]:
+                if w not in datacenters["who"]:
+                    errors.append(f"{where}: unknown party {w!r}")
+            if r["effect"] not in EFFECTS:
+                errors.append(f"{where}: effect {r['effect']!r} is not one of {sorted(EFFECTS)}")
+            check_refs(where, r["sections"])
+            if r.get("quote"):
+                sec = by_num.get(r.get("quote_section", r["sections"][0]))
+                loc = billtext.locate(sec["lines"], r["quote"]) if sec else None
+                if not loc:
+                    errors.append(f"{where}: quote not found in section {r.get('quote_section', r['sections'][0])}")
+                else:
+                    r["c"] = cite(loc)
+
     extra = {}
     for name, key in OPTIONAL.items():
         path = DATA / f"{name}.json"
@@ -255,6 +278,7 @@ def build() -> tuple[dict, dict, list[str]]:
         "overview": overview,
         "compare": compare,
         "communities": communities,
+        "datacenters": datacenters,
         "timeline": extra["timeline"],
         "people": extra["people"],
         "media": extra["media"],
@@ -386,6 +410,20 @@ def llms_full(core: dict, paras: dict) -> str:
         out += ["", "## Communities: who can comment, consult, plan or sue", "", comm["intro"], ""]
         for row in comm["rows"]:
             who = ", ".join(comm["who"].get(w, w) for w in row["who"])
+            out += [f"### {row['topic']}", "", f"- Effect: {row['effect']}; affects: {who}",
+                    f"- Now: {row['now']}" + (f" Source: [{row['now_cite']}]({row['now_url']})" if row.get("now_url") else ""),
+                    f"- BAAJA: {row['baaja']}",
+                    "- Bill: " + ", ".join(f"[{n}]({core['meta']['site_url']}sections/{n}.md)" for n in row.get("sections", []))]
+            if row.get("quote"):
+                where = f" (Sec. {row['quote_section']})" if row.get("quote_section") else ""
+                cite = f", {pdf_citation(core['meta']['site_url'], row['c'])}" if row.get("c") else ""
+                out.append(f"- Quote{where}: \"{row['quote']}\"{cite}")
+            out.append("")
+    dc = core.get("datacenters")
+    if dc:
+        out += ["", "## Data centers: computing loads, transmission rates and speed", "", dc["intro"], ""]
+        for row in dc["rows"]:
+            who = ", ".join(dc["who"].get(w, w) for w in row["who"])
             out += [f"### {row['topic']}", "", f"- Effect: {row['effect']}; affects: {who}",
                     f"- Now: {row['now']}" + (f" Source: [{row['now_cite']}]({row['now_url']})" if row.get("now_url") else ""),
                     f"- BAAJA: {row['baaja']}",

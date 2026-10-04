@@ -1,8 +1,8 @@
 {
- "checked": "2026-10-02",
+ "checked": "2026-10-04",
  "bill": {
-  "total": 158,
-  "verified": 158
+  "total": 173,
+  "verified": 173
  },
  "web": [
   {
@@ -21,7 +21,7 @@
    "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf",
    "result": "verified",
    "share": 1.0,
-   "note": ""
+   "note": "timeout: The read operation timed out"
   },
   {
    "where": "timeline.2025-01-20-eo-14154-unleashing-american-energy",
@@ -852,6 +852,33 @@
    "note": ""
   },
   {
+   "where": "people.rob-gramlich",
+   "text": "The transmission title as well as the impact of the other sections on transmission development are very well-crafted.",
+   "speaker": "Rob Gramlich",
+   "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.devin-hartman",
+   "text": "This is what stakeholders have been working on — permitting and transmission reform — for the last several Congresses",
+   "speaker": "Devin Hartman",
+   "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.nathaniel-keohane",
+   "text": "Really simply, we need to build more energy infrastructure in this country... We need to do that faster, and these reforms will help.",
+   "speaker": "Nathaniel Keohane",
+   "url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.brc-2026-10-01-transparency",
    "text": "The answer to that distrust is transparency.",
    "speaker": "Sen. John Curtis",
@@ -897,6 +924,15 @@
    "note": ""
   },
   {
+   "where": "media.2026-10-01-utility-dive-senate-permitting-bill-transmission-siting",
+   "text": "The transmission title as well as the impact of the other sections on transmission development are very well-crafted.",
+   "speaker": "Rob Gramlich, Grid Strategies",
+   "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw",
    "text": "Folding our hand now or in the lame duck makes no sense when we can keep working on this and, in a few more months, have a much better deal that works for everyone.",
    "speaker": "Rep. Jared Huffman (D-Calif.)",
@@ -937,6 +973,15 @@
    "text": "Most importantly, BAAJA gives FERC more statutory cover to take aggressive actions on grid development.",
    "speaker": "Chirag Lala, Center for Public Enterprise",
    "url": "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-01-artificial-weights-permitting-bill-procedural-reforms",
+   "text": "The most important reform in BAAJA is that violations of NEPA and NHPA can no longer be the basis for stopping a project. Instead, if a court finds a violation, it remands to the agency to correct the error",
+   "speaker": "Alex Mechanick",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1086,6 +1131,15 @@
    "note": "read in a browser on 2026-10-01"
   },
   {
+   "where": "media.2026-09-30-sierra-club-reaction-permitting-bill-introduction",
+   "text": "There is no task more urgent than building clean energy and transmission. Congress must act to lower energy bills, protect clean air and water, and transition off of fossil fuels, and that means making it faster and easier to build transmission and clean energy.",
+   "speaker": "Holly Bender, Sierra Club",
+   "url": "https://www.sierraclub.org/press-releases/2026/09/sierra-club-reaction-permitting-bill-introduction",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-10-02"
+  },
+  {
    "where": "media.2026-09-30-politico-capitol-agenda-one-day-more",
    "text": "All the issues are solved in concept",
    "speaker": "Sen. Angus King (I-Maine)",
@@ -1180,6 +1234,24 @@
    "text": "This is a climate kill shot that condemns our most vulnerable communities to suffer decades more fossil fuel pollution.",
    "speaker": "Brett Hartl, Center for Biological Diversity",
    "url": "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-09-30-canary-media-senate-permitting-bill-power-lines",
+   "text": "If Congress wanted to expand and de-congest the nation’s transmission grid, these are the policy changes that can get that done",
+   "speaker": "Rob Gramlich, Grid Strategies",
+   "url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-09-30-c2es-transmission-reforms-modeling-analysis",
+   "text": "This analysis shows that practical reforms to transmission planning and interconnection processes can unlock more clean energy, reduce our reliance on natural gas, lower costs for consumers, and help build a cleaner, more reliable electric grid.",
+   "speaker": "Nat Keohane, C2ES",
+   "url": "https://www.c2es.org/press-release/new-analysis-finds-federal-transmission-reforms-would-slash-power-sector-emissions-boost-grid-reliability-and-save-consumers-billions/",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1936,9 +2008,9 @@
    "text": "The SPEED Act marks the first major bipartisan permitting reform proposal in the 119th Congress.",
    "speaker": "Bipartisan Policy Center",
    "url": "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/",
-   "result": "verified",
+   "result": "browser",
    "share": 1.0,
-   "note": ""
+   "note": "read in a browser on 2026-10-01"
   },
   {
    "where": "media.2025-12-18-house-natural-resources-house-passes-speed-act",

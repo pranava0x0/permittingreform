@@ -140,7 +140,7 @@
      "why": "A CEQ dispute order satisfies consultation duties under other statutes."
     },
     {
-     "text": "eliminate from consideration any alternative (except for a no-action alternative) that does not— “(I) fulfill the purpose and need of the proposed agency action; and “(II) meet the goals of an applicable non-Federal project sponsor.",
+     "text": "eliminate from consideration any alternative (except for a no-action alternative) that does not\u2014 \u201c(I) fulfill the purpose and need of the proposed agency action; and \u201c(II) meet the goals of an applicable non-Federal project sponsor.",
      "why": "Alternatives that miss the sponsor's goals are dropped from the analysis."
     },
     {
@@ -165,7 +165,7 @@
    ],
    "quotes": [
     {
-     "text": "by striking “5 years” and inserting “10 years”.",
+     "text": "by striking \u201c5 years\u201d and inserting \u201c10 years\u201d.",
      "why": "The whole section."
     }
    ],
@@ -207,7 +207,7 @@
    ],
    "quotes": [
     {
-     "text": "not later than 60 days after the date on which the project sponsor submits the application, the Federal agency shall— “(A) document receipt of the application; and “(B)(i) notify the project sponsor that the application is complete",
+     "text": "not later than 60 days after the date on which the project sponsor submits the application, the Federal agency shall\u2014 \u201c(A) document receipt of the application; and \u201c(B)(i) notify the project sponsor that the application is complete",
      "why": "The 60-day completeness check."
     }
    ],
@@ -235,7 +235,7 @@
      "why": "Remand is the only remedy; a court cannot vacate or enjoin."
     },
     {
-     "text": "a claim shall be barred unless the claim— “(1) is filed not later than 150 days",
+     "text": "a claim shall be barred unless the claim\u2014 \u201c(1) is filed not later than 150 days",
      "why": "The 150-day filing deadline."
     },
     {
@@ -353,7 +353,7 @@
    ],
    "quotes": [
     {
-     "text": "in defining the scope of the term ‘waters of the United States’ for purposes of this Act",
+     "text": "in defining the scope of the term \u2018waters of the United States\u2019 for purposes of this Act",
      "why": "Challenges to a 'waters of the United States' definition go to the courts of appeals."
     }
    ],
@@ -376,7 +376,7 @@
    ],
    "quotes": [
     {
-     "text": "no certifying authority may— “(i) deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements",
+     "text": "no certifying authority may\u2014 \u201c(i) deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements",
      "why": "A state can deny only when no condition could make the project comply."
     },
     {
@@ -401,7 +401,7 @@
    ],
    "quotes": [
     {
-     "text": "by striking “five years” and inserting “10 years”.",
+     "text": "by striking \u201cfive years\u201d and inserting \u201c10 years\u201d.",
      "why": "The whole section."
     }
    ],
@@ -570,7 +570,7 @@
    ],
    "quotes": [
     {
-     "text": "the Secretary shall accept and integrate State-collected data, subject to the condition that the State-collected data meets the definition of ‘best scientific and commercial data available’",
+     "text": "the Secretary shall accept and integrate State-collected data, subject to the condition that the State-collected data meets the definition of \u2018best scientific and commercial data available\u2019",
      "why": "State-collected data must be used in listing decisions."
     }
    ],
@@ -742,11 +742,11 @@
    ],
    "quotes": [
     {
-     "text": "Activities to maintain or increase the capacity of the electric grid within a covered area, and any Federal agency action authorizing such activities— “(A) are a category of actions designated as being categorically excluded",
+     "text": "Activities to maintain or increase the capacity of the electric grid within a covered area, and any Federal agency action authorizing such activities\u2014 \u201c(A) are a category of actions designated as being categorically excluded",
      "why": "Grid upgrades inside an existing right-of-way are excluded from NEPA."
     },
     {
-     "text": "The term ‘covered activity’ means any repair, maintenance, replacement, upgrade, rebuilding, modification, optimization, minor relocation, looping, compression, capacity-enhancement project, or addition to a covered facility.",
+     "text": "The term \u2018covered activity\u2019 means any repair, maintenance, replacement, upgrade, rebuilding, modification, optimization, minor relocation, looping, compression, capacity-enhancement project, or addition to a covered facility.",
      "why": "The same exemption for gas pipeline work, including looping and compression."
     }
    ],
@@ -857,6 +857,8 @@
     "Up-front financial assurance before upgrades are built",
     "States may auction grid access and require bring-your-own generation",
     "Non-firm service gets a lower transmission price",
+    "Standardized study of cost-reduction options to avoid network upgrades",
+    "Incremental revenues credited to prevent double recovery from other ratepayers",
     "Existing approved arrangements grandfathered"
    ],
    "quotes": [
@@ -886,6 +888,7 @@
    "plain": "Opens wholesale markets to aggregations of customer-sited batteries, fuel cells and generators that can respond within 15 minutes (5 kilowatts minimum per device, 100 kilowatts per aggregation). After 18 months, grid operator rules that block them are unjust and unreasonable. Grid operators file compliance tariffs within 180 days. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect these resources. They must also accept wholesale metering data.\n\nA device paid by a state retail program cannot be paid twice for the same service; FERC orders disgorgement and can impose penalties of up to 3 times the amount for each day it was knowingly kept. The Energy Department runs a voluntary streamlined local permitting program for rooftop solar, batteries and vehicle chargers, with $20 million a year authorized for fiscal years 2026 through 2031.",
    "key_points": [
     "Virtual power plants get statutory wholesale market access",
+    "Distribution utilities in organized markets must interconnect behind-the-meter resources",
     "Device-level metering allowed; utilities cannot require their own equipment",
     "Double-payment ban, with penalties of up to 3 times the amount per day",
     "$20 million a year for streamlined local solar and storage permitting"
@@ -1114,7 +1117,7 @@
    ],
    "quotes": [
     {
-     "text": "The installation, modification, operation, or removal of commercially available solar photovoltaic systems located on— (i) a building or other structure (such as a rooftop, parking lot, or facility, or mounted to signage, lighting, gates, or fences); or (ii) previously disturbed or developed land comprising less than 10 acres.",
+     "text": "The installation, modification, operation, or removal of commercially available solar photovoltaic systems located on\u2014 (i) a building or other structure (such as a rooftop, parking lot, or facility, or mounted to signage, lighting, gates, or fences); or (ii) previously disturbed or developed land comprising less than 10 acres.",
      "why": "Small solar installations are to be excluded from NEPA review."
     }
    ],
@@ -1371,7 +1374,7 @@
    ],
    "quotes": [
     {
-     "text": "by inserting “and are reasonably related to the effects of the project” after “of such reservation”.",
+     "text": "by inserting \u201cand are reasonably related to the effects of the project\u201d after \u201cof such reservation\u201d.",
      "why": "Mandatory license conditions must relate to the project's effects."
     }
    ],
@@ -1429,7 +1432,7 @@
    ],
    "quotes": [
     {
-     "text": "by striking “or mathematical” and inserting “mathematical, economic, or legal”",
+     "text": "by striking \u201cor mathematical\u201d and inserting \u201cmathematical, economic, or legal\u201d",
      "why": "Adds economists and lawyers to FERC's special hiring authority."
     }
    ],
@@ -1487,7 +1490,7 @@
    ],
    "quotes": [
     {
-     "text": "by striking “prevention of interference with reasonable uses” and inserting “prevention of unreasonable interference with other uses”",
+     "text": "by striking \u201cprevention of interference with reasonable uses\u201d and inserting \u201cprevention of unreasonable interference with other uses\u201d",
      "why": "The offshore wind test becomes 'unreasonable interference' with other uses."
     }
    ],

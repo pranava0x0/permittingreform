@@ -1,0 +1,317 @@
+{
+ "_about": "What BAAJA does for data centers, high-density computing loads and grid speed. The build checks each quote against the cited section.",
+ "intro": "How the bill impacts data centers, AI computing facilities and interconnection speed. Covers study automation, transmission rate carrots and sticks, grid-enhancing technologies, behind-the-meter resources, and ratepayer protections. Each row gives current policy, the change and the sections that make it.",
+ "who": {
+  "hyperscalers": "Hyperscalers & AI",
+  "data_centers": "Data center operators",
+  "btm_power": "Behind-the-meter power & VPPs",
+  "grid_operators": "Grid operators & utilities",
+  "ratepayers": "Ratepayers & states"
+ },
+ "groups": [
+  {
+   "id": "speed",
+   "label": "Interconnection speed and study automation"
+  },
+  {
+   "id": "pricing",
+   "label": "Transmission rates and non-firm carrots"
+  },
+  {
+   "id": "grid-tech",
+   "label": "Advanced grid technologies and reconductoring"
+  },
+  {
+   "id": "btm",
+   "label": "Behind-the-meter generation and virtual power plants"
+  },
+  {
+   "id": "protection",
+   "label": "Ratepayer protection and financial assurance"
+  }
+ ],
+ "rows": [
+  {
+   "id": "study-automation",
+   "group": "speed",
+   "topic": "Interconnection study automation and AI evaluation",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "grid_operators"
+   ],
+   "effect": "changes",
+   "now": "Transmission providers evaluate interconnection requests using manual engineering studies and cluster studies under FERC Order No. 2023, with no federal automation mandate.",
+   "now_cite": "FERC Order No. 2023, 88 FR 61014 (2023)",
+   "now_url": "https://www.federalregister.gov/documents/2023/09/06/2023-16597/improvements-to-generator-interconnection-procedures-and-agreements",
+   "baaja": "Directs FERC to initiate a rulemaking within 1 year requiring public utility transmission providers to share and employ queue management practices using artificial intelligence, machine learning, and automation to evaluate and process interconnection requests faster, revisited every 4 years.",
+   "sections": [
+    "2110"
+   ],
+   "quote": "to require public utility transmission providers to share and employ, as appropriate, queue management practices with respect to the use of computing technologies, including artificial intelligence, machine learning, and automation"
+  },
+  {
+   "id": "grid-data-deadlines",
+   "group": "speed",
+   "topic": "15-day default deadline for grid study data",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "grid_operators"
+   ],
+   "effect": "expands",
+   "now": "Interconnection studies are frequently delayed by months while transmission providers wait for neighboring utilities or bulk-power system users to furnish network models and engineering data.",
+   "now_cite": "FERC Order No. 2023, 88 FR 61014 (2023)",
+   "now_url": "https://www.federalregister.gov/documents/2023/09/06/2023-16597/improvements-to-generator-interconnection-procedures-and-agreements",
+   "baaja": "Adds Federal Power Act section 232. Bulk-power system users, owners, and operators must provide requested grid data within 15 days (unless FERC sets an alternative timeline for a data category) in an agreed usable format. Confidentiality rules cannot be used to withhold data; violations by public utilities are subject to FPA section 316A reliability enforcement penalties, with other entities subject to FERC compliance orders.",
+   "sections": [
+    "2111"
+   ],
+   "quote": "shall provide requested grid data not later than 15 days after receiving the request."
+  },
+  {
+   "id": "automated-spec",
+   "group": "speed",
+   "topic": "Standardized reference spec for fully automated studies",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "grid_operators"
+   ],
+   "effect": "changes",
+   "now": "Each regional grid operator and utility maintains bespoke engineering criteria and proprietary software workflows, requiring repeated supplemental data requests.",
+   "now_cite": "RMI on FERC's June 2026 orders",
+   "now_url": "https://rmi.org/resources/understanding-fercs-large-load-orders/",
+   "baaja": "Requires FERC and the Department of Energy to publish, within 1 year, a joint reference specification for fully automated interconnection studies, including system impact studies, without supplemental data requests during the study process.",
+   "sections": [
+    "2111"
+   ],
+   "quote": "to enable full automation of interconnection studies, including system impact studies, without supplemental data requests during the study."
+  },
+  {
+   "id": "cost-reduction-options",
+   "group": "speed",
+   "topic": "Standardized cost-reduction options in upgrade studies",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "grid_operators"
+   ],
+   "effect": "changes",
+   "now": "Grid operators currently lack standardized large-load study processes and cost-reduction options, prompting FERC in June 2026 to direct RTOs to develop standardized study rules and flexible service.",
+   "now_cite": "RMI on FERC's June 2026 orders",
+   "now_url": "https://rmi.org/resources/understanding-fercs-large-load-orders/",
+   "baaja": "Requires FERC to establish rules for standardized analysis to identify upgrades for computational load sites and cost-reduction options, such as flexible interconnection and non-firm curtailment parameters, to avoid unneeded network buildout.",
+   "sections": [
+    "2107"
+   ],
+   "quote": "to require standardized analysis to identify upgrades for a computational load site and cost reduction options, as the Commission may require by rule."
+  },
+  {
+   "id": "non-firm-discount",
+   "group": "pricing",
+   "topic": "Mandatory transmission rate discount for non-firm computational load",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "grid_operators"
+   ],
+   "effect": "expands",
+   "now": "FERC's 1994 pricing policy allows flexible or negotiated transmission rates, but establishes no statutory requirement for discounted rates when computational loads accept non-firm service.",
+   "now_cite": "FERC pricing policy statement, 59 FR 55031 (1994)",
+   "now_url": "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf",
+   "baaja": "Directs FERC to revise its 1994 pricing policy statement within 270 days to provide a lower cost of transmission service for computational loads that elect non-firm transmission service, followed by a proposed rule within 270 days and a final rule within 1 year.",
+   "sections": [
+    "2107"
+   ],
+   "quote": "provide for a lower cost of transmission service for eligible customers seeking transmission service on behalf of computational load owners and computational load operators that elect non-firm transmission service."
+  },
+  {
+   "id": "firm-pricing-baseline",
+   "group": "pricing",
+   "topic": "Standard firm transmission pricing baseline ('and' pricing)",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "ratepayers"
+   ],
+   "effect": "narrows",
+   "now": "Under FERC's 1994 policy statement, utilities charge the higher of embedded costs or incremental expansion costs ('or' pricing) rather than their sum, though separate facilities may be priced on different bases.",
+   "now_cite": "FERC pricing policy statement, 59 FR 55031 (1994)",
+   "now_url": "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf",
+   "baaja": "Declares it unjust and unreasonable under FPA sections 205 and 206 to charge computational loads less than embedded costs plus incremental expansion costs ('and' pricing). Directs that incremental revenues be credited to the utility's annual transmission revenue requirement to prevent double recovery from other customers.",
+   "sections": [
+    "2107"
+   ],
+   "quote": "charge less than the embedded costs and incremental expansion costs to eligible customers seeking transmission service from computational load owners and computational load operators"
+  },
+  {
+   "id": "flexible-tariffs-codified",
+   "group": "pricing",
+   "topic": "Codification of flexible and interim transmission service",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "grid_operators"
+   ],
+   "effect": "expands",
+   "now": "Flexible interconnection tariffs vary by utility and RTO, with no statutory federal definition of non-firm or contract demand transmission service for large computing loads.",
+   "now_cite": "Utility Dive on FERC large load orders",
+   "now_url": "https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/",
+   "baaja": "Statutorily defines transmission service categories under FPA section 228, explicitly including network integration, point-to-point, and any interim, non-firm, or contract demand service that limits the quantity of energy withdrawn or operating conditions.",
+   "sections": [
+    "2107"
+   ],
+   "quote": "any interim, non-firm, contract demand, or other service that limits"
+  },
+  {
+   "id": "att-mandate",
+   "group": "grid-tech",
+   "topic": "Mandatory deployment of advanced transmission technologies",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "grid_operators"
+   ],
+   "effect": "expands",
+   "now": "FERC Order No. 1920 requires transmission providers to consider advanced technologies (dynamic line ratings, power flow control, topology optimization) in regional planning, but does not compel utilities to build them.",
+   "now_cite": "FERC Order No. 1920, 89 FR 49704 (2024)",
+   "now_url": "https://www.federalregister.gov/documents/2024/06/11/2024-10609/building-for-the-future-through-electric-regional-transmission-planning-and-cost-allocation",
+   "baaja": "Requires public utilities to use advanced transmission technologies in covered projects whenever benefits exceed costs, backed by a presumption of prudence and return-on-equity reduction penalties for non-compliance.",
+   "sections": [
+    "2109"
+   ],
+   "quote": "the Commission shall require that public utilities use advanced transmission technologies, including best-available transmission conductors, when carrying out covered projects."
+  },
+  {
+   "id": "reconductoring-ce",
+   "group": "grid-tech",
+   "topic": "NEPA and historic preservation categorical exclusion for reconductoring",
+   "who": [
+    "hyperscalers",
+    "grid_operators"
+   ],
+   "effect": "expands",
+   "now": "Agencies like DOE maintain administrative categorical exclusions for some reconductoring, but there is no statutory cross-agency exclusion, and projects across federal lands lack statutory exemption from NHPA section 106 consultation.",
+   "now_cite": "10 CFR Part 1021, Subpart D, App. B (B4.6)",
+   "now_url": "https://www.ecfr.gov/current/title-10/chapter-X/part-1021/subpart-D/appendix-Appendix%20B%20to%20Subpart%20D%20of%20Part%201021",
+   "baaja": "Adds Federal Power Act section 216A: work that maintains or increases grid capacity in an existing right-of-way or necessary adjacent area (reconductoring, higher voltage, advanced conductors, added circuits) is designated as categorically excluded from NEPA and exempt from NHPA section 106 undertakings.",
+   "sections": [
+    "2102"
+   ],
+   "quote": "Activities to maintain or increase the capacity of the electric grid within a covered area, and any Federal agency action authorizing such activities— “(A) are a category of actions designated as being categorically excluded"
+  },
+  {
+   "id": "btm-wholesale-access",
+   "group": "btm",
+   "topic": "Statutory wholesale market access for behind-the-meter power",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "btm_power"
+   ],
+   "effect": "expands",
+   "now": "FERC Order No. 2222 directed RTOs to accommodate distributed energy resource aggregations by administrative rule, but established no statutory access right or deadline in the Federal Power Act.",
+   "now_cite": "FERC Order No. 2222, 85 FR 67094 (2020)",
+   "now_url": "https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional",
+   "baaja": "Effective 18 months after enactment, declares it unjust and unreasonable under FPA sections 205 and 206 for any grid operator to prevent participation of qualifying behind-the-meter aggregations (100 kW minimum aggregation, 5 kW per unit, 15-minute response) in wholesale energy, capacity, or ancillary service markets.",
+   "sections": [
+    "2108"
+   ],
+   "quote": "prevent the participation of any qualifying BTM DES aggregation in wholesale energy, capacity, or ancillary services markets administered by the Transmission Organization."
+  },
+  {
+   "id": "btm-metering",
+   "group": "btm",
+   "topic": "Device-level metering and inverter telemetry",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "btm_power"
+   ],
+   "effect": "expands",
+   "now": "FERC Order No. 2222 left metering and telemetry rules to individual RTO compliance filings and distribution utilities, without a statutory rule guaranteeing use of device-level or inverter equipment.",
+   "now_cite": "FERC Order No. 2222, 85 FR 67094 (2020)",
+   "now_url": "https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional",
+   "baaja": "Rules cannot require equipment owned or installed by the distribution utility; wholesale market participation may use device-level equipment and smart inverters for metering and telemetry.",
+   "sections": [
+    "2108"
+   ],
+   "quote": "are not required to include equipment owned or installed by the distribution utility (as so defined), and may include the use of device-level equipment, including inverters."
+  },
+  {
+   "id": "ratepayer-shield",
+   "group": "protection",
+   "topic": "No allocation of incremental cost to other customers",
+   "who": [
+    "data_centers",
+    "ratepayers"
+   ],
+   "effect": "narrows",
+   "now": "Cost allocation for large loads is decided in utility rate cases before state commissions or FERC, with no federal statutory floor preventing cost-shifting to residential ratepayers.",
+   "now_cite": "White House, Ratepayer Protection Pledge",
+   "now_url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
+   "baaja": "Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more that interconnect on or after enactment, no portion of the incremental generation, storage, transmission, or distribution cost may be allocated to or recovered in rates of any other customer. Existing approved arrangements remain grandfathered.",
+   "sections": [
+    "2107"
+   ],
+   "quote": "No portion of the incremental cost may be allocated to, or recovered in the rates of, any customer other than a covered load"
+  },
+  {
+   "id": "exit-liability-assurance",
+   "group": "protection",
+   "topic": "Exit liability and up-front financial assurance",
+   "who": [
+    "data_centers",
+    "ratepayers",
+    "grid_operators"
+   ],
+   "effect": "narrows",
+   "now": "The House-passed Ratepayer Protection Act proposed an optional PURPA standard directing states to consider requiring up-front financial assurance and continuing cost recovery on exit, leaving adoption optional without a binding federal statutory mandate.",
+   "now_cite": "H.R. 9340, House-passed text",
+   "now_url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
+   "baaja": "For loads connecting on or after enactment, utilities must collect financial assurance or upfront contributions before constructing facilities or upgrades. Cost recovery continues even if the data center terminates its contract or ceases electric purchases; existing arrangements are grandfathered.",
+   "sections": [
+    "2107"
+   ],
+   "quote": "an electric utility shall require the covered load to provide financial assurances or contributions sufficient to cover the cost of the facility or upgrade"
+  },
+  {
+   "id": "state-open-seasons",
+   "group": "protection",
+   "topic": "State authority to auction grid access and require new generation",
+   "who": [
+    "ratepayers",
+    "data_centers"
+   ],
+   "effect": "changes",
+   "now": "State utility regulation typically treats large customers under standard industrial tariff classes, without statutory frameworks for statewide competitive open seasons or auctions.",
+   "now_cite": "Heatmap on data center regulation",
+   "now_url": "https://heatmap.news/daily/data-center-permitting-deal",
+   "baaja": "For loads connecting on or after enactment, States may hold competitive solicitations or open seasons to allocate retail service among covered loads, charge more than incremental cost to rebate other customers, require bring-your-own new generation, and prioritize non-firm loads. Pre-enactment approved arrangements remain in effect.",
+   "sections": [
+    "2107"
+   ],
+   "quote": "use an open season or competitive solicitation to allocate among covered loads the opportunity to obtain and contract for retail electric service"
+  },
+  {
+   "id": "eia-reporting",
+   "group": "protection",
+   "topic": "Mandatory EIA reporting on data center electricity load",
+   "who": [
+    "hyperscalers",
+    "data_centers",
+    "ratepayers"
+   ],
+   "effect": "expands",
+   "now": "EIA Form 861 collects utility sales by broad commercial and industrial sectors, without separate reporting on data center or computing power demand.",
+   "now_cite": "EIA Form 861 instructions",
+   "now_url": "https://www.eia.gov/electricity/data/eia861/",
+   "baaja": "Directs the Energy Information Administration to revise Form 861 to include electricity load from data center entities (AI, cloud, cryptocurrency) no later than 90 days before the first April 1 after enactment.",
+   "sections": [
+    "2114"
+   ],
+   "quote": "the Administrator of the Energy Information Administration shall revise Form 861 of the Energy Information Administration to include load from data center entities."
+  }
+ ]
+}

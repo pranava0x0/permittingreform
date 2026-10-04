@@ -107,7 +107,8 @@ class Build(unittest.TestCase):
         total, bad = check_quotes.bill_quotes()
         self.assertEqual(bad, [])
         communities = sum(1 for r in (CORE.get("communities") or {"rows": []})["rows"] if r.get("quote"))
-        self.assertEqual(total, CORE["meta"]["quotes"] + len(CORE["overview"]["clocks"]) + len(CORE["overview"]["money"]) + communities)
+        datacenters = sum(1 for r in (CORE.get("datacenters") or {"rows": []})["rows"] if r.get("quote"))
+        self.assertEqual(total, CORE["meta"]["quotes"] + len(CORE["overview"]["clocks"]) + len(CORE["overview"]["money"]) + communities + datacenters)
 
     def test_saved_bill_quote_totals_cover_current_inputs(self):
         total, bad = check_quotes.bill_quotes()
@@ -124,6 +125,13 @@ class Build(unittest.TestCase):
         for r in rows:
             if r.get("quote"):
                 self.assertIn("c", r, f"communities {r['id']}: quote has no cite")
+
+    def test_every_datacenters_quote_carries_a_computed_cite(self):
+        rows = (CORE.get("datacenters") or {"rows": []})["rows"]
+        self.assertTrue(rows, "data/datacenters.json produced no rows")
+        for r in rows:
+            if r.get("quote"):
+                self.assertIn("c", r, f"datacenters {r['id']}: quote has no cite")
 
     def test_the_pdf_the_cites_point_to_is_present(self):
         pdf = ROOT / "site" / CORE["meta"]["pdf"]
