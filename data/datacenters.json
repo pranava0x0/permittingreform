@@ -192,9 +192,9 @@
     "grid_operators"
    ],
    "effect": "expands",
-   "now": "Upgrading transmission lines with high-performance conductors inside existing rights-of-way often requires multi-year federal environmental assessments and NHPA section 106 consultations.",
-   "now_cite": "42 U.S.C. 4336",
-   "now_url": "https://www.law.cornell.edu/uscode/text/42/4336",
+   "now": "Agencies like DOE maintain administrative categorical exclusions for some reconductoring, but there is no statutory cross-agency exclusion, and projects across federal lands lack statutory exemption from NHPA section 106 consultation.",
+   "now_cite": "10 CFR Part 1021, Subpart D, App. B (B4.6)",
+   "now_url": "https://www.ecfr.gov/current/title-10/chapter-X/part-1021/subpart-D/appendix-Appendix%20B%20to%20Subpart%20D%20of%20Part%201021",
    "baaja": "Adds Federal Power Act section 216A: work that maintains or increases grid capacity in an existing right-of-way (reconductoring, higher voltage, advanced conductors, added circuits) is designated as categorically excluded from NEPA and exempt from NHPA section 106 undertakings.",
    "sections": [
     "2102"

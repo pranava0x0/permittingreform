@@ -15364,7 +15364,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ### NEPA and historic preservation categorical exclusion for reconductoring
 
 - Effect: expands; affects: Hyperscalers & AI, Grid operators & utilities
-- Now: Upgrading transmission lines with high-performance conductors inside existing rights-of-way often requires multi-year federal environmental assessments and NHPA section 106 consultations. Source: [42 U.S.C. 4336](https://www.law.cornell.edu/uscode/text/42/4336)
+- Now: Agencies like DOE maintain administrative categorical exclusions for some reconductoring, but there is no statutory cross-agency exclusion, and projects across federal lands lack statutory exemption from NHPA section 106 consultation. Source: [10 CFR Part 1021, Subpart D, App. B (B4.6)](https://www.ecfr.gov/current/title-10/chapter-X/part-1021/subpart-D/appendix-Appendix%20B%20to%20Subpart%20D%20of%20Part%201021)
 - BAAJA: Adds Federal Power Act section 216A: work that maintains or increases grid capacity in an existing right-of-way (reconductoring, higher voltage, advanced conductors, added circuits) is designated as categorically excluded from NEPA and exempt from NHPA section 106 undertakings.
 - Bill: [2102](https://pranava0x0.github.io/permittingreform/sections/2102.md)
 - Quote: "Activities to maintain or increase the capacity of the electric grid within a covered area, and any Federal agency action authorizing such activities— “(A) are a category of actions designated as being categorically excluded", [p. 201, line 19 to p. 201, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=201)
