@@ -98,9 +98,9 @@
     "grid_operators"
    ],
    "effect": "changes",
-   "now": "Large load studies default to building expensive traditional grid expansion upgrades without standardized evaluation of flexible interconnection or non-firm operating limits.",
-   "now_cite": "FERC pricing policy statement, 59 FR 55031 (1994)",
-   "now_url": "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf",
+   "now": "Grid operators currently lack standardized large-load study processes and cost-reduction options, prompting FERC in June 2026 to direct RTOs to develop standardized study rules and flexible service.",
+   "now_cite": "RMI on FERC's June 2026 orders",
+   "now_url": "https://rmi.org/resources/understanding-fercs-large-load-orders/",
    "baaja": "Requires FERC to establish rules for standardized analysis to identify upgrades for computational load sites and cost-reduction options, such as flexible interconnection and non-firm curtailment parameters, to avoid unneeded network buildout.",
    "sections": [
     "2107"

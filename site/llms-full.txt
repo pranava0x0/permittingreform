@@ -15324,7 +15324,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ### Standardized cost-reduction options in upgrade studies
 
 - Effect: changes; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
-- Now: Large load studies default to building expensive traditional grid expansion upgrades without standardized evaluation of flexible interconnection or non-firm operating limits. Source: [FERC pricing policy statement, 59 FR 55031 (1994)](https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf)
+- Now: Grid operators currently lack standardized large-load study processes and cost-reduction options, prompting FERC in June 2026 to direct RTOs to develop standardized study rules and flexible service. Source: [RMI on FERC's June 2026 orders](https://rmi.org/resources/understanding-fercs-large-load-orders/)
 - BAAJA: Requires FERC to establish rules for standardized analysis to identify upgrades for computational load sites and cost-reduction options, such as flexible interconnection and non-firm curtailment parameters, to avoid unneeded network buildout.
 - Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
 - Quote: "to require standardized analysis to identify upgrades for a computational load site and cost reduction options, as the Commission may require by rule.", [p. 231, line 5 to p. 231, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=231)
