@@ -136,7 +136,7 @@
     "ratepayers"
    ],
    "effect": "narrows",
-   "now": "Under FERC's 1994 policy statement, utilities charge the higher of embedded costs or incremental expansion costs ('or' pricing), not both together.",
+   "now": "Under FERC's 1994 policy statement, utilities charge the higher of embedded costs or incremental expansion costs ('or' pricing) rather than their sum, though separate facilities may be priced on different bases.",
    "now_cite": "FERC pricing policy statement, 59 FR 55031 (1994)",
    "now_url": "https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf",
    "baaja": "Declares it unjust and unreasonable under FPA sections 205 and 206 to charge computational loads less than embedded costs plus incremental expansion costs ('and' pricing). Directs that incremental revenues be credited to the utility's annual transmission revenue requirement to prevent double recovery from other customers.",

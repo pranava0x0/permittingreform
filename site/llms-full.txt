@@ -15340,7 +15340,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ### Standard firm transmission pricing baseline ('and' pricing)
 
 - Effect: narrows; affects: Hyperscalers & AI, Data center operators, Ratepayers & states
-- Now: Under FERC's 1994 policy statement, utilities charge the higher of embedded costs or incremental expansion costs ('or' pricing), not both together. Source: [FERC pricing policy statement, 59 FR 55031 (1994)](https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf)
+- Now: Under FERC's 1994 policy statement, utilities charge the higher of embedded costs or incremental expansion costs ('or' pricing) rather than their sum, though separate facilities may be priced on different bases. Source: [FERC pricing policy statement, 59 FR 55031 (1994)](https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf)
 - BAAJA: Declares it unjust and unreasonable under FPA sections 205 and 206 to charge computational loads less than embedded costs plus incremental expansion costs ('and' pricing). Directs that incremental revenues be credited to the utility's annual transmission revenue requirement to prevent double recovery from other customers.
 - Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
 - Quote: "charge less than the embedded costs and incremental expansion costs to eligible customers seeking transmission service from computational load owners and computational load operators", [p. 226, line 25 to p. 227, line 4](https://pranava0x0.github.io/permittingreform/bill.pdf#page=226)
