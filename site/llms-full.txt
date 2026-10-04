@@ -15396,7 +15396,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ### Exit liability and up-front financial assurance
 
 - Effect: narrows; affects: Data center operators, Ratepayers & states, Grid operators & utilities
-- Now: If a large customer terminates service or goes bankrupt, stranded grid upgrade costs often fall on remaining captive utility customers. Source: [H.R. 9340, House-passed text](https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm)
+- Now: The House-passed Ratepayer Protection Act proposed an optional PURPA standard directing states to consider requiring up-front financial assurance and continuing cost recovery on exit, leaving adoption optional without a binding federal statutory mandate. Source: [H.R. 9340, House-passed text](https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm)
 - BAAJA: For loads connecting on or after enactment, utilities must collect financial assurance or upfront contributions before constructing facilities or upgrades. Cost recovery continues even if the data center terminates its contract or ceases electric purchases; existing arrangements are grandfathered.
 - Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
 - Quote: "an electric utility shall require the covered load to provide financial assurances or contributions sufficient to cover the cost of the facility or upgrade", [p. 235, line 23 to p. 236, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=235)
