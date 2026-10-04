@@ -562,7 +562,7 @@
     return el("section", { class: "block", id: b.id },
       el("h2", null, b.label),
       b.intro ? el("p", { class: "muted" }, b.intro) : null,
-      el("p", { class: "note" }, "Proposed laws. Related BAAJA provisions: ", secLinks(["2102", "2108"])),
+      el("p", { class: "note" }, "Proposed laws. Related BAAJA provisions: ", secLinks(["2102", "2107", "2108", "2109", "2110", "2111", "2114"])),
       versionList(b.versions),
       withChips("bills", b.versions),
       el("div", { class: "table-wrap" }, el("table", { class: "compare compare-bills" },
@@ -683,6 +683,60 @@
         el("p", { class: "facts", role: "status" }, rows.length + " of " + c.rows.length + " changes")),
       whoChips, effectChips,
       rows.length ? body : el("p", { class: "empty" }, "No changes match.")];
+  }
+
+  /* ---------- data centers ---------- */
+
+  let dcWho = "all";
+  let dcEffect = "all";
+
+  function renderDataCenters() {
+    const d = D.datacenters;
+    if (!d) return [el("div", { class: "lede" }, el("h1", null, "Data centers")), el("p", { class: "empty" }, "Not yet compiled.")];
+    const rows = d.rows.filter((r) => (dcWho === "all" || r.who.indexOf(dcWho) >= 0) && (dcEffect === "all" || r.effect === dcEffect));
+    const whoCount = {};
+    d.rows.forEach((r) => r.who.forEach((w) => { whoCount[w] = (whoCount[w] || 0) + 1; }));
+    const effCount = {};
+    d.rows.forEach((r) => { effCount[r.effect] = (effCount[r.effect] || 0) + 1; });
+    const whoChips = el("div", { class: "filters", role: "group", "aria-label": "Affected party" },
+      chip("All entities", dcWho === "all", () => { dcWho = "all"; route(); }, d.rows.length),
+      Object.keys(d.who).filter((w) => whoCount[w]).map((w) => chip(d.who[w], dcWho === w, () => { dcWho = w; route(); }, whoCount[w])));
+    const effectChips = el("div", { class: "filters", role: "group", "aria-label": "Effect" },
+      chip("All changes", dcEffect === "all", () => { dcEffect = "all"; route(); }),
+      Object.keys(EFFECT).filter((k) => effCount[k]).map((k) => chip(EFFECT[k], dcEffect === k, () => { dcEffect = k; route(); }, effCount[k])),
+      briefChip());
+    const body = d.groups.map((g) => {
+      const list = rows.filter((r) => r.group === g.id);
+      if (!list.length) return null;
+      return el("section", { class: "block" },
+        el("h2", { id: "dcg-" + g.id }, g.label, el("span", { class: "chip-count" }, list.length)),
+        g.note ? el("p", { class: "muted" }, g.note) : null,
+        el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => {
+          const head = [el("span", { class: "cm-topic" }, r.topic), " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])];
+          return el("article", { class: "cm-row", id: "dc-" + r.id },
+            el("h3", null, brief
+              ? el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": "dcb-" + r.id, onclick: (ev) => {
+                  const open = ev.currentTarget.closest(".cm-row").classList.toggle("open");
+                  ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
+                } }, head)
+              : head),
+            el("div", { class: "cm-body", id: "dcb-" + r.id },
+              el("p", { class: "cm-who" }, r.who.map((w) => d.who[w]).join(" · ")),
+              el("p", null, el("strong", null, "BAAJA: "), r.baaja),
+              el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
+                r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
+              el("p", { class: "where" }, secLinks(r.sections)),
+              r.quote ? el("figure", { class: "quote small" },
+                el("blockquote", null, r.quote),
+                r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null));
+        })));
+    });
+    return [
+      el("div", { class: "lede" }, el("h1", null, "Data centers & speed", el("span", { class: "credit-inline" }, "AI-written")),
+        d.intro ? el("p", null, d.intro) : null,
+        el("p", { class: "facts", role: "status" }, rows.length + " of " + d.rows.length + " provisions")),
+      whoChips, effectChips,
+      rows.length ? body : el("p", { class: "empty" }, "No provisions match.")];
   }
 
   /* ---------- timeline ---------- */
@@ -1084,7 +1138,7 @@
         (i.cached_only ? "Saved results were reconciled with the current wording; the fresh Sonnet review is unfinished. " : "") +
         "This check covers section summaries, key points and selected comparison cells. It does not verify all site prose or establish legal accuracy."]);
     }
-    if (D.communities || D.compare.bills) rows.push(["New views", "Data-center bill cells and Communities paraphrases have not had a second-model review. Their quoted passages are checked against sources; that does not verify every nearby claim."]);
+    if (D.communities || D.datacenters || D.compare.bills) rows.push(["New views", "Data-center and Communities provisions have not had a second-model review. Their quoted passages are checked against sources; that does not verify every nearby claim."]);
     if (ck.quotes) {
       const q = ck.quotes;
       const parts = [q.verified + " of " + q.total + " found on the cited page by script."];
@@ -1143,7 +1197,7 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", timeline: "Timeline", people: "People", media: "Media", method: "Method" };
+  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", timeline: "Timeline", people: "People", media: "Media", method: "Method" };
   let lastPath = null;
 
   function route() {
@@ -1157,6 +1211,7 @@
     else if (tab === "bill") nodes = renderBillIndex();
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
     else if (tab === "communities") nodes = renderCommunities();
+    else if (tab === "datacenters") nodes = renderDataCenters();
     else if (tab === "timeline") {
       /* Arriving at a linked event clears filters that could hide it; later filter changes still apply. */
       if (parts[2] && location.hash !== lastPath) { tlBranch = "all"; tlTopic = "all"; tlMilestones = false; }
@@ -1169,7 +1224,7 @@
     view.className = "view view-" + tab;
     if (tab === "overview") jumpRow(view.querySelector(".lede"));
     else if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
-    else if (tab === "people" || tab === "timeline" || tab === "communities") jumpRow(view.querySelector(".lede"));
+    else if (tab === "people" || tab === "timeline" || tab === "communities" || tab === "datacenters") jumpRow(view.querySelector(".lede"));
     if (tab === "timeline") {
       const target = tlRefocus && view.querySelector(tlRefocus);
       if (target && lastPath && lastPath.indexOf("#/timeline") === 0) target.focus({ preventScroll: true });

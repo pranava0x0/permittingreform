@@ -507,6 +507,85 @@
      "url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/"
     }
    ]
+  },
+  {
+   "id": "rob-gramlich",
+   "name": "Rob Gramlich",
+   "role": "President, Grid Strategies",
+   "affiliation": "Grid Strategies",
+   "sector": "industry",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "Transmission expert and Grid Strategies president; says BAAJA transmission title and related provisions are well-crafted to expand and decongest the national grid.",
+   "key_actions": [
+    "2026-10-01: Analyzed BAAJA transmission directives and planning reforms",
+    "Advocates interregional planning, ROFR removal, and advanced transmission technologies"
+   ],
+   "quote": {
+    "text": "The transmission title as well as the impact of the other sections on transmission development are very well-crafted.",
+    "source_url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/"
+   },
+   "sources": [
+    {
+     "title": "Utility Dive: Senate permitting bill would expand federal role in transmission siting",
+     "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/"
+    },
+    {
+     "title": "Canary Media: Senate permitting bill could greatly expand power lines and clean energy",
+     "url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines"
+    }
+   ]
+  },
+  {
+   "id": "devin-hartman",
+   "name": "Devin Hartman",
+   "role": "President, Lighthouse Energy Institute",
+   "affiliation": "Lighthouse Energy Institute",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "Energy economist and think-tank leader; views BAAJA transmission and permitting provisions as the culmination of multi-Congress bipartisan efforts.",
+   "key_actions": [
+    "2026-10-01: Commented on Senate permitting package introduction in Utility Dive"
+   ],
+   "quote": {
+    "text": "This is what stakeholders have been working on — permitting and transmission reform — for the last several Congresses",
+    "source_url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/"
+   },
+   "sources": [
+    {
+     "title": "Utility Dive: Senate permitting bill would expand federal role in transmission siting",
+     "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/"
+    }
+   ]
+  },
+  {
+   "id": "nathaniel-keohane",
+   "name": "Nathaniel Keohane",
+   "role": "President, Center for Climate and Energy Solutions (C2ES)",
+   "affiliation": "Center for Climate and Energy Solutions",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "President of C2ES; released modeling showing transmission and interconnection reforms save  billion in grid costs and lower consumer bills while accelerating clean energy.",
+   "key_actions": [
+    "2026-09-30: Released C2ES and Greenline Insights economic modeling on transmission reforms",
+    "Convened business and environmental stakeholders on federal permitting priorities"
+   ],
+   "quote": {
+    "text": "Really simply, we need to build more energy infrastructure in this country... We need to do that faster, and these reforms will help.",
+    "source_url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines"
+   },
+   "sources": [
+    {
+     "title": "Canary Media: Senate permitting bill could greatly expand power lines and clean energy",
+     "url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines"
+    },
+    {
+     "title": "C2ES: New Analysis Finds Federal Transmission Reforms Would Slash Power Sector Emissions",
+     "url": "https://www.c2es.org/press-release/new-analysis-finds-federal-transmission-reforms-would-slash-power-sector-emissions-boost-grid-reliability-and-save-consumers-billions/"
+    }
+   ]
   }
  ]
 }

@@ -7671,6 +7671,8 @@ States may charge these loads more than cost and credit the surplus to other rat
 - Up-front financial assurance before upgrades are built ([p. 235, line 23 to p. 236, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=235))
 - States may auction grid access and require bring-your-own generation ([p. 236, line 23 to p. 237, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=236))
 - Non-firm service gets a lower transmission price ([p. 230, line 9 to p. 230, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=230))
+- Standardized study of cost-reduction options to avoid network upgrades ([p. 231, line 5 to p. 231, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=231))
+- Incremental revenues credited to prevent double recovery from other ratepayers ([p. 230, line 1 to p. 230, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=230))
 - Existing approved arrangements grandfathered ([p. 240, line 5 to p. 240, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=240))
 
 ## Selected statutory quotes
@@ -8052,6 +8054,7 @@ A device paid by a state retail program cannot be paid twice for the same servic
 ## Key points
 
 - Virtual power plants get statutory wholesale market access ([p. 243, line 20 to p. 243, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=243))
+- Distribution utilities in organized markets must interconnect behind-the-meter resources ([p. 252, line 9 to p. 252, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=252))
 - Device-level metering allowed; utilities cannot require their own equipment ([p. 241, line 16 to p. 241, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=241))
 - Double-payment ban, with penalties of up to 3 times the amount per day ([p. 250, line 16 to p. 250, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=250))
 - $20 million a year for streamlined local solar and storage permitting ([p. 259, line 22 to p. 259, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=259))
@@ -14619,7 +14622,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 ## Data center bills
 
-BAAJA's data center rules beside the federal bills that would make large computing loads pay for the grid they use. Each cell links to the text it summarizes.
+BAAJA's data center and load-growth rules beside the federal bills that would regulate large computing loads, transmission pricing, and interconnection speed. EPRA 2024 and the SPEED Act did not address data center ratepayer rules or non-firm transmission service. Each cell links to the text it summarizes.
 
 - Current policy: The White House Ratepayer Protection Pledge (March 2026) and FERC's June 18, 2026 show cause orders. FERC set no large-load rule. [Current policy](https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/)
 - BAAJA: Released September 30, 2026. Sections 2107 and 2114. [BAAJA](https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026)
@@ -14860,6 +14863,56 @@ BAAJA's data center rules beside the federal bills that would make large computi
 - GRID Act (S. 3852): DOE sets public disclosure of usage, property deals and utility agreements.
   Source: [S. 3852 text](https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm)
   Quote: "the Secretary shall establish a national requirement for covered entities to provide to the public"
+
+### Non-firm rate discount
+
+- Current policy: FERC's 1994 pricing policy allows discounted or negotiated rates, but sets no mandatory transmission rate discount for flexible or non-firm computing loads.
+  Source: [FERC pricing policy statement, 59 FR 55031 (1994)](https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf)
+- BAAJA: FERC must revise its transmission pricing policy within 270 days to provide a lower transmission price for computational loads electing non-firm service. Studies must evaluate standardized cost-reduction options to avoid network upgrades.
+  Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+- Ratepayer Protection Act (H.R. 9340): Not addressed.
+- GRID Savings Act (S. 5199): Directs FERC to provide flexible interconnection service, but establishes no statutory rate discount for non-firm service.
+  Source: [S. 5199 text](https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm)
+- Power for the People Act (S. 3682): Allows curtailable service agreements to satisfy clean energy requirements, but specifies no discounted transmission rate.
+  Source: [S. 3682 text](https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm)
+- GRID Act (S. 3852): Not addressed.
+
+### Queue speed and study automation
+
+- Current policy: Order 2023 set cluster studies and study deadlines; FERC's June 2026 show cause orders asked grid operators for large-load study timelines, but set no automation requirements.
+  Source: [RMI on FERC's June 2026 orders](https://rmi.org/resources/understanding-fercs-large-load-orders/)
+- BAAJA: Directs FERC within 1 year to require AI and automation in interconnection study evaluations. Mandates 15-day grid data turnaround under reliability penalties, and requires a joint FERC/DOE reference spec for fully automated studies within 1 year.
+  Bill: [2110](https://pranava0x0.github.io/permittingreform/sections/2110.md)
+  Bill: [2111](https://pranava0x0.github.io/permittingreform/sections/2111.md)
+- Ratepayer Protection Act (H.R. 9340): Not addressed.
+- GRID Savings Act (S. 5199): Sets study schedules and readiness requirements to curb speculative requests, but mandates no AI or automation in study software.
+  Source: [S. 5199 text](https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm)
+- Power for the People Act (S. 3682): Creates a dedicated data center queue; grid operators may delay or deny studies for loads that threaten reliability.
+  Source: [S. 3682 text](https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm)
+- GRID Act (S. 3852): Not addressed.
+
+### Grid-enhancing tech and reconductoring
+
+- Current policy: FERC Order No. 1920 requires transmission planners to evaluate dynamic line ratings, advanced power flow control, and advanced conductors, but deployment is voluntary.
+  Source: [FERC Order No. 1920, 89 FR 49704 (2024)](https://www.federalregister.gov/documents/2024/06/11/2024-10609/building-for-the-future-through-electric-regional-transmission-planning-and-cost-allocation)
+- BAAJA: Utilities must deploy advanced transmission technologies whenever benefits exceed costs, backed by ROE reduction penalties. In-corridor reconductoring and grid capacity expansions are categorically excluded from NEPA and NHPA reviews.
+  Bill: [2102](https://pranava0x0.github.io/permittingreform/sections/2102.md)
+  Bill: [2109](https://pranava0x0.github.io/permittingreform/sections/2109.md)
+- Ratepayer Protection Act (H.R. 9340): Not addressed.
+- GRID Savings Act (S. 5199): Not addressed.
+- Power for the People Act (S. 3682): Not addressed.
+- GRID Act (S. 3852): Not addressed.
+
+### Behind-the-meter generation and storage
+
+- Current policy: FERC Order No. 2222 required grid operators to allow distributed energy resource aggregations into wholesale markets, but implementation is delayed across several regions.
+  Source: [FERC Order No. 2222, 85 FR 67094 (2020)](https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional)
+- BAAJA: Bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.
+  Bill: [2108](https://pranava0x0.github.io/permittingreform/sections/2108.md)
+- Ratepayer Protection Act (H.R. 9340): Not addressed.
+- GRID Savings Act (S. 5199): Not addressed.
+- Power for the People Act (S. 3682): Not addressed.
+- GRID Act (S. 3852): Not addressed.
 
 ### Other data center bills
 
@@ -15238,6 +15291,131 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 - BAAJA: Any order of a federal agency, or of a state agency acting under federal law, to issue, condition or deny a federal authorization for a transmission facility would be reviewed in the courts that review FERC orders under Federal Power Act section 313. 'Federal authorization' would include a Clean Water Act section 401 certification and other state approvals required under federal law, except under the Coastal Zone Management Act.
 - Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
 - Quote: "shall be subject to judicial review in the same courts in which an order of the Commission is subject to judicial review under section 313", [p. 197, line 5 to p. 197, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=197)
+
+
+## Data centers: computing loads, transmission rates and speed
+
+How the bill impacts data centers, AI computing facilities and interconnection speed. Covers study automation, transmission rate carrots and sticks, grid-enhancing technologies, behind-the-meter resources, and ratepayer protections. Each row gives current policy, the change and the sections that make it.
+
+### Interconnection study automation and AI evaluation
+
+- Effect: changes; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
+- Now: Transmission providers evaluate interconnection requests using manual engineering studies and cluster studies under FERC Order No. 2023, with no federal automation mandate. Source: [FERC Order No. 2023, 88 FR 61014 (2023)](https://www.federalregister.gov/documents/2023/09/06/2023-16597/improvements-to-generator-interconnection-procedures-and-agreements)
+- BAAJA: Directs FERC to initiate a rulemaking within 1 year requiring public utility transmission providers to share and employ queue management practices using artificial intelligence, machine learning, and automation to evaluate and process interconnection requests faster, revisited every 4 years.
+- Bill: [2110](https://pranava0x0.github.io/permittingreform/sections/2110.md)
+- Quote: "to require public utility transmission providers to share and employ, as appropriate, queue management practices with respect to the use of computing technologies, including artificial intelligence, machine learning, and automation", [p. 265, line 18 to p. 265, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=265)
+
+### 15-day deadline for grid study data
+
+- Effect: expands; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
+- Now: Interconnection studies are frequently delayed by months while transmission providers wait for neighboring utilities or bulk-power system users to furnish network models and engineering data. Source: [FERC Order No. 2023, 88 FR 61014 (2023)](https://www.federalregister.gov/documents/2023/09/06/2023-16597/improvements-to-generator-interconnection-procedures-and-agreements)
+- BAAJA: Adds Federal Power Act section 232. Bulk-power system users, owners, and operators must provide requested grid data within 15 days in an agreed usable format. Confidentiality rules cannot be used to withhold data, and violations are subject to FPA section 316A reliability enforcement penalties.
+- Bill: [2111](https://pranava0x0.github.io/permittingreform/sections/2111.md)
+- Quote: "shall provide requested grid data not later than 15 days after receiving the request.", [p. 268, line 21 to p. 268, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=268)
+
+### Standardized reference spec for fully automated studies
+
+- Effect: changes; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
+- Now: Each regional grid operator and utility maintains bespoke engineering criteria and proprietary software workflows, requiring repeated supplemental data requests. Source: [RMI on FERC's June 2026 orders](https://rmi.org/resources/understanding-fercs-large-load-orders/)
+- BAAJA: Requires FERC and the Department of Energy to publish, within 1 year, a joint reference specification for fully automated interconnection studies, including system impact studies, without supplemental data requests during the study process.
+- Bill: [2111](https://pranava0x0.github.io/permittingreform/sections/2111.md)
+- Quote: "to enable full automation of interconnection studies, including system impact studies, without supplemental data requests during the study.", [p. 272, line 1 to p. 272, line 4](https://pranava0x0.github.io/permittingreform/bill.pdf#page=272)
+
+### Standardized cost-reduction options in upgrade studies
+
+- Effect: changes; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
+- Now: Large load studies default to building expensive traditional grid expansion upgrades without standardized evaluation of flexible interconnection or non-firm operating limits. Source: [FERC pricing policy statement, 59 FR 55031 (1994)](https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf)
+- BAAJA: Requires FERC to establish rules for standardized analysis to identify upgrades for computational load sites and cost-reduction options, such as flexible interconnection and non-firm curtailment parameters, to avoid unneeded network buildout.
+- Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+- Quote: "to require standardized analysis to identify upgrades for a computational load site and cost reduction options, as the Commission may require by rule.", [p. 231, line 5 to p. 231, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=231)
+
+### Mandatory transmission rate discount for non-firm computational load
+
+- Effect: expands; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
+- Now: FERC's 1994 pricing policy allows flexible or negotiated transmission rates, but establishes no statutory requirement for discounted rates when computational loads accept non-firm service. Source: [FERC pricing policy statement, 59 FR 55031 (1994)](https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf)
+- BAAJA: Directs FERC to revise its 1994 pricing policy statement within 270 days to provide a lower cost of transmission service for computational loads that elect non-firm transmission service, followed by a proposed rule within 270 days and a final rule within 1 year.
+- Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+- Quote: "provide for a lower cost of transmission service for eligible customers seeking transmission service on behalf of computational load owners and computational load operators that elect non-firm transmission service.", [p. 230, line 9 to p. 230, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=230)
+
+### Standard firm transmission pricing baseline ('and' pricing)
+
+- Effect: narrows; affects: Hyperscalers & AI, Data center operators, Ratepayers & states
+- Now: Under FERC's 1994 policy statement, utilities charge the higher of embedded costs or incremental expansion costs ('or' pricing), not both together. Source: [FERC pricing policy statement, 59 FR 55031 (1994)](https://archives.federalregister.gov/issue_slice/1994/11/3/55026-55045.pdf)
+- BAAJA: Declares it unjust and unreasonable under FPA sections 205 and 206 to charge computational loads less than embedded costs plus incremental expansion costs ('and' pricing). Directs that incremental revenues be credited to the utility's annual transmission revenue requirement to prevent double recovery from other customers.
+- Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+- Quote: "charge less than the embedded costs and incremental expansion costs to eligible customers seeking transmission service from computational load owners and computational load operators", [p. 226, line 25 to p. 227, line 4](https://pranava0x0.github.io/permittingreform/bill.pdf#page=226)
+
+### Codification of flexible and interim transmission service
+
+- Effect: expands; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
+- Now: Flexible interconnection tariffs vary by utility and RTO, with no statutory federal definition of non-firm or contract demand transmission service for large computing loads. Source: [Utility Dive on FERC large load orders](https://www.utilitydive.com/news/ferc-doe-data-center-interconnection/823360/)
+- BAAJA: Statutorily defines transmission service categories under FPA section 228, explicitly including network integration, point-to-point, and any interim, non-firm, or contract demand service that limits the quantity of energy withdrawn or operating conditions.
+- Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+- Quote: "any interim, non-firm, contract demand, or other service that limits", [p. 234, line 15 to p. 234, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=234)
+
+### Mandatory deployment of advanced transmission technologies
+
+- Effect: expands; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
+- Now: FERC Order No. 1920 requires transmission providers to consider advanced technologies (dynamic line ratings, power flow control, topology optimization) in regional planning, but does not compel utilities to build them. Source: [FERC Order No. 1920, 89 FR 49704 (2024)](https://www.federalregister.gov/documents/2024/06/11/2024-10609/building-for-the-future-through-electric-regional-transmission-planning-and-cost-allocation)
+- BAAJA: Requires public utilities to use advanced transmission technologies in covered projects whenever benefits exceed costs, backed by a presumption of prudence and return-on-equity reduction penalties for non-compliance.
+- Bill: [2109](https://pranava0x0.github.io/permittingreform/sections/2109.md)
+- Quote: "the Commission shall require that public utilities use advanced transmission technologies, including best-available transmission conductors, when carrying out covered projects.", [p. 261, line 13 to p. 261, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=261)
+
+### NEPA and historic preservation categorical exclusion for reconductoring
+
+- Effect: expands; affects: Hyperscalers & AI, Grid operators & utilities
+- Now: Upgrading transmission lines with high-performance conductors inside existing rights-of-way often requires multi-year federal environmental assessments and NHPA section 106 consultations. Source: [42 U.S.C. 4336](https://www.law.cornell.edu/uscode/text/42/4336)
+- BAAJA: Adds Federal Power Act section 216A: work that maintains or increases grid capacity in an existing right-of-way (reconductoring, higher voltage, advanced conductors, added circuits) is designated as categorically excluded from NEPA and exempt from NHPA section 106 undertakings.
+- Bill: [2102](https://pranava0x0.github.io/permittingreform/sections/2102.md)
+- Quote: "Activities to maintain or increase the capacity of the electric grid within a covered area, and any Federal agency action authorizing such activities— “(A) are a category of actions designated as being categorically excluded", [p. 201, line 19 to p. 201, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=201)
+
+### Statutory wholesale market access for behind-the-meter power
+
+- Effect: expands; affects: Hyperscalers & AI, Data center operators, Behind-the-meter power & VPPs
+- Now: FERC Order No. 2222 required RTOs to accommodate distributed energy aggregations, but utility resistance and delayed tariff filings have blocked customer-sited resources from wholesale markets. Source: [FERC Order No. 2222, 85 FR 67094 (2020)](https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional)
+- BAAJA: Declares it unjust and unreasonable under FPA sections 205 and 206 for any grid operator to prevent participation of qualifying behind-the-meter aggregations (100 kW minimum aggregation, 5 kW per unit, 15-minute response) in wholesale energy, capacity, or ancillary service markets.
+- Bill: [2108](https://pranava0x0.github.io/permittingreform/sections/2108.md)
+- Quote: "prevent the participation of any qualifying BTM DES aggregation in wholesale energy, capacity, or ancillary services markets administered by the Transmission Organization.", [p. 243, line 20 to p. 243, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=243)
+
+### Device-level metering and inverter telemetry
+
+- Effect: expands; affects: Hyperscalers & AI, Data center operators, Behind-the-meter power & VPPs
+- Now: Distribution utilities frequently require customers to install expensive utility-owned utility meters and telemetry systems before permitting wholesale market participation. Source: [FERC Order No. 2222, 85 FR 67094 (2020)](https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional)
+- BAAJA: Rules cannot require equipment owned or installed by the distribution utility; wholesale market participation may use device-level equipment and smart inverters for metering and telemetry.
+- Bill: [2108](https://pranava0x0.github.io/permittingreform/sections/2108.md)
+- Quote: "are not required to include equipment owned or installed by the distribution utility (as so defined), and may include the use of device-level equipment, including inverters.", [p. 241, line 16 to p. 241, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=241)
+
+### No allocation of incremental cost to other customers
+
+- Effect: narrows; affects: Data center operators, Ratepayers & states
+- Now: Cost allocation for large loads is decided in utility rate cases before state commissions or FERC, with no federal statutory floor preventing cost-shifting to residential ratepayers. Source: [White House, Ratepayer Protection Pledge](https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/)
+- BAAJA: Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more, no portion of the incremental generation, transmission, or distribution cost may be allocated to or recovered in rates of any other customer.
+- Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+- Quote: "No portion of the incremental cost may be allocated to, or recovered in the rates of, any customer other than a covered load", [p. 234, line 23 to p. 235, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=234)
+
+### Exit liability and up-front financial assurance
+
+- Effect: narrows; affects: Data center operators, Ratepayers & states, Grid operators & utilities
+- Now: If a large customer terminates service or goes bankrupt, stranded grid upgrade costs often fall on remaining captive utility customers. Source: [H.R. 9340, House-passed text](https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm)
+- BAAJA: Utilities must collect financial assurance or upfront contributions before constructing facilities or upgrades. Cost recovery continues even if the data center terminates its contract or ceases electric purchases.
+- Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+- Quote: "an electric utility shall require the covered load to provide financial assurances or contributions sufficient to cover the cost of the facility or upgrade", [p. 235, line 23 to p. 236, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=235)
+
+### State authority to auction grid access and require clean supply
+
+- Effect: changes; affects: Ratepayers & states, Data center operators
+- Now: Interconnection queues generally follow first-come, first-served processing, and state regulators face legal limits on auctioning grid access or prioritizing loads by public benefit. Source: [Harvard ELI on data center regulation](https://heatmap.news/daily/data-center-permitting-deal)
+- BAAJA: States may hold competitive solicitations or open seasons to allocate retail service among covered loads, charge more than incremental cost to rebate other customers, require bring-your-own clean power, and prioritize non-firm loads.
+- Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+- Quote: "use an open season or competitive solicitation to allocate among covered loads the opportunity to obtain and contract for retail electric service", [p. 236, line 23 to p. 237, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=236)
+
+### Mandatory EIA reporting on data center electricity load
+
+- Effect: expands; affects: Hyperscalers & AI, Data center operators, Ratepayers & states
+- Now: EIA Form 861 collects utility sales by broad commercial and industrial sectors, without separate reporting on data center or computing power demand. Source: [EIA Form 861 instructions](https://www.eia.gov/electricity/data/eia861/)
+- BAAJA: Directs the Energy Information Administration to revise Form 861 to collect electricity load from data center entities (AI, cloud, cryptocurrency) starting with the first filing cycle after enactment.
+- Bill: [2114](https://pranava0x0.github.io/permittingreform/sections/2114.md)
+- Quote: "the Administrator of the Energy Information Administration shall revise Form 861 of the Energy Information Administration to include load from data center entities.", [p. 279, line 23 to p. 279, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=279)
 
 
 ## Added and dropped provisions
@@ -15856,6 +16034,18 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 {"id": "alex-epstein", "name": "Alex Epstein", "role": "Author and fossil fuel advocate", "affiliation": "Center for Industrial Progress", "sector": "think_tank", "inside_government": false, "stance": "neutral", "position": "Joined the May dinner with Wright and Republican lawmakers and pushed Congress for a permitting deal covering all forms of energy, including restraining the administration from blocking solar and wind approvals.", "key_actions": ["2026-05-19: Attended Wright's dinner with Republican lawmakers on permitting"], "quote": {"text": "I’m against any sort of technology-related crackdown of any kind by any administration", "source_url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/"}, "sources": [{"title": "Wright meets with Republicans on permitting, but deal remains elusive as ever", "url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/"}]}
 ```
 
+```json
+{"id": "rob-gramlich", "name": "Rob Gramlich", "role": "President, Grid Strategies", "affiliation": "Grid Strategies", "sector": "industry", "inside_government": false, "stance": "supports", "position": "Transmission expert and Grid Strategies president; says BAAJA transmission title and related provisions are well-crafted to expand and decongest the national grid.", "key_actions": ["2026-10-01: Analyzed BAAJA transmission directives and planning reforms", "Advocates interregional planning, ROFR removal, and advanced transmission technologies"], "quote": {"text": "The transmission title as well as the impact of the other sections on transmission development are very well-crafted.", "source_url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/"}, "sources": [{"title": "Utility Dive: Senate permitting bill would expand federal role in transmission siting", "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/"}, {"title": "Canary Media: Senate permitting bill could greatly expand power lines and clean energy", "url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines"}]}
+```
+
+```json
+{"id": "devin-hartman", "name": "Devin Hartman", "role": "President, Lighthouse Energy Institute", "affiliation": "Lighthouse Energy Institute", "sector": "think_tank", "inside_government": false, "stance": "supports", "position": "Energy economist and think-tank leader; views BAAJA transmission and permitting provisions as the culmination of multi-Congress bipartisan efforts.", "key_actions": ["2026-10-01: Commented on Senate permitting package introduction in Utility Dive"], "quote": {"text": "This is what stakeholders have been working on — permitting and transmission reform — for the last several Congresses", "source_url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/"}, "sources": [{"title": "Utility Dive: Senate permitting bill would expand federal role in transmission siting", "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/"}]}
+```
+
+```json
+{"id": "nathaniel-keohane", "name": "Nathaniel Keohane", "role": "President, Center for Climate and Energy Solutions (C2ES)", "affiliation": "Center for Climate and Energy Solutions", "sector": "think_tank", "inside_government": false, "stance": "supports", "position": "President of C2ES; released modeling showing transmission and interconnection reforms save billion in grid costs and lower consumer bills while accelerating clean energy.", "key_actions": ["2026-09-30: Released C2ES and Greenline Insights economic modeling on transmission reforms", "Convened business and environmental stakeholders on federal permitting priorities"], "quote": {"text": "Really simply, we need to build more energy infrastructure in this country... We need to do that faster, and these reforms will help.", "source_url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines"}, "sources": [{"title": "Canary Media: Senate permitting bill could greatly expand power lines and clean energy", "url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines"}, {"title": "C2ES: New Analysis Finds Federal Transmission Reforms Would Slash Power Sector Emissions", "url": "https://www.c2es.org/press-release/new-analysis-finds-federal-transmission-reforms-would-slash-power-sector-emissions-boost-grid-reliability-and-save-consumers-billions/"}]}
+```
+
 
 ## Media
 
@@ -15884,6 +16074,10 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 ```
 
 ```json
+{"id": "2026-10-01-utility-dive-senate-permitting-bill-transmission-siting", "date": "2026-10-01", "type": "news", "outlet": "Utility Dive", "title": "Senate permitting bill would expand federal role in transmission siting", "url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/", "summary": "Reports on BAAJA expanding FERC authority to permit interstate transmission lines, eliminating NIETCs and the federal right of first refusal, with reactions from Rob Gramlich and Devin Hartman.", "stance": "reporting", "quote": {"text": "The transmission title as well as the impact of the other sections on transmission development are very well-crafted.", "speaker": "Rob Gramlich, Grid Strategies"}, "topics": ["transmission", "congress"], "sector": "industry"}
+```
+
+```json
 {"id": "2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw", "date": "2026-10-01", "type": "news", "outlet": "POLITICO", "author": "Nico Portuondo", "title": "Senate bipartisan permitting deal faces a House buzz saw", "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247", "summary": "House Natural Resources ranking member Jared Huffman said most House Democrats will not support the Senate bill as written and urged talks to resume after the midterms. The report says Energy and Commerce Chair Brett Guthrie had not endorsed it.", "stance": "reporting", "quote": {"text": "Folding our hand now or in the lame duck makes no sense when we can keep working on this and, in a few more months, have a much better deal that works for everyone.", "speaker": "Rep. Jared Huffman (D-Calif.)"}, "topics": ["congress"], "sector": "media"}
 ```
 
@@ -15901,6 +16095,10 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ```json
 {"id": "2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right", "date": "2026-10-01", "type": "analysis", "outlet": "Center for Public Enterprise", "author": "Chirag Lala", "title": "The bipartisan permitting bill gets transmission right", "url": "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/", "summary": "A brief on the bill's grid title. It says the bill goes further than the 2024 EPRA bill: FERC must permit qualifying interstate lines when a state has not approved them within a year, DOE-identified congested areas replace national interest corridors, and costs follow a beneficiary-pays rule. It also covers the data center cost rule, the right-of-first-refusal ban and advanced transmission technologies, and notes that DOE's transmission loan program needs new money because the One Big Beautiful Bill Act rescinded its funding.", "stance": "supports", "quote": {"text": "Most importantly, BAAJA gives FERC more statutory cover to take aggressive actions on grid development.", "speaker": "Chirag Lala, Center for Public Enterprise"}, "topics": ["transmission", "data-centers", "congress"], "sector": "think_tank"}
+```
+
+```json
+{"id": "2026-10-01-artificial-weights-permitting-bill-procedural-reforms", "date": "2026-10-01", "type": "analysis", "outlet": "Artificial Weights", "title": "The Permitting Bill: Its Procedural Reforms, Explained", "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural", "summary": "Alex Mechanick analyzes BAAJA procedural overhaul, focusing on the end of project-stopping injunctions under NEPA and NHPA in favor of remand to correct errors while projects proceed.", "stance": "supports", "quote": {"text": "The most important reform in BAAJA is that violations of NEPA and NHPA can no longer be the basis for stopping a project. Instead, if a court finds a violation, it remands to the agency to correct the error", "speaker": "Alex Mechanick"}, "topics": ["courts", "nepa", "congress"], "sector": "think_tank"}
 ```
 
 ```json
@@ -15988,6 +16186,10 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 ```
 
 ```json
+{"id": "2026-09-30-sierra-club-reaction-permitting-bill-introduction", "date": "2026-09-30", "type": "org_statement", "outlet": "Sierra Club", "title": "Sierra Club Reaction to Permitting Bill Introduction", "url": "https://www.sierraclub.org/press-releases/2026/09/sierra-club-reaction-permitting-bill-introduction", "summary": "Sierra Club notes the urgency of transmission and clean energy but raises concern over fossil fuel infrastructure acceleration without deployment guarantees.", "stance": "opposes", "quote": {"text": "There is no task more urgent than building clean energy and transmission. Congress must act to lower energy bills, protect clean air and water, and transition off of fossil fuels, and that means making it faster and easier to build transmission and clean energy.", "speaker": "Holly Bender, Sierra Club"}, "topics": ["transmission", "congress", "nepa"], "sector": "environmental"}
+```
+
+```json
 {"id": "2026-09-30-politico-capitol-agenda-one-day-more", "date": "2026-09-30", "type": "news", "outlet": "POLITICO", "author": "POLITICO staff (Nico Portuondo and Pavan Acharya contributed)", "title": "Capitol agenda: One day more? (Inside Congress live updates)", "url": "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791", "summary": "Live-update page for the day the bill text was due and the Ratepayer Protection Act went to a cloture vote. A summary of the permitting package had circulated and senators wanted the text, especially on issues that could decide votes in a lame-duck session. The cloture vote failed 57-43; four Democrats joined all Republicans in favor.", "stance": "reporting", "quote": {"text": "All the issues are solved in concept", "speaker": "Sen. Angus King (I-Maine)"}, "topics": ["congress", "data-centers"], "sector": "media"}
 ```
 
@@ -16033,6 +16235,14 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ```json
 {"id": "2026-09-30-cbd-democrats-abandon-environmental-laws-permitting-reform", "date": "2026-09-30", "type": "org_statement", "outlet": "Center for Biological Diversity", "author": "Brett Hartl", "title": "Democrats Abandon Environmental Laws to Advance Pro-Fossil Fuel ‘Permitting Reform’", "url": "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/", "summary": "The Center for Biological Diversity opposes the bill, saying it weakens Endangered Species Act and Clean Water Act protections and benefits the fossil fuel industry.", "stance": "opposes", "quote": {"text": "This is a climate kill shot that condemns our most vulnerable communities to suffer decades more fossil fuel pollution.", "speaker": "Brett Hartl, Center for Biological Diversity"}, "topics": ["congress", "esa", "clean-water-act", "fossil"], "sector": "environmental"}
+```
+
+```json
+{"id": "2026-09-30-canary-media-senate-permitting-bill-power-lines", "date": "2026-09-30", "type": "news", "outlet": "Canary Media", "title": "Senate permitting bill could greatly expand power lines and clean energy", "url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines", "summary": "Reports that BAAJA transmission directives and advanced grid tech mandates could streamline power line buildouts and unblock clean energy for data centers and load growth.", "stance": "reporting", "quote": {"text": "If Congress wanted to expand and de-congest the nation’s transmission grid, these are the policy changes that can get that done", "speaker": "Rob Gramlich, Grid Strategies"}, "topics": ["transmission", "data-centers", "congress"], "sector": "industry"}
+```
+
+```json
+{"id": "2026-09-30-c2es-transmission-reforms-modeling-analysis", "date": "2026-09-30", "type": "analysis", "outlet": "Center for Climate and Energy Solutions", "title": "New Analysis Finds Federal Transmission Reforms Would Slash Power Sector Emissions, Boost Grid Reliability, and Save Consumers Billions", "url": "https://www.c2es.org/press-release/new-analysis-finds-federal-transmission-reforms-would-slash-power-sector-emissions-boost-grid-reliability-and-save-consumers-billions/", "summary": "C2ES and Greenline Insights model nationwide permitting and transmission reforms, finding billion in cumulative grid savings and billion in lower residential bills through 2040.", "stance": "supports", "quote": {"text": "This analysis shows that practical reforms to transmission planning and interconnection processes can unlock more clean energy, reduce our reliance on natural gas, lower costs for consumers, and help build a cleaner, more reliable electric grid.", "speaker": "Nat Keohane, C2ES"}, "topics": ["transmission", "congress"], "sector": "think_tank"}
 ```
 
 ```json

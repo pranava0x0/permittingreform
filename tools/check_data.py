@@ -62,6 +62,11 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out.append(("communities intro", cm["intro"]))
     for r in cm["rows"]:
         out += [(f"communities {r['id']} topic", r["topic"]), (f"communities {r['id']} now", r["now"]), (f"communities {r['id']} baaja", r["baaja"])]
+    dc = core.get("datacenters") or {"rows": []}
+    if dc.get("intro"):
+        out.append(("datacenters intro", dc["intro"]))
+    for r in dc["rows"]:
+        out += [(f"datacenters {r['id']} topic", r["topic"]), (f"datacenters {r['id']} now", r["now"]), (f"datacenters {r['id']} baaja", r["baaja"])]
     out += [("compare added", a["text"]) for a in core["compare"]["added"]]
     out += [("compare dropped", a["text"]) for a in core["compare"]["dropped"]]
     for e in core["timeline"]:
@@ -123,12 +128,13 @@ def check(core: dict) -> tuple[list[str], dict]:
                 if cell.get("quote") and not str(cell.get("url", "")).startswith("https://"):
                     errs.append(f"compare bills {r['id']} {v['key']}: a quote needs the link it was copied from")
 
-    for r in (core.get("communities") or {"rows": []})["rows"]:
-        for f in ("id", "group", "topic", "who", "effect", "now", "baaja", "sections"):
-            if not r.get(f):
-                errs.append(f"communities {r.get('id')}: missing {f}")
-        if r.get("now_cite") and not str(r.get("now_url", "")).startswith("https://"):
-            errs.append(f"communities {r['id']}: a current-law cite needs a link")
+    for dataset, name in (("communities", "communities"), ("datacenters", "datacenters")):
+        for r in (core.get(dataset) or {"rows": []})["rows"]:
+            for f in ("id", "group", "topic", "who", "effect", "now", "baaja", "sections"):
+                if not r.get(f):
+                    errs.append(f"{name} {r.get('id')}: missing {f}")
+            if r.get("now_cite") and not str(r.get("now_url", "")).startswith("https://"):
+                errs.append(f"{name} {r['id']}: a current-law cite needs a link")
 
     def http(url) -> bool:
         return isinstance(url, str) and url.lower().startswith(("http://", "https://"))
