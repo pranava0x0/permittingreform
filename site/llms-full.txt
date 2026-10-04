@@ -14907,7 +14907,7 @@ BAAJA's data center and load-growth rules beside the federal bills that would re
 
 - Current policy: FERC Order No. 2222 required grid operators to allow distributed energy resource aggregations into wholesale markets, but implementation is delayed across several regions.
   Source: [FERC Order No. 2222, 85 FR 67094 (2020)](https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional)
-- BAAJA: Bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.
+- BAAJA: Effective 18 months after enactment, bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.
   Bill: [2108](https://pranava0x0.github.io/permittingreform/sections/2108.md)
 - Ratepayer Protection Act (H.R. 9340): Not addressed.
 - GRID Savings Act (S. 5199): Not addressed.
@@ -15373,7 +15373,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 
 - Effect: expands; affects: Hyperscalers & AI, Data center operators, Behind-the-meter power & VPPs
 - Now: FERC Order No. 2222 required RTOs to accommodate distributed energy aggregations, but utility resistance and delayed tariff filings have blocked customer-sited resources from wholesale markets. Source: [FERC Order No. 2222, 85 FR 67094 (2020)](https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional)
-- BAAJA: Declares it unjust and unreasonable under FPA sections 205 and 206 for any grid operator to prevent participation of qualifying behind-the-meter aggregations (100 kW minimum aggregation, 5 kW per unit, 15-minute response) in wholesale energy, capacity, or ancillary service markets.
+- BAAJA: Effective 18 months after enactment, declares it unjust and unreasonable under FPA sections 205 and 206 for any grid operator to prevent participation of qualifying behind-the-meter aggregations (100 kW minimum aggregation, 5 kW per unit, 15-minute response) in wholesale energy, capacity, or ancillary service markets.
 - Bill: [2108](https://pranava0x0.github.io/permittingreform/sections/2108.md)
 - Quote: "prevent the participation of any qualifying BTM DES aggregation in wholesale energy, capacity, or ancillary services markets administered by the Transmission Organization.", [p. 243, line 20 to p. 243, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=243)
 
