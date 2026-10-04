@@ -11,7 +11,7 @@ const out = process.env.CLICKS_OUT || '.test-artifacts/clicks.json';
 
 const WIDTHS = [{ w: 375, h: 812, touch: true }, { w: 1280, h: 800, touch: false }];
 const CLICK_ROUTES = ['overview', 'bill', 'bill/sec/1106', 'bill/sec/2107', 'bill/search/transmission', 'compare',
-  'compare/data-center-bills', 'communities', 'timeline', 'people', 'media', 'method'];
+  'compare/data-center-bills', 'communities', 'datacenters', 'timeline', 'people', 'media', 'method'];
 const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"], .tabs a, #theme-toggle';
 
 (async () => {

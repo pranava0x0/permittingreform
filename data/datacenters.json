@@ -307,7 +307,7 @@
    "now": "EIA Form 861 collects utility sales by broad commercial and industrial sectors, without separate reporting on data center or computing power demand.",
    "now_cite": "EIA Form 861 instructions",
    "now_url": "https://www.eia.gov/electricity/data/eia861/",
-   "baaja": "Directs the Energy Information Administration to revise Form 861 to collect electricity load from data center entities (AI, cloud, cryptocurrency) starting with the first filing cycle after enactment.",
+   "baaja": "Directs the Energy Information Administration to revise Form 861 to include electricity load from data center entities (AI, cloud, cryptocurrency) no later than 90 days before the first April 1 after enactment.",
    "sections": [
     "2114"
    ],

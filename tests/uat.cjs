@@ -18,11 +18,12 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0) + (window.PR_DATA.compare.bills ? window.PR_DATA.compare.bills.rows.length : 0),
           media: Math.min(12,window.PR_DATA.media.length), timeline: Math.min(12,window.PR_DATA.timeline.length),
           communities: window.PR_DATA.communities.rows.length, bills: window.PR_DATA.compare.bills.rows.length,
+          datacenters: window.PR_DATA.datacenters.rows.length,
           people: Math.min(12,window.PR_DATA.people.filter(p=>p.inside_government).length) }));
         const routes = [
           ['overview','.provisions li',10], ['bill','.index li',71],
           ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
-          ['communities','.cm-row',n.communities], ['compare/data-center-bills','.compare tbody tr',n.bills],
+          ['communities','.cm-row',n.communities], ['datacenters','.cm-row',n.datacenters], ['compare/data-center-bills','.compare tbody tr',n.bills],
           ['timeline','.event',n.timeline], ['people','.person',n.people], ['media','.media-item',n.media], ['method','.versus dd',null]
         ];
         for (const [route, selector, expected] of routes) {
@@ -47,7 +48,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
-          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,timeline:2,people:4.5,media:5};
+          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,datacenters:5,timeline:2,people:4.5,media:5};
           if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')
@@ -104,8 +105,22 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
         const want=await page.evaluate(w=>PR_DATA.communities.rows.filter(r=>r.who.includes(w)).length,who);
         assert.equal(await page.locator('.cm-row').count(),want,'communities filter '+who);
       }
+      await page.goto(base+'#/datacenters');
+      await page.getByRole('group',{name:'Affected party',exact:true}).getByRole('button',{name:/^Data center operators/}).click();
+      assert.equal(await page.locator('.cm-row').count(),await page.evaluate(()=>PR_DATA.datacenters.rows.filter(r=>r.who.includes('data_centers')).length));
+      assert.ok(await page.locator('.cm-row').first().isVisible(), 'Datacenters rows are visible without opening a fold');
+      await page.locator('.cm-row .event-toggle').first().click();
+      assert.ok(await page.locator('.cm-row.open .cm-body').first().isVisible());
+      assert.ok(await page.locator('.cm-row.open a[href*="bill.pdf#page="]').first().isVisible());
+      await page.getByRole('group',{name:'Affected party',exact:true}).getByRole('button',{name:/^All entities/}).click();
+      for (const who of await page.evaluate(()=>Object.keys(PR_DATA.datacenters.who))) {
+        await page.goto(base+'#/datacenters');
+        await page.getByRole('group',{name:'Affected party',exact:true}).getByRole('button',{name:new RegExp('^'+(await page.evaluate(w=>PR_DATA.datacenters.who[w],who)))}).click();
+        const want=await page.evaluate(w=>PR_DATA.datacenters.rows.filter(r=>r.who.includes(w)).length,who);
+        assert.equal(await page.locator('.cm-row').count(),want,'datacenters filter '+who);
+      }
       await page.goto(base+'#/compare/data-center-bills');
-      assert.equal(await page.locator('.compare tbody tr').count(),13);
+      assert.equal(await page.locator('.compare tbody tr').count(), await page.evaluate(()=>PR_DATA.compare.bills.rows.length));
       // Tables stack below 1024px, so phones and tablets get tap-to-open rows and one counterpart.
       if (width < 1024) {
         const row = page.locator('#row-bills-existing');
@@ -130,7 +145,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       } else {
         await page.setViewportSize({width:375,height:812});
         await page.waitForFunction(()=>Boolean(document.querySelector(".row-toggle")) === matchMedia("(max-width: 1023px)").matches);
-        assert.equal(await page.locator('.row-toggle').count(),13);
+        assert.equal(await page.locator('.row-toggle').count(), await page.evaluate(()=>PR_DATA.compare.bills.rows.length));
         await page.locator('.row-toggle').first().click();
         assert.equal(await page.locator('.compare tbody tr').first().locator('td:visible').count(),2);
         await page.setViewportSize({width,height:800});

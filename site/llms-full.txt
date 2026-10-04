@@ -15413,7 +15413,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 
 - Effect: expands; affects: Hyperscalers & AI, Data center operators, Ratepayers & states
 - Now: EIA Form 861 collects utility sales by broad commercial and industrial sectors, without separate reporting on data center or computing power demand. Source: [EIA Form 861 instructions](https://www.eia.gov/electricity/data/eia861/)
-- BAAJA: Directs the Energy Information Administration to revise Form 861 to collect electricity load from data center entities (AI, cloud, cryptocurrency) starting with the first filing cycle after enactment.
+- BAAJA: Directs the Energy Information Administration to revise Form 861 to include electricity load from data center entities (AI, cloud, cryptocurrency) no later than 90 days before the first April 1 after enactment.
 - Bill: [2114](https://pranava0x0.github.io/permittingreform/sections/2114.md)
 - Quote: "the Administrator of the Energy Information Administration shall revise Form 861 of the Energy Information Administration to include load from data center entities.", [p. 279, line 23 to p. 279, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=279)
 
