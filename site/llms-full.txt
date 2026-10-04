@@ -14907,7 +14907,7 @@ BAAJA's data center and load-growth rules beside the federal bills that would re
 
 - Current policy: FERC Order No. 2222 required grid operators to allow distributed energy resource aggregations into wholesale markets, but implementation is delayed across several regions.
   Source: [FERC Order No. 2222, 85 FR 67094 (2020)](https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional)
-- BAAJA: Bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.
+- BAAJA: Bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.
   Bill: [2108](https://pranava0x0.github.io/permittingreform/sections/2108.md)
 - Ratepayer Protection Act (H.R. 9340): Not addressed.
 - GRID Savings Act (S. 5199): Not addressed.
@@ -15305,11 +15305,11 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 - Bill: [2110](https://pranava0x0.github.io/permittingreform/sections/2110.md)
 - Quote: "to require public utility transmission providers to share and employ, as appropriate, queue management practices with respect to the use of computing technologies, including artificial intelligence, machine learning, and automation", [p. 265, line 18 to p. 265, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=265)
 
-### 15-day deadline for grid study data
+### 15-day default deadline for grid study data
 
 - Effect: expands; affects: Hyperscalers & AI, Data center operators, Grid operators & utilities
 - Now: Interconnection studies are frequently delayed by months while transmission providers wait for neighboring utilities or bulk-power system users to furnish network models and engineering data. Source: [FERC Order No. 2023, 88 FR 61014 (2023)](https://www.federalregister.gov/documents/2023/09/06/2023-16597/improvements-to-generator-interconnection-procedures-and-agreements)
-- BAAJA: Adds Federal Power Act section 232. Bulk-power system users, owners, and operators must provide requested grid data within 15 days in an agreed usable format. Confidentiality rules cannot be used to withhold data, and violations are subject to FPA section 316A reliability enforcement penalties.
+- BAAJA: Adds Federal Power Act section 232. Bulk-power system users, owners, and operators must provide requested grid data within 15 days (unless FERC sets an alternative timeline for a data category) in an agreed usable format. Confidentiality rules cannot be used to withhold data, and violations are subject to FPA section 316A reliability enforcement penalties.
 - Bill: [2111](https://pranava0x0.github.io/permittingreform/sections/2111.md)
 - Quote: "shall provide requested grid data not later than 15 days after receiving the request.", [p. 268, line 21 to p. 268, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=268)
 
@@ -15389,7 +15389,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 
 - Effect: narrows; affects: Data center operators, Ratepayers & states
 - Now: Cost allocation for large loads is decided in utility rate cases before state commissions or FERC, with no federal statutory floor preventing cost-shifting to residential ratepayers. Source: [White House, Ratepayer Protection Pledge](https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/)
-- BAAJA: Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more, no portion of the incremental generation, transmission, or distribution cost may be allocated to or recovered in rates of any other customer.
+- BAAJA: Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more that interconnect on or after enactment, no portion of the incremental generation, transmission, or distribution cost may be allocated to or recovered in rates of any other customer. Existing approved arrangements remain grandfathered.
 - Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
 - Quote: "No portion of the incremental cost may be allocated to, or recovered in the rates of, any customer other than a covered load", [p. 234, line 23 to p. 235, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=234)
 
@@ -15397,15 +15397,15 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 
 - Effect: narrows; affects: Data center operators, Ratepayers & states, Grid operators & utilities
 - Now: If a large customer terminates service or goes bankrupt, stranded grid upgrade costs often fall on remaining captive utility customers. Source: [H.R. 9340, House-passed text](https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm)
-- BAAJA: Utilities must collect financial assurance or upfront contributions before constructing facilities or upgrades. Cost recovery continues even if the data center terminates its contract or ceases electric purchases.
+- BAAJA: For loads connecting on or after enactment, utilities must collect financial assurance or upfront contributions before constructing facilities or upgrades. Cost recovery continues even if the data center terminates its contract or ceases electric purchases; existing arrangements are grandfathered.
 - Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
 - Quote: "an electric utility shall require the covered load to provide financial assurances or contributions sufficient to cover the cost of the facility or upgrade", [p. 235, line 23 to p. 236, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=235)
 
 ### State authority to auction grid access and require clean supply
 
 - Effect: changes; affects: Ratepayers & states, Data center operators
-- Now: Interconnection queues generally follow first-come, first-served processing, and state regulators face legal limits on auctioning grid access or prioritizing loads by public benefit. Source: [Harvard ELI on data center regulation](https://heatmap.news/daily/data-center-permitting-deal)
-- BAAJA: States may hold competitive solicitations or open seasons to allocate retail service among covered loads, charge more than incremental cost to rebate other customers, require bring-your-own clean power, and prioritize non-firm loads.
+- Now: State utility regulation typically treats large customers under standard industrial tariff classes, without statutory frameworks for statewide competitive open seasons or auctions. Source: [Heatmap on data center regulation](https://heatmap.news/daily/data-center-permitting-deal)
+- BAAJA: For loads connecting on or after enactment, States may hold competitive solicitations or open seasons to allocate retail service among covered loads, charge more than incremental cost to rebate other customers, require bring-your-own clean power, and prioritize non-firm loads. Pre-enactment approved arrangements remain in effect.
 - Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
 - Quote: "use an open season or competitive solicitation to allocate among covered loads the opportunity to obtain and contract for retail electric service", [p. 236, line 23 to p. 237, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=236)
 

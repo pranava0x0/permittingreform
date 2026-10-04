@@ -1818,7 +1818,7 @@
      "text": "Not addressed."
     },
     "senate": {
-     "text": "Bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.",
+     "text": "Bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.",
      "sections": [
       "2108"
      ]

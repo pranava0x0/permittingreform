@@ -53,7 +53,7 @@
   {
    "id": "grid-data-deadlines",
    "group": "speed",
-   "topic": "15-day deadline for grid study data",
+   "topic": "15-day default deadline for grid study data",
    "who": [
     "hyperscalers",
     "data_centers",
@@ -63,7 +63,7 @@
    "now": "Interconnection studies are frequently delayed by months while transmission providers wait for neighboring utilities or bulk-power system users to furnish network models and engineering data.",
    "now_cite": "FERC Order No. 2023, 88 FR 61014 (2023)",
    "now_url": "https://www.federalregister.gov/documents/2023/09/06/2023-16597/improvements-to-generator-interconnection-procedures-and-agreements",
-   "baaja": "Adds Federal Power Act section 232. Bulk-power system users, owners, and operators must provide requested grid data within 15 days in an agreed usable format. Confidentiality rules cannot be used to withhold data, and violations are subject to FPA section 316A reliability enforcement penalties.",
+   "baaja": "Adds Federal Power Act section 232. Bulk-power system users, owners, and operators must provide requested grid data within 15 days (unless FERC sets an alternative timeline for a data category) in an agreed usable format. Confidentiality rules cannot be used to withhold data, and violations are subject to FPA section 316A reliability enforcement penalties.",
    "sections": [
     "2111"
    ],
@@ -251,7 +251,7 @@
    "now": "Cost allocation for large loads is decided in utility rate cases before state commissions or FERC, with no federal statutory floor preventing cost-shifting to residential ratepayers.",
    "now_cite": "White House, Ratepayer Protection Pledge",
    "now_url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
-   "baaja": "Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more, no portion of the incremental generation, transmission, or distribution cost may be allocated to or recovered in rates of any other customer.",
+   "baaja": "Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more that interconnect on or after enactment, no portion of the incremental generation, transmission, or distribution cost may be allocated to or recovered in rates of any other customer. Existing approved arrangements remain grandfathered.",
    "sections": [
     "2107"
    ],
@@ -270,7 +270,7 @@
    "now": "If a large customer terminates service or goes bankrupt, stranded grid upgrade costs often fall on remaining captive utility customers.",
    "now_cite": "H.R. 9340, House-passed text",
    "now_url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm",
-   "baaja": "Utilities must collect financial assurance or upfront contributions before constructing facilities or upgrades. Cost recovery continues even if the data center terminates its contract or ceases electric purchases.",
+   "baaja": "For loads connecting on or after enactment, utilities must collect financial assurance or upfront contributions before constructing facilities or upgrades. Cost recovery continues even if the data center terminates its contract or ceases electric purchases; existing arrangements are grandfathered.",
    "sections": [
     "2107"
    ],
@@ -285,10 +285,10 @@
     "data_centers"
    ],
    "effect": "changes",
-   "now": "Interconnection queues generally follow first-come, first-served processing, and state regulators face legal limits on auctioning grid access or prioritizing loads by public benefit.",
-   "now_cite": "Harvard ELI on data center regulation",
+   "now": "State utility regulation typically treats large customers under standard industrial tariff classes, without statutory frameworks for statewide competitive open seasons or auctions.",
+   "now_cite": "Heatmap on data center regulation",
    "now_url": "https://heatmap.news/daily/data-center-permitting-deal",
-   "baaja": "States may hold competitive solicitations or open seasons to allocate retail service among covered loads, charge more than incremental cost to rebate other customers, require bring-your-own clean power, and prioritize non-firm loads.",
+   "baaja": "For loads connecting on or after enactment, States may hold competitive solicitations or open seasons to allocate retail service among covered loads, charge more than incremental cost to rebate other customers, require bring-your-own clean power, and prioritize non-firm loads. Pre-enactment approved arrangements remain in effect.",
    "sections": [
     "2107"
    ],
