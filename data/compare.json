@@ -1762,7 +1762,7 @@
      "text": "Not addressed."
     },
     "senate": {
-     "text": "Directs FERC within 1 year to require AI and automation in interconnection study evaluations. Mandates 15-day grid data turnaround under reliability penalties, and requires a joint FERC/DOE reference spec for fully automated studies within 1 year.",
+     "text": "Directs FERC within 1 year to require AI and automation in interconnection study evaluations. Mandates 15-day grid data turnaround (backed by section 316A reliability penalties for public utilities and FERC compliance orders for other entities), and requires a joint FERC/DOE reference spec for fully automated studies within 1 year.",
      "sections": [
       "2110",
       "2111"
