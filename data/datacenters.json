@@ -251,7 +251,7 @@
    "now": "Cost allocation for large loads is decided in utility rate cases before state commissions or FERC, with no federal statutory floor preventing cost-shifting to residential ratepayers.",
    "now_cite": "White House, Ratepayer Protection Pledge",
    "now_url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
-   "baaja": "Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more that interconnect on or after enactment, no portion of the incremental generation, transmission, or distribution cost may be allocated to or recovered in rates of any other customer. Existing approved arrangements remain grandfathered.",
+   "baaja": "Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more that interconnect on or after enactment, no portion of the incremental generation, storage, transmission, or distribution cost may be allocated to or recovered in rates of any other customer. Existing approved arrangements remain grandfathered.",
    "sections": [
     "2107"
    ],
