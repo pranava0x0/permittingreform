@@ -1801,7 +1801,7 @@
     "id": "btm-power",
     "topic": "Behind-the-meter generation and storage",
     "policy": {
-     "text": "FERC Order No. 2222 required grid operators to allow distributed energy resource aggregations into wholesale markets, but implementation is delayed across several regions.",
+     "text": "FERC Order No. 2222 directed grid operators to accommodate distributed energy resource aggregations by administrative rule, but establishes no direct statutory right in the Federal Power Act.",
      "url": "https://www.federalregister.gov/documents/2020/10/06/2020-20596/participation-of-distributed-energy-resource-aggregations-in-markets-operated-by-regional",
      "cite": "FERC Order No. 2222, 85 FR 67094 (2020)"
     },
