@@ -547,14 +547,6 @@
    "note": ""
   },
   {
-   "id": "1110.s11",
-   "claim": "No suit may rest on an omission from the list of state, local and tribal engagement in the sponsor's record of stakeholder engagement.",
-   "verdict": "unsupported",
-   "evidence": "a claim or judicial review of whether a final agency action complies with the requirements of this Act for any omission from the list described in section 3(22)(B).",
-   "evidence_in_text": true,
-   "note": "Text bars claims over omissions from 'the list described in section 3(22)(B)' but does not define that list as covering state/local/tribal engagement in a stakeholder-engagement record."
-  },
-  {
    "id": "1110.s2",
    "claim": "Suits challenging an authorization on NEPA grounds must be filed within 150 days.",
    "verdict": "supported",
@@ -809,14 +801,6 @@
    "evidence": "The scope of a certification provided under this section shall be limited to ensuring compliance with water quality requirements.",
    "evidence_in_text": true,
    "note": ""
-  },
-  {
-   "id": "1202.k2",
-   "claim": "One-year cap, extendable only at the applicant's written request and with the state's written agreement",
-   "verdict": "partly",
-   "evidence": "the certifying authority concurs, in writing, with the extension.",
-   "evidence_in_text": true,
-   "note": "Extension requires the certifying authority's written concurrence, which may be a State, interstate agency, Tribe, or the EPA Administrator, not only 'the state'."
   },
   {
    "id": "1202.k3",
@@ -1811,14 +1795,6 @@
    "note": ""
   },
   {
-   "id": "2104.s4",
-   "claim": "If the team finds the utility's process is not selecting the more efficient or cost-effective local projects, or is crowding out regional planning, FERC may order process changes, cut the utility's return on equity on local projects, remove the presumption of prudence, or fine the utility up to $5 million per imprudent facility, payable to the referring state.",
-   "verdict": "partly",
-   "evidence": "was imprudent; and “(bb) caused financial harm to wholesale or retail electric customers within the referring State",
-   "evidence_in_text": true,
-   "note": "Fine requires both imprudence AND financial harm to the referring state's customers; claim omits the financial-harm condition."
-  },
-  {
    "id": "2105.k1",
    "claim": "Incumbent utilities get no federal first claim on regionally planned lines; competitive developers can bid",
    "verdict": "supported",
@@ -2785,14 +2761,6 @@
    "evidence": "placement of an electric transmission or distribution line of not more than 20 miles in length in an approved right-of-way corridor, so long as the corridor was approved within 10 years prior to the date of placement",
    "evidence_in_text": true,
    "note": ""
-  },
-  {
-   "id": "2229.s4",
-   "claim": "The corridor look-back for pipelines goes from 5 to 10 years, and geothermal gets a new item for power lines up to 20 miles in an approved corridor.",
-   "verdict": "partly",
-   "evidence": "in paragraph (4), by striking “5” and inserting “10”",
-   "evidence_in_text": true,
-   "note": "Source doesn't specify paragraph (4)'s subject matter as pipelines; claim's 'pipelines' detail is unconfirmed by this text."
   },
   {
    "id": "2229.s5",
@@ -3907,14 +3875,6 @@
    "note": ""
   },
   {
-   "id": "cmp.energy-sol.epra",
-   "claim": "On the subject of 'Suits over energy and mineral permits under any law': 150 days. Remand capped at 180 days unless applicable law needs longer.",
-   "verdict": "partly",
-   "evidence": "unless the civil action is filed by the date that is 150 days after the date on which the authorization was granted or denied, unless a shorter time is specified",
-   "evidence_in_text": true,
-   "note": "Claim states flat 150-day limit but omits the exception allowing a shorter statutory deadline to control."
-  },
-  {
    "id": "cmp.energy-sol.senate.s1",
    "claim": "[Suits over energy and mineral permits under any law] 150 days.",
    "verdict": "supported",
@@ -4814,8 +4774,8 @@
    "id": "com.alternatives-scope.s1",
    "claim": "[Alternatives the public can ask an agency to study] The lead agency must eliminate any alternative, except no-action, that does not fulfill the purpose and need or meet the goals of an applicable non-federal sponsor.",
    "verdict": "supported",
-   "evidence": "eliminate from consideration any alternative (except for a no-action alternative) that does not",
-   "evidence_in_text": true,
+   "evidence": "eliminate from consideration any alternative (except for a no-action alternative) that does not fulfill the purpose and need of the proposed agency action and meet the goals of an applicable non-Federal project sponsor",
+   "evidence_in_text": false,
    "note": ""
   },
   {
@@ -5249,14 +5209,6 @@
    "evidence": "subject to the condition that the cost of the action does not exceed $10,000,000",
    "evidence_in_text": true,
    "note": ""
-  },
-  {
-   "id": "com.not-major-action.s3",
-   "claim": "[Actions defined as not a major Federal action] Others cover lifeline infrastructure repair that adds no more than 20 percent capacity, geothermal observation tests, transmission activities described in a new section 216A(b) of the Federal Power Act and gas pipeline work in covered areas.",
-   "verdict": "partly",
-   "evidence": "any proposed agency action associated with a covered activity (as defined in subsection (i)(1) of section 7 of the Natural Gas Act (15 U.S.C. 717f))",
-   "evidence_in_text": true,
-   "note": "Source refers to a 'covered activity' under NGA section 7(i)(1), not 'gas pipeline work in covered areas'; wording mismatch."
   },
   {
    "id": "com.not-major-action.s4",
@@ -6363,14 +6315,6 @@
    "note": ""
   },
   {
-   "id": "hl.digital.s1",
-   "claim": "[Digital permitting] Requires a public tracker for reviews that need an environmental impact statement and for some environmental assessments, and targets December 1, 2028 for an interagency ePermit system, to the maximum extent practicable.",
-   "verdict": "partly",
-   "evidence": "to track the status of Federal environmental reviews and authorizations for each transparency project.",
-   "evidence_in_text": true,
-   "note": "Tracker covers only defined 'transparency projects' (undefined in excerpt), not all EIS/EA reviews generally."
-  },
-  {
    "id": "hl.exemptions.s1",
    "claim": "[Actions outside NEPA] Excludes specified loan-only actions, qualifying work in existing grid and pipeline corridors, and listed oil, gas and geothermal activities from NEPA.",
    "verdict": "supported",
@@ -6459,7 +6403,16 @@
    "note": ""
   }
  ],
- "unchecked": [],
- "input_sha256": "fd003fe10508f5f364491c6df8d5bf0d7f30a3898d121b9ae65c178484d7ad54",
- "cached_only": false
+ "unchecked": [
+  "1110.s11",
+  "1202.k2",
+  "2104.s4",
+  "2104.s5",
+  "2229.s4",
+  "cmp.energy-sol.epra",
+  "com.not-major-action.s3",
+  "hl.digital.s1"
+ ],
+ "input_sha256": "9566d7d41b8bba34e9f157287b88f89e7b76f8def68a36fb2821c622a70f238f",
+ "cached_only": true
 }

@@ -37,6 +37,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -222,6 +223,9 @@ def ask(prompt: str, model: str) -> dict:
     proc = subprocess.run(
         ["claude", "-p", "--model", model, "--output-format", "json", "--tools", "", "--no-session-persistence",
          "--strict-mcp-config", "--system-prompt", SYSTEM],
+        # Run outside the repository so the CLI does not load the project's
+        # instruction files into every request; the review needs only SYSTEM.
+        cwd=tempfile.gettempdir(),
         input=prompt, capture_output=True, text=True, timeout=900, check=False,
         env={k: v for k, v in os.environ.items() if not k.endswith("_API_KEY")})
     if proc.returncode != 0:
@@ -332,8 +336,11 @@ def main() -> int:
             results.append({"id": cid, "claim": claim_of[cid], "verdict": verdict, "evidence": evidence,
                             "evidence_in_text": evidence_ok, "note": r.get("note", "")})
 
+    # Same rule as the build: a verdict other than supported is a flag. A
+    # supported claim whose evidence was not word for word needs a passage,
+    # which the build checks; "unanswered" is a claim still to ask.
     def flagged(r: dict) -> bool:
-        return r["verdict"] != "supported" or not r["evidence_in_text"]
+        return r["verdict"] not in ("supported", "unanswered")
 
     # A verdict stands only while the claim it judged is still the claim on the
     # site. Results for claims that were edited or removed are dropped, and
@@ -362,7 +369,8 @@ def main() -> int:
     check_links.merge_summary("inference", {
         "checked": checked, "model": model_used, "total": len(current), "input_sha256": billtext.review_fingerprint(),
         "cached_only": args.cached_only,
-        "supported": len(all_results) - len(all_flags), "flagged": len(all_flags), "unchecked": len(unchecked),
+        "supported": sum(1 for r in all_results if r["verdict"] == "supported"), "flagged": len(all_flags),
+        "unchecked": len(unchecked) + sum(1 for r in all_results if r["verdict"] == "unanswered"),
     })
     written = write_point_cites(all_results, bill, current)
     print(f"infer_check: wrote passages for {written} key points and summary sentences -> {POINT_CITES.relative_to(ROOT)}")
@@ -374,7 +382,7 @@ def main() -> int:
     for r in all_flags:
         ev = "" if r["evidence_in_text"] else "  [the model's evidence span is not in the text]"
         print(f"  {r['verdict'].upper():<11} {r['id']}: {r['claim'][:150]}\n      note: {r['note']}{ev}")
-    return 1 if (all_flags or unchecked) else 0
+    return 1 if (all_flags or unchecked or any(r["verdict"] == "unanswered" for r in all_results)) else 0
 
 
 if __name__ == "__main__":

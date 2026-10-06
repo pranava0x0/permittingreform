@@ -724,6 +724,11 @@
   "section": "1102",
   "text": "subject to the condition that the cost of the action does not exceed $10,000,000"
  },
+ "com.not-major-action.s3": {
+  "claim": "Others cover lifeline infrastructure repair that adds no more than 20 percent capacity, geothermal observation tests, transmission activities described in a new section 216A(b) of the Federal Power Act and covered activities under Natural Gas Act section 7(i)(1).",
+  "section": "1102",
+  "text": "does not alter the function or increase the capacity of the lifeline infrastructure by more than 20 percent"
+ },
  "com.not-major-action.s4": {
   "claim": "Actions another agency already evaluated under NEPA, and some Corps projects with a federal share of up to $50,000,000, also qualify.",
   "section": "1102",
@@ -1393,6 +1398,11 @@
   "claim": "Extensions and enforcement conditions apply; the travel sanction limits official trips beyond 25 miles after a qualifying deadline is 60 days overdue.",
   "section": "1106",
   "text": "the head of the relevant key permitting agency shall not travel more than 25 miles from their official duty station"
+ },
+ "hl.digital.s1": {
+  "claim": "Requires a public tracker of defined transparency projects, and targets December 1, 2028 for an interagency ePermit system, to the maximum extent practicable.",
+  "section": "1132",
+  "text": "The Tracker shall include an up-to-date list of all transparency projects"
  },
  "hl.exemptions.s1": {
   "claim": "Excludes specified loan-only actions, qualifying work in existing grid and pipeline corridors, and listed oil, gas and geothermal activities from NEPA.",

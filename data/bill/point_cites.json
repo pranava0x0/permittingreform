@@ -86,6 +86,7 @@
   "If a court finds a NEPA violation, the only remedy is remand without vacatur or injunction, with a fix deadline of no more than 180 days.": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency",
   "No NEPA suit may be brought over an action on tribal trust lands unless the tribe itself sues or effects reach beyond trust lands.": "there shall be no administrative or judicial review of such final agency action based on a claim of failure to comply with the requirements of this Act",
   "No preliminary injunction for NEPA or NHPA violations alone": "there is a substantial likelihood the authorization violates a Federal law other than— “(aa) this Act; or “(bb) division A of subtitle III of title 54",
+  "No suit may rest on an omission from the list described in section 3(22)(B) of NEPA as amended.": "for any omission from the list described in section 3(22)(B)",
   "Only a party with a direct-harm injury can sue, and where a comment period was offered it must have commented": "in the case of an authorization for which an opportunity for comment was provided, the claim is filed by a party that submitted a substantive comment",
   "Remand without vacatur is the sole NEPA remedy; the project continues during the remand": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction",
   "Substantial deference to agencies on the scope and contents of the document": "a court shall afford substantial deference to the agency relating to the scope and contents of an environmental document",
@@ -137,7 +138,7 @@
   "For interstate gas pipelines and bulk-power transmission lines, certification covers only direct point source discharges and must be decided within 9 months.": "not to exceed 9 months from the date of receipt of the certification application",
   "Interstate pipelines and transmission lines: point-source discharges only, 9-month clock": "not to exceed 9 months from the date of receipt of the certification application",
   "On judicial review the burden of proof falls on the state by clear and convincing evidence.": "a court shall place the burden of proof on the certifying authority to demonstrate, by clear and convincing evidence",
-  "One-year cap, extendable only at the applicant's written request and with the state's written agreement": "the certifying authority concurs, in writing, with the extension.",
+  "One-year cap, extendable only at the applicant's written request and with the certifying authority's written agreement": "may only be extended if— “(i) the extension is requested, in writing, by the applicant; and “(ii) the certifying authority concurs, in writing, with the extension",
   "Rewrites Clean Water Act section 401 state certification.": "Section 401 of the Federal Water Pollution Control Act (33 U.S.C. 1341) is amended by adding at the end",
   "Silence is a waiver.": "the requirement for a certification under subsection (a) shall be waived",
   "The process gets a prefiling meeting, a defined complete application, a 3-day receipt acknowledgment, a 90-day completeness notice, and a review period of up to 1 year that can be extended only if the applicant asks in writing and the certifying authority agrees in writing.": "a reasonable period of time (not to exceed 1 year from the date of receipt of the certification application) within which a certifying authority shall issue a final action"
@@ -148,6 +149,7 @@
  },
  "1204": {
   "Extends nationwide permits from 5 to 10 years, lets the Corps modify them mid-term, and requires it to keep nationwide permits 12, 14, 43, 57 and 58 for projects filling under 2 acres, which are deemed a minimal adverse effect.": "any effects of a discharge of dredged or fill material into less than 2 acres of navigable waters to be a minimal adverse environmental effect",
+  "Limits EPA's section 404(c) veto to the period between a complete application and permit issuance.": "begins on the date on which an applicant submits a complete application under this section; and “(B) ends on the date on which the Secretary issues the permit",
   "Nationwide permits last 10 years": "by striking “five years” and inserting “10 years”; and",
   "No ESA or NHPA consultation to reissue a nationwide permit that keeps its preconstruction requirements": "Clauses (i) through (iv) of subparagraph (A) shall only apply to a general permit being reissued pursuant to that subparagraph if the general permit does not",
   "No section 404(c) veto before an application or after a permit issues": "ends on the date on which the Secretary issues the permit.",
@@ -285,9 +287,10 @@
   "The processes must use common assumptions, a fixed list of six benefits, and selection criteria of improved reliability, consumer benefit and public interest.": "A common set of input assumptions and models, on a consistent timeline"
  },
  "2104": {
+  "A fine, paid to the referring state, can reach $5 million for each local facility developed or energized from 60 days before the referral that FERC finds imprudent and harmful to that state's customers.": "caused financial harm to wholesale or retail electric customers within the referring State",
   "Adds Federal Power Act section 226.": "Part II of the Federal Power Act (16 U.S.C. 824 et seq.) (as amended by section 2103) is amended by adding at the end the following",
   "FERC forms an investigative team with up to 3 state appointees.": "up to 3 representatives appointed by the referring State.",
-  "If the team finds the utility's process is not selecting the more efficient or cost-effective local projects, or is crowding out regional planning, FERC may order process changes, cut the utility's return on equity on local projects, remove the presumption of prudence, or fine the utility up to $5 million per imprudent facility, payable to the referring state.": "A fine, payable to the referring State, of up to $5,000,000 for each local transmission facility",
+  "If the team finds the utility's process is not selecting the more efficient or cost-effective local projects, or is crowding out regional planning, FERC may order process changes, cut the utility's return on equity on local projects, remove the presumption of prudence, or fine the utility.": "Reducing the return on equity of the public utility with respect to local transmission facilities",
   "One or more states may refer a utility to FERC for an investigation of its local transmission planning.": "1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities.",
   "Remedies include lower return on equity and fines up to $5 million per facility": "A fine, payable to the referring State, of up to $5,000,000 for each local transmission facility",
   "States can trigger FERC investigations of local transmission spending": "1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities."
@@ -462,9 +465,9 @@
   "Drilling permits for these activities carry no NEPA requirements.": "shall not have any requirements under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.)",
   "Drilling permits for those activities 'shall not have any requirements' under NEPA": "shall not have any requirements under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.)",
   "Geothermal is added to two of them, and a new item covers geothermal power lines of up to 20 miles in a corridor approved within the past 10 years.": "placement of an electric transmission or distribution line of not more than 20 miles in length in an approved right-of-way corridor, so long as the corridor was approved within 10 years prior to the date of placement",
+  "One listed item's look-back goes from 5 to 10 years, and geothermal gets a new item for power lines up to 20 miles in a corridor approved within 10 years.": "in paragraph (4), by striking “5” and inserting “10”",
   "Rewrites section 390 of the Energy Policy Act of 2005.": "Section 390 of the Energy Policy Act of 2005 (42 U.S.C. 15942) is amended",
   "Section 390 oil, gas and now geothermal activities are outside NEPA entirely": "shall not be considered a major Federal action under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.) if the activity is conducted pursuant to",
-  "The corridor look-back for pipelines goes from 5 to 10 years, and geothermal gets a new item for power lines up to 20 miles in an approved corridor.": "placement of an electric transmission or distribution line of not more than 20 miles in length in an approved right-of-way corridor",
   "The oil and gas activities listed in section 390(b) of the Energy Policy Act of 2005 are declared not to be major federal actions at all, rather than categorical exclusions.": "shall not be considered a major Federal action under the National Environmental Policy Act of 1969"
  },
  "2231": {
@@ -486,7 +489,8 @@
   "One-year licensing for hydrokinetic projects up to 5 MW": "The Commission may issue a license in accordance with this section for a term of not less than 10, and not more than 20, years"
  },
  "2241": {
-  "FERC can use special pay rates for economists and lawyers": "by striking “or mathematical” and inserting “mathematical, economic, or legal”"
+  "FERC can use special pay rates for economists and lawyers": "by striking “or mathematical” and inserting “mathematical, economic, or legal”",
+  "Widens FERC's special pay authority to economic and legal positions and strikes paragraph (6) of the same subsection.": "by striking “or mathematical” and inserting “mathematical, economic, or legal”"
  },
  "2242": {
   "Amends the cap on Bonneville's funding of the Northwest Power and Conservation Council, section 4(c)(10)(B) of the Northwest Power Act, by adding the words 'since the date of enactment' of this bill.": "by inserting “since the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026” before the period at the end.",
@@ -498,6 +502,7 @@
  },
  "2251": {
   "Amends the offshore renewable energy section of the Outer Continental Shelf Lands Act. Interior's duty changes from 'prevention of interference with reasonable uses' of the ocean to 'prevention of unreasonable interference with other uses'.": "“prevention of interference with reasonable uses” and inserting “prevention of unreasonable interference with other uses”",
+  "Interior, in consultation with the Secretary of Commerce, may grant rights-of-way for electric transmission through national marine sanctuaries, with sanctuary permits lasting as long as the right-of-way.": "in consultation with the Secretary of Commerce under section 304(d) of the National Marine Sanctuaries Act",
   "Offshore wind standard changes to 'unreasonable interference'": "inserting “prevention of unreasonable interference with other uses”",
   "The Inflation Reduction Act's link between offshore wind leasing and oil and gas lease sales is preserved.": "Nothing in this section, or an amendment made by this section, modifies the limitations described in section 50265(b)(2) of Public Law 117–169",
   "Transmission cables allowed through marine sanctuaries": "may grant rights-of-way on the outer Continental Shelf within units of the National Marine Sanctuary System for the transmission of electricity"

@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-10-02.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-10-05.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -14,12 +14,14 @@ PDF citations use printed bill pages and lines. A matching quote proves occurren
 - [Full text and analysis](https://pranava0x0.github.io/permittingreform/llms-full.txt): all sections, comparisons, timeline, people and media with citations.
 - [Tracker JSON](https://pranava0x0.github.io/permittingreform/data/core.json): the same data the browser renders, including check coverage.
 - [Bill paragraph JSON](https://pranava0x0.github.io/permittingreform/data/bill.json): section number to [printed page, line, indent level, text] arrays.
-- Fetch sections/{number}.md for one section. Each file includes its summary, cited key points, quotes, comparison notes and full statutory text.
-- Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.
+- [Timeline, people and media JSON](https://pranava0x0.github.io/permittingreform/data/news.json): dated events, positions and coverage, each with its sources.
+- [Outside readings JSON](https://pranava0x0.github.io/permittingreform/data/takes.json): what named industry groups, advocates, lawyers and analysts say sections would do, each with its verbatim quote, source link and the bill passage it concerns.
+- Fetch sections/{number}.md for one section. Each file includes its summary with a page-and-line cite after every sentence, cited key points, quotes, outside readings of what the section would do (quoted from their sources), comparison notes and full statutory text.
+- Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}; cited range: #/bill/sec/{number}/{page}-{line}-{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.
 
 ## Check coverage
 
-Saved AI review: 401 supported, 12 flagged, 127 unchecked of 540 statements; checked 2026-10-01; stale: true. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 ## Sections
 
