@@ -248,6 +248,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="show the batches and stop; no model calls")
     ap.add_argument("--cached-only", action="store_true", help="reconcile saved verdicts with current claims, without calling a model")
     ap.add_argument("--refresh", action="store_true", help="ignore cached answers")
+    ap.add_argument("--all", action="store_true", help="re-ask every claim, not only those without a supported verdict for their current wording")
     args = ap.parse_args()
 
     core, _, errors = build.build()
@@ -263,10 +264,29 @@ def main() -> int:
         units += row_units(core, bill)
     if args.scope in ("compare", "all") and not only:
         units += compare_units(core, bill)
-    total_claims = sum(len(u["claims"]) for u in units)
-    if not total_claims:
+    every = sum(len(u["claims"]) for u in units)
+    if not every:
         print("infer_check: no claims to examine", file=sys.stderr)
         return 2
+    # Ask only about claims with no usable supported verdict for their current
+    # wording. Re-sending the whole bill to re-confirm unchanged claims took
+    # about 25 batches and two hours; the saved verdicts carry over unchanged.
+    if not args.all and not args.cached_only:
+        saved = {r["id"]: r for r in (json.loads(OUT.read_text(encoding="utf-8"))["results"] if OUT.exists() else [])}
+
+        def settled(cid: str, claim: str, source: str) -> bool:
+            r = saved.get(cid)
+            if not r or r["claim"] != claim or r["verdict"] != "supported":
+                return False
+            ev = billtext.norm(r.get("evidence", ""))
+            return evidence_is_present(cid, claim, ev, billtext.norm(source)) or bool(usable_span(ev, [[1, 1, billtext.norm(source)]]))
+
+        units = [dict(u, claims=[(cid, c) for cid, c in u["claims"] if not settled(cid, c, u["text"])]) for u in units]
+        units = [u for u in units if u["claims"]]
+    total_claims = sum(len(u["claims"]) for u in units)
+    print(f"infer_check: {every - total_claims} of {every} claims already have a supported verdict for their current wording")
+    if not total_claims:
+        print("infer_check: nothing new to ask")
     plan = batches(units)
     print(f"infer_check: {total_claims} claims about {len(units)} sources in {len(plan)} batches")
     if args.dry_run:

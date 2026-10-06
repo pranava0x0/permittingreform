@@ -276,7 +276,9 @@
           el("p", null, m.short_title),
           el("p", { class: "facts" }, num(m.pages) + " pages · " + m.sections + " sections · released " + S.formatDate(m.released)),
           el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")))),
-      o.next ? el("p", { class: "next-step" }, el("strong", null, "Next: "), S.formatDate(o.next.date) + ". " + o.next.text + " ",
+      // A scheduled date in the past says so, rather than reading as upcoming.
+      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= new Date().toISOString().slice(0, 10) ? "Next: " : "Was scheduled for "),
+        S.formatDate(o.next.date) + ". " + o.next.text + " ",
         el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null,
       el("p", { class: "note" }, "Proposed law", " · ",
         el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),

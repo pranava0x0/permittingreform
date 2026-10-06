@@ -146,6 +146,9 @@ def check(core: dict) -> tuple[list[str], dict]:
         if not DATE_RE.match(d or "") or d > core["meta"]["as_of"]:
             errs.append(f"{where}: date {d!r} is malformed or after the data date {core['meta']['as_of']}")
 
+    nxt = core["overview"].get("next")
+    if nxt and (not DATE_RE.match(nxt.get("date", "")) or not http(nxt.get("source", {}).get("url"))):
+        errs.append("overview next: needs a YYYY-MM-DD date and a source link")
     for t in (core.get("takes") or {}).get("takes", []):
         dated(f"take {t['id']}", t["date"])
         if not http(t["url"]):

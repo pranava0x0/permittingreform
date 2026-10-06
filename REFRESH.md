@@ -65,3 +65,5 @@ See [docs/data-sources.md](docs/data-sources.md) for sources that refuse scripts
 - 2026-10-05. Reddit refuses both the search tool and the Chrome extension. Leave it out of a sweep rather than retry.
 - 2026-10-05. Punchbowl's document links (`punchbowl.news/<name>/`) are attachment pages that serve scripts an empty shell. Cite the PDF under `punchbowl.news/wp-content/uploads/`, which the quote check can read.
 - 2026-10-05. The Senate Press Gallery floor log (`dailypress.senate.gov/<weekday-month-day-year>/`) states the next scheduled vote and the legislative vehicle.
+- 2026-10-05. `infer_check.py` now asks only about claims with no usable supported verdict for their current wording; `--all` re-asks everything. After rewording 40 claims it asked 61 of 807 in 8 batches, against a full run of 25 batches (about two hours and $2 to $3, most of it re-confirming unchanged claims).
+- 2026-10-05. The model sometimes joins two passages with "..." in its evidence. `usable_span` keeps the longest piece that is in the text word for word; a supported claim with no usable piece is a gap, not a flag, and needs a passage found by hand.
