@@ -157,6 +157,19 @@ class Inference(unittest.TestCase):
             for cid, _ in u["claims"]:
                 self.assertEqual(sorted(set(rows[cid]["sections"])), nums, cid)
 
+    def test_a_new_bill_text_re_asks_every_claim(self):
+        import contextlib, io
+        saved = json.loads((ROOT / "data/checks/inference.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp:
+            for sha, expect_all in ((saved["bill_sha256"], False), ("a-different-draft", True)):
+                path = Path(tmp) / "inference.json"
+                path.write_text(json.dumps(dict(saved, bill_sha256=sha)), encoding="utf-8")
+                out = io.StringIO()
+                with patch.object(infer_check, "OUT", path), patch.object(sys, "argv", ["infer_check", "--dry-run"]), \
+                        contextlib.redirect_stdout(out):
+                    infer_check.main()
+                self.assertEqual("asking about every claim" in out.getvalue(), expect_all, out.getvalue()[:200])
+
     def test_a_joined_evidence_span_yields_only_a_verbatim_piece(self):
         lines = next(x for x in billtext.load_sections()["sections"] if x["number"] == "1304")["lines"]
         joined = "with the written agreement of the Secretary and a State... the Secretary may assign, and the State may assume, the consultation responsibilities"

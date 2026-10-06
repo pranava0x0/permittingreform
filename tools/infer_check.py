@@ -275,8 +275,15 @@ def main() -> int:
     # Ask only about claims with no usable supported verdict for their current
     # wording. Re-sending the whole bill to re-confirm unchanged claims took
     # about 25 batches and two hours; the saved verdicts carry over unchanged.
-    if not args.all and not args.cached_only:
-        saved = {r["id"]: r for r in (json.loads(OUT.read_text(encoding="utf-8"))["results"] if OUT.exists() else [])}
+    saved_doc = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    bill_sha = bill["meta"]["pdf_sha256"]
+    # Verdicts were given against one bill text. A new draft can change what an
+    # unchanged sentence means, so every claim is asked again.
+    new_text = saved_doc.get("bill_sha256", bill_sha) != bill_sha
+    if new_text:
+        print("infer_check: the bill text changed since the saved review; asking about every claim")
+    if not args.all and not args.cached_only and not new_text:
+        saved = {r["id"]: r for r in saved_doc.get("results", [])}
 
         def settled(cid: str, claim: str, source: str) -> bool:
             r = saved.get(cid)
@@ -364,7 +371,7 @@ def main() -> int:
         r["evidence_in_text"] = evidence_is_present(cid, r["claim"], ev, billtext.norm(all_text[cid]))
     all_results = [merged[k] for k in sorted(merged)]
     unchecked = sorted(set(current) - set(merged))
-    OUT.write_text(json.dumps({"checked": checked, "model": model_used, "results": all_results, "unchecked": unchecked, "input_sha256": billtext.review_fingerprint(), "cached_only": args.cached_only}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps({"checked": checked, "model": model_used, "results": all_results, "unchecked": unchecked, "input_sha256": billtext.review_fingerprint(), "bill_sha256": bill_sha, "cached_only": args.cached_only}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     all_flags = [r for r in all_results if flagged(r)]
     check_links.merge_summary("inference", {
         "checked": checked, "model": model_used, "total": len(current), "input_sha256": billtext.review_fingerprint(),
