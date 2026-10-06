@@ -14644,7 +14644,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 - epra: No change.
 - speed: Only effects proximately caused by the project itself. Speculative effects and effects of separate projects are excluded.
   Source: [Sec. 2(b), 2(f)](https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm#:~:text=SEC.%202.%20NEPA%20REFORM)
-- senate: No statutory limit on scope. Courts must give agencies substantial deference on the scope and contents of the document. (Sec. 1110, [p. 73, line 25 to p. 74, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=73))
+- senate: No statutory limit on scope. (the text is silent on this; confirmed by the summary review) Courts must give agencies substantial deference on the scope and contents of the document. (Sec. 1110, [p. 73, line 25 to p. 74, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=73))
   Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
 ### Ways to skip a full review
 
@@ -14957,7 +14957,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 - epra: Deadlines for coal lease reviews and decisions.
   Source: [Sec. 204](https://www.govinfo.gov/content/pkg/BILLS-118s4753rs/html/BILLS-118s4753rs.htm#:~:text=SEC.%20204.%20COAL%20LEASES%20ON%20FEDERAL%20LAND)
 - speed: Not addressed.
-- senate: No leasing provisions. Coal appears only in the list of project types protected from unequal treatment. (Sec. 1402, [p. 169, line 11 to p. 169, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=169))
+- senate: No leasing provisions. (the text is silent on this; confirmed by the summary review) Coal appears only in the list of project types protected from unequal treatment. (Sec. 1402, [p. 169, line 11 to p. 169, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=169))
   Bill: [1402](https://pranava0x0.github.io/permittingreform/sections/1402.md)
 ### Wind, solar and storage on public land
 
@@ -14966,7 +14966,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 - epra: 30-day clocks, small-project exclusions, and a goal of 50 gigawatts by 2030.
   Source: [Secs. 206, 207](https://www.govinfo.gov/content/pkg/BILLS-118s4753rs/html/BILLS-118s4753rs.htm#:~:text=SEC.%20206.%20ACCELERATING%20RENEWABLE%20ENERGY%20PERMITTING)
 - speed: Not addressed.
-- senate: The same 30-day clocks and small-project exclusions. (Sec. 2213, [p. 299, line 11 to p. 299, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=299)) No gigawatt goal.
+- senate: The same 30-day clocks and small-project exclusions. (Sec. 2213, [p. 299, line 11 to p. 299, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=299)) No gigawatt goal. (the text is silent on this; confirmed by the summary review)
   Bill: [2213](https://pranava0x0.github.io/permittingreform/sections/2213.md)
 ### Offshore leasing
 
@@ -14975,7 +14975,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 - epra: One oil and gas sale and one wind sale every year through 2029, 400,000 acres of wind a year, and a 30-gigawatt wind goal.
   Source: [Secs. 301, 302](https://www.govinfo.gov/content/pkg/BILLS-118s4753rs/html/BILLS-118s4753rs.htm#:~:text=SEC.%20301.%20OFFSHORE%20OIL%20AND%20GAS%20LEASING)
 - speed: Not addressed.
-- senate: No lease sale mandates. Changes Interior's offshore wind test to 'unreasonable interference' with other uses and orders planned offshore transmission routes. (Sec. 2251, [p. 363, line 17 to p. 363, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=363))
+- senate: No lease sale mandates. (the text is silent on this; confirmed by the summary review) Changes Interior's offshore wind test to 'unreasonable interference' with other uses and orders planned offshore transmission routes. (Sec. 2251, [p. 363, line 17 to p. 363, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=363))
   Bill: [2251](https://pranava0x0.github.io/permittingreform/sections/2251.md)
   Bill: [2252](https://pranava0x0.github.io/permittingreform/sections/2252.md)
 ### LNG exports
@@ -14985,7 +14985,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 - epra: Decision within 90 days of the environmental review, or the application is deemed granted.
   Source: [Secs. 601, 602](https://www.govinfo.gov/content/pkg/BILLS-118s4753rs/html/BILLS-118s4753rs.htm#:~:text=SEC.%20601.%20ACTION%20ON%20APPLICATIONS)
 - speed: Not addressed.
-- senate: No export provisions. LNG projects appear in the list of project types protected from unequal treatment. (Sec. 1402, [p. 171, line 13 to p. 171, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=171))
+- senate: No export provisions. (the text is silent on this; confirmed by the summary review) LNG projects appear in the list of project types protected from unequal treatment. (Sec. 1402, [p. 171, line 13 to p. 171, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=171))
   Bill: [1402](https://pranava0x0.github.io/permittingreform/sections/1402.md)
 ### Geothermal
 
@@ -15247,7 +15247,7 @@ BAAJA's data center and load-growth rules beside the federal bills that would re
 - Current policy: The Pledge covers new demand only.
   Source: [White House, Ratepayer Protection Pledge](https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/)
   Quote: "satisfy their new energy demands"
-- BAAJA: Section 228(b) cost protection and (c) state open-season authority apply to covered loads interconnecting on or after enactment. (Sec. 2107, [p. 240, line 1 to p. 240, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=240)) Previously approved service arrangements remain in effect. (Sec. 2107, [p. 240, line 5 to p. 240, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=240)) Section 2107(a) transmission pricing has no express existing-load exemption; its scope is separate.
+- BAAJA: Section 228(b) cost protection and (c) state open-season authority apply to covered loads interconnecting on or after enactment. (Sec. 2107, [p. 240, line 1 to p. 240, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=240)) Previously approved service arrangements remain in effect. (Sec. 2107, [p. 240, line 5 to p. 240, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=240)) Section 2107(a) transmission pricing has no express existing-load exemption; its scope is separate. (the text is silent on this; confirmed by the summary review)
   Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
 - Ratepayer Protection Act (H.R. 9340): Applies to customers that request service or contract after enactment. States that already acted on a comparable standard are exempt.
   Source: [H.R. 9340, House-passed text](https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm)
@@ -15352,7 +15352,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 - Effect: narrows; affects: The public, Tribes, States, Local governments
 - Now: An agency need not prepare an environmental document if the action fits one of its own categorical exclusions, another agency's exclusion adopted under section 109, or another provision of law. Source: [42 U.S.C. 4336(a)(2)](https://www.law.cornell.edu/uscode/text/42/4336)
-- BAAJA: A lead agency could rely on one exclusion or a combination of several. (Sec. 1105, [p. 28, line 8 to p. 28, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) Repeated use of the same or similar exclusions based on size, acreage or dollar thresholds would not count as a combination. (Sec. 1105, [p. 28, line 10 to p. 28, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) An exclusion established by Congress would also qualify. (Sec. 1105, [p. 28, line 14 to p. 28, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) The text adds no notice or comment step for relying on an exclusion.
+- BAAJA: A lead agency could rely on one exclusion or a combination of several. (Sec. 1105, [p. 28, line 8 to p. 28, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) Repeated use of the same or similar exclusions based on size, acreage or dollar thresholds would not count as a combination. (Sec. 1105, [p. 28, line 10 to p. 28, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) An exclusion established by Congress would also qualify. (Sec. 1105, [p. 28, line 14 to p. 28, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) The text adds no notice or comment step for relying on an exclusion. (the text is silent on this; confirmed by the summary review)
 - Bill: [1105](https://pranava0x0.github.io/permittingreform/sections/1105.md)
 - Quote: "1 or a combination of multiple categorical exclusions (excluding multiple applications of the same or similar categorical exclusions that are based on size, acreage, or dollar amount thresholds) of the agency", [p. 28, line 8 to p. 28, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)
 
@@ -15368,7 +15368,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 - Effect: changes; affects: The public, Tribes, States, Local governments
 - Now: An agency need not prepare an environmental document when the action is excluded under a categorical exclusion or 'another provision of law'. The threshold test does not refer to state or tribal reviews. Source: [42 U.S.C. 4336(a)](https://www.law.cornell.edu/uscode/text/42/4336)
-- BAAJA: An agency would not need an environmental document if the action was reviewed under a state or tribal environmental review law or policy and the lead agency finds the review serves a similar function. (Sec. 1105, [p. 28, line 23 to p. 28, line 26](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) The same applies where another federal law serves a similar function. (Sec. 1105, [p. 29, line 5 to p. 29, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=29)) On a sponsor's request the lead agency must also consider, and as appropriate adopt, state or tribal analysis. (Sec. 1106, [p. 45, line 19 to p. 45, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=45)) The text does not say what notice or comment the earlier review must have had.
+- BAAJA: An agency would not need an environmental document if the action was reviewed under a state or tribal environmental review law or policy and the lead agency finds the review serves a similar function. (Sec. 1105, [p. 28, line 23 to p. 28, line 26](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) The same applies where another federal law serves a similar function. (Sec. 1105, [p. 29, line 5 to p. 29, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=29)) On a sponsor's request the lead agency must also consider, and as appropriate adopt, state or tribal analysis. (Sec. 1106, [p. 45, line 19 to p. 45, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=45)) The text does not say what notice or comment the earlier review must have had. (the text is silent on this; confirmed by the summary review)
 - Bill: [1105](https://pranava0x0.github.io/permittingreform/sections/1105.md), [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
 - Quote (Sec. 1105): "the proposed agency action relates to a project or action that has been reviewed pursuant to a State environmental review statute or a Tribal environmental review statute, ordinance, resolution, regulation, or formally adopted policy", [p. 28, line 23 to p. 29, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)
 
@@ -15432,7 +15432,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 - Effect: narrows; affects: States, Tribes, Local governments
 - Now: A lead agency may designate any federal, state, tribal or local agency with jurisdiction by law or special expertise over an environmental impact as a cooperating agency. It may comment by the date in the schedule. Source: [42 U.S.C. 4336a(a)(3)](https://www.law.cornell.edu/uscode/text/42/4336a)
-- BAAJA: The designation test names jurisdiction by law over an environmental effect. (Sec. 1106, [p. 38, line 20 to p. 38, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) It does not mention special expertise. The lead agency must identify and invite likely agencies within 30 days of the notice of intent or EA decision, and each has 7 days to accept or decline. (Sec. 1106, [p. 38, line 24 to p. 39, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) A cooperating agency's comments are limited to matters within its jurisdiction by law, and designation gives it no authority over the action. (Sec. 1106, [p. 41, line 8 to p. 41, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41))
+- BAAJA: The designation test names jurisdiction by law over an environmental effect. (Sec. 1106, [p. 38, line 20 to p. 38, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) It does not mention special expertise. (the text is silent on this; confirmed by the summary review) The lead agency must identify and invite likely agencies within 30 days of the notice of intent or EA decision, and each has 7 days to accept or decline. (Sec. 1106, [p. 38, line 24 to p. 39, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) A cooperating agency's comments are limited to matters within its jurisdiction by law, and designation gives it no authority over the action. (Sec. 1106, [p. 41, line 8 to p. 41, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41))
 - Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
 - Quote: "Comments submitted by a cooperating agency under clause (i) shall be limited to matters relating to the jurisdiction by law of the cooperating agency", [p. 41, line 6 to p. 41, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41)
 
@@ -15440,7 +15440,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 - Effect: narrows; affects: Consulting parties, Tribes, States, Local governments, The public
 - Now: The statute says only that agencies must take into account effects on historic properties and give the Advisory Council a chance to comment. The Advisory Council's rules let individuals and organizations with a demonstrated interest join as consulting parties and require the agency to seek public input. Source: [54 U.S.C. 306108; 36 CFR 800.2(c)(5), (d)](https://www.law.cornell.edu/uscode/text/54/306108)
-- BAAJA: The new consultation steps name state and tribal historic preservation officers, Indian tribes, Native Hawaiian organizations, local governments and the applicant. (Sec. 2301, [p. 387, line 10 to p. 387, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)) They do not name other consulting parties or the public. The agency 'may' consult the named parties on the area of effects and on historic properties, and must seek and, as applicable, incorporate their information if received within 30 days of a request. (Sec. 2301, [p. 387, line 10 to p. 387, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)) The agency's duty is limited to the area of potential effects it identifies. (Sec. 2301, [p. 386, line 3 to p. 386, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=386))
+- BAAJA: The new consultation steps name state and tribal historic preservation officers, Indian tribes, Native Hawaiian organizations, local governments and the applicant. (Sec. 2301, [p. 387, line 10 to p. 387, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)) They do not name other consulting parties or the public. (the text is silent on this; confirmed by the summary review) The agency 'may' consult the named parties on the area of effects and on historic properties, and must seek and, as applicable, incorporate their information if received within 30 days of a request. (Sec. 2301, [p. 387, line 10 to p. 387, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)) The agency's duty is limited to the area of potential effects it identifies. (Sec. 2301, [p. 386, line 3 to p. 386, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=386))
 - Bill: [2301](https://pranava0x0.github.io/permittingreform/sections/2301.md)
 - Quote: "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes, or Native Hawaiian organizations, local governments, and project, activity, or program applicants", [p. 387, line 11 to p. 387, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)
 
@@ -15544,7 +15544,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 - Effect: changes; affects: Landowners, Local governments
 - Now: A permit holder that cannot agree on compensation, and that FERC finds made good-faith efforts to engage landowners early, may use eminent domain in federal or state court. Federal procedure follows state practice as nearly as practicable. Just compensation is fair market value including severance damages. Source: [16 U.S.C. 824p(e), (f)](https://www.law.cornell.edu/uscode/text/16/824p)
-- BAAJA: Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. (Sec. 2101, [p. 192, line 13 to p. 192, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)) Section 2101(e) also strikes subsection (f) of section 216 and replaces it with a cost allocation subsection. (Sec. 2101, [p. 192, line 17 to p. 192, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)) As written, the statutory fair market value language would no longer appear in section 216. The text does not change the Fifth Amendment's just-compensation requirement.
+- BAAJA: Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. (Sec. 2101, [p. 192, line 13 to p. 192, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)) Section 2101(e) also strikes subsection (f) of section 216 and replaces it with a cost allocation subsection. (Sec. 2101, [p. 192, line 17 to p. 192, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)) As written, the statutory fair market value language would no longer appear in section 216. (the text is silent on this; confirmed by the summary review) The text does not change the Fifth Amendment's just-compensation requirement. (the text is silent on this; confirmed by the summary review)
 - Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
 - Quote: "shall be in accordance with rule 71.1 of the Federal Rules of Civil Procedure", [p. 192, line 13 to p. 192, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)
 
@@ -15552,7 +15552,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 - Effect: expands; affects: Local governments, States
 - Now: Section 219(b)(4) lists categories of costs FERC may allow utilities to recover as transmission rate incentives. Source: [16 U.S.C. 824s(b)(4)](https://www.law.cornell.edu/uscode/text/16/824s)
-- BAAJA: The list would add all prudently incurred costs of payments to jurisdictions impacted by lines developed under section 216 or 225. (Sec. 2101, [p. 198, line 9 to p. 198, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=198)) The text does not require any payment or set an amount.
+- BAAJA: The list would add all prudently incurred costs of payments to jurisdictions impacted by lines developed under section 216 or 225. (Sec. 2101, [p. 198, line 9 to p. 198, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=198)) The text does not require any payment or set an amount. (the text is silent on this; confirmed by the summary review)
 - Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
 - Quote: "all prudently incurred costs associated with payments to jurisdictions impacted by electric transmission facilities developed pursuant to section 216 or 225", [p. 198, line 9 to p. 198, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=198)
 
@@ -15656,7 +15656,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 - Effect: changes; affects: Tribes, States, Local governments, Consulting parties
 - Now: No comment-first rule applies today to section 106 claims.
-- BAAJA: The direct-harm and comment requirements would not apply where a state or tribal preservation officer, tribe, Native Hawaiian organization or local government gave detailed written notice during consultation that identified the issues. (Sec. 2301, [p. 410, line 13 to p. 410, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=410)) The exemption does not name other consulting parties or the public.
+- BAAJA: The direct-harm and comment requirements would not apply where a state or tribal preservation officer, tribe, Native Hawaiian organization or local government gave detailed written notice during consultation that identified the issues. (Sec. 2301, [p. 410, line 13 to p. 410, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=410)) The exemption does not name other consulting parties or the public. (the text is silent on this; confirmed by the summary review)
 - Bill: [2301](https://pranava0x0.github.io/permittingreform/sections/2301.md)
 - Quote: "a claim in which a State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government has provided detailed notice in writing during the consultation process", [p. 410, line 9 to p. 410, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=410)
 

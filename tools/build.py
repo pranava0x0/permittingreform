@@ -515,10 +515,11 @@ def section_markdown(core: dict, paras: dict, sec: dict) -> str:
            "", review_coverage(core), "", f"[Official PDF]({core['meta']['source_pdf']}) · [Browser section]({base}#/bill/sec/{sec['n']})",
            "", "## Summary", ""]
     for para in sec["ps"]:
-        out += [" ".join(t["t"] + (f" ({citation(t['c'])})" if t.get("c") else "") for t in para), ""]
+        out += [" ".join(t["t"] + (f" ({citation(t['c'])})" if t.get("c") else " (the text is silent on this; confirmed by the summary review)" if t.get("absent") else "") for t in para), ""]
     out += ["## Key points", ""]
     for point in sec["points"]:
-        out.append(f"- {point['t']} ({citation(point['c'])})")
+        cite_md = citation(point["c"]) if point.get("c") else "the text is silent on this; confirmed by the summary review"
+        out.append(f"- {point['t']} ({cite_md})")
     takes = [t for t in core["takes"]["takes"] if sec["n"] in t["sections"]]
     if takes:
         out += ["", "## What others say it would do", "",
@@ -546,7 +547,8 @@ def md_cited(core: dict, holder: dict, field: str = "text") -> str:
     if not holder.get("ts"):
         return holder[field]
     base = core["meta"]["site_url"]
-    return " ".join(t["t"] + (f" (Sec. {t['n']}, {pdf_citation(base, t['c'])})" if t.get("c") else "") for t in holder["ts"])
+    return " ".join(t["t"] + (f" (Sec. {t['n']}, {pdf_citation(base, t['c'])})" if t.get("c")
+                              else " (the text is silent on this; confirmed by the summary review)" if t.get("absent") else "") for t in holder["ts"])
 
 
 def llms_full(core: dict, paras: dict) -> str:

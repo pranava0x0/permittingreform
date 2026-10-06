@@ -13,10 +13,10 @@
  },
  "stances": {
   "supports": "Supports",
-  "explains": "Explains",
-  "mixed": "Mixed",
+  "opposes": "Opposes",
   "concerns": "Concerns",
-  "opposes": "Opposes"
+  "explains": "Explains",
+  "mixed": "Mixed"
  },
  "takes": [
   {

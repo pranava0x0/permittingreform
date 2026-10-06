@@ -379,19 +379,26 @@ def main() -> int:
         ev = billtext.norm(r.get("evidence", ""))
         r["evidence_in_text"] = evidence_is_present(cid, r["claim"], ev, billtext.norm(all_text[cid]))
     all_results = [merged[k] for k in sorted(merged)]
+    # A reconcile without model calls must not stamp a new bill draft onto
+    # verdicts given against the old one: keep the saved fingerprints, so the
+    # review reads as stale until a run actually asks about the new text.
+    if args.cached_only and new_text:
+        stamp_sha, fingerprint = saved_doc.get("bill_sha256"), saved_doc.get("input_sha256")
+    else:
+        stamp_sha, fingerprint = bill_sha, billtext.review_fingerprint()
     unchecked = sorted(set(current) - set(merged))
-    OUT.write_text(json.dumps({"checked": checked, "model": model_used, "results": all_results, "unchecked": unchecked, "input_sha256": billtext.review_fingerprint(), "bill_sha256": bill_sha, "cached_only": args.cached_only}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps({"checked": checked, "model": model_used, "results": all_results, "unchecked": unchecked, "input_sha256": fingerprint, "bill_sha256": stamp_sha, "cached_only": args.cached_only}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     all_flags = [r for r in all_results if flagged(r)]
     check_links.merge_summary("inference", {
-        "checked": checked, "model": model_used, "total": len(current), "input_sha256": billtext.review_fingerprint(),
+        "checked": checked, "model": model_used, "total": len(current), "input_sha256": fingerprint,
         "cached_only": args.cached_only,
         "supported": sum(1 for r in all_results if r["verdict"] == "supported"), "flagged": len(all_flags),
         "unchecked": len(unchecked) + sum(1 for r in all_results if r["verdict"] == "unanswered"),
     })
     written = write_point_cites(all_results, bill, current)
-    print(f"infer_check: wrote passages for {written} key points and summary sentences -> {POINT_CITES.relative_to(ROOT)}")
+    print(f"infer_check: wrote passages for {written} key points and summary sentences -> {POINT_CITES.name}")
     written = write_row_cites(all_results, core, bill)
-    print(f"infer_check: wrote passages for {written} row sentences -> {build.ROW_CITES.relative_to(ROOT)}")
+    print(f"infer_check: wrote passages for {written} row sentences -> {build.ROW_CITES.name}")
     if unchecked:
         print(f"infer_check: {len(unchecked)} current claims have no verdict yet (edited since the last run): {', '.join(unchecked[:12])}{' ...' if len(unchecked) > 12 else ''}")
     print(f"infer_check: {len(results) - len(flags)} of {len(results)} claims supported, {len(flags)} flagged" + (f" (${cost:.2f})" if cost else ""))

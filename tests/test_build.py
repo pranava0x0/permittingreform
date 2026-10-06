@@ -319,3 +319,25 @@ class Takes(unittest.TestCase):
 
         _, _, errors = build_with(edit)
         self.assertTrue(any("unknown side" in e for e in errors) and any("unknown stance" in e for e in errors), errors)
+
+
+class AbsenceClaims(unittest.TestCase):
+    def test_a_supported_absence_key_point_builds_and_exports(self):
+        claim = "No export provisions."
+
+        def edit(name, data):
+            if name == "analysis.json":
+                data["sections"]["1101"]["key_points"].append(claim)
+            if name == "inference.json":
+                n = len(data and json.loads((ROOT / "data/bill/analysis.json").read_text(encoding="utf-8"))["sections"]["1101"]["key_points"]) + 1
+                data["results"].append({"id": f"1101.k{n}", "claim": claim, "verdict": "supported", "evidence": "", "evidence_in_text": True, "note": ""})
+            return data
+
+        core, paras, errors = build_with(edit)
+        self.assertEqual(errors, [])
+        sec = next(s for s in core["sections"] if s["n"] == "1101")
+        point = next(p for p in sec["points"] if p["t"] == claim)
+        self.assertTrue(point.get("absent"))
+        self.assertNotIn(claim, " ".join(core["checks"]["cites"]["gaps"]))
+        self.assertIn("No export provisions. (the text is silent on this", build.section_markdown(core, paras, sec))
+

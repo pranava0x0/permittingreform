@@ -482,7 +482,6 @@
 
   /* What others say a section would do: industry, advocates, lawyers, analysts. */
   const TAKES_BRIEF = 3;
-  const STANCE_ORDER = ["supports", "opposes", "concerns", "explains", "mixed"];
   function takesBlock(s) {
     if (!s.takes) return null;
     const host = el("div", null, loading("Loading readings"));
@@ -495,10 +494,15 @@
 
   function takesList(T, s) {
     const mine = T.takes.filter((t) => t.sections.indexOf(s.n) >= 0);
-    // Interleave stances so the first few rows show the disagreement.
-    const byStance = STANCE_ORDER.map((k) => mine.filter((t) => t.stance === k));
+    // Interleave stances so the first few rows show the disagreement. The order
+    // is the vocabulary's own (data/takes.json "stances"); a stance missing from
+    // it still shows, last.
+    const order = Object.keys(T.stances);
+    mine.forEach((t) => { if (order.indexOf(t.stance) < 0) order.push(t.stance); });
+    const byStance = order.map((k) => mine.filter((t) => t.stance === k));
     const ordered = [];
-    for (let i = 0; ordered.length < mine.length; i++) byStance.forEach((g) => { if (g[i]) ordered.push(g[i]); });
+    const depth = Math.max(0, ...byStance.map((g) => g.length));
+    for (let i = 0; i < depth; i++) byStance.forEach((g) => { if (g[i]) ordered.push(g[i]); });
     // Brief by default: who and their claim; the quote, source and bill cite open on tap.
     const row = (t) => el("li", { class: "take" },
       el("details", null,

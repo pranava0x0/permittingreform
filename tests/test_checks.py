@@ -170,6 +170,22 @@ class Inference(unittest.TestCase):
                     infer_check.main()
                 self.assertEqual("asking about every claim" in out.getvalue(), expect_all, out.getvalue()[:200])
 
+    def test_a_reconcile_does_not_stamp_a_new_bill_onto_old_verdicts(self):
+        import contextlib, io
+        saved = json.loads((ROOT / "data/checks/inference.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp:
+            out_path, pc, rc = Path(tmp) / "inference.json", Path(tmp) / "pc.json", Path(tmp) / "rc.json"
+            out_path.write_text(json.dumps(dict(saved, bill_sha256="an-older-draft", input_sha256="old-inputs")), encoding="utf-8")
+            pc.write_text((ROOT / "data/bill/point_cites.json").read_text(encoding="utf-8"), encoding="utf-8")
+            rc.write_text((ROOT / "data/bill/row_cites.json").read_text(encoding="utf-8"), encoding="utf-8")
+            with patch.object(infer_check, "OUT", out_path), patch.object(infer_check, "POINT_CITES", pc), \
+                    patch.object(build, "ROW_CITES", rc), patch.object(check_links, "merge_summary", lambda *a, **k: None), \
+                    patch.object(sys, "argv", ["infer_check", "--cached-only"]), contextlib.redirect_stdout(io.StringIO()):
+                infer_check.main()
+            written = json.loads(out_path.read_text(encoding="utf-8"))
+        self.assertEqual(written["bill_sha256"], "an-older-draft")
+        self.assertEqual(written["input_sha256"], "old-inputs")
+
     def test_a_joined_evidence_span_yields_only_a_verbatim_piece(self):
         lines = next(x for x in billtext.load_sections()["sections"] if x["number"] == "1304")["lines"]
         joined = "with the written agreement of the Secretary and a State... the Secretary may assign, and the State may assume, the consultation responsibilities"

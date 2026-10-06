@@ -97,7 +97,7 @@ def check(core: dict) -> tuple[list[str], dict]:
         if not s["quotes"]:
             errs.append(f"section {s['n']}: no key quote")
         for i, p in enumerate(s["points"], 1):
-            if "c" not in p:
+            if "c" not in p and not p.get("absent"):
                 errs.append(f"section {s['n']}: key point {i} cites no passage: {p['t'][:60]!r}")
         if not s["topics"]:
             errs.append(f"section {s['n']}: no topic")
