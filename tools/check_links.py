@@ -56,6 +56,8 @@ def collect(core: dict) -> dict[str, list[str]]:
         add(p["url"], "meta.prior_bills")
     for p in core["overview"]["status"]["points"]:
         add(p["source"]["url"], "overview.status")
+    if core["overview"].get("next"):
+        add(core["overview"]["next"]["source"]["url"], "overview.next")
     for v in core["compare"]["versions"]:
         add(v.get("url"), f"compare.versions.{v['key']}")
     for g in core["compare"]["groups"]:

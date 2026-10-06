@@ -199,6 +199,26 @@
     return billPromise;
   }
 
+  /* Timeline, people and media load with the first News page. They merge into
+     D, so the News views read them as before. */
+  const NEWS_TABS = ["timeline", "people", "media"];
+  let newsPromise = null;
+  function ensureNews() {
+    if (D.timeline) return Promise.resolve(D);
+    if (!newsPromise) {
+      newsPromise = new Promise((resolve, reject) => {
+        const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
+        if (window.PR_NEWS) { done(); return; }
+        const tag = document.createElement("script");
+        tag.src = "data/news.js?v=1";
+        tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
+        tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
+        document.head.appendChild(tag);
+      });
+    }
+    return newsPromise;
+  }
+
   /* Outside readings load with the first section page that needs them. The
      promise is cached so concurrent callers share one fetch. */
   let takesPromise = null;
@@ -238,6 +258,14 @@
 
   /* ---------- overview ---------- */
 
+  /* "What others say" links for sections that have outside readings. */
+  function readingsLinks(nums) {
+    const withTakes = nums.filter((n) => byNum[n] && byNum[n].takes);
+    if (!withTakes.length) return null;
+    return [" · What others say: ", withTakes.map((n, i) => [i ? ", " : null,
+      el("a", { href: secHref(n, "readings") }, "Sec. " + n + " (" + byNum[n].takes + ")")])];
+  }
+
   function renderOverview() {
     const o = D.overview;
     const m = D.meta;
@@ -248,6 +276,8 @@
           el("p", null, m.short_title),
           el("p", { class: "facts" }, num(m.pages) + " pages · " + m.sections + " sections · released " + S.formatDate(m.released)),
           el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")))),
+      o.next ? el("p", { class: "next-step" }, el("strong", null, "Next: "), S.formatDate(o.next.date) + ". " + o.next.text + " ",
+        el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null,
       el("p", { class: "note" }, "Proposed law", " · ",
         el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),
       searchBox(""),
@@ -265,7 +295,7 @@
           el("details", { class: "provision-detail" },
             el("summary", null, el("h3", null, h.title)),
             el("p", null, citedText(h)),
-            el("p", { class: "where" }, secLinks(h.sections)))))));
+            el("p", { class: "where" }, secLinks(h.sections), readingsLinks(h.sections)))))));
 
     const clocks = el("section", { class: "block", "aria-labelledby": "h-clocks" },
       el("h2", { id: "h-clocks" }, "Deadlines"),
@@ -300,8 +330,9 @@
             el("li", null, a.text + " ", el("span", { class: "where" }, versionLabel(a.from) + ", ", citeNode(a))))))),
       el("p", null, el("a", { href: "#/compare" }, "Full comparison")));
 
-    const recentMedia = D.media.slice().sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 6);
-    const milestones = D.timeline.filter((e) => e.milestone).slice().sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 6);
+    // The newest items come baked into core.js; the full lists load with the News pages.
+    const recentMedia = D.recent.media;
+    const milestones = D.recent.milestones;
     const latest = el("section", { class: "block", "aria-labelledby": "h-latest" },
       el("div", { class: "two-col" },
         el("div", null,
@@ -309,13 +340,13 @@
           el("ul", { class: "feed" }, recentMedia.map((it) => el("li", null,
             ext(it.url, it.title, "feed-title"),
             el("span", { class: "feed-meta" }, it.outlet + " · " + S.formatDate(it.date))))),
-          el("p", null, el("a", { href: "#/media" }, "All " + D.media.length + " items"))),
+          el("p", null, el("a", { href: "#/media" }, "All " + D.recent.counts.media + " items"))),
         el("div", null,
           el("h2", null, "Milestones"),
           el("ul", { class: "feed" }, milestones.map((e) => el("li", null,
             el("a", { href: "#/timeline/" + monthKey(e) + "/" + e.id, class: "feed-title" }, e.title),
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
-          el("p", null, el("a", { href: "#/timeline" }, "All " + D.timeline.length + " events")))));
+          el("p", null, el("a", { href: "#/timeline" }, "All " + D.recent.counts.timeline + " events")))));
 
     return [head, provisions, foldBlock(status), foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest)];
   }
@@ -529,7 +560,10 @@
           el("p", null, marked(p[3], rs)));
       });
       fill(textHost, nodes);
-      if (anchor) {
+      if (anchor === "readings") {
+        const h = document.getElementById("h-takes");
+        if (h) h.scrollIntoView({ block: "start" });
+      } else if (anchor) {
         const targets = anchorTargets(list, nodes, anchor);
         targets.forEach((t) => t.classList.add("target"));
         if (targets.length) targets[0].scrollIntoView({ block: "center" });
@@ -1296,6 +1330,32 @@
   /* ---------- router ---------- */
 
   const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", timeline: "Timeline", people: "People", media: "Media", method: "Method" };
+  /* Five top tabs fit a phone's width; the pages under a group share a subtab row.
+     Each page keeps its own route, so existing links still work. */
+  const GROUPS = [
+    { key: "overview", pages: ["overview"] },
+    { key: "bill", label: "Bill pages", pages: [["bill", "Sections"], ["compare", "Compare with earlier bills"]] },
+    { key: "effects", label: "Effects pages", pages: [["datacenters", "Data centers"], ["communities", "Communities"]] },
+    { key: "news", label: "News pages", pages: [["timeline", "Timeline"], ["media", "Media"], ["people", "People"]] },
+    { key: "method", pages: ["method"] },
+  ];
+  function groupOf(tab) {
+    return GROUPS.find((g) => g.pages.some((p) => (Array.isArray(p) ? p[0] : p) === tab));
+  }
+  function markTab(tab) {
+    const group = groupOf(tab).key;
+    document.querySelectorAll(".tabs a").forEach((a) => {
+      if (a.getAttribute("data-tab") === group) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+  }
+
+  function subtabs(tab) {
+    const g = groupOf(tab);
+    if (!g || !g.label) return null;
+    return el("nav", { class: "subtabs", "aria-label": g.label }, g.pages.map(([key, label]) =>
+      el("a", { href: "#/" + key, "aria-current": key === tab ? "page" : null }, label)));
+  }
   let lastPath = null;
 
   function route() {
@@ -1304,6 +1364,14 @@
     const tab = TITLES[parts[0]] ? parts[0] : "overview";
     let nodes;
     let keepScroll = false;
+    if (NEWS_TABS.indexOf(tab) >= 0 && !D.timeline) {
+      // Render once the data arrives; lastPath stays unset so a linked event still opens.
+      fill(view, subtabs(tab), loading("Loading"));
+      markTab(tab);
+      ensureNews().then(() => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) route(); })
+        .catch((err) => fill(view, subtabs(tab), failure(err)));
+      return;
+    }
     if (tab === "bill" && parts[1] === "sec") { nodes = renderSection(parts[2], parts[3], parts[4]); keepScroll = Boolean(parts[3]); }
     else if (tab === "bill" && parts[1] === "search") nodes = renderSearch(parts.slice(2).join("/"));
     else if (tab === "bill") nodes = renderBillIndex();
@@ -1318,7 +1386,7 @@
     else if (tab === "media") nodes = renderMedia();
     else if (tab === "method") nodes = renderMethod();
     else nodes = renderOverview();
-    fill(view, nodes);
+    fill(view, subtabs(tab), nodes);
     view.className = "view view-" + tab;
     if (tab === "overview") jumpRow(view.querySelector(".lede"));
     else if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
@@ -1338,10 +1406,7 @@
         window.scrollTo(0, row.getBoundingClientRect().top + window.scrollY - cover - 8);
       }
     }
-    document.querySelectorAll(".tabs a").forEach((a) => {
-      if (a.getAttribute("data-tab") === tab) a.setAttribute("aria-current", "page");
-      else a.removeAttribute("aria-current");
-    });
+    markTab(tab);
     const h1 = view.querySelector("h1");
     document.title = (h1 && tab !== "overview" ? h1.firstChild.textContent + " · " : "") + "Permitting Reform";
     const path = location.hash;

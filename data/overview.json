@@ -9,13 +9,6 @@
     }
    },
    {
-    "text": "The Senate has scheduled its first vote after the November 3 election on this bill: cloture on the motion to proceed to H.R. 2347, the legislative vehicle, at about 5:30 p.m. on November 9, 2026.",
-    "source": {
-     "label": "U.S. Senate Press Gallery",
-     "url": "https://www.dailypress.senate.gov/thursday-october-1-2026/"
-    }
-   },
-   {
     "text": "The White House said the bill would “deliver transformative policies to lower Americans’ energy and housing costs”.",
     "source": {
      "label": "Associated Press",
@@ -37,6 +30,14 @@
     }
    }
   ]
+ },
+ "next": {
+  "date": "2026-11-09",
+  "text": "Senate cloture vote, about 5:30 p.m., on taking up H.R. 2347, the legislative vehicle for the bill. It is the Senate's first vote after the November 3 election.",
+  "source": {
+   "label": "U.S. Senate Press Gallery",
+   "url": "https://www.dailypress.senate.gov/thursday-october-1-2026/"
+  }
  },
  "headlines": [
   {

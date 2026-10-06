@@ -47,6 +47,8 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     o = core["overview"]
     out.append(("overview money note", o["money_note"]))
     out += [("overview status", p["text"]) for p in o["status"]["points"]]
+    if o.get("next"):
+        out.append(("overview next", o["next"]["text"]))
     out += [(f"overview headline {h['id']}", h["title"] + ". " + h["text"]) for h in o["headlines"]]
     out += [("overview clock", c["what"]) for c in o["clocks"]] + [("overview money", c["what"]) for c in o["money"]]
     for g in core["compare"]["groups"]:

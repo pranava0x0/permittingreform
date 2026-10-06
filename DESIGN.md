@@ -10,7 +10,7 @@ Colors live in `site/styles.css`: cream `--bg`, green `--brand` and `--rule`, bl
 
 ## Layout
 
-The site title dominates the masthead. Seven plain navigation links use one horizontally scrollable row on phones. BAAJA is the bill label; its full title and source links expand under Bill details. Search appears on Overview and bill views. Main provisions precede status and sponsors.
+The site title dominates the masthead. Five top tabs (Overview, Bill, Effects, News, Method) fit a 375px screen; Bill, Effects and News open a subtab row at the top of the view (Sections and Compare; Data centers and Communities; Timeline, Media and People). Every page keeps its own route. Nine tabs in one scrollable row left five of them off screen on a phone, with nothing to show they existed (2026-10-05). BAAJA is the bill label; its full title and source links expand under Bill details. Search appears on Overview and bill views. Main provisions precede status and sponsors.
 
 Hairline rules divide rows. Avoid cards, shadows, gradients, eyebrow labels and promotional metrics. Comparison tables become labeled rows on phones; the BAAJA column has a pale green background on larger screens. Each statutory paragraph has a page-and-line gutter linked to the PDF.
 
@@ -46,3 +46,10 @@ Overview provisions and secondary sections use native disclosures. Communities a
 Communities groups stay open with a count in each heading; the rows themselves are one line each. Folding both the groups and the rows hid all 46 changes behind closed headings (2026-10-02).
 
 Measured October 2, 2026 at 768×1024 after the tablet change: Compare 2.3 screens (was 11.9), data center bills 1.8 (was 11.3), bill index 1.0 (was 9.4). `tests/uat.cjs` enforces scroll budgets at 375 and 768.
+
+## Cites and readings (2026-10-05)
+
+Every sentence that says what the bill does ends in a small "p. N" link. It opens the section's text with the cited lines marked; the line gutter there links to the PDF. Outside readings sit under "What others say it would do" on each section page: brief rows (stance, who, their claim) that open to the verbatim quote, the source and the bill passage. The first rows alternate stances so a reader sees the disagreement without opening More. Readings load with the first section page that needs them.
+
+Measured at 375×812, before and after: the next Senate vote moved from 1.1 screens down the Overview to the first screen; Data centers went from a swipe of the tab row plus a tap to one tap; a provision's critiques are two taps from the Overview (open the provision, then "What others say"); the readings block costs 0.73 screens on a section page with three rows shown.
+

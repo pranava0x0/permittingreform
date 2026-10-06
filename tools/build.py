@@ -5,6 +5,7 @@ same-origin copy that makes #page=N links work, is committed as is):
   site/data/core.js   window.PR_DATA  (summaries, comparison, timeline, people, media)
   site/data/bill.js   window.PR_BILL  (full bill text as paragraphs with page and line cites)
   site/data/takes.js  window.PR_TAKES (outside readings; section pages load it on demand)
+  site/data/news.js   window.PR_NEWS  (timeline, people, media; the News pages load it on demand)
   site/llms.txt       compact agent index
   site/llms-full.txt  full text and analysis
   site/sections/*.md  cited analysis and statutory text, one section per file
@@ -55,10 +56,26 @@ def dump_js(var: str, value) -> str:
     return f"window.{var}={body};\n"
 
 
+NEWS_KEYS = ("timeline", "people", "media")
+
+
 def browser_core(core: dict) -> dict:
-    """What core.js carries: everything but the outside readings, which
-    section pages load on demand from takes.js."""
-    return {k: v for k, v in core.items() if k != "takes"}
+    """What core.js carries on every page. The outside readings (takes.js) and
+    the timeline, people and media (news.js) load on demand; the Overview gets
+    its short lists from "recent"."""
+    out = {k: v for k, v in core.items() if k != "takes" and k not in NEWS_KEYS}
+    media = sorted(core["media"], key=lambda it: it["date"], reverse=True)[:6]
+    marks = sorted((e for e in core["timeline"] if e.get("milestone")), key=lambda e: e["date"], reverse=True)[:6]
+    out["recent"] = {
+        "media": [{k: it[k] for k in ("url", "title", "outlet", "date")} for it in media],
+        "milestones": [{k: e[k] for k in ("id", "date", "title")} for e in marks],
+        "counts": {k: len(core[k]) for k in NEWS_KEYS},
+    }
+    return out
+
+
+def browser_news(core: dict) -> dict:
+    return {k: core[k] for k in NEWS_KEYS}
 
 
 def cite(loc: dict) -> list:
@@ -447,6 +464,7 @@ def llms_txt(core: dict) -> str:
         f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
         f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
         f"- [Bill paragraph JSON]({m['site_url']}data/bill.json): section number to [printed page, line, indent level, text] arrays.",
+        f"- [Timeline, people and media JSON]({m['site_url']}data/news.json): dated events, positions and coverage, each with its sources.",
         f"- [Outside readings JSON]({m['site_url']}data/takes.json): what named industry groups, advocates, lawyers and analysts say sections would do, each with its verbatim quote, source link and the bill passage it concerns.",
         "- Fetch sections/{number}.md for one section. Each file includes its summary with a page-and-line cite after every sentence, cited key points, quotes, outside readings of what the section would do (quoted from their sources), comparison notes and full statutory text.",
         "- Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}; cited range: #/bill/sec/{number}/{page}-{line}-{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.",
@@ -639,10 +657,11 @@ def main() -> int:
     (SITE / "data/core.js").write_text(dump_js("PR_DATA", browser_core(core)), encoding="utf-8")
     (SITE / "data/bill.js").write_text(dump_js("PR_BILL", paras), encoding="utf-8")
     (SITE / "data/takes.js").write_text(dump_js("PR_TAKES", core["takes"]), encoding="utf-8")
+    (SITE / "data/news.js").write_text(dump_js("PR_NEWS", browser_news(core)), encoding="utf-8")
     (SITE / "llms.txt").write_text(llms_txt(core), encoding="utf-8")
     (SITE / "llms-full.txt").write_text(llms_full(core, paras), encoding="utf-8")
     (SITE / "reading.html").write_text(reading_html(core), encoding="utf-8")
-    for name, data in (("core", browser_core(core)), ("bill", paras), ("takes", core["takes"])):
+    for name, data in (("core", browser_core(core)), ("bill", paras), ("takes", core["takes"]), ("news", browser_news(core))):
         (SITE / f"data/{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     (SITE / "sections").mkdir(exist_ok=True)
     for sec in core["sections"]:
@@ -658,7 +677,7 @@ def main() -> int:
         f"{sum(len(g['rows']) for g in core['compare']['groups'])} comparison rows, "
         f"{len(core['timeline'])} events, {len(core['people'])} people, {len(core['media'])} media items -> site/data/"
     )
-    for name in ("core.js", "bill.js", "takes.js"):
+    for name in ("core.js", "bill.js", "takes.js", "news.js"):
         print(f"build:   site/data/{name} {(SITE / 'data' / name).stat().st_size / 1024:.0f} KB")
     return 0
 
