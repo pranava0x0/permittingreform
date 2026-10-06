@@ -1,7 +1,9 @@
 """The validators themselves: each must be able to fail."""
 import json
 import sys
+import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -89,7 +91,7 @@ class Links(unittest.TestCase):
     def test_the_checker_sees_every_kind_of_link_the_site_renders(self):
         found = check_links.collect(CORE)
         places = {where.split(".")[0] for wheres in found.values() for where in wheres}
-        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media"})
+        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media", "takes"})
         self.assertIn(CORE["meta"]["source_pdf"], found)
         for item in CORE["media"]:
             self.assertIn(item["url"].split("#", 1)[0], found)
@@ -139,13 +141,33 @@ class Inference(unittest.TestCase):
 
     def test_every_comparison_cell_for_a_bill_becomes_a_claim(self):
         bill = billtext.load_sections()
-        ids = {cid for u in infer_check.compare_units(CORE, bill) for cid, _ in u["claims"]}
+        ids = {cid for u in infer_check.compare_units(CORE, bill) + infer_check.row_units(CORE, bill) for cid, _ in u["claims"]}
         for g in CORE["compare"]["groups"]:
             for r in g["rows"]:
                 self.assertIn(f"cmp.{r['id']}.speed", ids)
                 self.assertIn(f"cmp.{r['id']}.epra", ids)
                 if r["senate"].get("sections"):
-                    self.assertIn(f"cmp.{r['id']}.senate", ids)
+                    self.assertTrue(any(i.startswith(f"cmp.{r['id']}.senate.s") for i in ids), r["id"])
+
+    def test_row_claims_are_checked_against_only_the_sections_they_cite(self):
+        bill = billtext.load_sections()
+        rows = {rc["id"]: rc for rc in build.row_claims(CORE["overview"], CORE["compare"], CORE["communities"], CORE["datacenters"])}
+        for u in infer_check.row_units(CORE, bill):
+            nums = u["key"].split(" ", 1)[1].split(",")
+            for cid, _ in u["claims"]:
+                self.assertEqual(sorted(set(rows[cid]["sections"])), nums, cid)
+
+    def test_a_stale_passage_is_pruned_and_a_current_one_kept(self):
+        bill = billtext.load_sections()
+        sec = next(s for s in bill["sections"] if s["number"] == "1101")
+        span = "Nothing in this Act mandates a particular outcome"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "point_cites.json"
+            path.write_text(json.dumps({"1101": {"An edited-away claim": span, "Kept claim": span}}), encoding="utf-8")
+            with patch.object(infer_check, "POINT_CITES", path):
+                infer_check.write_point_cites([], bill, {"1101.k1": "Kept claim"})
+            self.assertEqual(json.loads(path.read_text(encoding="utf-8")), {"1101": {"Kept claim": span}})
+        self.assertIsNotNone(billtext.locate(sec["lines"], span))
 
     def test_no_batch_is_larger_than_the_word_limit_unless_one_source_is(self):
         bill = billtext.load_sections()

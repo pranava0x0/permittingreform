@@ -115,6 +115,22 @@
     return String(text || "").split(/\n\s*\n/).map((t) => el("p", { class: cls }, t));
   }
 
+  /* A cite for a claim about the bill. It opens the section's text with the
+     cited lines marked; the line gutter there links to the PDF page. */
+  function claimCite(n, c) {
+    const range = c.map((x) => (x == null ? "x" : x)).join("-");
+    return el("a", { class: "cite-mark", href: secHref(n, range), title: "Sec. " + n + ", " + S.formatCite(c), "aria-label": "Bill text: Sec. " + n + ", " + S.formatCite(c) }, "p. " + c[0]);
+  }
+
+  /* Sentences, each followed by its cite. Row sentences carry their own section (t.n). */
+  function citedSentences(items, n) {
+    return items.map((t, i) => [i ? " " : null, t.t, t.c ? [" ", claimCite(t.n || n, t.c)] : null]);
+  }
+
+  function citedText(holder, field) {
+    return holder.ts && holder.ts.length ? citedSentences(holder.ts) : holder[field || "text"];
+  }
+
   function firstSentence(text) {
     const m = /^(.*?[.!?])\s/.exec(text + " ");
     return m ? m[1] : text;
@@ -231,7 +247,7 @@
         el("li", null,
           el("details", { class: "provision-detail" },
             el("summary", null, el("h3", null, h.title)),
-            el("p", null, h.text),
+            el("p", null, citedText(h)),
             el("p", { class: "where" }, secLinks(h.sections)))))));
 
     const clocks = el("section", { class: "block", "aria-labelledby": "h-clocks" },
@@ -260,7 +276,7 @@
       el("div", { class: "two-col" },
         el("div", null,
           el("h3", null, "Added"),
-          el("ul", { class: "plain-list" }, cmp.added.slice(0, 5).map((a) => el("li", null, a.text + " ", el("span", { class: "where" }, secLinks(a.sections)))))),
+          el("ul", { class: "plain-list" }, cmp.added.slice(0, 5).map((a) => el("li", null, citedText(a), " ", el("span", { class: "where" }, secLinks(a.sections)))))),
         el("div", null,
           el("h3", null, "Left out"),
           el("ul", { class: "plain-list" }, cmp.dropped.slice(0, 5).map((a) =>
@@ -390,6 +406,59 @@
     return el("p", { class: "sec-links" }, "Compare: ", links.map((a, i) => [i ? " · " : null, a]));
   }
 
+  /* "31-4" names the paragraph that starts at page 31, line 4. "31-4-32-2" is a
+     cited range: every paragraph it touches, starting with the one it begins in. */
+  function anchorTargets(list, nodes, anchor) {
+    const r = /^(\d+)-(\d+|x)-(\d+)-(\d+|x)$/.exec(anchor);
+    if (!r) {
+      const one = document.getElementById("p-" + anchor);
+      return one ? [one] : [];
+    }
+    const at = (page, line) => Number(page) * 10000 + (line == null || line === "x" ? 0 : Number(line));
+    const lo = at(r[1], r[2]);
+    const hi = at(r[3], r[4] === "x" ? 9999 : r[4]);
+    let start = -1;
+    list.forEach((p, i) => { if (at(p[0], p[1]) <= lo) start = i; });
+    const out = [];
+    for (let i = Math.max(start, 0); i < list.length && at(list[i][0], list[i][1]) <= hi; i++) out.push(nodes[i]);
+    return out;
+  }
+
+  /* What others say a section would do: industry, advocates, lawyers, analysts. */
+  const TAKES_BRIEF = 3;
+  const STANCE_ORDER = ["supports", "explains", "mixed", "concerns", "opposes"];
+  function takesBlock(s) {
+    const T = D.takes;
+    if (!T) return null;
+    const mine = T.takes.filter((t) => t.sections.indexOf(s.n) >= 0);
+    if (!mine.length) return null;
+    // Interleave stances so the first few rows show the disagreement.
+    const byStance = STANCE_ORDER.map((k) => mine.filter((t) => t.stance === k));
+    const ordered = [];
+    for (let i = 0; ordered.length < mine.length; i++) byStance.forEach((g) => { if (g[i]) ordered.push(g[i]); });
+    const row = (t) => el("li", { class: "take" },
+      el("p", { class: "take-head" },
+        el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " ",
+        el("strong", null, t.who), el("span", { class: "muted" }, " · " + T.sides[t.side])),
+      el("p", { class: "take-claim" }, t.claim),
+      el("blockquote", { class: "take-quote" }, "“" + t.quote + "”"),
+      el("p", { class: "where" },
+        ext(t.url, t.outlet + ", " + S.formatDate(t.date)), t.speaker && t.speaker !== t.who ? " · " + t.speaker : null,
+        t.passage && t.passage.c ? [" · On the bill text at ", claimCite(t.passage.section, t.passage.c)] : null));
+    const list = el("ul", { class: "takes" }, ordered.slice(0, TAKES_BRIEF).map(row));
+    const more = ordered.length > TAKES_BRIEF ? el("button", { type: "button", class: "more-toggle show-rest", onclick: (ev) => {
+      ordered.slice(TAKES_BRIEF).forEach((t) => list.appendChild(row(t)));
+      ev.currentTarget.remove();
+      const first = list.children[TAKES_BRIEF];
+      first.setAttribute("tabindex", "-1");
+      first.focus();
+    } }, "More readings (" + (ordered.length - TAKES_BRIEF) + ")") : null;
+    return el("section", { class: "sec-part", "aria-labelledby": "h-takes" },
+      el("h2", { id: "h-takes" }, "What others say it would do", el("span", { class: "chip-count" }, mine.length)),
+      el("p", { class: "muted" }, "Readings from industry, advocates, lawyers and analysts, quoted from their own words. They are claims about effects, not findings of this site. The summary above says what the text says."),
+      list, more);
+  }
+
   function renderSection(n, anchor, query) {
     const s = byNum[n];
     if (!s) return [el("div", { class: "notice" }, el("p", null, "No section " + n + "."), el("p", null, el("a", { href: "#/bill" }, "All sections")))];
@@ -409,11 +478,12 @@
       compareLinks(s.n),
       el("section", { class: "sec-part machine", "aria-labelledby": "h-sum" },
         el("h2", { id: "h-sum" }, "Summary", el("span", { class: "credit-inline" }, "AI-written")),
-        paras(s.plain, "summary"),
-        s.points.length ? el("ul", { class: "points" }, s.points.map((p) => el("li", null, p.t, p.c ? [" ", pdfLink(p.c[0], S.formatCite(p.c))] : null))) : null),
+        s.ps.map((para) => el("p", { class: "summary" }, citedSentences(para, s.n))),
+        s.points.length ? el("ul", { class: "points" }, s.points.map((p) => el("li", null, p.t, p.c ? [" ", claimCite(s.n, p.c)] : null))) : null),
       s.quotes.length ? el("section", { class: "sec-part", "aria-labelledby": "h-key" },
         el("h2", { id: "h-key" }, "Key text"),
         s.quotes.map(quoteBlock)) : null,
+      takesBlock(s),
       versusBlock(s),
       el("section", { class: "sec-part", "aria-labelledby": "h-full" },
         el("h2", { id: "h-full" }, "Full text"),
@@ -426,20 +496,19 @@
       if (!textHost.isConnected) return;
       const list = bill[n] || [];
       const q = query ? S.parseQuery(query) : null;
-      fill(textHost, list.map((p) => {
+      const nodes = list.map((p) => {
         const id = "p-" + p[0] + "-" + (p[1] == null ? "x" : p[1]);
         const rs = q && q.type === "text" ? S.ranges(p[3], q) : null;
         return el("div", { class: "para lvl" + Math.min(p[2], 6), id: id },
           el("a", { class: "gutter", href: pdfHref(p[0]), target: "_blank", rel: "noopener", "aria-label": "Page " + p[0] + (p[1] == null ? "" : ", line " + p[1]) },
             p[0] + (p[1] == null ? "" : ":" + p[1])),
           el("p", null, marked(p[3], rs)));
-      }));
+      });
+      fill(textHost, nodes);
       if (anchor) {
-        const target = document.getElementById("p-" + anchor);
-        if (target) {
-          target.classList.add("target");
-          target.scrollIntoView({ block: "center" });
-        }
+        const targets = anchorTargets(list, nodes, anchor);
+        targets.forEach((t) => t.classList.add("target"));
+        if (targets.length) targets[0].scrollIntoView({ block: "center" });
       }
     }).catch((err) => fill(textHost, failure(err)));
 
@@ -511,7 +580,7 @@
   }
 
   function compareCell(cell) {
-    const kids = [el("span", { class: "cell-text" }, cell.text)];
+    const kids = [el("span", { class: "cell-text" }, citedText(cell))];
     if (cell.sections && cell.sections.length) kids.push(el("span", { class: "cell-cite" }, secLinks(cell.sections)));
     else if (cell.cite) kids.push(el("span", { class: "cell-cite" }, citeNode(cell)));
     if (cell.quote) kids.push(el("details", { class: "cell-source" },
@@ -602,7 +671,7 @@
       el("div", { class: "two-col" },
         el("div", null,
           el("h2", null, "Added in BAAJA"),
-          el("ul", { class: "plain-list" }, c.added.map((a) => el("li", null, a.text + " ", el("span", { class: "where" }, secLinks(a.sections)))))),
+          el("ul", { class: "plain-list" }, c.added.map((a) => el("li", null, citedText(a), " ", el("span", { class: "where" }, secLinks(a.sections)))))),
         el("div", null,
           el("h2", null, "Left out of BAAJA"),
           ["speed", "epra"].map((k) => [
@@ -668,7 +737,7 @@
               : head),
             el("div", { class: "cm-body", id: "cb-" + r.id },
               el("p", { class: "cm-who" }, r.who.map((w) => c.who[w]).join(" · ")),
-              el("p", null, el("strong", null, "BAAJA: "), r.baaja),
+              el("p", null, el("strong", null, "BAAJA: "), citedText(r, "baaja")),
               el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
                 r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
               el("p", { class: "where" }, secLinks(r.sections)),
@@ -722,7 +791,7 @@
               : head),
             el("div", { class: "cm-body", id: "dcb-" + r.id },
               el("p", { class: "cm-who" }, r.who.map((w) => d.who[w]).join(" · ")),
-              el("p", null, el("strong", null, "BAAJA: "), r.baaja),
+              el("p", null, el("strong", null, "BAAJA: "), citedText(r, "baaja")),
               el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
                 r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
               el("p", { class: "where" }, secLinks(r.sections)),
@@ -1131,14 +1200,17 @@
     const billVerified = ck.quotes ? ck.quotes.bill_verified : m.quotes;
     const rows = [["Bill quotes", billVerified + " of " + billTotal + " match the PDF text word for word."]];
     if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " carry a passage from the bill, matched the same way."]);
+    if (ck.cites) rows.push(["Cites for claims", ck.cites.summary.cited + " of " + ck.cites.summary.total + " summary sentences and " + ck.cites.rows.cited + " of " + ck.cites.rows.total +
+      " sentences in headlines, comparison cells and the Communities and Data centers rows carry a bill passage, found word for word in a section the claim cites. A claim without one, or one the summary review flagged, stops the build."]);
+    if (D.takes) rows.push(["Outside readings", D.takes.takes.length + " readings of specific sections from industry, advocates, lawyers and analysts. Each quote is checked against its source like the quotes below; each names the bill passage it is about. They are the sources' claims about effects, not verified findings."]);
     if (ck.inference) {
       const i = ck.inference;
       rows.push(["Summary review", i.stale ? "The saved review predates changes to its inputs. Re-check pending." :
         i.supported + " of " + i.total + " statements have a saved supported verdict; " + i.flagged + " remain flagged and " + (i.unchecked || 0) + " are unchecked. " +
         (i.cached_only ? "Saved results were reconciled with the current wording; the fresh Sonnet review is unfinished. " : "") +
-        "This check covers section summaries, key points and selected comparison cells. It does not verify all site prose or establish legal accuracy."]);
+        "This check covers section summaries, key points, overview headlines, the comparison tables' BAAJA cells and their SPEED Act and EPRA 2024 cells, and the Communities and Data centers rows. It does not verify every sentence on the site or establish legal accuracy."]);
     }
-    if (D.communities || D.datacenters || D.compare.bills) rows.push(["New views", "Data-center and Communities provisions have not had a second-model review. Their quoted passages are checked against sources; that does not verify every nearby claim."]);
+
     if (ck.quotes) {
       const q = ck.quotes;
       const parts = [q.verified + " of " + q.total + " found on the cited page by script."];

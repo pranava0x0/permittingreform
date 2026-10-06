@@ -2,6 +2,192 @@
  "generated": "2026-10-01",
  "items": [
   {
+   "id": "2026-10-05-pacific-legal-x-pass-quickly",
+   "date": "2026-10-05",
+   "type": "social_x",
+   "outlet": "X",
+   "author": "Pacific Legal Foundation",
+   "title": "Pacific Legal Foundation urges quick passage",
+   "url": "https://x.com/PacificLegal/status/2107147643411705920",
+   "verified": true,
+   "summary": "Property-rights litigation group backs the bill.",
+   "stance": "supports",
+   "quote": {
+    "text": "PLF urges Congress to pass it quickly.",
+    "speaker": "Pacific Legal Foundation"
+   },
+   "topics": [
+    "nepa",
+    "clean-water-act",
+    "esa"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-10-05-heinrich-x-permitting-reform",
+   "date": "2026-10-05",
+   "type": "social_x",
+   "outlet": "X",
+   "author": "Sen. Martin Heinrich",
+   "title": "Heinrich on what the permitting bill does for prices and data centers",
+   "url": "https://x.com/SenatorHeinrich/status/2107149069151821953",
+   "verified": true,
+   "summary": "Sponsor's case for the bill on cost, data-center charges and clean energy jobs.",
+   "stance": "supports",
+   "quote": {
+    "text": "If we want to force data centers to pay their fair share and then some, we need permitting reform.",
+    "speaker": "Sen. Martin Heinrich"
+   },
+   "topics": [
+    "data-centers"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-05-heatmap-what-a-president-can-and-cant-do",
+   "date": "2026-10-05",
+   "type": "analysis",
+   "outlet": "Heatmap News",
+   "author": "Emily Pontecorvo",
+   "title": "What a President Can and Can’t Do Under the Senate Permitting Bill",
+   "url": "https://heatmap.news/politics/baaja-executive-actions",
+   "verified": true,
+   "summary": "Tests the project-certainty sections against past reversals with two former Interior Department lawyers: Keystone XL's presidential permit could still have been revoked, the Spruce mine veto and the Lava Ridge cancellation likely could not, and whether oil and gas leases are covered is left to the courts.",
+   "stance": "reporting",
+   "quote": {
+    "text": "This bill is clearly looking backwards at five to 10 years of case studies in how an executive branch can delay or revoke permits, and it is targeted at those case studies",
+    "speaker": "Travis Annatoyn, former Interior deputy solicitor"
+   },
+   "topics": [
+    "permit-certainty",
+    "courts"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-05-flegal-x-climate-win",
+   "date": "2026-10-05",
+   "type": "social_x",
+   "outlet": "X",
+   "author": "Jane Flegal",
+   "title": "Flegal: the bill is good for transmission, clean energy and electrification",
+   "url": "https://x.com/JaneAFlegal/status/2107076234765332976",
+   "verified": true,
+   "summary": "Responds to climate groups opposing the bill.",
+   "stance": "supports",
+   "quote": {
+    "text": "But it's good for transmission, clean energy, & electrification. I don’t see how that isn’t a win for climate.",
+    "speaker": "Jane Flegal"
+   },
+   "topics": [
+    "transmission"
+   ],
+   "sector": "think_tank"
+  },
+  {
+   "id": "2026-10-05-coalition-letter-opposing-permitting-package",
+   "date": "2026-10-05",
+   "type": "org_statement",
+   "outlet": "Punchbowl News (letter text)",
+   "title": "Broad Environmental Coalition Urges Opposition to Permitting Reform Package",
+   "url": "https://punchbowl.news/wp-content/uploads/Permitting-Reform-Opposition-Letter_10.5.26.pdf",
+   "verified": true,
+   "summary": "Letter from more than 200 groups, among them the Center for Biological Diversity, Food & Water Watch, Friends of the Earth Action and Greenpeace USA, asking Schumer and Jeffries not to advance the bill this year and to wait for the next Congress. NRDC, EDF, the League of Conservation Voters, Earthjustice and the national Sierra Club did not sign.",
+   "stance": "opposes",
+   "quote": {
+    "text": "We therefore ask you to refrain from advancing the Senate legislation this year.",
+    "speaker": "Coalition letter"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "environmental_group"
+  },
+  {
+   "id": "2026-10-04-stanford-sivas-meat-axe",
+   "date": "2026-10-04",
+   "type": "analysis",
+   "outlet": "Stanford Law School",
+   "author": "Deborah A. Sivas",
+   "title": "Permitting “Reform” Legislation Would Take a Meat Axe to Environmental Law, When What We Need Is a Surgical Scalpel",
+   "url": "https://law.stanford.edu/2026/10/04/permitting-reform-legislation-would-take-a-meat-axe-to-environmental-law-when-what-we-need-is-a-surgical-scalpel/",
+   "verified": true,
+   "summary": "Argues the 150-day limit changes little and that the direct-harm standing test and the remand-only remedy are the provisions that matter, because a project could be built before its review is fixed.",
+   "stance": "opposes",
+   "quote": {
+    "text": "This language, if enacted, effectively guts the core purpose and effect of NEPA.",
+    "speaker": "Deborah A. Sivas"
+   },
+   "topics": [
+    "courts",
+    "nepa"
+   ],
+   "sector": "academic"
+  },
+  {
+   "id": "2026-10-03-daily-caller-cramer-class-of-projects",
+   "date": "2026-10-03",
+   "type": "news",
+   "outlet": "Daily Caller News Foundation",
+   "author": "Simon August",
+   "title": "Senate Energy Bill Would Fine Any President Who Blocks A Whole Class Of Energy Projects",
+   "url": "https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse/",
+   "verified": true,
+   "summary": "Reports Republican support for the disparate-treatment cause of action, with Sen. Kevin Cramer calling the judicial review changes the most important part of the bill.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Section 1402 provides recourse if a future administration tries to use the same playbook",
+    "speaker": "Senate Energy and Natural Resources Committee spokesperson"
+   },
+   "topics": [
+    "permit-certainty",
+    "courts"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-02-nrdc-goldfuss-hard-questions",
+   "date": "2026-10-02",
+   "type": "analysis",
+   "outlet": "NRDC",
+   "author": "Christy Goldfuss",
+   "title": "Hard Questions About the Permitting Bill",
+   "url": "https://www.nrdc.org/bio/christy-goldfuss/hard-questions-permitting-bill",
+   "verified": true,
+   "summary": "Calls the transmission provisions good for clean energy but asks for an accounting of how much fossil fuel development the bill would enable, and objects to the limits on EPA's Section 404(c) veto and on state water-quality certification.",
+   "stance": "mixed",
+   "quote": {
+    "text": "There is no doubt that these provisions are good for clean energy—really good.",
+    "speaker": "Christy Goldfuss"
+   },
+   "topics": [
+    "clean-water-act",
+    "transmission"
+   ],
+   "sector": "environmental_group"
+  },
+  {
+   "id": "2026-10-02-bpc-explainer",
+   "date": "2026-10-02",
+   "type": "analysis",
+   "outlet": "Bipartisan Policy Center",
+   "title": "Explaining the Senate Permitting Bill, the Bipartisan American Affordability and Jobs Act",
+   "url": "https://bipartisanpolicy.org/explainer/explaining-the-senate-permitting-bill-the-bipartisan-american-affordability-and-jobs-act",
+   "verified": true,
+   "summary": "Section-by-section explainer that sets each provision against current law, from the 14 exclusions from NEPA review to the remand-only remedy, permit certainty and data-center ratepayer rules.",
+   "stance": "supports",
+   "quote": {
+    "text": "Under BAAJA, a NEPA violation alone would no longer stop a project.",
+    "speaker": "Bipartisan Policy Center"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "data-centers"
+   ],
+   "sector": "think_tank"
+  },
+  {
    "id": "brc-2026-10-01-transparency",
    "date": "2026-10-01",
    "type": "gov_press_release",

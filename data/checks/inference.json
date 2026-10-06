@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-01",
+ "checked": "2026-10-06",
  "model": "sonnet",
  "results": [
   {
@@ -467,26 +467,10 @@
    "note": ""
   },
   {
-   "id": "1110.s10",
-   "claim": "No suit may rest on an omission from the sponsor's stakeholder engagement record.",
-   "verdict": "supported",
-   "evidence": "there shall not be a claim or judicial review of whether a final agency action complies with the requirements of this Act for any omission from the list described in section 3(22)(B)",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "1110.s2",
    "claim": "Suits challenging an authorization on NEPA grounds must be filed within 150 days.",
    "verdict": "supported",
    "evidence": "is filed not later than 150 days after the date on which",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "1110.s9",
-   "claim": "No NEPA suit may be brought over an action on tribal trust lands unless the tribe itself sues or effects reach beyond trust lands.",
-   "verdict": "supported",
-   "evidence": "there shall be no administrative or judicial review of such final agency action based on a claim of failure to comply",
    "evidence_in_text": true,
    "note": ""
   },
@@ -1371,34 +1355,10 @@
    "note": ""
   },
   {
-   "id": "2107.k6",
-   "claim": "Existing approved arrangements grandfathered",
-   "verdict": "supported",
-   "evidence": "An arrangement to serve a covered load that was approved by the Commission or by a State before the date of enactment of this section shall remain in effect.",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "2108.k1",
    "claim": "Virtual power plants get statutory wholesale market access",
    "verdict": "supported",
    "evidence": "prevent the participation of any qualifying BTM DES aggregation in wholesale energy, capacity, or ancillary services markets administered by the Transmission Organization.",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "2108.k2",
-   "claim": "Device-level metering allowed; utilities cannot require their own equipment",
-   "verdict": "supported",
-   "evidence": "are not required to include equipment owned or installed by the distribution utility (as so defined), and may include the use of device-level equipment, including inverters.",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "2108.k4",
-   "claim": "$20 million a year for streamlined local solar and storage permitting",
-   "verdict": "supported",
-   "evidence": "$20,000,000 for each of fiscal years 2026 through 2031.",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2227,14 +2187,6 @@
    "note": ""
   },
   {
-   "id": "cmp.106.senate",
-   "claim": "On the subject of 'Historic preservation review', in section(s) 2301: Statutory deadlines from start to finish. Adverse effects limited to direct alteration. Loans and grants alone do not trigger review. An agency may proceed when a preservation officer is silent for 30 days.",
-   "verdict": "supported",
-   "evidence": "fails to respond within 30 days of receipt of a request for review of any report or finding by the applicable Federal official, the applicable Federal official shall proceed",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.106.speed",
    "claim": "On the subject of 'Historic preservation review': Not addressed.",
    "verdict": "supported",
@@ -2283,14 +2235,6 @@
    "note": ""
   },
   {
-   "id": "cmp.after.senate",
-   "claim": "On the subject of 'Decisions after the review', in section(s) 1106: Finding of no significant impact within 7 days of an EA. Record of decision within 45 days of an EIS. All federal permits within 90 days, or 120 days for agencies outside the review.",
-   "verdict": "supported",
-   "evidence": "not later than 7 days after the date on which the lead agency completes and makes public the environmental assessment, the lead agency shall issue a finding of no significant impact",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.after.speed",
    "claim": "On the subject of 'Decisions after the review': Final agency action within 30 days of the finished EIS or EA.",
    "verdict": "supported",
@@ -2303,14 +2247,6 @@
    "claim": "On the subject of 'Alternatives': No change.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.alternatives.senate",
-   "claim": "On the subject of 'Alternatives', in section(s) 1106: The lead agency must drop any alternative that misses the purpose and need or the non-federal sponsor's goals. The no-action alternative stays.",
-   "verdict": "supported",
-   "evidence": "eliminate from consideration any alternative (except for a no-action alternative) that does not",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2355,14 +2291,6 @@
    "note": ""
   },
   {
-   "id": "cmp.coal.senate",
-   "claim": "On the subject of 'Coal', in section(s) 1402: No leasing provisions. Coal appears only in the list of project types protected from unequal treatment.",
-   "verdict": "supported",
-   "evidence": "A project to produce electricity from coal",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.coal.speed",
    "claim": "On the subject of 'Coal': Not addressed.",
    "verdict": "supported",
@@ -2375,14 +2303,6 @@
    "claim": "On the subject of 'Upgrades in existing corridors': Interior and Agriculture adopt categorical exclusions within 180 days.",
    "verdict": "supported",
    "evidence": "Not later than 180 days after the date of enactment of this Act, to facilitate timely permitting, the Secretary of the Interior and the Secretary of Agriculture",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.corridor.senate",
-   "claim": "On the subject of 'Upgrades in existing corridors', in section(s) 2102, 2214: Reconductoring, voltage increases and added circuits in existing rights-of-way are outside NEPA and section 106 by statute. So are gas pipeline looping and compression in existing corridors.",
-   "verdict": "supported",
-   "evidence": "shall not be considered a major Federal action under the National Environmental Policy Act of 1969",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2403,14 +2323,6 @@
    "note": ""
   },
   {
-   "id": "cmp.cost.senate",
-   "claim": "On the subject of 'Who pays for new lines', in section(s) 2101, 2103: Same rule, with costs 'at least roughly commensurate' with six listed benefits.",
-   "verdict": "supported",
-   "evidence": "in accordance with the cost-causation principle and at least roughly commensurate with the benefits",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.cost.speed",
    "claim": "On the subject of 'Who pays for new lines': Not addressed.",
    "verdict": "supported",
@@ -2423,14 +2335,6 @@
    "claim": "On the subject of 'Court timetable': Expedited consideration.",
    "verdict": "supported",
    "evidence": "A reviewing court shall set for expedited consideration any civil action arising under Federal law seeking judicial review of a final agency action",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.court-clock.senate",
-   "claim": "On the subject of 'Court timetable', in section(s) 1110: Final judgment 'as expeditiously as possible'. No fixed deadline.",
-   "verdict": "supported",
-   "evidence": "shall render a final judgment with respect to a claim as expeditiously as possible",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2451,14 +2355,6 @@
    "note": ""
   },
   {
-   "id": "cmp.datacenters.senate",
-   "claim": "On the subject of 'Data centers and other large loads', in section(s) 2107, 2114: Loads of 20 megawatts and up pay the full incremental cost of serving them. States may auction access, require new generation, and require curtailable service. The Energy Information Administration must report data center load.",
-   "verdict": "supported",
-   "evidence": "shall be designed to recover from the covered load the full incremental cost of the electric utility",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.datacenters.speed",
    "claim": "On the subject of 'Data centers and other large loads': Not addressed.",
    "verdict": "supported",
@@ -2472,14 +2368,6 @@
    "verdict": "supported",
    "evidence": "",
    "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.deadlines.senate",
-   "claim": "On the subject of 'Review deadlines', in section(s) 1106, 1109: Same 2-year and 1-year deadlines and page limits, counted from the earlier of the agency's determination or a complete application. Same two 60-day front-end clocks.",
-   "verdict": "supported",
-   "evidence": "not later than 1 year after the earlier of, as applicable",
-   "evidence_in_text": false,
    "note": ""
   },
   {
@@ -2499,14 +2387,6 @@
    "note": ""
   },
   {
-   "id": "cmp.der.senate",
-   "claim": "On the subject of 'Customer-sited batteries and generators', in section(s) 2108: Statutory wholesale market access for aggregations of 100 kilowatts and up, with a ban on double payment.",
-   "verdict": "supported",
-   "evidence": "No qualifying BTM DES facility or qualifying BTM DES aggregation shall receive double compensation",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.der.speed",
    "claim": "On the subject of 'Customer-sited batteries and generators': Not addressed.",
    "verdict": "supported",
@@ -2519,14 +2399,6 @@
    "claim": "On the subject of 'Unequal treatment of energy types': Not addressed.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.disparate.senate",
-   "claim": "On the subject of 'Unequal treatment of energy types', in section(s) 1402: Applicants in 46 named project types, plus any similar type a court certifies, can sue over an intentional pattern of delays or denials aimed at their project type. Damages run from 50 to 100 percent of expected construction cost.",
-   "verdict": "supported",
-   "evidence": "damages in an amount equal to not less than 50 percent and not more than 100 percent of the total reasonably expected cost of construction",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2659,14 +2531,6 @@
    "note": ""
   },
   {
-   "id": "cmp.energy-sol.senate",
-   "claim": "On the subject of 'Suits over energy and mineral permits under any law', in section(s) 2201: 150 days. Remand capped at 180 days.",
-   "verdict": "supported",
-   "evidence": "barred unless the civil action is filed by the date that is 150 days after",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.energy-sol.speed",
    "claim": "On the subject of 'Suits over energy and mineral permits under any law': Not addressed.",
    "verdict": "supported",
@@ -2691,14 +2555,6 @@
    "note": ""
   },
   {
-   "id": "cmp.geothermal.senate",
-   "claim": "On the subject of 'Geothermal', in section(s) 2221, 2222, 2223, 2224, 2225, 2226, 2229: All of that, plus a per-plant royalty clock, no federal permit on minority-interest land, processing during lawsuits, and a NEPA exemption for routine drilling.",
-   "verdict": "supported",
-   "evidence": "shall not require an operator to obtain a Federal drilling permit for geothermal exploration and production activities",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.geothermal.speed",
    "claim": "On the subject of 'Geothermal': Not addressed.",
    "verdict": "supported",
@@ -2711,14 +2567,6 @@
    "claim": "On the subject of 'Advanced transmission technologies': Advanced conductors eligible for backstop permits.",
    "verdict": "supported",
    "evidence": "in the case of facilities that include advanced transmission conductors (including superconductors), as defined by the Commission, voltages determined to be appropriate",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.gets.senate",
-   "claim": "On the subject of 'Advanced transmission technologies', in section(s) 2109: Utilities must deploy them when benefits exceed costs, or face a lower return on equity.",
-   "verdict": "supported",
-   "evidence": "the applicable public utility shall deploy the advanced transmission technologies on a timeline determined by the Commission",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2755,14 +2603,6 @@
    "note": ""
   },
   {
-   "id": "cmp.lng.senate",
-   "claim": "On the subject of 'LNG exports', in section(s) 1402: No export provisions. LNG projects appear in the list of project types protected from unequal treatment.",
-   "verdict": "supported",
-   "evidence": "A project to export or import liquefied natural gas",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.lng.speed",
    "claim": "On the subject of 'LNG exports': Not addressed.",
    "verdict": "supported",
@@ -2775,14 +2615,6 @@
    "claim": "On the subject of 'Local transmission spending': Not addressed.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.local.senate",
-   "claim": "On the subject of 'Local transmission spending', in section(s) 2104: States can refer a utility to FERC. Remedies include a lower return and fines up to $5 million per facility.",
-   "verdict": "supported",
-   "evidence": "A fine, payable to the referring State, of up to $5,000,000 for each local transmission facility",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2803,14 +2635,6 @@
    "note": ""
   },
   {
-   "id": "cmp.mfa.senate",
-   "claim": "On the subject of 'Actions outside NEPA', in section(s) 1102, 2102: Fourteen exclusions. Adds loan-only projects, routine actions up to $10 million, lifeline infrastructure repair, geothermal test wells, in-corridor grid and gas pipeline work, previously reviewed actions, and Corps projects up to a $50 million federal share.",
-   "verdict": "supported",
-   "evidence": "activities to maintain or increase the capacity of the electric grid within a covered area",
-   "evidence_in_text": false,
-   "note": ""
-  },
-  {
    "id": "cmp.mfa.speed",
    "claim": "On the subject of 'Actions outside NEPA': Adds grants and cost-share awards, Farm Service Agency loans, and actions another agency already reviewed. Federal money alone cannot make an action major.",
    "verdict": "supported",
@@ -2827,14 +2651,6 @@
    "note": ""
   },
   {
-   "id": "cmp.mining.senate",
-   "claim": "On the subject of 'Hardrock mining', in section(s) 2215: Same as EPRA 2024.",
-   "verdict": "supported",
-   "evidence": "",
-   "evidence_in_text": false,
-   "note": ""
-  },
-  {
    "id": "cmp.mining.speed",
    "claim": "On the subject of 'Hardrock mining': Not addressed.",
    "verdict": "supported",
@@ -2847,14 +2663,6 @@
    "claim": "On the subject of 'Missed deadlines': No change.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.non-nepa.senate",
-   "claim": "On the subject of 'Permits that need no environmental document', in section(s) 1402, 1403: Decision within 1 year of a complete application for the listed project types, enforceable in court.",
-   "verdict": "supported",
-   "evidence": "all Federal departments and agencies shall render decisions on all applicable covered applications not later than 1 year after",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2875,14 +2683,6 @@
    "note": ""
   },
   {
-   "id": "cmp.offshore.senate",
-   "claim": "On the subject of 'Offshore leasing', in section(s) 2251, 2252: No lease sale mandates. Changes Interior's offshore wind test to 'unreasonable interference' with other uses and orders planned offshore transmission routes.",
-   "verdict": "supported",
-   "evidence": "prevention of unreasonable interference with other uses",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.offshore.speed",
    "claim": "On the subject of 'Offshore leasing': Not addressed.",
    "verdict": "supported",
@@ -2895,14 +2695,6 @@
    "claim": "On the subject of 'Oil and gas': No federal permit where the federal mineral share is under 50 percent on non-federal land. Lease nominations offered as submitted. Drilling permits last 4 years.",
    "verdict": "supported",
    "evidence": "the Secretary of the Interior shall not require a permit to drill for an oil and gas lease under the Mineral Leasing Act",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.oilgas.senate",
-   "claim": "On the subject of 'Oil and gas', in section(s) 2211, 2229: No federal permit where the federal mineral share is under 50 percent on non-federal land. The five routine activities are outside NEPA entirely.",
-   "verdict": "supported",
-   "evidence": "shall not require a permit to drill for an oil and gas lease under the Mineral Leasing Act",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2923,14 +2715,6 @@
    "note": ""
   },
   {
-   "id": "cmp.other-sol.senate",
-   "claim": "On the subject of 'Suits under water, wildlife and historic preservation laws', in section(s) 1205, 1305, 2301: 150 days for section 404 permits, biological opinions and section 106 decisions. Biological opinions go to the D.C. Circuit. Remand without vacatur for section 404 and section 106.",
-   "verdict": "supported",
-   "evidence": "shall be filed not later than the date that is 150 days after the date on which the approval was issued",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.other-sol.speed",
    "claim": "On the subject of 'Suits under water, wildlife and historic preservation laws': Not addressed.",
    "verdict": "supported",
@@ -2943,14 +2727,6 @@
    "claim": "On the subject of 'Regional and interregional planning': Joint interregional plans required within 2 years. FERC resolves disputes and can impose a plan.",
    "verdict": "supported",
    "evidence": "submitted to the Commission not later than 2 years after the date of enactment of this section",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.planning.senate",
-   "claim": "On the subject of 'Regional and interregional planning', in section(s) 2103: Regional and interregional planning processes required within 2 years. Order No. 1920 compliance counts for the regional part. FERC can extend a late filing by 6 months.",
-   "verdict": "supported",
-   "evidence": "shall constitute compliance with the regional transmission planning and cost allocation requirements of this section",
    "evidence_in_text": true,
    "note": ""
   },
@@ -2971,14 +2747,6 @@
    "note": ""
   },
   {
-   "id": "cmp.programmatic.senate",
-   "claim": "On the subject of 'Programmatic reviews', in section(s) 1107: 10 years.",
-   "verdict": "supported",
-   "evidence": "by striking \"5 years\" and inserting \"10 years\"",
-   "evidence_in_text": false,
-   "note": ""
-  },
-  {
    "id": "cmp.programmatic.speed",
    "claim": "On the subject of 'Programmatic reviews': 10 years. Agencies may also reuse an earlier review of a substantially similar action.",
    "verdict": "supported",
@@ -2991,14 +2759,6 @@
    "claim": "On the subject of 'Purpose statement': No change.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.purpose.senate",
-   "claim": "On the subject of 'Purpose statement', in section(s) 1101: Adds that NEPA prescribes a procedure that ends in an informational document, and that nothing in it mandates a particular outcome.",
-   "verdict": "supported",
-   "evidence": "the result of which shall be an informational document for the purposes of consideration in Federal decisionmaking",
    "evidence_in_text": true,
    "note": ""
   },
@@ -3019,14 +2779,6 @@
    "note": ""
   },
   {
-   "id": "cmp.queue.senate",
-   "claim": "On the subject of 'Interconnection queues', in section(s) 2106, 2110, 2111: Interconnection planned with transmission over 20 years, with published per-megawatt prices and nonrefundable deposits. Automation required in queue studies. Grid data due in 15 days.",
-   "verdict": "supported",
-   "evidence": "any person from whom grid data is requested under subparagraph (A) shall provide requested grid data not later than 15 days",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.queue.speed",
    "claim": "On the subject of 'Interconnection queues': Not addressed.",
    "verdict": "supported",
@@ -3039,14 +2791,6 @@
    "claim": "On the subject of 'Remedy for a flawed review': Ordinary remedies. An agency gets no more than 180 days on remand.",
    "verdict": "supported",
    "evidence": "the court shall set a reasonable schedule and deadline for the agency to act on remand, which shall not exceed 180 days",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.remedy.senate",
-   "claim": "On the subject of 'Remedy for a flawed review', in section(s) 1110: Remand only, without vacatur or injunction, with a fix due in 180 days. Work may continue during the remand. A preliminary injunction is possible when a different federal law is likely violated.",
-   "verdict": "supported",
-   "evidence": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction",
    "evidence_in_text": true,
    "note": ""
   },
@@ -3067,14 +2811,6 @@
    "note": ""
   },
   {
-   "id": "cmp.renewables.senate",
-   "claim": "On the subject of 'Wind, solar and storage on public land', in section(s) 2213: The same 30-day clocks and small-project exclusions. No gigawatt goal.",
-   "verdict": "supported",
-   "evidence": "not later than 30 days after the date on which an applicant submits a complete application for a right-of-way",
-   "evidence_in_text": false,
-   "note": ""
-  },
-  {
    "id": "cmp.renewables.speed",
    "claim": "On the subject of 'Wind, solar and storage on public land': Not addressed.",
    "verdict": "supported",
@@ -3087,14 +2823,6 @@
    "claim": "On the subject of 'Approvals reopened since January 2025': Not addressed.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.reopened.senate",
-   "claim": "On the subject of 'Approvals reopened since January 2025', in section(s) 1401: No exemption. Where a stop-work order from the year before enactment was enjoined, the same judge hears any new attempt.",
-   "verdict": "supported",
-   "evidence": "the same judge (assuming that judge continues to sit in the same district) that heard the original matter shall have jurisdiction",
    "evidence_in_text": true,
    "note": ""
   },
@@ -3115,26 +2843,10 @@
    "note": ""
   },
   {
-   "id": "cmp.revoke.senate",
-   "claim": "On the subject of 'Revoking an issued permit', in section(s) 1401: Barred, with the same five exceptions, for permits in effect on or after September 16, 2026. The agency carries the burden by clear and convincing evidence. A winning sponsor recovers fees, delay costs and 25 to 50 percent of project costs.",
-   "verdict": "supported",
-   "evidence": "costs in an amount equal to not less than 25 percent and not more than 50 percent of the total",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.rofr.epra",
    "claim": "On the subject of 'Right of first refusal': Not addressed.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.rofr.senate",
-   "claim": "On the subject of 'Right of first refusal', in section(s) 2105: Banned for regionally or interregionally planned lines.",
-   "verdict": "supported",
-   "evidence": "a Federal right of first refusal is prohibited with respect to a transmission facility selected in a regional or interregional transmission plan",
    "evidence_in_text": true,
    "note": ""
   },
@@ -3155,14 +2867,6 @@
    "note": ""
   },
   {
-   "id": "cmp.science.senate",
-   "claim": "On the subject of 'New science during a review', in section(s) 1106: No duty to consider research published after the notice of intent, and no delay to wait for it.",
-   "verdict": "supported",
-   "evidence": "No Federal agency shall be required to consider any scientific or technical research that becomes publicly available after the date of publication of a notice of intent",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.science.speed",
    "claim": "On the subject of 'New science during a review': No new research after an application arrives. No duty to consider research published after the earlier of the application or the notice of intent.",
    "verdict": "supported",
@@ -3175,14 +2879,6 @@
    "claim": "On the subject of 'Effects an agency must study': No change.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.scope.senate",
-   "claim": "On the subject of 'Effects an agency must study', in section(s) 1110: No statutory limit on scope. Courts must give agencies substantial deference on the scope and contents of the document.",
-   "verdict": "supported",
-   "evidence": "a court shall afford substantial deference to the agency relating to the scope and contents of an environmental document",
    "evidence_in_text": true,
    "note": ""
   },
@@ -3203,14 +2899,6 @@
    "note": ""
   },
   {
-   "id": "cmp.skip.senate",
-   "claim": "On the subject of 'Ways to skip a full review', in section(s) 1105, 1108: Same substitutes and the same binding rule, plus combining several exclusions on one project and a public CEQ register of every exclusion.",
-   "verdict": "supported",
-   "evidence": "1 or a combination of multiple categorical exclusions (excluding multiple applications of the same or similar categorical exclusions",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.skip.speed",
    "claim": "On the subject of 'Ways to skip a full review': Adds exclusions enacted by Congress. Another statute or a state or tribal review can stand in for NEPA. A lead agency's finding that no document is needed binds other agencies.",
    "verdict": "supported",
@@ -3223,14 +2911,6 @@
    "claim": "On the subject of 'Time limit for a NEPA suit': 150 days for energy and mineral project decisions.",
    "verdict": "supported",
    "evidence": "shall be barred unless the civil action is filed by the date that is 150 days after the date on which the authorization was granted or denied",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.sol.senate",
-   "claim": "On the subject of 'Time limit for a NEPA suit', in section(s) 1110: 150 days.",
-   "verdict": "supported",
-   "evidence": "is filed not later than 150 days after the date on which",
    "evidence_in_text": true,
    "note": ""
   },
@@ -3267,14 +2947,6 @@
    "note": ""
   },
   {
-   "id": "cmp.tribal.senate",
-   "claim": "On the subject of 'Tribal lands', in section(s) 2212, 1110, 1106: Both: tribal rights-of-way, the limit on NEPA suits, and the no-action presumption.",
-   "verdict": "supported",
-   "evidence": "presume that the effects of a no-action alternative will be negative for any proposed agency action carried out on, or directly affecting, Tribal trust resources",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "cmp.tribal.speed",
    "claim": "On the subject of 'Tribal lands': No NEPA suits over tribal trust resource projects except by the tribe. The no-action alternative is presumed harmful for tribe-initiated projects.",
    "verdict": "supported",
@@ -3287,14 +2959,6 @@
    "claim": "On the subject of 'Which court': No change.",
    "verdict": "supported",
    "evidence": "",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "cmp.venue.senate",
-   "claim": "On the subject of 'Which court', in section(s) 1110: The court of appeals for the circuit where the project sits, with randomly assigned judges.",
-   "verdict": "supported",
-   "evidence": "a court of appeals of the United States shall randomly assign judges",
    "evidence_in_text": true,
    "note": ""
   },
@@ -3317,12 +2981,15 @@
   "1106.s14",
   "1110.k2",
   "1110.k6",
+  "1110.s10",
+  "1110.s11",
   "1110.s3",
   "1110.s4",
   "1110.s5",
   "1110.s6",
   "1110.s7",
   "1110.s8",
+  "1110.s9",
   "1121.k2",
   "1121.s3",
   "1121.s4",
@@ -3375,6 +3042,9 @@
   "2103.s6",
   "2103.s7",
   "2103.s8",
+  "2107.k6",
+  "2107.k7",
+  "2107.k8",
   "2107.s1",
   "2107.s2",
   "2107.s3",
@@ -3384,7 +3054,10 @@
   "2107.s7",
   "2107.s8",
   "2107.s9",
+  "2108.k2",
   "2108.k3",
+  "2108.k4",
+  "2108.k5",
   "2108.s4",
   "2108.s5",
   "2108.s6",
@@ -3421,21 +3094,308 @@
   "2301.s6",
   "2301.s8",
   "2301.s9",
+  "add.1.s1",
+  "add.2.s1",
+  "add.3.s1",
+  "add.4.s1",
+  "add.5.s1",
+  "add.6.s1",
+  "add.7.s1",
+  "add.8.s1",
+  "add.9.s1",
   "cmp.106.epra",
-  "cmp.401.senate",
-  "cmp.404.senate",
+  "cmp.106.senate.s1",
+  "cmp.106.senate.s2",
+  "cmp.106.senate.s3",
+  "cmp.106.senate.s4",
+  "cmp.401.senate.s1",
+  "cmp.401.senate.s2",
+  "cmp.401.senate.s3",
+  "cmp.401.senate.s4",
+  "cmp.404.senate.s1",
+  "cmp.404.senate.s2",
+  "cmp.404.senate.s3",
+  "cmp.after.senate.s1",
+  "cmp.after.senate.s2",
+  "cmp.after.senate.s3",
+  "cmp.alternatives.senate.s1",
+  "cmp.alternatives.senate.s2",
   "cmp.backstop.epra",
-  "cmp.backstop.senate",
-  "cmp.ceq.senate",
+  "cmp.backstop.senate.s1",
+  "cmp.backstop.senate.s2",
+  "cmp.backstop.senate.s3",
+  "cmp.ceq.senate.s1",
+  "cmp.ceq.senate.s2",
+  "cmp.coal.senate.s2",
+  "cmp.corridor.senate.s1",
+  "cmp.corridor.senate.s2",
+  "cmp.cost.senate.s1",
+  "cmp.court-clock.senate.s1",
+  "cmp.datacenters.senate.s1",
+  "cmp.datacenters.senate.s2",
+  "cmp.datacenters.senate.s3",
+  "cmp.datacenters.senate.s4",
+  "cmp.datacenters.senate.s5",
+  "cmp.deadlines.senate.s1",
+  "cmp.deadlines.senate.s2",
+  "cmp.der.senate.s1",
+  "cmp.disparate.senate.s1",
+  "cmp.disparate.senate.s2",
+  "cmp.energy-sol.senate.s2",
   "cmp.esa.epra",
-  "cmp.esa.senate",
-  "cmp.hydro.senate",
-  "cmp.missed.senate",
+  "cmp.esa.senate.s1",
+  "cmp.esa.senate.s2",
+  "cmp.geothermal.senate.s1",
+  "cmp.gets.senate.s1",
+  "cmp.hydro.senate.s1",
+  "cmp.lng.senate.s2",
+  "cmp.local.senate.s1",
+  "cmp.local.senate.s2",
+  "cmp.mfa.senate.s2",
+  "cmp.mining.senate.s1",
+  "cmp.missed.senate.s1",
+  "cmp.missed.senate.s2",
+  "cmp.missed.senate.s3",
   "cmp.missed.speed",
   "cmp.non-nepa.epra",
+  "cmp.non-nepa.senate.s1",
+  "cmp.offshore.senate.s1",
+  "cmp.offshore.senate.s2",
+  "cmp.oilgas.senate.s1",
+  "cmp.oilgas.senate.s2",
+  "cmp.other-sol.senate.s1",
+  "cmp.other-sol.senate.s2",
+  "cmp.other-sol.senate.s4",
+  "cmp.planning.senate.s1",
+  "cmp.planning.senate.s2",
+  "cmp.planning.senate.s3",
+  "cmp.purpose.senate.s1",
+  "cmp.queue.senate.s1",
+  "cmp.queue.senate.s2",
+  "cmp.queue.senate.s3",
+  "cmp.remedy.senate.s1",
+  "cmp.remedy.senate.s2",
+  "cmp.remedy.senate.s3",
+  "cmp.renewables.senate.s1",
+  "cmp.reopened.senate.s2",
+  "cmp.revoke.senate.s1",
+  "cmp.revoke.senate.s2",
+  "cmp.revoke.senate.s3",
   "cmp.revoke.speed",
-  "cmp.standing.senate"
+  "cmp.rofr.senate.s1",
+  "cmp.science.senate.s1",
+  "cmp.scope.senate.s1",
+  "cmp.scope.senate.s2",
+  "cmp.skip.senate.s1",
+  "cmp.standing.senate.s1",
+  "cmp.standing.senate.s2",
+  "cmp.tribal.senate.s1",
+  "cmp.venue.senate.s1",
+  "com.alternatives-scope.s1",
+  "com.alternatives-scope.s2",
+  "com.alternatives-scope.s3",
+  "com.ce-combine.s1",
+  "com.ce-combine.s2",
+  "com.ce-combine.s3",
+  "com.ce-combine.s4",
+  "com.cooperating-agencies.s1",
+  "com.cooperating-agencies.s2",
+  "com.cooperating-agencies.s3",
+  "com.eis-comment-period.s1",
+  "com.eis-comment-period.s2",
+  "com.eminent-domain.s1",
+  "com.eminent-domain.s2",
+  "com.eminent-domain.s3",
+  "com.eminent-domain.s4",
+  "com.energy-sol.s1",
+  "com.energy-sol.s2",
+  "com.esa-biop-suit.s1",
+  "com.esa-biop-suit.s2",
+  "com.esa-clock.s1",
+  "com.esa-clock.s2",
+  "com.esa-clock.s3",
+  "com.esa-state-assumption.s1",
+  "com.esa-state-assumption.s2",
+  "com.esa-state-assumption.s3",
+  "com.esa-state-assumption.s4",
+  "com.esa-state-assumption.s5",
+  "com.ferc-backstop.s1",
+  "com.ferc-backstop.s2",
+  "com.ferc-backstop.s3",
+  "com.ferc-backstop.s4",
+  "com.ferc-voices.s1",
+  "com.ferc-voices.s2",
+  "com.ferc-voices.s3",
+  "com.jurisdiction-payments.s1",
+  "com.jurisdiction-payments.s2",
+  "com.nepa-court.s1",
+  "com.nepa-court.s2",
+  "com.nepa-court.s3",
+  "com.nepa-outreach-record.s1",
+  "com.nepa-outreach-record.s2",
+  "com.nepa-remedy.s1",
+  "com.nepa-remedy.s2",
+  "com.nepa-remedy.s3",
+  "com.nepa-sol.s1",
+  "com.nepa-sol.s2",
+  "com.nepa-tribal-trust.s1",
+  "com.nepa-tribal-trust.s2",
+  "com.nepa-tribal-trust.s3",
+  "com.nepa-who-can-sue.s1",
+  "com.nepa-who-can-sue.s2",
+  "com.nepa-who-can-sue.s3",
+  "com.not-major-action.s1",
+  "com.not-major-action.s2",
+  "com.not-major-action.s3",
+  "com.not-major-action.s4",
+  "com.not-major-action.s5",
+  "com.nwp-reissue.s1",
+  "com.nwp-reissue.s2",
+  "com.nwp-reissue.s3",
+  "com.permit-revocation.s1",
+  "com.permit-revocation.s2",
+  "com.permit-revocation.s3",
+  "com.research-cutoff.s1",
+  "com.research-cutoff.s2",
+  "com.s106-clocks.s1",
+  "com.s106-clocks.s2",
+  "com.s106-clocks.s3",
+  "com.s106-gov-exemption.s1",
+  "com.s106-gov-exemption.s2",
+  "com.s106-objections.s1",
+  "com.s106-objections.s2",
+  "com.s106-objections.s3",
+  "com.s106-offices.s1",
+  "com.s106-offices.s2",
+  "com.s106-offices.s3",
+  "com.s106-programmatic.s1",
+  "com.s106-programmatic.s2",
+  "com.s106-remedy.s1",
+  "com.s106-remedy.s2",
+  "com.s106-scope.s1",
+  "com.s106-scope.s2",
+  "com.s106-scope.s3",
+  "com.s106-suit.s1",
+  "com.s106-suit.s2",
+  "com.s106-suit.s3",
+  "com.s106-who.s1",
+  "com.s106-who.s2",
+  "com.s106-who.s3",
+  "com.s106-who.s4",
+  "com.s401-courts.s1",
+  "com.s401-courts.s2",
+  "com.s401-courts.s3",
+  "com.s401-scope.s1",
+  "com.s401-scope.s2",
+  "com.s401-scope.s3",
+  "com.s401-time.s1",
+  "com.s401-time.s2",
+  "com.s401-time.s3",
+  "com.s401-time.s4",
+  "com.s404-courts.s1",
+  "com.s404-courts.s2",
+  "com.s404-courts.s3",
+  "com.selected-projects-deemed.s1",
+  "com.selected-projects-deemed.s2",
+  "com.selected-projects-deemed.s3",
+  "com.stakeholder-record.s1",
+  "com.stakeholder-record.s2",
+  "com.stakeholder-record.s3",
+  "com.state-referral.s1",
+  "com.state-referral.s2",
+  "com.state-referral.s3",
+  "com.state-tribal-substitute.s1",
+  "com.state-tribal-substitute.s2",
+  "com.state-tribal-substitute.s3",
+  "com.state-tribal-substitute.s4",
+  "com.statutory-exemptions.s1",
+  "com.statutory-exemptions.s2",
+  "com.statutory-exemptions.s3",
+  "com.tracker-portal.s1",
+  "com.tracker-portal.s2",
+  "com.tracker-portal.s3",
+  "com.transmission-courts.s1",
+  "com.transmission-courts.s2",
+  "com.tribal-consent.s1",
+  "com.tribal-consent.s2",
+  "com.tribal-consent.s3",
+  "com.tribal-row-petition.s1",
+  "com.tribal-row-petition.s2",
+  "com.tribal-row-review.s1",
+  "com.tribal-row-review.s2",
+  "com.tribal-row-review.s3",
+  "com.water-criteria-rulemaking.s1",
+  "com.water-criteria-rulemaking.s2",
+  "dc.att-mandate.s1",
+  "dc.automated-spec.s1",
+  "dc.btm-metering.s1",
+  "dc.btm-wholesale-access.s1",
+  "dc.cost-reduction-options.s1",
+  "dc.eia-reporting.s1",
+  "dc.exit-liability-assurance.s1",
+  "dc.exit-liability-assurance.s2",
+  "dc.firm-pricing-baseline.s1",
+  "dc.firm-pricing-baseline.s2",
+  "dc.flexible-tariffs-codified.s1",
+  "dc.grid-data-deadlines.s1",
+  "dc.grid-data-deadlines.s2",
+  "dc.grid-data-deadlines.s3",
+  "dc.non-firm-discount.s1",
+  "dc.ratepayer-shield.s1",
+  "dc.ratepayer-shield.s2",
+  "dc.ratepayer-shield.s3",
+  "dc.reconductoring-ce.s1",
+  "dc.state-open-seasons.s1",
+  "dc.state-open-seasons.s2",
+  "dc.study-automation.s1",
+  "dcb.assurance.s1",
+  "dcb.att-reconductoring.s1",
+  "dcb.att-reconductoring.s2",
+  "dcb.binding.s2",
+  "dcb.btm-power.s1",
+  "dcb.btm-power.s2",
+  "dcb.credits.s1",
+  "dcb.data.s1",
+  "dcb.data.s2",
+  "dcb.existing.s1",
+  "dcb.existing.s2",
+  "dcb.existing.s3",
+  "dcb.exit.s1",
+  "dcb.flexibility.s1",
+  "dcb.flexibility.s2",
+  "dcb.incremental.s1",
+  "dcb.non-firm.s1",
+  "dcb.non-firm.s2",
+  "dcb.own-power.s1",
+  "dcb.queue-speed.s1",
+  "dcb.queue-speed.s2",
+  "dcb.queue.s1",
+  "dcb.rate-class.s1",
+  "dcb.scope.s1",
+  "dcb.scope.s2",
+  "dcb.scope.s3",
+  "dcb.transmission.s1",
+  "dcb.transmission.s2",
+  "hl.certainty.s1",
+  "hl.certainty.s2",
+  "hl.datacenters.s1",
+  "hl.datacenters.s2",
+  "hl.datacenters.s3",
+  "hl.deadlines.s1",
+  "hl.deadlines.s2",
+  "hl.digital.s1",
+  "hl.exemptions.s1",
+  "hl.exemptions.s2",
+  "hl.historic.s1",
+  "hl.historic.s2",
+  "hl.lawsuits.s1",
+  "hl.lawsuits.s2",
+  "hl.species.s1",
+  "hl.species.s2",
+  "hl.transmission.s1",
+  "hl.water.s1",
+  "hl.water.s2"
  ],
- "input_sha256": "1c52d93587a5ea1c3475c72dfa8d28bb5fcd0c85bc16e200800c5e33098b8272",
+ "input_sha256": "bc2c6295d2ac38f4e90d6e915caace5121b37b48c989991898b98523fab9e227",
  "cached_only": true
 }

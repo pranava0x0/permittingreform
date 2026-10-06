@@ -1,13 +1,13 @@
 {
  "inference": {
   "cached_only": true,
-  "checked": "2026-10-01",
-  "flagged": 12,
-  "input_sha256": "1c52d93587a5ea1c3475c72dfa8d28bb5fcd0c85bc16e200800c5e33098b8272",
+  "checked": "2026-10-06",
+  "flagged": 7,
+  "input_sha256": "bc2c6295d2ac38f4e90d6e915caace5121b37b48c989991898b98523fab9e227",
   "model": "sonnet",
-  "supported": 401,
-  "total": 540,
-  "unchecked": 127
+  "supported": 364,
+  "total": 794,
+  "unchecked": 423
  },
  "links": {
   "blocked": 12,
@@ -21,13 +21,13 @@
  "quotes": {
   "bill_total": 173,
   "bill_verified": 173,
-  "browser": 19,
-  "checked": "2026-10-04",
+  "browser": 29,
+  "checked": "2026-10-06",
   "missing": 0,
   "near": 0,
-  "total": 290,
+  "total": 387,
   "unreachable": 0,
   "unverifiable": 0,
-  "verified": 271
+  "verified": 358
  }
 }

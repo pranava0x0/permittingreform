@@ -25,6 +25,41 @@ def load_sections() -> dict:
     return json.loads(SECTIONS.read_text(encoding="utf-8"))
 
 
+ABBREV = ("No.", "U.S.C.", "U.S.", "D.C.", "Sec.", "Secs.", "v.", "Cir.", "Inc.", "Act.", "e.g.", "i.e.")
+# A claim that the text is silent ("No export provisions.", "Royalties are
+# unchanged") has no passage to cite. It counts as checked only when the
+# summary review supports it with no evidence span.
+ABSENCE_RE = re.compile(r"^(?:\[[^\]]*\]\s*)?(?:On the subject of [^:]*:\s*)?(?:No|Not|None)\b|\bunchanged\b|\bnot addressed\b|\bno change\b", re.I)
+
+
+def is_absence(claim: str) -> bool:
+    return bool(ABSENCE_RE.search(claim.strip()))
+
+
+def _split(text: str) -> list[str]:
+    parts = re.split(r"(?<=[.;])\s+(?=[A-Z0-9“'(])", text)
+    merged: list[str] = []
+    for part in parts:
+        if merged and merged[-1].endswith(ABBREV):
+            merged[-1] += " " + part
+        else:
+            merged.append(part)
+    return [p.strip() for p in merged if p.strip()]
+
+
+def sentence_paragraphs(text: str) -> list[list[str]]:
+    """A summary as paragraphs of sentences, every word kept. The page renders
+    this, and every sentence, however short, must carry a bill cite: "10 years."
+    in a comparison cell says what the bill does as surely as a paragraph does."""
+    return [_split(p) for p in text.split("\n\n") if p.strip()]
+
+
+def sentences(text: str) -> list[str]:
+    """The checkable claims in a summary: its sentences, an abbreviation not
+    ending one."""
+    return [s for para in sentence_paragraphs(text) for s in para]
+
+
 def flat_index(lines: list[list]) -> tuple[str, list[int]]:
     """Join printed lines with single spaces; return the string and each line's start offset."""
     parts: list[str] = []

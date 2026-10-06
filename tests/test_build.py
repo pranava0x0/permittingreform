@@ -177,3 +177,141 @@ class Data(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+def build_with(edit):
+    """Run the build with one source file altered in memory: edit(path_name, data) -> data."""
+    original = build.load
+
+    def sabotaged(path):
+        return edit(path.name, original(path))
+
+    with patch.object(build, "load", sabotaged):
+        return build.build()
+
+
+class ClaimCites(unittest.TestCase):
+    """Every claim about what the bill does carries a passage from the bill text."""
+
+    def test_every_claim_about_the_bill_carries_a_passage(self):
+        self.assertEqual(CORE["checks"]["cites"]["gaps"], [])
+
+    def test_summary_sentences_keep_every_word_of_the_summary(self):
+        for sec in CORE["sections"]:
+            rebuilt = "\n\n".join(" ".join(t["t"] for t in para) for para in sec["ps"])
+            self.assertEqual(" ".join(rebuilt.split()), " ".join(sec["plain"].split()), sec["n"])
+
+    def test_every_cite_falls_inside_the_cited_section(self):
+        by_num = {s["n"]: s for s in CORE["sections"]}
+        def inside(n, c):
+            s = by_num[n]
+            return s["p1"] <= c[0] and c[2] <= s["p2"]
+        for sec in CORE["sections"]:
+            for t in [t for para in sec["ps"] for t in para] + sec["points"]:
+                if "c" in t:
+                    self.assertTrue(inside(sec["n"], t["c"]), (sec["n"], t["t"][:50]))
+        for rc in build.row_claims(CORE["overview"], CORE["compare"], CORE["communities"], CORE["datacenters"]):
+            for t in rc["holder"].get("ts", []):
+                if "c" in t:
+                    self.assertIn(t["n"], rc["sections"])
+                    self.assertTrue(inside(t["n"], t["c"]), rc["id"])
+
+    def test_row_claims_cover_every_cell_that_describes_the_bill(self):
+        ids = {rc["id"].rsplit(".s", 1)[0] for rc in build.row_claims(CORE["overview"], CORE["compare"], CORE["communities"], CORE["datacenters"])}
+        for h in CORE["overview"]["headlines"]:
+            self.assertIn(f"hl.{h['id']}", ids)
+        for g in CORE["compare"]["groups"]:
+            for r in g["rows"]:
+                if r["senate"].get("sections"):
+                    self.assertIn(f"cmp.{r['id']}.senate", ids)
+        for r in CORE["compare"]["bills"]["rows"]:
+            if (r.get("senate") or {}).get("sections"):
+                self.assertIn(f"dcb.{r['id']}", ids)
+        for i, _ in enumerate(CORE["compare"]["added"], 1):
+            self.assertIn(f"add.{i}", ids)
+        for r in CORE["communities"]["rows"]:
+            self.assertIn(f"com.{r['id']}", ids)
+        for r in CORE["datacenters"]["rows"]:
+            self.assertIn(f"dc.{r['id']}", ids)
+
+    def test_a_summary_sentence_without_a_passage_is_a_gap(self):
+        first = billtext.sentences(json.loads((ROOT / "data/bill/analysis.json").read_text(encoding="utf-8"))["sections"]["1101"]["plain"])[0]
+
+        def edit(name, data):
+            if name == "point_cites.json":
+                data.get("1101", {}).pop(first, None)
+            return data
+
+        core, _, errors = build_with(edit)
+        self.assertEqual(errors, [])
+        self.assertTrue(any(g.startswith("section 1101: no bill passage for summary sentence") for g in core["checks"]["cites"]["gaps"]))
+
+    def test_a_flagged_claim_shows_no_cite_and_is_a_gap(self):
+        first = billtext.sentences(json.loads((ROOT / "data/bill/analysis.json").read_text(encoding="utf-8"))["sections"]["1101"]["plain"])[0]
+
+        def edit(name, data):
+            if name == "inference.json":
+                data["results"].append({"id": "1101.s1", "claim": first, "verdict": "partly", "evidence": "", "evidence_in_text": False, "note": "test"})
+            return data
+
+        core, _, _ = build_with(edit)
+        sec = next(s for s in core["sections"] if s["n"] == "1101")
+        self.assertNotIn("c", sec["ps"][0][0])
+        self.assertTrue(any("semantic check flagged" in g for g in core["checks"]["cites"]["gaps"]))
+
+    def test_a_row_passage_from_an_uncited_section_is_an_error(self):
+        rc = build.row_claims(CORE["overview"], CORE["compare"], CORE["communities"], CORE["datacenters"])[0]
+        other = next(s["n"] for s in CORE["sections"] if s["n"] not in rc["sections"])
+        span = next(iter(json.loads((ROOT / "data/bill/point_cites.json").read_text(encoding="utf-8"))[other].values()))
+
+        def edit(name, data):
+            if name == "row_cites.json":
+                data[rc["id"]] = {"claim": rc["t"], "section": other, "text": span}
+            return data
+
+        _, _, errors = build_with(edit)
+        self.assertTrue(any(e.startswith(rc["id"]) for e in errors), errors)
+
+    def test_the_build_refuses_to_write_while_gaps_remain(self):
+        def edit(name, data):
+            if name == "point_cites.json":
+                return {}
+            return data
+
+        with patch.object(build, "load", lambda p, o=build.load: edit(p.name, o(p))), \
+             patch.object(build, "SITE", Path(tempfile.mkdtemp())):
+            self.assertEqual(build.main(), 1)
+
+
+class Takes(unittest.TestCase):
+    def test_every_take_names_real_sections_and_a_located_passage(self):
+        nums = {s["n"] for s in CORE["sections"]}
+        for t in CORE["takes"]["takes"]:
+            self.assertTrue(set(t["sections"]) <= nums, t["id"])
+            if "passage" in t:
+                self.assertIn("c", t["passage"], t["id"])
+                self.assertIn(t["passage"]["section"], t["sections"], t["id"])
+
+    def test_every_take_quote_goes_through_the_web_quote_check(self):
+        checked = {r["where"] for r in check_quotes.web_quotes(CORE)}
+        for t in CORE["takes"]["takes"]:
+            self.assertIn(f"takes.{t['id']}", checked)
+
+    def test_a_passage_the_bill_does_not_contain_fails_the_build(self):
+        def edit(name, data):
+            if name == "takes.json":
+                data["takes"][0]["passage"] = {"section": data["takes"][0]["sections"][0], "text": "words this bill never uses anywhere at all"}
+            return data
+
+        _, _, errors = build_with(edit)
+        self.assertTrue(any("passage not found" in e for e in errors), errors)
+
+    def test_an_unknown_side_or_stance_fails_the_build(self):
+        def edit(name, data):
+            if name == "takes.json":
+                data["takes"][0]["side"] = "astrologers"
+                data["takes"][1]["stance"] = "vibes"
+            return data
+
+        _, _, errors = build_with(edit)
+        self.assertTrue(any("unknown side" in e for e in errors) and any("unknown stance" in e for e in errors), errors)

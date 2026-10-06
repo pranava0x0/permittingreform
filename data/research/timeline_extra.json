@@ -1100,6 +1100,54 @@
      "verified": true
     }
    ]
+  },
+  {
+   "id": "2026-10-01-senate-schedules-november-9-cloture-vote",
+   "date": "2026-10-01",
+   "title": "Senate schedules a November 9 cloture vote to take up the permitting bill",
+   "branch": "congress_senate",
+   "summary": "The Senate's floor schedule set its first vote after the election: cloture on the motion to proceed to H.R. 2347, the Survivor Justice Tax Prevention Act, which the Senate Press Gallery describes as the legislative vehicle for the permitting reform bill. The vote is set for about 5:30 p.m. on Monday, November 9.",
+   "significance": "Makes the permitting bill the Senate's first order of business when it returns after the November 3 election.",
+   "actors": [],
+   "topics": [
+    "congress"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Thursday, October 1, 2026",
+     "publisher": "U.S. Senate Press Gallery",
+     "url": "https://www.dailypress.senate.gov/thursday-october-1-2026/",
+     "date": "2026-10-01",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-05-environmental-coalition-letter-opposes-bill",
+   "date": "2026-10-05",
+   "title": "More than 200 environmental and local groups ask Democratic leaders to hold the bill until next Congress",
+   "branch": "other",
+   "summary": "A letter to Schumer and Jeffries, published by Punchbowl News, argues the environmental cost of the rollbacks outweighs the emissions benefits and that a better package is likely after the midterms. Signers include the Center for Biological Diversity, Food & Water Watch, Friends of the Earth Action and Greenpeace USA.",
+   "significance": "The large national groups (NRDC, EDF, the League of Conservation Voters, Earthjustice and the national Sierra Club) did not sign, which left the environmental opposition split.",
+   "actors": [
+    "Center for Biological Diversity",
+    "Friends of the Earth Action",
+    "Greenpeace USA"
+   ],
+   "topics": [
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Broad Environmental Coalition Urges Opposition to Permitting Reform Package",
+     "publisher": "Punchbowl News",
+     "url": "https://punchbowl.news/wp-content/uploads/Permitting-Reform-Opposition-Letter_10.5.26.pdf",
+     "date": "2026-10-05",
+     "verified": true
+    }
+   ]
   }
  ]
 }

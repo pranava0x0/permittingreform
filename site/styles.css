@@ -180,7 +180,8 @@ details.index-group[open] > summary h2::after { content: "\2212"; }
 .stance-supports { color: var(--stance-supports); }
 .stance-opposes { color: var(--stance-opposes); }
 .stance-mixed { color: var(--stance-mixed); }
-.stance-neutral, .stance-reporting { color: var(--stance-neutral); }
+.stance-neutral, .stance-reporting, .stance-explains { color: var(--stance-neutral); }
+.stance-concerns { color: var(--stance-mixed); }
 .tag-major { font-size: 0.78rem; font-weight: 700; color: var(--text); border: 1px solid var(--rule); border-radius: 2px; padding: 0 6px; white-space: nowrap; }
 .topics { display: inline-flex; flex-wrap: wrap; gap: 2px 10px; }
 .topic { font-size: 0.82rem; color: var(--text-muted); white-space: nowrap; }
@@ -243,6 +244,14 @@ thead th { font-family: var(--font-head); font-size: 0.86rem; font-weight: 700; 
 .points { list-style: disc; padding-left: 20px; max-width: var(--measure); }
 .points li { margin-bottom: 5px; }
 .points .cite { font-size: 0.85rem; white-space: nowrap; }
+/* A claim's cite: opens the section text with the cited lines marked. */
+.cite-mark { font-family: var(--font-body); font-size: 0.78rem; white-space: nowrap; }
+.takes { list-style: none; margin: 0; padding: 0; }
+.take { padding: 10px 0; border-top: 1px solid var(--border); max-width: 80ch; }
+.take:focus { outline: 2px solid var(--rule); outline-offset: 2px; }
+.take p { margin: 0 0 4px; }
+.take-head { font-size: 0.92rem; }
+.take-quote { margin: 4px 0 6px; padding-left: 12px; border-left: 2px solid var(--border); font-family: var(--font-serif); font-size: 0.98rem; line-height: 1.5; }
 .quote { margin: 0; padding: 12px 0; border-top: 1px solid var(--border); max-width: 80ch; }
 .quote blockquote { margin: 0 0 6px; font-family: var(--font-serif); font-size: 1.08rem; line-height: 1.5; }
 .quote blockquote::before { content: "\201C"; }
@@ -482,7 +491,7 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
   .chip, .tabs a, .theme-toggle, .search button, .search input, .outline summary, .outline-toggle, .filter-wrap > summary { min-height: 44px; }
   .tabs a, .theme-toggle { display: inline-flex; align-items: center; }
   .outline li a { padding-top: 10px; padding-bottom: 10px; }
-  .event-toggle, .row-toggle { min-height: 44px; }
+  .event-toggle, .row-toggle, .show-rest { min-height: 44px; }
   .versions dt a { display: inline-block; padding: 6px 0; }
 }
 
