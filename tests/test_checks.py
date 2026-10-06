@@ -1,7 +1,9 @@
 """The validators themselves: each must be able to fail."""
 import json
 import sys
+import tempfile
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -89,7 +91,7 @@ class Links(unittest.TestCase):
     def test_the_checker_sees_every_kind_of_link_the_site_renders(self):
         found = check_links.collect(CORE)
         places = {where.split(".")[0] for wheres in found.values() for where in wheres}
-        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media"})
+        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media", "takes"})
         self.assertIn(CORE["meta"]["source_pdf"], found)
         for item in CORE["media"]:
             self.assertIn(item["url"].split("#", 1)[0], found)
@@ -139,13 +141,98 @@ class Inference(unittest.TestCase):
 
     def test_every_comparison_cell_for_a_bill_becomes_a_claim(self):
         bill = billtext.load_sections()
-        ids = {cid for u in infer_check.compare_units(CORE, bill) for cid, _ in u["claims"]}
+        ids = {cid for u in infer_check.compare_units(CORE, bill) + infer_check.row_units(CORE, bill) for cid, _ in u["claims"]}
         for g in CORE["compare"]["groups"]:
             for r in g["rows"]:
                 self.assertIn(f"cmp.{r['id']}.speed", ids)
                 self.assertIn(f"cmp.{r['id']}.epra", ids)
                 if r["senate"].get("sections"):
-                    self.assertIn(f"cmp.{r['id']}.senate", ids)
+                    self.assertTrue(any(i.startswith(f"cmp.{r['id']}.senate.s") for i in ids), r["id"])
+
+    def test_row_claims_are_checked_against_only_the_sections_they_cite(self):
+        bill = billtext.load_sections()
+        rows = {rc["id"]: rc for rc in build.row_claims(CORE["overview"], CORE["compare"], CORE["communities"], CORE["datacenters"])}
+        for u in infer_check.row_units(CORE, bill):
+            nums = u["key"].split(" ", 1)[1].split(",")
+            for cid, _ in u["claims"]:
+                self.assertEqual(sorted(set(rows[cid]["sections"])), nums, cid)
+
+    def test_a_new_bill_text_re_asks_every_claim(self):
+        import contextlib, io
+        saved = json.loads((ROOT / "data/checks/inference.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp:
+            for sha, expect_all in ((saved["bill_sha256"], False), ("a-different-draft", True)):
+                path = Path(tmp) / "inference.json"
+                path.write_text(json.dumps(dict(saved, bill_sha256=sha)), encoding="utf-8")
+                out = io.StringIO()
+                with patch.object(infer_check, "OUT", path), patch.object(sys, "argv", ["infer_check", "--dry-run"]), \
+                        contextlib.redirect_stdout(out):
+                    infer_check.main()
+                self.assertEqual("asking about every claim" in out.getvalue(), expect_all, out.getvalue()[:200])
+
+    def test_a_reconcile_does_not_stamp_a_new_bill_onto_old_verdicts(self):
+        import contextlib, io
+        saved = json.loads((ROOT / "data/checks/inference.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp:
+            out_path, pc, rc = Path(tmp) / "inference.json", Path(tmp) / "pc.json", Path(tmp) / "rc.json"
+            out_path.write_text(json.dumps(dict(saved, bill_sha256="an-older-draft", input_sha256="old-inputs")), encoding="utf-8")
+            pc.write_text((ROOT / "data/bill/point_cites.json").read_text(encoding="utf-8"), encoding="utf-8")
+            rc.write_text((ROOT / "data/bill/row_cites.json").read_text(encoding="utf-8"), encoding="utf-8")
+            with patch.object(infer_check, "OUT", out_path), patch.object(infer_check, "POINT_CITES", pc), \
+                    patch.object(build, "ROW_CITES", rc), patch.object(check_links, "merge_summary", lambda *a, **k: None), \
+                    patch.object(sys, "argv", ["infer_check", "--cached-only"]), contextlib.redirect_stdout(io.StringIO()):
+                infer_check.main()
+            written = json.loads(out_path.read_text(encoding="utf-8"))
+        self.assertEqual(written["bill_sha256"], "an-older-draft")
+        self.assertEqual(written["input_sha256"], "old-inputs")
+
+    def test_a_partial_run_keeps_the_saved_stamp(self):
+        import contextlib, io
+        saved = json.loads((ROOT / "data/checks/inference.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp:
+            out_path, pc, rc = Path(tmp) / "inference.json", Path(tmp) / "pc.json", Path(tmp) / "rc.json"
+            out_path.write_text(json.dumps(dict(saved, bill_sha256="an-older-draft", input_sha256="old-inputs")), encoding="utf-8")
+            pc.write_text((ROOT / "data/bill/point_cites.json").read_text(encoding="utf-8"), encoding="utf-8")
+            rc.write_text((ROOT / "data/bill/row_cites.json").read_text(encoding="utf-8"), encoding="utf-8")
+            # Every batch answered from a stub, so the run is live but asks no model.
+            with patch.object(infer_check, "OUT", out_path), patch.object(infer_check, "POINT_CITES", pc), \
+                    patch.object(build, "ROW_CITES", rc), patch.object(check_links, "merge_summary", lambda *a, **k: None), \
+                    patch.object(infer_check, "CACHE", Path(tmp) / "cache"), \
+                    patch.object(infer_check, "ask", lambda prompt, model: {"answer": {"results": []}, "model": "stub", "cost_usd": 0}), \
+                    patch.object(sys, "argv", ["infer_check", "--scope", "sections", "--only", "1101"]), contextlib.redirect_stdout(io.StringIO()):
+                infer_check.main()
+            written = json.loads(out_path.read_text(encoding="utf-8"))
+        self.assertEqual(written["bill_sha256"], "an-older-draft")
+        self.assertEqual(written["input_sha256"], "old-inputs")
+
+    def test_a_joined_evidence_span_yields_only_a_verbatim_piece(self):
+        lines = next(x for x in billtext.load_sections()["sections"] if x["number"] == "1304")["lines"]
+        joined = "with the written agreement of the Secretary and a State... the Secretary may assign, and the State may assume, the consultation responsibilities"
+        piece = infer_check.usable_span(joined, lines)
+        self.assertEqual(piece, "the Secretary may assign, and the State may assume, the consultation responsibilities")
+        self.assertIsNone(infer_check.usable_span("words this bill never uses ... nor these other words either", lines))
+        self.assertIsNone(infer_check.usable_span("", lines))
+
+    def test_absence_claims_are_recognized_and_positive_claims_are_not(self):
+        for claim in ("No export provisions.", "[Coal] No leasing provisions.", "Royalties are unchanged;",
+                      "The text does not say what notice the earlier review must have had."):
+            self.assertTrue(billtext.is_absence(claim), claim)
+        for claim in ("Indian lands are excluded.", "FERC may permit lines of 230 kilovolts and up.", "Same as EPRA 2024.",
+                      "The deadline does not apply to pending actions.", "This permit does not expire.",
+                      "No suit may rest on an omission from the list described in section 3(22)(B) of NEPA as amended."):
+            self.assertFalse(billtext.is_absence(claim), claim)
+
+    def test_a_stale_passage_is_pruned_and_a_current_one_kept(self):
+        bill = billtext.load_sections()
+        sec = next(s for s in bill["sections"] if s["number"] == "1101")
+        span = "Nothing in this Act mandates a particular outcome"
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "point_cites.json"
+            path.write_text(json.dumps({"1101": {"An edited-away claim": span, "Kept claim": span}}), encoding="utf-8")
+            with patch.object(infer_check, "POINT_CITES", path):
+                infer_check.write_point_cites([], bill, {"1101.k1": "Kept claim"})
+            self.assertEqual(json.loads(path.read_text(encoding="utf-8")), {"1101": {"Kept claim": span}})
+        self.assertIsNotNone(billtext.locate(sec["lines"], span))
 
     def test_no_batch_is_larger_than_the_word_limit_unless_one_source_is(self):
         bill = billtext.load_sections()

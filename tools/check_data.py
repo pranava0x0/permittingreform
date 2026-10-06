@@ -47,6 +47,8 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     o = core["overview"]
     out.append(("overview money note", o["money_note"]))
     out += [("overview status", p["text"]) for p in o["status"]["points"]]
+    if o.get("next"):
+        out.append(("overview next", o["next"]["text"]))
     out += [(f"overview headline {h['id']}", h["title"] + ". " + h["text"]) for h in o["headlines"]]
     out += [("overview clock", c["what"]) for c in o["clocks"]] + [("overview money", c["what"]) for c in o["money"]]
     for g in core["compare"]["groups"]:
@@ -78,6 +80,7 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out += [(f"people {p['id']} action", a) for a in p.get("key_actions", [])]
     out += [(f"media {it['id']} summary", it["summary"]) for it in core["media"] if it.get("summary")]
     out += [(f"media {it['id']} visual", v["title"] + ". " + v["text"]) for it in core["media"] for v in it.get("visuals", [])]
+    out += [(f"take {t['id']} claim", t["claim"]) for t in (core.get("takes") or {}).get("takes", [])]
     return out
 
 
@@ -94,7 +97,7 @@ def check(core: dict) -> tuple[list[str], dict]:
         if not s["quotes"]:
             errs.append(f"section {s['n']}: no key quote")
         for i, p in enumerate(s["points"], 1):
-            if "c" not in p:
+            if "c" not in p and not p.get("absent"):
                 errs.append(f"section {s['n']}: key point {i} cites no passage: {p['t'][:60]!r}")
         if not s["topics"]:
             errs.append(f"section {s['n']}: no topic")
@@ -142,6 +145,14 @@ def check(core: dict) -> tuple[list[str], dict]:
     def dated(where: str, d: str) -> None:
         if not DATE_RE.match(d or "") or d > core["meta"]["as_of"]:
             errs.append(f"{where}: date {d!r} is malformed or after the data date {core['meta']['as_of']}")
+
+    nxt = core["overview"].get("next")
+    if nxt and (not DATE_RE.match(nxt.get("date", "")) or not http(nxt.get("source", {}).get("url"))):
+        errs.append("overview next: needs a YYYY-MM-DD date and a source link")
+    for t in (core.get("takes") or {}).get("takes", []):
+        dated(f"take {t['id']}", t["date"])
+        if not http(t["url"]):
+            errs.append(f"take {t['id']}: source needs a link")
 
     seen: set[str] = set()
     for e in core["timeline"]:

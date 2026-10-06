@@ -9,13 +9,6 @@
     }
    },
    {
-    "text": "As reported September 30, no vote was expected before the November 3, 2026 midterm elections. Lee said he expected passage in the subsequent lame-duck session.",
-    "source": {
-     "label": "Associated Press",
-     "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects"
-    }
-   },
-   {
     "text": "The White House said the bill would “deliver transformative policies to lower Americans’ energy and housing costs”.",
     "source": {
      "label": "Associated Press",
@@ -37,6 +30,14 @@
     }
    }
   ]
+ },
+ "next": {
+  "date": "2026-11-09",
+  "text": "Senate cloture vote, about 5:30 p.m., on taking up H.R. 2347, the legislative vehicle for the bill. It is the Senate's first vote after the November 3 election.",
+  "source": {
+   "label": "U.S. Senate Press Gallery",
+   "url": "https://www.dailypress.senate.gov/thursday-october-1-2026/"
+  }
  },
  "headlines": [
   {
@@ -78,7 +79,7 @@
   {
    "id": "transmission",
    "title": "Transmission siting",
-   "text": "FERC permits interstate lines of 230 kilovolts and up when a state has not decided within a year, and planning regions must plan lines with their neighbors.",
+   "text": "FERC can permit interstate lines of 230 kilovolts and up that states have not approved, after making required findings, and planning regions must plan lines with their neighbors.",
    "sections": [
     "2101",
     "2103"
@@ -124,7 +125,7 @@
   {
    "id": "digital",
    "title": "Digital permitting",
-   "text": "Requires a tracker for reviews subject to NEPA’s EIS requirement and targets December 1, 2028 for an interagency ePermit system, to the maximum extent practicable.",
+   "text": "Requires a public tracker of defined transparency projects, and targets December 1, 2028 for an interagency ePermit system, to the maximum extent practicable.",
    "sections": [
     "1121",
     "1132"

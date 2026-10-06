@@ -1,33 +1,33 @@
 {
  "inference": {
   "cached_only": true,
-  "checked": "2026-10-01",
-  "flagged": 12,
-  "input_sha256": "1c52d93587a5ea1c3475c72dfa8d28bb5fcd0c85bc16e200800c5e33098b8272",
-  "model": "sonnet",
-  "supported": 401,
-  "total": 540,
-  "unchecked": 127
+  "checked": "2026-10-06",
+  "flagged": 0,
+  "input_sha256": "a64a604d95e0b7b4a95876f8e139e29e3b46b3e6763f8d36779befa87d3402c4",
+  "model": "claude-sonnet-5",
+  "supported": 794,
+  "total": 812,
+  "unchecked": 18
  },
  "links": {
-  "blocked": 12,
-  "browser": 11,
-  "checked": "2026-10-02",
+  "blocked": 14,
+  "browser": 13,
+  "checked": "2026-10-06",
   "dead": 0,
   "error": 0,
-  "ok": 331,
-  "total": 343
+  "ok": 365,
+  "total": 379
  },
  "quotes": {
   "bill_total": 173,
   "bill_verified": 173,
-  "browser": 19,
-  "checked": "2026-10-04",
+  "browser": 29,
+  "checked": "2026-10-06",
   "missing": 0,
   "near": 0,
-  "total": 290,
+  "total": 387,
   "unreachable": 0,
   "unverifiable": 0,
-  "verified": 271
+  "verified": 358
  }
 }

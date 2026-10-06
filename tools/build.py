@@ -4,6 +4,8 @@ Reads the source-of-truth files under data/ and writes (site/bill.pdf, the
 same-origin copy that makes #page=N links work, is committed as is):
   site/data/core.js   window.PR_DATA  (summaries, comparison, timeline, people, media)
   site/data/bill.js   window.PR_BILL  (full bill text as paragraphs with page and line cites)
+  site/data/takes.js  window.PR_TAKES (outside readings; section pages load it on demand)
+  site/data/news.js   window.PR_NEWS  (timeline, people, media; the News pages load it on demand)
   site/llms.txt       compact agent index
   site/llms-full.txt  full text and analysis
   site/sections/*.md  cited analysis and statutory text, one section per file
@@ -34,7 +36,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-10-02"
+DATA_AS_OF = "2026-10-05"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -54,8 +56,67 @@ def dump_js(var: str, value) -> str:
     return f"window.{var}={body};\n"
 
 
+NEWS_KEYS = ("timeline", "people", "media")
+
+
+def browser_core(core: dict) -> dict:
+    """What core.js carries on every page. The outside readings (takes.js) and
+    the timeline, people and media (news.js) load on demand; the Overview gets
+    its short lists from "recent"."""
+    out = {k: v for k, v in core.items() if k != "takes" and k not in NEWS_KEYS}
+    media = sorted(core["media"], key=lambda it: it["date"], reverse=True)[:6]
+    marks = sorted((e for e in core["timeline"] if e.get("milestone")), key=lambda e: e["date"], reverse=True)[:6]
+    out["recent"] = {
+        "media": [{k: it[k] for k in ("url", "title", "outlet", "date")} for it in media],
+        "milestones": [{k: e[k] for k in ("id", "date", "title")} for e in marks],
+        "counts": {k: len(core[k]) for k in NEWS_KEYS},
+    }
+    return out
+
+
+def browser_news(core: dict) -> dict:
+    return {k: core[k] for k in NEWS_KEYS}
+
+
 def cite(loc: dict) -> list:
     return [loc["p1"], loc["l1"], loc["p2"], loc["l2"]]
+
+
+ROW_CITES = DATA / "bill/row_cites.json"
+
+
+def row_claims(overview: dict, compare: dict, communities: dict | None, datacenters: dict | None) -> list[dict]:
+    """Every sentence outside the section pages that says what the bill does,
+    with the sections it rests on. Each must carry a passage from one of
+    those sections (data/bill/row_cites.json, written by infer_check.py).
+
+    Returns [{id, t (the sentence), sections, context, holder, key}]: holder[key]
+    is the dict the page reads, and the build sets holder["ts"] to the
+    sentences with their cites."""
+    out: list[dict] = []
+
+    def add(prefix: str, holder: dict, key: str, sections: list[str], context: str) -> None:
+        if not sections or not holder.get(key):
+            return
+        sents = [s for para in billtext.sentence_paragraphs(holder[key]) for s in para]
+        for i, s in enumerate(sents, 1):
+            out.append({"id": f"{prefix}.s{i}", "t": s, "sections": sections, "context": context, "holder": holder, "key": key})
+
+    for h in overview["headlines"]:
+        add(f"hl.{h['id']}", h, "text", h["sections"], h["title"])
+    for g in compare["groups"]:
+        for r in g["rows"]:
+            add(f"cmp.{r['id']}.senate", r["senate"], "text", r["senate"].get("sections", []), r["topic"])
+    if compare.get("bills"):
+        for r in compare["bills"]["rows"]:
+            cell = r.get("senate") or {}
+            add(f"dcb.{r['id']}", cell, "text", cell.get("sections", []), r["topic"])
+    for i, a in enumerate(compare.get("added", []), 1):
+        add(f"add.{i}", a, "text", a["sections"], "New in this bill")
+    for prefix, doc in (("com", communities), ("dc", datacenters)):
+        for r in (doc or {}).get("rows", []):
+            add(f"{prefix}.{r['id']}", r, "baaja", r["sections"], r["topic"])
+    return out
 
 
 PRIOR_FILES = {"speed": ("speed_act_hr4776_eh.json", 0), "epra": ("epra_2024_s4753_rs.json", 1)}
@@ -77,7 +138,11 @@ def cite_url(key: str, cite_text: str, prior: dict) -> str | None:
 
 
 def build() -> tuple[dict, dict, list[str]]:
+    """Returns (core, paras, errors). Claims that still lack a bill passage are
+    listed in core["checks"]["cites"]["gaps"]; main() fails on them, but
+    infer_check.py, which fills them, can still run."""
     errors: list[str] = []
+    gaps: list[str] = []
     bill = billtext.load_sections()
     pdf = SITE / PDF_NAME
     if not pdf.exists() or hashlib.sha256(pdf.read_bytes()).hexdigest() != bill["meta"].get("pdf_sha256"):
@@ -89,6 +154,19 @@ def build() -> tuple[dict, dict, list[str]]:
     by_num = {s["number"]: s for s in bill["sections"]}
     cites_path = DATA / "bill/point_cites.json"
     point_cites = load(cites_path) if cites_path.exists() else {}
+    # A claim the semantic check did not support shows no cite and blocks the
+    # build, whatever passage is stored for it. "unanswered" means the model
+    # gave no verdict, so the claim counts as unchecked, not flagged. A supported claim whose evidence
+    # span was not word for word needs a passage like any other claim.
+    inf_path = DATA / "checks/inference.json"
+    flagged = {(r["id"], r["claim"]) for r in (load(inf_path)["results"] if inf_path.exists() else [])
+               if r["verdict"] not in ("supported", "unanswered")}
+    flagged_sec = {(cid.split(".")[0], claim) for cid, claim in flagged if re.match(r"^\d{4}\.[ks]\d+$", cid)}
+    # A claim that the text is silent has no passage; it is covered once the
+    # review supports it with no evidence span.
+    absent = {(r["id"], r["claim"]) for r in (load(inf_path)["results"] if inf_path.exists() else [])
+              if r["verdict"] == "supported" and not r["evidence"] and r["evidence_in_text"] and billtext.is_absence(r["claim"])}
+    absent_sec = {(cid.split(".")[0], claim) for cid, claim in absent if re.match(r"^\d{4}\.[ks]\d+$", cid)}
     prior = {}
     for key, (fname, idx) in PRIOR_FILES.items():
         doc = load(DATA / "prior_bills" / fname)
@@ -115,17 +193,25 @@ def build() -> tuple[dict, dict, list[str]]:
             if loc["count"] != 1:
                 errors.append(f"section {n}: ambiguous quote; include more context")
             quotes.append({"t": billtext.norm(q["text"]), "why": q.get("why", ""), "c": cite(loc)})
-        points = []
-        for i, text in enumerate(a.get("key_points", []), 1):
-            point = {"t": text}
+        def cited(text: str, what: str) -> dict:
+            item = {"t": text}
+            if (n, text) in flagged_sec:
+                gaps.append(f"section {n}: the semantic check flagged {what}: {text[:70]!r}")
+                return item
             span = point_cites.get(n, {}).get(text)
-            if span:
-                loc = billtext.locate(s["lines"], span)
-                if loc:
-                    point["c"] = cite(loc)
-                else:
-                    errors.append(f"section {n}: the passage cited for key point {i} is not in the section text: {span[:60]!r}")
-            points.append(point)
+            loc = billtext.locate(s["lines"], span) if span else None
+            if loc:
+                item["c"] = cite(loc)
+            elif span:
+                errors.append(f"section {n}: the passage cited for {what} is not in the section text: {span[:60]!r}")
+            elif (n, text) in absent_sec:
+                item["absent"] = True
+            else:
+                gaps.append(f"section {n}: no bill passage for {what}: {text[:70]!r}")
+            return item
+
+        points = [cited(text, f"key point {i}") for i, text in enumerate(a.get("key_points", []), 1)]
+        summary = [[cited(t, "summary sentence") for t in para] for para in billtext.sentence_paragraphs(a.get("plain", ""))]
         for t in a.get("topics", []):
             if t not in topics:
                 errors.append(f"section {n}: unknown topic {t!r}")
@@ -140,6 +226,7 @@ def build() -> tuple[dict, dict, list[str]]:
             "imp": a.get("importance", 1),
             "topics": a.get("topics", []),
             "plain": a.get("plain", ""),
+            "ps": summary,
             "points": points,
             "quotes": quotes,
             "vs": {"current": a.get("vs_current_law", ""), "speed": a.get("vs_speed_act", ""), "epra": a.get("vs_epra_2024", "")},
@@ -230,6 +317,71 @@ def build() -> tuple[dict, dict, list[str]]:
                 else:
                     r["c"] = cite(loc)
 
+    # Every sentence outside the section pages that says what the bill does
+    # carries a passage from a section it cites.
+    row_cites = load(ROW_CITES) if ROW_CITES.exists() else {}
+    rows_cited = rows_absent = 0
+    claims = row_claims(overview, compare, communities, datacenters)
+    for rc in claims:
+        item = {"t": rc["t"]}
+        got = row_cites.get(rc["id"])
+        if (rc["id"], f"[{rc['context']}] {rc['t']}") in flagged:
+            gaps.append(f"{rc['id']}: the semantic check flagged {rc['t'][:70]!r}")
+        elif got and got.get("claim") == rc["t"]:
+            sec = by_num.get(got["section"])
+            loc = billtext.locate(sec["lines"], got["text"]) if sec and got["section"] in rc["sections"] else None
+            if loc:
+                item["c"] = cite(loc)
+                item["n"] = got["section"]
+                rows_cited += 1
+            else:
+                errors.append(f"{rc['id']}: the passage cited is not in section {got['section']} or that section is not cited by the row: {got['text'][:60]!r}")
+        elif (rc["id"], f"[{rc['context']}] {rc['t']}") in absent:
+            item["absent"] = True
+            rows_absent += 1
+        else:
+            gaps.append(f"{rc['id']}: no bill passage for {rc['t'][:70]!r}")
+        rc["holder"].setdefault("ts", []).append(item)
+
+    # Takes: outside readings of what a provision would do, each tied to the
+    # bill passage it argues over.
+    takes_path = DATA / "takes.json"
+    takes = load(takes_path) if takes_path.exists() else {"sides": {}, "stances": {}, "takes": []}
+    seen_ids: set[str] = set()
+    for t in takes["takes"]:
+        where = f"take {t.get('id')}"
+        if t["id"] in seen_ids:
+            errors.append(f"{where}: duplicate id")
+        seen_ids.add(t["id"])
+        if t["side"] not in takes["sides"]:
+            errors.append(f"{where}: unknown side {t['side']!r}")
+        if t["stance"] not in takes["stances"]:
+            errors.append(f"{where}: unknown stance {t['stance']!r}")
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", t.get("date", "")):
+            errors.append(f"{where}: date must be YYYY-MM-DD")
+        for field in ("who", "url", "claim", "quote"):
+            if not t.get(field, "").strip():
+                errors.append(f"{where}: empty {field}")
+        if not t["sections"]:
+            errors.append(f"{where}: names no section")
+        check_refs(where, t["sections"])
+        p = t.get("passage")
+        if p:
+            sec = by_num.get(p["section"])
+            loc = billtext.locate(sec["lines"], p["text"]) if sec else None
+            if p["section"] not in t["sections"]:
+                errors.append(f"{where}: passage is from section {p['section']}, which the take does not name")
+            elif not loc:
+                errors.append(f"{where}: passage not found in section {p['section']}: {p['text'][:60]!r}")
+            elif loc["count"] != 1:
+                errors.append(f"{where}: passage matches more than once in section {p['section']}; include more context")
+            else:
+                p["c"] = cite(loc)
+    for sec in sections:
+        n_takes = sum(1 for t in takes["takes"] if sec["n"] in t["sections"])
+        if n_takes:
+            sec["takes"] = n_takes
+
     extra = {}
     for name, key in OPTIONAL.items():
         path = DATA / f"{name}.json"
@@ -251,7 +403,7 @@ def build() -> tuple[dict, dict, list[str]]:
             row["lk"] = cls
         row.pop("verified", None)
 
-    for it in extra["media"]:
+    for it in extra["media"] + takes["takes"]:
         stamp(it)
     for rec in extra["timeline"] + extra["people"]:
         for src in rec.get("sources", []):
@@ -259,6 +411,13 @@ def build() -> tuple[dict, dict, list[str]]:
 
     all_points = [p for sec in sections for p in sec["points"]]
     checks["points"] = {"total": len(all_points), "cited": sum(1 for p in all_points if "c" in p)}
+    checks["takes"] = {"total": len(takes["takes"]), "sections": len({n for t in takes["takes"] for n in t["sections"]})}
+    all_sents = [t for sec in sections for para in sec["ps"] for t in para]
+    checks["cites"] = {
+        "summary": {"total": len(all_sents), "cited": sum(1 for t in all_sents if "c" in t), "absent": sum(1 for t in all_sents if t.get("absent"))},
+        "rows": {"total": len(claims), "cited": rows_cited, "absent": rows_absent},
+        "gaps": gaps,
+    }
 
     meta = dict(bill["meta"])
     meta.update({
@@ -279,6 +438,7 @@ def build() -> tuple[dict, dict, list[str]]:
         "compare": compare,
         "communities": communities,
         "datacenters": datacenters,
+        "takes": takes,
         "timeline": extra["timeline"],
         "people": extra["people"],
         "media": extra["media"],
@@ -306,8 +466,10 @@ def llms_txt(core: dict) -> str:
         f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
         f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
         f"- [Bill paragraph JSON]({m['site_url']}data/bill.json): section number to [printed page, line, indent level, text] arrays.",
-        "- Fetch sections/{number}.md for one section. Each file includes its summary, cited key points, quotes, comparison notes and full statutory text.",
-        "- Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.",
+        f"- [Timeline, people and media JSON]({m['site_url']}data/news.json): dated events, positions and coverage, each with its sources.",
+        f"- [Outside readings JSON]({m['site_url']}data/takes.json): what named industry groups, advocates, lawyers and analysts say sections would do, each with its verbatim quote, source link and the bill passage it concerns.",
+        "- Fetch sections/{number}.md for one section. Each file includes its summary with a page-and-line cite after every sentence, cited key points, quotes, outside readings of what the section would do (quoted from their sources), comparison notes and full statutory text.",
+        "- Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}; cited range: #/bill/sec/{number}/{page}-{line}-{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.",
         "",
         "## Check coverage",
         "",
@@ -351,9 +513,21 @@ def section_markdown(core: dict, paras: dict, sec: dict) -> str:
 
     out = [f"# Sec. {sec['n']}. {sec['h']}", "", "BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.",
            "", review_coverage(core), "", f"[Official PDF]({core['meta']['source_pdf']}) · [Browser section]({base}#/bill/sec/{sec['n']})",
-           "", "## Summary", "", sec["plain"], "", "## Key points", ""]
+           "", "## Summary", ""]
+    for para in sec["ps"]:
+        out += [" ".join(t["t"] + (f" ({citation(t['c'])})" if t.get("c") else " (the text is silent on this; confirmed by the summary review)" if t.get("absent") else "") for t in para), ""]
+    out += ["## Key points", ""]
     for point in sec["points"]:
-        out.append(f"- {point['t']} ({citation(point['c'])})")
+        cite_md = citation(point["c"]) if point.get("c") else "the text is silent on this; confirmed by the summary review"
+        out.append(f"- {point['t']} ({cite_md})")
+    takes = [t for t in core["takes"]["takes"] if sec["n"] in t["sections"]]
+    if takes:
+        out += ["", "## What others say it would do", "",
+                "Outside readings, quoted from their sources. These are claims about effects, not findings of this tracker.", ""]
+        for t in takes:
+            on = f" On the bill text at {citation(t['passage']['c'])}." if t.get("passage", {}).get("c") else ""
+            out += [f"- **{t['who']}** ({core['takes']['sides'][t['side']]}; {core['takes']['stances'][t['stance']].lower()}): {t['claim']}",
+                    f"  > {t['quote']}", f"  [{t['outlet']}, {t['date']}]({t['url']}).{on}"]
     out += ["", "## Selected statutory quotes", ""]
     for q in sec["quotes"]:
         out += [f"> {q['t']}", "", citation(q["c"]), "", q.get("why", ""), ""]
@@ -368,6 +542,15 @@ def section_markdown(core: dict, paras: dict, sec: dict) -> str:
     return "\n".join(out) + "\n"
 
 
+def md_cited(core: dict, holder: dict, field: str = "text") -> str:
+    """A row's text with each sentence followed by its bill cite, for the agent exports."""
+    if not holder.get("ts"):
+        return holder[field]
+    base = core["meta"]["site_url"]
+    return " ".join(t["t"] + (f" (Sec. {t['n']}, {pdf_citation(base, t['c'])})" if t.get("c")
+                              else " (the text is silent on this; confirmed by the summary review)" if t.get("absent") else "") for t in holder["ts"])
+
+
 def llms_full(core: dict, paras: dict) -> str:
     out = [llms_txt(core)]
     out += [section_markdown(core, paras, sec) for sec in core["sections"]]
@@ -379,7 +562,7 @@ def llms_full(core: dict, paras: dict) -> str:
                 if key not in row:
                     continue
                 cell = row[key]
-                out.append(f"- {key}: {cell['text']}")
+                out.append(f"- {key}: {md_cited(core, cell)}")
                 if cell.get("url"):
                     out.append(f"  Source: [{cell.get('cite', 'Source')}]({cell['url']})")
                 for source in cell.get("sources", []):
@@ -396,7 +579,7 @@ def llms_full(core: dict, paras: dict) -> str:
                 cell = row.get(v["key"])
                 if not cell:
                     continue
-                out.append(f"- {v['label']}: {cell['text']}")
+                out.append(f"- {v['label']}: {md_cited(core, cell)}")
                 if cell.get("url"):
                     out.append(f"  Source: [{cell.get('cite', 'Source')}]({cell['url']})")
                 if cell.get("quote"):
@@ -412,7 +595,7 @@ def llms_full(core: dict, paras: dict) -> str:
             who = ", ".join(comm["who"].get(w, w) for w in row["who"])
             out += [f"### {row['topic']}", "", f"- Effect: {row['effect']}; affects: {who}",
                     f"- Now: {row['now']}" + (f" Source: [{row['now_cite']}]({row['now_url']})" if row.get("now_url") else ""),
-                    f"- BAAJA: {row['baaja']}",
+                    f"- BAAJA: {md_cited(core, row, 'baaja')}",
                     "- Bill: " + ", ".join(f"[{n}]({core['meta']['site_url']}sections/{n}.md)" for n in row.get("sections", []))]
             if row.get("quote"):
                 where = f" (Sec. {row['quote_section']})" if row.get("quote_section") else ""
@@ -426,7 +609,7 @@ def llms_full(core: dict, paras: dict) -> str:
             who = ", ".join(dc["who"].get(w, w) for w in row["who"])
             out += [f"### {row['topic']}", "", f"- Effect: {row['effect']}; affects: {who}",
                     f"- Now: {row['now']}" + (f" Source: [{row['now_cite']}]({row['now_url']})" if row.get("now_url") else ""),
-                    f"- BAAJA: {row['baaja']}",
+                    f"- BAAJA: {md_cited(core, row, 'baaja')}",
                     "- Bill: " + ", ".join(f"[{n}]({core['meta']['site_url']}sections/{n}.md)" for n in row.get("sections", []))]
             if row.get("quote"):
                 where = f" (Sec. {row['quote_section']})" if row.get("quote_section") else ""
@@ -467,13 +650,22 @@ def main() -> int:
             print(f"build: {e}", file=sys.stderr)
         print(f"build: {len(errors)} error(s); nothing written", file=sys.stderr)
         return 1
+    gaps = core["checks"]["cites"]["gaps"]
+    if gaps:
+        for g in gaps[:40]:
+            print(f"build: {g}", file=sys.stderr)
+        print(f"build: {len(gaps)} claim(s) about the bill carry no bill passage; run tools/infer_check.py, "
+              "then fix or reword any claim it flags. Nothing written.", file=sys.stderr)
+        return 1
     (SITE / "data").mkdir(parents=True, exist_ok=True)
-    (SITE / "data/core.js").write_text(dump_js("PR_DATA", core), encoding="utf-8")
+    (SITE / "data/core.js").write_text(dump_js("PR_DATA", browser_core(core)), encoding="utf-8")
     (SITE / "data/bill.js").write_text(dump_js("PR_BILL", paras), encoding="utf-8")
+    (SITE / "data/takes.js").write_text(dump_js("PR_TAKES", core["takes"]), encoding="utf-8")
+    (SITE / "data/news.js").write_text(dump_js("PR_NEWS", browser_news(core)), encoding="utf-8")
     (SITE / "llms.txt").write_text(llms_txt(core), encoding="utf-8")
     (SITE / "llms-full.txt").write_text(llms_full(core, paras), encoding="utf-8")
     (SITE / "reading.html").write_text(reading_html(core), encoding="utf-8")
-    for name, data in (("core", core), ("bill", paras)):
+    for name, data in (("core", browser_core(core)), ("bill", paras), ("takes", core["takes"]), ("news", browser_news(core))):
         (SITE / f"data/{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     (SITE / "sections").mkdir(exist_ok=True)
     for sec in core["sections"]:
@@ -489,7 +681,7 @@ def main() -> int:
         f"{sum(len(g['rows']) for g in core['compare']['groups'])} comparison rows, "
         f"{len(core['timeline'])} events, {len(core['people'])} people, {len(core['media'])} media items -> site/data/"
     )
-    for name in ("core.js", "bill.js"):
+    for name in ("core.js", "bill.js", "takes.js", "news.js"):
         print(f"build:   site/data/{name} {(SITE / 'data' / name).stat().st_size / 1024:.0f} KB")
     return 0
 

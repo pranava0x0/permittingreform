@@ -14,6 +14,9 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       for (const theme of ['light', 'dark']) {
         await page.goto(base);
         await page.evaluate(t => {sessionStorage.setItem('pr-theme',t);document.documentElement.dataset.theme=t;},theme);
+        // Timeline, people and media load with the News pages; load them once so counts can be read.
+        await page.goto(base+'#/timeline');
+        await page.waitForFunction(() => Boolean(window.PR_DATA.timeline));
         const n = await page.evaluate(() => ({
           compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0) + (window.PR_DATA.compare.bills ? window.PR_DATA.compare.bills.rows.length : 0),
           media: Math.min(12,window.PR_DATA.media.length), timeline: Math.min(12,window.PR_DATA.timeline.length),
@@ -248,9 +251,9 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await route.continue();
     });
     await race.goto(base+'#/bill/search/page%2054', {waitUntil:'domcontentloaded'});
-    await race.locator('[data-tab="media"]').click();
+    await race.locator('[data-tab="news"]').click();
     await race.waitForFunction(() => Boolean(window.PR_BILL));
-    assert.ok(race.url().endsWith('#/media'), 'late search must not redirect away from the selected tab');
+    assert.ok(race.url().endsWith('#/timeline'), 'late search must not redirect away from the selected tab');
     await race.close();
     assert.deepEqual(errors,[]);
     fs.mkdirSync('.test-artifacts',{recursive:true});

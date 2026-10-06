@@ -63,7 +63,7 @@
    "now": "Interconnection studies are frequently delayed by months while transmission providers wait for neighboring utilities or bulk-power system users to furnish network models and engineering data.",
    "now_cite": "FERC Order No. 2023, 88 FR 61014 (2023)",
    "now_url": "https://www.federalregister.gov/documents/2023/09/06/2023-16597/improvements-to-generator-interconnection-procedures-and-agreements",
-   "baaja": "Adds Federal Power Act section 232. Bulk-power system users, owners, and operators must provide requested grid data within 15 days (unless FERC sets an alternative timeline for a data category) in an agreed usable format. Confidentiality rules cannot be used to withhold data; violations by public utilities are subject to FPA section 316A reliability enforcement penalties, with other entities subject to FERC compliance orders.",
+   "baaja": "Adds Federal Power Act section 232. Bulk-power system users, owners, and operators must provide requested grid data within 15 days (unless FERC sets an alternative timeline for a data category) in a format the requester can use or convert. Confidentiality rules cannot be used to withhold data; violations by public utilities are subject to FPA section 316A reliability enforcement penalties, with other entities subject to FERC compliance orders.",
    "sections": [
     "2111"
    ],
@@ -101,7 +101,7 @@
    "now": "Grid operators currently lack standardized large-load study processes and cost-reduction options, prompting FERC in June 2026 to direct RTOs to develop standardized study rules and flexible service.",
    "now_cite": "RMI on FERC's June 2026 orders",
    "now_url": "https://rmi.org/resources/understanding-fercs-large-load-orders/",
-   "baaja": "Requires FERC to establish rules for standardized analysis to identify upgrades for computational load sites and cost-reduction options, such as flexible interconnection and non-firm curtailment parameters, to avoid unneeded network buildout.",
+   "baaja": "Requires FERC rules for a standardized analysis to identify upgrades for computational load sites and cost-reduction options.",
    "sections": [
     "2107"
    ],

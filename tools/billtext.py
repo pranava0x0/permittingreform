@@ -25,6 +25,49 @@ def load_sections() -> dict:
     return json.loads(SECTIONS.read_text(encoding="utf-8"))
 
 
+ABBREV = ("No.", "U.S.C.", "U.S.", "D.C.", "Sec.", "Secs.", "v.", "Cir.", "Inc.", "e.g.", "i.e.")
+# A claim that the text is silent ("No export provisions.", "The text does not
+# say what notice...") has no passage to cite. It counts as checked only when
+# the summary review supports it with no evidence span, and only in these
+# shapes: a short "No ..." fragment, or wording that says the text itself is
+# silent. A substantive rule ("This permit does not expire", "No suit may rest
+# on ...") still needs evidence.
+_PREFIX = r"^(?:\[[^\]]*\]\s*)?(?:On the subject of [^:]*:\s*)?"
+ABSENCE_RE = re.compile(
+    _PREFIX + r"(?:No|None|Not)\b(?:\s+\S+){0,5}\s*\.?$"
+    r"|\bThe text (?:does not|adds no|sets no|is silent)\b"
+    r"|\b(?:does|do) not (?:name|mention|say)\b"
+    r"|\bno express\b|\bwould no longer appear\b|\bunchanged\b|\bnot addressed\b|\bno change\b", re.I)
+
+
+def is_absence(claim: str) -> bool:
+    return bool(ABSENCE_RE.search(claim.strip().rstrip(";")))
+
+
+def _split(text: str) -> list[str]:
+    parts = re.split(r"(?<=[.;])\s+(?=[A-Z0-9“'(])", text)
+    merged: list[str] = []
+    for part in parts:
+        if merged and merged[-1].endswith(ABBREV):
+            merged[-1] += " " + part
+        else:
+            merged.append(part)
+    return [p.strip() for p in merged if p.strip()]
+
+
+def sentence_paragraphs(text: str) -> list[list[str]]:
+    """A summary as paragraphs of sentences, every word kept. The page renders
+    this, and every sentence, however short, must carry a bill cite: "10 years."
+    in a comparison cell says what the bill does as surely as a paragraph does."""
+    return [_split(p) for p in text.split("\n\n") if p.strip()]
+
+
+def sentences(text: str) -> list[str]:
+    """The checkable claims in a summary: its sentences, an abbreviation not
+    ending one."""
+    return [s for para in sentence_paragraphs(text) for s in para]
+
+
 def flat_index(lines: list[list]) -> tuple[str, list[int]]:
     """Join printed lines with single spaces; return the string and each line's start offset."""
     parts: list[str] = []
@@ -141,7 +184,7 @@ def paragraphs(lines: list[list]) -> list[list]:
 
 def review_fingerprint() -> str:
     """Bind summary-check coverage to its complete set of input documents."""
-    paths = ["bill/sections.json", "bill/analysis.json", "compare.json",
+    paths = ["bill/sections.json", "bill/analysis.json", "compare.json", "overview.json", "communities.json", "datacenters.json",
              "prior_bills/speed_act_hr4776_eh.json", "prior_bills/epra_2024_s4753_rs.json"]
     h = hashlib.sha256()
     for name in paths:

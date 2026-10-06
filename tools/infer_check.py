@@ -37,6 +37,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from pathlib import Path
 
@@ -66,19 +67,8 @@ SYSTEM = (
 )
 
 
-ABBREV = ("No.", "U.S.C.", "Sec.", "Secs.", "v.", "Cir.", "Inc.", "Act.", "e.g.", "i.e.")
-
-
 def sentences(text: str) -> list[str]:
-    """Split a summary into sentence-sized claims; an abbreviation does not end a sentence."""
-    parts = re.split(r"(?<=[.;])\s+(?=[A-Z0-9“'(])", text.replace("\n\n", " "))
-    merged: list[str] = []
-    for part in parts:
-        if merged and merged[-1].endswith(ABBREV):
-            merged[-1] += " " + part
-        else:
-            merged.append(part)
-    return [p.strip() for p in merged if len(p.split()) >= 4]
+    return billtext.sentences(text)
 
 
 def section_units(core: dict, bill: dict, only: set[str] | None) -> list[dict]:
@@ -96,19 +86,6 @@ def section_units(core: dict, bill: dict, only: set[str] | None) -> list[dict]:
 def compare_units(core: dict, bill: dict) -> list[dict]:
     by_num = {s["number"]: s for s in bill["sections"]}
     units = []
-    # One source for all the Senate cells: the sections they cite, each included once.
-    cited: list[str] = []
-    claims = []
-    for g in core["compare"]["groups"]:
-        for r in g["rows"]:
-            nums = r["senate"].get("sections", [])
-            if nums:
-                cited += [n for n in nums if n not in cited]
-                claims.append((f"cmp.{r['id']}.senate", f"On the subject of '{r['topic']}', in section(s) {', '.join(nums)}: {r['senate']['text']}"))
-    if claims:
-        text = "\n\n".join(f"[SEC. {n}. {by_num[n]['heading']}]\n{by_num[n]['text']}" for n in sorted(cited))
-        units.append({"key": "compare senate", "label": "Bipartisan American Affordability and Jobs Act of 2026 (sections cited in the comparison)",
-                      "text": text, "claims": claims})
     for key, fname, name in (("speed", "speed_act_hr4776_eh.json", "SPEED Act (H.R. 4776) as passed by the House"),
                              ("epra", "epra_2024_s4753_rs.json", "Energy Permitting Reform Act of 2024 (S. 4753) as reported")):
         prior = json.loads((ROOT / "data/prior_bills" / fname).read_text(encoding="utf-8"))
@@ -124,35 +101,98 @@ def compare_units(core: dict, bill: dict) -> list[dict]:
     return units
 
 
+def row_units(core: dict, bill: dict) -> list[dict]:
+    """Headlines, the comparison's BAAJA cells, and the Communities and Data
+    centers rows: each sentence against the text of the sections its row cites."""
+    by_num = {s["number"]: s for s in bill["sections"]}
+    groups: dict[tuple, list] = {}
+    for rc in build.row_claims(core["overview"], core["compare"], core["communities"], core["datacenters"]):
+        groups.setdefault(tuple(sorted(set(rc["sections"]))), []).append((rc["id"], f"[{rc['context']}] {rc['t']}"))
+    units = []
+    for nums, claims in sorted(groups.items()):
+        text = "\n\n".join(f"[SEC. {n}. {by_num[n]['heading']}]\n{by_num[n]['text']}" for n in nums)
+        units.append({"key": "rows " + ",".join(nums), "label": f"Bipartisan American Affordability and Jobs Act of 2026, section(s) {', '.join(nums)}",
+                      "text": text, "claims": claims})
+    return units
+
+
 def evidence_is_present(cid: str, claim: str, evidence: str, source: str) -> bool:
-    """Require a bounded source span; only explicit comparison absences may be empty."""
+    """Require a bounded source span; only a claim that the text is silent may have none."""
     if not evidence:
-        return cid.startswith("cmp.") and claim.endswith(("Not addressed.", "No change."))
+        return billtext.is_absence(claim)
     return billtext.locate([[1, 1, source]], evidence) is not None
 
 
-def write_point_cites(results: list[dict], bill: dict) -> int:
+def usable_span(evidence: str, lines: list) -> str | None:
+    """The model's evidence if it is in the text word for word; otherwise the
+    longest piece of it, split at an ellipsis or a quotation break, that is
+    (five words or more). The model sometimes joins two passages with "..."
+    despite the instruction not to; each piece is still the bill's own words."""
+    if not evidence:
+        return None
+    if billtext.locate(lines, evidence):
+        return evidence
+    pieces = [p.strip(" .,;:“”\"") for p in re.split(r"\s*(?:\.\.\.|…|\[\.\.\.\])\s*", evidence)]
+    for piece in sorted(pieces, key=len, reverse=True):
+        if len(piece.split()) >= 5 and billtext.locate(lines, piece):
+            return piece
+    return None
+
+
+def write_point_cites(results: list[dict], bill: dict, current: dict[str, str]) -> int:
     """Keep, for each key point, the passage that backs it: {section: {point text: passage}}.
 
     A passage from the model is stored only if it is in the section text, word
     for word. Entries added by hand are kept; an entry is replaced only when
-    its passage no longer matches the text.
+    its passage no longer matches the text, and dropped when its claim is no
+    longer on the site (current maps claim id to claim text).
     """
     by_num = {s["number"]: s for s in bill["sections"]}
     cites = json.loads(POINT_CITES.read_text(encoding="utf-8")) if POINT_CITES.exists() else {}
+    live: dict[str, set] = {}
+    for cid, claim in current.items():
+        m = re.match(r"^(\d{4})\.[ks]\d+$", cid)
+        if m:
+            live.setdefault(m.group(1), set()).add(claim)
+    cites = {n: {t: v for t, v in entries.items() if t in live.get(n, set())} for n, entries in cites.items()}
+    cites = {n: e for n, e in cites.items() if e}
     for r in results:
-        m = re.match(r"^(\d{4})\.k\d+$", r["id"])
-        if not m or not r["evidence"] or not r["evidence_in_text"] or r["verdict"] != "supported":
+        m = re.match(r"^(\d{4})\.[ks]\d+$", r["id"])
+        if not m or r["verdict"] != "supported":
             continue
         n = m.group(1)
-        if not billtext.locate(by_num[n]["lines"], r["evidence"]):
+        span = usable_span(r["evidence"], by_num[n]["lines"])
+        if not span:
             continue
         have = cites.get(n, {}).get(r["claim"])
         if have and billtext.locate(by_num[n]["lines"], have):
             continue
-        cites.setdefault(n, {})[r["claim"]] = r["evidence"]
+        cites.setdefault(n, {})[r["claim"]] = span
     POINT_CITES.write_text(json.dumps(cites, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     return sum(len(v) for v in cites.values())
+
+
+def write_row_cites(results: list[dict], core: dict, bill: dict) -> int:
+    """Keep, for each row sentence, the passage that backs it:
+    {claim id: {claim, section, text}}. Only a supported verdict whose passage
+    is word for word in one of the row's own sections is kept; a stale entry
+    (its sentence was edited or removed) is dropped."""
+    by_num = {s["number"]: s for s in bill["sections"]}
+    rows = {rc["id"]: rc for rc in build.row_claims(core["overview"], core["compare"], core["communities"], core["datacenters"])}
+    old = json.loads(build.ROW_CITES.read_text(encoding="utf-8")) if build.ROW_CITES.exists() else {}
+    cites = {k: v for k, v in old.items() if k in rows and rows[k]["t"] == v.get("claim")
+             and v.get("section") in rows[k]["sections"] and billtext.locate(by_num[v["section"]]["lines"], v.get("text", ""))}
+    for r in results:
+        rc = rows.get(r["id"])
+        if not rc or r["verdict"] != "supported" or r["id"] in cites:
+            continue
+        for n in rc["sections"]:
+            span = usable_span(r["evidence"], by_num[n]["lines"])
+            if span:
+                cites[r["id"]] = {"claim": rc["t"], "section": n, "text": span}
+                break
+    build.ROW_CITES.write_text(json.dumps(cites, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    return len(cites)
 
 
 def batches(units: list[dict]) -> list[list[dict]]:
@@ -183,6 +223,9 @@ def ask(prompt: str, model: str) -> dict:
     proc = subprocess.run(
         ["claude", "-p", "--model", model, "--output-format", "json", "--tools", "", "--no-session-persistence",
          "--strict-mcp-config", "--system-prompt", SYSTEM],
+        # Run outside the repository so the CLI does not load the project's
+        # instruction files into every request; the review needs only SYSTEM.
+        cwd=tempfile.gettempdir(),
         input=prompt, capture_output=True, text=True, timeout=900, check=False,
         env={k: v for k, v in os.environ.items() if not k.endswith("_API_KEY")})
     if proc.returncode != 0:
@@ -203,12 +246,13 @@ def ask(prompt: str, model: str) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    ap.add_argument("--scope", choices=("sections", "compare", "all"), default="all")
+    ap.add_argument("--scope", choices=("sections", "rows", "compare", "all"), default="all")
     ap.add_argument("--only", help="comma-separated section numbers (sections scope)")
     ap.add_argument("--model", default="sonnet")
     ap.add_argument("--dry-run", action="store_true", help="show the batches and stop; no model calls")
     ap.add_argument("--cached-only", action="store_true", help="reconcile saved verdicts with current claims, without calling a model")
     ap.add_argument("--refresh", action="store_true", help="ignore cached answers")
+    ap.add_argument("--all", action="store_true", help="re-ask every claim, not only those without a supported verdict for their current wording")
     args = ap.parse_args()
 
     core, _, errors = build.build()
@@ -220,12 +264,40 @@ def main() -> int:
     units: list[dict] = []
     if args.scope in ("sections", "all"):
         units += section_units(core, bill, only)
+    if args.scope in ("rows", "all") and not only:
+        units += row_units(core, bill)
     if args.scope in ("compare", "all") and not only:
         units += compare_units(core, bill)
-    total_claims = sum(len(u["claims"]) for u in units)
-    if not total_claims:
+    every = sum(len(u["claims"]) for u in units)
+    if not every:
         print("infer_check: no claims to examine", file=sys.stderr)
         return 2
+    # Ask only about claims with no usable supported verdict for their current
+    # wording. Re-sending the whole bill to re-confirm unchanged claims took
+    # about 25 batches and two hours; the saved verdicts carry over unchanged.
+    saved_doc = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
+    bill_sha = bill["meta"]["pdf_sha256"]
+    # Verdicts were given against one bill text. A new draft can change what an
+    # unchanged sentence means, so every claim is asked again.
+    new_text = saved_doc.get("bill_sha256", bill_sha) != bill_sha
+    if new_text:
+        print("infer_check: the bill text changed since the saved review; asking about every claim")
+    if not args.all and not args.cached_only and not new_text:
+        saved = {r["id"]: r for r in saved_doc.get("results", [])}
+
+        def settled(cid: str, claim: str, source: str) -> bool:
+            r = saved.get(cid)
+            if not r or r["claim"] != claim or r["verdict"] != "supported":
+                return False
+            ev = billtext.norm(r.get("evidence", ""))
+            return evidence_is_present(cid, claim, ev, billtext.norm(source)) or bool(usable_span(ev, [[1, 1, billtext.norm(source)]]))
+
+        units = [dict(u, claims=[(cid, c) for cid, c in u["claims"] if not settled(cid, c, u["text"])]) for u in units]
+        units = [u for u in units if u["claims"]]
+    total_claims = sum(len(u["claims"]) for u in units)
+    print(f"infer_check: {every - total_claims} of {every} claims already have a supported verdict for their current wording")
+    if not total_claims:
+        print("infer_check: nothing new to ask")
     plan = batches(units)
     print(f"infer_check: {total_claims} claims about {len(units)} sources in {len(plan)} batches")
     if args.dry_run:
@@ -271,14 +343,18 @@ def main() -> int:
             results.append({"id": cid, "claim": claim_of[cid], "verdict": verdict, "evidence": evidence,
                             "evidence_in_text": evidence_ok, "note": r.get("note", "")})
 
+    # Same rule as the build: a verdict other than supported is a flag. A
+    # supported claim whose evidence was not word for word needs a passage,
+    # which the build checks; "unanswered" is a claim still to ask.
     def flagged(r: dict) -> bool:
-        return r["verdict"] != "supported" or not r["evidence_in_text"]
+        return r["verdict"] not in ("supported", "unanswered")
 
     # A verdict stands only while the claim it judged is still the claim on the
     # site. Results for claims that were edited or removed are dropped, and
     # claims with no current verdict are reported as unchecked.
     current: dict[str, str] = {}
-    for u in section_units(core, bill, None) + compare_units(core, bill):
+    every_unit = section_units(core, bill, None) + row_units(core, bill) + compare_units(core, bill)
+    for u in every_unit:
         current.update(dict(u["claims"]))
     flags = [r for r in results if flagged(r)]
     checked = time.strftime("%Y-%m-%d", time.gmtime())
@@ -286,31 +362,51 @@ def main() -> int:
     prior = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {"results": []}
     merged = {r["id"]: r for r in prior.get("results", [])}
     merged.update({r["id"]: r for r in results})
+    # A verdict follows its claim when only the claim's position changed (a
+    # sentence split earlier in the same section renumbers the rest): same
+    # unit prefix, same text, so the same source and the same question.
+    by_text = {(k.rsplit(".", 1)[0], r["claim"]): r for k, r in merged.items()}
+    for cid, claim in current.items():
+        if cid not in merged or merged[cid]["claim"] != claim:
+            moved = by_text.get((cid.rsplit(".", 1)[0], claim))
+            if moved:
+                merged[cid] = dict(moved, id=cid)
     merged = {k: r for k, r in merged.items() if current.get(k) == r["claim"]}
     # Recheck saved evidence after parser/source edits. A changed claim gets no
     # inherited verdict; a missing span remains flagged.
-    all_text = {cid: u["text"] for u in section_units(core, bill, None) + compare_units(core, bill) for cid, _ in u["claims"]}
+    all_text = {cid: u["text"] for u in every_unit for cid, _ in u["claims"]}
     for cid, r in merged.items():
         ev = billtext.norm(r.get("evidence", ""))
         r["evidence_in_text"] = evidence_is_present(cid, r["claim"], ev, billtext.norm(all_text[cid]))
     all_results = [merged[k] for k in sorted(merged)]
+    # Only a live run over every scope may say the saved review is current:
+    # a reconcile asks nothing, and a partial run (--scope, --only) leaves
+    # out-of-scope verdicts as they were.
+    full_run = not args.cached_only and args.scope == "all" and not only
+    if full_run or not saved_doc:
+        stamp_sha, fingerprint = bill_sha, billtext.review_fingerprint()
+    else:
+        stamp_sha, fingerprint = saved_doc.get("bill_sha256", bill_sha), saved_doc.get("input_sha256")
     unchecked = sorted(set(current) - set(merged))
-    OUT.write_text(json.dumps({"checked": checked, "model": model_used, "results": all_results, "unchecked": unchecked, "input_sha256": billtext.review_fingerprint(), "cached_only": args.cached_only}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    OUT.write_text(json.dumps({"checked": checked, "model": model_used, "results": all_results, "unchecked": unchecked, "input_sha256": fingerprint, "bill_sha256": stamp_sha, "cached_only": args.cached_only}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     all_flags = [r for r in all_results if flagged(r)]
     check_links.merge_summary("inference", {
-        "checked": checked, "model": model_used, "total": len(current), "input_sha256": billtext.review_fingerprint(),
+        "checked": checked, "model": model_used, "total": len(current), "input_sha256": fingerprint,
         "cached_only": args.cached_only,
-        "supported": len(all_results) - len(all_flags), "flagged": len(all_flags), "unchecked": len(unchecked),
+        "supported": sum(1 for r in all_results if r["verdict"] == "supported"), "flagged": len(all_flags),
+        "unchecked": len(unchecked) + sum(1 for r in all_results if r["verdict"] == "unanswered"),
     })
-    written = write_point_cites(all_results, bill)
-    print(f"infer_check: wrote passages for {written} key points -> {POINT_CITES.relative_to(ROOT)}")
+    written = write_point_cites(all_results, bill, current)
+    print(f"infer_check: wrote passages for {written} key points and summary sentences -> {POINT_CITES.name}")
+    written = write_row_cites(all_results, core, bill)
+    print(f"infer_check: wrote passages for {written} row sentences -> {build.ROW_CITES.name}")
     if unchecked:
         print(f"infer_check: {len(unchecked)} current claims have no verdict yet (edited since the last run): {', '.join(unchecked[:12])}{' ...' if len(unchecked) > 12 else ''}")
     print(f"infer_check: {len(results) - len(flags)} of {len(results)} claims supported, {len(flags)} flagged" + (f" (${cost:.2f})" if cost else ""))
     for r in all_flags:
         ev = "" if r["evidence_in_text"] else "  [the model's evidence span is not in the text]"
         print(f"  {r['verdict'].upper():<11} {r['id']}: {r['claim'][:150]}\n      note: {r['note']}{ev}")
-    return 1 if (all_flags or unchecked) else 0
+    return 1 if (all_flags or unchecked or any(r["verdict"] == "unanswered" for r in all_results)) else 0
 
 
 if __name__ == "__main__":

@@ -59,7 +59,8 @@
       "cite": "42 U.S.C. 4336e(10)"
      },
      "epra": {
-      "text": "No change."
+      "text": "No general change. FERC approval of a joint interregional transmission plan, and its orders resolving planning disputes, are declared not to be major federal actions; a FERC permit for a project selected in such a plan still is one.",
+      "cite": "Sec. 402"
      },
      "speed": {
       "text": "Adds grants and cost-share awards, Farm Service Agency loans, and actions another agency already reviewed. Federal money alone cannot make an action major.",
@@ -132,7 +133,7 @@
       "cite": "Sec. 2(c)"
      },
      "senate": {
-      "text": "Same 2-year and 1-year deadlines and page limits, counted from the earlier of the agency's determination or a complete application. Same two 60-day front-end clocks.",
+      "text": "Same 2-year and 1-year deadlines, counted from the earlier of the agency's determination or a complete application. Same two 60-day front-end clocks.",
       "sections": [
        "1106",
        "1109"
@@ -213,7 +214,7 @@
       "text": "No change."
      },
      "speed": {
-      "text": "Extensions only with the applicant's approval. A sponsor that approved one cannot petition a court unless the agency misses the new deadline.",
+      "text": "Extensions only with the applicant's approval. A sponsor that approved one cannot petition a court unless the agency misses the new deadline or delays for reasons other than finishing its review.",
       "cite": "Sec. 2(c)"
      },
      "senate": {
@@ -341,7 +342,7 @@
       "text": "Courts may vacate the approval or enjoin the project."
      },
      "epra": {
-      "text": "Ordinary remedies. An agency gets no more than 180 days on remand.",
+      "text": "Ordinary remedies. An agency gets no more than 180 days on remand, unless applicable law needs longer.",
       "cite": "Sec. 101"
      },
      "speed": {
@@ -349,7 +350,7 @@
       "cite": "Sec. 3"
      },
      "senate": {
-      "text": "Remand only, without vacatur or injunction, with a fix due in 180 days. Work may continue during the remand. A preliminary injunction is possible when a different federal law is likely violated.",
+      "text": "Remand only, without vacatur or injunction, with a fix due in 180 days. Work may continue during the remand. A preliminary injunction is possible when a law other than NEPA or the National Historic Preservation Act is likely violated.",
       "sections": [
        "1110"
       ]
@@ -383,14 +384,14 @@
       "text": "6 years by default."
      },
      "epra": {
-      "text": "150 days. Remand capped at 180 days.",
+      "text": "150 days, unless another law sets a shorter limit. Remand capped at 180 days unless applicable law needs longer.",
       "cite": "Sec. 101"
      },
      "speed": {
       "text": "Not addressed."
      },
      "senate": {
-      "text": "150 days. Remand capped at 180 days.",
+      "text": "150 days. Remand capped at 180 days unless applicable law needs longer.",
       "sections": [
        "2201"
       ]
@@ -403,7 +404,8 @@
       "text": "6 years, in district court, with ordinary remedies."
      },
      "epra": {
-      "text": "Not addressed."
+      "text": "Its 150-day limit for energy and mineral projects reaches Endangered Species Act section 7 and 10 statements and permits. Water and historic preservation suits are not addressed.",
+      "cite": "Sec. 101"
      },
      "speed": {
       "text": "Not addressed."
@@ -433,7 +435,7 @@
       "text": "Not addressed."
      },
      "speed": {
-      "text": "Barred except for a court order, breach, fraud, a specific and immediate harm, or the holder's request. Review in the court of appeals. The bill sets out no money damages.",
+      "text": "Barred except for a court order, breach, fraud, a specific, immediate, substantial and proximate harm, or the holder's request. Review in the court of appeals. The bill sets out no money damages.",
       "cite": "Sec. 2(b)"
      },
      "senate": {
@@ -588,7 +590,7 @@
       "text": "Not addressed."
      },
      "senate": {
-      "text": "Statutory deadlines from start to finish. Adverse effects limited to direct alteration. Loans and grants alone do not trigger review. An agency may proceed when a preservation officer is silent for 30 days.",
+      "text": "Statutory deadlines from start to finish. Adverse effects limited to direct alteration. Loans and grants alone do not trigger review, unless they are for historic preservation. An agency may proceed when a preservation officer is silent for 30 days.",
       "sections": [
        "2301"
       ]
@@ -615,7 +617,7 @@
       "text": "Not addressed."
      },
      "senate": {
-      "text": "FERC shall permit lines of 230 kilovolts and up without a corridor. The state's clock starts on the day the application is filed with the state. Developers of lines of 345 kilovolts and up may file at FERC and the state together.",
+      "text": "FERC may permit lines of 230 kilovolts and up without a corridor, once it makes the required findings. The state's clock starts on the day the application is filed with the state. Developers of lines of 345 kilovolts and up may file at FERC and the state together.",
       "sections": [
        "2101"
       ]
@@ -635,7 +637,7 @@
       "text": "Not addressed."
      },
      "senate": {
-      "text": "Regional and interregional planning processes required within 2 years. Order No. 1920 compliance counts for the regional part. FERC can extend a late filing by 6 months.",
+      "text": "Regional and interregional planning processes required within 2 years. Compliance filings already made by the dates the bill lists count for the regional part. FERC can extend a late filing by 6 months.",
       "sections": [
        "2103"
       ]
@@ -744,7 +746,7 @@
       "text": "Not addressed."
      },
      "senate": {
-      "text": "Interconnection planned with transmission over 20 years, with published per-megawatt prices and nonrefundable deposits. Automation required in queue studies. Grid data due in 15 days.",
+      "text": "Interconnection planned with transmission over 20 years, with published per-megawatt prices and nonrefundable deposits. Providers must share and use automation in queue studies, as appropriate. Grid data due in 15 days.",
       "sections": [
        "2106",
        "2110",
@@ -850,7 +852,7 @@
       "text": "Not addressed."
      },
      "senate": {
-      "text": "No federal permit where the federal mineral share is under 50 percent on non-federal land. The five routine activities are outside NEPA entirely.",
+      "text": "No federal permit where the federal mineral share is under 50 percent on non-federal land. The routine oil and gas activities already listed in law, plus geothermal power lines of up to 20 miles in approved corridors, are outside NEPA entirely.",
       "sections": [
        "2211",
        "2229"
@@ -1007,7 +1009,7 @@
       "text": "Not addressed."
      },
      "senate": {
-      "text": "Same as EPRA 2024.",
+      "text": "Additional mill sites on public land as reasonably necessary for waste rock, tailings and related operations, with a $400 yearly fee per site and a new Abandoned Hardrock Mine Fund.",
       "sections": [
        "2215"
       ]
@@ -1025,7 +1027,7 @@
       "cite": "Sec. 205"
      },
      "speed": {
-      "text": "No NEPA suits over tribal trust resource projects except by the tribe. The no-action alternative is presumed harmful for tribe-initiated projects.",
+      "text": "No NEPA suits over tribal trust resource projects except by the tribe or over effects outside the trust lands. The no-action alternative is presumed harmful for tribe-initiated projects.",
       "cite": "Secs. 2(b), 3"
      },
      "senate": {
@@ -1731,7 +1733,7 @@
      "text": "Not addressed."
     },
     "senate": {
-     "text": "FERC must revise its transmission pricing policy within 270 days to provide a lower transmission price for computational loads electing non-firm service. Studies must evaluate standardized cost-reduction options to avoid network upgrades.",
+     "text": "FERC must revise its transmission pricing policy within 270 days to provide a lower transmission price for computational loads electing non-firm service. Studies must include a standardized analysis of upgrades and cost-reduction options.",
      "sections": [
       "2107"
      ]
@@ -1818,7 +1820,7 @@
      "text": "Not addressed."
     },
     "senate": {
-     "text": "Effective 18 months after enactment, bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect them; device-level inverter telemetry allowed.",
+     "text": "Effective 18 months after enactment, bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect them; voluntary for public power utilities. Device-level inverter telemetry allowed.",
      "sections": [
       "2108"
      ]
