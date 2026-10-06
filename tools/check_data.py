@@ -78,6 +78,7 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out += [(f"people {p['id']} action", a) for a in p.get("key_actions", [])]
     out += [(f"media {it['id']} summary", it["summary"]) for it in core["media"] if it.get("summary")]
     out += [(f"media {it['id']} visual", v["title"] + ". " + v["text"]) for it in core["media"] for v in it.get("visuals", [])]
+    out += [(f"take {t['id']} claim", t["claim"]) for t in (core.get("takes") or {}).get("takes", [])]
     return out
 
 
@@ -142,6 +143,11 @@ def check(core: dict) -> tuple[list[str], dict]:
     def dated(where: str, d: str) -> None:
         if not DATE_RE.match(d or "") or d > core["meta"]["as_of"]:
             errs.append(f"{where}: date {d!r} is malformed or after the data date {core['meta']['as_of']}")
+
+    for t in (core.get("takes") or {}).get("takes", []):
+        dated(f"take {t['id']}", t["date"])
+        if not http(t["url"]):
+            errs.append(f"take {t['id']}: source needs a link")
 
     seen: set[str] = set()
     for e in core["timeline"]:

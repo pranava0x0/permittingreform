@@ -250,7 +250,9 @@ thead th { font-family: var(--font-head); font-size: 0.86rem; font-weight: 700; 
 .take { padding: 10px 0; border-top: 1px solid var(--border); max-width: 80ch; }
 .take:focus { outline: 2px solid var(--rule); outline-offset: 2px; }
 .take p { margin: 0 0 4px; }
-.take-head { font-size: 0.92rem; }
+.take summary { cursor: pointer; list-style-position: outside; }
+.take-head { display: block; font-size: 0.92rem; }
+.take-claim { display: block; margin-top: 2px; }
 .take-quote { margin: 4px 0 6px; padding-left: 12px; border-left: 2px solid var(--border); font-family: var(--font-serif); font-size: 0.98rem; line-height: 1.5; }
 .quote { margin: 0; padding: 12px 0; border-top: 1px solid var(--border); max-width: 80ch; }
 .quote blockquote { margin: 0 0 6px; font-family: var(--font-serif); font-size: 1.08rem; line-height: 1.5; }
@@ -491,7 +493,7 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
   .chip, .tabs a, .theme-toggle, .search button, .search input, .outline summary, .outline-toggle, .filter-wrap > summary { min-height: 44px; }
   .tabs a, .theme-toggle { display: inline-flex; align-items: center; }
   .outline li a { padding-top: 10px; padding-bottom: 10px; }
-  .event-toggle, .row-toggle, .show-rest { min-height: 44px; }
+  .event-toggle, .row-toggle, .show-rest, .take summary { min-height: 44px; }
   .versions dt a { display: inline-block; padding: 6px 0; }
 }
 

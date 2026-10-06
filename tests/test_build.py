@@ -34,7 +34,8 @@ class Build(unittest.TestCase):
         self.assertEqual(ERRORS, [])
 
     def test_committed_site_data_is_in_sync_with_the_sources(self):
-        self.assertEqual((ROOT / "site/data/core.js").read_text(encoding="utf-8"), build.dump_js("PR_DATA", CORE))
+        self.assertEqual((ROOT / "site/data/core.js").read_text(encoding="utf-8"), build.dump_js("PR_DATA", build.browser_core(CORE)))
+        self.assertEqual((ROOT / "site/data/takes.js").read_text(encoding="utf-8"), build.dump_js("PR_TAKES", CORE["takes"]))
         self.assertEqual((ROOT / "site/data/bill.js").read_text(encoding="utf-8"), build.dump_js("PR_BILL", PARAS))
         self.assertEqual((ROOT / "site/llms.txt").read_text(encoding="utf-8"), build.llms_txt(CORE))
 
@@ -44,7 +45,8 @@ class Build(unittest.TestCase):
         self.assertEqual(set(PARAS), bill)
 
     def test_agent_exports_match_the_browser_data_and_all_sections(self):
-        self.assertEqual(json.loads((ROOT / "site/data/core.json").read_text()), CORE)
+        self.assertEqual(json.loads((ROOT / "site/data/core.json").read_text()), build.browser_core(CORE))
+        self.assertEqual(json.loads((ROOT / "site/data/takes.json").read_text()), CORE["takes"])
         self.assertEqual(json.loads((ROOT / "site/data/bill.json").read_text()), PARAS)
         self.assertEqual((ROOT / "site/llms-full.txt").read_text(), build.llms_full(CORE, PARAS))
         self.assertEqual((ROOT / "site/reading.html").read_text(), build.reading_html(CORE))

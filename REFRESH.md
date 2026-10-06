@@ -22,9 +22,23 @@ The sponsors expect a manager's amendment before the Senate votes. Page and sect
 3. `python3 tools/integrate_research.py && python3 tools/build.py`
 4. `make links && make quotes`, then set `DATA_AS_OF` in `tools/build.py` and rebuild.
 
+## Outside readings
+
+`data/takes.json` holds readings of what a section would do, from named industry groups, advocates, law firms, scholars and analysts. Each take quotes its source verbatim, names its sections, and may name the bill `passage` it argues over (a verbatim span the build locates and cites). `claim` is this site's one-sentence paraphrase of their reading, so it goes through the prose lint.
+
+1. Add takes by hand or from a research agent's file. Map sections yourself: agents guess wrong (an ESA definition filed under 1106, a completeness clock under 1106 instead of 1109).
+2. Drop pieces written before the text was public (September 30, 2026) and anything known only from a search snippet.
+3. `python3 tools/check_quotes.py`. A page that refuses scripts needs a read in a browser, recorded in `data/checks/browser.json` with the exact quotes.
+
+## Claim cites
+
+Every sentence that says what the bill does must carry a passage from the bill: summary sentences and key points (`data/bill/point_cites.json`), and headlines, the comparison tables' BAAJA cells, added provisions and the Communities and Data centers rows (`data/bill/row_cites.json`). `tools/infer_check.py` writes both from verdicts whose evidence span is in the text word for word. The build stops while any claim has no passage or a flagged verdict. A claim that the text is silent ("No export provisions.") counts once the review supports it with no span.
+
+After editing any of that prose, run `python3 tools/infer_check.py`, fix or reword what it flags, and rerun until it exits 0.
+
 ## Gates
 
-`make check` before every commit. `make links`, `make quotes` and `make infer` after any data change.
+`make check` before every commit. `make links`, `make quotes` and `make infer` after any data change. `make check` fails while a claim lacks a bill passage, so run `make infer` first.
 
 ## Known limits
 
@@ -45,3 +59,9 @@ See [docs/data-sources.md](docs/data-sources.md) for sources that refuse scripts
 - 2026-10-02. A research agent's `stance` field drifts toward "position on reform" unless the brief says "stance on the September 30 bill". Re-check stances for new people before integrating.
 - 2026-10-02. New rows the main session selects from an agent file go in `data/research/<name>_extra.json`; edits to held rows go in `data/curation.json` with a reason. Run the duplicate check (URL, title, same-day events) after integrating.
 - 2026-10-02. Agent exports come from tools/build.py. Rebuild Markdown, HTML, JSON and sitemap together; do not edit generated files. Each section Markdown file includes the saved review limits. Run the export parity tests before publishing.
+- 2026-10-05. Every sentence is a claim. A 4-word floor had exempted "10 years.", "150 days." and "ERCOT is excluded." from both the review and the cite. The sentence splitter also broke "D.C. Circuit." into two claims; it now knows "D.C." and "U.S.".
+- 2026-10-05. Changing the splitter changes claim ids. Stop a running `infer_check.py` and restart it rather than reconcile two runs; unchanged batches come back from the cache.
+- 2026-10-05. X bookmarks and the Following feed: the Following timeline loads a few posts per scroll and stalls the page; `filter:follows since:YYYY-MM-DD` search returns the same accounts by keyword. Store results in `localStorage` between navigations and save every scroll, because a long script times out at 45 seconds and loses unsaved results.
+- 2026-10-05. Reddit refuses both the search tool and the Chrome extension. Leave it out of a sweep rather than retry.
+- 2026-10-05. Punchbowl's document links (`punchbowl.news/<name>/`) are attachment pages that serve scripts an empty shell. Cite the PDF under `punchbowl.news/wp-content/uploads/`, which the quote check can read.
+- 2026-10-05. The Senate Press Gallery floor log (`dailypress.senate.gov/<weekday-month-day-year>/`) states the next scheduled vote and the legislative vehicle.

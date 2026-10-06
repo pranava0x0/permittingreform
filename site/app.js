@@ -199,6 +199,23 @@
     return billPromise;
   }
 
+  /* Outside readings load with the first section page that needs them. The
+     promise is cached so concurrent callers share one fetch. */
+  let takesPromise = null;
+  function ensureTakes() {
+    if (window.PR_TAKES) return Promise.resolve(window.PR_TAKES);
+    if (!takesPromise) {
+      takesPromise = new Promise((resolve, reject) => {
+        const tag = document.createElement("script");
+        tag.src = "data/takes.js?v=1";
+        tag.onload = () => (window.PR_TAKES ? resolve(window.PR_TAKES) : reject(new Error("readings did not load")));
+        tag.onerror = () => { takesPromise = null; reject(new Error("readings could not be fetched")); };
+        document.head.appendChild(tag);
+      });
+    }
+    return takesPromise;
+  }
+
   function loading(text) {
     return el("p", { class: "loading", role: "status" }, text);
   }
@@ -426,25 +443,35 @@
 
   /* What others say a section would do: industry, advocates, lawyers, analysts. */
   const TAKES_BRIEF = 3;
-  const STANCE_ORDER = ["supports", "explains", "mixed", "concerns", "opposes"];
+  const STANCE_ORDER = ["supports", "opposes", "concerns", "explains", "mixed"];
   function takesBlock(s) {
-    const T = D.takes;
-    if (!T) return null;
+    if (!s.takes) return null;
+    const host = el("div", null, loading("Loading readings"));
+    ensureTakes().then((T) => fill(host, takesList(T, s))).catch((err) => fill(host, failure(err)));
+    return el("section", { class: "sec-part", "aria-labelledby": "h-takes" },
+      el("h2", { id: "h-takes" }, "What others say it would do", el("span", { class: "chip-count" }, s.takes)),
+      el("p", { class: "muted" }, "Readings from industry, advocates, lawyers and analysts, quoted from their own words. They are claims about effects, not findings of this site. The summary above says what the text says."),
+      host);
+  }
+
+  function takesList(T, s) {
     const mine = T.takes.filter((t) => t.sections.indexOf(s.n) >= 0);
-    if (!mine.length) return null;
     // Interleave stances so the first few rows show the disagreement.
     const byStance = STANCE_ORDER.map((k) => mine.filter((t) => t.stance === k));
     const ordered = [];
     for (let i = 0; ordered.length < mine.length; i++) byStance.forEach((g) => { if (g[i]) ordered.push(g[i]); });
+    // Brief by default: who and their claim; the quote, source and bill cite open on tap.
     const row = (t) => el("li", { class: "take" },
-      el("p", { class: "take-head" },
-        el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " ",
-        el("strong", null, t.who), el("span", { class: "muted" }, " · " + T.sides[t.side])),
-      el("p", { class: "take-claim" }, t.claim),
-      el("blockquote", { class: "take-quote" }, "“" + t.quote + "”"),
-      el("p", { class: "where" },
-        ext(t.url, t.outlet + ", " + S.formatDate(t.date)), t.speaker && t.speaker !== t.who ? " · " + t.speaker : null,
-        t.passage && t.passage.c ? [" · On the bill text at ", claimCite(t.passage.section, t.passage.c)] : null));
+      el("details", null,
+        el("summary", null,
+          el("span", { class: "take-head" },
+            el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " ",
+            el("strong", null, t.who), el("span", { class: "muted" }, " · " + T.sides[t.side])),
+          el("span", { class: "take-claim" }, t.claim)),
+        el("blockquote", { class: "take-quote" }, "“" + t.quote + "”"),
+        el("p", { class: "where" },
+          ext(t.url, t.outlet + ", " + S.formatDate(t.date)), t.speaker && t.speaker !== t.who ? " · " + t.speaker : null,
+          t.passage && t.passage.c ? [" · On the bill text at ", claimCite(t.passage.section, t.passage.c)] : null)));
     const list = el("ul", { class: "takes" }, ordered.slice(0, TAKES_BRIEF).map(row));
     const more = ordered.length > TAKES_BRIEF ? el("button", { type: "button", class: "more-toggle show-rest", onclick: (ev) => {
       ordered.slice(TAKES_BRIEF).forEach((t) => list.appendChild(row(t)));
@@ -453,10 +480,7 @@
       first.setAttribute("tabindex", "-1");
       first.focus();
     } }, "More readings (" + (ordered.length - TAKES_BRIEF) + ")") : null;
-    return el("section", { class: "sec-part", "aria-labelledby": "h-takes" },
-      el("h2", { id: "h-takes" }, "What others say it would do", el("span", { class: "chip-count" }, mine.length)),
-      el("p", { class: "muted" }, "Readings from industry, advocates, lawyers and analysts, quoted from their own words. They are claims about effects, not findings of this site. The summary above says what the text says."),
-      list, more);
+    return [list, more];
   }
 
   function renderSection(n, anchor, query) {
@@ -1202,7 +1226,7 @@
     if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " carry a passage from the bill, matched the same way."]);
     if (ck.cites) rows.push(["Cites for claims", ck.cites.summary.cited + " of " + ck.cites.summary.total + " summary sentences and " + ck.cites.rows.cited + " of " + ck.cites.rows.total +
       " sentences in headlines, comparison cells and the Communities and Data centers rows carry a bill passage, found word for word in a section the claim cites. A claim without one, or one the summary review flagged, stops the build."]);
-    if (D.takes) rows.push(["Outside readings", D.takes.takes.length + " readings of specific sections from industry, advocates, lawyers and analysts. Each quote is checked against its source like the quotes below; each names the bill passage it is about. They are the sources' claims about effects, not verified findings."]);
+    if (ck.takes) rows.push(["Outside readings", ck.takes.total + " readings of specific sections from industry, advocates, lawyers and analysts. Their quotes go through the web-quote check below, and a reading that argues over particular words names that passage. They are the sources' claims about effects, not verified findings."]);
     if (ck.inference) {
       const i = ck.inference;
       rows.push(["Summary review", i.stale ? "The saved review predates changes to its inputs. Re-check pending." :
