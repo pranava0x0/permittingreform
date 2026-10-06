@@ -1,13 +1,13 @@
 {
  "inference": {
-  "cached_only": true,
+  "cached_only": false,
   "checked": "2026-10-06",
-  "flagged": 7,
-  "input_sha256": "bc2c6295d2ac38f4e90d6e915caace5121b37b48c989991898b98523fab9e227",
-  "model": "sonnet",
-  "supported": 364,
-  "total": 794,
-  "unchecked": 423
+  "flagged": 13,
+  "input_sha256": "fd003fe10508f5f364491c6df8d5bf0d7f30a3898d121b9ae65c178484d7ad54",
+  "model": "claude-sonnet-5",
+  "supported": 794,
+  "total": 807,
+  "unchecked": 0
  },
  "links": {
   "blocked": 12,

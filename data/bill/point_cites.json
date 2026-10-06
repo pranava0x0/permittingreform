@@ -1,5 +1,6 @@
 {
  "1101": {
+  "Adds a statement that NEPA prescribes a procedure for considering and informing the public about the reasonably foreseeable environmental effects of major federal actions, producing an informational document, and a savings clause that NEPA mandates no particular outcome.": "Federal agencies shall consider and inform the public about the reasonably foreseeable environmental effects of major Federal actions on the human environment",
   "Codifies NEPA as a procedural statute whose product is an informational document": "the result of which shall be an informational document for the purposes of consideration in Federal decisionmaking",
   "New savings provision: nothing in NEPA mandates a particular outcome": "Nothing in this Act mandates a particular outcome as a result of the use of the procedure described in subsection (b)",
   "Rewrites NEPA's opening section.": "Section 2 of the National Environmental Policy Act of 1969 (42 U.S.C. 4321) is amended"
@@ -14,6 +15,7 @@
   "New 'key permitting agency' list: USDA, Commerce, Interior, Energy, Transportation, Defense, EPA, FERC, NRC, DHS, HUD, the Corps, ACHP": "the Corps of Engineers; “(xiii) the Advisory Council on Historic Preservation",
   "New terms include agency chief environmental review and permitting officers, eNEPA technologies, key permitting agencies, a 20-page record of stakeholder engagement, record of decision, and statement of purpose and need.": "AGENCY CERPO.—The term ‘agency CERPO’ means the chief environmental review and permitting officer of each key permitting agency",
   "So are routine administrative actions under $10 million, and repair or replacement of lifeline infrastructure that adds no more than 20 percent capacity.": "subject to the condition that the cost of the action does not exceed $10,000,000",
+  "The bill lists 14 kinds of action that are not major federal actions and so fall outside NEPA.": "EXCLUSIONS.—The term ‘major Federal action’ does not include—",
   "The list also excludes geothermal observation test projects, transmission upgrades under new Federal Power Act section 216A(b), covered Natural Gas Act pipeline work, actions another agency already evaluated, and Army Corps continuing-authority or environmental-infrastructure projects with a federal share of $50 million or less.": "any proposed agency action associated with a geothermal observation test project"
  },
  "1103": {
@@ -44,13 +46,18 @@
   "CEQ Chairman's dispute orders are final, unreviewable, and satisfy any interagency consultation requirement": "shall be final and conclusive; “(II) shall not be subject to judicial review",
   "EIS in 2 years, EA in 1 year, with the clock starting at the earlier of the review determination or a complete application": "not later than the date that is 1 year after the earlier of",
   "Environmental assessments are due in 1 year and environmental impact statements in 2 years, measured from the earlier of the agency's determination or its notice that the application is complete.": "not later than the date that is 1 year after the earlier of",
+  "If an agency defies a Chairman's dispute order and a deadline is missed, then after 30 days its permitting officers and senior executives must spend at least half their workweek on the overdue review.": "shall spend not less than 50 percent of the workweek, as determined pursuant to title 5, United States Code, or other applicable law, to remedy the failure.",
   "Lead agency designation gets a clock, with the CEQ Chairman resolving disputes within 21 days by a final, unreviewable decision.": "the Chairman shall designate the lead agency with respect to the applicable proposed agency action",
   "No duty to consider scientific research published after the notice of intent": "No Federal agency shall be required to consider any scientific or technical research that becomes publicly available after the date of publication of a notice of intent",
+  "Once any deadline is 60 days overdue, the agency head may not travel more than 25 miles from the duty station until the document or permit issues.": "the head of the relevant key permitting agency shall not travel more than 25 miles from their official duty station for the purposes of official business",
+  "Project sponsors can sue over missed deadlines.": "A project sponsor may obtain judicial review of the compliance by a Federal agency with the relevant deadline established under paragraph (1) or (2) by filing a written petition",
   "Public scoping comment periods run 45 to 60 days, or 75 with the sponsor's consent.": "a comment period of not less than 45 days and not more than 60 days",
   "ROD within 45 days of the final EIS; all federal permits within 90 days (120 for non-participating agencies)": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement",
   "Rewrites NEPA section 107, the core of the review process.": "Section 107 of the National Environmental Policy Act of 1969 (42 U.S.C. 4336a) is amended",
   "Sponsors get a cause of action with a 120-day court decision clock": "issue a decision as expeditiously as practicable, but not later than 120 days after the date on which the petition is filed",
   "The Chairman can also order a resolution of interagency disputes, and that order counts as full compliance with any interagency consultation obligation under federal law.": "shall, for purposes of judicial review of the ultimate agency action and all other Federal law, constitute full compliance with and satisfaction of any requirement for interagency consultation",
+  "The Secretary of Defense is exempt.": "This paragraph shall not apply to the Secretary of Defense.",
+  "The court must rule within 120 days and can order a decision within 60 days.": "issue a decision as expeditiously as practicable, but not later than 120 days after the date on which the petition is filed, absent extraordinary circumstances",
   "The lead agency must drop any alternative that does not meet the purpose and need or the goals of a non-federal sponsor.": "eliminate from consideration any alternative (except for a no-action alternative) that does not—"
  },
  "1107": {
@@ -72,17 +79,30 @@
  },
  "1110": {
   "150-day statute of limitations": "is filed not later than 150 days after the date on which",
+  "A preliminary injunction is available only for a likely violation of a law other than NEPA or the National Historic Preservation Act.": "there is a substantial likelihood the authorization violates a Federal law other than— “(aa) this Act; or “(bb) division A of subtitle III of title 54, United States Code;",
   "Adds a judicial review section to NEPA.": "“SEC. 111. JUDICIAL REVIEW.",
   "Court of appeals has original and exclusive jurisdiction": "shall have original and exclusive jurisdiction over a claim",
+  "Courts must give substantial deference to agencies on the scope and content of environmental documents.": "a court shall afford substantial deference to the agency relating to the scope and contents of an environmental document.",
+  "If a court finds a NEPA violation, the only remedy is remand without vacatur or injunction, with a fix deadline of no more than 180 days.": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency",
+  "No NEPA suit may be brought over an action on tribal trust lands unless the tribe itself sues or effects reach beyond trust lands.": "there shall be no administrative or judicial review of such final agency action based on a claim of failure to comply with the requirements of this Act",
   "No preliminary injunction for NEPA or NHPA violations alone": "there is a substantial likelihood the authorization violates a Federal law other than— “(aa) this Act; or “(bb) division A of subtitle III of title 54",
   "Only a party with a direct-harm injury can sue, and where a comment period was offered it must have commented": "in the case of an authorization for which an opportunity for comment was provided, the claim is filed by a party that submitted a substantive comment",
   "Remand without vacatur is the sole NEPA remedy; the project continues during the remand": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction",
   "Substantial deference to agencies on the scope and contents of the document": "a court shall afford substantial deference to the agency relating to the scope and contents of an environmental document",
-  "Suits challenging an authorization on NEPA grounds must be filed within 150 days.": "is filed not later than 150 days after the date on which"
+  "Suits challenging an authorization on NEPA grounds must be filed within 150 days.": "is filed not later than 150 days after the date on which",
+  "The federal court of appeals for the circuit where the project sits gets original and exclusive jurisdiction, with random judge assignment.": "for the circuit in which a project subject to an authorization will be constructed, expanded, or operated shall have original and exclusive jurisdiction over a claim.",
+  "The party must allege an actual or imminent injury amounting to direct harm.": "is filed by a party alleging (or has an individual member alleging) an actual or imminent injury in fact amounting to a direct harm.",
+  "The permit stays in effect and the project can proceed during the remand.": "An authorization remanded under paragraph (5)(A) shall remain in effect while the Federal agency corrects any errors or deficiencies found by the reviewing court.",
+  "Where a comment period was offered, the party must also have filed a sufficiently detailed comment.": "the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization"
  },
  "1121": {
+  "A pilot is due within a year and the system by December 1, 2028, 'to the maximum extent practicable'.": "not later than December 1, 2028, the Chairman shall develop and implement the ePermit unified interagency data system",
   "AI-assisted comment analysis and screening tools named in statute; Congress gets the prompt configurations": "Congress shall have access to the data, fine-tuning procedures, and prompt configurations specifically created or adapted for artificial intelligence systems",
   "Agency and personnel performance measures tied to the Permitting Improvement Fund": "to facilitate higher performance of agencies and agency personnel with respect to environmental reviews and authorizations",
+  "Authorizes $5 million a year for NEPA.": "There is authorized to be appropriated to carry out this Act $5,000,000 for each fiscal year.",
+  "CEQ also sets outcome-based performance measures for agencies and staff.": "The Chairman shall develop outcome-based performance measures to assess Federal agency performance and Federal agency personnel performance",
+  "CEQ and the key permitting agencies build an ePermit unified interagency data system and a public authorization portal hosted by GSA.": "The Administrator of General Services shall host the authorization portal as a shared service for Congress, Federal agencies, and the public.",
+  "Congress gets access to the data, fine-tuning procedures and prompt configurations agencies create or adapt for AI tools, but not proprietary or general pre-training materials.": "data, fine-tuning procedures, and prompt configurations specifically created or adapted for artificial intelligence systems used to support environmental review or authorization activities, excluding proprietary or general pre-training materials",
   "Government-wide permitting data standards within 60 days": "Not later than 60 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026, the Chairman",
   "Public ePermit portal hosted by GSA, targeted for December 1, 2028": "To the maximum extent practicable, not later than December 1, 2028, the Chairman shall develop and implement the ePermit unified interagency data system",
   "Replaces NEPA section 209 with an eNEPA technology mandate.": "striking section 209 (42 U.S.C. 4347) and inserting the following",
@@ -119,29 +139,37 @@
   "On judicial review the burden of proof falls on the state by clear and convincing evidence.": "a court shall place the burden of proof on the certifying authority to demonstrate, by clear and convincing evidence",
   "One-year cap, extendable only at the applicant's written request and with the state's written agreement": "the certifying authority concurs, in writing, with the extension.",
   "Rewrites Clean Water Act section 401 state certification.": "Section 401 of the Federal Water Pollution Control Act (33 U.S.C. 1341) is amended by adding at the end",
-  "Silence is a waiver.": "the requirement for a certification under subsection (a) shall be waived"
+  "Silence is a waiver.": "the requirement for a certification under subsection (a) shall be waived",
+  "The process gets a prefiling meeting, a defined complete application, a 3-day receipt acknowledgment, a 90-day completeness notice, and a review period of up to 1 year that can be extended only if the applicant asks in writing and the certifying authority agrees in writing.": "a reasonable period of time (not to exceed 1 year from the date of receipt of the certification application) within which a certifying authority shall issue a final action"
  },
  "1203": {
   "10-year NPDES permits": "by striking “five years” and inserting “10 years”",
   "Extends the maximum term of state-issued NPDES discharge permits from 5 years to 10 years.": "by striking “five years” and inserting “10 years”"
  },
  "1204": {
+  "Extends nationwide permits from 5 to 10 years, lets the Corps modify them mid-term, and requires it to keep nationwide permits 12, 14, 43, 57 and 58 for projects filling under 2 acres, which are deemed a minimal adverse effect.": "any effects of a discharge of dredged or fill material into less than 2 acres of navigable waters to be a minimal adverse environmental effect",
   "Nationwide permits last 10 years": "by striking “five years” and inserting “10 years”; and",
   "No ESA or NHPA consultation to reissue a nationwide permit that keeps its preconstruction requirements": "Clauses (i) through (iv) of subparagraph (A) shall only apply to a general permit being reissued pursuant to that subparagraph if the general permit does not",
   "No section 404(c) veto before an application or after a permit issues": "ends on the date on which the Secretary issues the permit.",
+  "Reissuing a nationwide permit needs no Endangered Species Act consultation, only a programmatic environmental assessment under NEPA, and no National Historic Preservation Act consultation, so long as the permit does not loosen preconstruction requirements.": "no consultation under section 306108 of title 54, United States Code, is required.",
   "Under 2 acres of fill is a minimal effect by statute": "shall consider any effects of a discharge of dredged or fill material into less than 2 acres of navigable waters to be a minimal adverse environmental effect"
  },
  "1205": {
   "150-day limit on 404 permit suits": "shall be filed not later than the date that is 150 days after the date on which the permit was issued",
-  "Permits stay in force on remand absent imminent and substantial danger": "the court may not vacate, revoke, enjoin, or otherwise limit the permit unless the court finds that activities authorized under the permit would present an imminent and substantial danger"
+  "Adds a 150-day statute of limitations for challenges to section 404 permits, general permits, verifications and state program approvals.": "shall be filed not later than the date that is 150 days after the date on which the approval was issued",
+  "Permits stay in force on remand absent imminent and substantial danger": "the court may not vacate, revoke, enjoin, or otherwise limit the permit unless the court finds that activities authorized under the permit would present an imminent and substantial danger",
+  "Remand deadlines are capped at 180 days.": "which may not exceed 180 days from the date on which the court remands the matter",
+  "Remedies are limited to remand, with vacatur or injunction available only on a finding of imminent and substantial danger to health or the environment.": "the court may not vacate, revoke, enjoin, or otherwise limit the permit unless the court finds that activities authorized under the permit would present an imminent and substantial danger to human health or the environment",
+  "Where a draft was published with at least 30 days for comment, a plaintiff must have commented on the issue.": "the applicable agency provided a public comment period of not less than 30 days."
  },
  "1301": {
   "Defines 'best scientific and commercial data available' in the Endangered Species Act as all relevant, objective information at the time of the action, including models that account for error and are applied without policy presumptions.": "mean all relevant and objective scientific and commercial information available at the time of the agency action",
-  "First statutory definition of ESA's science standard": "by inserting after paragraph (1) the following"
+  "Defines 'best scientific and commercial data available' in the statute": "mean all relevant and objective scientific and commercial information available at the time of the agency action"
  },
  "1302": {
   "APA remedy after 145 days": "the applicant shall be eligible for relief under section 706(1) of title 5, United States Code.",
   "Consultation must end when the NEPA document is due, absent an extension for extraordinary circumstances": "unless the Secretary approves an extension of the deadline due to extraordinary circumstances beyond the control, and not due to any action, of the consulting parties.",
+  "Consultation on any project with a NEPA document must finish by the NEPA deadline, unless the Secretary grants an extension for extraordinary circumstances.": "unless the Secretary approves an extension of the deadline due to extraordinary circumstances beyond the control, and not due to any action, of the consulting parties.",
   "Formal consultation: 60 days, not 90": "by striking “90-day” and inserting “60-day”",
   "If consultation stretches past 145 days without the applicant's written consent, the applicant may sue under the APA for agency action unlawfully withheld.": "the applicant shall be eligible for relief under section 706(1) of title 5, United States Code.",
   "Shortens ESA section 7 formal consultation from 90 to 60 days, and the applicant-consent extension from 150 to 100 days.": "by striking “90-day” and inserting “60-day”"
@@ -157,19 +185,20 @@
   "Interior audits annually for 4 years, can terminate after a 120-day cure period, and applicants may still choose federal consultation.": "conduct annual audits during each of the first 4 years of State participation",
   "Interior must propose a rule within 270 days.": "Not later than 270 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026, the Secretary shall issue a proposed rule",
   "Interior's failure to act on an application within 180 days counts as a failure to act under the NEPA sanctions section.": "the inaction shall be considered a failure to act under section 107(g)(3) of the National Environmental Policy Act of 1969",
-  "States can take over ESA consultation, modeled on NEPA assignment for highways": "the Secretary may assign the consultation responsibilities of the Secretary described in paragraph (4)(A) to States.",
+  "States can take over ESA consultation for projects within their boundaries": "the Secretary may assign, and the State may assume, the consultation responsibilities of the Secretary within the boundary of the State under subsections (a), (b), and (c) of section 7.",
   "States must show legal, financial and staffing capacity, waive sovereign immunity, accept federal court jurisdiction, keep public-records laws comparable to FOIA, and meet the same deadlines as the Secretary.": "are comparable to section 552 of title 5, United States Code, including providing that any decision regarding"
  },
  "1305": {
   "150-day window and D.C. Circuit venue for biological opinion challenges": "in the United States Court of Appeals for the District of Columbia Circuit by filing in such court not later than 150 days",
-  "Circuit within 150 days after it is made public.": "in the United States Court of Appeals for the District of Columbia Circuit by filing in such court not later than 150 days",
-  "Lets any person seek review of a biological opinion in the D.C.": "Any person may obtain judicial review under chapter 7 of title 5, United States Code, of any opinion issued by the Secretary"
+  "Lets any person seek review of a biological opinion in the D.C. Circuit within 150 days after it is made public.": "in the United States Court of Appeals for the District of Columbia Circuit by filing in such court not later than 150 days after the date on which the opinion is made public"
  },
  "1306": {
+  "Requires the Secretary to accept and integrate state-collected data in listing and delisting decisions when it meets the best-available-data standard.": "the Secretary shall accept and integrate State-collected data, subject to the condition that the State-collected data meets the definition of ‘best scientific and commercial data available’.",
   "State data must be used in listings": "the Secretary shall accept and integrate State-collected data"
  },
  "1307": {
-  "$150 million a year for consultation capacity": "$150,000,000 for each of fiscal years 2027 through 2031"
+  "$150 million a year for consultation capacity": "$150,000,000 for each of fiscal years 2027 through 2031",
+  "Authorizes $150 million a year for fiscal years 2027 through 2031 for Endangered Species Act section 7 consultation and for state participation in the program under section 7A.": "There is authorized to be appropriated $150,000,000 for each of fiscal years 2027 through 2031—"
  },
  "1308": {
   "$50 million a year to coastal states through NFWF": "$50,000,000 for each of fiscal years 2028 through 2032.",
@@ -177,11 +206,21 @@
   "Creates a National Fish and Wildlife Foundation Coastal State Fund granting money to coastal states for coastal resource and natural infrastructure programs, allocated 70 percent equally, 15 percent by tidal shoreline and 15 percent by coastal population density, capped at 5 percent per state.": "70 percent shall be allocated equally among coastal States."
  },
  "1401": {
+  "A court can order the action.": "the Federal agency is required to take such action by order of a court of competent jurisdiction",
+  "A winning sponsor gets the permit reinstated, an injunction against repeat interference without a court order, attorney fees, delay costs, and an additional 25 to 50 percent of all project costs incurred, paid from the Judgment Fund without appropriation.": "the reinstatement of the Federal authorization or permit and the termination of any action by the Federal agency preventing the construction or operation of the project",
+  "Agencies must give written notice with the statutory authority and evidence.": "the Federal agency shall notify the non-Federal project sponsor or holder of the Federal authorization or permit, in writing, of such action, including by—",
   "Burden on the government by clear and convincing evidence": "place the burden of proof on the Federal agency to demonstrate by clear and convincing evidence that 1 or more of the matters",
   "Cutoff date of September 16, 2026 for permits in effect": "in effect on or after September 16, 2026",
   "Damages of 25 to 50 percent of costs incurred, plus fees and delay costs, from the Judgment Fund": "costs in an amount equal to not less than 25 percent and not more than 50 percent of the total of all costs incurred by the non-Federal project sponsor",
+  "For projects with non-federal sponsors, a federal agency may not revoke, suspend, amend, or otherwise interfere with a federal authorization in effect on or after September 16, 2026.": "shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026",
   "No permit revocation absent a court order, breach, fraud, new-information emergency, or the holder's request": "the Federal agency is required to take such action by order of a court of competent jurisdiction",
-  "Where a stop-work order from the year before enactment was enjoined, the same judge hears any new attempt": "If, within 1 year prior to the date of enactment of this Act, a Federal Agency has issued a stop-work order"
+  "Or the holder can ask for it.": "the Federal agency has received a request from the holder of the Federal authorization or permit or the non-Federal project sponsor to take such action",
+  "The action can be needed to prevent specific, urgent, substantial and proximate harm to life, property, national security or defense, based on new information not considered in the original review.": "such action is necessary to prevent specific, urgent, substantial, and proximate harm or damage to life, property, national security, or defense that is based on new information",
+  "The holder can have materially breached the permit or the law, or obtained the permit by fraud.": "the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise violated applicable law",
+  "The sponsor can sue in district court, where the agency carries the burden by clear and convincing evidence and classified information is reviewed in camera.": "place the burden of proof on the Federal agency to demonstrate by clear and convincing evidence that 1 or more of the matters described in subparagraphs",
+  "There are five exceptions.": "the Federal agency is required to take such action by order of a court of competent jurisdiction",
+  "Where a stop-work order from the year before enactment was enjoined, the same judge hears any new attempt": "If, within 1 year prior to the date of enactment of this Act, a Federal Agency has issued a stop-work order",
+  "Where a stop-work order issued within the year before enactment was enjoined, the same judge keeps jurisdiction.": "the same judge (assuming that judge continues to sit in the same district) that heard the original matter shall have jurisdiction to hear a complaint or motion under this section."
  },
  "1402": {
   "Anti-discrimination rule across 46 named project types, from offshore wind to coal, plus any similar type a court certifies": "(UU) Any other specific type of energy related project not described in subparagraphs (A) through (TT) that a United States district court of competent jurisdiction certifies",
@@ -196,36 +235,53 @@
   "Remedies are an injunction, fees, economic damages, and 50 to 100 percent of the expected construction cost, paid from the Judgment Fund.": "damages in an amount equal to not less than 50 percent and not more than 100 percent of the total reasonably expected cost of construction",
   "The applicant must finish the project or repay.": "repay all remedies received under paragraph (2).",
   "The applicant must show a 'pattern of disparate treatment': an intentional, statistically demonstrated rise in denials or delays for that project type, compared with the prior 5 years.": "shows a substantial increase, compared against the 5 most recent calendar years of empirical data on Federal authorization or permit decisions and delays",
-  "The government must produce 5 years of raw statistics or face an adverse inference.": "A failure of the Federal Government to produce the data described in subclause (I) shall result in an adverse inference against the 1 or more Federal agencies",
+  "The government must produce raw statistics for the year of the suit and the 5 years before it, or face an adverse inference.": "raw statistical data for the calendar year in which the action is brought and the preceding 5 calendar years",
   "The list runs from onshore and offshore wind, solar and storage to coal, gas, oil, nuclear, geothermal, transmission, pipelines, mining, hydrogen, hydropower, LNG and carbon storage.": "(A) A project to produce electricity from onshore wind.",
   "The pattern must last 180 days after enactment for permits without a NEPA document, or 280 days for those with one.": "over a minimum period of 180 days, at least 180 days of which occurred after the date of enactment of this Act"
  },
  "1403": {
-  "Deadline suits for non-NEPA permits": "may obtain judicial review of the compliance by a Federal agency with the deadline established under section 1402(c)"
+  "Courts decide within 120 days and can order a decision within 60 days.": "issue a decision under this section as expeditiously as practicable, but not later than 120 days, after the date on which the petition is filed",
+  "Deadline suits for non-NEPA permits": "may obtain judicial review of the compliance by a Federal agency with the deadline established under section 1402(c)",
+  "Gives applicants for permits that need no environmental document a right to sue in district court when the 1-year deadline in section 1402(c) is missed.": "may obtain judicial review of the compliance by a Federal agency with the deadline established under section 1402(c) with respect to the covered application",
+  "The agency is excused if it proves the delay was caused by a disaster, a national emergency, fraud, withheld information, or a lapse in appropriations of more than 14 days.": "a natural disaster, act of God, or act of war that reasonably impaired the ability of the Federal agency to comply with the relevant deadline"
  },
  "2101": {
   "230 kV threshold; simultaneous state and FERC filing at 345 kV and above": "the electric transmission facilities are capable of transmitting electric energy at a voltage of not less than 230 kilovolts",
+  "Clean Water Act section 401 certifications and other state approvals under federal law become 'Federal authorizations' coordinated by FERC as lead agency (Interior for offshore), with challenges heard in the courts of appeals.": "The term ‘Federal authorization’ includes a certification under section 401 of the Federal Water Pollution Control Act (33 U.S.C. 1341) from a certifying authority",
   "Cost allocation limited to beneficiaries; no involuntary charges for trivial benefits": "shall not be involuntarily allocated any of the costs of those transmission facilities",
+  "Costs go only to customers who benefit, in line with cost causation, and customers with no or trivial benefit cannot be charged involuntarily.": "shall not be involuntarily allocated any of the costs of those transmission facilities",
   "ERCOT excluded; public power and small co-ops only if they opt in": "excluding any ERCOT utility (as defined in section 212(k)(2)(B)) and any exempt transmitting utility that does not voluntarily subject itself to Commission jurisdiction",
+  "ERCOT is excluded.": "This section shall not apply within the area referred to in section 212(k)(2)(A).",
+  "FERC must find the line is in the public interest, protects or benefits consumers, and improves reliability.": "the proposed construction or modification will protect or benefit consumers and provide improved reliability",
+  "FERC must issue a construction or modification permit for an interstate line of 230 kilovolts or more, or an advanced-conductor line at a voltage FERC sets, when it makes the required findings.": "the electric transmission facilities are capable of transmitting electric energy at a voltage of not less than 230 kilovolts",
+  "FERC must take landowner input, consider the state record, and give a 45-day comment period.": "including a public comment period of at least 45 days",
+  "For lines of 345 kilovolts or more the developer may file at FERC at the same time as at the state.": "an application under subsection (c) shall be submitted to the Commission simultaneously with, or any time after, the submission of an application to the applicable State commission",
   "No more national interest corridor prerequisite for FERC backstop siting": "facilities in a geographic area identified under section 224 of the Federal Power Act",
   "Overhauls FERC's backstop siting authority under Federal Power Act section 216.": "Section 216 of the Federal Power Act (16 U.S.C. 824p) is amended",
   "State 401 certifications for transmission folded into FERC-led federal authorization schedule": "The term ‘Federal authorization’ includes a certification under section 401 of the Federal Water Pollution Control Act",
+  "The line no longer has to sit in a national interest corridor designated by the Energy Department.": "facilities designated by the Secretary to be necessary in the national interest under section 216(a) of the Federal Power Act (16 U.S.C. 824p(a))” and inserting “facilities in a geographic area",
+  "The state's clock for deciding now starts on the date the application is filed with the state.": "and inserting “the date on which the application was filed with the State commission or other entity;”",
   "The state's clock starts on the date the application is filed with the state": "inserting “the date on which the application was filed with the State commission or other entity;”"
  },
  "2102": {
+  "Adds Federal Power Act section 216A: work that maintains or increases grid capacity inside an existing right-of-way (reconductoring, higher operating voltage, added circuits, advanced transmission technologies, added storage at an existing facility, a parallel circuit) is categorically excluded from NEPA, is not a major federal action, and is not an undertaking under the National Historic Preservation Act. It also amends Natural Gas Act section 7 so that repair, replacement, looping, compression and capacity-enhancement of interstate gas pipelines inside an existing right-of-way or previously reviewed footprint are not major federal actions or historic-preservation undertakings.": "are a category of actions designated as being categorically excluded from the preparation of an environmental assessment or an environmental impact statement under the National Environmental Policy Act",
   "Clean Water Act and Clean Air Act requirements for pipelines stay in place": "Nothing in this subsection affects the applicability of any requirement under",
   "Gas pipeline looping and compression in existing corridors exempt from NEPA and NHPA section 106": "shall not be considered a major Federal action under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.) if the covered activity remains within a covered area",
   "Reconductoring and in-corridor grid upgrades exempt from NEPA and NHPA section 106": "are a category of actions designated as being categorically excluded from the preparation of an environmental assessment or an environmental impact statement under the National Environmental Policy Act of 1969"
  },
  "2103": {
+  "A project selected in a regional or interregional plan is deemed to meet most of the findings for a FERC backstop permit.": "a project that is selected by 1 or more transmission planning regions pursuant to a regional or joint interregional transmission plan in accordance with this section shall be considered",
   "Adds Federal Power Act sections 224 and 225.": "Part II of the Federal Power Act (16 U.S.C. 824 et seq.) is amended by adding at the end the following",
+  "Approving a planning process is not a major federal action under NEPA.": "any approval of a regional or joint interregional transmission planning process under subsection (f) shall not be considered a major Federal action",
   "Compliance with FERC's 2024 and 2025 planning orders (Order 1920) counts for the regional piece": "Compliance with a Commission order or rulemaking effective as of the date of enactment of this section, including orders published in the Federal Register on",
+  "Compliance with the FERC planning orders published on June 11, 2024, December 6, 2024 and April 28, 2025 (Order 1920 and its two rehearing orders) counts as compliance for regional planning.": "orders published in the Federal Register on April 28, 2025, December 6, 2024, and June 11, 2024, shall constitute compliance with the regional transmission planning",
   "Costs are allocated to beneficiaries roughly commensurate with benefits.": "allocate the costs of providing service to customers that benefit, in accordance with the cost-causation principle and at least roughly commensurate with the benefits",
   "FERC must issue a rule within 180 days requiring every planning region to file a regional planning process and joint interregional processes with its neighbors within 2 years, updated every 4 years.": "Not later than 180 days after the date of enactment of this section, the Commission shall",
   "FERC rule in 180 days; regional filings in 2 years": "Not later than 180 days after the date of enactment of this section, the Commission shall",
   "Plan-selected projects get a fast path to a FERC siting permit": "shall be considered to satisfy paragraphs (2) through (5) and, if applicable, (6) of that section.",
   "Requires interregional transmission planning by statute": "“(2) require neighboring transmission planning regions to jointly establish a process for planning interregional transmission facilities in accordance with this section; “(3) require each transmission planning region to submit to the Commission for approval— “(A) a regional transmission planning process; and “(B) a joint interregional transmission planning process with each of its neighboring transmission planning regions, which requirement may, at the discretion of the transmission planning region, be satisfied through the submission of—",
   "Six enumerated benefits; reliability first": "A common set of benefits for regional and interregional transmission planning and cost allocation, including",
+  "The Energy Department studies transmission constraints and congestion every 3 years and may identify constrained geographic areas.": "Not later than 1 year after the date of enactment of this section and every 3 years thereafter, the Secretary of Energy",
   "The processes must use common assumptions, a fixed list of six benefits, and selection criteria of improved reliability, consumer benefit and public interest.": "A common set of input assumptions and models, on a consistent timeline"
  },
  "2104": {
@@ -248,23 +304,37 @@
   "Requires FERC, within 18 months, to make each planning region file a consolidated interconnection and transmission planning process that looks 20 years ahead, publishes fuel-neutral planned interconnection locations with a fixed per-megawatt cost, and runs a cluster study with one decision point and nonrefundable security to deter speculative projects.": "shall issue a rule requiring each transmission planning region (as defined in section 225(a)) to file a consolidated interconnection and regional transmission planning process that—"
  },
  "2107": {
+  "Congress finds it is not just and reasonable to charge data center, AI and cryptocurrency loads less than the embedded and incremental cost of the transmission they need.": "charge less than the embedded costs and incremental expansion costs to eligible customers seeking transmission service from computational load owners and computational load operators",
   "Costs follow the data center even after it exits": "such recovery shall continue notwithstanding the termination by the covered load of a contract or other agreement",
   "Data centers of 20 MW or more pay the full incremental cost of serving them": "No portion of the incremental cost may be allocated to, or recovered in the rates of, any customer other than a covered load",
   "Existing approved arrangements grandfathered": "An arrangement to serve a covered load that was approved by the Commission or by a State before the date of enactment of this section shall remain in effect.",
+  "FERC must revise its 1994 transmission pricing policy within 270 days, propose a rule 270 days after that, and finish within a further year.": "Not later than 270 days after the date of enactment of this Act, the Commission shall revise the 1994 transmission pricing policy statement",
   "Incremental revenues credited to prevent double recovery from other ratepayers": "to ensure that any incremental costs paid are credited to the annual transmission revenue requirement of the applicable public utility or transmitting utility to prevent double recovery from other customers.",
+  "New Federal Power Act section 228 covers data center loads of 20 megawatts or more.": "equals or exceeds 20 megawatts or, in the case of data centers or high-density computing facilities developed in phases, is reasonably expected to equal or exceed 20 megawatts",
   "Non-firm service gets a lower transmission price": "provide for a lower cost of transmission service for eligible customers seeking transmission service on behalf of computational load owners and computational load operators that elect non-firm transmission service.",
+  "None of the incremental cost of serving them (generation, transmission, distribution) may be recovered from other customers.": "No portion of the incremental cost may be allocated to, or recovered in the rates of, any customer other than a covered load",
+  "Recovery continues even if the data center leaves, and utilities must collect financial assurance before building upgrades.": "an electric utility shall require the covered load to provide financial assurances or contributions sufficient to cover the cost of the facility or upgrade",
   "Standardized study of cost-reduction options to avoid network upgrades": "to require standardized analysis to identify upgrades for a computational load site and cost reduction options, as the Commission may require by rule.",
   "States may auction grid access and require bring-your-own generation": "use an open season or competitive solicitation to allocate among covered loads the opportunity to obtain and contract for retail electric service",
+  "States may charge these loads more than cost and credit the surplus to other ratepayers.": "establish rates, charges, or contract terms that recover more than the embedded average cost, and more than the incremental cost, of serving a covered load",
+  "The section applies to loads interconnecting after enactment.": "Subsections (b) and (c) apply to a covered load that interconnects on or after the date of enactment of this section.",
+  "They may require the load to bring new generation, require curtailable service, and treat data centers less favorably than other industrial customers.": "condition the provision of retail electric service to a covered load on the procurement, construction, or contracting by the covered load for new generation resources",
+  "They may run open seasons that award service by ratepayer benefit, whatever the queue order.": "making awards in such manner as returns the greatest benefit to other ratepayers on a present value basis, notwithstanding the order in which applications",
   "Up-front financial assurance before upgrades are built": "an electric utility shall require the covered load to provide financial assurances or contributions sufficient to cover the cost of the facility or upgrade"
  },
  "2108": {
   "$20 million a year for streamlined local solar and storage permitting": "$20,000,000 for each of fiscal years 2026 through 2031.",
+  "A device paid by a state retail program cannot be paid twice for the same service;": "No qualifying BTM DES facility or qualifying BTM DES aggregation shall receive double compensation.",
   "After 18 months, grid operator rules that block them are unjust and unreasonable.": "Effective on the date that is 18 months after the date of enactment of this section, it shall not be just and reasonable",
   "Device-level metering allowed; utilities cannot require their own equipment": "are not required to include equipment owned or installed by the distribution utility (as so defined), and may include the use of device-level equipment, including inverters.",
   "Distribution utilities in organized markets must interconnect behind-the-meter resources": "any distribution utility located within the geographic footprint of an organized wholesale market administered by a Transmission Organization shall interconnect any behind-the-meter resource",
   "Double-payment ban, with penalties of up to 3 times the amount per day": "monetary penalties of up to 3 times the amount of the double compensation received for each day",
+  "FERC orders disgorgement and can impose penalties of up to 3 times the amount for each day it was knowingly kept.": "monetary penalties of up to 3 times the amount of the double compensation received for each day that the double compensation was knowingly retained after the date of receipt",
   "Grid operators file compliance tariffs within 180 days.": "Not later than 180 days after the date of enactment of this section, each Transmission Organization that administers a wholesale market subject to the jurisdiction of the Commission shall file",
   "Opens wholesale markets to aggregations of customer-sited batteries, fuel cells and generators that can respond within 15 minutes (5 kilowatts minimum per device, 100 kilowatts per aggregation).": "can be brought online within 15 minutes of being called on for deployment",
+  "The Energy Department runs a voluntary streamlined local permitting program for rooftop solar, batteries and vehicle chargers, with $20 million a year authorized for fiscal years 2026 through 2031.": "There is authorized to be appropriated to the Secretary to carry out this subsection $20,000,000 for each of fiscal years 2026 through 2031.",
+  "They must also accept wholesale metering data.": "shall accept the same metering and telemetry data used by the wholesale market for purposes of market participation by that qualifying BTM DES facility",
+  "Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect these resources; for public power utilities and other section 201(f) entities the requirement is voluntary.": "Except as otherwise provided by State law or by the State regulatory authority with jurisdiction over the distribution utility, any distribution utility located within the geographic footprint of an organized wholesale market",
   "Virtual power plants get statutory wholesale market access": "prevent the participation of any qualifying BTM DES aggregation in wholesale energy, capacity, or ancillary services markets administered by the Transmission Organization."
  },
  "2109": {
@@ -288,6 +358,7 @@
   "Violations are treated as reliability matters.": "shall be considered a matter affecting the reliable operation of the bulk-power system under section 215"
  },
  "2112": {
+  "Lets the federal power marketing agencies set pay outside the federal schedule, benchmarked to consumer-owned utilities in their interconnection, to fix hiring and retention problems.": "Notwithstanding any other law, rule, regulation, or directive relating to the payment of Federal employees (other than chapter 83 of title 5, United States Code)",
   "Market-rate pay for power marketing administration staff": "individual total compensation of the applicable Administrator and any employee of the applicable Federal power marketing agency shall be comparable to and competitive with similar positions among consumer-owned utilities"
  },
  "2113": {
@@ -295,7 +366,8 @@
   "Requires FERC to review every 5 years whether its fees and charges are enough to handle its workload promptly and report to Congress.": "undertake a review to determine whether the fees and charges the Federal Energy Regulatory Commission assesses under this Act and other laws"
  },
  "2114": {
-  "First federal data series on data center electricity load": "shall revise Form 861 of the Energy Information Administration to include load from data center entities."
+  "Directs the Energy Information Administration to revise Form 861 to collect electricity load from data center entities (AI, cloud, cryptocurrency) at least 90 days before the first April 1 after enactment.": "Not later than 90 days before the first April 1 after the date of enactment of this Act, the Administrator of the Energy Information Administration shall revise Form 861",
+  "EIA's Form 861 must report data center load": "shall revise Form 861 of the Energy Information Administration to include load from data center entities"
  },
  "2115": {
   "Conforming cross-references in the Federal Power Act and a savings clause: nothing in the transmission title gives FERC authority over retail electricity sales or local distribution.": "grants authority to the Federal Energy Regulatory Commission under the Federal Power Act (16 U.S.C. 791a et seq.) over sales of electric energy at retail or the local distribution",
@@ -304,6 +376,11 @@
  "2201": {
   "150 days to sue over energy and mineral project decisions under any federal law": "shall be barred unless the civil action is filed by the date that is 150 days after the date on which the grant or denial",
   "180-day cap on agency action after a court remand": "shall not exceed 180 days from the date on which the order of the court was issued",
+  "A 150-day statute of limitations for any lawsuit challenging a federal agency's grant or denial of an authorization for an energy, carbon dioxide, mineral or wildfire fuel-reduction project, unless the underlying law sets a shorter one.": "the civil action is filed by the date that is 150 days after the date on which the grant or denial of the authorization is required to be made public",
+  "Agencies must publish the decision within 3 days.": "a final agency action granting or denying an authorization shall be made public not later than 3 days after that final agency action is taken.",
+  "Agencies must tell the project sponsor about any suit within 30 days.": "Not later than 30 days after the date on which an agency is served a copy of a petition for review or a complaint",
+  "Courts must expedite the case, and a remand cannot give the agency more than 180 days unless the law requires longer.": "A reviewing court shall set for expedited consideration any civil action arising under Federal law seeking judicial review of a final agency action granting or denying an authorization.",
+  "Covered authorizations include leases, drilling permits, rights-of-way, mining plans, Endangered Species Act statements and permits, and forest restoration approvals.": "agency approvals of lease sales, permits, rights-of-way, or plans required to explore for, develop, or produce energy or minerals under—",
   "Covers oil and gas, mining, offshore, geothermal, rights-of-way and forest fuel-reduction projects": "agency approvals of lease sales, permits, rights-of-way, or plans required to explore for, develop, or produce energy or minerals"
  },
  "2211": {
@@ -312,6 +389,7 @@
   "Lessees notify Interior of state permits.": "notify the Secretary of the Interior of the submission of a State application for a permit to drill or drilling plan on submission of the application",
   "No federal permit to drill for wells on private or state surface with a minority federal mineral interest": "the well is located on non-Federal land and the Federal Government owns less than 50 percent of the oil and gas minerals within the oil and gas drilling or spacing",
   "Removes the federal drilling permit requirement for oil and gas wells on non-federal surface land where the federal government owns less than half the minerals in the drilling unit, or where the wellbore only enters or passes through federal minerals.": "the well is located on non-Federal land and the Federal Government owns less than 50 percent of the oil and gas minerals within the oil and gas drilling or spacing",
+  "Royalties are unchanged;": "the amount of royalties due to the Federal Government from the production of the Federal minerals within the oil and gas drilling or spacing unit.",
   "State permits govern; royalties still owed": "the amount of royalties due to the Federal Government from the production of the Federal minerals within the oil and gas drilling or spacing unit."
  },
  "2212": {
@@ -323,8 +401,15 @@
  },
  "2213": {
   "30-day completeness and decision clocks for renewable rights-of-way on public land": "Not later than 30 days after the date on which the Secretary of the Interior or the Secretary of Agriculture, as applicable, receives an application",
+  "BLM must issue standard renewable review standards within 2 years.": "the National Renewable Energy Coordination Office of the Bureau of Land Management shall promulgate renewable energy project review standards",
   "Categorical exclusions for small solar, met towers and geotechnical work within 180 days": "Not later than 180 days after the date of enactment of this Act, to facilitate timely permitting of eligible projects, the Secretary",
-  "Storage added to the definition of an eligible renewable project": "is amended by inserting “or store” after “generate”"
+  "Deferral requires notice of remaining steps and agency timelines.": "that specifies steps that the applicant can take for the decision on the application to be issued",
+  "If an EIS is needed, the agency has 90 days after finding the application complete to issue a notice of intent.": "shall issue a notice of intent not later than 90 days after the date on which the applicable Secretary determines that an application is complete",
+  "Interior or the Forest Service must tell an eligible-project applicant within 30 days whether its right-of-way application is complete.": "Not later than 30 days after the date on which the Secretary of the Interior or the Secretary of Agriculture, as applicable, receives an application for a right-of-way",
+  "Storage added to the definition of an eligible renewable project": "is amended by inserting “or store” after “generate”",
+  "The list includes previously analyzed disturbances under 5 acres, certain repeat activities, small solar projects, surveys and meteorological towers.": "Individual surface disturbances of less than 5 acres that have undergone site-specific analysis",
+  "Within 180 days, both departments must develop or adopt categorical exclusions for listed low-disturbance renewable activities, with extraordinary-circumstances exceptions.": "the Secretary of the Interior and the Secretary of Agriculture shall each develop or adopt 1 or more categorical exclusions",
+  "Within 30 days after a complete application is submitted, it must issue any required cost-recovery agreement and grant, deny or defer the application.": "Not later than 30 days after the date on which an applicant submits a complete application for a right-of-way under paragraph (1)"
  },
  "2214": {
   "Categorical exclusions for grid work on federal land within 180 days": "Not later than 180 days after the date of enactment of this Act, to facilitate timely permitting, the Secretary of the Interior and the Secretary of Agriculture shall each develop",
@@ -376,10 +461,11 @@
  "2229": {
   "Drilling permits for these activities carry no NEPA requirements.": "shall not have any requirements under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.)",
   "Drilling permits for those activities 'shall not have any requirements' under NEPA": "shall not have any requirements under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.)",
+  "Geothermal is added to two of them, and a new item covers geothermal power lines of up to 20 miles in a corridor approved within the past 10 years.": "placement of an electric transmission or distribution line of not more than 20 miles in length in an approved right-of-way corridor, so long as the corridor was approved within 10 years prior to the date of placement",
   "Rewrites section 390 of the Energy Policy Act of 2005.": "Section 390 of the Energy Policy Act of 2005 (42 U.S.C. 15942) is amended",
   "Section 390 oil, gas and now geothermal activities are outside NEPA entirely": "shall not be considered a major Federal action under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.) if the activity is conducted pursuant to",
   "The corridor look-back for pipelines goes from 5 to 10 years, and geothermal gets a new item for power lines up to 20 miles in an approved corridor.": "placement of an electric transmission or distribution line of not more than 20 miles in length in an approved right-of-way corridor",
-  "The five listed oil and gas activities (small surface disturbances, drilling at an existing pad, drilling in a developed field, pipelines in approved corridors, minor maintenance) are no longer treated through categorical exclusions; they are declared not to be major federal actions at all, and geothermal is added.": "shall not be considered a major Federal action under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.) if the activity is conducted pursuant to"
+  "The oil and gas activities listed in section 390(b) of the Energy Policy Act of 2005 are declared not to be major federal actions at all, rather than categorical exclusions.": "shall not be considered a major Federal action under the National Environmental Policy Act of 1969"
  },
  "2231": {
   "FERC report on hydropower market barriers": "Not later than 270 days after the date of enactment of this Act, the Commission, in consultation with the Secretary of Energy, shall submit to the Committee on Energy and Natural Resources",
@@ -403,6 +489,7 @@
   "FERC can use special pay rates for economists and lawyers": "by striking “or mathematical” and inserting “mathematical, economic, or legal”"
  },
  "2242": {
+  "Amends the cap on Bonneville's funding of the Northwest Power and Conservation Council, section 4(c)(10)(B) of the Northwest Power Act, by adding the words 'since the date of enactment' of this bill.": "by inserting “since the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026” before the period at the end.",
   "Technical change to the funding cap for the Northwest Power and Conservation Council": "is amended by inserting “since the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026” before the period at the end"
  },
  "2243": {
@@ -410,22 +497,35 @@
   "Protective detail authority for FERC commissioners": "The Federal Energy Regulatory Commission may authorize employees of the Federal Energy Regulatory Commission to perform law enforcement duties as needed to ensure the safety of the Chairman and"
  },
  "2251": {
+  "Amends the offshore renewable energy section of the Outer Continental Shelf Lands Act. Interior's duty changes from 'prevention of interference with reasonable uses' of the ocean to 'prevention of unreasonable interference with other uses'.": "“prevention of interference with reasonable uses” and inserting “prevention of unreasonable interference with other uses”",
   "Offshore wind standard changes to 'unreasonable interference'": "inserting “prevention of unreasonable interference with other uses”",
+  "The Inflation Reduction Act's link between offshore wind leasing and oil and gas lease sales is preserved.": "Nothing in this section, or an amendment made by this section, modifies the limitations described in section 50265(b)(2) of Public Law 117–169",
   "Transmission cables allowed through marine sanctuaries": "may grant rights-of-way on the outer Continental Shelf within units of the National Marine Sanctuary System for the transmission of electricity"
  },
  "2252": {
+  "Directs Interior and Energy to identify preferred routes for offshore transmission cables within 2 years and review them every 3 years, makes Interior the lead agency for offshore transmission permitting, requires a final rule within 2 years, and lets Interior issue offshore transmission rights-of-way competitively or noncompetitively.": "Not later than 2 years after the date of enactment of this Act, the Secretary and the Secretary of Energy",
   "Interior is lead agency; rights-of-way can be noncompetitive": "the Department of the Interior shall act as the lead agency for purposes of coordinating all applicable Federal authorizations",
   "Planned offshore transmission routes within 2 years": "(A) INITIAL IDENTIFICATION.—Not later than 2 years after the date of enactment of this Act, the Secretary and the Secretary of Energy (referred to in this subsection as the “Secretaries”), in coordination with relevant Federal agencies involved in the permitting of offshore generation facilities and offshore transmission facilities, shall identify preferred routes on the outer Continental Shelf for transmission cables and sub-seabed infrastructure (where such routes have not yet been identified), including— (i) between offshore generation facilities; and (ii) between offshore generation facilities and optimal points of interconnection with onshore electric grids. (B) PERIODIC REVIEW.—Not less frequently than once every 3 years after the initial identification of preferred routes in accordance with subparagraph (A), the Secretaries, in coordination with relevant Federal agencies involved in the permitting of offshore generation facilities and offshore transmission facilities, shall—"
  },
  "2301": {
   "150-day limit, court of appeals jurisdiction, remand without vacatur": "the claim is filed not later than 150 days after the later of",
+  "A suit over a missed consultation deadline goes to a court where the project is located.": "by filing a complaint with a court of competent jurisdiction in which a substantial part of the applicable proposed project, activity, or program is situated",
   "Adverse effect limited to direct physical alteration; visual and noise effects mostly excluded": "directly alters the characteristics of a historic property in a manner that would diminish the integrity",
   "Agency may find other considerations outweigh preservation 'in the sole discretion' of the official": "in the sole discretion of the applicable Federal official and as otherwise allowed by law, other considerations outweigh the consideration of historic preservation",
   "An 'undertaking' excludes projects whose only federal tie is a loan, guarantee or grant, the non-federal parts of a project, minor repairs, permit renewals and post-approval operations.": "a project, activity, or program for which the only Federal involvement is a loan, loan guarantee, grant",
+  "Claims go to the courts of appeals, within 150 days, from parties who commented and suffered direct harm.": "the courts of appeals of the United States shall have original and exclusive jurisdiction over a claim for review of an agency action",
+  "Consultation must be finished by the time the NEPA document is completed, unless the Secretary grants an extension for extraordinary circumstances.": "shall be completed not later than the date on which the applicable environmental document under section 107(g) of the National Environmental Policy Act of 1969",
+  "Courts give substantial deference and may only remand without vacatur or injunction; a preliminary injunction is available only for a likely violation of another law.": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction, the applicable agency action",
   "End-to-end deadlines; silence from a preservation officer after 30 days lets the agency proceed": "the applicable Federal official shall proceed to the determination under paragraph (3)(A)",
   "Later National Register listings do not reopen a review": "shall not require the head of the Federal agency to delay, reopen, supplement, or otherwise modify the review or consultation process",
   "Loans and grants alone no longer trigger section 106": "a project, activity, or program for which the only Federal involvement is a loan, loan guarantee, grant",
-  "State and tribal preservation officers who do not respond in 30 days are passed over, and the agency may decide in its sole discretion that other considerations outweigh preservation.": "the applicable Federal official shall proceed to the determination under paragraph (3)(A)"
+  "Non-signatories cannot challenge programmatic agreements.": "A party that is not a signatory to a programmatic agreement entered into for purposes of this subsection may not bring a civil action to challenge the implementation",
+  "Rewrites section 106 of the National Historic Preservation Act. An 'adverse effect' must be reasonably foreseeable and must directly alter a historic property.": "directly alters the characteristics of a historic property in a manner that would diminish the integrity of the location, design, setting, materials, workmanship, or association of the historic property.",
+  "State and tribal preservation officers who do not respond in 30 days are passed over, and the agency may decide in its sole discretion that other considerations outweigh preservation.": "the applicable Federal official shall proceed to the determination under paragraph (3)(A)",
+  "State and tribal programs are evaluated every 2 years and lose grants if they miss consultation timelines.": "A State program shall not be considered consistent with this division under paragraph (1) if the applicable State Historic Preservation Officer does not regularly comply with timelines",
+  "Temporary alterations are excluded.": "any temporary alteration to a historic property that is limited to the time it takes to complete an undertaking",
+  "The process gets deadlines: 30 days to decide whether a project is an undertaking, 60 days for the agency's report, 90 days for a determination, then 60 days of consultation, 45 days for Advisory Council comments and 30 days for a final decision.": "Not later than 30 days after the date of receipt of a request for review of a proposed project, activity, or program under this section",
+  "Visual, atmospheric and audible effects are excluded unless they directly and significantly diminish the property.": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics"
  },
  "2302": {
   "$20 million a year for tribal preservation databases": "$20,000,000 for each of fiscal years 2027 through 2030",
