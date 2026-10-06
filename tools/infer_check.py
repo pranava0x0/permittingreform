@@ -116,7 +116,7 @@ def row_units(core: dict, bill: dict) -> list[dict]:
 
 
 def evidence_is_present(cid: str, claim: str, evidence: str, source: str) -> bool:
-    """Require a bounded source span; only explicit comparison absences may be empty."""
+    """Require a bounded source span; only a claim that the text is silent may have none."""
     if not evidence:
         return billtext.is_absence(claim)
     return billtext.locate([[1, 1, source]], evidence) is not None

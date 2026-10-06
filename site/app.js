@@ -1225,7 +1225,9 @@
     const rows = [["Bill quotes", billVerified + " of " + billTotal + " match the PDF text word for word."]];
     if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " carry a passage from the bill, matched the same way."]);
     if (ck.cites) rows.push(["Cites for claims", ck.cites.summary.cited + " of " + ck.cites.summary.total + " summary sentences and " + ck.cites.rows.cited + " of " + ck.cites.rows.total +
-      " sentences in headlines, comparison cells and the Communities and Data centers rows carry a bill passage, found word for word in a section the claim cites. A claim without one, or one the summary review flagged, stops the build."]);
+      " sentences in headlines, comparison cells and the Communities and Data centers rows carry a bill passage, found word for word in a section the claim cites." +
+      (ck.cites.summary.absent + ck.cites.rows.absent ? " " + (ck.cites.summary.absent + ck.cites.rows.absent) + " more say the text is silent on a point, which the summary review confirmed; they have no passage to cite." : "") +
+      " A claim without a passage, or one the summary review flagged, stops the build."]);
     if (ck.takes) rows.push(["Outside readings", ck.takes.total + " readings of specific sections from industry, advocates, lawyers and analysts. Their quotes go through the web-quote check below, and a reading that argues over particular words names that passage. They are the sources' claims about effects, not verified findings."]);
     if (ck.inference) {
       const i = ck.inference;
