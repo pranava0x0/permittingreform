@@ -21,7 +21,7 @@ PDF citations use printed bill pages and lines. A matching quote proves occurren
 
 ## Check coverage
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 ## Sections
 
@@ -108,7 +108,7 @@ Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; check
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1101)
 
@@ -215,7 +215,7 @@ Section 2 of the National Environmental Policy Act of 1969 (42 U.S.C. 4321) is a
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1102)
 
@@ -845,7 +845,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1103)
 
@@ -924,7 +924,7 @@ Section 103 of the National Environmental Policy Act of 1969 (42 U.S.C. 4333) is
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1104)
 
@@ -1026,7 +1026,7 @@ Section 102(2) of the National Environmental Policy Act of 1969 (42 U.S.C. 4332(
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1105)
 
@@ -1185,7 +1185,7 @@ Section 106 of the National Environmental Policy Act of 1969 (42 U.S.C. 4336) is
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1106)
 
@@ -1943,7 +1943,7 @@ Section 107 of the National Environmental Policy Act of 1969 (42 U.S.C. 4336a) i
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1107)
 
@@ -1993,7 +1993,7 @@ Section 108 of the National Environmental Policy Act of 1969 (42 U.S.C. 4336b) i
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1108)
 
@@ -2100,7 +2100,7 @@ Section 109 of the National Environmental Policy Act of 1969 (42 U.S.C. 4336c) i
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1109)
 
@@ -2239,7 +2239,7 @@ Section 110 of the National Environmental Policy Act of 1969 (42 U.S.C. 4336d) i
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1110)
 
@@ -2574,7 +2574,7 @@ Title I of the National Environmental Policy Act of 1969 (as amended by section 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1121)
 
@@ -3159,7 +3159,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1131)
 
@@ -3237,7 +3237,7 @@ In this subtitle:
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1132)
 
@@ -3368,7 +3368,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1133)
 
@@ -3462,7 +3462,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1201)
 
@@ -3529,7 +3529,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1202)
 
@@ -4008,7 +4008,7 @@ Section 401 of the Federal Water Pollution Control Act (33 U.S.C. 1341) is amend
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1203)
 
@@ -4066,7 +4066,7 @@ Section 402(b)(1)(B) of the Federal Water Pollution Control Act (33 U.S.C. 1342(
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1204)
 
@@ -4313,7 +4313,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1205)
 
@@ -4452,7 +4452,7 @@ Section 404 of the Federal Water Pollution Control Act (33 U.S.C. 1344) is amend
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1301)
 
@@ -4558,7 +4558,7 @@ Section 3 of the Endangered Species Act of 1973 (16 U.S.C. 1532) is amended—
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1302)
 
@@ -4684,7 +4684,7 @@ Section 7(b)(1) of the Endangered Species Act of 1973 (16 U.S.C. 1536(b)(1)) is 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1303)
 
@@ -4738,7 +4738,7 @@ Section 7 of the Endangered Species Act of 1973 (16 U.S.C. 1536) is amended by a
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1304)
 
@@ -5269,7 +5269,7 @@ The Endangered Species Act of 1973 is amended by inserting after section 7 (16 U
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1305)
 
@@ -5351,7 +5351,7 @@ Section 7(n) of the Endangered Species Act of 1973 (16 U.S.C. 1536(n)) is amende
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1306)
 
@@ -5405,7 +5405,7 @@ Section 4 of the Endangered Species Act of 1973 (16 U.S.C. 1533) is amended by a
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1307)
 
@@ -5463,7 +5463,7 @@ There is authorized to be appropriated $150,000,000 for each of fiscal years 202
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1308)
 
@@ -5569,7 +5569,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1401)
 
@@ -5810,7 +5810,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1402)
 
@@ -6356,7 +6356,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/1403)
 
@@ -6470,7 +6470,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2101)
 
@@ -6954,13 +6954,13 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2102)
 
 ## Summary
 
-Adds Federal Power Act section 216A: work that maintains or increases grid capacity inside an existing right-of-way (reconductoring, higher operating voltage, added circuits, advanced transmission technologies, added storage at an existing facility, a parallel circuit) is categorically excluded from NEPA, is not a major federal action, and is not an undertaking under the National Historic Preservation Act. It also amends Natural Gas Act section 7 so that repair, replacement, looping, compression and capacity-enhancement of interstate gas pipelines inside an existing right-of-way or previously reviewed footprint are not major federal actions or historic-preservation undertakings. ([p. 201, line 23 to p. 202, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=201))
+Adds Federal Power Act section 216A: work that maintains or increases grid capacity inside an existing right-of-way (reconductoring, higher operating voltage, added circuits, advanced transmission technologies, added storage at an existing facility, a parallel circuit) is categorically excluded from NEPA, is not a major federal action, and is not an undertaking under the National Historic Preservation Act. ([p. 201, line 23 to p. 202, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=201)) It also amends Natural Gas Act section 7 so that repair, replacement, looping, compression and capacity-enhancement of interstate gas pipelines inside an existing right-of-way or previously reviewed footprint are not major federal actions or historic-preservation undertakings. ([p. 203, line 12 to p. 203, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=203))
 
 ## Key points
 
@@ -7184,7 +7184,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2103)
 
@@ -7617,7 +7617,7 @@ Part II of the Federal Power Act (16 U.S.C. 824 et seq.) is amended by adding at
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2104)
 
@@ -7823,7 +7823,7 @@ Part II of the Federal Power Act (16 U.S.C. 824 et seq.) (as amended by section 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2105)
 
@@ -7892,7 +7892,7 @@ Part II of the Federal Power Act (16 U.S.C. 824 et seq.) (as amended by section 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2106)
 
@@ -7996,7 +7996,7 @@ Part III of the Federal Power Act is amended by inserting after section 317 (16 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2107)
 
@@ -8417,7 +8417,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2108)
 
@@ -8953,7 +8953,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2109)
 
@@ -9157,7 +9157,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2110)
 
@@ -9211,7 +9211,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2111)
 
@@ -9410,7 +9410,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2112)
 
@@ -9568,7 +9568,7 @@ Part II of the Federal Power Act (16 U.S.C. 824 et seq.) (as amended by section 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2113)
 
@@ -9634,7 +9634,7 @@ Part III of the Federal Power Act is amended by inserting after section 318 (as 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2114)
 
@@ -9708,7 +9708,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2115)
 
@@ -9786,7 +9786,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2201)
 
@@ -9994,7 +9994,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2211)
 
@@ -10165,7 +10165,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2212)
 
@@ -10448,7 +10448,7 @@ The Act of February 5, 1948 (62 Stat. 17, chapter 45), is amended—
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2213)
 
@@ -10630,7 +10630,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2214)
 
@@ -10696,7 +10696,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2215)
 
@@ -11181,7 +11181,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2221)
 
@@ -11443,7 +11443,7 @@ The Geothermal Steam Act of 1970 (30 U.S.C. 1001 et seq.) is amended by adding a
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2222)
 
@@ -11613,7 +11613,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2223)
 
@@ -11732,7 +11732,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2224)
 
@@ -11962,7 +11962,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2225)
 
@@ -12084,7 +12084,7 @@ The Geothermal Steam Act of 1970 (30 U.S.C. 1001 et seq.) (as amended by section
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2226)
 
@@ -12150,7 +12150,7 @@ Section 4 of the Geothermal Steam Act of 1970 (30 U.S.C. 1003) (as amended by se
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2227)
 
@@ -12308,7 +12308,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2228)
 
@@ -12418,7 +12418,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2229)
 
@@ -12533,7 +12533,7 @@ Section 390 of the Energy Policy Act of 2005 (42 U.S.C. 15942) is amended—
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2231)
 
@@ -12667,7 +12667,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2232)
 
@@ -12717,7 +12717,7 @@ Section 4(e) of the Federal Power Act (16 U.S.C. 797(e)) is amended, in the firs
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2233)
 
@@ -12819,7 +12819,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2234)
 
@@ -12969,7 +12969,7 @@ Part I of the Federal Power Act (16 U.S.C. 792 et seq.) is amended by adding at 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2241)
 
@@ -13031,7 +13031,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2242)
 
@@ -13081,7 +13081,7 @@ Section 4(c)(10)(B) of the Pacific Northwest Electric Power Planning and Conserv
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2243)
 
@@ -13131,13 +13131,13 @@ The Federal Energy Regulatory Commission may authorize employees of the Federal 
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2251)
 
 ## Summary
 
-Amends the offshore renewable energy section of the Outer Continental Shelf Lands Act. Interior's duty changes from 'prevention of interference with reasonable uses' of the ocean to 'prevention of unreasonable interference with other uses'. ([p. 363, line 15 to p. 363, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=363)) Interior, in consultation with the Secretary of Commerce, may grant rights-of-way for electric transmission through national marine sanctuaries, with sanctuary permits lasting as long as the right-of-way. ([p. 364, line 4 to p. 364, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=364)) The Inflation Reduction Act's link between offshore wind leasing and oil and gas lease sales is preserved. ([p. 364, line 22 to p. 364, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=364))
+Amends the offshore renewable energy section of the Outer Continental Shelf Lands Act. ([p. 363, line 12 to p. 363, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=363)) Interior's duty changes from 'prevention of interference with reasonable uses' of the ocean to 'prevention of unreasonable interference with other uses'. ([p. 363, line 15 to p. 363, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=363)) Interior, in consultation with the Secretary of Commerce, may grant rights-of-way for electric transmission through national marine sanctuaries, with sanctuary permits lasting as long as the right-of-way. ([p. 364, line 4 to p. 364, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=364)) The Inflation Reduction Act's link between offshore wind leasing and oil and gas lease sales is preserved. ([p. 364, line 22 to p. 364, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=364))
 
 ## Key points
 
@@ -13214,7 +13214,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2252)
 
@@ -13489,13 +13489,13 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2301)
 
 ## Summary
 
-Rewrites section 106 of the National Historic Preservation Act. An 'adverse effect' must be reasonably foreseeable and must directly alter a historic property. ([p. 380, line 5 to p. 380, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380)) Temporary alterations are excluded. ([p. 380, line 19 to p. 380, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380)) Visual, atmospheric and audible effects are excluded unless they directly and significantly diminish the property. ([p. 380, line 13 to p. 380, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380)) An 'undertaking' excludes projects whose only federal tie is a loan, guarantee or grant, the non-federal parts of a project, minor repairs, permit renewals and post-approval operations. ([p. 383, line 22 to p. 383, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=383))
+Rewrites section 106 of the National Historic Preservation Act. ([p. 379, line 7 to p. 379, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=379)) An 'adverse effect' must be reasonably foreseeable and must directly alter a historic property. ([p. 380, line 5 to p. 380, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380)) Temporary alterations are excluded. ([p. 380, line 19 to p. 380, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380)) Visual, atmospheric and audible effects are excluded unless they directly and significantly diminish the property. ([p. 380, line 13 to p. 380, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380)) An 'undertaking' excludes projects whose only federal tie is a loan, guarantee or grant, the non-federal parts of a project, minor repairs, permit renewals and post-approval operations. ([p. 383, line 22 to p. 383, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=383))
 
 The process gets deadlines: 30 days to decide whether a project is an undertaking, 60 days for the agency's report, 90 days for a determination, then 60 days of consultation, 45 days for Advisory Council comments and 30 days for a final decision. ([p. 386, line 8 to p. 386, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=386)) Consultation must be finished by the time the NEPA document is completed, unless the Secretary grants an extension for extraordinary circumstances. ([p. 398, line 3 to p. 398, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=398)) State and tribal preservation officers who do not respond in 30 days are passed over, and the agency may decide in its sole discretion that other considerations outweigh preservation. ([p. 400, line 19 to p. 400, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=400))
 
@@ -14484,7 +14484,7 @@ Extracted from the official PDF; line cites mark paragraph starts. Consult the P
 
 BAAJA draft released September 30, 2026. AI-assisted analysis; proposed changes.
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 [Official PDF](https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf) · [Browser section](https://pranava0x0.github.io/permittingreform/#/bill/sec/2302)
 
@@ -15072,7 +15072,7 @@ BAAJA's data center and load-growth rules beside the federal bills that would re
 - Current policy: Mostly voluntary. The Pledge creates no legal duty. FERC's June 18 orders find grid operators' tariffs may be unjust and make them justify or rewrite them. No final FERC rule.
   Source: [Proclamation, 91 FR 11439](https://www.whitehouse.gov/presidential-actions/2026/03/ratepayer-protection-pledge-proclamation)
   Quote: "The Ratepayer Protection Pledge and the commitments embodied therein effectuate the national policy of the United States."
-- BAAJA: Binding. (Sec. 2107, [p. 234, line 23 to p. 235, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=234)) Section 228 is a federal floor in the Federal Power Act. Section 2107(a) orders FERC to revise its 1994 pricing policy in 270 days, propose a rule 270 days later and finish within a year. (Sec. 2107, [p. 229, line 15 to p. 229, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=229))
+- BAAJA: Binding. (Sec. 2107, [p. 234, line 23 to p. 235, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=234)) Section 228 is a federal floor in the Federal Power Act. (Sec. 2107, [p. 234, line 22 to p. 234, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=234)) Section 2107(a) orders FERC to revise its 1994 pricing policy in 270 days, propose a rule 270 days later and finish within a year. (Sec. 2107, [p. 229, line 15 to p. 229, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=229))
   Bill: [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
 - Ratepayer Protection Act (H.R. 9340): Optional. A PURPA standard each state must consider within 1 year and decide within 2. States need not adopt it.
   Source: [H.R. 9340, House-passed text](https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm)

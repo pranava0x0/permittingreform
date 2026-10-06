@@ -1240,7 +1240,12 @@
   "text": "No portion of the incremental cost may be allocated to, or recovered in the rates of, any customer other than a covered load"
  },
  "dcb.binding.s2": {
-  "claim": "Section 228 is a federal floor in the Federal Power Act. Section 2107(a) orders FERC to revise its 1994 pricing policy in 270 days, propose a rule 270 days later and finish within a year.",
+  "claim": "Section 228 is a federal floor in the Federal Power Act.",
+  "section": "2107",
+  "text": "RATEPAYER PROTECTION FLOOR.— “(1) NO SUBSIDY OF COVERED LOAD.—No portion of the incremental cost"
+ },
+ "dcb.binding.s3": {
+  "claim": "Section 2107(a) orders FERC to revise its 1994 pricing policy in 270 days, propose a rule 270 days later and finish within a year.",
   "section": "2107",
   "text": "Not later than 270 days after the date of enactment of this Act, the Commission shall revise the 1994 transmission pricing policy statement"
  },

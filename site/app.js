@@ -258,6 +258,12 @@
 
   /* ---------- overview ---------- */
 
+  /* Today in the viewer's time zone as YYYY-MM-DD. toISOString() is UTC, which
+     in the Americas turns a still-future date into a past one each evening. */
+  function localToday() {
+    return new Date().toLocaleDateString("sv"); // Swedish format is YYYY-MM-DD
+  }
+
   /* "What others say" links for sections that have outside readings. */
   function readingsLinks(nums) {
     const withTakes = nums.filter((n) => byNum[n] && byNum[n].takes);
@@ -277,7 +283,7 @@
           el("p", { class: "facts" }, num(m.pages) + " pages · " + m.sections + " sections · released " + S.formatDate(m.released)),
           el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")))),
       // A scheduled date in the past says so, rather than reading as upcoming.
-      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= new Date().toISOString().slice(0, 10) ? "Next: " : "Was scheduled for "),
+      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next: " : "Was scheduled for "),
         S.formatDate(o.next.date) + ". " + o.next.text + " ",
         el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null,
       el("p", { class: "note" }, "Proposed law", " · ",

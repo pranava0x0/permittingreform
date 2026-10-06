@@ -1643,14 +1643,6 @@
    "note": ""
   },
   {
-   "id": "2102.s1",
-   "claim": "Adds Federal Power Act section 216A: work that maintains or increases grid capacity inside an existing right-of-way (reconductoring, higher operating voltage, added circuits, advanced transmission technologies, added storage at an existing facility, a parallel circuit) is categorically excluded from NEPA, is not a major federal action, and is not an undertaking under the National Historic Preservation Act. It also amends Natural Gas Act section 7 so that repair, replacement, looping, compression and capacity-enhancement of interstate gas pipelines inside an existing right-of-way or previously reviewed footprint are not major federal actions or historic-preservation undertakings.",
-   "verdict": "supported",
-   "evidence": "are a category of actions designated as being categorically excluded from the preparation of an environmental assessment or an environmental impact statement under the National Environmental Policy Act",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "2103.k1",
    "claim": "Requires interregional transmission planning by statute",
    "verdict": "supported",
@@ -2915,15 +2907,7 @@
    "note": ""
   },
   {
-   "id": "2251.s1",
-   "claim": "Amends the offshore renewable energy section of the Outer Continental Shelf Lands Act. Interior's duty changes from 'prevention of interference with reasonable uses' of the ocean to 'prevention of unreasonable interference with other uses'.",
-   "verdict": "supported",
-   "evidence": "“prevention of interference with reasonable uses” and inserting “prevention of unreasonable interference with other uses”",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "2251.s2",
+   "id": "2251.s3",
    "claim": "Interior, in consultation with the Secretary of Commerce, may grant rights-of-way for electric transmission through national marine sanctuaries, with sanctuary permits lasting as long as the right-of-way.",
    "verdict": "unanswered",
    "evidence": "",
@@ -2931,7 +2915,7 @@
    "note": "the model returned no verdict for this claim"
   },
   {
-   "id": "2251.s3",
+   "id": "2251.s4",
    "claim": "The Inflation Reduction Act's link between offshore wind leasing and oil and gas lease sales is preserved.",
    "verdict": "supported",
    "evidence": "Nothing in this section, or an amendment made by this section, modifies the limitations described in section 50265(b)(2) of Public Law 117–169",
@@ -3011,15 +2995,15 @@
    "note": ""
   },
   {
-   "id": "2301.s1",
-   "claim": "Rewrites section 106 of the National Historic Preservation Act. An 'adverse effect' must be reasonably foreseeable and must directly alter a historic property.",
+   "id": "2301.s10",
+   "claim": "Claims go to the courts of appeals, within 150 days, from parties who commented and suffered direct harm.",
    "verdict": "supported",
-   "evidence": "directly alters the characteristics of a historic property in a manner that would diminish the integrity of the location, design, setting, materials, workmanship, or association of the historic property.",
+   "evidence": "the courts of appeals of the United States shall have original and exclusive jurisdiction over a claim for review of an agency action",
    "evidence_in_text": true,
    "note": ""
   },
   {
-   "id": "2301.s10",
+   "id": "2301.s11",
    "claim": "A suit over a missed consultation deadline goes to a court where the project is located.",
    "verdict": "supported",
    "evidence": "by filing a complaint with a court of competent jurisdiction in which a substantial part of the applicable proposed project, activity, or program is situated",
@@ -3027,7 +3011,7 @@
    "note": ""
   },
   {
-   "id": "2301.s11",
+   "id": "2301.s12",
    "claim": "Non-signatories cannot challenge programmatic agreements.",
    "verdict": "supported",
    "evidence": "A party that is not a signatory to a programmatic agreement entered into for purposes of this subsection may not bring a civil action to challenge the implementation",
@@ -3035,7 +3019,7 @@
    "note": ""
   },
   {
-   "id": "2301.s12",
+   "id": "2301.s13",
    "claim": "State and tribal programs are evaluated every 2 years and lose grants if they miss consultation timelines.",
    "verdict": "supported",
    "evidence": "A State program shall not be considered consistent with this division under paragraph (1) if the applicable State Historic Preservation Officer does not regularly comply with timelines",
@@ -3043,7 +3027,7 @@
    "note": ""
   },
   {
-   "id": "2301.s2",
+   "id": "2301.s3",
    "claim": "Temporary alterations are excluded.",
    "verdict": "supported",
    "evidence": "any temporary alteration to a historic property that is limited to the time it takes to complete an undertaking",
@@ -3051,7 +3035,7 @@
    "note": ""
   },
   {
-   "id": "2301.s3",
+   "id": "2301.s4",
    "claim": "Visual, atmospheric and audible effects are excluded unless they directly and significantly diminish the property.",
    "verdict": "supported",
    "evidence": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics",
@@ -3059,7 +3043,7 @@
    "note": ""
   },
   {
-   "id": "2301.s4",
+   "id": "2301.s5",
    "claim": "An 'undertaking' excludes projects whose only federal tie is a loan, guarantee or grant, the non-federal parts of a project, minor repairs, permit renewals and post-approval operations.",
    "verdict": "supported",
    "evidence": "the only Federal involvement is a loan, loan guarantee, grant (including a capitalization grant), cost-share award, or other form of financial assistance",
@@ -3067,7 +3051,7 @@
    "note": ""
   },
   {
-   "id": "2301.s5",
+   "id": "2301.s6",
    "claim": "The process gets deadlines: 30 days to decide whether a project is an undertaking, 60 days for the agency's report, 90 days for a determination, then 60 days of consultation, 45 days for Advisory Council comments and 30 days for a final decision.",
    "verdict": "supported",
    "evidence": "Not later than 30 days after the date of receipt of a request for review of a proposed project, activity, or program under this section",
@@ -3075,7 +3059,7 @@
    "note": ""
   },
   {
-   "id": "2301.s6",
+   "id": "2301.s7",
    "claim": "Consultation must be finished by the time the NEPA document is completed, unless the Secretary grants an extension for extraordinary circumstances.",
    "verdict": "supported",
    "evidence": "shall be completed not later than the date on which the applicable environmental document under section 107(g) of the National Environmental Policy Act of 1969",
@@ -3083,7 +3067,7 @@
    "note": ""
   },
   {
-   "id": "2301.s7",
+   "id": "2301.s8",
    "claim": "State and tribal preservation officers who do not respond in 30 days are passed over, and the agency may decide in its sole discretion that other considerations outweigh preservation.",
    "verdict": "supported",
    "evidence": "in the sole discretion of the applicable Federal official and as otherwise allowed by law, other considerations outweigh the consideration of historic preservation",
@@ -3091,18 +3075,10 @@
    "note": ""
   },
   {
-   "id": "2301.s8",
+   "id": "2301.s9",
    "claim": "Courts give substantial deference and may only remand without vacatur or injunction; a preliminary injunction is available only for a likely violation of another law.",
    "verdict": "supported",
    "evidence": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction, the applicable agency action",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
-   "id": "2301.s9",
-   "claim": "Claims go to the courts of appeals, within 150 days, from parties who commented and suffered direct harm.",
-   "verdict": "supported",
-   "evidence": "the courts of appeals of the United States shall have original and exclusive jurisdiction over a claim for review of an agency action",
    "evidence_in_text": true,
    "note": ""
   },
@@ -6051,14 +6027,6 @@
    "note": ""
   },
   {
-   "id": "dcb.binding.s2",
-   "claim": "[Binding or optional] Section 228 is a federal floor in the Federal Power Act. Section 2107(a) orders FERC to revise its 1994 pricing policy in 270 days, propose a rule 270 days later and finish within a year.",
-   "verdict": "supported",
-   "evidence": "Not later than 270 days after the date of enactment of this Act, the Commission shall revise the 1994 transmission pricing policy statement",
-   "evidence_in_text": true,
-   "note": ""
-  },
-  {
    "id": "dcb.btm-power.s1",
    "claim": "[Behind-the-meter generation and storage] Effective 18 months after enactment, bars grid operators from blocking qualifying behind-the-meter aggregations from wholesale markets.",
    "verdict": "supported",
@@ -6406,14 +6374,22 @@
  "unchecked": [
   "1110.s11",
   "1202.k2",
+  "2102.s1",
+  "2102.s2",
   "2104.s4",
   "2104.s5",
   "2229.s4",
+  "2251.s1",
+  "2251.s2",
+  "2301.s1",
+  "2301.s2",
   "cmp.energy-sol.epra",
   "com.not-major-action.s3",
+  "dcb.binding.s2",
+  "dcb.binding.s3",
   "hl.digital.s1"
  ],
- "input_sha256": "9566d7d41b8bba34e9f157287b88f89e7b76f8def68a36fb2821c622a70f238f",
+ "input_sha256": "a64a604d95e0b7b4a95876f8e139e29e3b46b3e6763f8d36779befa87d3402c4",
  "bill_sha256": "1970ca7da783cdfa7451a5f83e8a89ec2209aafa753d5bfa074a9ea85bddb3c4",
  "cached_only": true
 }

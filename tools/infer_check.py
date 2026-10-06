@@ -362,6 +362,15 @@ def main() -> int:
     prior = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {"results": []}
     merged = {r["id"]: r for r in prior.get("results", [])}
     merged.update({r["id"]: r for r in results})
+    # A verdict follows its claim when only the claim's position changed (a
+    # sentence split earlier in the same section renumbers the rest): same
+    # unit prefix, same text, so the same source and the same question.
+    by_text = {(k.rsplit(".", 1)[0], r["claim"]): r for k, r in merged.items()}
+    for cid, claim in current.items():
+        if cid not in merged or merged[cid]["claim"] != claim:
+            moved = by_text.get((cid.rsplit(".", 1)[0], claim))
+            if moved:
+                merged[cid] = dict(moved, id=cid)
     merged = {k: r for k, r in merged.items() if current.get(k) == r["claim"]}
     # Recheck saved evidence after parser/source edits. A changed claim gets no
     # inherited verdict; a missing span remains flagged.

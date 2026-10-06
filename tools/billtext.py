@@ -25,7 +25,7 @@ def load_sections() -> dict:
     return json.loads(SECTIONS.read_text(encoding="utf-8"))
 
 
-ABBREV = ("No.", "U.S.C.", "U.S.", "D.C.", "Sec.", "Secs.", "v.", "Cir.", "Inc.", "Act.", "e.g.", "i.e.")
+ABBREV = ("No.", "U.S.C.", "U.S.", "D.C.", "Sec.", "Secs.", "v.", "Cir.", "Inc.", "e.g.", "i.e.")
 # A claim that the text is silent ("No export provisions.", "Royalties are
 # unchanged") has no passage to cite. It counts as checked only when the
 # summary review supports it with no evidence span.
@@ -176,7 +176,7 @@ def paragraphs(lines: list[list]) -> list[list]:
 
 def review_fingerprint() -> str:
     """Bind summary-check coverage to its complete set of input documents."""
-    paths = ["bill/sections.json", "bill/analysis.json", "compare.json",
+    paths = ["bill/sections.json", "bill/analysis.json", "compare.json", "overview.json", "communities.json", "datacenters.json",
              "prior_bills/speed_act_hr4776_eh.json", "prior_bills/epra_2024_s4753_rs.json"]
     h = hashlib.sha256()
     for name in paths:

@@ -21,7 +21,7 @@ PDF citations use printed bill pages and lines. A matching quote proves occurren
 
 ## Check coverage
 
-Saved AI review: 798 supported, 0 flagged, 10 unchecked of 808 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
+Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; checked 2026-10-06; stale: false. Coverage excludes current-law comparison cells and some research paraphrases. Read data/core.json checks for link and quote results and their dates. A stale review does not verify the current wording.
 
 ## Sections
 
