@@ -83,7 +83,7 @@
    "now": "NEPA excludes seven kinds of action from 'major Federal action', including projects with no or minimal federal funding or involvement and non-discretionary actions.",
    "now_cite": "42 U.S.C. 4336e(10)",
    "now_url": "https://www.law.cornell.edu/uscode/text/42/4336e",
-   "baaja": "The list would grow to fourteen. New entries include projects whose only federal involvement is a loan or loan guarantee, and routine agency actions costing up to $10,000,000. Others cover lifeline infrastructure repair that adds no more than 20 percent capacity, geothermal observation tests, grid work in existing rights-of-way and gas pipeline work in covered areas. Actions another agency already evaluated under NEPA, and some Corps projects with a federal share of up to $50,000,000, also qualify. These actions fall outside the Act's review requirements.",
+   "baaja": "The list would grow to fourteen. New entries include projects whose only federal involvement is a loan or loan guarantee, and routine agency actions costing up to $10,000,000. Others cover lifeline infrastructure repair that adds no more than 20 percent capacity, geothermal observation tests, transmission activities described in a new section 216A(b) of the Federal Power Act and gas pipeline work in covered areas. Actions another agency already evaluated under NEPA, and some Corps projects with a federal share of up to $50,000,000, also qualify. These actions fall outside the Act's review requirements.",
    "sections": [
     "1102"
    ],
@@ -269,7 +269,7 @@
    "now": "A lead agency may designate any federal, state, tribal or local agency with jurisdiction by law or special expertise over an environmental impact as a cooperating agency. It may comment by the date in the schedule.",
    "now_cite": "42 U.S.C. 4336a(a)(3)",
    "now_url": "https://www.law.cornell.edu/uscode/text/42/4336a",
-   "baaja": "The designation test names jurisdiction by law over an environmental effect and drops special expertise. The lead agency must identify and invite likely agencies within 30 days of the notice of intent or EA decision, and each has 7 days to accept or decline. A cooperating agency's comments are limited to matters within its jurisdiction by law, and designation gives it no authority over the action.",
+   "baaja": "The designation test names jurisdiction by law over an environmental effect. It does not mention special expertise. The lead agency must identify and invite likely agencies within 30 days of the notice of intent or EA decision, and each has 7 days to accept or decline. A cooperating agency's comments are limited to matters within its jurisdiction by law, and designation gives it no authority over the action.",
    "sections": [
     "1106"
    ],
@@ -290,7 +290,7 @@
    "now": "The statute says only that agencies must take into account effects on historic properties and give the Advisory Council a chance to comment. The Advisory Council's rules let individuals and organizations with a demonstrated interest join as consulting parties and require the agency to seek public input.",
    "now_cite": "54 U.S.C. 306108; 36 CFR 800.2(c)(5), (d)",
    "now_url": "https://www.law.cornell.edu/uscode/text/54/306108",
-   "baaja": "The new consultation steps name state and tribal historic preservation officers, Indian tribes, Native Hawaiian organizations, local governments and the applicant. They do not name other consulting parties or the public. The agency 'may' consult the named parties on the area of effects and on historic properties, and must incorporate their information if received within 30 days of a request. The agency's duty is limited to the area of potential effects it identifies.",
+   "baaja": "The new consultation steps name state and tribal historic preservation officers, Indian tribes, Native Hawaiian organizations, local governments and the applicant. They do not name other consulting parties or the public. The agency 'may' consult the named parties on the area of effects and on historic properties, and must seek and, as applicable, incorporate their information if received within 30 days of a request. The agency's duty is limited to the area of potential effects it identifies.",
    "sections": [
     "2301"
    ],
@@ -311,7 +311,7 @@
    "now": "Review covers federal or federally assisted undertakings and federally licensed ones. Under the Advisory Council's rules, visual, atmospheric and audible effects can count.",
    "now_cite": "54 U.S.C. 306108; 36 CFR part 800",
    "now_url": "https://www.law.cornell.edu/uscode/text/54/306108",
-   "baaja": "An adverse effect must be reasonably foreseeable and directly alter a property's characteristics. Visual, atmospheric or audible elements count only if they directly and significantly diminish the property's eligible characteristics. An undertaking would exclude work where the only federal involvement is a loan, loan guarantee or grant, and the area of potential effects would exclude areas affected only by a non-federal part of a project.",
+   "baaja": "An adverse effect must be reasonably foreseeable and directly alter a property's characteristics. Visual, atmospheric or audible elements count only if they directly and significantly diminish the property's eligible characteristics. An undertaking would exclude work where the only federal involvement is a loan, loan guarantee or grant not made for historic preservation, and the area of potential effects would exclude areas affected only by a non-federal part of a project.",
    "sections": [
     "2301"
    ],
@@ -508,7 +508,7 @@
    "now": "FERC can permit a line only in a national interest corridor the Energy Department has designated, and only if the state lacks authority, has not decided within 1 year, has set conditions that make the line uneconomic, or has denied the application.",
    "now_cite": "16 U.S.C. 824p(b)",
    "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
-   "baaja": "The corridor requirement is dropped. FERC 'shall' issue a permit for lines of 230 kilovolts or more that meet the findings, including one of the state-related triggers. The state's 1-year clock starts when the application is filed with the state. Developers of lines of 345 kilovolts or more could file at FERC at the same time as at the state, but FERC may not issue a permit until it makes one of the state-related findings.",
+   "baaja": "The corridor requirement is dropped. FERC 'shall' issue a permit for lines of 230 kilovolts or more that meet the findings, including one of the state-related triggers. The state's clock would start when the application is filed with the state. Developers of lines of 345 kilovolts or more could file at FERC at the same time as at the state, but FERC may not issue a permit until it makes one of the state-related findings.",
    "sections": [
     "2101"
    ],
@@ -547,7 +547,7 @@
    "now": "A permit holder that cannot agree on compensation, and that FERC finds made good-faith efforts to engage landowners early, may use eminent domain in federal or state court. Federal procedure follows state practice as nearly as practicable. Just compensation is fair market value including severance damages.",
    "now_cite": "16 U.S.C. 824p(e), (f)",
    "now_url": "https://www.law.cornell.edu/uscode/text/16/824p",
-   "baaja": "Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. Section 2101(e) also strikes subsection (f) of section 216, which is the current 'Compensation' subsection, and replaces it with a cost allocation subsection. As written, the statutory fair market value language would no longer appear in section 216. The Fifth Amendment's just-compensation requirement still applies.",
+   "baaja": "Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. Section 2101(e) also strikes subsection (f) of section 216 and replaces it with a cost allocation subsection. As written, the statutory fair market value language would no longer appear in section 216. The text does not change the Fifth Amendment's just-compensation requirement.",
    "sections": [
     "2101"
    ],
@@ -762,7 +762,7 @@
    "now": "A suit generally has a 6-year limit, is heard in district court, and the ordinary remedies apply.",
    "now_cite": "28 U.S.C. 2401(a)",
    "now_url": "https://www.law.cornell.edu/uscode/text/28/2401",
-   "baaja": "Suits over individual and general permits, verifications under a general permit, and EPA approval of a state permit program would be barred unless filed within 150 days. Where a draft was published in the Federal Register with at least 30 days of comment, the plaintiff must have filed a detailed comment and the claim must relate to it. A court must remand and may not vacate or enjoin a permit unless activities would present an imminent and substantial danger to human health or the environment.",
+   "baaja": "Suits over individual and general permits, verifications under a general permit, and EPA approval of a state permit program would be barred unless filed within 150 days. Where a draft was published in the Federal Register with at least 30 days of comment, the plaintiff must have filed a detailed comment and the claim must relate to it. A court must remand and may not vacate or enjoin a permit unless activities would present an imminent and substantial danger to human health or the environment for which no other equitable remedy is available.",
    "sections": [
     "1205"
    ],

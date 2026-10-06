@@ -157,6 +157,21 @@ class Inference(unittest.TestCase):
             for cid, _ in u["claims"]:
                 self.assertEqual(sorted(set(rows[cid]["sections"])), nums, cid)
 
+    def test_a_joined_evidence_span_yields_only_a_verbatim_piece(self):
+        lines = next(x for x in billtext.load_sections()["sections"] if x["number"] == "1304")["lines"]
+        joined = "with the written agreement of the Secretary and a State... the Secretary may assign, and the State may assume, the consultation responsibilities"
+        piece = infer_check.usable_span(joined, lines)
+        self.assertEqual(piece, "the Secretary may assign, and the State may assume, the consultation responsibilities")
+        self.assertIsNone(infer_check.usable_span("words this bill never uses ... nor these other words either", lines))
+        self.assertIsNone(infer_check.usable_span("", lines))
+
+    def test_absence_claims_are_recognized_and_positive_claims_are_not(self):
+        for claim in ("No export provisions.", "[Coal] No leasing provisions.", "Royalties are unchanged;",
+                      "The text does not say what notice the earlier review must have had."):
+            self.assertTrue(billtext.is_absence(claim), claim)
+        for claim in ("Indian lands are excluded.", "FERC may permit lines of 230 kilovolts and up.", "Same as EPRA 2024."):
+            self.assertFalse(billtext.is_absence(claim), claim)
+
     def test_a_stale_passage_is_pruned_and_a_current_one_kept(self):
         bill = billtext.load_sections()
         sec = next(s for s in bill["sections"] if s["number"] == "1101")

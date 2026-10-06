@@ -154,11 +154,12 @@ def build() -> tuple[dict, dict, list[str]]:
     by_num = {s["number"]: s for s in bill["sections"]}
     cites_path = DATA / "bill/point_cites.json"
     point_cites = load(cites_path) if cites_path.exists() else {}
-    # A claim the semantic check flagged shows no cite and blocks the build,
-    # whatever passage is stored for it.
+    # A claim the semantic check did not support shows no cite and blocks the
+    # build, whatever passage is stored for it. A supported claim whose evidence
+    # span was not word for word needs a passage like any other claim.
     inf_path = DATA / "checks/inference.json"
     flagged = {(r["id"], r["claim"]) for r in (load(inf_path)["results"] if inf_path.exists() else [])
-               if r["verdict"] != "supported" or not r["evidence_in_text"]}
+               if r["verdict"] != "supported"}
     flagged_sec = {(cid.split(".")[0], claim) for cid, claim in flagged if re.match(r"^\d{4}\.[ks]\d+$", cid)}
     # A claim that the text is silent has no passage; it is covered once the
     # review supports it with no evidence span.

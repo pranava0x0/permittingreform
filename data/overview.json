@@ -79,7 +79,7 @@
   {
    "id": "transmission",
    "title": "Transmission siting",
-   "text": "FERC permits interstate lines of 230 kilovolts and up when a state has not decided within a year, and planning regions must plan lines with their neighbors.",
+   "text": "FERC can permit interstate lines of 230 kilovolts and up that states have not approved, after making required findings, and planning regions must plan lines with their neighbors.",
    "sections": [
     "2101",
     "2103"
@@ -125,7 +125,7 @@
   {
    "id": "digital",
    "title": "Digital permitting",
-   "text": "Requires a tracker for reviews subject to NEPA’s EIS requirement and targets December 1, 2028 for an interagency ePermit system, to the maximum extent practicable.",
+   "text": "Requires a public tracker for reviews that need an environmental impact statement and for some environmental assessments, and targets December 1, 2028 for an interagency ePermit system, to the maximum extent practicable.",
    "sections": [
     "1121",
     "1132"

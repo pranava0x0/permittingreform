@@ -220,7 +220,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "1110": {
-   "plain": "Adds a judicial review section to NEPA. Suits challenging an authorization on NEPA grounds must be filed within 150 days. The party must allege an actual or imminent injury amounting to direct harm. Where a comment period was offered, the party must also have filed a sufficiently detailed comment. The federal court of appeals for the circuit where the project sits gets original and exclusive jurisdiction, with random judge assignment.\n\nIf a court finds a NEPA violation, the only remedy is remand without vacatur or injunction, with a fix deadline of no more than 180 days. The permit stays in effect and the project can proceed during the remand. A preliminary injunction is available only for a likely violation of a law other than NEPA or the National Historic Preservation Act.\n\nCourts must give substantial deference to agencies on the scope and content of environmental documents. No NEPA suit may be brought over an action on tribal trust lands unless the tribe itself sues or effects reach beyond trust lands. No suit may rest on an omission from the sponsor's stakeholder engagement record.",
+   "plain": "Adds a judicial review section to NEPA. Suits challenging an authorization on NEPA grounds must be filed within 150 days. The party must allege an actual or imminent injury amounting to direct harm. Where a comment period was offered, the party must also have filed a sufficiently detailed comment. The federal court of appeals for the circuit where the project sits gets original and exclusive jurisdiction, with random judge assignment.\n\nIf a court finds a NEPA violation, the only remedy is remand without vacatur or injunction, with a fix deadline of no more than 180 days. The permit stays in effect and the project can proceed during the remand. A preliminary injunction is available only for a likely violation of a law other than NEPA or the National Historic Preservation Act.\n\nCourts must give substantial deference to agencies on the scope and content of environmental documents. No NEPA suit may be brought over an action on tribal trust lands unless the tribe itself sues or effects reach beyond trust lands. No suit may rest on an omission from the list of state, local and tribal engagement in the sponsor's record of stakeholder engagement.",
    "key_points": [
     "150-day statute of limitations",
     "Only a party with a direct-harm injury can sue, and where a comment period was offered it must have commented",
@@ -258,7 +258,7 @@
    "vs_epra_2024": "EPRA 2024 (sec. 101) set a 150-day limit for energy and mineral project authorizations and a 180-day remand deadline. It did not require prior comment, did not change standing, and left courts their ordinary remedies. That section survives as section 2201 of this bill."
   },
   "1121": {
-   "plain": "Replaces NEPA section 209 with an eNEPA technology mandate. Within 60 days CEQ must publish data standards for permitting data, within 120 days guidance on minimum functional requirements (automated project screening, case management, GIS tools, AI-assisted comment analysis, administrative-record tools), and agencies must begin implementing within 180 days. CEQ and the key permitting agencies build an ePermit unified interagency data system and a public authorization portal hosted by GSA. A pilot is due within a year and the system by December 1, 2028, 'to the maximum extent practicable'. Congress gets access to the AI prompts and fine-tuning data agencies use. CEQ also sets outcome-based performance measures for agencies and staff. Authorizes $5 million a year for NEPA.",
+   "plain": "Replaces NEPA section 209 with an eNEPA technology mandate. Within 60 days CEQ must publish data standards for permitting data, within 120 days guidance on minimum functional requirements (automated project screening, case management, GIS tools, AI-assisted comment analysis, administrative-record tools), and agencies must begin implementing within 180 days. CEQ and the key permitting agencies build an ePermit unified interagency data system and a public authorization portal hosted by GSA. A pilot is due within a year and the system by December 1, 2028, 'to the maximum extent practicable'. Congress gets access to the data, fine-tuning procedures and prompt configurations agencies create or adapt for AI tools, but not proprietary or general pre-training materials. CEQ also sets outcome-based performance measures for agencies and staff. Authorizes $5 million a year for NEPA.",
    "key_points": [
     "Government-wide permitting data standards within 60 days",
     "Public ePermit portal hosted by GSA, targeted for December 1, 2028",
@@ -466,7 +466,7 @@
   "1301": {
    "plain": "Defines 'best scientific and commercial data available' in the Endangered Species Act as all relevant, objective information at the time of the action, including models that account for error and are applied without policy presumptions.",
    "key_points": [
-    "First statutory definition of ESA's science standard"
+    "Defines 'best scientific and commercial data available' in the statute"
    ],
    "quotes": [
     {
@@ -525,7 +525,7 @@
   "1304": {
    "plain": "Creates ESA section 7A letting the Interior Secretary assign section 7 consultation duties to a state, by written agreement, for projects entirely inside the state. Interior must propose a rule within 270 days. States must show legal, financial and staffing capacity, waive sovereign immunity, accept federal court jurisdiction, keep public-records laws comparable to FOIA, and meet the same deadlines as the Secretary. Interior audits annually for 4 years, can terminate after a 120-day cure period, and applicants may still choose federal consultation. Interior's failure to act on an application within 180 days counts as a failure to act under the NEPA sanctions section.",
    "key_points": [
-    "States can take over ESA consultation, modeled on NEPA assignment for highways",
+    "States can take over ESA consultation for projects within their boundaries",
     "Applicants can opt out and consult with the Interior Department instead",
     "Annual audits for 4 years; 10-year renewable agreements"
    ],
@@ -655,7 +655,7 @@
    "vs_epra_2024": "Not in EPRA 2024; this title responds to 2025 and 2026 events."
   },
   "1402": {
-   "plain": "Creates a cause of action for applicants in 46 named energy project types, plus any similar type a court certifies. The list runs from onshore and offshore wind, solar and storage to coal, gas, oil, nuclear, geothermal, transmission, pipelines, mining, hydrogen, hydropower, LNG and carbon storage.\n\nThe applicant must show a 'pattern of disparate treatment': an intentional, statistically demonstrated rise in denials or delays for that project type, compared with the prior 5 years. The pattern must last 180 days after enactment for permits without a NEPA document, or 280 days for those with one. Executive orders and official statements showing bias count as supporting evidence. The government must produce 5 years of raw statistics or face an adverse inference.\n\nPermits for these projects that need no NEPA document must be decided within 1 year of a complete application.\n\nRemedies are an injunction, fees, economic damages, and 50 to 100 percent of the expected construction cost, paid from the Judgment Fund. The applicant must finish the project or repay. Class actions are barred, and suits cannot be filed until 180 or 280 days after enactment.",
+   "plain": "Creates a cause of action for applicants in 46 named energy project types, plus any similar type a court certifies. The list runs from onshore and offshore wind, solar and storage to coal, gas, oil, nuclear, geothermal, transmission, pipelines, mining, hydrogen, hydropower, LNG and carbon storage.\n\nThe applicant must show a 'pattern of disparate treatment': an intentional, statistically demonstrated rise in denials or delays for that project type, compared with the prior 5 years. The pattern must last 180 days after enactment for permits without a NEPA document, or 280 days for those with one. Executive orders and official statements showing bias count as supporting evidence. The government must produce raw statistics for the year of the suit and the 5 years before it, or face an adverse inference.\n\nPermits for these projects that need no NEPA document must be decided within 1 year of a complete application.\n\nRemedies are an injunction, fees, economic damages, and 50 to 100 percent of the expected construction cost, paid from the Judgment Fund. The applicant must finish the project or repay. Class actions are barred, and suits cannot be filed until 180 or 280 days after enactment.",
    "key_points": [
     "Anti-discrimination rule across 46 named project types, from offshore wind to coal, plus any similar type a court certifies",
     "Executive orders and officials' statements admissible as evidence of bias",
@@ -885,7 +885,7 @@
    "vs_epra_2024": "Not in EPRA 2024; data center cost allocation became a central issue in 2025-2026."
   },
   "2108": {
-   "plain": "Opens wholesale markets to aggregations of customer-sited batteries, fuel cells and generators that can respond within 15 minutes (5 kilowatts minimum per device, 100 kilowatts per aggregation). After 18 months, grid operator rules that block them are unjust and unreasonable. Grid operators file compliance tariffs within 180 days. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect these resources. They must also accept wholesale metering data.\n\nA device paid by a state retail program cannot be paid twice for the same service; FERC orders disgorgement and can impose penalties of up to 3 times the amount for each day it was knowingly kept. The Energy Department runs a voluntary streamlined local permitting program for rooftop solar, batteries and vehicle chargers, with $20 million a year authorized for fiscal years 2026 through 2031.",
+   "plain": "Opens wholesale markets to aggregations of customer-sited batteries, fuel cells and generators that can respond within 15 minutes (5 kilowatts minimum per device, 100 kilowatts per aggregation). After 18 months, grid operator rules that block them are unjust and unreasonable. Grid operators file compliance tariffs within 180 days. Unless state law or the state regulator provides otherwise, distribution utilities in organized markets must interconnect these resources; for public power utilities and other section 201(f) entities the requirement is voluntary. They must also accept wholesale metering data.\n\nA device paid by a state retail program cannot be paid twice for the same service; FERC orders disgorgement and can impose penalties of up to 3 times the amount for each day it was knowingly kept. The Energy Department runs a voluntary streamlined local permitting program for rooftop solar, batteries and vehicle chargers, with $20 million a year authorized for fiscal years 2026 through 2031.",
    "key_points": [
     "Virtual power plants get statutory wholesale market access",
     "Distribution utilities in organized markets must interconnect behind-the-meter resources",
@@ -1009,7 +1009,7 @@
   "2114": {
    "plain": "Directs the Energy Information Administration to revise Form 861 to collect electricity load from data center entities (AI, cloud, cryptocurrency) at least 90 days before the first April 1 after enactment.",
    "key_points": [
-    "First federal data series on data center electricity load"
+    "EIA's Form 861 must report data center load"
    ],
    "quotes": [
     {
@@ -1326,7 +1326,7 @@
    "vs_epra_2024": "Not in EPRA 2024 as reported."
   },
   "2229": {
-   "plain": "Rewrites section 390 of the Energy Policy Act of 2005. The five listed oil and gas activities (small surface disturbances, drilling at an existing pad, drilling in a developed field, pipelines in approved corridors, minor maintenance) are no longer treated through categorical exclusions; they are declared not to be major federal actions at all, and geothermal is added. The corridor look-back for pipelines goes from 5 to 10 years, and geothermal gets a new item for power lines up to 20 miles in an approved corridor. Drilling permits for these activities carry no NEPA requirements.",
+   "plain": "Rewrites section 390 of the Energy Policy Act of 2005. The oil and gas activities listed in section 390(b) of the Energy Policy Act of 2005 are declared not to be major federal actions at all, rather than categorical exclusions. Geothermal is added to two of them, and a new item covers geothermal power lines of up to 20 miles in a corridor approved within the past 10 years. The corridor look-back for pipelines goes from 5 to 10 years, and geothermal gets a new item for power lines up to 20 miles in an approved corridor. Drilling permits for these activities carry no NEPA requirements.",
    "key_points": [
     "Section 390 oil, gas and now geothermal activities are outside NEPA entirely",
     "Drilling permits for those activities 'shall not have any requirements' under NEPA"
@@ -1426,7 +1426,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "2241": {
-   "plain": "Widens FERC's special pay authority to economic and legal positions and strikes the consultation requirement in paragraph (6) of the same subsection.",
+   "plain": "Widens FERC's special pay authority to economic and legal positions and strikes paragraph (6) of the same subsection.",
    "key_points": [
     "FERC can use special pay rates for economists and lawyers"
    ],
@@ -1483,7 +1483,7 @@
    "vs_epra_2024": "Carried over from EPRA 2024 (sec. 804)."
   },
   "2251": {
-   "plain": "Amends the offshore renewable energy section of the Outer Continental Shelf Lands Act. Interior's duty changes from 'prevention of interference with reasonable uses' of the ocean to 'prevention of unreasonable interference with other uses'. Interior may grant rights-of-way for electric transmission through national marine sanctuaries, with sanctuary permits lasting as long as the right-of-way. The Inflation Reduction Act's link between offshore wind leasing and oil and gas lease sales is preserved.",
+   "plain": "Amends the offshore renewable energy section of the Outer Continental Shelf Lands Act. Interior's duty changes from 'prevention of interference with reasonable uses' of the ocean to 'prevention of unreasonable interference with other uses'. Interior, in consultation with the Secretary of Commerce, may grant rights-of-way for electric transmission through national marine sanctuaries, with sanctuary permits lasting as long as the right-of-way. The Inflation Reduction Act's link between offshore wind leasing and oil and gas lease sales is preserved.",
    "key_points": [
     "Offshore wind standard changes to 'unreasonable interference'",
     "Transmission cables allowed through marine sanctuaries"

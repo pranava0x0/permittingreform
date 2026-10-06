@@ -25,7 +25,6 @@
 | low | Restore `tests/uat.cjs` coverage: install Playwright after the advisory check, add checks for brief lists, phone comparison rows and the Communities view. |
 
 | medium | Asset URLs carry a hand-bumped `?v=N`; a CSS or JS change without a bump serves stale files to returning readers (found 2026-10-02 at v=4). Stamp a content hash in `tools/build.py` instead. |
-| medium | Link each Data centers and Communities row to the outside readings for its sections, not only the section page. |
 | medium | Outside readings still missing for specific provisions as of 2026-10-05: utilities (EEI, NRECA and APPA posted holding statements only), hyperscalers and data-center groups, tribal governments (Section 106 and ESA), labor, and anything on section 1121 (eNEPA) or the offshore sections. |
 | medium | Media candidates from the 2026-10-05 sweep: the WSJ editorial "Permitting Reform at Last, Really?" (CAPTCHA wall), Forbes (Broughel, October 5), Inside Climate News (October 2), CleanTechnica (October 2), Washington Examiner's Daily on Energy on data centers, mgrid.org, EPIC's AI analysis of the bill, Third Way's interview with Josh Freed, and the Central Air podcast with Jane Flegal. David Roberts records a Volts episode with Daniel Palken on October 7. |
 | low | Beveridge & Diamond's reading that Section 106 consultation could end without an agreement has no bill passage attached; find the clause in section 2301. |

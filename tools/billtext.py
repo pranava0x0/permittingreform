@@ -29,7 +29,7 @@ ABBREV = ("No.", "U.S.C.", "U.S.", "D.C.", "Sec.", "Secs.", "v.", "Cir.", "Inc."
 # A claim that the text is silent ("No export provisions.", "Royalties are
 # unchanged") has no passage to cite. It counts as checked only when the
 # summary review supports it with no evidence span.
-ABSENCE_RE = re.compile(r"^(?:\[[^\]]*\]\s*)?(?:On the subject of [^:]*:\s*)?(?:No|Not|None)\b|\bunchanged\b|\bnot addressed\b|\bno change\b", re.I)
+ABSENCE_RE = re.compile(r"^(?:\[[^\]]*\]\s*)?(?:On the subject of [^:]*:\s*)?(?:No|Not|None)\b|\bunchanged\b|\bnot addressed\b|\bno change\b|\b(?:does|do) not\b|\badds no\b|\bhas no\b|\bno longer\b", re.I)
 
 
 def is_absence(claim: str) -> bool:

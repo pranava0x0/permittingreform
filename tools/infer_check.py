@@ -122,6 +122,22 @@ def evidence_is_present(cid: str, claim: str, evidence: str, source: str) -> boo
     return billtext.locate([[1, 1, source]], evidence) is not None
 
 
+def usable_span(evidence: str, lines: list) -> str | None:
+    """The model's evidence if it is in the text word for word; otherwise the
+    longest piece of it, split at an ellipsis or a quotation break, that is
+    (five words or more). The model sometimes joins two passages with "..."
+    despite the instruction not to; each piece is still the bill's own words."""
+    if not evidence:
+        return None
+    if billtext.locate(lines, evidence):
+        return evidence
+    pieces = [p.strip(" .,;:“”\"") for p in re.split(r"\s*(?:\.\.\.|…|\[\.\.\.\])\s*", evidence)]
+    for piece in sorted(pieces, key=len, reverse=True):
+        if len(piece.split()) >= 5 and billtext.locate(lines, piece):
+            return piece
+    return None
+
+
 def write_point_cites(results: list[dict], bill: dict, current: dict[str, str]) -> int:
     """Keep, for each key point, the passage that backs it: {section: {point text: passage}}.
 
@@ -141,15 +157,16 @@ def write_point_cites(results: list[dict], bill: dict, current: dict[str, str]) 
     cites = {n: e for n, e in cites.items() if e}
     for r in results:
         m = re.match(r"^(\d{4})\.[ks]\d+$", r["id"])
-        if not m or not r["evidence"] or not r["evidence_in_text"] or r["verdict"] != "supported":
+        if not m or r["verdict"] != "supported":
             continue
         n = m.group(1)
-        if not billtext.locate(by_num[n]["lines"], r["evidence"]):
+        span = usable_span(r["evidence"], by_num[n]["lines"])
+        if not span:
             continue
         have = cites.get(n, {}).get(r["claim"])
         if have and billtext.locate(by_num[n]["lines"], have):
             continue
-        cites.setdefault(n, {})[r["claim"]] = r["evidence"]
+        cites.setdefault(n, {})[r["claim"]] = span
     POINT_CITES.write_text(json.dumps(cites, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     return sum(len(v) for v in cites.values())
 
@@ -166,11 +183,12 @@ def write_row_cites(results: list[dict], core: dict, bill: dict) -> int:
              and v.get("section") in rows[k]["sections"] and billtext.locate(by_num[v["section"]]["lines"], v.get("text", ""))}
     for r in results:
         rc = rows.get(r["id"])
-        if not rc or r["verdict"] != "supported" or not r["evidence"] or not r["evidence_in_text"]:
+        if not rc or r["verdict"] != "supported" or r["id"] in cites:
             continue
         for n in rc["sections"]:
-            if billtext.locate(by_num[n]["lines"], r["evidence"]):
-                cites[r["id"]] = {"claim": rc["t"], "section": n, "text": r["evidence"]}
+            span = usable_span(r["evidence"], by_num[n]["lines"])
+            if span:
+                cites[r["id"]] = {"claim": rc["t"], "section": n, "text": span}
                 break
     build.ROW_CITES.write_text(json.dumps(cites, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
     return len(cites)

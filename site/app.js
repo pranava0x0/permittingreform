@@ -798,7 +798,7 @@
               el("p", null, el("strong", null, "BAAJA: "), citedText(r, "baaja")),
               el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
                 r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
-              el("p", { class: "where" }, secLinks(r.sections)),
+              el("p", { class: "where" }, secLinks(r.sections), readingsLinks(r.sections)),
               r.quote ? el("figure", { class: "quote small" },
                 el("blockquote", null, r.quote),
                 r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null));
@@ -852,7 +852,7 @@
               el("p", null, el("strong", null, "BAAJA: "), citedText(r, "baaja")),
               el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
                 r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
-              el("p", { class: "where" }, secLinks(r.sections)),
+              el("p", { class: "where" }, secLinks(r.sections), readingsLinks(r.sections)),
               r.quote ? el("figure", { class: "quote small" },
                 el("blockquote", null, r.quote),
                 r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null));
