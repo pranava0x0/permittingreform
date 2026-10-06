@@ -379,13 +379,14 @@ def main() -> int:
         ev = billtext.norm(r.get("evidence", ""))
         r["evidence_in_text"] = evidence_is_present(cid, r["claim"], ev, billtext.norm(all_text[cid]))
     all_results = [merged[k] for k in sorted(merged)]
-    # A reconcile without model calls must not stamp a new bill draft onto
-    # verdicts given against the old one: keep the saved fingerprints, so the
-    # review reads as stale until a run actually asks about the new text.
-    if args.cached_only and new_text:
-        stamp_sha, fingerprint = saved_doc.get("bill_sha256"), saved_doc.get("input_sha256")
-    else:
+    # Only a live run over every scope may say the saved review is current:
+    # a reconcile asks nothing, and a partial run (--scope, --only) leaves
+    # out-of-scope verdicts as they were.
+    full_run = not args.cached_only and args.scope == "all" and not only
+    if full_run or not saved_doc:
         stamp_sha, fingerprint = bill_sha, billtext.review_fingerprint()
+    else:
+        stamp_sha, fingerprint = saved_doc.get("bill_sha256", bill_sha), saved_doc.get("input_sha256")
     unchecked = sorted(set(current) - set(merged))
     OUT.write_text(json.dumps({"checked": checked, "model": model_used, "results": all_results, "unchecked": unchecked, "input_sha256": fingerprint, "bill_sha256": stamp_sha, "cached_only": args.cached_only}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     all_flags = [r for r in all_results if flagged(r)]

@@ -26,14 +26,22 @@ def load_sections() -> dict:
 
 
 ABBREV = ("No.", "U.S.C.", "U.S.", "D.C.", "Sec.", "Secs.", "v.", "Cir.", "Inc.", "e.g.", "i.e.")
-# A claim that the text is silent ("No export provisions.", "Royalties are
-# unchanged") has no passage to cite. It counts as checked only when the
-# summary review supports it with no evidence span.
-ABSENCE_RE = re.compile(r"^(?:\[[^\]]*\]\s*)?(?:On the subject of [^:]*:\s*)?(?:No|Not|None)\b|\bunchanged\b|\bnot addressed\b|\bno change\b|\b(?:does|do) not\b|\badds no\b|\bhas no\b|\bno longer\b", re.I)
+# A claim that the text is silent ("No export provisions.", "The text does not
+# say what notice...") has no passage to cite. It counts as checked only when
+# the summary review supports it with no evidence span, and only in these
+# shapes: a short "No ..." fragment, or wording that says the text itself is
+# silent. A substantive rule ("This permit does not expire", "No suit may rest
+# on ...") still needs evidence.
+_PREFIX = r"^(?:\[[^\]]*\]\s*)?(?:On the subject of [^:]*:\s*)?"
+ABSENCE_RE = re.compile(
+    _PREFIX + r"(?:No|None|Not)\b(?:\s+\S+){0,5}\s*\.?$"
+    r"|\bThe text (?:does not|adds no|sets no|is silent)\b"
+    r"|\b(?:does|do) not (?:name|mention|say)\b"
+    r"|\bno express\b|\bwould no longer appear\b|\bunchanged\b|\bnot addressed\b|\bno change\b", re.I)
 
 
 def is_absence(claim: str) -> bool:
-    return bool(ABSENCE_RE.search(claim.strip()))
+    return bool(ABSENCE_RE.search(claim.strip().rstrip(";")))
 
 
 def _split(text: str) -> list[str]:

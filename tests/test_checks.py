@@ -186,6 +186,25 @@ class Inference(unittest.TestCase):
         self.assertEqual(written["bill_sha256"], "an-older-draft")
         self.assertEqual(written["input_sha256"], "old-inputs")
 
+    def test_a_partial_run_keeps_the_saved_stamp(self):
+        import contextlib, io
+        saved = json.loads((ROOT / "data/checks/inference.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp:
+            out_path, pc, rc = Path(tmp) / "inference.json", Path(tmp) / "pc.json", Path(tmp) / "rc.json"
+            out_path.write_text(json.dumps(dict(saved, bill_sha256="an-older-draft", input_sha256="old-inputs")), encoding="utf-8")
+            pc.write_text((ROOT / "data/bill/point_cites.json").read_text(encoding="utf-8"), encoding="utf-8")
+            rc.write_text((ROOT / "data/bill/row_cites.json").read_text(encoding="utf-8"), encoding="utf-8")
+            # Every batch answered from a stub, so the run is live but asks no model.
+            with patch.object(infer_check, "OUT", out_path), patch.object(infer_check, "POINT_CITES", pc), \
+                    patch.object(build, "ROW_CITES", rc), patch.object(check_links, "merge_summary", lambda *a, **k: None), \
+                    patch.object(infer_check, "CACHE", Path(tmp) / "cache"), \
+                    patch.object(infer_check, "ask", lambda prompt, model: {"answer": {"results": []}, "model": "stub", "cost_usd": 0}), \
+                    patch.object(sys, "argv", ["infer_check", "--scope", "sections", "--only", "1101"]), contextlib.redirect_stdout(io.StringIO()):
+                infer_check.main()
+            written = json.loads(out_path.read_text(encoding="utf-8"))
+        self.assertEqual(written["bill_sha256"], "an-older-draft")
+        self.assertEqual(written["input_sha256"], "old-inputs")
+
     def test_a_joined_evidence_span_yields_only_a_verbatim_piece(self):
         lines = next(x for x in billtext.load_sections()["sections"] if x["number"] == "1304")["lines"]
         joined = "with the written agreement of the Secretary and a State... the Secretary may assign, and the State may assume, the consultation responsibilities"
@@ -198,7 +217,9 @@ class Inference(unittest.TestCase):
         for claim in ("No export provisions.", "[Coal] No leasing provisions.", "Royalties are unchanged;",
                       "The text does not say what notice the earlier review must have had."):
             self.assertTrue(billtext.is_absence(claim), claim)
-        for claim in ("Indian lands are excluded.", "FERC may permit lines of 230 kilovolts and up.", "Same as EPRA 2024."):
+        for claim in ("Indian lands are excluded.", "FERC may permit lines of 230 kilovolts and up.", "Same as EPRA 2024.",
+                      "The deadline does not apply to pending actions.", "This permit does not expire.",
+                      "No suit may rest on an omission from the list described in section 3(22)(B) of NEPA as amended."):
             self.assertFalse(billtext.is_absence(claim), claim)
 
     def test_a_stale_passage_is_pruned_and_a_current_one_kept(self):
