@@ -1113,6 +1113,7 @@
   };
   let pplSide = "inside";
   let pplStance = "all";
+  let pplSector = "all";
   let pplLimit = 12;
 
   /* "2026-01-28: Chaired the hearing" -> "January 28, 2026: Chaired the hearing" */
@@ -1126,22 +1127,22 @@
     const inside = all.filter((p) => p.inside_government);
     const outside = all.filter((p) => !p.inside_government);
     const pool = pplSide === "inside" ? inside : outside;
-    const list = pool.filter((p) => pplStance === "all" || p.stance === pplStance);
+    const list = pool.filter((p) => (pplStance === "all" || p.stance === pplStance) && (pplSector === "all" || sectorKey(p) === pplSector));
     const stanceCounts = {};
     pool.forEach((p) => { stanceCounts[p.stance] = (stanceCounts[p.stance] || 0) + 1; });
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Group and position" },
-      chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; pplLimit = 12; route(); }, inside.length),
-      chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; pplLimit = 12; route(); }, outside.length),
+      chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; pplSector = "all"; pplLimit = 12; route(); }, inside.length),
+      chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; pplSector = "all"; pplLimit = 12; route(); }, outside.length),
       el("span", { class: "filter-gap" }),
       chip("All positions", pplStance === "all", () => { pplStance = "all"; pplLimit = 12; route(); }),
       ["supports", "mixed", "opposes", "neutral"].filter((k) => stanceCounts[k]).map((k) =>
         chip(STANCE[k], pplStance === k, () => { pplStance = k; pplLimit = 12; route(); }, stanceCounts[k])),
+      /* Set only by a Positions sector-table link; one chip shows it and clears it. */
+      pplSector !== "all" ? chip(SECTORS[pplSector] + " only", true, () => { pplSector = "all"; pplLimit = 12; route(); }) : null,
       briefChip());
-    const GOV = { congress: 1, white_house: 1, agency: 1, court: 1 };
     const groups = {};
     list.slice(0, pplLimit).forEach((p) => {
-      const key = !p.inside_government && GOV[p.sector] ? "former" : p.sector;
-      (groups[key] = groups[key] || []).push(p);
+      (groups[sectorKey(p)] = groups[sectorKey(p)] || []).push(p);
     });
     const order = Object.keys(SECTORS).filter((k) => groups[k]);
     const body = order.map((k) => el("section", { class: "block" },
@@ -1296,7 +1297,7 @@
       (l.signer_count > l.signers_sample.length ? " and " + num(l.signer_count - l.signers_sample.length) + " others" : "") : null;
     const head = el("span", { class: "event-head" },
       el("span", { class: "event-date" }, datedShort(it.date)), " ", stanceTag(it.stance), " ",
-      el("span", { class: "pos-count" }, l.signer_count ? num(l.signer_count) + " signers" : it.outlet), " ",
+      el("span", { class: "pos-count" }, l.signer_count ? plural(l.signer_count, "signer", "signers") : it.outlet), " ",
       el("span", { class: "event-title" }, it.title));
     return openRow("pos-letter", "letter-" + it.id, head, [
       el("p", null, el("strong", null, "To: "), l.to),
@@ -1309,11 +1310,12 @@
         it.lk ? el("span", { class: "unchecked" }, " (" + LINK_NOTE[it.lk] + ")") : null)]);
   }
 
-  /* Media items with a stance and a quote on any of the issue's topics, newest first, one per link. */
+  /* Media items with a stance and a quote on any of the issue's topics, newest first, one per link.
+     Only items dated on or after the bill text's release count: earlier statements were about prior bills or reform in general. */
   function issueVoices(issue) {
     const seen = new Set();
     return D.media
-      .filter((it) => POSITION_SIDES.some((s) => s[0] === it.stance) && it.quote && it.quote.text &&
+      .filter((it) => it.date >= D.meta.released && POSITION_SIDES.some((s) => s[0] === it.stance) && it.quote && it.quote.text &&
         (it.topics || []).some((t) => issue.topics.indexOf(t) >= 0))
       .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
       .filter((it) => { if (seen.has(it.url)) return false; seen.add(it.url); return true; });
@@ -1379,7 +1381,7 @@
         el("th", { scope: "row" }, SECTORS[k]),
         cols.map((c) => {
           const n = rows[k][c[0]];
-          return el("td", { class: "n" }, n ? el("a", { href: "#/people/" + (rows[k].inside ? "inside" : "outside") + "/" + c[0],
+          return el("td", { class: "n" }, n ? el("a", { href: "#/people/" + (rows[k].inside ? "inside" : "outside") + "/" + c[0] + "/" + k,
             "aria-label": SECTORS[k] + ", " + STANCE[c[0]] + ": " + n }, String(n)) : "0");
         }))))));
   }
@@ -1398,6 +1400,7 @@
         letters.length ? el("div", { class: "pos-list" }, letters.map(letterRow)) : el("p", { class: "empty" }, "No letters recorded yet.")),
       el("section", { class: "block", "aria-labelledby": "h-issues" },
         el("h2", { id: "h-issues" }, "By issue"),
+        el("p", { class: "facts" }, "Quoted statements since the bill text was released on " + S.formatDate(D.meta.released) + "."),
         el("div", { class: "pos-list" }, issues.map(issueRow))),
       el("section", { class: "block", "aria-labelledby": "h-sectors" },
         el("h2", { id: "h-sectors" }, "By sector"),
@@ -1538,10 +1541,11 @@
       if (parts[2] && location.hash !== lastPath) { tlBranch = "all"; tlTopic = "all"; tlMilestones = false; }
       nodes = renderTimeline(parts[1], parts[2]); keepScroll = Boolean(lastPath && lastPath.indexOf("#/timeline") === 0); }
     else if (tab === "people") {
-      /* #/people/<inside|outside>/<stance>, linked from the Positions sector table, sets the filters on arrival. */
+      /* #/people/<inside|outside>/<stance>/<sector>, linked from the Positions sector table, sets the filters on arrival. */
       if (parts[1] && location.hash !== lastPath) {
         pplSide = parts[1] === "outside" ? "outside" : "inside";
         pplStance = STANCE[parts[2]] ? parts[2] : "all";
+        pplSector = SECTORS[parts[3]] ? parts[3] : "all";
         pplLimit = 12;
       }
       nodes = renderPeople(); }
