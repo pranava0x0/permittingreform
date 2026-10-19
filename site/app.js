@@ -1129,7 +1129,8 @@
     const pool = pplSide === "inside" ? inside : outside;
     const list = pool.filter((p) => (pplStance === "all" || p.stance === pplStance) && (pplSector === "all" || sectorKey(p) === pplSector));
     const stanceCounts = {};
-    pool.forEach((p) => { stanceCounts[p.stance] = (stanceCounts[p.stance] || 0) + 1; });
+    pool.filter((p) => pplSector === "all" || sectorKey(p) === pplSector)
+      .forEach((p) => { stanceCounts[p.stance] = (stanceCounts[p.stance] || 0) + 1; });
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Group and position" },
       chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; pplSector = "all"; pplLimit = 12; route(); }, inside.length),
       chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; pplSector = "all"; pplLimit = 12; route(); }, outside.length),
@@ -1293,11 +1294,13 @@
 
   function letterRow(it) {
     const l = it.letter;
-    const signers = l.signers_sample && l.signers_sample.length ? l.signers_sample.join(", ") +
-      (l.signer_count > l.signers_sample.length ? " and " + num(l.signer_count - l.signers_sample.length) + " others" : "") : null;
+    const shown = l.signers_sample ? l.signers_sample.length : 0;
+    const signers = shown ? l.signers_sample.join(", ") +
+      (l.at_least ? " and others" : l.signer_count > shown ? " and " + num(l.signer_count - shown) + " others" : "") : null;
+    const countLabel = l.signer_count ? (l.at_least ? num(l.signer_count) + "+ signers" : l.signer_count === 1 ? "1 signer" : num(l.signer_count) + " signers") : it.outlet;
     const head = el("span", { class: "event-head" },
       el("span", { class: "event-date" }, datedShort(it.date)), " ", stanceTag(it.stance), " ",
-      el("span", { class: "pos-count" }, l.signer_count ? plural(l.signer_count, "signer", "signers") : it.outlet), " ",
+      el("span", { class: "pos-count" }, countLabel), " ",
       el("span", { class: "event-title" }, it.title));
     return openRow("pos-letter", "letter-" + it.id, head, [
       el("p", null, el("strong", null, "To: "), l.to),
@@ -1388,7 +1391,8 @@
 
   function renderPositions() {
     const count = (k) => D.people.filter((p) => p.stance === k).length;
-    const letters = D.media.filter((it) => it.letter).sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+    /* Same cutoff as issueVoices: a letter before the text's release was about an earlier bill or reform in general. */
+    const letters = D.media.filter((it) => it.letter && it.date >= D.meta.released).sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
     const issues = (D.positions && D.positions.issues) || [];
     return [
       el("div", { class: "lede" }, el("h1", null, "Who's for and against"),

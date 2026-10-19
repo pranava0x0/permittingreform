@@ -81,7 +81,7 @@ def positions_summary(core: dict) -> dict:
     to that item, not to a person); letters are media items with a letter."""
     stances = [p["stance"] for p in core["people"]]
     out = {k: stances.count(k) for k in ("supports", "opposes", "mixed")}
-    out["letters"] = sum(1 for it in core["media"] if it.get("letter"))
+    out["letters"] = sum(1 for it in core["media"] if it.get("letter") and it["date"] >= core["meta"]["released"])
     return out
 
 

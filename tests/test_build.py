@@ -177,7 +177,7 @@ class Data(unittest.TestCase):
         base = sum(1 for m in good["media"] if m.get("letter"))
         picks = [m for m in good["media"] if not m.get("letter")][:2]
         picks[0]["letter"] = {"to": "Senate leaders", "signer_count": 222, "signers_sample": ["Group A", "Group B"], "ask": "Oppose the bill."}
-        picks[1]["letter"] = {"to": "Senate leaders", "ask": "Pass the bill this year."}
+        picks[1]["letter"] = {"to": "Senate leaders", "signer_count": 100, "at_least": True, "ask": "Pass the bill this year."}
         errs, counts = check_data.check(good)
         self.assertEqual(errs, [])
         self.assertEqual(counts["letters"], base + 2)
@@ -188,7 +188,7 @@ class Data(unittest.TestCase):
         self.assertTrue(any(e.startswith(f"media {row['id']}: a letter needs 'ask'") for e in errs), errs)
 
     def test_a_letter_with_a_bad_count_or_sample_fails(self):
-        for field, value in (("signer_count", 0), ("signer_count", "222"), ("signer_count", True), ("signers_sample", "Group A"), ("signers_sample", [""]), ("signed", 3)):
+        for field, value in (("signer_count", 0), ("signer_count", "222"), ("signer_count", True), ("signers_sample", "Group A"), ("signers_sample", [""]), ("signed", 3), ("at_least", "yes")):
             broken = json.loads(json.dumps(CORE))
             broken["media"][0]["letter"] = {"to": "Senate leaders", "ask": "Oppose the bill.", field: value}
             errs, _ = check_data.check(broken)
@@ -241,7 +241,10 @@ class Positions(unittest.TestCase):
         self.assertEqual(set(summary), {"supports", "opposes", "mixed", "letters"})
         for k in ("supports", "opposes", "mixed"):
             self.assertEqual(summary[k], sum(1 for p in CORE["people"] if p["stance"] == k), k)
-        self.assertEqual(summary["letters"], sum(1 for it in CORE["media"] if it.get("letter")))
+        released = CORE["meta"]["released"]
+        self.assertEqual(summary["letters"], sum(1 for it in CORE["media"] if it.get("letter") and it["date"] >= released))
+        # The April 2026 western-groups letter predates the text and must not count.
+        self.assertLess(summary["letters"], sum(1 for it in CORE["media"] if it.get("letter")))
         self.assertIn("issues", core_js["positions"])
         self.assertNotIn("_about", core_js["positions"])
 

@@ -6,7 +6,8 @@ Runs the build in memory (so it checks what the site renders), then checks:
   - every comparison row has four filled cells
   - timeline, people and media records have their required fields, valid
     dates, known vocabulary values, unique ids and at least one http(s) source
-  - a media item's optional letter names its addressees and its ask; each
+  - a media item's optional letter names its addressees and its ask (at_least
+    marks signer_count as a floor, "100+", when the source says "more than"); each
     Positions issue names known topics, headlines and sections
   - machine-written prose follows the house style: no em or en dashes, no
     exclamation marks, none of the register words DESIGN.md bans
@@ -104,7 +105,11 @@ def check_letter(where: str, letter) -> list[str]:
     sample = letter.get("signers_sample")
     if "signers_sample" in letter and (not isinstance(sample, list) or not all(isinstance(x, str) and x.strip() for x in sample)):
         errs.append(f"{where}: signers_sample must be a list of names")
-    unknown = set(letter) - {"to", "ask", "signer_count", "signers_sample"}
+    if "at_least" in letter and not isinstance(letter["at_least"], bool):
+        errs.append(f"{where}: letter at_least must be true or false (it marks signer_count as a floor)")
+    if letter.get("at_least") and "signer_count" not in letter:
+        errs.append(f"{where}: letter at_least needs a signer_count to qualify")
+    unknown = set(letter) - {"to", "ask", "signer_count", "signers_sample", "at_least"}
     if unknown:
         errs.append(f"{where}: letter has unknown fields {sorted(unknown)}")
     return errs

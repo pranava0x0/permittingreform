@@ -2519,7 +2519,8 @@
      "Center for Biological Diversity",
      "Friends of the Earth US"
     ],
-    "ask": "Oppose the bill over its Endangered Species Act provisions."
+    "ask": "Oppose the bill over its Endangered Species Act provisions.",
+    "at_least": true
    }
   },
   {
@@ -3042,7 +3043,8 @@
      "National Association of Manufacturers",
      "American Supply Association"
     ],
-    "ask": "Bring S. 5653 to the Senate floor for immediate consideration."
+    "ask": "Bring S. 5653 to the Senate floor for immediate consideration.",
+    "at_least": true
    }
   },
   {

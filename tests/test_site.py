@@ -131,6 +131,11 @@ class Page(unittest.TestCase):
         self.assertIn('pplSector = SECTORS[parts[3]] ? parts[3] : "all";', JS)
         self.assertIn('(pplSector === "all" || sectorKey(p) === pplSector)', JS)
 
+    def test_letters_and_stance_chips_follow_their_filters(self):
+        self.assertIn('it.letter && it.date >= D.meta.released', JS)
+        self.assertIn('pool.filter((p) => pplSector === "all" || sectorKey(p) === pplSector)', JS)
+        self.assertIn('l.at_least ? num(l.signer_count) + "+ signers"', JS)
+
     def test_issue_voices_start_at_the_bill_release(self):
         """A statement about an earlier bill shares topics with the current one; the Positions page must not count it."""
         self.assertIn('it.date >= D.meta.released && POSITION_SIDES.some', JS)
