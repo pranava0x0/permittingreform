@@ -1,0 +1,196 @@
+{
+  "note": "Pages read in Chrome by the orchestrator on 2026-10-18 (paywalled or bot-blocked for curl). Quotes verbatim from page text.",
+  "items": [
+    {
+      "id": "2026-10-13-punchbowl-heinrich-faces-backlash-from-tribes-over-permitting-deal",
+      "date": "2026-10-13",
+      "title": "Martin Heinrich faces backlash from tribes over permitting deal",
+      "outlet": "Punchbowl News",
+      "author": "Josh Siegel",
+      "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
+      "media_type": "news",
+      "stance": "reporting",
+      "sector": "media",
+      "topics": [
+        "tribal",
+        "historic-preservation",
+        "lawsuits"
+      ],
+      "quote": "Opposition from Native American tribes is emerging as a threat to the Senate's bipartisan permitting reform bill, a particular problem for Democrats who often support tribal priorities.",
+      "speaker": "Josh Siegel",
+      "facts": [
+        "NATHPO calls the bill a 'legislative assault on the sovereignty of Tribal nations' and, with several other large tribal groups, sent a letter to Senate leaders urging 'the immediate rescission of this language'.",
+        "Democratic source close to negotiations: 'Renegotiating what is a carefully balanced product would imperil Democratic wins on transmission and other policies.'",
+        "Ira Matt, NATHPO executive director: 'For Sen. Heinrich, it's a very short-sighted approach. This isn't going to bode well back in his home state because tribes see through this. They know it's a farce.'",
+        "Rep. Melanie Stansbury (D-N.M.) suggested she could oppose the bill; protecting 'tribal sovereignty, the rights of our communities, and the environment will always be my line in the sand.'",
+        "Ben Schifman, Institute for Progress: 'This was a pretty even compromise, changing around the edges some excesses of the 106 process, but writing into the law for the first time stuff that's important to tribes.'",
+        "Heinrich's office did not respond to a request for comment. New Mexico has 23 federally recognized tribes."
+      ],
+      "verified_in_browser": true
+    },
+    {
+      "id": "2026-10-05-punchbowl-pressure-on-schumer-and-jeffries-to-reject-permitting-reform",
+      "date": "2026-10-05",
+      "title": "Pressure on Chuck Schumer and Hakeem Jeffries to reject permitting reform",
+      "outlet": "Punchbowl News",
+      "url": "https://punchbowl.news/article/energy/schumer-jeffries-permitting-reform/",
+      "media_type": "news",
+      "stance": "reporting",
+      "sector": "media",
+      "topics": [
+        "politics"
+      ],
+      "quote": "Dozens of progressive environmental groups sent a letter today to Senate Minority Leader Chuck Schumer and House Minority Leader Hakeem Jeffries, which we exclusively obtained, urging Democrats to oppose the bipartisan permitting reform bill to speed up federal approvals of energy projects.",
+      "speaker": "Punchbowl News",
+      "facts": [
+        "Preview only (premium). Confirms the 222-group letter date (Oct 5) and recipients."
+      ],
+      "verified_in_browser": true
+    },
+    {
+      "id": "2026-10-14-washington-times-rush-to-cut-permitting-red-tape-runs-into-historic-sites-law",
+      "date": "2026-10-14",
+      "title": "Rush to cut permitting red tape runs into law to protect America's historic sites",
+      "outlet": "The Washington Times",
+      "author": "Lindsey McPherson",
+      "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/",
+      "media_type": "news",
+      "stance": "reporting",
+      "sector": "media",
+      "topics": [
+        "historic-preservation",
+        "tribal"
+      ],
+      "speaker": "Greg Werkheiser",
+      "quote": "This legislation will effectively end the 60-year-old process of historic preservation in America.",
+      "facts": [
+        "Greg Werkheiser is founding partner of Cultural Heritage Partners (a law firm, sector: other/academic not environmental_group).",
+        "Terry Klein, chair of the Society for Historical Archaeology: in the context of historic preservation the bill 'does exactly the opposite' of expediting projects.",
+        "Opponents say the bill narrows projects subject to Section 106 review, removes the public as a consulted party and infringes on tribal and state rights."
+      ],
+      "verified_in_browser": true
+    },
+    {
+      "id": "2026-10-15-us-chamber-letter-supports-baaja-to-four-committee-leaders",
+      "date": "2026-10-15",
+      "title": "U.S. Chamber letter: strong support for the Bipartisan American Affordability and Jobs Act",
+      "outlet": "U.S. Chamber of Commerce",
+      "url": "https://www.uschamber.com/assets/documents/261013_Hill_Support-for-American-Affordability-and-Jobs-Act-of-2026_EPW-ENR_Clean.pdf",
+      "landing": "https://www.uschamber.com/infrastructure/support-for-the-bipartisan-american-affordability-and-jobs-act-of-2026",
+      "media_type": "org_statement",
+      "stance": "supports",
+      "sector": "trade_association",
+      "topics": [
+        "politics",
+        "certainty"
+      ],
+      "speaker": "Neil Bradley",
+      "quote": "The U.S. Chamber of Commerce (the Chamber) strongly supports the Bipartisan American Affordability and Jobs Act of 2026, landmark permitting reform legislation that will unlock investment, strengthen America's competitiveness, and create new opportunities for workers and communities across the country.",
+      "letter": {
+        "to": "Capito, Lee, Whitehouse and Heinrich, copied to Thune and Schumer",
+        "signer_count": 1,
+        "signers_sample": [
+          "U.S. Chamber of Commerce"
+        ],
+        "ask": "Pass the bill."
+      },
+      "facts": [
+        "Signed by Neil Bradley, EVP and chief policy officer. Dated October 15, 2026. Fetched via tools/webfetch (PDF)."
+      ],
+      "verified_in_browser": false
+    },
+    {
+      "id": "2026-10-14-nam-100-plus-manufacturing-business-groups-urge-congress-to-pass-permitting-deal",
+      "date": "2026-10-14",
+      "title": "100+ manufacturing and business groups urge Congress to pass the bipartisan permitting deal",
+      "outlet": "National Association of Manufacturers",
+      "url": "https://nam.org/100-manufacturing-business-groups-urge-congress-to-pass-bipartisan-permitting-deal/",
+      "media_type": "org_statement",
+      "stance": "supports",
+      "sector": "trade_association",
+      "topics": [
+        "politics",
+        "certainty"
+      ],
+      "speaker": "NAM coalition letter",
+      "quote": "We write in strong and unified support for S. 5653, the Bipartisan American Affordability and Jobs Act and respectfully urge you to bring it to the Senate floor for immediate consideration.",
+      "letter": {
+        "to": "Majority Leader Thune and Minority Leader Schumer",
+        "signer_count": 100,
+        "signer_count_note": "NAM says 100+; exact list is a separate link",
+        "signers_sample": [
+          "National Association of Manufacturers",
+          "Council of Manufacturing Associations members",
+          "Conference of State Manufacturers Associations members"
+        ],
+        "ask": "Bring S. 5653 to the Senate floor for immediate consideration."
+      },
+      "facts": [
+        "Fetched via tools/webfetch; signer list is a separate link not fetched."
+      ],
+      "verified_in_browser": false
+    },
+    {
+      "id": "2026-10-09-nam-what-they-are-saying-manufacturing-associations-rally-behind-permitting-bill",
+      "date": "2026-10-09",
+      "title": "What they are saying: manufacturing associations rally behind the bipartisan permitting bill",
+      "outlet": "National Association of Manufacturers",
+      "url": "https://nam.org/what-they-are-saying-manufacturing-associations-rally-behind-bipartisan-permitting-bill/",
+      "media_type": "org_statement",
+      "stance": "supports",
+      "sector": "trade_association",
+      "topics": [
+        "politics"
+      ],
+      "speaker": "Ian Jefferies, Association of American Railroads",
+      "quote": "The commonsense provisions included in the Bipartisan American Affordability and Jobs Act represent an important step forward toward comprehensive permitting reform.",
+      "facts": [
+        "Roundup of Council of Manufacturing Associations members (200+ national trade associations)."
+      ],
+      "verified_in_browser": false
+    }
+  ],
+  "people": [
+    {
+      "name": "Melanie Stansbury",
+      "role": "U.S. Representative (D-N.M.)",
+      "side": "inside",
+      "sector": "congress",
+      "stance": "mixed",
+      "date": "2026-10-13",
+      "quote": "tribal sovereignty, the rights of our communities, and the environment will always be my line in the sand",
+      "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/"
+    },
+    {
+      "name": "Ben Schifman",
+      "role": "Senior technology fellow, Institute for Progress",
+      "side": "outside",
+      "sector": "think_tank",
+      "stance": "supports",
+      "date": "2026-10-13",
+      "quote": "This was a pretty even compromise, changing around the edges some excesses of the 106 process, but writing into the law for the first time stuff that's important to tribes.",
+      "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/"
+    },
+    {
+      "name": "Greg Werkheiser",
+      "role": "Founding partner, Cultural Heritage Partners",
+      "side": "outside",
+      "sector": "academic",
+      "stance": "opposes",
+      "date": "2026-10-14",
+      "quote": "This legislation will effectively end the 60-year-old process of historic preservation in America.",
+      "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/",
+      "note": "If already in people.json, fix sector only via curation."
+    },
+    {
+      "name": "Terry Klein",
+      "role": "Chair, Society for Historical Archaeology",
+      "side": "outside",
+      "sector": "academic",
+      "stance": "opposes",
+      "date": "2026-10-14",
+      "quote": "in the context of historic preservation, it does exactly the opposite",
+      "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/"
+    }
+  ]
+}

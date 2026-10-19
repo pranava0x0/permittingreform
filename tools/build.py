@@ -2,7 +2,7 @@
 
 Reads the source-of-truth files under data/ and writes (site/bill.pdf, the
 same-origin copy that makes #page=N links work, is committed as is):
-  site/data/core.js   window.PR_DATA  (summaries, comparison, timeline, people, media)
+  site/data/core.js   window.PR_DATA  (summaries, comparison, positions issues, recent news)
   site/data/bill.js   window.PR_BILL  (full bill text as paragraphs with page and line cites)
   site/data/takes.js  window.PR_TAKES (outside readings; section pages load it on demand)
   site/data/news.js   window.PR_NEWS  (timeline, people, media; the News pages load it on demand)
@@ -36,7 +36,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-10-05"
+DATA_AS_OF = "2026-10-18"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -70,7 +70,18 @@ def browser_core(core: dict) -> dict:
         "media": [{k: it[k] for k in ("url", "title", "outlet", "date")} for it in media],
         "milestones": [{k: e[k] for k in ("id", "date", "title")} for e in marks],
         "counts": {k: len(core[k]) for k in NEWS_KEYS},
+        "positions": positions_summary(core),
     }
+    return out
+
+
+def positions_summary(core: dict) -> dict:
+    """Counts for the Overview's link to the Positions page. Stances come from
+    the people and groups tracked (one per voice; a media item's stance belongs
+    to that item, not to a person); letters are media items with a letter."""
+    stances = [p["stance"] for p in core["people"]]
+    out = {k: stances.count(k) for k in ("supports", "opposes", "mixed")}
+    out["letters"] = sum(1 for it in core["media"] if it.get("letter"))
     return out
 
 
@@ -386,6 +397,11 @@ def build() -> tuple[dict, dict, list[str]]:
     for name, key in OPTIONAL.items():
         path = DATA / f"{name}.json"
         extra[name] = load(path)[key] if path.exists() else []
+    # Positions: the contested issues the Positions page groups voices under.
+    # check_data.py validates its references.
+    pos_path = DATA / "positions.json"
+    positions = load(pos_path) if pos_path.exists() else {"issues": []}
+    positions.pop("_about", None)
     checks_path = DATA / "checks.json"
     checks = load(checks_path) if checks_path.exists() else {}
     if checks.get("inference"):
@@ -438,6 +454,7 @@ def build() -> tuple[dict, dict, list[str]]:
         "compare": compare,
         "communities": communities,
         "datacenters": datacenters,
+        "positions": positions,
         "takes": takes,
         "timeline": extra["timeline"],
         "people": extra["people"],

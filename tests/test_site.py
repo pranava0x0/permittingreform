@@ -118,6 +118,17 @@ class Page(unittest.TestCase):
         self.assertNotIn("—", JS)
         self.assertNotIn("—", HTML)
 
+    def test_the_positions_page_is_routed_in_the_news_group(self):
+        self.assertIn('const NEWS_TABS = ["timeline", "positions", "people", "media"];', JS)
+        self.assertIn('[["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]]', JS)
+        self.assertIn('positions: "Positions"', JS)
+        self.assertIn('else if (tab === "positions") nodes = renderPositions();', JS)
+        self.assertIn('href: "#/positions"', JS)
+
+    def test_the_sector_table_links_to_people_routes_the_router_reads(self):
+        self.assertIn('"#/people/" + (rows[k].inside ? "inside" : "outside") + "/" + c[0]', JS)
+        self.assertIn('pplSide = parts[1] === "outside" ? "outside" : "inside";', JS)
+
     def test_the_bill_text_loader_caches_its_promise(self):
         self.assertIn("if (!billPromise)", JS)
 

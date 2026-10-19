@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-06",
+ "checked": "2026-10-19",
  "results": {
   "http://pv-magazine-usa.com/2026/10/01/senate-introduces-landmark-permitting-bill-as-industry-data-and-environmental-groups-clash-over-reforms/": {
    "cls": "ok",
@@ -61,6 +61,19 @@
     "media.2026-10-01-artificial-weights-permitting-bill-procedural-reforms"
    ]
   },
+  "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "timeline.2026-10-13-185-groups-back-door-deal-letter.source",
+    "people.bill-mckibben.source",
+    "people.bill-mckibben.quote",
+    "media.2026-10-13-cbd-185-groups-back-door-deal-letter"
+   ]
+  },
   "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/": {
    "cls": "ok",
    "kind": "page",
@@ -95,6 +108,16 @@
    "status": 200,
    "where": [
     "media.2025-12-19-bpc-whats-in-the-speed-act"
+   ]
+  },
+  "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-statement-bipartisan-permitting-reform-agreement": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-02-blue-dog-coalition-november-vote-call.source",
+    "media.2026-10-02-blue-dog-coalition-floor-vote-call"
    ]
   },
   "https://bommaritollc.com/insights/senate-permitting-bill-2026/": {
@@ -171,6 +194,15 @@
    "status": 200,
    "where": [
     "people.martin-heinrich.social.bluesky"
+   ]
+  },
+  "https://bsky.app/profile/heinrich.senate.gov/post/3mxd7jlnj272h": {
+   "cls": "ok",
+   "kind": "bluesky",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-08-heinrich-bluesky-data-center-costs"
    ]
   },
   "https://bsky.app/profile/hickenlooper.senate.gov": {
@@ -351,6 +383,17 @@
     "media.2026-10-03-daily-caller-cramer-class-of-projects"
    ]
   },
+  "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-08-lee-confident-lame-duck-vote.source",
+    "people.mike-lee.source",
+    "media.2026-10-08-daily-caller-lee-lame-duck-confidence"
+   ]
+  },
   "https://dailyenergyinsider.com/featured/53944-u-s-senate-leaders-reach-deal-on-bipartisan-permitting-reform-bill/": {
    "cls": "ok",
    "kind": "page",
@@ -451,6 +494,15 @@
    "where": [
     "people.brian-fitzpatrick.source",
     "people.brian-fitzpatrick.quote"
+   ]
+  },
+  "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-15-foley-hoag-baaja-blast-transmission"
    ]
   },
   "https://fortune.com/2026/07/21/byron-donalds-ai-data-centers-florida-desantis/": {
@@ -573,6 +625,15 @@
     "media.2026-10-01-heatmap-climate-tech-winners-losers"
    ]
   },
+  "https://heatmap.news/climate-tech/permitting-bill-marine-power": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-14-heatmap-mini-marine-power"
+   ]
+  },
   "https://heatmap.news/daily/data-center-permitting-deal": {
    "cls": "ok",
    "kind": "page",
@@ -612,6 +673,15 @@
     "media.2026-07-29-heatmap-daily-meta-down-permitting-odds-up"
    ]
   },
+  "https://heatmap.news/daily/permitting-reform-current-system": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-08-heatmap-permitting-battle-lines"
+   ]
+  },
   "https://heatmap.news/daily/senate-bipartisan-permitting-reform": {
    "cls": "ok",
    "kind": "page",
@@ -630,6 +700,16 @@
    "status": 200,
    "where": [
     "media.2026-06-18-heatmap-heinrich-interview-sunzia-and-permitting-reform"
+   ]
+  },
+  "https://heatmap.news/daily/trump-permitting-deal-offshore-wind": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-13-revolution-wind-permit-review-request.source",
+    "media.2026-10-13-heatmap-trump-revolution-wind-permit"
    ]
   },
   "https://heatmap.news/daily/wright-recording-permitting": {
@@ -705,6 +785,15 @@
     "media.2026-10-05-heatmap-what-a-president-can-and-cant-do"
    ]
   },
+  "https://heatmap.news/politics/baaja-ibew-unions": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-07-heatmap-hardhat-union-yet-to-endorse"
+   ]
+  },
   "https://heatmap.news/politics/baaja-mining-waste": {
    "cls": "ok",
    "kind": "page",
@@ -713,7 +802,8 @@
    "where": [
     "takes.2026-10-02-earthworks-1",
     "takes.2026-10-02-national-mining-association-1",
-    "takes.2026-10-02-zero-emission-transportation-1"
+    "takes.2026-10-02-zero-emission-transportation-1",
+    "media.2026-10-02-heatmap-miners-struck-gold-bill"
    ]
   },
   "https://heatmap.news/politics/bipartisan-permitting-reform": {
@@ -744,6 +834,26 @@
    "where": [
     "timeline.2026-02-03-house-freedom-act-introduced.source",
     "media.2026-02-03-heatmap-scoop-house-freedom-act-would-keep-president-from-yanking-permits"
+   ]
+  },
+  "https://heatmap.news/politics/jared-huffman-baaja": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-12-huffman-no-vote-before-election.source",
+    "people.jared-huffman.source",
+    "media.2026-10-12-heatmap-huffman-wants-changes-bill"
+   ]
+  },
+  "https://heatmap.news/politics/permitting-bill-nepa": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-13-heatmap-sue-energy-project-after-bill"
    ]
   },
   "https://heatmap.news/politics/permitting-reform-speed-act": {
@@ -883,6 +993,28 @@
     "people.mike-johnson.quote"
    ]
   },
+  "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-01-republican-governors-joint-statement.source",
+    "people.greg-gianforte.source",
+    "people.greg-gianforte.quote",
+    "media.2026-10-01-republican-governors-joint-statement-permitting"
+   ]
+  },
+  "https://nam.org/100-manufacturing-business-groups-urge-congress-to-pass-bipartisan-permitting-deal/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-14-nam-coalition-letter-urges-floor-vote.source",
+    "media.2026-10-14-nam-100-plus-manufacturing-business-groups-urge-congress-to-pass-permitting-deal"
+   ]
+  },
   "https://nam.org/bipartisan-senate-deal-answers-manufacturers-call-for-permitting-reform/": {
    "cls": "ok",
    "kind": "page",
@@ -911,6 +1043,25 @@
     "people.jay-timmons.quote"
    ]
   },
+  "https://nam.org/what-they-are-saying-manufacturing-associations-rally-behind-bipartisan-permitting-bill/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-09-nam-what-they-are-saying-manufacturing-associations-rally-behind-permitting-bill"
+   ]
+  },
+  "https://narf.org/baaja-reform-bill/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-09-tribal-organizations-letter-sacred-places.source",
+    "media.2026-10-15-narf-tribal-analysis-act-now"
+   ]
+  },
   "https://naturalresources.house.gov/news/documentsingle.aspx?DocumentID=418297": {
    "cls": "ok",
    "kind": "page",
@@ -929,7 +1080,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "overview.status",
     "people.bruce-westerman.source",
     "media.2025-12-18-house-natural-resources-house-passes-speed-act"
    ]
@@ -959,6 +1109,19 @@
    "status": 200,
    "where": [
     "media.2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right"
+   ]
+  },
+  "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "people.melanie-stansbury.source",
+    "people.melanie-stansbury.quote",
+    "people.ben-schifman.source",
+    "people.ben-schifman.quote",
+    "media.2026-10-13-punchbowl-heinrich-faces-backlash-from-tribes-over-permitting-deal"
    ]
   },
   "https://punchbowl.news/wp-content/uploads/Permitting-Reform-Opposition-Letter_10.5.26.pdf": {
@@ -1001,6 +1164,15 @@
    "status": 200,
    "where": [
     "media.rollcall-2026-09-30-voluntary-rpa"
+   ]
+  },
+  "https://savethemanatee.org/opposition-statement-s-5653/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-14-save-the-manatee-opposition-statement"
    ]
   },
   "https://semafor.com/article/09/29/2026/democrats-flex-filibuster-muscle-ahead-of-election": {
@@ -1115,6 +1287,15 @@
     "timeline.2026-03-23-interior-totalenergies-offshore-wind-lease-buyout.source"
    ]
   },
+  "https://washingtonmonthly.com/2026/10/13/the-senates-surprisingly-populist-permitting-reform-deal/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-13-washington-monthly-populist-permitting-deal"
+   ]
+  },
   "https://weact.org/updates/environmental-groups-push-back-against-deregulatory-speed-act/": {
    "cls": "ok",
    "kind": "page",
@@ -1140,6 +1321,30 @@
    "status": 200,
    "where": [
     "media.2026-09-30-wv-metronews-capito-colleagues-praise-deal"
+   ]
+  },
+  "https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "timeline.2026-10-11-capito-white-house-concessions-wind-solar.source",
+    "people.shelley-moore-capito.source",
+    "media.2026-10-11-wv-metronews-capito-white-house-wind-solar"
+   ]
+  },
+  "https://www.106strong.com/60th-anniversary-press-release": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-15-106-strong-coalition-launch-letter.source",
+    "people.ira-matt.source",
+    "people.ira-matt.quote",
+    "media.2026-10-15-106-strong-coalition-launch-letter"
    ]
   },
   "https://www.api.org/-/media/Files/news/letters-comments/2026/2026-09-30-API-Senate-Leadership-Permitting-Reform-Letter-of-Support.pdf": {
@@ -1179,6 +1384,15 @@
    "where": [
     "timeline.2026-06-18-ferc-large-load-show-cause-orders.source",
     "people.laura-swett.source"
+   ]
+  },
+  "https://www.axios.com/2026/10/09/congress-permitting-bill-risks": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-10-09-axios-five-risks-lame-duck"
    ]
   },
   "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/": {
@@ -1358,6 +1572,16 @@
     "media.cnn-2026-09-30-rpa-senate-vote"
    ]
   },
+  "https://www.commondreams.org/newswire/hundreds-of-organizations-oppose-endangered-species-attacks-in-permitting-legislation": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-06-esa-groups-letter-oppose-bill.source",
+    "media.2026-10-06-cbd-fof-200-conservation-groups-esa-letter"
+   ]
+  },
   "https://www.crowell.com/en/insights/client-alerts/federal-court-blocks-trump-administration-policies-restricting-wind-and-solar-permitting": {
    "cls": "ok",
    "kind": "page",
@@ -1373,8 +1597,19 @@
    "note": "",
    "status": 200,
    "where": [
-    "overview.next",
     "timeline.2026-10-01-senate-schedules-november-9-cloture-vote.source"
+   ]
+  },
+  "https://www.dailypress.senate.gov/thursday-october-15-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "overview.next",
+    "timeline.2026-10-15-senate-floor-log-nov-9-cloture.source",
+    "media.2026-10-15-senate-floor-log-h-r-2347-cloture"
    ]
   },
   "https://www.deseret.com/politics/2026/09/24/permitting-reform-talks-fall-apart-in-senate/": {
@@ -1397,7 +1632,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "overview.status",
     "timeline.2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act.source",
     "timeline.2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act.quote",
     "people.shelley-moore-capito.quote",
@@ -1797,6 +2031,15 @@
     "people.liza-reed.source"
    ]
   },
+  "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-09-heinrich-supporter-roundup-data-centers"
+   ]
+  },
   "https://www.energy.senate.gov/press/dem/with-electricity-costs-rising-nationwide-heinrich-leads-letter-with-wyden-van-hollen-and-rosen-in-calling-on-burgum-to-revoke-july-directive-blocking-new-cheaper-energy-from-the-grid/": {
    "cls": "ok",
    "kind": "page",
@@ -1922,6 +2165,21 @@
     "media.2026-01-28-epw-whitehouse-opening-statement-permitting-reform-hearing"
    ]
   },
+  "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "timeline.2026-10-01-republican-governors-joint-statement.source",
+    "people.joshua-bolten.source",
+    "people.joshua-bolten.quote",
+    "people.xan-fishman.source",
+    "people.xan-fishman.quote",
+    "media.2026-10-07-epw-supporter-roundup-bipartisan-bill"
+   ]
+  },
   "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026": {
    "cls": "ok",
    "kind": "page",
@@ -1969,6 +2227,15 @@
     "timeline.2025-04-16-empire-wind-stop-work-order.source",
     "timeline.2025-05-19-empire-wind-stop-work-lifted.source",
     "timeline.2025-05-19-empire-wind-stop-work-lifted.quote"
+   ]
+  },
+  "https://www.everycrsreport.com/files/2026-10-14_IN12746_ff95bbd2dde5cfb4f9bfff5c9e26135018754e2a.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-14-crs-in12746-ferc-backstop-siting"
    ]
   },
   "https://www.everycrsreport.com/reports/IF13180.html": {
@@ -2340,6 +2607,15 @@
     "timeline.2026-01-12-courts-enjoin-offshore-wind-stop-work-orders.quote"
    ]
   },
+  "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-09-gt-senate-negotiators-agreement-text"
+   ]
+  },
   "https://www.hawley.senate.gov/hawley-blumenthal-introduce-bill-to-prevent-data-centers-from-increasing-electricity-costs-for-americans": {
    "cls": "ok",
    "kind": "page",
@@ -2402,6 +2678,24 @@
    "status": 200,
    "where": [
     "media.husted-2026-07-20-introduction"
+   ]
+  },
+  "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-07-iedc-senate-permitting-package-economic-developers"
+   ]
+  },
+  "https://www.insideenergyandenvironment.com/?p=9071": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-16-covington-senate-unveils-permitting-bill"
    ]
   },
   "https://www.klgates.com/DOE-Directs-FERC-to-Take-Action-on-Large-Load-Interconnection-10-30-2025": {
@@ -2728,6 +3022,18 @@
     "media.2025-02-19-liuna-booker-testimony-energy-independence-frivolous-litigation"
    ]
   },
+  "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-01-markey-reviewing-text-statement.source",
+    "people.edward-markey.source",
+    "people.edward-markey.quote",
+    "media.2026-10-01-markey-reviewing-text-statement"
+   ]
+  },
   "https://www.mcguirewoods.com/client-resources/alerts/2026/10/bipartisan-american-affordability-and-jobs-act-of-2026-proposes-sweeping-reform-for-energy-and-infrastructure-projects/": {
    "cls": "ok",
    "kind": "page",
@@ -2739,7 +3045,8 @@
     "takes.2026-10-02-mcguirewoods-5",
     "takes.2026-10-02-mcguirewoods-3",
     "takes.2026-10-02-mcguirewoods-1",
-    "takes.2026-10-02-mcguirewoods-2"
+    "takes.2026-10-02-mcguirewoods-2",
+    "media.2026-10-02-mcguirewoods-sweeping-reform-alert"
    ]
   },
   "https://www.mondaq.com/unitedstates/environmental-law/1850440/senate-permitting-bill-would-reshape-environmental-permitting-and-reviews": {
@@ -2752,7 +3059,17 @@
     "takes.2026-10-02-beveridge-diamond-2",
     "takes.2026-10-02-beveridge-diamond-3",
     "takes.2026-10-02-beveridge-diamond-5",
-    "takes.2026-10-02-beveridge-diamond-4"
+    "takes.2026-10-02-beveridge-diamond-4",
+    "media.2026-10-04-mondaq-bdl-senate-permitting-bill-reshape"
+   ]
+  },
+  "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-16-mondaq-akin-senate-unveils-permitting-bill"
    ]
   },
   "https://www.morganlewis.com/pubs/2025/01/executive-orders-move-oil-gas-development-permitting-reform-to-top-of-trump-vance-energy-agenda": {
@@ -2774,13 +3091,36 @@
     "takes.2026-10-01-national-association-of-coun-2"
    ]
   },
+  "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-08-naco-county-advocacy-hub"
+   ]
+  },
   "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act": {
    "cls": "ok",
    "kind": "page",
    "note": "",
    "status": 200,
    "where": [
-    "takes.2026-10-01-national-association-of-home-1"
+    "takes.2026-10-01-national-association-of-home-1",
+    "people.bill-owens.source",
+    "people.bill-owens.quote",
+    "media.2026-10-01-nahb-applauds-bipartisan-permitting-bill"
+   ]
+  },
+  "https://www.nga.org/?p=81333": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.brandon-tatum.source",
+    "people.brandon-tatum.quote",
+    "media.2026-10-01-nga-statement-on-permitting-reform"
    ]
   },
   "https://www.niskanencenter.org/niskanen-center-supports-introduction-of-the-bipartisan-american-affordability-and-jobs-act-of-2026/": {
@@ -2813,6 +3153,21 @@
     "takes.2026-10-02-niskanen-center-4",
     "takes.2026-10-02-niskanen-center-3",
     "takes.2026-10-02-niskanen-center-2"
+   ]
+  },
+  "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "timeline.2026-10-09-tribal-organizations-letter-sacred-places.source",
+    "timeline.2026-10-15-npr-section-106-threat-story.source",
+    "people.greg-werkheiser.source",
+    "people.greg-werkheiser.quote",
+    "people.ira-matt.source",
+    "media.2026-10-15-npr-section-106-threat-anniversary"
    ]
   },
   "https://www.nrdc.org/bio/christy-goldfuss/hard-questions-permitting-bill": {
@@ -2852,7 +3207,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "overview.status",
     "people.donald-trump.source",
     "media.2026-09-30-ap-pbs-senate-reaches-bipartisan-deal"
    ]
@@ -3065,6 +3419,16 @@
     "people.tim-pawlenty.source"
    ]
   },
+  "https://www.supplyht.com/articles/107521-asa-supports-bipartisan-permitting-reform-to-strengthen-us-manufacturing": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-14-nam-coalition-letter-urges-floor-vote.source",
+    "media.2026-10-16-asa-supports-permitting-reform-letter"
+   ]
+  },
   "https://www.thirdway.org/blog/one-baaja-blast-please": {
    "cls": "ok",
    "kind": "page",
@@ -3073,6 +3437,15 @@
    "where": [
     "takes.2026-10-02-third-way-1",
     "takes.2026-10-02-third-way-2"
+   ]
+  },
+  "https://www.thirdway.org/press/statement-from-climate-and-energy-svp-josh-freed-on-environmental-group-opposition-to-bipartisan-permitting-deal": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-05-third-way-statement-environmental-opposition"
    ]
   },
   "https://www.troutmanenergyreport.com/2025/04/order-no-1920-b-affirms-fercs-long-term-transmission-planning-and-cost-allocation-rule/": {
@@ -3091,6 +3464,18 @@
    "status": 200,
    "where": [
     "media.2026-09-30-upstream-senators-unveil-400-page-bill"
+   ]
+  },
+  "https://www.uschamber.com/assets/documents/261013_Hill_Support-for-American-Affordability-and-Jobs-Act-of-2026_EPW-ENR_Clean.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-15-chamber-letter-supports-bill.source",
+    "people.neil-bradley.source",
+    "people.neil-bradley.quote",
+    "media.2026-10-15-us-chamber-letter-supports-baaja-to-four-committee-leaders"
    ]
   },
   "https://www.uschamber.com/energy/u-s-chamber-hails-senate-progress-on-bipartisan-permitting-reform": {
@@ -3213,6 +3598,15 @@
     "media.vanhollen-2026-01-15-pftp"
    ]
   },
+  "https://www.volts.wtf/p/whats-up-with-the-new-federal-permitting": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-09-volts-whats-up-federal-permitting"
+   ]
+  },
   "https://www.washingtonexaminer.com/daily-on-energy/4749078/daily-on-energy-the-long-awaited-permitting-reform-bill-is-here/": {
    "cls": "ok",
    "kind": "page",
@@ -3241,6 +3635,28 @@
     "people.aidan-mackenzie.source",
     "people.aidan-mackenzie.quote",
     "media.2026-09-30-washington-sun-senators-have-deal-little-time"
+   ]
+  },
+  "https://www.washingtonsun.com/energy-environment/climate-green-groups-reform-scrambling-left-democrats": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-13-185-groups-back-door-deal-letter.source",
+    "media.2026-10-15-washington-sun-permitting-scrambling-left"
+   ]
+  },
+  "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "people.greg-werkheiser.source",
+    "people.terry-klein.source",
+    "people.terry-klein.quote",
+    "media.2026-10-14-washington-times-rush-to-cut-permitting-red-tape-runs-into-historic-sites-law"
    ]
   },
   "https://www.washingtontimes.com/news/2026/sep/30/senate-committee-leaders-announce-permitting-overhaul-deal-spur/": {
@@ -3357,6 +3773,17 @@
     "timeline.2025-04-15-presidential-memo-permitting-technology.source"
    ]
   },
+  "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.roger-wicker.source",
+    "people.roger-wicker.quote",
+    "media.2026-10-13-wicker-weekly-report-backs-bill"
+   ]
+  },
   "https://www.womblebonddickinson.com/us/node/21451": {
    "cls": "ok",
    "kind": "page",
@@ -3459,6 +3886,15 @@
    "status": 200,
    "where": [
     "media.2026-08-03-youtube-politico-heinrich-permitting-energy-affordability"
+   ]
+  },
+  "https://x.com/APIenergy/status/2110430531632644390": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-14-x-api-icf-permitting-tax-revenue"
    ]
   },
   "https://x.com/AidanRMackenzie": {
@@ -3614,6 +4050,15 @@
     "people.shelley-moore-capito.social.x"
    ]
   },
+  "https://x.com/SenCapito/status/2110743027811791292": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-15-capito-x-overwhelming-support"
+   ]
+  },
   "https://x.com/SenMikeLee": {
    "cls": "ok",
    "kind": "page",
@@ -3747,6 +4192,17 @@
    "status": 200,
    "where": [
     "media.2026-10-01-x-siegelscribe-whats-next-for-permitting"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2107892025182114178": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-07-guthrie-wants-grid-section-changes.source",
+    "people.brett-guthrie.source",
+    "media.2026-10-07-siegel-x-guthrie-grid-changes"
    ]
   },
   "https://x.com/WHCEQ47/status/2008908645837250964": {

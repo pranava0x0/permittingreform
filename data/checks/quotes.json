@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-06",
+ "checked": "2026-10-19",
  "bill": {
   "total": 173,
   "verified": 173
@@ -879,6 +879,483 @@
    "note": ""
   },
   {
+   "where": "people.melanie-stansbury",
+   "text": "tribal sovereignty, the rights of our communities, and the environment will always be my line in the sand",
+   "speaker": "Melanie Stansbury",
+   "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
+  },
+  {
+   "where": "people.ben-schifman",
+   "text": "This was a pretty even compromise, changing around the edges some excesses of the 106 process, but writing into the law for the first time stuff that's important to tribes.",
+   "speaker": "Ben Schifman",
+   "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
+  },
+  {
+   "where": "people.greg-werkheiser",
+   "text": "It will effectively rewrite the National Historic Preservation Act in ways that, for all intents and purposes, gut its meaning and protections for hundreds of thousands of sites across the country,",
+   "speaker": "Greg Werkheiser",
+   "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.terry-klein",
+   "text": "in the context of historic preservation, it does exactly the opposite",
+   "speaker": "Terry Klein",
+   "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/",
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
+  },
+  {
+   "where": "people.edward-markey",
+   "text": "I’m still reviewing text of this proposal, and I will be looking closely at the details.",
+   "speaker": "Edward J. Markey",
+   "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.roger-wicker",
+   "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
+   "speaker": "Roger Wicker",
+   "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.ira-matt",
+   "text": "The proposed changes are an affront to Tribal sovereignty and would erode decades of progress in recognizing Tribal rights.",
+   "speaker": "Ira Matt (Séliš)",
+   "url": "https://www.106strong.com/60th-anniversary-press-release",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.brandon-tatum",
+   "text": "The National Governors Association and its partners are encouraged by the introduction of the Bipartisan American Affordability and Jobs Act of 2026 and look forward to working with Congress to further develop this legislation.",
+   "speaker": "Brandon Tatum",
+   "url": "https://www.nga.org/?p=81333",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.bill-owens",
+   "text": "NAHB applauds Senators Lee, Capito, Heinrich and Whitehouse and for their leadership and bipartisan approach to crafting the most meaningful reforms in decades to several key federal environmental permitting programs.",
+   "speaker": "Bill Owens",
+   "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.joshua-bolten",
+   "text": "Business Roundtable strongly supports the Bipartisan American Affordability and Jobs Act of 2026.",
+   "speaker": "Joshua Bolten",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.xan-fishman",
+   "text": "This bill would fix our permitting processes so that we can review and build efficiently, reducing costs, improving quality of life, growing our economy, and improving economic outcomes.",
+   "speaker": "Xan Fishman",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.bill-mckibben",
+   "text": "It would be highly ironic if the first action Congress took after an election largely defined by opposition to data centers would be to make it easier to build them,",
+   "speaker": "Bill McKibben",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.neil-bradley",
+   "text": "Congress should seize this bipartisan opportunity and send the bill to the President's desk as soon as possible",
+   "speaker": "Neil Bradley",
+   "url": "https://www.uschamber.com/assets/documents/261013_Hill_Support-for-American-Affordability-and-Jobs-Act-of-2026_EPW-ENR_Clean.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.greg-gianforte",
+   "text": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk.",
+   "speaker": "Greg Gianforte",
+   "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-16-mondaq-akin-senate-unveils-permitting-bill",
+   "text": "The bill seeks to address longstanding concerns that federal permitting and environmental review processes have become increasingly complex, unpredictable, and vulnerable to litigation.",
+   "speaker": "Akin Gump",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-16-covington-senate-unveils-permitting-bill",
+   "text": "To some extent BAAJA would codify environmental review reforms which have been developed under several Administrations; in other respects, the proposed changes would be novel and potentially far-reaching.",
+   "speaker": "Covington authors",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-16-asa-supports-permitting-reform-letter",
+   "text": "Our members need reliable energy and water infrastructure, along with policies that spur investment.",
+   "speaker": "Steve Rossi, ASA VP of Advocacy",
+   "url": "https://www.supplyht.com/articles/107521-asa-supports-bipartisan-permitting-reform-to-strengthen-us-manufacturing",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-15-washington-sun-permitting-scrambling-left",
+   "text": "Major green groups — the League of Conservation Voters, the Sierra Club, the Environmental Defense Fund, the Natural Resources Defense Council — have hedged.",
+   "speaker": "The Washington Sun",
+   "url": "https://www.washingtonsun.com/energy-environment/climate-green-groups-reform-scrambling-left-democrats",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-15-us-chamber-letter-supports-baaja-to-four-committee-leaders",
+   "text": "Congress should seize this bipartisan opportunity and send the bill to the President's desk as soon as possible",
+   "speaker": "Neil Bradley, U.S. Chamber of Commerce",
+   "url": "https://www.uschamber.com/assets/documents/261013_Hill_Support-for-American-Affordability-and-Jobs-Act-of-2026_EPW-ENR_Clean.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-15-senate-floor-log-h-r-2347-cloture",
+   "text": "At approximately 5:30 p.m., the Senate will vote on cloture on the motion to proceed to H.R.2347.",
+   "speaker": "U.S. Senate Press Gallery floor log",
+   "url": "https://www.dailypress.senate.gov/thursday-october-15-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-15-npr-section-106-threat-anniversary",
+   "text": "It will effectively rewrite the National Historic Preservation Act in ways that, for all intents and purposes, gut its meaning and protections for hundreds of thousands of sites across the country,",
+   "speaker": "Greg Werkheiser, Cultural Heritage Partners",
+   "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-15-narf-tribal-analysis-act-now",
+   "text": "The BAAJA severely weakens Tribal opportunities to engage as sovereign governments, curtails Tribal consultation requirements, and restricts access to legal recourse in court.",
+   "speaker": "Native American Rights Fund",
+   "url": "https://narf.org/baaja-reform-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-15-foley-hoag-baaja-blast-transmission",
+   "text": "It must pass both chambers and be signed by the President, and it is not expected to be taken up until after the midterm elections",
+   "speaker": "Foley Hoag",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-15-capito-x-overwhelming-support",
+   "text": "The overwhelming support for the Bipartisan American Affordability and Jobs Act speaks for itself.",
+   "speaker": "Sen. Shelley Moore Capito",
+   "url": "https://x.com/SenCapito/status/2110743027811791292",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-15-106-strong-coalition-launch-letter",
+   "text": "Section 106 asks our government to do something profoundly reasonable: stop, look, and listen before destroying places Americans value",
+   "speaker": "Greg Werkheiser, 106 Strong",
+   "url": "https://www.106strong.com/60th-anniversary-press-release",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-14-x-api-icf-permitting-tax-revenue",
+   "text": "An @ICF analysis commissioned by API found permitting reform could support nearly $24 billion in tax revenue by 2030.",
+   "speaker": "American Petroleum Institute (@APIenergy)",
+   "url": "https://x.com/APIenergy/status/2110430531632644390",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-14-washington-times-rush-to-cut-permitting-red-tape-runs-into-historic-sites-law",
+   "text": "This legislation will effectively end the 60-year-old process of historic preservation in America.",
+   "speaker": "Greg Werkheiser, Cultural Heritage Partners",
+   "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/",
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
+  },
+  {
+   "where": "media.2026-10-14-save-the-manatee-opposition-statement",
+   "text": "We respectfully urge all members of Congress, especially the Florida Delegation, to oppose this dangerous legislation.",
+   "speaker": "Save the Manatee Club",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-14-nam-100-plus-manufacturing-business-groups-urge-congress-to-pass-permitting-deal",
+   "text": "We write in strong and unified support for S. 5653, the Bipartisan American Affordability and Jobs Act and respectfully urge you to bring it to the Senate floor for immediate consideration.",
+   "speaker": "NAM coalition letter",
+   "url": "https://nam.org/100-manufacturing-business-groups-urge-congress-to-pass-bipartisan-permitting-deal/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-14-heatmap-mini-marine-power",
+   "text": "Tucked inside the Senate’s ambitious new permitting bill, the Bipartisan American Affordability and Jobs Act, is a major win for an energy technology that often flies under the radar: marine power.",
+   "speaker": "Katie Brigham, Heatmap",
+   "url": "https://heatmap.news/climate-tech/permitting-bill-marine-power",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-14-crs-in12746-ferc-backstop-siting",
+   "text": "The bill would address numerous aspects of energy infrastructure permitting, including by amending the conditions under which the Federal Energy Regulatory Commission (FERC) may issue a construction permit",
+   "speaker": "Congressional Research Service",
+   "url": "https://www.everycrsreport.com/files/2026-10-14_IN12746_ff95bbd2dde5cfb4f9bfff5c9e26135018754e2a.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-13-wicker-weekly-report-backs-bill",
+   "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
+   "speaker": "Sen. Roger Wicker",
+   "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-13-washington-monthly-populist-permitting-deal",
+   "text": "could lower electricity costs and speed the green energy transition by targeting utilities",
+   "speaker": "Kainoa Lowman, Washington Monthly",
+   "url": "https://washingtonmonthly.com/2026/10/13/the-senates-surprisingly-populist-permitting-reform-deal/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-13-punchbowl-heinrich-faces-backlash-from-tribes-over-permitting-deal",
+   "text": "Opposition from Native American tribes is emerging as a threat to the Senate's bipartisan permitting reform bill, a particular problem for Democrats who often support tribal priorities.",
+   "speaker": "Josh Siegel, Punchbowl News",
+   "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
+  },
+  {
+   "where": "media.2026-10-13-heatmap-trump-revolution-wind-permit",
+   "text": "the biggest threat to the bipartisan permitting deal probably isn’t green groups, the fossil fuel industry, or monopoly utilities",
+   "speaker": "Robinson Meyer, Heatmap",
+   "url": "https://heatmap.news/daily/trump-permitting-deal-offshore-wind",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-13-heatmap-sue-energy-project-after-bill",
+   "text": "remaining 100 pages of the bill devoted to NEPA are all going to be irrelevant in light of that remedy provision",
+   "speaker": "Matthew Littleton, former deputy assistant attorney general",
+   "url": "https://heatmap.news/politics/permitting-bill-nepa",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-13-cbd-185-groups-back-door-deal-letter",
+   "text": "A coalition of 185 community, labor, climate and environmental justice organizations today urged congressional leaders to oppose anti-environmental permitting legislation.",
+   "speaker": "Center for Biological Diversity (press release)",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-12-heatmap-huffman-wants-changes-bill",
+   "text": "might pay some clean energy developers money from the judgment fund when they are screwed, but nothing to actually approve their projects",
+   "speaker": "Rep. Jared Huffman",
+   "url": "https://heatmap.news/politics/jared-huffman-baaja",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-11-wv-metronews-capito-white-house-wind-solar",
+   "text": "The White House has been right here with us, has made some tremendous concessions",
+   "speaker": "Sen. Shelley Moore Capito",
+   "url": "https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-09-volts-whats-up-federal-permitting",
+   "text": "It brings us to kind of what is the energy sector for? What are we trying to do in this country?",
+   "speaker": "Daniel Palken, Arnold Ventures",
+   "url": "https://www.volts.wtf/p/whats-up-with-the-new-federal-permitting",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-09-nam-what-they-are-saying-manufacturing-associations-rally-behind-permitting-bill",
+   "text": "The commonsense provisions included in the Bipartisan American Affordability and Jobs Act represent an important step forward toward comprehensive permitting reform.",
+   "speaker": "Ian Jefferies, Association of American Railroads",
+   "url": "https://nam.org/what-they-are-saying-manufacturing-associations-rally-behind-bipartisan-permitting-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-09-heinrich-supporter-roundup-data-centers",
+   "text": "ensure that rapidly growing data centers pay the full cost of their associated transmission needs",
+   "speaker": "Office of Sen. Martin Heinrich (press release)",
+   "url": "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-09-gt-senate-negotiators-agreement-text",
+   "text": "The bill seeks to accelerate energy infrastructure, renewable energy, transmission, pipeline, and mining project approvals through mandatory agency deadlines and streamlined permitting",
+   "speaker": "Greenberg Traurig",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-09-axios-five-risks-lame-duck",
+   "text": "The few definitive statements on the bill from lawmakers in both parties are supportive.",
+   "speaker": "Axios",
+   "url": "https://www.axios.com/2026/10/09/congress-permitting-bill-risks",
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
+  },
+  {
+   "where": "media.2026-10-08-naco-county-advocacy-hub",
+   "text": "Contact your senators and urge them to support the Bipartisan American Affordability and Jobs Act of 2026",
+   "speaker": "National Association of Counties (advocacy hub)",
+   "url": "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-08-heinrich-bluesky-data-center-costs",
+   "text": "Data center owners should pay for their electricity and any grid upgrades–not you. Our new permitting reform bill makes that mandatory.",
+   "speaker": "Sen. Martin Heinrich",
+   "url": "https://bsky.app/profile/heinrich.senate.gov/post/3mxd7jlnj272h",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-08-daily-caller-lee-lame-duck-confidence",
+   "text": "Lee said he is confident the Senate will pass it in a lame-duck session in November",
+   "speaker": "Daily Caller News Foundation, citing the AP",
+   "url": "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-07-siegel-x-guthrie-grid-changes",
+   "text": "E&C Chair Brett Guthrie says at @PunchbowlNews Tech Summit that \"we absolutely would love to see changes to the\" grid section of the Senate's bipartisan permitting bill.",
+   "speaker": "Joshua Siegel, Punchbowl News (quoting Rep. Brett Guthrie)",
+   "url": "https://x.com/SiegelScribe/status/2107892025182114178",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-07-iedc-senate-permitting-package-economic-developers",
+   "text": "The 417-page bill is the result of months of bipartisan negotiations and would make changes to federal permitting and environmental review processes for energy, infrastructure, and other major projects.",
+   "speaker": "IEDC",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-07-heatmap-hardhat-union-yet-to-endorse",
+   "text": "reviewing the language and holding discussions with stakeholders across our industries.",
+   "speaker": "IBEW spokesperson",
+   "url": "https://heatmap.news/politics/baaja-ibew-unions",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-07-epw-supporter-roundup-bipartisan-bill",
+   "text": "The Bipartisan American Affordability and Jobs Act delivers cheaper energy, more well-paying jobs, and responsible growth by accelerating the permitting and construction of critical energy and infrastructure projects while maintaining key environmental and historic preservation safeguards.",
+   "speaker": "EPW majority press office",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-06-cbd-fof-200-conservation-groups-esa-letter",
+   "text": "The bill includes sweeping attacks on the Endangered Species Act that would gut protections for nearly every endangered species across the country.",
+   "speaker": "Center for Biological Diversity and Friends of the Earth (joint release)",
+   "url": "https://www.commondreams.org/newswire/hundreds-of-organizations-oppose-endangered-species-attacks-in-permitting-legislation",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-05-third-way-statement-environmental-opposition",
+   "text": "This opposition ignores the fact that the bill will be overwhelmingly beneficial to transmission and clean energy expansion in the United States.",
+   "speaker": "Josh Freed, Third Way",
+   "url": "https://www.thirdway.org/press/statement-from-climate-and-energy-svp-josh-freed-on-environmental-group-opposition-to-bipartisan-permitting-deal",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-05-pacific-legal-x-pass-quickly",
    "text": "PLF urges Congress to pass it quickly.",
    "speaker": "Pacific Legal Foundation",
@@ -933,6 +1410,15 @@
    "note": ""
   },
   {
+   "where": "media.2026-10-04-mondaq-bdl-senate-permitting-bill-reshape",
+   "text": "The bill would dramatically change environmental rules governing project development, especially for energy and mineral projects, by increasing permitting certainty, streamlining permitting processes, limiting litigation",
+   "speaker": "Beveridge & Diamond",
+   "url": "https://www.mondaq.com/unitedstates/environmental-law/1850440/senate-permitting-bill-would-reshape-environmental-permitting-and-reviews",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-03-daily-caller-cramer-class-of-projects",
    "text": "Section 1402 provides recourse if a future administration tries to use the same playbook",
    "speaker": "Senate Energy and Natural Resources Committee spokesperson",
@@ -951,6 +1437,24 @@
    "note": "read in a browser on 2026-10-05"
   },
   {
+   "where": "media.2026-10-02-mcguirewoods-sweeping-reform-alert",
+   "text": "Senate committee leaders reached a bipartisan agreement on Sept. 30, 2026, on sweeping permitting reform for energy and infrastructure projects, but the bill still needs Senate and House approval",
+   "speaker": "McGuireWoods",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/10/bipartisan-american-affordability-and-jobs-act-of-2026-proposes-sweeping-reform-for-energy-and-infrastructure-projects/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-02-heatmap-miners-struck-gold-bill",
+   "text": "The proposal resolves an issue that has bedeviled the industry since 2022.",
+   "speaker": "Matthew Zeitlin, Heatmap",
+   "url": "https://heatmap.news/politics/baaja-mining-waste",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-02-bpc-explainer",
    "text": "Under BAAJA, a NEPA violation alone would no longer stop a project.",
    "speaker": "Bipartisan Policy Center",
@@ -958,6 +1462,15 @@
    "result": "browser",
    "share": 1.0,
    "note": "read in a browser on 2026-10-05"
+  },
+  {
+   "where": "media.2026-10-02-blue-dog-coalition-floor-vote-call",
+   "text": "We urge House and Senate leadership to bring this bill to the floor for a vote in November.",
+   "speaker": "Blue Dog Coalition",
+   "url": "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-statement-bipartisan-permitting-reform-agreement",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "media.brc-2026-10-01-transparency",
@@ -1014,6 +1527,15 @@
    "note": ""
   },
   {
+   "where": "media.2026-10-01-republican-governors-joint-statement-permitting",
+   "text": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk.",
+   "speaker": "Joint statement of 22 Republican governors",
+   "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw",
    "text": "Folding our hand now or in the lame duck makes no sense when we can keep working on this and, in a few more months, have a much better deal that works for everyone.",
    "speaker": "Rep. Jared Huffman (D-Calif.)",
@@ -1021,6 +1543,33 @@
    "result": "browser",
    "share": 1.0,
    "note": "read in a browser on 2026-10-02"
+  },
+  {
+   "where": "media.2026-10-01-nga-statement-on-permitting-reform",
+   "text": "The National Governors Association and its partners are encouraged by the introduction of the Bipartisan American Affordability and Jobs Act of 2026 and look forward to working with Congress to further develop this legislation.",
+   "speaker": "Brandon Tatum, NGA chief executive",
+   "url": "https://www.nga.org/?p=81333",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-01-nahb-applauds-bipartisan-permitting-bill",
+   "text": "NAHB applauds Senators Lee, Capito, Heinrich and Whitehouse and for their leadership and bipartisan approach to crafting the most meaningful reforms in decades to several key federal environmental permitting programs.",
+   "speaker": "Bill Owens, NAHB chairman",
+   "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-01-markey-reviewing-text-statement",
+   "text": "I’m still reviewing text of this proposal, and I will be looking closely at the details.",
+   "speaker": "Sen. Edward J. Markey",
+   "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "media.2026-10-01-heatmap-data-center-double-tap",

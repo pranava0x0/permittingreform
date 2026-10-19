@@ -1,0 +1,641 @@
+{
+ "generated": "2026-10-18",
+ "agent": "press",
+ "items": [
+  {
+   "id": "2026-10-13-heatmap-sue-energy-project-after-bill",
+   "date": "2026-10-13",
+   "type": "news",
+   "outlet": "Heatmap",
+   "author": "Emily Pontecorvo",
+   "title": "How to Sue an Energy Project After the Permitting Bill",
+   "url": "https://heatmap.news/politics/permitting-bill-nepa",
+   "verified": true,
+   "summary": "Heatmap reports that the bill's judicial-review remedy provision could make most of its NEPA sections matter less, per a former DOJ environment official.",
+   "stance": "reporting",
+   "quote": {
+    "text": "remaining 100 pages of the bill devoted to NEPA are all going to be irrelevant in light of that remedy provision",
+    "speaker": "Matthew Littleton"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-12-heatmap-huffman-wants-changes-bill",
+   "date": "2026-10-12",
+   "type": "news",
+   "outlet": "Heatmap",
+   "author": "Jael Holzman",
+   "title": "Jared Huffman Wants to See Some Changes to the Senate’s Permitting Bill",
+   "url": "https://heatmap.news/politics/jared-huffman-baaja",
+   "verified": true,
+   "summary": "Heatmap reports on Rep. Jared Huffman's written criticism of the bill's judgment-fund provision, which he says pays developers without approving projects.",
+   "stance": "opposes",
+   "quote": {
+    "text": "might pay some clean energy developers money from the judgment fund when they are screwed, but nothing to actually approve their projects",
+    "speaker": "Rep. Jared Huffman"
+   },
+   "topics": [
+    "courts",
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-13-heatmap-trump-revolution-wind-permit",
+   "date": "2026-10-13",
+   "type": "news",
+   "outlet": "Heatmap",
+   "author": "Robinson Meyer",
+   "title": "Is Trump Trying to Blow Up the Permitting Deal?",
+   "url": "https://heatmap.news/daily/trump-permitting-deal-offshore-wind",
+   "verified": true,
+   "summary": "Heatmap reports the administration asked a court to re-examine a Revolution Wind permit, and argues the biggest risk to the deal is inside the administration.",
+   "stance": "reporting",
+   "quote": {
+    "text": "the biggest threat to the bipartisan permitting deal probably isn’t green groups, the fossil fuel industry, or monopoly utilities",
+    "speaker": "Robinson Meyer"
+   },
+   "topics": [
+    "offshore",
+    "permit-certainty",
+    "white-house",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-08-heatmap-permitting-battle-lines",
+   "date": "2026-10-08",
+   "type": "news",
+   "outlet": "Heatmap",
+   "author": "Robinson Meyer",
+   "title": "Permitting Reform’s Battle Lines Are Taking Shape",
+   "url": "https://heatmap.news/daily/permitting-reform-current-system",
+   "verified": true,
+   "summary": "Heatmap Daily reports that many environmental and climate nonprofits are split on the bill a week after its release.",
+   "stance": "reporting",
+   "quote": {
+    "text": "It’s now been just over a week since a gang of four bipartisan senators released the Bipartisan American Affordability and Jobs Act, or BAAJA",
+    "speaker": "Robinson Meyer"
+   },
+   "topics": [
+    "congress",
+    "nepa"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-07-heatmap-hardhat-union-yet-to-endorse",
+   "date": "2026-10-07",
+   "type": "news",
+   "outlet": "Heatmap",
+   "author": "Matthew Zeitlin",
+   "title": "The Crucial Hardhat Union That Has Yet to Endorse the Permitting Bill",
+   "url": "https://heatmap.news/politics/baaja-ibew-unions",
+   "verified": true,
+   "summary": "Heatmap reports on building-trades unions' positions on the bill, noting that much of the hardhat sector is now signing on as supporters.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Now, with a permitting bill negotiated by two Democrats and two Republicans in the Senate, much of the hardhat union sector is signing on as eager supporters",
+    "speaker": "Matthew Zeitlin"
+   },
+   "topics": [
+    "congress",
+    "labor"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-02-heatmap-miners-struck-gold-bill",
+   "date": "2026-10-02",
+   "type": "news",
+   "outlet": "Heatmap",
+   "author": "Matthew Zeitlin",
+   "title": "Miners Struck Gold With the Senate Permitting Bill",
+   "url": "https://heatmap.news/politics/baaja-mining-waste",
+   "verified": true,
+   "summary": "Heatmap reports that the bill's mining-waste provision would resolve a 2022 court problem for hardrock mining projects such as Rosemont.",
+   "stance": "supports",
+   "quote": {
+    "text": "The proposal resolves an issue that has bedeviled the industry since 2022.",
+    "speaker": "Matthew Zeitlin"
+   },
+   "topics": [
+    "mining",
+    "courts"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-16-new-mexico-sun-tribal-nations-concerns",
+   "date": "2026-10-16",
+   "type": "news",
+   "outlet": "New Mexico Sun",
+   "title": "Senate permitting reform bill raises concerns for Tribal Nations' participation",
+   "url": "https://newmexicosun.com/senate-permitting-reform-bill-raises-concerns-for-tribal-nations-participation",
+   "verified": true,
+   "summary": "New Mexico Sun reports the Native American Rights Fund's Oct. 15 statement that the bill could weaken Tribal Nations' participation in federal project approvals.",
+   "stance": "reporting",
+   "quote": {
+    "text": "could significantly impact Tribal Nations' ability to participate in federal project approvals, according to an Oct. 15 statement from the Native American Rights Fund",
+    "speaker": "New Mexico Sun"
+   },
+   "topics": [
+    "tribal",
+    "nepa"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-15-legis1-federal-energy-bill-override-states",
+   "date": "2026-10-15",
+   "type": "news",
+   "outlet": "Legis1",
+   "author": "Legis1 Editorial",
+   "title": "Federal Energy Bill Could Override Objections by States",
+   "url": "https://legis1.com/news/ferc-siting-authority-backstop-at-stake",
+   "verified": true,
+   "summary": "Legis1 explains that the bill's FERC siting backstop could override state objections to transmission lines, a dispute with a long court and congressional history.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The bill's title signals bipartisan support, which is notable given that transmission siting has historically divided lawmakers along regional and jurisdictional lines.",
+    "speaker": "Legis1 Editorial"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-14-heatmap-mini-marine-power",
+   "date": "2026-10-14",
+   "type": "analysis",
+   "outlet": "Heatmap",
+   "author": "Katie Brigham",
+   "title": "An Unexpected Beneficiary of the Permitting Bill: Mini Marine Power",
+   "url": "https://heatmap.news/climate-tech/permitting-bill-marine-power",
+   "verified": true,
+   "summary": "Heatmap analyzes the bill's marine and hydrokinetic licensing provisions, which it presents as a major win for small wave, tidal and river-current projects.",
+   "stance": "supports",
+   "quote": {
+    "text": "Tucked inside the Senate’s ambitious new permitting bill, the Bipartisan American Affordability and Jobs Act, is a major win for an energy technology that often flies under the radar: marine power.",
+    "speaker": "Katie Brigham"
+   },
+   "topics": [
+    "hydropower",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-15-foley-hoag-baaja-blast-transmission",
+   "date": "2026-10-15",
+   "type": "analysis",
+   "outlet": "Foley Hoag",
+   "author": "Peter Ross, Kevin Y. Chen",
+   "title": "BAAJA Blast: What the Senate Permitting Bill Means for Transmission Developers",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "verified": true,
+   "summary": "Foley Hoag reviews the bill's transmission-siting and FERC provisions for developers and notes it must still pass both chambers and be signed.",
+   "stance": "neutral",
+   "quote": {
+    "text": "It must pass both chambers and be signed by the President, and it is not expected to be taken up until after the midterm elections",
+    "speaker": "Foley Hoag"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-10-13-washington-monthly-populist-permitting-deal",
+   "date": "2026-10-13",
+   "type": "analysis",
+   "outlet": "Washington Monthly",
+   "author": "Kainoa Lowman",
+   "title": "The Senate’s Surprisingly Populist Permitting Reform Deal",
+   "url": "https://washingtonmonthly.com/2026/10/13/the-senates-surprisingly-populist-permitting-reform-deal/",
+   "verified": true,
+   "summary": "Washington Monthly argues the bill could lower electricity costs by targeting utilities, and describes its populist framing.",
+   "stance": "supports",
+   "quote": {
+    "text": "could lower electricity costs and speed the green energy transition by targeting utilities",
+    "speaker": "Kainoa Lowman"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-09-gt-senate-negotiators-agreement-text",
+   "date": "2026-10-09",
+   "type": "analysis",
+   "outlet": "Greenberg Traurig",
+   "author": "Greenberg Traurig LLP",
+   "title": "Senate Negotiators Reach Agreement on Permitting Reform Text",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "verified": true,
+   "summary": "Greenberg Traurig summarizes the Sept. 30 Senate negotiators' text and its mandatory agency deadlines and streamlined permitting for energy, transmission, pipeline and mining projects.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The bill seeks to accelerate energy infrastructure, renewable energy, transmission, pipeline, and mining project approvals through mandatory agency deadlines and streamlined permitting",
+    "speaker": "Greenberg Traurig"
+   },
+   "topics": [
+    "permit-certainty",
+    "transmission",
+    "mining",
+    "nepa"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-10-02-mcguirewoods-sweeping-reform-alert",
+   "date": "2026-10-02",
+   "type": "analysis",
+   "outlet": "McGuireWoods",
+   "author": "Ryan M. Bernstein, Bernard L. McNamee",
+   "title": "Bipartisan American Affordability and Jobs Act of 2026 Proposes Sweeping Reform for Energy and Infrastructure Projects",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/10/bipartisan-american-affordability-and-jobs-act-of-2026-proposes-sweeping-reform-for-energy-and-infrastructure-projects/",
+   "verified": true,
+   "summary": "McGuireWoods alert on the Sept. 30 committee agreement, covering permitting and environmental review changes plus transmission and large-load provisions, and noting the bill still needs both chambers.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Senate committee leaders reached a bipartisan agreement on Sept. 30, 2026, on sweeping permitting reform for energy and infrastructure projects, but the bill still needs Senate and House approval",
+    "speaker": "McGuireWoods"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "transmission"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-10-16-covington-senate-unveils-permitting-bill",
+   "date": "2026-10-16",
+   "type": "analysis",
+   "outlet": "Covington (Inside Energy & Environment)",
+   "author": "W. Andrew Jack, Jayni Hein, Gary S. Guzy, Nicholas Xenakis",
+   "title": "Senate Unveils Bipartisan Permitting Bill: What the Bipartisan American Affordability and Jobs Act Would Mean for Energy and Environmental Permitting",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "verified": true,
+   "summary": "Covington's energy practice summarizes the bill's key provisions by impact area, saying it would codify some existing NEPA reforms and go further in others.",
+   "stance": "neutral",
+   "quote": {
+    "text": "To some extent BAAJA would codify environmental review reforms which have been developed under several Administrations; in other respects, the proposed changes would be novel and potentially far-reaching.",
+    "speaker": "Covington authors"
+   },
+   "topics": [
+    "nepa",
+    "permit-certainty",
+    "clean-water-act",
+    "esa"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-10-07-iedc-senate-permitting-package-economic-developers",
+   "date": "2026-10-07",
+   "type": "analysis",
+   "outlet": "IEDC",
+   "title": "Senate Bipartisan Permitting Reform Package: What Economic Developers Need to Know",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "verified": true,
+   "summary": "The International Economic Development Council explains the 417-page bill for economic developers, describing it as the product of months of bipartisan negotiations.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The 417-page bill is the result of months of bipartisan negotiations and would make changes to federal permitting and environmental review processes for energy, infrastructure, and other major projects.",
+    "speaker": "IEDC"
+   },
+   "topics": [
+    "permit-certainty",
+    "nepa"
+   ],
+   "sector": "trade_association"
+  },
+  {
+   "id": "2026-10-16-mondaq-akin-senate-unveils-permitting-bill",
+   "date": "2026-10-16",
+   "type": "analysis",
+   "outlet": "Mondaq",
+   "author": "Akin Gump Strauss Hauer & Feld LLP",
+   "title": "Senate Unveils Bipartisan Comprehensive Permitting Reform Bill",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "verified": true,
+   "summary": "Akin's alert, republished on Mondaq, describes the bill as addressing longstanding concerns about complex, unpredictable and litigation-prone federal permitting.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The bill seeks to address longstanding concerns that federal permitting and environmental review processes have become increasingly complex, unpredictable, and vulnerable to litigation.",
+    "speaker": "Akin Gump"
+   },
+   "topics": [
+    "permit-certainty",
+    "nepa",
+    "courts"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-10-04-mondaq-bdl-senate-permitting-bill-reshape",
+   "date": "2026-10-04",
+   "type": "analysis",
+   "outlet": "Mondaq",
+   "author": "Beveridge & Diamond PC",
+   "title": "Senate Permitting Bill Would Reshape Environmental Permitting And Reviews",
+   "url": "https://www.mondaq.com/unitedstates/environmental-law/1850440/senate-permitting-bill-would-reshape-environmental-permitting-and-reviews",
+   "verified": true,
+   "summary": "Beveridge & Diamond, republished on Mondaq, says the bill would change environmental rules for energy and mineral projects by targeting certainty, streamlining and litigation.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The bill would dramatically change environmental rules governing project development, especially for energy and mineral projects, by increasing permitting certainty, streamlining permitting processes, limiting litigation",
+    "speaker": "Beveridge & Diamond"
+   },
+   "topics": [
+    "permit-certainty",
+    "nepa",
+    "courts",
+    "mining"
+   ],
+   "sector": "industry"
+  },
+  {
+   "id": "2026-10-02-cleantechnica-new-permitting-framework",
+   "date": "2026-10-02",
+   "type": "analysis",
+   "outlet": "CleanTechnica",
+   "author": "Steve Hanley",
+   "title": "US Senate Proposes New Permitting Framework. Should It Become Law?",
+   "url": "https://cleantechnica.com/2026/10/02/us-senate-proposes-new-permitting-framework-should-it-become-law/",
+   "verified": true,
+   "summary": "CleanTechnica explains the bill's proposed permitting framework and stresses that it is not yet law.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Make no mistake, the bill Senator Whitehouse has helped craft is not a law yet.",
+    "speaker": "Steve Hanley"
+   },
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-15-narf-act-now-tribes",
+   "date": "2026-10-15",
+   "type": "org_statement",
+   "outlet": "Native American Rights Fund",
+   "author": "Native American Rights Fund",
+   "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes",
+   "url": "https://narf.org/baaja-reform-bill/",
+   "verified": true,
+   "summary": "The Native American Rights Fund says the bill's shorter review timelines and narrower review triggers reduce federal oversight and tribal participation, and urges opposition.",
+   "stance": "opposes",
+   "quote": {
+    "text": "By imposing shorter review timelines and narrower definitions of what triggers a review, BAAJA reduces critical federal oversight and participation.",
+    "speaker": "Native American Rights Fund"
+   },
+   "topics": [
+    "tribal",
+    "nepa"
+   ],
+   "sector": "environmental_group"
+  },
+  {
+   "id": "2026-10-14-crs-in12746-ferc-backstop-siting",
+   "date": "2026-10-14",
+   "type": "gov_document",
+   "outlet": "Congressional Research Service",
+   "author": "Congressional Research Service",
+   "title": "The Bipartisan American Affordability and Jobs Act of 2026 and the Federal Energy Regulatory Commission's Backstop Siting Authority",
+   "url": "https://www.everycrsreport.com/files/2026-10-14_IN12746_ff95bbd2dde5cfb4f9bfff5c9e26135018754e2a.html",
+   "verified": true,
+   "summary": "CRS Insight IN12746 explains how the bill would change FERC's authority to issue construction permits for transmission projects when states deny them.",
+   "stance": "neutral",
+   "quote": {
+    "text": "The bill would address numerous aspects of energy infrastructure permitting, including by amending the conditions under which the Federal Energy Regulatory Commission (FERC) may issue a construction permit",
+    "speaker": "Congressional Research Service"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-16-heatmap-shift-key-156-erickson",
+   "date": "2026-10-16",
+   "type": "podcast",
+   "outlet": "Heatmap (Shift Key)",
+   "author": "Robinson Meyer",
+   "title": "Should Climate Activists Keep Fighting Fossil Fuel Infrastructure?",
+   "url": "https://heatmap.news/podcast/shift-key-156-peter-erickson",
+   "verified": true,
+   "summary": "Shift Key episode 156, with SEI researcher Peter Erickson, opens by placing the bipartisan permitting bill in the Senate and asks whether climate activists should keep fighting fossil infrastructure.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Hello, it's October 16, and the Senate is considering a bipartisan permitting bill.",
+    "speaker": "Robinson Meyer"
+   },
+   "topics": [
+    "fossil",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-09-volts-whats-up-federal-permitting",
+   "date": "2026-10-09",
+   "type": "podcast",
+   "outlet": "Volts",
+   "author": "David Roberts",
+   "title": "What’s up with the new federal permitting reform bill?",
+   "url": "https://www.volts.wtf/p/whats-up-with-the-new-federal-permitting",
+   "verified": true,
+   "summary": "David Roberts interviews Daniel Palken of Arnold Ventures about the bill's transmission, data-center cost, NEPA and permit-certainty provisions.",
+   "stance": "neutral",
+   "quote": {
+    "text": "It brings us to kind of what is the energy sector for? What are we trying to do in this country?",
+    "speaker": "Daniel Palken"
+   },
+   "topics": [
+    "transmission",
+    "nepa",
+    "permit-certainty",
+    "data-centers"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-08-heinrich-bluesky-data-center-costs",
+   "date": "2026-10-08",
+   "type": "social_bluesky",
+   "outlet": "Bluesky",
+   "author": "Sen. Martin Heinrich",
+   "title": "Data center owners should pay for their electricity and any grid upgrades",
+   "url": "https://bsky.app/profile/heinrich.senate.gov/post/3mxd7jlnj272h",
+   "verified": true,
+   "summary": "Sen. Martin Heinrich says the bill makes it mandatory for data center owners to pay for their electricity and grid upgrades.",
+   "stance": "supports",
+   "quote": {
+    "text": "Data center owners should pay for their electricity and any grid upgrades–not you. Our new permitting reform bill makes that mandatory.",
+    "speaker": "Sen. Martin Heinrich"
+   },
+   "topics": [
+    "data-centers",
+    "transmission",
+    "congress"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-05-heinrich-bluesky-cheaper-energy",
+   "date": "2026-10-05",
+   "type": "social_bluesky",
+   "outlet": "Bluesky",
+   "author": "Sen. Martin Heinrich",
+   "title": "If we want cheaper energy, we need permitting reform.",
+   "url": "https://bsky.app/profile/heinrich.senate.gov/post/3mx5ea43nhn2d",
+   "verified": true,
+   "summary": "Sen. Martin Heinrich links cheaper energy to permitting reform and says the reform is in the Bipartisan American Affordability and Jobs Act.",
+   "stance": "supports",
+   "quote": {
+    "text": "And all of that reform is in our Bipartisan American Affordability and Jobs Act.",
+    "speaker": "Sen. Martin Heinrich"
+   },
+   "topics": [
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "congress"
+  }
+ ],
+ "events": [
+  {
+   "id": "2026-10-13-revolution-wind-permit-review-request",
+   "date": "2026-10-13",
+   "title": "Trump administration asks court to re-examine Revolution Wind permit",
+   "branch": "executive",
+   "summary": "The Trump administration asked a court to re-examine a key permit for the Revolution Wind offshore project in Rhode Island. Heatmap reports the move as a risk to the bipartisan permitting deal.",
+   "significance": "Offshore-wind permit fights are the kind of executive action the bill's permit-certainty provisions are meant to foreclose.",
+   "actors": [
+    "Trump administration",
+    "Revolution Wind"
+   ],
+   "topics": [
+    "offshore",
+    "permit-certainty",
+    "courts"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Is Trump Trying to Blow Up the Permitting Deal?",
+     "publisher": "Heatmap",
+     "url": "https://heatmap.news/daily/trump-permitting-deal-offshore-wind",
+     "date": "2026-10-13",
+     "verified": true
+    }
+   ]
+  }
+ ],
+ "people": [
+  {
+   "id": "matthew-littleton",
+   "name": "Matthew Littleton",
+   "role": "Lawyer; former deputy assistant attorney general, DOJ Environment and Natural Resources Division",
+   "affiliation": "Law practice (firm not named in Heatmap piece)",
+   "sector": "industry",
+   "inside_government": false,
+   "stance": "neutral",
+   "position": "Told Heatmap that the bill's judicial-review remedy provision may make most of its NEPA sections largely irrelevant.",
+   "key_actions": [
+    "2026-10-13: told Heatmap the bill's remedy provision would make the remaining NEPA pages largely irrelevant"
+   ],
+   "quote": {
+    "text": "remaining 100 pages of the bill devoted to NEPA are all going to be irrelevant in light of that remedy provision",
+    "source_url": "https://heatmap.news/politics/permitting-bill-nepa"
+   },
+   "sources": [
+    {
+     "title": "How to Sue an Energy Project After the Permitting Bill",
+     "url": "https://heatmap.news/politics/permitting-bill-nepa"
+    }
+   ]
+  },
+  {
+   "id": "daniel-palken",
+   "name": "Daniel Palken",
+   "role": "Senate permitting veteran; Arnold Ventures",
+   "affiliation": "Arnold Ventures",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "neutral",
+   "position": "Walked through the bill with Volts host David Roberts, framing the debate around what the energy sector is for.",
+   "key_actions": [
+    "2026-10-09: discussed the bill on the Volts podcast"
+   ],
+   "quote": {
+    "text": "It brings us to kind of what is the energy sector for? What are we trying to do in this country?",
+    "source_url": "https://www.volts.wtf/p/whats-up-with-the-new-federal-permitting"
+   },
+   "sources": [
+    {
+     "title": "What’s up with the new federal permitting reform bill?",
+     "url": "https://www.volts.wtf/p/whats-up-with-the-new-federal-permitting"
+    }
+   ]
+  },
+  {
+   "id": "native-american-rights-fund",
+   "name": "Native American Rights Fund",
+   "role": "Legal advocacy organization for Tribal Nations",
+   "affiliation": "Native American Rights Fund",
+   "sector": "environmental_group",
+   "inside_government": false,
+   "stance": "opposes",
+   "position": "Said the bill's shorter review timelines and narrower review triggers reduce federal oversight and Tribal participation, and urged opposition.",
+   "key_actions": [
+    "2026-10-15: issued statement on the bill's effect on Tribal participation"
+   ],
+   "quote": {
+    "text": "By imposing shorter review timelines and narrower definitions of what triggers a review, BAAJA reduces critical federal oversight and participation.",
+    "source_url": "https://narf.org/baaja-reform-bill/"
+   },
+   "sources": [
+    {
+     "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes",
+     "url": "https://narf.org/baaja-reform-bill/"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  "Bluesky searchPosts keyword search for 'permitting bill' (403 from public API, 401 from bsky.social); used getAuthorFeed on known accounts instead",
+  "Law.com, Senate permitting bill would reshape environmental laws (2026-10-14): paywalled, dek only",
+  "National Review shot-clock article (2026-10): 403 to fetch",
+  "Akin Gump site alert: 403; Mondaq syndication used instead",
+  "bdlaw.com Beveridge & Diamond alert: 403; Mondaq syndication used instead",
+  "Sierra Club article (2026-10): fetched body empty",
+  "American Stewards statement: TLS error",
+  "Forbes / Broughel: no in-window BAAJA coverage found",
+  "Institute for Progress, Lighthouse, PPI, CAP, Energy Innovation, RMI, CATF, Cato, Heritage, R Street, CEI: no in-window BAAJA items found",
+  "Grid Strategies: only 2024 testimony found",
+  "Axios, Semafor, Inside Climate News, E&E News: no in-window BAAJA hits",
+  "Central Air podcast: episode dated May 13, 2026, outside window",
+  "Columbia Energy Exchange: only Sept 2025 episode",
+  "Catalyst, Energy Gang, Resources Radio, RTO Insider: no in-window BAAJA items (RTO Insider hit is March 2026, unrelated)",
+  "Bloomberg Government Capito deal story: no article date in fetched text; not used",
+  "Third podcast or YouTube item in window: none verified beyond Shift Key 156 and Volts"
+ ]
+}

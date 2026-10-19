@@ -172,11 +172,85 @@ class Data(unittest.TestCase):
         for key in vocab.STANCES:
             self.assertIn(f".stance-{key}", css, key)
 
+    def test_a_letter_without_an_ask_fails_and_a_whole_one_passes(self):
+        good = json.loads(json.dumps(CORE))
+        base = sum(1 for m in good["media"] if m.get("letter"))
+        picks = [m for m in good["media"] if not m.get("letter")][:2]
+        picks[0]["letter"] = {"to": "Senate leaders", "signer_count": 222, "signers_sample": ["Group A", "Group B"], "ask": "Oppose the bill."}
+        picks[1]["letter"] = {"to": "Senate leaders", "ask": "Pass the bill this year."}
+        errs, counts = check_data.check(good)
+        self.assertEqual(errs, [])
+        self.assertEqual(counts["letters"], base + 2)
+        bad = json.loads(json.dumps(good))
+        row = next(m for m in bad["media"] if m["id"] == picks[0]["id"])
+        del row["letter"]["ask"]
+        errs, _ = check_data.check(bad)
+        self.assertTrue(any(e.startswith(f"media {row['id']}: a letter needs 'ask'") for e in errs), errs)
+
+    def test_a_letter_with_a_bad_count_or_sample_fails(self):
+        for field, value in (("signer_count", 0), ("signer_count", "222"), ("signer_count", True), ("signers_sample", "Group A"), ("signers_sample", [""]), ("signed", 3)):
+            broken = json.loads(json.dumps(CORE))
+            broken["media"][0]["letter"] = {"to": "Senate leaders", "ask": "Oppose the bill.", field: value}
+            errs, _ = check_data.check(broken)
+            self.assertTrue(any("letter" in e or "signer" in e for e in errs), (field, value))
+
+    def test_a_letter_ask_goes_through_the_prose_checks(self):
+        broken = json.loads(json.dumps(CORE))
+        broken["media"][0]["letter"] = {"to": "Senate leaders", "ask": "Pass this landmark bill now!"}
+        errs, _ = check_data.check(broken)
+        self.assertTrue(any("letter ask: register word" in e for e in errs), errs)
+        self.assertTrue(any("letter ask: exclamation mark" in e for e in errs), errs)
+
     def test_every_topic_in_use_is_registered(self):
         used = {t for s in CORE["sections"] for t in s["topics"]}
         used |= {t for e in CORE["timeline"] for t in e.get("topics", [])}
         used |= {t for it in CORE["media"] for t in it.get("topics", [])}
         self.assertLessEqual(used, set(CORE["topics"]))
+
+
+class Positions(unittest.TestCase):
+    def test_every_issue_references_known_topics_headlines_and_sections(self):
+        issues = CORE["positions"]["issues"]
+        self.assertGreaterEqual(len(issues), 5)
+        headlines = {h["id"]: h for h in CORE["overview"]["headlines"]}
+        nums = {s["n"] for s in CORE["sections"]}
+        self.assertEqual(len({i["id"] for i in issues}), len(issues))
+        for i in issues:
+            self.assertTrue(i["topics"] and set(i["topics"]) <= set(CORE["topics"]), i["id"])
+            sections = headlines[i["headline"]]["sections"] if i.get("headline") else i["sections"]
+            self.assertTrue(sections and set(sections) <= nums, i["id"])
+        self.assertEqual(check_data.check_positions(CORE), [])
+
+    def test_a_bad_issue_reference_fails_the_data_check(self):
+        broken = json.loads(json.dumps(CORE))
+        issues = broken["positions"]["issues"]
+        issues[0]["topics"].append("astrology")
+        issues[1]["headline"] = "no-such-headline"
+        issues[2]["sections"] = ["9999"]
+        issues[3]["id"] = issues[4]["id"]
+        no_head = next(i for i in issues if not i.get("headline"))
+        del no_head["sections"]
+        errs, _ = check_data.check(broken)
+        for needle in ("unknown topic 'astrology'", "no Overview headline 'no-such-headline'", "section 9999 does not exist",
+                       "duplicate id", "needs a headline or a list of sections", "takes the headline's sections"):
+            self.assertTrue(any(needle in e for e in errs), (needle, errs))
+
+    def test_core_carries_the_positions_summary_the_overview_reads(self):
+        core_js = json.loads((ROOT / "site/data/core.json").read_text(encoding="utf-8"))
+        summary = core_js["recent"]["positions"]
+        self.assertEqual(set(summary), {"supports", "opposes", "mixed", "letters"})
+        for k in ("supports", "opposes", "mixed"):
+            self.assertEqual(summary[k], sum(1 for p in CORE["people"] if p["stance"] == k), k)
+        self.assertEqual(summary["letters"], sum(1 for it in CORE["media"] if it.get("letter")))
+        self.assertIn("issues", core_js["positions"])
+        self.assertNotIn("_about", core_js["positions"])
+
+    def test_the_letters_count_follows_letter_presence(self):
+        core = json.loads(json.dumps(CORE))
+        before = build.browser_core(core)["recent"]["positions"]["letters"]
+        target = next(it for it in core["media"] if not it.get("letter"))
+        target["letter"] = {"to": "Senate leaders", "ask": "Oppose the bill."}
+        self.assertEqual(build.browser_core(core)["recent"]["positions"]["letters"], before + 1)
 
 
 if __name__ == "__main__":
