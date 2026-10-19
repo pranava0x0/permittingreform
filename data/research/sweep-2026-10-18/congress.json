@@ -1,0 +1,852 @@
+{
+ "generated": "2026-10-18",
+ "agent": "congress-caucus-wh-oct1-18",
+ "items": [
+  {
+   "id": "2026-10-02-blue-dog-coalition-floor-vote-call",
+   "date": "2026-10-02",
+   "type": "gov_press_release",
+   "outlet": "Blue Dog Coalition",
+   "author": "Blue Dog Coalition",
+   "title": "Blue Dog Statement on Bipartisan Permitting Reform Agreement",
+   "url": "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-statement-bipartisan-permitting-reform-agreement",
+   "verified": true,
+   "summary": "The House Blue Dog Coalition backed the Senate deal, citing its SPEED Act, and asked leadership to hold a November floor vote.",
+   "stance": "supports",
+   "quote": {
+    "text": "We urge House and Senate leadership to bring this bill to the floor for a vote in November.",
+    "speaker": "Blue Dog Coalition"
+   },
+   "topics": [
+    "congress",
+    "permit-certainty",
+    "nepa"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-01-markey-reviewing-text-statement",
+   "date": "2026-10-01",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Edward J. Markey",
+   "author": "Sen. Edward J. Markey (D-Mass.)",
+   "title": "Senator Markey Statement on Bipartisan Permitting Reform Proposal",
+   "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal",
+   "verified": true,
+   "summary": "Markey said he was still reviewing the text, warned against locking in more fossil fuels and locking out communities, and did not take a position.",
+   "stance": "neutral",
+   "quote": {
+    "text": "I’m still reviewing text of this proposal, and I will be looking closely at the details.",
+    "speaker": "Sen. Edward J. Markey"
+   },
+   "topics": [
+    "congress",
+    "fossil",
+    "data-centers"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-07-epw-supporter-roundup-bipartisan-bill",
+   "date": "2026-10-07",
+   "type": "gov_press_release",
+   "outlet": "Senate Environment and Public Works Committee",
+   "author": "EPW Majority",
+   "title": "What They're Saying: Bipartisan Permitting Reform Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+   "verified": true,
+   "summary": "EPW's roundup of endorsements for the bill, including a governors' joint statement, the National Governors Association, labor leaders, energy producers and nonprofits.",
+   "stance": "supports",
+   "quote": {
+    "text": "a broad coalition of labor leaders, energy producers, and nonprofits has voiced support for the permitting reform plan",
+    "speaker": "EPW Committee"
+   },
+   "topics": [
+    "congress",
+    "permit-certainty",
+    "nepa"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-09-heinrich-supporter-roundup-data-centers",
+   "date": "2026-10-09",
+   "type": "gov_press_release",
+   "outlet": "Senate Energy and Natural Resources Committee (Democrats)",
+   "author": "Office of Sen. Martin Heinrich",
+   "title": "What They're Saying: Heinrich's Bipartisan Permitting Reform Deal Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+   "url": "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/",
+   "verified": true,
+   "summary": "Heinrich's office circulated a supporter roundup and described the bill's data-center provision, which requires data centers to pay the full cost of their transmission needs.",
+   "stance": "supports",
+   "quote": {
+    "text": "ensure that rapidly growing data centers pay the full cost of their associated transmission needs",
+    "speaker": "Office of Sen. Martin Heinrich (press release)"
+   },
+   "topics": [
+    "data-centers",
+    "transmission",
+    "congress"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-15-senate-floor-log-h-r-2347-cloture",
+   "date": "2026-10-15",
+   "type": "gov_document",
+   "outlet": "U.S. Senate Daily Press Gallery",
+   "author": "U.S. Senate",
+   "title": "Senate floor log: pro forma sessions through November 5; Nov. 9 cloture vote on H.R. 2347",
+   "url": "https://www.dailypress.senate.gov/",
+   "verified": true,
+   "summary": "The Senate floor log for October 15 lists pro forma sessions through November 5 and a November 9 cloture vote on the motion to proceed to H.R. 2347, the permitting vehicle.",
+   "stance": "neutral",
+   "quote": {
+    "text": "At approximately 5:30 p.m., the Senate will vote on cloture on the motion to proceed to H.R.2347",
+    "speaker": "U.S. Senate floor schedule"
+   },
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-15-capito-x-overwhelming-support",
+   "date": "2026-10-15",
+   "type": "social_x",
+   "outlet": "X",
+   "author": "Sen. Shelley Moore Capito (@SenCapito)",
+   "title": "The overwhelming support for the Bipartisan American Affordability and Jobs Act speaks for itself",
+   "url": "https://x.com/SenCapito/status/2110743027811791292",
+   "verified": true,
+   "summary": "Capito posted that the bill has broad support and urged passage.",
+   "stance": "supports",
+   "quote": {
+    "text": "The overwhelming support for the Bipartisan American Affordability and Jobs Act speaks for itself.",
+    "speaker": "Sen. Shelley Moore Capito"
+   },
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "sector": "congress"
+  },
+  {
+   "id": "2026-10-07-siegel-x-guthrie-grid-changes",
+   "date": "2026-10-07",
+   "type": "social_x",
+   "outlet": "X",
+   "author": "Joshua Siegel (@SiegelScribe)",
+   "title": "E&C Chair Brett Guthrie says at Punchbowl Tech Summit he wants changes to the grid section",
+   "url": "https://x.com/SiegelScribe/status/2107892025182114178",
+   "verified": true,
+   "summary": "Punchbowl reporter Joshua Siegel posted that House Energy and Commerce Chair Brett Guthrie would like changes to the bill's grid section.",
+   "stance": "reporting",
+   "quote": {
+    "text": "we absolutely would love to see changes to the",
+    "speaker": "Rep. Brett Guthrie (as reported by Joshua Siegel)"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-11-wv-metronews-capito-white-house-wind-solar",
+   "date": "2026-10-11",
+   "type": "news",
+   "outlet": "WV MetroNews",
+   "author": "Brad McElhinny",
+   "title": "Capito says permitting bill would blast away delays and protect approved projects",
+   "url": "https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/",
+   "verified": true,
+   "summary": "Capito told MetroNews the White House made concessions on wind and solar projects and that she was promised a first vote when the Senate returns Nov. 8.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The White House has been right here with us, has made some tremendous concessions",
+    "speaker": "Sen. Shelley Moore Capito"
+   },
+   "topics": [
+    "wind-solar",
+    "white-house",
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-12-heatmap-huffman-no-vote-until-after-election",
+   "date": "2026-10-12",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Jael Holzman",
+   "title": "Jared Huffman Wants to See Some Changes to the Senate's Permitting Bill",
+   "url": "https://heatmap.news/politics/jared-huffman-baaja",
+   "verified": true,
+   "summary": "Huffman said no one would vote on the bill until after the election and called the bill's damages provision potentially a replay of settlements that bought out offshore wind projects.",
+   "stance": "reporting",
+   "quote": {
+    "text": "And no one is going to vote on this until after the election, anyway!",
+    "speaker": "Rep. Jared Huffman"
+   },
+   "topics": [
+    "congress",
+    "wind-solar",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-09-axios-five-risks-lame-duck",
+   "date": "2026-10-09",
+   "type": "analysis",
+   "outlet": "Axios",
+   "author": "Axios Future of Energy",
+   "title": "How the permitting bill could collapse",
+   "url": "https://www.axios.com/2026/10/09/congress-permitting-bill-risks",
+   "verified": true,
+   "summary": "Axios's analysis of how the bill could collapse in a lame-duck session; it notes that the few definitive statements from lawmakers in both parties are supportive.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The few definitive statements on the bill from lawmakers in both parties are supportive.",
+    "speaker": "Axios"
+   },
+   "topics": [
+    "congress",
+    "white-house",
+    "permit-certainty"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-15-narf-tribal-input-due-oct-23",
+   "date": "2026-10-15",
+   "type": "org_statement",
+   "outlet": "Native American Rights Fund",
+   "author": "Native American Rights Fund",
+   "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes",
+   "url": "https://narf.org/baaja-reform-bill/",
+   "verified": true,
+   "summary": "NARF urged Tribal Nations to contact senators and said that, per its understanding, input must be received by October 23, while the Senate vote is not scheduled until November 9.",
+   "stance": "opposes",
+   "quote": {
+    "text": "we understand input must be received by October 23, and earlier the better.",
+    "speaker": "Native American Rights Fund"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "congress"
+   ],
+   "sector": "environmental_group"
+  },
+  {
+   "id": "2026-10-13-cbd-185-groups-oppose-bill",
+   "date": "2026-10-13",
+   "type": "org_statement",
+   "outlet": "Center for Biological Diversity",
+   "author": "Coalition of 185 organizations (press release)",
+   "title": "185 Groups Slam Permitting Bill's Sweetheart Deal for Data Centers",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+   "verified": true,
+   "summary": "A coalition of 185 community, labor, climate and environmental justice groups urged congressional leaders to oppose the bill.",
+   "stance": "opposes",
+   "quote": {
+    "text": "urged congressional leaders to oppose anti-environmental permitting legislation",
+    "speaker": "Coalition of 185 groups (Center for Biological Diversity release)"
+   },
+   "topics": [
+    "data-centers",
+    "fossil",
+    "congress"
+   ],
+   "sector": "environmental_group"
+  },
+  {
+   "id": "2026-10-08-daily-caller-lee-lame-duck-confidence",
+   "date": "2026-10-08",
+   "type": "news",
+   "outlet": "Daily Caller News Foundation",
+   "author": "Daily Caller News Foundation",
+   "title": "Senators Want To Make AI Data Centers Pay For The Grid Upgrades Driving Up Your Electric Bill",
+   "url": "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/",
+   "verified": true,
+   "summary": "Reporting citing the AP says Sen. Mike Lee is confident the Senate will pass the bill in a lame-duck session in November.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Lee said he is confident the Senate will pass it in a lame-duck session in November",
+    "speaker": "Sen. Mike Lee (as reported by AP)"
+   },
+   "topics": [
+    "data-centers",
+    "congress"
+   ],
+   "sector": "media"
+  },
+  {
+   "id": "2026-10-13-wicker-weekly-report-backs-bill",
+   "date": "2026-10-13",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Roger Wicker",
+   "author": "Sen. Roger Wicker (R-Miss.)",
+   "title": "Wicker Backs Landmark Permit Reform Bill",
+   "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
+   "verified": true,
+   "summary": "Wicker's weekly report under the headline 'Bill Tops U.S. Senate Agenda' backs the bill and argues it would curb lawsuits and permit revocations.",
+   "stance": "supports",
+   "quote": {
+    "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
+    "speaker": "Sen. Roger Wicker"
+   },
+   "topics": [
+    "permit-certainty",
+    "nepa",
+    "congress"
+   ],
+   "sector": "congress"
+  }
+ ],
+ "events": [
+  {
+   "id": "2026-10-01-markey-withholds-position-on-text",
+   "date": "2026-10-01",
+   "branch": "congress_senate",
+   "title": "Markey says he is still reviewing the Senate permitting text and does not endorse it",
+   "summary": "Sen. Edward Markey issued a statement saying he was still reviewing the text and would look closely at the details. He warned against locking in more fossil fuels and locking out communities.",
+   "actors": [
+    "Edward Markey"
+   ],
+   "topics": [
+    "congress",
+    "fossil"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Senator Markey Statement on Bipartisan Permitting Reform Proposal",
+     "publisher": "Office of Sen. Edward J. Markey",
+     "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal",
+     "date": "2026-10-01",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-02-blue-dog-coalition-november-vote-call",
+   "date": "2026-10-02",
+   "branch": "congress_house",
+   "title": "Blue Dog Coalition backs the Senate deal and urges a November floor vote",
+   "summary": "The Blue Dog Coalition backed the Senate-negotiated bill, citing its SPEED Act, and urged House and Senate leadership to hold a floor vote in November.",
+   "actors": [
+    "Blue Dog Coalition"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Blue Dog Statement on Bipartisan Permitting Reform Agreement",
+     "publisher": "Blue Dog Coalition",
+     "url": "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-statement-bipartisan-permitting-reform-agreement",
+     "date": "2026-10-02",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-governors-joint-statement-urge-passage",
+   "date": "2026-10-07",
+   "branch": "states",
+   "title": "Governors' joint statement backs the Senate permitting bill",
+   "summary": "A governors' joint statement, carried in EPW's October 7 roundup, calls the bill an opportunity to change how the country approves energy and infrastructure. The statement's own publication date was not verified.",
+   "actors": [
+    "National Governors Association"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "What They're Saying: Bipartisan Permitting Reform Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+     "publisher": "Senate Environment and Public Works Committee",
+     "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+     "date": "2026-10-07",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-guthrie-wants-grid-section-changes",
+   "date": "2026-10-07",
+   "branch": "congress_house",
+   "title": "House E&C Chair Guthrie says he would like changes to the bill's grid section",
+   "summary": "Speaking at the Punchbowl Tech Summit, Rep. Brett Guthrie said he would love to see changes to the grid section of the Senate bill. Reporter Joshua Siegel posted the remark.",
+   "significance": "A House committee chair wants to change the transmission text, which bears on whether the Senate text survives House passage.",
+   "actors": [
+    "Brett Guthrie",
+    "Joshua Siegel"
+   ],
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "X post by Joshua Siegel quoting Guthrie",
+     "publisher": "X",
+     "url": "https://x.com/SiegelScribe/status/2107892025182114178",
+     "date": "2026-10-07",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-lee-confident-lame-duck-vote",
+   "date": "2026-10-08",
+   "branch": "congress_senate",
+   "title": "Lee says he is confident the Senate will pass the bill in a November lame-duck session",
+   "summary": "Reporting citing the AP says Sen. Mike Lee is confident the Senate will pass the bill in a lame-duck session in November.",
+   "actors": [
+    "Mike Lee"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Senators Want To Make AI Data Centers Pay For The Grid Upgrades Driving Up Your Electric Bill",
+     "publisher": "Daily Caller News Foundation",
+     "url": "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/",
+     "date": "2026-10-08",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-nine-tribal-orgs-sacred-places-letter",
+   "date": "2026-10-09",
+   "branch": "other",
+   "title": "NARF and eight tribal organizations ask Senate leaders to strip sacred-places provisions",
+   "summary": "In an October 9 letter, NARF and eight other Tribal organizations urged Senate leaders to remove provisions that would weaken protections for sacred places and to consult Tribal Nations on permitting reform.",
+   "actors": [
+    "Native American Rights Fund"
+   ],
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes",
+     "publisher": "Native American Rights Fund",
+     "url": "https://narf.org/baaja-reform-bill/",
+     "date": "2026-10-15",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-heinrich-office-supporter-roundup",
+   "date": "2026-10-09",
+   "branch": "congress_senate",
+   "title": "Heinrich's office circulates labor, energy and nonprofit support for the bill",
+   "summary": "Heinrich's Energy and Natural Resources Committee office published a roundup of labor, energy producer and nonprofit statements of support, and described the data-center cost provision.",
+   "actors": [
+    "Martin Heinrich"
+   ],
+   "topics": [
+    "data-centers",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "What They're Saying: Heinrich's Bipartisan Permitting Reform Deal Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+     "publisher": "Senate Energy and Natural Resources Committee (Democrats)",
+     "url": "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/",
+     "date": "2026-10-09",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-11-capito-white-house-concessions-wind-solar",
+   "date": "2026-10-11",
+   "branch": "congress_senate",
+   "title": "Capito says White House made wind and solar concessions and expects a vote after Nov. 8",
+   "summary": "Capito told MetroNews the White House 'has made some tremendous concessions' on wind and solar projects. She said she was promised the first vote when senators return on November 8.",
+   "significance": "Her Nov. 8 date differs from the Senate floor log's Nov. 9 return.",
+   "actors": [
+    "Shelley Moore Capito",
+    "White House"
+   ],
+   "topics": [
+    "wind-solar",
+    "white-house",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Capito says permitting bill would blast away delays and protect approved projects",
+     "publisher": "WV MetroNews",
+     "url": "https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/",
+     "date": "2026-10-11",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-huffman-no-vote-before-election",
+   "date": "2026-10-12",
+   "branch": "congress_house",
+   "title": "Huffman says no one will vote on the Senate bill until after the election",
+   "summary": "In an interview with Heatmap, Rep. Jared Huffman said no one would vote on the bill until after the election and called the bill's damages provision potentially a replay of settlements that bought out offshore wind projects.",
+   "actors": [
+    "Jared Huffman",
+    "Jael Holzman"
+   ],
+   "topics": [
+    "congress",
+    "wind-solar",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Jared Huffman Wants to See Some Changes to the Senate's Permitting Bill",
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/politics/jared-huffman-baaja",
+     "date": "2026-10-12",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-185-groups-urge-leaders-oppose",
+   "date": "2026-10-13",
+   "branch": "other",
+   "title": "185 community, labor, climate and environmental justice groups urge leaders to oppose the bill",
+   "summary": "A coalition of 185 organizations urged congressional leaders to oppose the bill, urging leaders to oppose it.",
+   "actors": [
+    "Center for Biological Diversity",
+    "Food & Water Watch",
+    "GreenLatinos",
+    "Physicians for Social Responsibility"
+   ],
+   "topics": [
+    "data-centers",
+    "fossil",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "185 Groups Slam Permitting Bill's Sweetheart Deal for Data Centers",
+     "publisher": "Center for Biological Diversity",
+     "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+     "date": "2026-10-13",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-wicker-backs-bill-weekly-report",
+   "date": "2026-10-13",
+   "branch": "congress_senate",
+   "title": "Sen. Roger Wicker publishes a weekly report backing the bill",
+   "summary": "Wicker (R-Miss.) published 'Wicker Backs Landmark Permit Reform Bill', arguing the bill would curb the six-year litigation window and stop permit revocations.",
+   "actors": [
+    "Roger Wicker"
+   ],
+   "topics": [
+    "permit-certainty",
+    "nepa",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Wicker Backs Landmark Permit Reform Bill",
+     "publisher": "Office of Sen. Roger Wicker",
+     "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
+     "date": "2026-10-13",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-senate-floor-nov-9-cloture-h-r-2347",
+   "date": "2026-10-15",
+   "branch": "congress_senate",
+   "title": "Senate floor log sets Nov. 9 cloture vote on H.R. 2347, the permitting vehicle",
+   "summary": "The October 15 floor log says the Senate is in pro forma sessions with no business through November 5, returns November 9 at 3:00 p.m., and votes on cloture on the motion to proceed to H.R. 2347 at about 5:30 p.m. The page titles H.R. 2347 the Survivor Justice Tax Prevention Act.",
+   "significance": "Sets the procedural path: the House-passed H.R. 2347 is the vehicle for Senate text, and the first Senate step is a cloture vote on the motion to proceed.",
+   "actors": [
+    "John Thune"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "U.S. Senate Daily Press Gallery floor log",
+     "publisher": "U.S. Senate",
+     "url": "https://www.dailypress.senate.gov/",
+     "date": "2026-10-15",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-narf-input-due-oct-23",
+   "date": "2026-10-15",
+   "branch": "other",
+   "title": "NARF says public input on the bill is due October 23",
+   "summary": "NARF's alert says a Senate vote is not scheduled until November 9 but that, per its understanding, input must be received by October 23. NARF names no official Senate source for the October 23 date.",
+   "significance": "The October 23 date is the only deadline for input found in the window, and it has no official source.",
+   "actors": [
+    "Native American Rights Fund"
+   ],
+   "topics": [
+    "tribal",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes",
+     "publisher": "Native American Rights Fund",
+     "url": "https://narf.org/baaja-reform-bill/",
+     "date": "2026-10-15",
+     "verified": true
+    }
+   ]
+  }
+ ],
+ "people": [
+  {
+   "id": "blue-dog-coalition",
+   "name": "Blue Dog Coalition",
+   "role": "House caucus",
+   "affiliation": "U.S. House of Representatives",
+   "sector": "congress",
+   "party": "D",
+   "inside_government": true,
+   "stance": "supports",
+   "position": "The caucus backed the Senate-negotiated bill, citing the SPEED Act, and urged leadership to hold a November floor vote.",
+   "key_actions": [
+    "2026-10-02: Issued statement urging House and Senate leadership to bring the bill to the floor in November"
+   ],
+   "quote": {
+    "text": "We urge House and Senate leadership to bring this bill to the floor for a vote in November.",
+    "source_url": "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-statement-bipartisan-permitting-reform-agreement"
+   },
+   "sources": [
+    {
+     "title": "Blue Dog Statement on Bipartisan Permitting Reform Agreement",
+     "url": "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-statement-bipartisan-permitting-reform-agreement"
+    }
+   ]
+  },
+  {
+   "id": "edward-markey",
+   "name": "Edward J. Markey",
+   "role": "U.S. Senator (D-Mass.); member, Senate Environment and Public Works Committee",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "party": "D",
+   "inside_government": true,
+   "stance": "neutral",
+   "position": "Said he was still reviewing the text and would examine the details closely. He warned against locking in more fossil fuels and locking out communities, and did not endorse or oppose the bill.",
+   "key_actions": [
+    "2026-10-01: Issued statement withholding a position pending review of the text"
+   ],
+   "quote": {
+    "text": "I’m still reviewing text of this proposal, and I will be looking closely at the details.",
+    "source_url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal"
+   },
+   "sources": [
+    {
+     "title": "Senator Markey Statement on Bipartisan Permitting Reform Proposal",
+     "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal"
+    }
+   ]
+  },
+  {
+   "id": "roger-wicker",
+   "name": "Roger Wicker",
+   "role": "U.S. Senator (R-Miss.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "party": "R",
+   "inside_government": true,
+   "stance": "supports",
+   "position": "In his weekly report he backed the bill, calling it one of the most consequential laws passed in years and arguing it would stop lawsuits and permit revocations.",
+   "key_actions": [
+    "2026-10-13: Published weekly report 'Wicker Backs Landmark Permit Reform Bill'"
+   ],
+   "quote": {
+    "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
+    "source_url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/"
+   },
+   "sources": [
+    {
+     "title": "Wicker Backs Landmark Permit Reform Bill",
+     "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/"
+    }
+   ]
+  }
+ ],
+ "not_found": [
+  {
+   "target": "Congressional Progressive Caucus statement on the bill",
+   "reason": "Searched; no CPC statement found for Oct 1-18."
+  },
+  {
+   "target": "Congressional Hispanic Caucus and Congressional Black Caucus statements",
+   "reason": "Searched; none found."
+  },
+  {
+   "target": "New Democrat Coalition statement",
+   "reason": "A statement was found but is dated Sept 30, outside the window; not added."
+  },
+  {
+   "target": "Problem Solvers Caucus",
+   "reason": "Searched; no 2026 statement on the Senate deal found."
+  },
+  {
+   "target": "Sustainable Energy and Environment Coalition",
+   "reason": "Searched by name; no statement found."
+  },
+  {
+   "target": "House Freedom Caucus / Andy Harris",
+   "reason": "No statement on this bill found; only 2025 reconciliation coverage."
+  },
+  {
+   "target": "House Republican Study Committee; Senate Western Caucus; Climate Solutions Caucus",
+   "reason": "Searched together; no statement on this bill found."
+  },
+  {
+   "target": "Native American Caucus",
+   "reason": "Not searched separately; the tribal opposition found came from NARF and eight tribal organizations, not a caucus."
+  },
+  {
+   "target": "Hakeem Jeffries statement",
+   "reason": "Searched twice; no 2026 statement on the Senate bill found."
+  },
+  {
+   "target": "Katherine Clark and Frank Pallone statements",
+   "reason": "Searched; none found."
+  },
+  {
+   "target": "House Democratic letter to Jeffries or Senate sponsors with signer count",
+   "reason": "Searched; none found. The Oct 13 coalition letter is from 185 outside groups, not House members."
+  },
+  {
+   "target": "Huffman whip count of House Democrats",
+   "reason": "No independent count found. His Oct 12 interview does not give a count."
+  },
+  {
+   "target": "Chuck Schumer statement on the bill",
+   "reason": "Searched; none found. Only GOP criticism of Schumer's handling turned up."
+  },
+  {
+   "target": "Sanders, Warren, Padilla, Merkley, Van Hollen statements opposing the bill",
+   "reason": "Searched; none found for Sanders, Warren, Padilla. Merkley and Van Hollen not verified in window."
+  },
+  {
+   "target": "Hickenlooper, Kelly, Bennet, Coons statements supporting the bill",
+   "reason": "No bill-specific statement verified. Coons's 'there will be a permitting bill ready for us to act on' appeared only in a search snippet and is not included. No bill-specific Kelly or Bennet statement found."
+  },
+  {
+   "target": "Republican senators opposing the bill (Hawley, Kennedy, Murkowski)",
+   "reason": "Searched; no opposition found."
+  },
+  {
+   "target": "Kevin Cramer",
+   "reason": "Oct 3 Daily Caller piece quoting him is already in held_urls and held titles, so not re-added."
+  },
+  {
+   "target": "Thune October remarks on permitting floor schedule",
+   "reason": "Searched; none found. Only the Oct 15 floor log and Sept comments."
+  },
+  {
+   "target": "October 23 deadline: who set it",
+   "reason": "Only source is NARF's 'we understand input must be received by October 23'. No Senate, committee or sponsor source found."
+  },
+  {
+   "target": "Manager's amendment text or summary",
+   "reason": "No text or summary released in window in any source found."
+  },
+  {
+   "target": "Whitehouse dated October statement on wind and solar 'regular order' negotiations",
+   "reason": "Quotes found are undated or from late September. Not added."
+  },
+  {
+   "target": "Statement of Administration Policy on S. 5653",
+   "reason": "Searched; none found. Govinfo returns the bill text only."
+  },
+  {
+   "target": "Trump Truth Social post on the bill",
+   "reason": "Searched; none found."
+  },
+  {
+   "target": "White House Office of Public Liaison statement (Oct 1)",
+   "reason": "Searched; no OPL statement itself found. Searched; none found."
+  },
+  {
+   "target": "Burgum, Wright, CEQ, National Energy Dominance Council statements on the bill",
+   "reason": "Searched; none found."
+  },
+  {
+   "target": "FERC Chair Laura Swett, Permitting Council Director Emily Domenech, CEQ's Katherine Scarlett",
+   "reason": "Searched; no statement on the bill found."
+  },
+  {
+   "target": "Speaker Johnson statement on House path for Senate text",
+   "reason": "Searched; none found."
+  },
+  {
+   "target": "Rep. Bruce Westerman statements in window",
+   "reason": "No in-window statement found. A search snippet describing him as 'fully behind' the bill was not fetched and is not used."
+  },
+  {
+   "target": "House Rules Committee notice or House hearing on the bill",
+   "reason": "None found."
+  },
+  {
+   "target": "Senate or House hearing on the bill or data-center electricity costs, Oct 1-18",
+   "reason": "Searched twice; none found. Senate is in pro forma sessions from Oct 15."
+  },
+  {
+   "target": "Punchbowl News pages (Schumer/Jeffries pressure piece; 'Key House boost for Senate permitting bill')",
+   "reason": "walled: punchbowl.news returns 403 to curl."
+  },
+  {
+   "target": "Source New Mexico Oct 12 Heinrich piece; New Mexico Political Report Oct 8; Inside Climate News Oct 2",
+   "reason": "walled: 403 to curl."
+  },
+  {
+   "target": "A state governor's office release (news.mt.gov)",
+   "reason": "404 to curl. Governors' statement verified only through the EPW roundup."
+  },
+  {
+   "target": "Tribal letter of Oct 9 (full text)",
+   "reason": "Verified only through NARF's summary page; the letter itself was not located."
+  }
+ ]
+}

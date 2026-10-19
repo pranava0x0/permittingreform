@@ -200,8 +200,8 @@
   }
 
   /* Timeline, people and media load with the first News page. They merge into
-     D, so the News views read them as before. */
-  const NEWS_TABS = ["timeline", "people", "media"];
+     D, so the News views (Positions included) read them as before. */
+  const NEWS_TABS = ["timeline", "positions", "people", "media"];
   let newsPromise = null;
   function ensureNews() {
     if (D.timeline) return Promise.resolve(D);
@@ -210,7 +210,7 @@
         const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
         if (window.PR_NEWS) { done(); return; }
         const tag = document.createElement("script");
-        tag.src = "data/news.js?v=1";
+        tag.src = "data/news.js?v=2";
         tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
         tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
         document.head.appendChild(tag);
@@ -275,6 +275,10 @@
   function renderOverview() {
     const o = D.overview;
     const m = D.meta;
+    const pos = D.recent.positions;
+    /* One line at 375px: the letters count lives on the Positions page; with it the line wrapped. */
+    const posLink = pos ? el("p", { class: "sec-links" }, el("a", { href: "#/positions" },
+      "Who's for and against: " + pos.supports + " support, " + pos.opposes + " oppose")) : null;
     const head = el("div", { class: "lede overview-lede" },
       el("div", { class: "bill-heading" }, el("h1", null, "BAAJA"),
         el("details", { class: "bill-details" },
@@ -286,8 +290,10 @@
       o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next: " : "Was scheduled for "),
         S.formatDate(o.next.date) + ". " + o.next.text + " ",
         el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null,
+      o.next ? posLink : null,
       el("p", { class: "note" }, "Proposed law", " · ",
         el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),
+      o.next ? null : posLink,
       searchBox(""),
       D.compare.bills ? el("p", { class: "sec-links" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Data center bills: compare costs, connection and reporting")) : null);
 
@@ -1107,6 +1113,7 @@
   };
   let pplSide = "inside";
   let pplStance = "all";
+  let pplSector = "all";
   let pplLimit = 12;
 
   /* "2026-01-28: Chaired the hearing" -> "January 28, 2026: Chaired the hearing" */
@@ -1120,22 +1127,23 @@
     const inside = all.filter((p) => p.inside_government);
     const outside = all.filter((p) => !p.inside_government);
     const pool = pplSide === "inside" ? inside : outside;
-    const list = pool.filter((p) => pplStance === "all" || p.stance === pplStance);
+    const list = pool.filter((p) => (pplStance === "all" || p.stance === pplStance) && (pplSector === "all" || sectorKey(p) === pplSector));
     const stanceCounts = {};
-    pool.forEach((p) => { stanceCounts[p.stance] = (stanceCounts[p.stance] || 0) + 1; });
+    pool.filter((p) => pplSector === "all" || sectorKey(p) === pplSector)
+      .forEach((p) => { stanceCounts[p.stance] = (stanceCounts[p.stance] || 0) + 1; });
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Group and position" },
-      chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; pplLimit = 12; route(); }, inside.length),
-      chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; pplLimit = 12; route(); }, outside.length),
+      chip("In government", pplSide === "inside", () => { pplSide = "inside"; pplStance = "all"; pplSector = "all"; pplLimit = 12; route(); }, inside.length),
+      chip("Outside government", pplSide === "outside", () => { pplSide = "outside"; pplStance = "all"; pplSector = "all"; pplLimit = 12; route(); }, outside.length),
       el("span", { class: "filter-gap" }),
       chip("All positions", pplStance === "all", () => { pplStance = "all"; pplLimit = 12; route(); }),
       ["supports", "mixed", "opposes", "neutral"].filter((k) => stanceCounts[k]).map((k) =>
         chip(STANCE[k], pplStance === k, () => { pplStance = k; pplLimit = 12; route(); }, stanceCounts[k])),
+      /* Set only by a Positions sector-table link; one chip shows it and clears it. */
+      pplSector !== "all" ? chip(SECTORS[pplSector] + " only", true, () => { pplSector = "all"; pplLimit = 12; route(); }) : null,
       briefChip());
-    const GOV = { congress: 1, white_house: 1, agency: 1, court: 1 };
     const groups = {};
     list.slice(0, pplLimit).forEach((p) => {
-      const key = !p.inside_government && GOV[p.sector] ? "former" : p.sector;
-      (groups[key] = groups[key] || []).push(p);
+      (groups[sectorKey(p)] = groups[sectorKey(p)] || []).push(p);
     });
     const order = Object.keys(SECTORS).filter((k) => groups[k]);
     const body = order.map((k) => el("section", { class: "block" },
@@ -1261,6 +1269,148 @@
     return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), wordFilter, typeChips, stanceChips, topicBox, listHost];
   }
 
+  /* ---------- positions ---------- */
+
+  const POSITION_SIDES = [["supports", "For"], ["opposes", "Against"], ["mixed", "Mixed"]];
+  const VOICES_SHOWN = 4;
+
+  function plural(n, one, many) {
+    return n + " " + (n === 1 ? one : many);
+  }
+
+  function datedShort(iso) {
+    return shortDate(iso) + ", " + iso.slice(0, 4);
+  }
+
+  /* A row that opens in place: a button in the heading toggles .open on the row. */
+  function openRow(cls, id, head, body) {
+    return el("article", { class: "pos-row " + cls, id: id },
+      el("h3", null, el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": id + "-body", onclick: (ev) => {
+        const open = ev.currentTarget.closest(".pos-row").classList.toggle("open");
+        ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
+      } }, head)),
+      el("div", { class: "pos-body", id: id + "-body" }, body));
+  }
+
+  function letterRow(it) {
+    const l = it.letter;
+    const shown = l.signers_sample ? l.signers_sample.length : 0;
+    const signers = shown ? l.signers_sample.join(", ") +
+      (l.at_least ? " and others" : l.signer_count > shown ? " and " + num(l.signer_count - shown) + " others" : "") : null;
+    const countLabel = l.signer_count ? (l.at_least ? num(l.signer_count) + "+ signers" : l.signer_count === 1 ? "1 signer" : num(l.signer_count) + " signers") : it.outlet;
+    const head = el("span", { class: "event-head" },
+      el("span", { class: "event-date" }, datedShort(it.date)), " ", stanceTag(it.stance), " ",
+      el("span", { class: "pos-count" }, countLabel), " ",
+      el("span", { class: "event-title" }, it.title));
+    return openRow("pos-letter", "letter-" + it.id, head, [
+      el("p", null, el("strong", null, "To: "), l.to),
+      el("p", null, el("strong", null, "Asks: "), l.ask),
+      signers ? el("p", null, el("strong", null, "Signers include: "), signers) : null,
+      it.quote && it.quote.text ? el("figure", { class: "quote small" },
+        el("blockquote", null, it.quote.text),
+        it.quote.speaker ? el("figcaption", null, it.quote.speaker) : null) : null,
+      el("p", { class: "sources" }, "Source: ", ext(it.url, it.outlet),
+        it.lk ? el("span", { class: "unchecked" }, " (" + LINK_NOTE[it.lk] + ")") : null)]);
+  }
+
+  /* Media items with a stance and a quote on any of the issue's topics, newest first, one per link.
+     Only items dated on or after the bill text's release count: earlier statements were about prior bills or reform in general. */
+  function issueVoices(issue) {
+    const seen = new Set();
+    return D.media
+      .filter((it) => it.date >= D.meta.released && POSITION_SIDES.some((s) => s[0] === it.stance) && it.quote && it.quote.text &&
+        (it.topics || []).some((t) => issue.topics.indexOf(t) >= 0))
+      .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0))
+      .filter((it) => { if (seen.has(it.url)) return false; seen.add(it.url); return true; });
+  }
+
+  function voiceItem(it, hidden) {
+    const who = (it.quote && it.quote.speaker) || it.author || it.outlet;
+    return el("li", { class: "voice", hidden: hidden },
+      el("p", { class: "voice-who" }, who === it.outlet
+        ? [el("strong", null, ext(it.url, who)), ", " + datedShort(it.date)]
+        : [el("strong", null, who), " · ", ext(it.url, it.outlet), ", " + datedShort(it.date)]),
+      el("blockquote", { class: "voice-quote" }, it.quote.text));
+  }
+
+  function voiceList(label, list) {
+    if (!list.length) return null;
+    const items = list.map((it, i) => voiceItem(it, i >= VOICES_SHOWN));
+    const rest = list.length - VOICES_SHOWN;
+    return el("div", { class: "voices" },
+      el("h4", null, label, el("span", { class: "chip-count" }, list.length)),
+      el("ul", null, items),
+      rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: (ev) => {
+        items.forEach((n) => { n.hidden = false; });
+        ev.currentTarget.remove();
+        items[VOICES_SHOWN].tabIndex = -1;
+        items[VOICES_SHOWN].focus();
+      } }, "Show " + rest + " more") : null);
+  }
+
+  function issueRow(issue) {
+    const voices = issueVoices(issue);
+    const by = {};
+    POSITION_SIDES.forEach((s) => { by[s[0]] = voices.filter((it) => it.stance === s[0]); });
+    const h = issue.headline ? D.overview.headlines.find((x) => x.id === issue.headline) : null;
+    const sections = issue.sections || (h ? h.sections : []);
+    const head = el("span", { class: "event-head" },
+      el("span", { class: "event-title" }, issue.title),
+      el("span", { class: "pos-tally" }, by.supports.length + " for · " + by.opposes.length + " against · " + by.mixed.length + " mixed"));
+    return openRow("pos-issue", "issue-" + issue.id, head, [
+      h ? el("p", null, citedText(h)) : null,
+      sections.length ? el("p", { class: "where" }, secLinks(sections), readingsLinks(sections)) : null,
+      issue.link ? el("p", { class: "sec-links" }, el("a", { href: issue.link }, "Rows in Communities")) : null,
+      POSITION_SIDES.map((s) => voiceList(s[1], by[s[0]])),
+      voices.length ? null : el("p", { class: "empty" }, "No quoted voices on this issue yet.")]);
+  }
+
+  const GOV_SECTORS = { congress: 1, white_house: 1, agency: 1, court: 1 };
+  function sectorKey(p) {
+    return !p.inside_government && GOV_SECTORS[p.sector] ? "former" : p.sector;
+  }
+
+  function sectorTable() {
+    const rows = {};
+    D.people.forEach((p) => {
+      const k = sectorKey(p);
+      const r = rows[k] = rows[k] || { supports: 0, opposes: 0, mixed: 0, neutral: 0, inside: p.inside_government };
+      if (r[p.stance] != null) r[p.stance] += 1;
+    });
+    const cols = [["supports", "Supports"], ["opposes", "Opposes"], ["mixed", "Mixed"], ["neutral", "No position"]];
+    return el("div", { class: "table-wrap" }, el("table", { class: "tally" },
+      el("thead", null, el("tr", null, el("th", { scope: "col" }, "Sector"), cols.map((c) => el("th", { scope: "col", class: "n" }, c[1])))),
+      el("tbody", null, Object.keys(SECTORS).filter((k) => rows[k]).map((k) => el("tr", null,
+        el("th", { scope: "row" }, SECTORS[k]),
+        cols.map((c) => {
+          const n = rows[k][c[0]];
+          return el("td", { class: "n" }, n ? el("a", { href: "#/people/" + (rows[k].inside ? "inside" : "outside") + "/" + c[0] + "/" + k,
+            "aria-label": SECTORS[k] + ", " + STANCE[c[0]] + ": " + n }, String(n)) : "0");
+        }))))));
+  }
+
+  function renderPositions() {
+    const count = (k) => D.people.filter((p) => p.stance === k).length;
+    /* Same cutoff as issueVoices: a letter before the text's release was about an earlier bill or reform in general. */
+    const letters = D.media.filter((it) => it.letter && it.date >= D.meta.released).sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+    const issues = (D.positions && D.positions.issues) || [];
+    return [
+      el("div", { class: "lede" }, el("h1", null, "Who's for and against"),
+        el("p", { class: "facts", role: "status" }, count("supports") + " support, " + count("opposes") + " oppose, " + count("mixed") + " mixed, of " +
+          D.people.length + " people and groups tracked · " + plural(letters.length, "letter or joint statement", "letters and joint statements") +
+          " · as of " + S.formatDate(D.meta.as_of))),
+      el("section", { class: "block", "aria-labelledby": "h-letters" },
+        el("h2", { id: "h-letters" }, "Letters and joint statements"),
+        letters.length ? el("div", { class: "pos-list" }, letters.map(letterRow)) : el("p", { class: "empty" }, "No letters recorded yet.")),
+      el("section", { class: "block", "aria-labelledby": "h-issues" },
+        el("h2", { id: "h-issues" }, "By issue"),
+        el("p", { class: "facts" }, "Quoted statements since the bill text was released on " + S.formatDate(D.meta.released) + "."),
+        el("div", { class: "pos-list" }, issues.map(issueRow))),
+      el("section", { class: "block", "aria-labelledby": "h-sectors" },
+        el("h2", { id: "h-sectors" }, "By sector"),
+        sectorTable())];
+  }
+
   /* ---------- method ---------- */
 
   function renderMethod() {
@@ -1341,14 +1491,14 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", timeline: "Timeline", people: "People", media: "Media", method: "Method" };
+  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", timeline: "Timeline", positions: "Positions", people: "People", media: "Media", method: "Method" };
   /* Five top tabs fit a phone's width; the pages under a group share a subtab row.
      Each page keeps its own route, so existing links still work. */
   const GROUPS = [
     { key: "overview", pages: ["overview"] },
     { key: "bill", label: "Bill pages", pages: [["bill", "Sections"], ["compare", "Compare with earlier bills"]] },
     { key: "effects", label: "Effects pages", pages: [["datacenters", "Data centers"], ["communities", "Communities"]] },
-    { key: "news", label: "News pages", pages: [["timeline", "Timeline"], ["media", "Media"], ["people", "People"]] },
+    { key: "news", label: "News pages", pages: [["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]] },
     { key: "method", pages: ["method"] },
   ];
   function groupOf(tab) {
@@ -1394,7 +1544,16 @@
       /* Arriving at a linked event clears filters that could hide it; later filter changes still apply. */
       if (parts[2] && location.hash !== lastPath) { tlBranch = "all"; tlTopic = "all"; tlMilestones = false; }
       nodes = renderTimeline(parts[1], parts[2]); keepScroll = Boolean(lastPath && lastPath.indexOf("#/timeline") === 0); }
-    else if (tab === "people") nodes = renderPeople();
+    else if (tab === "people") {
+      /* #/people/<inside|outside>/<stance>/<sector>, linked from the Positions sector table, sets the filters on arrival. */
+      if (parts[1] && location.hash !== lastPath) {
+        pplSide = parts[1] === "outside" ? "outside" : "inside";
+        pplStance = STANCE[parts[2]] ? parts[2] : "all";
+        pplSector = SECTORS[parts[3]] ? parts[3] : "all";
+        pplLimit = 12;
+      }
+      nodes = renderPeople(); }
+    else if (tab === "positions") nodes = renderPositions();
     else if (tab === "media") nodes = renderMedia();
     else if (tab === "method") nodes = renderMethod();
     else nodes = renderOverview();
@@ -1402,7 +1561,7 @@
     view.className = "view view-" + tab;
     if (tab === "overview") jumpRow(view.querySelector(".lede"));
     else if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
-    else if (tab === "people" || tab === "timeline" || tab === "communities" || tab === "datacenters") jumpRow(view.querySelector(".lede"));
+    else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities" || tab === "datacenters") jumpRow(view.querySelector(".lede"));
     if (tab === "timeline") {
       const target = tlRefocus && view.querySelector(tlRefocus);
       if (target && lastPath && lastPath.indexOf("#/timeline") === 0) target.focus({ preventScroll: true });

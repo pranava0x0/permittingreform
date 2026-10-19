@@ -77,6 +77,7 @@ The 5-hour usage limit is **one shared pool** across the main loop, every concur
 ## Communication style
 
 - **Concise.** No filler, apologies, moralizing, or generic advice.
+- **A task that will run past about 15 minutes opens with a time budget, and ships in hour-sized chunks.** First reply: the phases, minutes per phase, the walls that can stall it (usage-limit resets, review-bot latency, the agent cap) and the checkpoint where each reviewable piece lands. One PR per chunk (data refresh, UI feature, review fixes), each closing with a one-line status. When a wall hits, say the reset time and what is already done; when finished, say "done at HH:MM: N minutes of work, M minutes waiting on X". Measured 2026-10-18: a task that read as "running for 10 hours" was 75 minutes of work, 2 hours on a usage limit and 7 hours finished but unannounced; the user could not tell which.
 - **Show your work** only when it changes the answer.
 - **Fail loud.** No catch-all handlers that swallow errors. Raise or log.
 - **State results, not effort.** "Tests pass," not "I worked hard to get tests to pass."

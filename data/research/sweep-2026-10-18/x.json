@@ -1,0 +1,86 @@
+{
+  "generated": "2026-10-18",
+  "agent": "x-social-sweep",
+  "items": [
+    {
+      "id": "2026-10-02-x-lombardo-governors-permitting-call",
+      "date": "2026-10-02",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "Governor Joe Lombardo (@JosephMLombardo)",
+      "title": "Gov. Lombardo joins governors urging Congress to act on permitting reform",
+      "url": "https://x.com/JosephMLombardo/status/2106153625672429922",
+      "verified": true,
+      "summary": "Nevada Gov. Joe Lombardo says he is joining governors from across the country in urging Congress to act on permitting reform. The post does not name S. 5653 or BAAJA.",
+      "stance": "neutral",
+      "quote": {
+        "text": "I'm joining Governors from across the country urging Congress to act on permitting reform – which means more reliable energy, stronger infrastructure, good-paying jobs, & lower costs for Nevadans.",
+        "speaker": "Governor Joe Lombardo"
+      },
+      "topics": ["permit-certainty", "congress"],
+      "sector": "state_local"
+    },
+    {
+      "id": "2026-10-02-x-gianforte-governors-permitting-call",
+      "date": "2026-10-02",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "Governor Greg Gianforte (@GovGianforte)",
+      "title": "Gov. Gianforte joins governors urging Congress to pass permitting reform",
+      "url": "https://x.com/GovGianforte/status/2106131714011808099",
+      "verified": true,
+      "summary": "Montana Gov. Greg Gianforte says he is joining governors from across the country in urging Congress to pass meaningful permitting reform. The post does not name S. 5653 or BAAJA.",
+      "stance": "neutral",
+      "quote": {
+        "text": "I’m joining governors from across the country in urging Congress to pass meaningful permitting reform.",
+        "speaker": "Governor Greg Gianforte"
+      },
+      "topics": ["permit-certainty", "congress"],
+      "sector": "state_local"
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-02-governors-urge-congress-permitting",
+      "date": "2026-10-02",
+      "title": "Governors Lombardo and Gianforte post joint call for Congress to act on permitting reform",
+      "branch": "states",
+      "summary": "On Oct. 2, 2026, Nevada Gov. Joe Lombardo and Montana Gov. Greg Gianforte each posted on X that they had joined governors nationwide in urging Congress to act on permitting reform. Neither post names S. 5653, BAAJA, or a signer count, and neither links a letter text that was opened for this sweep.",
+      "significance": "Governor-level public pressure for permitting action; the posts do not reference the Sept. 30 text.",
+      "actors": ["Joe Lombardo", "Greg Gianforte"],
+      "topics": ["permit-certainty", "congress"],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "Governor Joe Lombardo on X (Oct 2, 2026)",
+          "publisher": "X",
+          "url": "https://x.com/JosephMLombardo/status/2106153625672429922",
+          "date": "2026-10-02",
+          "verified": true
+        },
+        {
+          "title": "Governor Greg Gianforte on X (Oct 2, 2026)",
+          "publisher": "X",
+          "url": "https://x.com/GovGianforte/status/2106131714011808099",
+          "date": "2026-10-02",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "people": [],
+  "not_found": [
+    "x.com search \"permitting\" \"letter\" since:2026-10-01 (f=live): top results were unrelated; no sign-on letter post found in the first screen",
+    "x.com search \"Affordability and Jobs Act\" since:2026-10-01 (f=live): Oct 17 posts seen (Alan Zibel quoting a Wilderness Society post on public lands; Noah Kaufman; Constantine citing BAAJA on data-center electricity costs; TheNavigator reporting 100+ manufacturing and business organizations urging Congress to approve permitting legislation). Not opened, so not written as items",
+    "x.com search \"BAAJA\" since:2026-10-01: page text was blocked by the output filter; no results read",
+    "x.com search \"permitting bill\" tribes OR tribal OR NHPA since:2026-10-01: results were unrelated",
+    "x.com search \"permitting reform\" governors since:2026-10-01 (f=live): Lombardo and Gianforte Oct 2 posts found and opened; the rest of the screen was not relevant",
+    "x.com search \"SPEED Act\" OR \"H.R. 2347\" since:2026-10-01: Oct 16 posts by Tickled Orange (SPEED Act, House-passed bill, not BAAJA) and Quasar Markets (no recorded votes until Nov 9) seen, not opened, not written",
+    "x.com search \"permitting\" Heinrich OR Whitehouse OR Capito min_faves:50 (f=top): results mostly unrelated",
+    "x.com search \"sign-on\" OR \"signed on\" OR \"organizations\" since:2026-10-01: results unrelated",
+    "Account timeline @SenCapito: latest visible posts Oct 16-17 with no permitting content",
+    "Account timeline @MartinHeinrich: latest visible post Oct 6, no permitting content",
+    "Account timeline @NatlGovsAssoc: no posts rendered",
+    "Not reached within the 60-action browser budget: searches for \"permitting deal\" Schumer OR Jeffries and \"permitting\" data centers Senate; timelines for @SenWhitehouse, @SenMikeLee, @SenateEPW, @EPWGOP, @HouseGOP, @USChamber, @APIenergy, @ACPenergy, @SEIA, @Earthjustice, @NRDC, @sierraclub, @LCVoters, @NCAI1944, @NARF_News, @NATHPO, @IBEW, @NABTU, @ScottBruun, and reporter accounts"
+  ]
+}

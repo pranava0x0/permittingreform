@@ -1,0 +1,198 @@
+{
+  "generated": "2026-10-18",
+  "agent": "x2-timeline-sweep",
+  "items": [
+    {
+      "id": "2026-10-02-x-epwgop-capito-explains-bill",
+      "date": "2026-10-02",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "U.S. Senate EPW Committee GOP (@EPWGOP)",
+      "title": "EPW Committee GOP post: Capito explains why the bill is key to energy future",
+      "url": "https://x.com/EPWGOP/status/2106021970437398949",
+      "verified": true,
+      "summary": "The Senate EPW Committee GOP account posts a video of Chairman Shelley Moore Capito explaining why the Bipartisan American Affordability and Jobs Act is key to new energy and infrastructure projects. The post says the current federal permitting process is broken.",
+      "stance": "supports",
+      "quote": {
+        "text": "Chairman @SenCapito explains why the Bipartisan American Affordability and Jobs Act is the key to unlocking America's energy future",
+        "speaker": "U.S. Senate EPW Committee GOP (@EPWGOP), introducing Chairman Capito's video"
+      },
+      "topics": [
+        "permit-certainty",
+        "congress"
+      ],
+      "sector": "congress"
+    },
+    {
+      "id": "2026-10-07-x-epwgop-broad-support-bill",
+      "date": "2026-10-07",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "U.S. Senate EPW Committee GOP (@EPWGOP)",
+      "title": "EPW Committee GOP post: bill has broad support across energy, manufacturing and labor",
+      "url": "https://x.com/EPWGOP/status/2107870650412994720",
+      "verified": true,
+      "summary": "The Senate EPW Committee GOP account says the Bipartisan American Affordability and Jobs Act has broad support from energy producers, manufacturing groups, labor unions and nonprofits. The post links an epw.senate.gov roundup of supporter statements.",
+      "stance": "supports",
+      "quote": {
+        "text": "The Bipartisan American Affordability and Jobs Act has gained strong and broad support, from energy producers and manufacturing groups to labor unions and nonprofits.",
+        "speaker": "U.S. Senate EPW Committee GOP (@EPWGOP)"
+      },
+      "topics": [
+        "permit-certainty",
+        "congress"
+      ],
+      "sector": "congress"
+    },
+    {
+      "id": "2026-10-13-x-epwgop-wicker-weekly-report",
+      "date": "2026-10-13",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "U.S. Senate EPW Committee GOP (@EPWGOP)",
+      "title": "EPW Committee GOP post: bill would dramatically improve federal permitting, shares Wicker report",
+      "url": "https://x.com/EPWGOP/status/2110053964897038793",
+      "verified": true,
+      "summary": "The Senate EPW Committee GOP account says the Bipartisan American Affordability and Jobs Act would dramatically improve federal permitting for energy and infrastructure projects. It shares a quoted post from Sen. Roger Wicker's weekly report highlighting several of the bill's permitting improvements.",
+      "stance": "supports",
+      "quote": {
+        "text": "The Bipartisan American Affordability and Jobs Act would dramatically improve the federal permitting process for new energy and infrastructure projects across the nation.",
+        "speaker": "U.S. Senate EPW Committee GOP (@EPWGOP)"
+      },
+      "topics": [
+        "permit-certainty",
+        "congress"
+      ],
+      "sector": "congress"
+    },
+    {
+      "id": "2026-10-14-x-api-icf-permitting-tax-revenue",
+      "date": "2026-10-14",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "American Petroleum Institute (@APIenergy)",
+      "title": "API post: ICF analysis finds permitting reform could support $24 billion in tax revenue",
+      "url": "https://x.com/APIenergy/status/2110430531632644390",
+      "verified": true,
+      "summary": "The American Petroleum Institute says an ICF analysis commissioned by API found permitting reform could support nearly $24 billion in tax revenue by 2030. The post does not name S. 5653 or BAAJA.",
+      "stance": "neutral",
+      "quote": {
+        "text": "An @ICF analysis commissioned by API found permitting reform could support nearly $24 billion in tax revenue by 2030.",
+        "speaker": "American Petroleum Institute (@APIenergy)"
+      },
+      "topics": [
+        "permit-certainty",
+        "congress"
+      ],
+      "sector": "trade_association"
+    },
+    {
+      "id": "2026-10-15-x-nam-budzinski-permitting-delays-cost",
+      "date": "2026-10-15",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "The NAM (@ShopFloorNAM)",
+      "title": "The NAM post: permitting delays cost manufacturers at least $8 billion a year",
+      "url": "https://x.com/ShopFloorNAM/status/2110837613896585339",
+      "verified": true,
+      "summary": "The National Association of Manufacturers posts about a podcast appearance by @RepNikkiB, identified in the post as New Democrat Coalition vice chair for policy, who says 'now is the time to act' on permitting reform. The NAM says permitting delays cost manufacturers at least $8 billion every year and that manufacturers are all in on getting the bipartisan deal done.",
+      "stance": "supports",
+      "quote": {
+        "text": "With permitting delays costing manufacturers at least $8 billion every year, manufacturers are all in on getting the Bipartisan",
+        "speaker": "The NAM (@ShopFloorNAM)"
+      },
+      "topics": [
+        "permit-certainty",
+        "congress"
+      ],
+      "sector": "trade_association"
+    },
+    {
+      "id": "2026-10-16-x-nam-100-groups-urge-passage",
+      "date": "2026-10-16",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "The NAM (@ShopFloorNAM)",
+      "title": "The NAM post: 100+ business and industry groups urge Congress to pass the bill",
+      "url": "https://x.com/ShopFloorNAM/status/2111162955253395638",
+      "verified": true,
+      "summary": "The NAM says 100+ business and industry groups are urging Congress to pass the Bipartisan American Affordability and Jobs Act, and posts a clip of Sen. Capito on the Jennings Show explaining why manufacturers back it. The post links a NAM article on the groups' urging; that article was not opened in this pass.",
+      "stance": "supports",
+      "quote": {
+        "text": "100+ business and industry groups. One message: pass permitting reform.",
+        "speaker": "The NAM (@ShopFloorNAM)"
+      },
+      "topics": [
+        "permit-certainty",
+        "congress"
+      ],
+      "sector": "trade_association"
+    },
+    {
+      "id": "2026-10-16-x-nam-lankford-permitting-time",
+      "date": "2026-10-16",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "The NAM (@ShopFloorNAM)",
+      "title": "The NAM post reposts Sen. Lankford on permitting reform",
+      "url": "https://x.com/ShopFloorNAM/status/2111134816389517599",
+      "verified": true,
+      "summary": "The NAM reposts a CNBC clip of @SenatorLankford saying there is an opportunity for permitting reform that the country needs, and adds that manufacturers agree 'now is the time for action.' The post does not name S. 5653 or BAAJA.",
+      "stance": "neutral",
+      "quote": {
+        "text": "We have an opportunity for permitting reform that opens up a lot of economic investment in the country that is desperately needed. We need to be able to take that on,",
+        "speaker": "@SenatorLankford (as quoted by The NAM)"
+      },
+      "topics": [
+        "permit-certainty",
+        "congress"
+      ],
+      "sector": "trade_association"
+    },
+    {
+      "id": "2026-10-18-x-foodandwater-data-center-power-schemes",
+      "date": "2026-10-18",
+      "type": "social_x",
+      "outlet": "X",
+      "author": "Food & Water Watch (@foodandwater)",
+      "title": "Food & Water Watch post: pump the brakes on the unregulated data center boom",
+      "url": "https://x.com/foodandwater/status/2111895118949105749",
+      "verified": true,
+      "summary": "Food & Water Watch says data centers' energy demands do not add up whether powered by renewables, fossil fuels or otherwise, and opposes 'bring your own power' schemes. The post does not name S. 5653 or BAAJA.",
+      "stance": "neutral",
+      "quote": {
+        "text": "When it comes to data centers and their energy demands, the math doesn’t math – whether it’s renewables, fossil fuels or otherwise.",
+        "speaker": "Food & Water Watch (@foodandwater)"
+      },
+      "topics": [
+        "data-centers"
+      ],
+      "sector": "environmental_group"
+    }
+  ],
+  "events": [],
+  "people": [],
+  "not_found": [
+    "@SenCapito: 3 timeline posts visible (Oct 16-17), none on permitting or the bill",
+    "@SenWhitehouse: 4 October posts visible (Oct 17-18), none on permitting (visible-text keyword triage; get_page_text read the top post only)",
+    "@MartinHeinrich: Oct 2 and Oct 6 posts, none on permitting (abortion, early voting)",
+    "@SenMikeLee: Oct 15-17 posts, none on permitting (elections)",
+    "@RepHuffman: Oct 13-15 posts, none on the bill (ballroom, park, local grants)",
+    "@Rep_Stansbury: Oct 16-17 posts, none on permitting",
+    "@SenMarkey: Oct 16 posts, none on permitting (rail, Ukraine)",
+    "@SenatorWicker: Oct 13-18 posts, none on permitting (Navy, Ukraine, delegation trip); the Oct 13 Wicker Weekly Report it was cited for was not on his timeline",
+    "@USChamber: Sep 24 and Oct 17-18 posts, none on permitting",
+    "@BlueDogDems: handle resolves to an unrelated 2011 account (Sarah Palin film post); no 2026 posts",
+    "@ACPenergy: account does not exist",
+    "@CenterForBioDiv: posts protected; profile says the org no longer posts on X and points to Bluesky",
+    "@NARF_News: account does not exist",
+    "@NATHPO: handle resolves to an unrelated protected account (Nathalie Pascotto); not the tribal preservation officers association",
+    "@NCAI1944: Oct 13-17 posts, none on permitting",
+    "@Earthjustice: after one scroll the timeline showed only Dec 2024 posts; no 2026 posts in window",
+    "Follow-up leads, not opened: nam.org article 100-manufacturing-business-groups-urge-congress-to-pass-bipartisan-permitting-deal (linked from the Oct 16 NAM post); ICF analysis cited by API on Oct 14; epw.senate.gov 'What They're Saying' roundup (linked from the Oct 7 EPWGOP post)",
+    "@LCVoters: loaded timeline runs back to Jan 6 2026 with no October posts after one scroll",
+    "@sierraclub: Oct 8-15 posts, none on permitting (Clean School Bus, Belmont-Paul monument, transit week); the Oct 9 keyword hit is a school-bus bill",
+    "@IBEW: Oct 8-16 posts, none on the bill; Oct 8 posts are a clean-technology training trust and a data-center letter to the editor (local, not the bill)",
+    "Not reached within the 70-action browser budget: @NABTU, @NatlGovsAssoc, @SiegelScribe, @nick_sobczyk, @KelseyTamborrino, @JaelHolzman, @EmmaDumain"
+  ]
+}

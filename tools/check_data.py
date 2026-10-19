@@ -6,6 +6,9 @@ Runs the build in memory (so it checks what the site renders), then checks:
   - every comparison row has four filled cells
   - timeline, people and media records have their required fields, valid
     dates, known vocabulary values, unique ids and at least one http(s) source
+  - a media item's optional letter names its addressees and its ask (at_least
+    marks signer_count as a floor, "100+", when the source says "more than"); each
+    Positions issue names known topics, headlines and sections
   - machine-written prose follows the house style: no em or en dashes, no
     exclamation marks, none of the register words DESIGN.md bans
 
@@ -81,13 +84,77 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     out += [(f"media {it['id']} summary", it["summary"]) for it in core["media"] if it.get("summary")]
     out += [(f"media {it['id']} visual", v["title"] + ". " + v["text"]) for it in core["media"] for v in it.get("visuals", [])]
     out += [(f"take {t['id']} claim", t["claim"]) for t in (core.get("takes") or {}).get("takes", [])]
+    out += [(f"media {it['id']} letter ask", it["letter"]["ask"]) for it in core["media"]
+            if isinstance(it.get("letter"), dict) and isinstance(it["letter"].get("ask"), str)]
+    out += [(f"positions {i['id']} title", i["title"]) for i in (core.get("positions") or {}).get("issues", [])]
     return out
+
+
+def check_letter(where: str, letter) -> list[str]:
+    """A sign-on letter or joint statement: who it went to and what it asks are
+    required; the signer count and sample are optional."""
+    if not isinstance(letter, dict):
+        return [f"{where}: letter must be an object"]
+    errs = []
+    for field in ("to", "ask"):
+        if not isinstance(letter.get(field), str) or not letter[field].strip():
+            errs.append(f"{where}: a letter needs {field!r} as text")
+    count = letter.get("signer_count")
+    if "signer_count" in letter and (isinstance(count, bool) or not isinstance(count, int) or count < 1):
+        errs.append(f"{where}: signer_count must be a positive whole number, not {count!r}")
+    sample = letter.get("signers_sample")
+    if "signers_sample" in letter and (not isinstance(sample, list) or not all(isinstance(x, str) and x.strip() for x in sample)):
+        errs.append(f"{where}: signers_sample must be a list of names")
+    if "at_least" in letter and not isinstance(letter["at_least"], bool):
+        errs.append(f"{where}: letter at_least must be true or false (it marks signer_count as a floor)")
+    if letter.get("at_least") and "signer_count" not in letter:
+        errs.append(f"{where}: letter at_least needs a signer_count to qualify")
+    unknown = set(letter) - {"to", "ask", "signer_count", "signers_sample", "at_least"}
+    if unknown:
+        errs.append(f"{where}: letter has unknown fields {sorted(unknown)}")
+    return errs
+
+
+def check_positions(core: dict) -> list[str]:
+    """Each issue on the Positions page names known topics, an Overview headline
+    or its own sections, and only sections that exist."""
+    errs = []
+    issues = (core.get("positions") or {}).get("issues", [])
+    headlines = {h["id"] for h in core["overview"]["headlines"]}
+    nums = {s["n"] for s in core["sections"]}
+    seen: set[str] = set()
+    for i in issues:
+        w = f"positions {i.get('id')}"
+        if not i.get("id") or not i.get("title"):
+            errs.append(f"{w}: needs an id and a title")
+        if i.get("id") in seen:
+            errs.append(f"{w}: duplicate id")
+        seen.add(i.get("id"))
+        if not i.get("topics"):
+            errs.append(f"{w}: names no topic")
+        for t in i.get("topics", []):
+            if t not in core["topics"]:
+                errs.append(f"{w}: unknown topic {t!r}")
+        if i.get("headline"):
+            if i["headline"] not in headlines:
+                errs.append(f"{w}: no Overview headline {i['headline']!r}")
+            if i.get("sections"):
+                errs.append(f"{w}: an issue with a headline takes the headline's sections; drop its own list")
+        elif not i.get("sections"):
+            errs.append(f"{w}: needs a headline or a list of sections")
+        for n in i.get("sections", []):
+            if n not in nums:
+                errs.append(f"{w}: section {n} does not exist")
+        if i.get("link") and not str(i["link"]).startswith("#/"):
+            errs.append(f"{w}: link must be a page on this site (#/...)")
+    return errs
 
 
 def check(core: dict) -> tuple[list[str], dict]:
     errs: list[str] = []
     counts = {"sections": len(core["sections"]), "compare rows": 0, "timeline": len(core["timeline"]),
-              "people": len(core["people"]), "media": len(core["media"]), "prose strings": 0}
+              "people": len(core["people"]), "media": len(core["media"]), "letters": 0,
+              "position issues": len((core.get("positions") or {}).get("issues", [])), "prose strings": 0}
 
     for s in core["sections"]:
         if not s["plain"]:
@@ -212,6 +279,11 @@ def check(core: dict) -> tuple[list[str], dict]:
         for v in it.get("visuals", []):
             if not (v.get("title") and v.get("text") and http(v.get("url"))):
                 errs.append(f"{w}: a cheat sheet needs a title, a description and an image link")
+        if "letter" in it:
+            counts["letters"] += 1
+            errs += check_letter(w, it["letter"])
+
+    errs += check_positions(core)
 
     for where, text in prose_fields(core):
         counts["prose strings"] += 1

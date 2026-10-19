@@ -3089,6 +3089,64 @@
    ]
   },
   {
+   "id": "2026-10-01-markey-reviewing-text-statement",
+   "date": "2026-10-01",
+   "branch": "congress_senate",
+   "title": "Markey says he is still reviewing the text and takes no position",
+   "summary": "Sen. Edward Markey issued a statement saying he was still reviewing the text and would look closely at the details. He warned against locking in more fossil fuels and locking out communities.",
+   "actors": [
+    "Edward Markey"
+   ],
+   "topics": [
+    "congress",
+    "fossil"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Senator Markey Statement on Bipartisan Permitting Reform Proposal",
+     "publisher": "Office of Sen. Edward J. Markey",
+     "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal",
+     "date": "2026-10-01",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-01-republican-governors-joint-statement",
+   "date": "2026-10-01",
+   "branch": "states",
+   "title": "22 Republican governors urge Congress to pass the permitting bill",
+   "summary": "Montana Gov. Greg Gianforte and 21 other Republican governors issued a joint statement asking Congress to pass permitting reform and send the legislation to President Trump. The statement names the Bipartisan American Affordability and Jobs Act. The Senate EPW majority's October 7 roundup describes it as a statement from 21 governors.",
+   "significance": "One party's governors back the bill. No Democratic governor is listed.",
+   "actors": [
+    "Greg Gianforte",
+    "Republican governors"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty",
+    "white-house"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Gianforte urges Congress to pass federal permitting reform",
+     "publisher": "Missoulian (State of Montana Newsroom)",
+     "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
+     "date": "2026-10-01",
+     "verified": true
+    },
+    {
+     "title": "What They're Saying: Bipartisan Permitting Reform Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+     "publisher": "Senate Committee on Environment and Public Works",
+     "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+     "date": "2026-10-07",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "2026-10-01-senate-schedules-november-9-cloture-vote",
    "date": "2026-10-01",
    "title": "Senate schedules a November 9 cloture vote to take up the permitting bill",
@@ -3105,6 +3163,31 @@
      "publisher": "U.S. Senate Press Gallery",
      "url": "https://www.dailypress.senate.gov/thursday-october-1-2026/",
      "date": "2026-10-01",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-02-blue-dog-coalition-november-vote-call",
+   "date": "2026-10-02",
+   "branch": "congress_house",
+   "title": "Blue Dog Coalition backs the Senate deal and asks for a November floor vote",
+   "summary": "The House Blue Dog Coalition backed the Senate-negotiated bill, citing the parts that came from the SPEED Act, and asked House and Senate leaders to hold a floor vote in November. The statement names no individual member.",
+   "significance": "A House bloc of Democrats is on record for a vote, while Rep. Huffman says most House Democrats will not back the text as written.",
+   "actors": [
+    "Blue Dog Coalition"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Blue Dog Statement on Bipartisan Permitting Reform Agreement",
+     "publisher": "Blue Dog Coalition",
+     "url": "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-statement-bipartisan-permitting-reform-agreement",
+     "date": "2026-10-02",
      "verified": true
     }
    ]
@@ -3131,6 +3214,371 @@
      "publisher": "Punchbowl News",
      "url": "https://punchbowl.news/wp-content/uploads/Permitting-Reform-Opposition-Letter_10.5.26.pdf",
      "date": "2026-10-05",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-06-esa-groups-letter-oppose-bill",
+   "date": "2026-10-06",
+   "branch": "other",
+   "title": "More than 200 conservation groups ask Congress to oppose the bill over its Endangered Species Act title",
+   "summary": "More than 200 conservation groups sent a letter urging Congress to oppose the bill. The Center for Biological Diversity and Friends of the Earth issued the release, which objects to the bill's changes to best available science and to state-run Section 7 consultations.",
+   "significance": "This letter is about the species provisions. The 222-group letter of October 5 and the 185-group letter of October 13 are separate.",
+   "actors": [
+    "Center for Biological Diversity",
+    "Friends of the Earth"
+   ],
+   "topics": [
+    "esa",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Hundreds of Organizations Oppose Endangered Species Attacks in Permitting Legislation",
+     "publisher": "Common Dreams (newswire)",
+     "url": "https://www.commondreams.org/newswire/hundreds-of-organizations-oppose-endangered-species-attacks-in-permitting-legislation",
+     "date": "2026-10-06",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-07-guthrie-wants-grid-section-changes",
+   "date": "2026-10-07",
+   "branch": "congress_house",
+   "title": "House Energy and Commerce Chair Guthrie says he wants changes to the bill's grid section",
+   "summary": "Speaking at the Punchbowl Tech Summit, Rep. Brett Guthrie said he would love to see changes to the grid section of the Senate bill. Punchbowl reporter Joshua Siegel posted the remark on X.",
+   "significance": "The House committee that handles electricity wants to change the transmission text, which bears on whether the Senate version survives the House.",
+   "actors": [
+    "Brett Guthrie"
+   ],
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "X post by Joshua Siegel quoting Brett Guthrie",
+     "publisher": "X",
+     "url": "https://x.com/SiegelScribe/status/2107892025182114178",
+     "date": "2026-10-07",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-08-lee-confident-lame-duck-vote",
+   "date": "2026-10-08",
+   "branch": "congress_senate",
+   "title": "Lee says he is confident the Senate will pass the bill in a November lame-duck session",
+   "summary": "The Daily Caller News Foundation, citing the AP, reports that Sen. Mike Lee is confident the Senate will pass the bill in a lame-duck session in November.",
+   "actors": [
+    "Mike Lee"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Senators Want To Make AI Data Centers Pay For The Grid Upgrades Driving Up Your Electric Bill",
+     "publisher": "Daily Caller News Foundation",
+     "url": "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/",
+     "date": "2026-10-08",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-09-tribal-organizations-letter-sacred-places",
+   "date": "2026-10-09",
+   "branch": "other",
+   "title": "NARF and eight other Tribal organizations ask Senate leaders to remove sacred-places provisions",
+   "summary": "In an October 9 letter, the Native American Rights Fund and eight other Tribal organizations asked Senate leaders to remove provisions that weaken protections for sacred places and to consult Tribal Nations. NARF's alert says that, as it understands it, input must be received by October 23. It names no official source for that date.",
+   "significance": "Tribal opposition centers on the National Historic Preservation Act title and Section 106 consultation.",
+   "actors": [
+    "Native American Rights Fund",
+    "National Association of Tribal Historic Preservation Officers"
+   ],
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes",
+     "publisher": "Native American Rights Fund",
+     "url": "https://narf.org/baaja-reform-bill/",
+     "date": "2026-10-15",
+     "verified": true
+    },
+    {
+     "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+     "publisher": "NPR",
+     "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
+     "date": "2026-10-15",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-11-capito-white-house-concessions-wind-solar",
+   "date": "2026-10-11",
+   "branch": "congress_senate",
+   "title": "Capito says the White House made wind and solar concessions and she was promised the first vote",
+   "summary": "Capito told WV MetroNews the White House has made some tremendous concessions on wind and solar projects. She said she was promised the first vote when senators return on November 8.",
+   "significance": "Her November 8 date differs from the Senate floor log, which has the Senate returning November 9.",
+   "actors": [
+    "Shelley Moore Capito",
+    "White House"
+   ],
+   "topics": [
+    "wind-solar",
+    "white-house",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Capito says permitting bill would blast away delays and protect approved projects",
+     "publisher": "WV MetroNews",
+     "url": "https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/",
+     "date": "2026-10-11",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-12-huffman-no-vote-before-election",
+   "date": "2026-10-12",
+   "branch": "congress_house",
+   "title": "Huffman says no one will vote on the Senate bill before the election",
+   "summary": "In an interview with Heatmap, Rep. Jared Huffman said no one will vote on the bill until after the election. He said its judgment-fund provision could pay developers without approving their projects.",
+   "actors": [
+    "Jared Huffman"
+   ],
+   "topics": [
+    "congress",
+    "wind-solar",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Jared Huffman Wants to See Some Changes to the Senate's Permitting Bill",
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/politics/jared-huffman-baaja",
+     "date": "2026-10-12",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-185-groups-back-door-deal-letter",
+   "date": "2026-10-13",
+   "branch": "other",
+   "title": "185 groups ask congressional leaders to oppose the bill as a back-door deal for data centers",
+   "summary": "A coalition of 185 community, labor, climate and environmental justice groups urged congressional leaders to oppose the bill. The Center for Biological Diversity release calls it a back-door deal to build hyperscale AI data centers and fossil fuel infrastructure. The Washington Sun reports the letter went to House Democratic leadership.",
+   "significance": "The release says congressional leaders and the Washington Sun says House Democratic leaders. The letter text was not available, so the addressee is not settled.",
+   "actors": [
+    "Center for Biological Diversity",
+    "Food & Water Watch",
+    "Third Act"
+   ],
+   "topics": [
+    "data-centers",
+    "fossil",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "185 Groups Slam Permitting Bill's Sweetheart Deal for Data Centers",
+     "publisher": "Center for Biological Diversity",
+     "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+     "date": "2026-10-13",
+     "verified": true
+    },
+    {
+     "title": "Permitting Reform Is Scrambling the Left",
+     "publisher": "The Washington Sun",
+     "url": "https://www.washingtonsun.com/energy-environment/climate-green-groups-reform-scrambling-left-democrats",
+     "date": "2026-10-15",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-13-revolution-wind-permit-review-request",
+   "date": "2026-10-13",
+   "branch": "executive",
+   "title": "Trump administration asks a court to re-examine the Revolution Wind permit",
+   "summary": "The Trump administration asked a court to re-examine a key permit for the Revolution Wind offshore project in Rhode Island. Heatmap reports the move as a risk to the bipartisan permitting deal.",
+   "significance": "Executive action against a permitted offshore wind project is the kind of move the bill's permit-certainty provisions address.",
+   "actors": [
+    "Trump administration",
+    "Revolution Wind"
+   ],
+   "topics": [
+    "offshore",
+    "permit-certainty",
+    "white-house"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Is Trump Trying to Blow Up the Permitting Deal?",
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/daily/trump-permitting-deal-offshore-wind",
+     "date": "2026-10-13",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "1401"
+   ]
+  },
+  {
+   "id": "2026-10-14-nam-coalition-letter-urges-floor-vote",
+   "date": "2026-10-14",
+   "branch": "other",
+   "title": "NAM and more than 100 business groups ask Thune and Schumer to bring S. 5653 to the floor",
+   "summary": "The National Association of Manufacturers and more than 100 manufacturing and business groups wrote Majority Leader Thune and Minority Leader Schumer in support of S. 5653 and asked for immediate floor consideration. The American Supply Association says it signed on.",
+   "actors": [
+    "National Association of Manufacturers",
+    "American Supply Association",
+    "John Thune",
+    "Chuck Schumer"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "100+ Manufacturing, Business Groups Urge Congress to Pass Bipartisan Permitting Deal",
+     "publisher": "National Association of Manufacturers",
+     "url": "https://nam.org/100-manufacturing-business-groups-urge-congress-to-pass-bipartisan-permitting-deal/",
+     "date": "2026-10-14",
+     "verified": true
+    },
+    {
+     "title": "ASA Supports Bipartisan Permitting Reform to Strengthen U.S. Manufacturing",
+     "publisher": "Supply House Times",
+     "url": "https://www.supplyht.com/articles/107521-asa-supports-bipartisan-permitting-reform-to-strengthen-us-manufacturing",
+     "date": "2026-10-16",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-106-strong-coalition-launch-letter",
+   "date": "2026-10-15",
+   "branch": "other",
+   "title": "106 Strong coalition launches with 1,000 organizations and asks Congress to reject S. 5653",
+   "summary": "On the 60th anniversary of the National Historic Preservation Act, the 106 Strong coalition launched with 1,000 organizations and Tribal Nations, by its own count, and delivered a letter urging Congress to reject the Senate bill.",
+   "significance": "The coalition objects to the bill's Section 106 changes.",
+   "actors": [
+    "106 Strong",
+    "Greg Werkheiser",
+    "Ira Matt"
+   ],
+   "topics": [
+    "historic-preservation",
+    "tribal",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "On Historic Preservation Law's 60th Anniversary, 1,000 Organizations Launch Campaign to Defend America's Heritage",
+     "publisher": "106 Strong",
+     "url": "https://www.106strong.com/60th-anniversary-press-release",
+     "date": "2026-10-15",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-chamber-letter-supports-bill",
+   "date": "2026-10-15",
+   "branch": "other",
+   "title": "U.S. Chamber of Commerce writes the four sponsors to support the bill",
+   "summary": "Neil Bradley, the Chamber's chief policy officer, wrote Sens. Capito, Lee, Whitehouse and Heinrich, with copies to Thune and Schumer, to say the Chamber supports the bill and wants it sent to the President as soon as possible.",
+   "actors": [
+    "U.S. Chamber of Commerce",
+    "Neil Bradley"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Letter in support of the Bipartisan American Affordability and Jobs Act of 2026",
+     "publisher": "U.S. Chamber of Commerce",
+     "url": "https://www.uschamber.com/assets/documents/261013_Hill_Support-for-American-Affordability-and-Jobs-Act-of-2026_EPW-ENR_Clean.pdf",
+     "date": "2026-10-15",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-npr-section-106-threat-story",
+   "date": "2026-10-15",
+   "branch": "other",
+   "title": "NPR reports the bill is the biggest threat in 60 years to historic preservation review",
+   "summary": "NPR reports on the bill's Section 106 changes on the law's 60th anniversary. It quotes Greg Werkheiser and the National Association of Tribal Historic Preservation Officers' Ira Matt in opposition and says Tribal groups sent Senate leaders a letter the week before.",
+   "actors": [
+    "Greg Werkheiser",
+    "Ira Matt",
+    "National Association of Tribal Historic Preservation Officers"
+   ],
+   "topics": [
+    "historic-preservation",
+    "tribal",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+     "publisher": "NPR",
+     "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
+     "date": "2026-10-15",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-15-senate-floor-log-nov-9-cloture",
+   "date": "2026-10-15",
+   "branch": "congress_senate",
+   "title": "Senate floor log lists pro forma sessions through Nov. 5 and a Nov. 9 cloture vote on H.R. 2347",
+   "summary": "The October 15 floor log lists pro forma sessions on October 19, 22, 26, 29, November 2 and November 5. The Senate returns November 9 at 3:00 p.m. and votes on cloture on the motion to proceed to H.R. 2347 at about 5:30 p.m. The log calls H.R. 2347 the legislative vehicle for the permitting reform bill.",
+   "significance": "The next scheduled Senate action on the bill is the November 9 cloture vote.",
+   "actors": [
+    "John Thune"
+   ],
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Thursday, October 15, 2026",
+     "publisher": "U.S. Senate Press Gallery",
+     "url": "https://www.dailypress.senate.gov/thursday-october-15-2026/",
+     "date": "2026-10-15",
      "verified": true
     }
    ]

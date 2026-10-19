@@ -586,6 +586,342 @@
      "url": "https://www.c2es.org/press-release/new-analysis-finds-federal-transmission-reforms-would-slash-power-sector-emissions-boost-grid-reliability-and-save-consumers-billions/"
     }
    ]
+  },
+  {
+   "id": "melanie-stansbury",
+   "name": "Melanie Stansbury",
+   "role": "U.S. Representative (D-N.M.)",
+   "affiliation": "U.S. House of Representatives",
+   "sector": "congress",
+   "inside_government": true,
+   "stance": "mixed",
+   "position": "Punchbowl reports she suggested she could oppose the bill over Tribal sovereignty and environmental concerns, and she has not announced a vote.",
+   "key_actions": [
+    "2026-10-13: Told Punchbowl that Tribal sovereignty, community rights and the environment are her line in the sand"
+   ],
+   "party": "D",
+   "quote": {
+    "text": "tribal sovereignty, the rights of our communities, and the environment will always be my line in the sand",
+    "source_url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/"
+   },
+   "sources": [
+    {
+     "title": "Martin Heinrich faces backlash from tribes over permitting deal",
+     "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/"
+    }
+   ]
+  },
+  {
+   "id": "ben-schifman",
+   "name": "Ben Schifman",
+   "role": "Senior technology fellow",
+   "affiliation": "Institute for Progress",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "Told Punchbowl the bill is a fairly even compromise on Section 106, trimming some excesses of the process while writing into law protections that matter to Tribes.",
+   "key_actions": [
+    "2026-10-13: Defended the bill's Section 106 changes in Punchbowl"
+   ],
+   "quote": {
+    "text": "This was a pretty even compromise, changing around the edges some excesses of the 106 process, but writing into the law for the first time stuff that's important to tribes.",
+    "source_url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/"
+   },
+   "sources": [
+    {
+     "title": "Martin Heinrich faces backlash from tribes over permitting deal",
+     "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/"
+    }
+   ]
+  },
+  {
+   "id": "greg-werkheiser",
+   "name": "Greg Werkheiser",
+   "role": "Founding partner, Cultural Heritage Partners; organizer of 106 Strong",
+   "affiliation": "Cultural Heritage Partners",
+   "sector": "academic",
+   "inside_government": false,
+   "stance": "opposes",
+   "position": "Says the bill rewrites the National Historic Preservation Act and would end the 60-year-old Section 106 process, and leads the 106 Strong coalition against it.",
+   "key_actions": [
+    "2026-10-14: Told the Washington Times the bill would end the 60-year-old process of historic preservation",
+    "2026-10-15: Launched the 106 Strong coalition with 1,000 organizations and a letter to Congress"
+   ],
+   "quote": {
+    "text": "It will effectively rewrite the National Historic Preservation Act in ways that, for all intents and purposes, gut its meaning and protections for hundreds of thousands of sites across the country,",
+    "source_url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary"
+   },
+   "sources": [
+    {
+     "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+     "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary"
+    },
+    {
+     "title": "Rush to cut permitting red tape runs into law to protect America's historic sites",
+     "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/"
+    }
+   ]
+  },
+  {
+   "id": "terry-klein",
+   "name": "Terry Klein",
+   "role": "Chair, Society for Historical Archaeology",
+   "affiliation": "Society for Historical Archaeology",
+   "sector": "academic",
+   "inside_government": false,
+   "stance": "opposes",
+   "position": "Told the Washington Times the bill works against historic preservation.",
+   "key_actions": [
+    "2026-10-14: Criticized the bill's Section 106 changes in the Washington Times"
+   ],
+   "quote": {
+    "text": "in the context of historic preservation, it does exactly the opposite",
+    "source_url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/"
+   },
+   "sources": [
+    {
+     "title": "Rush to cut permitting red tape runs into law to protect America's historic sites",
+     "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/"
+    }
+   ]
+  },
+  {
+   "id": "edward-markey",
+   "name": "Edward J. Markey",
+   "role": "U.S. Senator (D-Mass.); member, Senate Environment and Public Works Committee",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "inside_government": true,
+   "stance": "neutral",
+   "position": "Said he was still reviewing the text and would look closely at the details. He warned against locking in more fossil fuels and locking out communities, and neither endorsed nor opposed the bill.",
+   "key_actions": [
+    "2026-10-01: Issued a statement withholding a position pending review of the text"
+   ],
+   "party": "D",
+   "quote": {
+    "text": "I’m still reviewing text of this proposal, and I will be looking closely at the details.",
+    "source_url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal"
+   },
+   "sources": [
+    {
+     "title": "Senator Markey Statement on Bipartisan Permitting Reform Proposal",
+     "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal"
+    }
+   ]
+  },
+  {
+   "id": "roger-wicker",
+   "name": "Roger Wicker",
+   "role": "U.S. Senator (R-Miss.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "inside_government": true,
+   "stance": "supports",
+   "position": "Backed the bill in his weekly report, saying it would update how the government approves energy and infrastructure projects, shorten the window for climate lawsuits and narrow Clean Water Act reviews.",
+   "key_actions": [
+    "2026-10-13: Published a weekly report backing the bill"
+   ],
+   "party": "R",
+   "quote": {
+    "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
+    "source_url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/"
+   },
+   "sources": [
+    {
+     "title": "Wicker Backs Landmark Permit Reform Bill",
+     "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/"
+    }
+   ]
+  },
+  {
+   "id": "ira-matt",
+   "name": "Ira Matt (Séliš)",
+   "role": "Executive Director",
+   "affiliation": "National Association of Tribal Historic Preservation Officers",
+   "sector": "trade_association",
+   "inside_government": false,
+   "stance": "opposes",
+   "position": "Says the proposed Section 106 changes are an affront to Tribal sovereignty and would erode decades of progress in recognizing Tribal rights.",
+   "key_actions": [
+    "2026-10-15: Quoted in the 106 Strong launch release",
+    "2026-10-15: NPR reports NATHPO's opposition and a Tribal letter to Senate leaders the week before"
+   ],
+   "quote": {
+    "text": "The proposed changes are an affront to Tribal sovereignty and would erode decades of progress in recognizing Tribal rights.",
+    "source_url": "https://www.106strong.com/60th-anniversary-press-release"
+   },
+   "sources": [
+    {
+     "title": "On Historic Preservation Law's 60th Anniversary, 1,000 Organizations Launch Campaign",
+     "url": "https://www.106strong.com/60th-anniversary-press-release"
+    },
+    {
+     "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+     "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary"
+    }
+   ]
+  },
+  {
+   "id": "brandon-tatum",
+   "name": "Brandon Tatum",
+   "role": "Chief executive",
+   "affiliation": "National Governors Association",
+   "sector": "state_local",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "NGA says it is encouraged by the bill's introduction and will work with Congress to develop it further.",
+   "key_actions": [
+    "2026-10-01: Issued the NGA statement on permitting reform"
+   ],
+   "quote": {
+    "text": "The National Governors Association and its partners are encouraged by the introduction of the Bipartisan American Affordability and Jobs Act of 2026 and look forward to working with Congress to further develop this legislation.",
+    "source_url": "https://www.nga.org/?p=81333"
+   },
+   "sources": [
+    {
+     "title": "NGA Statement on Permitting Reform",
+     "url": "https://www.nga.org/?p=81333"
+    }
+   ]
+  },
+  {
+   "id": "bill-owens",
+   "name": "Bill Owens",
+   "role": "Chairman",
+   "affiliation": "National Association of Home Builders",
+   "sector": "trade_association",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "NAHB's chairman applauded the four sponsors for what he called the most meaningful federal permitting reforms in decades, citing the Clean Water Act nationwide-permit provisions.",
+   "key_actions": [
+    "2026-10-01: NAHB statement after the bill's release"
+   ],
+   "quote": {
+    "text": "NAHB applauds Senators Lee, Capito, Heinrich and Whitehouse and for their leadership and bipartisan approach to crafting the most meaningful reforms in decades to several key federal environmental permitting programs.",
+    "source_url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act"
+   },
+   "sources": [
+    {
+     "title": "NAHB Applauds Bipartisan American Affordability and Jobs Act",
+     "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act"
+    }
+   ]
+  },
+  {
+   "id": "joshua-bolten",
+   "name": "Joshua Bolten",
+   "role": "Chief executive",
+   "affiliation": "Business Roundtable",
+   "sector": "trade_association",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "Quoted in the EPW majority roundup saying Business Roundtable strongly supports the bill.",
+   "key_actions": [
+    "2026-10-07: Quoted in the EPW majority roundup of supportive statements"
+   ],
+   "quote": {
+    "text": "Business Roundtable strongly supports the Bipartisan American Affordability and Jobs Act of 2026.",
+    "source_url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth"
+   },
+   "sources": [
+    {
+     "title": "What They're Saying: Bipartisan Permitting Reform Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+     "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth"
+    }
+   ]
+  },
+  {
+   "id": "xan-fishman",
+   "name": "Xan Fishman",
+   "role": "Vice President, Energy",
+   "affiliation": "Bipartisan Policy Center",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "Quoted in the EPW majority roundup saying the bill would fix permitting processes so projects can be reviewed and built efficiently.",
+   "key_actions": [
+    "2026-10-07: Quoted in the EPW majority roundup of supportive statements"
+   ],
+   "quote": {
+    "text": "This bill would fix our permitting processes so that we can review and build efficiently, reducing costs, improving quality of life, growing our economy, and improving economic outcomes.",
+    "source_url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth"
+   },
+   "sources": [
+    {
+     "title": "What They're Saying: Bipartisan Permitting Reform Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+     "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth"
+    }
+   ]
+  },
+  {
+   "id": "bill-mckibben",
+   "name": "Bill McKibben",
+   "role": "Co-founder",
+   "affiliation": "Third Act",
+   "sector": "environmental_group",
+   "inside_government": false,
+   "stance": "opposes",
+   "position": "Said it would be highly ironic if Congress's first action after an election defined by opposition to data centers made them easier to build.",
+   "key_actions": [
+    "2026-10-13: Quoted in the 185-group release"
+   ],
+   "quote": {
+    "text": "It would be highly ironic if the first action Congress took after an election largely defined by opposition to data centers would be to make it easier to build them,",
+    "source_url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/"
+   },
+   "sources": [
+    {
+     "title": "185 Groups Slam Permitting Bill's Sweetheart Deal for Data Centers",
+     "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/"
+    }
+   ]
+  },
+  {
+   "id": "neil-bradley",
+   "name": "Neil Bradley",
+   "role": "Executive Vice President and Chief Policy Officer",
+   "affiliation": "U.S. Chamber of Commerce",
+   "sector": "trade_association",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "Wrote the four sponsors that the Chamber supports the bill and that Congress should send it to the President as soon as possible.",
+   "key_actions": [
+    "2026-10-15: Signed the Chamber letter supporting the bill"
+   ],
+   "quote": {
+    "text": "Congress should seize this bipartisan opportunity and send the bill to the President's desk as soon as possible",
+    "source_url": "https://www.uschamber.com/assets/documents/261013_Hill_Support-for-American-Affordability-and-Jobs-Act-of-2026_EPW-ENR_Clean.pdf"
+   },
+   "sources": [
+    {
+     "title": "Letter in support of the Bipartisan American Affordability and Jobs Act of 2026",
+     "url": "https://www.uschamber.com/assets/documents/261013_Hill_Support-for-American-Affordability-and-Jobs-Act-of-2026_EPW-ENR_Clean.pdf"
+    }
+   ]
+  },
+  {
+   "id": "greg-gianforte",
+   "name": "Greg Gianforte",
+   "role": "Governor of Montana",
+   "affiliation": "State of Montana",
+   "sector": "state_local",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "Joined 21 other Republican governors in a statement urging Congress to pass permitting reform and send it to President Trump.",
+   "key_actions": [
+    "2026-10-01: Joint statement of 22 Republican governors"
+   ],
+   "party": "R",
+   "quote": {
+    "text": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk.",
+    "source_url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html"
+   },
+   "sources": [
+    {
+     "title": "Gianforte urges Congress to pass federal permitting reform",
+     "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html"
+    }
+   ]
   }
  ]
 }

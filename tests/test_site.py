@@ -118,6 +118,28 @@ class Page(unittest.TestCase):
         self.assertNotIn("—", JS)
         self.assertNotIn("—", HTML)
 
+    def test_the_positions_page_is_routed_in_the_news_group(self):
+        self.assertIn('const NEWS_TABS = ["timeline", "positions", "people", "media"];', JS)
+        self.assertIn('[["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]]', JS)
+        self.assertIn('positions: "Positions"', JS)
+        self.assertIn('else if (tab === "positions") nodes = renderPositions();', JS)
+        self.assertIn('href: "#/positions"', JS)
+
+    def test_the_sector_table_links_to_people_routes_the_router_reads(self):
+        self.assertIn('"#/people/" + (rows[k].inside ? "inside" : "outside") + "/" + c[0] + "/" + k', JS)
+        self.assertIn('pplSide = parts[1] === "outside" ? "outside" : "inside";', JS)
+        self.assertIn('pplSector = SECTORS[parts[3]] ? parts[3] : "all";', JS)
+        self.assertIn('(pplSector === "all" || sectorKey(p) === pplSector)', JS)
+
+    def test_letters_and_stance_chips_follow_their_filters(self):
+        self.assertIn('it.letter && it.date >= D.meta.released', JS)
+        self.assertIn('pool.filter((p) => pplSector === "all" || sectorKey(p) === pplSector)', JS)
+        self.assertIn('l.at_least ? num(l.signer_count) + "+ signers"', JS)
+
+    def test_issue_voices_start_at_the_bill_release(self):
+        """A statement about an earlier bill shares topics with the current one; the Positions page must not count it."""
+        self.assertIn('it.date >= D.meta.released && POSITION_SIDES.some', JS)
+
     def test_the_bill_text_loader_caches_its_promise(self):
         self.assertIn("if (!billPromise)", JS)
 

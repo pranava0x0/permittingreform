@@ -243,15 +243,16 @@
  },
  "people": {
   "shelley-moore-capito": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 11 WV MetroNews interview.",
    "set": {
-    "position": "Co-negotiated and co-introduced the bill. She says its reforms will 'transform our nation's ability to power our economy' while protecting land, water and wildlife, and that a permitting bill must be bipartisan and 'project neutral.'",
+    "position": "Co-negotiated and co-introduced the bill. She says its reforms will 'transform our nation's ability to power our economy' while protecting land, water and wildlife, and that a permitting bill must be bipartisan and 'project neutral.' On October 11 she said the White House had made concessions on wind and solar projects and that she was promised the first vote when senators return.",
     "key_actions": [
      "2026-01-28: Chaired the EPW hearing 'Federal Environmental Review and Permitting Processes, Part II' to get talks 'back on the path to fruitful compromise'",
      "2026-06-10: Warned the White House that favoring some projects over others could cost the deal",
      "2026-08-07: Said a September deal would be a policy and political win for both parties",
      "2026-09-17: Said a deal was 'very close' and that the floor vote could slip",
-     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act; said at the press conference that negotiators want it to be the first vote when the Senate returns"
+     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act; said at the press conference that negotiators want it to be the first vote when the Senate returns",
+     "2026-10-11: Told WV MetroNews the White House has made concessions on wind and solar and that she was promised the first vote when senators return on November 8"
     ],
     "sources": [
      {
@@ -285,19 +286,27 @@
       "publisher": "POLITICO Pro",
       "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
       "date": "2026-09-17"
+     },
+     {
+      "title": "Capito says permitting bill would blast away delays and protect approved projects",
+      "publisher": "WV MetroNews",
+      "url": "https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/",
+      "date": "2026-10-11",
+      "verified": true
      }
     ]
    }
   },
   "mike-lee": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 8 Daily Caller report.",
    "set": {
-    "position": "Co-introduced the bill, describing a permitting system that 'takes too long and costs too much.' He says the deal should hold through the midterm elections.",
+    "position": "Co-introduced the bill, describing a permitting system that 'takes too long and costs too much.' He says the deal should hold through the midterm elections. On October 8 the Daily Caller News Foundation, citing the AP, reported he is confident the Senate will pass it in a November lame-duck session.",
     "key_actions": [
      "2026-03-25: Chaired the ENR hearing on the state of the bulk power system, a transmission and data-center cost discussion tied to the permitting talks",
      "2026-06-09: Pressed for National Historic Preservation Act changes in the talks, with limits on lawsuits as a priority",
      "2026-07-21: Said data center legislation was not currently a priority",
-     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act and posted the bill text on X"
+     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act and posted the bill text on X",
+     "2026-10-08: Reported by the Daily Caller News Foundation, citing the AP, as confident the Senate will pass the bill in a November lame-duck session"
     ],
     "sources": [
      {
@@ -325,6 +334,13 @@
       "publisher": "POLITICO",
       "url": "https://www.politico.com/newsletters/power-switch/2026/07/21/can-congress-get-behind-this-data-center-bill-01006436",
       "date": "2026-07-21"
+     },
+     {
+      "title": "Senators Want To Make AI Data Centers Pay For The Grid Upgrades Driving Up Your Electric Bill",
+      "publisher": "Daily Caller News Foundation",
+      "url": "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/",
+      "date": "2026-10-08",
+      "verified": true
      }
     ]
    }
@@ -630,14 +646,15 @@
    }
   },
   "jared-huffman": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 12 Heatmap interview.",
    "set": {
     "stance": "opposes",
-    "position": "Opposed the SPEED Act in committee and on the floor, calling the administration's posture on renewable permitting a 'war on renewable energy'. On September 30 he said most House Democrats will not support the Senate bill as written and urged them to resume talks after the midterms.",
+    "position": "Opposed the SPEED Act in committee and on the floor, calling the administration's posture on renewable permitting a 'war on renewable energy'. On September 30 he said most House Democrats will not support the Senate bill as written and urged them to resume talks after the midterms. On October 12 he told Heatmap that no one will vote on the bill before the election.",
     "key_actions": [
      "2025-11-20: Voiced opposition as the House Natural Resources Committee advanced the SPEED Act 25-18",
      "2025-12-17: Said the House deal on offshore wind language spoke volumes about the inability to deal with Trump's war on clean energy",
-     "2026-09-30: Said most House Democrats will not back the Senate bill as written and should reassess after the November 3 election"
+     "2026-09-30: Said most House Democrats will not back the Senate bill as written and should reassess after the November 3 election",
+     "2026-10-12: Told Heatmap no one will vote on the Senate bill until after the election and that its judgment-fund provision could pay developers without approving their projects"
     ],
     "sources": [
      {
@@ -665,6 +682,13 @@
       "publisher": "Heatmap News",
       "url": "https://heatmap.news/am/permitting-reform-baaja",
       "date": "2026-10-01"
+     },
+     {
+      "title": "Jared Huffman Wants to See Some Changes to the Senate's Permitting Bill",
+      "publisher": "Heatmap News",
+      "url": "https://heatmap.news/politics/jared-huffman-baaja",
+      "date": "2026-10-12",
+      "verified": true
      }
     ]
    }
@@ -855,6 +879,32 @@
   "daniel-palken": {
    "reason": "The Heatmap podcast page does not carry the transcript the research agent summarized; neither the quote nor the summary could be found on the page. His entry rests only on that episode.",
    "drop": true
+  },
+  "brett-guthrie": {
+   "reason": "Stance moved from neutral to mixed on 2026-10-07: at the Punchbowl Tech Summit he said he would love to see changes to the Senate bill's grid section, as posted by Punchbowl's Joshua Siegel. He has not endorsed or opposed the bill.",
+   "set": {
+    "stance": "mixed",
+    "position": "Backed the Ratepayer Protection Act as a way to build power for AI responsibly. POLITICO reported on Oct. 1 that he had not endorsed the Senate permitting bill. On Oct. 7 he said he would love to see changes to its grid section.",
+    "key_actions": [
+     "2026-06-24: Praised the Ratepayer Protection Act before the Energy and Commerce markup",
+     "2026-10-01: Reported by POLITICO as not yet endorsing the Senate deal",
+     "2026-10-07: Said at the Punchbowl Tech Summit that he would love to see changes to the Senate bill's grid section"
+    ],
+    "sources": [
+     {
+      "title": "The Mystery of the Ratepayer Protection Act",
+      "url": "https://heatmap.news/politics/ratepayer-protection-act-explained"
+     },
+     {
+      "title": "Senate bipartisan permitting deal faces a House buzz saw",
+      "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247"
+     },
+     {
+      "title": "X post by Joshua Siegel quoting Brett Guthrie",
+      "url": "https://x.com/SiegelScribe/status/2107892025182114178"
+     }
+    ]
+   }
   }
  },
  "media": {
@@ -899,6 +949,40 @@
   "2026-07-29-heatmap-shift-key-what-a-permitting-reform-deal-could-look-like": {
    "reason": "The Heatmap podcast page does not carry the transcript the research agent summarized; neither the quote nor the summary could be found on the page.",
    "drop": true
+  },
+  "2026-10-05-coalition-letter-opposing-permitting-package": {
+   "reason": "Positions page, 2026-10-18: letter metadata read from the PDF. The signature block lists 222 organizations; the letter itself gives no count.",
+   "set": {
+    "letter": {
+     "to": "Senate Minority Leader Schumer and House Minority Leader Jeffries",
+     "signer_count": 222,
+     "signers_sample": [
+      "Center for Biological Diversity",
+      "Food & Water Watch",
+      "Friends of the Earth Action",
+      "Greenpeace USA",
+      "Defenders of Wildlife",
+      "Earthworks",
+      "Clean Water Action",
+      "WildEarth Guardians"
+     ],
+     "ask": "Do not support or move the Senate permitting bill in the remaining months of this Congress."
+    }
+   }
+  },
+  "2026-04-16-welc-73-western-groups-no-deal-with-devil-on-permit-reform": {
+   "reason": "Positions page, 2026-10-18: letter metadata from the Western Environmental Law Center release. The sector value follows the vocabulary.",
+   "set": {
+    "sector": "environmental_group",
+    "letter": {
+     "to": "Schumer, Heinrich, Whitehouse and Jeffries",
+     "signer_count": 73,
+     "signers_sample": [
+      "Western Environmental Law Center"
+     ],
+     "ask": "Reconsider pursuing permitting legislation under the current Congress and administration."
+    }
+   }
   }
  }
 }

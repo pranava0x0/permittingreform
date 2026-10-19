@@ -53,3 +53,9 @@ Every sentence that says what the bill does ends in a small "p. N" link. It open
 
 Measured at 375×812, before and after: the next Senate vote moved from 1.1 screens down the Overview to the first screen; Data centers went from a swipe of the tab row plus a tap to one tap; a provision's critiques are two taps from the Overview (open the provision, then "What others say"); the readings block costs 0.73 screens on a section page with three rows shown.
 
+
+## Positions (2026-10-18)
+
+A fourth News subtab answers "who is for and against" on one page. Three blocks, in the order a reader asks: the letters and joint statements (date, stance, signer count, title; each opens to recipients, the ask, sample signers, the quote and the source), the voices on each issue (For, Against and Mixed under the issue's cited headline, four shown and the rest behind one chip), and a by-sector table whose counts link into the People page with the sector carried in the route. Only statements dated on or after the bill text's release count as voices on an issue; earlier statements were about prior bills or reform in general. The Overview carries one line, "Who's for and against: N support, N oppose", on its first screen; the letters count was left off because the line wraps at 375px with it.
+
+Measured at 375×812: the page is 3.1 screens with every row closed (the budget is 4), the first letter row sits on the first screen, and the first letter's signers are two taps from the Overview (the link, then the row), with the signers at 0.93 screens. No horizontal scroll at 375, 768 or 1280; the sector table is 640px wide at 768. Light and dark both render; the only sub-44px targets are inline text links and the masthead, which are exempt.

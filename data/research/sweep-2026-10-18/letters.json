@@ -1,0 +1,1039 @@
+{
+  "generated": "2026-10-18",
+  "agent": "letters-october-1-18",
+  "items": [
+    {
+      "id": "2026-10-07-epw-majority-what-theyre-saying",
+      "date": "2026-10-07",
+      "type": "gov_press_release",
+      "outlet": "U.S. Senate Committee on Environment and Public Works",
+      "title": "What They're Saying: Bipartisan Permitting Reform Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+      "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+      "verified": true,
+      "summary": "Majority roundup of supportive quotes from business, energy, labor, housing, county, state and think-tank groups on the bill. Quotes are the groups' own statements as reproduced by the committee.",
+      "stance": "supports",
+      "quote": {
+        "text": "The Bipartisan American Affordability and Jobs Act delivers cheaper energy, more well-paying jobs, and responsible growth by accelerating the permitting and construction of critical energy and infrastructure projects while maintaining key environmental and historic preservation safeguards.",
+        "speaker": "EPW majority press office"
+      },
+      "topics": [
+        "congress",
+        "permit-certainty",
+        "transmission",
+        "data-centers"
+      ],
+      "sector": "congress"
+    },
+    {
+      "id": "2026-10-09-heinrich-democrats-what-theyre-saying",
+      "date": "2026-10-09",
+      "type": "gov_press_release",
+      "outlet": "Senate Committee on Energy and Natural Resources (Democrats)",
+      "title": "What They're Saying: Heinrich's Bipartisan Permitting Reform Deal Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+      "url": "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/",
+      "verified": true,
+      "summary": "Democratic-side version of the supportive roundup, published October 9, with the same group quotes as the committee's October 7 release.",
+      "stance": "supports",
+      "quote": {
+        "text": "The Bipartisan American Affordability and Jobs Act delivers cheaper energy, more well-paying jobs, and responsible growth by accelerating the permitting and construction of critical energy and infrastructure projects while maintaining key environmental and historic preservation safeguards.",
+        "speaker": "Sen. Martin Heinrich's office (press release)"
+      },
+      "topics": [
+        "congress",
+        "permit-certainty",
+        "transmission"
+      ],
+      "sector": "congress"
+    },
+    {
+      "id": "2026-10-01-nga-statement-on-permitting-reform",
+      "date": "2026-10-01",
+      "type": "org_statement",
+      "outlet": "National Governors Association",
+      "author": "Brandon Tatum",
+      "title": "NGA Statement on Permitting Reform",
+      "url": "https://www.nga.org/?p=81333",
+      "verified": true,
+      "summary": "NGA's CEO, Brandon Tatum, issued a statement welcoming the bill's introduction and saying NGA will work with Congress on it.",
+      "stance": "supports",
+      "quote": {
+        "text": "The National Governors Association and its partners are encouraged by the introduction of the Bipartisan American Affordability and Jobs Act of 2026 and look forward to working with Congress to further develop this legislation.",
+        "speaker": "Brandon Tatum, NGA CEO"
+      },
+      "topics": [
+        "congress",
+        "permit-certainty"
+      ],
+      "sector": "state_local"
+    },
+    {
+      "id": "2026-10-01-republican-governors-joint-statement-permitting",
+      "date": "2026-10-01",
+      "type": "org_statement",
+      "outlet": "Missoulian (reprinting State of Montana Newsroom)",
+      "author": "State of Montana Newsroom",
+      "title": "Gianforte urges Congress to pass federal permitting reform",
+      "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
+      "verified": true,
+      "summary": "Montana Gov. Greg Gianforte said he joined 21 other governors in a joint statement urging Congress to pass permitting reform and send the bill to the President. The release describes the signers as Republican governors.",
+      "stance": "supports",
+      "quote": {
+        "text": "Republican governors are working every day to cut red tape, increase investment, and make our states the best places in the world to build, innovate, and do business.",
+        "speaker": "Joint statement of Republican governors (Gov. Greg Gianforte, Montana)"
+      },
+      "topics": [
+        "congress",
+        "permit-certainty",
+        "white-house"
+      ],
+      "sector": "state_local",
+      "letter": {
+        "to": "Congress",
+        "signer_count": 22,
+        "signers_sample": [
+          "Greg Gianforte (MT)",
+          "Kay Ivey (AL)",
+          "Brian Kemp (GA)",
+          "Mike Braun (IN)",
+          "Kevin Stitt (OK)",
+          "Henry McMaster (SC)",
+          "Bill Lee (TN)",
+          "Patrick Morrisey (WV)"
+        ],
+        "ask": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk."
+      }
+    },
+    {
+      "id": "2026-10-01-nahb-applauds-bipartisan-permitting-bill",
+      "date": "2026-10-01",
+      "type": "org_statement",
+      "outlet": "NAHB",
+      "author": "Bill Owens",
+      "title": "NAHB Applauds Bipartisan American Affordability and Jobs Act",
+      "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act",
+      "verified": true,
+      "summary": "NAHB's chairman praised the four sponsors for crafting the most meaningful federal permitting reforms in decades.",
+      "stance": "supports",
+      "quote": {
+        "text": "NAHB applauds Senators Lee, Capito, Heinrich and Whitehouse and for their leadership and bipartisan approach to crafting the most meaningful reforms in decades to several key federal environmental permitting programs.",
+        "speaker": "Bill Owens, NAHB chairman"
+      },
+      "topics": [
+        "permit-certainty",
+        "clean-water-act"
+      ],
+      "sector": "trade_association"
+    },
+    {
+      "id": "2026-10-07-heatmap-ibew-yet-to-endorse",
+      "date": "2026-10-07",
+      "type": "news",
+      "outlet": "Heatmap News",
+      "title": "The Crucial Hardhat Union That Has Yet to Endorse the Permitting Bill",
+      "url": "https://heatmap.news/politics/baaja-ibew-unions",
+      "verified": true,
+      "summary": "Heatmap reports the IBEW has not endorsed the bill. An IBEW spokesperson said the union is reviewing the language and holding discussions with stakeholders.",
+      "stance": "reporting",
+      "quote": {
+        "text": "reviewing the language and holding discussions with stakeholders across our industries.",
+        "speaker": "IBEW spokesperson (unnamed)"
+      },
+      "topics": [
+        "congress",
+        "transmission",
+        "data-centers"
+      ],
+      "sector": "media"
+    },
+    {
+      "id": "2026-10-08-naco-county-advocacy-hub",
+      "date": "2026-10-08",
+      "type": "org_statement",
+      "outlet": "National Association of Counties",
+      "title": "Bipartisan American Affordability and Jobs Act of 2026: Permitting Reform County Advocacy Hub",
+      "url": "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub",
+      "verified": true,
+      "summary": "NACo's advocacy hub, published October 8, summarizes the bill's county provisions, including a guarantee of cooperating-agency status for counties in NEPA reviews, and gives a template letter urging senators to support it.",
+      "stance": "supports",
+      "quote": {
+        "text": "Contact your senators and urge them to support the Bipartisan American Affordability and Jobs Act of 2026",
+        "speaker": "National Association of Counties (advocacy hub)"
+      },
+      "topics": [
+        "nepa",
+        "congress",
+        "permit-certainty"
+      ],
+      "sector": "state_local"
+    },
+    {
+      "id": "2026-10-06-cbd-fof-200-conservation-groups-esa-letter",
+      "date": "2026-10-06",
+      "type": "org_statement",
+      "outlet": "Common Dreams (newswire, reprinting Center for Biological Diversity release)",
+      "author": "Center for Biological Diversity; Friends of the Earth",
+      "title": "Hundreds of Organizations Oppose Endangered Species Attacks in Permitting Legislation",
+      "url": "https://www.commondreams.org/newswire/hundreds-of-organizations-oppose-endangered-species-attacks-in-permitting-legislation",
+      "verified": true,
+      "summary": "More than 200 conservation organizations sent a letter urging Congress to oppose the bill over its Endangered Species Act provisions. The release was issued by the Center for Biological Diversity and Friends of the Earth.",
+      "stance": "opposes",
+      "quote": {
+        "text": "The bill includes sweeping attacks on the Endangered Species Act that would gut protections for nearly every endangered species across the country.",
+        "speaker": "Center for Biological Diversity and Friends of the Earth (joint release)"
+      },
+      "topics": [
+        "esa",
+        "congress",
+        "courts"
+      ],
+      "sector": "environmental_group",
+      "letter": {
+        "to": "Congress",
+        "signer_count": 200,
+        "signers_sample": [
+          "Center for Biological Diversity",
+          "Friends of the Earth US"
+        ],
+        "ask": "Oppose the Bipartisan American Affordability and Jobs Act of 2026 over its Endangered Species Act provisions."
+      }
+    },
+    {
+      "id": "2026-10-15-narf-tribal-analysis-act-now",
+      "date": "2026-10-15",
+      "type": "org_statement",
+      "outlet": "Native American Rights Fund",
+      "author": "Native American Rights Fund",
+      "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes",
+      "url": "https://narf.org/baaja-reform-bill/",
+      "verified": true,
+      "summary": "NARF's October 15 page reports that NARF and eight other Tribal organizations sent an October 9 letter asking Senate leaders to remove provisions that would weaken protections for sacred places, and links the joint letter.",
+      "stance": "opposes",
+      "quote": {
+        "text": "The BAAJA severely weakens Tribal opportunities to engage as sovereign governments, curtails Tribal consultation requirements, and restricts access to legal recourse in court.",
+        "speaker": "Native American Rights Fund"
+      },
+      "topics": [
+        "tribal",
+        "historic-preservation",
+        "esa",
+        "nepa"
+      ],
+      "sector": "environmental_group",
+      "letter": {
+        "to": "Senate leaders",
+        "signer_count": 9,
+        "signers_sample": [
+          "Native American Rights Fund",
+          "National Association of Tribal Historic Preservation Officers"
+        ],
+        "ask": "Remove provisions of the bill that would weaken protections for sacred places."
+      }
+    },
+    {
+      "id": "2026-10-13-cbd-185-groups-back-door-deal-letter",
+      "date": "2026-10-13",
+      "type": "org_statement",
+      "outlet": "Center for Biological Diversity",
+      "title": "185 Groups Slam Permitting Bill's Sweetheart Deal for Data Centers",
+      "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+      "verified": true,
+      "summary": "A coalition of 185 groups urged congressional leaders to oppose the bill, calling it a 'back-door deal' to drive buildout of AI data centers and fossil fuel infrastructure. The release lists the coalition's leading groups; the letter PDF was not readable.",
+      "stance": "opposes",
+      "quote": {
+        "text": "A coalition of 185 community, labor, climate and environmental justice organizations today urged congressional leaders to oppose anti-environmental permitting legislation.",
+        "speaker": "Center for Biological Diversity (press release)"
+      },
+      "topics": [
+        "data-centers",
+        "fossil",
+        "congress",
+        "clean-water-act",
+        "nepa"
+      ],
+      "sector": "environmental_group",
+      "letter": {
+        "to": "congressional leaders (release); House Democratic leadership (Washington Sun)",
+        "signer_count": 185,
+        "signers_sample": [
+          "AI Now Institute",
+          "Center for Biological Diversity",
+          "Climate Justice Alliance",
+          "Food & Water Watch",
+          "Free Press Action",
+          "GreenLatinos",
+          "Indigenous Environmental Network",
+          "MediaJustice"
+        ],
+        "ask": "Oppose anti-environmental permitting legislation, which the release identifies as the Bipartisan American Affordability and Jobs Act."
+      }
+    },
+    {
+      "id": "2026-10-13-wicker-weekly-report-landmark-permit-reform",
+      "date": "2026-10-13",
+      "type": "gov_press_release",
+      "outlet": "U.S. Senator Roger Wicker (weekly report)",
+      "author": "Sen. Roger Wicker",
+      "title": "Wicker Backs Landmark Permit Reform Bill",
+      "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
+      "verified": true,
+      "summary": "Sen. Wicker's weekly report backs the bill as landmark permit reform, saying it would shorten the window for climate litigation to 150 days and narrow Clean Water Act reviews.",
+      "stance": "supports",
+      "quote": {
+        "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
+        "speaker": "Sen. Roger Wicker (R-MS)"
+      },
+      "topics": [
+        "congress",
+        "permit-certainty",
+        "nepa",
+        "clean-water-act"
+      ],
+      "sector": "congress"
+    },
+    {
+      "id": "2026-10-14-save-the-manatee-opposition-statement",
+      "date": "2026-10-14",
+      "type": "org_statement",
+      "outlet": "Save the Manatee Club",
+      "author": "Save the Manatee Club",
+      "title": "Opposition Statement: S. 5653, Bipartisan American Affordability and Jobs Act of 2026",
+      "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+      "verified": true,
+      "summary": "The club opposes S. 5653 and urges all members of Congress, especially the Florida Delegation, to oppose it.",
+      "stance": "opposes",
+      "quote": {
+        "text": "We respectfully urge all members of Congress, especially the Florida Delegation, to oppose this dangerous legislation.",
+        "speaker": "Save the Manatee Club"
+      },
+      "topics": [
+        "esa",
+        "nepa",
+        "clean-water-act",
+        "offshore",
+        "data-centers"
+      ],
+      "sector": "environmental_group"
+    },
+    {
+      "id": "2026-10-15-npr-section-106-threat-anniversary",
+      "date": "2026-10-15",
+      "type": "news",
+      "outlet": "NPR",
+      "author": "NPR",
+      "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+      "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
+      "verified": true,
+      "summary": "NPR reports the bill's Section 106 provisions as the biggest threat to historic preservation review in 60 years, quotes NATHPO's executive director, and reports that a letter from NATHPO and other tribal groups went to Senate leaders the prior week.",
+      "stance": "reporting",
+      "quote": {
+        "text": "It will effectively rewrite the National Historic Preservation Act in ways that, for all intents and purposes, gut its meaning and protections for hundreds of thousands of sites across the country,",
+        "speaker": "Greg Werkheiser, Cultural Heritage Partners"
+      },
+      "topics": [
+        "historic-preservation",
+        "tribal",
+        "congress"
+      ],
+      "sector": "media"
+    },
+    {
+      "id": "2026-10-15-washington-sun-permitting-scrambling-left",
+      "date": "2026-10-15",
+      "type": "news",
+      "outlet": "The Washington Sun",
+      "author": "The Washington Sun",
+      "title": "Permitting Reform Is Scrambling the Left",
+      "url": "https://www.washingtonsun.com/energy-environment/climate-green-groups-reform-scrambling-left-democrats",
+      "verified": true,
+      "summary": "The Washington Sun reports that major green groups have hedged on the bill, and that the Sierra Club's stance is a marked departure from its earlier criticism. It reports a letter from 185 organizations to House Democratic leadership.",
+      "stance": "reporting",
+      "quote": {
+        "text": "Major green groups — the League of Conservation Voters, the Sierra Club, the Environmental Defense Fund, the Natural Resources Defense Council — have hedged.",
+        "speaker": "The Washington Sun (reporting)"
+      },
+      "topics": [
+        "congress",
+        "fossil",
+        "clean-water-act",
+        "esa"
+      ],
+      "sector": "media"
+    },
+    {
+      "id": "2026-10-15-106-strong-coalition-launch-letter",
+      "date": "2026-10-15",
+      "type": "org_statement",
+      "outlet": "106 Strong (Cultural Heritage Partners)",
+      "title": "On Historic Preservation Law's 60th Anniversary, 1,000 Organizations Launch Campaign to Defend America's Heritage",
+      "url": "https://www.106strong.com/60th-anniversary-press-release",
+      "verified": true,
+      "summary": "The 106 Strong coalition launched on the NHPA's 60th anniversary with 1,000 participating organizations and Tribal Nations, and delivered a letter to Congress calling for the defeat of S. 5653. The coalition's count is its own.",
+      "stance": "opposes",
+      "quote": {
+        "text": "Section 106 asks our government to do something profoundly reasonable: stop, look, and listen before destroying places Americans value,",
+        "speaker": "Greg Werkheiser"
+      },
+      "topics": [
+        "historic-preservation",
+        "tribal",
+        "congress"
+      ],
+      "sector": "environmental_group",
+      "letter": {
+        "to": "Congress",
+        "signer_count": 1000,
+        "signers_sample": [
+          "National Association of Tribal Historic Preservation Officers"
+        ],
+        "ask": "Defeat S. 5653, which the letter says would remove the public's voice from Section 106 review and attack Tribal sovereignty."
+      }
+    },
+    {
+      "id": "2026-10-15-us-chamber-support-permitting-bill",
+      "date": "2026-10-15",
+      "type": "org_statement",
+      "outlet": "U.S. Chamber of Commerce",
+      "title": "Support for the Bipartisan American Affordability and Jobs Act of 2026",
+      "url": "https://www.uschamber.com/infrastructure/support-for-the-bipartisan-american-affordability-and-jobs-act-of-2026",
+      "verified": true,
+      "summary": "The Chamber's support page backs the bill and urges Congress to pass it.",
+      "stance": "supports",
+      "quote": {
+        "text": "The Bipartisan American Affordability and Jobs Act of 2026 is a once-in-a-generation opportunity to fix our broken permitting system.",
+        "speaker": "U.S. Chamber of Commerce (support page)"
+      },
+      "topics": [
+        "congress",
+        "permit-certainty"
+      ],
+      "sector": "trade_association"
+    },
+    {
+      "id": "2026-10-16-asa-supports-permitting-reform-letter",
+      "date": "2026-10-16",
+      "type": "org_statement",
+      "outlet": "Supply House Times",
+      "author": "American Supply Association",
+      "title": "ASA Supports Bipartisan Permitting Reform to Strengthen U.S. Manufacturing",
+      "url": "https://www.supplyht.com/articles/107521-asa-supports-bipartisan-permitting-reform-to-strengthen-us-manufacturing",
+      "verified": true,
+      "summary": "The American Supply Association says it joined a coalition including the National Association of Manufacturers in a letter to Senate Majority Leader Thune and Minority Leader Schumer urging them to bring the bill to the floor without delay.",
+      "stance": "supports",
+      "quote": {
+        "text": "Our members need reliable energy and water infrastructure, along with policies that spur investment.",
+        "speaker": "Steve Rossi, ASA VP of Advocacy"
+      },
+      "topics": [
+        "congress",
+        "permit-certainty"
+      ],
+      "sector": "trade_association",
+      "letter": {
+        "to": "Senate Majority Leader John Thune and Senate Minority Leader Chuck Schumer",
+        "signers_sample": [
+          "American Supply Association",
+          "National Association of Manufacturers"
+        ],
+        "ask": "Bring the measure to the Senate floor without delay."
+      }
+    },
+    {
+      "id": "2026-10-05-third-way-statement-environmental-opposition",
+      "date": "2026-10-05",
+      "type": "org_statement",
+      "outlet": "Third Way",
+      "title": "Statement from Climate and Energy SVP Josh Freed on Environmental Group Opposition to Bipartisan Permitting Deal",
+      "url": "https://www.thirdway.org/press/statement-from-climate-and-energy-svp-josh-freed-on-environmental-group-opposition-to-bipartisan-permitting-deal",
+      "verified": true,
+      "summary": "Third Way's climate and energy SVP responds to environmental-group opposition, arguing the bill would mainly benefit transmission and clean energy expansion.",
+      "stance": "supports",
+      "quote": {
+        "text": "This opposition ignores the fact that the bill will be overwhelmingly beneficial to transmission and clean energy expansion in the United States.",
+        "speaker": "Third Way (press statement, Josh Freed)"
+      },
+      "topics": [
+        "transmission",
+        "congress"
+      ],
+      "sector": "think_tank"
+    }
+  ],
+  "events": [
+    {
+      "id": "2026-10-01-republican-governors-joint-statement",
+      "date": "2026-10-01",
+      "title": "22 Republican governors issue joint statement urging Congress to pass permitting bill",
+      "branch": "states",
+      "summary": "Montana Gov. Greg Gianforte and 21 other Republican governors issued a joint statement urging Congress to pass the bill and send it to President Trump's desk. The release says the 21 others join Gianforte, for 22 signers in total.",
+      "significance": "A bloc of governors endorsing the bill signals state-level support from one party only.",
+      "actors": [
+        "Greg Gianforte",
+        "Republican governors (22)"
+      ],
+      "topics": [
+        "congress",
+        "permit-certainty",
+        "white-house"
+      ],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "Gianforte urges Congress to pass federal permitting reform",
+          "publisher": "Missoulian",
+          "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
+          "date": "2026-10-01",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": "2026-10-06-200-conservation-groups-esa-letter",
+      "date": "2026-10-06",
+      "title": "More than 200 conservation groups letter urges Congress to oppose bill over ESA",
+      "branch": "other",
+      "summary": "More than 200 conservation organizations sent a letter urging Congress to oppose the bill, citing its Endangered Species Act title, including a weakened 'best available science' mandate and state-run Section 7 consultations. The Center for Biological Diversity and Friends of the Earth issued the release.",
+      "significance": "A separate conservation letter from the 185-group letter of October 13 and the 200+ letter of October 5, which is held.",
+      "actors": [
+        "Center for Biological Diversity",
+        "Friends of the Earth"
+      ],
+      "topics": [
+        "esa",
+        "congress"
+      ],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "Hundreds of Organizations Oppose Endangered Species Attacks in Permitting Legislation",
+          "publisher": "Common Dreams (newswire)",
+          "url": "https://www.commondreams.org/newswire/hundreds-of-organizations-oppose-endangered-species-attacks-in-permitting-legislation",
+          "date": "2026-10-06",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": "2026-10-09-tribal-organizations-letter-sacred-places",
+      "date": "2026-10-09",
+      "title": "NARF and eight tribal organizations urge Senate leaders to strip sacred-places provisions",
+      "branch": "other",
+      "summary": "In an October 9 letter, NARF and eight other Tribal organizations asked Senate leaders to remove provisions of the bill that would weaken protections for sacred places. NPR reported that NATHPO and other tribal groups sent a letter to Senate leaders the prior week.",
+      "significance": "Targets the bill's National Historic Preservation Act title, including Section 106 consultation changes.",
+      "actors": [
+        "Native American Rights Fund",
+        "National Association of Tribal Historic Preservation Officers"
+      ],
+      "topics": [
+        "tribal",
+        "historic-preservation"
+      ],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes",
+          "publisher": "Native American Rights Fund",
+          "url": "https://narf.org/baaja-reform-bill/",
+          "date": "2026-10-15",
+          "verified": true
+        },
+        {
+          "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+          "publisher": "NPR",
+          "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
+          "date": "2026-10-15",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": "2026-10-13-185-groups-back-door-deal-letter",
+      "date": "2026-10-13",
+      "title": "185 groups send congressional leaders letter opposing permitting bill as a back-door deal",
+      "branch": "other",
+      "summary": "A coalition of 185 community, labor, climate and environmental justice organizations urged congressional leaders to oppose the bill, calling it a back-door deal to drive a buildout of hyperscale AI data centers and fossil fuel infrastructure.",
+      "significance": "Addressee differs by source: the release says congressional leaders, and the Washington Sun says House Democratic leadership. The letter PDF was not readable, so the addressee and signer list are unverified beyond the release.",
+      "actors": [
+        "Center for Biological Diversity",
+        "Food & Water Watch",
+        "Third Act"
+      ],
+      "topics": [
+        "data-centers",
+        "fossil",
+        "congress"
+      ],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "185 Groups Slam Permitting Bill's Sweetheart Deal for Data Centers",
+          "publisher": "Center for Biological Diversity",
+          "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+          "date": "2026-10-13",
+          "verified": true
+        },
+        {
+          "title": "Permitting Reform Is Scrambling the Left",
+          "publisher": "The Washington Sun",
+          "url": "https://www.washingtonsun.com/energy-environment/climate-green-groups-reform-scrambling-left-democrats",
+          "date": "2026-10-15",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": "2026-10-15-106-strong-launch-letter-to-congress",
+      "date": "2026-10-15",
+      "title": "106 Strong coalition launches with 1,000 organizations and urges Congress to defeat S. 5653",
+      "branch": "other",
+      "summary": "On the NHPA's 60th anniversary, the 106 Strong coalition launched with 1,000 organizations and Tribal Nations, and delivered a letter to Congress calling for the defeat of S. 5653.",
+      "significance": "The coalition's Section 106 campaign began in August with a letter of 600+ organizations (not in this window); the October figure is the coalition's own count.",
+      "actors": [
+        "106 Strong",
+        "Greg Werkheiser",
+        "Ira Matt"
+      ],
+      "topics": [
+        "historic-preservation",
+        "tribal",
+        "congress"
+      ],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "On Historic Preservation Law's 60th Anniversary, 1,000 Organizations Launch Campaign to Defend America's Heritage",
+          "publisher": "EIN Presswire",
+          "url": "https://www.einpresswire.com/article/949710226/on-historic-preservation-law-s-60th-anniversary-1-000-organizations-launch-campaign-to-defend-america-s-heritage",
+          "date": "2026-10-15",
+          "verified": true
+        },
+        {
+          "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+          "publisher": "NPR",
+          "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
+          "date": "2026-10-15",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": "2026-10-16-asa-joins-coalition-letter-to-thune-schumer",
+      "date": "2026-10-16",
+      "title": "American Supply Association joins coalition letter urging Thune and Schumer to bring bill to floor",
+      "branch": "other",
+      "summary": "The American Supply Association said it joined a coalition, including the National Association of Manufacturers, in a letter to Senate Majority Leader John Thune and Minority Leader Chuck Schumer urging them to bring the bill to the floor without delay.",
+      "significance": "Adds a trade-association signatory to the NAM-led business push; the letter's own signer count is not stated on the ASA page.",
+      "actors": [
+        "American Supply Association",
+        "National Association of Manufacturers"
+      ],
+      "topics": [
+        "congress",
+        "permit-certainty"
+      ],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "ASA Supports Bipartisan Permitting Reform to Strengthen U.S. Manufacturing",
+          "publisher": "Supply House Times",
+          "url": "https://www.supplyht.com/articles/107521-asa-supports-bipartisan-permitting-reform-to-strengthen-us-manufacturing",
+          "date": "2026-10-16",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": "2026-10-08-naco-county-advocacy-hub-launch",
+      "date": "2026-10-08",
+      "title": "NACo publishes county advocacy hub urging counties to contact senators on the bill",
+      "branch": "other",
+      "summary": "The National Association of Counties published a permitting reform advocacy hub for the bill, urging county leaders to contact their senators, and noting the bill would guarantee counties cooperating-agency status in NEPA reviews.",
+      "significance": "Counties are one of the few local-government groups with a published position in this window.",
+      "actors": [
+        "National Association of Counties"
+      ],
+      "topics": [
+        "nepa",
+        "congress"
+      ],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "Bipartisan American Affordability and Jobs Act of 2026: Permitting Reform County Advocacy Hub",
+          "publisher": "National Association of Counties",
+          "url": "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub",
+          "date": "2026-10-08",
+          "verified": true
+        }
+      ]
+    },
+    {
+      "id": "2026-10-07-ibew-still-reviewing-bill",
+      "date": "2026-10-07",
+      "title": "IBEW says it is still reviewing bill language and has not endorsed",
+      "branch": "other",
+      "summary": "An IBEW spokesperson told Heatmap the union is reviewing the language and holding discussions with stakeholders across its industries. Heatmap reports the union has not endorsed the bill.",
+      "significance": "Utility and transmission labor is the open labor question in the House, per Heatmap.",
+      "actors": [
+        "IBEW"
+      ],
+      "topics": [
+        "congress",
+        "transmission"
+      ],
+      "milestone": false,
+      "sources": [
+        {
+          "title": "The Crucial Hardhat Union That Has Yet to Endorse the Permitting Bill",
+          "publisher": "Heatmap News",
+          "url": "https://heatmap.news/politics/baaja-ibew-unions",
+          "date": "2026-10-07",
+          "verified": true
+        }
+      ]
+    }
+  ],
+  "people": [
+    {
+      "id": "brandon-tatum",
+      "name": "Brandon Tatum",
+      "role": "CEO",
+      "affiliation": "National Governors Association",
+      "sector": "state_local",
+      "inside_government": false,
+      "stance": "supports",
+      "position": "NGA said it is encouraged by the bill's introduction and will work with Congress to develop it, citing state experience with federal reform.",
+      "key_actions": [
+        "2026-10-01: NGA statement on the bill's introduction"
+      ],
+      "quote": {
+        "text": "The National Governors Association and its partners are encouraged by the introduction of the Bipartisan American Affordability and Jobs Act of 2026 and look forward to working with Congress to further develop this legislation.",
+        "source_url": "https://www.nga.org/?p=81333"
+      },
+      "sources": [
+        {
+          "title": "NGA Statement on Permitting Reform",
+          "url": "https://www.nga.org/?p=81333"
+        }
+      ]
+    },
+    {
+      "id": "bill-owens",
+      "name": "Bill Owens",
+      "role": "Chairman",
+      "affiliation": "National Association of Home Builders",
+      "sector": "trade_association",
+      "inside_government": false,
+      "stance": "supports",
+      "position": "NAHB's chairman applauded the four sponsors for crafting the most meaningful federal permitting reforms in decades, citing Clean Water Act nationwide-permit changes.",
+      "key_actions": [
+        "2026-10-01: NAHB statement after the bill's release"
+      ],
+      "quote": {
+        "text": "NAHB applauds Senators Lee, Capito, Heinrich and Whitehouse and for their leadership and bipartisan approach to crafting the most meaningful reforms in decades to several key federal environmental permitting programs.",
+        "source_url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act"
+      },
+      "sources": [
+        {
+          "title": "NAHB Applauds Bipartisan American Affordability and Jobs Act",
+          "url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act"
+        }
+      ]
+    },
+    {
+      "id": "joshua-bolten",
+      "name": "Joshua Bolten",
+      "role": "CEO",
+      "affiliation": "Business Roundtable",
+      "sector": "trade_association",
+      "inside_government": false,
+      "stance": "supports",
+      "position": "Bolten, as quoted in the EPW roundup, says the bill gives businesses the certainty they need to invest, build and grow.",
+      "key_actions": [
+        "2026-10-07: quoted in the EPW majority roundup of supportive statements"
+      ],
+      "quote": {
+        "text": "Business Roundtable strongly supports the Bipartisan American Affordability and Jobs Act of 2026.",
+        "source_url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth"
+      },
+      "sources": [
+        {
+          "title": "What They're Saying: Bipartisan Permitting Reform Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+          "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth"
+        }
+      ]
+    },
+    {
+      "id": "xan-fishman",
+      "name": "Xan Fishman",
+      "role": "Vice President, Energy",
+      "affiliation": "Bipartisan Policy Center",
+      "sector": "think_tank",
+      "inside_government": false,
+      "stance": "supports",
+      "position": "Fishman, of the Bipartisan Policy Center, said he is optimistic the bill can be signed into law this year.",
+      "key_actions": [
+        "2026-10-07: quoted in the EPW majority roundup of supportive statements"
+      ],
+      "quote": {
+        "text": "This bill would fix our permitting processes so that we can review and build efficiently, reducing costs, improving quality of life, growing our economy, and improving economic outcomes.",
+        "source_url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth"
+      },
+      "sources": [
+        {
+          "title": "What They're Saying: Bipartisan Permitting Reform Will Deliver Cheaper Energy, More Jobs, Responsible Growth",
+          "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth"
+        }
+      ]
+    },
+    {
+      "id": "ira-matt",
+      "name": "Ira Matt (Séliš)",
+      "role": "Executive Director",
+      "affiliation": "National Association of Tribal Historic Preservation Officers",
+      "sector": "state_local",
+      "inside_government": false,
+      "stance": "opposes",
+      "position": "Matt said the proposed Section 106 changes are an affront to Tribal sovereignty and would erode decades of progress in recognizing Tribal rights.",
+      "key_actions": [
+        "2026-10-15: quoted in the 106 Strong launch release",
+        "2026-10-15: NPR reports NATHPO's opposition and a tribal letter to Senate leaders the prior week"
+      ],
+      "quote": {
+        "text": "The proposed changes are an affront to Tribal sovereignty and would erode decades of progress in recognizing Tribal rights.",
+        "source_url": "https://www.106strong.com/60th-anniversary-press-release"
+      },
+      "sources": [
+        {
+          "title": "On Historic Preservation Law's 60th Anniversary, 1,000 Organizations Launch Campaign",
+          "url": "https://www.106strong.com/60th-anniversary-press-release"
+        },
+        {
+          "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+          "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary"
+        }
+      ]
+    },
+    {
+      "id": "greg-werkheiser",
+      "name": "Greg Werkheiser",
+      "role": "Co-founder, Cultural Heritage Partners; organizer of 106 Strong",
+      "affiliation": "Cultural Heritage Partners",
+      "sector": "environmental_group",
+      "inside_government": false,
+      "stance": "opposes",
+      "position": "Werkheiser said the bill would effectively rewrite the NHPA and gut its protections for hundreds of thousands of sites.",
+      "key_actions": [
+        "2026-10-15: launched the 106 Strong coalition with 1,000 organizations and a letter to Congress"
+      ],
+      "quote": {
+        "text": "It will effectively rewrite the National Historic Preservation Act in ways that, for all intents and purposes, gut its meaning and protections for hundreds of thousands of sites across the country,",
+        "source_url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary"
+      },
+      "sources": [
+        {
+          "title": "U.S. historic preservation law faces the most serious threat in its 60-year history",
+          "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary"
+        }
+      ]
+    },
+    {
+      "id": "bill-mckibben",
+      "name": "Bill McKibben",
+      "role": "Co-founder",
+      "affiliation": "Third Act",
+      "sector": "environmental_group",
+      "inside_government": false,
+      "stance": "opposes",
+      "position": "McKibben said it would be highly ironic if Congress's first action after an election defined by opposition to data centers were to make them easier to build.",
+      "key_actions": [
+        "2026-10-13: quoted in the CBD-led 185-group release"
+      ],
+      "quote": {
+        "text": "It would be highly ironic if the first action Congress took after an election largely defined by opposition to data centers would be to make it easier to build them,",
+        "source_url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/"
+      },
+      "sources": [
+        {
+          "title": "185 Groups Slam Permitting Bill's Sweetheart Deal for Data Centers",
+          "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/"
+        }
+      ]
+    },
+    {
+      "id": "roger-wicker",
+      "name": "Roger Wicker",
+      "role": "U.S. Senator (R-MS)",
+      "affiliation": "U.S. Senate",
+      "sector": "congress",
+      "party": "R",
+      "inside_government": true,
+      "stance": "supports",
+      "position": "Wicker's weekly report calls the bill landmark permit reform that would fundamentally update how the government approves energy and infrastructure projects.",
+      "key_actions": [
+        "2026-10-13: weekly report backing the bill as landmark permit reform"
+      ],
+      "quote": {
+        "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
+        "source_url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/"
+      },
+      "sources": [
+        {
+          "title": "Wicker Backs Landmark Permit Reform Bill",
+          "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/"
+        }
+      ]
+    }
+  ],
+  "not_found": [
+    {
+      "target": "NAM-led 100+ manufacturing and business groups letter to Thune and Schumer (nam.org)",
+      "route": "curl (403); WebFetch summary only",
+      "reason": "walled",
+      "note": "WebFetch summary says dated Oct 14, addressed to Thune and Schumer, 100+ groups, signers in a linked PDF. Not verified as text, so not shipped as an item. The ASA item cites the same coalition letter."
+    },
+    {
+      "target": "Punchbowl: pressure on Schumer and Jeffries to reject permitting reform (punchbowl.news/article/energy/schumer-jeffries-permitting-reform/)",
+      "route": "not opened",
+      "reason": "walled",
+      "note": "Expected 403 to scripts; relates to the held Oct 5 200+ letter."
+    },
+    {
+      "target": "Punchbowl: Heinrich faces backlash from tribes (punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/)",
+      "route": "not opened",
+      "reason": "walled"
+    },
+    {
+      "target": "Washington Times, Oct 14: Rush to cut permitting red tape runs into law to protect America's historic sites",
+      "route": "not opened",
+      "reason": "walled",
+      "note": "Brief lists washingtontimes.com as walled."
+    },
+    {
+      "target": "Tribal joint letter to Senate leaders, Oct 9 (usetinc.org ...Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title...10_9_26.pdf)",
+      "route": "curl 403; WebFetch returned compressed PDF binary",
+      "reason": "walled",
+      "note": "Addressees, full signer list and the request sentence not extracted. Signers beyond NARF are from NPR's 'NATHPO and other tribal groups' and the 106 Strong release."
+    },
+    {
+      "target": "CBD 185-group letter PDF (biologicaldiversity.org/programs/government-affairs/pdfs/Group-Data-Center-Permitting-Reform-Opposition-Letter.pdf)",
+      "route": "WebFetch returned binary PDF",
+      "reason": "unreadable",
+      "note": "Addressee and signer count taken from the release and the Washington Sun, not the letter."
+    },
+    {
+      "target": "Earthjustice / Abigail Dillen statement on transmission provisions, Oct 1",
+      "route": "earthjusticeaction.org curl 403; web search",
+      "reason": "walled",
+      "note": "Search found only 2022 and 2023 Earthjustice items."
+    },
+    {
+      "target": "NRDC statement, Oct 6 to 18",
+      "route": "web search",
+      "reason": "null",
+      "note": "Only the held Sep 30 and Oct 2 NRDC items. Manish Bapna quote appears only in a search snippet, not shipped."
+    },
+    {
+      "target": "Sierra Club national, Oct 6 to 18 (Holly Bender blog post)",
+      "route": "web search",
+      "reason": "null",
+      "note": "Washington Sun (Oct 15) says the post appeared 'last week'. Post not located or fetched."
+    },
+    {
+      "target": "Environmental Defense Fund statement on the bill",
+      "route": "web search (2 queries)",
+      "reason": "null"
+    },
+    {
+      "target": "Clean Air Task Force, Evergreen Action, Sunrise Movement statements",
+      "route": "web search",
+      "reason": "null"
+    },
+    {
+      "target": "Conservation Law Foundation (Brad Campbell 'fossil fuel industry wish-list')",
+      "route": "web search snippet only",
+      "reason": "not fetched",
+      "note": "Quote seen only in AP and Inside Climate News search snippets; CLF's own page not located."
+    },
+    {
+      "target": "Theodore Roosevelt Conservation Partnership, Outdoor Alliance, The Wilderness Society, National Parks Conservation Association, More Than Just Parks",
+      "route": "one combined web search",
+      "reason": "null",
+      "note": "No statement found. BHA results were older bills, not this one. Individual site searches not run."
+    },
+    {
+      "target": "Backcountry Hunters & Anglers position on S. 5653",
+      "route": "web search",
+      "reason": "null"
+    },
+    {
+      "target": "EEI, NRECA, APPA statements on transmission backstop and data-center provisions",
+      "route": "web search",
+      "reason": "null",
+      "note": "Only EEI quoted second-hand in Heatmap (Oct 7, 'encouraged', 'reviewing'). Only APPA/NRECA item found is a Nov 2024 letter on S. 4753."
+    },
+    {
+      "target": "NABTU, AFL-CIO statements on the bill",
+      "route": "web search",
+      "reason": "null",
+      "note": "Heatmap says the building trades mostly support; LIUNA is held. IBEW item shipped."
+    },
+    {
+      "target": "Data Center Coalition statement",
+      "route": "web search",
+      "reason": "null",
+      "note": "Axios Oct 8 item reports the coalition is reviewing; axios.com returned 403."
+    },
+    {
+      "target": "AGA and INGAA statements",
+      "route": "web search",
+      "reason": "null"
+    },
+    {
+      "target": "API letter of support (api.org PDF, dated Sep 30)",
+      "route": "curl (fetched)",
+      "reason": "out of window",
+      "note": "Dated Sep 30, before the Oct 1 window; not shipped."
+    },
+    {
+      "target": "Advanced Energy United (Heather O'Neill) 2026 statement",
+      "route": "web search",
+      "reason": "null",
+      "note": "Results were 2025 reconciliation-bill statements. Spokesperson Adam Winer quote is shipped via Utility Dive."
+    },
+    {
+      "target": "Progressive Policy Institute (Colin Mortimer) and Searchlight Institute commentary",
+      "route": "web search",
+      "reason": "null",
+      "note": "Not located; not in the EPW roundup text either."
+    },
+    {
+      "target": "State attorneys general letter",
+      "route": "web search",
+      "reason": "null"
+    },
+    {
+      "target": "National League of Cities; U.S. Conference of Mayors",
+      "route": "web search",
+      "reason": "null",
+      "note": "USCM releases found address other bills."
+    },
+    {
+      "target": "Section 106 coalition open letter (culturalheritagepartners.com)",
+      "route": "web search snippet",
+      "reason": "out of window",
+      "note": "Dated Aug 27, 2026, with 600+ then 700+ organizations. Not shipped."
+    },
+    {
+      "target": "news.mt.gov Gianforte release on the joint statement",
+      "route": "curl",
+      "reason": "404",
+      "note": "Missoulian reprint of the State of Montana Newsroom release used instead."
+    },
+    {
+      "target": "Axios, Oct 5 NAM ads and Oct 1 Senate permitting bill",
+      "route": "curl",
+      "reason": "walled",
+      "note": "Both returned 403."
+    }
+  ]
+}

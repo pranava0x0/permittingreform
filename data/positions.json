@@ -1,0 +1,12 @@
+{
+ "_about": "The contested issues the Positions page groups voices under. An issue with a headline shows that Overview headline's cited text and links its sections; one without names its own sections and an optional link. Topics pick the media items that count as voices on it. Titles are labels, not claims about the bill.",
+ "issues": [
+  {"id": "deadlines", "title": "Review deadlines", "headline": "deadlines", "topics": ["nepa", "ceq", "categorical-exclusions"]},
+  {"id": "lawsuits", "title": "Lawsuit limits", "headline": "lawsuits", "topics": ["courts"]},
+  {"id": "certainty", "title": "Permit certainty, wind and solar", "headline": "certainty", "topics": ["permit-certainty", "wind-solar", "offshore"]},
+  {"id": "datacenters", "title": "Data center costs", "headline": "datacenters", "topics": ["data-centers"]},
+  {"id": "transmission", "title": "Transmission siting", "headline": "transmission", "topics": ["transmission"]},
+  {"id": "exemptions", "title": "Oil, gas, mining and exclusions", "headline": "exemptions", "topics": ["fossil", "mining", "geothermal", "clean-water-act"]},
+  {"id": "tribal", "title": "Tribal consultation and endangered species", "topics": ["tribal", "esa", "historic-preservation"], "sections": ["1302", "1304", "2301", "2302"], "link": "#/communities"}
+ ]
+}
