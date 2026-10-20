@@ -36,7 +36,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-10-18"
+DATA_AS_OF = "2026-10-20"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -402,6 +402,39 @@ def build() -> tuple[dict, dict, list[str]]:
     pos_path = DATA / "positions.json"
     positions = load(pos_path) if pos_path.exists() else {"issues": []}
     positions.pop("_about", None)
+    # Disputed readings: the bill passages a question turns on, and the takes
+    # that read them each way. A dispute about the bill as a whole (what
+    # happens if it fails) has no passage and says why in its note.
+    take_by_id = {t["id"]: t for t in takes["takes"]}
+    for issue in positions["issues"]:
+        for d in issue.get("disputes", []):
+            where = f"positions {issue['id']} dispute {d.get('id')}"
+            if not d.get("passages") and not d.get("note"):
+                errors.append(f"{where}: names no bill passage and no note saying why")
+            for p in d.get("passages", []):
+                sec = by_num.get(p["section"])
+                loc = billtext.locate(sec["lines"], p["text"]) if sec else None
+                if not loc:
+                    errors.append(f"{where}: passage not found in section {p['section']}: {p['text'][:60]!r}")
+                elif loc["count"] != 1:
+                    errors.append(f"{where}: passage matches more than once in section {p['section']}; include more context")
+                else:
+                    p["c"] = cite(loc)
+            secs = {p["section"] for p in d.get("passages", [])}
+            sides = d.get("readings", {})
+            if not (sides.get("against") or sides.get("for")):
+                errors.append(f"{where}: names no readings")
+            for side, ids in sides.items():
+                if side not in ("against", "for"):
+                    errors.append(f"{where}: unknown side {side!r}")
+                for tid in ids:
+                    t = take_by_id.get(tid)
+                    if not t:
+                        errors.append(f"{where}: no take {tid!r}")
+                    elif secs and not secs & set(t["sections"]):
+                        errors.append(f"{where}: take {tid} names none of the sections {sorted(secs)}")
+                    elif t["stance"] not in ({"supports"} if side == "for" else {"opposes", "concerns"}):
+                        errors.append(f"{where}: take {tid} has stance {t['stance']!r}, which does not belong under {side!r}")
     checks_path = DATA / "checks.json"
     checks = load(checks_path) if checks_path.exists() else {}
     if checks.get("inference"):

@@ -118,6 +118,10 @@ class Page(unittest.TestCase):
         self.assertNotIn("—", JS)
         self.assertNotIn("—", HTML)
 
+    def test_the_positions_page_leads_with_disputed_readings(self):
+        self.assertIn("disputesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
+        self.assertIn('"No reading on this side found yet."', JS)
+
     def test_the_positions_page_is_routed_in_the_news_group(self):
         self.assertIn('const NEWS_TABS = ["timeline", "positions", "people", "media"];', JS)
         self.assertIn('[["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]]', JS)

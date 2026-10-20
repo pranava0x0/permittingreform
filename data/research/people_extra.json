@@ -922,6 +922,61 @@
      "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html"
     }
    ]
+  },
+  {
+   "id": "mark-macarro",
+   "name": "Mark Macarro",
+   "role": "President",
+   "affiliation": "National Congress of American Indians",
+   "sector": "trade_association",
+   "inside_government": false,
+   "stance": "opposes",
+   "position": "Says the bill's Section 106 changes are an existential threat to Tribes and that the bill should be killed.",
+   "key_actions": [
+    "2026-10-09: NCAI signed the joint letter asking Senate leaders to withdraw Title III",
+    "2026-10-19: Called for the bill to be killed"
+   ],
+   "quote": {
+    "text": "This bill needs to be killed,",
+    "source_url": "https://x.com/NicoPortuondo/status/2112269443636273207",
+    "date": "2026-10-19"
+   },
+   "sources": [
+    {
+     "title": "NCAI calls for the Senate permitting deal to be killed",
+     "publisher": "X (Nico Portuondo)",
+     "url": "https://x.com/NicoPortuondo/status/2112269443636273207",
+     "date": "2026-10-19",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "thomas-hochman",
+   "name": "Thomas Hochman",
+   "role": "Writer, Green Tape",
+   "affiliation": "Green Tape",
+   "sector": "think_tank",
+   "inside_government": false,
+   "stance": "supports",
+   "position": "Backs the bill and says much of the opposition to its NHPA changes rests on misreadings of the text.",
+   "key_actions": [
+    "2026-10-19: Answered the Tribal claim-versus-fact paper"
+   ],
+   "quote": {
+    "text": "much of the opposition has stemmed from misreads and/or mischaracterization of the BAAJA’s contents",
+    "source_url": "https://x.com/ThomasHochman/status/2112264100994527699",
+    "date": "2026-10-19"
+   },
+   "sources": [
+    {
+     "title": "Thread answering the Cultural Heritage Partners fact check",
+     "publisher": "X",
+     "url": "https://x.com/ThomasHochman/status/2112264100994527699",
+     "date": "2026-10-19",
+     "verified": true
+    }
+   ]
   }
  ]
 }

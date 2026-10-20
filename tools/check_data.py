@@ -87,6 +87,9 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     out += [(f"media {it['id']} letter ask", it["letter"]["ask"]) for it in core["media"]
             if isinstance(it.get("letter"), dict) and isinstance(it["letter"].get("ask"), str)]
     out += [(f"positions {i['id']} title", i["title"]) for i in (core.get("positions") or {}).get("issues", [])]
+    for i in (core.get("positions") or {}).get("issues", []):
+        for d in i.get("disputes", []):
+            out += [(f"positions {i['id']} dispute {d['id']} {k}", d[k]) for k in ("question", "note") if d.get(k)]
     return out
 
 

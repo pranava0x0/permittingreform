@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-19",
+ "checked": "2026-10-20",
  "bill": {
   "total": 173,
   "verified": 173
@@ -19,8 +19,8 @@
    "text": "No statutory language states or suggests that Congress empowered CEQ to issue rules binding on other agencies—that is, to act as a regulatory agency rather than as an advisory agency.",
    "speaker": "Senior Judge A. Raymond Randolph (opinion for the court)",
    "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.76,
    "note": ""
   },
   {
@@ -316,6 +316,15 @@
    "text": "Rather than making pledges or suggestions to states, Congress needs to pass real legislation with real teeth.",
    "speaker": "Martin Heinrich",
    "url": "https://dailycaller.com/2026/09/30/senate-passes-ratepayer-protection-act/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "timeline.2026-10-19-ncai-bill-needs-to-be-killed",
+   "text": "This bill needs to be killed,",
+   "speaker": "Mark Macarro, NCAI",
+   "url": "https://x.com/NicoPortuondo/status/2112269443636273207",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -883,18 +892,18 @@
    "text": "tribal sovereignty, the rights of our communities, and the environment will always be my line in the sand",
    "speaker": "Melanie Stansbury",
    "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-10-18"
   },
   {
    "where": "people.ben-schifman",
    "text": "This was a pretty even compromise, changing around the edges some excesses of the 106 process, but writing into the law for the first time stuff that's important to tribes.",
    "speaker": "Ben Schifman",
    "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-10-18"
   },
   {
    "where": "people.greg-werkheiser",
@@ -910,9 +919,9 @@
    "text": "in the context of historic preservation, it does exactly the opposite",
    "speaker": "Terry Klein",
    "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-10-18"
   },
   {
    "where": "people.edward-markey",
@@ -1005,6 +1014,105 @@
    "note": ""
   },
   {
+   "where": "people.mark-macarro",
+   "text": "This bill needs to be killed,",
+   "speaker": "Mark Macarro",
+   "url": "https://x.com/NicoPortuondo/status/2112269443636273207",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "people.thomas-hochman",
+   "text": "much of the opposition has stemmed from misreads and/or mischaracterization of the BAAJA’s contents",
+   "speaker": "Thomas Hochman",
+   "url": "https://x.com/ThomasHochman/status/2112264100994527699",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-20-nathpo-x-myth-fact",
+   "text": "Agencies are already legally required to consult Tribes. BAAJA makes that optional.",
+   "speaker": "NATHPO",
+   "url": "https://x.com/NATHPO_org/status/2112359143525003621",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-19-siegel-x-delicate-balance",
+   "text": "is an incredibly delicate balance",
+   "speaker": "A Senate GOP aide (to Punchbowl News)",
+   "url": "https://x.com/SiegelScribe/status/2112162745961652545",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-19-portuondo-x-ncai-macarro",
+   "text": "This bill needs to be killed,",
+   "speaker": "Mark Macarro, President, National Congress of American Indians",
+   "url": "https://x.com/NicoPortuondo/status/2112269443636273207",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-19-nrdc-assessment-baaja",
+   "text": "The bill would dramatically curtail the rights and powers of Tribes enshrined in Section 106 of the NHPA",
+   "speaker": "NRDC",
+   "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-10-20"
+  },
+  {
+   "where": "media.2026-10-19-mackenzie-x-nhpa",
+   "text": "NHPA 106 is an information gathering and consultation process. That's true now and BAAJA doesn't change it",
+   "speaker": "Aidan Mackenzie, Institute for Progress",
+   "url": "https://x.com/AidanRMackenzie/status/2112277233327051221",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-19-hochman-x-nhpa-thread",
+   "text": "much of the opposition has stemmed from misreads and/or mischaracterization of the BAAJA’s contents",
+   "speaker": "Thomas Hochman, Green Tape",
+   "url": "https://x.com/ThomasHochman/status/2112264100994527699",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-16-tribal-claim-vs-fact",
+   "text": "These changes are unacceptable to Tribal Nations.",
+   "speaker": "NATHPO, NCAI, AAIA, NARF and Cultural Heritage Partners",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-16-schifman-x-section-1110",
+   "text": "there's an important benefit for federally recognized Tribes in §1110 of BAAJA: limiting the ability of third parties to sue to stop the Tribe from managing its own resources as it wants to.",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "url": "https://x.com/BenSchifman/status/2110931358696563164",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-16-nathpo-heritage-not-a-bargaining-chip",
+   "text": "Our heritage is not a bargaining chip, and the sovereignty and sacred places of Tribal Nations are not leverage for Senators’ backroom negotiations.",
+   "speaker": "Ira Matt (Séliš), NATHPO",
+   "url": "https://nathpo.org/2026/10/16/nathpo-october-16th-2026-news-release/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-16-mondaq-akin-senate-unveils-permitting-bill",
    "text": "The bill seeks to address longstanding concerns that federal permitting and environmental review processes have become increasingly complex, unpredictable, and vulnerable to litigation.",
    "speaker": "Akin Gump",
@@ -1072,9 +1180,9 @@
    "text": "The BAAJA severely weakens Tribal opportunities to engage as sovereign governments, curtails Tribal consultation requirements, and restricts access to legal recourse in court.",
    "speaker": "Native American Rights Fund",
    "url": "https://narf.org/baaja-reform-bill/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "error: URLError: <urlopen error timed out>"
   },
   {
    "where": "media.2026-10-15-foley-hoag-baaja-blast-transmission",
@@ -1117,15 +1225,24 @@
    "text": "This legislation will effectively end the 60-year-old process of historic preservation in America.",
    "speaker": "Greg Werkheiser, Cultural Heritage Partners",
    "url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-10-18"
   },
   {
    "where": "media.2026-10-14-save-the-manatee-opposition-statement",
    "text": "We respectfully urge all members of Congress, especially the Florida Delegation, to oppose this dangerous legislation.",
    "speaker": "Save the Manatee Club",
    "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-14-portuondo-x-stansbury",
+   "text": "Tribal sovereignty and consultation…will always be my line in the sand—which is why I cannot support this bill in its current form.",
+   "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+   "url": "https://x.com/NicoPortuondo/status/2110422485111857425",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1180,9 +1297,18 @@
    "text": "Opposition from Native American tribes is emerging as a threat to the Senate's bipartisan permitting reform bill, a particular problem for Democrats who often support tribal priorities.",
    "speaker": "Josh Siegel, Punchbowl News",
    "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-10-18"
+  },
+  {
+   "where": "media.2026-10-13-ifp-baaja-protects-tribal-consultation",
+   "text": "While it includes compromises in some areas, BAAJA codifies Tribal protections and would stop the current administration from ending those protections.",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "media.2026-10-13-heatmap-trump-revolution-wind-permit",
@@ -1306,6 +1432,15 @@
    "text": "E&C Chair Brett Guthrie says at @PunchbowlNews Tech Summit that \"we absolutely would love to see changes to the\" grid section of the Senate's bipartisan permitting bill.",
    "speaker": "Joshua Siegel, Punchbowl News (quoting Rep. Brett Guthrie)",
    "url": "https://x.com/SiegelScribe/status/2107892025182114178",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-07-searchlight-baaja-good-deal-memo",
+   "text": "BAAJA also protects tribes at a moment when the administration is trying to cut them out.",
+   "speaker": "Jane Flegal and Pavan Venkatakrishnan, Searchlight Institute",
+   "url": "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1437,6 +1572,15 @@
    "note": "read in a browser on 2026-10-05"
   },
   {
+   "where": "media.2026-10-02-ncshpo-more-than-streamline",
+   "text": "If a SHPO, THPO, Tribe, Native Hawaiian organization, or local government fails to respond to an agreement, the Federal official could enter into the agreement with ACHP instead.",
+   "speaker": "NCSHPO",
+   "url": "https://ncshpo.org/2026/10/02/senate-proposal-does-more-than-streamline-section-106/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-02-mcguirewoods-sweeping-reform-alert",
    "text": "Senate committee leaders reached a bipartisan agreement on Sept. 30, 2026, on sweeping permitting reform for energy and infrastructure projects, but the bill still needs Senate and House approval",
    "speaker": "McGuireWoods",
@@ -1549,6 +1693,15 @@
    "text": "The National Governors Association and its partners are encouraged by the introduction of the Bipartisan American Affordability and Jobs Act of 2026 and look forward to working with Congress to further develop this legislation.",
    "speaker": "Brandon Tatum, NGA chief executive",
    "url": "https://www.nga.org/?p=81333",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-01-national-trust-rejects-key-provisions",
+   "text": "The bill would dramatically narrow the historic and cultural properties and projects that are subject to review, fundamentally alter consultation with Tribal Nations and other stakeholders, expand unilateral federal agency authority, and significantly constrain judicial review.",
+   "speaker": "Shaw Sprague, National Trust for Historic Preservation",
+   "url": "https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1945,9 +2098,9 @@
    "text": "appears to adopt a fossil fuel industry wish-list",
    "speaker": "Brad Campbell, Conservation Law Foundation",
    "url": "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "media.2026-09-30-acore-statement-supporting-affordability-jobs-act",
@@ -2791,8 +2944,8 @@
    "text": "Certain repair and replacement work on telecom infrastructure would no longer trigger NEPA reviews",
    "speaker": "Broadband Breakfast (reporter paraphrasing a permitting policy consultant)",
    "url": "https://broadbandbreakfast.com/senate-unveils-permitting-package/",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -2899,9 +3052,9 @@
    "text": "supporters saying they will cut down on lawsuits that can interrupt a project years after it is approved, while opponents say the short window could stymie legitimate complaints.",
    "speaker": "The Hill (reporter)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-beveridge-diamond-1",
@@ -3088,18 +3241,18 @@
    "text": "You would never be able to stop Pebble Mine in the future because of the changes made today",
    "speaker": "Brett Hartl, government affairs director, Center for Biological Diversity (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-01-pacific-legal-foundation-1",
    "text": "really gives the EPA administrator more or less carte blanche to cancel projects",
    "speaker": "John Nagle, federal policy manager, Pacific Legal Foundation (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-nrdc-1",
@@ -3142,9 +3295,9 @@
    "text": "saying the proposed definition creates too high a threshold and could prevent truly threatened creatures from being protected.",
    "speaker": "The Hill, summarizing Brett Hartl of the Center for Biological Diversity",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-eno-center-for-transportatio-3",
@@ -3187,18 +3340,18 @@
    "text": "That also must include ending the administration's clean energy permit blocks, which are keeping gigawatts of the cheapest power off the grid as prices rise for everyone.",
    "speaker": "Sandra Purohit, director of federal advocacy, E2",
    "url": "https://www.pv-tech.org/us-planning-reform-bill-gets-mixed-response-from-clean-energy-groups/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-01-sierra-club-1",
    "text": "this bill cannot guarantee that more wind and solar projects will actually get built as long as the Trump administration continues to block them at every turn.",
    "speaker": "Holly Bender, chief program officer, Sierra Club",
    "url": "https://www.pv-tech.org/us-planning-reform-bill-gets-mixed-response-from-clean-energy-groups/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-beveridge-diamond-5",
@@ -3331,8 +3484,8 @@
    "text": "At the same time, the discrimination language is a new area of law, Schiffman told me, so there's some uncertainty as to how it would apply.",
    "speaker": "Emily Pontecorvo, Heatmap (relaying Ben Schiffman, former Interior solicitor's office attorney-adviser)",
    "url": "https://heatmap.news/politics/baaja-executive-actions",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.7142857142857143,
    "note": ""
   },
   {
@@ -3367,9 +3520,9 @@
    "text": "the threat of the FERC decision leads to changes in routes or configuration of the proposals to get to yes at the state and local level.",
    "speaker": "Rob Gramlich, president, Grid Strategies (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-mcguirewoods-3",
@@ -3574,6 +3727,258 @@
    "text": "with greater emphasis on an action agency's ability to conclude Section 106 consultation without an agreement on resolving adverse effects to historic properties.",
    "speaker": "Beveridge & Diamond (unsigned alert)",
    "url": "https://www.mondaq.com/unitedstates/environmental-law/1850440/senate-permitting-bill-would-reshape-environmental-permitting-and-reviews",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-09-tribal-orgs-letter-1",
+   "text": "Tribal Nations need not be consulted as federal agencies designate an area of potential effect, identify historic properties, and assess potential effects",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-09-tribal-orgs-letter-2",
+   "text": "forces a Tribal Nation to assert substantive objections to a federal agency’s Section 106 report within a mere 30 days of receipt",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-09-tribal-orgs-letter-3",
+   "text": "missed review deadlines will result in the loss of THPO status and funding, as well as the deeply paternalistic assumption of THPO functions by the Department of the Interior",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-09-tribal-orgs-letter-4",
+   "text": "the bill would give federal agencies the authority to determine that “other considerations” outweigh adverse effects on our sacred places",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-09-tribal-orgs-letter-5",
+   "text": "nearly eliminates any real remedies available to Tribal Nations by stipulating remand without vacatur as a baseline",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-16-tribal-claim-fact-1",
+   "text": "BAAJA turns that mandate into a “may”: an agency “may consult” Tribes when it identifies historic properties.",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-16-tribal-claim-fact-2",
+   "text": "the definition’s own examples are a “district, site, building, structure, or object” and “artifacts or material remains,” not a mountain, spring, or river",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-16-tribal-claim-fact-3",
+   "text": "BAAJA halves the time, with the same consequence.",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-16-tribal-claim-fact-4",
+   "text": "Tribes get a promise, not funding: the $200 million is only “authorized,” and the Tribal grants are worth less per office than THPOs receive today.",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-16-tribal-claim-fact-5",
+   "text": "Courts cannot stop a project that violates Section 106; the only remedy is to reinitiate the review while construction continues.",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-16-tribal-claim-fact-6",
+   "text": "Trading a reversible bad rule for an irreversible bad statute is not protection.",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-20-nathpo-x-1",
+   "text": "Agencies are already legally required to consult Tribes. BAAJA makes that optional.",
+   "speaker": "National Association of Tribal Historic Preservation Officers",
+   "url": "https://x.com/NATHPO_org/status/2112359143525003621",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-01-national-trust-1",
+   "text": "Consultation could effectively end when a consulting party does not respond within prescribed deadlines",
+   "speaker": "National Trust for Historic Preservation (statement)",
+   "url": "https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-01-national-trust-2",
+   "text": "the proposal would give federal agencies significant authority to end the Section 106 process based on their own unilateral determination that other considerations outweigh historic preservation",
+   "speaker": "National Trust for Historic Preservation (statement)",
+   "url": "https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-02-ncshpo-1",
+   "text": "If a SHPO, THPO, Tribe, Native Hawaiian organization, or local government fails to respond to an agreement, the Federal official could enter into the agreement with ACHP instead.",
+   "speaker": "NCSHPO",
+   "url": "https://ncshpo.org/2026/10/02/senate-proposal-does-more-than-streamline-section-106/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-19-nrdc-1",
+   "text": "The bill limits Tribal participation in decisions concerning federally connected projects and what Tribal interests are protected",
+   "speaker": "NRDC assessment",
+   "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-10-20"
+  },
+  {
+   "where": "takes.2026-10-13-ifp-tribal-1",
+   "text": "NHPA’s Tribal consultation requirement, THPO authority, or other sources of duties to Tribes (treaties, the trust responsibility, NAGPRA, and the consultation executive orders) are unchanged in BAAJA.",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-13-ifp-tribal-2",
+   "text": "would ensure natural features important to Tribes can be treated as historic properties under NHPA",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-13-ifp-tribal-3",
+   "text": "Without BAAJA, Tribes face the narrowed ACHP rule now — ACHP has already voted in favor of it — then years of litigation and a new administration’s rulemaking process to attempt to reverse it.",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-19-hochman-x-1",
+   "text": "BAAJA keeps Sec. 101’s \"shall consult\" language *and* adds explicit Tribal consultation requirements to Section 106.",
+   "speaker": "Thomas Hochman, Green Tape",
+   "url": "https://x.com/ThomasHochman/status/2112264088671998226",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-19-hochman-x-2",
+   "text": "It also codifies definitions for Tribal sacred places",
+   "speaker": "Thomas Hochman, Green Tape",
+   "url": "https://x.com/ThomasHochman/status/2112264088671998226",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-19-hochman-x-3",
+   "text": "the new $20 million authorization is a new program – it adds to, not replaces, the existing THPO operating grants.",
+   "speaker": "Thomas Hochman, Green Tape",
+   "url": "https://x.com/ThomasHochman/status/2112264099111506361",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-07-searchlight-1",
+   "text": "It writes tribes' role in historic preservation reviews into law, guaranteeing them a seat from the start of consultation through every major decision.",
+   "speaker": "Jane Flegal and Pavan Venkatakrishnan, Searchlight Institute",
+   "url": "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-07-searchlight-2",
+   "text": "it creates a $20 million-a-year grant program to help tribes document cultural and sacred sites without having to disclose where they are",
+   "speaker": "Jane Flegal and Pavan Venkatakrishnan, Searchlight Institute",
+   "url": "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-07-searchlight-3",
+   "text": "What changes is that a paperwork mistake in a procedural review can't kill a project on its own.",
+   "speaker": "Jane Flegal and Pavan Venkatakrishnan, Searchlight Institute",
+   "url": "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-19-mackenzie-x-1",
+   "text": "NHPA 106 is an information gathering and consultation process. That's true now and BAAJA doesn't change it",
+   "speaker": "Aidan Mackenzie, Institute for Progress",
+   "url": "https://x.com/AidanRMackenzie/status/2112277233327051221",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-02-vinson-elkins-nhpa-1",
+   "text": "the bill ties NHPA deadlines to the NEPA process, with enforceable penalties if the NHPA process exceeds NEPA reviews.",
+   "speaker": "Vinson & Elkins client alert",
+   "url": "https://www.velaw.com/insights/to-the-finish-line-ten-ways-the-new-senate-permitting-bill-is-a-boon-for-energy-infrastructure/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-16-schifman-x-1110",
+   "text": "there's an important benefit for federally recognized Tribes in §1110 of BAAJA: limiting the ability of third parties to sue to stop the Tribe from managing its own resources as it wants to.",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "url": "https://x.com/BenSchifman/status/2110931358696563164",
    "result": "verified",
    "share": 1.0,
    "note": ""

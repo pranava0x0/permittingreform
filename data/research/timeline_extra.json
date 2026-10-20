@@ -1593,6 +1593,89 @@
      "verified": true
     }
    ]
+  },
+  {
+   "id": "2026-10-14-stansbury-cannot-support",
+   "date": "2026-10-14",
+   "branch": "congress_house",
+   "title": "Rep. Stansbury says she cannot support the bill in its current form",
+   "summary": "Rep. Melanie Stansbury (D-N.M.) said Tribal sovereignty and consultation are her line in the sand and that she cannot support the bill as written. The day before, she had told Punchbowl she could oppose it.",
+   "significance": "The first House Democrat from Heinrich's home state to come out against the deal over the NHPA changes.",
+   "sources": [
+    {
+     "title": "Rep. Stansbury comes out against the bill",
+     "publisher": "X (Nico Portuondo)",
+     "url": "https://x.com/NicoPortuondo/status/2110422485111857425",
+     "date": "2026-10-14",
+     "verified": true
+    }
+   ],
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "congress"
+   ]
+  },
+  {
+   "id": "2026-10-16-tribal-claim-vs-fact-paper",
+   "date": "2026-10-16",
+   "branch": "other",
+   "title": "Tribal groups publish a claim-by-claim rebuttal of the bill's Section 106 defenders",
+   "summary": "A 17-page paper under the logos of NATHPO, NCAI, AAIA, NARF and Cultural Heritage Partners checks nine claims from the Searchlight memo, IFP and Chairman Lee's office against the bill text. The same day NATHPO told senators that Tribal heritage is not a bargaining chip.",
+   "significance": "Sets out the specific readings the bill's defenders answered on October 19.",
+   "sources": [
+    {
+     "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+     "publisher": "Cultural Heritage Partners (posted by NATHPO)",
+     "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+     "date": "2026-10-16",
+     "verified": true
+    },
+    {
+     "title": "NATHPO to Senators: “Our Heritage Is Not a Bargaining Chip”",
+     "publisher": "NATHPO",
+     "url": "https://nathpo.org/2026/10/16/nathpo-october-16th-2026-news-release/",
+     "date": "2026-10-16",
+     "verified": true
+    }
+   ],
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ]
+  },
+  {
+   "id": "2026-10-19-ncai-bill-needs-to-be-killed",
+   "date": "2026-10-19",
+   "branch": "other",
+   "title": "NCAI's president says the bill needs to be killed over Section 106",
+   "summary": "Mark Macarro, president of the National Congress of American Indians, called the Section 106 changes an existential threat. Defenders, including Thomas Hochman, answered the October 16 paper the same day.",
+   "significance": "The largest national Tribal organization moved from asking for the title's removal to opposing the bill outright.",
+   "sources": [
+    {
+     "title": "NCAI calls for the Senate permitting deal to be killed",
+     "publisher": "X (Nico Portuondo)",
+     "url": "https://x.com/NicoPortuondo/status/2112269443636273207",
+     "date": "2026-10-19",
+     "verified": true
+    },
+    {
+     "title": "Thread answering the Cultural Heritage Partners fact check",
+     "publisher": "X (Thomas Hochman)",
+     "url": "https://x.com/ThomasHochman/status/2112264083525513461",
+     "date": "2026-10-19",
+     "verified": true
+    }
+   ],
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "quote": {
+    "text": "This bill needs to be killed,",
+    "speaker": "Mark Macarro, NCAI",
+    "source_url": "https://x.com/NicoPortuondo/status/2112269443636273207"
+   }
   }
  ]
 }

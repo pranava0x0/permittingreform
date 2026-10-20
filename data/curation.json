@@ -905,6 +905,30 @@
      }
     ]
    }
+  },
+  "melanie-stansbury": {
+   "reason": "2026-10-20: On October 14 she said she cannot support the bill in its current form (Portuondo, X), which moves her from mixed to opposes.",
+   "set": {
+    "stance": "opposes",
+    "position": "Says she cannot support the bill in its current form, citing Tribal sovereignty and consultation.",
+    "key_actions": [
+     "2026-10-13: Told Punchbowl that Tribal sovereignty, community rights and the environment are her line in the sand",
+     "2026-10-14: Said she cannot support the bill in its current form"
+    ],
+    "sources": [
+     {
+      "title": "Martin Heinrich faces backlash from tribes over permitting deal",
+      "url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/"
+     },
+     {
+      "title": "Rep. Stansbury comes out against the bill",
+      "publisher": "X (Nico Portuondo)",
+      "url": "https://x.com/NicoPortuondo/status/2110422485111857425",
+      "date": "2026-10-14",
+      "verified": true
+     }
+    ]
+   }
   }
  },
  "media": {

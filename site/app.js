@@ -1365,6 +1365,50 @@
       voices.length ? null : el("p", { class: "empty" }, "No quoted voices on this issue yet.")]);
   }
 
+  /* Disputed readings: the bill's words first, then each side's reading in its
+     own words. Readings come from takes.js, loaded when the section renders. */
+  const DISPUTE_SIDES = [["against", "Opponents read it as"], ["for", "Supporters read it as"]];
+
+  function disputeReading(T, t) {
+    return el("li", { class: "voice" },
+      el("p", { class: "voice-who" }, el("strong", null, t.who), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
+      el("p", { class: "dispute-claim" }, t.claim),
+      el("blockquote", { class: "voice-quote" }, t.quote));
+  }
+
+  function disputeRow(T, issue, d) {
+    const n = (k) => (d.readings[k] || []).length;
+    const head = el("span", { class: "event-head" },
+      el("span", { class: "event-title" }, d.question),
+      el("span", { class: "pos-tally" }, n("against") + " against · " + n("for") + " for"));
+    return openRow("pos-dispute", "dispute-" + issue.id + "-" + d.id, head, [
+      d.passages.length
+        ? el("div", { class: "dispute-text" }, el("h4", null, "The bill says"),
+          d.passages.map((p) => el("figure", { class: "quote small" },
+            el("blockquote", null, p.text),
+            el("figcaption", null, "Sec. " + p.section, p.c ? [" · ", claimCite(p.section, p.c)] : null))))
+        : el("p", { class: "muted" }, d.note),
+      el("div", { class: "dispute-sides" }, DISPUTE_SIDES.map((s) => {
+        const list = (d.readings[s[0]] || []).map((id) => T.takes.find((t) => t.id === id)).filter(Boolean);
+        return el("div", { class: "voices" },
+          el("h4", null, s[1], el("span", { class: "chip-count" }, list.length)),
+          list.length ? el("ul", null, list.map((t) => disputeReading(T, t))) : el("p", { class: "empty" }, "No reading on this side found yet."));
+      }))]);
+  }
+
+  function disputesBlock() {
+    const issues = ((D.positions && D.positions.issues) || []).filter((i) => i.disputes && i.disputes.length);
+    if (!issues.length) return null;
+    const host = el("div", null, loading("Loading readings"));
+    ensureTakes().then((T) => fill(host, issues.map((i) => [
+      el("h3", { class: "dispute-issue" }, i.title),
+      el("div", { class: "pos-list" }, i.disputes.map((d) => disputeRow(T, i, d)))]))).catch((err) => fill(host, failure(err)));
+    return el("section", { class: "block", "aria-labelledby": "h-disputes" },
+      el("h2", { id: "h-disputes" }, "Disputed readings"),
+      el("p", { class: "facts" }, "Where supporters and opponents read the same words differently. Each row shows the bill text first, then each side's reading in its own words. This site does not decide which reading is right."),
+      host);
+  }
+
   const GOV_SECTORS = { congress: 1, white_house: 1, agency: 1, court: 1 };
   function sectorKey(p) {
     return !p.inside_government && GOV_SECTORS[p.sector] ? "former" : p.sector;
@@ -1399,6 +1443,7 @@
         el("p", { class: "facts", role: "status" }, count("supports") + " support, " + count("opposes") + " oppose, " + count("mixed") + " mixed, of " +
           D.people.length + " people and groups tracked · " + plural(letters.length, "letter or joint statement", "letters and joint statements") +
           " · as of " + S.formatDate(D.meta.as_of))),
+      disputesBlock(),
       el("section", { class: "block", "aria-labelledby": "h-letters" },
         el("h2", { id: "h-letters" }, "Letters and joint statements"),
         letters.length ? el("div", { class: "pos-list" }, letters.map(letterRow)) : el("p", { class: "empty" }, "No letters recorded yet.")),
