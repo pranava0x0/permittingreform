@@ -170,6 +170,12 @@ def main() -> int:
         print("check_quotes: the build has errors; fix those first", file=sys.stderr)
         return 1
     rows = web_quotes(core)
+    try:
+        import fitz  # noqa: F401  PyMuPDF, from requirements-dev.txt
+    except ImportError:
+        print("check_quotes: WARNING: PyMuPDF is not installed, so cited PDFs are read with pypdf, which splits "
+              "words in some court PDFs; a verbatim PDF quote may read as near or missing. "
+              "Install requirements-dev.txt to reproduce the committed results.")
     print(f"check_quotes: web quotes: {len(rows)} to check against {len({r['url'] for r in rows})} pages")
     with ThreadPoolExecutor(max_workers=6) as pool:
         pages = dict(zip(sorted({r["url"] for r in rows}), pool.map(lambda u: webfetch.read(u, refresh=args.refresh), sorted({r["url"] for r in rows}))))

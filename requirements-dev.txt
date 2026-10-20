@@ -1,0 +1,6 @@
+# Dev-time only (nothing here ships with the site). Pinned exact versions; checked against the
+# vibe-coding-security advisory index on 2026-10-20, which lists no advisory for either package.
+#   python3 -m pip install --user -r requirements-dev.txt
+pypdf==6.19.0     # tools/parse_bill.py re-reads the bill PDF
+pymupdf==1.26.4   # tools/webfetch.py reads cited PDFs for the quote check; pypdf splits words in some
+                  # court PDFs (the D.C. Circuit Marin Audubon opinion matched only 76% without it)
