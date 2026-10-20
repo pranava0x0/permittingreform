@@ -118,6 +118,13 @@ class Page(unittest.TestCase):
         self.assertNotIn("—", JS)
         self.assertNotIn("—", HTML)
 
+    def test_a_failed_readings_or_news_load_names_that_resource(self):
+        # The bill-text failure message once covered every lazy load, so a takes.js failure on the
+        # Positions page said "The bill text did not load" and offered the PDF (Codex, PR 8).
+        self.assertIn('failure(err, "The outside readings")', JS)
+        self.assertIn('failure(err, "The timeline, people and media")', JS)
+        self.assertNotIn("fill(host, failure(err)));\n    return el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-disputes\" }", JS)
+
     def test_the_positions_page_leads_with_disputed_readings(self):
         self.assertIn("disputesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
         self.assertIn('"No reading on this side found yet."', JS)

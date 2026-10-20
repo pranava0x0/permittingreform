@@ -210,7 +210,7 @@
         const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
         if (window.PR_NEWS) { done(); return; }
         const tag = document.createElement("script");
-        tag.src = "data/news.js?v=2";
+        tag.src = "data/news.js?v=3";
         tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
         tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
         document.head.appendChild(tag);
@@ -227,7 +227,7 @@
     if (!takesPromise) {
       takesPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/takes.js?v=1";
+        tag.src = "data/takes.js?v=2";
         tag.onload = () => (window.PR_TAKES ? resolve(window.PR_TAKES) : reject(new Error("readings did not load")));
         tag.onerror = () => { takesPromise = null; reject(new Error("readings could not be fetched")); };
         document.head.appendChild(tag);
@@ -240,10 +240,13 @@
     return el("p", { class: "loading", role: "status" }, text);
   }
 
-  function failure(err) {
+  /* Name the resource that failed: the bill text offers the PDF; readings and news offer a reload. */
+  function failure(err, what) {
+    const bill = !what;
     return el("div", { class: "notice", role: "alert" },
-      el("p", null, "The bill text did not load (" + err.message + ")."),
-      el("p", null, el("a", { href: D.meta.pdf }, "Open the PDF")));
+      el("p", null, (what || "The bill text") + " did not load (" + err.message + ")."),
+      el("p", null, bill ? el("a", { href: D.meta.pdf }, "Open the PDF")
+        : el("button", { type: "button", class: "chip", onclick: () => location.reload() }, "Reload the page")));
   }
 
   const foldOpen = new Set();
@@ -491,7 +494,7 @@
   function takesBlock(s) {
     if (!s.takes) return null;
     const host = el("div", null, loading("Loading readings"));
-    ensureTakes().then((T) => fill(host, takesList(T, s))).catch((err) => fill(host, failure(err)));
+    ensureTakes().then((T) => fill(host, takesList(T, s))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "sec-part", "aria-labelledby": "h-takes" },
       el("h2", { id: "h-takes" }, "What others say it would do", el("span", { class: "chip-count" }, s.takes)),
       el("p", { class: "muted" }, "Readings from industry, advocates, lawyers and analysts, quoted from their own words. They are claims about effects, not findings of this site. The summary above says what the text says."),
@@ -1402,7 +1405,7 @@
     const host = el("div", null, loading("Loading readings"));
     ensureTakes().then((T) => fill(host, issues.map((i) => [
       el("h3", { class: "dispute-issue" }, i.title),
-      el("div", { class: "pos-list" }, i.disputes.map((d) => disputeRow(T, i, d)))]))).catch((err) => fill(host, failure(err)));
+      el("div", { class: "pos-list" }, i.disputes.map((d) => disputeRow(T, i, d)))]))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "block", "aria-labelledby": "h-disputes" },
       el("h2", { id: "h-disputes" }, "Disputed readings"),
       el("p", { class: "facts" }, "Where supporters and opponents read the same words differently. Each row shows the bill text first, then each side's reading in its own words. This site does not decide which reading is right."),
@@ -1576,7 +1579,7 @@
       fill(view, subtabs(tab), loading("Loading"));
       markTab(tab);
       ensureNews().then(() => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) route(); })
-        .catch((err) => fill(view, subtabs(tab), failure(err)));
+        .catch((err) => fill(view, subtabs(tab), failure(err, "The timeline, people and media")));
       return;
     }
     if (tab === "bill" && parts[1] === "sec") { nodes = renderSection(parts[2], parts[3], parts[4]); keepScroll = Boolean(parts[3]); }
