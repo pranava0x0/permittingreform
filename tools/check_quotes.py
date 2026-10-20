@@ -64,7 +64,11 @@ def match(quote: str, page_text: str) -> tuple[str, float]:
     cursor = 0
     exact = bool(parts)
     for part in parts:
-        found = re.search(r"(?<!\w)" + re.escape(part) + r"(?!\w|[.,]\d)", hay[cursor:])
+        # The right-hand word boundary guards a quote that ends mid-word. A quote that ends on its own
+        # punctuation may be followed by a footnote marker glued on in the PDF text ("agency.4",
+        # "consequence.xvi"), which is not a different word.
+        tail = r"(?!\w|[.,]\d)" if part[-1].isalnum() else ""
+        found = re.search(r"(?<!\w)" + re.escape(part) + tail, hay[cursor:])
         if not found:
             exact = False
             break

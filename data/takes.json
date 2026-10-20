@@ -22,26 +22,6 @@
  },
  "takes": [
   {
-   "id": "2026-09-30-broadband-breakfast-1",
-   "sections": [
-    "1102"
-   ],
-   "side": "press_analysis",
-   "stance": "explains",
-   "who": "Broadband Breakfast",
-   "speaker": "Broadband Breakfast (reporter paraphrasing a permitting policy consultant)",
-   "outlet": "Broadband Breakfast",
-   "title": "Senate Unveils Permitting Package",
-   "url": "https://broadbandbreakfast.com/senate-unveils-permitting-package/",
-   "date": "2026-09-30",
-   "claim": "Certain telecom repair and replacement work would stop triggering NEPA.",
-   "quote": "Certain repair and replacement work on telecom infrastructure would no longer trigger NEPA reviews",
-   "passage": {
-    "section": "1102",
-    "text": "does not alter the function or increase the capacity of the lifeline infrastructure by more than 20 percent"
-   }
-  },
-  {
    "id": "2026-10-01-national-association-of-coun-1",
    "sections": [
     "1102"
@@ -1211,13 +1191,13 @@
    "side": "press_analysis",
    "stance": "mixed",
    "who": "Heatmap",
-   "speaker": "Emily Pontecorvo, Heatmap (relaying Ben Schiffman, former Interior solicitor's office attorney-adviser)",
+   "speaker": "Emily Pontecorvo, Heatmap (relaying Ben Schifman, former Interior solicitor's office attorney-adviser)",
    "outlet": "Heatmap",
    "title": "What a President Can and Can't Do Under the Senate Permitting Bill",
    "url": "https://heatmap.news/politics/baaja-executive-actions",
    "date": "2026-10-05",
    "claim": "The 'pattern of disparate treatment' cause of action is untested law, so it is unclear how courts would apply it to wind permitting delays.",
-   "quote": "At the same time, the discrimination language is a new area of law, Schiffman told me, so there's some uncertainty as to how it would apply.",
+   "quote": "At the same time, the discrimination language is a new area of law, Schifman told me, so there's some uncertainty as to how it would apply.",
    "passage": {
     "section": "1402",
     "text": "an empirically demonstrated statistical pattern that"
@@ -2220,6 +2200,42 @@
    "date": "2026-10-16",
    "claim": "Section 1110 would limit third-party suits that try to stop a Tribe from managing its own resources.",
    "quote": "there's an important benefit for federally recognized Tribes in §1110 of BAAJA: limiting the ability of third parties to sue to stop the Tribe from managing its own resources as it wants to."
+  },
+  {
+   "id": "2026-10-08-ifp-tribal-report-thpo",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "Tribal consultation under the Bipartisan American Affordability and Jobs Act",
+   "url": "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+   "date": "2026-10-08",
+   "claim": "THPOs already work under federal approval and review, with disapproval and suspension possible today; the bill shortens the review cycle and adds the takeover step, which the report says matters for Tribal self-government.",
+   "quote": "THPO programs already operate within a federal approval and oversight framework.",
+   "passage": {
+    "section": "2301",
+    "text": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer"
+   }
+  },
+  {
+   "id": "2026-10-16-tribal-claim-fact-7",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "date": "2026-10-16",
+   "claim": "A Tribe that misses the new deadlines can lose its preservation funding and see Interior take over its office, which the paper calls an affront to sovereignty.",
+   "quote": "Far from protecting Tribes or leaving their preservation offices “unchanged,” BAAJA penalizes Tribes that miss its deadlines"
   }
  ]
 }

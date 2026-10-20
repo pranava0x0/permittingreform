@@ -239,9 +239,6 @@ The list also excludes geothermal observation test projects, transmission upgrad
 
 Outside readings, quoted from their sources. These are claims about effects, not findings of this tracker.
 
-- **Broadband Breakfast** (Reporting; explains): Certain telecom repair and replacement work would stop triggering NEPA.
-  > Certain repair and replacement work on telecom infrastructure would no longer trigger NEPA reviews
-  [Broadband Breakfast, 2026-09-30](https://broadbandbreakfast.com/senate-unveils-permitting-package/). On the bill text at [p. 19, line 8 to p. 19, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=19).
 - **National Association of Counties** (States and counties; supports): Counties are redefined as cooperating agencies in NEPA, guaranteeing they can submit comments, data and scoping information.
   > ensuring that counties could submit comments, data and scoping information during the NEPA review process.
   [National Association of Counties, 2026-10-01](https://www.naco.org/news/us-senators-introduce-bipartisan-comprehensive-permitting-reform-package-major-county-wins). On the bill text at [p. 6, line 20 to p. 6, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=6).
@@ -5864,7 +5861,7 @@ Outside readings, quoted from their sources. These are claims about effects, not
   > Section 1402 provides recourse if a future administration tries to use the same playbook
   [Daily Caller News Foundation, 2026-10-03](https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse). On the bill text at [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167).
 - **Heatmap** (Reporting; mixed): The 'pattern of disparate treatment' cause of action is untested law, so it is unclear how courts would apply it to wind permitting delays.
-  > At the same time, the discrimination language is a new area of law, Schiffman told me, so there's some uncertainty as to how it would apply.
+  > At the same time, the discrimination language is a new area of law, Schifman told me, so there's some uncertainty as to how it would apply.
   [Heatmap, 2026-10-05](https://heatmap.news/politics/baaja-executive-actions). On the bill text at [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167).
 
 ## Selected statutory quotes
@@ -13592,6 +13589,12 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Vinson & Elkins** (Lawyers and legal scholars; supports): Tying historic preservation deadlines to the NEPA schedule, with penalties for overruns, would keep reviews from stretching on.
   > the bill ties NHPA deadlines to the NEPA process, with enforceable penalties if the NHPA process exceeds NEPA reviews.
   [Vinson & Elkins, 2026-10-02](https://www.velaw.com/insights/to-the-finish-line-ten-ways-the-new-senate-permitting-bill-is-a-boon-for-energy-infrastructure/).
+- **Institute for Progress** (Think tanks; supports): THPOs already work under federal approval and review, with disapproval and suspension possible today; the bill shortens the review cycle and adds the takeover step, which the report says matters for Tribal self-government.
+  > THPO programs already operate within a federal approval and oversight framework.
+  [Institute for Progress, 2026-10-08](https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf). On the bill text at [p. 377, line 10 to p. 377, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=377).
+- **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (Tribal Nations and groups; opposes): A Tribe that misses the new deadlines can lose its preservation funding and see Interior take over its office, which the paper calls an affront to sovereignty.
+  > Far from protecting Tribes or leaving their preservation offices “unchanged,” BAAJA penalizes Tribes that miss its deadlines
+  [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf).
 
 ## Selected statutory quotes
 
@@ -16313,7 +16316,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ```
 
 ```json
-{"id": "2026-10-09-tribal-organizations-letter-sacred-places", "date": "2026-10-09", "branch": "other", "title": "NARF and eight other Tribal organizations ask Senate leaders to remove sacred-places provisions", "summary": "In an October 9 letter, the Native American Rights Fund and eight other Tribal organizations asked Senate leaders to remove provisions that weaken protections for sacred places and to consult Tribal Nations. NARF's alert says that, as it understands it, input must be received by October 23. It names no official source for that date.", "significance": "Tribal opposition centers on the National Historic Preservation Act title and Section 106 consultation.", "actors": ["Native American Rights Fund", "National Association of Tribal Historic Preservation Officers"], "topics": ["tribal", "historic-preservation", "congress"], "milestone": false, "sources": [{"title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes", "publisher": "Native American Rights Fund", "url": "https://narf.org/baaja-reform-bill/", "date": "2026-10-15", "lk": "error"}, {"title": "U.S. historic preservation law faces the most serious threat in its 60-year history", "publisher": "NPR", "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary", "date": "2026-10-15"}]}
+{"id": "2026-10-09-tribal-organizations-letter-sacred-places", "date": "2026-10-09", "branch": "other", "title": "NARF and eight other Tribal organizations ask Senate leaders to remove sacred-places provisions", "summary": "In an October 9 letter, the Native American Rights Fund and eight other Tribal organizations asked Senate leaders to remove provisions that weaken protections for sacred places and to consult Tribal Nations. NARF's alert says that, as it understands it, input must be received by October 23. It names no official source for that date.", "significance": "Tribal opposition centers on the National Historic Preservation Act title and Section 106 consultation.", "actors": ["Native American Rights Fund", "National Association of Tribal Historic Preservation Officers"], "topics": ["tribal", "historic-preservation", "congress"], "milestone": false, "sources": [{"title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes", "publisher": "Native American Rights Fund", "url": "https://narf.org/baaja-reform-bill/", "date": "2026-10-15"}, {"title": "U.S. historic preservation law faces the most serious threat in its 60-year history", "publisher": "NPR", "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary", "date": "2026-10-15"}]}
 ```
 
 ```json
@@ -16767,7 +16770,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ```
 
 ```json
-{"id": "2026-10-15-narf-tribal-analysis-act-now", "date": "2026-10-15", "type": "org_statement", "outlet": "Native American Rights Fund", "author": "Native American Rights Fund", "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes", "url": "https://narf.org/baaja-reform-bill/", "summary": "NARF reports that it and eight other Tribal organizations asked Senate leaders on October 9 to remove provisions that weaken protections for sacred places. It urges Tribal Nations to write their senators and says it understands input is due October 23.", "stance": "opposes", "quote": {"text": "The BAAJA severely weakens Tribal opportunities to engage as sovereign governments, curtails Tribal consultation requirements, and restricts access to legal recourse in court.", "speaker": "Native American Rights Fund"}, "topics": ["tribal", "historic-preservation", "esa", "nepa"], "sector": "think_tank", "letter": {"to": "Senate leaders", "signer_count": 9, "signers_sample": ["Native American Rights Fund", "National Association of Tribal Historic Preservation Officers"], "ask": "Remove the provisions that would weaken protections for sacred places."}, "lk": "error"}
+{"id": "2026-10-15-narf-tribal-analysis-act-now", "date": "2026-10-15", "type": "org_statement", "outlet": "Native American Rights Fund", "author": "Native American Rights Fund", "title": "ACT NOW: Senate Permitting Reform Bill Negatively Impacts Tribes", "url": "https://narf.org/baaja-reform-bill/", "summary": "NARF reports that it and eight other Tribal organizations asked Senate leaders on October 9 to remove provisions that weaken protections for sacred places. It urges Tribal Nations to write their senators and says it understands input is due October 23.", "stance": "opposes", "quote": {"text": "The BAAJA severely weakens Tribal opportunities to engage as sovereign governments, curtails Tribal consultation requirements, and restricts access to legal recourse in court.", "speaker": "Native American Rights Fund"}, "topics": ["tribal", "historic-preservation", "esa", "nepa"], "sector": "think_tank", "letter": {"to": "Senate leaders", "signer_count": 9, "signers_sample": ["Native American Rights Fund", "National Association of Tribal Historic Preservation Officers"], "ask": "Remove the provisions that would weaken protections for sacred places."}}
 ```
 
 ```json
@@ -16868,6 +16871,10 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 
 ```json
 {"id": "2026-10-08-naco-county-advocacy-hub", "date": "2026-10-08", "type": "org_statement", "outlet": "National Association of Counties", "title": "Bipartisan American Affordability and Jobs Act of 2026: Permitting Reform County Advocacy Hub", "url": "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub", "summary": "NACo's advocacy hub summarizes the bill's county provisions, including cooperating-agency status for counties in NEPA reviews, and gives counties a template letter urging senators to support it.", "stance": "supports", "quote": {"text": "Contact your senators and urge them to support the Bipartisan American Affordability and Jobs Act of 2026", "speaker": "National Association of Counties (advocacy hub)"}, "topics": ["nepa", "congress", "permit-certainty"], "sector": "state_local"}
+```
+
+```json
+{"id": "2026-10-08-ifp-tribal-consultation-report", "date": "2026-10-08", "type": "analysis", "outlet": "Institute for Progress", "author": "Ben Schifman", "title": "Tribal consultation under the Bipartisan American Affordability and Jobs Act", "url": "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf", "summary": "A 20-page report on what the bill does and does not change for Tribal consultation, including THPO oversight, the 30-day clocks and remedies, and how it compares with the Advisory Council's draft rule. Its three-page summary is the IFP paper already listed.", "stance": "supports", "quote": {"text": "THPO programs already operate within a federal approval and oversight framework.", "speaker": "Ben Schifman, Institute for Progress"}, "topics": ["tribal", "historic-preservation"], "sector": "think_tank"}
 ```
 
 ```json
@@ -17215,11 +17222,7 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ```
 
 ```json
-{"id": "2026-09-30-ap-pbs-senate-reaches-bipartisan-deal", "date": "2026-09-30", "type": "news", "outlet": "Associated Press (PBS NewsHour)", "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects", "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects", "summary": "AP reports that a vote will wait until after the midterm elections, that Lee expects passage in a November lame-duck session, and that the White House issued a statement backing the bill.", "stance": "reporting", "quote": {"text": "A vote on the bill won't happen until after the midterm elections", "speaker": "Associated Press"}, "topics": ["congress", "white-house"], "sector": "press"}
-```
-
-```json
-{"id": "2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting", "date": "2026-09-30", "type": "news", "outlet": "Associated Press (via ABC News)", "author": "Matthew Daly", "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects", "url": "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583", "summary": "AP reports the senators' announced deal, with Capito's description of it, a White House statement of support, and criticism from the Conservation Law Foundation.", "stance": "reporting", "quote": {"text": "appears to adopt a fossil fuel industry wish-list", "speaker": "Brad Campbell, Conservation Law Foundation"}, "topics": ["congress", "fossil", "white-house"], "sector": "press", "lk": "dead"}
+{"id": "2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting", "date": "2026-09-30", "type": "news", "outlet": "Associated Press (via PBS NewsHour)", "author": "Matthew Daly", "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects", "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects", "summary": "AP reports the senators' announced deal, with Capito's description of it, a White House statement of support, and criticism from the Conservation Law Foundation.", "stance": "reporting", "quote": {"text": "appears to adopt a fossil fuel industry wish-list", "speaker": "Brad Campbell, Conservation Law Foundation"}, "topics": ["congress", "fossil", "white-house"], "sector": "press"}
 ```
 
 ```json

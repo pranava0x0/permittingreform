@@ -969,6 +969,27 @@
    "sector": "state_local"
   },
   {
+   "id": "2026-10-08-ifp-tribal-consultation-report",
+   "date": "2026-10-08",
+   "type": "analysis",
+   "outlet": "Institute for Progress",
+   "author": "Ben Schifman",
+   "title": "Tribal consultation under the Bipartisan American Affordability and Jobs Act",
+   "url": "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+   "verified": true,
+   "summary": "A 20-page report on what the bill does and does not change for Tribal consultation, including THPO oversight, the 30-day clocks and remedies, and how it compares with the Advisory Council's draft rule. Its three-page summary is the IFP paper already listed.",
+   "stance": "supports",
+   "quote": {
+    "text": "THPO programs already operate within a federal approval and oversight framework.",
+    "speaker": "Ben Schifman, Institute for Progress"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "think_tank"
+  },
+  {
    "id": "2026-10-08-heinrich-bluesky-data-center-costs",
    "date": "2026-10-08",
    "type": "social_bluesky",
@@ -2816,33 +2837,13 @@
    "sector": "industry"
   },
   {
-   "id": "2026-09-30-ap-pbs-senate-reaches-bipartisan-deal",
-   "date": "2026-09-30",
-   "type": "news",
-   "outlet": "Associated Press (PBS NewsHour)",
-   "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
-   "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
-   "verified": true,
-   "summary": "AP reports that a vote will wait until after the midterm elections, that Lee expects passage in a November lame-duck session, and that the White House issued a statement backing the bill.",
-   "stance": "reporting",
-   "quote": {
-    "text": "A vote on the bill won't happen until after the midterm elections",
-    "speaker": "Associated Press"
-   },
-   "topics": [
-    "congress",
-    "white-house"
-   ],
-   "sector": "press"
-  },
-  {
    "id": "2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting",
    "date": "2026-09-30",
    "type": "news",
-   "outlet": "Associated Press (via ABC News)",
+   "outlet": "Associated Press (via PBS NewsHour)",
    "author": "Matthew Daly",
    "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
-   "url": "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583",
+   "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
    "verified": true,
    "summary": "AP reports the senators' announced deal, with Capito's description of it, a White House statement of support, and criticism from the Conservation Law Foundation.",
    "stance": "reporting",

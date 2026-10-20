@@ -19,8 +19,8 @@
    "text": "No statutory language states or suggests that Congress empowered CEQ to issue rules binding on other agencies—that is, to act as a regulatory agency rather than as an advisory agency.",
    "speaker": "Senior Judge A. Raymond Randolph (opinion for the court)",
    "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/11/23-1067-2084381.pdf",
-   "result": "missing",
-   "share": 0.76,
+   "result": "verified",
+   "share": 1.0,
    "note": ""
   },
   {
@@ -1180,9 +1180,9 @@
    "text": "The BAAJA severely weakens Tribal opportunities to engage as sovereign governments, curtails Tribal consultation requirements, and restricts access to legal recourse in court.",
    "speaker": "Native American Rights Fund",
    "url": "https://narf.org/baaja-reform-bill/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "error: URLError: <urlopen error timed out>"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "media.2026-10-15-foley-hoag-baaja-blast-transmission",
@@ -1405,6 +1405,15 @@
    "text": "Contact your senators and urge them to support the Bipartisan American Affordability and Jobs Act of 2026",
    "speaker": "National Association of Counties (advocacy hub)",
    "url": "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-08-ifp-tribal-consultation-report",
+   "text": "THPO programs already operate within a federal approval and oversight framework.",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "url": "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -2085,22 +2094,13 @@
    "note": ""
   },
   {
-   "where": "media.2026-09-30-ap-pbs-senate-reaches-bipartisan-deal",
-   "text": "A vote on the bill won't happen until after the midterm elections",
-   "speaker": "Associated Press",
+   "where": "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting",
+   "text": "appears to adopt a fossil fuel industry wish-list",
+   "speaker": "Brad Campbell, Conservation Law Foundation",
    "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
    "result": "verified",
    "share": 1.0,
    "note": ""
-  },
-  {
-   "where": "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting",
-   "text": "appears to adopt a fossil fuel industry wish-list",
-   "speaker": "Brad Campbell, Conservation Law Foundation",
-   "url": "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "dead: HTTP 404"
   },
   {
    "where": "media.2026-09-30-acore-statement-supporting-affordability-jobs-act",
@@ -2940,15 +2940,6 @@
    "note": ""
   },
   {
-   "where": "takes.2026-09-30-broadband-breakfast-1",
-   "text": "Certain repair and replacement work on telecom infrastructure would no longer trigger NEPA reviews",
-   "speaker": "Broadband Breakfast (reporter paraphrasing a permitting policy consultant)",
-   "url": "https://broadbandbreakfast.com/senate-unveils-permitting-package/",
-   "result": "missing",
-   "share": 0.0,
-   "note": ""
-  },
-  {
    "where": "takes.2026-10-01-national-association-of-coun-1",
    "text": "ensuring that counties could submit comments, data and scoping information during the NEPA review process.",
    "speaker": "Matthew Chase, executive director, NACo",
@@ -3481,11 +3472,11 @@
   },
   {
    "where": "takes.2026-10-05-heatmap-1",
-   "text": "At the same time, the discrimination language is a new area of law, Schiffman told me, so there's some uncertainty as to how it would apply.",
-   "speaker": "Emily Pontecorvo, Heatmap (relaying Ben Schiffman, former Interior solicitor's office attorney-adviser)",
+   "text": "At the same time, the discrimination language is a new area of law, Schifman told me, so there's some uncertainty as to how it would apply.",
+   "speaker": "Emily Pontecorvo, Heatmap (relaying Ben Schifman, former Interior solicitor's office attorney-adviser)",
    "url": "https://heatmap.news/politics/baaja-executive-actions",
-   "result": "missing",
-   "share": 0.7142857142857143,
+   "result": "verified",
+   "share": 1.0,
    "note": ""
   },
   {
@@ -3979,6 +3970,24 @@
    "text": "there's an important benefit for federally recognized Tribes in §1110 of BAAJA: limiting the ability of third parties to sue to stop the Tribe from managing its own resources as it wants to.",
    "speaker": "Ben Schifman, Institute for Progress",
    "url": "https://x.com/BenSchifman/status/2110931358696563164",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-08-ifp-tribal-report-thpo",
+   "text": "THPO programs already operate within a federal approval and oversight framework.",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "url": "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-16-tribal-claim-fact-7",
+   "text": "Far from protecting Tribes or leaving their preservation offices “unchanged,” BAAJA penalizes Tribes that miss its deadlines",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
    "result": "verified",
    "share": 1.0,
    "note": ""

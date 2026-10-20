@@ -3,7 +3,6 @@
 | Priority | Idea |
 |---|---|
 | medium | Disputed readings for other contested issues on the Positions page, using the same shape (`data/positions.json` disputes: question, bill passages, takes on each side): lawsuit limits (section 1110 remand without vacatur), data center costs (section 2107 20 MW floor), and transmission backstop siting. Tribal consultation shipped first on 2026-10-20. |
-| low | A supporter reading for the THPO takeover dispute (section 2301, proposed 54 U.S.C. 302707): none found as of 2026-10-20. |
 | high | Re-run the parser and re-read changed sections when the manager's amendment is posted (see REFRESH.md). |
 | high | Enable GitHub Pages by running the `pages` workflow, then submit the sitemap. |
 | medium | Add Reddit threads by hand; no tool could reach the site. |

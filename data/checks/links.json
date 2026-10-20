@@ -13,15 +13,6 @@
     "takes.2026-10-01-grid-strategies-2"
    ]
   },
-  "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583": {
-   "cls": "dead",
-   "kind": "page",
-   "note": "HTTP 404",
-   "status": 404,
-   "where": [
-    "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting"
-   ]
-  },
   "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/": {
    "cls": "ok",
    "kind": "page",
@@ -140,15 +131,6 @@
     "people.michele-stockwell.source",
     "people.michele-stockwell.quote",
     "media.2026-09-30-bpc-action-urges-congress-to-pass-the-bill"
-   ]
-  },
-  "https://broadbandbreakfast.com/senate-unveils-permitting-package/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "takes.2026-09-30-broadband-breakfast-1"
    ]
   },
   "https://bsky.app/profile/biologicaldiversity.org/post/3mwrcfvoxc22g": {
@@ -455,6 +437,7 @@
     "takes.2026-10-16-tribal-claim-fact-4",
     "takes.2026-10-16-tribal-claim-fact-5",
     "takes.2026-10-16-tribal-claim-fact-6",
+    "takes.2026-10-16-tribal-claim-fact-7",
     "timeline.2026-10-16-tribal-claim-vs-fact-paper.source",
     "media.2026-10-16-tribal-claim-vs-fact"
    ]
@@ -972,6 +955,16 @@
     "media.2026-10-13-ifp-baaja-protects-tribal-consultation"
    ]
   },
+  "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-08-ifp-tribal-report-thpo",
+    "media.2026-10-08-ifp-tribal-consultation-report"
+   ]
+  },
   "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/": {
    "cls": "blocked",
    "kind": "page",
@@ -1094,10 +1087,10 @@
    ]
   },
   "https://narf.org/baaja-reform-bill/": {
-   "cls": "error",
+   "cls": "ok",
    "kind": "page",
-   "note": "URLError: <urlopen error timed out>",
-   "status": null,
+   "note": "",
+   "status": 200,
    "where": [
     "timeline.2026-10-09-tribal-organizations-letter-sacred-places.source",
     "media.2026-10-15-narf-tribal-analysis-act-now"
@@ -3292,7 +3285,7 @@
    "status": 200,
    "where": [
     "people.donald-trump.source",
-    "media.2026-09-30-ap-pbs-senate-reaches-bipartisan-deal"
+    "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting"
    ]
   },
   "https://www.permitting.gov/about/leadership": {

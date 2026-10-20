@@ -1007,6 +1007,13 @@
      "ask": "Reconsider pursuing permitting legislation under the current Congress and administration."
     }
    }
+  },
+  "2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting": {
+   "reason": "2026-10-20: ABC News's copy of the AP story now returns 404. PBS NewsHour carries the same Matthew Daly story with the quote intact and is readable by script (Sen. Capito's reprint renders the article only in a browser).",
+   "set": {
+    "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
+    "outlet": "Associated Press (via PBS NewsHour)"
+   }
   }
  }
 }
