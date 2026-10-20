@@ -46,6 +46,20 @@ class QuoteMatch(unittest.TestCase):
     def test_elided_passages_must_keep_the_source_order(self):
         self.assertNotEqual(check_quotes.match("third passage ... first passage", "first passage second passage third passage")[0], "verified")
 
+    def test_the_pdf_extractors_are_pinned_dev_dependencies(self):
+        # The quote check's PDF fix depends on PyMuPDF; a clean clone must be able to install it (Codex, PR 8).
+        req = (Path(__file__).resolve().parent.parent / "requirements-dev.txt").read_text(encoding="utf-8")
+        for pkg in ("pypdf", "pymupdf"):
+            self.assertRegex(req, rf"(?m)^{pkg}==\d+\.\d+(\.\d+)?\b", f"{pkg} is pinned to an exact version")
+
+    def test_a_footnote_marker_after_the_final_period_still_matches(self):
+        # PDF text glues footnote markers onto the sentence: "agency.4", "consequence.xvi".
+        page = "rather than as an advisory agency.4 NEPA contains nothing; with the same consequence.xvi If the agency"
+        self.assertEqual(check_quotes.match("rather than as an advisory agency.", page)[0], "verified")
+        self.assertEqual(check_quotes.match("with the same consequence.", page)[0], "verified")
+        # A quote that ends mid-word still needs the boundary.
+        self.assertNotEqual(check_quotes.match("with the same consequenc", page)[0], "verified")
+
     def test_truncated_numbers_and_words_fail(self):
         self.assertNotEqual(check_quotes.match("spend $20,000", "spend $20,000,000 on it")[0], "verified")
         self.assertNotEqual(check_quotes.match("transmissio", "transmission")[0], "verified")

@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-19",
+ "checked": "2026-10-20",
  "results": {
   "http://pv-magazine-usa.com/2026/10/01/senate-introduces-landmark-permitting-bill-as-industry-data-and-environmental-groups-clash-over-reforms/": {
    "cls": "ok",
@@ -11,15 +11,6 @@
     "takes.2026-10-01-pv-magazine-usa-1",
     "takes.2026-10-01-grid-strategies-1",
     "takes.2026-10-01-grid-strategies-2"
-   ]
-  },
-  "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting"
    ]
   },
   "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/": {
@@ -140,15 +131,6 @@
     "people.michele-stockwell.source",
     "people.michele-stockwell.quote",
     "media.2026-09-30-bpc-action-urges-congress-to-pass-the-bill"
-   ]
-  },
-  "https://broadbandbreakfast.com/senate-unveils-permitting-package/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "takes.2026-09-30-broadband-breakfast-1"
    ]
   },
   "https://bsky.app/profile/biologicaldiversity.org/post/3mwrcfvoxc22g": {
@@ -441,6 +423,23 @@
    "status": 200,
    "where": [
     "media.2025-07-28-earthjustice-statement-on-westerman-golden-permitting-reform-bill"
+   ]
+  },
+  "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-16-tribal-claim-fact-1",
+    "takes.2026-10-16-tribal-claim-fact-2",
+    "takes.2026-10-16-tribal-claim-fact-3",
+    "takes.2026-10-16-tribal-claim-fact-4",
+    "takes.2026-10-16-tribal-claim-fact-5",
+    "takes.2026-10-16-tribal-claim-fact-6",
+    "takes.2026-10-16-tribal-claim-fact-7",
+    "timeline.2026-10-16-tribal-claim-vs-fact-paper.source",
+    "media.2026-10-16-tribal-claim-vs-fact"
    ]
   },
   "https://eelp.law.harvard.edu/tracker/ceq-finalized-phase-2-rule-implementing-national-environmental-policy-act/": {
@@ -912,6 +911,19 @@
     "media.2025-12-18-heatmap-the-house-just-passed-permitting-reform"
    ]
   },
+  "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-09-tribal-orgs-letter-1",
+    "takes.2026-10-09-tribal-orgs-letter-2",
+    "takes.2026-10-09-tribal-orgs-letter-3",
+    "takes.2026-10-09-tribal-orgs-letter-4",
+    "takes.2026-10-09-tribal-orgs-letter-5"
+   ]
+  },
   "https://huffman.house.gov/media-center/press-releases/ranking-member-huffman-statement-on-senate-permitting-deal": {
    "cls": "ok",
    "kind": "page",
@@ -929,6 +941,28 @@
    "status": 200,
    "where": [
     "media.2026-02-19-ifp-breaking-the-nepa-litigation-doom-loop"
+   ]
+  },
+  "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-13-ifp-tribal-1",
+    "takes.2026-10-13-ifp-tribal-2",
+    "takes.2026-10-13-ifp-tribal-3",
+    "media.2026-10-13-ifp-baaja-protects-tribal-consultation"
+   ]
+  },
+  "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-08-ifp-tribal-report-thpo",
+    "media.2026-10-08-ifp-tribal-consultation-report"
    ]
   },
   "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/": {
@@ -1062,6 +1096,16 @@
     "media.2026-10-15-narf-tribal-analysis-act-now"
    ]
   },
+  "https://nathpo.org/2026/10/16/nathpo-october-16th-2026-news-release/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-16-tribal-claim-vs-fact-paper.source",
+    "media.2026-10-16-nathpo-heritage-not-a-bargaining-chip"
+   ]
+  },
   "https://naturalresources.house.gov/news/documentsingle.aspx?DocumentID=418297": {
    "cls": "ok",
    "kind": "page",
@@ -1082,6 +1126,16 @@
    "where": [
     "people.bruce-westerman.source",
     "media.2025-12-18-house-natural-resources-house-passes-speed-act"
+   ]
+  },
+  "https://ncshpo.org/2026/10/02/senate-proposal-does-more-than-streamline-section-106/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-02-ncshpo-1",
+    "media.2026-10-02-ncshpo-more-than-streamline"
    ]
   },
   "https://oklahoma.gov/governor/newsroom/newsroom/2026/governor-stitt-appoints-alan-armstrong-as-us-senator.html": {
@@ -1112,6 +1166,7 @@
    ]
   },
   "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/": {
+   "browser": "2026-10-18",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -1173,6 +1228,17 @@
    "status": 200,
    "where": [
     "media.2026-10-14-save-the-manatee-opposition-statement"
+   ]
+  },
+  "https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-01-national-trust-1",
+    "takes.2026-10-01-national-trust-2",
+    "media.2026-10-01-national-trust-rejects-key-provisions"
    ]
   },
   "https://semafor.com/article/09/29/2026/democrats-flex-filibuster-muscle-ahead-of-election": {
@@ -1266,10 +1332,10 @@
    ]
   },
   "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "takes.2026-10-01-the-hill-2",
     "takes.2026-10-01-center-for-biological-divers-1",
@@ -3182,6 +3248,17 @@
     "media.2026-10-02-nrdc-goldfuss-hard-questions"
    ]
   },
+  "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill": {
+   "browser": "2026-10-20",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "takes.2026-10-19-nrdc-1",
+    "media.2026-10-19-nrdc-assessment-baaja"
+   ]
+  },
   "https://www.nrdc.org/press-releases/permitting-bill-desperately-needed-must-improve": {
    "browser": "2026-10-01",
    "cls": "blocked",
@@ -3208,7 +3285,7 @@
    "status": 200,
    "where": [
     "people.donald-trump.source",
-    "media.2026-09-30-ap-pbs-senate-reaches-bipartisan-deal"
+    "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting"
    ]
   },
   "https://www.permitting.gov/about/leadership": {
@@ -3365,10 +3442,10 @@
    ]
   },
   "https://www.pv-tech.org/us-planning-reform-bill-gets-mixed-response-from-clean-energy-groups/": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "takes.2026-10-01-e2-1",
     "takes.2026-10-01-sierra-club-1"
@@ -3381,6 +3458,18 @@
    "status": 200,
    "where": [
     "media.2026-09-18-r-street-low-energy-fridays-permitting-reform-remains-close"
+   ]
+  },
+  "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-07-searchlight-1",
+    "takes.2026-10-07-searchlight-2",
+    "takes.2026-10-07-searchlight-3",
+    "media.2026-10-07-searchlight-baaja-good-deal-memo"
    ]
   },
   "https://www.senate.gov/legislative/LIS/roll_call_lists/vote_menu_119_2.htm": {
@@ -3598,6 +3687,15 @@
     "media.vanhollen-2026-01-15-pftp"
    ]
   },
+  "https://www.velaw.com/insights/to-the-finish-line-ten-ways-the-new-senate-permitting-bill-is-a-boon-for-energy-infrastructure/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-02-vinson-elkins-nhpa-1"
+   ]
+  },
   "https://www.volts.wtf/p/whats-up-with-the-new-federal-permitting": {
    "cls": "ok",
    "kind": "page",
@@ -3648,6 +3746,7 @@
    ]
   },
   "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/": {
+   "browser": "2026-10-18",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -3924,6 +4023,16 @@
     "media.2026-10-01-x-aidanrmackenzie-interregional-transmission"
    ]
   },
+  "https://x.com/AidanRMackenzie/status/2112277233327051221": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-19-mackenzie-x-1",
+    "media.2026-10-19-mackenzie-x-nhpa"
+   ]
+  },
   "https://x.com/AlecStapp/status/2079946048672293354": {
    "cls": "ok",
    "kind": "x",
@@ -3940,6 +4049,16 @@
    "status": 200,
    "where": [
     "takes.2026-10-04-arushi-sharma-frank-1"
+   ]
+  },
+  "https://x.com/BenSchifman/status/2110931358696563164": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-16-schifman-x-1110",
+    "media.2026-10-16-schifman-x-section-1110"
    ]
   },
   "https://x.com/ChrisBarnardDL/status/2105749671180165608": {
@@ -3994,6 +4113,40 @@
    "status": 200,
    "where": [
     "people.john-thune.social.x"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2112359143525003621": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-20-nathpo-x-1",
+    "media.2026-10-20-nathpo-x-myth-fact"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2110422485111857425": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-14-stansbury-cannot-support.source",
+    "people.melanie-stansbury.source",
+    "media.2026-10-14-portuondo-x-stansbury"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2112269443636273207": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-19-ncai-bill-needs-to-be-killed.source",
+    "timeline.2026-10-19-ncai-bill-needs-to-be-killed.quote",
+    "people.mark-macarro.source",
+    "people.mark-macarro.quote",
+    "media.2026-10-19-portuondo-x-ncai-macarro"
    ]
   },
   "https://x.com/PacificLegal/status/2107147643411705920": {
@@ -4203,6 +4356,54 @@
     "timeline.2026-10-07-guthrie-wants-grid-section-changes.source",
     "people.brett-guthrie.source",
     "media.2026-10-07-siegel-x-guthrie-grid-changes"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2112162745961652545": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-10-19-siegel-x-delicate-balance"
+   ]
+  },
+  "https://x.com/ThomasHochman/status/2112264083525513461": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-10-19-ncai-bill-needs-to-be-killed.source"
+   ]
+  },
+  "https://x.com/ThomasHochman/status/2112264088671998226": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-19-hochman-x-1",
+    "takes.2026-10-19-hochman-x-2"
+   ]
+  },
+  "https://x.com/ThomasHochman/status/2112264099111506361": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "takes.2026-10-19-hochman-x-3"
+   ]
+  },
+  "https://x.com/ThomasHochman/status/2112264100994527699": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "people.thomas-hochman.source",
+    "people.thomas-hochman.quote",
+    "media.2026-10-19-hochman-x-nhpa-thread"
    ]
   },
   "https://x.com/WHCEQ47/status/2008908645837250964": {

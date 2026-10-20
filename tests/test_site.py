@@ -118,6 +118,27 @@ class Page(unittest.TestCase):
         self.assertNotIn("—", JS)
         self.assertNotIn("—", HTML)
 
+    def test_the_json_ld_date_follows_the_data(self):
+        # It sat at 2026-10-02 after an Oct 20 data refresh (Codex, PR 8); build.py now writes it.
+        self.assertIn('"dateModified":"' + build.DATA_AS_OF + '"', HTML)
+
+    def test_a_failed_readings_or_news_load_names_that_resource(self):
+        # The bill-text failure message once covered every lazy load, so a takes.js failure on the
+        # Positions page said "The bill text did not load" and offered the PDF (Codex, PR 8).
+        self.assertIn('failure(err, "The outside readings")', JS)
+        self.assertIn('failure(err, "The timeline, people and media")', JS)
+        self.assertNotIn("fill(host, failure(err)));\n    return el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-disputes\" }", JS)
+
+    def test_a_concerned_reading_is_not_counted_as_opposition(self):
+        # NRDC's "concerns" take sat in "Opponents read it as" and counted as "against" (Codex, PR 8).
+        self.assertIn('"Opponents and critics read it as"', JS)
+        self.assertIn('x === "concerns"', JS)
+        self.assertIn('el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance])', JS)
+
+    def test_the_positions_page_leads_with_disputed_readings(self):
+        self.assertIn("disputesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
+        self.assertIn('"No reading on this side found yet."', JS)
+
     def test_the_positions_page_is_routed_in_the_news_group(self):
         self.assertIn('const NEWS_TABS = ["timeline", "positions", "people", "media"];', JS)
         self.assertIn('[["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]]', JS)

@@ -221,6 +221,56 @@ class Positions(unittest.TestCase):
             self.assertTrue(sections and set(sections) <= nums, i["id"])
         self.assertEqual(check_data.check_positions(CORE), [])
 
+    def test_every_dispute_passage_is_cited_and_every_reading_resolves(self):
+        disputes = [(i, d) for i in CORE["positions"]["issues"] for d in i.get("disputes", [])]
+        self.assertTrue(disputes)
+        takes = {t["id"]: t for t in CORE["takes"]["takes"]}
+        for issue, d in disputes:
+            self.assertTrue(d["passages"] or d.get("note"), d["id"])
+            for p in d["passages"]:
+                self.assertIn("c", p, (d["id"], p["text"][:40]))
+            for side, ids in d["readings"].items():
+                for tid in ids:
+                    self.assertIn(tid, takes)
+                    self.assertIn(takes[tid]["stance"], ("supports",) if side == "for" else ("opposes", "concerns"), tid)
+
+    def test_a_bad_dispute_fails_the_build(self):
+        original = build.load
+
+        def sabotaged(path):
+            data = original(path)
+            if path.name == "positions.json":
+                d = next(d for i in data["issues"] for d in i.get("disputes", []) if d["passages"] and d["readings"].get("for"))
+                d["passages"][0]["text"] += " and other words the bill does not say"
+                d["readings"]["against"].append(d["readings"]["for"][0])
+                d["readings"]["for"].append("no-such-take")
+            return data
+
+        build.load = sabotaged
+        try:
+            _, _, errors = build.build()
+        finally:
+            build.load = original
+        for needle in ("passage not found in section", "which does not belong under 'against'", "no take 'no-such-take'"):
+            self.assertTrue(any(needle in e for e in errors), (needle, errors))
+
+    def test_a_dispute_reading_without_a_bill_passage_fails_the_build(self):
+        original = build.load
+
+        def sabotaged(path):
+            data = original(path)
+            if path.name == "takes.json":
+                d = next(t for t in data["takes"] if t["id"] == "2026-10-16-tribal-claim-fact-1")
+                d.pop("passage")
+            return data
+
+        build.load = sabotaged
+        try:
+            _, _, errors = build.build()
+        finally:
+            build.load = original
+        self.assertTrue(any("2026-10-16-tribal-claim-fact-1 reads a specific clause but has no bill passage" in e for e in errors), errors)
+
     def test_a_bad_issue_reference_fails_the_data_check(self):
         broken = json.loads(json.dumps(CORE))
         issues = broken["positions"]["issues"]

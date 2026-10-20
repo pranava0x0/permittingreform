@@ -9,7 +9,9 @@
   "press_analysis": "Reporting",
   "government": "Officials",
   "state_local": "States and counties",
-  "commentator": "Commentators"
+  "commentator": "Commentators",
+  "tribal": "Tribal Nations and groups",
+  "preservation": "Historic preservationists"
  },
  "stances": {
   "supports": "Supports",
@@ -19,26 +21,6 @@
   "mixed": "Mixed"
  },
  "takes": [
-  {
-   "id": "2026-09-30-broadband-breakfast-1",
-   "sections": [
-    "1102"
-   ],
-   "side": "press_analysis",
-   "stance": "explains",
-   "who": "Broadband Breakfast",
-   "speaker": "Broadband Breakfast (reporter paraphrasing a permitting policy consultant)",
-   "outlet": "Broadband Breakfast",
-   "title": "Senate Unveils Permitting Package",
-   "url": "https://broadbandbreakfast.com/senate-unveils-permitting-package/",
-   "date": "2026-09-30",
-   "claim": "Certain telecom repair and replacement work would stop triggering NEPA.",
-   "quote": "Certain repair and replacement work on telecom infrastructure would no longer trigger NEPA reviews",
-   "passage": {
-    "section": "1102",
-    "text": "does not alter the function or increase the capacity of the lifeline infrastructure by more than 20 percent"
-   }
-  },
   {
    "id": "2026-10-01-national-association-of-coun-1",
    "sections": [
@@ -1209,13 +1191,13 @@
    "side": "press_analysis",
    "stance": "mixed",
    "who": "Heatmap",
-   "speaker": "Emily Pontecorvo, Heatmap (relaying Ben Schiffman, former Interior solicitor's office attorney-adviser)",
+   "speaker": "Emily Pontecorvo, Heatmap (relaying Ben Schifman, former Interior solicitor's office attorney-adviser)",
    "outlet": "Heatmap",
    "title": "What a President Can and Can't Do Under the Senate Permitting Bill",
    "url": "https://heatmap.news/politics/baaja-executive-actions",
    "date": "2026-10-05",
    "claim": "The 'pattern of disparate treatment' cause of action is untested law, so it is unclear how courts would apply it to wind permitting delays.",
-   "quote": "At the same time, the discrimination language is a new area of law, Schiffman told me, so there's some uncertainty as to how it would apply.",
+   "quote": "At the same time, the discrimination language is a new area of law, Schifman told me, so there's some uncertainty as to how it would apply.",
    "passage": {
     "section": "1402",
     "text": "an empirically demonstrated statistical pattern that"
@@ -1745,6 +1727,598 @@
    "passage": {
     "section": "2301",
     "text": "by striking “The head of any Federal agency having direct or indirect” and inserting the following"
+   }
+  },
+  {
+   "id": "2026-10-09-tribal-orgs-letter-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "outlet": "Joint letter (via HillHeat)",
+   "title": "Joint Tribal organization letter opposing BAAJA Title III",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "date": "2026-10-09",
+   "claim": "Tribes would not be consulted while the agency draws the review area, finds historic properties and assesses effects, only after its report.",
+   "quote": "Tribal Nations need not be consulted as federal agencies designate an area of potential effect, identify historic properties, and assess potential effects",
+   "passage": {
+    "section": "2301",
+    "text": "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes"
+   }
+  },
+  {
+   "id": "2026-10-09-tribal-orgs-letter-2",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "outlet": "Joint letter (via HillHeat)",
+   "title": "Joint Tribal organization letter opposing BAAJA Title III",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "date": "2026-10-09",
+   "claim": "A Tribe would have only 30 days to object to an agency's Section 106 report.",
+   "quote": "forces a Tribal Nation to assert substantive objections to a federal agency’s Section 106 report within a mere 30 days of receipt",
+   "passage": {
+    "section": "2301",
+    "text": "does not provide any substantive objections by the date that is 30 days after the date of receipt of a report or finding"
+   }
+  },
+  {
+   "id": "2026-10-09-tribal-orgs-letter-3",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "outlet": "Joint letter (via HillHeat)",
+   "title": "Joint Tribal organization letter opposing BAAJA Title III",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "date": "2026-10-09",
+   "claim": "Missed deadlines would cost a Tribe its THPO status and funding, and Interior would take over the office's work.",
+   "quote": "missed review deadlines will result in the loss of THPO status and funding, as well as the deeply paternalistic assumption of THPO functions by the Department of the Interior",
+   "passage": {
+    "section": "2301",
+    "text": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer"
+   }
+  },
+  {
+   "id": "2026-10-09-tribal-orgs-letter-4",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "outlet": "Joint letter (via HillHeat)",
+   "title": "Joint Tribal organization letter opposing BAAJA Title III",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "date": "2026-10-09",
+   "claim": "Agencies could decide that other considerations outweigh harm to sacred places.",
+   "quote": "the bill would give federal agencies the authority to determine that “other considerations” outweigh adverse effects on our sacred places",
+   "passage": {
+    "section": "2301",
+    "text": "in the sole discretion of the Federal official and as otherwise allowed by law, other considerations outweigh"
+   }
+  },
+  {
+   "id": "2026-10-09-tribal-orgs-letter-5",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "outlet": "Joint letter (via HillHeat)",
+   "title": "Joint Tribal organization letter opposing BAAJA Title III",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "date": "2026-10-09",
+   "claim": "Remand without vacatur as the default remedy would let a project proceed while a flawed review is redone.",
+   "quote": "nearly eliminates any real remedies available to Tribal Nations by stipulating remand without vacatur as a baseline",
+   "passage": {
+    "section": "2301",
+    "text": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction"
+   }
+  },
+  {
+   "id": "2026-10-16-tribal-claim-fact-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "date": "2026-10-16",
+   "claim": "The existing duty to consult would become optional when the agency identifies historic properties.",
+   "quote": "BAAJA turns that mandate into a “may”: an agency “may consult” Tribes when it identifies historic properties.",
+   "passage": {
+    "section": "2301",
+    "text": "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes"
+   }
+  },
+  {
+   "id": "2026-10-16-tribal-claim-fact-2",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "date": "2026-10-16",
+   "claim": "The new definition's examples are built things and artifacts, which leaves mountains, springs and rivers uncertain.",
+   "quote": "the definition’s own examples are a “district, site, building, structure, or object” and “artifacts or material remains,” not a mountain, spring, or river",
+   "passage": {
+    "section": "2301",
+    "text": "means an identifiable geographic location or feature at which an event of continuing religious or cultural significance to a living community occurred"
+   }
+  },
+  {
+   "id": "2026-10-16-tribal-claim-fact-3",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "date": "2026-10-16",
+   "claim": "The bill gives Tribes 30 days to respond, half the 60 days supporters criticize in the administration's draft rule.",
+   "quote": "BAAJA halves the time, with the same consequence.",
+   "passage": {
+    "section": "2301",
+    "text": "fails to respond within 30 days of receipt of a request for review of any report or finding by the applicable Federal official, the applicable Federal official shall proceed"
+   }
+  },
+  {
+   "id": "2026-10-16-tribal-claim-fact-4",
+   "sections": [
+    "2302"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "date": "2026-10-16",
+   "claim": "The money is only authorized, not appropriated, and the new grants come to less per office than THPOs receive now.",
+   "quote": "Tribes get a promise, not funding: the $200 million is only “authorized,” and the Tribal grants are worth less per office than THPOs receive today.",
+   "passage": {
+    "section": "2302",
+    "text": "There is authorized to be appropriated to the Secretary to carry out this subsection $20,000,000 for each of fiscal years 2027 through 2030"
+   }
+  },
+  {
+   "id": "2026-10-16-tribal-claim-fact-5",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "date": "2026-10-16",
+   "claim": "A court that finds a Section 106 violation could only send the review back while construction continues.",
+   "quote": "Courts cannot stop a project that violates Section 106; the only remedy is to reinitiate the review while construction continues.",
+   "passage": {
+    "section": "2301",
+    "text": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction"
+   }
+  },
+  {
+   "id": "2026-10-16-tribal-claim-fact-6",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "date": "2026-10-16",
+   "claim": "The administration's draft rule can be fought or reversed, while the bill's limits would be permanent.",
+   "quote": "Trading a reversible bad rule for an irreversible bad statute is not protection."
+  },
+  {
+   "id": "2026-10-20-nathpo-x-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO",
+   "speaker": "National Association of Tribal Historic Preservation Officers",
+   "outlet": "X",
+   "title": "NATHPO post on BAAJA and Section 106",
+   "url": "https://x.com/NATHPO_org/status/2112359143525003621",
+   "date": "2026-10-20",
+   "claim": "Agencies already must consult Tribes, and the bill would make that optional.",
+   "quote": "Agencies are already legally required to consult Tribes. BAAJA makes that optional.",
+   "passage": {
+    "section": "2301",
+    "text": "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes"
+   }
+  },
+  {
+   "id": "2026-10-01-national-trust-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "preservation",
+   "stance": "opposes",
+   "who": "National Trust for Historic Preservation",
+   "speaker": "National Trust for Historic Preservation (statement)",
+   "outlet": "National Trust for Historic Preservation",
+   "title": "National Trust Rejects Key Provisions of Permitting Reform Bill",
+   "url": "https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill",
+   "date": "2026-10-01",
+   "claim": "Consultation could end when a party misses a deadline, and the agency could proceed without revisiting earlier findings.",
+   "quote": "Consultation could effectively end when a consulting party does not respond within prescribed deadlines",
+   "passage": {
+    "section": "2301",
+    "text": "fails to respond within 30 days of receipt of a request for review of any report or finding by the applicable Federal official, the applicable Federal official shall proceed"
+   }
+  },
+  {
+   "id": "2026-10-01-national-trust-2",
+   "sections": [
+    "2301"
+   ],
+   "side": "preservation",
+   "stance": "opposes",
+   "who": "National Trust for Historic Preservation",
+   "speaker": "National Trust for Historic Preservation (statement)",
+   "outlet": "National Trust for Historic Preservation",
+   "title": "National Trust Rejects Key Provisions of Permitting Reform Bill",
+   "url": "https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill",
+   "date": "2026-10-01",
+   "claim": "An agency could end review on its own finding that other considerations outweigh historic preservation.",
+   "quote": "the proposal would give federal agencies significant authority to end the Section 106 process based on their own unilateral determination that other considerations outweigh historic preservation",
+   "passage": {
+    "section": "2301",
+    "text": "in the sole discretion of the Federal official and as otherwise allowed by law, other considerations outweigh"
+   }
+  },
+  {
+   "id": "2026-10-02-ncshpo-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "state_local",
+   "stance": "opposes",
+   "who": "National Conference of State Historic Preservation Officers",
+   "speaker": "NCSHPO",
+   "outlet": "NCSHPO",
+   "title": "Senate Proposal Does More Than “Streamline” Section 106",
+   "url": "https://ncshpo.org/2026/10/02/senate-proposal-does-more-than-streamline-section-106/",
+   "date": "2026-10-02",
+   "claim": "If a SHPO, THPO or Tribe does not answer on an agreement, the agency could sign it with the Advisory Council instead.",
+   "quote": "If a SHPO, THPO, Tribe, Native Hawaiian organization, or local government fails to respond to an agreement, the Federal official could enter into the agreement with ACHP instead.",
+   "passage": {
+    "section": "2301",
+    "text": "may consult with the Council in lieu of the State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe"
+   }
+  },
+  {
+   "id": "2026-10-19-nrdc-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "environmental",
+   "stance": "concerns",
+   "who": "NRDC",
+   "speaker": "NRDC assessment",
+   "outlet": "NRDC",
+   "title": "NRDC Assessment of BAAJA, the 2026 Permitting and Transmission Bill",
+   "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+   "date": "2026-10-19",
+   "claim": "The bill limits when Tribes take part in decisions and which Tribal interests count.",
+   "quote": "The bill limits Tribal participation in decisions concerning federally connected projects and what Tribal interests are protected",
+   "passage": {
+    "section": "2301",
+    "text": "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes"
+   }
+  },
+  {
+   "id": "2026-10-13-ifp-tribal-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "BAAJA protects Tribal consultation from ACHP's regulatory rollback",
+   "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
+   "date": "2026-10-13",
+   "claim": "The existing statutory duty to consult Tribes, and THPO authority, stay as they are.",
+   "quote": "NHPA’s Tribal consultation requirement, THPO authority, or other sources of duties to Tribes (treaties, the trust responsibility, NAGPRA, and the consultation executive orders) are unchanged in BAAJA.",
+   "passage": {
+    "section": "2301",
+    "text": "shall seek, discuss, as appropriate, and incorporate, as applicable, information from each applicable State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe"
+   }
+  },
+  {
+   "id": "2026-10-13-ifp-tribal-2",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "BAAJA protects Tribal consultation from ACHP's regulatory rollback",
+   "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
+   "date": "2026-10-13",
+   "claim": "The new definition would keep natural features eligible, which the administration's draft rule would exclude.",
+   "quote": "would ensure natural features important to Tribes can be treated as historic properties under NHPA",
+   "passage": {
+    "section": "2301",
+    "text": "means an identifiable geographic location or feature at which an event of continuing religious or cultural significance to a living community occurred"
+   }
+  },
+  {
+   "id": "2026-10-13-ifp-tribal-3",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "BAAJA protects Tribal consultation from ACHP's regulatory rollback",
+   "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
+   "date": "2026-10-13",
+   "claim": "Without the bill, Tribes face the administration's narrower draft rule, which a later rulemaking would struggle to undo.",
+   "quote": "Without BAAJA, Tribes face the narrowed ACHP rule now — ACHP has already voted in favor of it — then years of litigation and a new administration’s rulemaking process to attempt to reverse it."
+  },
+  {
+   "id": "2026-10-19-hochman-x-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "commentator",
+   "stance": "supports",
+   "who": "Thomas Hochman",
+   "speaker": "Thomas Hochman, Green Tape",
+   "outlet": "X",
+   "title": "Thread rebutting the Cultural Heritage Partners fact check",
+   "url": "https://x.com/ThomasHochman/status/2112264088671998226",
+   "date": "2026-10-19",
+   "claim": "The existing shall-consult duty stays, and the bill adds Tribal consultation steps to Section 106 itself.",
+   "quote": "BAAJA keeps Sec. 101’s \"shall consult\" language *and* adds explicit Tribal consultation requirements to Section 106.",
+   "passage": {
+    "section": "2301",
+    "text": "shall seek, discuss, as appropriate, and incorporate, as applicable, information from each applicable State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe"
+   }
+  },
+  {
+   "id": "2026-10-19-hochman-x-2",
+   "sections": [
+    "2301"
+   ],
+   "side": "commentator",
+   "stance": "supports",
+   "who": "Thomas Hochman",
+   "speaker": "Thomas Hochman, Green Tape",
+   "outlet": "X",
+   "title": "Thread rebutting the Cultural Heritage Partners fact check",
+   "url": "https://x.com/ThomasHochman/status/2112264088671998226",
+   "date": "2026-10-19",
+   "claim": "The bill writes a definition of Tribal sacred places into the statute.",
+   "quote": "It also codifies definitions for Tribal sacred places",
+   "passage": {
+    "section": "2301",
+    "text": "means an identifiable geographic location or feature at which an event of continuing religious or cultural significance to a living community occurred"
+   }
+  },
+  {
+   "id": "2026-10-19-hochman-x-3",
+   "sections": [
+    "2302"
+   ],
+   "side": "commentator",
+   "stance": "supports",
+   "who": "Thomas Hochman",
+   "speaker": "Thomas Hochman, Green Tape",
+   "outlet": "X",
+   "title": "Thread rebutting the Cultural Heritage Partners fact check",
+   "url": "https://x.com/ThomasHochman/status/2112264099111506361",
+   "date": "2026-10-19",
+   "claim": "The $20 million is a new program on top of the existing THPO grants, not a replacement for them.",
+   "quote": "the new $20 million authorization is a new program – it adds to, not replaces, the existing THPO operating grants.",
+   "passage": {
+    "section": "2302",
+    "text": "There is authorized to be appropriated to the Secretary to carry out this subsection $20,000,000 for each of fiscal years 2027 through 2030"
+   }
+  },
+  {
+   "id": "2026-10-07-searchlight-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Searchlight Institute",
+   "speaker": "Jane Flegal and Pavan Venkatakrishnan, Searchlight Institute",
+   "outlet": "Searchlight Institute",
+   "title": "The Bipartisan American Affordability and Jobs Act (BAAJA) is a Good Deal; Here's What Democrats Have To Like",
+   "url": "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf",
+   "date": "2026-10-07",
+   "claim": "The bill writes the Tribal role in historic preservation review into law, from the start of consultation on.",
+   "quote": "It writes tribes' role in historic preservation reviews into law, guaranteeing them a seat from the start of consultation through every major decision.",
+   "passage": {
+    "section": "2301",
+    "text": "shall initiate not later than the date of initiation of the environmental review"
+   }
+  },
+  {
+   "id": "2026-10-07-searchlight-2",
+   "sections": [
+    "2302"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Searchlight Institute",
+   "speaker": "Jane Flegal and Pavan Venkatakrishnan, Searchlight Institute",
+   "outlet": "Searchlight Institute",
+   "title": "The Bipartisan American Affordability and Jobs Act (BAAJA) is a Good Deal; Here's What Democrats Have To Like",
+   "url": "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf",
+   "date": "2026-10-07",
+   "claim": "A new grant program would help Tribes record sacred sites without making their locations public.",
+   "quote": "it creates a $20 million-a-year grant program to help tribes document cultural and sacred sites without having to disclose where they are",
+   "passage": {
+    "section": "2302",
+    "text": "Nothing in this section requires a recipient of a grant under this subsection to disclose information to the public"
+   }
+  },
+  {
+   "id": "2026-10-07-searchlight-3",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Searchlight Institute",
+   "speaker": "Jane Flegal and Pavan Venkatakrishnan, Searchlight Institute",
+   "outlet": "Searchlight Institute",
+   "title": "The Bipartisan American Affordability and Jobs Act (BAAJA) is a Good Deal; Here's What Democrats Have To Like",
+   "url": "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf",
+   "date": "2026-10-07",
+   "claim": "A procedural error alone would no longer stop a project, while courts could still halt one on the merits.",
+   "quote": "What changes is that a paperwork mistake in a procedural review can't kill a project on its own.",
+   "passage": {
+    "section": "2301",
+    "text": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction"
+   }
+  },
+  {
+   "id": "2026-10-19-mackenzie-x-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Aidan Mackenzie",
+   "speaker": "Aidan Mackenzie, Institute for Progress",
+   "outlet": "X",
+   "title": "Post on Section 106 and BAAJA",
+   "url": "https://x.com/AidanRMackenzie/status/2112277233327051221",
+   "date": "2026-10-19",
+   "claim": "Section 106 gathers information and consults; it never gave a veto, and the bill does not change that.",
+   "quote": "NHPA 106 is an information gathering and consultation process. That's true now and BAAJA doesn't change it",
+   "passage": {
+    "section": "2301",
+    "text": "in the sole discretion of the Federal official and as otherwise allowed by law, other considerations outweigh"
+   }
+  },
+  {
+   "id": "2026-10-02-vinson-elkins-nhpa-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "legal_analyst",
+   "stance": "supports",
+   "who": "Vinson & Elkins",
+   "speaker": "Vinson & Elkins client alert",
+   "outlet": "Vinson & Elkins",
+   "title": "To the Finish Line: Ten Ways the New Senate Permitting Bill Is a Boon for Energy Infrastructure",
+   "url": "https://www.velaw.com/insights/to-the-finish-line-ten-ways-the-new-senate-permitting-bill-is-a-boon-for-energy-infrastructure/",
+   "date": "2026-10-02",
+   "claim": "Tying historic preservation deadlines to the NEPA schedule, with penalties for overruns, would keep reviews from stretching on.",
+   "quote": "the bill ties NHPA deadlines to the NEPA process, with enforceable penalties if the NHPA process exceeds NEPA reviews.",
+   "passage": {
+    "section": "2301",
+    "text": "shall be completed not later than the date on which the applicable environmental document"
+   }
+  },
+  {
+   "id": "2026-10-16-schifman-x-1110",
+   "sections": [
+    "1110"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Ben Schifman",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "outlet": "X",
+   "title": "Post on section 1110 and Tribal resource management",
+   "url": "https://x.com/BenSchifman/status/2110931358696563164",
+   "date": "2026-10-16",
+   "claim": "Section 1110 would limit third-party suits that try to stop a Tribe from managing its own resources.",
+   "quote": "there's an important benefit for federally recognized Tribes in §1110 of BAAJA: limiting the ability of third parties to sue to stop the Tribe from managing its own resources as it wants to.",
+   "passage": {
+    "section": "1110",
+    "text": "there shall be no administrative or judicial review of such final agency action based on a claim of failure to comply"
+   }
+  },
+  {
+   "id": "2026-10-08-ifp-tribal-report-thpo",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Ben Schifman, Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "Tribal consultation under the Bipartisan American Affordability and Jobs Act",
+   "url": "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+   "date": "2026-10-08",
+   "claim": "THPOs already work under federal approval and review, with disapproval and suspension possible today; the bill shortens the review cycle and adds the takeover step, which the report says matters for Tribal self-government.",
+   "quote": "THPO programs already operate within a federal approval and oversight framework.",
+   "passage": {
+    "section": "2301",
+    "text": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer"
+   }
+  },
+  {
+   "id": "2026-10-16-tribal-claim-fact-7",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners",
+   "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "date": "2026-10-16",
+   "claim": "A Tribe that misses the new deadlines can lose its preservation funding and see Interior take over its office, which the paper calls an affront to sovereignty.",
+   "quote": "Far from protecting Tribes or leaving their preservation offices “unchanged,” BAAJA penalizes Tribes that miss its deadlines",
+   "passage": {
+    "section": "2301",
+    "text": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer"
    }
   }
  ]

@@ -106,6 +106,18 @@ def html_to_text(raw: str) -> str:
 
 
 def pdf_to_text(content: bytes, max_pages: int = 40) -> str:
+    """PyMuPDF when installed, else pypdf. pypdf split words in the D.C. Circuit's Marin Audubon
+    opinion so a verbatim quote matched only 76% (issues.md 2026-10-20); PyMuPDF reads it whole."""
+    try:
+        import fitz  # PyMuPDF
+    except ImportError:
+        fitz = None
+    if fitz is not None:
+        try:
+            with fitz.open(stream=content, filetype="pdf") as doc:
+                return "\n".join(doc[i].get_text() for i in range(min(doc.page_count, max_pages)))
+        except Exception as exc:  # a malformed PDF is a finding, not a crash
+            return f"[pdf text could not be extracted: {exc}]"
     try:
         from pypdf import PdfReader
     except ImportError:

@@ -1,8 +1,9 @@
 name: pages
 
-# Publishes site/ to GitHub Pages. Runs only when started by hand: nothing is
-# published until someone presses "Run workflow". No build step: site/data/*.js
-# is committed, and ci proves it matches data/.
+# Publishes site/ to GitHub Pages on every push to main, gated on make check.
+# It was hand-run only until 2026-10-20; the last manual run (Oct 1) left the
+# live site behind all seven merged PRs. "Run workflow" still works for a re-deploy.
+# No build step: site/data/*.js is committed, and ci proves it matches data/.
 #
 # Security posture: no github.event.* input is interpolated; the one expression
 # used is a trusted step output, per the official deploy-pages pattern.
@@ -12,6 +13,8 @@ permissions:
   id-token: write
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 concurrency:

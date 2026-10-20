@@ -32,7 +32,7 @@ Open http://127.0.0.1:8766. The site has no backend and loads nothing from anoth
 | `data/curation.json` | Edits to the research, each with a reason. |
 | `data/timeline.json`, `people.json`, `media.json` | Research after curation. The build reads these. |
 | `data/checks/` | Results of the last link, quote and inference checks. |
-| `tools/` | Parser, build, validators. Standard library, plus `pypdf` to re-read the PDF. |
+| `tools/` | Parser, build, validators. Standard library, plus the two pinned packages in `requirements-dev.txt`: `pypdf` to re-read the bill PDF and `pymupdf` for the quote check's PDF text (`python3 -m pip install --user -r requirements-dev.txt`). `make check` needs neither. |
 | `tests/` | `unittest` and `node --test` suites. |
 
 ## Checks
@@ -59,7 +59,7 @@ When the sponsors post a new text, or to bring the timeline and coverage current
 
 ## Publish
 
-Push to `main`, then run the `pages` workflow by hand. It deploys `site/` to GitHub Pages.
+Every push to `main` runs the `pages` workflow, which runs `make check` and deploys `site/` to GitHub Pages. Run it by hand to re-deploy without a new commit.
 
 ## Review status, October 2, 2026
 

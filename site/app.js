@@ -210,7 +210,7 @@
         const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
         if (window.PR_NEWS) { done(); return; }
         const tag = document.createElement("script");
-        tag.src = "data/news.js?v=2";
+        tag.src = "data/news.js?v=3";
         tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
         tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
         document.head.appendChild(tag);
@@ -227,7 +227,7 @@
     if (!takesPromise) {
       takesPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/takes.js?v=1";
+        tag.src = "data/takes.js?v=3";
         tag.onload = () => (window.PR_TAKES ? resolve(window.PR_TAKES) : reject(new Error("readings did not load")));
         tag.onerror = () => { takesPromise = null; reject(new Error("readings could not be fetched")); };
         document.head.appendChild(tag);
@@ -240,10 +240,13 @@
     return el("p", { class: "loading", role: "status" }, text);
   }
 
-  function failure(err) {
+  /* Name the resource that failed: the bill text offers the PDF; readings and news offer a reload. */
+  function failure(err, what) {
+    const bill = !what;
     return el("div", { class: "notice", role: "alert" },
-      el("p", null, "The bill text did not load (" + err.message + ")."),
-      el("p", null, el("a", { href: D.meta.pdf }, "Open the PDF")));
+      el("p", null, (what || "The bill text") + " did not load (" + err.message + ")."),
+      el("p", null, bill ? el("a", { href: D.meta.pdf }, "Open the PDF")
+        : el("button", { type: "button", class: "chip", onclick: () => location.reload() }, "Reload the page")));
   }
 
   const foldOpen = new Set();
@@ -491,7 +494,7 @@
   function takesBlock(s) {
     if (!s.takes) return null;
     const host = el("div", null, loading("Loading readings"));
-    ensureTakes().then((T) => fill(host, takesList(T, s))).catch((err) => fill(host, failure(err)));
+    ensureTakes().then((T) => fill(host, takesList(T, s))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "sec-part", "aria-labelledby": "h-takes" },
       el("h2", { id: "h-takes" }, "What others say it would do", el("span", { class: "chip-count" }, s.takes)),
       el("p", { class: "muted" }, "Readings from industry, advocates, lawyers and analysts, quoted from their own words. They are claims about effects, not findings of this site. The summary above says what the text says."),
@@ -1365,6 +1368,55 @@
       voices.length ? null : el("p", { class: "empty" }, "No quoted voices on this issue yet.")]);
   }
 
+  /* Disputed readings: the bill's words first, then each side's reading in its
+     own words. Readings come from takes.js, loaded when the section renders. */
+  const DISPUTE_SIDES = [["against", "Opponents and critics read it as"], ["for", "Supporters read it as"]];
+
+  function disputeReading(T, t) {
+    return el("li", { class: "voice" },
+      el("p", { class: "voice-who" }, el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " ", el("strong", null, t.who), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
+      el("p", { class: "dispute-claim" }, t.claim),
+      el("blockquote", { class: "voice-quote" }, t.quote));
+  }
+
+  function disputeRow(T, issue, d) {
+    // Tally by each reading's own stance: a "concerns" take sits in the critics column but is not
+    // counted as opposition (Codex, PR 8: NRDC's concern read as "against").
+    const stanceOf = (id) => (T.takes.find((t) => t.id === id) || {}).stance;
+    const against = (d.readings.against || []).map(stanceOf);
+    const opp = against.filter((x) => x === "opposes").length;
+    const con = against.filter((x) => x === "concerns").length;
+    const head = el("span", { class: "event-head" },
+      el("span", { class: "event-title" }, d.question),
+      el("span", { class: "pos-tally" }, opp + " against" + (con ? " · " + con + " concerned" : "") + " · " + (d.readings.for || []).length + " for"));
+    return openRow("pos-dispute", "dispute-" + issue.id + "-" + d.id, head, [
+      d.passages.length
+        ? el("div", { class: "dispute-text" }, el("h4", null, "The bill says"),
+          d.passages.map((p) => el("figure", { class: "quote small" },
+            el("blockquote", null, p.text),
+            el("figcaption", null, "Sec. " + p.section, p.c ? [" · ", claimCite(p.section, p.c)] : null))))
+        : el("p", { class: "muted" }, d.note),
+      el("div", { class: "dispute-sides" }, DISPUTE_SIDES.map((s) => {
+        const list = (d.readings[s[0]] || []).map((id) => T.takes.find((t) => t.id === id)).filter(Boolean);
+        return el("div", { class: "voices" },
+          el("h4", null, s[1], el("span", { class: "chip-count" }, list.length)),
+          list.length ? el("ul", null, list.map((t) => disputeReading(T, t))) : el("p", { class: "empty" }, "No reading on this side found yet."));
+      }))]);
+  }
+
+  function disputesBlock() {
+    const issues = ((D.positions && D.positions.issues) || []).filter((i) => i.disputes && i.disputes.length);
+    if (!issues.length) return null;
+    const host = el("div", null, loading("Loading readings"));
+    ensureTakes().then((T) => fill(host, issues.map((i) => [
+      el("h3", { class: "dispute-issue" }, i.title),
+      el("div", { class: "pos-list" }, i.disputes.map((d) => disputeRow(T, i, d)))]))).catch((err) => fill(host, failure(err, "The outside readings")));
+    return el("section", { class: "block", "aria-labelledby": "h-disputes" },
+      el("h2", { id: "h-disputes" }, "Disputed readings"),
+      el("p", { class: "facts" }, "Where supporters and opponents read the same words differently. Each row shows the bill text first, then each side's reading in its own words. This site does not decide which reading is right."),
+      host);
+  }
+
   const GOV_SECTORS = { congress: 1, white_house: 1, agency: 1, court: 1 };
   function sectorKey(p) {
     return !p.inside_government && GOV_SECTORS[p.sector] ? "former" : p.sector;
@@ -1399,6 +1451,7 @@
         el("p", { class: "facts", role: "status" }, count("supports") + " support, " + count("opposes") + " oppose, " + count("mixed") + " mixed, of " +
           D.people.length + " people and groups tracked · " + plural(letters.length, "letter or joint statement", "letters and joint statements") +
           " · as of " + S.formatDate(D.meta.as_of))),
+      disputesBlock(),
       el("section", { class: "block", "aria-labelledby": "h-letters" },
         el("h2", { id: "h-letters" }, "Letters and joint statements"),
         letters.length ? el("div", { class: "pos-list" }, letters.map(letterRow)) : el("p", { class: "empty" }, "No letters recorded yet.")),
@@ -1531,7 +1584,7 @@
       fill(view, subtabs(tab), loading("Loading"));
       markTab(tab);
       ensureNews().then(() => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) route(); })
-        .catch((err) => fill(view, subtabs(tab), failure(err)));
+        .catch((err) => fill(view, subtabs(tab), failure(err, "The timeline, people and media")));
       return;
     }
     if (tab === "bill" && parts[1] === "sec") { nodes = renderSection(parts[2], parts[3], parts[4]); keepScroll = Boolean(parts[3]); }

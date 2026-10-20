@@ -2,6 +2,199 @@
  "generated": "2026-10-01",
  "items": [
   {
+   "id": "2026-10-20-nathpo-x-myth-fact",
+   "date": "2026-10-20",
+   "type": "social_x",
+   "outlet": "X",
+   "title": "NATHPO post: myth and fact on BAAJA and Section 106",
+   "url": "https://x.com/NATHPO_org/status/2112359143525003621",
+   "verified": true,
+   "summary": "NATHPO disputes the claim that the bill writes Tribes into Section 106 for the first time and links the claim-versus-fact paper.",
+   "stance": "opposes",
+   "quote": {
+    "text": "Agencies are already legally required to consult Tribes. BAAJA makes that optional.",
+    "speaker": "NATHPO"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "trade_association",
+   "author": "NATHPO"
+  },
+  {
+   "id": "2026-10-19-siegel-x-delicate-balance",
+   "date": "2026-10-19",
+   "type": "social_x",
+   "outlet": "X",
+   "title": "Tribal opponents want the NHPA title removed; a GOP aide says big changes are unlikely",
+   "url": "https://x.com/SiegelScribe/status/2112162745961652545",
+   "verified": true,
+   "summary": "Punchbowl's reporter says Tribal opponents still want the whole NHPA section removed, and that a Senate GOP aide called significant changes unlikely. The thread adds that the 106 Strong coalition plans a Capitol rally on November 9.",
+   "stance": "reporting",
+   "quote": {
+    "text": "is an incredibly delicate balance",
+    "speaker": "A Senate GOP aide (to Punchbowl News)"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "congress"
+   ],
+   "sector": "media",
+   "author": "Joshua Siegel"
+  },
+  {
+   "id": "2026-10-19-portuondo-x-ncai-macarro",
+   "date": "2026-10-19",
+   "type": "social_x",
+   "outlet": "X",
+   "title": "NCAI calls for the Senate permitting deal to be killed",
+   "url": "https://x.com/NicoPortuondo/status/2112269443636273207",
+   "verified": true,
+   "summary": "Reports that the National Congress of American Indians wants the deal killed over the Section 106 changes.",
+   "stance": "reporting",
+   "quote": {
+    "text": "This bill needs to be killed,",
+    "speaker": "Mark Macarro, President, National Congress of American Indians"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "media",
+   "author": "Nico Portuondo"
+  },
+  {
+   "id": "2026-10-19-nrdc-assessment-baaja",
+   "date": "2026-10-19",
+   "type": "analysis",
+   "outlet": "NRDC",
+   "title": "NRDC Assessment of BAAJA, the 2026 Permitting and Transmission Bill",
+   "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
+   "verified": true,
+   "summary": "NRDC's assessment finds deep flaws in the NEPA, Clean Water Act, ESA and NHPA changes, and says it will seek improvements. On Tribes it says the bill limits participation and which interests count.",
+   "stance": "mixed",
+   "quote": {
+    "text": "The bill would dramatically curtail the rights and powers of Tribes enshrined in Section 106 of the NHPA",
+    "speaker": "NRDC"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "nepa",
+    "clean-water-act",
+    "esa",
+    "transmission"
+   ],
+   "sector": "environmental_group"
+  },
+  {
+   "id": "2026-10-19-mackenzie-x-nhpa",
+   "date": "2026-10-19",
+   "type": "social_x",
+   "outlet": "X",
+   "title": "Post on Section 106 under BAAJA",
+   "url": "https://x.com/AidanRMackenzie/status/2112277233327051221",
+   "verified": true,
+   "summary": "Mackenzie says Section 106 stays an information-gathering and consultation process and that the debate is how to size it.",
+   "stance": "supports",
+   "quote": {
+    "text": "NHPA 106 is an information gathering and consultation process. That's true now and BAAJA doesn't change it",
+    "speaker": "Aidan Mackenzie, Institute for Progress"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "think_tank",
+   "author": "Aidan Mackenzie"
+  },
+  {
+   "id": "2026-10-19-hochman-x-nhpa-thread",
+   "date": "2026-10-19",
+   "type": "social_x",
+   "outlet": "X",
+   "title": "Thread answering the Cultural Heritage Partners fact check on Section 106",
+   "url": "https://x.com/ThomasHochman/status/2112264100994527699",
+   "verified": true,
+   "summary": "Hochman answers the fact check: the Section 101 duty to consult stays, the bill adds Tribal consultation steps to Section 106, and the $20 million THPO program adds to existing grants.",
+   "stance": "supports",
+   "quote": {
+    "text": "much of the opposition has stemmed from misreads and/or mischaracterization of the BAAJA’s contents",
+    "speaker": "Thomas Hochman, Green Tape"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "think_tank",
+   "author": "Thomas Hochman"
+  },
+  {
+   "id": "2026-10-16-tribal-claim-vs-fact",
+   "date": "2026-10-16",
+   "type": "analysis",
+   "outlet": "Cultural Heritage Partners (posted by NATHPO)",
+   "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact",
+   "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "verified": true,
+   "summary": "A 17-page paper under the logos of NATHPO, NCAI, AAIA, NARF and Cultural Heritage Partners checks nine supporter claims about Title III against the bill text and asks senators to strike the title or vote no.",
+   "stance": "opposes",
+   "quote": {
+    "text": "These changes are unacceptable to Tribal Nations.",
+    "speaker": "NATHPO, NCAI, AAIA, NARF and Cultural Heritage Partners"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "courts"
+   ],
+   "sector": "trade_association",
+   "author": "Jessie Barrington"
+  },
+  {
+   "id": "2026-10-16-schifman-x-section-1110",
+   "date": "2026-10-16",
+   "type": "social_x",
+   "outlet": "X",
+   "title": "Post on section 1110 and Tribal resource management",
+   "url": "https://x.com/BenSchifman/status/2110931358696563164",
+   "verified": true,
+   "summary": "Schifman, who says he defended such cases at DOJ, points to section 1110's limit on third-party suits against Tribal resource decisions.",
+   "stance": "supports",
+   "quote": {
+    "text": "there's an important benefit for federally recognized Tribes in §1110 of BAAJA: limiting the ability of third parties to sue to stop the Tribe from managing its own resources as it wants to.",
+    "speaker": "Ben Schifman, Institute for Progress"
+   },
+   "topics": [
+    "tribal",
+    "courts"
+   ],
+   "sector": "think_tank",
+   "author": "Ben Schifman"
+  },
+  {
+   "id": "2026-10-16-nathpo-heritage-not-a-bargaining-chip",
+   "date": "2026-10-16",
+   "type": "org_statement",
+   "outlet": "National Association of Tribal Historic Preservation Officers",
+   "title": "NATHPO to Senators: “Our Heritage Is Not a Bargaining Chip”",
+   "url": "https://nathpo.org/2026/10/16/nathpo-october-16th-2026-news-release/",
+   "verified": true,
+   "summary": "NATHPO answered reports that negotiators would not rewrite or remove the historic preservation title, and offered to help find an alternative.",
+   "stance": "opposes",
+   "quote": {
+    "text": "Our heritage is not a bargaining chip, and the sovereignty and sacred places of Tribal Nations are not leverage for Senators’ backroom negotiations.",
+    "speaker": "Ira Matt (Séliš), NATHPO"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "trade_association"
+  },
+  {
    "id": "2026-10-16-mondaq-akin-senate-unveils-permitting-bill",
    "date": "2026-10-16",
    "type": "analysis",
@@ -334,6 +527,28 @@
    "sector": "environmental_group"
   },
   {
+   "id": "2026-10-14-portuondo-x-stansbury",
+   "date": "2026-10-14",
+   "type": "social_x",
+   "outlet": "X",
+   "title": "Rep. Stansbury comes out against the bill",
+   "url": "https://x.com/NicoPortuondo/status/2110422485111857425",
+   "verified": true,
+   "summary": "Reports that Rep. Melanie Stansbury (D-N.M.) opposes the bill in its current form as Tribal backlash over the NHPA changes grows.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Tribal sovereignty and consultation…will always be my line in the sand—which is why I cannot support this bill in its current form.",
+    "speaker": "Rep. Melanie Stansbury (D-N.M.)"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "congress"
+   ],
+   "sector": "media",
+   "author": "Nico Portuondo"
+  },
+  {
    "id": "2026-10-14-nam-100-plus-manufacturing-business-groups-urge-congress-to-pass-permitting-deal",
    "date": "2026-10-14",
    "type": "org_statement",
@@ -471,6 +686,27 @@
     "courts"
    ],
    "sector": "media"
+  },
+  {
+   "id": "2026-10-13-ifp-baaja-protects-tribal-consultation",
+   "date": "2026-10-13",
+   "type": "analysis",
+   "outlet": "Institute for Progress",
+   "title": "BAAJA protects Tribal consultation from ACHP's regulatory rollback",
+   "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
+   "verified": true,
+   "summary": "A three-page IFP summary compares current regulations, the Advisory Council's July 2026 draft rule and the bill on seven Tribal protections, and says the bill also narrows Section 106 in other ways. The paper is undated; it was circulating on X by October 13.",
+   "stance": "supports",
+   "quote": {
+    "text": "While it includes compromises in some areas, BAAJA codifies Tribal protections and would stop the current administration from ending those protections.",
+    "speaker": "Ben Schifman, Institute for Progress"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "think_tank",
+   "author": "Ben Schifman"
   },
   {
    "id": "2026-10-13-heatmap-trump-revolution-wind-permit",
@@ -733,6 +969,27 @@
    "sector": "state_local"
   },
   {
+   "id": "2026-10-08-ifp-tribal-consultation-report",
+   "date": "2026-10-08",
+   "type": "analysis",
+   "outlet": "Institute for Progress",
+   "author": "Ben Schifman",
+   "title": "Tribal consultation under the Bipartisan American Affordability and Jobs Act",
+   "url": "https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+   "verified": true,
+   "summary": "A 20-page report on what the bill does and does not change for Tribal consultation, including THPO oversight, the 30-day clocks and remedies, and how it compares with the Advisory Council's draft rule. Its three-page summary is the IFP paper already listed.",
+   "stance": "supports",
+   "quote": {
+    "text": "THPO programs already operate within a federal approval and oversight framework.",
+    "speaker": "Ben Schifman, Institute for Progress"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "think_tank"
+  },
+  {
    "id": "2026-10-08-heinrich-bluesky-data-center-costs",
    "date": "2026-10-08",
    "type": "social_bluesky",
@@ -812,6 +1069,30 @@
     "congress"
    ],
    "sector": "media"
+  },
+  {
+   "id": "2026-10-07-searchlight-baaja-good-deal-memo",
+   "date": "2026-10-07",
+   "type": "analysis",
+   "outlet": "Searchlight Institute",
+   "title": "The Bipartisan American Affordability and Jobs Act (BAAJA) is a Good Deal; Here's What Democrats Have To Like",
+   "url": "https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf",
+   "verified": true,
+   "summary": "A four-page memo making the case to Democrats on grid, data center, permit certainty, NEPA, NHPA, Clean Water Act and ESA provisions. The PDF is undated; Searchlight announced it on X on October 7.",
+   "stance": "supports",
+   "quote": {
+    "text": "BAAJA also protects tribes at a moment when the administration is trying to cut them out.",
+    "speaker": "Jane Flegal and Pavan Venkatakrishnan, Searchlight Institute"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "data-centers",
+    "transmission",
+    "courts"
+   ],
+   "sector": "think_tank",
+   "author": "Jane Flegal and Pavan Venkatakrishnan"
   },
   {
    "id": "2026-10-07-iedc-senate-permitting-package-economic-developers",
@@ -1135,6 +1416,26 @@
    "sector": "environmental_group"
   },
   {
+   "id": "2026-10-02-ncshpo-more-than-streamline",
+   "date": "2026-10-02",
+   "type": "org_statement",
+   "outlet": "National Conference of State Historic Preservation Officers",
+   "title": "Senate Proposal Does More Than “Streamline” Section 106",
+   "url": "https://ncshpo.org/2026/10/02/senate-proposal-does-more-than-streamline-section-106/",
+   "verified": true,
+   "summary": "The state historic preservation officers' association walks through each Section 106 change and marks which of its recommendations the bill adopted or rejected.",
+   "stance": "opposes",
+   "quote": {
+    "text": "If a SHPO, THPO, Tribe, Native Hawaiian organization, or local government fails to respond to an agreement, the Federal official could enter into the agreement with ACHP instead.",
+    "speaker": "NCSHPO"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "state_local"
+  },
+  {
    "id": "2026-10-02-mcguirewoods-sweeping-reform-alert",
    "date": "2026-10-02",
    "type": "analysis",
@@ -1456,6 +1757,26 @@
     "permit-certainty"
    ],
    "sector": "state_local"
+  },
+  {
+   "id": "2026-10-01-national-trust-rejects-key-provisions",
+   "date": "2026-10-01",
+   "type": "org_statement",
+   "outlet": "National Trust for Historic Preservation",
+   "title": "National Trust Rejects Key Provisions of Permitting Reform Bill",
+   "url": "https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill",
+   "verified": true,
+   "summary": "The National Trust says the historic preservation provisions go far beyond streamlining and urges changes before the bill advances.",
+   "stance": "opposes",
+   "quote": {
+    "text": "The bill would dramatically narrow the historic and cultural properties and projects that are subject to review, fundamentally alter consultation with Tribal Nations and other stakeholders, expand unilateral federal agency authority, and significantly constrain judicial review.",
+    "speaker": "Shaw Sprague, National Trust for Historic Preservation"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sector": "environmental_group"
   },
   {
    "id": "2026-10-01-nahb-applauds-bipartisan-permitting-bill",
@@ -2516,33 +2837,13 @@
    "sector": "industry"
   },
   {
-   "id": "2026-09-30-ap-pbs-senate-reaches-bipartisan-deal",
-   "date": "2026-09-30",
-   "type": "news",
-   "outlet": "Associated Press (PBS NewsHour)",
-   "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
-   "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
-   "verified": true,
-   "summary": "AP reports that a vote will wait until after the midterm elections, that Lee expects passage in a November lame-duck session, and that the White House issued a statement backing the bill.",
-   "stance": "reporting",
-   "quote": {
-    "text": "A vote on the bill won't happen until after the midterm elections",
-    "speaker": "Associated Press"
-   },
-   "topics": [
-    "congress",
-    "white-house"
-   ],
-   "sector": "press"
-  },
-  {
    "id": "2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting",
    "date": "2026-09-30",
    "type": "news",
-   "outlet": "Associated Press (via ABC News)",
+   "outlet": "Associated Press (via PBS NewsHour)",
    "author": "Matthew Daly",
    "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
-   "url": "https://abcnews.go.com/US/wireStory/senate-reaches-bipartisan-deal-permitting-bill-speed-approvals-136898583",
+   "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
    "verified": true,
    "summary": "AP reports the senators' announced deal, with Capito's description of it, a White House statement of support, and criticism from the Conservation Law Foundation.",
    "stance": "reporting",

@@ -451,6 +451,13 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 .voice-quote::before { content: "\201C"; }
 .voice-quote::after { content: "\201D"; }
 .voices .show-rest { margin-top: 6px; }
+/* Disputed readings: the bill text, then the two sides, side by side when there is room. */
+.dispute-issue { font-size: 1rem; margin: 16px 0 4px; }
+.dispute-text h4 { font-family: var(--font-head); font-size: 0.92rem; margin: 8px 0 0; }
+.dispute-text figcaption { font-size: 0.82rem; }
+.dispute-claim { margin: 0 0 2px; }
+.dispute-sides { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 24px; }
+@media (min-width: 760px) { .dispute-sides { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 /* The sector tally stays a table on phones: five short columns fit 343px. */
 .tally { max-width: 640px; }
 .tally th, .tally td { padding: 6px 8px 6px 0; }
