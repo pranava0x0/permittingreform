@@ -298,7 +298,7 @@
         el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),
       o.next ? null : posLink,
       searchBox(""),
-      D.compare.bills ? el("p", { class: "sec-links" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Data center bills: compare costs, connection and reporting")) : null);
+      D.compare.bills ? el("p", { class: "sec-links" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Compare data center bills")) : null);
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
       el("h2", { id: "h-status" }, "Status"),
@@ -950,6 +950,9 @@
     const matching = all.filter((e) => (tlBranch === "all" || e.branch === tlBranch) && (!tlMilestones || e.milestone) &&
       (tlTopic === "all" || (e.topics || []).indexOf(tlTopic) >= 0));
     const list = month ? matching.filter((e) => monthKey(e) === month) : matching;
+    /* A linked event past the current batch widens the batch to reach it, so the link always opens its event. */
+    const at = picked ? list.findIndex((e) => e.id === picked) : -1;
+    if (at >= tlLimit) tlLimit = Math.ceil((at + 1) / 12) * 12;
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Branch" },
       BRANCHES.filter((b) => b[0] === "all" || counts[b[0]]).map((b) =>
         chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
@@ -1408,9 +1411,23 @@
     const issues = ((D.positions && D.positions.issues) || []).filter((i) => i.disputes && i.disputes.length);
     if (!issues.length) return null;
     const host = el("div", null, loading("Loading readings"));
-    ensureTakes().then((T) => fill(host, issues.map((i) => [
-      el("h3", { class: "dispute-issue" }, i.title),
-      el("div", { class: "pos-list" }, i.disputes.map((d) => disputeRow(T, i, d)))]))).catch((err) => fill(host, failure(err, "The outside readings")));
+    /* Four questions per issue, the rest behind one chip, as with the voices below: each issue added keeps the page in budget. */
+    ensureTakes().then((T) => fill(host, issues.map((i) => {
+      const rows = i.disputes.map((d, n) => {
+        const row = disputeRow(T, i, d);
+        row.hidden = n >= VOICES_SHOWN;
+        return row;
+      });
+      const rest = rows.length - VOICES_SHOWN;
+      return [
+        el("h3", { class: "dispute-issue" }, i.title),
+        el("div", { class: "pos-list" }, rows),
+        rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: (ev) => {
+          rows.forEach((r) => { r.hidden = false; });
+          ev.currentTarget.remove();
+          rows[VOICES_SHOWN].querySelector(".event-toggle").focus();
+        } }, "Show " + rest + " more questions") : null];
+    }))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "block", "aria-labelledby": "h-disputes" },
       el("h2", { id: "h-disputes" }, "Disputed readings"),
       el("p", { class: "facts" }, "Where supporters and opponents read the same words differently. Each row shows the bill text first, then each side's reading in its own words. This site does not decide which reading is right."),

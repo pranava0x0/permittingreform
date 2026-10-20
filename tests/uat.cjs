@@ -39,7 +39,8 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           if (route === 'overview') {
             assert.equal(await page.locator('.brand-name').innerText(), 'Permitting Reform');
             assert.ok(await page.locator('.brand-name').evaluate(el => el.getBoundingClientRect().height < parseFloat(getComputedStyle(el).lineHeight) * 1.5));
-            if (width === 375) assert.ok((await page.locator('.provisions li').first().boundingBox()).y < page.viewportSize().height / 2, 'first provision appears early on mobile: '+JSON.stringify(await page.locator('.provisions li').first().boundingBox()));
+            // Next vote, for/against, search and the jump row come first (DESIGN.md, 2026-10-20); five provisions still fit the first phone screen.
+            if (width === 375) { const fifth = await page.locator('.provisions li').nth(4).boundingBox(); assert.ok(fifth.y + fifth.height <= page.viewportSize().height, 'five provisions on the first phone screen: '+JSON.stringify(fifth)); }
             await page.locator('.bill-details summary').click();
             assert.ok(await page.locator('.bill-details a[href="bill.pdf#page=1"]').isVisible());
             await page.locator('.bill-details summary').click();
@@ -222,6 +223,30 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.waitForSelector('.event.open');
       const box = await page.locator('.event.open').boundingBox();
       assert.ok(box.y >= 0 && box.y < page.viewportSize().height, 'linked event on screen: '+box.y);
+      // A link to an event past its month's first batch of 12 still renders, opens and shows that event.
+      const deep = await page.evaluate(()=>{
+        const by = {};
+        PR_DATA.timeline.forEach(e=>{ const k = e.date < '2025-01' ? 'early' : e.date.slice(0,7); (by[k] = by[k] || []).push(e); });
+        const month = Object.keys(by).sort((a,b)=>by[b].length-by[a].length)[0];
+        const list = by[month].slice().sort((a,b)=>a.date<b.date?1:a.date>b.date?-1:0);
+        return {month, id:list[list.length-1].id, n:list.length};
+      });
+      assert.ok(deep.n > 12, 'the busiest month fills more than one batch: '+deep.n);
+      await page.goto(base+'#/overview');
+      await page.goto(base+'#/timeline/'+deep.month+'/'+deep.id);
+      await page.waitForSelector('#ev-'+deep.id+'.open');
+      const deepBox = await page.locator('#ev-'+deep.id).boundingBox();
+      assert.ok(deepBox.y >= 0 && deepBox.y < page.viewportSize().height, 'event outside the batch on screen: '+deepBox.y);
+      // Disputed readings show four questions per issue; one chip shows the rest and focuses the first of them.
+      await page.goto(base+'#/positions');
+      await page.waitForSelector('.pos-dispute',{state:'attached'});
+      const disputes = await page.evaluate(()=>PR_DATA.positions.issues.map(i=>(i.disputes||[]).length).filter(Boolean));
+      assert.equal(await page.locator('.pos-dispute:visible').count(), disputes.reduce((a,n)=>a+Math.min(4,n),0));
+      while (await page.locator('[aria-labelledby="h-disputes"] .show-rest').count()) {
+        await page.locator('[aria-labelledby="h-disputes"] .show-rest').first().click();
+        assert.ok(await page.evaluate(()=>Boolean(document.activeElement.closest('.pos-dispute'))));
+      }
+      assert.equal(await page.locator('.pos-dispute:visible').count(), disputes.reduce((a,n)=>a+n,0));
       const before = await page.locator('html').getAttribute('data-theme');
       await page.locator('#theme-toggle').click();
       assert.notEqual(await page.locator('html').getAttribute('data-theme'),before);
