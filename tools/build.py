@@ -715,6 +715,15 @@ def main() -> int:
     (SITE / "llms.txt").write_text(llms_txt(core), encoding="utf-8")
     (SITE / "llms-full.txt").write_text(llms_full(core, paras), encoding="utf-8")
     (SITE / "reading.html").write_text(reading_html(core), encoding="utf-8")
+    # The home page's JSON-LD dateModified follows the data, not a hand edit (it sat at Oct 2 after
+    # an Oct 20 refresh). A pattern that stops matching is an error, never a silent no-op.
+    index = SITE / "index.html"
+    page = index.read_text(encoding="utf-8")
+    stamped, n = re.subn(r'("dateModified":")\d{4}-\d{2}-\d{2}(")', r"\g<1>" + DATA_AS_OF + r"\g<2>", page)
+    if n != 1:
+        raise SystemExit(f"build: expected one JSON-LD dateModified in site/index.html, found {n}")
+    if stamped != page:
+        index.write_text(stamped, encoding="utf-8")
     for name, data in (("core", browser_core(core)), ("bill", paras), ("takes", core["takes"]), ("news", browser_news(core))):
         (SITE / f"data/{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     (SITE / "sections").mkdir(exist_ok=True)
