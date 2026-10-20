@@ -1370,20 +1370,25 @@
 
   /* Disputed readings: the bill's words first, then each side's reading in its
      own words. Readings come from takes.js, loaded when the section renders. */
-  const DISPUTE_SIDES = [["against", "Opponents read it as"], ["for", "Supporters read it as"]];
+  const DISPUTE_SIDES = [["against", "Opponents and critics read it as"], ["for", "Supporters read it as"]];
 
   function disputeReading(T, t) {
     return el("li", { class: "voice" },
-      el("p", { class: "voice-who" }, el("strong", null, t.who), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
+      el("p", { class: "voice-who" }, el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " ", el("strong", null, t.who), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
       el("p", { class: "dispute-claim" }, t.claim),
       el("blockquote", { class: "voice-quote" }, t.quote));
   }
 
   function disputeRow(T, issue, d) {
-    const n = (k) => (d.readings[k] || []).length;
+    // Tally by each reading's own stance: a "concerns" take sits in the critics column but is not
+    // counted as opposition (Codex, PR 8: NRDC's concern read as "against").
+    const stanceOf = (id) => (T.takes.find((t) => t.id === id) || {}).stance;
+    const against = (d.readings.against || []).map(stanceOf);
+    const opp = against.filter((x) => x === "opposes").length;
+    const con = against.filter((x) => x === "concerns").length;
     const head = el("span", { class: "event-head" },
       el("span", { class: "event-title" }, d.question),
-      el("span", { class: "pos-tally" }, n("against") + " against · " + n("for") + " for"));
+      el("span", { class: "pos-tally" }, opp + " against" + (con ? " · " + con + " concerned" : "") + " · " + (d.readings.for || []).length + " for"));
     return openRow("pos-dispute", "dispute-" + issue.id + "-" + d.id, head, [
       d.passages.length
         ? el("div", { class: "dispute-text" }, el("h4", null, "The bill says"),

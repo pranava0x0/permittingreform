@@ -129,6 +129,12 @@ class Page(unittest.TestCase):
         self.assertIn('failure(err, "The timeline, people and media")', JS)
         self.assertNotIn("fill(host, failure(err)));\n    return el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-disputes\" }", JS)
 
+    def test_a_concerned_reading_is_not_counted_as_opposition(self):
+        # NRDC's "concerns" take sat in "Opponents read it as" and counted as "against" (Codex, PR 8).
+        self.assertIn('"Opponents and critics read it as"', JS)
+        self.assertIn('x === "concerns"', JS)
+        self.assertIn('el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance])', JS)
+
     def test_the_positions_page_leads_with_disputed_readings(self):
         self.assertIn("disputesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
         self.assertIn('"No reading on this side found yet."', JS)
