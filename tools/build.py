@@ -433,6 +433,9 @@ def build() -> tuple[dict, dict, list[str]]:
                         errors.append(f"{where}: no take {tid!r}")
                     elif secs and not secs & set(t["sections"]):
                         errors.append(f"{where}: take {tid} names none of the sections {sorted(secs)}")
+                    elif secs and not t.get("passage"):
+                        # A reading of a specific clause shows the bill text it argues over (Codex, PR 8).
+                        errors.append(f"{where}: take {tid} reads a specific clause but has no bill passage")
                     elif t["stance"] not in ({"supports"} if side == "for" else {"opposes", "concerns"}):
                         errors.append(f"{where}: take {tid} has stance {t['stance']!r}, which does not belong under {side!r}")
     checks_path = DATA / "checks.json"

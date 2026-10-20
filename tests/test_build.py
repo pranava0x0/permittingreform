@@ -254,6 +254,23 @@ class Positions(unittest.TestCase):
         for needle in ("passage not found in section", "which does not belong under 'against'", "no take 'no-such-take'"):
             self.assertTrue(any(needle in e for e in errors), (needle, errors))
 
+    def test_a_dispute_reading_without_a_bill_passage_fails_the_build(self):
+        original = build.load
+
+        def sabotaged(path):
+            data = original(path)
+            if path.name == "takes.json":
+                d = next(t for t in data["takes"] if t["id"] == "2026-10-16-tribal-claim-fact-1")
+                d.pop("passage")
+            return data
+
+        build.load = sabotaged
+        try:
+            _, _, errors = build.build()
+        finally:
+            build.load = original
+        self.assertTrue(any("2026-10-16-tribal-claim-fact-1 reads a specific clause but has no bill passage" in e for e in errors), errors)
+
     def test_a_bad_issue_reference_fails_the_data_check(self):
         broken = json.loads(json.dumps(CORE))
         issues = broken["positions"]["issues"]
