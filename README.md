@@ -59,7 +59,7 @@ When the sponsors post a new text, or to bring the timeline and coverage current
 
 ## Publish
 
-Push to `main`, then run the `pages` workflow by hand. It deploys `site/` to GitHub Pages.
+Every push to `main` runs the `pages` workflow, which runs `make check` and deploys `site/` to GitHub Pages. Run it by hand to re-deploy without a new commit.
 
 ## Review status, October 2, 2026
 
