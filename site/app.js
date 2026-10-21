@@ -950,9 +950,10 @@
     const matching = all.filter((e) => (tlBranch === "all" || e.branch === tlBranch) && (!tlMilestones || e.milestone) &&
       (tlTopic === "all" || (e.topics || []).indexOf(tlTopic) >= 0));
     const list = month ? matching.filter((e) => monthKey(e) === month) : matching;
-    /* A linked event past the current batch widens the batch to reach it, so the link always opens its event. */
+    /* A linked event past the current batch widens this render's batch to reach it, so the link always opens its event.
+       tlLimit itself stays put, so leaving the link for the full list starts again at 12. */
     const at = picked ? list.findIndex((e) => e.id === picked) : -1;
-    if (at >= tlLimit) tlLimit = Math.ceil((at + 1) / 12) * 12;
+    const limit = at >= tlLimit ? Math.ceil((at + 1) / 12) * 12 : tlLimit;
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Branch" },
       BRANCHES.filter((b) => b[0] === "all" || counts[b[0]]).map((b) =>
         chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
@@ -972,7 +973,7 @@
       briefChip());
     const out = [];
     let year = null;
-    list.slice(0, tlLimit).forEach((e) => {
+    list.slice(0, limit).forEach((e) => {
       const y = e.date.slice(0, 4);
       if (y !== year) { year = y; out.push(el("h2", { class: "year", id: "y-" + y }, y)); }
       const body = el("div", { class: "event-body", id: "eb-" + e.id },
@@ -997,16 +998,16 @@
     });
     const status = month
       ? monthName(month, true) + ": " + list.length + (list.length === 1 ? " event" : " events")
-      : "Newest " + Math.min(tlLimit, list.length) + " of " + list.length + (list.length === all.length ? " events" : " matching events (" + all.length + " total)");
+      : "Newest " + Math.min(limit, list.length) + " of " + list.length + (list.length === all.length ? " events" : " matching events (" + all.length + " total)");
     return [
       el("div", { class: "lede" }, el("h1", null, "Timeline")),
       timelineLine(month, picked, status),
       filters, more,
       list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
-      list.length > tlLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
-        const next = list[tlLimit].id; tlLimit += 12; route();
+      list.length > limit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+        const next = list[limit].id; tlLimit = limit + 12; route();
         const node = document.getElementById("ev-" + next); node.tabIndex = -1; node.focus();
-      } }, "Show " + Math.min(12, list.length - tlLimit) + " more events") : null];
+      } }, "Show " + Math.min(12, list.length - limit) + " more events") : null];
   }
 
   /* Milestones on one line, placed by date; the shape says who acted. A tap opens the event in its month. */

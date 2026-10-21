@@ -237,6 +237,10 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.waitForSelector('#ev-'+deep.id+'.open');
       const deepBox = await page.locator('#ev-'+deep.id).boundingBox();
       assert.ok(deepBox.y >= 0 && deepBox.y < page.viewportSize().height, 'event outside the batch on screen: '+deepBox.y);
+      // Leaving the link for the full list starts again at one batch.
+      await page.goto(base+'#/timeline');
+      await page.waitForSelector('.event.open',{state:'detached'});
+      assert.equal(await page.locator('.event').count(), await page.evaluate(()=>Math.min(12,PR_DATA.timeline.length)));
       // Disputed readings show four questions per issue; one chip shows the rest and focuses the first of them.
       await page.goto(base+'#/positions');
       await page.waitForSelector('.pos-dispute',{state:'attached'});
