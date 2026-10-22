@@ -11,11 +11,13 @@ const H = 812;
 // not open "Review deadlines"); a "|" lists labels the same fold has had.
 const fold = (name) => ({ summary: name });
 const open = (sel) => `details[open]:has(> summary ${sel}) > section`;
+// A collapsed row (Positions, Data centers, Communities) is one more tap; the answer is its body.
+const row = (sel) => ({ toggle: sel });
 const PATHS = [
   ['vote-date', [], '.next-step'],
   ['vote-status', [fold('Where it stands|Status')], open('#h-status')],
   ['who-for-against', [{ href: '#/positions' }], '#view h1'],
-  ['why-split', [{ href: '#/positions' }], 'h2:text-is("By issue")'],
+  ['why-split', [{ href: '#/positions' }, row('.pos-issue')], '.pos-issue .pos-body'],
   ['what-it-does', [], '#h-prov'],
   ['nepa-deadlines', [fold('Review deadlines')], '.provision-detail[open] p'],
   ['lawsuits', [fold('Lawsuit limits')], '.provision-detail[open] p'],
@@ -26,16 +28,16 @@ const PATHS = [
   ['cwa', [fold('Clean Water Act')], '.provision-detail[open] p'],
   ['esa', [fold('Endangered Species Act')], '.provision-detail[open] p'],
   ['tribes-106', [fold('Historic preservation')], '.provision-detail[open] p'],
-  ['tribes-dispute', [{ href: '#/positions' }], 'h2:text-is("Disputed readings")'],
+  ['tribes-dispute', [{ href: '#/positions' }, row('#dispute-tribal-consult')], '#dispute-tribal-consult .pos-body'],
   ['vs-current-law', [{ tab: 'bill' }, { href: '#/compare' }, { row: 'row-deadlines' }], '#row-deadlines .col-current'],
   ['vs-earlier-bills', [fold('Changes from earlier bills')], 'details[data-fold="overview:Changes from earlier bills"][open] > section'],
   ['vs-speed-courts', [{ tab: 'bill' }, { href: '#/compare' }, { chipIn: '[data-comparison="main"]', name: 'SPEED Act' }, { row: 'row-sol' }], '#row-sol .col-speed'],
   ['cost-allocation', [{ tab: 'bill' }, { href: '#/compare' }, { row: 'row-cost' }], '#row-cost .col-senate'],
-  ['dc-page', [{ tab: 'effects' }], '.cm-row'],
-  ['counties', [{ tab: 'effects' }, { href: '#/communities' }], '.cm-row'],
+  ['dc-page', [{ tab: 'effects' }, row('.cm-row')], '.cm-row .cm-body'],
+  ['counties', [{ tab: 'effects' }, { href: '#/communities' }, row('.cm-row')], '.cm-row .cm-body'],
   ['wind-solar', [fold('Where it stands|Status')], open('#h-status')],
   ['agency-deadlines', [fold('Deadlines')], open('#h-clocks')],
-  ['coverage', [{ tab: 'news' }], '.event'],
+  ['coverage', [{ tab: 'news' }], '.event'], // the headlines are the answer
 ];
 
 (async () => {
@@ -47,6 +49,7 @@ const PATHS = [
     for (const s of steps) {
       if (s.summary) await p.locator('summary').filter({ hasText: new RegExp(`^\\s*(${s.summary})\\s*$`) }).click();
       else if (s.row) await p.locator(`#${s.row} .row-toggle`).click();
+      else if (s.toggle) await p.locator(`${s.toggle} .event-toggle`).first().click();
       else if (s.tab) await p.locator(`.tabs a[data-tab="${s.tab}"]`).click();
       else if (s.href) await p.locator(`#view a[href="${s.href}"]`).first().click();
       else if (s.chipIn) await p.locator(s.chipIn).getByRole('button', { name: s.name, exact: true }).click();
