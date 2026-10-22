@@ -1227,7 +1227,7 @@
     return el("ul", { class: "media-list" + (brief ? " brief" : "") }, list.map((it) => {
       const g = MEDIA_TYPES.find((t) => t[0] === mediaGroup(it.type));
       return el("li", { class: "media-item" },
-        el("h3", null, ext(it.url, it.title)),
+        el("h2", null, ext(it.url, it.title)),
         el("p", { class: "feed-meta" }, it.outlet + (it.author ? " · " + it.author : "") + " · " + S.formatDate(it.date) + " · " + g[1]),
         it.summary ? el("p", { class: "lead" }, it.summary) : null,
         el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),

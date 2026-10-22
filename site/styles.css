@@ -18,8 +18,8 @@
 }
 
 :root {
-  --bg: #FFFCF3;
-  --surface: #FFFFFF;
+  --bg: #FFFFFF;
+  --surface: #F5F6F7;
   --border: #D5D5D5;
   --rule: #24461E;
   --text: #2B2B2B;
@@ -27,7 +27,7 @@
   --accent: #205671;
   --accent-weak: #EAF2E3;
   --brand: #24461E;
-  --on-brand: #FFFCF3;
+  --on-brand: #FFFFFF;
   --on-brand-muted: #D3E3C9;
   --mark: #FEE402;
   --on-mark: #2B2B2B;
@@ -455,7 +455,7 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 /* ---------- media ---------- */
 
 .media-item { padding: 12px 0; border-bottom: 1px solid var(--border); max-width: 90ch; }
-.media-item h3 { margin: 0 0 2px; font-size: var(--fs-body); }
+.media-item h2 { margin: 0 0 2px; font-size: var(--fs-body); }
 .media-item .feed-meta { margin-bottom: 2px; }
 .visuals { list-style: none; margin: 4px 0 8px; padding: 0 0 0 12px; border-left: 3px solid var(--accent-weak); font-size: var(--fs-small); }
 .visuals li + li { margin-top: 4px; }

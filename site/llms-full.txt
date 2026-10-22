@@ -101,6 +101,7 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 
 - [Data center bills and Communities](https://pranava0x0.github.io/permittingreform/llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.
 - [Timeline, people and media](https://pranava0x0.github.io/permittingreform/llms-full.txt): dated records with source links and attributed positions.
+- [Where the two sides disagree](https://pranava0x0.github.io/permittingreform/llms-full.txt): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.
 - [Method and check status](https://pranava0x0.github.io/permittingreform/#/method): browser view; equivalent checks are in data/core.json.
 - [Subject comparisons](https://pranava0x0.github.io/permittingreform/#/compare): browser view; retrieve the compare object in data/core.json without JavaScript.
 
@@ -15966,6 +15967,102 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 - BAAJA: Directs the Energy Information Administration to revise Form 861 to include electricity load from data center entities (AI, cloud, cryptocurrency) no later than 90 days before the first April 1 after enactment. (Sec. 2114, [p. 279, line 21 to p. 279, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=279))
 - Bill: [2114](https://pranava0x0.github.io/permittingreform/sections/2114.md)
 - Quote: "the Administrator of the Energy Information Administration shall revise Form 861 of the Energy Information Administration to include load from data center entities.", [p. 279, line 23 to p. 279, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=279)
+
+
+## Where the two sides disagree
+
+Each question quotes the bill, then what critics and supporters say it means, quoted from their sources. The tracker does not say which reading is right.
+
+### Tribal consultation and historic preservation: Must an agency still consult Tribes?
+
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes", [p. 387, line 11 to p. 387, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "shall seek, discuss, as appropriate, and incorporate, as applicable, information from each applicable State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe", [p. 387, line 23 to p. 388, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)
+- Critics: **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (opposes), [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf): "BAAJA turns that mandate into a “may”: an agency “may consult” Tribes when it identifies historic properties."
+- Critics: **NCAI, NARF, NATHPO and six other Tribal organizations** (opposes), [Joint letter (via HillHeat), 2026-10-09](https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf): "Tribal Nations need not be consulted as federal agencies designate an area of potential effect, identify historic properties, and assess potential effects"
+- Critics: **NATHPO** (opposes), [X, 2026-10-20](https://x.com/NATHPO_org/status/2112359143525003621): "Agencies are already legally required to consult Tribes. BAAJA makes that optional."
+- Critics: **NRDC** (concerns), [NRDC, 2026-10-19](https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill): "The bill limits Tribal participation in decisions concerning federally connected projects and what Tribal interests are protected"
+- Supporters: **Institute for Progress** (supports), [Institute for Progress, 2026-10-13](https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf): "NHPA’s Tribal consultation requirement, THPO authority, or other sources of duties to Tribes (treaties, the trust responsibility, NAGPRA, and the consultation executive orders) are unchanged in BAAJA."
+- Supporters: **Thomas Hochman** (supports), [X, 2026-10-19](https://x.com/ThomasHochman/status/2112264088671998226): "BAAJA keeps Sec. 101’s "shall consult" language *and* adds explicit Tribal consultation requirements to Section 106."
+- Supporters: **Searchlight Institute** (supports), [Searchlight Institute, 2026-10-07](https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf): "It writes tribes' role in historic preservation reviews into law, guaranteeing them a seat from the start of consultation through every major decision."
+
+### Tribal consultation and historic preservation: Which sacred places count?
+
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "means an identifiable geographic location or feature at which an event of continuing religious or cultural significance to a living community occurred", [p. 372, line 15 to p. 372, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=372)
+- Critics: **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (opposes), [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf): "the definition’s own examples are a “district, site, building, structure, or object” and “artifacts or material remains,” not a mountain, spring, or river"
+- Supporters: **Institute for Progress** (supports), [Institute for Progress, 2026-10-13](https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf): "would ensure natural features important to Tribes can be treated as historic properties under NHPA"
+- Supporters: **Thomas Hochman** (supports), [X, 2026-10-19](https://x.com/ThomasHochman/status/2112264088671998226): "It also codifies definitions for Tribal sacred places"
+
+### Tribal consultation and historic preservation: What if a Tribe misses the 30 days?
+
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "fails to respond within 30 days of receipt of a request for review of any report or finding by the applicable Federal official, the applicable Federal official shall proceed", [p. 400, line 16 to p. 400, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=400)
+- Critics: **NCAI, NARF, NATHPO and six other Tribal organizations** (opposes), [Joint letter (via HillHeat), 2026-10-09](https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf): "forces a Tribal Nation to assert substantive objections to a federal agency’s Section 106 report within a mere 30 days of receipt"
+- Critics: **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (opposes), [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf): "BAAJA halves the time, with the same consequence."
+- Critics: **National Trust for Historic Preservation** (opposes), [National Trust for Historic Preservation, 2026-10-01](https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill): "Consultation could effectively end when a consulting party does not respond within prescribed deadlines"
+- Critics: **National Conference of State Historic Preservation Officers** (opposes), [NCSHPO, 2026-10-02](https://ncshpo.org/2026/10/02/senate-proposal-does-more-than-streamline-section-106/): "If a SHPO, THPO, Tribe, Native Hawaiian organization, or local government fails to respond to an agreement, the Federal official could enter into the agreement with ACHP instead."
+- Supporters: none found yet.
+
+### Tribal consultation and historic preservation: Can Interior take over a THPO?
+
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer", [p. 377, line 10 to p. 377, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=377)
+- Critics: **NCAI, NARF, NATHPO and six other Tribal organizations** (opposes), [Joint letter (via HillHeat), 2026-10-09](https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf): "missed review deadlines will result in the loss of THPO status and funding, as well as the deeply paternalistic assumption of THPO functions by the Department of the Interior"
+- Critics: **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (opposes), [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf): "Far from protecting Tribes or leaving their preservation offices “unchanged,” BAAJA penalizes Tribes that miss its deadlines"
+- Supporters: **Institute for Progress** (supports), [Institute for Progress, 2026-10-08](https://ifp.org/wp-content/uploads/Tribal-consultation-under-the-Bipartisan-American-Affordability-and-Jobs-Act.pdf): "THPO programs already operate within a federal approval and oversight framework."
+
+### Tribal consultation and historic preservation: Can an agency set aside harm to a sacred place?
+
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "in the sole discretion of the Federal official and as otherwise allowed by law, other considerations outweigh", [p. 393, line 4 to p. 393, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=393)
+- Critics: **NCAI, NARF, NATHPO and six other Tribal organizations** (opposes), [Joint letter (via HillHeat), 2026-10-09](https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf): "the bill would give federal agencies the authority to determine that “other considerations” outweigh adverse effects on our sacred places"
+- Critics: **National Trust for Historic Preservation** (opposes), [National Trust for Historic Preservation, 2026-10-01](https://savingplaces.org/press-center/media-resources/national-trust-rejects-key-provisions-of-permitting-reform-bill): "the proposal would give federal agencies significant authority to end the Section 106 process based on their own unilateral determination that other considerations outweigh historic preservation"
+- Supporters: **Aidan Mackenzie** (supports), [X, 2026-10-19](https://x.com/AidanRMackenzie/status/2112277233327051221): "NHPA 106 is an information gathering and consultation process. That's true now and BAAJA doesn't change it"
+
+### Tribal consultation and historic preservation: Can a court stop a project that skipped the review?
+
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "the only remedy the court may order is to remand, without vacatur or issuance of an injunction", [p. 406, line 25 to p. 407, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=406)
+- Critics: **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (opposes), [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf): "Courts cannot stop a project that violates Section 106; the only remedy is to reinitiate the review while construction continues."
+- Critics: **NCAI, NARF, NATHPO and six other Tribal organizations** (opposes), [Joint letter (via HillHeat), 2026-10-09](https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf): "nearly eliminates any real remedies available to Tribal Nations by stipulating remand without vacatur as a baseline"
+- Supporters: **Searchlight Institute** (supports), [Searchlight Institute, 2026-10-07](https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf): "What changes is that a paperwork mistake in a procedural review can't kill a project on its own."
+
+### Tribal consultation and historic preservation: Is the new Tribal money real?
+
+- Bill, [Sec. 2302](https://pranava0x0.github.io/permittingreform/sections/2302.md): "There is authorized to be appropriated to the Secretary to carry out this subsection $20,000,000 for each of fiscal years 2027 through 2030", [p. 416, line 24 to p. 417, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=416)
+- Critics: **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (opposes), [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf): "Tribes get a promise, not funding: the $200 million is only “authorized,” and the Tribal grants are worth less per office than THPOs receive today."
+- Supporters: **Thomas Hochman** (supports), [X, 2026-10-19](https://x.com/ThomasHochman/status/2112264099111506361): "the new $20 million authorization is a new program – it adds to, not replaces, the existing THPO operating grants."
+- Supporters: **Searchlight Institute** (supports), [Searchlight Institute, 2026-10-07](https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf): "it creates a $20 million-a-year grant program to help tribes document cultural and sacred sites without having to disclose where they are"
+
+### Tribal consultation and historic preservation: Are Tribes better off with the bill or with the administration's draft rule?
+
+- No single passage: this is about what happens if the bill fails and the Advisory Council finishes its draft rule.
+- Critics: **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (opposes), [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf): "Trading a reversible bad rule for an irreversible bad statute is not protection."
+- Supporters: **Institute for Progress** (supports), [Institute for Progress, 2026-10-13](https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf): "Without BAAJA, Tribes face the narrowed ACHP rule now — ACHP has already voted in favor of it — then years of litigation and a new administration’s rulemaking process to attempt to reverse it."
+
+### Tribal consultation and historic preservation: Can a Tribe still sue?
+
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "the claim is filed by a party that has suffered or imminently will suffer direct harm from the agency action", [p. 409, line 9 to p. 409, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=409)
+- Bill, [Sec. 2301](https://pranava0x0.github.io/permittingreform/sections/2301.md): "has provided detailed notice in writing during the consultation process", [p. 410, line 13 to p. 410, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=410)
+- Critics: **NCAI, NARF, NATHPO and six other Tribal organizations** (opposes), [Joint letter (via HillHeat), 2026-10-09](https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf): "This bill also institutes a 150-day statute of limitations, attempts to limit standing"
+- Supporters: **Institute for Progress** (supports), [Institute for Progress, 2026-09-30](https://ifp.org/how-the-permitting-deal-works/): "Section 2301(c) exempts Tribes from the new standing requirements, ensuring that Tribes who raised a concern in writing during consultation can bring a lawsuit after the decision."
+
+### Endangered species: Does it weaken the best-science rule?
+
+- Bill, [Sec. 1301](https://pranava0x0.github.io/permittingreform/sections/1301.md): "impartially gathered and objectively applied without presumptions or policy prescriptions that bias the application", [p. 134, line 6 to p. 134, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=134)
+- Critics: **Center for Biological Diversity and 214 other groups** (opposes), [Coalition letter (Center for Biological Diversity), 2026-10-06](https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf): "would significantly raise the evidentiary burden for protecting imperiled animals and plants by limiting the Services’ ability to account for uncertainty and reasonably foreseeable risks"
+- Supporters: **Institute for Progress** (supports), [Institute for Progress, 2026-09-30](https://ifp.org/how-the-permitting-deal-works/): "Under the new language, the Services could no longer default to using the worst-case scenarios when making a jeopardy or critical habitat determination"
+
+### Endangered species: Can a state run consultations?
+
+- Bill, [Sec. 1304](https://pranava0x0.github.io/permittingreform/sections/1304.md): "the Secretary may assign, and the State may assume, the consultation responsibilities of the Secretary within the boundary of the State", [p. 140, line 1 to p. 140, line 4](https://pranava0x0.github.io/permittingreform/bill.pdf#page=140)
+- Bill, [Sec. 1304](https://pranava0x0.github.io/permittingreform/sections/1304.md): "authorize the State to take the actions necessary to carry out the responsibilities being assumed", [p. 145, line 20 to p. 145, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=145)
+- Critics: **Center for Biological Diversity and 214 other groups** (opposes), [Coalition letter (Center for Biological Diversity), 2026-10-06](https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf): "More than half of the states — including Texas, Utah, and Idaho — lack the statutory authority to protect the full range of plants and animals covered by the federal Endangered Species Act"
+- Critics: **Earthjustice** (concerns), [Earthjustice, 2026-10-20](https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide): "the bill does not specify federal backstop authority to override state decisions that would jeopardize a species' survival"
+- Supporters: **Institute for Progress** (supports), [Institute for Progress, 2026-09-30](https://ifp.org/how-the-permitting-deal-works/): "State authority would be limited to projects within the state, and applicants would have the option to opt out and request review from FWS instead."
+
+### Endangered species: Where can a consultation be challenged?
+
+- Bill, [Sec. 1305](https://pranava0x0.github.io/permittingreform/sections/1305.md): "of any opinion issued by the Secretary under subsection (b) in the United States Court of Appeals for the District of Columbia Circuit", [p. 154, line 16 to p. 154, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=154)
+- Bill, [Sec. 1304](https://pranava0x0.github.io/permittingreform/sections/1304.md): "The district courts of the United States shall have exclusive jurisdiction over any civil action against a State", [p. 147, line 6 to p. 147, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=147)
+- Critics: **Center for Biological Diversity and 214 other groups** (opposes), [Coalition letter (Center for Biological Diversity), 2026-10-06](https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf): "The legislation would direct every Section 7 challenge to the D.C. Circuit"
+- Critics: **Earthjustice** (concerns), [Earthjustice, 2026-10-20](https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide): "By contrast, challenges to consultations by states would be brought in district court, creating a balkanized system for judicial review"
+- Supporters: none found yet.
 
 
 ## Added and dropped provisions

@@ -101,5 +101,6 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 
 - [Data center bills and Communities](https://pranava0x0.github.io/permittingreform/llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.
 - [Timeline, people and media](https://pranava0x0.github.io/permittingreform/llms-full.txt): dated records with source links and attributed positions.
+- [Where the two sides disagree](https://pranava0x0.github.io/permittingreform/llms-full.txt): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.
 - [Method and check status](https://pranava0x0.github.io/permittingreform/#/method): browser view; equivalent checks are in data/core.json.
 - [Subject comparisons](https://pranava0x0.github.io/permittingreform/#/compare): browser view; retrieve the compare object in data/core.json without JavaScript.

@@ -165,5 +165,21 @@ class Page(unittest.TestCase):
         self.assertIn("if (!billPromise)", JS)
 
 
+    def test_crawlers_can_find_every_text_endpoint(self):
+        # The sitemap listed only the two HTML pages; the per-section Markdown and the
+        # llms files were reachable only through llms.txt (2026-10-22).
+        sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
+        listed = set(re.findall(r"<loc>[^<]*/permittingreform/([^<]*)</loc>", sitemap))
+        sections = {f"sections/{f.name}" for f in (ROOT / "site/sections").glob("*.md")}
+        self.assertTrue(sections)
+        self.assertLessEqual(sections | {"llms.txt", "llms-full.txt", "reading.html"}, listed)
+
+    def test_the_disputes_reach_the_agent_text(self):
+        full = (ROOT / "site/llms-full.txt").read_text(encoding="utf-8")
+        self.assertIn("## Where the two sides disagree", full)
+        self.assertIn("- Critics: **", full)
+        self.assertIn("Where the two sides disagree", (ROOT / "site/llms.txt").read_text(encoding="utf-8"))
+
+
 if __name__ == "__main__":
     unittest.main()

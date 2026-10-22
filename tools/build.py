@@ -537,6 +537,7 @@ def llms_txt(core: dict) -> str:
     out += ["", "## Research", "",
             f"- [Data center bills and Communities]({m['site_url']}llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.",
             f"- [Timeline, people and media]({m['site_url']}llms-full.txt): dated records with source links and attributed positions.",
+            f"- [Where the two sides disagree]({m['site_url']}llms-full.txt): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.",
             f"- [Method and check status]({m['site_url']}#/method): browser view; equivalent checks are in data/core.json.",
             f"- [Subject comparisons]({m['site_url']}#/compare): browser view; retrieve the compare object in data/core.json without JavaScript."]
     return "\n".join(out) + "\n"
@@ -604,6 +605,33 @@ def md_cited(core: dict, holder: dict, field: str = "text") -> str:
                               else " (the text is silent on this; confirmed by the summary review)" if t.get("absent") else "") for t in holder["ts"])
 
 
+def disputes_markdown(core: dict) -> list[str]:
+    """The Positions page's disputes as text: the question, the bill passages it
+    turns on, then each side's readings in the sources' words."""
+    take_by_id = {t["id"]: t for t in core["takes"]["takes"]}
+    issues = [i for i in core["positions"]["issues"] if i.get("disputes")]
+    if not issues:
+        return []
+    out = ["", "## Where the two sides disagree", "",
+           "Each question quotes the bill, then what critics and supporters say it means, quoted from their sources. The tracker does not say which reading is right.", ""]
+    for issue in issues:
+        for d in issue["disputes"]:
+            out += [f"### {issue['title']}: {d['question']}", ""]
+            for ps in d.get("passages", []):
+                cite_md = f", {pdf_citation(core['meta']['site_url'], ps['c'])}" if ps.get("c") else ""
+                out.append(f"- Bill, [Sec. {ps['section']}]({core['meta']['site_url']}sections/{ps['section']}.md): \"{ps['text']}\"{cite_md}")
+            if not d.get("passages") and d.get("note"):
+                out.append(f"- {d['note']}")
+            for key, label in (("against", "Critics"), ("for", "Supporters")):
+                takes = [take_by_id[i] for i in d.get("readings", {}).get(key, []) if i in take_by_id]
+                if not takes:
+                    out.append(f"- {label}: none found yet.")
+                for t in takes:
+                    out.append(f"- {label}: **{t['who']}** ({core['takes']['stances'][t['stance']].lower()}), [{t['outlet']}, {t['date']}]({t['url']}): \"{t['quote']}\"")
+            out.append("")
+    return out
+
+
 def llms_full(core: dict, paras: dict) -> str:
     out = [llms_txt(core)]
     out += [section_markdown(core, paras, sec) for sec in core["sections"]]
@@ -669,6 +697,7 @@ def llms_full(core: dict, paras: dict) -> str:
                 cite = f", {pdf_citation(core['meta']['site_url'], row['c'])}" if row.get("c") else ""
                 out.append(f"- Quote{where}: \"{row['quote']}\"{cite}")
             out.append("")
+    out += disputes_markdown(core)
     out += ["", "## Added and dropped provisions", "", "```json", json.dumps({k: core["compare"][k] for k in ("added", "dropped")}, ensure_ascii=False), "```", ""]
     for label, rows in (("Timeline", core["timeline"]), ("People", core["people"]), ("Media", core["media"])):
         out += ["", f"## {label}", ""]
@@ -733,7 +762,8 @@ def main() -> int:
     for sec in core["sections"]:
         (SITE / f"sections/{sec['n']}.md").write_text(section_markdown(core, paras, sec), encoding="utf-8")
     (SITE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-                                    "\n".join(f"<url><loc>{SITE_URL}{path}</loc></url>" for path in ("", "reading.html")) + "\n</urlset>\n", encoding="utf-8")
+                                    "\n".join(f"<url><loc>{SITE_URL}{path}</loc></url>" for path in
+                                              ("", "reading.html", "llms.txt", "llms-full.txt", *(f"sections/{s['n']}.md" for s in core["sections"]))) + "\n</urlset>\n", encoding="utf-8")
     if not (SITE / PDF_NAME).exists():
         print(f"build: site/{PDF_NAME} is missing; download it from {core['meta']['source_pdf']}", file=sys.stderr)
         return 1

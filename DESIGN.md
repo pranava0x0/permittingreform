@@ -1,12 +1,12 @@
 # Permitting Reform design
 
-A committee reading room: dark green masthead, cream paper, compact rows and plain provision rows. The bill and its citations carry the page. This is an independent tracker, not a Senate website.
+A committee reading room: dark green masthead, white page, compact rows and plain provision rows. The bill and its citations carry the page. This is an independent tracker, not a Senate website.
 
 ## Type and color
 
 Self-hosted Raleway for headings and Open Sans for controls and prose. Statutory text uses the system serif stack. Four sizes (`--fs-title`, `--fs-section`, `--fs-body`, `--fs-small`) and two weights (400, 700) cover the whole site; the timeline tick labels and the masthead name are the only exceptions. Fonts and their licenses live in `site/fonts/`.
 
-Colors live in `site/styles.css`: cream `--bg`, green `--brand` and `--rule`, blue citation links, yellow search marks and selected-tab underline. Dark mode has matching tokens. Contrast tests check text at 4.5:1 and rules/focus at 3:1.
+Colors live in `site/styles.css`: white `--bg` (cream until 2026-10-22, dropped as a common AI-template look), green `--brand` and `--rule`, blue citation links, yellow search marks and selected-tab underline. Dark mode has matching tokens. Contrast tests check text at 4.5:1 and rules/focus at 3:1.
 
 ## Layout
 
