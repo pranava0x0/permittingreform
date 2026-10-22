@@ -4483,6 +4483,12 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Rep. Jared Huffman** (Officials; opposes): The ESA delegation to states and new definitions are so extreme that a milder version cost Westerman's ESA bill House Republican support.
   > Hollowing out the Endangered Species Act through the delegation of authority and problematic definitions, for example, is so extreme that a milder version of it spooked several House Republicans off of Bruce Westerman's ESA bill earlier this year
   [House Natural Resources Democrats, 2026-09-30](https://huffman.house.gov/media-center/press-releases/ranking-member-huffman-statement-on-senate-permitting-deal). On the bill text at [p. 137, line 24 to p. 138, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=137).
+- **Center for Biological Diversity and 214 other groups** (Environmental groups; opposes): The definition would make the Services wait for firmer evidence before protecting a species, because it limits how they can weigh uncertainty and foreseeable risk.
+  > would significantly raise the evidentiary burden for protecting imperiled animals and plants by limiting the Services’ ability to account for uncertainty and reasonably foreseeable risks
+  [Coalition letter (Center for Biological Diversity), 2026-10-06](https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf). On the bill text at [p. 134, line 6 to p. 134, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=134).
+- **Institute for Progress** (Think tanks; supports): The definition stops the Services from defaulting to worst-case assumptions, partly writing the D.C. Circuit's Maine Lobstermen decision into law.
+  > Under the new language, the Services could no longer default to using the worst-case scenarios when making a jeopardy or critical habitat determination
+  [Institute for Progress, 2026-09-30](https://ifp.org/how-the-permitting-deal-works/). On the bill text at [p. 134, line 6 to p. 134, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=134).
 
 ## Selected statutory quotes
 
@@ -4762,6 +4768,18 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Rep. Jared Huffman** (Officials; opposes): The ESA delegation to states and new definitions are so extreme that a milder version cost Westerman's ESA bill House Republican support.
   > Hollowing out the Endangered Species Act through the delegation of authority and problematic definitions, for example, is so extreme that a milder version of it spooked several House Republicans off of Bruce Westerman's ESA bill earlier this year
   [House Natural Resources Democrats, 2026-09-30](https://huffman.house.gov/media-center/press-releases/ranking-member-huffman-statement-on-senate-permitting-deal). On the bill text at [p. 137, line 24 to p. 138, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=137).
+- **Center for Biological Diversity and 214 other groups** (Environmental groups; opposes): Most states lack the laws, money and biologists to run consultations, and more than half cannot protect every species the federal act covers.
+  > More than half of the states — including Texas, Utah, and Idaho — lack the statutory authority to protect the full range of plants and animals covered by the federal Endangered Species Act
+  [Coalition letter (Center for Biological Diversity), 2026-10-06](https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf). On the bill text at [p. 140, line 1 to p. 140, line 4](https://pranava0x0.github.io/permittingreform/bill.pdf#page=140).
+- **Earthjustice** (Environmental groups; concerns): Federal consultations would be challenged in the D.C. Circuit and state-run ones in district court, splitting review of the same law.
+  > By contrast, challenges to consultations by states would be brought in district court, creating a balkanized system for judicial review
+  [Earthjustice, 2026-10-20](https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide). On the bill text at [p. 147, line 6 to p. 147, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=147).
+- **Earthjustice** (Environmental groups; concerns): Once a state takes over, Interior has no stated power to overrule a state decision that would jeopardize a species; it can only end the state's role.
+  > the bill does not specify federal backstop authority to override state decisions that would jeopardize a species' survival
+  [Earthjustice, 2026-10-20](https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide). On the bill text at [p. 151, line 22 to p. 151, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=151).
+- **Institute for Progress** (Think tanks; supports): A state can take over only Fish and Wildlife Service consultations on projects inside its borders, and an applicant can still ask for federal review.
+  > State authority would be limited to projects within the state, and applicants would have the option to opt out and request review from FWS instead.
+  [Institute for Progress, 2026-09-30](https://ifp.org/how-the-permitting-deal-works/). On the bill text at [p. 148, line 7 to p. 148, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=148).
 
 ## Selected statutory quotes
 
@@ -5280,6 +5298,17 @@ Lets any person seek review of a biological opinion in the D.C. Circuit within 1
 ## Key points
 
 - 150-day window and D.C. Circuit venue for biological opinion challenges ([p. 154, line 17 to p. 154, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=154))
+
+## What others say it would do
+
+Outside readings, quoted from their sources. These are claims about effects, not findings of this tracker.
+
+- **Center for Biological Diversity and 214 other groups** (Environmental groups; opposes): Every Section 7 challenge would go straight to the D.C. Circuit, which has 11 active judges, and would have to be filed within 150 days.
+  > The legislation would direct every Section 7 challenge to the D.C. Circuit
+  [Coalition letter (Center for Biological Diversity), 2026-10-06](https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf). On the bill text at [p. 154, line 16 to p. 154, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=154).
+- **Earthjustice** (Environmental groups; concerns): Federal consultations would be challenged in the D.C. Circuit and state-run ones in district court, splitting review of the same law.
+  > By contrast, challenges to consultations by states would be brought in district court, creating a balkanized system for judicial review
+  [Earthjustice, 2026-10-20](https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide). On the bill text at [p. 147, line 6 to p. 147, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=147).
 
 ## Selected statutory quotes
 
@@ -5861,7 +5890,7 @@ Outside readings, quoted from their sources. These are claims about effects, not
   > Section 1402 provides recourse if a future administration tries to use the same playbook
   [Daily Caller News Foundation, 2026-10-03](https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse). On the bill text at [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167).
 - **Heatmap** (Reporting; mixed): The 'pattern of disparate treatment' cause of action is untested law, so it is unclear how courts would apply it to wind permitting delays.
-  > At the same time, the discrimination language is a new area of law, Schifman told me, so there's some uncertainty as to how it would apply.
+  > At the same time, the discrimination language is a new area of law, Schiffman told me, so there's some uncertainty as to how it would apply.
   [Heatmap, 2026-10-05](https://heatmap.news/politics/baaja-executive-actions). On the bill text at [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167).
 
 ## Selected statutory quotes
@@ -13602,6 +13631,12 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (Tribal Nations and groups; opposes): A Tribe that misses the new deadlines can lose its preservation funding and see Interior take over its office, which the paper calls an affront to sovereignty.
   > Far from protecting Tribes or leaving their preservation offices “unchanged,” BAAJA penalizes Tribes that miss its deadlines
   [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf). On the bill text at [p. 377, line 10 to p. 377, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=377).
+- **Institute for Progress** (Think tanks; supports): A Tribe that raised its concern in writing during consultation can still sue after the decision, without meeting the new tests on who may sue.
+  > Section 2301(c) exempts Tribes from the new standing requirements, ensuring that Tribes who raised a concern in writing during consultation can bring a lawsuit after the decision.
+  [Institute for Progress, 2026-09-30](https://ifp.org/how-the-permitting-deal-works/). On the bill text at [p. 410, line 13 to p. 410, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=410).
+- **NCAI, NARF, NATHPO and six other Tribal organizations** (Tribal Nations and groups; opposes): The bill would set a 150-day limit to sue and narrow who may bring a case.
+  > This bill also institutes a 150-day statute of limitations, attempts to limit standing
+  [Joint letter (via HillHeat), 2026-10-09](https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf). On the bill text at [p. 409, line 9 to p. 409, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=409).
 
 ## Selected statutory quotes
 

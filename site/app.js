@@ -227,7 +227,7 @@
     if (!takesPromise) {
       takesPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/takes.js?v=4";
+        tag.src = "data/takes.js?v=5";
         tag.onload = () => (window.PR_TAKES ? resolve(window.PR_TAKES) : reject(new Error("readings did not load")));
         tag.onerror = () => { takesPromise = null; reject(new Error("readings could not be fetched")); };
         document.head.appendChild(tag);

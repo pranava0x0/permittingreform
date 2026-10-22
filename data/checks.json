@@ -22,12 +22,12 @@
   "bill_total": 174,
   "bill_verified": 174,
   "browser": 36,
-  "checked": "2026-10-20",
+  "checked": "2026-10-22",
   "missing": 0,
   "near": 0,
-  "total": 494,
-  "unreachable": 8,
+  "total": 503,
+  "unreachable": 1,
   "unverifiable": 0,
-  "verified": 450
+  "verified": 466
  }
 }

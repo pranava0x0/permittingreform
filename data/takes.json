@@ -1197,7 +1197,7 @@
    "url": "https://heatmap.news/politics/baaja-executive-actions",
    "date": "2026-10-05",
    "claim": "The 'pattern of disparate treatment' cause of action is untested law, so it is unclear how courts would apply it to wind permitting delays.",
-   "quote": "At the same time, the discrimination language is a new area of law, Schifman told me, so there's some uncertainty as to how it would apply.",
+   "quote": "At the same time, the discrimination language is a new area of law, Schiffman told me, so there's some uncertainty as to how it would apply.",
    "passage": {
     "section": "1402",
     "text": "an empirically demonstrated statistical pattern that"
@@ -2319,6 +2319,187 @@
    "passage": {
     "section": "2301",
     "text": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer"
+   }
+  },
+  {
+   "id": "2026-10-06-cbd-esa-letter-1",
+   "sections": [
+    "1301"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "who": "Center for Biological Diversity and 214 other groups",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "outlet": "Coalition letter (Center for Biological Diversity)",
+   "title": "Letter to Senate Democrats opposing the bill's Endangered Species Act provisions",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "date": "2026-10-06",
+   "claim": "The definition would make the Services wait for firmer evidence before protecting a species, because it limits how they can weigh uncertainty and foreseeable risk.",
+   "quote": "would significantly raise the evidentiary burden for protecting imperiled animals and plants by limiting the Services’ ability to account for uncertainty and reasonably foreseeable risks",
+   "passage": {
+    "section": "1301",
+    "text": "impartially gathered and objectively applied without presumptions or policy prescriptions that bias the application"
+   }
+  },
+  {
+   "id": "2026-10-06-cbd-esa-letter-2",
+   "sections": [
+    "1304"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "who": "Center for Biological Diversity and 214 other groups",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "outlet": "Coalition letter (Center for Biological Diversity)",
+   "title": "Letter to Senate Democrats opposing the bill's Endangered Species Act provisions",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "date": "2026-10-06",
+   "claim": "Most states lack the laws, money and biologists to run consultations, and more than half cannot protect every species the federal act covers.",
+   "quote": "More than half of the states — including Texas, Utah, and Idaho — lack the statutory authority to protect the full range of plants and animals covered by the federal Endangered Species Act",
+   "passage": {
+    "section": "1304",
+    "text": "the Secretary may assign, and the State may assume, the consultation responsibilities of the Secretary within the boundary of the State"
+   }
+  },
+  {
+   "id": "2026-10-06-cbd-esa-letter-3",
+   "sections": [
+    "1305"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "who": "Center for Biological Diversity and 214 other groups",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "outlet": "Coalition letter (Center for Biological Diversity)",
+   "title": "Letter to Senate Democrats opposing the bill's Endangered Species Act provisions",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "date": "2026-10-06",
+   "claim": "Every Section 7 challenge would go straight to the D.C. Circuit, which has 11 active judges, and would have to be filed within 150 days.",
+   "quote": "The legislation would direct every Section 7 challenge to the D.C. Circuit",
+   "passage": {
+    "section": "1305",
+    "text": "of any opinion issued by the Secretary under subsection (b) in the United States Court of Appeals for the District of Columbia Circuit"
+   }
+  },
+  {
+   "id": "2026-10-20-earthjustice-esa-1",
+   "sections": [
+    "1304",
+    "1305"
+   ],
+   "side": "environmental",
+   "stance": "concerns",
+   "who": "Earthjustice",
+   "speaker": "Earthjustice",
+   "outlet": "Earthjustice",
+   "title": "Guide to the Impacts of the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+   "date": "2026-10-20",
+   "claim": "Federal consultations would be challenged in the D.C. Circuit and state-run ones in district court, splitting review of the same law.",
+   "quote": "By contrast, challenges to consultations by states would be brought in district court, creating a balkanized system for judicial review",
+   "passage": {
+    "section": "1304",
+    "text": "The district courts of the United States shall have exclusive jurisdiction over any civil action against a State"
+   }
+  },
+  {
+   "id": "2026-10-20-earthjustice-esa-2",
+   "sections": [
+    "1304"
+   ],
+   "side": "environmental",
+   "stance": "concerns",
+   "who": "Earthjustice",
+   "speaker": "Earthjustice",
+   "outlet": "Earthjustice",
+   "title": "Guide to the Impacts of the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+   "date": "2026-10-20",
+   "claim": "Once a state takes over, Interior has no stated power to overrule a state decision that would jeopardize a species; it can only end the state's role.",
+   "quote": "the bill does not specify federal backstop authority to override state decisions that would jeopardize a species' survival",
+   "passage": {
+    "section": "1304",
+    "text": "The Secretary may terminate the participation of a State in the program if"
+   }
+  },
+  {
+   "id": "2026-09-30-ifp-deal-esa-1",
+   "sections": [
+    "1301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "date": "2026-09-30",
+   "claim": "The definition stops the Services from defaulting to worst-case assumptions, partly writing the D.C. Circuit's Maine Lobstermen decision into law.",
+   "quote": "Under the new language, the Services could no longer default to using the worst-case scenarios when making a jeopardy or critical habitat determination",
+   "passage": {
+    "section": "1301",
+    "text": "impartially gathered and objectively applied without presumptions or policy prescriptions that bias the application"
+   }
+  },
+  {
+   "id": "2026-09-30-ifp-deal-esa-2",
+   "sections": [
+    "1304"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "date": "2026-09-30",
+   "claim": "A state can take over only Fish and Wildlife Service consultations on projects inside its borders, and an applicant can still ask for federal review.",
+   "quote": "State authority would be limited to projects within the state, and applicants would have the option to opt out and request review from FWS instead.",
+   "passage": {
+    "section": "1304",
+    "text": "a permit or license applicant may elect to consult with the Secretary within the boundary of the State"
+   }
+  },
+  {
+   "id": "2026-09-30-ifp-deal-tribal-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "date": "2026-09-30",
+   "claim": "A Tribe that raised its concern in writing during consultation can still sue after the decision, without meeting the new tests on who may sue.",
+   "quote": "Section 2301(c) exempts Tribes from the new standing requirements, ensuring that Tribes who raised a concern in writing during consultation can bring a lawsuit after the decision.",
+   "passage": {
+    "section": "2301",
+    "text": "has provided detailed notice in writing during the consultation process"
+   }
+  },
+  {
+   "id": "2026-10-09-tribal-orgs-letter-6",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "outlet": "Joint letter (via HillHeat)",
+   "title": "Joint Tribal organization letter opposing BAAJA Title III",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "date": "2026-10-09",
+   "claim": "The bill would set a 150-day limit to sue and narrow who may bring a case.",
+   "quote": "This bill also institutes a 150-day statute of limitations, attempts to limit standing",
+   "passage": {
+    "section": "2301",
+    "text": "the claim is filed by a party that has suffered or imminently will suffer direct harm from the agency action"
    }
   }
  ]
