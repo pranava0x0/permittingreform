@@ -30,7 +30,7 @@ Sonnet inference and a small availability probe were blocked by the subscription
 ## 2026-10-21 — Reader-question research for PR 9
 
 - Why: requested research into what readers ask about the bill, to score whether the site answers each question and how many taps it takes at 375px (`docs/reader-questions.md`).
-- Tools: one Haiku subagent (73 web searches, 98 page fetches, 45 shell calls; no sub-agents), plus the main session reading X in the user's Chrome. Reddit was blocked in the browser tool and Bluesky search needs a login.
-- Tokens: the subagent's transcript shows about 353K cache-write and 3.77M cache-read input tokens (deduplicated by request id; the logged output counts are too partial to report). The main session's share is not separately metered.
+- Tools: one Haiku subagent, 2026-10-22 03:27–03:38 UTC (38 web searches, 49 page fetches, 23 shell calls, counted by tool-call id; no sub-agents), plus the main session reading X in the user's Chrome. Reddit was blocked in the browser tool and Bluesky search needs a login.
+- Tokens: the subagent made 25 requests: 353K cache-write (5 min), 3.77M cache-read and 96K output tokens (deduplicated by request id, largest output per request), about 1.30M weighted. The main session's share is not separately metered.
 - Result: 361 questions. 340 name a source URL across 111 pages, and 137 of those come from search summaries rather than fetched pages. 21 name an outlet but no page and are listed as unchecked leads. Codex review found placeholder sources in the first draft (no URL, "same URL", a PBS link labelled King & Spalding); link text is now the URL's domain, and entries with no URL are left out of every count.
 - Worth it: yes, with a caveat. The gaps (vote count, electricity prices, emissions, time saved, amendments) and the slow Compare paths came straight from it. But about 40% of the entries rest on search summaries, so the counts show which topics come up most, not how many people asked.
