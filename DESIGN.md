@@ -82,7 +82,7 @@ The tinted track from 2026-10-20 still read as links, and its filled current pag
 
 ## One filter row per page; the rest behind More filters (2026-10-21)
 
-Reader research (`docs/reader-questions.md`: 361 questions, 354 of them from 110 source pages, and X threads) found the Overview already answered most common questions in one tap. The clutter readers ran into was on the inner pages: Media showed three chip rows and a topic box before its first item, and Data centers and Communities each opened on two chip rows plus a jump row. Three approaches were weighed:
+Reader research (`docs/reader-questions.md`: 361 questions, 203 of them from the 41 pages the agent fetched, and X threads) found the Overview already answered most common questions in one tap. The clutter readers ran into was on the inner pages: Media showed three chip rows and a topic box before its first item, and Data centers and Communities each opened on two chip rows plus a jump row. Three approaches were weighed:
 
 1. Fewer controls on the same pages (chosen). Each page keeps one filter row in view; the other filters sit in a closed More filters control that says how many are on ("More filters (1 on)") and opens by itself when any is on. Pages under three screens lose their jump row. The status fold moves above the provisions and is renamed "Where it stands". Routes and records are unchanged.
 2. Merge the News pages: Timeline and Media in one feed, People inside Positions, nine pages down to seven. Rejected for now: the feeds have different shapes, and deep links would need redirects.
