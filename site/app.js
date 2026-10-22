@@ -1380,11 +1380,12 @@
 
   /* Disputed readings: the bill's words first, then each side's reading in its
      own words. Readings come from takes.js, loaded when the section renders. */
-  const DISPUTE_SIDES = [["against", "Opponents and critics read it as"], ["for", "Supporters read it as"]];
+  const DISPUTE_SIDES = [["against", "Critics"], ["for", "Supporters"]];
 
   function disputeReading(T, t) {
-    return el("li", { class: "voice" },
-      el("p", { class: "voice-who" }, el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " ", el("strong", null, t.who), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
+    return el("li", { class: "voice dispute-reading" },
+      el("p", { class: "dispute-who" }, el("strong", null, t.who)),
+      el("p", { class: "dispute-meta" }, el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
       el("p", { class: "dispute-claim" }, t.claim),
       el("blockquote", { class: "voice-quote" }, t.quote));
   }
@@ -1398,7 +1399,10 @@
     const con = against.filter((x) => x === "concerns").length;
     const head = el("span", { class: "event-head" },
       el("span", { class: "event-title" }, d.question),
-      el("span", { class: "pos-tally" }, opp + " against" + (con ? " · " + con + " concerned" : "") + " · " + (d.readings.for || []).length + " for"));
+      el("span", { class: "pos-tally" },
+        el("span", { class: "stance-opposes" }, opp + " against"),
+        con ? [" · ", el("span", { class: "stance-concerns" }, con + " concerned")] : null,
+        " · ", el("span", { class: "stance-supports" }, (d.readings.for || []).length + " for")));
     return openRow("pos-dispute", "dispute-" + issue.id + "-" + d.id, head, [
       d.passages.length
         ? el("div", { class: "dispute-text" }, el("h4", null, "The bill says"),
@@ -1408,9 +1412,9 @@
         : el("p", { class: "muted" }, d.note),
       el("div", { class: "dispute-sides" }, DISPUTE_SIDES.map((s) => {
         const list = (d.readings[s[0]] || []).map((id) => T.takes.find((t) => t.id === id)).filter(Boolean);
-        return el("div", { class: "voices" },
-          el("h4", null, s[1], el("span", { class: "chip-count" }, list.length)),
-          list.length ? el("ul", null, list.map((t) => disputeReading(T, t))) : el("p", { class: "empty" }, "No reading on this side found yet."));
+        return el("div", { class: "voices dispute-side side-" + s[0] },
+          el("h4", null, s[1] + " (" + list.length + ")"),
+          list.length ? el("ul", null, list.map((t) => disputeReading(T, t))) : el("p", { class: "empty" }, "None found yet."));
       }))]);
   }
 
@@ -1436,8 +1440,8 @@
         } }, "Show " + rest + " more questions") : null];
     }))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "block", "aria-labelledby": "h-disputes" },
-      el("h2", { id: "h-disputes" }, "Disputed readings"),
-      el("p", { class: "facts" }, "Where supporters and opponents read the same words differently. Each row shows the bill text first, then each side's reading in its own words. This site does not decide which reading is right."),
+      el("h2", { id: "h-disputes" }, "Where the two sides disagree"),
+      el("p", { class: "facts" }, "Each question quotes the bill, then what critics and supporters say it means, in their own words. We don't say who is right."),
       host);
   }
 

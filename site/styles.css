@@ -483,10 +483,21 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 .voice-quote::after { content: "\201D"; }
 .voices .show-rest { margin-top: 6px; }
 /* Disputed readings: the bill text, then the two sides, side by side when there is room. */
-.dispute-issue { font-size: var(--fs-body); margin: 16px 0 4px; }
-.dispute-text h4 { font-family: var(--font-head); font-size: var(--fs-small); margin: 8px 0 0; }
-.dispute-text figcaption { font-size: var(--fs-small); }
-.dispute-claim { margin: 0 0 2px; }
+/* Disputes: the issue, the question, the bill's words and each side each look different.
+   The bill text sits on the pale green the bill column uses; each side is headed in its stance color. */
+.dispute-issue { font-size: var(--fs-body); margin: 24px 0 0; padding-bottom: 4px; border-bottom: 2px solid var(--rule); }
+.dispute-text { margin: 8px 0 4px; padding: 8px 12px; background: var(--accent-weak); border-left: 3px solid var(--rule); }
+.dispute-text h4 { font-family: var(--font-head); font-size: var(--fs-small); margin: 0; }
+.dispute-text .quote.small { border-left: 0; padding: 0; margin: 6px 0 0; }
+.dispute-text figcaption { font-size: var(--fs-small); color: var(--text-muted); }
+.dispute-side h4 { border-bottom: 2px solid currentColor; }
+.side-against h4 { color: var(--stance-opposes); }
+.side-for h4 { color: var(--stance-supports); }
+.dispute-reading { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.dispute-reading:last-child { border-bottom: 0; }
+.dispute-who, .dispute-meta { margin: 0; }
+.dispute-meta { font-size: var(--fs-small); color: var(--text-muted); }
+.dispute-claim { margin: 4px 0; font-size: var(--fs-body); }
 .dispute-sides { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 24px; }
 @media (min-width: 760px) { .dispute-sides { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 /* The sector tally stays a table on phones: five short columns fit 343px. */
