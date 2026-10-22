@@ -1,4 +1,11 @@
 {
+ "summary": {
+  "text": "A bipartisan Senate bill that would change how federal agencies review and approve energy and infrastructure projects, and would make data centers pay for the transmission lines they need.",
+  "source": {
+   "label": "Senate EPW Committee",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026"
+  }
+ },
  "status": {
   "points": [
    {
@@ -47,7 +54,7 @@
  },
  "next": {
   "date": "2026-11-09",
-  "text": "Senate cloture vote, about 5:30 p.m., on taking up H.R. 2347, the legislative vehicle for the bill. It is the Senate's first vote after the November 3 election.",
+  "text": "Senate cloture vote on taking up H.R. 2347, the bill's vehicle, about 5:30 p.m.",
   "source": {
    "label": "U.S. Senate Press Gallery",
    "url": "https://www.dailypress.senate.gov/thursday-october-15-2026/"

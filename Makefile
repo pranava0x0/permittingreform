@@ -34,10 +34,10 @@ infer:
 prose:
 	@mkdir -p .test-artifacts
 	$(PY) tools/check_data.py --dump-prose $(PROSE) > /dev/null
-	$(PY) tools/slopcheck.py --fail-on WARN site/index.html site/app.js site/search.js README.md REFRESH.md docs $(PROSE)
+	$(PY) tools/slop_writing.py --no-review --fail-on WARN site/index.html site/app.js site/search.js README.md REFRESH.md docs $(PROSE)
 
 design:
-	$(PY) tools/designcheck.py --fail-on WARN site/styles.css site/index.html
+	$(PY) tools/slop_design.py --no-review --fail-on WARN site/styles.css site/index.html
 
 serve:
 	$(PY) -m http.server 8766 --bind 127.0.0.1 --directory site

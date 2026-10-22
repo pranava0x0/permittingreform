@@ -80,7 +80,9 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
           await loc.evaluate((el) => {
             for (let n = el.parentElement; n; n = n.parentElement) {
               if (n.tagName === 'DETAILS') n.open = true;
-              if (n.matches('.event, .cm-row, .person, .media-item, .compare tbody tr')) n.classList.add('open');
+              if (n.matches('.event, .cm-row, .person, .media-item, .compare tbody tr, .pos-row')) n.classList.add('open');
+              /* Rows past a list's first four sit behind a "Show N more" chip, which unhides them. */
+              if (n.hidden && n.matches('.pos-row')) n.hidden = false;
             }
           });
           if (!(await loc.isVisible())) { report.clicks.push({ ...rec, result: 'hidden' }); continue; }

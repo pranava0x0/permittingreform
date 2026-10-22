@@ -39,19 +39,32 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           if (route === 'overview') {
             assert.equal(await page.locator('.brand-name').innerText(), 'Permitting Reform');
             assert.ok(await page.locator('.brand-name').evaluate(el => el.getBoundingClientRect().height < parseFloat(getComputedStyle(el).lineHeight) * 1.5));
-            if (width === 375) assert.ok((await page.locator('.provisions li').first().boundingBox()).y < page.viewportSize().height / 2, 'first provision appears early on mobile: '+JSON.stringify(await page.locator('.provisions li').first().boundingBox()));
-            await page.locator('.bill-details summary').click();
-            assert.ok(await page.locator('.bill-details a[href="bill.pdf#page=1"]').isVisible());
-            await page.locator('.bill-details summary').click();
+            // The lead says what the bill is and when the next vote is, then two rows (DESIGN.md, 2026-10-22); four provisions still fit the first phone screen.
+            assert.ok(await page.locator('.overview-lede .summary').isVisible());
+            assert.ok(await page.locator('.overview-lede .next-step').isVisible());
+            if (width === 375) { const fourth = await page.locator('.provisions li').nth(3).boundingBox(); assert.ok(fourth.y + fourth.height <= page.viewportSize().height, 'four provisions on the first phone screen: '+JSON.stringify(fourth)); }
+            assert.ok(await page.locator('.overview-note a[href="bill.pdf#page=1"]').isVisible());
+            // One type scale on the first screen: four sizes, two weights.
+            const type = await page.evaluate(() => { const s = new Set(), w = new Set();
+              for (const e of document.querySelectorAll('main *')) { const r = e.getBoundingClientRect(); if (!r.width || r.top > innerHeight) continue;
+                if ([...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim())) { const c = getComputedStyle(e); s.add(c.fontSize); w.add(c.fontWeight); } }
+              return { sizes: s.size, weights: [...w].sort().join() }; });
+            assert.ok(type.sizes <= 4 && type.weights === '400,700', 'overview type scale at '+width+': '+JSON.stringify(type));
             await page.locator('.provision-detail summary').first().click();
             assert.ok(await page.locator('.provision-detail .where a').first().isVisible());
             await page.locator('.provision-detail summary').first().click();
             assert.equal(await page.locator('a[href="#/compare/data-center-bills"]').count(),1);
           }
+          // Subtabs are folder tabs (DESIGN.md, 2026-10-21): one row that never clips, 44px targets (43.5 allows subpixel rounding), one current page.
+          const sub = await page.evaluate(() => { const n = document.querySelector('.subtabs'); if (!n) return null;
+            const a = [...n.querySelectorAll('a')], r = a.map(x => x.getBoundingClientRect());
+            return { clip: n.scrollWidth > n.clientWidth + 1, rows: new Set(r.map(b => Math.round(b.top))).size,
+              short: r.filter(b => b.height < 43.5).length, current: a.filter(x => x.getAttribute('aria-current') === 'page').length }; });
+          if (sub) assert.deepEqual(sub, {clip:false,rows:1,short:0,current:1}, route+' subtabs at '+width);
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
-          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,datacenters:5,timeline:2,positions:4,people:4.5,media:5};
+          const budget = {overview:2.5,bill:2.5,compare:11,'compare/data-center-bills':4,communities:5,datacenters:5,timeline:2,positions:4,people:4.5,media:5};
           if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')
@@ -59,7 +72,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
         }
       }
       // User paths: submit search, follow a passage, filters, theme, keyboard skip.
-      await page.goto(base+'#/overview');
+      await page.goto(base+'#/bill');
       await page.locator('#search-input').fill('travel more than 25 miles');
       await page.locator('.search button').click();
       await page.waitForSelector('.results mark');
@@ -73,11 +86,16 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.equal(await page.locator('.media-item').count(),0);
       await page.locator('#media-filter').fill('');
       assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>Math.min(12,PR_DATA.media.length)));
+      // Secondary filters sit closed behind one control; setting one keeps it open and counts it (DESIGN.md, 2026-10-21).
+      assert.equal(await page.locator('.more-filters').evaluate(d=>d.open), false);
+      assert.equal(await page.locator('.more-filters > summary').innerText(), 'More filters');
+      await page.locator('.more-filters > summary').click();
       await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').nth(1).click();
       assert.ok(await page.locator('.media-item').count() < await page.evaluate(()=>PR_DATA.media.length));
+      assert.equal(await page.locator('.more-filters > summary').innerText(), 'More filters (1 on)');
       await page.goto(base+'#/media');
       await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').first().click();
-      await page.evaluate(()=>document.querySelectorAll('details.filter-wrap').forEach(d=>{d.open=true;}));
+      assert.ok(await page.locator('.more-filters').evaluate(d=>d.open), 'More filters stays open once opened');
       await page.getByRole('group',{name:'Topic',exact:true}).getByRole('button',{name:/^Data centers/}).click();
       await page.getByRole('group',{name:'Position',exact:true}).getByRole('button',{name:'Mixed',exact:true}).click();
       assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>Math.min(12,PR_DATA.media.filter(x=>x.stance==='mixed'&&x.topics.includes('data-centers')).length)));
@@ -159,11 +177,11 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.ok(await page.locator('.cell-source[open] blockquote').first().isVisible());
       if (width < 1024) {
         await page.goto(base+'#/compare');
-        await page.locator('.section-fold summary').first().click();
-        const first = page.locator('.section-fold').first();
+        // Comparison tables render open on All; only rows fold on phones and tablets.
+        assert.equal(await page.locator('.section-fold').count(), 0);
+        const first = page.locator('.view-compare > .block').first();
         await first.locator('.row-toggle').first().click();
         await page.locator('[data-comparison="main"]').getByRole('button',{name:'SPEED Act',exact:true}).click();
-        assert.ok(await first.evaluate(d=>d.open));
         assert.ok(await first.locator('.compare tbody tr').first().locator('.col-speed').isVisible());
       }
       await page.goto(base+'#/people');
@@ -173,6 +191,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.equal(await page.locator('.person').count(),await page.evaluate(()=>Math.min(24,PR_DATA.people.filter(x=>!x.inside_government).length)));
       assert.ok((await page.evaluate(()=>document.activeElement.id)).startsWith('person-'));
       await page.goto(base+'#/timeline');
+      await page.locator('.more-filters > summary').click();
       await page.getByRole('button',{name:/Milestones/}).click();
       assert.equal(await page.locator('.event').count(), await page.evaluate(()=>Math.min(12,PR_DATA.timeline.filter(x=>x.milestone).length)));
       await page.getByRole('button',{name:/Milestones/}).click();
@@ -222,6 +241,34 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.waitForSelector('.event.open');
       const box = await page.locator('.event.open').boundingBox();
       assert.ok(box.y >= 0 && box.y < page.viewportSize().height, 'linked event on screen: '+box.y);
+      // A link to an event past its month's first batch of 12 still renders, opens and shows that event.
+      const deep = await page.evaluate(()=>{
+        const by = {};
+        PR_DATA.timeline.forEach(e=>{ const k = e.date < '2025-01' ? 'early' : e.date.slice(0,7); (by[k] = by[k] || []).push(e); });
+        const month = Object.keys(by).sort((a,b)=>by[b].length-by[a].length)[0];
+        const list = by[month].slice().sort((a,b)=>a.date<b.date?1:a.date>b.date?-1:0);
+        return {month, id:list[list.length-1].id, n:list.length};
+      });
+      assert.ok(deep.n > 12, 'the busiest month fills more than one batch: '+deep.n);
+      await page.goto(base+'#/overview');
+      await page.goto(base+'#/timeline/'+deep.month+'/'+deep.id);
+      await page.waitForSelector('#ev-'+deep.id+'.open');
+      const deepBox = await page.locator('#ev-'+deep.id).boundingBox();
+      assert.ok(deepBox.y >= 0 && deepBox.y < page.viewportSize().height, 'event outside the batch on screen: '+deepBox.y);
+      // Leaving the link for the full list starts again at one batch.
+      await page.goto(base+'#/timeline');
+      await page.waitForSelector('.event.open',{state:'detached'});
+      assert.equal(await page.locator('.event').count(), await page.evaluate(()=>Math.min(12,PR_DATA.timeline.length)));
+      // Disputed readings show four questions per issue; one chip shows the rest and focuses the first of them.
+      await page.goto(base+'#/positions');
+      await page.waitForSelector('.pos-dispute',{state:'attached'});
+      const disputes = await page.evaluate(()=>PR_DATA.positions.issues.map(i=>(i.disputes||[]).length).filter(Boolean));
+      assert.equal(await page.locator('.pos-dispute:visible').count(), disputes.reduce((a,n)=>a+Math.min(4,n),0));
+      while (await page.locator('[aria-labelledby="h-disputes"] .show-rest').count()) {
+        await page.locator('[aria-labelledby="h-disputes"] .show-rest').first().click();
+        assert.ok(await page.evaluate(()=>Boolean(document.activeElement.closest('.pos-dispute'))));
+      }
+      assert.equal(await page.locator('.pos-dispute:visible').count(), disputes.reduce((a,n)=>a+n,0));
       const before = await page.locator('html').getAttribute('data-theme');
       await page.locator('#theme-toggle').click();
       assert.notEqual(await page.locator('html').getAttribute('data-theme'),before);

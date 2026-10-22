@@ -1,12 +1,12 @@
 # Permitting Reform design
 
-A committee reading room: dark green masthead, cream paper, compact rows and numbered provisions. The bill and its citations carry the page. This is an independent tracker, not a Senate website.
+A committee reading room: dark green masthead, white page, compact rows and plain provision rows. The bill and its citations carry the page. This is an independent tracker, not a Senate website.
 
 ## Type and color
 
-Self-hosted Raleway for headings and Open Sans for controls and prose. Statutory text uses the system serif stack. Fonts and their licenses live in `site/fonts/`.
+Self-hosted Raleway for headings and Open Sans for controls and prose. Statutory text uses the system serif stack. Four sizes (`--fs-title`, `--fs-section`, `--fs-body`, `--fs-small`) and two weights (400, 700) cover the whole site; the timeline tick labels and the masthead name are the only exceptions. Fonts and their licenses live in `site/fonts/`.
 
-Colors live in `site/styles.css`: cream `--bg`, green `--brand` and `--rule`, blue citation links, yellow search marks and selected-tab underline. Dark mode has matching tokens. Contrast tests check text at 4.5:1 and rules/focus at 3:1.
+Colors live in `site/styles.css`: white `--bg` (cream until 2026-10-22, dropped as a common AI-template look), green `--brand` and `--rule`, blue citation links, yellow search marks and selected-tab underline. Dark mode has matching tokens. Contrast tests check text at 4.5:1 and rules/focus at 3:1.
 
 ## Layout
 
@@ -41,7 +41,7 @@ Measured October 2, 2026 at 375×812, in screen-heights: Timeline 2.2 to 1.7 aft
 
 ## PR 3 reading flow
 
-Overview provisions and secondary sections use native disclosures. Communities and general comparison groups fold by subject. Overview links directly to the data-center table. Long lists start with 12 entries; each load-more adds at most 12 and focuses the first new entry. Filters restart at 12. Milestone jumps reveal events outside the batch. Comparison rows retain their open state when the counterpart changes and stay operable after rotation. Source passages expand within comparison cells.
+Overview provisions and secondary sections use native disclosures. Communities groups fold by subject. Comparison tables stay open (see 2026-10-20 below). Overview links directly to the data-center table. Long lists start with 12 entries; each load-more adds at most 12 and focuses the first new entry. Filters restart at 12. Milestone jumps reveal events outside the batch. Comparison rows retain their open state when the counterpart changes and stay operable after rotation. Source passages expand within comparison cells.
 
 Communities groups stay open with a count in each heading; the rows themselves are one line each. Folding both the groups and the rows hid all 46 changes behind closed headings (2026-10-02).
 
@@ -59,3 +59,45 @@ Measured at 375×812, before and after: the next Senate vote moved from 1.1 scre
 A fourth News subtab answers "who is for and against" on one page. Three blocks, in the order a reader asks: the letters and joint statements (date, stance, signer count, title; each opens to recipients, the ask, sample signers, the quote and the source), the voices on each issue (For, Against and Mixed under the issue's cited headline, four shown and the rest behind one chip), and a by-sector table whose counts link into the People page with the sector carried in the route. Only statements dated on or after the bill text's release count as voices on an issue; earlier statements were about prior bills or reform in general. The Overview carries one line, "Who's for and against: N support, N oppose", on its first screen; the letters count was left off because the line wraps at 375px with it.
 
 Measured at 375×812: the page is 3.1 screens with every row closed (the budget is 4), the first letter row sits on the first screen, and the first letter's signers are two taps from the Overview (the link, then the row), with the signers at 0.93 screens. No horizontal scroll at 375, 768 or 1280; the sector table is 640px wide at 768. Light and dark both render; the only sub-44px targets are inline text links and the masthead, which are exempt.
+
+## Overview first screen and Positions budget (2026-10-20)
+
+The Overview's first phone screen carries, in order: the bill name, the next vote, the for-and-against line, the review status, search, the data center bills link and the "On this page" row (since 2026-10-21, the closed "Where it stands" fold instead of that row). The next vote (2026-10-05) and the for-and-against line (2026-10-18) were put there on purpose, so the first provision can no longer start in the top half of a 375×812 screen; that UAT rule, from 2026-10-01, had been failing since the next vote was added. The rule is now that five of the ten provisions fit the first screen (four since 2026-10-22). To make room, the next-vote line drops the clause about the November 3 election and the data center link reads "Compare data center bills" on one line.
+
+Disputed readings on Positions show four questions per issue and the rest behind one chip, as the voices on each issue do. Eight tribal consultation questions had taken the page past its 4-screen budget, and each issue the backlog adds would have added about half a screen.
+
+Measured at 375×812, before and after: the first provision moved from y 600 to 549, with the fifth provision's bottom at 825 (below the fold) to 774; the Overview went from 1.85 to 1.71 screens; Positions went from 4.05 to 3.77 screens, and every dispute question past the fourth costs one tap. An Overview link to an event outside its month's first 12 (October has 22) now opens that event on screen in one tap; it opened nothing before.
+
+2026-10-22: these are branch-head figures. The first measurement (y 528, 1.76 screens) came before the reader-questions change moved the status fold above the provisions as "Where it stands" and dropped the Overview jump row, which put the first provision 21px lower and the page 0.05 screens shorter.
+
+## Compare tables open; subtabs and jump links read as controls (2026-10-20)
+
+The reader preferred the earlier Compare page, where every subject table was open beside the other bills. Folding the six groups behind closed headings hid the table view this page exists for, so the groups render open again at every width; only the rows still open on tap below 1024px. Cost at 375×812: Compare grows from 3.7 to 9.8 screens (budget raised from 4 to 11 in `tests/uat.cjs`); the subject chips stay pinned, so any group is one tap away. Long column headers in the data center bills table now wrap instead of running into the next column.
+
+Subtabs sit in a tinted track with the current page filled, so they read as a second row of tabs rather than a line of bold text. "On this page" jump links carry a label and render as outlined pills with a down arrow, distinct from the grey filter chips. Section-page cross links (`.sec-links`) are semibold with a thicker underline. Page height cost: +0.02 screens at 375×812.
+
+## Subtabs as folder tabs (2026-10-21)
+
+The tinted track from 2026-10-20 still read as links, and its filled current page looked like a pressed filter chip. Subtabs are now folder tabs on a 2px rule: the other pages sit behind in the tint with muted text, and the current page has a thick top edge, bold text and the page background, so it joins the content below. On phones the tabs split the full width equally (News: four tabs of about 85px; "Compare with earlier bills" wraps to two lines inside its tab), so all of them show without sideways scrolling. Every subtab is at least 44px tall at every width. Filter chips stay small rectangles with gaps between them, and jump links stay outlined pills with a down arrow; none of the three uses the others' shape. `tests/uat.cjs` checks that the subtab row fits one line without clipping, that every subtab is at least 44px tall and that exactly one is current.
+
+## One filter row per page; the rest behind More filters (2026-10-21)
+
+Reader research (`docs/reader-questions.md`: 361 questions, 203 of them from the 41 pages the agent fetched, and X threads) found the Overview already answered most common questions in one tap. The clutter readers ran into was on the inner pages: Media showed three chip rows and a topic box before its first item, and Data centers and Communities each opened on two chip rows plus a jump row. Three approaches were weighed:
+
+1. Fewer controls on the same pages (chosen). Each page keeps one filter row in view; the other filters sit in a closed More filters control that says how many are on ("More filters (1 on)") and opens by itself when any is on. Pages under three screens lose their jump row. The status fold moves above the provisions and is renamed "Where it stands". Routes and records are unchanged.
+2. Merge the News pages: Timeline and Media in one feed, People inside Positions, nine pages down to seven. Rejected for now: the feeds have different shapes, and deep links would need redirects.
+3. Open the Overview with reader questions. Rejected: the provisions list already answers them in one tap, so the questions would repeat cited text and break the five-provisions rule.
+
+Measured at 375×812 (`.test-artifacts/clutter-*.txt`, controls visible on the first screen and in total): Overview 17 and 25 to 10 and 18; Data centers 19 and 31 to 11 and 22; Communities 21 and 62 to 17 and 58; Timeline 35 and 42 to 33 and 40 (the rest are chart markers); Media 38 and 49 to 4 and 15. Page heights did not grow. "Will it pass" and the wind and solar question moved from 1.28 screens down to 0.58 (`tools/reader_paths.cjs`); every other reader path kept its tap count and moved by at most 0.07 screens. `tests/uat.cjs` checks that More filters starts closed on Media, counts filters that are on, and stays open after a filter is set.
+
+## Explain first: one row style, four sizes (2026-10-22)
+
+A first-time reader found the Overview confusing: search box, chips, outlined pills, numbered cards and folds all on one screen, in nine type sizes and four weights, before anything said what the bill is. The Overview now opens with the name, the short title, a two-sentence cited summary of what the bill does, and the next vote. Then come two rows ("Where it stands" and "Who's for and against") and "What it changes", the provisions as plain rows. Clocks, money, changes from earlier bills and the latest news sit under "More detail". Search moved to the Bill tab. The page length, section count and bill PDF link moved to a note at the bottom.
+
+Every fold, provision and link row now looks the same: a bold heading row at least 48px tall, a rule under it, and a + / − or › at the right. Jump links are underlined links with a down arrow, not outlined pills. That replaces the 2026-10-21 rule that jump links stay pills.
+
+Measured at 375×812, first screen of the Overview: type sizes 9 to 4, weights 4 to 2, control kinds 8 to 2 (rows and links). Four provisions fit the first screen instead of five, because the summary comes first; `tests/uat.cjs` now checks for four, plus the summary, the next vote, at most four sizes and weights 400 and 700. The Overview grew from 1.71 to 1.95 screens. Reader paths into the Overview moved down about 0.1 screens and kept their tap counts (`docs/reader-questions.md`).
+
+## Disputes: each part looks different (2026-10-22)
+
+A reader found the dispute rows hard to read: the issue, the question, the bill's words and each side's readings were all the same plain text, and the side headings ran into their counts ("Opponents and critics read it as 4"). The bill's words now sit on the pale green the bill column uses with a rule at the left; each side is headed "Critics (4)" or "Supporters (3)" in its stance color with a rule under it; the tally under each question is colored by side; and each reading puts the source's name on its own line above the stance, outlet and date, then the quote. The one-line paraphrase above each quote is gone from disputes, because it restated the quote under it; it stays in a section's "What others say" list. At 375×812 the browser tests still pass the Positions page against its 4-screen budget with every row closed.

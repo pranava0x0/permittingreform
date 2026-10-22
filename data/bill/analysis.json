@@ -1049,12 +1049,17 @@
    "key_points": [
     "150 days to sue over energy and mineral project decisions under any federal law",
     "180-day cap on agency action after a court remand",
-    "Covers oil and gas, mining, offshore, geothermal, rights-of-way and forest fuel-reduction projects"
+    "Covers oil and gas, mining, offshore, geothermal, rights-of-way and forest fuel-reduction projects",
+    "A project can still be designated a FAST-41 covered project"
    ],
    "quotes": [
     {
      "text": "a civil action arising under Federal law seeking judicial review of a final agency action granting or denying an authorization shall be barred unless the civil action is filed by the date that is 150 days after the date on which the grant or denial of the authorization is required to be made public",
      "why": "The 150-day limit applies to claims under any federal law."
+    },
+    {
+     "text": "Nothing in this title precludes a project from being designated as a covered project",
+     "why": "FAST-41 coordination stays available; the bill adds no new FAST-41 sectors."
     }
    ],
    "topics": [

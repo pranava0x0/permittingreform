@@ -1,8 +1,8 @@
 {
- "checked": "2026-10-20",
+ "checked": "2026-10-22",
  "bill": {
-  "total": 173,
-  "verified": 173
+  "total": 174,
+  "verified": 174
  },
  "web": [
   {
@@ -3043,9 +3043,9 @@
    "text": "supporters saying they will cut down on lawsuits that can interrupt a project years after it is approved, while opponents say the short window could stymie legitimate complaints.",
    "speaker": "The Hill (reporter)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "takes.2026-10-02-beveridge-diamond-1",
@@ -3232,18 +3232,18 @@
    "text": "You would never be able to stop Pebble Mine in the future because of the changes made today",
    "speaker": "Brett Hartl, government affairs director, Center for Biological Diversity (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "takes.2026-10-01-pacific-legal-foundation-1",
    "text": "really gives the EPA administrator more or less carte blanche to cancel projects",
    "speaker": "John Nagle, federal policy manager, Pacific Legal Foundation (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "takes.2026-10-02-nrdc-1",
@@ -3286,9 +3286,9 @@
    "text": "saying the proposed definition creates too high a threshold and could prevent truly threatened creatures from being protected.",
    "speaker": "The Hill, summarizing Brett Hartl of the Center for Biological Diversity",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "takes.2026-10-02-eno-center-for-transportatio-3",
@@ -3331,18 +3331,18 @@
    "text": "That also must include ending the administration's clean energy permit blocks, which are keeping gigawatts of the cheapest power off the grid as prices rise for everyone.",
    "speaker": "Sandra Purohit, director of federal advocacy, E2",
    "url": "https://www.pv-tech.org/us-planning-reform-bill-gets-mixed-response-from-clean-energy-groups/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "takes.2026-10-01-sierra-club-1",
    "text": "this bill cannot guarantee that more wind and solar projects will actually get built as long as the Trump administration continues to block them at every turn.",
    "speaker": "Holly Bender, chief program officer, Sierra Club",
    "url": "https://www.pv-tech.org/us-planning-reform-bill-gets-mixed-response-from-clean-energy-groups/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "takes.2026-10-02-beveridge-diamond-5",
@@ -3472,7 +3472,7 @@
   },
   {
    "where": "takes.2026-10-05-heatmap-1",
-   "text": "At the same time, the discrimination language is a new area of law, Schifman told me, so there's some uncertainty as to how it would apply.",
+   "text": "At the same time, the discrimination language is a new area of law, Schiffman told me, so there's some uncertainty as to how it would apply.",
    "speaker": "Emily Pontecorvo, Heatmap (relaying Ben Schifman, former Interior solicitor's office attorney-adviser)",
    "url": "https://heatmap.news/politics/baaja-executive-actions",
    "result": "verified",
@@ -3511,9 +3511,9 @@
    "text": "the threat of the FERC decision leads to changes in routes or configuration of the proposals to get to yes at the state and local level.",
    "speaker": "Rob Gramlich, president, Grid Strategies (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "takes.2026-10-02-mcguirewoods-3",
@@ -3988,6 +3988,87 @@
    "text": "Far from protecting Tribes or leaving their preservation offices “unchanged,” BAAJA penalizes Tribes that miss its deadlines",
    "speaker": "Jessie Barrington, Cultural Heritage Partners, for NATHPO, NCAI, NARF and AAIA",
    "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-06-cbd-esa-letter-1",
+   "text": "would significantly raise the evidentiary burden for protecting imperiled animals and plants by limiting the Services’ ability to account for uncertainty and reasonably foreseeable risks",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": "read with curl"
+  },
+  {
+   "where": "takes.2026-10-06-cbd-esa-letter-2",
+   "text": "More than half of the states — including Texas, Utah, and Idaho — lack the statutory authority to protect the full range of plants and animals covered by the federal Endangered Species Act",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": "read with curl"
+  },
+  {
+   "where": "takes.2026-10-06-cbd-esa-letter-3",
+   "text": "The legislation would direct every Section 7 challenge to the D.C. Circuit",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": "read with curl"
+  },
+  {
+   "where": "takes.2026-10-20-earthjustice-esa-1",
+   "text": "By contrast, challenges to consultations by states would be brought in district court, creating a balkanized system for judicial review",
+   "speaker": "Earthjustice",
+   "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-20-earthjustice-esa-2",
+   "text": "the bill does not specify federal backstop authority to override state decisions that would jeopardize a species' survival",
+   "speaker": "Earthjustice",
+   "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-09-30-ifp-deal-esa-1",
+   "text": "Under the new language, the Services could no longer default to using the worst-case scenarios when making a jeopardy or critical habitat determination",
+   "speaker": "Institute for Progress",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-09-30-ifp-deal-esa-2",
+   "text": "State authority would be limited to projects within the state, and applicants would have the option to opt out and request review from FWS instead.",
+   "speaker": "Institute for Progress",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-09-30-ifp-deal-tribal-1",
+   "text": "Section 2301(c) exempts Tribes from the new standing requirements, ensuring that Tribes who raised a concern in writing during consultation can bring a lawsuit after the decision.",
+   "speaker": "Institute for Progress",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "takes.2026-10-09-tribal-orgs-letter-6",
+   "text": "This bill also institutes a 150-day statute of limitations, attempts to limit standing",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
    "result": "verified",
    "share": 1.0,
    "note": ""
