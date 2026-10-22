@@ -259,6 +259,15 @@
     } }, el("summary", null, heading), block);
   }
 
+  /* A page's secondary filters sit behind one control (DESIGN.md, 2026-10-21). It opens
+     on its own while one of them is set, and remembers being opened by hand. */
+  function moreFilters(active, rows) {
+    const key = "more:" + location.hash.split("/")[1];
+    return el("details", { class: "more-filters", open: active > 0 || foldOpen.has(key), ontoggle: (ev) => {
+      if (ev.currentTarget.open) foldOpen.add(key); else foldOpen.delete(key);
+    } }, el("summary", null, active ? "More filters (" + active + " on)" : "More filters"), rows);
+  }
+
   /* ---------- overview ---------- */
 
   /* Today in the viewer's time zone as YYYY-MM-DD. toISOString() is UTC, which
@@ -301,7 +310,7 @@
       D.compare.bills ? el("p", { class: "sec-links" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Compare data center bills")) : null);
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
-      el("h2", { id: "h-status" }, "Status"),
+      el("h2", { id: "h-status" }, "Where it stands"),
       el("ul", { class: "status-list" }, o.status.points.map((p) =>
         el("li", null, p.text + " ", el("span", { class: "sources-inline" }, ext(p.source.url, p.source.label))))));
 
@@ -365,7 +374,7 @@
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.recent.counts.timeline + " events")))));
 
-    return [head, provisions, foldBlock(status), foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest)];
+    return [head, foldBlock(status), provisions, foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest)];
   }
 
   /* ---------- bill: index, section, search ---------- */
@@ -829,7 +838,7 @@
       el("div", { class: "lede" }, el("h1", null, "Communities", el("span", { class: "credit-inline" }, "AI-written")),
         c.intro ? el("p", null, c.intro) : null,
         el("p", { class: "facts", role: "status" }, rows.length + " of " + c.rows.length + " changes")),
-      whoChips, effectChips,
+      whoChips, moreFilters((cmEffect !== "all") + !brief, effectChips),
       rows.length ? body : el("p", { class: "empty" }, "No changes match.")];
   }
 
@@ -883,7 +892,7 @@
       el("div", { class: "lede" }, el("h1", null, "Data centers & speed", el("span", { class: "credit-inline" }, "AI-written")),
         d.intro ? el("p", null, d.intro) : null,
         el("p", { class: "facts", role: "status" }, rows.length + " of " + d.rows.length + " provisions")),
-      whoChips, effectChips,
+      whoChips, moreFilters((dcEffect !== "all") + !brief, effectChips),
       rows.length ? body : el("p", { class: "empty" }, "No provisions match.")];
   }
 
@@ -1002,7 +1011,7 @@
     return [
       el("div", { class: "lede" }, el("h1", null, "Timeline")),
       timelineLine(month, picked, status),
-      filters, more,
+      filters, moreFilters((tlTopic !== "all") + tlMilestones + !brief, more),
       list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
       list.length > limit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
         const next = list[limit].id; tlLimit = limit + 12; route();
@@ -1270,10 +1279,10 @@
       chip("All topics", mediaTopic === "all", () => { mediaTopic = "all"; mediaLimit = MEDIA_PAGE; route(); }),
       Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
         chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; mediaLimit = MEDIA_PAGE; route(); }, topicCounts[t])));
-    const topicBox = el("details", { class: "filter-wrap", open: true },
-      el("summary", null, "Topics"), topicChips);
     refresh();
-    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), wordFilter, typeChips, stanceChips, topicBox, listHost];
+    const active = (mediaType !== "all") + mediaVisual + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
+    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), wordFilter,
+      moreFilters(active, [typeChips, stanceChips, topicChips]), listHost];
   }
 
   /* ---------- positions ---------- */
@@ -1631,9 +1640,8 @@
     else nodes = renderOverview();
     fill(view, subtabs(tab), nodes);
     view.className = "view view-" + tab;
-    if (tab === "overview") jumpRow(view.querySelector(".lede"));
-    else if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
-    else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities" || tab === "datacenters") jumpRow(view.querySelector(".lede"));
+    if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
+    else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities") jumpRow(view.querySelector(".lede"));
     if (tab === "timeline") {
       const target = tlRefocus && view.querySelector(tlRefocus);
       if (target && lastPath && lastPath.indexOf("#/timeline") === 0) target.focus({ preventScroll: true });

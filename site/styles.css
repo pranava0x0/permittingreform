@@ -183,6 +183,16 @@ details.index-group[open] > summary h2::after { content: "\2212"; }
 
 .filters { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin: 10px 0; }
 .filter-wrap > summary { display: none; }
+/* Secondary filters behind one control; the summary reads as a button with its own arrow. */
+.more-filters { margin: 6px 0 10px; }
+.more-filters > summary {
+  display: inline-flex; align-items: center; gap: 6px; cursor: pointer; list-style: none; font-size: 0.88rem; font-weight: 600;
+  color: var(--accent); border: 1px dashed var(--accent); border-radius: 2px; padding: 4px 10px;
+}
+.more-filters > summary::-webkit-details-marker { display: none; }
+.more-filters > summary::after { content: "\25BE"; }
+.more-filters[open] > summary::after { content: "\25B4"; }
+.more-filters > .filters:first-of-type { margin-top: 8px; }
 .results h1 { margin-top: 14px; }
 .filter-gap { flex: 0 0 10px; }
 .chip {
@@ -552,7 +562,7 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 }
 
 @media (pointer: coarse) {
-  .chip, .tabs a, .theme-toggle, .search button, .search input, .outline summary, .outline-toggle, .filter-wrap > summary { min-height: 44px; }
+  .chip, .more-filters > summary, .tabs a, .theme-toggle, .search button, .search input, .outline summary, .outline-toggle, .filter-wrap > summary { min-height: 44px; }
   .tabs a, .theme-toggle { display: inline-flex; align-items: center; }
   .outline li a { padding-top: 10px; padding-bottom: 10px; }
   .event-toggle, .row-toggle, .show-rest, .take summary { min-height: 44px; }
@@ -623,7 +633,6 @@ input::placeholder { color: var(--text-muted); opacity: 1; }
   .jumps button, .jumps-label { flex: 0 0 auto; }
   .jumps button { min-height: 44px; }
   .provisions li { padding-top: 0; padding-bottom: 0; }
-  .view-overview > .jumps + .block { margin-top: 0; }
 }
 
 .cm-row.open .event-toggle::after { content: "\2212"; }
