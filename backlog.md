@@ -38,4 +38,4 @@
 | medium | Reader gap: electricity prices. Readers ask whether the bill lowers household bills; cite published modeling (for example the C2ES/Greenline release) with its assumptions, beyond the data center cost section. |
 | medium | Reader gap: emissions. Cite the published emissions modeling and the arguments on each side (Flegal, Roberts threads in the X notes). |
 | medium | Reader gap: time saved. Link Columbia CGEP's time-saved tool (posted October 21) and the transmission-vs-gas permitting durations it reports, once the numbers are read from the tool itself. |
-| low | Reader path: the SPEED Act lawsuit comparison takes 3 taps from the Overview (Bill, Compare, SPEED Act chip). A link from the Lawsuit limits provision to that comparison would make it 1. |
+| low | Reader paths into Compare are long at 375px: the SPEED Act lawsuit deadline takes 4 taps (Bill, Compare, SPEED Act chip, the row) and who pays for transmission takes 3 taps and 3.1 screens. Links from the Lawsuit limits and Transmission siting provisions to their open comparison rows would make each 2. |

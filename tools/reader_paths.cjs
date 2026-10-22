@@ -6,10 +6,14 @@ const base = process.argv[2] || 'http://127.0.0.1:8766/';
 const H = 812;
 
 // Each path: id (matches docs/reader-questions.md), steps (each one tap), target (where the answer starts).
+// A target must be visible, not just attached: a heading in a closed fold or a cell in a
+// closed comparison row is not an answer yet. Fold labels match exactly ("Deadlines" must
+// not open "Review deadlines"); a "|" lists labels the same fold has had.
 const fold = (name) => ({ summary: name });
+const open = (sel) => `details[open]:has(> summary ${sel}) > section`;
 const PATHS = [
   ['vote-date', [], '.next-step'],
-  ['vote-status', [fold('Where it stands')], '#h-status'],
+  ['vote-status', [fold('Where it stands|Status')], open('#h-status')],
   ['who-for-against', [{ href: '#/positions' }], '#view h1'],
   ['why-split', [{ href: '#/positions' }], 'h2:text-is("By issue")'],
   ['what-it-does', [], '#h-prov'],
@@ -23,14 +27,14 @@ const PATHS = [
   ['esa', [fold('Endangered Species Act')], '.provision-detail[open] p'],
   ['tribes-106', [fold('Historic preservation')], '.provision-detail[open] p'],
   ['tribes-dispute', [{ href: '#/positions' }], 'h2:text-is("Disputed readings")'],
-  ['vs-current-law', [{ tab: 'bill' }, { href: '#/compare' }], '.view-compare .compare'],
-  ['vs-earlier-bills', [fold('Changes from earlier bills')], 'h2:text-is("Changes from earlier bills")'],
-  ['vs-speed-courts', [{ tab: 'bill' }, { href: '#/compare' }, { chipIn: '[data-comparison="main"]', name: 'SPEED Act' }], 'h2:text-is("Lawsuits")'],
-  ['cost-allocation', [{ tab: 'bill' }, { href: '#/compare' }], 'h2:text-is("Transmission and the grid")'],
+  ['vs-current-law', [{ tab: 'bill' }, { href: '#/compare' }, { row: 'row-deadlines' }], '#row-deadlines .col-current'],
+  ['vs-earlier-bills', [fold('Changes from earlier bills')], 'details[data-fold="overview:Changes from earlier bills"][open] > section'],
+  ['vs-speed-courts', [{ tab: 'bill' }, { href: '#/compare' }, { chipIn: '[data-comparison="main"]', name: 'SPEED Act' }, { row: 'row-sol' }], '#row-sol .col-speed'],
+  ['cost-allocation', [{ tab: 'bill' }, { href: '#/compare' }, { row: 'row-cost' }], '#row-cost .col-senate'],
   ['dc-page', [{ tab: 'effects' }], '.cm-row'],
   ['counties', [{ tab: 'effects' }, { href: '#/communities' }], '.cm-row'],
-  ['wind-solar', [fold('Where it stands')], '#h-status'],
-  ['agency-deadlines', [fold('Deadlines')], '#h-clocks'],
+  ['wind-solar', [fold('Where it stands|Status')], open('#h-status')],
+  ['agency-deadlines', [fold('Deadlines')], open('#h-clocks')],
   ['coverage', [{ tab: 'news' }], '.event'],
 ];
 
@@ -41,14 +45,15 @@ const PATHS = [
   for (const [id, steps, target] of PATHS) {
     await p.goto(base + '#/overview'); await p.reload(); await p.waitForSelector('.provisions li');
     for (const s of steps) {
-      if (s.summary) await p.locator('summary', { hasText: s.summary }).first().click();
+      if (s.summary) await p.locator('summary').filter({ hasText: new RegExp(`^\\s*(${s.summary})\\s*$`) }).click();
+      else if (s.row) await p.locator(`#${s.row} .row-toggle`).click();
       else if (s.tab) await p.locator(`.tabs a[data-tab="${s.tab}"]`).click();
       else if (s.href) await p.locator(`#view a[href="${s.href}"]`).first().click();
       else if (s.chipIn) await p.locator(s.chipIn).getByRole('button', { name: s.name, exact: true }).click();
       await p.waitForTimeout(250);
     }
     const t = p.locator(target).first();
-    await t.waitFor({ state: 'attached', timeout: 5000 });
+    await t.waitFor({ state: 'visible', timeout: 5000 });
     const y = await t.evaluate((e) => e.getBoundingClientRect().top + scrollY);
     rows.push({ id, taps: steps.length, screens: +(y / H).toFixed(2) });
   }
