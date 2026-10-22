@@ -497,7 +497,7 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 .dispute-reading:last-child { border-bottom: 0; }
 .dispute-who, .dispute-meta { margin: 0; }
 .dispute-meta { font-size: var(--fs-small); color: var(--text-muted); }
-.dispute-claim { margin: 4px 0; font-size: var(--fs-body); }
+.dispute-quote { margin-top: 4px; font-size: var(--fs-body); }
 .dispute-sides { display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 24px; }
 @media (min-width: 760px) { .dispute-sides { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
 /* The sector tally stays a table on phones: five short columns fit 343px. */

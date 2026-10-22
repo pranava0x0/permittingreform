@@ -8,7 +8,6 @@
 | medium | Add Reddit threads by hand; no tool could reach the site. |
 | medium | A third comparison column for the amended Senate text, once it exists. |
 | medium | An implementation calendar: every rulemaking and report the bill orders, with its deadline. |
-| medium | Promote the six phrases flagged on 2026-10-01 from `tools/slopcheck.py` here to the registry in coding-best-practices. |
 | medium | Choose a license for the repository. |
 | high | Media candidates still open from the 2026-10-02 X sweep: Canary Media and Utility Dive on transmission, the C2ES/Greenline modeling release, Grayson Flood's thread (his data-center image did not render in the browser), Siegel posts (Cramer "significant improvement"; White House support), Regunberg, Huffman, Pomerantz, Christian Fong's RMI chart on local transmission spending, Alex Mechanick's Artificial Weights explainer, and the Sierra Club reaction (needs a browser read). Heatmap, Green Tape, Mackenzie, Mathew and Hausfather were added. |
 | low | Timeline: FERC's September 29 PJM backstop order is cited through trade press; add the eLibrary order once readable. |

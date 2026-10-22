@@ -503,7 +503,7 @@
     ensureTakes().then((T) => fill(host, takesList(T, s))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "sec-part", "aria-labelledby": "h-takes" },
       el("h2", { id: "h-takes" }, "What others say it would do", el("span", { class: "chip-count" }, s.takes)),
-      el("p", { class: "muted" }, "Readings from industry, advocates, lawyers and analysts, quoted from their own words. They are claims about effects, not findings of this site. The summary above says what the text says."),
+      el("p", { class: "muted" }, "Industry groups, advocates, lawyers and analysts on what this section would do, in their own words."),
       host);
   }
 
@@ -1386,8 +1386,7 @@
     return el("li", { class: "voice dispute-reading" },
       el("p", { class: "dispute-who" }, el("strong", null, t.who)),
       el("p", { class: "dispute-meta" }, el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
-      el("p", { class: "dispute-claim" }, t.claim),
-      el("blockquote", { class: "voice-quote" }, t.quote));
+      el("blockquote", { class: "voice-quote dispute-quote" }, t.quote));
   }
 
   function disputeRow(T, issue, d) {
