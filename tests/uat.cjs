@@ -52,7 +52,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
-          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,datacenters:5,timeline:2,positions:4,people:4.5,media:5};
+          const budget = {overview:2.5,bill:2.5,compare:11,'compare/data-center-bills':4,communities:5,datacenters:5,timeline:2,positions:4,people:4.5,media:5};
           if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')
@@ -160,11 +160,11 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.ok(await page.locator('.cell-source[open] blockquote').first().isVisible());
       if (width < 1024) {
         await page.goto(base+'#/compare');
-        await page.locator('.section-fold summary').first().click();
-        const first = page.locator('.section-fold').first();
+        // Comparison tables render open on All; only rows fold on phones and tablets.
+        assert.equal(await page.locator('.section-fold').count(), 0);
+        const first = page.locator('.view-compare > .block').first();
         await first.locator('.row-toggle').first().click();
         await page.locator('[data-comparison="main"]').getByRole('button',{name:'SPEED Act',exact:true}).click();
-        assert.ok(await first.evaluate(d=>d.open));
         assert.ok(await first.locator('.compare tbody tr').first().locator('.col-speed').isVisible());
       }
       await page.goto(base+'#/people');

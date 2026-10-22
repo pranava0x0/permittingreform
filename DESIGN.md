@@ -41,7 +41,7 @@ Measured October 2, 2026 at 375×812, in screen-heights: Timeline 2.2 to 1.7 aft
 
 ## PR 3 reading flow
 
-Overview provisions and secondary sections use native disclosures. Communities and general comparison groups fold by subject. Overview links directly to the data-center table. Long lists start with 12 entries; each load-more adds at most 12 and focuses the first new entry. Filters restart at 12. Milestone jumps reveal events outside the batch. Comparison rows retain their open state when the counterpart changes and stay operable after rotation. Source passages expand within comparison cells.
+Overview provisions and secondary sections use native disclosures. Communities groups fold by subject. Comparison tables stay open (see 2026-10-20 below). Overview links directly to the data-center table. Long lists start with 12 entries; each load-more adds at most 12 and focuses the first new entry. Filters restart at 12. Milestone jumps reveal events outside the batch. Comparison rows retain their open state when the counterpart changes and stay operable after rotation. Source passages expand within comparison cells.
 
 Communities groups stay open with a count in each heading; the rows themselves are one line each. Folding both the groups and the rows hid all 46 changes behind closed headings (2026-10-02).
 
@@ -67,3 +67,9 @@ The Overview's first phone screen carries, in order: the bill name, the next vot
 Disputed readings on Positions show four questions per issue and the rest behind one chip, as the voices on each issue do. Eight tribal consultation questions had taken the page past its 4-screen budget, and each issue the backlog adds would have added about half a screen.
 
 Measured at 375×812, before and after: the first provision moved from y 600 to 528, with the fifth provision's bottom at 825 (below the fold) to 753; the Overview went from 1.85 to 1.76 screens; Positions went from 4.05 to 3.77 screens, and every dispute question past the fourth costs one tap. An Overview link to an event outside its month's first 12 (October has 22) now opens that event on screen in one tap; it opened nothing before.
+
+## Compare tables open; subtabs and jump links read as controls (2026-10-20)
+
+The reader preferred the earlier Compare page, where every subject table was open beside the other bills. Folding the six groups behind closed headings hid the table view this page exists for, so the groups render open again at every width; only the rows still open on tap below 1024px. Cost at 375×812: Compare grows from 3.7 to 9.8 screens (budget raised from 4 to 11 in `tests/uat.cjs`); the subject chips stay pinned, so any group is one tap away. Long column headers in the data center bills table now wrap instead of running into the next column.
+
+Subtabs sit in a tinted track with the current page filled, so they read as a second row of tabs rather than a line of bold text. "On this page" jump links carry a label and render as outlined pills with a down arrow, distinct from the grey filter chips. Section-page cross links (`.sec-links`) are semibold with a thicker underline. Page height cost: +0.02 screens at 375×812.

@@ -760,7 +760,7 @@
     return [
       el("div", { class: "lede" }, el("h1", null, "Comparison", el("span", { class: "credit-inline" }, "AI-written"))),
       billsOnly ? null : versions, filters, billsOnly ? null : withChips("main", c.versions),
-      groupId ? tables : tables.map(foldBlock), bills && (billsOnly || !groupId) ? renderBills(bills) : null, groupId ? null : foldBlock(lists)];
+      tables, bills && (billsOnly || !groupId) ? renderBills(bills) : null, groupId ? null : lists];
   }
 
   /* Long lists open brief: two lines of summary, the rest behind More. */
@@ -1551,6 +1551,7 @@
     const heads = Array.prototype.slice.call(view.querySelectorAll("h2"));
     if (heads.length < 3) return;
     after.after(el("nav", { class: "jumps", "aria-label": "On this page" },
+      el("span", { class: "jumps-label", "aria-hidden": "true" }, "On this page:"),
       heads.map((h) => el("button", { type: "button", onclick: () => {
         const fold = h.closest("details.section-fold");
         if (fold) fold.open = true;
