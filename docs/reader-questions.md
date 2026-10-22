@@ -6,33 +6,33 @@ What people ask and argue about the Bipartisan American Affordability and Jobs A
 
 A Haiku research agent ran web searches and fetched pages from news outlets, advocacy groups, law firms, trade groups and think tanks, and logged 361 questions. 340 of them name a source URL, from 111 pages; those are the ones counted and linked below, with the link text showing the page's domain. The other 21 name an outlet but no page, so they are listed at the end as leads and left out of every count.
 
-One question was logged per page per topic, so a count says how many pages raised a topic, not how many people asked. 137 of the counted entries come from search-result summaries rather than a fetched page; they are marked "summary" below.
+The agent often logged several questions from one page, so the topic table gives both: pages are distinct source URLs, questions are logged entries. Neither says how many people asked. 137 of the counted entries come from search-result summaries rather than a fetched page; they are marked "summary" below.
 
 A second pass read X threads in Chrome (search "BAAJA since:2026-09-15", top posts, and "permitting reform" senate, latest). Reddit was blocked in the browser tool and Bluesky search needs a login, so neither is covered. Heatmap is paywalled; only its search summaries are logged. Pages that failed: Akin Gump (403), NRDC's BAAJA assessment (403), Energy-Storage.news (403), the Senate ENR site (maintenance redirect), and the Sierra Club (empty page). Some Earthjustice and E&E entries concern EPRA 2024 or the SPEED Act rather than S. 5653; they are kept because readers carry those questions over.
 
 ## Topics by number of pages that raised them
 
-| Topic | Pages |
-|---|---|
-| vote timing odds | 59 |
-| what it does | 40 |
-| transmission | 37 |
-| lawsuits judicial review | 36 |
-| tribes section 106 | 33 |
-| data centers | 29 |
-| energy prices | 29 |
-| who supports opposes | 24 |
-| vs earlier bills | 22 |
-| endangered species water | 17 |
-| mining fossil | 9 |
-| other | 4 |
-| climate emissions | 1 |
+| Topic | Pages | Questions |
+|---|---|---|
+| vote timing odds | 36 | 59 |
+| data centers | 23 | 29 |
+| transmission | 22 | 37 |
+| lawsuits judicial review | 22 | 36 |
+| what it does | 21 | 40 |
+| energy prices | 21 | 29 |
+| who supports opposes | 21 | 24 |
+| vs earlier bills | 20 | 22 |
+| tribes section 106 | 14 | 33 |
+| endangered species water | 9 | 17 |
+| mining fossil | 9 | 9 |
+| other | 4 | 4 |
+| climate emissions | 1 | 1 |
 
 ## Where the site answers each question
 
-Taps and screens are measured from the Overview at 375×812 by `tools/reader_paths.cjs`: taps from landing, then how far down the page the answer starts, in screen heights (0.0 is the top; 1.0 is one full scroll). "Before" is the PR branch before the 2026-10-21 simplification; "after" is with it. "Pages" counts logged questions that match the row's topic, so rows overlap.
+Taps and screens are measured from the Overview at 375×812 by `tools/reader_paths.cjs`: taps from landing, then how far down the page the answer starts, in screen heights (0.0 is the top; 1.0 is one full scroll). "Before" is the PR branch before the 2026-10-21 simplification; "after" is with it. "Questions" counts logged questions that match the row's topic, several of which can come from one page, and rows overlap.
 
-| Question | Pages | Asked in | Answered | Where | Before (taps · screens) | After (taps · screens) | Intuitive? |
+| Question | Questions | Asked in | Answered | Where | Before (taps · screens) | After (taps · screens) | Intuitive? |
 |---|---|---|---|---|---|---|---|
 | When is the vote? | 42 | [naco.org](https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub), [gtlaw.com](https://www.gtlaw.com/ar/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text) | Yes | Overview, the Next line | 0 · 0.2 | 0 · 0.2 | Yes |
 | Will it pass, and what happens after the Senate? | 47 | [naco.org](https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub), [gtlaw.com](https://www.gtlaw.com/ar/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text) | Partly: sponsors, supporters, opponents and the November 9 cloture vote; no vote count and nothing on the House | Overview, Where it stands | 1 · 1.3 | 1 · 0.6 | Yes |
@@ -65,7 +65,7 @@ Two answers moved: the status fold now sits above the provisions as "Where it st
 
 Each needs new cited material before the site can answer it; they are in `backlog.md`.
 
-| Question | Pages | Asked in |
+| Question | Questions | Asked in |
 |---|---|---|
 | Will it lower electricity bills, and by how much? | 3 | [benton.org](https://www.benton.org/headlines/sens-capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and), [fourweekmba.com](https://fourweekmba.com/ai-senate-deal-would-make-data-centers-pay-for-grid-upgrades/) |
 | Will it raise or cut emissions? | 1 | [washingtonexaminer.com](https://www.washingtonexaminer.com/daily-on-energy/4759882/daily-on-energy-scott-peters-talks-permitting-reform/) |
@@ -427,7 +427,7 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Does the POWER Act (Permitting Our Way to an Energy Resurgence Act) cover pipelines, power plants and transmission, and how does it differ from BAAJA? ([naco.org](https://www.naco.org/news/us-house-energy-and-commerce-committee-advances-data-center-and-permitting-legislation))
 - Is the SPEED Act (H.R. 4776) the House's permitting bill, and how is it different from the Senate deal? ([naco.org](https://www.naco.org/news/us-house-energy-and-commerce-committee-advances-data-center-and-permitting-legislation))
 - Why did the House-passed SPEED Act draw Democratic objections on judicial review? ([ksat.com](https://www.ksat.com/news/politics/2025/12/18/house-backs-bill-to-speed-permitting-reviews-for-new-energy-and-infrastructure-projects/), summary)
-- What did the Manchin-Barrasso EPRA 2024 (S. 4753) do to judicial review, and why did it die? ([congress.gov](https://www.congress.gov/118/bills/s4753/BILLS-118s4753rs.htm;), summary)
+- What did the Manchin-Barrasso EPRA 2024 (S. 4753) do to judicial review, and why did it die? ([congress.gov](https://www.congress.gov/118/bills/s4753/BILLS-118s4753rs.htm), summary)
 - Did EPRA 2024 do anything for transmission that the 2026 bill also does? ([earthjustice.org](https://earthjustice.org/document/energy-permitting-reform-act-factsheet), summary)
 - Is the Senate's permitting deal going to be the first real energy reform since the 2022 IRA-era fights? ([washingtonexaminer.com](https://www.washingtonexaminer.com/?p=4749078), summary)
 - Does this 2026 deal repeat the 2022 Manchin package that was dropped on a wary Senate? ([nationaljournal.com](https://nationaljournal.com/s/718905/manchin-drops-permitting-reform-bill-on-a-wary-senate), summary)
