@@ -1,11 +1,11 @@
 {
- "checked": "2026-10-20",
+ "checked": "2026-10-22",
  "results": {
   "http://pv-magazine-usa.com/2026/10/01/senate-introduces-landmark-permitting-bill-as-industry-data-and-environmental-groups-clash-over-reforms/": {
-   "cls": "ok",
+   "cls": "error",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "URLError: <urlopen error timed out>",
+   "status": null,
    "where": [
     "takes.2026-10-01-southern-environmental-law-c-1",
     "takes.2026-10-01-pv-magazine-usa-1",
@@ -27,7 +27,7 @@
   "https://americansforprosperity.org/press-release/americans-for-prosperity-celebrates-bipartisan-passage-of-the-speed-act-in-the-house/": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "URLError: <urlopen error [Errno 54] Connection reset by peer>",
    "status": 200,
    "where": [
     "people.brent-gardner.source",
@@ -46,7 +46,7 @@
   "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "URLError: <urlopen error [Errno 54] Connection reset by peer>",
    "status": 200,
    "where": [
     "media.2026-10-01-artificial-weights-permitting-bill-procedural-reforms"
@@ -95,10 +95,19 @@
   "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "ConnectionResetError: [Errno 54] Connection reset by peer",
    "status": 200,
    "where": [
     "media.2025-12-19-bpc-whats-in-the-speed-act"
+   ]
+  },
+  "https://blakemoore.house.gov/media/press-releases/representatives-moore-shreves-protecting-domestic-mining-act-passes-the-house": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "RemoteDisconnected: Remote end closed connection without response",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-02-house-passes-protecting-domestic-mining-act-218-201.source"
    ]
   },
   "https://bluedogs-gluesenkampperez.house.gov/media-center/press-releases/blue-dog-statement-bipartisan-permitting-reform-agreement": {
@@ -263,7 +272,7 @@
   "https://cen.acs.org/policy/legislation-/permitting-reform-nepa-esa-energy-renewable-pipeline/104/web/2026/05": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "timeout: The read operation timed out",
    "status": 200,
    "where": [
     "media.2026-05-27-cen-bipartisan-drive-for-permitting-reform-outlook-murky"
@@ -308,10 +317,10 @@
    ]
   },
   "https://ctmirror.org/2026/07/22/tweed-new-haven-airport-expansion/": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 429",
+   "status": 429,
    "where": [
     "timeline.2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference.source"
    ]
@@ -347,7 +356,7 @@
   "https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>",
    "status": 200,
    "where": [
     "takes.2026-10-03-sen-kevin-cramer-1",
@@ -550,7 +559,7 @@
   "https://golden.house.gov/media/press-releases/golden-s-bipartisan-permitting-reform-bill-passes-house-natural-resources-committee": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>",
    "status": 200,
    "where": [
     "timeline.2025-11-20-house-natural-resources-advances-speed-act.source",
@@ -567,6 +576,15 @@
     "timeline.2026-02-19-permitting-council-signs-first-state-fast-41-mous.source",
     "people.emily-domenech.source",
     "people.emily-domenech.quote"
+   ]
+  },
+  "https://grijalva.house.gov/media/press-releases/rep-grijalva-slams-bill-to-fast-track-mining-permits": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-09-02-house-passes-protecting-domestic-mining-act-218-201.source"
    ]
   },
   "https://grist.org/politics/permitting-reform-data-centers-senate-gas-solar/": {
@@ -636,7 +654,7 @@
   "https://heatmap.news/daily/data-center-permitting-deal": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "timeout: The read operation timed out",
    "status": 200,
    "where": [
     "compare.datacenters.note",
@@ -646,7 +664,7 @@
   "https://heatmap.news/daily/exelon-permitting-reform": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>",
    "status": 200,
    "where": [
     "media.2026-09-22-heatmap-daily-whats-a-utility-to-do-when-everyone-is-mad-at-them"
@@ -966,10 +984,10 @@
    ]
   },
   "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/": {
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "little readable text (script-rendered page)",
+   "status": 202,
    "where": [
     "timeline.2026-09-29-ferc-pjm-reliability-backstop-order.source"
    ]
@@ -1028,10 +1046,10 @@
    ]
   },
   "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 429",
+   "status": 429,
    "where": [
     "timeline.2026-10-01-republican-governors-joint-statement.source",
     "people.greg-gianforte.source",
@@ -1293,10 +1311,10 @@
    ]
   },
   "https://talkingbiznews.com/media-news/punchbowl-news-hires-siegel-to-cover-energy/": {
-   "cls": "ok",
+   "cls": "error",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 504",
+   "status": 504,
    "where": [
     "people.josh-siegel.source"
    ]
@@ -1646,6 +1664,15 @@
    "where": [
     "timeline.2026-10-06-esa-groups-letter-oppose-bill.source",
     "media.2026-10-06-cbd-fof-200-conservation-groups-esa-letter"
+   ]
+  },
+  "https://www.congress.gov/bill/119th-congress/house-bill/1501/all-actions": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-09-02-house-passes-protecting-domestic-mining-act-218-201.source"
    ]
   },
   "https://www.crowell.com/en/insights/client-alerts/federal-court-blocks-trump-administration-policies-restricting-wind-and-solar-permitting": {
@@ -3411,10 +3438,10 @@
    ]
   },
   "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "people.ross-marchand.source",
     "people.ross-marchand.quote",
