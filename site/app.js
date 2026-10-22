@@ -288,26 +288,20 @@
     const o = D.overview;
     const m = D.meta;
     const pos = D.recent.positions;
-    /* One line at 375px: the letters count lives on the Positions page; with it the line wrapped. */
-    const posLink = pos ? el("p", { class: "sec-links" }, el("a", { href: "#/positions" },
-      "Who's for and against: " + pos.supports + " support, " + pos.opposes + " oppose")) : null;
+    // A first-time reader gets the name, what the bill does and the next vote, in that order, before any control.
     const head = el("div", { class: "lede overview-lede" },
-      el("div", { class: "bill-heading" }, el("h1", null, "BAAJA"),
-        el("details", { class: "bill-details" },
-          el("summary", null, "Bill details"),
-          el("p", null, m.short_title),
-          el("p", { class: "facts" }, num(m.pages) + " pages · " + m.sections + " sections · released " + S.formatDate(m.released)),
-          el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")))),
+      el("h1", null, "BAAJA"),
+      el("p", { class: "subtitle" }, m.short_title),
+      el("p", { class: "summary" }, o.summary.text + " ", el("span", { class: "sources-inline" }, ext(o.summary.source.url, o.summary.source.label))),
       // A scheduled date in the past says so, rather than reading as upcoming.
-      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next: " : "Was scheduled for "),
+      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next vote: " : "Was scheduled for "),
         S.formatDate(o.next.date) + ". " + o.next.text + " ",
-        el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null,
-      o.next ? posLink : null,
-      el("p", { class: "note" }, "Proposed law", " · ",
-        el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),
-      o.next ? null : posLink,
-      searchBox(""),
-      D.compare.bills ? el("p", { class: "sec-links" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Compare data center bills")) : null);
+        el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null);
+    const posRow = pos ? el("a", { class: "link-row", href: "#/positions" },
+      "Who's for and against", el("span", { class: "row-count" }, pos.supports + " support · " + pos.opposes + " oppose")) : null;
+    const about = el("p", { class: "note overview-note" }, "This is a proposed law. " + num(m.pages) + " pages, " + m.sections + " sections, released " + S.formatDate(m.released) + ". ",
+      pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release"), " · ",
+      el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status"));
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
       el("h2", { id: "h-status" }, "Where it stands"),
@@ -315,13 +309,14 @@
         el("li", null, p.text + " ", el("span", { class: "sources-inline" }, ext(p.source.url, p.source.label))))));
 
     const provisions = el("section", { class: "block", "aria-labelledby": "h-prov" },
-      el("h2", { id: "h-prov" }, "Main provisions"),
-      el("ol", { class: "provisions" }, o.headlines.map((h) =>
+      el("h2", { id: "h-prov" }, "What it changes"),
+      el("ul", { class: "provisions" }, o.headlines.map((h) =>
         el("li", null,
           el("details", { class: "provision-detail" },
             el("summary", null, el("h3", null, h.title)),
             el("p", null, citedText(h)),
-            el("p", { class: "where" }, secLinks(h.sections), readingsLinks(h.sections)))))));
+            el("p", { class: "where" }, secLinks(h.sections), readingsLinks(h.sections)),
+            h.id === "datacenters" && D.compare.bills ? el("p", { class: "where" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Compare data center bills")) : null)))));
 
     const clocks = el("section", { class: "block", "aria-labelledby": "h-clocks" },
       el("h2", { id: "h-clocks" }, "Deadlines"),
@@ -374,7 +369,9 @@
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.recent.counts.timeline + " events")))));
 
-    return [head, foldBlock(status), provisions, foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest)];
+    return [head, el("div", { class: "rows" }, foldBlock(status), posRow), provisions,
+      el("section", { class: "block", "aria-labelledby": "h-more" }, el("h2", { id: "h-more" }, "More detail"),
+        el("div", { class: "rows" }, foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest))), about];
   }
 
   /* ---------- bill: index, section, search ---------- */

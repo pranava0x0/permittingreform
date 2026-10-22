@@ -39,11 +39,17 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           if (route === 'overview') {
             assert.equal(await page.locator('.brand-name').innerText(), 'Permitting Reform');
             assert.ok(await page.locator('.brand-name').evaluate(el => el.getBoundingClientRect().height < parseFloat(getComputedStyle(el).lineHeight) * 1.5));
-            // Next vote, for/against, search and the jump row come first (DESIGN.md, 2026-10-20); five provisions still fit the first phone screen.
-            if (width === 375) { const fifth = await page.locator('.provisions li').nth(4).boundingBox(); assert.ok(fifth.y + fifth.height <= page.viewportSize().height, 'five provisions on the first phone screen: '+JSON.stringify(fifth)); }
-            await page.locator('.bill-details summary').click();
-            assert.ok(await page.locator('.bill-details a[href="bill.pdf#page=1"]').isVisible());
-            await page.locator('.bill-details summary').click();
+            // The lead says what the bill is and when the next vote is, then two rows (DESIGN.md, 2026-10-22); four provisions still fit the first phone screen.
+            assert.ok(await page.locator('.overview-lede .summary').isVisible());
+            assert.ok(await page.locator('.overview-lede .next-step').isVisible());
+            if (width === 375) { const fourth = await page.locator('.provisions li').nth(3).boundingBox(); assert.ok(fourth.y + fourth.height <= page.viewportSize().height, 'four provisions on the first phone screen: '+JSON.stringify(fourth)); }
+            assert.ok(await page.locator('.overview-note a[href="bill.pdf#page=1"]').isVisible());
+            // One type scale on the first screen: four sizes, two weights.
+            const type = await page.evaluate(() => { const s = new Set(), w = new Set();
+              for (const e of document.querySelectorAll('main *')) { const r = e.getBoundingClientRect(); if (!r.width || r.top > innerHeight) continue;
+                if ([...e.childNodes].some(n => n.nodeType === 3 && n.textContent.trim())) { const c = getComputedStyle(e); s.add(c.fontSize); w.add(c.fontWeight); } }
+              return { sizes: s.size, weights: [...w].sort().join() }; });
+            assert.ok(type.sizes <= 4 && type.weights === '400,700', 'overview type scale at '+width+': '+JSON.stringify(type));
             await page.locator('.provision-detail summary').first().click();
             assert.ok(await page.locator('.provision-detail .where a').first().isVisible());
             await page.locator('.provision-detail summary').first().click();
@@ -66,7 +72,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
         }
       }
       // User paths: submit search, follow a passage, filters, theme, keyboard skip.
-      await page.goto(base+'#/overview');
+      await page.goto(base+'#/bill');
       await page.locator('#search-input').fill('travel more than 25 miles');
       await page.locator('.search button').click();
       await page.waitForSelector('.results mark');

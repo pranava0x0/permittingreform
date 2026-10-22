@@ -48,6 +48,7 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out += [(f"section {s['n']} quote note", q["why"]) for q in s["quotes"] if q["why"]]
         out += [(f"section {s['n']} vs {k}", v) for k, v in s["vs"].items() if v]
     o = core["overview"]
+    out.append(("overview summary", o["summary"]["text"]))
     out.append(("overview money note", o["money_note"]))
     out += [("overview status", p["text"]) for p in o["status"]["points"]]
     if o.get("next"):
@@ -216,6 +217,9 @@ def check(core: dict) -> tuple[list[str], dict]:
         if not DATE_RE.match(d or "") or d > core["meta"]["as_of"]:
             errs.append(f"{where}: date {d!r} is malformed or after the data date {core['meta']['as_of']}")
 
+    summ = core["overview"].get("summary") or {}
+    if not summ.get("text") or not http(summ.get("source", {}).get("url")):
+        errs.append("overview summary: needs text and a source link")
     nxt = core["overview"].get("next")
     if nxt and (not DATE_RE.match(nxt.get("date", "")) or not http(nxt.get("source", {}).get("url"))):
         errs.append("overview next: needs a YYYY-MM-DD date and a source link")

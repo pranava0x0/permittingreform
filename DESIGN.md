@@ -1,10 +1,10 @@
 # Permitting Reform design
 
-A committee reading room: dark green masthead, cream paper, compact rows and numbered provisions. The bill and its citations carry the page. This is an independent tracker, not a Senate website.
+A committee reading room: dark green masthead, cream paper, compact rows and plain provision rows. The bill and its citations carry the page. This is an independent tracker, not a Senate website.
 
 ## Type and color
 
-Self-hosted Raleway for headings and Open Sans for controls and prose. Statutory text uses the system serif stack. Fonts and their licenses live in `site/fonts/`.
+Self-hosted Raleway for headings and Open Sans for controls and prose. Statutory text uses the system serif stack. Four sizes (`--fs-title`, `--fs-section`, `--fs-body`, `--fs-small`) and two weights (400, 700) cover the whole site; the timeline tick labels and the masthead name are the only exceptions. Fonts and their licenses live in `site/fonts/`.
 
 Colors live in `site/styles.css`: cream `--bg`, green `--brand` and `--rule`, blue citation links, yellow search marks and selected-tab underline. Dark mode has matching tokens. Contrast tests check text at 4.5:1 and rules/focus at 3:1.
 
@@ -62,7 +62,7 @@ Measured at 375×812: the page is 3.1 screens with every row closed (the budget 
 
 ## Overview first screen and Positions budget (2026-10-20)
 
-The Overview's first phone screen carries, in order: the bill name, the next vote, the for-and-against line, the review status, search, the data center bills link and the "On this page" row (since 2026-10-21, the closed "Where it stands" fold instead of that row). The next vote (2026-10-05) and the for-and-against line (2026-10-18) were put there on purpose, so the first provision can no longer start in the top half of a 375×812 screen; that UAT rule, from 2026-10-01, had been failing since the next vote was added. The rule is now that five of the ten provisions fit the first screen. To make room, the next-vote line drops the clause about the November 3 election and the data center link reads "Compare data center bills" on one line.
+The Overview's first phone screen carries, in order: the bill name, the next vote, the for-and-against line, the review status, search, the data center bills link and the "On this page" row (since 2026-10-21, the closed "Where it stands" fold instead of that row). The next vote (2026-10-05) and the for-and-against line (2026-10-18) were put there on purpose, so the first provision can no longer start in the top half of a 375×812 screen; that UAT rule, from 2026-10-01, had been failing since the next vote was added. The rule is now that five of the ten provisions fit the first screen (four since 2026-10-22). To make room, the next-vote line drops the clause about the November 3 election and the data center link reads "Compare data center bills" on one line.
 
 Disputed readings on Positions show four questions per issue and the rest behind one chip, as the voices on each issue do. Eight tribal consultation questions had taken the page past its 4-screen budget, and each issue the backlog adds would have added about half a screen.
 
@@ -89,3 +89,11 @@ Reader research (`docs/reader-questions.md`: 361 questions, 354 of them from 110
 3. Open the Overview with reader questions. Rejected: the provisions list already answers them in one tap, so the questions would repeat cited text and break the five-provisions rule.
 
 Measured at 375×812 (`.test-artifacts/clutter-*.txt`, controls visible on the first screen and in total): Overview 17 and 25 to 10 and 18; Data centers 19 and 31 to 11 and 22; Communities 21 and 62 to 17 and 58; Timeline 35 and 42 to 33 and 40 (the rest are chart markers); Media 38 and 49 to 4 and 15. Page heights did not grow. "Will it pass" and the wind and solar question moved from 1.28 screens down to 0.58 (`tools/reader_paths.cjs`); every other reader path kept its tap count and moved by at most 0.07 screens. `tests/uat.cjs` checks that More filters starts closed on Media, counts filters that are on, and stays open after a filter is set.
+
+## Explain first: one row style, four sizes (2026-10-22)
+
+A first-time reader found the Overview confusing: search box, chips, outlined pills, numbered cards and folds all on one screen, in nine type sizes and four weights, before anything said what the bill is. The Overview now opens with the name, the short title, a two-sentence cited summary of what the bill does, and the next vote. Then come two rows ("Where it stands" and "Who's for and against") and "What it changes", the provisions as plain rows. Clocks, money, changes from earlier bills and the latest news sit under "More detail". Search moved to the Bill tab. The page length, section count and bill PDF link moved to a note at the bottom.
+
+Every fold, provision and link row now looks the same: a bold heading row at least 48px tall, a rule under it, and a + / − or › at the right. Jump links are underlined links with a down arrow, not outlined pills. That replaces the 2026-10-21 rule that jump links stay pills.
+
+Measured at 375×812, first screen of the Overview: type sizes 9 to 4, weights 4 to 2, control kinds 8 to 2 (rows and links). Four provisions fit the first screen instead of five, because the summary comes first; `tests/uat.cjs` now checks for four, plus the summary, the next vote, at most four sizes and weights 400 and 700. The Overview grew from 1.71 to 1.95 screens. Reader paths into the Overview moved down about 0.1 screens and kept their tap counts (`docs/reader-questions.md`).
