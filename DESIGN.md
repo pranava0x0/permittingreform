@@ -62,11 +62,13 @@ Measured at 375×812: the page is 3.1 screens with every row closed (the budget 
 
 ## Overview first screen and Positions budget (2026-10-20)
 
-The Overview's first phone screen carries, in order: the bill name, the next vote, the for-and-against line, the review status, search, the data center bills link and the "On this page" row. The next vote (2026-10-05) and the for-and-against line (2026-10-18) were put there on purpose, so the first provision can no longer start in the top half of a 375×812 screen; that UAT rule, from 2026-10-01, had been failing since the next vote was added. The rule is now that five of the ten provisions fit the first screen. To make room, the next-vote line drops the clause about the November 3 election and the data center link reads "Compare data center bills" on one line.
+The Overview's first phone screen carries, in order: the bill name, the next vote, the for-and-against line, the review status, search, the data center bills link and the "On this page" row (since 2026-10-21, the closed "Where it stands" fold instead of that row). The next vote (2026-10-05) and the for-and-against line (2026-10-18) were put there on purpose, so the first provision can no longer start in the top half of a 375×812 screen; that UAT rule, from 2026-10-01, had been failing since the next vote was added. The rule is now that five of the ten provisions fit the first screen. To make room, the next-vote line drops the clause about the November 3 election and the data center link reads "Compare data center bills" on one line.
 
 Disputed readings on Positions show four questions per issue and the rest behind one chip, as the voices on each issue do. Eight tribal consultation questions had taken the page past its 4-screen budget, and each issue the backlog adds would have added about half a screen.
 
-Measured at 375×812, before and after: the first provision moved from y 600 to 528, with the fifth provision's bottom at 825 (below the fold) to 753; the Overview went from 1.85 to 1.76 screens; Positions went from 4.05 to 3.77 screens, and every dispute question past the fourth costs one tap. An Overview link to an event outside its month's first 12 (October has 22) now opens that event on screen in one tap; it opened nothing before.
+Measured at 375×812, before and after: the first provision moved from y 600 to 549, with the fifth provision's bottom at 825 (below the fold) to 774; the Overview went from 1.85 to 1.71 screens; Positions went from 4.05 to 3.77 screens, and every dispute question past the fourth costs one tap. An Overview link to an event outside its month's first 12 (October has 22) now opens that event on screen in one tap; it opened nothing before.
+
+2026-10-22: these are branch-head figures. The first measurement (y 528, 1.76 screens) came before the reader-questions change moved the status fold above the provisions as "Where it stands" and dropped the Overview jump row, which put the first provision 21px lower and the page 0.05 screens shorter.
 
 ## Compare tables open; subtabs and jump links read as controls (2026-10-20)
 
@@ -80,7 +82,7 @@ The tinted track from 2026-10-20 still read as links, and its filled current pag
 
 ## One filter row per page; the rest behind More filters (2026-10-21)
 
-Reader research (`docs/reader-questions.md`: 361 questions from 111 pages and X threads) found the Overview already answered most common questions in one tap. The clutter readers ran into was on the inner pages: Media showed three chip rows and a topic box before its first item, and Data centers and Communities each opened on two chip rows plus a jump row. Three approaches were weighed:
+Reader research (`docs/reader-questions.md`: 361 questions, 354 of them from 110 source pages, and X threads) found the Overview already answered most common questions in one tap. The clutter readers ran into was on the inner pages: Media showed three chip rows and a topic box before its first item, and Data centers and Communities each opened on two chip rows plus a jump row. Three approaches were weighed:
 
 1. Fewer controls on the same pages (chosen). Each page keeps one filter row in view; the other filters sit in a closed More filters control that says how many are on ("More filters (1 on)") and opens by itself when any is on. Pages under three screens lose their jump row. The status fold moves above the provisions and is renamed "Where it stands". Routes and records are unchanged.
 2. Merge the News pages: Timeline and Media in one feed, People inside Positions, nine pages down to seven. Rejected for now: the feeds have different shapes, and deep links would need redirects.

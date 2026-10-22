@@ -4,9 +4,9 @@ What people ask and argue about the Bipartisan American Affordability and Jobs A
 
 ## How the questions were collected
 
-A Haiku research agent ran web searches and fetched pages from news outlets, advocacy groups, law firms, trade groups and think tanks, and logged 361 questions. 340 of them name a source URL, from 111 pages; those are the ones counted and linked below, with the link text showing the page's domain. The other 21 name an outlet but no page, so they are listed at the end as leads and left out of every count.
+A Haiku research agent ran web searches and fetched pages from news outlets, advocacy groups, law firms, trade groups and think tanks, and logged 361 questions. 354 of them name a source URL, from 110 pages; those are the ones counted and linked below, with the link text showing the page's domain. The other 7 name an outlet but no page, so they are listed at the end as leads and left out of every count.
 
-The agent often logged several questions from one page, so the topic table gives both: pages are distinct source URLs, questions are logged entries. Neither says how many people asked. 137 of the counted entries come from search-result summaries rather than a fetched page; they are marked "summary" below.
+The agent often logged several questions from one page, so the topic table gives both: pages are distinct source URLs, questions are logged entries. Neither says how many people asked. 151 of the counted entries come from search-result summaries rather than a fetched page; they are marked "summary" below.
 
 A second pass read X threads in Chrome (search "BAAJA since:2026-09-15", top posts, and "permitting reform" senate, latest). Reddit was blocked in the browser tool and Bluesky search needs a login, so neither is covered. Heatmap is paywalled; only its search summaries are logged. Pages that failed: Akin Gump (403), NRDC's BAAJA assessment (403), Energy-Storage.news (403), the Senate ENR site (maintenance redirect), and the Sierra Club (empty page). Some Earthjustice and E&E entries concern EPRA 2024 or the SPEED Act rather than S. 5653; they are kept because readers carry those questions over.
 
@@ -14,23 +14,23 @@ A second pass read X threads in Chrome (search "BAAJA since:2026-09-15", top pos
 
 | Topic | Pages | Questions |
 |---|---|---|
-| vote timing odds | 36 | 59 |
-| data centers | 23 | 29 |
-| transmission | 22 | 37 |
-| lawsuits judicial review | 22 | 36 |
-| what it does | 21 | 40 |
-| energy prices | 21 | 29 |
+| vote timing odds | 37 | 61 |
+| data centers | 23 | 31 |
+| what it does | 22 | 41 |
+| lawsuits judicial review | 22 | 40 |
+| transmission | 22 | 38 |
+| energy prices | 22 | 30 |
 | who supports opposes | 21 | 24 |
-| vs earlier bills | 20 | 22 |
+| vs earlier bills | 20 | 23 |
 | tribes section 106 | 14 | 33 |
-| endangered species water | 9 | 17 |
+| endangered species water | 9 | 18 |
 | mining fossil | 9 | 9 |
-| other | 4 | 4 |
+| other | 5 | 5 |
 | climate emissions | 1 | 1 |
 
 ## Where the site answers each question
 
-Taps and screens are measured from the Overview at 375×812 by `tools/reader_paths.cjs`: taps from landing, then how far down the page the answer starts, in screen heights (0.0 is the top; 1.0 is one full scroll). "Before" is the PR branch before the 2026-10-21 simplification; "after" is with it. "Questions" counts logged questions that match the row's topic, several of which can come from one page, and rows overlap.
+Taps and screens are measured from the Overview at 375×812 by `tools/reader_paths.cjs`: taps from landing, then how far down the page the answer starts, in screen heights (0.0 is the top; 1.0 is one full scroll). "Before" is the PR branch before the 2026-10-21 simplification; "after" is with it. "Questions" counts logged questions that match the row's topic, several of which can come from one page, and rows overlap. These counts were taken before 14 leads were matched to their URLs on 2026-10-22, so a row can be a question or two low.
 
 | Question | Questions | Asked in | Answered | Where | Before (taps · screens) | After (taps · screens) | Intuitive? |
 |---|---|---|---|---|---|---|---|
@@ -168,6 +168,8 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Can the House pass the Senate bill in the lame duck, and will the New Democrat Coalition back it? ([washingtonexaminer.com](https://www.washingtonexaminer.com/daily-on-energy/4759882/daily-on-energy-scott-peters-talks-permitting-reform/))
 - Will the Senate vote on this before the Nov 3 midterms? ([power-eng.com](https://www.power-eng.com/business/policy-and-regulation/can-this-bipartisan-senate-bill-fix-the-grueling-energy-permitting-timeline/), summary)
 - Will Lee's lame-duck passage prediction hold, given that Whitehouse wants wind and solar protected? ([pbs.org](https://www.pbs.org/newshour/amp/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects), summary)
+- Why did the Senate fail to act on permitting before the election break? ([kunc.org](https://www.kunc.org/politics/2026-10-05/senate-leaves-a-lot-undone-as-it-wraps-up-its-work-before-election-campaigning), summary)
+- Will the bill's Senate path be long? ([axios.com](https://www.axios.com/2026/10/01/senate-permitting-bill), summary)
 
 ### What it does
 
@@ -211,6 +213,7 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Will the bill make the one- to two-year review deadlines enforceable? ([heatmap.news](https://heatmap.news/daily/senate-bipartisan-permitting-reform), summary)
 - Does the bill count as the biggest NEPA change since 1969? ([gtlaw.com](https://www.gtlaw.com/ar/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text), summary)
 - Is the bill the most ambitious permitting package in decades? ([heatmap.news](https://heatmap.news/daily/senate-bipartisan-permitting-reform), summary)
+- What does the bill do to the Clean Water Act and NEPA review scope and length? ([axios.com](https://www.axios.com/2026/10/01/senate-permitting-bill), summary)
 
 ### Transmission
 
@@ -251,6 +254,7 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Are the transmission provisions good enough that a Democrat on Energy & Commerce would accept them? ([washingtonexaminer.com](https://www.washingtonexaminer.com/daily-on-energy/4759882/daily-on-energy-scott-peters-talks-permitting-reform/))
 - Do the bill's categorical exclusions remove transmission and gas pipelines from NEPA entirely? ([hklaw.com](https://www.hklaw.com/en/insights/publications/2026/10/bipartisan-senate-committee-leaders-release-permitting-reform-text), summary)
 - What makes transmission siting faster under this bill, and does FERC take over major projects? ([heatmap.news](https://heatmap.news/daily/senate-bipartisan-permitting-reform), summary)
+- Would the bill require FERC to write rules setting interregional planning standards? ([niskanencenter.org](https://www.niskanencenter.org/the-bipartisan-american-affordability-and-jobs-act-of-2026-4-ways-the-new-permitting-package-gets-transmission-policy-right/), summary)
 
 ### Lawsuits judicial review
 
@@ -290,6 +294,10 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Who can sue over a permit, and how long do they have? ([kslaw.com](https://www.kslaw.com/Insights/Articles/The-Senate-Permitting-Deal-What-It-Would-Change-and-What-to-Do-Now), summary)
 - Do developers have to do more work up front under the new litigation rules? ([kslaw.com](https://www.kslaw.com/Insights/Articles/The-Senate-Permitting-Deal-What-It-Would-Change-and-What-to-Do-Now), summary)
 - Will the 150-day challenge window cut off communities who never learn of an approval in time? ([earthjustice.org](https://earthjustice.org/document/energy-permitting-reform-act-factsheet), summary)
+- Would the bill block federal revocation of permits, and let projects sue over "disparate" treatment by project type? ([hklaw.com](https://www.hklaw.com/en/insights/publications/2026/10/bipartisan-senate-committee-leaders-release-permitting-reform-text), summary)
+- Does the bill treat the statute of limitations as a change to who can sue? ([kslaw.com](https://www.kslaw.com/Insights/Articles/The-Senate-Permitting-Deal-What-It-Would-Change-and-What-to-Do-Now), summary)
+- Will the bill make courts prioritize energy and mineral permit cases over other dockets? ([earthjustice.org](https://earthjustice.org/document/energy-permitting-reform-act-factsheet), summary)
+- Will the 150-day window produce more litigation rather than less? ([earthjustice.org](https://earthjustice.org/document/energy-permitting-reform-act-factsheet), summary)
 
 ### Tribes section 106
 
@@ -358,6 +366,8 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Does the bill make data centers pay for the transmission their demand requires? ([pbs.org](https://www.pbs.org/newshour/amp/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects), summary)
 - Is the bill a "dirty permitting deal" for fossil fuels, and does it speed gas-heavy data centers? ([heatmap.news](https://heatmap.news/daily/senate-bipartisan-permitting-reform), summary)
 - Does the bill's data center cost rule cover all transmission costs? ([heatmap.news](https://heatmap.news/daily/senate-bipartisan-permitting-reform), summary)
+- Can states even enforce data center cost rules, given that large users don't disclose their electricity use? ([gpb.org](https://www.gpb.org/news/2026/10/01/ai-data-centers-how-much-are-ratepayers-on-the-hook-for), summary)
+- Will the permitting bill's data-center protections be enforced, or is it just a voluntary promise? ([power-eng.com](https://www.power-eng.com/business/policy-and-regulation/as-electric-bills-rise-evidence-mounts-that-data-centers-share-blame-states-feel-pressure-to-act/), summary)
 
 ### Energy prices
 
@@ -390,6 +400,7 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Would the bill let agencies keep blocking or delaying permits for offshore wind, onshore wind, coal, gas, nuclear or geothermal? ([washingtonexaminer.com](https://www.washingtonexaminer.com/?p=4749078))
 - How much of PJM's rising power cost is due to data centers, per the market monitor's estimate? ([power-eng.com](https://www.power-eng.com/business/policy-and-regulation/as-electric-bills-rise-evidence-mounts-that-data-centers-share-blame-states-feel-pressure-to-act/), summary)
 - Will the federal government stop revoking lawfully issued permits, and does that rule apply to all energy technologies? ([thirdway.org](https://www.thirdway.org/blog/one-baaja-blast-please))
+- Will the administration's attacks on clean energy projects derail the deal? ([nrdc.org](https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill), summary)
 
 ### Who supports opposes
 
@@ -442,6 +453,7 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Why did Senate Democrats say the SPEED Act failed on transmission? ([utilitydive.com](https://www.utilitydive.com/news/senate-permitting-reform-speed-act/808471/), summary)
 - What does the Earthjustice SPEED Act civil justice letter say about judicial review? ([earthjustice.org](https://earthjustice.org/document/speed-act-civil-justice-letter), summary)
 - Did WELC oppose the House SPEED Act, and does that bear on the Senate bill? ([westernlaw.org](https://westernlaw.org/category/news-release/page/3/), summary)
+- Did the House's SPEED Act pass 221-196, and does it show the House wants the same approach as the Senate? ([ksat.com](https://www.ksat.com/news/politics/2025/12/18/house-backs-bill-to-speed-permitting-reviews-for-new-energy-and-infrastructure-projects/), summary)
 
 ### Endangered species water
 
@@ -462,6 +474,7 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Can states take over ESA Section 7 consultations under the bill, and does that remove the federal backstop? ([dwt.com](https://www.dwt.com/blogs/energy--environmental-law-blog/2026/10/2026-bipartisan-permitting-reform-energy-projects), summary)
 - Can a project's biological opinion and incidental take statement be revoked once permits are issued? ([dwt.com](https://www.dwt.com/blogs/energy--environmental-law-blog/2026/10/2026-bipartisan-permitting-reform-energy-projects), summary)
 - Would a state's Clean Water Act 401 denial require "clear and convincing evidence"? ([dwt.com](https://www.dwt.com/blogs/energy--environmental-law-blog/2026/10/2026-bipartisan-permitting-reform-energy-projects))
+- Will the Clean Water Act Section 404 changes in BAAJA reduce EPA's ability to veto permits? ([kslaw.com](https://www.kslaw.com/Insights/Articles/The-Senate-Permitting-Deal-What-It-Would-Change-and-What-to-Do-Now), summary)
 
 ### Mining fossil
 
@@ -481,6 +494,7 @@ Questions are the agent's plain-English wording of what each page asks or argues
 - Will implementing agencies such as CEQ, FERC, EPA and Interior have to write new rules before the bill works? ([insideenergyandenvironment.com](https://www.insideenergyandenvironment.com/?p=9071))
 - How much of this bill depends on later rulemakings by FERC, CEQ, Interior and EPA? ([hklaw.com](https://www.hklaw.com/en/insights/publications/2026/10/bipartisan-senate-committee-leaders-release-permitting-reform-text))
 - Which committees have jurisdiction over Section 106 changes, and do Senate Indian Affairs get involved? ([savingplaces.org](https://savingplaces.org/federal-permitting-reform-process-101), summary)
+- Was the 2026 Senate text really released on Sept 30, or is that a summary of a deal? ([akingump.com](https://www.akingump.com/en/insights/alerts/senate-unveils-bipartisan-comprehensive-permitting-reform-bill), summary)
 
 ### Climate emissions
 
@@ -491,23 +505,9 @@ Questions are the agent's plain-English wording of what each page asks or argues
 These name an outlet but no page. They are not counted above and should be checked before anything on the site relies on them.
 
 - Will Thune's claim that the deal is closed hold, when Democrats say it is not? (E&E News; no page recorded)
-- Will the administration's attacks on clean energy projects derail the deal? (NRDC; no page recorded)
 - Why are the solar and gas industries backing the deal together when environmental groups oppose it? (outlet not named; no page recorded)
-- Did the House's SPEED Act pass 221-196, and does it show the House wants the same approach as the Senate? (KSAT/AP; no page recorded)
 - Does the bill really require data centers to pay for all associated transmission costs, per the Senate Energy committee? (Latitude Media; no page recorded)
-- Why did the Senate fail to act on permitting before the election break? (KUNC; no page recorded)
-- Would the bill block federal revocation of permits, and let projects sue over "disparate" treatment by project type? (Holland & Knight; no page recorded)
 - Will "Monumental" deal get Democratic support when Whitehouse says amendments will be considered in November? (Bloomberg Law; no page recorded)
 - Could the 2024 bipartisan deal's failure after the election happen again? (Latitude Media; no page recorded)
-- Was the 2026 Senate text really released on Sept 30, or is that a summary of a deal? (Akin Gump; no page recorded)
 - Who actually files NEPA lawsuits: national groups or local communities? (Op-ed citing Breakthrough Institute data; no page recorded)
-- Can states even enforce data center cost rules, given that large users don't disclose their electricity use? (Indiana consumer advocate; no page recorded)
-- Will the permitting bill's data-center protections be enforced, or is it just a voluntary promise? (Power Engineering; no page recorded)
-- Would the bill require FERC to write rules setting interregional planning standards? (Niskanen Center; no page recorded)
-- Will the Clean Water Act Section 404 changes in BAAJA reduce EPA's ability to veto permits? (King & Spalding; no page recorded)
 - Is the PJM-style data center cost debate going to make the Senate's bill toxic for some Democrats? (Power Engineering; no page recorded)
-- Does the bill treat the statute of limitations as a change to who can sue? (King & Spalding; no page recorded)
-- Will the bill make courts prioritize energy and mineral permit cases over other dockets? (Earthjustice; no page recorded)
-- Will the 150-day window produce more litigation rather than less? (Earthjustice; no page recorded)
-- What does the bill do to the Clean Water Act and NEPA review scope and length? (Axios; no page recorded)
-- Will the bill's Senate path be long? (Axios; no page recorded)
