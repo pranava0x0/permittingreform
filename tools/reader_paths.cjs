@@ -16,7 +16,8 @@ const row = (sel) => ({ toggle: sel });
 const PATHS = [
   ['vote-date', [], '.next-step'],
   ['vote-status', [fold('Where it stands|Status')], open('#h-status')],
-  ['who-for-against', [{ href: '#/positions' }], '#view h1'],
+  // The heading and the tally line only count; the newest letter names its signers and their stance.
+  ['who-for-against', [{ href: '#/positions' }, row('.pos-letter')], '.pos-letter.open .pos-body'],
   ['why-split', [{ href: '#/positions' }, row('.pos-issue')], '.pos-issue .pos-body'],
   ['what-it-does', [], '#h-prov'],
   ['nepa-deadlines', [fold('Review deadlines')], '.provision-detail[open] p'],
