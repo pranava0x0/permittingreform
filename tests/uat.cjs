@@ -49,11 +49,11 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
             await page.locator('.provision-detail summary').first().click();
             assert.equal(await page.locator('a[href="#/compare/data-center-bills"]').count(),1);
           }
-          // Subtabs are folder tabs (DESIGN.md, 2026-10-21): one row that never clips, 44px targets, one current page.
+          // Subtabs are folder tabs (DESIGN.md, 2026-10-21): one row that never clips, 44px targets (43.5 allows subpixel rounding), one current page.
           const sub = await page.evaluate(() => { const n = document.querySelector('.subtabs'); if (!n) return null;
             const a = [...n.querySelectorAll('a')], r = a.map(x => x.getBoundingClientRect());
             return { clip: n.scrollWidth > n.clientWidth + 1, rows: new Set(r.map(b => Math.round(b.top))).size,
-              short: r.filter(b => b.height < 44).length, current: a.filter(x => x.getAttribute('aria-current') === 'page').length }; });
+              short: r.filter(b => b.height < 43.5).length, current: a.filter(x => x.getAttribute('aria-current') === 'page').length }; });
           if (sub) assert.deepEqual(sub, {clip:false,rows:1,short:0,current:1}, route+' subtabs at '+width);
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
