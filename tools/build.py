@@ -486,7 +486,7 @@ def build() -> tuple[dict, dict, list[str]]:
     for it in extra["media"] + takes["takes"]:
         stamp(it)
     for b in (speed or {}).get("blockers", []):
-        for ev in b["evidence"]:
+        for ev in b.get("evidence", []):
             stamp(ev)
     for rec in extra["timeline"] + extra["people"]:
         for src in rec.get("sources", []):

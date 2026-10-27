@@ -330,6 +330,7 @@ class Speed(unittest.TestCase):
                 b["passages"][1]["section"] = next(n for n in ("1101", "1102", "1103") if n not in b["sections"])
                 b["readings"].append("no-such-take")
                 data["blockers"][-1]["evidence"] = []
+                del data["blockers"][-2]["evidence"]  # a missing key is reported, not a KeyError
             return data
 
         build.load = sabotaged
@@ -339,6 +340,7 @@ class Speed(unittest.TestCase):
             build.load = original
         for needle in ("passage not found in section", "which the row does not name", "no take 'no-such-take'", "no research evidence"):
             self.assertTrue(any(needle in e and e.startswith("speed ") for e in errors), (needle, errors))
+        self.assertEqual(sum("no research evidence" in e for e in errors), 2, errors)
 
     def test_a_blocker_missing_fields_fails_the_data_check(self):
         broken = json.loads(json.dumps(CORE))
