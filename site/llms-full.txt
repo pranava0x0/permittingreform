@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-10-20.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-10-26.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -1045,6 +1045,9 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Eno Center for Transportation** (Think tanks; concerns): Exemptions from NEPA are far broader than earlier legislative categorical exclusions.
   > Those past changes pale in comparison to the sweeping exemptions granted under this proposal.
   [Eno Center for Transportation, 2026-10-02](https://enotrans.org/article/senate-proposes-major-changes-to-permit-and-review-processes/). On the bill text at [p. 28, line 8 to p. 28, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28).
+- **The Revelator** (Lawyers and legal scholars; opposes): Camacho and Glicksman say BAAJA hollows out NEPA, including courts' ability to enforce it.
+  > the bill is an out-and-out assault on the National Environmental Policy Act, the bedrock environmental law that has for more than 50 years required the federal government to look before it leaps.
+  [The Revelator, 2026-10-23](https://therevelator.org/baaja). On the bill text at [p. 68, line 1 to p. 68, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68).
 
 ## Selected statutory quotes
 
@@ -1219,6 +1222,18 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Womble Bond Dickinson** (Lawyers and legal scholars; explains): A missed agency deadline gives the sponsor enforcement tools but is not a deemed permit approval.
   > A missed deadline, however, would not itself constitute permit approval.
   [Womble Bond Dickinson, 2026-10-02](https://www.womblebonddickinson.com/us/node/21451). On the bill text at [p. 48, line 19 to p. 48, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=48).
+- **Columbia University Center on Global Energy Policy** (Think tanks; explains): CGEP's replay of past transmission cases finds the transmission archetype saves 64 months up to the federal decision.
+  > The bill reduces the timeline to the federal decision by 64 months in the archetype, compared with 60.7 months in the largest replay (Bordertown to California, a 10-mile, 120 kV line).
+  [Columbia University Center on Global Energy Policy, 2026-10-21](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html). On the bill text at [p. 48, line 17 to p. 48, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=48).
+- **Columbia University Center on Global Energy Policy** (Think tanks; mixed): CGEP counts only months saved and cannot count projects BAAJA might enable that current law stops.
+  > The estimates count only months saved, not projects that BAAJA might have enabled to proceed but that current law stopped.
+  [Columbia University Center on Global Energy Policy, 2026-10-21](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html). On the bill text at [p. 48, line 17 to p. 48, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=48).
+- **Grist** (Reporting; explains): Grist sums up the bill as weakening some environmental laws, speeding agency deadlines and making approved projects harder to cancel.
+  > The bill does this by weakening some of the nation’s bedrock environmental laws, speeding up the timeline for government agencies to issue permits, and making it harder to cancel projects that have already gotten federal approval.
+  [Grist, 2026-10-08](https://grist.org/politics/permitting-reform-baaja-climate-debate-clean-energy-fossil-fuels/). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **The Revelator** (Lawyers and legal scholars; opposes): Camacho and Glicksman say BAAJA hollows out NEPA, including courts' ability to enforce it.
+  > the bill is an out-and-out assault on the National Environmental Policy Act, the bedrock environmental law that has for more than 50 years required the federal government to look before it leaps.
+  [The Revelator, 2026-10-23](https://therevelator.org/baaja). On the bill text at [p. 68, line 1 to p. 68, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68).
 
 ## Selected statutory quotes
 
@@ -1952,6 +1967,14 @@ Doubles the shelf life of programmatic environmental documents from 5 years to 1
 
 - Programmatic documents can be relied on for 10 years, up from 5 ([p. 62, line 1 to p. 62, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=62))
 
+## What others say it would do
+
+Outside readings, quoted from their sources. These are claims about effects, not findings of this tracker.
+
+- **Columbia University Center on Global Energy Policy** (Think tanks; explains): CGEP's replay of past transmission cases finds the transmission archetype saves 64 months up to the federal decision.
+  > The bill reduces the timeline to the federal decision by 64 months in the archetype, compared with 60.7 months in the largest replay (Bordertown to California, a 10-mile, 120 kV line).
+  [Columbia University Center on Global Energy Policy, 2026-10-21](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html). On the bill text at [p. 48, line 17 to p. 48, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=48).
+
 ## Selected statutory quotes
 
 > by striking “5 years” and inserting “10 years”.
@@ -2321,6 +2344,18 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Ben Schifman** (Think tanks; supports): Section 1110 would limit third-party suits that try to stop a Tribe from managing its own resources.
   > there's an important benefit for federally recognized Tribes in §1110 of BAAJA: limiting the ability of third parties to sue to stop the Tribe from managing its own resources as it wants to.
   [X, 2026-10-16](https://x.com/BenSchifman/status/2110931358696563164). On the bill text at [p. 73, line 8 to p. 73, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=73).
+- **Southern Environmental Law Center** (Environmental groups; opposes): SELC says the bill's statute of limitations and limits on state, tribal and local water authority would reduce communities' ability to challenge energy projects such as gas pipelines.
+  > Restricts the ability of states, tribes, and local communities to protect local waterways and drinking water supplies threatened by large energy projects, like gas pipelines.
+  [SELC press release, 2026-09-30](https://www.selc.org/?p=44520). On the bill text at [p. 68, line 1 to p. 68, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68).
+- **Heatmap News** (Reporting; explains): The bill could reduce legal risk for future interstate gas pipelines that might serve a large data center, which Holzman says reads as an easier path to more gas generation in the region.
+  > It would reduce legal risks associated with future interstate gas pipelines under development expected to potentially branch out to Project Jupiter
+  [Heatmap News (The Fight), 2026-10-16](https://heatmap.news/plus/the-fight/spotlight/project-jupiter-permitting). On the bill text at [p. 68, line 1 to p. 68, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68).
+- **Aaron Weiss** (Environmental groups; opposes): Weiss says that when a court sends an environmental review back, construction continues and Section 1401 bars the agency from changing the permit, and challengers get 150 days to sue.
+  > Challengers also get just 150 days to sue.
+  [Common Dreams, 2026-10-22](https://www.commondreams.org/news/senate-permitting-bill). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **The Revelator** (Lawyers and legal scholars; opposes): Camacho and Glicksman say BAAJA hollows out NEPA, including courts' ability to enforce it.
+  > the bill is an out-and-out assault on the National Environmental Policy Act, the bedrock environmental law that has for more than 50 years required the federal government to look before it leaps.
+  [The Revelator, 2026-10-23](https://therevelator.org/baaja). On the bill text at [p. 68, line 1 to p. 68, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68).
 
 ## Selected statutory quotes
 
@@ -3567,6 +3602,9 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **NRDC** (Environmental groups; opposes): The Section 401 changes would make it harder for states and tribes to protect their waters from oil and gas pipelines.
   > it would also hamstring states and Tribes from using another Clean Water Act authority to protect their waters from spills and contaminated runoff from oil and gas pipelines
   [NRDC (blog), 2026-10-02](https://www.nrdc.org/bio/christy-goldfuss/hard-questions-permitting-bill). On the bill text at [p. 105, line 1 to p. 105, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=105).
+- **Southern Environmental Law Center** (Environmental groups; opposes): SELC says the bill's statute of limitations and limits on state, tribal and local water authority would reduce communities' ability to challenge energy projects such as gas pipelines.
+  > Restricts the ability of states, tribes, and local communities to protect local waterways and drinking water supplies threatened by large energy projects, like gas pipelines.
+  [SELC press release, 2026-09-30](https://www.selc.org/?p=44520). On the bill text at [p. 68, line 1 to p. 68, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68).
 
 ## Selected statutory quotes
 
@@ -4100,6 +4138,9 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Heatmap** (Reporting; explains): EPA's Section 404(c) veto would be limited to the window before the Corps issues the permit, so a post-permit veto like the Spruce mine would be barred.
   > That means a Section 404 veto post-permit would have been off the table.
   [Heatmap, 2026-10-05](https://heatmap.news/politics/baaja-executive-actions). On the bill text at [p. 123, line 19 to p. 123, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=123).
+- **Southern Environmental Law Center** (Environmental groups; opposes): SELC says the bill's statute of limitations and limits on state, tribal and local water authority would reduce communities' ability to challenge energy projects such as gas pipelines.
+  > Restricts the ability of states, tribes, and local communities to protect local waterways and drinking water supplies threatened by large energy projects, like gas pipelines.
+  [SELC press release, 2026-09-30](https://www.selc.org/?p=44520). On the bill text at [p. 68, line 1 to p. 68, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68).
 
 ## Selected statutory quotes
 
@@ -5631,6 +5672,33 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Western Environmental Law Center** (Environmental groups; opposes): Locking in Trump-era approvals would push data center and fossil developers to rush and hoard leases and permits ahead of a future administration.
   > which is going to create an incentive for all these data centers and fossil fuel companies to rush through a process, hoard leases, permits and authorizations, and then basically tell a future administration to go fly a kite.
   [Heatmap, 2026-10-05](https://heatmap.news/politics/baaja-executive-actions). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Foley Hoag** (Lawyers and legal scholars; explains): The permit-certainty section would bar agencies from revoking or suspending authorizations in effect on or after Sept. 16, 2026, including offshore wind construction and operations plans, subject to listed exceptions and a clear-and-convincing burden on the agency.
+  > The protection would not be absolute. Agencies could still act under a court order; for a material breach or violation of law; for fraud or misrepresentation; at the holder's request
+  [Foley Hoag Energy & Climate Counsel, 2026-10-23](https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-a-second-wind-certainty-cables-and-cost-allocation-for-offshore-wind-under-the-senat/). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Heatmap News** (Reporting; mixed): The permit-certainty ban exempts actions required by court order, so it is unresolved whether a court granting a remand motion would trigger the exception or give developers a damages claim.
+  > The restriction exempts cases where "the agency is required to take such action by order of a court."
+  [Heatmap News (The Fight), 2026-10-16](https://heatmap.news/plus/the-fight/hotspots/the-trump-administration-is-still-messing-with-offshore-wind-farms). On the bill text at [p. 159, line 20 to p. 159, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Oil Change International** (Environmental groups; opposes): The group reads the permit certainty sections as letting corporations sue agencies over actions that would reduce the use of federally permitted projects, covering existing permits as well as new ones.
+  > This doesn’t just apply to projects permitted after the bill passes, but all projects with any kind of federal permit.
+  [Oil Change International, 2026-10-26](https://oilchange.org/blogs/the-proposed-u-s-infrastructure-permitting-reform-bill-would-be-a-disaster-for-communities-and-for-climate-action/). On the bill text at [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167).
+- **The Wilderness Society** (Environmental groups; opposes): The group says Section 1401 would keep in place permits for mining and drilling projects on public landscapes such as the Greater Chaco region, even where a permit was approved unlawfully.
+  > This section bans future administrations from taking any action on permitted projects on public lands, even when permits were approved unlawfully, except under extremely limited circumstances.
+  [The Wilderness Society, 2026-10-15](https://www.wilderness.org/articles/blog/6-threats-public-lands-bipartisan-american-affordability-and-jobs-act). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Earthjustice** (Environmental groups; concerns): The guide notes that the narrow exceptions to the permit lock-in do not cover a future administration concluding that a prior administration issued a permit in violation of federal law.
+  > none cover a situation in which a future administration concludes that a prior administration violated federal law in issuing a given permit or authorization.
+  [Earthjustice, 2026-10-26](https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide). On the bill text at [p. 159, line 20 to p. 159, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Center for Western Priorities** (Environmental groups; opposes): The group says that under the lock-in standard the wind and solar cancellations would stand while future approvals for data centers, drilling and nuclear projects would be nearly impossible to undo.
+  > Trump’s wind and solar cancellations would stand, while the data centers, drilling, and nuclear projects Interior Secretary Doug Burgum approves over the next two years would be nearly impossible for a future administration to undo.
+  [Center for Western Priorities, 2026-10-23](https://westernpriorities.org/2026/10/doj-moves-to-kill-offshore-wind-permits-as-congress-weighs-permitting-bill/). On the bill text at [p. 162, line 5 to p. 162, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=162).
+- **Theodore Roosevelt Conservation Partnership** (Environmental groups; concerns): TRCP says the permit certainty language as drafted locks in place nearly any permit a federal agency issues, which limits adaptive management for fish and wildlife.
+  > as drafted the language effectively locks in place nearly any permit issued by a federal agency.
+  [Theodore Roosevelt Conservation Partnership, 2026-10-23](https://www.trcp.org/2026/10/23/what-the-senates-permitting-bill-could-mean-for-hunters-and-anglers/). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Aaron Weiss** (Environmental groups; opposes): Weiss says that when a court sends an environmental review back, construction continues and Section 1401 bars the agency from changing the permit, and challengers get 150 days to sue.
+  > Challengers also get just 150 days to sue.
+  [Common Dreams, 2026-10-22](https://www.commondreams.org/news/senate-permitting-bill). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Grist** (Reporting; explains): Grist sums up the bill as weakening some environmental laws, speeding agency deadlines and making approved projects harder to cancel.
+  > The bill does this by weakening some of the nation’s bedrock environmental laws, speeding up the timeline for government agencies to issue permits, and making it harder to cancel projects that have already gotten federal approval.
+  [Grist, 2026-10-08](https://grist.org/politics/permitting-reform-baaja-climate-debate-clean-energy-fossil-fuels/). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
 
 ## Selected statutory quotes
 
@@ -5863,6 +5931,21 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Heatmap** (Reporting; mixed): The 'pattern of disparate treatment' cause of action is untested law, so it is unclear how courts would apply it to wind permitting delays.
   > At the same time, the discrimination language is a new area of law, Schifman told me, so there's some uncertainty as to how it would apply.
   [Heatmap, 2026-10-05](https://heatmap.news/politics/baaja-executive-actions). On the bill text at [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167).
+- **Foley Hoag** (Lawyers and legal scholars; explains): The permit-certainty section would bar agencies from revoking or suspending authorizations in effect on or after Sept. 16, 2026, including offshore wind construction and operations plans, subject to listed exceptions and a clear-and-convincing burden on the agency.
+  > The protection would not be absolute. Agencies could still act under a court order; for a material breach or violation of law; for fraud or misrepresentation; at the holder's request
+  [Foley Hoag Energy & Climate Counsel, 2026-10-23](https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-a-second-wind-certainty-cables-and-cost-allocation-for-offshore-wind-under-the-senat/). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Heatmap News** (Reporting; mixed): The permit-certainty ban exempts actions required by court order, so it is unresolved whether a court granting a remand motion would trigger the exception or give developers a damages claim.
+  > The restriction exempts cases where "the agency is required to take such action by order of a court."
+  [Heatmap News (The Fight), 2026-10-16](https://heatmap.news/plus/the-fight/hotspots/the-trump-administration-is-still-messing-with-offshore-wind-farms). On the bill text at [p. 159, line 20 to p. 159, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Oil Change International** (Environmental groups; opposes): The group reads the permit certainty sections as letting corporations sue agencies over actions that would reduce the use of federally permitted projects, covering existing permits as well as new ones.
+  > This doesn’t just apply to projects permitted after the bill passes, but all projects with any kind of federal permit.
+  [Oil Change International, 2026-10-26](https://oilchange.org/blogs/the-proposed-u-s-infrastructure-permitting-reform-bill-would-be-a-disaster-for-communities-and-for-climate-action/). On the bill text at [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167).
+- **Theodore Roosevelt Conservation Partnership** (Environmental groups; concerns): TRCP says the permit certainty language as drafted locks in place nearly any permit a federal agency issues, which limits adaptive management for fish and wildlife.
+  > as drafted the language effectively locks in place nearly any permit issued by a federal agency.
+  [Theodore Roosevelt Conservation Partnership, 2026-10-23](https://www.trcp.org/2026/10/23/what-the-senates-permitting-bill-could-mean-for-hunters-and-anglers/). On the bill text at [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159).
+- **Jane Flegal** (Think tanks; supports): A developer suing under Section 1402 must show missed deadlines or improper denials, a sharp rise over past rates and intent to target a project type, so past approval rates are evidence and not a quota.
+  > The old approval rate is *not a quota,* but can be used as evidence of targeting.
+  [X, 2026-10-21](https://x.com/JaneAFlegal/status/2112881718592180646). On the bill text at [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167).
 
 ## Selected statutory quotes
 
@@ -6519,6 +6602,21 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Womble Bond Dickinson** (Lawyers and legal scholars; mixed): Broader federal siting helps transmission developers, but federal siting still requires meeting the statutory triggers tied to state action or inaction.
   > These measures could improve development prospects, although access to federal siting would still depend on satisfying the applicable statutory conditions.
   [Womble Bond Dickinson, 2026-10-02](https://www.womblebonddickinson.com/us/node/21451). On the bill text at [p. 188, line 14 to p. 188, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188).
+- **Oklahoma Gas & Electric** (Industry; opposes): The utility says the state referral process in 2104 would put local planning decisions, which state commissions have overseen, under federal investigation and federal penalties.
+  > Although a referral would be initiated by a state, the result would be to place local planning decisions, which have historically been overseen by state commissions, under federal investigation and federal penalties.
+  [Energy and Policy Institute, 2026-10-20](https://energyandpolicy.org/oge-baaja-transmission-reforms-lobbying/). On the bill text at [p. 220, line 6 to p. 220, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=220).
+- **Earthjustice** (Environmental groups; supports): The guide says the stronger FERC backstop siting authority could help resolve conflicts and delays from state permitting of large multi-state transmission lines.
+  > Strengthens the Federal Energy Regulatory Commission’s (FERC) backstop permitting authority, which could help resolve conflicts and delays arising from state permitting processes
+  [Earthjustice, 2026-10-26](https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide). On the bill text at [p. 188, line 13 to p. 188, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188).
+- **Columbia University Center on Global Energy Policy** (Think tanks; explains): CGEP's replay of past transmission cases finds the transmission archetype saves 64 months up to the federal decision.
+  > The bill reduces the timeline to the federal decision by 64 months in the archetype, compared with 60.7 months in the largest replay (Bordertown to California, a 10-mile, 120 kV line).
+  [Columbia University Center on Global Energy Policy, 2026-10-21](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html). On the bill text at [p. 48, line 17 to p. 48, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=48).
+- **Columbia University Center on Global Energy Policy** (Think tanks; explains): State siting and the FERC backstop account for most of the transmission archetype's 96-month timeline, and the replays exclude them.
+  > The replays therefore exclude state siting and the FERC backstop permit (Sec. 2101), which account for most of the transmission archetype's 96-month timeline.
+  [Columbia University Center on Global Energy Policy, 2026-10-21](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html). On the bill text at [p. 188, line 13 to p. 188, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188).
+- **The Abundant Future** (Commentators; supports): Brown reads BAAJA as letting federal regulators approve interstate lines after states have a year to act.
+  > BAAJA lets federal regulators approve interstate transmission lines after states have had a year to act.
+  [The Abundant Future, 2026-10-05](https://theabundantfuture.substack.com/p/the-senate-permitting-deal-is-abundance). On the bill text at [p. 188, line 13 to p. 188, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188).
 
 ## Selected statutory quotes
 
@@ -7640,6 +7738,9 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Niskanen Center** (Think tanks; supports): State referrals to FERC would curb utilities from labeling regional projects local to avoid oversight.
   > BAAJA would allow states to ask FERC to review projects to prevent utilities from exploiting such loopholes and levy penalties on violators.
   [Niskanen Center, 2026-10-02](https://www.niskanencenter.org/the-bipartisan-american-affordability-and-jobs-act-of-2026-4-ways-the-new-permitting-package-gets-transmission-policy-right/). On the bill text at [p. 223, line 1 to p. 223, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=223).
+- **Oklahoma Gas & Electric** (Industry; opposes): The utility says the state referral process in 2104 would put local planning decisions, which state commissions have overseen, under federal investigation and federal penalties.
+  > Although a referral would be initiated by a state, the result would be to place local planning decisions, which have historically been overseen by state commissions, under federal investigation and federal penalties.
+  [Energy and Policy Institute, 2026-10-20](https://energyandpolicy.org/oge-baaja-transmission-reforms-lobbying/). On the bill text at [p. 220, line 6 to p. 220, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=220).
 
 ## Selected statutory quotes
 
@@ -7845,6 +7946,9 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Niskanen Center** (Think tanks; supports): The bill locks in the ban on federal rights of first refusal and extends it to interregional lines, protecting competition.
   > The BAAJA would codify the prohibition on federal ROFRs for regionally planned lines and extend that prohibition to lines included in an interregional plan.
   [Niskanen Center, 2026-10-02](https://www.niskanencenter.org/the-bipartisan-american-affordability-and-jobs-act-of-2026-4-ways-the-new-permitting-package-gets-transmission-policy-right/). On the bill text at [p. 224, line 11 to p. 224, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=224).
+- **Oklahoma Gas & Electric** (Industry; opposes): The utility tells Senate offices it opposes ending federal or state right of first refusal protections, which Section 2105 would prohibit for regionally selected lines.
+  > OG&E also says that it “strongly opposes eliminating federal or state ROFR [right of first refusal] protections.”
+  [Energy and Policy Institute, 2026-10-20](https://energyandpolicy.org/oge-baaja-transmission-reforms-lobbying/). On the bill text at [p. 224, line 11 to p. 224, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=224).
 
 ## Selected statutory quotes
 
@@ -8050,6 +8154,15 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Arushi Sharma Frank** (Commentators; explains): Curtailing only at system peak would not get a data center connected faster, because local contingency limits bind off-peak too; the speed comes from the bill's lower-cost non-firm service and its required analysis of upgrade cost-reduction options.
   > BAAJA’s breakthrough isn't peak shaving; it's codifying "non-firm transmission service".
   [X, 2026-10-04](https://x.com/ArushiSF/status/2106595761748111595). On the bill text at [p. 230, line 9 to p. 230, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=230).
+- **Bisnow** (Industry; concerns): A data center developer says requiring large loads to pay grid costs that would not exist but for their demand adds speculative upfront capital that smaller developers cannot carry.
+  > Any upfront cost that you have to spend before you even know the answer if something is viable will wipe everyone out
+  [Bisnow, 2026-10-18](https://www.bisnow.com/news/national/data-center-development/senate-bill-offers-data-centers-a-faster-path-to-power-but-at-a-price). On the bill text at [p. 229, line 19 to p. 229, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=229).
+- **Heatmap News** (Reporting; explains): FERC would have to require utilities to charge data centers both for new grid upgrades and for ongoing use of the grid.
+  > FERC would have to require utilities to charge data centers not only for the costs of new grid upgrades but the charges incurred for using the grid, too.
+  [Heatmap News (The Fight), 2026-10-16](https://heatmap.news/plus/the-fight/spotlight/project-jupiter-permitting). On the bill text at [p. 229, line 19 to p. 229, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=229).
+- **Institute for Progress** (Think tanks; supports): Utilities may not shift a data center's incremental costs to other customers, and the federal floor of 20 MW and up lets states charge more.
+  > Utilities may not shift a data center's "incremental cost" to other customers.
+  [Institute for Progress, 2026-10-12](https://ifp.org/how-the-permit). On the bill text at [p. 229, line 19 to p. 229, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=229).
 
 ## Selected statutory quotes
 
@@ -9169,6 +9282,14 @@ Directs FERC to start a rulemaking within 1 year requiring transmission provider
 
 - AI and automation in interconnection queue studies ([p. 265, line 21 to p. 265, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=265))
 
+## What others say it would do
+
+Outside readings, quoted from their sources. These are claims about effects, not findings of this tracker.
+
+- **Institute for Progress** (Think tanks; supports): Section 2110 directs FERC to start a rulemaking on automated interconnection queue review, leaving the details to the commission.
+  > Section 2110 of BAAJA requires FERC to initiate rulemaking to facilitate automated interconnection queue review for large-generator interconnection.
+  [Institute for Progress, 2026-10-12](https://ifp.org/how-the-permit). On the bill text at [p. 265, line 21 to p. 265, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=265).
+
 ## Selected statutory quotes
 
 > to require public utility transmission providers to share and employ, as appropriate, queue management practices with respect to the use of computing technologies, including artificial intelligence, machine learning, and automation
@@ -9645,6 +9766,14 @@ Directs the Energy Information Administration to revise Form 861 to collect elec
 ## Key points
 
 - EIA's Form 861 must report data center load ([p. 279, line 24 to p. 279, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=279))
+
+## What others say it would do
+
+Outside readings, quoted from their sources. These are claims about effects, not findings of this tracker.
+
+- **Institute for Progress** (Think tanks; supports): Section 2114 requires the Energy Information Administration to track electricity use by data centers, including cryptocurrency mining.
+  > Section 2114 of BAAJA requires EIA to track electricity use by data centers, including any demand associated with cryptocurrency mining.
+  [Institute for Progress, 2026-10-12](https://ifp.org/how-the-permit).
 
 ## Selected statutory quotes
 
@@ -13595,6 +13724,27 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **NATHPO, NCAI, NARF, AAIA and Cultural Heritage Partners** (Tribal Nations and groups; opposes): A Tribe that misses the new deadlines can lose its preservation funding and see Interior take over its office, which the paper calls an affront to sovereignty.
   > Far from protecting Tribes or leaving their preservation offices “unchanged,” BAAJA penalizes Tribes that miss its deadlines
   [Cultural Heritage Partners (posted by NATHPO), 2026-10-16](https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf). On the bill text at [p. 377, line 10 to p. 377, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=377).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): Redefining 'undertaking' to require a federal permit or approval plus substantial federal control would pull most federally funded projects out of Section 106 review.
+  > Projects funded by federal grants or loans would mostly fall outside the Section 106 process unless the funding is for historic preservation itself.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 383, line 14 to p. 383, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=383).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): The new statutory definition of 'adverse effect' would exclude most visual, atmospheric, audible and temporary effects, and the area of potential effects would be capped.
+  > A new statutory definition of "adverse effect" would exclude most visual, atmospheric, and audible effects, temporary effects, and effects on parts of a property beyond its character-defining features.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 380, line 5 to p. 380, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): A 30-day consulting-party clock lets an agency proceed without a SHPO, THPO, Tribe or local government, or reach agreement with the ACHP instead.
+  > Consulting parties would generally have 30 days to provide information or object, after which the agency may proceed without them.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 388, line 6 to p. 388, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=388).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): The Interior Secretary could assume a THPO's functions and suspend its funding if timelines are missed, which the signers say violates the government-to-government relationship.
+  > For the first time, the Secretary of the Interior could assume a THPO's functions and suspend its funding.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 377, line 10 to p. 377, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=377).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): Claims would have to be filed within 150 days, with deference to the agency and remand without vacatur as the usual remedy, so projects could proceed while violations are corrected.
+  > Claims would have to be filed within 150 days, courts would owe agencies substantial deference, and the usual remedy would be remand without vacatur or injunction.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 408, line 23 to p. 408, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=408).
+- **Institute for Progress** (Think tanks; supports): Section 2301 writes much of the ACHP's existing Section 106 consultation process into statute while setting deadlines and narrowing which actions and effects are reviewed.
+  > Section 2301 comprehensively reforms NHPA § 106, codifying much of ACHP's existing regulatory process to protect consultation rights while also streamlining review
+  [Institute for Progress, 2026-10-12](https://ifp.org/how-the-permit). On the bill text at [p. 383, line 14 to p. 383, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=383).
+- **Institute for Progress** (Think tanks; supports): The new 'adverse effect' definition requires an effect that is reasonably foreseeable and directly alters what makes a property historic, which raises the bar for showing harm.
+  > This new definition raises the bar for demonstrating that an effect harms a historic property, requiring parties to identify how the effect directly alters a core element that made the property eligible for the Register.
+  [Institute for Progress, 2026-10-12](https://ifp.org/how-the-permit). On the bill text at [p. 380, line 5 to p. 380, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380).
 
 ## Selected statutory quotes
 
@@ -14588,6 +14738,21 @@ Outside readings, quoted from their sources. These are claims about effects, not
 - **Searchlight Institute** (Think tanks; supports): A new grant program would help Tribes record sacred sites without making their locations public.
   > it creates a $20 million-a-year grant program to help tribes document cultural and sacred sites without having to disclose where they are
   [Searchlight Institute, 2026-10-07](https://www.searchlightinstitute.org/wp-content/uploads/2026/10/MEMO-The-Bipartisan-American-Affordability-and-Jobs-Act-BAAJA-is-a-Good-Deal.pdf). On the bill text at [p. 416, line 3 to p. 416, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=416).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): Redefining 'undertaking' to require a federal permit or approval plus substantial federal control would pull most federally funded projects out of Section 106 review.
+  > Projects funded by federal grants or loans would mostly fall outside the Section 106 process unless the funding is for historic preservation itself.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 383, line 14 to p. 383, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=383).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): The new statutory definition of 'adverse effect' would exclude most visual, atmospheric, audible and temporary effects, and the area of potential effects would be capped.
+  > A new statutory definition of "adverse effect" would exclude most visual, atmospheric, and audible effects, temporary effects, and effects on parts of a property beyond its character-defining features.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 380, line 5 to p. 380, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): A 30-day consulting-party clock lets an agency proceed without a SHPO, THPO, Tribe or local government, or reach agreement with the ACHP instead.
+  > Consulting parties would generally have 30 days to provide information or object, after which the agency may proceed without them.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 388, line 6 to p. 388, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=388).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): The Interior Secretary could assume a THPO's functions and suspend its funding if timelines are missed, which the signers say violates the government-to-government relationship.
+  > For the first time, the Secretary of the Interior could assume a THPO's functions and suspend its funding.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 377, line 10 to p. 377, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=377).
+- **Preservation coalition (13 groups)** (Historic preservationists; opposes): Claims would have to be filed within 150 days, with deference to the agency and remand without vacatur as the usual remedy, so projects could proceed while violations are corrected.
+  > Claims would have to be filed within 150 days, courts would owe agencies substantial deference, and the usual remedy would be remand without vacatur or injunction.
+  [Coalition letter hosted by National Trust, 2026-10-20](https://savingplaces.org/permitting-reform-coalition-letter-october-20). On the bill text at [p. 408, line 23 to p. 408, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=408).
 
 ## Selected statutory quotes
 
@@ -15926,6 +16091,150 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 - Quote: "the Administrator of the Energy Information Administration shall revise Form 861 of the Energy Information Administration to include load from data center entities.", [p. 279, line 23 to p. 279, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=279)
 
 
+## What slows projects: research on causes of delay
+
+Studies of why energy projects take years, grouped by cause. Each row shows what the research found, the bill text aimed at that cause, and named analysts' readings of what the text would change. Where studies disagree, the row says so.
+
+### Environmental impact statements take years
+
+- Headline: Median EIS took 2.2 years in 2024, down from 3.1
+- CEQ reported a median of 2.2 years from notice of intent to final EIS for EISs finished in 2024; the 2017-2020 median was 3.1 years and 2021-2024 was 2.4 years. "For final EISs issued in 2024, the median time from NOI to final EIS was 2.2 years and approximately 41 percent of final EISs issued in 2024 were completed in 2 years or less." Source: [Council on Environmental Quality, New data shows Biden-Harris Administration improved speed of federal permitting and environmental reviews (news release on CEQ EIS timelines report)](https://bidenwhitehouse.archives.gov/ceq/news-updates/2025/01/13/new-data-shows-biden-harris-administration-improved-speed-of-federal-permitting-and-environmental-reviews) (2025-01-13; data: final EISs 2010-2024)
+- CGO found clean-energy EISs averaged about three years from notice of intent to record of decision, with solar fastest (just under two years to final EIS) and hydroelectric slowest (5.1 years). "The average timeline across all energy types is approximately three years, excluding projects that have yet to be completed." Source: [Center for Growth and Opportunity (Utah State University), NEPA Timelines for Clean Energy Projects: Understanding Delays in Clean Energy Development](https://www.thecgo.org/research/nepa-timelines-for-clean-energy-projects-understanding-delays-in-clean-energy-development/) (2023-06-13; data: 89 clean energy EISs with notices of intent 2009-2022)
+- RFF found solar and wind EISs averaged 26 and 43 months against 54 months across all project types, and most wind, solar and geothermal projects took over five years to become operational. "solar and wind projects respectively take 26 and 43 months to get through NEPA" Source: [Resources for the Future, Most Renewable Projects Overcome Lawsuits and Move Through Federal Review Faster on Average than Other Infrastructure Projects (press release on RFF NEPA papers)](https://www.rff.org/news/press-releases/most-renewable-projects-overcome-lawsuits-and-move-through-federal-review-faster-on-average-than-other-infrastructure-projects/) (2025-08-05; data: wind, solar and geothermal projects with EISs, 2010-2023)
+- CGEP, citing CEQ, put the 2019-2024 median EIS at 2.8 years, and noted agencies reported two EISs and 153 assessments missing the 2023 statutory deadlines between June 2023 and June 2025. "Between June 2023 and June 2025, agencies reported two EISs and 153 assessments that missed deadlines" Source: [Columbia University Center on Global Energy Policy, Project timeline savings under BAAJA (assumptions tab quoting CEQ data)](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html) (2026-10-21; data: CEQ EIS data 2010-2024; agency reports June 2023-June 2025)
+- Where studies differ: The studies measure different spans. CEQ counts from the notice of intent to the final statement (2.2 to 2.8 years, depending on the years covered); CGO and RFF count to the record of decision or to operation, so their figures run longer and do not compare directly. CEQ's report PDF would not load, so its figures come from CEQ's news release.
+- Bill text (Sec. 1106, [p. 48, line 17 to p. 48, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=48)): "the lead agency shall publish an environmental impact statement, if applicable, not later than the date that is 2 years after the earlier of"
+- Bill: [1105](https://pranava0x0.github.io/permittingreform/sections/1105.md), [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md), [1107](https://pranava0x0.github.io/permittingreform/sections/1107.md), [1108](https://pranava0x0.github.io/permittingreform/sections/1108.md), [1109](https://pranava0x0.github.io/permittingreform/sections/1109.md), [1132](https://pranava0x0.github.io/permittingreform/sections/1132.md)
+- Reading, Columbia University Center on Global Energy Policy (explains): CGEP's replay of past transmission cases finds the transmission archetype saves 64 months up to the federal decision. [Columbia University Center on Global Energy Policy](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html)
+- Reading, Columbia University Center on Global Energy Policy (mixed): CGEP counts only months saved and cannot count projects BAAJA might enable that current law stops. [Columbia University Center on Global Energy Policy](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html)
+- Reading, King & Spalding (concerns): Whether agencies can meet the tighter deadlines depends on staffing, so sponsors should expect a rough transition. [King & Spalding](https://www.kslaw.com/Insights/Articles/The-Senate-Permitting-Deal-What-It-Would-Change-and-What-to-Do-Now)
+- Reading, Womble Bond Dickinson (explains): A missed agency deadline gives the sponsor enforcement tools but is not a deemed permit approval. [Womble Bond Dickinson](https://www.womblebonddickinson.com/us/node/21451)
+
+### Lawsuits under NEPA
+
+- Headline: 1 in 450 NEPA decisions is sued, but 28% of projects with an EIS
+- Ruple and Race found about one in 450 NEPA decisions (all decisions, including categorical exclusions) was litigated, and the challenge rate fell over the study period. "We found that only one in 450 NEPA decisions were litigated and that the rate of NEPA challenges declined during the thirteen-year study period." Source: [University of Utah Wallace Stegner Center, Measuring the NEPA Litigation Burden: A Review of 1,499 Federal Court Cases](https://dc.law.utah.edu/stegner_pubs/6) (2020; data: federal court NEPA cases over a thirteen-year period)
+- Bennon and Wilson found 28% of projects requiring an EIS saw pre-development litigation, with the highest rates for solar (nearly two-thirds), pipelines (50%), wind (38%) and transmission (31%). "The highest litigation rate is in solar energy projects, nearly two-thirds of which are litigated. Other high-litigation sectors include pipelines (50%), transmission lines (31%), and wind energy projects (38%)." Source: [Stanford University, NEPA Litigation Over Large Energy and Transport Infrastructure Projects](https://fsi.stanford.edu/node/35265) (2023-10-02; data: 355 major projects completing federal environmental study 2010-2018)
+- RFF found nearly a third of solar and half of wind projects that completed EISs were sued, and agencies mostly won. "Nearly a third of solar projects and half of wind projects completing NEPA environmental impact statement reviews faced court challenges." Source: [Resources for the Future, Taking Green Energy Projects to Court: NEPA Review and Court Challenges to Renewable Energy](https://www.rff.org/publications/reports/taking-green-energy-projects-to-court-nepa-review-and-court-challenges-to-renewable-energy/) (2025-08-04; data: utility-scale wind and solar projects completing EIS review)
+- Breakthrough found NEPA appeals averaged 4.2 years from the EIS or EA to the end of the appeal, with agencies winning about 80%. "On average, 4.2 years elapsed between publication of an environmental impact statement or environmental assessment and conclusion of the corresponding legal challenge at the appellate level." Source: [Breakthrough Institute, Understanding NEPA Litigation: A Systematic Review of Recent NEPA-Related Appellate Court Cases](https://thebreakthrough.org/issues/energy/understanding-nepa-litigation) (2024-07-11; data: appellate NEPA cases 2013-2022)
+- Where studies differ: The two headline rates use different bases. Ruple and Race count all NEPA decisions, nearly all of them categorical exclusions; Bennon and Wilson count only projects that needed a full impact statement. For wind, Stanford finds 38% sued and RFF about half; for solar, Stanford finds nearly two-thirds and RFF about a third.
+- Bill text (Sec. 1110, [p. 67, line 24 to p. 67, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=67)): "a claim shall be barred unless the claim"
+- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md), [1205](https://pranava0x0.github.io/permittingreform/sections/1205.md), [1305](https://pranava0x0.github.io/permittingreform/sections/1305.md)
+- Reading, The Revelator (opposes): Camacho and Glicksman say BAAJA hollows out NEPA, including courts' ability to enforce it. [The Revelator](https://therevelator.org/baaja)
+- Reading, Stanford Law School (concerns): The 150-day limit and court-of-appeals venue change little, since most NEPA suits are already filed within months and decided on summary judgment. [Stanford Law School (blog)](https://law.stanford.edu/2026/10/04/permitting-reform-legislation-would-take-a-meat-axe-to-environmental-law-when-what-we-need-is-a-surgical-scalpel/)
+- Reading, Bipartisan Policy Center (supports): The comment and direct-harm requirements would produce fewer, earlier lawsuits, with objections raised while the agency can still fix them. [Bipartisan Policy Center](https://bipartisanpolicy.org/explainer/explaining-the-senate-permitting-bill-the-bipartisan-american-affordability-and-jobs-act)
+- Reading, Womble Bond Dickinson (mixed): The 150-day, remand-only regime reduces the chance a NEPA claim alone stops construction while leaving substantive-law claims intact. [Womble Bond Dickinson](https://www.womblebonddickinson.com/us/node/21451)
+- Reading, Stanford Law School (opposes): Letting a project proceed during a remand means it can be built before its impacts are properly considered, which defeats NEPA's purpose. [Stanford Law School (blog)](https://law.stanford.edu/2026/10/04/permitting-reform-legislation-would-take-a-meat-axe-to-environmental-law-when-what-we-need-is-a-surgical-scalpel/)
+
+### Interconnection queues
+
+- Headline: Request to operation now takes over 4 years; 13% of requested capacity was built
+- LBNL found the median time from interconnection request to commercial operation doubled from under 2 years (built 2000-2007) to over 4 years (built 2018-2024). "the median duration from IR to COD has doubled from <2 years for projects built in 2000-2007 to over 4 years for those built in 2018-2024." Source: [Lawrence Berkeley National Laboratory, Queued Up: 2025 Edition (data as of end of 2024)](https://eta-publications.lbl.gov/publications/queued-2025-edition-characteristics) (2025-12; data: queues through end of 2024; projects built 2000-2024)
+- LBNL found 13% of capacity requested 2000-2019 reached operation, 77% was withdrawn and 10% was still active. "Only 13% of capacity that submitted interconnection requests from 2000-2019 had reached commercial operations by the end of 2024; 77% of that capacity had been withdrawn and 10% was still active." Source: [Lawrence Berkeley National Laboratory, Queued Up: 2025 Edition (completion rates)](https://eta-publications.lbl.gov/publications/queued-2025-edition-characteristics) (2025-12; data: requests submitted 2000-2019, outcome by end of 2024)
+- Reporting LBNL's July 2026 update, APPA says request-to-agreement took well over 3 years in 2025 and request-to-operation exceeded 5 years in regions with data. LBNL's own page was not fetchable. "the median duration from submitting a request to signing an IA was well over 3 years in 2025, while the timeline to reach commercial operations exceeds 5 years" Source: [American Public Power Association (reporting LBNL's next Queued Up edition), Backlog of Power Plants Seeking Transmission Grid Connection Eased Somewhat in 2025: LBNL](https://www.publicpower.org/periodical/article/backlog-power-plants-seeking-transmission-grid-connection-eased-somewhat-2025-lbnl) (2026-07-01; data: queues through end of 2025)
+- Hausfather finds data centers that skip the grid for on-site gas generators have 60 to 80% higher emissions. He gives no figure for queue times. "A rush to power is leading data centers to install the least efficient and leakiest types of fossil gas generators rather than connecting to the grid" Source: [The Climate Brink, Off-grid data centers have 60-80% higher emissions](https://www.theclimatebrink.com/p/off-grid-data-centers-have-60-80) (2026-10-26; data: 2026 commentary)
+- Bill text (Sec. 2110, [p. 265, line 20 to p. 265, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=265)): "queue management practices with respect to the use of computing technologies"
+- Bill: [2110](https://pranava0x0.github.io/permittingreform/sections/2110.md), [2114](https://pranava0x0.github.io/permittingreform/sections/2114.md), [2107](https://pranava0x0.github.io/permittingreform/sections/2107.md)
+
+### High-voltage transmission is built slowly
+
+- Headline: 322 miles of 345 kV+ line finished in 2024, against nearly 4,000 in 2013
+- Grid Strategies found only 322 miles of 345 kV+ lines were completed in 2024, versus nearly 4,000 in 2013. "In 2024, only 322 miles of new high-voltage transmission lines were completed, the third slowest year of new construction for 345 kV and above transmission over the past 15 years." Source: [Grid Strategies and Americans for a Clean Energy Grid, Fewer New Miles (July 2025)](https://gridstrategiesllc.com/wp-content/uploads/ACEG_Grid-Strategies_Fewer-New-Miles-2025_vF.pdf) (2025-07; data: lines completed 2010-2024)
+- Gas pipelines averaged 534 miles a year over five years against 345 miles for high-voltage lines; the report links the gap to FERC's siting authority over pipelines. "Over the past five years, natural gas pipelines have averaged 534 miles per year, outpacing the 345-mile annual average for high-voltage transmission by more than 50%." Source: [Grid Strategies and Americans for a Clean Energy Grid, Fewer New Miles (gas pipeline comparison)](https://gridstrategiesllc.com/wp-content/uploads/ACEG_Grid-Strategies_Fewer-New-Miles-2025_vF.pdf) (2025-07; data: 2020-2024)
+- The report cites DOE's study as calling for doubling regional and quadrupling interregional capacity by 2050, about 5,000 miles a year of regional lines. "calls for at least a doubling of the current regional transmission capacity and quadrupling of interregional transmission capacity by 2050." Source: [Grid Strategies and Americans for a Clean Energy Grid, Fewer New Miles (DOE needs benchmark)](https://gridstrategiesllc.com/wp-content/uploads/ACEG_Grid-Strategies_Fewer-New-Miles-2025_vF.pdf) (2025-07; data: DOE 2024 National Transmission Planning Study, through 2050)
+- Bill text (Sec. 2101, [p. 188, line 13 to p. 188, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188)): "issue one or more permits to individual or joint applicants for the construction or modification of electric transmission facilities necessary in the national interest"
+- Bill text (Sec. 2105, [p. 224, line 11 to p. 224, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=224)): "a Federal right of first refusal is prohibited"
+- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md), [2102](https://pranava0x0.github.io/permittingreform/sections/2102.md), [2103](https://pranava0x0.github.io/permittingreform/sections/2103.md), [2104](https://pranava0x0.github.io/permittingreform/sections/2104.md), [2105](https://pranava0x0.github.io/permittingreform/sections/2105.md), [2106](https://pranava0x0.github.io/permittingreform/sections/2106.md), [2109](https://pranava0x0.github.io/permittingreform/sections/2109.md)
+- Reading, Columbia University Center on Global Energy Policy (explains): State siting and the FERC backstop account for most of the transmission archetype's 96-month timeline, and the replays exclude them. [Columbia University Center on Global Energy Policy](https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html)
+- Reading, The Abundant Future (supports): Brown reads BAAJA as letting federal regulators approve interstate lines after states have a year to act. [The Abundant Future](https://theabundantfuture.substack.com/p/the-senate-permitting-deal-is-abundance)
+- Reading, Grid Strategies (supports): The transmission title tackles the planning, permitting and cost-allocation barriers together. [pv magazine USA](http://pv-magazine-usa.com/2026/10/01/senate-introduces-landmark-permitting-bill-as-industry-data-and-environmental-groups-clash-over-reforms/)
+- Reading, Niskanen Center (supports): The backstop would work like FERC's gas pipeline approvals and give stalled interstate lines a path. [Niskanen Center](https://www.niskanencenter.org/the-bipartisan-american-affordability-and-jobs-act-of-2026-4-ways-the-new-permitting-package-gets-transmission-policy-right/)
+- Reading, Oklahoma Gas & Electric (opposes): The utility tells Senate offices it opposes ending federal or state right of first refusal protections, which Section 2105 would prohibit for regionally selected lines. [Energy and Policy Institute](https://energyandpolicy.org/oge-baaja-transmission-reforms-lobbying/)
+- Reading, Bommarito Consulting (concerns): Landowners get a consultation duty but no obligation on FERC to change a route, and condemnation shifts to federal rules. [Bommarito Consulting](https://bommaritollc.com/insights/senate-permitting-bill-2026/)
+
+### Local and state opposition
+
+- Headline: At least 459 local governments restrict wind or solar; studies disagree on how much federal review adds
+- Sabin counted at least 459 counties and municipalities in 44 states with severe local restrictions on renewables, up 16% in a year. "By the end of 2024, at least 459 counties and municipalities across 44 states had adopted severe local restrictions on siting renewables." Source: [Columbia University Sabin Center for Climate Change Law, Opposition to Renewable Energy Facilities in the United States: June 2025 Edition](https://climate.law.columbia.edu/content/opposition-renewable-energy-facilities-united-states-june-2025-edition) (2025-06; data: restrictions through end of 2024)
+- The sixth Sabin report counts 567 contested projects since 2004, with about 40% cancelled; it says cancellations cannot all be attributed to local opposition. "Of the 567 total contested projects since 2004, at least 227 (approximately 40%) have been canceled." Source: [Columbia University Sabin Center (reported by pv magazine USA), The U.S. saw a 14 percent increase in contested renewable projects, 9.8 GW in cancellations in 2025](https://pv-magazine-usa.com/2026/09/08/the-u-s-saw-a-14-percent-increase-in-contested-renewable-projects-9-8-gw-in-cancellations-in-2025/) (2026-09-08; data: contested projects 2004-2025)
+- LBNL's developer survey ranked community opposition and local ordinances alongside grid interconnection as leading causes of delay and cancellation. "community opposition and ordinances limiting renewable development are the "leading causes of project delays and cancellations," on par with grid interconnection issues" Source: [Lawrence Berkeley National Laboratory (reported by Latitude Media), Local opposition is now a 'leading cause' of canceled clean energy projects](https://latitudemedia.com/news/local-opposition-is-now-a-leading-cause-of-canceled-clean-energy-projects) (2024-08-29; data: survey of 123 developer staff at 62 companies, 2023 (primary report published 2024-01))
+- Third Way's survey found organized resistance affects a minority of projects, federal reviews caused the longest delays, and state and local permitting also slowed projects. "Only a minority of projects face concerted resistance capable of altering or halting development. Federal permitting reviews caused the longest delays for new projects, but state and local permitting also slowed deployment significantly." Source: [Third Way (survey by ERM), Full Research Findings: Pathways to Accelerating Clean Energy (PACE) Report](https://www.thirdway.org/report/full-research-findings-pathways-to-accelerating-clean-energy-pace-report) (2025-11-06; data: survey of 200+ industry practitioners)
+- Adelman and co-authors conclude the empirical record shows environmental review and permitting rarely delay or block utility-scale renewables, citing the LBNL survey result that environmental regulations caused under 15% of delays or cancellations. "The available empirical record shows that environmental reviews and permitting rarely delay or block utility-scale renewable energy projects" Source: [Environmental Law Reporter, Dispelling the Myths of Permitting Reform and Identifying Effective Pathways Forward (55 ELR 10038)](https://www.eli.org/sites/default/files/files-pdf/55.DispellingTheMyths.pdf) (2025-01; data: review of empirical literature, past 14 years)
+- A Crux survey of 50 developers says federal permitting contributed to delays or cancellations in 94% of surveyed projects. "Federal permitting contributed to delays or cancellations in 94% of clean energy projects surveyed and raised costs for every developer." Source: [Crux, Federal permitting and clean energy: 2026 survey](https://www.cruxclimate.com/insights/federal-permitting-clean-energy-projects) (2026; data: survey of 50 developers and permitting professionals)
+- Where studies differ: No study found here splits cancellations into local and federal shares. Sabin and LBNL rank local opposition among the top causes. Adelman and co-authors find environmental review rarely delays or blocks utility-scale renewables. Third Way and Crux put federal permitting first, for length of delay or how often it is a factor. Both developer surveys are small, and Crux counts federal permitting as a factor, not as the main cause.
+- Bill: no section mapped
+
+### Federal reversals of approved projects
+
+- Headline: Agencies halted large solar and offshore wind projects in 2025; judges let the offshore ones resume
+- The largest 2025 cancellation in Sabin's data, 6.2 GW Esmeralda 7 in Nevada, was cancelled by BLM. "The largest of these projects was the 6.2 GW Esmeralda 7 Solar Project in Nevada, which was canceled by the Bureau of Land Management in October 2025." Source: [pv magazine USA (reporting Sabin Center), The U.S. saw a 14 percent increase in contested renewable projects, 9.8 GW in cancellations in 2025](https://pv-magazine-usa.com/2026/09/08/the-u-s-saw-a-14-percent-increase-in-contested-renewable-projects-9-8-gw-in-cancellations-in-2025/) (2026-09-08; data: 2025)
+- AP reports the administration suspended five offshore wind projects in December and they later moved forward after federal judges intervened. "The administration suspended five offshore wind projects in December, citing unspecified national security concerns. The projects later moved forward after federal judges intervened." Source: [Associated Press via PBS NewsHour, Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects](https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects) (2026-09-30; data: December 2025 suspensions)
+- Bill text (Sec. 1401, [p. 159, line 11 to p. 159, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159)): "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit"
+- Bill text (Sec. 1402, [p. 167, line 14 to p. 167, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=167)): "an empirically demonstrated statistical pattern that"
+- Bill: [1401](https://pranava0x0.github.io/permittingreform/sections/1401.md), [1402](https://pranava0x0.github.io/permittingreform/sections/1402.md), [1403](https://pranava0x0.github.io/permittingreform/sections/1403.md), [2251](https://pranava0x0.github.io/permittingreform/sections/2251.md), [2252](https://pranava0x0.github.io/permittingreform/sections/2252.md)
+- Reading, Jane Flegal (supports): A developer suing under Section 1402 must show missed deadlines or improper denials, a sharp rise over past rates and intent to target a project type, so past approval rates are evidence and not a quota. [X](https://x.com/JaneAFlegal/status/2112881718592180646)
+- Reading, Grist (explains): Grist sums up the bill as weakening some environmental laws, speeding agency deadlines and making approved projects harder to cancel. [Grist](https://grist.org/politics/permitting-reform-baaja-climate-debate-clean-energy-fossil-fuels/)
+- Reading, King & Spalding (mixed): Permit-certainty limits bind both the current administration's holds on wind and solar and a future administration's attempts to unwind oil and gas approvals. [King & Spalding](https://www.kslaw.com/Insights/Articles/The-Senate-Permitting-Deal-What-It-Would-Change-and-What-to-Do-Now)
+- Reading, Foundation for American Innovation (mixed): The certainty provisions are novel and depend on how courts enforce them, but together make mass targeting of disfavored projects much harder. [Daily Caller News Foundation](https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse)
+- Reading, Heatmap (mixed): The 'pattern of disparate treatment' cause of action is untested law, so it is unclear how courts would apply it to wind permitting delays. [Heatmap](https://heatmap.news/politics/baaja-executive-actions)
+- Reading, Sierra Club (concerns): Without enforceable protection against the administration's blocks, the bill cannot guarantee wind and solar get built. [PV Tech](https://www.pv-tech.org/us-planning-reform-bill-gets-mixed-response-from-clean-energy-groups/)
+
+### Historic preservation review (Section 106)
+
+- Headline: Over 120,000 reviews a year; no study measures how long they take
+- ACHP says over 120,000 undertakings go through Section 106 each year and over 95% resolve without ACHP involvement. "While more than 95 percent of these cases are resolved without the ACHP" Source: [Advisory Council on Historic Preservation, About the ACHP fact sheet](https://www.achp.gov/sites/default/files/2025-07/2025_AboutTheACHPFactSheet_072225v2.pdf) (2025-07-22; data: annual)
+- IFP says few undertakings are found to adversely affect historic properties, but those that do are disproportionately large energy and infrastructure projects. "But those that do are disproportionately the large energy and infrastructure projects the country most needs." Source: [Institute for Progress, Reforming Section 106 of the National Historic Preservation Act](https://ifp.org/?p=9257) (2026-06-30; data: current practice)
+- Adelman and co-authors note that there are almost no data or studies on how long Section 106 consultation takes. "there are virtually no data and no empirical studies of NHPA consultations, despite their close connection with NEPA procedures." Source: [Environmental Law Reporter, Dispelling the Myths of Permitting Reform (55 ELR 10038)](https://www.eli.org/sites/default/files/files-pdf/55.DispellingTheMyths.pdf) (2025-01; data: literature review)
+- Where studies differ: No study measuring Section 106 delay was found. The Advisory Council's figures count reviews and how they end, not how long they take; the Institute for Progress argues that a small number of large projects carry most of the cost.
+- Bill text (Sec. 2301, [p. 386, line 8 to p. 386, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=386)): "Not later than 30 days after the date of receipt of a request for review of a proposed project, activity, or program under this section"
+- Bill text (Sec. 2302, [p. 414, line 10 to p. 414, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=414)): "$200,000,000 for each of fiscal years 2027 through 2036"
+- Bill: [2301](https://pranava0x0.github.io/permittingreform/sections/2301.md), [2302](https://pranava0x0.github.io/permittingreform/sections/2302.md)
+- Reading, Vinson & Elkins (supports): Tying historic preservation deadlines to the NEPA schedule, with penalties for overruns, would keep reviews from stretching on. [Vinson & Elkins](https://www.velaw.com/insights/to-the-finish-line-ten-ways-the-new-senate-permitting-bill-is-a-boon-for-energy-infrastructure/)
+- Reading, Aidan Mackenzie (supports): Section 106 gathers information and consults; it never gave a veto, and the bill does not change that. [X](https://x.com/AidanRMackenzie/status/2112277233327051221)
+- Reading, NCAI, NARF, NATHPO and six other Tribal organizations (opposes): A Tribe would have only 30 days to object to an agency's Section 106 report. [Joint letter (via HillHeat)](https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf)
+- Reading, National Conference of State Historic Preservation Officers (opposes): If a SHPO, THPO or Tribe does not answer on an agreement, the agency could sign it with the Advisory Council instead. [NCSHPO](https://ncshpo.org/2026/10/02/senate-proposal-does-more-than-streamline-section-106/)
+
+### Endangered species consultations
+
+- Headline: Median formal consultation took 62 days; 20% ran past 135
+- Li reported median consultation times of 13 days (informal) and 62 days (formal) from when FWS had enough information to start. "the median duration of informal consultations was 13 days and formal consultations was 62 days" Source: [Defenders of Wildlife, Testimony on 'ESA Consultation Impediments to Economic and Infrastructure Development'](https://naturalresources.house.gov/UploadedFiles/Testimony_Li.pdf) (2017-03-28; data: FWS consultations over seven years (about 88,000 projects))
+- Li reported 1,381 formal consultations, 20%, exceeded the 135-day limit, many with agreed extensions. "Only 1,381 formal consultations (20 percent) exceeded the 135-day limit prescribed in Services regulations, and many of those had agreed upon extensions." Source: [Defenders of Wildlife, Testimony (share over deadline)](https://naturalresources.house.gov/UploadedFiles/Testimony_Li.pdf) (2017-03-28; data: same FWS data)
+- Where studies differ: The figures come from Defenders of Wildlife testimony describing a peer-reviewed study; the study itself and a 2004 GAO report would not load. The clock starts when the agency has a complete submission, so time spent before that is not counted.
+- Bill text (Sec. 1302, [p. 136, line 4 to p. 136, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=136)): "the consultation process under subsection (a)(2) shall be completed by not later than the date on which the applicable environmental document"
+- Bill: [1302](https://pranava0x0.github.io/permittingreform/sections/1302.md), [1304](https://pranava0x0.github.io/permittingreform/sections/1304.md), [1305](https://pranava0x0.github.io/permittingreform/sections/1305.md)
+- Reading, Bipartisan Policy Center (explains): Applicants would gain a veto over consultation extensions at 100 days instead of 150. [Bipartisan Policy Center](https://bipartisanpolicy.org/explainer/explaining-the-senate-permitting-bill-the-bipartisan-american-affordability-and-jobs-act)
+- Reading, Womble Bond Dickinson (explains): The 90-to-60-day change does not create a hard 60-day deadline for a final biological opinion. [Womble Bond Dickinson](https://www.womblebonddickinson.com/us/node/21451)
+- Reading, Rep. Jared Huffman (opposes): The Senate bill's ESA provisions give away too much and Democrats should wait for a stronger position after the election. [Washington Examiner](https://www.washingtonexaminer.com/daily-on-energy/4750722/daily-on-energy-a-baaja-blast-for-data-centers/)
+
+### Clean Water Act permits and state certification
+
+- Headline: No current national data on how long these permits take
+- EPA's inspector general found more than a third of the Corps individual permits in its sample took a year or longer. The sample is from 2011 and covers coal mining only. "More than one-third of issued permits took a year or longer to process." Source: [EPA Office of Inspector General, Report 12-P-0083 at a glance (Corps/EPA review of Appalachian surface coal mining permits)](https://19january2021snapshot.epa.gov/sites/static/files/2015-10/documents/20111121-12-p-0083_glance.pdf) (2011-11-21; data: Appalachian surface coal mining permits, about 2008-2011)
+- Where studies differ: No national data from the 2020s on how long Section 404 permits or Section 401 certifications take was found. The only measurement is a 2011 sample of coal-mining permits.
+- Bill text (Sec. 1202, [p. 107, line 9 to p. 107, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=107)): "respond to the request not later than 30 days after the date on which the request is received"
+- Bill: [1202](https://pranava0x0.github.io/permittingreform/sections/1202.md), [1204](https://pranava0x0.github.io/permittingreform/sections/1204.md), [1205](https://pranava0x0.github.io/permittingreform/sections/1205.md)
+
+### Agency staffing
+
+- Headline: No government-wide count of permitting staff was found
+- A former Permitting Council director warned staff losses and expected funding cuts could undermine the federal permitting modernization plan. No headcount is given. "I’m concerned, however, that the loss of staff and the funding reductions expected for agencies will hinder the ability of the agencies to fulfill the ambitious goals of this effort" Source: [Nextgov/FCW (quoting Eric Beightel, former Federal Permitting Council director), Trump administration debuts permitting modernization plan, even as staff cuts could jeopardize it](https://www.nextgov.com/modernization/2025/06/trump-administration-debuts-permitting-modernization-plan-even-staff-cuts-could-jeopardize-it/405848/) (2025-06; data: 2025)
+- IFP reports Utah's digital SHPO finishes about 98% of reviews within seven days while offices without modern systems lag badly. "Utah’s fully digital SHPO completes about 98% of reviews within seven days, while offices without modern data systems lag badly." Source: [Institute for Progress, Reforming Section 106 of the National Historic Preservation Act (SHPO capacity)](https://ifp.org/?p=9257) (2026-06-30; data: state offices)
+- Adelman and co-authors argue that agency funding, staffing and training speed permitting for every kind of project. "Increasing agency capacity through adequate funding, staffing, and training improves the permitting process for everyone." Source: [Environmental Law Reporter, Dispelling the Myths of Permitting Reform (55 ELR 10038)](https://www.eli.org/sites/default/files/files-pdf/55.DispellingTheMyths.pdf) (2025-01; data: literature review)
+- Where studies differ: No government-wide count of permitting staff was found. A 20 to 30% staff decline that appears in search results could not be traced to a source.
+- Bill text (Sec. 1133, [p. 101, line 11 to p. 101, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=101)): "The purpose of the Fund is to improve the performance of key permitting agencies with respect to timely environmental reviews and authorizations"
+- Bill: [1133](https://pranava0x0.github.io/permittingreform/sections/1133.md), [1132](https://pranava0x0.github.io/permittingreform/sections/1132.md), [2241](https://pranava0x0.github.io/permittingreform/sections/2241.md), [2302](https://pranava0x0.github.io/permittingreform/sections/2302.md)
+- Reading, King & Spalding (concerns): Whether agencies can meet the tighter deadlines depends on staffing, so sponsors should expect a rough transition. [King & Spalding](https://www.kslaw.com/Insights/Articles/The-Senate-Permitting-Deal-What-It-Would-Change-and-What-to-Do-Now)
+
+### How clean energy fares in federal review
+
+- Headline: Solar and wind reviews ran shorter than average; no study compares clean and fossil shares
+- RFF found solar, wind and geothermal reviews were historically shorter than other infrastructure, though other steps may take as long. "solar, wind, and geothermal projects have historically seen shorter review times on average than other infrastructure projects, although other process steps may be just as time-consuming." Source: [Resources for the Future, Most Renewable Projects Overcome Lawsuits and Move Through Federal Review Faster on Average than Other Infrastructure Projects](https://www.rff.org/news/press-releases/most-renewable-projects-overcome-lawsuits-and-move-through-federal-review-faster-on-average-than-other-infrastructure-projects/) (2025-08-05; data: 2010-2023)
+- Where studies differ: No source found here gives the clean energy and fossil fuel shares of NEPA reviews.
+- Bill text (Sec. 2213, [p. 300, line 6 to p. 300, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=300)): "shall issue a notice of intent not later than 90 days after the date on which the applicable Secretary determines that an application is complete"
+- Bill: [2213](https://pranava0x0.github.io/permittingreform/sections/2213.md), [2214](https://pranava0x0.github.io/permittingreform/sections/2214.md), [1402](https://pranava0x0.github.io/permittingreform/sections/1402.md), [2221](https://pranava0x0.github.io/permittingreform/sections/2221.md), [2222](https://pranava0x0.github.io/permittingreform/sections/2222.md), [2223](https://pranava0x0.github.io/permittingreform/sections/2223.md), [2224](https://pranava0x0.github.io/permittingreform/sections/2224.md), [2225](https://pranava0x0.github.io/permittingreform/sections/2225.md), [2226](https://pranava0x0.github.io/permittingreform/sections/2226.md), [2227](https://pranava0x0.github.io/permittingreform/sections/2227.md), [2228](https://pranava0x0.github.io/permittingreform/sections/2228.md), [2229](https://pranava0x0.github.io/permittingreform/sections/2229.md), [2251](https://pranava0x0.github.io/permittingreform/sections/2251.md), [2252](https://pranava0x0.github.io/permittingreform/sections/2252.md)
+- Reading, Third Way (supports): The certainty provisions apply across technologies and administrations, not only to wind and solar. [Third Way](https://www.thirdway.org/blog/one-baaja-blast-please)
+
+
 ## Added and dropped provisions
 
 ```json
@@ -16367,6 +16676,62 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 {"id": "2026-10-19-ncai-bill-needs-to-be-killed", "date": "2026-10-19", "branch": "other", "title": "NCAI's president says the bill needs to be killed over Section 106", "summary": "Mark Macarro, president of the National Congress of American Indians, called the Section 106 changes an existential threat. Defenders, including Thomas Hochman, answered the October 16 paper the same day.", "significance": "The largest national Tribal organization moved from asking for the title's removal to opposing the bill outright.", "sources": [{"title": "NCAI calls for the Senate permitting deal to be killed", "publisher": "X (Nico Portuondo)", "url": "https://x.com/NicoPortuondo/status/2112269443636273207", "date": "2026-10-19"}, {"title": "Thread answering the Cultural Heritage Partners fact check", "publisher": "X (Thomas Hochman)", "url": "https://x.com/ThomasHochman/status/2112264083525513461", "date": "2026-10-19"}], "topics": ["tribal", "historic-preservation"], "quote": {"text": "This bill needs to be killed,", "speaker": "Mark Macarro, NCAI", "source_url": "https://x.com/NicoPortuondo/status/2112269443636273207"}, "milestone": false}
 ```
 
+```json
+{"id": "2026-10-20-apcg-resolution-opposes", "date": "2026-10-20", "title": "All Pueblo Council of Governors adopts a resolution against S. 5653", "branch": "other", "summary": "The council of New Mexico's 19 Pueblo nations unanimously adopted a resolution opposing the bill and said Sen. Heinrich did not consult them before negotiating changes to the National Historic Preservation Act.", "significance": "Brought Tribal opposition to the home state of one of the four sponsors.", "actors": ["All Pueblo Council of Governors", "Martin Heinrich (Senator, D-N.M.)"], "topics": ["tribal", "historic-preservation"], "milestone": false, "sources": [{"title": "APCG Resolution 2026-15 (PDF, posted by NATHPO)", "publisher": "All Pueblo Council of Governors", "url": "https://edge.growthzonecms.com/sites/2385/2026/10/APCG-Resolution-2026-15-Opposing-S.-5653.pdf", "date": "2026-10-20"}, {"title": "Post on the APCG resolution", "publisher": "Nico Portuondo, POLITICO (X)", "url": "https://x.com/NicoPortuondo/status/2112571938484957230", "date": "2026-10-20"}]}
+```
+
+```json
+{"id": "2026-10-20-former-officials-letter", "date": "2026-10-20", "title": "19 former economic and national security officials urge passage", "branch": "other", "summary": "A letter to Thune, Schumer, Johnson and Jeffries from 19 former officials who served six presidents, including four Treasury secretaries, asks Congress to pass the bill.", "significance": "Bipartisan support from former cabinet officials, organized by the Institute for Progress.", "actors": ["Janet Yellen", "Steven Mnuchin", "Timothy Geithner", "Henry Paulson"], "topics": ["congress"], "milestone": false, "sources": [{"title": "Letter to congressional leaders (PDF)", "publisher": "Institute for Progress", "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf", "date": "2026-10-20"}]}
+```
+
+```json
+{"id": "2026-10-20-preservation-coalition-letter", "date": "2026-10-20", "title": "13 preservation groups ask the sponsors to revise or remove the Section 106 provisions", "branch": "other", "summary": "A coalition including NATHPO, NCSHPO and the National Trust wrote the four sponsors objecting to the historic preservation title and proposing to revisit it next session.", "significance": "Joined Tribal and state preservation officers in one letter against Section 2301.", "actors": ["NATHPO", "NCSHPO", "National Trust for Historic Preservation"], "topics": ["historic-preservation", "tribal"], "milestone": false, "sources": [{"title": "Coalition letter", "publisher": "National Trust for Historic Preservation", "url": "https://savingplaces.org/permitting-reform-coalition-letter-october-20", "date": "2026-10-20"}]}
+```
+
+```json
+{"id": "2026-10-21-cgep-timeline-analysis", "date": "2026-10-21", "title": "Columbia's energy policy center estimates months saved under the bill", "branch": "other", "summary": "Columbia's Center on Global Energy Policy replayed past project reviews under the bill's deadlines and found the largest savings for transmission, while leaving state siting and the FERC backstop out of its replays.", "significance": "The first published estimate of how many months the bill would cut from federal reviews.", "actors": ["Jack Andreasen Cavanaugh (Columbia CGEP)"], "topics": ["nepa", "transmission"], "milestone": false, "sources": [{"title": "Project timeline savings under BAAJA", "publisher": "Columbia University Center on Global Energy Policy", "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html", "date": "2026-10-21"}]}
+```
+
+```json
+{"id": "2026-10-21-clean-energy-trades-endorse", "date": "2026-10-21", "title": "Clean energy trade groups endorse the bill in a joint letter", "branch": "other", "summary": "CEBA, ACORE, Advanced Energy United, the American Clean Power Association and SEIA wrote congressional leaders to endorse the bill.", "significance": "The clean energy industry's main trade groups backed the bill together before the vote.", "actors": ["CEBA", "ACORE", "Advanced Energy United", "American Clean Power Association", "SEIA"], "topics": ["wind-solar", "transmission"], "milestone": false, "sources": [{"title": "Post on the joint letter", "publisher": "Joshua Siegel, Punchbowl News (X)", "url": "https://x.com/SiegelScribe/status/2112926458280804488", "date": "2026-10-21"}]}
+```
+
+```json
+{"id": "2026-10-21-new-england-wind-filing", "date": "2026-10-21", "title": "Administration files against New England Wind; Whitehouse warns the deal is at risk", "branch": "executive", "summary": "A late filing by the administration targeting the New England Wind offshore project followed similar motions on Revolution Wind and Maryland Offshore Wind. Sen. Whitehouse said it is how to blow up a permitting deal.", "significance": "Tested the Democratic sponsors' condition that the administration stop blocking wind and solar.", "actors": ["Sheldon Whitehouse (Senator, D-R.I.)"], "topics": ["offshore", "wind-solar", "white-house"], "milestone": false, "sources": [{"title": "Post on the New England Wind filing", "publisher": "Nico Portuondo, POLITICO (X)", "url": "https://x.com/NicoPortuondo/status/2112937851931488285", "date": "2026-10-21"}, {"title": "Trump administration asks courts to revoke permits for offshore wind farms", "publisher": "Utility Dive", "url": "https://www.utilitydive.com/news/trump-administration-asks-courts-to-revoke-permits-for-offshore-wind-farms/833735/", "date": "2026-10-22"}]}
+```
+
+```json
+{"id": "2026-10-22-api-coalition-letter", "date": "2026-10-22", "title": "API and 137 organizations ask for a floor vote this year", "branch": "other", "summary": "A coalition from energy, labor, manufacturing, housing and transportation asked House and Senate leaders to bring S. 5653 to the floor and pass it before the end of the year.", "significance": "The largest industry sign-on letter so far.", "actors": ["American Petroleum Institute"], "topics": ["congress", "fossil"], "milestone": false, "sources": [{"title": "Broad coalition of 130+ groups urge Congress to pass permitting reform", "publisher": "American Petroleum Institute", "url": "https://www.api.org/news-policy-and-issues/news/2026/10/22/broad-coalition-of-130-groups-urge-congress-to-pass-bipartisan-permitting-reform", "date": "2026-10-22"}]}
+```
+
+```json
+{"id": "2026-10-22-dod-advances-two-wind-projects", "date": "2026-10-22", "title": "Defense Department advances two onshore wind projects", "branch": "executive", "summary": "A White House official said the Defense Department advanced wind projects in Maine and South Dakota, with more to come, and that the administration is clearing the way for the bill. Whitehouse called it a start; Heinrich pointed to hundreds of projects still waiting.", "significance": "The administration's first concession on wind after Democrats tied their votes to it.", "actors": ["Sheldon Whitehouse (Senator, D-R.I.)", "Martin Heinrich (Senator, D-N.M.)"], "topics": ["wind-solar", "white-house"], "milestone": false, "sources": [{"title": "Post on the Defense Department wind approvals", "publisher": "Joshua Siegel, Punchbowl News (X)", "url": "https://x.com/SiegelScribe/status/2113249297554973141", "date": "2026-10-22"}, {"title": "Whitehouse reaction", "publisher": "Joshua Siegel, Punchbowl News (X)", "url": "https://x.com/SiegelScribe/status/2113279782419128579", "date": "2026-10-22"}]}
+```
+
+```json
+{"id": "2026-10-22-nine-ags-letter", "date": "2026-10-22", "title": "Nine Democratic attorneys general raise concerns about state authority", "branch": "states", "summary": "Attorneys general led by California, Massachusetts and Washington wrote Senate leaders about provisions affecting state authority under the Clean Water Act and the National Historic Preservation Act, and asked for a meeting.", "significance": "State officials from the Democratic side asked for changes before the vote.", "actors": ["Rob Bonta (California Attorney General)"], "topics": ["clean-water-act", "historic-preservation"], "milestone": false, "sources": [{"title": "Report of the attorneys general letter", "publisher": "SWACCA", "url": "https://swacca.org/nine-democratic-state-attorneys-general-raise-concerns-over-bipartisan-permitting-reform-bill/", "date": "2026-10-22"}]}
+```
+
+```json
+{"id": "2026-10-22-public-lands-groups-letter", "date": "2026-10-22", "title": "More than 100 groups ask Congress to reject the bill over public lands", "branch": "other", "summary": "A coalition letter asked Congress to reject the bill because of its effects on public lands.", "significance": "Widened the opposition beyond Tribal and preservation groups to public lands advocates.", "actors": ["Center for Western Priorities"], "topics": ["nepa"], "milestone": false, "sources": [{"title": "DOJ moves to kill offshore wind permits as Congress weighs permitting bill", "publisher": "Center for Western Priorities", "url": "https://westernpriorities.org/2026/10/doj-moves-to-kill-offshore-wind-permits-as-congress-weighs-permitting-bill/", "date": "2026-10-23"}]}
+```
+
+```json
+{"id": "2026-10-23-ej-caucus-opposes", "date": "2026-10-23", "title": "People's Environmental Justice Caucus opposes the bill", "branch": "congress_house", "summary": "The House caucus founded by Reps. Tlaib, Summer Lee and Grijalva came out against the bill, citing data centers, pipelines and limits on court challenges.", "significance": "Organized progressive opposition in the House.", "actors": ["Rashida Tlaib (Rep., D-Mich.)", "Summer Lee (Rep., D-Pa.)", "Adelita Grijalva (Rep., D-Ariz.)"], "topics": ["congress", "data-centers"], "milestone": false, "sources": [{"title": "People's Environmental Justice Caucus opposes Senate permitting reform bill", "publisher": "Office of Rep. Rashida Tlaib", "url": "https://tlaib.house.gov/posts/peoples-environmental-justice-caucus-opposes-senate-permitting-reform-bill", "date": "2026-10-23"}]}
+```
+
+```json
+{"id": "2026-10-23-johnson-supports-bill", "date": "2026-10-23", "title": "Speaker Johnson says he supports the Senate bill", "branch": "congress_house", "summary": "Asked by Punchbowl News whether he supports the Senate's bipartisan permitting bill, House Speaker Mike Johnson said yes.", "significance": "The first clear signal that House Republican leaders would take up the Senate text.", "actors": ["Mike Johnson (Speaker of the House)"], "topics": ["congress"], "milestone": false, "sources": [{"title": "Post on Johnson's answer", "publisher": "Joshua Siegel, Punchbowl News (X)", "url": "https://x.com/SiegelScribe/status/2113682338181779731", "date": "2026-10-23"}]}
+```
+
+```json
+{"id": "2026-10-23-pueblo-governors-meet-heinrich", "date": "2026-10-23", "title": "Pueblo governors meet Heinrich over the historic preservation changes", "branch": "congress_senate", "summary": "POLITICO reported a tense meeting between Sen. Heinrich and Pueblo governors; one governor said afterward that the goal is to stop the bill now.", "significance": "Showed the sponsor's outreach had not settled Tribal opposition in New Mexico.", "actors": ["Martin Heinrich (Senator, D-N.M.)"], "topics": ["tribal", "historic-preservation"], "milestone": false, "sources": [{"title": "Post on the meeting", "publisher": "Nico Portuondo, POLITICO (X)", "url": "https://x.com/NicoPortuondo/status/2113753815690121576", "date": "2026-10-23"}]}
+```
+
+```json
+{"id": "2026-10-24-leger-fernandez-cannot-support", "date": "2026-10-24", "title": "Rep. Leger Fernández says she cannot support the bill as written", "branch": "congress_house", "summary": "The New Mexico Democrat, a former vice chair of the Advisory Council on Historic Preservation, cited the bill's changes to the National Historic Preservation Act and Tribal sovereignty.", "significance": "A second New Mexico House Democrat, after Rep. Stansbury, opposed the bill over Section 106.", "actors": ["Teresa Leger Fernández (Rep., D-N.M.)"], "topics": ["historic-preservation", "tribal", "congress"], "milestone": false, "sources": [{"title": "Statement on X", "publisher": "Rep. Teresa Leger Fernández", "url": "https://x.com/RepTeresaLF/status/2114006840979677187", "date": "2026-10-24"}]}
+```
+
 
 ## People
 
@@ -16706,7 +17071,219 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ## Media
 
 ```json
+{"id": "2026-10-26-thomashochman-x-survey-scope", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Reply on the study cited against the bill", "url": "https://x.com/ThomasHochman/status/2114712948929413206", "summary": "Hochman says the study critics cited to argue permitting rarely delays projects rests on a survey of wind and solar developers only.", "stance": "supports", "quote": {"text": "The study in question comes from a survey of exclusively wind and solar developers.", "speaker": "Thomas Hochman, Green Tape"}, "topics": ["nepa", "wind-solar"], "sector": "think_tank", "author": "Thomas Hochman"}
+```
+
+```json
+{"id": "2026-10-26-taitdl-x-utility-lobbying", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Thread on utility lobbying against the transmission reforms", "url": "https://x.com/taitdl/status/2114836921746940354", "summary": "Tait, of the Energy and Policy Institute, reads third-quarter lobbying reports and finds about two dozen utilities and trade groups listing the bill, including Southern Company, Duke Energy, Entergy and EEI.", "stance": "neutral", "quote": {"text": "I went through about 40 Q3 reports filed by utilities and found about two dozen naming utility lobbying on BAAJA, including Southern Company, Duke Energy, Entergy and EEI.", "speaker": "Daniel Tait, Energy and Policy Institute"}, "topics": ["transmission"], "sector": "think_tank", "author": "Daniel Tait"}
+```
+
+```json
+{"id": "2026-10-26-sencapito-x-mckinsey-wv", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Post citing McKinsey on West Virginia projects", "url": "https://x.com/SenCapito/status/2114793554958549247", "summary": "Capito cites McKinsey's estimate of $22.3 billion in West Virginia investments held up in federal permitting.", "stance": "supports", "quote": {"text": "West Virginia has $22.3 BILLION in investments tied up in the federal permitting system right now.", "speaker": "Sen. Shelley Moore Capito (R-W.Va.)"}, "topics": ["nepa"], "sector": "congress", "author": "Sen. Shelley Moore Capito"}
+```
+
+```json
+{"id": "2026-10-26-saveeastpo-x-no-adverse-effect", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Post on the no adverse effect clause", "url": "https://x.com/SaveEastPo/status/2114842076235911525", "summary": "A group fighting changes to the East Potomac golf course argues the bill's no adverse effect language would let agencies avoid review of harm to historic places with no recourse.", "stance": "opposes", "quote": {"text": "It means the executive can shred public lands just by claiming nothing harmful is happening.", "speaker": "Save East Po"}, "topics": ["historic-preservation", "courts"], "sector": "environmental", "author": "Save East Po"}
+```
+
+```json
+{"id": "2026-10-26-ppavnr-x-grand-canyon", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Reply to a Friends of the Earth video", "url": "https://x.com/ppavnr/status/2114835694015144214", "summary": "Venkatakrishnan calls the claim that the bill could allow a coal plant in the Grand Canyon specious.", "stance": "supports", "quote": {"text": "This is a completely specious, astroturfed attack.", "speaker": "Pavan Venkatakrishnan, Searchlight Institute"}, "topics": ["fossil"], "sector": "think_tank", "author": "Pavan Venkatakrishnan"}
+```
+
+```json
+{"id": "2026-10-26-oilchange-disaster-for-communities", "date": "2026-10-26", "type": "analysis", "outlet": "Oil Change International", "title": "The proposed U.S. infrastructure permitting reform bill would be a disaster for communities and for climate action", "url": "https://oilchange.org/blogs/the-proposed-u-s-infrastructure-permitting-reform-bill-would-be-a-disaster-for-communities-and-for-climate-action/", "summary": "An advocacy group argues the bill would speed gas pipelines and power plants for data centers and that Sections 1401 and 1402 could block a future administration from limiting emissions.", "stance": "opposes", "quote": {"text": "The bill would strip communities of critical environmental protections, accelerate a massive expansion of gas infrastructure to power AI data centers, and undermine future climate action.", "speaker": "Oil Change International"}, "topics": ["data-centers", "courts"], "sector": "environmental"}
+```
+
+```json
+{"id": "2026-10-26-janeaflegal-x-off-grid", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Post on off-grid data centers", "url": "https://x.com/JaneAFlegal/status/2114739203103945065", "summary": "Flegal links Zeke Hausfather's analysis of off-grid data center emissions and argues the bill would get data centers onto the grid instead.", "stance": "supports", "quote": {"text": "Pass BAAJA and get data centers connected to the grid; regulate off-grid data centers.", "speaker": "Jane Flegal, Searchlight Institute"}, "topics": ["data-centers"], "sector": "think_tank", "author": "Jane Flegal"}
+```
+
+```json
+{"id": "2026-10-26-earthjustice-impact-guide", "date": "2026-10-26", "type": "analysis", "outlet": "Earthjustice", "title": "Guide to the Impacts of the Bipartisan American Affordability and Jobs Act of 2026", "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide", "summary": "A legal analysis that praises the transmission and clean energy provisions and criticizes the permit certainty sections and limits on judicial review. The page shows no publication date; the item date is the date the page was read.", "stance": "mixed", "quote": {"text": "The permit certainty provisions would also exacerbate current erosion of the rule of law.", "speaker": "Earthjustice"}, "topics": ["courts", "transmission"], "sector": "environmental"}
+```
+
+```json
+{"id": "2026-10-26-cjaourpower-x-webinar", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Webinar on tribal consultation under the bill", "url": "https://x.com/CJAOurPower/status/2114801026868113865", "summary": "The Climate Justice Alliance announces an Oct. 30 webinar with tribal leaders on how the bill would affect government-to-government consultation.", "stance": "opposes", "quote": {"text": "would undermine important government-to-government Tribal consultation practices", "speaker": "Climate Justice Alliance"}, "topics": ["tribal", "historic-preservation"], "sector": "environmental", "author": "Climate Justice Alliance"}
+```
+
+```json
+{"id": "2026-10-26-citizensclimate-x-provisions", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Post listing the bill's clean energy provisions", "url": "https://x.com/citizensclimate/status/2114746787101594004", "summary": "Citizens' Climate Lobby urges support, citing faster clean energy, more transmission and permit certainty.", "stance": "supports", "quote": {"text": "Provide the certainty that clean energy developers need to plan & move forward on their projects.", "speaker": "Citizens' Climate Lobby"}, "topics": ["wind-solar", "transmission", "permit-certainty"], "sector": "environmental", "author": "Citizens' Climate Lobby"}
+```
+
+```json
+{"id": "2026-10-26-aidanrmackenzie-x-stanford-eis", "date": "2026-10-26", "type": "social_x", "outlet": "X", "title": "Reply on research about what delays clean energy", "url": "https://x.com/AidanRMackenzie/status/2114764034788765758", "summary": "Answering a post that cited a UT Austin and Harvard paper, Mackenzie points to Stanford research finding that more clean energy projects needed full environmental impact statements and that solar drew the most lawsuits.", "stance": "supports", "quote": {"text": "here’s a paper from Stanford saying more clean energy projects required EISs under NEPA between 2010-2018", "speaker": "Aidan Mackenzie, Institute for Progress"}, "topics": ["nepa", "courts", "wind-solar"], "sector": "think_tank", "author": "Aidan Mackenzie"}
+```
+
+```json
+{"id": "2026-10-24-repteresalf-x-nhpa", "date": "2026-10-24", "type": "social_x", "outlet": "X", "title": "Statement opposing the bill over historic preservation", "url": "https://x.com/RepTeresaLF/status/2114006840979677187", "summary": "Leger Fernández, a former vice chair of the Advisory Council on Historic Preservation, says she cannot support the bill in its current form because of its changes to the National Historic Preservation Act and tribal sovereignty.", "stance": "opposes", "quote": {"text": "I cannot support the Bipartisan American Affordability and Jobs Act in its current form.", "speaker": "Rep. Teresa Leger Fernández (D-N.M.)"}, "topics": ["historic-preservation", "tribal"], "sector": "congress", "author": "Rep. Teresa Leger Fernández"}
+```
+
+```json
+{"id": "2026-10-24-janeaflegal-x-public-lands", "date": "2026-10-24", "type": "social_x", "outlet": "X", "title": "Reply to the Center for Western Priorities on public lands", "url": "https://x.com/JaneAFlegal/status/2114058512573567472", "summary": "Flegal answers a Center for Western Priorities post, saying the bill does not site data centers on public lands and adds new limits on pulling clean energy permits.", "stance": "supports", "quote": {"text": "BAAJA doesn't put data centers on public lands (Trump's EO is trying that).", "speaker": "Jane Flegal, Searchlight Institute"}, "topics": ["data-centers", "permit-certainty"], "sector": "think_tank", "author": "Jane Flegal"}
+```
+
+```json
+{"id": "2026-10-24-appvoices-x-campaign", "date": "2026-10-24", "type": "social_x", "outlet": "X", "title": "Campaign against the bill", "url": "https://x.com/AppVoices/status/2114041501369929808", "summary": "Appalachian Voices asks supporters to contact Congress against the bill, citing data centers and polluters.", "stance": "opposes", "quote": {"text": "a bill that would weaken environmental protections and silence communities while benefiting polluters and data centers", "speaker": "Appalachian Voices"}, "topics": ["data-centers", "nepa"], "sector": "environmental", "author": "Appalachian Voices"}
+```
+
+```json
+{"id": "2026-10-23-westernpriorities-doj-wind-public-lands-letter", "date": "2026-10-23", "type": "news", "outlet": "Center for Western Priorities", "title": "DOJ moves to kill offshore wind permits as Congress weighs permitting bill", "url": "https://westernpriorities.org/2026/10/doj-moves-to-kill-offshore-wind-permits-as-congress-weighs-permitting-bill/", "summary": "A daily newsletter item reports that DOJ asked judges to revoke approvals for three offshore wind farms, and that more than 100 groups wrote Congress on Oct. 22 urging rejection of the bill over public lands.", "stance": "opposes", "quote": {"text": "More than 100 groups urged Congress in a letter Thursday to reject the Senate permitting bill from Senators Whitehouse, Heinrich, Capito and Lee due to its negative impacts on public lands.", "speaker": "Center for Western Priorities"}, "topics": ["courts"], "sector": "environmental"}
+```
+
+```json
+{"id": "2026-10-23-trcp-hunters-anglers", "date": "2026-10-23", "type": "analysis", "outlet": "Theodore Roosevelt Conservation Partnership", "title": "What the Senate’s Permitting Bill Could Mean for Hunters and Anglers", "url": "https://www.trcp.org/2026/10/23/what-the-senates-permitting-bill-could-mean-for-hunters-and-anglers/", "summary": "A sportsmen's conservation group supports permitting certainty but asks Congress to revise Sections 1401 and 1402 so agencies keep the ability to enforce permit conditions and respond to new information about fish and wildlife.", "stance": "mixed", "quote": {"text": "TRCP supports efforts to provide greater permitting certainty and is actively encouraging Congress to revise Sections 1401 and 1402", "speaker": "Theodore Roosevelt Conservation Partnership"}, "topics": [], "sector": "environmental"}
+```
+
+```json
+{"id": "2026-10-23-siegelscribe-x-johnson", "date": "2026-10-23", "type": "social_x", "outlet": "X", "title": "Report on Speaker Johnson's support", "url": "https://x.com/SiegelScribe/status/2113682338181779731", "summary": "Punchbowl reports that House Speaker Mike Johnson said yes when asked whether he supports the Senate bill.", "stance": "reporting", "quote": {"text": "Speaker Johnson gave @JakeSherman an enthusiastic “yes” when we asked if he supported the Senate's bipartisan permitting reform bill.", "speaker": "Joshua Siegel, Punchbowl News"}, "topics": ["congress"], "sector": "media", "author": "Joshua Siegel"}
+```
+
+```json
+{"id": "2026-10-23-reprashida-x-no", "date": "2026-10-23", "type": "social_x", "outlet": "X", "title": "Post opposing the deal", "url": "https://x.com/RepRashida/status/2113711073698427285", "summary": "Tlaib says the deal weakens core laws to speed fossil and data center projects and does not protect households from rising energy costs.", "stance": "opposes", "quote": {"text": "We’re saying NO to the “permitting reform” deal.", "speaker": "Rep. Rashida Tlaib (D-Mich.)"}, "topics": ["congress", "data-centers", "fossil"], "sector": "congress", "author": "Rep. Rashida Tlaib"}
+```
+
+```json
+{"id": "2026-10-23-pejc-opposes-bill", "date": "2026-10-23", "type": "org_statement", "outlet": "Office of Rep. Rashida Tlaib", "author": "People's Environmental Justice Caucus", "title": "People’s Environmental Justice Caucus opposes Senate permitting reform bill", "url": "https://tlaib.house.gov/posts/peoples-environmental-justice-caucus-opposes-senate-permitting-reform-bill", "summary": "The House caucus founded by Reps. Tlaib, Lee and Grijalva opposes the bill, citing data center and gas pipeline construction, limits on court challenges and risks to Tribal sacred sites.", "stance": "opposes", "quote": {"text": "The Bipartisan American Affordability and Jobs Act of 2026 is a gift to Big Oil and Big Tech.", "speaker": "People's Environmental Justice Caucus"}, "topics": ["congress", "data-centers", "courts", "tribal"], "sector": "congress"}
+```
+
+```json
+{"id": "2026-10-23-nicoportuondo-x-pueblo-meeting", "date": "2026-10-23", "type": "social_x", "outlet": "X", "title": "Report on Heinrich's meeting with Pueblo governors", "url": "https://x.com/NicoPortuondo/status/2113753815690121576", "summary": "POLITICO reports a tense meeting between Sen. Heinrich and Pueblo governors over the bill's historic preservation changes.", "stance": "reporting", "quote": {"text": "“Our mindset is to stop this bill now,” one Pueblo governor said after the meeting.", "speaker": "Nico Portuondo, POLITICO"}, "topics": ["tribal", "historic-preservation"], "sector": "media", "author": "Nico Portuondo"}
+```
+
+```json
+{"id": "2026-10-23-nicoportuondo-x-ej-caucus", "date": "2026-10-23", "type": "social_x", "outlet": "X", "title": "Report on the People's Environmental Justice Caucus", "url": "https://x.com/NicoPortuondo/status/2113645392391000483", "summary": "The caucus founded by Reps. Tlaib, Summer Lee and Grijalva opposes the bill.", "stance": "reporting", "quote": {"text": "“This bad deal trades lifetimes of pollution and harm for pennies in relief,\" they said.", "speaker": "Nico Portuondo, POLITICO"}, "topics": ["congress"], "sector": "media", "author": "Nico Portuondo"}
+```
+
+```json
+{"id": "2026-10-23-lacerteda-x-certainty", "date": "2026-10-23", "type": "social_x", "outlet": "X", "title": "FERC commissioner on certainty", "url": "https://x.com/LaCerteDA/status/2113725887069728962", "summary": "FERC Commissioner LaCerte, answering a question about offshore wind, says the commission is fuel-neutral and the bill would give projects certainty across administrations.", "stance": "supports", "quote": {"text": "Permitting bill will give project certainty through admins.", "speaker": "David LaCerte, FERC commissioner"}, "topics": ["permit-certainty", "offshore"], "sector": "government", "author": "David LaCerte"}
+```
+
+```json
+{"id": "2026-10-23-foleyhoag-offshore-wind-certainty", "date": "2026-10-23", "type": "analysis", "outlet": "Foley Hoag LLP, Energy & Climate Counsel", "author": "Noah C. Shaw, Kevin Y. Chen", "title": "BAAJA Blast: A Second Wind? Certainty, Cables, and Cost Allocation for Offshore Wind Under the Senate Permitting Bill", "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-a-second-wind-certainty-cables-and-cost-allocation-for-offshore-wind-under-the-senat/", "summary": "A law-firm analysis of how the permit-certainty section would bar revocation of offshore wind approvals issued on or after Sept. 16, 2026, with Judgment Fund remedies, and how the transmission sections would affect offshore cables.", "stance": "mixed", "quote": {"text": "if enacted, it would make federal approvals far harder to revoke and back that protection with meaningful monetary remedies", "speaker": "Noah C. Shaw and Kevin Y. Chen, Foley Hoag"}, "topics": ["wind-solar", "permit-certainty", "transmission", "courts"], "sector": "think_tank"}
+```
+
+```json
+{"id": "2026-10-23-energydems-x-cheaper-faster", "date": "2026-10-23", "type": "social_x", "outlet": "X", "title": "Post backing the bill on cost", "url": "https://x.com/EnergyDems/status/2113675468876472513", "summary": "Senate Energy Democrats say the bill delivers more electricity faster and holds data centers accountable for costs.", "stance": "supports", "quote": {"text": "We need more electricity, and we need it cheaper and faster.", "speaker": "Senate Energy and Natural Resources Committee Democrats"}, "topics": ["data-centers", "transmission"], "sector": "congress", "author": "Senate Energy Democrats"}
+```
+
+```json
+{"id": "2026-10-22-utilitydive-doj-offshore-wind", "date": "2026-10-22", "type": "news", "outlet": "Utility Dive", "author": "Diana DiGangi", "title": "DOJ moves to revoke offshore wind permits, potentially threatening Senate permitting bill", "url": "https://www.utilitydive.com/news/trump-administration-asks-courts-to-revoke-permits-for-offshore-wind-farms/833735/", "summary": "Reports that the Justice Department asked federal courts to send back Interior's approvals of the Maryland Offshore Wind, New England Wind and Revolution Wind plans, and that Sen. Whitehouse said the move could blow up the permitting deal.", "stance": "neutral", "quote": {"text": "This is how you blow up a permitting deal.", "speaker": "Sen. Sheldon Whitehouse, D-R.I."}, "topics": ["wind-solar", "permit-certainty", "congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-10-22-siegelscribe-x-whitehouse-wind", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "Whitehouse reacts to the wind approvals", "url": "https://x.com/SiegelScribe/status/2113279782419128579", "summary": "Sen. Whitehouse calls the two wind approvals a start and asks for more on wind and solar.", "stance": "reporting", "quote": {"text": "“It’s a start, but we are going to need to see a lot more from the administration on wind and solar.”", "speaker": "Sen. Sheldon Whitehouse (D-R.I.)"}, "topics": ["wind-solar", "white-house"], "sector": "media", "author": "Joshua Siegel"}
+```
+
+```json
+{"id": "2026-10-22-siegelscribe-x-heinrich-wind", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "Heinrich reacts to the wind approvals", "url": "https://x.com/SiegelScribe/status/2113377619378851947", "summary": "Sen. Heinrich welcomes the two wind approvals and points to hundreds of onshore wind projects still waiting.", "stance": "reporting", "quote": {"text": "\"obviously welcome but there are hundreds of onshore wind projects in limbo that I’d like to see moving also, to get much needed gigawatts onto the grid.\"", "speaker": "Sen. Martin Heinrich (D-N.M.)"}, "topics": ["wind-solar", "white-house"], "sector": "media", "author": "Joshua Siegel"}
+```
+
+```json
+{"id": "2026-10-22-siegelscribe-x-dod-wind", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "Report on the Defense Department advancing two wind projects", "url": "https://x.com/SiegelScribe/status/2113249297554973141", "summary": "A White House official says the Defense Department advanced two wind projects in Maine and South Dakota, with more to come, as the administration courts Democratic votes.", "stance": "reporting", "quote": {"text": "\"The Trump Administration is removing all barriers clearing the way for the Senate’s permitting reform bill to pass,\" a White House official told me", "speaker": "Joshua Siegel, Punchbowl News"}, "topics": ["wind-solar", "white-house"], "sector": "media", "author": "Joshua Siegel"}
+```
+
+```json
+{"id": "2026-10-22-siegelscribe-x-dem-briefing", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "Report on a Senate Democratic staff briefing", "url": "https://x.com/SiegelScribe/status/2113386917031022932", "summary": "Democratic aides on the EPW and ENR committees briefed about 30 staffers from across the caucus on the bill.", "stance": "reporting", "quote": {"text": "Dems full speed ahead selling this thing", "speaker": "Joshua Siegel, Punchbowl News"}, "topics": ["congress"], "sector": "media", "author": "Joshua Siegel"}
+```
+
+```json
+{"id": "2026-10-22-siegelscribe-x-ags", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "Report on the state attorneys general letter", "url": "https://x.com/SiegelScribe/status/2113233345807368216", "summary": "Nine Democratic state attorneys general wrote Senate leaders with concerns that parts of the bill intrude on states' rights.", "stance": "reporting", "quote": {"text": "9 attorneys general from Dem states sent a letter to Senate leaders last night raising “substantial concerns”", "speaker": "Joshua Siegel, Punchbowl News"}, "topics": ["congress", "courts"], "sector": "media", "author": "Joshua Siegel"}
+```
+
+```json
+{"id": "2026-10-22-santafenewmexican-editorial", "date": "2026-10-22", "type": "analysis", "outlet": "The Santa Fe New Mexican", "author": "Editorial board", "title": "On confirmations, permitting and a senator who has some explanations to make", "url": "https://www.santafenewmexican.com/opinion/editorials/on-confirmations-permitting-and-a-senator-who-has-some-explanations-to-make/article_57edd9cd-59eb-456c-adaa-b343137d5f7f.html", "summary": "An editorial agrees permitting needs reform but says Sen. Heinrich will have to explain to environmental and Tribal allies why he co-sponsored a bill that changes the National Historic Preservation Act and other laws.", "stance": "mixed", "quote": {"text": "Tribal nations across the United States are uniformly opposed — they believe changes to the National Historic Preservation Act would severely reduce the ability of Native governments to speak up and protect sacred sites.", "speaker": "The Santa Fe New Mexican editorial board"}, "topics": ["tribal", "historic-preservation", "congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-10-22-rollcall-aides-seek-industry-aid", "date": "2026-10-22", "type": "news", "outlet": "Roll Call", "author": "David Jordan", "title": "Permitting bill writers seek industry aid ahead of Senate vote", "url": "https://rollcall.com/2026/10/22/permitting-bill-writers-seek-industry-aid-ahead-of-senate-vote/", "summary": "Top aides to the four lead senators told an ACORE conference that the bill is a compromise and asked developers to speak up before the Nov. 9 cloture vote. Roll Call also reports Democratic concern over offshore wind filings and House GOP skepticism.", "stance": "neutral", "quote": {"text": "Capital will come off the sidelines because you know your permits are going to be valid no matter what the political lens might happen to be at a given time", "speaker": "Adam Tomlinson, staff director for Sen. Capito"}, "topics": ["congress", "permit-certainty", "wind-solar", "data-centers"], "sector": "media"}
+```
+
+```json
+{"id": "2026-10-22-nine-ags-letter", "date": "2026-10-22", "type": "org_statement", "outlet": "Signatory Wall and Ceiling Contractors Alliance (report of the letter)", "title": "Nine Democratic State Attorneys General Raise Concerns Over Bipartisan Permitting Reform Bill", "url": "https://swacca.org/nine-democratic-state-attorneys-general-raise-concerns-over-bipartisan-permitting-reform-bill/", "summary": "A trade alliance reports that nine Democratic attorneys general, led by California, Massachusetts and Washington, wrote Senate leaders and the EPW and ENR committees, backing the bill's goals while objecting to provisions on state authority. The letter text was not found, so this is a secondhand report.", "stance": "mixed", "quote": {"text": "the attorneys general warned that certain provisions would undermine state authority under the Clean Water Act and National Historic Preservation Act", "speaker": "SWACCA summary of the AG letter"}, "topics": ["clean-water-act", "historic-preservation"], "sector": "state_local", "letter": {"to": "Senate leadership and the Senate Environment and Public Works and Energy and Natural Resources Committees", "signer_count": 9, "signers_sample": ["Rob Bonta (CA)", "Andrea Campbell (MA)", "Nick Brown (WA)"], "ask": "A meeting with congressional leaders to discuss changes to the bill."}}
+```
+
+```json
+{"id": "2026-10-22-nathpo_org-x-coalition", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "NATHPO joins the preservation coalition letter", "url": "https://x.com/NATHPO_org/status/2113348016031551753", "summary": "The National Association of Tribal Historic Preservation Officers says it joined preservation groups in a letter objecting to the bill's historic preservation provisions.", "stance": "opposes", "quote": {"text": "to express profound objections to numerous provisions impacting historic preservation", "speaker": "National Association of Tribal Historic Preservation Officers"}, "topics": ["historic-preservation", "tribal"], "sector": "environmental", "author": "NATHPO"}
+```
+
+```json
+{"id": "2026-10-22-epwgop-x-mckinsey", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "Post citing McKinsey's national estimate", "url": "https://x.com/EPWGOP/status/2113355868825661502", "summary": "EPW Republicans cite McKinsey's estimate that $1.8 trillion in projects is held up in federal permitting.", "stance": "supports", "quote": {"text": "$1.8 TRILLION in projects is currently held up in the federal permitting system", "speaker": "Senate Environment and Public Works Committee Republicans"}, "topics": ["nepa"], "sector": "congress", "author": "Senate EPW Republicans"}
+```
+
+```json
+{"id": "2026-10-22-earthworks-x-protections", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "Post opposing the bill", "url": "https://x.com/Earthworks/status/2113330009255420379", "summary": "Earthworks says the bill would let some oil, gas and mining projects skip review and would limit public input.", "stance": "opposes", "quote": {"text": "allowing certain oil, gas, and mining projects to avoid review while limiting public input", "speaker": "Earthworks"}, "topics": ["nepa", "mining", "fossil", "historic-preservation"], "sector": "environmental", "author": "Earthworks"}
+```
+
+```json
+{"id": "2026-10-22-commondreams-analysis-lock-in", "date": "2026-10-22", "type": "news", "outlet": "Common Dreams", "author": "Julia Conley", "title": "Analysis Warns Bipartisan Senate Permitting Bill Would Lock In Trump-Era Data Center, Fossil Fuel Approvals", "url": "https://www.commondreams.org/news/senate-permitting-bill", "summary": "Reports an analysis by the Center for Western Priorities' Aaron Weiss on Sections 1401 and 1402, with comment from law professor Justin Pidot on court-ordered environmental reviews.", "stance": "opposes", "quote": {"text": "A judge can send the review back for a redo, but construction continues in the meantime, and Section 1401 bars the agency from changing the permit based on what the new review finds", "speaker": "Aaron Weiss, Center for Western Priorities"}, "topics": ["courts", "data-centers"], "sector": "media"}
+```
+
+```json
+{"id": "2026-10-22-api-137-org-coalition-letter", "date": "2026-10-22", "type": "org_statement", "outlet": "American Petroleum Institute (coalition letter)", "author": "API and 137 organizations", "title": "Broad Coalition of 130+ Groups Urge Congress to Pass Bipartisan Permitting Reform This Year", "url": "https://www.api.org/news-policy-and-issues/news/2026/10/22/broad-coalition-of-130-groups-urge-congress-to-pass-bipartisan-permitting-reform", "summary": "API and 137 organizations from energy, labor, manufacturing, housing and transportation ask House and Senate leaders to bring S. 5653 to the floor and pass it before the end of the year.", "stance": "supports", "quote": {"text": "permitting reform presents Congress with one of its most consequential opportunities to address affordability this Congress", "speaker": "Coalition letter signers, as quoted by API"}, "topics": ["congress"], "sector": "industry", "letter": {"to": "House and Senate leaders", "signer_count": 138, "signers_sample": ["American Petroleum Institute"], "ask": "Bring S. 5653 to the floor and pass it before the end of the year."}}
+```
+
+```json
+{"id": "2026-10-22-aidanrmackenzie-x-certainty-thread", "date": "2026-10-22", "type": "social_x", "outlet": "X", "title": "Thread on the bill's permit certainty title", "url": "https://x.com/AidanRMackenzie/status/2113358887382372497", "summary": "Mackenzie argues the certainty title, not trust in the administration, is what would protect clean energy permits from delay and revocation.", "stance": "supports", "quote": {"text": "the certainty provisions themselves are why Democrats don’t need to trust Trump", "speaker": "Aidan Mackenzie, Institute for Progress"}, "topics": ["permit-certainty", "wind-solar"], "sector": "think_tank", "author": "Aidan Mackenzie"}
+```
+
+```json
+{"id": "2026-10-21-siegelscribe-x-khanna", "date": "2026-10-21", "type": "social_x", "outlet": "X", "title": "Report on Rep. Khanna's opposition", "url": "https://x.com/SiegelScribe/status/2112913610712506696", "summary": "Rep. Ro Khanna says he will oppose the Senate bill as written and back Rep. Huffman's effort on a bill with stronger environmental standards.", "stance": "reporting", "quote": {"text": "he'll oppose Senate's permitting reform bill as written", "speaker": "Joshua Siegel, Punchbowl News"}, "topics": ["congress", "data-centers"], "sector": "media", "author": "Joshua Siegel"}
+```
+
+```json
+{"id": "2026-10-21-siegelscribe-x-clean-trades", "date": "2026-10-21", "type": "social_x", "outlet": "X", "title": "Report on the clean energy trade groups' letter", "url": "https://x.com/SiegelScribe/status/2112926458280804488", "summary": "CEBA, ACORE, Advanced Energy United, the American Clean Power Association and SEIA endorse the bill in a joint letter.", "stance": "reporting", "quote": {"text": "this is an enormous win for getting clean energy onto the grid", "speaker": "CEBA vice president of government affairs, to Punchbowl News"}, "topics": ["wind-solar", "transmission"], "sector": "media", "author": "Joshua Siegel"}
+```
+
+```json
+{"id": "2026-10-21-shawn_regan-x-good-deal", "date": "2026-10-21", "type": "social_x", "outlet": "X", "title": "Post calling the bill a good deal", "url": "https://x.com/Shawn_Regan/status/2112925965475271169", "summary": "Regan, of the Property and Environment Research Center, says the bill would ease building from transmission lines to gas pipelines.", "stance": "supports", "quote": {"text": "It's a good deal", "speaker": "Shawn Regan, PERC"}, "topics": ["transmission", "fossil"], "sector": "think_tank", "author": "Shawn Regan"}
+```
+
+```json
+{"id": "2026-10-21-nicoportuondo-x-new-england-wind", "date": "2026-10-21", "type": "social_x", "outlet": "X", "title": "Report on the New England Wind legal move", "url": "https://x.com/NicoPortuondo/status/2112937851931488285", "summary": "POLITICO reports a late filing by the administration against the New England Wind project, which Whitehouse warned could sink the deal.", "stance": "reporting", "quote": {"text": "Sen. Sheldon Whitehouse: “This is how you blow up a permitting deal.”", "speaker": "Nico Portuondo, POLITICO"}, "topics": ["offshore", "wind-solar", "white-house"], "sector": "media", "author": "Nico Portuondo"}
+```
+
+```json
+{"id": "2026-10-21-nationaltrust-coalition-letter-post", "date": "2026-10-21", "type": "org_statement", "outlet": "National Trust for Historic Preservation", "title": "Preservation Coalition Letter on the Bipartisan American Affordability and Jobs Act", "url": "https://savingplaces.org/section106/updates/preservation-coalition-letter-s5653", "summary": "The National Trust posts the coalition letter and says it supports faster reviews but not at the cost of Section 106 protections. It urges senators to oppose the bill as written.", "stance": "opposes", "quote": {"text": "We support making federal reviews more efficient and predictable, but not at the expense of these essential protections or the voices of the communities they serve.", "speaker": "National Trust for Historic Preservation"}, "topics": ["historic-preservation", "tribal"], "sector": "environmental"}
+```
+
+```json
+{"id": "2026-10-21-jsfreed-x-khanna", "date": "2026-10-21", "type": "social_x", "outlet": "X", "title": "Reply to Rep. Khanna on data centers", "url": "https://x.com/jsfreed/status/2112897600022081774", "summary": "Freed, of Third Way, says the bill would set the first binding requirements for data centers to pay for grid costs.", "stance": "supports", "quote": {"text": "The permitting deal would impose the first binding requirements on data centers to pay for electricity infrastructure it uses and more", "speaker": "Josh Freed, Third Way"}, "topics": ["data-centers"], "sector": "think_tank", "author": "Josh Freed"}
+```
+
+```json
+{"id": "2026-10-21-janeaflegal-x-s1402-thread", "date": "2026-10-21", "type": "social_x", "outlet": "X", "title": "Thread on the disparate treatment provision", "url": "https://x.com/JaneAFlegal/status/2112881718592180646", "summary": "Flegal argues that critics misread section 1402: a developer must show missed deadlines or denials, a sharp change from past rates and intent to target a project type, so past approval rates are evidence and not a quota.", "stance": "supports", "quote": {"text": "The old approval rate is *not a quota,* but can be used as evidence of targeting.", "speaker": "Jane Flegal, Searchlight Institute"}, "topics": ["permit-certainty", "courts"], "sector": "think_tank", "author": "Jane Flegal"}
+```
+
+```json
+{"id": "2026-10-21-benschifman-x-dc-claims", "date": "2026-10-21", "type": "social_x", "outlet": "X", "title": "Thread separating two claims about data centers", "url": "https://x.com/BenSchifman/status/2112935551695249816", "summary": "Schifman argues the bill treats new data centers worse than other grid users on cost, which is a separate question from whether it speeds their construction.", "stance": "neutral", "quote": {"text": "BAAJA treats new data much centers worse than other grid users", "speaker": "Ben Schifman, Institute for Progress"}, "topics": ["data-centers"], "sector": "think_tank", "author": "Ben Schifman"}
+```
+
+```json
+{"id": "2026-10-20-preservation-coalition-letter", "date": "2026-10-20", "type": "org_statement", "outlet": "National Trust for Historic Preservation (coalition letter)", "author": "13 national preservation organizations", "title": "Preservation coalition letter on S. 5653 to Sens. Lee, Capito, Heinrich and Whitehouse", "url": "https://savingplaces.org/permitting-reform-coalition-letter-october-20", "summary": "Thirteen national preservation groups, including NATHPO and NCSHPO, object to the bill's Section 106 provisions, saying they narrow what is reviewed, set 30-day consultation clocks, let the Interior Secretary take over a THPO's functions and limit judicial review. They ask for substantial revision or removal and propose revisiting the issue next session.", "stance": "opposes", "quote": {"text": "achieving that goal requires substantial revisions or removal of the bill's historic preservation provisions", "speaker": "Preservation coalition letter signers"}, "topics": ["historic-preservation", "tribal", "courts"], "sector": "environmental", "letter": {"to": "Sens. Mike Lee, Shelley Moore Capito, Martin Heinrich and Sheldon Whitehouse", "signer_count": 13, "signers_sample": ["National Trust for Historic Preservation", "National Association of Tribal Historic Preservation Officers", "National Conference of State Historic Preservation Officers", "Society for American Archaeology", "Preservation Action", "American Cultural Resources Association"], "ask": "Substantially revise or remove the bill's historic preservation provisions and take up Section 106 reform next session with the preservation community and Tribal Nations."}}
+```
+
+```json
+{"id": "2026-10-20-nicoportuondo-x-apcg", "date": "2026-10-20", "type": "social_x", "outlet": "X", "title": "Report on the All Pueblo Council of Governors resolution", "url": "https://x.com/NicoPortuondo/status/2112571938484957230", "summary": "The All Pueblo Council of Governors unanimously adopted a resolution against the bill, saying Heinrich did not consult the 19 Pueblo nations before negotiating changes to the historic preservation law.", "stance": "reporting", "quote": {"text": "The group unanimously adopted a resolution against the bill.", "speaker": "Nico Portuondo, POLITICO"}, "topics": ["tribal", "historic-preservation"], "sector": "media", "author": "Nico Portuondo"}
+```
+
+```json
 {"id": "2026-10-20-nathpo-x-myth-fact", "date": "2026-10-20", "type": "social_x", "outlet": "X", "title": "NATHPO post: myth and fact on BAAJA and Section 106", "url": "https://x.com/NATHPO_org/status/2112359143525003621", "summary": "NATHPO disputes the claim that the bill writes Tribes into Section 106 for the first time and links the claim-versus-fact paper.", "stance": "opposes", "quote": {"text": "Agencies are already legally required to consult Tribes. BAAJA makes that optional.", "speaker": "NATHPO"}, "topics": ["tribal", "historic-preservation"], "sector": "trade_association", "author": "NATHPO"}
+```
+
+```json
+{"id": "2026-10-20-janeaflegal-x-dc-costs", "date": "2026-10-20", "type": "social_x", "outlet": "X", "title": "Reply to Michael Gerrard on data centers", "url": "https://x.com/JaneAFlegal/status/2112596664523374819", "summary": "Flegal lists the bill's data center cost rules in reply to Michael Gerrard's criticism: no shifting of costs to other customers, a share of existing and new system costs, and financial guarantees.", "stance": "supports", "quote": {"text": "prohibits data centers from charging others for ANY of the extra costs to serve them", "speaker": "Jane Flegal, Searchlight Institute"}, "topics": ["data-centers"], "sector": "think_tank", "author": "Jane Flegal"}
+```
+
+```json
+{"id": "2026-10-20-former-officials-letter", "date": "2026-10-20", "type": "org_statement", "outlet": "Letter hosted by Institute for Progress", "author": "19 former economic policy and national security officials", "title": "Economic policy and national security leaders support permitting reform", "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf", "summary": "Nineteen former officials who served six presidents ask Congress to pass the bill and send it to President Trump, citing competition with China and slow interconnection of new power plants.", "stance": "supports", "quote": {"text": "we believe Congress has a generational opportunity to strengthen our nation's industrial capacity in the face of unprecedented competition from China", "speaker": "Letter signers"}, "topics": ["congress", "transmission", "data-centers"], "sector": "think_tank", "letter": {"to": "Sen. Thune, Sen. Schumer, Speaker Johnson, Rep. Jeffries", "signer_count": 19, "signers_sample": ["Janet Yellen", "Steven Mnuchin", "Timothy Geithner", "Henry Paulson Jr.", "Robert Rubin", "Mike Pompeo"], "ask": "Pass the Bipartisan American Affordability and Jobs Act of 2026 and send it to the President."}}
+```
+
+```json
+{"id": "2026-10-20-epi-oge-transmission-lobbying", "date": "2026-10-20", "type": "news", "outlet": "Energy and Policy Institute", "title": "Utility lobbying against BAAJA transmission reforms revealed", "url": "https://energyandpolicy.org/oge-baaja-transmission-reforms-lobbying/", "summary": "Reports that Oklahoma Gas & Electric is using a lobbying document with Senate offices to seek changes to the transmission sections, including FERC backstop siting, state referral of local planning to FERC and required advanced transmission technology.", "stance": "neutral", "quote": {"text": "Oklahoma Gas & Electric, an investor-owned utility company, is lobbying Congress to make “substantial revisions” to the transmission reform sections of major energy legislation", "speaker": "Energy and Policy Institute"}, "topics": ["transmission", "congress"], "sector": "think_tank"}
+```
+
+```json
+{"id": "2026-10-20-davidpomerantz-x-gerrard", "date": "2026-10-20", "type": "social_x", "outlet": "X", "title": "Reply to Michael Gerrard on data centers", "url": "https://x.com/DavidPomerantz/status/2112641195797356627", "summary": "Pomerantz, of the Energy and Policy Institute, says the bill reforms energy permitting and does nothing for permitting data centers, while noting critics he respects oppose it on other grounds.", "stance": "neutral", "quote": {"text": "BAAJA reforms energy permitting, it does nothing for permitting data centers", "speaker": "David Pomerantz, Energy and Policy Institute"}, "topics": ["data-centers"], "sector": "think_tank", "author": "David Pomerantz"}
 ```
 
 ```json
@@ -16730,6 +17307,10 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ```
 
 ```json
+{"id": "2026-10-18-bisnow-data-centers-faster-path", "date": "2026-10-18", "type": "news", "outlet": "Bisnow", "title": "Senate Bill Offers Data Centers A Faster Path To Power, But At A Price", "url": "https://www.bisnow.com/news/national/data-center-development/senate-bill-offers-data-centers-a-faster-path-to-power-but-at-a-price", "summary": "Developers quoted by Bisnow disagree on whether the bill helps them. One says faster permits speed the AI buildout; another says the cost rules for loads of 20 MW and more add upfront capital that favors large firms.", "stance": "mixed", "quote": {"text": "Upfront capex, especially speculative, is a death knell", "speaker": "Harmol Samra, CEO, Host Digital"}, "topics": ["data-centers", "transmission"], "sector": "media"}
+```
+
+```json
 {"id": "2026-10-16-tribal-claim-vs-fact", "date": "2026-10-16", "type": "analysis", "outlet": "Cultural Heritage Partners (posted by NATHPO)", "title": "BAAJA's Empty Promises to Tribal Nations: Claim vs. Fact", "url": "https://edge.growthzonecms.com/sites/2385/2026/10/20261017_BAAJA_Tribes_Claim_vs_Fact_FINAL.pdf", "summary": "A 17-page paper under the logos of NATHPO, NCAI, AAIA, NARF and Cultural Heritage Partners checks nine supporter claims about Title III against the bill text and asks senators to strike the title or vote no.", "stance": "opposes", "quote": {"text": "These changes are unacceptable to Tribal Nations.", "speaker": "NATHPO, NCAI, AAIA, NARF and Cultural Heritage Partners"}, "topics": ["tribal", "historic-preservation", "courts"], "sector": "trade_association", "author": "Jessie Barrington"}
 ```
 
@@ -16746,11 +17327,23 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ```
 
 ```json
+{"id": "2026-10-16-heatmap-would-bill-protect-wind-farms", "date": "2026-10-16", "type": "analysis", "outlet": "Heatmap News (The Fight)", "author": "Jael Holzman", "title": "The Trump administration is still messing with offshore wind farms", "url": "https://heatmap.news/plus/the-fight/hotspots/the-trump-administration-is-still-messing-with-offshore-wind-farms", "summary": "Holzman reviews the court filings and asks whether the bill's ban on revoking permits would stop remand motions like these, concluding that the answer depends on how the court-order exception is read once the language is enacted and litigated.", "stance": "mixed", "quote": {"text": "Would the court order exception apply to rulings that grant these motions? Or would the developers be able to sue for damages?", "speaker": "Jael Holzman, Heatmap"}, "topics": ["wind-solar", "permit-certainty", "courts"], "sector": "media"}
+```
+
+```json
+{"id": "2026-10-16-heatmap-project-jupiter-bill", "date": "2026-10-16", "type": "analysis", "outlet": "Heatmap News (The Fight)", "author": "Jael Holzman", "title": "What would happen to Project Jupiter if the Bipartisan American Affordability and Jobs Act is passed?", "url": "https://heatmap.news/plus/the-fight/spotlight/project-jupiter-permitting", "summary": "Uses a New Mexico gas-powered data center as a test case. Finds the bill would not change Clean Air Act permitting, could lower legal risk for interstate gas pipelines, and would require data centers to pay grid costs.", "stance": "mixed", "quote": {"text": "Nothing in the bill would affect requirements that the project adhere to national air emissions standards", "speaker": "Jael Holzman, Heatmap"}, "topics": ["data-centers", "fossil", "transmission", "nepa"], "sector": "media"}
+```
+
+```json
 {"id": "2026-10-16-covington-senate-unveils-permitting-bill", "date": "2026-10-16", "type": "analysis", "outlet": "Covington (Inside Energy & Environment)", "author": "W. Andrew Jack, Jayni Hein, Gary S. Guzy, Nicholas Xenakis", "title": "Senate Unveils Bipartisan Permitting Bill: What the Bipartisan American Affordability and Jobs Act Would Mean for Energy and Environmental Permitting", "url": "https://www.insideenergyandenvironment.com/?p=9071", "summary": "Covington's energy practice summarizes the bill by area and says it would codify some existing NEPA reforms and go further in other respects.", "stance": "neutral", "quote": {"text": "To some extent BAAJA would codify environmental review reforms which have been developed under several Administrations; in other respects, the proposed changes would be novel and potentially far-reaching.", "speaker": "Covington authors"}, "topics": ["nepa", "permit-certainty", "clean-water-act", "esa"], "sector": "industry"}
 ```
 
 ```json
 {"id": "2026-10-16-asa-supports-permitting-reform-letter", "date": "2026-10-16", "type": "org_statement", "outlet": "Supply House Times (American Supply Association)", "author": "American Supply Association", "title": "ASA Supports Bipartisan Permitting Reform to Strengthen U.S. Manufacturing", "url": "https://www.supplyht.com/articles/107521-asa-supports-bipartisan-permitting-reform-to-strengthen-us-manufacturing", "summary": "The American Supply Association says it joined the NAM-led coalition letter to Thune and Schumer urging them to bring the bill to the floor without delay.", "stance": "supports", "quote": {"text": "Our members need reliable energy and water infrastructure, along with policies that spur investment.", "speaker": "Steve Rossi, ASA VP of Advocacy"}, "topics": ["congress", "permit-certainty"], "sector": "trade_association"}
+```
+
+```json
+{"id": "2026-10-15-wilderness-society-6-threats", "date": "2026-10-15", "type": "analysis", "outlet": "The Wilderness Society", "title": "6 threats to public lands in the Bipartisan American Affordability and Jobs Act", "url": "https://www.wilderness.org/articles/blog/6-threats-public-lands-bipartisan-american-affordability-and-jobs-act", "summary": "The group lists six public lands concerns, including the permit lock-in in Section 1401, NEPA changes, limits on judicial review and payments to companies for missed agency deadlines.", "stance": "opposes", "quote": {"text": "The bill provides broad loopholes for actions that would no longer be subject to NEPA and eliminates meaningful judicial review", "speaker": "The Wilderness Society"}, "topics": ["nepa", "courts"], "sector": "environmental"}
 ```
 
 ```json
@@ -16806,6 +17399,10 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ```
 
 ```json
+{"id": "2026-10-14-heatmap-revolution-wind-revisited", "date": "2026-10-14", "type": "news", "outlet": "Heatmap News (AM briefing)", "author": "Alexander C. Kaufman", "title": "Trump Reopens the Fight Over Orsted's Revolution Wind", "url": "https://heatmap.news/am/revolution-wind-revisited", "summary": "Briefing on the Justice Department's motion to rescind Interior's approval of Revolution Wind, with the White House response and a joint Whitehouse-Heinrich statement asking for good-faith progress on wind permits.", "stance": "neutral", "quote": {"text": "the administration needs to start showing good faith progress on wind permits.", "speaker": "Sens. Sheldon Whitehouse and Martin Heinrich, joint statement"}, "topics": ["wind-solar", "permit-certainty", "congress"], "sector": "media"}
+```
+
+```json
 {"id": "2026-10-14-heatmap-mini-marine-power", "date": "2026-10-14", "type": "news", "outlet": "Heatmap News", "author": "Katie Brigham", "title": "An Unexpected Beneficiary of the Permitting Bill: Mini Marine Power", "url": "https://heatmap.news/climate-tech/permitting-bill-marine-power", "summary": "Heatmap reports that the bill's marine and hydrokinetic licensing provisions are a major win for small wave, tidal and river-current projects.", "stance": "reporting", "quote": {"text": "Tucked inside the Senate’s ambitious new permitting bill, the Bipartisan American Affordability and Jobs Act, is a major win for an energy technology that often flies under the radar: marine power.", "speaker": "Katie Brigham, Heatmap"}, "topics": ["hydropower", "permit-certainty"], "sector": "media"}
 ```
 
@@ -16842,6 +17439,10 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 ```
 
 ```json
+{"id": "2026-10-12-ifp-how-the-permitting-deal-works", "date": "2026-10-12", "type": "analysis", "outlet": "Institute for Progress", "author": "Aidan Mackenzie", "title": "How the Permitting Deal Works", "url": "https://ifp.org/how-the-permit", "summary": "A section-by-section explainer by a think tank that supports the bill. It describes the Section 106 rewrite, the data center cost rules in 2107, and the interconnection queue provisions in 2110 and 2111.", "stance": "supports", "quote": {"text": "Section 2301 comprehensively reforms NHPA § 106, codifying much of ACHP's existing regulatory process to protect consultation rights while also streamlining review", "speaker": "Aidan Mackenzie, Institute for Progress"}, "topics": ["historic-preservation", "tribal", "data-centers", "transmission", "courts"], "sector": "think_tank"}
+```
+
+```json
 {"id": "2026-10-12-heatmap-huffman-wants-changes-bill", "date": "2026-10-12", "type": "news", "outlet": "Heatmap News", "author": "Jael Holzman", "title": "Jared Huffman Wants to See Some Changes to the Senate's Permitting Bill", "url": "https://heatmap.news/politics/jared-huffman-baaja", "summary": "Rep. Jared Huffman tells Heatmap that no one will vote on the bill until after the election and says its judgment-fund provision could pay developers without approving their projects.", "stance": "reporting", "quote": {"text": "might pay some clean energy developers money from the judgment fund when they are screwed, but nothing to actually approve their projects", "speaker": "Rep. Jared Huffman"}, "topics": ["courts", "permit-certainty", "congress"], "sector": "media"}
 ```
 
@@ -16859,6 +17460,10 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 
 ```json
 {"id": "2026-10-09-heinrich-supporter-roundup-data-centers", "date": "2026-10-09", "type": "gov_press_release", "outlet": "Senate Committee on Energy and Natural Resources (Democrats)", "author": "Office of Sen. Martin Heinrich", "title": "What They're Saying: Heinrich's Bipartisan Permitting Reform Deal Will Deliver Cheaper Energy, More Jobs, Responsible Growth", "url": "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/", "summary": "Heinrich's committee office republishes the supporter roundup and describes the bill's data-center cost provision.", "stance": "supports", "quote": {"text": "ensure that rapidly growing data centers pay the full cost of their associated transmission needs", "speaker": "Office of Sen. Martin Heinrich (press release)"}, "topics": ["data-centers", "transmission", "congress"], "sector": "congress"}
+```
+
+```json
+{"id": "2026-10-09-heatmap-data-centers-permitting-collide", "date": "2026-10-09", "type": "analysis", "outlet": "Heatmap News (The Fight)", "author": "Jael Holzman", "title": "The Data Center Backlash Is Coming for Permitting Reform", "url": "https://heatmap.news/plus/the-fight/spotlight/data-centers-permitting", "summary": "Reports that LCV, NRDC, Wilderness Society and Earthjustice are pressing the data center fight as the bill nears a vote, and weighs the case that the bill speeds gas-fired data centers through federal land and pipeline permits.", "stance": "mixed", "quote": {"text": "In any permutation, this bill is a good thing for data centers", "speaker": "Brett Hartl, government affairs director, Center for Biological Diversity"}, "topics": ["data-centers", "fossil", "transmission"], "sector": "media"}
 ```
 
 ```json
@@ -17131,6 +17736,10 @@ How the bill impacts data centers, AI computing facilities and interconnection s
 
 ```json
 {"id": "2026-09-30-sierra-club-reaction-permitting-bill-introduction", "date": "2026-09-30", "type": "org_statement", "outlet": "Sierra Club", "title": "Sierra Club Reaction to Permitting Bill Introduction", "url": "https://www.sierraclub.org/press-releases/2026/09/sierra-club-reaction-permitting-bill-introduction", "summary": "Sierra Club notes the urgency of transmission and clean energy but raises concern over fossil fuel infrastructure acceleration without deployment guarantees.", "stance": "opposes", "quote": {"text": "There is no task more urgent than building clean energy and transmission. Congress must act to lower energy bills, protect clean air and water, and transition off of fossil fuels, and that means making it faster and easier to build transmission and clean energy.", "speaker": "Holly Bender, Sierra Club"}, "topics": ["transmission", "congress", "nepa"], "sector": "environmental"}
+```
+
+```json
+{"id": "2026-09-30-selc-bill-rolls-back-protections", "date": "2026-09-30", "type": "org_statement", "outlet": "Southern Environmental Law Center", "author": "Liz Zepeda, Federal Regulatory Director", "title": "\"Bipartisan American Affordability and Jobs Act\" would roll back environmental protections for communities", "url": "https://www.selc.org/?p=44520", "summary": "SELC calls the bill a weakening of environmental review, public notice and the right to challenge permits, and says assurances on wind and solar should be treated with skepticism.", "stance": "opposes", "quote": {"text": "Any attempt to speed up permitting will become another tool for the Trump administration to rush construction of polluting energy projects like gas power plants and pipelines.", "speaker": "Liz Zepeda, Federal Regulatory Director, SELC"}, "topics": ["fossil", "courts", "esa", "clean-water-act", "nepa", "wind-solar"], "sector": "environmental"}
 ```
 
 ```json

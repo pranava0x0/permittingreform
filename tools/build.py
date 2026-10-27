@@ -36,7 +36,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-10-20"
+DATA_AS_OF = "2026-10-26"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -328,6 +328,30 @@ def build() -> tuple[dict, dict, list[str]]:
                 else:
                     r["c"] = cite(loc)
 
+    # Speed: what research found slows projects, the bill passages that reach
+    # each cause, and outside readings of whether they help. The rows describe
+    # research, not the bill, so the bill appears only as located passages.
+    speed_path = DATA / "speed.json"
+    speed = load(speed_path) if speed_path.exists() else None
+    if speed:
+        speed.pop("_about", None)
+        for b in speed["blockers"]:
+            where = f"speed {b['id']}"
+            check_refs(where, b["sections"])
+            if not b.get("evidence"):
+                errors.append(f"{where}: no research evidence")
+            for p in b.get("passages", []):
+                sec = by_num.get(p["section"])
+                loc = billtext.locate(sec["lines"], p["text"]) if sec else None
+                if p["section"] not in b["sections"]:
+                    errors.append(f"{where}: passage is from section {p['section']}, which the row does not name")
+                elif not loc:
+                    errors.append(f"{where}: passage not found in section {p['section']}: {p['text'][:60]!r}")
+                elif loc["count"] != 1:
+                    errors.append(f"{where}: passage matches more than once in section {p['section']}; include more context")
+                else:
+                    p["c"] = cite(loc)
+
     # Every sentence outside the section pages that says what the bill does
     # carries a passage from a section it cites.
     row_cites = load(ROW_CITES) if ROW_CITES.exists() else {}
@@ -438,6 +462,10 @@ def build() -> tuple[dict, dict, list[str]]:
                         errors.append(f"{where}: take {tid} reads a specific clause but has no bill passage")
                     elif t["stance"] not in ({"supports"} if side == "for" else {"opposes", "concerns"}):
                         errors.append(f"{where}: take {tid} has stance {t['stance']!r}, which does not belong under {side!r}")
+    for b in (speed or {}).get("blockers", []):
+        for tid in b.get("readings", []):
+            if tid not in take_by_id:
+                errors.append(f"speed {b['id']}: no take {tid!r}")
     checks_path = DATA / "checks.json"
     checks = load(checks_path) if checks_path.exists() else {}
     if checks.get("inference"):
@@ -457,6 +485,9 @@ def build() -> tuple[dict, dict, list[str]]:
 
     for it in extra["media"] + takes["takes"]:
         stamp(it)
+    for b in (speed or {}).get("blockers", []):
+        for ev in b["evidence"]:
+            stamp(ev)
     for rec in extra["timeline"] + extra["people"]:
         for src in rec.get("sources", []):
             stamp(src)
@@ -490,6 +521,7 @@ def build() -> tuple[dict, dict, list[str]]:
         "compare": compare,
         "communities": communities,
         "datacenters": datacenters,
+        "speed": speed,
         "positions": positions,
         "takes": takes,
         "timeline": extra["timeline"],
@@ -668,6 +700,24 @@ def llms_full(core: dict, paras: dict) -> str:
                 where = f" (Sec. {row['quote_section']})" if row.get("quote_section") else ""
                 cite = f", {pdf_citation(core['meta']['site_url'], row['c'])}" if row.get("c") else ""
                 out.append(f"- Quote{where}: \"{row['quote']}\"{cite}")
+            out.append("")
+    sp = core.get("speed")
+    if sp:
+        out += ["", "## What slows projects: research on causes of delay", "", sp["intro"], ""]
+        takes = {t["id"]: t for t in core["takes"]["takes"]}
+        for b in sp["blockers"]:
+            out += [f"### {b['title']}", "", f"- Headline: {b['headline']}"]
+            for ev in b["evidence"]:
+                out.append(f"- {ev['finding']} \"{ev['quote']}\" Source: [{ev['org']}, {ev['title']}]({ev['url']}) ({ev['date']}; data: {ev.get('period', 'n/a')})")
+            if b.get("disagreement"):
+                out.append(f"- Where studies differ: {b['disagreement']}")
+            for ps in b.get("passages", []):
+                cite = f", {pdf_citation(core['meta']['site_url'], ps['c'])}" if ps.get("c") else ""
+                out.append(f"- Bill text (Sec. {ps['section']}{cite}): \"{ps['text']}\"")
+            out.append("- Bill: " + (", ".join(f"[{n}]({core['meta']['site_url']}sections/{n}.md)" for n in b["sections"]) or "no section mapped"))
+            for tid in b.get("readings", []):
+                t = takes[tid]
+                out.append(f"- Reading, {t['who']} ({core['takes']['stances'][t['stance']].lower()}): {t['claim']} [{t['outlet']}]({t['url']})")
             out.append("")
     out += ["", "## Added and dropped provisions", "", "```json", json.dumps({k: core["compare"][k] for k in ("added", "dropped")}, ensure_ascii=False), "```", ""]
     for label, rows in (("Timeline", core["timeline"]), ("People", core["people"]), ("Media", core["media"])):

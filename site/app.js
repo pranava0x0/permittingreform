@@ -210,7 +210,7 @@
         const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
         if (window.PR_NEWS) { done(); return; }
         const tag = document.createElement("script");
-        tag.src = "data/news.js?v=3";
+        tag.src = "data/news.js?v=4";
         tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
         tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
         document.head.appendChild(tag);
@@ -227,7 +227,7 @@
     if (!takesPromise) {
       takesPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/takes.js?v=3";
+        tag.src = "data/takes.js?v=4";
         tag.onload = () => (window.PR_TAKES ? resolve(window.PR_TAKES) : reject(new Error("readings did not load")));
         tag.onerror = () => { takesPromise = null; reject(new Error("readings could not be fetched")); };
         document.head.appendChild(tag);
@@ -887,6 +887,59 @@
       rows.length ? body : el("p", { class: "empty" }, "No provisions match.")];
   }
 
+  /* ---------- speed ---------- */
+
+  /* What research found slows projects, row by row. A row's heading carries its
+     headline figure, so the collapsed list answers "what slows projects" without a tap.
+     The bill appears only as passages the build located; readings load with takes.js. */
+  function speedEvidence(ev) {
+    return el("li", { class: "voice" },
+      el("p", { class: "dispute-claim" }, ev.finding),
+      el("blockquote", { class: "voice-quote" }, ev.quote),
+      el("p", { class: "voice-who" }, el("strong", null, ev.org), " · ", ext(ev.url, ev.title), ", " + ev.date.slice(0, 4) +
+        (ev.period ? " · data: " + ev.period : ""),
+        ev.lk ? el("span", { class: "unchecked" }, " (" + LINK_NOTE[ev.lk] + ")") : null));
+  }
+
+  function speedRow(b) {
+    const head = el("span", { class: "event-head" },
+      el("span", { class: "event-title" }, b.title),
+      el("span", { class: "pos-tally" }, b.headline));
+    const readings = el("div", null);
+    if ((b.readings || []).length) {
+      ensureTakes().then((T) => {
+        const list = b.readings.map((id) => T.takes.find((t) => t.id === id)).filter(Boolean);
+        fill(readings, el("div", { class: "voices" },
+          el("h4", null, "Readings of the bill on this", el("span", { class: "chip-count" }, list.length)),
+          el("ul", null, list.map((t) => disputeReading(T, t)))));
+      }).catch((err) => fill(readings, failure(err, "The outside readings")));
+    }
+    return openRow("pos-issue speed-row", "speed-" + b.id, head, [
+      el("div", { class: "voices" }, el("h4", null, "What research found", el("span", { class: "chip-count" }, b.evidence.length)),
+        el("ul", null, b.evidence.map(speedEvidence))),
+      b.disagreement ? el("p", { class: "muted" }, b.disagreement) : null,
+      el("div", { class: "dispute-text" }, el("h4", null, "The bill's text"),
+        (b.passages || []).map((p) => el("figure", { class: "quote small" },
+          el("blockquote", null, p.text),
+          el("figcaption", null, "Sec. " + p.section, p.c ? [" · ", claimCite(p.section, p.c)] : null))),
+        b.sections.length
+          ? el("p", { class: "where" }, secLinks(b.sections), readingsLinks(b.sections))
+          : el("p", { class: "muted" }, "This site found no section aimed at this cause.")),
+      readings]);
+  }
+
+  function renderSpeed() {
+    const d = D.speed;
+    if (!d) return [el("div", { class: "lede" }, el("h1", null, "What slows projects")), el("p", { class: "empty" }, "Not yet compiled.")];
+    const studies = new Set();
+    d.blockers.forEach((b) => b.evidence.forEach((ev) => studies.add(ev.url)));
+    return [
+      el("div", { class: "lede" }, el("h1", null, "What slows projects"),
+        el("p", null, d.intro),
+        el("p", { class: "facts", role: "status" }, plural(d.blockers.length, "cause", "causes") + " · " + plural(studies.size, "study or dataset", "studies and datasets"))),
+      el("div", { class: "pos-list" }, d.blockers.map(speedRow))];
+  }
+
   /* ---------- timeline ---------- */
 
   const BRANCHES = [["all", "All"], ["executive", "White House"], ["agency", "Agencies"], ["congress_house", "House"], ["congress_senate", "Senate"], ["court", "Courts"], ["states", "States"], ["other", "Other"]];
@@ -967,9 +1020,12 @@
       topicSelect,
       chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = 12; route(); }, all.filter((e) => e.milestone).length),
       briefChip());
+    // A picked event always renders, however far down its month it sits: a milestone
+    // tap past the first page would otherwise open nothing.
+    const limit = Math.max(tlLimit, list.findIndex((e) => e.id === picked) + 1);
     const out = [];
     let year = null;
-    list.slice(0, tlLimit).forEach((e) => {
+    list.slice(0, limit).forEach((e) => {
       const y = e.date.slice(0, 4);
       if (y !== year) { year = y; out.push(el("h2", { class: "year", id: "y-" + y }, y)); }
       const body = el("div", { class: "event-body", id: "eb-" + e.id },
@@ -994,16 +1050,16 @@
     });
     const status = month
       ? monthName(month, true) + ": " + list.length + (list.length === 1 ? " event" : " events")
-      : "Newest " + Math.min(tlLimit, list.length) + " of " + list.length + (list.length === all.length ? " events" : " matching events (" + all.length + " total)");
+      : "Newest " + Math.min(limit, list.length) + " of " + list.length + (list.length === all.length ? " events" : " matching events (" + all.length + " total)");
     return [
       el("div", { class: "lede" }, el("h1", null, "Timeline")),
       timelineLine(month, picked, status),
       filters, more,
       list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
-      list.length > tlLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
-        const next = list[tlLimit].id; tlLimit += 12; route();
+      list.length > limit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+        const next = list[limit].id; tlLimit = limit + 12; route();
         const node = document.getElementById("ev-" + next); node.tabIndex = -1; node.focus();
-      } }, "Show " + Math.min(12, list.length - tlLimit) + " more events") : null];
+      } }, "Show " + Math.min(12, list.length - limit) + " more events") : null];
   }
 
   /* Milestones on one line, placed by date; the shape says who acted. A tap opens the event in its month. */
@@ -1408,9 +1464,14 @@
     const issues = ((D.positions && D.positions.issues) || []).filter((i) => i.disputes && i.disputes.length);
     if (!issues.length) return null;
     const host = el("div", null, loading("Loading readings"));
-    ensureTakes().then((T) => fill(host, issues.map((i) => [
-      el("h3", { class: "dispute-issue" }, i.title),
-      el("div", { class: "pos-list" }, i.disputes.map((d) => disputeRow(T, i, d)))]))).catch((err) => fill(host, failure(err, "The outside readings")));
+    // One folded row per issue keeps the block a short list on a phone; the
+    // questions show once the issue is opened.
+    ensureTakes().then((T) => fill(host, el("div", { class: "pos-list" }, issues.map((i) =>
+      openRow("dispute-group", "disputes-" + i.id,
+        el("span", { class: "event-head" },
+          el("span", { class: "event-title" }, i.title),
+          el("span", { class: "pos-tally" }, plural(i.disputes.length, "question", "questions"))),
+        el("div", { class: "pos-list" }, i.disputes.map((d) => disputeRow(T, i, d)))))))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "block", "aria-labelledby": "h-disputes" },
       el("h2", { id: "h-disputes" }, "Disputed readings"),
       el("p", { class: "facts" }, "Where supporters and opponents read the same words differently. Each row shows the bill text first, then each side's reading in its own words. This site does not decide which reading is right."),
@@ -1544,13 +1605,13 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", timeline: "Timeline", positions: "Positions", people: "People", media: "Media", method: "Method" };
+  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Media", method: "Method" };
   /* Five top tabs fit a phone's width; the pages under a group share a subtab row.
      Each page keeps its own route, so existing links still work. */
   const GROUPS = [
     { key: "overview", pages: ["overview"] },
     { key: "bill", label: "Bill pages", pages: [["bill", "Sections"], ["compare", "Compare with earlier bills"]] },
-    { key: "effects", label: "Effects pages", pages: [["datacenters", "Data centers"], ["communities", "Communities"]] },
+    { key: "effects", label: "Effects pages", pages: [["datacenters", "Data centers"], ["speed", "Speed"], ["communities", "Communities"]] },
     { key: "news", label: "News pages", pages: [["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]] },
     { key: "method", pages: ["method"] },
   ];
@@ -1593,6 +1654,7 @@
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
     else if (tab === "communities") nodes = renderCommunities();
     else if (tab === "datacenters") nodes = renderDataCenters();
+    else if (tab === "speed") nodes = renderSpeed();
     else if (tab === "timeline") {
       /* Arriving at a linked event clears filters that could hide it; later filter changes still apply. */
       if (parts[2] && location.hash !== lastPath) { tlBranch = "all"; tlTopic = "all"; tlMilestones = false; }

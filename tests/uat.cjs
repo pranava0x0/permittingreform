@@ -21,12 +21,12 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0) + (window.PR_DATA.compare.bills ? window.PR_DATA.compare.bills.rows.length : 0),
           media: Math.min(12,window.PR_DATA.media.length), timeline: Math.min(12,window.PR_DATA.timeline.length),
           communities: window.PR_DATA.communities.rows.length, bills: window.PR_DATA.compare.bills.rows.length,
-          datacenters: window.PR_DATA.datacenters.rows.length, issues: window.PR_DATA.positions.issues.length,
+          datacenters: window.PR_DATA.datacenters.rows.length, speed: window.PR_DATA.speed.blockers.length, issues: window.PR_DATA.positions.issues.length,
           people: Math.min(12,window.PR_DATA.people.filter(p=>p.inside_government).length) }));
         const routes = [
           ['overview','.provisions li',10], ['bill','.index li',71],
           ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
-          ['communities','.cm-row',n.communities], ['datacenters','.cm-row',n.datacenters], ['compare/data-center-bills','.compare tbody tr',n.bills],
+          ['communities','.cm-row',n.communities], ['datacenters','.cm-row',n.datacenters], ['compare/data-center-bills','.compare tbody tr',n.bills], ['speed','.speed-row',n.speed],
           ['timeline','.event',n.timeline], ['positions','.pos-issue',n.issues], ['people','.person',n.people], ['media','.media-item',n.media], ['method','.versus dd',null]
         ];
         for (const [route, selector, expected] of routes) {
@@ -51,7 +51,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
-          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,datacenters:5,timeline:2,positions:4,people:4.5,media:5};
+          const budget = {overview:2.5,bill:2.5,compare:4,'compare/data-center-bills':4,communities:5,datacenters:5,speed:4,timeline:2,positions:4,people:4.5,media:5};
           if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')

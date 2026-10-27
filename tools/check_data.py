@@ -72,6 +72,14 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out.append(("datacenters intro", dc["intro"]))
     for r in dc["rows"]:
         out += [(f"datacenters {r['id']} topic", r["topic"]), (f"datacenters {r['id']} now", r["now"]), (f"datacenters {r['id']} baaja", r["baaja"])]
+    sp = core.get("speed") or {"blockers": []}
+    if sp.get("intro"):
+        out.append(("speed intro", sp["intro"]))
+    for b in sp["blockers"]:
+        out += [(f"speed {b['id']} title", b["title"]), (f"speed {b['id']} headline", b["headline"])]
+        out += [(f"speed {b['id']} finding", ev["finding"]) for ev in b["evidence"]]
+        if b.get("disagreement"):
+            out.append((f"speed {b['id']} disagreement", b["disagreement"]))
     out += [("compare added", a["text"]) for a in core["compare"]["added"]]
     out += [("compare dropped", a["text"]) for a in core["compare"]["dropped"]]
     for e in core["timeline"]:
@@ -208,6 +216,24 @@ def check(core: dict) -> tuple[list[str], dict]:
                     errs.append(f"{name} {r.get('id')}: missing {f}")
             if r.get("now_cite") and not str(r.get("now_url", "")).startswith("https://"):
                 errs.append(f"{name} {r['id']}: a current-law cite needs a link")
+
+    seen_speed: set[str] = set()
+    for b in (core.get("speed") or {"blockers": []})["blockers"]:
+        w = f"speed {b.get('id')}"
+        if b.get("id") in seen_speed:
+            errs.append(f"{w}: duplicate id")
+        seen_speed.add(b.get("id"))
+        for f in ("id", "title", "headline", "evidence"):
+            if not b.get(f):
+                errs.append(f"{w}: missing {f}")
+        for i, ev in enumerate(b.get("evidence", [])):
+            for f in ("org", "title", "url", "date", "finding", "quote"):
+                if not str(ev.get(f, "")).strip():
+                    errs.append(f"{w} evidence {i}: missing {f}")
+            if not str(ev.get("url", "")).startswith("https://"):
+                errs.append(f"{w} evidence {i}: url must be https")
+            if not re.fullmatch(r"\d{4}(-\d{2}){0,2}", str(ev.get("date", ""))):
+                errs.append(f"{w} evidence {i}: date must be YYYY, YYYY-MM or YYYY-MM-DD")
 
     def http(url) -> bool:
         return isinstance(url, str) and url.lower().startswith(("http://", "https://"))

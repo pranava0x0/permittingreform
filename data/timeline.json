@@ -3668,6 +3668,389 @@
     "source_url": "https://x.com/NicoPortuondo/status/2112269443636273207"
    },
    "milestone": false
+  },
+  {
+   "id": "2026-10-20-apcg-resolution-opposes",
+   "date": "2026-10-20",
+   "title": "All Pueblo Council of Governors adopts a resolution against S. 5653",
+   "branch": "other",
+   "summary": "The council of New Mexico's 19 Pueblo nations unanimously adopted a resolution opposing the bill and said Sen. Heinrich did not consult them before negotiating changes to the National Historic Preservation Act.",
+   "significance": "Brought Tribal opposition to the home state of one of the four sponsors.",
+   "actors": [
+    "All Pueblo Council of Governors",
+    "Martin Heinrich (Senator, D-N.M.)"
+   ],
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "APCG Resolution 2026-15 (PDF, posted by NATHPO)",
+     "publisher": "All Pueblo Council of Governors",
+     "url": "https://edge.growthzonecms.com/sites/2385/2026/10/APCG-Resolution-2026-15-Opposing-S.-5653.pdf",
+     "date": "2026-10-20",
+     "verified": true
+    },
+    {
+     "title": "Post on the APCG resolution",
+     "publisher": "Nico Portuondo, POLITICO (X)",
+     "url": "https://x.com/NicoPortuondo/status/2112571938484957230",
+     "date": "2026-10-20",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-former-officials-letter",
+   "date": "2026-10-20",
+   "title": "19 former economic and national security officials urge passage",
+   "branch": "other",
+   "summary": "A letter to Thune, Schumer, Johnson and Jeffries from 19 former officials who served six presidents, including four Treasury secretaries, asks Congress to pass the bill.",
+   "significance": "Bipartisan support from former cabinet officials, organized by the Institute for Progress.",
+   "actors": [
+    "Janet Yellen",
+    "Steven Mnuchin",
+    "Timothy Geithner",
+    "Henry Paulson"
+   ],
+   "topics": [
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Letter to congressional leaders (PDF)",
+     "publisher": "Institute for Progress",
+     "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf",
+     "date": "2026-10-20",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-20-preservation-coalition-letter",
+   "date": "2026-10-20",
+   "title": "13 preservation groups ask the sponsors to revise or remove the Section 106 provisions",
+   "branch": "other",
+   "summary": "A coalition including NATHPO, NCSHPO and the National Trust wrote the four sponsors objecting to the historic preservation title and proposing to revisit it next session.",
+   "significance": "Joined Tribal and state preservation officers in one letter against Section 2301.",
+   "actors": [
+    "NATHPO",
+    "NCSHPO",
+    "National Trust for Historic Preservation"
+   ],
+   "topics": [
+    "historic-preservation",
+    "tribal"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Coalition letter",
+     "publisher": "National Trust for Historic Preservation",
+     "url": "https://savingplaces.org/permitting-reform-coalition-letter-october-20",
+     "date": "2026-10-20",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-cgep-timeline-analysis",
+   "date": "2026-10-21",
+   "title": "Columbia's energy policy center estimates months saved under the bill",
+   "branch": "other",
+   "summary": "Columbia's Center on Global Energy Policy replayed past project reviews under the bill's deadlines and found the largest savings for transmission, while leaving state siting and the FERC backstop out of its replays.",
+   "significance": "The first published estimate of how many months the bill would cut from federal reviews.",
+   "actors": [
+    "Jack Andreasen Cavanaugh (Columbia CGEP)"
+   ],
+   "topics": [
+    "nepa",
+    "transmission"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Project timeline savings under BAAJA",
+     "publisher": "Columbia University Center on Global Energy Policy",
+     "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+     "date": "2026-10-21",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-clean-energy-trades-endorse",
+   "date": "2026-10-21",
+   "title": "Clean energy trade groups endorse the bill in a joint letter",
+   "branch": "other",
+   "summary": "CEBA, ACORE, Advanced Energy United, the American Clean Power Association and SEIA wrote congressional leaders to endorse the bill.",
+   "significance": "The clean energy industry's main trade groups backed the bill together before the vote.",
+   "actors": [
+    "CEBA",
+    "ACORE",
+    "Advanced Energy United",
+    "American Clean Power Association",
+    "SEIA"
+   ],
+   "topics": [
+    "wind-solar",
+    "transmission"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Post on the joint letter",
+     "publisher": "Joshua Siegel, Punchbowl News (X)",
+     "url": "https://x.com/SiegelScribe/status/2112926458280804488",
+     "date": "2026-10-21",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-21-new-england-wind-filing",
+   "date": "2026-10-21",
+   "title": "Administration files against New England Wind; Whitehouse warns the deal is at risk",
+   "branch": "executive",
+   "summary": "A late filing by the administration targeting the New England Wind offshore project followed similar motions on Revolution Wind and Maryland Offshore Wind. Sen. Whitehouse said it is how to blow up a permitting deal.",
+   "significance": "Tested the Democratic sponsors' condition that the administration stop blocking wind and solar.",
+   "actors": [
+    "Sheldon Whitehouse (Senator, D-R.I.)"
+   ],
+   "topics": [
+    "offshore",
+    "wind-solar",
+    "white-house"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Post on the New England Wind filing",
+     "publisher": "Nico Portuondo, POLITICO (X)",
+     "url": "https://x.com/NicoPortuondo/status/2112937851931488285",
+     "date": "2026-10-21",
+     "verified": true
+    },
+    {
+     "title": "Trump administration asks courts to revoke permits for offshore wind farms",
+     "publisher": "Utility Dive",
+     "url": "https://www.utilitydive.com/news/trump-administration-asks-courts-to-revoke-permits-for-offshore-wind-farms/833735/",
+     "date": "2026-10-22",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-api-coalition-letter",
+   "date": "2026-10-22",
+   "title": "API and 137 organizations ask for a floor vote this year",
+   "branch": "other",
+   "summary": "A coalition from energy, labor, manufacturing, housing and transportation asked House and Senate leaders to bring S. 5653 to the floor and pass it before the end of the year.",
+   "significance": "The largest industry sign-on letter so far.",
+   "actors": [
+    "American Petroleum Institute"
+   ],
+   "topics": [
+    "congress",
+    "fossil"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Broad coalition of 130+ groups urge Congress to pass permitting reform",
+     "publisher": "American Petroleum Institute",
+     "url": "https://www.api.org/news-policy-and-issues/news/2026/10/22/broad-coalition-of-130-groups-urge-congress-to-pass-bipartisan-permitting-reform",
+     "date": "2026-10-22",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-dod-advances-two-wind-projects",
+   "date": "2026-10-22",
+   "title": "Defense Department advances two onshore wind projects",
+   "branch": "executive",
+   "summary": "A White House official said the Defense Department advanced wind projects in Maine and South Dakota, with more to come, and that the administration is clearing the way for the bill. Whitehouse called it a start; Heinrich pointed to hundreds of projects still waiting.",
+   "significance": "The administration's first concession on wind after Democrats tied their votes to it.",
+   "actors": [
+    "Sheldon Whitehouse (Senator, D-R.I.)",
+    "Martin Heinrich (Senator, D-N.M.)"
+   ],
+   "topics": [
+    "wind-solar",
+    "white-house"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Post on the Defense Department wind approvals",
+     "publisher": "Joshua Siegel, Punchbowl News (X)",
+     "url": "https://x.com/SiegelScribe/status/2113249297554973141",
+     "date": "2026-10-22",
+     "verified": true
+    },
+    {
+     "title": "Whitehouse reaction",
+     "publisher": "Joshua Siegel, Punchbowl News (X)",
+     "url": "https://x.com/SiegelScribe/status/2113279782419128579",
+     "date": "2026-10-22",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-nine-ags-letter",
+   "date": "2026-10-22",
+   "title": "Nine Democratic attorneys general raise concerns about state authority",
+   "branch": "states",
+   "summary": "Attorneys general led by California, Massachusetts and Washington wrote Senate leaders about provisions affecting state authority under the Clean Water Act and the National Historic Preservation Act, and asked for a meeting.",
+   "significance": "State officials from the Democratic side asked for changes before the vote.",
+   "actors": [
+    "Rob Bonta (California Attorney General)"
+   ],
+   "topics": [
+    "clean-water-act",
+    "historic-preservation"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Report of the attorneys general letter",
+     "publisher": "SWACCA",
+     "url": "https://swacca.org/nine-democratic-state-attorneys-general-raise-concerns-over-bipartisan-permitting-reform-bill/",
+     "date": "2026-10-22",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-22-public-lands-groups-letter",
+   "date": "2026-10-22",
+   "title": "More than 100 groups ask Congress to reject the bill over public lands",
+   "branch": "other",
+   "summary": "A coalition letter asked Congress to reject the bill because of its effects on public lands.",
+   "significance": "Widened the opposition beyond Tribal and preservation groups to public lands advocates.",
+   "actors": [
+    "Center for Western Priorities"
+   ],
+   "topics": [
+    "nepa"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "DOJ moves to kill offshore wind permits as Congress weighs permitting bill",
+     "publisher": "Center for Western Priorities",
+     "url": "https://westernpriorities.org/2026/10/doj-moves-to-kill-offshore-wind-permits-as-congress-weighs-permitting-bill/",
+     "date": "2026-10-23",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-ej-caucus-opposes",
+   "date": "2026-10-23",
+   "title": "People's Environmental Justice Caucus opposes the bill",
+   "branch": "congress_house",
+   "summary": "The House caucus founded by Reps. Tlaib, Summer Lee and Grijalva came out against the bill, citing data centers, pipelines and limits on court challenges.",
+   "significance": "Organized progressive opposition in the House.",
+   "actors": [
+    "Rashida Tlaib (Rep., D-Mich.)",
+    "Summer Lee (Rep., D-Pa.)",
+    "Adelita Grijalva (Rep., D-Ariz.)"
+   ],
+   "topics": [
+    "congress",
+    "data-centers"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "People's Environmental Justice Caucus opposes Senate permitting reform bill",
+     "publisher": "Office of Rep. Rashida Tlaib",
+     "url": "https://tlaib.house.gov/posts/peoples-environmental-justice-caucus-opposes-senate-permitting-reform-bill",
+     "date": "2026-10-23",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-johnson-supports-bill",
+   "date": "2026-10-23",
+   "title": "Speaker Johnson says he supports the Senate bill",
+   "branch": "congress_house",
+   "summary": "Asked by Punchbowl News whether he supports the Senate's bipartisan permitting bill, House Speaker Mike Johnson said yes.",
+   "significance": "The first clear signal that House Republican leaders would take up the Senate text.",
+   "actors": [
+    "Mike Johnson (Speaker of the House)"
+   ],
+   "topics": [
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Post on Johnson's answer",
+     "publisher": "Joshua Siegel, Punchbowl News (X)",
+     "url": "https://x.com/SiegelScribe/status/2113682338181779731",
+     "date": "2026-10-23",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-23-pueblo-governors-meet-heinrich",
+   "date": "2026-10-23",
+   "title": "Pueblo governors meet Heinrich over the historic preservation changes",
+   "branch": "congress_senate",
+   "summary": "POLITICO reported a tense meeting between Sen. Heinrich and Pueblo governors; one governor said afterward that the goal is to stop the bill now.",
+   "significance": "Showed the sponsor's outreach had not settled Tribal opposition in New Mexico.",
+   "actors": [
+    "Martin Heinrich (Senator, D-N.M.)"
+   ],
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Post on the meeting",
+     "publisher": "Nico Portuondo, POLITICO (X)",
+     "url": "https://x.com/NicoPortuondo/status/2113753815690121576",
+     "date": "2026-10-23",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-24-leger-fernandez-cannot-support",
+   "date": "2026-10-24",
+   "title": "Rep. Leger Fernández says she cannot support the bill as written",
+   "branch": "congress_house",
+   "summary": "The New Mexico Democrat, a former vice chair of the Advisory Council on Historic Preservation, cited the bill's changes to the National Historic Preservation Act and Tribal sovereignty.",
+   "significance": "A second New Mexico House Democrat, after Rep. Stansbury, opposed the bill over Section 106.",
+   "actors": [
+    "Teresa Leger Fernández (Rep., D-N.M.)"
+   ],
+   "topics": [
+    "historic-preservation",
+    "tribal",
+    "congress"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Statement on X",
+     "publisher": "Rep. Teresa Leger Fernández",
+     "url": "https://x.com/RepTeresaLF/status/2114006840979677187",
+     "date": "2026-10-24",
+     "verified": true
+    }
+   ]
   }
  ]
 }

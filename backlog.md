@@ -2,7 +2,7 @@
 
 | Priority | Idea |
 |---|---|
-| medium | Disputed readings for other contested issues on the Positions page, using the same shape (`data/positions.json` disputes: question, bill passages, takes on each side): lawsuit limits (section 1110 remand without vacatur), data center costs (section 2107 20 MW floor), and transmission backstop siting. Tribal consultation shipped first on 2026-10-20. |
+| medium | Disputed readings for lawsuit limits (section 1110 remand without vacatur) and transmission backstop siting, in the `data/positions.json` disputes shape. Tribal consultation shipped 2026-10-20; permit certainty and data center costs 2026-10-26. The certainty question on unlawful permits has no supporting reading yet. |
 | high | Re-run the parser and re-read changed sections when the manager's amendment is posted (see REFRESH.md). |
 | high | Enable GitHub Pages by running the `pages` workflow, then submit the sitemap. |
 | medium | Add Reddit threads by hand; no tool could reach the site. |
@@ -23,7 +23,9 @@
 - Extend semantic checking to current-law comparison cells, per-section prior-version notes and overview/research paraphrases. These are outside the current model check.
 | medium | Read the Heatmap pieces the sweep skipped for budget: trump-wind-energy-prices (6/17), pjm-interconnection-reforms (7/28), trump-gas-plant-permits (8/21), the transmission costs Q&A (9/4). |
 | medium | Senate Data Center Transparency Act (Blunt Rochester, Curtis, October 1): add to the data center bills list once it has a number and text. |
-| low | Restore `tests/uat.cjs` coverage: install Playwright after the advisory check, add checks for brief lists, phone comparison rows and the Communities view. |
+| high | Overview on phones: bring the first provision above half the screen (issues.md, 2026-10-26) so `tests/uat.cjs` passes in full. |
+| low | Make Playwright part of the documented setup so `tests/uat.cjs` and `tests/clicks.cjs` run on every UI change; on 2026-10-26 it had to be installed in a scratch directory. |
+| medium | Speed page: add the McKinsey, NRDC and PNAS studies the 2026-10-26 research run could not fetch, and a reading for the local and state siting cause, which no section addresses. |
 
 | medium | Asset URLs carry a hand-bumped `?v=N`; a CSS or JS change without a bump serves stale files to returning readers (found 2026-10-02 at v=4). Stamp a content hash in `tools/build.py` instead. |
 | medium | Outside readings still missing for specific provisions as of 2026-10-05: utilities (EEI, NRECA and APPA posted holding statements only), hyperscalers and data-center groups, tribal governments (Section 106 and ESA), labor, and anything on section 1121 (eNEPA) or the offshore sections. |

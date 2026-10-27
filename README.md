@@ -27,12 +27,14 @@ Open http://127.0.0.1:8766. The site has no backend and loads nothing from anoth
 | `data/bill/analysis.json` | Summaries, key points, quotes and notes on earlier versions, by section. |
 | `data/bill/point_cites.json` | The passage that backs each key point. |
 | `data/compare.json`, `data/overview.json` | The comparison tables (including `bills`, the data center bills table) and the overview page. |
+| `data/speed.json` | The Speed page: research on what slows energy projects, one row per cause, each with sourced findings, the bill passages aimed at that cause (located by the build) and outside readings from `data/takes.json`. |
 | `data/communities.json` | The Communities view: one row per change to comment, consultation, planning or court rights, with a quoted passage the build checks. |
 | `data/research/` | What the research agents returned, unedited. |
 | `data/curation.json` | Edits to the research, each with a reason. |
 | `data/timeline.json`, `people.json`, `media.json` | Research after curation. The build reads these. |
 | `data/checks/` | Results of the last link, quote and inference checks. |
 | `tools/` | Parser, build, validators. Standard library, plus the two pinned packages in `requirements-dev.txt`: `pypdf` to re-read the bill PDF and `pymupdf` for the quote check's PDF text (`python3 -m pip install --user -r requirements-dev.txt`). `make check` needs neither. |
+| `tools/x_collect.js` | Collects X posts from a logged-in browser tab: text, links, quoted posts and image alt text, no video. Usage is in the file header and REFRESH.md. |
 | `tests/` | `unittest` and `node --test` suites. |
 
 ## Checks
