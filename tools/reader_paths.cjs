@@ -29,7 +29,7 @@ const PATHS = [
   ['cwa', [fold('Clean Water Act')], '.provision-detail[open] p'],
   ['esa', [fold('Endangered Species Act')], '.provision-detail[open] p'],
   ['tribes-106', [fold('Historic preservation')], '.provision-detail[open] p'],
-  ['tribes-dispute', [{ href: '#/positions' }, row('#dispute-tribal-consult')], '#dispute-tribal-consult .pos-body'],
+  ['tribes-dispute', [{ href: '#/positions' }, row('#disputes-tribal'), row('#dispute-tribal-consult')], '#dispute-tribal-consult .pos-body'],
   ['vs-current-law', [{ tab: 'bill' }, { href: '#/compare' }, { row: 'row-deadlines' }], '#row-deadlines .col-current'],
   ['vs-earlier-bills', [fold('Changes from earlier bills')], 'details[data-fold="overview:Changes from earlier bills"][open] > section'],
   ['vs-speed-courts', [{ tab: 'bill' }, { href: '#/compare' }, { chipIn: '[data-comparison="main"]', name: 'SPEED Act' }, { row: 'row-sol' }], '#row-sol .col-speed'],
