@@ -2320,6 +2320,841 @@
     "section": "2301",
     "text": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer"
    }
+  },
+  {
+   "id": "2026-10-06-cbd-esa-letter-1",
+   "sections": [
+    "1301"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "who": "Center for Biological Diversity and 214 other groups",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "outlet": "Coalition letter (Center for Biological Diversity)",
+   "title": "Letter to Senate Democrats opposing the bill's Endangered Species Act provisions",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "date": "2026-10-06",
+   "claim": "The definition would make the Services wait for firmer evidence before protecting a species, because it limits how they can weigh uncertainty and foreseeable risk.",
+   "quote": "would significantly raise the evidentiary burden for protecting imperiled animals and plants by limiting the Services’ ability to account for uncertainty and reasonably foreseeable risks",
+   "passage": {
+    "section": "1301",
+    "text": "impartially gathered and objectively applied without presumptions or policy prescriptions that bias the application"
+   }
+  },
+  {
+   "id": "2026-10-06-cbd-esa-letter-2",
+   "sections": [
+    "1304"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "who": "Center for Biological Diversity and 214 other groups",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "outlet": "Coalition letter (Center for Biological Diversity)",
+   "title": "Letter to Senate Democrats opposing the bill's Endangered Species Act provisions",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "date": "2026-10-06",
+   "claim": "Most states lack the laws, money and biologists to run consultations, and more than half cannot protect every species the federal act covers.",
+   "quote": "More than half of the states — including Texas, Utah, and Idaho — lack the statutory authority to protect the full range of plants and animals covered by the federal Endangered Species Act",
+   "passage": {
+    "section": "1304",
+    "text": "the Secretary may assign, and the State may assume, the consultation responsibilities of the Secretary within the boundary of the State"
+   }
+  },
+  {
+   "id": "2026-10-06-cbd-esa-letter-3",
+   "sections": [
+    "1305"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "who": "Center for Biological Diversity and 214 other groups",
+   "speaker": "Center for Biological Diversity and 214 other groups",
+   "outlet": "Coalition letter (Center for Biological Diversity)",
+   "title": "Letter to Senate Democrats opposing the bill's Endangered Species Act provisions",
+   "url": "https://biologicaldiversity.org/programs/government-affairs/pdfs/Oppose-ESA-attacks-in-permitting-deal.pdf",
+   "date": "2026-10-06",
+   "claim": "Every Section 7 challenge would go straight to the D.C. Circuit, which has 11 active judges, and would have to be filed within 150 days.",
+   "quote": "The legislation would direct every Section 7 challenge to the D.C. Circuit",
+   "passage": {
+    "section": "1305",
+    "text": "of any opinion issued by the Secretary under subsection (b) in the United States Court of Appeals for the District of Columbia Circuit"
+   }
+  },
+  {
+   "id": "2026-10-20-earthjustice-esa-1",
+   "sections": [
+    "1304",
+    "1305"
+   ],
+   "side": "environmental",
+   "stance": "concerns",
+   "who": "Earthjustice",
+   "speaker": "Earthjustice",
+   "outlet": "Earthjustice",
+   "title": "Guide to the Impacts of the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+   "date": "2026-10-20",
+   "claim": "Federal consultations would be challenged in the D.C. Circuit and state-run ones in district court, splitting review of the same law.",
+   "quote": "By contrast, challenges to consultations by states would be brought in district court, creating a balkanized system for judicial review",
+   "passage": {
+    "section": "1304",
+    "text": "The district courts of the United States shall have exclusive jurisdiction over any civil action against a State"
+   }
+  },
+  {
+   "id": "2026-10-20-earthjustice-esa-2",
+   "sections": [
+    "1304"
+   ],
+   "side": "environmental",
+   "stance": "concerns",
+   "who": "Earthjustice",
+   "speaker": "Earthjustice",
+   "outlet": "Earthjustice",
+   "title": "Guide to the Impacts of the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+   "date": "2026-10-20",
+   "claim": "Once a state takes over, Interior has no stated power to overrule a state decision that would jeopardize a species; it can only end the state's role.",
+   "quote": "the bill does not specify federal backstop authority to override state decisions that would jeopardize a species' survival",
+   "passage": {
+    "section": "1304",
+    "text": "The Secretary may terminate the participation of a State in the program if"
+   }
+  },
+  {
+   "id": "2026-09-30-ifp-deal-esa-1",
+   "sections": [
+    "1301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "date": "2026-09-30",
+   "claim": "The definition stops the Services from defaulting to worst-case assumptions, partly writing the D.C. Circuit's Maine Lobstermen decision into law.",
+   "quote": "Under the new language, the Services could no longer default to using the worst-case scenarios when making a jeopardy or critical habitat determination",
+   "passage": {
+    "section": "1301",
+    "text": "impartially gathered and objectively applied without presumptions or policy prescriptions that bias the application"
+   }
+  },
+  {
+   "id": "2026-09-30-ifp-deal-esa-2",
+   "sections": [
+    "1304"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "date": "2026-09-30",
+   "claim": "A state can take over only Fish and Wildlife Service consultations on projects inside its borders, and an applicant can still ask for federal review.",
+   "quote": "State authority would be limited to projects within the state, and applicants would have the option to opt out and request review from FWS instead.",
+   "passage": {
+    "section": "1304",
+    "text": "a permit or license applicant may elect to consult with the Secretary within the boundary of the State"
+   }
+  },
+  {
+   "id": "2026-09-30-ifp-deal-tribal-1",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Institute for Progress",
+   "speaker": "Institute for Progress",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permitting-deal-works/",
+   "date": "2026-09-30",
+   "claim": "A Tribe that raised its concern in writing during consultation can still sue after the decision, without meeting the new tests on who may sue.",
+   "quote": "Section 2301(c) exempts Tribes from the new standing requirements, ensuring that Tribes who raised a concern in writing during consultation can bring a lawsuit after the decision.",
+   "passage": {
+    "section": "2301",
+    "text": "has provided detailed notice in writing during the consultation process"
+   }
+  },
+  {
+   "id": "2026-10-09-tribal-orgs-letter-6",
+   "sections": [
+    "2301"
+   ],
+   "side": "tribal",
+   "stance": "opposes",
+   "who": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "speaker": "NCAI, NARF, NATHPO and six other Tribal organizations",
+   "outlet": "Joint letter (via HillHeat)",
+   "title": "Joint Tribal organization letter opposing BAAJA Title III",
+   "url": "https://hillheat.com/files/517/Joint-Tribal-Org-Letter-Opposing-BAAJA-NHPA-Title-FINAL-with-Logos-10_9_26.pdf",
+   "date": "2026-10-09",
+   "claim": "The bill would set a 150-day limit to sue and narrow who may bring a case.",
+   "quote": "This bill also institutes a 150-day statute of limitations, attempts to limit standing",
+   "passage": {
+    "section": "2301",
+    "text": "the claim is filed by a party that has suffered or imminently will suffer direct harm from the agency action"
+   }
+  },
+  {
+   "who": "Foley Hoag",
+   "speaker": "Noah C. Shaw and Kevin Y. Chen, Foley Hoag LLP",
+   "outlet": "Foley Hoag Energy & Climate Counsel",
+   "title": "BAAJA Blast: A Second Wind?",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-a-second-wind-certainty-cables-and-cost-allocation-for-offshore-wind-under-the-senat/",
+   "date": "2026-10-23",
+   "sections": [
+    "1401",
+    "1402"
+   ],
+   "side": "legal_analyst",
+   "stance": "explains",
+   "claim": "The permit-certainty section would bar agencies from revoking or suspending authorizations in effect on or after Sept. 16, 2026, including offshore wind construction and operations plans, subject to listed exceptions and a clear-and-convincing burden on the agency.",
+   "quote": "The protection would not be absolute. Agencies could still act under a court order; for a material breach or violation of law; for fraud or misrepresentation; at the holder's request",
+   "id": "2026-10-23-foley-hoag-certainty",
+   "passage": {
+    "section": "1401",
+    "text": "shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026"
+   }
+  },
+  {
+   "who": "Bisnow",
+   "speaker": "Harmol Samra, Host Digital",
+   "outlet": "Bisnow",
+   "title": "Senate Bill Offers Data Centers A Faster Path To Power, But At A Price",
+   "url": "https://www.bisnow.com/news/national/data-center-development/senate-bill-offers-data-centers-a-faster-path-to-power-but-at-a-price",
+   "date": "2026-10-18",
+   "sections": [
+    "2107"
+   ],
+   "side": "industry",
+   "stance": "concerns",
+   "claim": "A data center developer says requiring large loads to pay grid costs that would not exist but for their demand adds speculative upfront capital that smaller developers cannot carry.",
+   "quote": "Any upfront cost that you have to spend before you even know the answer if something is viable will wipe everyone out",
+   "id": "2026-10-18-bisnow-dc-costs",
+   "passage": {
+    "section": "2107",
+    "text": "to require public utilities and transmitting utilities to charge eligible customers seeking transmission service on behalf of computational load owners and computational load operators the embedded cost and the incremental cost of transmission service"
+   }
+  },
+  {
+   "who": "Preservation coalition (13 groups)",
+   "speaker": "Signers incl. NATHPO, NCSHPO, National Trust, SAA",
+   "outlet": "Coalition letter hosted by National Trust",
+   "title": "Preservation coalition letter on S. 5653",
+   "url": "https://savingplaces.org/permitting-reform-coalition-letter-october-20",
+   "date": "2026-10-20",
+   "sections": [
+    "2301",
+    "2302"
+   ],
+   "side": "preservation",
+   "stance": "opposes",
+   "claim": "Redefining 'undertaking' to require a federal permit or approval plus substantial federal control would pull most federally funded projects out of Section 106 review.",
+   "quote": "Projects funded by federal grants or loans would mostly fall outside the Section 106 process unless the funding is for historic preservation itself.",
+   "id": "2026-10-20-preservation-coalition-1",
+   "passage": {
+    "section": "2301",
+    "text": "substantial Federal control and responsibility"
+   }
+  },
+  {
+   "who": "Preservation coalition (13 groups)",
+   "speaker": "Signers incl. NATHPO, NCSHPO, National Trust, SAA",
+   "outlet": "Coalition letter hosted by National Trust",
+   "title": "Preservation coalition letter on S. 5653",
+   "url": "https://savingplaces.org/permitting-reform-coalition-letter-october-20",
+   "date": "2026-10-20",
+   "sections": [
+    "2301",
+    "2302"
+   ],
+   "side": "preservation",
+   "stance": "opposes",
+   "claim": "The new statutory definition of 'adverse effect' would exclude most visual, atmospheric, audible and temporary effects, and the area of potential effects would be capped.",
+   "quote": "A new statutory definition of \"adverse effect\" would exclude most visual, atmospheric, and audible effects, temporary effects, and effects on parts of a property beyond its character-defining features.",
+   "id": "2026-10-20-preservation-coalition-2",
+   "passage": {
+    "section": "2301",
+    "text": "directly alters the characteristics of a historic property"
+   }
+  },
+  {
+   "who": "Preservation coalition (13 groups)",
+   "speaker": "Signers incl. NATHPO, NCSHPO, National Trust, SAA",
+   "outlet": "Coalition letter hosted by National Trust",
+   "title": "Preservation coalition letter on S. 5653",
+   "url": "https://savingplaces.org/permitting-reform-coalition-letter-october-20",
+   "date": "2026-10-20",
+   "sections": [
+    "2301",
+    "2302"
+   ],
+   "side": "preservation",
+   "stance": "opposes",
+   "claim": "A 30-day consulting-party clock lets an agency proceed without a SHPO, THPO, Tribe or local government, or reach agreement with the ACHP instead.",
+   "quote": "Consulting parties would generally have 30 days to provide information or object, after which the agency may proceed without them.",
+   "id": "2026-10-20-preservation-coalition-3",
+   "passage": {
+    "section": "2301",
+    "text": "not later than 30 days after the date on which the Federal official submits a request for such information"
+   }
+  },
+  {
+   "who": "Preservation coalition (13 groups)",
+   "speaker": "Signers incl. NATHPO, NCSHPO, National Trust, SAA",
+   "outlet": "Coalition letter hosted by National Trust",
+   "title": "Preservation coalition letter on S. 5653",
+   "url": "https://savingplaces.org/permitting-reform-coalition-letter-october-20",
+   "date": "2026-10-20",
+   "sections": [
+    "2301",
+    "2302"
+   ],
+   "side": "preservation",
+   "stance": "opposes",
+   "claim": "The Interior Secretary could assume a THPO's functions and suspend its funding if timelines are missed, which the signers say violates the government-to-government relationship.",
+   "quote": "For the first time, the Secretary of the Interior could assume a THPO's functions and suspend its funding.",
+   "id": "2026-10-20-preservation-coalition-4",
+   "passage": {
+    "section": "2301",
+    "text": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer"
+   }
+  },
+  {
+   "who": "Preservation coalition (13 groups)",
+   "speaker": "Signers incl. NATHPO, NCSHPO, National Trust, SAA",
+   "outlet": "Coalition letter hosted by National Trust",
+   "title": "Preservation coalition letter on S. 5653",
+   "url": "https://savingplaces.org/permitting-reform-coalition-letter-october-20",
+   "date": "2026-10-20",
+   "sections": [
+    "2301",
+    "2302"
+   ],
+   "side": "preservation",
+   "stance": "opposes",
+   "claim": "Claims would have to be filed within 150 days, with deference to the agency and remand without vacatur as the usual remedy, so projects could proceed while violations are corrected.",
+   "quote": "Claims would have to be filed within 150 days, courts would owe agencies substantial deference, and the usual remedy would be remand without vacatur or injunction.",
+   "id": "2026-10-20-preservation-coalition-5",
+   "passage": {
+    "section": "2301",
+    "text": "the claim is filed not later than 150 days after the later of"
+   }
+  },
+  {
+   "who": "Southern Environmental Law Center",
+   "speaker": "Liz Zepeda, SELC",
+   "outlet": "SELC press release",
+   "title": "Bill would roll back environmental protections for communities",
+   "url": "https://www.selc.org/?p=44520",
+   "date": "2026-09-30",
+   "sections": [
+    "1110",
+    "1202",
+    "1204"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "claim": "SELC says the bill's statute of limitations and limits on state, tribal and local water authority would reduce communities' ability to challenge energy projects such as gas pipelines.",
+   "quote": "Restricts the ability of states, tribes, and local communities to protect local waterways and drinking water supplies threatened by large energy projects, like gas pipelines.",
+   "id": "2026-09-30-selc-1",
+   "passage": {
+    "section": "1110",
+    "text": "is filed not later than 150 days after the date on which"
+   }
+  },
+  {
+   "who": "Heatmap News",
+   "speaker": "Jael Holzman, Heatmap",
+   "outlet": "Heatmap News (The Fight)",
+   "title": "The Trump Administration Is Still Messing with Offshore Wind Farms",
+   "url": "https://heatmap.news/plus/the-fight/hotspots/the-trump-administration-is-still-messing-with-offshore-wind-farms",
+   "date": "2026-10-16",
+   "sections": [
+    "1401",
+    "1402"
+   ],
+   "side": "press_analysis",
+   "stance": "mixed",
+   "claim": "The permit-certainty ban exempts actions required by court order, so it is unresolved whether a court granting a remand motion would trigger the exception or give developers a damages claim.",
+   "quote": "The restriction exempts cases where \"the agency is required to take such action by order of a court.\"",
+   "id": "2026-10-16-heatmap-court-order",
+   "passage": {
+    "section": "1401",
+    "text": "the Federal agency is required to take such action by order of a court of competent jurisdiction"
+   }
+  },
+  {
+   "who": "Heatmap News",
+   "speaker": "Jael Holzman, Heatmap",
+   "outlet": "Heatmap News (The Fight)",
+   "title": "What would happen to Project Jupiter if BAAJA is passed?",
+   "url": "https://heatmap.news/plus/the-fight/spotlight/project-jupiter-permitting",
+   "date": "2026-10-16",
+   "sections": [
+    "2107"
+   ],
+   "side": "press_analysis",
+   "stance": "explains",
+   "claim": "FERC would have to require utilities to charge data centers both for new grid upgrades and for ongoing use of the grid.",
+   "quote": "FERC would have to require utilities to charge data centers not only for the costs of new grid upgrades but the charges incurred for using the grid, too.",
+   "id": "2026-10-16-heatmap-dc-costs",
+   "passage": {
+    "section": "2107",
+    "text": "to require public utilities and transmitting utilities to charge eligible customers seeking transmission service on behalf of computational load owners and computational load operators the embedded cost and the incremental cost of transmission service"
+   }
+  },
+  {
+   "who": "Heatmap News",
+   "speaker": "Jael Holzman, Heatmap",
+   "outlet": "Heatmap News (The Fight)",
+   "title": "What would happen to Project Jupiter if BAAJA is passed?",
+   "url": "https://heatmap.news/plus/the-fight/spotlight/project-jupiter-permitting",
+   "date": "2026-10-16",
+   "sections": [
+    "1110"
+   ],
+   "side": "press_analysis",
+   "stance": "explains",
+   "claim": "The bill could reduce legal risk for future interstate gas pipelines that might serve a large data center, which Holzman says reads as an easier path to more gas generation in the region.",
+   "quote": "It would reduce legal risks associated with future interstate gas pipelines under development expected to potentially branch out to Project Jupiter",
+   "id": "2026-10-16-heatmap-pipelines",
+   "passage": {
+    "section": "1110",
+    "text": "is filed not later than 150 days after the date on which"
+   }
+  },
+  {
+   "who": "Institute for Progress",
+   "speaker": "Aidan Mackenzie, IFP",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permit",
+   "date": "2026-10-12",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "claim": "Section 2301 writes much of the ACHP's existing Section 106 consultation process into statute while setting deadlines and narrowing which actions and effects are reviewed.",
+   "quote": "Section 2301 comprehensively reforms NHPA § 106, codifying much of ACHP's existing regulatory process to protect consultation rights while also streamlining review",
+   "id": "2026-10-12-ifp-deal-1",
+   "passage": {
+    "section": "2301",
+    "text": "substantial Federal control and responsibility"
+   }
+  },
+  {
+   "who": "Institute for Progress",
+   "speaker": "Aidan Mackenzie, IFP",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permit",
+   "date": "2026-10-12",
+   "sections": [
+    "2301"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "claim": "The new 'adverse effect' definition requires an effect that is reasonably foreseeable and directly alters what makes a property historic, which raises the bar for showing harm.",
+   "quote": "This new definition raises the bar for demonstrating that an effect harms a historic property, requiring parties to identify how the effect directly alters a core element that made the property eligible for the Register.",
+   "id": "2026-10-12-ifp-deal-2",
+   "passage": {
+    "section": "2301",
+    "text": "directly alters the characteristics of a historic property"
+   }
+  },
+  {
+   "who": "Institute for Progress",
+   "speaker": "Aidan Mackenzie, IFP",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permit",
+   "date": "2026-10-12",
+   "sections": [
+    "2107"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "claim": "Utilities may not shift a data center's incremental costs to other customers, and the federal floor of 20 MW and up lets states charge more.",
+   "quote": "Utilities may not shift a data center's \"incremental cost\" to other customers.",
+   "id": "2026-10-12-ifp-deal-3",
+   "passage": {
+    "section": "2107",
+    "text": "to require public utilities and transmitting utilities to charge eligible customers seeking transmission service on behalf of computational load owners and computational load operators the embedded cost and the incremental cost of transmission service"
+   }
+  },
+  {
+   "who": "Institute for Progress",
+   "speaker": "Aidan Mackenzie, IFP",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permit",
+   "date": "2026-10-12",
+   "sections": [
+    "2110"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "claim": "Section 2110 directs FERC to start a rulemaking on automated interconnection queue review, leaving the details to the commission.",
+   "quote": "Section 2110 of BAAJA requires FERC to initiate rulemaking to facilitate automated interconnection queue review for large-generator interconnection.",
+   "id": "2026-10-12-ifp-deal-4",
+   "passage": {
+    "section": "2110",
+    "text": "artificial intelligence, machine learning, and automation"
+   }
+  },
+  {
+   "who": "Institute for Progress",
+   "speaker": "Aidan Mackenzie, IFP",
+   "outlet": "Institute for Progress",
+   "title": "How the Permitting Deal Works",
+   "url": "https://ifp.org/how-the-permit",
+   "date": "2026-10-12",
+   "sections": [
+    "2114"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "claim": "Section 2114 requires the Energy Information Administration to track electricity use by data centers, including cryptocurrency mining.",
+   "quote": "Section 2114 of BAAJA requires EIA to track electricity use by data centers, including any demand associated with cryptocurrency mining.",
+   "id": "2026-10-12-ifp-deal-5"
+  },
+  {
+   "who": "Oklahoma Gas & Electric",
+   "speaker": "OG&E lobbying document, as reported by EPI",
+   "outlet": "Energy and Policy Institute",
+   "title": "Utility lobbying against BAAJA transmission reforms revealed",
+   "url": "https://energyandpolicy.org/oge-baaja-transmission-reforms-lobbying/",
+   "date": "2026-10-20",
+   "sections": [
+    "2101",
+    "2104"
+   ],
+   "side": "industry",
+   "stance": "opposes",
+   "claim": "The utility says the state referral process in 2104 would put local planning decisions, which state commissions have overseen, under federal investigation and federal penalties.",
+   "quote": "Although a referral would be initiated by a state, the result would be to place local planning decisions, which have historically been overseen by state commissions, under federal investigation and federal penalties.",
+   "id": "2026-10-20-oge-1",
+   "passage": {
+    "section": "2104",
+    "text": "1 or more States may refer a public utility to the Commission"
+   }
+  },
+  {
+   "who": "Oil Change International",
+   "speaker": "Oil Change International",
+   "outlet": "Oil Change International",
+   "title": "The proposed U.S. infrastructure permitting reform bill would be a disaster for communities and for climate action",
+   "url": "https://oilchange.org/blogs/the-proposed-u-s-infrastructure-permitting-reform-bill-would-be-a-disaster-for-communities-and-for-climate-action/",
+   "date": "2026-10-26",
+   "sections": [
+    "1401",
+    "1402"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "claim": "The group reads the permit certainty sections as letting corporations sue agencies over actions that would reduce the use of federally permitted projects, covering existing permits as well as new ones.",
+   "quote": "This doesn’t just apply to projects permitted after the bill passes, but all projects with any kind of federal permit.",
+   "id": "2026-10-26-oilchange-1",
+   "passage": {
+    "section": "1402",
+    "text": "an empirically demonstrated statistical pattern that"
+   }
+  },
+  {
+   "who": "The Wilderness Society",
+   "speaker": "The Wilderness Society",
+   "outlet": "The Wilderness Society",
+   "title": "6 threats to public lands in the Bipartisan American Affordability and Jobs Act",
+   "url": "https://www.wilderness.org/articles/blog/6-threats-public-lands-bipartisan-american-affordability-and-jobs-act",
+   "date": "2026-10-15",
+   "sections": [
+    "1401"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "claim": "The group says Section 1401 would keep in place permits for mining and drilling projects on public landscapes such as the Greater Chaco region, even where a permit was approved unlawfully.",
+   "quote": "This section bans future administrations from taking any action on permitted projects on public lands, even when permits were approved unlawfully, except under extremely limited circumstances.",
+   "id": "2026-10-15-wilderness-society-1",
+   "passage": {
+    "section": "1401",
+    "text": "shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026"
+   }
+  },
+  {
+   "who": "Earthjustice",
+   "speaker": "Earthjustice",
+   "outlet": "Earthjustice",
+   "title": "Guide to the Impacts of the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+   "date": "2026-10-26",
+   "sections": [
+    "1401"
+   ],
+   "side": "environmental",
+   "stance": "concerns",
+   "claim": "The guide notes that the narrow exceptions to the permit lock-in do not cover a future administration concluding that a prior administration issued a permit in violation of federal law.",
+   "quote": "none cover a situation in which a future administration concludes that a prior administration violated federal law in issuing a given permit or authorization.",
+   "id": "2026-10-26-earthjustice-1",
+   "passage": {
+    "section": "1401",
+    "text": "the Federal agency is required to take such action by order of a court of competent jurisdiction"
+   }
+  },
+  {
+   "who": "Earthjustice",
+   "speaker": "Earthjustice",
+   "outlet": "Earthjustice",
+   "title": "Guide to the Impacts of the Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://earthjustice.org/feature/bipartisan-american-affordability-and-jobs-act-2026-impact-guide",
+   "date": "2026-10-26",
+   "sections": [
+    "2101"
+   ],
+   "side": "environmental",
+   "stance": "supports",
+   "claim": "The guide says the stronger FERC backstop siting authority could help resolve conflicts and delays from state permitting of large multi-state transmission lines.",
+   "quote": "Strengthens the Federal Energy Regulatory Commission’s (FERC) backstop permitting authority, which could help resolve conflicts and delays arising from state permitting processes",
+   "id": "2026-10-26-earthjustice-2",
+   "passage": {
+    "section": "2101",
+    "text": "issue one or more permits to individual or joint applicants for the construction or modification of electric transmission facilities necessary in the national interest"
+   }
+  },
+  {
+   "who": "Center for Western Priorities",
+   "speaker": "Center for Western Priorities",
+   "outlet": "Center for Western Priorities",
+   "title": "DOJ moves to kill offshore wind permits as Congress weighs permitting bill",
+   "url": "https://westernpriorities.org/2026/10/doj-moves-to-kill-offshore-wind-permits-as-congress-weighs-permitting-bill/",
+   "date": "2026-10-23",
+   "sections": [
+    "1401"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "claim": "The group says that under the lock-in standard the wind and solar cancellations would stand while future approvals for data centers, drilling and nuclear projects would be nearly impossible to undo.",
+   "quote": "Trump’s wind and solar cancellations would stand, while the data centers, drilling, and nuclear projects Interior Secretary Doug Burgum approves over the next two years would be nearly impossible for a future administration to undo.",
+   "id": "2026-10-23-cwp-1",
+   "passage": {
+    "section": "1401",
+    "text": "clear and convincing evidence that 1 or more of the matters"
+   }
+  },
+  {
+   "who": "Theodore Roosevelt Conservation Partnership",
+   "speaker": "TRCP",
+   "outlet": "Theodore Roosevelt Conservation Partnership",
+   "title": "What the Senate’s Permitting Bill Could Mean for Hunters and Anglers",
+   "url": "https://www.trcp.org/2026/10/23/what-the-senates-permitting-bill-could-mean-for-hunters-and-anglers/",
+   "date": "2026-10-23",
+   "sections": [
+    "1401",
+    "1402"
+   ],
+   "side": "environmental",
+   "stance": "concerns",
+   "claim": "TRCP says the permit certainty language as drafted locks in place nearly any permit a federal agency issues, which limits adaptive management for fish and wildlife.",
+   "quote": "as drafted the language effectively locks in place nearly any permit issued by a federal agency.",
+   "id": "2026-10-23-trcp-1",
+   "passage": {
+    "section": "1401",
+    "text": "shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026"
+   }
+  },
+  {
+   "who": "Aaron Weiss",
+   "speaker": "Aaron Weiss, Center for Western Priorities",
+   "outlet": "Common Dreams",
+   "title": "Analysis Warns Bipartisan Senate Permitting Bill Would Lock In Trump-Era Data Center, Fossil Fuel Approvals",
+   "url": "https://www.commondreams.org/news/senate-permitting-bill",
+   "date": "2026-10-22",
+   "sections": [
+    "1401",
+    "1110"
+   ],
+   "side": "environmental",
+   "stance": "opposes",
+   "claim": "Weiss says that when a court sends an environmental review back, construction continues and Section 1401 bars the agency from changing the permit, and challengers get 150 days to sue.",
+   "quote": "Challengers also get just 150 days to sue.",
+   "id": "2026-10-22-weiss-1",
+   "passage": {
+    "section": "1401",
+    "text": "shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026"
+   }
+  },
+  {
+   "id": "2026-10-21-cgep-timelines-1",
+   "sections": [
+    "1106",
+    "1107",
+    "2101"
+   ],
+   "side": "think_tank",
+   "stance": "explains",
+   "who": "Columbia University Center on Global Energy Policy",
+   "speaker": "Jack Andreasen Cavanaugh",
+   "outlet": "Columbia University Center on Global Energy Policy",
+   "title": "Project timeline savings under BAAJA (interactive and data)",
+   "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+   "date": "2026-10-21",
+   "claim": "CGEP's replay of past transmission cases finds the transmission archetype saves 64 months up to the federal decision.",
+   "quote": "The bill reduces the timeline to the federal decision by 64 months in the archetype, compared with 60.7 months in the largest replay (Bordertown to California, a 10-mile, 120 kV line).",
+   "passage": {
+    "section": "1106",
+    "text": "the lead agency shall publish an environmental impact statement, if applicable, not later than the date that is 2 years after the earlier of"
+   }
+  },
+  {
+   "id": "2026-10-21-cgep-timelines-2",
+   "sections": [
+    "2101"
+   ],
+   "side": "think_tank",
+   "stance": "explains",
+   "who": "Columbia University Center on Global Energy Policy",
+   "speaker": "Jack Andreasen Cavanaugh",
+   "outlet": "Columbia University Center on Global Energy Policy",
+   "title": "Project timeline savings under BAAJA (transmission total)",
+   "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+   "date": "2026-10-21",
+   "claim": "State siting and the FERC backstop account for most of the transmission archetype's 96-month timeline, and the replays exclude them.",
+   "quote": "The replays therefore exclude state siting and the FERC backstop permit (Sec. 2101), which account for most of the transmission archetype's 96-month timeline.",
+   "passage": {
+    "section": "2101",
+    "text": "issue one or more permits to individual or joint applicants for the construction or modification of electric transmission facilities necessary in the national interest"
+   }
+  },
+  {
+   "id": "2026-10-21-cgep-timelines-3",
+   "sections": [
+    "1106"
+   ],
+   "side": "think_tank",
+   "stance": "mixed",
+   "who": "Columbia University Center on Global Energy Policy",
+   "speaker": "Jack Andreasen Cavanaugh",
+   "outlet": "Columbia University Center on Global Energy Policy",
+   "title": "Project timeline savings under BAAJA (limits)",
+   "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+   "date": "2026-10-21",
+   "claim": "CGEP counts only months saved and cannot count projects BAAJA might enable that current law stops.",
+   "quote": "The estimates count only months saved, not projects that BAAJA might have enabled to proceed but that current law stopped.",
+   "passage": {
+    "section": "1106",
+    "text": "the lead agency shall publish an environmental impact statement, if applicable, not later than the date that is 2 years after the earlier of"
+   }
+  },
+  {
+   "id": "2026-10-05-abundant-future-1",
+   "sections": [
+    "2101"
+   ],
+   "side": "commentator",
+   "stance": "supports",
+   "who": "The Abundant Future",
+   "speaker": "Baillee Brown",
+   "outlet": "The Abundant Future",
+   "title": "The Senate Permitting Deal Is Abundance Policymaking",
+   "url": "https://theabundantfuture.substack.com/p/the-senate-permitting-deal-is-abundance",
+   "date": "2026-10-05",
+   "claim": "Brown reads BAAJA as letting federal regulators approve interstate lines after states have a year to act.",
+   "quote": "BAAJA lets federal regulators approve interstate transmission lines after states have had a year to act.",
+   "passage": {
+    "section": "2101",
+    "text": "issue one or more permits to individual or joint applicants for the construction or modification of electric transmission facilities necessary in the national interest"
+   }
+  },
+  {
+   "id": "2026-10-08-grist-1",
+   "sections": [
+    "1106",
+    "1401"
+   ],
+   "side": "press_analysis",
+   "stance": "explains",
+   "who": "Grist",
+   "speaker": "Jake Bittle, Austin Corona",
+   "outlet": "Grist",
+   "title": "The bipartisan energy bill tearing the climate movement apart",
+   "url": "https://grist.org/politics/permitting-reform-baaja-climate-debate-clean-energy-fossil-fuels/",
+   "date": "2026-10-08",
+   "claim": "Grist sums up the bill as weakening some environmental laws, speeding agency deadlines and making approved projects harder to cancel.",
+   "quote": "The bill does this by weakening some of the nation’s bedrock environmental laws, speeding up the timeline for government agencies to issue permits, and making it harder to cancel projects that have already gotten federal approval.",
+   "passage": {
+    "section": "1401",
+    "text": "shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026"
+   }
+  },
+  {
+   "id": "2026-10-23-revelator-1",
+   "sections": [
+    "1105",
+    "1106",
+    "1110"
+   ],
+   "side": "legal_analyst",
+   "stance": "opposes",
+   "who": "The Revelator",
+   "speaker": "Alejandro Camacho, Robert Glicksman",
+   "outlet": "The Revelator",
+   "title": "A 'Bipartisan' Bill to Dismantle the Nation's Bedrock Environmental Law",
+   "url": "https://therevelator.org/baaja",
+   "date": "2026-10-23",
+   "claim": "Camacho and Glicksman say BAAJA hollows out NEPA, including courts' ability to enforce it.",
+   "quote": "the bill is an out-and-out assault on the National Environmental Policy Act, the bedrock environmental law that has for more than 50 years required the federal government to look before it leaps.",
+   "passage": {
+    "section": "1110",
+    "text": "is filed not later than 150 days after the date on which"
+   }
+  },
+  {
+   "id": "2026-10-20-epi-oge-rofr-1",
+   "sections": [
+    "2105"
+   ],
+   "side": "industry",
+   "stance": "opposes",
+   "who": "Oklahoma Gas & Electric",
+   "speaker": "David Pomerantz",
+   "outlet": "Energy and Policy Institute",
+   "title": "Utility lobbying against BAAJA transmission reforms revealed",
+   "url": "https://energyandpolicy.org/oge-baaja-transmission-reforms-lobbying/",
+   "date": "2026-10-20",
+   "claim": "The utility tells Senate offices it opposes ending federal or state right of first refusal protections, which Section 2105 would prohibit for regionally selected lines.",
+   "quote": "OG&E also says that it “strongly opposes eliminating federal or state ROFR [right of first refusal] protections.”",
+   "passage": {
+    "section": "2105",
+    "text": "a Federal right of first refusal is prohibited"
+   }
+  },
+  {
+   "id": "2026-10-21-flegal-x-1402",
+   "sections": [
+    "1402"
+   ],
+   "side": "think_tank",
+   "stance": "supports",
+   "who": "Jane Flegal",
+   "speaker": "Jane Flegal, Searchlight Institute",
+   "outlet": "X",
+   "title": "Thread on the disparate treatment provision",
+   "url": "https://x.com/JaneAFlegal/status/2112881718592180646",
+   "date": "2026-10-21",
+   "claim": "A developer suing under Section 1402 must show missed deadlines or improper denials, a sharp rise over past rates and intent to target a project type, so past approval rates are evidence and not a quota.",
+   "quote": "The old approval rate is *not a quota,* but can be used as evidence of targeting.",
+   "passage": {
+    "section": "1402",
+    "text": "an empirically demonstrated statistical pattern that"
+   }
   }
  ]
 }

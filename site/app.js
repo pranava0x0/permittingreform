@@ -210,7 +210,7 @@
         const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
         if (window.PR_NEWS) { done(); return; }
         const tag = document.createElement("script");
-        tag.src = "data/news.js?v=3";
+        tag.src = "data/news.js?v=6";
         tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
         tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
         document.head.appendChild(tag);
@@ -227,7 +227,7 @@
     if (!takesPromise) {
       takesPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/takes.js?v=3";
+        tag.src = "data/takes.js?v=6";
         tag.onload = () => (window.PR_TAKES ? resolve(window.PR_TAKES) : reject(new Error("readings did not load")));
         tag.onerror = () => { takesPromise = null; reject(new Error("readings could not be fetched")); };
         document.head.appendChild(tag);
@@ -259,6 +259,15 @@
     } }, el("summary", null, heading), block);
   }
 
+  /* A page's secondary filters sit behind one control (DESIGN.md, 2026-10-21). It opens
+     on its own while one of them is set, and remembers being opened by hand. */
+  function moreFilters(active, rows) {
+    const key = "more:" + location.hash.split("/")[1];
+    return el("details", { class: "more-filters", open: active > 0 || foldOpen.has(key), ontoggle: (ev) => {
+      if (ev.currentTarget.open) foldOpen.add(key); else foldOpen.delete(key);
+    } }, el("summary", null, active ? "More filters (" + active + " on)" : "More filters"), rows);
+  }
+
   /* ---------- overview ---------- */
 
   /* Today in the viewer's time zone as YYYY-MM-DD. toISOString() is UTC, which
@@ -279,40 +288,35 @@
     const o = D.overview;
     const m = D.meta;
     const pos = D.recent.positions;
-    /* One line at 375px: the letters count lives on the Positions page; with it the line wrapped. */
-    const posLink = pos ? el("p", { class: "sec-links" }, el("a", { href: "#/positions" },
-      "Who's for and against: " + pos.supports + " support, " + pos.opposes + " oppose")) : null;
+    // A first-time reader gets the name, what the bill does and the next vote, in that order, before any control.
     const head = el("div", { class: "lede overview-lede" },
-      el("div", { class: "bill-heading" }, el("h1", null, "BAAJA"),
-        el("details", { class: "bill-details" },
-          el("summary", null, "Bill details"),
-          el("p", null, m.short_title),
-          el("p", { class: "facts" }, num(m.pages) + " pages · " + m.sections + " sections · released " + S.formatDate(m.released)),
-          el("p", null, pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release")))),
+      el("h1", null, "BAAJA"),
+      el("p", { class: "subtitle" }, m.short_title),
+      el("p", { class: "summary" }, o.summary.text + " ", el("span", { class: "sources-inline" }, ext(o.summary.source.url, o.summary.source.label))),
       // A scheduled date in the past says so, rather than reading as upcoming.
-      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next: " : "Was scheduled for "),
+      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next vote: " : "Was scheduled for "),
         S.formatDate(o.next.date) + ". " + o.next.text + " ",
-        el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null,
-      o.next ? posLink : null,
-      el("p", { class: "note" }, "Proposed law", " · ",
-        el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status")),
-      o.next ? null : posLink,
-      searchBox(""),
-      D.compare.bills ? el("p", { class: "sec-links" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Data center bills: compare costs, connection and reporting")) : null);
+        el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null);
+    const posRow = pos ? el("a", { class: "link-row", href: "#/positions" },
+      "Who's for and against", el("span", { class: "row-count" }, pos.supports + " support · " + pos.opposes + " oppose")) : null;
+    const about = el("p", { class: "note overview-note" }, "This is a proposed law. " + num(m.pages) + " pages, " + m.sections + " sections, released " + S.formatDate(m.released) + ". ",
+      pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release"), " · ",
+      el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status"));
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
-      el("h2", { id: "h-status" }, "Status"),
+      el("h2", { id: "h-status" }, "Where it stands"),
       el("ul", { class: "status-list" }, o.status.points.map((p) =>
         el("li", null, p.text + " ", el("span", { class: "sources-inline" }, ext(p.source.url, p.source.label))))));
 
     const provisions = el("section", { class: "block", "aria-labelledby": "h-prov" },
-      el("h2", { id: "h-prov" }, "Main provisions"),
-      el("ol", { class: "provisions" }, o.headlines.map((h) =>
+      el("h2", { id: "h-prov" }, "What it changes"),
+      el("ul", { class: "provisions" }, o.headlines.map((h) =>
         el("li", null,
           el("details", { class: "provision-detail" },
             el("summary", null, el("h3", null, h.title)),
             el("p", null, citedText(h)),
-            el("p", { class: "where" }, secLinks(h.sections), readingsLinks(h.sections)))))));
+            el("p", { class: "where" }, secLinks(h.sections), readingsLinks(h.sections)),
+            h.id === "datacenters" && D.compare.bills ? el("p", { class: "where" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Compare data center bills")) : null)))));
 
     const clocks = el("section", { class: "block", "aria-labelledby": "h-clocks" },
       el("h2", { id: "h-clocks" }, "Deadlines"),
@@ -365,7 +369,9 @@
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.recent.counts.timeline + " events")))));
 
-    return [head, provisions, foldBlock(status), foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest)];
+    return [head, el("div", { class: "rows" }, foldBlock(status), posRow), provisions,
+      el("section", { class: "block", "aria-labelledby": "h-more" }, el("h2", { id: "h-more" }, "More detail"),
+        el("div", { class: "rows" }, foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest))), about];
   }
 
   /* ---------- bill: index, section, search ---------- */
@@ -497,7 +503,7 @@
     ensureTakes().then((T) => fill(host, takesList(T, s))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "sec-part", "aria-labelledby": "h-takes" },
       el("h2", { id: "h-takes" }, "What others say it would do", el("span", { class: "chip-count" }, s.takes)),
-      el("p", { class: "muted" }, "Readings from industry, advocates, lawyers and analysts, quoted from their own words. They are claims about effects, not findings of this site. The summary above says what the text says."),
+      el("p", { class: "muted" }, "Industry groups, advocates, lawyers and analysts on what this section would do, in their own words."),
       host);
   }
 
@@ -760,7 +766,7 @@
     return [
       el("div", { class: "lede" }, el("h1", null, "Comparison", el("span", { class: "credit-inline" }, "AI-written"))),
       billsOnly ? null : versions, filters, billsOnly ? null : withChips("main", c.versions),
-      groupId ? tables : tables.map(foldBlock), bills && (billsOnly || !groupId) ? renderBills(bills) : null, groupId ? null : foldBlock(lists)];
+      tables, bills && (billsOnly || !groupId) ? renderBills(bills) : null, groupId ? null : lists];
   }
 
   /* Long lists open brief: two lines of summary, the rest behind More. */
@@ -829,7 +835,7 @@
       el("div", { class: "lede" }, el("h1", null, "Communities", el("span", { class: "credit-inline" }, "AI-written")),
         c.intro ? el("p", null, c.intro) : null,
         el("p", { class: "facts", role: "status" }, rows.length + " of " + c.rows.length + " changes")),
-      whoChips, effectChips,
+      whoChips, moreFilters((cmEffect !== "all") + !brief, effectChips),
       rows.length ? body : el("p", { class: "empty" }, "No changes match.")];
   }
 
@@ -883,8 +889,61 @@
       el("div", { class: "lede" }, el("h1", null, "Data centers & speed", el("span", { class: "credit-inline" }, "AI-written")),
         d.intro ? el("p", null, d.intro) : null,
         el("p", { class: "facts", role: "status" }, rows.length + " of " + d.rows.length + " provisions")),
-      whoChips, effectChips,
+      whoChips, moreFilters((dcEffect !== "all") + !brief, effectChips),
       rows.length ? body : el("p", { class: "empty" }, "No provisions match.")];
+  }
+
+  /* ---------- speed ---------- */
+
+  /* What research found slows projects, row by row. A row's heading carries its
+     headline figure, so the collapsed list answers "what slows projects" without a tap.
+     The bill appears only as passages the build located; readings load with takes.js. */
+  function speedEvidence(ev) {
+    return el("li", { class: "voice" },
+      el("p", { class: "dispute-claim" }, ev.finding),
+      el("blockquote", { class: "voice-quote" }, ev.quote),
+      el("p", { class: "voice-who" }, el("strong", null, ev.org), " · ", ext(ev.url, ev.title), ", " + ev.date.slice(0, 4) +
+        (ev.period ? " · data: " + ev.period : ""),
+        ev.lk ? el("span", { class: "unchecked" }, " (" + LINK_NOTE[ev.lk] + ")") : null));
+  }
+
+  function speedRow(b) {
+    const head = el("span", { class: "event-head" },
+      el("span", { class: "event-title" }, b.title),
+      el("span", { class: "pos-tally" }, b.headline));
+    const readings = el("div", null);
+    if ((b.readings || []).length) {
+      ensureTakes().then((T) => {
+        const list = b.readings.map((id) => T.takes.find((t) => t.id === id)).filter(Boolean);
+        fill(readings, el("div", { class: "voices" },
+          el("h4", null, "Readings of the bill on this", el("span", { class: "chip-count" }, list.length)),
+          el("ul", null, list.map((t) => disputeReading(T, t)))));
+      }).catch((err) => fill(readings, failure(err, "The outside readings")));
+    }
+    return openRow("pos-issue speed-row", "speed-" + b.id, head, [
+      el("div", { class: "voices" }, el("h4", null, "What research found", el("span", { class: "chip-count" }, b.evidence.length)),
+        el("ul", null, b.evidence.map(speedEvidence))),
+      b.disagreement ? el("p", { class: "muted" }, b.disagreement) : null,
+      el("div", { class: "dispute-text" }, el("h4", null, "The bill's text"),
+        (b.passages || []).map((p) => el("figure", { class: "quote small" },
+          el("blockquote", null, p.text),
+          el("figcaption", null, "Sec. " + p.section, p.c ? [" · ", claimCite(p.section, p.c)] : null))),
+        b.sections.length
+          ? el("p", { class: "where" }, secLinks(b.sections), readingsLinks(b.sections))
+          : el("p", { class: "muted" }, "This site found no section aimed at this cause.")),
+      readings]);
+  }
+
+  function renderSpeed() {
+    const d = D.speed;
+    if (!d) return [el("div", { class: "lede" }, el("h1", null, "What slows projects")), el("p", { class: "empty" }, "Not yet compiled.")];
+    const studies = new Set();
+    d.blockers.forEach((b) => b.evidence.forEach((ev) => studies.add(ev.url)));
+    return [
+      el("div", { class: "lede" }, el("h1", null, "What slows projects"),
+        el("p", null, d.intro),
+        el("p", { class: "facts", role: "status" }, plural(d.blockers.length, "cause", "causes") + " · " + plural(studies.size, "study or dataset", "studies and datasets"))),
+      el("div", { class: "pos-list" }, d.blockers.map(speedRow))];
   }
 
   /* ---------- timeline ---------- */
@@ -950,6 +1009,10 @@
     const matching = all.filter((e) => (tlBranch === "all" || e.branch === tlBranch) && (!tlMilestones || e.milestone) &&
       (tlTopic === "all" || (e.topics || []).indexOf(tlTopic) >= 0));
     const list = month ? matching.filter((e) => monthKey(e) === month) : matching;
+    /* A linked event past the current batch widens this render's batch to reach it, so the link always opens its event.
+       tlLimit itself stays put, so leaving the link for the full list starts again at 12. */
+    const at = picked ? list.findIndex((e) => e.id === picked) : -1;
+    const limit = at >= tlLimit ? Math.ceil((at + 1) / 12) * 12 : tlLimit;
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Branch" },
       BRANCHES.filter((b) => b[0] === "all" || counts[b[0]]).map((b) =>
         chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
@@ -969,7 +1032,7 @@
       briefChip());
     const out = [];
     let year = null;
-    list.slice(0, tlLimit).forEach((e) => {
+    list.slice(0, limit).forEach((e) => {
       const y = e.date.slice(0, 4);
       if (y !== year) { year = y; out.push(el("h2", { class: "year", id: "y-" + y }, y)); }
       const body = el("div", { class: "event-body", id: "eb-" + e.id },
@@ -994,16 +1057,16 @@
     });
     const status = month
       ? monthName(month, true) + ": " + list.length + (list.length === 1 ? " event" : " events")
-      : "Newest " + Math.min(tlLimit, list.length) + " of " + list.length + (list.length === all.length ? " events" : " matching events (" + all.length + " total)");
+      : "Newest " + Math.min(limit, list.length) + " of " + list.length + (list.length === all.length ? " events" : " matching events (" + all.length + " total)");
     return [
       el("div", { class: "lede" }, el("h1", null, "Timeline")),
       timelineLine(month, picked, status),
-      filters, more,
+      filters, moreFilters((tlTopic !== "all") + tlMilestones + !brief, more),
       list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
-      list.length > tlLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
-        const next = list[tlLimit].id; tlLimit += 12; route();
+      list.length > limit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
+        const next = list[limit].id; tlLimit = limit + 12; route();
         const node = document.getElementById("ev-" + next); node.tabIndex = -1; node.focus();
-      } }, "Show " + Math.min(12, list.length - tlLimit) + " more events") : null];
+      } }, "Show " + Math.min(12, list.length - limit) + " more events") : null];
   }
 
   /* Milestones on one line, placed by date; the shape says who acted. A tap opens the event in its month. */
@@ -1217,7 +1280,7 @@
     return el("ul", { class: "media-list" + (brief ? " brief" : "") }, list.map((it) => {
       const g = MEDIA_TYPES.find((t) => t[0] === mediaGroup(it.type));
       return el("li", { class: "media-item" },
-        el("h3", null, ext(it.url, it.title)),
+        el("h2", null, ext(it.url, it.title)),
         el("p", { class: "feed-meta" }, it.outlet + (it.author ? " · " + it.author : "") + " · " + S.formatDate(it.date) + " · " + g[1]),
         it.summary ? el("p", { class: "lead" }, it.summary) : null,
         el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
@@ -1266,10 +1329,10 @@
       chip("All topics", mediaTopic === "all", () => { mediaTopic = "all"; mediaLimit = MEDIA_PAGE; route(); }),
       Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
         chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; mediaLimit = MEDIA_PAGE; route(); }, topicCounts[t])));
-    const topicBox = el("details", { class: "filter-wrap", open: true },
-      el("summary", null, "Topics"), topicChips);
     refresh();
-    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), wordFilter, typeChips, stanceChips, topicBox, listHost];
+    const active = (mediaType !== "all") + mediaVisual + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
+    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), wordFilter,
+      moreFilters(active, [typeChips, stanceChips, topicChips]), listHost];
   }
 
   /* ---------- positions ---------- */
@@ -1370,13 +1433,13 @@
 
   /* Disputed readings: the bill's words first, then each side's reading in its
      own words. Readings come from takes.js, loaded when the section renders. */
-  const DISPUTE_SIDES = [["against", "Opponents and critics read it as"], ["for", "Supporters read it as"]];
+  const DISPUTE_SIDES = [["against", "Critics"], ["for", "Supporters"]];
 
   function disputeReading(T, t) {
-    return el("li", { class: "voice" },
-      el("p", { class: "voice-who" }, el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " ", el("strong", null, t.who), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
-      el("p", { class: "dispute-claim" }, t.claim),
-      el("blockquote", { class: "voice-quote" }, t.quote));
+    return el("li", { class: "voice dispute-reading" },
+      el("p", { class: "dispute-who" }, el("strong", null, t.who)),
+      el("p", { class: "dispute-meta" }, el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance]), " · " + T.sides[t.side] + " · ", ext(t.url, t.outlet), ", " + datedShort(t.date)),
+      el("blockquote", { class: "voice-quote dispute-quote" }, t.quote));
   }
 
   function disputeRow(T, issue, d) {
@@ -1388,7 +1451,10 @@
     const con = against.filter((x) => x === "concerns").length;
     const head = el("span", { class: "event-head" },
       el("span", { class: "event-title" }, d.question),
-      el("span", { class: "pos-tally" }, opp + " against" + (con ? " · " + con + " concerned" : "") + " · " + (d.readings.for || []).length + " for"));
+      el("span", { class: "pos-tally" },
+        el("span", { class: "stance-opposes" }, opp + " against"),
+        con ? [" · ", el("span", { class: "stance-concerns" }, con + " concerned")] : null,
+        " · ", el("span", { class: "stance-supports" }, (d.readings.for || []).length + " for")));
     return openRow("pos-dispute", "dispute-" + issue.id + "-" + d.id, head, [
       d.passages.length
         ? el("div", { class: "dispute-text" }, el("h4", null, "The bill says"),
@@ -1398,9 +1464,9 @@
         : el("p", { class: "muted" }, d.note),
       el("div", { class: "dispute-sides" }, DISPUTE_SIDES.map((s) => {
         const list = (d.readings[s[0]] || []).map((id) => T.takes.find((t) => t.id === id)).filter(Boolean);
-        return el("div", { class: "voices" },
-          el("h4", null, s[1], el("span", { class: "chip-count" }, list.length)),
-          list.length ? el("ul", null, list.map((t) => disputeReading(T, t))) : el("p", { class: "empty" }, "No reading on this side found yet."));
+        return el("div", { class: "voices dispute-side side-" + s[0] },
+          el("h4", null, s[1] + " (" + list.length + ")"),
+          list.length ? el("ul", null, list.map((t) => disputeReading(T, t))) : el("p", { class: "empty" }, "None found yet."));
       }))]);
   }
 
@@ -1408,12 +1474,29 @@
     const issues = ((D.positions && D.positions.issues) || []).filter((i) => i.disputes && i.disputes.length);
     if (!issues.length) return null;
     const host = el("div", null, loading("Loading readings"));
-    ensureTakes().then((T) => fill(host, issues.map((i) => [
-      el("h3", { class: "dispute-issue" }, i.title),
-      el("div", { class: "pos-list" }, i.disputes.map((d) => disputeRow(T, i, d)))]))).catch((err) => fill(host, failure(err, "The outside readings")));
+    /* One folded row per issue, then four questions and a chip for the rest, as with the voices below:
+       the 375px budget held two issues open but not four (2026-10-26). */
+    ensureTakes().then((T) => fill(host, el("div", { class: "pos-list" }, issues.map((i) => {
+      const rows = i.disputes.map((d, n) => {
+        const row = disputeRow(T, i, d);
+        row.hidden = n >= VOICES_SHOWN;
+        return row;
+      });
+      const rest = rows.length - VOICES_SHOWN;
+      const head = el("span", { class: "event-head" },
+        el("span", { class: "event-title" }, i.title),
+        el("span", { class: "pos-tally" }, plural(rows.length, "disputed question", "disputed questions")));
+      return openRow("dispute-group", "disputes-" + i.id, head, [
+        el("div", { class: "pos-list" }, rows),
+        rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: (ev) => {
+          rows.forEach((r) => { r.hidden = false; });
+          ev.currentTarget.remove();
+          rows[VOICES_SHOWN].querySelector(".event-toggle").focus();
+        } }, "Show " + rest + " more questions") : null]);
+    })))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "block", "aria-labelledby": "h-disputes" },
-      el("h2", { id: "h-disputes" }, "Disputed readings"),
-      el("p", { class: "facts" }, "Where supporters and opponents read the same words differently. Each row shows the bill text first, then each side's reading in its own words. This site does not decide which reading is right."),
+      el("h2", { id: "h-disputes" }, "Where the two sides disagree"),
+      el("p", { class: "facts" }, "Each question quotes the bill, then what critics and supporters say it means, in their own words. We don't say who is right."),
       host);
   }
 
@@ -1533,6 +1616,7 @@
     const heads = Array.prototype.slice.call(view.querySelectorAll("h2"));
     if (heads.length < 3) return;
     after.after(el("nav", { class: "jumps", "aria-label": "On this page" },
+      el("span", { class: "jumps-label", "aria-hidden": "true" }, "On this page:"),
       heads.map((h) => el("button", { type: "button", onclick: () => {
         const fold = h.closest("details.section-fold");
         if (fold) fold.open = true;
@@ -1544,13 +1628,13 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", timeline: "Timeline", positions: "Positions", people: "People", media: "Media", method: "Method" };
+  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Media", method: "Method" };
   /* Five top tabs fit a phone's width; the pages under a group share a subtab row.
      Each page keeps its own route, so existing links still work. */
   const GROUPS = [
     { key: "overview", pages: ["overview"] },
     { key: "bill", label: "Bill pages", pages: [["bill", "Sections"], ["compare", "Compare with earlier bills"]] },
-    { key: "effects", label: "Effects pages", pages: [["datacenters", "Data centers"], ["communities", "Communities"]] },
+    { key: "effects", label: "Effects pages", pages: [["datacenters", "Data centers"], ["speed", "Speed"], ["communities", "Communities"]] },
     { key: "news", label: "News pages", pages: [["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]] },
     { key: "method", pages: ["method"] },
   ];
@@ -1593,6 +1677,7 @@
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
     else if (tab === "communities") nodes = renderCommunities();
     else if (tab === "datacenters") nodes = renderDataCenters();
+    else if (tab === "speed") nodes = renderSpeed();
     else if (tab === "timeline") {
       /* Arriving at a linked event clears filters that could hide it; later filter changes still apply. */
       if (parts[2] && location.hash !== lastPath) { tlBranch = "all"; tlTopic = "all"; tlMilestones = false; }
@@ -1612,9 +1697,8 @@
     else nodes = renderOverview();
     fill(view, subtabs(tab), nodes);
     view.className = "view view-" + tab;
-    if (tab === "overview") jumpRow(view.querySelector(".lede"));
-    else if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
-    else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities" || tab === "datacenters") jumpRow(view.querySelector(".lede"));
+    if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
+    else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities") jumpRow(view.querySelector(".lede"));
     if (tab === "timeline") {
       const target = tlRefocus && view.querySelector(tlRefocus);
       if (target && lastPath && lastPath.indexOf("#/timeline") === 0) target.focus({ preventScroll: true });

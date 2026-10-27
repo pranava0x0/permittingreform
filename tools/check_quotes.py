@@ -141,6 +141,9 @@ def web_quotes(core: dict) -> list[dict]:
             rows.append({"where": f"media.{it['id']}", "text": q["text"], "speaker": q.get("speaker", ""), "url": it["url"]})
     for t in (core.get("takes") or {}).get("takes", []):
         rows.append({"where": f"takes.{t['id']}", "text": t["quote"], "speaker": t.get("speaker", ""), "url": t["url"]})
+    for b in (core.get("speed") or {}).get("blockers", []):
+        for i, ev in enumerate(b["evidence"]):
+            rows.append({"where": f"speed.{b['id']}.{i}", "text": ev["quote"], "speaker": ev["org"], "url": ev["url"]})
     bills = core["compare"].get("bills") or {"rows": []}
     for r in bills["rows"]:
         for k, cell in r.items():

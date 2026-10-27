@@ -1,0 +1,759 @@
+{
+ "generated": "2026-10-26",
+ "blockers": [
+  {
+   "id": "nepa-eis-duration",
+   "title": "Environmental impact statements take years",
+   "sections": [
+    "1105",
+    "1106",
+    "1107",
+    "1108",
+    "1109",
+    "1132"
+   ],
+   "mapping_note": "Judgment: 1105 (level of review), 1106 (deadlines, page limits), 1107 (programmatic documents), 1108 (other agencies' categorical exclusions), 1109 (applications) and 1132 (tracker) all act on EIS timing.",
+   "evidence": [
+    {
+     "org": "Council on Environmental Quality",
+     "authors": "CEQ",
+     "title": "New data shows Biden-Harris Administration improved speed of federal permitting and environmental reviews (news release on CEQ EIS timelines report)",
+     "url": "https://bidenwhitehouse.archives.gov/ceq/news-updates/2025/01/13/new-data-shows-biden-harris-administration-improved-speed-of-federal-permitting-and-environmental-reviews",
+     "date": "2025-01-13",
+     "period": "final EISs 2010-2024",
+     "finding": "CEQ reported a median of 2.2 years from notice of intent to final EIS for EISs finished in 2024; the 2017-2020 median was 3.1 years and 2021-2024 was 2.4 years.",
+     "quote": "For final EISs issued in 2024, the median time from NOI to final EIS was 2.2 years and approximately 41 percent of final EISs issued in 2024 were completed in 2 years or less.",
+     "kind": "government report"
+    },
+    {
+     "org": "Center for Growth and Opportunity (Utah State University)",
+     "authors": "Jennifer Morales, Steffen Rigby",
+     "title": "NEPA Timelines for Clean Energy Projects: Understanding Delays in Clean Energy Development",
+     "url": "https://www.thecgo.org/research/nepa-timelines-for-clean-energy-projects-understanding-delays-in-clean-energy-development/",
+     "date": "2023-06-13",
+     "period": "89 clean energy EISs with notices of intent 2009-2022",
+     "finding": "CGO found clean-energy EISs averaged about three years from notice of intent to record of decision, with solar fastest (just under two years to final EIS) and hydroelectric slowest (5.1 years).",
+     "quote": "The average timeline across all energy types is approximately three years, excluding projects that have yet to be completed.",
+     "kind": "dataset"
+    },
+    {
+     "org": "Resources for the Future",
+     "authors": "Arthur Fraas, Emily Joiner, Brielle Lee, Krystal Liu",
+     "title": "Most Renewable Projects Overcome Lawsuits and Move Through Federal Review Faster on Average than Other Infrastructure Projects (press release on RFF NEPA papers)",
+     "url": "https://www.rff.org/news/press-releases/most-renewable-projects-overcome-lawsuits-and-move-through-federal-review-faster-on-average-than-other-infrastructure-projects/",
+     "date": "2025-08-05",
+     "period": "wind, solar and geothermal projects with EISs, 2010-2023",
+     "finding": "RFF found solar and wind EISs averaged 26 and 43 months against 54 months across all project types, and most wind, solar and geothermal projects took over five years to become operational.",
+     "quote": "solar and wind projects respectively take 26 and 43 months to get through NEPA",
+     "kind": "study"
+    },
+    {
+     "org": "Columbia University Center on Global Energy Policy",
+     "authors": "Jack Andreasen Cavanaugh",
+     "title": "Project timeline savings under BAAJA (assumptions tab quoting CEQ data)",
+     "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+     "date": "2026-10-21",
+     "period": "CEQ EIS data 2010-2024; agency reports June 2023-June 2025",
+     "finding": "CGEP, citing CEQ, put the 2019-2024 median EIS at 2.8 years, and noted agencies reported two EISs and 153 assessments missing the 2023 statutory deadlines between June 2023 and June 2025.",
+     "quote": "Between June 2023 and June 2025, agencies reported two EISs and 153 assessments that missed deadlines",
+     "kind": "dataset"
+    }
+   ],
+   "disagreement": "CEQ medians run NOI to final EIS (2.2 to 2.8 years depending on window); CGO and RFF measure to record of decision or operation, so the figures are not comparable. The CEQ report PDF itself could not be fetched; the figures come from CEQ's release."
+  },
+  {
+   "id": "nepa-litigation",
+   "title": "NEPA lawsuits: how often and how much delay",
+   "sections": [
+    "1110",
+    "1205",
+    "1305"
+   ],
+   "mapping_note": "Judgment: 1110 (statute of limitations, remedies) is the NEPA-litigation section; 1205 and 1305 do the same for Clean Water Act and ESA suits.",
+   "evidence": [
+    {
+     "org": "University of Utah Wallace Stegner Center",
+     "authors": "John Ruple, Kayla Race",
+     "title": "Measuring the NEPA Litigation Burden: A Review of 1,499 Federal Court Cases",
+     "url": "https://dc.law.utah.edu/stegner_pubs/6",
+     "date": "2020",
+     "period": "federal court NEPA cases over a thirteen-year period",
+     "finding": "Ruple and Race found about one in 450 NEPA decisions (all decisions, including categorical exclusions) was litigated, and the challenge rate fell over the study period.",
+     "quote": "We found that only one in 450 NEPA decisions were litigated and that the rate of NEPA challenges declined during the thirteen-year study period.",
+     "kind": "study"
+    },
+    {
+     "org": "Stanford University",
+     "authors": "Michael Bennon, Devon Wilson",
+     "title": "NEPA Litigation Over Large Energy and Transport Infrastructure Projects",
+     "url": "https://fsi.stanford.edu/node/35265",
+     "date": "2023-10-02",
+     "period": "355 major projects completing federal environmental study 2010-2018",
+     "finding": "Bennon and Wilson found 28% of projects requiring an EIS saw pre-development litigation, with the highest rates for solar (nearly two-thirds), pipelines (50%), wind (38%) and transmission (31%).",
+     "quote": "The highest litigation rate is in solar energy projects, nearly two-thirds of which are litigated. Other high-litigation sectors include pipelines (50%), transmission lines (31%), and wind energy projects (38%).",
+     "kind": "study"
+    },
+    {
+     "org": "Resources for the Future",
+     "authors": "Arthur Fraas, Emily Joiner, Brielle Lee, Krystal Liu",
+     "title": "Taking Green Energy Projects to Court: NEPA Review and Court Challenges to Renewable Energy",
+     "url": "https://www.rff.org/publications/reports/taking-green-energy-projects-to-court-nepa-review-and-court-challenges-to-renewable-energy/",
+     "date": "2025-08-04",
+     "period": "utility-scale wind and solar projects completing EIS review",
+     "finding": "RFF found nearly a third of solar and half of wind projects that completed EISs were sued, and agencies mostly won.",
+     "quote": "Nearly a third of solar projects and half of wind projects completing NEPA environmental impact statement reviews faced court challenges.",
+     "kind": "study"
+    },
+    {
+     "org": "Breakthrough Institute",
+     "authors": "Breakthrough Institute analysts",
+     "title": "Understanding NEPA Litigation: A Systematic Review of Recent NEPA-Related Appellate Court Cases",
+     "url": "https://thebreakthrough.org/issues/energy/understanding-nepa-litigation",
+     "date": "2024-07-11",
+     "period": "appellate NEPA cases 2013-2022",
+     "finding": "Breakthrough found NEPA appeals averaged 4.2 years from the EIS or EA to the end of the appeal, with agencies winning about 80%.",
+     "quote": "On average, 4.2 years elapsed between publication of an environmental impact statement or environmental assessment and conclusion of the corresponding legal challenge at the appellate level.",
+     "kind": "study"
+    }
+   ],
+   "disagreement": "Ruple and Race count one in 450 of all NEPA decisions; Bennon and Wilson count 28% of EIS projects. The denominators differ (nearly all decisions are categorical exclusions). For wind, Stanford finds 38% and RFF about half; for solar, Stanford finds nearly two-thirds and RFF about a third."
+  },
+  {
+   "id": "interconnection",
+   "title": "Interconnection queues are long and most requests are withdrawn",
+   "sections": [
+    "2110",
+    "2114",
+    "2107"
+   ],
+   "mapping_note": "Judgment: 2110 (expediting generator interconnection queues) is the direct fit; 2114 and 2107 touch large-load (data center) interconnection and cost.",
+   "evidence": [
+    {
+     "org": "Lawrence Berkeley National Laboratory",
+     "authors": "Joseph Rand, Nick Manderlink, Steven Zhang, Chris Talley, Will Gorman, Ryan Wiser, Joachim Seel, Julie Mulvaney Kemp, Seongeun Jeong, Fredrich Kahrl",
+     "title": "Queued Up: 2025 Edition (data as of end of 2024)",
+     "url": "https://eta-publications.lbl.gov/publications/queued-2025-edition-characteristics",
+     "date": "2025-12",
+     "period": "queues through end of 2024; projects built 2000-2024",
+     "finding": "LBNL found the median time from interconnection request to commercial operation doubled from under 2 years (built 2000-2007) to over 4 years (built 2018-2024).",
+     "quote": "the median duration from IR to COD has doubled from <2 years for projects built in 2000-2007 to over 4 years for those built in 2018-2024.",
+     "kind": "dataset"
+    },
+    {
+     "org": "Lawrence Berkeley National Laboratory",
+     "authors": "Rand et al.",
+     "title": "Queued Up: 2025 Edition (completion rates)",
+     "url": "https://eta-publications.lbl.gov/publications/queued-2025-edition-characteristics",
+     "date": "2025-12",
+     "period": "requests submitted 2000-2019, outcome by end of 2024",
+     "finding": "LBNL found 13% of capacity requested 2000-2019 reached operation, 77% was withdrawn and 10% was still active.",
+     "quote": "Only 13% of capacity that submitted interconnection requests from 2000-2019 had reached commercial operations by the end of 2024; 77% of that capacity had been withdrawn and 10% was still active.",
+     "kind": "dataset"
+    },
+    {
+     "org": "American Public Power Association (reporting LBNL's next Queued Up edition)",
+     "authors": "Paul Ciampoli",
+     "title": "Backlog of Power Plants Seeking Transmission Grid Connection Eased Somewhat in 2025: LBNL",
+     "url": "https://www.publicpower.org/periodical/article/backlog-power-plants-seeking-transmission-grid-connection-eased-somewhat-2025-lbnl",
+     "date": "2026-07-01",
+     "period": "queues through end of 2025",
+     "finding": "Reporting LBNL's July 2026 update, APPA says request-to-agreement took well over 3 years in 2025 and request-to-operation exceeded 5 years in regions with data. LBNL's own page was not fetchable.",
+     "quote": "the median duration from submitting a request to signing an IA was well over 3 years in 2025, while the timeline to reach commercial operations exceeds 5 years",
+     "kind": "review"
+    },
+    {
+     "org": "The Climate Brink",
+     "authors": "Zeke Hausfather",
+     "title": "Off-grid data centers have 60-80% higher emissions",
+     "url": "https://www.theclimatebrink.com/p/off-grid-data-centers-have-60-80",
+     "date": "2026-10-26",
+     "period": "2026 commentary",
+     "finding": "Hausfather argues data centers skipping the grid for on-site gas generators have higher emissions, a reading that makes faster grid interconnection a climate issue. No queue-time number is given.",
+     "quote": "A rush to power is leading data centers to install the least efficient and leakiest types of fossil gas generators rather than connecting to the grid",
+     "kind": "review"
+    }
+   ]
+  },
+  {
+   "id": "local-state-siting",
+   "title": "Local and state opposition, and what actually causes delay and cancellation",
+   "sections": [],
+   "mapping_note": "Judgment: none for local zoning of generation. Section 2101 (FERC backstop) reaches transmission siting only; 1106 and 2213 affect federal reviews, which the studies below find are not the only or main cause.",
+   "evidence": [
+    {
+     "org": "Columbia University Sabin Center for Climate Change Law",
+     "authors": "Sabin Center researchers",
+     "title": "Opposition to Renewable Energy Facilities in the United States: June 2025 Edition",
+     "url": "https://climate.law.columbia.edu/content/opposition-renewable-energy-facilities-united-states-june-2025-edition",
+     "date": "2025-06",
+     "period": "restrictions through end of 2024",
+     "finding": "Sabin counted at least 459 counties and municipalities in 44 states with severe local restrictions on renewables, up 16% in a year.",
+     "quote": "By the end of 2024, at least 459 counties and municipalities across 44 states had adopted severe local restrictions on siting renewables.",
+     "kind": "dataset"
+    },
+    {
+     "org": "Columbia University Sabin Center (reported by pv magazine USA)",
+     "authors": "Ben Zientar (reporter)",
+     "title": "The U.S. saw a 14 percent increase in contested renewable projects, 9.8 GW in cancellations in 2025",
+     "url": "https://pv-magazine-usa.com/2026/09/08/the-u-s-saw-a-14-percent-increase-in-contested-renewable-projects-9-8-gw-in-cancellations-in-2025/",
+     "date": "2026-09-08",
+     "period": "contested projects 2004-2025",
+     "finding": "The sixth Sabin report counts 567 contested projects since 2004, with about 40% cancelled; it says cancellations cannot all be attributed to local opposition.",
+     "quote": "Of the 567 total contested projects since 2004, at least 227 (approximately 40%) have been canceled.",
+     "kind": "review"
+    },
+    {
+     "org": "Lawrence Berkeley National Laboratory (reported by Latitude Media)",
+     "authors": "Robi Nilson, Ben Hoen, Joseph Rand (survey authors); Bianca Giacobone (reporter)",
+     "title": "Local opposition is now a 'leading cause' of canceled clean energy projects",
+     "url": "https://latitudemedia.com/news/local-opposition-is-now-a-leading-cause-of-canceled-clean-energy-projects",
+     "date": "2024-08-29",
+     "period": "survey of 123 developer staff at 62 companies, 2023 (primary report published 2024-01)",
+     "finding": "LBNL's developer survey ranked community opposition and local ordinances alongside grid interconnection as leading causes of delay and cancellation.",
+     "quote": "community opposition and ordinances limiting renewable development are the \"leading causes of project delays and cancellations,\" on par with grid interconnection issues",
+     "kind": "survey"
+    },
+    {
+     "org": "Third Way (survey by ERM)",
+     "authors": "Maya Gibbs",
+     "title": "Full Research Findings: Pathways to Accelerating Clean Energy (PACE) Report",
+     "url": "https://www.thirdway.org/report/full-research-findings-pathways-to-accelerating-clean-energy-pace-report",
+     "date": "2025-11-06",
+     "period": "survey of 200+ industry practitioners",
+     "finding": "Third Way's survey found organized resistance affects a minority of projects, federal reviews caused the longest delays, and state and local permitting also slowed projects.",
+     "quote": "Only a minority of projects face concerted resistance capable of altering or halting development. Federal permitting reviews caused the longest delays for new projects, but state and local permitting also slowed deployment significantly.",
+     "kind": "survey"
+    },
+    {
+     "org": "Environmental Law Reporter",
+     "authors": "David Adelman (UT Austin), Sommer Engels (Harvard Law), Andrew Mergen (Harvard Law), Jamie Pleune (Utah)",
+     "title": "Dispelling the Myths of Permitting Reform and Identifying Effective Pathways Forward (55 ELR 10038)",
+     "url": "https://www.eli.org/sites/default/files/files-pdf/55.DispellingTheMyths.pdf",
+     "date": "2025-01",
+     "period": "review of empirical literature, past 14 years",
+     "finding": "Adelman and co-authors conclude the empirical record shows environmental review and permitting rarely delay or block utility-scale renewables, citing the LBNL survey result that environmental regulations caused under 15% of delays or cancellations.",
+     "quote": "The available empirical record shows that environmental reviews and permitting rarely delay or block utility-scale renewable energy projects",
+     "kind": "review"
+    },
+    {
+     "org": "Crux",
+     "authors": "Crux Climate",
+     "title": "Federal permitting and clean energy: 2026 survey",
+     "url": "https://www.cruxclimate.com/insights/federal-permitting-clean-energy-projects",
+     "date": "2026",
+     "period": "survey of 50 developers and permitting professionals",
+     "finding": "A Crux survey of 50 developers says federal permitting contributed to delays or cancellations in 94% of surveyed projects.",
+     "quote": "Federal permitting contributed to delays or cancellations in 94% of clean energy projects surveyed and raised costs for every developer.",
+     "kind": "survey"
+    }
+   ],
+   "disagreement": "No study fetched splits cancellations into local versus federal shares. Sabin and LBNL rank local opposition among top causes; Adelman et al. say environmental review rarely delays or blocks utility-scale renewables; Third Way and Crux put federal permitting first for delay length or incidence. Crux (n=50) and the LBNL survey sample developers, and the Crux figure measures 'a factor' not a share of delay time. Thomas Hochman's and Aidan Mackenzie's claims about these sources came via the coordinator and were not verified here."
+  },
+  {
+   "id": "transmission-build",
+   "title": "High-voltage transmission is built slowly",
+   "sections": [
+    "2101",
+    "2102",
+    "2103",
+    "2104",
+    "2105",
+    "2106",
+    "2109"
+   ],
+   "mapping_note": "Judgment: 2101 (FERC backstop siting), 2103-2104 and 2106 (planning), 2105 (right of first refusal), 2102 and 2109 (reconductoring and advanced technologies) all bear on build rate.",
+   "evidence": [
+    {
+     "org": "Grid Strategies and Americans for a Clean Energy Grid",
+     "authors": "Grid Strategies / ACEG",
+     "title": "Fewer New Miles (July 2025)",
+     "url": "https://gridstrategiesllc.com/wp-content/uploads/ACEG_Grid-Strategies_Fewer-New-Miles-2025_vF.pdf",
+     "date": "2025-07",
+     "period": "lines completed 2010-2024",
+     "finding": "Grid Strategies found only 322 miles of 345 kV+ lines were completed in 2024, versus nearly 4,000 in 2013.",
+     "quote": "In 2024, only 322 miles of new high-voltage transmission lines were completed, the third slowest year of new construction for 345 kV and above transmission over the past 15 years.",
+     "kind": "dataset"
+    },
+    {
+     "org": "Grid Strategies and Americans for a Clean Energy Grid",
+     "authors": "Grid Strategies / ACEG",
+     "title": "Fewer New Miles (gas pipeline comparison)",
+     "url": "https://gridstrategiesllc.com/wp-content/uploads/ACEG_Grid-Strategies_Fewer-New-Miles-2025_vF.pdf",
+     "date": "2025-07",
+     "period": "2020-2024",
+     "finding": "Gas pipelines averaged 534 miles a year over five years against 345 miles for high-voltage lines; the report links the gap to FERC's siting authority over pipelines.",
+     "quote": "Over the past five years, natural gas pipelines have averaged 534 miles per year, outpacing the 345-mile annual average for high-voltage transmission by more than 50%.",
+     "kind": "dataset"
+    },
+    {
+     "org": "Grid Strategies and Americans for a Clean Energy Grid",
+     "authors": "Grid Strategies / ACEG",
+     "title": "Fewer New Miles (DOE needs benchmark)",
+     "url": "https://gridstrategiesllc.com/wp-content/uploads/ACEG_Grid-Strategies_Fewer-New-Miles-2025_vF.pdf",
+     "date": "2025-07",
+     "period": "DOE 2024 National Transmission Planning Study, through 2050",
+     "finding": "The report cites DOE's study as calling for doubling regional and quadrupling interregional capacity by 2050, about 5,000 miles a year of regional lines.",
+     "quote": "calls for at least a doubling of the current regional transmission capacity and quadrupling of interregional transmission capacity by 2050.",
+     "kind": "dataset"
+    }
+   ]
+  },
+  {
+   "id": "esa-section-7",
+   "title": "Endangered Species Act Section 7 consultations",
+   "sections": [
+    "1302",
+    "1304",
+    "1305"
+   ],
+   "mapping_note": "Judgment: 1302 (timeline for consultations), 1304 (state assumption) and 1305 (judicial review).",
+   "evidence": [
+    {
+     "org": "Defenders of Wildlife",
+     "authors": "Ya-Wei Li (testimony summarizing Malcom and Li, PNAS 2015)",
+     "title": "Testimony on 'ESA Consultation Impediments to Economic and Infrastructure Development'",
+     "url": "https://naturalresources.house.gov/UploadedFiles/Testimony_Li.pdf",
+     "date": "2017-03-28",
+     "period": "FWS consultations over seven years (about 88,000 projects)",
+     "finding": "Li reported median consultation times of 13 days (informal) and 62 days (formal) from when FWS had enough information to start.",
+     "quote": "the median duration of informal consultations was 13 days and formal consultations was 62 days",
+     "kind": "study"
+    },
+    {
+     "org": "Defenders of Wildlife",
+     "authors": "Ya-Wei Li",
+     "title": "Testimony (share over deadline)",
+     "url": "https://naturalresources.house.gov/UploadedFiles/Testimony_Li.pdf",
+     "date": "2017-03-28",
+     "period": "same FWS data",
+     "finding": "Li reported 1,381 formal consultations, 20%, exceeded the 135-day limit, many with agreed extensions.",
+     "quote": "Only 1,381 formal consultations (20 percent) exceeded the 135-day limit prescribed in Services regulations, and many of those had agreed upon extensions.",
+     "kind": "study"
+    }
+   ],
+   "disagreement": "Source is advocacy-organization testimony describing a peer-reviewed study; the PNAS paper and the 2004 GAO report (30-40% over time frames at the agencies it examined) could not be fetched. Clock starts at a complete submission, which critics say hides pre-consultation time."
+  },
+  {
+   "id": "nhpa-section-106",
+   "title": "National Historic Preservation Act Section 106 review",
+   "sections": [
+    "2301",
+    "2302"
+   ],
+   "mapping_note": "Judgment: 2301 (historic preservation review) and 2302 (Historic Preservation Fund, which pays SHPO/THPO capacity).",
+   "evidence": [
+    {
+     "org": "Advisory Council on Historic Preservation",
+     "authors": "ACHP",
+     "title": "About the ACHP fact sheet",
+     "url": "https://www.achp.gov/sites/default/files/2025-07/2025_AboutTheACHPFactSheet_072225v2.pdf",
+     "date": "2025-07-22",
+     "period": "annual",
+     "finding": "ACHP says over 120,000 undertakings go through Section 106 each year and over 95% resolve without ACHP involvement.",
+     "quote": "While more than 95 percent of these cases are resolved without the ACHP",
+     "kind": "government report"
+    },
+    {
+     "org": "Institute for Progress",
+     "authors": "Ben Schifman, Aidan Mackenzie",
+     "title": "Reforming Section 106 of the National Historic Preservation Act",
+     "url": "https://ifp.org/?p=9257",
+     "date": "2026-06-30",
+     "period": "current practice",
+     "finding": "IFP says few undertakings are found to adversely affect historic properties, but those that do are disproportionately large energy and infrastructure projects.",
+     "quote": "But those that do are disproportionately the large energy and infrastructure projects the country most needs.",
+     "kind": "review"
+    },
+    {
+     "org": "Environmental Law Reporter",
+     "authors": "Adelman, Engels, Mergen, Pleune",
+     "title": "Dispelling the Myths of Permitting Reform (55 ELR 10038)",
+     "url": "https://www.eli.org/sites/default/files/files-pdf/55.DispellingTheMyths.pdf",
+     "date": "2025-01",
+     "period": "literature review",
+     "finding": "The authors note in a footnote that there are virtually no data or empirical studies of NHPA consultation timing.",
+     "quote": "there are virtually no data and no empirical studies of NHPA consultations, despite their close connection with NEPA procedures.",
+     "kind": "review"
+    }
+   ],
+   "disagreement": "No systematic delay measurement for Section 106 was found. ACHP and preservation-side evidence is volume-and-resolution only; IFP argues tail cases drive cost."
+  },
+  {
+   "id": "agency-capacity",
+   "title": "Agency staffing and capacity",
+   "sections": [
+    "1133",
+    "1132",
+    "2241",
+    "2302"
+   ],
+   "mapping_note": "Judgment: 1133 (permitting improvement fund), 2241 (FERC staffing), 1132 (tracker) and 2302 (SHPO funding).",
+   "evidence": [
+    {
+     "org": "Nextgov/FCW (quoting Eric Beightel, former Federal Permitting Council director)",
+     "authors": "Nextgov/FCW",
+     "title": "Trump administration debuts permitting modernization plan, even as staff cuts could jeopardize it",
+     "url": "https://www.nextgov.com/modernization/2025/06/trump-administration-debuts-permitting-modernization-plan-even-staff-cuts-could-jeopardize-it/405848/",
+     "date": "2025-06",
+     "period": "2025",
+     "finding": "A former Permitting Council director warned staff losses and expected funding cuts could undermine the federal permitting modernization plan. No headcount is given.",
+     "quote": "I’m concerned, however, that the loss of staff and the funding reductions expected for agencies will hinder the ability of the agencies to fulfill the ambitious goals of this effort",
+     "kind": "review"
+    },
+    {
+     "org": "Institute for Progress",
+     "authors": "Ben Schifman, Aidan Mackenzie",
+     "title": "Reforming Section 106 of the National Historic Preservation Act (SHPO capacity)",
+     "url": "https://ifp.org/?p=9257",
+     "date": "2026-06-30",
+     "period": "state offices",
+     "finding": "IFP reports Utah's digital SHPO finishes about 98% of reviews within seven days while offices without modern systems lag badly.",
+     "quote": "Utah’s fully digital SHPO completes about 98% of reviews within seven days, while offices without modern data systems lag badly.",
+     "kind": "review"
+    },
+    {
+     "org": "Environmental Law Reporter",
+     "authors": "Adelman, Engels, Mergen, Pleune",
+     "title": "Dispelling the Myths of Permitting Reform (55 ELR 10038)",
+     "url": "https://www.eli.org/sites/default/files/files-pdf/55.DispellingTheMyths.pdf",
+     "date": "2025-01",
+     "period": "literature review",
+     "finding": "The authors argue agency funding, staffing and training improves permitting for everyone.",
+     "quote": "Increasing agency capacity through adequate funding, staffing, and training improves the permitting process for everyone.",
+     "kind": "review"
+    }
+   ],
+   "disagreement": "No government-wide staffing count was found; the 20-30% federal permitting staff-decline headline in search results was not verified."
+  },
+  {
+   "id": "cwa-401-404",
+   "title": "Clean Water Act 401 certification and 404 permits",
+   "sections": [
+    "1202",
+    "1204",
+    "1205"
+   ],
+   "mapping_note": "Judgment: 1202 (Section 401), 1204 (Section 404 permits) and 1205 (Clean Water Act judicial review).",
+   "evidence": [
+    {
+     "org": "EPA Office of Inspector General",
+     "authors": "EPA OIG",
+     "title": "Report 12-P-0083 at a glance (Corps/EPA review of Appalachian surface coal mining permits)",
+     "url": "https://19january2021snapshot.epa.gov/sites/static/files/2015-10/documents/20111121-12-p-0083_glance.pdf",
+     "date": "2011-11-21",
+     "period": "Appalachian surface coal mining permits, about 2008-2011",
+     "finding": "EPA OIG found more than one-third of issued Corps individual permits in its coal-mining sample took a year or longer. Old, narrow sample, not clean energy.",
+     "quote": "More than one-third of issued permits took a year or longer to process.",
+     "kind": "government report"
+    }
+   ],
+   "disagreement": "No current (2020s) national 404 or 401 timing data was found; state 401 pipeline denials are anecdotal in what was fetched."
+  },
+  {
+   "id": "clean-vs-fossil-review",
+   "title": "How clean energy compares in federal environmental review",
+   "sections": [
+    "2213",
+    "2214",
+    "1402",
+    "2221",
+    "2222",
+    "2223",
+    "2224",
+    "2225",
+    "2226",
+    "2227",
+    "2228",
+    "2229",
+    "2251",
+    "2252"
+   ],
+   "mapping_note": "Judgment: 2213 (renewable permitting), 2214 (grid projects), 1402 (wind/solar fairness), 2221-2229 (geothermal), 2251-2252 (offshore).",
+   "evidence": [
+    {
+     "org": "Resources for the Future",
+     "authors": "Arthur Fraas et al.",
+     "title": "Most Renewable Projects Overcome Lawsuits and Move Through Federal Review Faster on Average than Other Infrastructure Projects",
+     "url": "https://www.rff.org/news/press-releases/most-renewable-projects-overcome-lawsuits-and-move-through-federal-review-faster-on-average-than-other-infrastructure-projects/",
+     "date": "2025-08-05",
+     "period": "2010-2023",
+     "finding": "RFF found solar, wind and geothermal reviews were historically shorter than other infrastructure, though other steps may take as long.",
+     "quote": "solar, wind, and geothermal projects have historically seen shorter review times on average than other infrastructure projects, although other process steps may be just as time-consuming.",
+     "kind": "study"
+    }
+   ],
+   "disagreement": "No fetched source gives the clean versus fossil share of NEPA reviews."
+  },
+  {
+   "id": "federal-reversals",
+   "title": "Federal cancellations, suspensions and stalls of approved clean energy projects",
+   "sections": [
+    "1401",
+    "1402",
+    "1403",
+    "2251",
+    "2252"
+   ],
+   "mapping_note": "Judgment: 1401 (permit certainty), 1402 (wind and solar fairness), 1403 (unreasonable delay) address executive-branch reversals.",
+   "evidence": [
+    {
+     "org": "pv magazine USA (reporting Sabin Center)",
+     "authors": "Ben Zientar",
+     "title": "The U.S. saw a 14 percent increase in contested renewable projects, 9.8 GW in cancellations in 2025",
+     "url": "https://pv-magazine-usa.com/2026/09/08/the-u-s-saw-a-14-percent-increase-in-contested-renewable-projects-9-8-gw-in-cancellations-in-2025/",
+     "date": "2026-09-08",
+     "period": "2025",
+     "finding": "The largest 2025 cancellation in Sabin's data, 6.2 GW Esmeralda 7 in Nevada, was cancelled by BLM.",
+     "quote": "The largest of these projects was the 6.2 GW Esmeralda 7 Solar Project in Nevada, which was canceled by the Bureau of Land Management in October 2025.",
+     "kind": "review"
+    },
+    {
+     "org": "Associated Press via PBS NewsHour",
+     "authors": "Matthew Daly",
+     "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
+     "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
+     "date": "2026-09-30",
+     "period": "December 2025 suspensions",
+     "finding": "AP reports the administration suspended five offshore wind projects in December and they later moved forward after federal judges intervened.",
+     "quote": "The administration suspended five offshore wind projects in December, citing unspecified national security concerns. The projects later moved forward after federal judges intervened.",
+     "kind": "review"
+    }
+   ]
+  }
+ ],
+ "bill_analyses": [
+  {
+   "who": "Columbia University Center on Global Energy Policy",
+   "speaker": "Jack Andreasen Cavanaugh",
+   "title": "Project timeline savings under BAAJA (interactive and data)",
+   "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+   "date": "2026-10-21",
+   "bill": "BAAJA",
+   "stance": "explains",
+   "sections": [
+    "1106",
+    "1107",
+    "2101"
+   ],
+   "claim": "CGEP's replay of past transmission cases finds the transmission archetype saves 64 months up to the federal decision.",
+   "quote": "The bill reduces the timeline to the federal decision by 64 months in the archetype, compared with 60.7 months in the largest replay (Bordertown to California, a 10-mile, 120 kV line)."
+  },
+  {
+   "who": "Columbia University Center on Global Energy Policy",
+   "speaker": "Jack Andreasen Cavanaugh",
+   "title": "Project timeline savings under BAAJA (transmission total)",
+   "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+   "date": "2026-10-21",
+   "bill": "BAAJA",
+   "stance": "explains",
+   "sections": [
+    "2101"
+   ],
+   "claim": "State siting and the FERC backstop account for most of the transmission archetype's 96-month timeline, and the replays exclude them.",
+   "quote": "The replays therefore exclude state siting and the FERC backstop permit (Sec. 2101), which account for most of the transmission archetype's 96-month timeline."
+  },
+  {
+   "who": "Columbia University Center on Global Energy Policy",
+   "speaker": "Jack Andreasen Cavanaugh",
+   "title": "Project timeline savings under BAAJA (limits)",
+   "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+   "date": "2026-10-21",
+   "bill": "BAAJA",
+   "stance": "mixed",
+   "sections": [
+    "1106"
+   ],
+   "claim": "CGEP counts only months saved and cannot count projects BAAJA might enable that current law stops.",
+   "quote": "The estimates count only months saved, not projects that BAAJA might have enabled to proceed but that current law stopped."
+  },
+  {
+   "who": "American Clean Power Association",
+   "speaker": "",
+   "title": "The Clean Energy and Environmental Case for the BAAJA",
+   "url": "https://cleanpower.org/resources/the-clean-energy-and-environmental-case-for-the-bipartisan-american-affordability-and-jobs-act/",
+   "date": "2026-10-09",
+   "bill": "BAAJA",
+   "stance": "supports",
+   "sections": [],
+   "claim": "ACP says BAAJA can unleash 350+ GW of new clean energy and over $800 billion of infrastructure. This is a trade-group claim, not an independent model.",
+   "quote": "By creating a more predictable path to build, BAAJA can unleash: Over $800 billion in new transmission and clean power infrastructure; 350+ GW of new clean energy"
+  },
+  {
+   "who": "Climate Policy Center (C2ES) and Greenline, as summarized by Foley Hoag",
+   "speaker": "Peter Ross, Kevin Chen (Foley Hoag)",
+   "title": "BAAJA Blast: What the Senate Permitting Bill Means for Transmission Developers",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "date": "2026-10-15",
+   "bill": "BAAJA",
+   "stance": "supports",
+   "sections": [
+    "2101",
+    "2103",
+    "2106"
+   ],
+   "claim": "C2ES/Greenline modeling projects about $7 billion in net delivery-cost savings by 2035.",
+   "quote": "C2ES/Greenline modeling projects about $7 billion in net delivery-cost savings by 2035 (after about $1.9 billion in new transmission investment) and about $1.1 billion in residential bill savings."
+  },
+  {
+   "who": "Climate Policy Center (C2ES) and Greenline, as summarized by Foley Hoag",
+   "speaker": "Peter Ross, Kevin Chen (Foley Hoag)",
+   "title": "BAAJA Blast (transmission capacity)",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "date": "2026-10-15",
+   "bill": "BAAJA",
+   "stance": "supports",
+   "sections": [
+    "2101",
+    "2106"
+   ],
+   "claim": "The same modeling projects nearly 40 GW of added interregional transmission capacity.",
+   "quote": "The same modeling projects nearly 40 GW of added interregional transmission capacity."
+  },
+  {
+   "who": "The Abundant Future",
+   "speaker": "Baillee Brown",
+   "title": "The Senate Permitting Deal Is Abundance Policymaking",
+   "url": "https://theabundantfuture.substack.com/p/the-senate-permitting-deal-is-abundance",
+   "date": "2026-10-05",
+   "bill": "BAAJA",
+   "stance": "supports",
+   "sections": [
+    "2101",
+    "2106"
+   ],
+   "claim": "Brown reads BAAJA as letting federal regulators approve interstate lines after states have a year to act.",
+   "quote": "BAAJA lets federal regulators approve interstate transmission lines after states have had a year to act."
+  },
+  {
+   "who": "Grist",
+   "speaker": "Jake Bittle, Austin Corona",
+   "title": "The bipartisan energy bill tearing the climate movement apart",
+   "url": "https://grist.org/politics/permitting-reform-baaja-climate-debate-clean-energy-fossil-fuels/",
+   "date": "2026-10-08",
+   "bill": "BAAJA",
+   "stance": "explains",
+   "sections": [
+    "1106",
+    "1401"
+   ],
+   "claim": "Grist summarizes BAAJA as weakening environmental laws, speeding agency deadlines and making approved projects harder to cancel. It cites a '2025 study' for 64% solar, 38% wind, 31% transmission NEPA suits; those match the 2023 Bennon and Wilson figures.",
+   "quote": "The bill does this by weakening some of the nation’s bedrock environmental laws, speeding up the timeline for government agencies to issue permits, and making it harder to cancel projects that have already gotten federal approval."
+  },
+  {
+   "who": "Oil Change International",
+   "speaker": "Lorne Stockman",
+   "title": "The Permitting Bill Is The Fossil Fuel Industry's Climate Action Kill Switch",
+   "url": "https://lornestockman.substack.com/p/the-permitting-bill-is-the-fossil",
+   "date": "2026-10-22",
+   "bill": "BAAJA",
+   "stance": "opposes",
+   "sections": [],
+   "claim": "Stockman says proponents' own modeling shows best-case emissions cuts 2.3 billion tons short of climate goals in 2040.",
+   "quote": "Modeling touted by the bill’s proponents shows best-case emissions reductions that fall 2.3 billion tons short of climate goals in 2040."
+  },
+  {
+   "who": "Oil Change International",
+   "speaker": "",
+   "title": "The proposed U.S. infrastructure permitting reform bill would be a disaster for communities and for climate action",
+   "url": "https://oilchange.org/blogs/the-proposed-u-s-infrastructure-permitting-reform-bill-would-be-a-disaster-for-communities-and-for-climate-action",
+   "date": "2026-10-26",
+   "bill": "BAAJA",
+   "stance": "opposes",
+   "sections": [
+    "2107"
+   ],
+   "claim": "OCI argues the bill mainly benefits fossil fuels, including gas for data centers.",
+   "quote": "Our analysis finds that even with the most optimistic modeling, the bill would fall far short of the emissions reductions needed to meet climate goals."
+  },
+  {
+   "who": "The Revelator",
+   "speaker": "Alejandro Camacho, Robert Glicksman",
+   "title": "A 'Bipartisan' Bill to Dismantle the Nation's Bedrock Environmental Law",
+   "url": "https://therevelator.org/baaja",
+   "date": "2026-10-23",
+   "bill": "BAAJA",
+   "stance": "opposes",
+   "sections": [
+    "1105",
+    "1106",
+    "1110"
+   ],
+   "claim": "Camacho and Glicksman say BAAJA hollows out NEPA, including courts' ability to enforce it.",
+   "quote": "the bill is an out-and-out assault on the National Environmental Policy Act, the bedrock environmental law that has for more than 50 years required the federal government to look before it leaps."
+  },
+  {
+   "who": "Bommarito Consulting",
+   "speaker": "",
+   "title": "2026 Senate Permitting Bill: Independent Analysis",
+   "url": "https://bommaritollc.com/insights/senate-permitting-bill-2026/",
+   "date": "2026-09-30",
+   "bill": "BAAJA",
+   "stance": "concerns",
+   "sections": [
+    "2101",
+    "2107",
+    "1110"
+   ],
+   "claim": "Bommarito says BAAJA speeds approval of power lines and generation of any fuel without setting emissions limits.",
+   "quote": "The bill makes it faster to build more, not cleaner or more efficient."
+  },
+  {
+   "who": "Associated Press via PBS NewsHour",
+   "speaker": "Matthew Daly (reporting Sen. Sheldon Whitehouse)",
+   "title": "Senate reaches bipartisan deal on permitting bill to speed approvals of new energy projects",
+   "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
+   "date": "2026-09-30",
+   "bill": "BAAJA",
+   "stance": "mixed",
+   "sections": [
+    "1401",
+    "1402"
+   ],
+   "claim": "Democrats still wanted clarity on how the bill stops the administration from blocking wind and solar.",
+   "quote": "Democrats were still seeking clarity on how the bill will prevent President Donald Trump's administration from blocking wind and solar projects."
+  },
+  {
+   "who": "Congressional Research Service (via EveryCRSReport)",
+   "speaker": "",
+   "title": "Amending the National Environmental Policy Act: Analysis of the SPEED Act (H.R. 4776)",
+   "url": "https://www.everycrsreport.com/reports/R49485.html",
+   "date": "2026-10-09",
+   "bill": "H.R. 4776",
+   "stance": "explains",
+   "sections": [
+    "1105",
+    "1106",
+    "1110"
+   ],
+   "claim": "CRS describes H.R. 4776 as amending NEPA and folding broader permitting deadlines into it; no speed estimate.",
+   "quote": "In addition to amendments to the process for considering the environmental impacts of a proposed federal action, the bill would also incorporate some broader permitting-related requirements and deadlines into NEPA's statutory framework."
+  },
+  {
+   "who": "Energy and Policy Institute",
+   "speaker": "David Pomerantz",
+   "title": "Utility lobbying against BAAJA transmission reforms revealed",
+   "url": "https://energyandpolicy.org/oge-baaja-transmission-reforms-lobbying/",
+   "date": "2026-10-20",
+   "bill": "BAAJA",
+   "stance": "concerns",
+   "sections": [
+    "2105"
+   ],
+   "claim": "EPI reports OG&E asking Congress to preserve right-of-first-refusal protections.",
+   "quote": "OG&E also says that it “strongly opposes eliminating federal or state ROFR [right of first refusal] protections.”"
+  }
+ ],
+ "not_found": [
+  "CEQ EIS Timelines report PDF (Jan 2025): ceq.doe.gov URL serves the home page to scripted fetches; figures taken from CEQ's own news release instead.",
+  "LBNL Queued Up 2026 edition on emp.lbl.gov (403); LBNL July 2026 figures rest on APPA's report.",
+  "Malcom and Li PNAS 2015 full text (pnas.org 403); GAO-04-93 (gao.gov 403); NRDC BAAJA assessment (403); CRS IN12746 on FERC backstop (403); Senate EPW 'what they're saying' page (403); Pavia EPW testimony PDF (403).",
+  "McKinsey 'federal permitting's uneven economic impact' ($1.8 trillion): page returned an error on fetch.",
+  "Current (2020s) national Corps Section 404 individual permit processing times and counts of state Section 401 denials: no fetchable source found.",
+  "Share of NEPA reviews that are clean energy versus fossil (CATF, Niskanen, IFP, RFF dockets): no fetchable analysis found.",
+  "ACHP or other data on how long Section 106 reviews of energy projects take: none found; Adelman et al. say virtually none exists.",
+  "Government-wide permitting staffing headcounts or FAST-41 dashboard statistics: not found.",
+  "Claim attributed to Thomas Hochman (opposing survey evidence came only from wind and solar developers) and Aidan Mackenzie (Bennon and Wilson: more clean energy projects required EISs 2010-2018): from the coordinator's X leads, not verified in a fetched page.",
+  "Estimates of BAAJA clean-energy deployment from API/ICF (2.4% power-sector emissions cut), NRDC (100 GW transmission) and Grid Strategies: seen only in search snippets, not fetched.",
+  "Any S. 4753 (2024) speed analysis: none fetched."
+ ]
+}

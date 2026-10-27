@@ -306,6 +306,62 @@ class Positions(unittest.TestCase):
         self.assertEqual(build.browser_core(core)["recent"]["positions"]["letters"], before + 1)
 
 
+class Speed(unittest.TestCase):
+    def test_every_blocker_has_evidence_cited_passages_and_known_readings(self):
+        blockers = CORE["speed"]["blockers"]
+        self.assertTrue(blockers)
+        takes = {t["id"] for t in CORE["takes"]["takes"]}
+        for b in blockers:
+            self.assertTrue(b["evidence"], b["id"])
+            for p in b.get("passages", []):
+                self.assertIn(p["section"], b["sections"], b["id"])
+                self.assertIn("c", p, (b["id"], p["text"][:40]))
+            self.assertLessEqual(set(b.get("readings", [])), takes, b["id"])
+
+    def test_a_bad_blocker_fails_the_build(self):
+        original = build.load
+
+        def sabotaged(path):
+            data = original(path)
+            if path.name == "speed.json":
+                with_passages = [b for b in data["blockers"] if len(b.get("passages", [])) >= 2]
+                b = with_passages[0]
+                b["passages"][0]["text"] += " and other words the bill does not say"
+                b["passages"][1]["section"] = next(n for n in ("1101", "1102", "1103") if n not in b["sections"])
+                b["readings"].append("no-such-take")
+                data["blockers"][-1]["evidence"] = []
+                del data["blockers"][-2]["evidence"]  # a missing key is reported, not a KeyError
+            return data
+
+        build.load = sabotaged
+        try:
+            _, _, errors = build.build()
+        finally:
+            build.load = original
+        for needle in ("passage not found in section", "which the row does not name", "no take 'no-such-take'", "no research evidence"):
+            self.assertTrue(any(needle in e and e.startswith("speed ") for e in errors), (needle, errors))
+        self.assertEqual(sum("no research evidence" in e for e in errors), 2, errors)
+
+    def test_a_blocker_missing_fields_fails_the_data_check(self):
+        broken = json.loads(json.dumps(CORE))
+        bs = broken["speed"]["blockers"]
+        bs[1]["id"] = bs[0]["id"]
+        bs[2]["evidence"][0]["url"] = "http://example.org"
+        bs[3]["evidence"][0]["date"] = "October 2025"
+        bs[4]["headline"] = ""
+        errs, _ = check_data.check(broken)
+        for needle in ("duplicate id", "url must be https", "date must be YYYY", "missing headline"):
+            self.assertTrue(any(needle in e and e.startswith("speed ") for e in errs), (needle, errs))
+
+    def test_the_agent_export_carries_every_blocker_and_its_sources(self):
+        full = build.llms_full(CORE, PARAS)
+        self.assertIn("## What slows projects", full)
+        for b in CORE["speed"]["blockers"]:
+            self.assertIn(f"### {b['title']}", full)
+            for ev in b["evidence"]:
+                self.assertIn(ev["url"], full)
+
+
 if __name__ == "__main__":
     unittest.main()
 

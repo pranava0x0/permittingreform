@@ -48,6 +48,7 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out += [(f"section {s['n']} quote note", q["why"]) for q in s["quotes"] if q["why"]]
         out += [(f"section {s['n']} vs {k}", v) for k, v in s["vs"].items() if v]
     o = core["overview"]
+    out.append(("overview summary", o["summary"]["text"]))
     out.append(("overview money note", o["money_note"]))
     out += [("overview status", p["text"]) for p in o["status"]["points"]]
     if o.get("next"):
@@ -72,6 +73,14 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out.append(("datacenters intro", dc["intro"]))
     for r in dc["rows"]:
         out += [(f"datacenters {r['id']} topic", r["topic"]), (f"datacenters {r['id']} now", r["now"]), (f"datacenters {r['id']} baaja", r["baaja"])]
+    sp = core.get("speed") or {"blockers": []}
+    if sp.get("intro"):
+        out.append(("speed intro", sp["intro"]))
+    for b in sp["blockers"]:
+        out += [(f"speed {b['id']} title", b["title"]), (f"speed {b['id']} headline", b["headline"])]
+        out += [(f"speed {b['id']} finding", ev["finding"]) for ev in b["evidence"]]
+        if b.get("disagreement"):
+            out.append((f"speed {b['id']} disagreement", b["disagreement"]))
     out += [("compare added", a["text"]) for a in core["compare"]["added"]]
     out += [("compare dropped", a["text"]) for a in core["compare"]["dropped"]]
     for e in core["timeline"]:
@@ -209,6 +218,24 @@ def check(core: dict) -> tuple[list[str], dict]:
             if r.get("now_cite") and not str(r.get("now_url", "")).startswith("https://"):
                 errs.append(f"{name} {r['id']}: a current-law cite needs a link")
 
+    seen_speed: set[str] = set()
+    for b in (core.get("speed") or {"blockers": []})["blockers"]:
+        w = f"speed {b.get('id')}"
+        if b.get("id") in seen_speed:
+            errs.append(f"{w}: duplicate id")
+        seen_speed.add(b.get("id"))
+        for f in ("id", "title", "headline", "evidence"):
+            if not b.get(f):
+                errs.append(f"{w}: missing {f}")
+        for i, ev in enumerate(b.get("evidence", [])):
+            for f in ("org", "title", "url", "date", "finding", "quote"):
+                if not str(ev.get(f, "")).strip():
+                    errs.append(f"{w} evidence {i}: missing {f}")
+            if not str(ev.get("url", "")).startswith("https://"):
+                errs.append(f"{w} evidence {i}: url must be https")
+            if not re.fullmatch(r"\d{4}(-\d{2}){0,2}", str(ev.get("date", ""))):
+                errs.append(f"{w} evidence {i}: date must be YYYY, YYYY-MM or YYYY-MM-DD")
+
     def http(url) -> bool:
         return isinstance(url, str) and url.lower().startswith(("http://", "https://"))
 
@@ -216,6 +243,9 @@ def check(core: dict) -> tuple[list[str], dict]:
         if not DATE_RE.match(d or "") or d > core["meta"]["as_of"]:
             errs.append(f"{where}: date {d!r} is malformed or after the data date {core['meta']['as_of']}")
 
+    summ = core["overview"].get("summary") or {}
+    if not summ.get("text") or not http(summ.get("source", {}).get("url")):
+        errs.append("overview summary: needs text and a source link")
     nxt = core["overview"].get("next")
     if nxt and (not DATE_RE.match(nxt.get("date", "")) or not http(nxt.get("source", {}).get("url"))):
         errs.append("overview next: needs a YYYY-MM-DD date and a source link")

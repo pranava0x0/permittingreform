@@ -1,4 +1,11 @@
 {
+ "summary": {
+  "text": "A bipartisan Senate bill that would change how federal agencies review and approve energy and infrastructure projects, and would make data centers pay for the transmission lines they need.",
+  "source": {
+   "label": "Senate EPW Committee",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026"
+  }
+ },
  "status": {
   "points": [
    {
@@ -9,10 +16,10 @@
     }
    },
    {
-    "text": "The Senate is in pro forma sessions through November 5, so the first floor action on the bill is the November 9 cloture vote.",
+    "text": "The Senate is in pro forma sessions through November 5. It returns November 9 at 3 p.m. to resume the motion to proceed to H.R. 2347, with a cloture vote set for about 5:30 p.m.; 60 votes are needed.",
     "source": {
-     "label": "U.S. Senate Press Gallery",
-     "url": "https://www.dailypress.senate.gov/thursday-october-15-2026/"
+     "label": "U.S. Senate Press Gallery, Oct. 26",
+     "url": "https://www.dailypress.senate.gov/monday-october-26-2026/"
     }
    },
    {
@@ -42,15 +49,50 @@
      "label": "NPR",
      "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary"
     }
+   },
+   {
+    "text": "The four sponsors' aides said on October 22 that the senators expect to offer a manager's amendment with changes before the November 9 vote.",
+    "source": {
+     "label": "Roll Call",
+     "url": "https://rollcall.com/2026/10/22/permitting-bill-writers-seek-industry-aid-ahead-of-senate-vote/"
+    }
+   },
+   {
+    "text": "The Defense Department advanced two onshore wind projects on October 22, which a White House official tied to the bill's passage; Whitehouse called it a start and asked for more on wind and solar.",
+    "source": {
+     "label": "Joshua Siegel, Punchbowl News (X)",
+     "url": "https://x.com/SiegelScribe/status/2113279782419128579"
+    }
+   },
+   {
+    "text": "House Speaker Mike Johnson said on October 23 that he supports the Senate bill.",
+    "source": {
+     "label": "Joshua Siegel, Punchbowl News (X)",
+     "url": "https://x.com/SiegelScribe/status/2113682338181779731"
+    }
+   },
+   {
+    "text": "Opposition grew in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups, nine Democratic attorneys general, more than 100 public lands groups, the People's Environmental Justice Caucus and Rep. Leger Fernández.",
+    "source": {
+     "label": "POLITICO (X)",
+     "url": "https://x.com/NicoPortuondo/status/2112571938484957230"
+    }
+   },
+   {
+    "text": "Support letters the same week came from 19 former economic and national security officials, the five main clean energy trade groups, and API with 137 other organizations.",
+    "source": {
+     "label": "Institute for Progress",
+     "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf"
+    }
    }
   ]
  },
  "next": {
   "date": "2026-11-09",
-  "text": "Senate cloture vote, about 5:30 p.m., on taking up H.R. 2347, the legislative vehicle for the bill. It is the Senate's first vote after the November 3 election.",
+  "text": "Senate cloture vote on taking up H.R. 2347, the bill's vehicle, about 5:30 p.m.",
   "source": {
-   "label": "U.S. Senate Press Gallery",
-   "url": "https://www.dailypress.senate.gov/thursday-october-15-2026/"
+   "label": "U.S. Senate Press Gallery, Oct. 26",
+   "url": "https://www.dailypress.senate.gov/monday-october-26-2026/"
   }
  },
  "headlines": [

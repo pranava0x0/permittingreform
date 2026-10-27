@@ -11,7 +11,7 @@ const out = process.env.CLICKS_OUT || '.test-artifacts/clicks.json';
 
 const WIDTHS = [{ w: 375, h: 812, touch: true }, { w: 1280, h: 800, touch: false }];
 const CLICK_ROUTES = ['overview', 'bill', 'bill/sec/1106', 'bill/sec/2107', 'bill/search/transmission', 'compare',
-  'compare/data-center-bills', 'communities', 'datacenters', 'timeline', 'positions', 'people', 'media', 'method'];
+  'compare/data-center-bills', 'communities', 'datacenters', 'speed', 'timeline', 'positions', 'people', 'media', 'method'];
 const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"], .tabs a, #theme-toggle';
 
 (async () => {
@@ -80,7 +80,9 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
           await loc.evaluate((el) => {
             for (let n = el.parentElement; n; n = n.parentElement) {
               if (n.tagName === 'DETAILS') n.open = true;
-              if (n.matches('.event, .cm-row, .person, .media-item, .compare tbody tr')) n.classList.add('open');
+              if (n.matches('.event, .cm-row, .person, .media-item, .compare tbody tr, .pos-row')) n.classList.add('open');
+              /* Rows past a list's first four sit behind a "Show N more" chip, which unhides them. */
+              if (n.hidden && n.matches('.pos-row')) n.hidden = false;
             }
           });
           if (!(await loc.isVisible())) { report.clicks.push({ ...rec, result: 'hidden' }); continue; }
