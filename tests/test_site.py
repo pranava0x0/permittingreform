@@ -131,13 +131,13 @@ class Page(unittest.TestCase):
 
     def test_a_concerned_reading_is_not_counted_as_opposition(self):
         # NRDC's "concerns" take sat in "Opponents read it as" and counted as "against" (Codex, PR 8).
-        self.assertIn('"Opponents and critics read it as"', JS)
+        self.assertIn('["against", "Critics"]', JS)
         self.assertIn('x === "concerns"', JS)
         self.assertIn('el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance])', JS)
 
     def test_the_positions_page_leads_with_disputed_readings(self):
         self.assertIn("disputesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
-        self.assertIn('"No reading on this side found yet."', JS)
+        self.assertIn('"None found yet."', JS)
 
     def test_the_positions_page_is_routed_in_the_news_group(self):
         self.assertIn('const NEWS_TABS = ["timeline", "positions", "people", "media"];', JS)
@@ -163,6 +163,22 @@ class Page(unittest.TestCase):
 
     def test_the_bill_text_loader_caches_its_promise(self):
         self.assertIn("if (!billPromise)", JS)
+
+
+    def test_crawlers_can_find_every_text_endpoint(self):
+        # The sitemap listed only the two HTML pages; the per-section Markdown and the
+        # llms files were reachable only through llms.txt (2026-10-22).
+        sitemap = (ROOT / "site/sitemap.xml").read_text(encoding="utf-8")
+        listed = set(re.findall(r"<loc>[^<]*/permittingreform/([^<]*)</loc>", sitemap))
+        sections = {f"sections/{f.name}" for f in (ROOT / "site/sections").glob("*.md")}
+        self.assertTrue(sections)
+        self.assertLessEqual(sections | {"llms.txt", "llms-full.txt", "reading.html"}, listed)
+
+    def test_the_disputes_reach_the_agent_text(self):
+        full = (ROOT / "site/llms-full.txt").read_text(encoding="utf-8")
+        self.assertIn("## Where the two sides disagree", full)
+        self.assertIn("- Critics: **", full)
+        self.assertIn("Where the two sides disagree", (ROOT / "site/llms.txt").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

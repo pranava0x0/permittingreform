@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""slopcheck: find AI-slop writing in product copy, docs, code comments and commit text.
+"""slop_writing (formerly slopcheck): find AI-slop writing in product copy, docs, code comments and commit text.
 
 One checker consolidating the prose gates that grew independently across six
 unrelated projects' private checkers, plus the structural patterns none of
@@ -19,7 +19,7 @@ them caught. The donors, anonymized, by what each contributed:
                                            splitting, sentence stats
   Project E's register_report.py           comma-staple twins, epigrams,
                                            so-tails, motif words
-  DESIGN.md 11.1 + 11.1.2                  the register list and the rhythm
+  WRITING.md 1.1 + 11.1.2                  the register list and the rhythm
                                            tells behind all of it
 
 Four layers, because slop hides at four resolutions. Layer 0 is a memory, the
@@ -73,20 +73,20 @@ Rules this checker follows, learned the hard way and enforced on itself:
     become a smuggling route.
 
 Usage:
-  python3 tools/slopcheck.py docs/ README.md        # scan paths
-  python3 tools/slopcheck.py --stats .              # add rhythm + corpus stats
-  python3 tools/slopcheck.py --calibrate .          # first-run triage table
-  python3 tools/slopcheck.py --selftest             # prove the rules still fire
-  python3 tools/slopcheck.py --list                 # the rule table
-  python3 tools/slopcheck.py --explain tricolon     # one rule, in full
-  python3 tools/slopcheck.py --tells [FAMILY]       # the catalog of flagged phrases
-  python3 tools/slopcheck.py --probe "Try the tools"  # would this string be caught?
-  python3 tools/slopcheck.py --only tricolon,em-dash-pileup docs/
-  python3 tools/slopcheck.py --changed origin/main..HEAD
-  python3 tools/slopcheck.py --commits origin/main..HEAD
-  python3 tools/slopcheck.py --pr 24
-  git log -1 --format=%B | python3 tools/slopcheck.py --stdin
-  python3 tools/slopcheck.py --fail-on WARN --json findings.json .
+  python3 tools/slop_writing.py docs/ README.md        # scan paths
+  python3 tools/slop_writing.py --stats .              # add rhythm + corpus stats
+  python3 tools/slop_writing.py --calibrate .          # first-run triage table
+  python3 tools/slop_writing.py --selftest             # prove the rules still fire
+  python3 tools/slop_writing.py --list                 # the rule table
+  python3 tools/slop_writing.py --explain tricolon     # one rule, in full
+  python3 tools/slop_writing.py --tells [FAMILY]       # the catalog of flagged phrases
+  python3 tools/slop_writing.py --probe "Try the tools"  # would this string be caught?
+  python3 tools/slop_writing.py --only tricolon,em-dash-pileup docs/
+  python3 tools/slop_writing.py --changed origin/main..HEAD
+  python3 tools/slop_writing.py --commits origin/main..HEAD
+  python3 tools/slop_writing.py --pr 24
+  git log -1 --format=%B | python3 tools/slop_writing.py --stdin
+  python3 tools/slop_writing.py --fail-on WARN --json findings.json .
 
 Config: an optional .slopcheck.json beside the scanned root.
 
@@ -121,6 +121,7 @@ import html
 import ast
 import io
 import json
+import os
 import re
 import statistics
 import subprocess
@@ -166,8 +167,8 @@ MAX_FILE_BYTES = 2_000_000       # past this it is a data blob, not prose
 # Contributor notes, not shipped prose. These files quote banned phrases in
 # order to record why they are banned, so scanning them reports the rule table
 # as a violation of itself. --include-agent-docs opts back in.
-AGENT_DOCS = {"claude.md", "agents.md", "design.md", "testing.md", "data.md",
-              "security.md", "git.md", "ledger.md", "issues.md", "backlog.md",
+AGENT_DOCS = {"claude.md", "agents.md", "delegation.md", "design.md", "writing.md", "testing.md", "data.md",
+              "security.md", "performance.md", "git.md", "ledger.md", "issues.md", "backlog.md",
               "refresh.md", "uat.md", "prompting.md", "skillslog.md",
               "contributing.md", "changelog.md", "todo.md", "notes.md"}
 AGENT_DOC_DIRS = {"base-files", ".claude", "docs/agents"}
@@ -257,6 +258,17 @@ class Rule:
 # --- Layer 1: phrases ------------------------------------------------------
 PHRASE_RULES: List[Rule] = [
     Rule(
+        "generic-plan-label", "WARN", "filler",
+        "a generic planning label that praises the approach instead of naming the work",
+        "name the subject: evaluation, procurement terms, budget and maintenance",
+        r"\b(?:an honest test|a concrete (?:ask|task)|a funded operator|a staged test)\b",
+        origin="a user's editorial correction on a client application deck, 2026-10-10",
+        bad=("An honest test", "A concrete task", "A concrete ask",
+             "A funded operator", "A staged test"),
+        good=("Evaluation", "Procurement terms", "Budget and maintenance",
+              "The utility funded operator training."),
+    ),
+    Rule(
         "llm-register", "FAIL", "register",
         "LLM register word with no legitimate use in authored prose",
         "name the specific thing: what it does, for whom, with what number",
@@ -268,7 +280,7 @@ PHRASE_RULES: List[Rule] = [
         r"holistic approach|supercharg(?:e|es|ed|ing)|revolutioniz(?:e|es|ed|ing)|"
         r"best[-\s]in[-\s]class|world[-\s]class|embark(?:ing)? on a journey|"
         r"in the (?:realm|world) of|bustling|a rich (?:tapestry|history) of)\b",
-        origin="DESIGN.md 11.1; Project D's audit-prose.mjs; Project C's test_data.py",
+        origin="WRITING.md 1.1; Project D's audit-prose.mjs; Project C's test_data.py",
         bad=("This dashboard offers a seamless way to explore the filings.",
              "The report stands as a testament to the agency's rigor.",
              "A rich tapestry of interconnected obligations."),
@@ -289,7 +301,7 @@ PHRASE_RULES: List[Rule] = [
         r"ai[-\s](?:first|native|powered|driven|enabled)|"
         r"foster(?:s|ing)? (?:a|an|the)|transformative|realm|"
         r"plays? an? (?:crucial|key|vital|pivotal|important) role)\b",
-        origin="DESIGN.md 11.1; 'realm' and 'not only' were demoted from FAIL in "
+        origin="WRITING.md 1.1; 'realm' and 'not only' were demoted from FAIL in "
                "Project D because both have ordinary uses",
         bad=("The tool leverages a robust ingest pipeline.",
              "Onboarding plays a crucial role in the queue.",
@@ -321,7 +333,7 @@ PHRASE_RULES: List[Rule] = [
         r"bulletproof|turnkey|frictionless|best[-\s]of[-\s]breed|"
         r"state[-\s]of[-\s]the[-\s]art|"
         r"groundbreaking(?!\s+(?:held|already|ceremony|took place|on\b)))\b",
-        origin="DESIGN.md 11.1 marketing vapor; a CRM's test_design.py; puffery pair "
+        origin="WRITING.md 1.1 marketing vapor; a CRM's test_design.py; puffery pair "
                "folded in from a sibling project's check_writing.py (2026-08-29)",
         bad=("Powerful insights at your fingertips.",
              "An enterprise-grade, turnkey compliance workflow.",
@@ -366,7 +378,7 @@ PHRASE_RULES: List[Rule] = [
         r"\b(it'?s not just \w+|isn'?t just about|not just [\w\s]{1,20}(?:,? but|; it'?s)|"
         r"more than just (?:a|an|the)|not (?:a|an|the) \w+\.\s+Rather,|"
         r"it'?s not about [\w\s]{1,25}, it'?s about)\b",
-        origin="DESIGN.md 11.1 contrast & negation family; Wikipedia 'Signs of AI writing'",
+        origin="WRITING.md 1.1 contrast & negation family; Wikipedia 'Signs of AI writing'",
         bad=("It's not just a tracker, it's a decision tool.",
              "This isn't just about cost."),
         good=("The tracker ranks 49 dockets by filing date.",),
@@ -415,7 +427,7 @@ PHRASE_RULES: List[Rule] = [
         r"highlight(?:s|ed|ing) the (?:importance|need|fact)|"
         r"makes? (?:it )?clear that|serves? as a reminder|speaks? volumes|"
         r"sheds? light on|paints? a picture of)\b",
-        origin="DESIGN.md 11.1 caption-register phrasing",
+        origin="WRITING.md 1.1 caption-register phrasing",
         bad=("The order underscores the importance of timely onboarding.",),
         good=('The order says onboarding studies "shall be completed in 90 days".',),
     ),
@@ -435,7 +447,7 @@ PHRASE_RULES: List[Rule] = [
         "[\U0001F300-\U0001FAFF\U0001F000-\U0001F2FF\U00002600-\U000026FF"
         "\u2728\u274C\u2705\u2757\u2764\u2049\u203C]",
         scopes=(SCOPE_COPY, SCOPE_DOC, SCOPE_TEXT),
-        origin="DESIGN.md 11: no emojis by default. Promote to FAIL in .slopcheck.json "
+        origin="WRITING.md 1: no emojis by default. Promote to FAIL in .slopcheck.json "
                "for projects holding the house style.",
         bad=("Ready to ship \U0001F680", "The order \U0001F4E6 is ready"),
         good=("Ready to ship.",
@@ -472,7 +484,7 @@ PHRASE_RULES: List[Rule] = [
         r"Importantly|Crucially|Notably|Interestingly|Ultimately|"
         r"That said|With that in mind|Simply put|In essence|At its core|"
         r"Fundamentally|Broadly speaking)\b[,\s]",
-        origin="Project C's check_language.py throat-clearing; DESIGN.md 11.1",
+        origin="Project C's check_language.py throat-clearing; WRITING.md 1.1",
         bad=("Notably, the commission moved the date twice.",),
         good=("The commission moved the date twice.",),
     ),
@@ -484,7 +496,7 @@ PHRASE_RULES: List[Rule] = [
         r"think of it (?:as|like) an?\b|let'?s break (?:it|this) down|"
         r"here'?s what nobody (?:talks about|tells you)|"
         r"but here'?s the (?:catch|kicker|twist))",
-        origin="DESIGN.md 11.1 rhetorical crutches; Project B's stage-direction",
+        origin="WRITING.md 1.1 rhetorical crutches; Project B's stage-direction",
         bad=("Consider this: the deadline already passed.",),
         good=("The deadline passed on March 4.",),
     ),
@@ -496,7 +508,7 @@ PHRASE_RULES: List[Rule] = [
         r"\bWhy does (?:this|it) matter\?|\bWhat'?s the catch\?|"
         r"\bThe (?:result|upshot|answer)\?|\bSound familiar\?|"
         r"\bWhat if I told you\b)",
-        origin="DESIGN.md 11.1.2 setup/payoff constructions",
+        origin="WRITING.md 1.1.2 setup/payoff constructions",
         bad=("So what changed? Everything.",),
         good=("Two things changed: the deadline and the filing fee.",),
     ),
@@ -506,7 +518,7 @@ PHRASE_RULES: List[Rule] = [
         "cut it; the reader just read the point",
         r"(?:^|(?<=[.!?]\s))\s*(In conclusion|Overall|To summarize|In summary|"
         r"All in all|To sum up|The bottom line is|In short|Put simply)\b[,:\s]",
-        origin="DESIGN.md 11.1 hollow summaries",
+        origin="WRITING.md 1.1 hollow summaries",
         bad=("In summary, the filing was late.",),
         good=("The filing was late.",),
     ),
@@ -531,7 +543,7 @@ PHRASE_RULES: List[Rule] = [
         r"\b(what this shows is|the key thing to understand|"
         r"it'?s important to understand|the takeaway here is|"
         r"what'?s interesting is|the point (?:here )?is that)\b",
-        origin="DESIGN.md 11.1.2 paragraph pinning",
+        origin="WRITING.md 1.1.2 paragraph pinning",
         bad=("What this shows is that the queue is the constraint.",),
         good=("The queue is the constraint: 411 projects, 14 engineers.",),
     ),
@@ -567,7 +579,7 @@ PHRASE_RULES: List[Rule] = [
         r"truly|incredibly|remarkably|undoubtedly|effortlessly|"
         r"significantly (?:better|improved|enhanced)|"
         r"worth more than any press release)\b",
-        origin="DESIGN.md 11.1 empty intensifiers (2026-07-17). That list also names "
+        origin="WRITING.md 1.1 empty intensifiers (2026-07-17). That list also names "
                "really / actually / precisely, which are counted by "
                "intensifier-density instead of flagged per instance: measured "
                "2026-08-29, 97 uses across these docs and nearly every one marks an "
@@ -583,7 +595,7 @@ PHRASE_RULES: List[Rule] = [
         r"\b(the (?:industry'?s|world'?s|country'?s) (?:first|best|only|most|largest)|"
         r"the rare \w+ that|the first \w+ where|unlike any other|"
         r"second to none|unparalleled|unrivall?ed|most[-\s]copied)\b",
-        origin="DESIGN.md 11.1 comparative superlatives (2026-07-17)",
+        origin="WRITING.md 1.1 comparative superlatives (2026-07-17)",
         bad=("The industry's first joint-supply filing.",),
         good=("The first filing under Rule 4021 to pair two supply sources.",),
     ),
@@ -594,7 +606,7 @@ PHRASE_RULES: List[Rule] = [
         r"\b(simple yet powerful|powerful yet simple|fast but reliable|"
         r"small but mighty|(?:simple|fast|small|cheap|light|easy) "
         r"(?:yet|but) (?:powerful|capable|complete|thorough|rigorous))\b",
-        origin="DESIGN.md 11.1 contrasting-pair coupling",
+        origin="WRITING.md 1.1 contrasting-pair coupling",
         bad=("A simple yet powerful screening tool.",),
         good=("Screens 3,000 parcels in nine seconds on a laptop.",),
     ),
@@ -609,7 +621,7 @@ PHRASE_RULES: List[Rule] = [
         scopes=(SCOPE_COPY, SCOPE_TEXT),
         fixture_as="json",
         origin="Project A's negative-parallelism, slogan-position heuristic. Copy "
-               "and commit text only: DESIGN.md 11.1 scopes the negation family to "
+               "and commit text only: WRITING.md 1.1 scopes the negation family to "
                "shipped words, and in an instruction the shape carries the content "
                '("Read the slice, not the file").',
         bad=("Screening evidence, not an agency determination.",
@@ -644,7 +656,7 @@ PHRASE_RULES: List[Rule] = [
         r"balance|entrance|maintenance)\b)"
         r"\w*(?:tion|ment|ance|ence|sis|ity)\b"
         r"(?=\s*(?:[.,;:)]|$|of\b|into\b|on\b|for\b|about\b|to\b))",
-        origin="DESIGN.md 11.1 nominalization (2026-07-30)",
+        origin="WRITING.md 1.1 nominalization (2026-07-30)",
         bad=("The team will conduct an investigation of the outage.",),
         good=("The team will investigate the outage.",
               "That is what made the sentence feel verified.",
@@ -657,7 +669,7 @@ PHRASE_RULES: List[Rule] = [
         r"(?:^|(?<=[.!?]\s))\s*(Three ways to|Two moves\.|Here are (?:three|four|five)|"
         r"(?:Three|Four|Five|Six) (?:reasons|things|steps|ways)\b|"
         r"Let'?s explore the|In this section,? we)",
-        origin="DESIGN.md 11.1.1 section intros carry the point",
+        origin="WRITING.md 1.1.1 section intros carry the point",
         bad=("Three ways to read the company. One conclusion.",),
         good=("The moat is energy origination, and its durable form is a public ledger.",),
     ),
@@ -843,7 +855,7 @@ COMPUTED_RULES: List[Rule] = [
         "sentence lengths too even to be human",
         "let one sentence run long, then stop the next one short",
         computed=True,
-        origin="DESIGN.md 11.1.2; low burstiness is the detection term",
+        origin="WRITING.md 1.1.2; low burstiness is the detection term",
         bad=(" ".join(["The team reviewed the filing today."] * 20),),
         good=("The team reviewed the filing. It ran to 340 pages, most of it "
               "exhibits, and the one paragraph that mattered sat on page 291 "
@@ -855,7 +867,7 @@ COMPUTED_RULES: List[Rule] = [
         "consecutive sentences built on one syntactic template",
         "change which clause leads, or let one sentence run longer",
         computed=True,
-        origin="DESIGN.md 11.1.2 uniform sentence structure",
+        origin="WRITING.md 1.1.2 uniform sentence structure",
         bad=("The system tracks filings. The system ranks dockets. The system "
              "exports rows.",),
         good=("Filings arrive weekly. After the clerk stamps one, it lands in "
@@ -866,7 +878,7 @@ COMPUTED_RULES: List[Rule] = [
         "a run of short declaratives with no connective tissue",
         "coordinate them when they are actually related",
         computed=True,
-        origin="DESIGN.md 11.1.2 parataxis (the staccato stack)",
+        origin="WRITING.md 1.1.2 parataxis (the staccato stack)",
         bad=("This works. This scales. This lasts.",),
         good=("It works because it scales, and it has lasted through three rewrites.",),
     ),
@@ -875,7 +887,7 @@ COMPUTED_RULES: List[Rule] = [
         "a short aphoristic line closing paragraph after paragraph",
         "save the kicker for the one paragraph that earns it",
         computed=True,
-        origin="DESIGN.md 11.1.2 landing sentences used as a reflex",
+        origin="WRITING.md 1.1.2 landing sentences used as a reflex",
         bad=("The queue is long. The engineers are few. That is the difference.\n\n"
              "The utility filed late this spring. It did the same last autumn. "
              "It always does.\n\n"
@@ -887,7 +899,7 @@ COMPUTED_RULES: List[Rule] = [
         "rule of three; three short items in a row for cadence",
         "keep the one that carries information",
         computed=True,
-        origin="DESIGN.md 11.1 rule of three / tricolon",
+        origin="WRITING.md 1.1 rule of three / tricolon",
         bad=("It is fast, simple, and powerful.",),
         good=("It runs in nine seconds on a laptop.",
               "Loading, error, and empty states on every view.",
@@ -899,7 +911,7 @@ COMPUTED_RULES: List[Rule] = [
         "four or more nouns stacked as unbroken modifiers",
         "unpack with a preposition or a verb",
         computed=True,
-        origin="DESIGN.md 11.1 stacked noun phrases; ASD-STE100 rule 7 (a personal site's ste.py)",
+        origin="WRITING.md 1.1 stacked noun phrases; ASD-STE100 rule 7 (a personal site's ste.py)",
         bad=("a user engagement optimization framework",),
         good=("a framework for optimizing engagement",),
     ),
@@ -961,7 +973,7 @@ COMPUTED_RULES: List[Rule] = [
         "one vivid word repeated across the corpus until it reads as a tic",
         "vary it or cut it; keep only the literal uses",
         computed=True,
-        origin='DESIGN.md 11.1 motif-word overuse: "receipts" ran 80+ times across ten decks',
+        origin='WRITING.md 1.1 motif-word overuse: "receipts" ran 80+ times across ten decks',
         bad=(),   # corpus-level: exercised by the corpus fixture in --selftest
         good=(),
     ),
@@ -979,7 +991,7 @@ COMPUTED_RULES: List[Rule] = [
         "padding adverbs per thousand words",
         "cut them; the fact underneath does the work",
         computed=True,
-        origin="DESIGN.md 11.1 empty intensifiers, measured rather than matched",
+        origin="WRITING.md 1.1 empty intensifiers, measured rather than matched",
         bad=(),
         good=(),
     ),
@@ -1586,7 +1598,158 @@ COMPUTED_RULES_HARVEST: List[Rule] = [
 ]
 
 
-RULES: List[Rule] = (PHRASE_RULES + PHRASE_RULES_HARVEST + SHAPE_RULES
+# --- 2026-10-19: tells from outside sources the registry had no rule for ---
+# Each was probed against the 97 earlier rules first; none fired on its bad fixture.
+PHRASE_RULES_OUTSIDE: List[Rule] = [
+    Rule(
+        "copula-avoidance", "WARN", "register",
+        "'serves as' / 'stands as' / 'functions as' in place of 'is'",
+        "say 'is' or 'has', or name what the thing does",
+        r"\b(?:serv(?:es|ed|ing)|stand(?:s|ing)|stood|function(?:s|ed|ing)?|act(?:s|ed|ing)) "
+        r"as (?:a|an|the|our|its|their) (?!(?:chair|host|president|director|treasurer|"
+        r"secretary|counsel|proxy|placeholder|fallback|default)\b)",
+        origin="Wikipedia 'Signs of AI writing' (copula avoidance), read 2026-10-19",
+        bad=("The archive serves as the primary record for the county.",
+             "The plaza stands as a reminder of the mill."),
+        good=("The archive is the primary record for the county.",
+              "She serves as chair of the board.",
+              "The cached copy serves as a fallback when the API is down."),
+    ),
+    Rule(
+        "significance-tail", "WARN", "padding",
+        "a trailing ', highlighting / underscoring / reflecting ...' clause that asserts "
+        "importance instead of showing it",
+        "cut the tail; if the significance is real, give it its own sentence with the evidence",
+        r",\s+(?:further\s+)?(?:highlighting|underscoring|emphasi[sz]ing|reflecting|"
+        r"symboli[sz]ing|showcasing|cementing|solidifying|signal(?:l)?ing|reinforcing|"
+        r"illustrating|demonstrating) (?:the|its|their|a|an|how|that|his|her|our)\b",
+        origin="Wikipedia 'Signs of AI writing' (superficial -ing analysis); Kobak et al. 2025 "
+               "excess vocabulary ('underscores' ~11x, 'showcasing' ~10x)",
+        bad=("The filing grew to 400 pages, highlighting the agency's commitment to transparency.",
+             "Output tripled, underscoring the importance of the new line."),
+        good=("The filing grew to 400 pages; 310 of them are exhibits.",
+              "Highlighting the row turns it amber."),
+    ),
+    Rule(
+        "challenges-outro", "WARN", "structure",
+        "the stock 'Despite these challenges' / 'Future outlook' close",
+        "end on the last fact, or name the specific obstacle and what happened next",
+        r"\bdespite (?:these|the|its|their|such|many|some|ongoing) (?:challenges|setbacks|"
+        r"hurdles|obstacles|limitations|difficulties)\b|^\s*#*\s*(?:future outlook|"
+        r"challenges and (?:legacy|opportunities|future directions))\s*$",
+        origin="Wikipedia 'Signs of AI writing' (outline-like conclusions)",
+        bad=("Despite these challenges, the program continues to grow.",
+             "## Challenges and Opportunities"),
+        good=("The program lost two grants in 2024 and still added 40 sites.",),
+    ),
+    Rule(
+        "chatbot-markup", "FAIL", "artifact",
+        "chat-interface citation markup or tracking parameters pasted into the text",
+        "delete the token; replace it with a real citation if one was meant",
+        r"(?:oaicite|contentReference\[|\bturn\d+(?:search|news|view|file)\d+\b|"
+        r"utm_source=(?:chatgpt\.com|openai|perplexity|claude\.ai|copilot)|"
+        r"\[cite:\s*\d+\]|:::(?:writing|thinking)\b)",
+        origin="Wikipedia 'Signs of AI writing' (markup leftovers), read 2026-10-19",
+        bad=("The plant opened in 1998. turn0search0",
+             "Source: example.org/report?utm_source=chatgpt.com",
+             "The tariff rose 4% [cite: 1]."),
+        good=("The tariff rose 4% (PUC order 2025-114).",),
+    ),
+    Rule(
+        "edit-summary-voice", "WARN", "register",
+        "a change described by what it did not break ('Preserved existing behavior', "
+        "'No behavior change') instead of what it changed",
+        "say what changed and how you checked it; 'tests pass' with the count beats an assurance",
+        r"^\s*(?:[-*]\s+)?(?:preserv|retain|maintain)(?:ed|s|ing) (?:the |all )?(?:existing|"
+        r"current|original) (?:behaviou?r|functionality|logic|semantics|structure)\b|"
+        r"\bno (?:functional|behaviou?r(?:al)?|user-facing) changes?\b",
+        scopes=(SCOPE_TEXT,),
+        origin="Wikipedia 'Signs of AI writing' (edit-summary tells: preserved/retained); "
+               "the same shape recurs in agent commit and PR bodies",
+        bad=("Preserved existing behavior while refactoring the parser.",
+             "Refactor the loader. No behavior change."),
+        good=("Split the loader into fetch and parse; 214 tests pass unchanged.",),
+    ),
+    Rule(
+        "aspirational-slogan", "WARN", "slogan",
+        "an aspirational template headline that fits any product",
+        "say what this product does for whom, with a number if you have one",
+        r"\b(?:build(?:ing)?|shap(?:e|ing)|power(?:ing)?|reimagin(?:e|ing)|redefin(?:e|ing)|"
+        r"creat(?:e|ing)) the future of\b|\b\w+ without limits\b(?! (?:on|to|of|for|in)\b)|"
+        r"\b\w+ made (?:simple|easy|effortless)\b|\ball[-\s]in[-\s]one (?:platform|solution|"
+        r"workspace)\b|\b(?:scale|grow|ship) (?:without|beyond) limits\b",
+        origin="925studios 'AI slop web design' guide; prg.sh 'same purple gradient website'",
+        bad=("Build the future of work.", "Permitting made simple.",
+             "The all-in-one platform for grid data."),
+        good=("Find every interconnection filing in your county in one search.",
+              # A literal limit on something is not a slogan (a permitting site, 2026-10-20).
+              "Democrats would not back a deal without limits on the president's power."),
+    ),
+    Rule(
+        "link-arrow", "INFO", "chrome",
+        "an arrow appended to link or button text",
+        "let the link look like a link; drop the arrow",
+        r"\S\s*(?:→|->|⟶)\s*$",
+        scopes=(SCOPE_COPY,),
+        origin="Anthropic frontend-design skill (template chrome: '→' on links), 2026-10-19",
+        bad=("Read the report →",),
+        good=("Read the report",),
+    ),
+    Rule(
+        "era-vocabulary", "INFO", "register",
+        "a word Wikipedia's AI-cleanup project lists as over-used by models from mid-2026",
+        "keep it only if it is the exact word; otherwise name the specific property",
+        r"\b(?:quietly|steadily|dependabl[ey]|echo(?:ed|es|ing)|universally|"
+        r"multifaceted|prioritiz(?:e|es|ed|ing))\b",
+        scopes=(SCOPE_DOC, SCOPE_COPY, SCOPE_TEXT),
+        origin="Wikipedia 'Signs of AI writing' vocabulary list for mid-2026 onward; "
+               "a vocabulary rule ages as models change, so it stays INFO",
+        bad=("The team quietly shipped a dependable fix.",),
+        good=("The team shipped the fix on Tuesday.",),
+    ),    Rule(
+        "disclaimer-voice", "WARN", "meta",
+        "a defensive disclaimer about the data or the method ('is not necessarily', "
+        "'are distinct from', 'not evidence of') standing in for the fact",
+        "state the fact once, positively; put a real caveat in a labelled note beside the number it limits",
+        r"\b(?:is|are) not necessarily (?:a|an|the|evidence)\b|\bare distinct from\b|"
+        r"\b(?:is|are) not evidence (?:of|that)\b|\bdo(?:es)? not imply (?:that )?\w|"
+        r"\bnothing (?:here|on this page) is (?:inferred|estimated|invented)\b",
+        scopes=(SCOPE_COPY,),  # in specs and agent docs the same words carry reasoning
+        origin="user 2026-09..10: \"remove ... it's useless\", \"an example of ai slop\" on "
+               "source-classification and milestone disclaimers (2026-10-19 sweep)",
+        bad=("A fetched page is not necessarily a primary source.",
+             "These milestones support development; they are not evidence of commercial operation.",
+             "Stated positions are distinct from law and demonstrated outcomes."),
+        good=("Primary sources are marked with a filled dot.",
+              "The milestone is a signed fuel contract, dated 3 March 2026."),
+    ),
+    Rule(
+        "stat-strip", "WARN", "chrome",
+        "a strip of counts joined by middle dots ('810 documents · 364 URLs · 16 programs')",
+        "say what the reader can do here; put the one count that matters in a sentence",
+        r"\d[\d,]*\s+[a-z][\w -]{1,25}\s(?:·|\|)\s\d[\d,]*\s+[a-z][\w -]{1,25}\s(?:·|\|)\s\d",
+        scopes=(SCOPE_COPY, SCOPE_DOC),
+        origin="user 2026-10 (2026-10-19 sweep): flagged a stat-stack tagline of counts as slop",
+        bad=("810 documents · 364 source URLs · 16 policy programs · 5 company lenses",),
+        good=("Search 810 documents from 16 policy programs.",),
+    ),
+    Rule(
+        "insider-jargon", "WARN", "jargon",
+        "pipeline vocabulary leaking into reader copy: '<noun> lens', 'fully sourced'",
+        "say what the reader sees: 'by company', 'cited'",
+        r"\b(?:company|policy|investor|buyer|sector)\s+lens(?:es)?\b|\bthrough (?:a|the|this) \w+ lens\b|"
+        r"\b(?:fully|well|hand)[-\s]sourced\b",
+        scopes=(SCOPE_COPY,),
+        origin="user 2026-10 (2026-10-19 sweep): \"ai slop words: lens, provenance, sourced\"; "
+               "bare 'provenance' stays out because test_writing_profiles settles it as an "
+               "ordinary technical term",
+        bad=("Browse by company lens.", "Every figure is fully sourced."),
+        good=("Browse by company.", "API response provenance"),
+    ),
+]
+
+
+RULES: List[Rule] = (PHRASE_RULES + PHRASE_RULES_HARVEST + PHRASE_RULES_OUTSIDE + SHAPE_RULES
                      + SHAPE_RULES_HARVEST + COMPUTED_RULES + COMPUTED_RULES_HARVEST)
 RULES_BY_ID: Dict[str, Rule] = {r.id: r for r in RULES}
 assert len(RULES_BY_ID) == len(RULES), "duplicate rule id"
@@ -1786,340 +1949,43 @@ def _t(text: str, level: str, by: str, date: str, family: str, note: str = "",
 F, W = "FAIL", "WARN"
 _DOCS_AND_TEXT = (SCOPE_DOC, SCOPE_TEXT)
 
-KNOWN_TELLS: Tuple[Tell, ...] = (
-    # --- user, 2026-09-07: a pitch-deck review ---------------------------------
-    _t("won the race it named", F, "user", "2026-09-07", "selfpraise",
-       "'named' is the tell, and the win is asserted: everyone went critical the same day"),
-    _t("the factory and fuel chain can keep", F, "user", "2026-09-07", "verb-tail",
-       "'can keep' is superfluous"),
-    _t("every later customer gets to visit", F, "user", "2026-09-07", "verb-tail",
-       "'gets to visit' is superfluous"),
-    _t("proof banked", F, "user", "2026-09-07", "progress", "'banked' is a tell"),
-    _t("what takes shape next", F, "user", "2026-09-07", "progress",
-       "'takes shape' is a tell, and so is the format 'phrase, and phrase next'"),
-    _t("taking shape next", F, "user", "2026-09-07", "progress", "slop pattern"),
-    _t("takes shape", W, "user", "2026-09-07", "progress", "flagged as a tell; literal uses exist"),
-    _t("banked", W, "user", "2026-09-07", "progress", "flagged as a tell; literal uses exist"),
-    _t("what is proven", F, "user", "2026-09-07", "progress", "label-speak, a slop pattern"),
-    _t("the discipline", W, "user", "2026-09-07", "register",
-       "'The discipline: one dated board' - discipline as a noun for a method is a tell"),
-    _t("this proposal's own target", F, "user", "2026-09-07", "selfref",
-       "the artifact narrating itself"),
-    _t("this proposal", F, "user", "2026-09-07", "selfref",
-       "continuously referencing 'this proposal' or 'this thesis' is an AI tell"),
-    _t("this thesis", F, "user", "2026-09-07", "selfref", "self-reference"),
-    _t("this deck", F, "user", "2026-09-07", "selfref", "self-reference"),
-    _t("this plan was written for", F, "user", "2026-09-07", "selfref",
-       "deleted outright in the review"),
-    _t("the receipts", W, "user", "2026-09-07", "selfpraise",
-       "'receipt' is slop; qualifications go on the last slide, titled plainly"),
-    _t("working analogues, all live", F, "user", "2026-09-07", "selfpraise",
-       "first-person receipts footer"),
-    _t("seeded with my own industry relationships", F, "user", "2026-09-07", "selfpraise",
-       "relationship claims belong to the team, not the author"),
-    _t("named, dated delivery slots", F, "user", "2026-09-07", "verb-tail",
-       "stacked modifiers: 'turns that authority into named, dated delivery slots'"),
-    _t("live buying triggers", F, "user", "2026-09-07", "jargon",
-       "'accounts scored on live buying triggers' is slop"),
-    _t("founding thesis", F, "user", "2026-09-07", "selfref",
-       "'remove founding thesis and don't keep referencing that throughout'"),
-    _t("now on the record", F, "user", "2026-09-07", "progress", "a slop pattern"),
-    _t("on the record", W, "user", "2026-09-07", "progress",
-       "literal in legal and press contexts; a tell when a plan narrates its own progress"),
-    _t("those proofs exist to feed", F, "user", "2026-09-07", "progress",
-       "'proofs exist to feed' is a slop pattern; too much exposition"),
-    _t("the commercial machine", W, "user", "2026-09-07", "register", "machine metaphor"),
-    _t("what follows is", W, "user", "2026-09-07", "meta", "announces the next paragraph"),
-    _t("as the lead lane", W, "user", "2026-09-07", "vapor",
-       "crowns a segment while the research is still ranking segments"),
-    _t("in these areas", W, "user", "2026-09-07", "vague",
-       "'these areas' is general; name the thing (\"Why me\")"),
-    # --- user, 2026-09-07: a research-kit review ---------------------------------
-    _t("the single biggest unlock", F, "review", "2026-09-07", "register",
-       "tech-marketing sense of 'unlock'"),
-    _t("in about four weeks", F, "user", "2026-09-07", "time",
-       "'most time estimations have always been wrong in my experience'"),
-    _t("ninety minutes tonight", F, "user", "2026-09-07", "time", "a time promise"),
-    _t("budget three to five hours a week", F, "user", "2026-09-07", "time", "a time promise"),
-    _t("that's the box", W, "review", "2026-09-07", "kicker",
-       "aphoristic one-line closer of the kind no keyword list catches"),
-    # --- user, 2026-09-09: a tool-catalog site -----------------------------------
-    _t("with provenance on every answer", F, "user", "2026-09-09", "jargon",
-       "'is ai slop tell, remember that'"),
-    _t("What DOE-funded software does this, in Python?", F, "user", "2026-09-09", "vague",
-       "'this' has no referent"),
-    _t("Which DOE catalog holds this dataset?", F, "user", "2026-09-09", "vague",
-       "'this' has no referent"),
-    # --- user, 2026-09-10: a document-portal site --------------------------------
-    _t("worked examples", F, "user", "2026-09-10", "register",
-       "'ai slop, just call it examples'"),
-    _t("worked example", W, "user", "2026-09-10", "register", "same family; literal in maths"),
-    _t("a quote and the page it came from", F, "user", "2026-09-10", "label",
-       "does not say what the app shows"),
-    _t("programs NVIDIA can anchor", W, "user", "2026-09-16", "label",
-       "'this is ai slop writing': a heading that says what the company can do, not what exists"),
-    _t("With the MCP", W, "review", "2026-09-10", "heading",
-       "a template repeated as a sub-heading ('With the MCP' twice on one page)"),
-    _t("PublicAIprograms NVIDIA can anchor", F, "user", "2026-09-16", "label",
-       "'this is ai slop writing' (typed without spaces)"),
-    _t("obligateion rows", W, "user", "2026-09-11", "manual",
-       "'claude speak' (typed with the user's own typo; the entry above is the clean form)"),
-    _t("An AI-first spine for the first public humanoid company", F, "review", "2026-09-09",
-       "label", "rewritten out of a company deck in a slop commit: 'AI-first' plus a spine metaphor"),
-    _t("A policy shop built like the factory", F, "review", "2026-09-09", "label",
-       "rewritten out of a company deck in a slop commit"),
-    _t("The rules that set the fleet's speed", F, "review", "2026-09-09", "label",
-       "rewritten out of a company deck in a slop commit"),
-    _t("Explore the evidence", F, "review", "2026-09-10", "heading", "imperative heading"),
-    _t("Use the tools in your research", F, "review", "2026-09-10", "heading",
-       "imperative heading"),
-    _t("A question, with a source you can open", F, "review", "2026-09-10", "heading",
-       "comma-tail plus 'you can open'"),
-    _t("Follow a commitment to its evidence", F, "review", "2026-09-10", "heading",
-       "slogan, abstract to abstract"),
-    _t("What has the archive released?", F, "review", "2026-09-10", "heading",
-       "question as heading"),
-    _t("From promise to delivery", F, "review", "2026-09-10", "heading", "X-to-Y arc"),
-    _t("Why this helps", F, "review", "2026-09-10", "heading",
-       "benefit framing, repeated as a template"),
-    _t("Dated obligations, and what the catalog shows", F, "review", "2026-09-10", "heading",
-       "comma-tail"),
-    _t("What to ask next", F, "review", "2026-09-10", "heading", "vague question heading"),
-    _t("Try the tools", W, "review", "2026-09-10", "heading", "imperative nav label"),
-    _t("For builders", W, "review", "2026-09-10", "heading",
-       "an audience label rather than a page name"),
-    _t("Choose a public priority", F, "review", "2026-09-10", "heading", "imperative label"),
-    _t("Each stage links to its source", F, "review", "2026-09-10", "manual",
-       "describes the interface instead of the subject"),
-    # --- user, 2026-09-11 ---------------------------------------------------------
-    _t("What's happening", W, "user", "2026-09-11", "heading",
-       "landing heading; 'make it more factual like Overview'"),
-    _t("obligation rows:", W, "user", "2026-09-11", "manual", "'this note is claude speak'"),
-    _t("how this site is built", F, "user", "2026-09-11", "selfref",
-       "'more claude / ai writing tell/slop speak'"),
-    _t("What people ask, and the tool that takes it", F, "user", "2026-09-11", "heading",
-       "'this is ai slop'"),
-    _t("Below, one row per tool: the question it answers", F, "user", "2026-09-11", "manual",
-       "another project's slop example"),
-    _t("what an answer holds", F, "user", "2026-09-11", "heading",
-       "question-word label: what an X holds"),
-    _t("who publishes what", F, "user", "2026-09-11", "heading", "question-word label"),
-    _t("Four commands, real output", F, "user", "2026-09-11", "fragment",
-       "number-led fragment plus 'real'"),
-    _t("Keyless out of the box", F, "user", "2026-09-11", "jargon", "coined term"),
-    _t("go in your own mode-600 credentials file", F, "user", "2026-09-11", "jargon",
-       "unexplained implementation detail in reader-facing copy"),
-    _t("Organized by data domain, not by laboratory", F, "user", "2026-09-11", "negation",
-       "corrective negation"),
-    _t("and the richest holdings", F, "user", "2026-09-11", "vague", "vague superlative"),
-    _t("Capability Walks", F, "user", "2026-09-11", "jargon", "coined term"),
-    _t("Provenance Envelope", F, "user", "2026-09-11", "jargon", "coined term"),
-    _t("Every tool returns the same envelope", F, "user", "2026-09-11", "jargon",
-       "'envelope' for a response"),
-    _t("Here is a real one, annotated field by field", F, "user", "2026-09-11", "manual",
-       "reading guide in place of content"),
-    _t("One registry, read two ways", F, "user", "2026-09-11", "heading",
-       "'X, read two ways' twin fragment"),
-    _t("What a call returns", F, "review", "2026-09-11", "heading", "question-word label"),
-    _t("What was announced for it", F, "review", "2026-09-11", "heading",
-       "question-word label"),
-    _t("What proves presence", F, "review", "2026-09-11", "heading", "question-word label"),
-    _t("Who in New York City can supply records", F, "review", "2026-09-11", "heading",
-       "question-word label"),
-    _t("What is not built yet", F, "review", "2026-09-11", "heading", "question-word label"),
-    _t("How the portal works", F, "review", "2026-09-11", "heading", "question-word label"),
-    _t("Ten read-only tools over the portal", F, "review", "2026-09-11", "fragment",
-       "number-led verbless fragment"),
-    _t("Four demos over the same data", F, "review", "2026-09-11", "fragment",
-       "number-led verbless fragment"),
-    _t("Three commitments, announced separately", F, "review", "2026-09-11", "fragment",
-       "number-led stapled chain"),
-    _t("Validated bytes, cached, one request per second", F, "review", "2026-09-11",
-       "fragment", "stapled chain"),
-    _t("One export call, stored as", F, "review", "2026-09-11", "fragment",
-       "number-led fragment"),
-    _t("document by document", W, "review", "2026-09-11", "cadence", "'X by X' cadence"),
-    _t("stage by stage", W, "review", "2026-09-11", "cadence", "'X by X' cadence"),
-    _t("one by one", W, "review", "2026-09-11", "cadence", "'X by X' cadence"),
-    _t("Real calls to the local server", F, "review", "2026-09-11", "register",
-       "'real' as an intensifier"),
-    _t("needs no key", W, "review", "2026-09-11", "jargon", "the 'keyless' family"),
-    _t("which is how the numbers above were counted", F, "review", "2026-09-11", "meta",
-       "explanatory tail"),
-    # --- user, 2026-09-16: an ideas deck ------------------------------------------
-    _t("deployments a county can buy", F, "user", "2026-09-16", "label", "'a clear tell'"),
-    _t("the missing rung", F, "user", "2026-09-16", "label", "framing label, stock metaphor"),
-    _t("where the models already exist", F, "user", "2026-09-16", "label",
-       "framing label"),
-    _t("one page per building", F, "user", "2026-09-16", "label", "framing label"),
-    _t("the record on every site", F, "user", "2026-09-16", "label", "framing label"),
-    _t("the pledge, signed", F, "user", "2026-09-16", "label", "framing label, ', verbed' tail"),
-    _t("copy the shape", F, "user", "2026-09-16", "label", "'means nothing, ai slop'"),
-    _t("stop the empty ones", F, "user", "2026-09-16", "label", "framing label"),
-    _t("start the empty ones", F, "review", "2026-09-16", "label", "framing label"),
-    _t("the rule for each", F, "user", "2026-09-16", "label", "framing label"),
-    _t("what members get", F, "user", "2026-09-16", "heading", "'kinda stupid'"),
-    _t("who needs to join", W, "user", "2026-09-16", "heading",
-       "renamed 'consortium partners'"),
-    _t("what it builds", W, "user", "2026-09-16", "heading", "renamed 'public outcomes'"),
-    _t("buying path", W, "user", "2026-09-16", "vague", "'drop the buying path line'"),
-    _t("close the loop", W, "review", "2026-09-16", "register", "guarded in a deck test"),
-    _t("the precedent list", F, "review", "2026-09-16", "label", "framing label"),
-    _t("public side of the", W, "review", "2026-09-16", "label",
-       "coined abstraction: 'the public side of the AI factory'"),
-    _t("Be the source the standard cites", F, "review", "2026-09-16", "label",
-       "slogan, found in the 45-edit sweep"),
-    _t("the play is", W, "review", "2026-09-16", "register", "found in the 45-edit sweep"),
-    _t("rather than argued in hearings", F, "review", "2026-09-16", "negation",
-       "found in the 45-edit sweep"),
-    _t("so the warning outlives the first wave", F, "review", "2026-09-16", "label",
-       "flagged by the user as reading like AI slop"),
-    _t("shared by the people who drill it, mine it", F, "review", "2026-09-16", "label",
-       "flagged by the user as reading like AI slop"),
-    _t("are the reference points", F, "review", "2026-09-18", "label", "slogan band"),
-    _t("help others win on", W, "review", "2026-09-18", "vapor", "slogan band"),
-    _t("How it runs", W, "review", "2026-09-18", "heading", "question-word label"),
-    _t("Open by default", W, "review", "2026-09-18", "heading", "framing label"),
-    # --- user, 2026-09-23: a policy tracker ---------------------------------------
-    _t("Every record links to its source", F, "user", "2026-09-23", "manual",
-       "'comprehensive ai slop pass'"),
-    _t("How many records of each kind, and which of the eight benefit themes they address",
-       F, "user", "2026-09-23", "manual", "usage manual"),
-    _t("Select a company for its claims and source links, then compare the terms offered "
-       "for future projects", F, "user", "2026-09-23", "manual", "usage manual"),
-    _t("A check means the company has at least one published claim mapping to that theme",
-       F, "user", "2026-09-23", "manual", "overexplaining"),
-    _t("Click any company row to open a summary", F, "user", "2026-09-23", "manual",
-       "overexplaining"),
-    _t("Every figure links to a source", F, "user", "2026-09-23", "manual",
-       "overexplaining"),
-    _t("steps in the tracked dockets, soonest first", F, "user", "2026-09-23", "manual",
-       "overexplaining"),
-    _t("Not a forecast", W, "user", "2026-09-23", "manual", "trailing disclaimer fragment"),
-    _t("community benefit claims in each company's own words", F, "user", "2026-09-23",
-       "manual", "overexplaining"),
-    _t("the full roster", W, "user", "2026-09-23", "vague", "flagged with the list above"),
-    _t("Commitments by company and theme", F, "review", "2026-09-23", "heading",
-       "'by X and Y' heading; became 'Published commitments'"),
-    _t("A separate instrument", W, "review", "2026-09-23", "fragment", "fragment note"),
-    _t("Click any row", F, "review", "2026-09-23", "manual", "usage manual"),
-    # --- sibling project checkers, 2026-08-28..30 ---------------------------------
-    _t("Where the live data corrected the plan", F, "review", "2026-08-30", "inanimate",
-       "an artifact cannot correct a plan; somebody read it"),
-    _t("what their data forced", F, "review", "2026-08-30", "inanimate", "same family"),
-    _t("two ways a green suite lied", F, "review", "2026-08-30", "inanimate", "same family"),
-    _t("the rules that kept this PR honest", F, "review", "2026-08-30", "inanimate",
-       "same family"),
-    _t("Authority Before Convenience", F, "review", "2026-08-29", "heading",
-       "slogan heading"),
-    _t("Semantic Tools, Boring Adapters", F, "review", "2026-08-29", "heading",
-       "slogan heading"),
-    _t("Evidence Over Confidence Scores", F, "review", "2026-08-29", "heading",
-       "slogan heading"),
-    _t("Publisher-side quirks are not bugs to fix silently", F, "review", "2026-08-29",
-       "maxim", "proverb voice"),
-    _t("The trail is not a log bolted on afterward", F, "review", "2026-08-29", "maxim",
-       "proverb voice"),
-    _t("telling those apart is the product", F, "review", "2026-08-29", "maxim",
-       "proverb voice"),
-    _t("A quirk that affects behaviour has a test", F, "review", "2026-08-29", "maxim",
-       "aphorism voice"),
-    _t("A recorded walk across the registry and geo tools, one card per call", F, "review",
-       "2026-08-29", "fragment", "verbless caption"),
-    _t("the tool never guesses", F, "review", "2026-08-29", "selfpraise",
-       "announcing a virtue the page already shows"),
-    _t("named honestly for what it actually does", F, "review", "2026-08-28", "selfpraise",
-       "claiming your own honesty"),
-    _t("the exit criterion for this stage of the adopted plan is met", F, "review",
-       "2026-08-28", "selfpraise", "status-report register aimed at no reader"),
-    # --- full-history review, 2026-09-24: original wording retained ----------------
-    _t("sites, end to end — every reuse outcome, cited", W, "user", "2026-08-25", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("That spread makes it the ideal end-to-end example: one federal site, every reuse outcome.", W, "user", "2026-08-25", "selfpraise",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Each land unit is assessed against the same four facility types.", W, "user", "2026-08-25", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("These are cited editorial judgements, not computed scores", W, "user", "2026-08-25", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Cited site-level facts per category; ", W, "user", "2026-08-25", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("a category with no verifiable public source is omitted rather than invented.", W, "user", "2026-08-25", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Per-unit GIS distances (this dashboard's own joins) live in each unit's dossier", W, "user", "2026-08-25", "jargon",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t(" A source that times out or errors is recorded as unavailable — it is never silently counted as a no-hit. ", W, "user", "2026-08-25", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("real calls", W, "user", "2026-08-30", "jargon",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("decision tightened past it", F, "user", "2026-08-28", "inanimate",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("risks becoming skill logic in disguise", W, "user", "2026-08-28", "jargon",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Every source is numbered once and indexed under Sources. A field reading not found means the research did not find it; nothing here is inferred to fill a blank.", W, "user", "2026-08-25", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Visual language from the Antares design system.", W, "user", "2026-08-23", "selfref",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("that split is the finding", F, "user", "2026-08-31", "meta",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("rest on a rule rather than on physics", W, "user", "2026-08-31", "vague",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("several of them evaporate if a threshold moves", W, "user", "2026-08-31", "vague",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("The problem, stated precisely", F, "user", "2026-08-30", "heading",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("the commitments, as stated", W, "user", "2026-09-22", "heading",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Each quote opens its source.", W, "user", "2026-09-22", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("The records are scanned PDFs, Bates-numbered on every page, with no titles and no dates.", W, "user", "2026-09-22", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("The release watchdog", W, "user", "2026-09-22", "jargon",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Each run makes one export, stores it unchanged and compares it only with an earlier accepted capture. A document present in one capture and absent from a later one is recorded as absent. The capture does not show whether it was removed, replaced or withheld.", W, "user", "2026-09-22", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Each tool, its result and its status", W, "user", "2026-09-22", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("Records located in the archive, each with its quote and citation", W, "user", "2026-09-22", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("a sequence that can be audited", W, "user", "2026-09-22", "selfpraise",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t(" covers national-security AI; it is not a general robotics statute.", W, "user", "2026-09-22", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("**Core test.** Count field use, worker and safety outcomes, domestic component capacity, and repeat purchases. Do not count a simulation demo, pilot announcement, or factory design target as deployment.", W, "user", "2026-09-22", "manual",
-       "Direct user objection; full verbatim evidence in the local writing catalog", scopes=(SCOPE_COPY,)),
-    _t("demand band", W, "user", "2026-08-24", "jargon",
-       "Antigravity user called this unclear; exact objection in the local writing catalog", scopes=(SCOPE_COPY,)),
-    # --- the assistant's own reply register ---------------------------------------
-    _t("say the word", W, "review", "2026-09-24", "chat",
-       "closing offer, 5+ times in 595 replies", scopes=_DOCS_AND_TEXT),
-    _t("want me to", W, "review", "2026-09-24", "chat",
-       "closing offer, 21 times in 595 replies", scopes=_DOCS_AND_TEXT),
-    _t("two things worth flagging", W, "review", "2026-09-24", "chat",
-       "stance marker announcing importance", scopes=_DOCS_AND_TEXT),
-    _t("one thing worth flagging", W, "review", "2026-09-24", "chat",
-       "stance marker announcing importance", scopes=_DOCS_AND_TEXT),
-    _t("here's where things stand", W, "review", "2026-09-24", "chat",
-       "status preamble, 12 sessions in 18 days", scopes=_DOCS_AND_TEXT),
-    _t("here's the full picture", W, "review", "2026-09-24", "chat",
-       "status preamble, 12 sessions in 18 days", scopes=_DOCS_AND_TEXT),
-    _t("based on my analysis", W, "review", "2026-09-24", "chat",
-       "hedged preface", scopes=_DOCS_AND_TEXT),
-    _t("based on my review", W, "review", "2026-09-24", "chat",
-       "hedged preface", scopes=_DOCS_AND_TEXT),
-    # --- user, 2026-10-01: a bill-tracker review ---------------------------------
-    _t("read against each other", F, "user", "2026-10-01", "vapor",
-       "a flourish closing a list of four documents; the table already sets them side by side"),
-    _t("the bill touches", F, "user", "2026-10-01", "verb-tail",
-       "'and the other statutes the bill touches': a vague tail where a name or nothing belongs"),
-    _t("machine-drafted and checked against the text", F, "user", "2026-10-01", "selfpraise",
-       "a footer vouching for the site; a credit says who wrote it and stops"),
-    _t("quotes are verbatim", F, "user", "2026-10-01", "selfpraise",
-       "same footer: asserting rigor the page should simply have"),
-    _t("in two divisions: one from", F, "user", "2026-10-01", "manual",
-       "over-explaining: a lede that walks through the document's structure clause by clause"),
-    _t("checked against the text", W, "user", "2026-10-01", "selfpraise",
-       "flagged inside a self-assurance sentence; literal in a method note"),
-)
+# The registry lives in tells/writing.jsonl at the repo root, one entry per line,
+# so the raw evidence is a top-level list a person can read, diff and append to
+# without editing this file. Entries with status other than "active" (proposed by
+# tools/slop_review.py or tools/slop_patterns.py, or rejected) are kept there for
+# the record and never fire. A missing or empty registry is an error, not a pass:
+# a checker with no memory reports the user's own flagged phrases as clean.
+TELLS_DIR = Path(os.environ.get("SLOP_TELLS_DIR") or Path(__file__).resolve().parent.parent / "tells")
+
+
+def tell_from_row(r: dict) -> Tell:
+    """One registry row (a line of tells/writing.jsonl) as a Tell."""
+    return Tell(r["text"], r["level"], r["by"], r["date"], r["family"],
+                r.get("note", ""), tuple(r.get("scopes") or ALL_SCOPES))
+
+
+def load_tells(path: Optional[Path] = None) -> Tuple[Tell, ...]:
+    path = path or TELLS_DIR / "writing.jsonl"
+    if not path.is_file():
+        raise SystemExit("ERROR: tell registry {} not found. Vendor the tells/ directory "
+                         "beside tools/, or set SLOP_TELLS_DIR.".format(path))
+    out: List[Tell] = []
+    for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        if not line.strip():
+            continue
+        try:
+            r = json.loads(line)
+        except ValueError as e:
+            raise SystemExit("ERROR: {}:{}: {}".format(path, n, e))
+        if r.get("status", "active") != "active":
+            continue
+        out.append(tell_from_row(r))
+    if not out:
+        raise SystemExit("ERROR: tell registry {} has no active entries".format(path))
+    return tuple(out)
+
+
+KNOWN_TELLS: Tuple[Tell, ...] = load_tells()
 
 # ---------------------------------------------------------------------------
 # Registry matching
@@ -2428,9 +2294,14 @@ def strip_urls(line: str) -> str:
 
     A slug is not prose: docs/llms.txt reported "supercharge" as LLM register
     when the word sat inside a press-release URL. Markdown already drops
-    link targets; every other format needs this.
+    link targets; every other format needs this. A chatbot tracking parameter
+    is the exception: it is the tell (chatbot-markup), so it survives the blanking.
     """
-    return URL_RE.sub(" ", line)
+    keep = CHATBOT_UTM.findall(line)
+    return URL_RE.sub(" ", line) + ("  " + " ".join(keep) if keep else "")
+
+
+CHATBOT_UTM = re.compile(r"utm_source=(?:chatgpt\.com|openai|perplexity|claude\.ai|copilot)", re.I)
 
 
 QUOTE_CHARS = '"“”'
@@ -2586,7 +2457,7 @@ BLOCK_CLOSE = re.compile(
 # A block quote and its citation chip are the source's words and a pointer to
 # them. Read as the author's prose, a 24-word quote plus a nine-word lead plus a
 # three-word chip counted as one 36-word sentence (issues.md, 2026-09-11).
-HTML_QUOTE = r"(?i)<(q|blockquote)\b[^>]*>.*?</\1\s*>"
+HTML_QUOTE = r"(?i)<(q|blockquote|pre|code)\b[^>]*>.*?</\1\s*>"
 HTML_CITE = (r"(?i)<a\b[^>]*\bclass=\"[^\"]*\b(?:cite|citation|source|chip|ref)\b"
              r"[^\"]*\"[^>]*>.*?</a\s*>|<sup\b.*?</sup\s*>")
 LABEL_ELEMENT = re.compile(
@@ -2893,6 +2764,7 @@ class Config:
     thresholds: Dict[str, float] = field(default_factory=dict)
     threshold_reasons: Dict[str, str] = field(default_factory=dict)
     path: Optional[Path] = None
+    profile: str = "default"
 
     def threshold(self, name: str) -> float:
         return float(self.thresholds.get(name, DEFAULTS[name]))
@@ -2902,7 +2774,19 @@ class Config:
             return self.promote[rule.id]
         if rule.id in self.demote:
             return self.demote[rule.id]
+        if rule.id in PROFILE_PROMOTIONS.get(self.profile, ()):
+            return "FAIL"
         return rule.level
+
+
+# Opt-in surface policies. Explicit project exemptions retain precedence.
+PROFILE_PROMOTIONS = {
+    "default": (),
+    "technical-docs": (),
+    "public-copy": ("usage-manual", "citation-inventory", "universal-source-boast"),
+    "deck": ("usage-manual", "citation-inventory", "universal-source-boast", "question-heading",
+             "relative-clause-label", "from-to-arc"),
+}
 
 
 def load_config(root: Path) -> Config:
@@ -2964,6 +2848,7 @@ class Checker:
         self.compiled = {r.id: r.compiled() for r in RULES if r.pattern}
         self._shape_ids = {r.id for r in SHAPE_RULES + SHAPE_RULES_HARVEST}
         self.hits: List[Hit] = []
+        self.review_pool: List[dict] = []
         # An INFO rule that fires 1,200 times buries the twelve findings worth
         # reading. Cap per file and per rule, and print what was dropped.
         self.info_cap = 3
@@ -3458,7 +3343,15 @@ class Checker:
             self.scan_markdown_shape(name, ex.chunks)
         metrics["findings"] = len(self.hits) - before
         metrics["words"] = float(sum(word_count(c.text) for c in ex.chunks))
+        self._pool_unflagged(name, ex.chunks, before)
         return metrics
+
+    def _pool_unflagged(self, source: str, chunks: Iterable[Chunk], before: int) -> None:
+        """Keep the chunks no rule touched, for slop_review's model pass."""
+        flagged = {h.line for h in self.hits[before:] if h.source == source}
+        for c in chunks:
+            if c.loc not in flagged and word_count(c.text) >= 8:
+                self.review_pool.append({"source": source, "loc": c.loc, "text": c.text})
 
     def scan_file(self, path: Path, root: Path) -> None:
         try:
@@ -3480,10 +3373,12 @@ class Checker:
         ex = extract_text(text, scope)
         self.stats["files"] += 1
         self.stats["quoted_exempt"] += ex.quoted_exempt
+        before = len(self.hits)
         self.scan_phrases(source, ex.chunks)
         self.scan_shapes(source, ex.chunks)
         self.scan_tells(source, ex.chunks)
         self.scan_structure(source, ex.paragraphs)
+        self._pool_unflagged(source, ex.chunks, before)
 
 
 # ---------------------------------------------------------------------------
@@ -4167,6 +4062,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--code", action="store_true",
                     help="also scan comments and docstrings (off by default: a "
                          "comment is a different register from shipped copy)")
+    ap.add_argument("--profile", choices=tuple(PROFILE_PROMOTIONS), default="default",
+                    help="opt-in policy for the authored surface; project exemptions still apply")
     ap.add_argument("--only", metavar="IDS",
                     help="run only these rule ids (comma-separated)")
     ap.add_argument("--fail-on", default="FAIL", choices=["FAIL", "WARN", "INFO", "NEVER"])
@@ -4186,12 +4083,17 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
                     help="run every rule on one string, as a heading and as a sentence, "
                          "and print what fires: the quick way to ask 'would this be "
                          "caught?'")
+    ap.add_argument("--review", choices=("on", "background", "off"), default="on",
+                    help="after the rules, send unflagged-but-suspicious chunks to a Sonnet "
+                         "review that appends new candidates to tells/writing-candidates.jsonl "
+                         "(off under CI or SLOP_REVIEW=0)")
+    ap.add_argument("--no-review", action="store_true", help="same as --review off")
     ap.add_argument("--verbose", action="store_true")
     ap.add_argument("--version", action="store_true")
     args = ap.parse_args(argv)
 
     if args.version:
-        print("slopcheck {}  ({} rules)".format(VERSION, len(RULES)))
+        print("slop_writing {}  ({} rules)".format(VERSION, len(RULES)))
         return 0
 
     if args.list:
@@ -4241,6 +4143,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     if len(paths) > 1:
         root = Path.cwd()
     cfg = load_config(root)
+    cfg.profile = args.profile
     only = [r.strip() for r in args.only.split(",")] if args.only else None
     for rid in only or []:
         if rid not in RULES_BY_ID:
@@ -4283,7 +4186,15 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         checker.scan_corpus()
         label = "{} file(s)".format(len(files))
 
-    return report(checker, args, label)
+    rc = report(checker, args, label)
+    if args.review != "off" and not args.no_review:
+        try:
+            import slop_review
+        except ImportError:  # copied without its neighbour, as the README's two-file install does
+            print("review: skipped (slop_review.py is not next to this script)", file=sys.stderr)
+        else:
+            slop_review.review("writing", checker.review_pool, mode=args.review)
+    return rc
 
 
 if __name__ == "__main__":

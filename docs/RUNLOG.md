@@ -26,3 +26,11 @@ Sonnet inference and a small availability probe were blocked by the subscription
 - Result: created `data/datacenters.json` (15 provisions with verbatim bill quotes); added `#/datacenters` tab in `site/index.html` and `site/app.js`; added 4 new rows (`non-firm`, `queue-speed`, `att-reconductoring`, `btm-power`) to `compare.bills`; enriched statutory points in `data/bill/analysis.json` and `data/bill/point_cites.json`; updated `tools/build.py`, `tools/check_quotes.py`, `tools/check_data.py`, `tests/test_build.py`. 78 Python unit tests + 14 Node search tests passing; quotes 173 bill verbatim + 290 web verified/browser.
 - Worth it: yes; satisfies feature and comparison requirements while passing all test, quote, and slop gates.
 
+
+## 2026-10-21 — Reader-question research for PR 9
+
+- Why: requested research into what readers ask about the bill, to score whether the site answers each question and how many taps it takes at 375px (`docs/reader-questions.md`).
+- Tools: one Haiku subagent, 2026-10-22 03:27–03:38 UTC (38 web searches, 49 page fetches, 23 shell calls, counted by tool-call id; no sub-agents), plus the main session reading X in the user's Chrome. Reddit was blocked in the browser tool and Bluesky search needs a login.
+- Tokens: the subagent made 25 requests: 353K cache-write (5 min), 3.77M cache-read and 96K output tokens (deduplicated by request id, largest output per request), about 1.30M weighted. The main session's share is not separately metered.
+- Result: 361 questions. 354 name a source URL across 110 pages; 14 of those were "same URL" placeholders matched to the page the raw log records. 203 come from the 41 pages the agent fetched and are the only ones counted. 151 come from search summaries whose page was never opened, so they are listed as unverified and left out of the counts. 7 name an outlet but no page and are listed as unchecked leads. Codex review found placeholder sources in the first draft (no URL, "same URL", a PBS link labelled King & Spalding); link text is now the URL's domain.
+- Worth it: yes, with a caveat. The gaps (vote count, electricity prices, emissions, time saved, amendments) and the slow Compare paths came straight from it. But 151 of the 354 linked entries rest on search summaries and are not counted, so the counts cover 41 pages and show which topics come up most, not how many people asked.

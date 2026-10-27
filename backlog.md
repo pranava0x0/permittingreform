@@ -8,7 +8,6 @@
 | medium | Add Reddit threads by hand; no tool could reach the site. |
 | medium | A third comparison column for the amended Senate text, once it exists. |
 | medium | An implementation calendar: every rulemaking and report the bill orders, with its deadline. |
-| medium | Promote the six phrases flagged on 2026-10-01 from `tools/slopcheck.py` here to the registry in coding-best-practices. |
 | medium | Choose a license for the repository. |
 | high | Media candidates still open from the 2026-10-02 X sweep: Canary Media and Utility Dive on transmission, the C2ES/Greenline modeling release, Grayson Flood's thread (his data-center image did not render in the browser), Siegel posts (Cramer "significant improvement"; White House support), Regunberg, Huffman, Pomerantz, Christian Fong's RMI chart on local transmission spending, Alex Mechanick's Artificial Weights explainer, and the Sierra Club reaction (needs a browser read). Heatmap, Green Tape, Mackenzie, Mathew and Hausfather were added. |
 | low | Timeline: FERC's September 29 PJM backstop order is cited through trade press; add the eLibrary order once readable. |
@@ -23,7 +22,6 @@
 - Extend semantic checking to current-law comparison cells, per-section prior-version notes and overview/research paraphrases. These are outside the current model check.
 | medium | Read the Heatmap pieces the sweep skipped for budget: trump-wind-energy-prices (6/17), pjm-interconnection-reforms (7/28), trump-gas-plant-permits (8/21), the transmission costs Q&A (9/4). |
 | medium | Senate Data Center Transparency Act (Blunt Rochester, Curtis, October 1): add to the data center bills list once it has a number and text. |
-| high | Overview on phones: bring the first provision above half the screen (issues.md, 2026-10-26) so `tests/uat.cjs` passes in full. |
 | low | Make Playwright part of the documented setup so `tests/uat.cjs` and `tests/clicks.cjs` run on every UI change; on 2026-10-26 it had to be installed in a scratch directory. |
 | medium | Speed page: add the McKinsey, NRDC and PNAS studies the 2026-10-26 research run could not fetch, and a reading for the local and state siting cause, which no section addresses. |
 
@@ -36,3 +34,8 @@
 - Walled items from the 2026-10-18 sweep still unread: Punchbowl Oct 5 letter story (premium preview only), Punchbowl "Key House boost" Westerman story (404 at the guessed URL), Axios Oct 1, 5 and 8 Future of Energy items (403), Law.com Oct 14, National Review shot-clock piece. Priority: low.
 - Null results worth re-checking after the Nov 9 vote: CPC, CHC, CBC, Problem Solvers, New Dems (Sept 30 only), Schumer and Jeffries statements, Statement of Administration Policy on S. 5653, IBEW endorsement (Heatmap Oct 7 says still pending), Data Center Coalition position (Axios Oct 8 says reviewing), EEI/NRECA/APPA on the transmission backstop. Priority: medium.
 - USET tribal joint letter PDF (Oct 9) 404s at the guessed URL; NARF's summary page is the only copy. Find the letter on usetinc.org or narf.org and quote it. Priority: medium.
+| high | Reader gap (docs/reader-questions.md, 2026-10-21): will it pass. Count declared senators against the 60 needed for cloture and say what the House would do with a Senate bill; cite whip counts and statements, not predictions. |
+| medium | Reader gap: electricity prices. Readers ask whether the bill lowers household bills; cite published modeling (for example the C2ES/Greenline release) with its assumptions, beyond the data center cost section. |
+| medium | Reader gap: emissions. Cite the published emissions modeling and the arguments on each side (Flegal, Roberts threads in the X notes). |
+| medium | Reader gap: time saved. Link Columbia CGEP's time-saved tool (posted October 21) and the transmission-vs-gas permitting durations it reports, once the numbers are read from the tool itself. |
+| low | Reader paths into Compare are long at 375px: the SPEED Act lawsuit deadline takes 4 taps (Bill, Compare, SPEED Act chip, the row) and who pays for transmission takes 3 taps and 3.1 screens. Links from the Lawsuit limits and Transmission siting provisions to their open comparison rows would make each 2. |

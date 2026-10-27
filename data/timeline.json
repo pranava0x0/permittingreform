@@ -2657,6 +2657,50 @@
    ]
   },
   {
+   "id": "2026-09-02-house-passes-protecting-domestic-mining-act-218-201",
+   "date": "2026-09-02",
+   "title": "House passes the Protecting Domestic Mining Act 218-201, writing mining into FAST-41",
+   "branch": "congress_house",
+   "summary": "The House passed H.R. 1501, sponsored by Rep. Jefferson Shreve (R-Ind.), 218-201. It writes mining and mineral processing into law as a sector eligible for FAST-41, the Permitting Council's coordinated review program, and blocks a Biden-era proposed rule that would have limited that coverage to critical minerals. Rep. Adelita Grijalva (D-Ariz.) opposed it; her amendment requiring consultation with Tribal Nations before expedited permitting was not adopted. The Senate referred it to the Homeland Security and Governmental Affairs Committee on September 14.",
+   "significance": "A separate House route for FAST-41 changes. The Senate bill adds no sectors to FAST-41: its section 2201(h) says only that a project can still be designated a FAST-41 covered project, and for energy and mineral projects its 150-day limit on lawsuits is shorter than FAST-41's 2 years.",
+   "actors": [
+    "Jefferson Shreve (Representative, R-Ind.)",
+    "Blake Moore (Representative, R-Utah)",
+    "Adelita Grijalva (Representative, D-Ariz.)",
+    "Jared Huffman (Representative, D-Calif.; Ranking Member, House Natural Resources Committee)"
+   ],
+   "topics": [
+    "mining"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "H.R.1501 - Protecting Domestic Mining Act of 2025: All Actions",
+     "publisher": "Congress.gov",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/1501/all-actions",
+     "date": "2026-09-14",
+     "verified": true
+    },
+    {
+     "title": "Representatives Moore, Shreve's Protecting Domestic Mining Act Passes the House",
+     "publisher": "Office of Rep. Blake Moore",
+     "url": "https://blakemoore.house.gov/media/press-releases/representatives-moore-shreves-protecting-domestic-mining-act-passes-the-house",
+     "date": "2026-09-04",
+     "verified": true
+    },
+    {
+     "title": "Rep. Grijalva Slams Bill to Fast-Track Mining Permits",
+     "publisher": "Office of Rep. Adelita Grijalva",
+     "url": "https://grijalva.house.gov/media/press-releases/rep-grijalva-slams-bill-to-fast-track-mining-permits",
+     "date": "2026-09-03",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2201"
+   ]
+  },
+  {
    "id": "2026-09-10-hr9340-reported",
    "date": "2026-09-10",
    "title": "Energy and Commerce reports H.R. 9340 (H. Rept. 119-814)",

@@ -8,8 +8,10 @@
     "data/bill/bill_raw.txt",
     "site/data",
     "site/llms.txt",
-    "tools/slopcheck.py",
-    "tools/designcheck.py",
-    "tools/govfetch.py"
+    "tools/govfetch.py",
+    "tools/slop_writing.py",
+    "tools/slop_design.py",
+    "tools/slop_review.py",
+    "tells"
   ]
 }
