@@ -1474,23 +1474,26 @@
     const issues = ((D.positions && D.positions.issues) || []).filter((i) => i.disputes && i.disputes.length);
     if (!issues.length) return null;
     const host = el("div", null, loading("Loading readings"));
-    /* Four questions per issue, the rest behind one chip, as with the voices below: each issue added keeps the page in budget. */
-    ensureTakes().then((T) => fill(host, issues.map((i) => {
+    /* One folded row per issue, then four questions and a chip for the rest, as with the voices below:
+       the 375px budget held two issues open but not four (2026-10-26). */
+    ensureTakes().then((T) => fill(host, el("div", { class: "pos-list" }, issues.map((i) => {
       const rows = i.disputes.map((d, n) => {
         const row = disputeRow(T, i, d);
         row.hidden = n >= VOICES_SHOWN;
         return row;
       });
       const rest = rows.length - VOICES_SHOWN;
-      return [
-        el("h3", { class: "dispute-issue" }, i.title),
+      const head = el("span", { class: "event-head" },
+        el("span", { class: "event-title" }, i.title),
+        el("span", { class: "pos-tally" }, plural(rows.length, "disputed question", "disputed questions")));
+      return openRow("dispute-group", "disputes-" + i.id, head, [
         el("div", { class: "pos-list" }, rows),
         rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: (ev) => {
           rows.forEach((r) => { r.hidden = false; });
           ev.currentTarget.remove();
           rows[VOICES_SHOWN].querySelector(".event-toggle").focus();
-        } }, "Show " + rest + " more questions") : null];
-    }))).catch((err) => fill(host, failure(err, "The outside readings")));
+        } }, "Show " + rest + " more questions") : null]);
+    })))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "block", "aria-labelledby": "h-disputes" },
       el("h2", { id: "h-disputes" }, "Where the two sides disagree"),
       el("p", { class: "facts" }, "Each question quotes the bill, then what critics and supporters say it means, in their own words. We don't say who is right."),

@@ -471,7 +471,7 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 .pos-letter:not(.open) .event-head { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .pos-tally { display: block; font-family: var(--font-body); font-size: var(--fs-small); font-weight: 400; color: var(--text-muted); }
 .pos-row:not(.open) > .pos-body { display: none; }
-.pos-row.open .event-toggle::after { content: "\2212"; }
+.pos-row.open > h3 .event-toggle::after { content: "\2212"; }
 .pos-body { font-size: var(--fs-small); margin-top: 6px; }
 .pos-body > p { margin: 4px 0; }
 .voices { margin-top: 12px; }
@@ -485,7 +485,7 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 /* Disputed readings: the bill text, then the two sides, side by side when there is room. */
 /* Disputes: the issue, the question, the bill's words and each side each look different.
    The bill text sits on the pale green the bill column uses; each side is headed in its stance color. */
-.dispute-issue { font-size: var(--fs-body); margin: 24px 0 0; padding-bottom: 4px; border-bottom: 2px solid var(--rule); }
+.dispute-group > .pos-body { margin-left: 12px; }
 .dispute-text { margin: 8px 0 4px; padding: 8px 12px; background: var(--accent-weak); border-left: 3px solid var(--rule); }
 .dispute-text h4 { font-family: var(--font-head); font-size: var(--fs-small); margin: 0; }
 .dispute-text .quote.small { border-left: 0; padding: 0; margin: 6px 0 0; }

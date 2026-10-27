@@ -259,10 +259,13 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.goto(base+'#/timeline');
       await page.waitForSelector('.event.open',{state:'detached'});
       assert.equal(await page.locator('.event').count(), await page.evaluate(()=>Math.min(12,PR_DATA.timeline.length)));
-      // Disputed readings show four questions per issue; one chip shows the rest and focuses the first of them.
+      // Disputed readings fold to one row per issue; opened, each shows four questions and one chip shows the rest, focusing the first of them.
       await page.goto(base+'#/positions');
       await page.waitForSelector('.pos-dispute',{state:'attached'});
       const disputes = await page.evaluate(()=>PR_DATA.positions.issues.map(i=>(i.disputes||[]).length).filter(Boolean));
+      assert.equal(await page.locator('.dispute-group').count(), disputes.length);
+      assert.equal(await page.locator('.pos-dispute:visible').count(), 0);
+      for (const t of await page.locator('.dispute-group > h3 .event-toggle').all()) await t.click();
       assert.equal(await page.locator('.pos-dispute:visible').count(), disputes.reduce((a,n)=>a+Math.min(4,n),0));
       while (await page.locator('[aria-labelledby="h-disputes"] .show-rest').count()) {
         await page.locator('[aria-labelledby="h-disputes"] .show-rest').first().click();

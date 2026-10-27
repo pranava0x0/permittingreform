@@ -105,8 +105,12 @@ class Links(unittest.TestCase):
     def test_the_checker_sees_every_kind_of_link_the_site_renders(self):
         found = check_links.collect(CORE)
         places = {where.split(".")[0] for wheres in found.values() for where in wheres}
-        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media", "takes"})
+        # Speed sources went unchecked until 2026-10-26: the quote check read them, the link check did not.
+        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media", "takes", "speed"})
         self.assertIn(CORE["meta"]["source_pdf"], found)
+        for b in CORE["speed"]["blockers"]:
+            for ev in b["evidence"]:
+                self.assertIn(ev["url"].split("#", 1)[0], found)
         for item in CORE["media"]:
             self.assertIn(item["url"].split("#", 1)[0], found)
 

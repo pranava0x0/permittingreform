@@ -70,6 +70,9 @@ def collect(core: dict) -> dict[str, list[str]]:
         add(item.get("url"), "compare.dropped")
     for t in (core.get("takes") or {}).get("takes", []):
         add(t["url"], f"takes.{t['id']}")
+    for b in (core.get("speed") or {}).get("blockers", []):
+        for n, ev in enumerate(b["evidence"]):
+            add(ev["url"], f"speed.{b['id']}.{n}")
     for e in core["timeline"]:
         for s in e.get("sources", []):
             add(s["url"], f"timeline.{e['id']}.source")
