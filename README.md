@@ -6,9 +6,9 @@ A static site that indexes the Bipartisan American Affordability and Jobs Act of
 - **Compare.** Current law, the 2024 Senate bill (S. 4753), the House-passed SPEED Act (H.R. 4776) and the 2026 Senate text, subject against subject.
 - **Data center bills.** BAAJA sections 2107 and 2114 beside current policy, the Ratepayer Protection Act (H.R. 9340), the GRID Savings Act, the Power for the People Act and the GRID Act, on Compare.
 - **Communities.** What BAAJA changes about who can comment, be consulted, take part in planning or go to court: the public, tribes, states, local governments, landowners and consulting parties.
-- **Bill → Effects.** Data centers, project delays and effects on communities.
-- **Positions.** Positions on the bill, letters, and the people and groups involved.
-- **Timeline.** Events since January 2025, with sources.
+- **Key issues → Topics.** Data centers, project delays and effects on communities.
+- **Key issues → Debate.** Positions on the bill, letters, and the people and groups involved.
+- **Timeline.** Dated events, with sources.
 - **Coverage.** News, analysis and public statements about permitting reform.
 
 ## Run it
@@ -80,4 +80,4 @@ Run browser checks with an existing Playwright installation and Google Chrome: `
 
 `make build` generates `site/llms.txt`, the section index at `site/reading.html`, `site/llms-full.txt`, and `site/sections/{number}.md`. Each section file carries full bill text, summary, key points and page-line citations. `site/data/core.json` and `site/data/bill.json` expose the browser data without executing JavaScript. The JSON keys match `PR_DATA` and `PR_BILL`.
 
-Use the official PDF for legal claims. Exports show the draft version, source URLs and saved review coverage, including stale results and unchecked statements. Hash routes need a browser; the text and JSON files are ordinary HTTP resources. `site/sitemap.xml` lists the site and static section index. Search accepts section numbers, printed pages, quoted phrases and hyphenated terms such as data-center.
+Use the official PDF for legal claims. Exports show the draft version, source URLs and saved review coverage, including stale results and unchecked statements. The masthead links to standalone HTML editions for bill sections, key issues and debate, timeline events, and coverage. Each has a canonical URL and is listed in the sitemap and llms.txt. Hash routes need a browser; the text and JSON files are ordinary HTTP resources. `site/sitemap.xml` lists the site and static section index. Search accepts section numbers, printed pages, quoted phrases and hyphenated terms such as data-center.

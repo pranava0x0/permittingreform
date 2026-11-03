@@ -48,3 +48,8 @@ Read the Senate floor order and the September 30 roll call. Audited vote referen
 ## November 3, 2026: Timeline and bill guides
 
 Promoted Timeline to the masthead and grouped the three subject guides with the bill they explain. Measured 25 phone reader paths in Chrome: Timeline and Coverage each take one tap. A 320px check caught the Communities label outgrowing its link; the layout now reserves enough space for each word. Used local Playwright, Python and GitHub. No subagents; token cost was not separately metered.
+
+
+## November 3, 2026: issue navigation and text editions
+
+Grouped Topics, Debate and People and groups under Key issues; kept Timeline and Coverage directly accessible. Built HTML editions from the existing cited records and linked them from the masthead, sitemap and llms.txt. Verified all five entry points with JavaScript disabled and checked the interactive pages on phone and desktop. Used Python, Playwright, Chrome, Google Search Central's JavaScript guidance, the llms.txt specification and GitHub; no subagents or separate token measurement.

@@ -24,7 +24,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           datacenters: window.PR_DATA.datacenters.rows.length, speed: window.PR_DATA.speed.blockers.length, issues: window.PR_DATA.positions.issues.length,
           people: Math.min(12,window.PR_DATA.people.filter(p=>p.inside_government).length) }));
         const routes = [
-          ['overview','.provisions li',10], ['bill','.index li',71],
+          ['overview','.provisions li',10], ['issues','.issue-guide',3], ['bill','.index li',71],
           ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
           ['communities','.cm-row',n.communities], ['datacenters','.cm-row',n.datacenters], ['compare/data-center-bills','.compare tbody tr',n.bills], ['speed','.speed-row',n.speed],
           ['timeline','.event',n.timeline], ['positions','.pos-issue',n.issues], ['people','.person',n.people], ['media','.media-item',n.media], ['method','.versus dd',null]
@@ -55,13 +55,12 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
             await page.locator('.provision-detail summary').first().click();
             assert.equal(await page.locator('a[href="#/compare/data-center-bills"]').count(),1);
           }
-          // Bill groups stack on phones; each row fits, with 44px targets (43.5 allows subpixel rounding), one current page.
+          // Sibling links share a row that fits on phones, with 44px targets (43.5 allows subpixel rounding), one current page.
           const sub = await page.evaluate(() => { const n = document.querySelector('.subtabs'); if (!n || n.hidden) return null;
             const a = [...n.querySelectorAll('a')], r = a.map(x => x.getBoundingClientRect());
             return { clip: n.scrollWidth > n.clientWidth + 1, rows: new Set(r.map(b => Math.round(b.top))).size,
-              short: r.filter(b => b.height < 43.5).length, current: a.filter(x => x.getAttribute('aria-current') === 'page').length }; });
-          const billGroup = ['bill','compare','communities','datacenters','speed'].includes(route.split('/')[0]);
-          if (sub) assert.deepEqual(sub, {clip:false,rows:width < 640 && billGroup ? 2 : 1,short:0,current:1}, route+' subtabs at '+width);
+              short: r.filter(b => b.height < 43.5).length, current: a.filter(x => x.hasAttribute('aria-current')).length }; });
+          if (sub) assert.deepEqual(sub, {clip:false,rows:1,short:0,current:1}, route+' subtabs at '+width);
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
@@ -301,8 +300,8 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
     const nav = await browser.newPage({viewport:{width:320,height:812},hasTouch:true});
     await nav.goto(base);
     for (const [label, pages] of [
-      ['Bill',['Sections','Compare bills','Data centers','Project delays','Communities']],
-      ['Positions',['Stances by issue','People and groups']]]) {
+      ['Bill',['Sections','Compare bills']],
+      ['Key issues',['Topics','Debate','People and groups']]]) {
       const top = nav.locator('.tabs').getByRole('link',{name:label,exact:true});
       await top.click();
       const siblings = nav.getByRole('navigation',{name:label+' pages'});
@@ -324,13 +323,13 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.equal(await nav.locator('.subtabs').isVisible(),false);
     }
     await nav.goto(base+'#/people/outside/supports/trade_association');
-    await nav.getByRole('navigation',{name:'Positions pages'}).waitFor();
+    await nav.getByRole('navigation',{name:'Key issues pages'}).waitFor();
     await nav.locator('.method-link').click();
     await nav.getByRole('heading',{name:'Method',exact:true}).waitFor();
     assert.equal(await nav.locator('.method-link').getAttribute('aria-current'),'page');
     assert.equal(await nav.locator('.subtabs').isVisible(),false);
     assert.ok(await nav.locator('.tabs').evaluate(n=>n.scrollWidth<=n.clientWidth+1));
-    await nav.goBack(); await nav.getByRole('navigation',{name:'Positions pages'}).waitFor();
+    await nav.goBack(); await nav.getByRole('navigation',{name:'Key issues pages'}).waitFor();
     await nav.close();
     const race = await browser.newPage();
     await race.route('**/data/bill.js*', async route => {

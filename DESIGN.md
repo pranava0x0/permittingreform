@@ -10,7 +10,7 @@ Colors live in `site/styles.css`: white `--bg` (cream until 2026-10-22, dropped 
 
 ## Layout
 
-The site title dominates the masthead. Five primary links fit on a phone: Overview, Bill, Timeline, Positions and Coverage. Timeline and Coverage open directly. Bill groups Sections and Compare bills under Read, and Data centers, Project delays and Communities under Effects. These two groups stack on phones. Positions holds Stances by issue and People and groups. Method stays beside the theme switch and in the footer. Preserve page URLs and keyboard focus when switching sibling pages. BAAJA is the bill label; its full title and source links expand under Bill details. Search appears on Overview and bill views. Main provisions precede status and sponsors.
+The site title dominates the masthead. Five primary links fit on a phone: Overview, Bill, Key issues, Timeline and Coverage. Bill holds Sections and Compare bills. Key issues opens a topic directory, next to Debate and People and groups. Topic guides keep Topics selected. Events and reporting each open in one tap. Method stays beside the theme switch and in the footer. Preserve page URLs and keyboard focus when switching sibling pages. BAAJA is the bill label; its full title and source links expand under Bill details. Search appears on Overview and bill views. Main provisions precede status and sponsors.
 
 Hairline rules divide rows. Avoid cards, shadows, gradients, eyebrow labels and promotional metrics. Comparison tables become labeled rows on phones; the BAAJA column has a pale green background on larger screens. Each statutory paragraph has a page-and-line gutter linked to the PDF.
 

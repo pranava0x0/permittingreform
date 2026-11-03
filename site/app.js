@@ -1632,19 +1632,31 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Coverage", method: "Method" };
+  const TITLES = { overview: "Overview", issues: "Key issues", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Coverage", method: "Method" };
   // Page URLs stay independent of the navigation groups. Keep sibling links in
   // the DOM while switching pages so keyboard focus survives content updates.
   const GROUPS = {
-    bill: [
-      { label: "Read", pages: [["bill", "Sections"], ["compare", "Compare bills"]] },
-      { label: "Effects", pages: [["datacenters", "Data centers"], ["speed", "Project delays"], ["communities", "Communities"]] },
-    ],
-    positions: [{ pages: [["positions", "Stances by issue"], ["people", "People and groups"]] }],
+    bill: [["bill", "Sections"], ["compare", "Compare bills"]],
+    issues: [["issues", "Topics"], ["positions", "Debate"], ["people", "People and groups"]],
   };
+  const guidesByPage = [
+    ["datacenters", "Data centers", "Who pays for new transmission lines, and how would data centers connect to the grid?"],
+    ["speed", "Project delays", "What slows energy projects, and which delays would the bill address?"],
+    ["communities", "Communities", "Who can comment, request consultation or challenge a decision in court?"],
+  ];
+  function renderIssues() {
+    return [el("h1", null, "Key issues in permitting reform"),
+      el("p", {class:"lede"}, "Start with a topic to see the bill language and its effects. Open Debate for competing interpretations and their sources."),
+      guidesByPage.map(([key, label, question]) => el("section", {class:"block issue-guide"},
+        el("h2", null, el("a", {href:"#/" + key}, label)), el("p", null, question))),
+      el("p", null, el("a", {href:"issues.html"}, "Read the provisions and cited debate on one page"))];
+  }
   const sectionNav = document.getElementById("section-nav");
+  // Ordinary links work without JavaScript; enhance them with the interactive routes.
+  document.querySelectorAll(".tabs [data-tab]").forEach(a => { a.href = "#/" + a.dataset.tab; });
   function markTab(tab) {
-    const group = Object.keys(GROUPS).find(k => GROUPS[k].some(row => row.pages.some(([page]) => page === tab)));
+    const parent = guidesByPage.some(([key]) => key === tab) ? "issues" : tab;
+    const group = Object.keys(GROUPS).find(k => GROUPS[k].some(([page]) => page === parent));
     document.querySelectorAll(".masthead [data-tab]").forEach(a => {
       if (a.dataset.tab === (group || tab)) a.setAttribute("aria-current", group ? "location" : "page");
       else a.removeAttribute("aria-current");
@@ -1654,14 +1666,10 @@
     if (sectionNav.dataset.group !== group) {
       sectionNav.dataset.group = group;
       sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
-      fill(sectionNav, GROUPS[group].map(({label, pages}) => {
-        const links = pages.map(([key, name]) => el("a", { href: "#/" + key }, name));
-        return label ? el("div", { class: "nav-set", role: "group", "aria-label": label },
-          el("span", { class: "nav-caption", "aria-hidden": "true" }, label), links) : links;
-      }));
+      fill(sectionNav, GROUPS[group].map(([key, name]) => el("a", { href: "#/" + key }, name)));
     }
     for (const a of sectionNav.querySelectorAll("a")) {
-      if (a.hash === "#/" + tab) a.setAttribute("aria-current", "page");
+      if (a.hash === "#/" + parent) a.setAttribute("aria-current", parent === tab ? "page" : "location");
       else a.removeAttribute("aria-current");
     }
   }
@@ -1686,6 +1694,7 @@
     else if (tab === "bill") nodes = renderBillIndex();
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
     else if (tab === "communities") nodes = renderCommunities();
+    else if (tab === "issues") nodes = renderIssues();
     else if (tab === "datacenters") nodes = renderDataCenters();
     else if (tab === "speed") nodes = renderSpeed();
     else if (tab === "timeline") {

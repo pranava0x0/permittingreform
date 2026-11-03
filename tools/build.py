@@ -547,6 +547,7 @@ def llms_txt(core: dict) -> str:
         "",
         "Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.",
         "PDF citations use printed bill pages and lines. A matching quote proves occurrence; it does not validate nearby interpretations. Source positions describe the cited item, not every position held by its author.",
+        *[f"- [{title}]({m['site_url']}{page}.html): {description}" for page, (title, description) in READER_PAGES.items()],
         f"- [No-JavaScript section index]({m['site_url']}reading.html)",
         f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
         f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
@@ -569,7 +570,7 @@ def llms_txt(core: dict) -> str:
     out += ["", "## Research", "",
             f"- [Data center bills and Communities]({m['site_url']}llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.",
             f"- [Timeline, people and media]({m['site_url']}llms-full.txt): dated records with source links and attributed positions.",
-            f"- [Where the two sides disagree]({m['site_url']}llms-full.txt): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.",
+            f"- [Where the two sides disagree]({m['site_url']}issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.",
             f"- [Method and check status]({m['site_url']}#/method): browser view; equivalent checks are in data/core.json.",
             f"- [Subject comparisons]({m['site_url']}#/compare): browser view; retrieve the compare object in data/core.json without JavaScript."]
     return "\n".join(out) + "\n"
@@ -757,6 +758,80 @@ def llms_full(core: dict, paras: dict) -> str:
     return "\n".join(out) + "\n"
 
 
+READER_PAGES = {
+    "issues": ("Key issues in permitting reform", "What S. 5653 would change, the bill sections behind each provision, and how supporters and critics read them."),
+    "timeline": ("Permitting reform timeline", "Dated legislative, legal and agency events, with source records for each event."),
+    "coverage": ("Permitting reform news and coverage", "Reporting, analysis and statements about the permitting bill, with publication dates and links to the originals."),
+}
+
+
+def reader_html(core: dict, page: str) -> str:
+    esc = html.escape
+
+    def link(url, label):
+        return f'<a href="{esc(url)}">{esc(label)}</a>'
+
+    title, description = READER_PAGES[page]
+    route = "media" if page == "coverage" else page
+    nav = [link("index.html", "Overview"), link("reading.html", "Bill")]
+    nav.extend(link(key + ".html", name) for key, name in (("issues", "Key issues"), ("timeline", "Timeline"), ("coverage", "Coverage")))
+    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
+           '<meta name="viewport" content="width=device-width, initial-scale=1">',
+           f'<title>{esc(title)} · BAAJA (S. 5653)</title><meta name="description" content="{esc(description)}">',
+           f'<link rel="canonical" href="{SITE_URL}{page}.html"><link rel="stylesheet" href="styles.css">',
+           '</head><body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
+           f'<h1>{esc(title)}</h1><p>{esc(description)}</p>',
+           f'<p>{esc(core["meta"]["short_title"])} · Updated {esc(core["meta"]["as_of"])} · ' +
+           link("index.html#/" + route, "Open interactive view") + '</p>']
+    if page == "issues":
+        out.append('<p>Jump to: ' + ' · '.join(link("#" + key, name) for key, name in
+                   (("datacenters", "Data centers"), ("speed", "Project delays"), ("communities", "Communities"), ("debate", "Debate"))) + '</p>')
+        out.append('<h2>What would the bill change?</h2>')
+        for h in core["overview"]["headlines"]:
+            out.append(f'<h3>{esc(h["title"])}</h3>')
+            for sentence in h["ts"]:
+                start, line, end, last = sentence["c"]
+                cite = link(f'bill.pdf#page={start}', f'Bill p. {start}, line {line} to p. {end}, line {last}')
+                out.append(f'<p>{esc(sentence["t"])} {cite}</p>')
+        for key, label in (("datacenters", "Data centers"), ("speed", "Project delays"), ("communities", "Communities")):
+            guide = core[key]
+            out.append(f'<h2 id="{key}">{label}</h2><p>{esc(guide["intro"])}</p>')
+            if key == "speed":
+                for blocker in guide["blockers"]:
+                    out.append(f'<h3>{esc(blocker["title"])}</h3>')
+                    for evidence in blocker["evidence"]:
+                        out.append('<p>' + esc(evidence["finding"]) + ' ' + link(evidence["url"], evidence["org"]) + '</p>')
+            else:
+                for row in guide["rows"]:
+                    refs = " · ".join(link(f'sections/{n}.md', f'Sec. {n}') for n in row["sections"])
+                    out.append(f'<h3>{esc(row["topic"])}</h3><p>{esc(row["baaja"])} {refs}</p>')
+        out.append('<h2 id="debate">Where do supporters and critics disagree?</h2>')
+        takes = {t["id"]: t for t in core["takes"]["takes"]}
+        for issue in core["positions"]["issues"]:
+            for dispute in issue.get("disputes", []):
+                out.append(f'<section><h3>{esc(dispute["question"])}</h3>')
+                for passage in dispute.get("passages", []):
+                    sec = passage["section"]
+                    out.append('<p>' + link(f'sections/{sec}.md', f'Bill section {sec}') + ': “' + esc(passage["text"]) + '”</p>')
+                if dispute.get("note"):
+                    out.append('<p>' + esc(dispute["note"]) + '</p>')
+                for side, label in (("against", "Critics"), ("for", "Supporters")):
+                    readings = dispute.get("readings", {}).get(side, [])
+                    if not readings:
+                        out.append(f"<p>{label}: no reading recorded for this question.</p>")
+                    for take_id in readings:
+                        take = takes[take_id]
+                        out.append('<p>' + label + ' · ' + link(take["url"], take["who"]) + ' (' + esc(take["date"]) + '): “' + esc(take["quote"]) + '”</p>')
+                out.append('</section>')
+    else:
+        items = core["media" if page == "coverage" else "timeline"]
+        for row in sorted(items, key=lambda r: r["date"], reverse=True):
+            refs = [link(row["url"], row["outlet"])] if page == "coverage" else [link(s["url"], s.get("title") or s.get("publisher") or s["url"]) for s in row["sources"]]
+            out.append(f'<article id="{esc(row["id"])}"><h2>{esc(row["title"])}</h2><time datetime="{esc(row["date"])}">{esc(row["date"])}</time>'
+                       f'<p>{esc(row["summary"])}</p><p>{" · ".join(refs)}</p></article>')
+    return '\n'.join(out + ['</main></body></html>']) + '\n'
+
+
 def reading_html(core: dict) -> str:
     esc = html.escape
     out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
@@ -797,6 +872,8 @@ def main() -> int:
     (SITE / "llms.txt").write_text(llms_txt(core), encoding="utf-8")
     (SITE / "llms-full.txt").write_text(llms_full(core, paras), encoding="utf-8")
     (SITE / "reading.html").write_text(reading_html(core), encoding="utf-8")
+    for page in READER_PAGES:
+        (SITE / f"{page}.html").write_text(reader_html(core, page), encoding="utf-8")
     # The home page's JSON-LD dateModified follows the data, not a hand edit (it sat at Oct 2 after
     # an Oct 20 refresh). A pattern that stops matching is an error, never a silent no-op.
     index = SITE / "index.html"
@@ -804,6 +881,18 @@ def main() -> int:
     stamped, n = re.subn(r'("dateModified":")\d{4}-\d{2}-\d{2}(")', r"\g<1>" + DATA_AS_OF + r"\g<2>", page)
     if n != 1:
         raise SystemExit(f"build: expected one JSON-LD dateModified in site/index.html, found {n}")
+    summary, upcoming = core["overview"]["summary"], core["overview"].get("next")
+    content = [f'<h1>{html.escape(core["meta"]["short_title"])}</h1>']
+    for record in (summary, upcoming):
+        if not record:
+            continue
+        source = record["source"]
+        date = (html.escape(record["date"]) + ": ") if record.get("date") else ""
+        content.append(f'<p>{date}{html.escape(record["text"])} <a href="{html.escape(source["url"])}">{html.escape(source["label"])}</a></p>')
+    stamped, count = re.subn(r'(<!-- static overview -->).*?(<!-- /static overview -->)',
+                             lambda m: m[1] + "\n".join(content) + m[2], stamped, flags=re.S)
+    if count != 1:
+        raise SystemExit("build: missing static overview markers")
     if stamped != page:
         index.write_text(stamped, encoding="utf-8")
     for name, data in (("core", browser_core(core)), ("bill", paras), ("takes", core["takes"]), ("news", browser_news(core))):
@@ -813,7 +902,7 @@ def main() -> int:
         (SITE / f"sections/{sec['n']}.md").write_text(section_markdown(core, paras, sec), encoding="utf-8")
     (SITE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
                                     "\n".join(f"<url><loc>{SITE_URL}{path}</loc></url>" for path in
-                                              ("", "reading.html", "llms.txt", "llms-full.txt", *(f"sections/{s['n']}.md" for s in core["sections"]))) + "\n</urlset>\n", encoding="utf-8")
+                                              ("", "reading.html", *(page + ".html" for page in READER_PAGES), "llms.txt", "llms-full.txt", *(f"sections/{s['n']}.md" for s in core["sections"]))) + "\n</urlset>\n", encoding="utf-8")
     if not (SITE / PDF_NAME).exists():
         print(f"build: site/{PDF_NAME} is missing; download it from {core['meta']['source_pdf']}", file=sys.stderr)
         return 1
