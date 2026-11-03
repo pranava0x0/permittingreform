@@ -122,6 +122,8 @@ def row_claims(overview: dict, compare: dict, communities: dict | None, datacent
         for r in compare["bills"]["rows"]:
             cell = r.get("senate") or {}
             add(f"dcb.{r['id']}", cell, "text", cell.get("sections", []), r["topic"])
+    for group in compare.get("focused", []):
+        add("focus." + group["id"], group, "baseline", [group["section"]], group["label"])
     for i, a in enumerate(compare.get("added", []), 1):
         add(f"add.{i}", a, "text", a["sections"], "New in this bill")
     for prefix, doc in (("com", communities), ("dc", datacenters)):
@@ -277,6 +279,8 @@ def build() -> tuple[dict, dict, list[str]]:
                 if not cell.get("text"):
                     errors.append(f"compare bills {r['id']}: empty cell {k}")
                 check_refs(f"compare bills {r['id']}", cell.get("sections", []))
+    for g in compare.get("focused", []):
+        check_refs("focused comparison " + g["id"], [g["section"]])
     for a in compare["added"]:
         check_refs("compare added", a["sections"])
     for item in compare["dropped"]:
@@ -748,6 +752,10 @@ def llms_full(core: dict, paras: dict) -> str:
                 t = takes[tid]
                 out.append(f"- Reading, {t['who']} ({core['takes']['stances'][t['stance']].lower()}): {t['claim']} [{t['outlet']}]({t['url']})")
             out.append("")
+    for g in core["compare"].get("focused", []):
+        out += ["", "## " + g["label"], "", g["question"], "",
+                f"BAAJA §{g['section']}: {md_cited(core, g, 'baseline')}"]
+        out += [f"- {e['label']}: {e['text']} [{e['cite']}]({e['url']})" for e in g["entries"]]
     out += disputes_markdown(core)
     out += ["", "## Added and dropped provisions", "", "```json", json.dumps({k: core["compare"][k] for k in ("added", "dropped")}, ensure_ascii=False), "```", ""]
     for label, rows in (("Timeline", core["timeline"]), ("People", core["people"]), ("Media", core["media"])):
@@ -759,6 +767,7 @@ def llms_full(core: dict, paras: dict) -> str:
 
 
 READER_PAGES = {
+    "comparisons": ("Data center and digital permitting bills compared", "Compare BAAJA with data center siting and disclosure proposals, current E-NEPA law and the House and Senate ePermit bills."),
     "issues": ("Key issues in permitting reform", "What S. 5653 would change, the bill sections behind each provision, and how supporters and critics read them."),
     "timeline": ("Permitting reform timeline", "Dated legislative, legal and agency events, with source records for each event."),
     "coverage": ("Permitting reform news and coverage", "Reporting, analysis and statements about the permitting bill, with publication dates and links to the originals."),
@@ -772,7 +781,7 @@ def reader_html(core: dict, page: str) -> str:
         return f'<a href="{esc(url)}">{esc(label)}</a>'
 
     title, description = READER_PAGES[page]
-    route = "media" if page == "coverage" else page
+    route = {"coverage": "media", "comparisons": "compare"}.get(page, page)
     nav = [link("index.html", "Overview"), link("reading.html", "Bill")]
     nav.extend(link(key + ".html", name) for key, name in (("issues", "Key issues"), ("timeline", "Timeline"), ("coverage", "Coverage")))
     out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
@@ -783,7 +792,17 @@ def reader_html(core: dict, page: str) -> str:
            f'<h1>{esc(title)}</h1><p>{esc(description)}</p>',
            f'<p>{esc(core["meta"]["short_title"])} · Updated {esc(core["meta"]["as_of"])} · ' +
            link("index.html#/" + route, "Open interactive view") + '</p>']
-    if page == "issues":
+    if page == "comparisons":
+        for group in core["compare"]["focused"]:
+            out.append(f'<section id="{esc(group["id"])}"><h2>{esc(group["label"])}</h2><p>{esc(group["question"])}</p>')
+            out.append(f'<h3>BAAJA · Sec. {esc(group["section"])}</h3>')
+            for sentence in group["ts"]:
+                c = sentence["c"]
+                out.append('<p>' + esc(sentence["t"]) + ' ' + link(f'bill.pdf#page={c[0]}', f'p. {c[0]}, line {c[1]} to p. {c[2]}, line {c[3]}') + '</p>')
+            for entry in group["entries"]:
+                out.append(f'<h3>{esc(entry["label"])}</h3><p>{esc(entry["text"])} ' + link(entry["url"], entry["cite"]) + '</p>')
+            out.append('</section>')
+    elif page == "issues":
         out.append('<p>Jump to: ' + ' · '.join(link("#" + key, name) for key, name in
                    (("datacenters", "Data centers"), ("speed", "Project delays"), ("communities", "Communities"), ("debate", "Debate"))) + '</p>')
         out.append('<h2>What would the bill change?</h2>')

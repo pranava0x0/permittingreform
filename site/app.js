@@ -477,6 +477,7 @@
     if (c.bills && c.bills.rows.some((r) => Object.keys(r).some((k) => cites(r[k])))) {
       links.push(el("a", { href: "#/compare/" + c.bills.id }, c.bills.label));
     }
+    (c.focused || []).filter(g => g.section === n).forEach(g => links.push(el("a", { href: "#/compare/" + g.id }, g.label)));
     if (!links.length) return null;
     return el("p", { class: "sec-links" }, "Compare: ", links.map((a, i) => [i ? " · " : null, a]));
   }
@@ -732,16 +733,27 @@
         el("ul", { class: "plain-list" }, b.others.map((o) => el("li", null, o.text + " ", el("span", { class: "where" }, citeNode(o)))))] : null);
   }
 
+  function focusedComparison(g) {
+    return el("section", {class:"block focused-comparison", id:g.id},
+      el("h2", null, g.label), el("p", null, g.question),
+      el("h3", null, "BAAJA · Sec. " + g.section), el("p", null, citedText(g, "baseline")),
+      g.entries.map(e => el("div", null, el("h3", null, e.label), el("p", null, e.text, " ", ext(e.url, e.cite)))));
+  }
+
   function renderCompare(groupId) {
     const c = D.compare;
     const bills = c.bills || null;
     const billsOnly = bills && groupId === bills.id;
-    const groups = billsOnly ? [] : groupId && c.groups.some((g) => g.id === groupId) ? c.groups.filter((g) => g.id === groupId) : c.groups;
+    const focused = c.focused || [];
+    const selection = focused.find(g => g.id === groupId);
+    const special = billsOnly || selection;
+    const groups = special ? [] : groupId && c.groups.some((g) => g.id === groupId) ? c.groups.filter((g) => g.id === groupId) : c.groups;
     const keys = c.versions.map((v) => v.key);
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Subject" },
-      el("a", { class: "chip", href: "#/compare", "aria-current": !groupId || (!billsOnly && groups.length === c.groups.length) ? "true" : null }, "All"),
+      el("a", { class: "chip", href: "#/compare", "aria-current": !groupId || (!special && groups.length === c.groups.length) ? "true" : null }, "All"),
       c.groups.map((g) => el("a", { class: "chip", href: "#/compare/" + g.id, "aria-current": groups.length === 1 && groups[0].id === g.id ? "true" : null }, g.label)),
-      bills ? el("a", { class: "chip", href: "#/compare/" + bills.id, "aria-current": billsOnly ? "true" : null }, bills.label) : null);
+      bills ? el("a", { class: "chip", href: "#/compare/" + bills.id, "aria-current": billsOnly ? "true" : null }, bills.label) : null,
+      focused.map(g => el("a", {class:"chip", href:"#/compare/" + g.id, "aria-current":selection === g ? "true" : null}, g.label)));
 
     const versions = versionList(c.versions);
 
@@ -769,8 +781,11 @@
 
     return [
       el("div", { class: "lede" }, el("h1", null, "Comparison", el("span", { class: "credit-inline" }, "AI-written"))),
-      billsOnly ? null : versions, filters, billsOnly ? null : withChips("main", c.versions),
-      tables, bills && (billsOnly || !groupId) ? renderBills(bills) : null, groupId ? null : lists];
+      special ? null : versions, filters, special ? null : withChips("main", c.versions),
+      tables, bills && (billsOnly || !groupId) ? renderBills(bills) : null,
+      selection ? focusedComparison(selection) : (!groupId || billsOnly) ? el("section", {class:"block"}, el("h2", null, "Related bill comparisons"),
+        el("ul", {class:"plain-list"}, focused.filter(g => !billsOnly || g.id.startsWith("data-center-")).map(g =>
+          el("li", null, el("a", {href:"#/compare/" + g.id}, g.label), ": " + g.question)))) : null, groupId ? null : lists];
   }
 
   /* Long lists open brief: two lines of summary, the rest behind More. */

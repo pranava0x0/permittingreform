@@ -60,6 +60,9 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
             out += [(f"compare {r['id']} {k}", r[k]["text"]) for k in ("current", "epra", "speed", "senate")]
             if r.get("note"):
                 out.append((f"compare {r['id']} note", r["note"]["text"]))
+    for group in core["compare"].get("focused", []):
+        out.extend((group["id"], group[k]) for k in ("question", "baseline"))
+        out.extend((group["id"], entry["text"]) for entry in group["entries"])
     bills = core["compare"].get("bills") or {"rows": [], "versions": []}
     out += [(f"compare bills {r['id']} {v['key']}", r[v["key"]]["text"]) for r in bills["rows"] for v in bills["versions"]]
     out += [("compare bills intro", bills.get("intro", ""))] + [("compare bills other", o["text"]) for o in bills.get("others", [])]
@@ -197,6 +200,10 @@ def check(core: dict) -> tuple[list[str], dict]:
                              and all(src.get("cite") and str(src.get("url", "")).startswith("https://") for src in note["sources"])):
                 errs.append(f"compare {r['id']}: a note needs a label, text and sources, each with a cite and a link")
 
+    for group in core["compare"].get("focused", []):
+        for entry in group["entries"]:
+            if not all(entry.get(k) for k in ("label", "text", "cite")) or not entry.get("url", "").startswith("https://"):
+                errs.append(f"compare {group['id']}: each version needs a name, comparison and source")
     bills = core["compare"].get("bills")
     if bills:
         for r in bills["rows"]:
