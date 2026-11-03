@@ -34,11 +34,12 @@ const PATHS = [
   ['vs-earlier-bills', [fold('Changes from earlier bills')], 'details[data-fold="overview:Changes from earlier bills"][open] > section'],
   ['vs-speed-courts', [{ tab: 'bill' }, { href: '#/compare' }, { chipIn: '[data-comparison="main"]', name: 'SPEED Act' }, { row: 'row-sol' }], '#row-sol .col-speed'],
   ['cost-allocation', [{ tab: 'bill' }, { href: '#/compare' }, { row: 'row-cost' }], '#row-cost .col-senate'],
-  ['dc-page', [{ tab: 'topics' }, row('.cm-row')], '.cm-row .cm-body'],
-  ['counties', [{ tab: 'topics' }, { href: '#/communities' }, row('.cm-row')], '.cm-row .cm-body'],
+  ['dc-page', [{ tab: 'bill' }, { href: '#/datacenters' }, row('.cm-row')], '.cm-row .cm-body'],
+  ['counties', [{ tab: 'bill' }, { href: '#/communities' }, row('.cm-row')], '.cm-row .cm-body'],
   ['wind-solar', [fold('Where it stands|Status')], open('#h-status')],
   ['agency-deadlines', [fold('Deadlines')], open('#h-clocks')],
-  ['coverage', [{ tab: 'news' }], '.event'], // the headlines are the answer
+  ['coverage', [{ tab: 'media' }], '.media-item'],
+  ['timeline', [{ tab: 'timeline' }], '.event'],
 ];
 
 (async () => {

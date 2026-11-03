@@ -55,12 +55,13 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
             await page.locator('.provision-detail summary').first().click();
             assert.equal(await page.locator('a[href="#/compare/data-center-bills"]').count(),1);
           }
-          // Sibling pages: one row that never clips, 44px targets (43.5 allows subpixel rounding), one current page.
+          // Bill groups stack on phones; each row fits, with 44px targets (43.5 allows subpixel rounding), one current page.
           const sub = await page.evaluate(() => { const n = document.querySelector('.subtabs'); if (!n || n.hidden) return null;
             const a = [...n.querySelectorAll('a')], r = a.map(x => x.getBoundingClientRect());
             return { clip: n.scrollWidth > n.clientWidth + 1, rows: new Set(r.map(b => Math.round(b.top))).size,
               short: r.filter(b => b.height < 43.5).length, current: a.filter(x => x.getAttribute('aria-current') === 'page').length }; });
-          if (sub) assert.deepEqual(sub, {clip:false,rows:1,short:0,current:1}, route+' subtabs at '+width);
+          const billGroup = ['bill','compare','communities','datacenters','speed'].includes(route.split('/')[0]);
+          if (sub) assert.deepEqual(sub, {clip:false,rows:width < 640 && billGroup ? 2 : 1,short:0,current:1}, route+' subtabs at '+width);
           assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1),route+' overflows at '+width);
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
@@ -300,8 +301,8 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
     const nav = await browser.newPage({viewport:{width:320,height:812},hasTouch:true});
     await nav.goto(base);
     for (const [label, pages] of [
-      ['Bill',['Sections','Compare bills']], ['Topics',['Data centers','Project delays','Communities']],
-      ['Debate',['Positions','People and groups']], ['News',['Timeline','Coverage']]]) {
+      ['Bill',['Sections','Compare bills','Data centers','Project delays','Communities']],
+      ['Positions',['Stances by issue','People and groups']]]) {
       const top = nav.locator('.tabs').getByRole('link',{name:label,exact:true});
       await top.click();
       const siblings = nav.getByRole('navigation',{name:label+' pages'});
@@ -313,15 +314,23 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await nav.waitForFunction(()=>document.activeElement?.getAttribute('aria-current')==='page');
       assert.equal(await last.evaluate(a=>a===document.activeElement),true);
       assert.equal(await top.getAttribute('aria-current'),'location');
+      assert.ok(await siblings.locator('a').evaluateAll(links => links.every(a => a.scrollWidth <= a.clientWidth + 1)), label+' clips a label at 320px');
+    }
+    for (const [label,route] of [['Timeline','timeline'],['Coverage','media']]) {
+      const link = nav.locator('.tabs').getByRole('link',{name:label,exact:true});
+      await link.click();
+      await nav.locator('#view.view-'+route).waitFor();
+      assert.equal(await link.getAttribute('aria-current'),'page');
+      assert.equal(await nav.locator('.subtabs').isVisible(),false);
     }
     await nav.goto(base+'#/people/outside/supports/trade_association');
-    await nav.getByRole('navigation',{name:'Debate pages'}).waitFor();
+    await nav.getByRole('navigation',{name:'Positions pages'}).waitFor();
     await nav.locator('.method-link').click();
     await nav.getByRole('heading',{name:'Method',exact:true}).waitFor();
     assert.equal(await nav.locator('.method-link').getAttribute('aria-current'),'page');
     assert.equal(await nav.locator('.subtabs').isVisible(),false);
     assert.ok(await nav.locator('.tabs').evaluate(n=>n.scrollWidth<=n.clientWidth+1));
-    await nav.goBack(); await nav.getByRole('navigation',{name:'Debate pages'}).waitFor();
+    await nav.goBack(); await nav.getByRole('navigation',{name:'Positions pages'}).waitFor();
     await nav.close();
     const race = await browser.newPage();
     await race.route('**/data/bill.js*', async route => {
@@ -329,7 +338,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await route.continue();
     });
     await race.goto(base+'#/bill/search/page%2054', {waitUntil:'domcontentloaded'});
-    await race.locator('[data-tab="news"]').click();
+    await race.locator('[data-tab="timeline"]').click();
     await race.waitForFunction(() => Boolean(window.PR_BILL));
     assert.ok(race.url().endsWith('#/timeline'), 'late search must not redirect away from the selected tab');
     await race.close();

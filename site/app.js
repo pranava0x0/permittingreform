@@ -199,7 +199,7 @@
     return billPromise;
   }
 
-  /* Debate and News share the same research bundle. */
+  /* Timeline, Positions, the directory and Coverage share the research bundle. */
   const RESEARCH_PAGES = ["timeline", "positions", "people", "media"];
   let newsPromise = null;
   function ensureNews() {
@@ -306,6 +306,11 @@
       el("ul", { class: "status-list" }, o.status.points.map((p) =>
         el("li", null, p.text + " ", el("span", { class: "sources-inline" }, ext(p.source.url, p.source.label))))));
 
+    const guides = {
+      deadlines: ["speed", "What slows projects"],
+      datacenters: ["datacenters", "How the bill affects data centers"],
+      historic: ["communities", "How communities take part"],
+    };
     const provisions = el("section", { class: "block", "aria-labelledby": "h-prov" },
       el("h2", { id: "h-prov" }, "What it changes"),
       el("ul", { class: "provisions" }, o.headlines.map((h) =>
@@ -314,6 +319,7 @@
             el("summary", null, el("h3", null, h.title)),
             el("p", null, citedText(h)),
             el("p", { class: "where" }, secLinks(h.sections), readingsLinks(h.sections)),
+            guides[h.id] ? el("p", { class: "where" }, el("a", { href: "#/" + guides[h.id][0] }, guides[h.id][1])) : null,
             h.id === "datacenters" && D.compare.bills ? el("p", { class: "where" }, el("a", { href: "#/compare/" + D.compare.bills.id }, "Compare data center bills")) : null)))));
 
     const clocks = el("section", { class: "block", "aria-labelledby": "h-clocks" },
@@ -1630,14 +1636,15 @@
   // Page URLs stay independent of the navigation groups. Keep sibling links in
   // the DOM while switching pages so keyboard focus survives content updates.
   const GROUPS = {
-    bill: [["bill", "Sections"], ["compare", "Compare bills"]],
-    topics: [["datacenters", "Data centers"], ["speed", "Project delays"], ["communities", "Communities"]],
-    debate: [["positions", "Positions"], ["people", "People and groups"]],
-    news: [["timeline", "Timeline"], ["media", "Coverage"]],
+    bill: [
+      { label: "Read", pages: [["bill", "Sections"], ["compare", "Compare bills"]] },
+      { label: "Effects", pages: [["datacenters", "Data centers"], ["speed", "Project delays"], ["communities", "Communities"]] },
+    ],
+    positions: [{ pages: [["positions", "Stances by issue"], ["people", "People and groups"]] }],
   };
   const sectionNav = document.getElementById("section-nav");
   function markTab(tab) {
-    const group = Object.keys(GROUPS).find(k => GROUPS[k].some(([page]) => page === tab));
+    const group = Object.keys(GROUPS).find(k => GROUPS[k].some(row => row.pages.some(([page]) => page === tab)));
     document.querySelectorAll(".masthead [data-tab]").forEach(a => {
       if (a.dataset.tab === (group || tab)) a.setAttribute("aria-current", group ? "location" : "page");
       else a.removeAttribute("aria-current");
@@ -1647,9 +1654,13 @@
     if (sectionNav.dataset.group !== group) {
       sectionNav.dataset.group = group;
       sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
-      fill(sectionNav, GROUPS[group].map(([key, label]) => el("a", { href: "#/" + key }, label)));
+      fill(sectionNav, GROUPS[group].map(({label, pages}) => {
+        const links = pages.map(([key, name]) => el("a", { href: "#/" + key }, name));
+        return label ? el("div", { class: "nav-set", role: "group", "aria-label": label },
+          el("span", { class: "nav-caption", "aria-hidden": "true" }, label), links) : links;
+      }));
     }
-    for (const a of sectionNav.children) {
+    for (const a of sectionNav.querySelectorAll("a")) {
       if (a.hash === "#/" + tab) a.setAttribute("aria-current", "page");
       else a.removeAttribute("aria-current");
     }

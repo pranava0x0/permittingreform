@@ -6,9 +6,10 @@ A static site that indexes the Bipartisan American Affordability and Jobs Act of
 - **Compare.** Current law, the 2024 Senate bill (S. 4753), the House-passed SPEED Act (H.R. 4776) and the 2026 Senate text, subject against subject.
 - **Data center bills.** BAAJA sections 2107 and 2114 beside current policy, the Ratepayer Protection Act (H.R. 9340), the GRID Savings Act, the Power for the People Act and the GRID Act, on Compare.
 - **Communities.** What BAAJA changes about who can comment, be consulted, take part in planning or go to court: the public, tribes, states, local governments, landowners and consulting parties.
-- **Topics.** Data centers, project delays and effects on communities.
-- **Debate.** Positions on the bill, letters, and the people and groups involved.
-- **News.** A timeline of events since January 2025 and coverage, each with a source link.
+- **Bill → Effects.** Data centers, project delays and effects on communities.
+- **Positions.** Positions on the bill, letters, and the people and groups involved.
+- **Timeline.** Events since January 2025, with sources.
+- **Coverage.** News, analysis and public statements about permitting reform.
 
 ## Run it
 

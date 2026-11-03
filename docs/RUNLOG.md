@@ -44,3 +44,7 @@ All 174 bill quotes matched. The source checker found no missing quotes; eight o
 ## November 3, 2026: vote wording and navigation
 
 Read the Senate floor order and the September 30 roll call. Audited vote references in the tracker’s narrative fields, keeping quoted source text intact. Regrouped the masthead using the reader questions and checked the same 24 phone paths before and after. Used local Python, Playwright, Chrome and GitHub; no subagents or separately metered token figure.
+
+## November 3, 2026: Timeline and bill guides
+
+Promoted Timeline to the masthead and grouped the three subject guides with the bill they explain. Measured 25 phone reader paths in Chrome: Timeline and Coverage each take one tap. A 320px check caught the Communities label outgrowing its link; the layout now reserves enough space for each word. Used local Playwright, Python and GitHub. No subagents; token cost was not separately metered.
