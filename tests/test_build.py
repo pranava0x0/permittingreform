@@ -1,4 +1,5 @@
 """The build: no dangling references, and the committed site data matches its sources."""
+import html
 import json
 import sys
 import tempfile
@@ -61,6 +62,24 @@ class Build(unittest.TestCase):
             for page, line, _, paragraph in PARAS[sec["n"]]:
                 self.assertIn(paragraph, text)
                 self.assertIn(f"p. {page}, line {line}", text)
+
+    def test_static_reader_pages_are_discoverable_and_sourced(self):
+        sitemap = (ROOT / "site/sitemap.xml").read_text()
+        index = (ROOT / "site/index.html").read_text()
+        for name in build.READER_PAGES:
+            url = f"{build.SITE_URL}{name}.html"
+            page = (ROOT / f"site/{name}.html").read_text()
+            self.assertIn(f'href="{name}.html"', index)
+            self.assertIn(f'<loc>{url}</loc>', sitemap)
+            self.assertIn(url, build.llms_txt(CORE))
+            self.assertIn(f'rel="canonical" href="{url}"', page)
+            self.assertEqual(page, build.reader_html(CORE, name))
+        for name, key in (("timeline", "timeline"), ("coverage", "media")):
+            page = (ROOT / f"site/{name}.html").read_text()
+            for row in CORE[key]:
+                self.assertIn(html.escape(row["summary"]), page)
+                for ref in row.get("sources", [row]):
+                    self.assertIn(html.escape(ref["url"]), page)
 
     def test_full_export_keeps_every_community_quote_citation(self):
         full = build.llms_full(CORE, PARAS)
