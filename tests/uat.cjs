@@ -27,6 +27,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           ['overview','.provisions li',10], ['issues','.issue-guide',3], ['bill','.index li',71],
           ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
           ['communities','.cm-row',n.communities], ['datacenters','.cm-row',n.datacenters], ['compare/data-center-bills','.compare tbody tr',n.bills], ['speed','.speed-row',n.speed],
+          ['compare/data-center-siting','.focused-comparison h3',4], ['compare/data-center-disclosure','.focused-comparison h3',4], ['compare/digital-permitting','.focused-comparison h3',4],
           ['timeline','.event',n.timeline], ['positions','.pos-issue',n.issues], ['people','.person',n.people], ['media','.media-item',n.media], ['method','.versus dd',null]
         ];
         for (const [route, selector, expected] of routes) {

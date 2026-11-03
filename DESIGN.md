@@ -16,6 +16,8 @@ Hairline rules divide rows. Avoid cards, shadows, gradients, eyebrow labels and 
 
 Use 375×812, 768×800 and 1280×800 for browser checks. Verify DOM counts before screenshots. The mobile masthead title stays on one line. The 18px theme icon keeps a 44px hit area. Controls on touch devices have a 44px minimum height. Preserve keyboard focus and the skip link.
 
+For related bills that address a narrower question, Compare shows the BAAJA provision first, then each dated legislative text. Give current law its own label. Link from the corresponding BAAJA section and offer the same comparisons in HTML without JavaScript.
+
 ## Editorial rules
 
 Describe proposed changes as proposals. Keep dates, triggers, exceptions and affected parties explicit. Every vote reference in tracker copy names the body, the measure and the decision: committee approval, ending debate on a motion, adopting an amendment or passing a bill. If a source only predicts floor action, say so. Preserve original headlines and quotations; explain their vote references in the accompanying summary. Authorization of funding is not appropriation. An agency decision deadline is not a promise of approval.

@@ -21,7 +21,6 @@
 - Finish `make infer` after the Sonnet session limit resets. At handoff: 401 supported, 12 flagged and 127 unchecked out of 540 statements. Review flags against sources; do not relabel them to make the gate pass.
 - Extend semantic checking to current-law comparison cells, per-section prior-version notes and overview/research paraphrases. These are outside the current model check.
 | medium | Read the Heatmap pieces the sweep skipped for budget: trump-wind-energy-prices (6/17), pjm-interconnection-reforms (7/28), trump-gas-plant-permits (8/21), the transmission costs Q&A (9/4). |
-| medium | Senate Data Center Transparency Act (Blunt Rochester, Curtis, October 1): add to the data center bills list once it has a number and text. |
 | low | Make Playwright part of the documented setup so `tests/uat.cjs` and `tests/clicks.cjs` run on every UI change; on 2026-10-26 it had to be installed in a scratch directory. |
 | medium | Speed page: add the McKinsey, NRDC and PNAS studies the 2026-10-26 research run could not fetch, and a reading for the local and state siting cause, which no section addresses. |
 

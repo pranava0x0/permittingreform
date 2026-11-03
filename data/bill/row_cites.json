@@ -1369,6 +1369,21 @@
   "section": "2107",
   "text": "to ensure that any incremental costs paid are credited to the annual transmission revenue requirement of the applicable public utility"
  },
+ "focus.data-center-disclosure.s1": {
+  "claim": "BAAJA would have the Energy Information Administration revise Form 861 to collect electricity load attributable to data centers.",
+  "section": "2114",
+  "text": "the Administrator of the Energy Information Administration shall revise Form 861 of the Energy Information Administration to include load from data center entities"
+ },
+ "focus.data-center-siting.s1": {
+  "claim": "BAAJA would exclude a proposed agency action on a non-federal project from the definition of major federal action if the only federal involvement is a loan or loan guarantee.",
+  "section": "1102",
+  "text": "for which the only Federal involvement is a loan guarantee or loan"
+ },
+ "focus.digital-permitting.s1": {
+  "claim": "BAAJA would direct CEQ to implement the ePermit interagency system by December 1, 2028, to the maximum extent practicable.",
+  "section": "1121",
+  "text": "To the maximum extent practicable, not later than December 1, 2028, the Chairman shall develop and implement the ePermit unified interagency data system"
+ },
  "hl.certainty.s1": {
   "claim": "Restricts interference with permits in effect on or after September 16, 2026, subject to listed exceptions including the holder’s request.",
   "section": "1401",

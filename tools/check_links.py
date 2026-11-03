@@ -66,6 +66,9 @@ def collect(core: dict) -> dict[str, list[str]]:
                 add(r[key].get("url"), f"compare.{r['id']}.{key}")
             for src in (r.get("note") or {}).get("sources", []):
                 add(src.get("url"), f"compare.{r['id']}.note")
+    for group in core["compare"].get("focused", []):
+        for entry in group["entries"]:
+            add(entry["url"], f"compare.{group['id']}.{entry['label']}")
     for item in core["compare"]["dropped"]:
         add(item.get("url"), "compare.dropped")
     for t in (core.get("takes") or {}).get("takes", []):

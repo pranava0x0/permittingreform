@@ -53,3 +53,7 @@ Promoted Timeline to the masthead and grouped the three subject guides with the 
 ## November 3, 2026: issue navigation and text editions
 
 Grouped Topics, Debate and People and groups under Key issues; kept Timeline and Coverage directly accessible. Built HTML editions from the existing cited records and linked them from the masthead, sitemap and llms.txt. Verified all five entry points with JavaScript disabled and checked the interactive pages on phone and desktop. Used Python, Playwright, Chrome, Google Search Central's JavaScript guidance, the llms.txt specification and GitHub; no subagents or separate token measurement.
+
+## November 3, 2026: related bill comparisons
+
+Read the official texts of six data center bills, both ePermit bills and the E-NEPA statute. Compared the two ePermit versions directly, then checked their implementation dates and contracting clauses against section 1121. Matched the three BAAJA baselines to printed passages. Added version-specific source links to the interactive and static comparisons and the agent exports. Tools: GovInfo, Python, Playwright, Chrome and GitHub. No subagents or separately metered token count.

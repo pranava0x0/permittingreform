@@ -1845,5 +1845,88 @@
     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s1475is/html/BILLS-119s1475is.htm"
    }
   ]
- }
+ },
+ "focused": [
+  {
+   "id": "data-center-disclosure",
+   "label": "Data center disclosure",
+   "question": "What would communities learn about a data center’s power and water use?",
+   "section": "2114",
+   "baseline": "BAAJA would have the Energy Information Administration revise Form 861 to collect electricity load attributable to data centers.",
+   "entries": [
+    {
+     "label": "Data Center Transparency Act of 2026 (S. 5640)",
+     "cite": "Senate introduced text, §2 · September 30, 2026",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5640is/html/BILLS-119s5640is.htm",
+     "text": "For data centers consuming at least 50 megawatts each day, EPA would report at least quarterly on water use and emissions. EIA would publish state electricity totals and changes in household bills at least twice a year."
+    },
+    {
+     "label": "Data Center Water and Energy Transparency Act of 2026 (S. 4213)",
+     "cite": "Senate introduced text, §3 · March 25, 2026",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s4213is/html/BILLS-119s4213is.htm",
+     "text": "Operators of facilities with at least 25 megawatts of peak demand would report energy and water use to the state, or to federal agencies if the state has no program. Proposed facilities and expansions meeting the bill’s threshold would also report five-year projections."
+    },
+    {
+     "label": "Data Center Community Empowerment Act of 2026 (S. 5645)",
+     "cite": "Senate introduced text, §2 · September 30, 2026",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5645is/html/BILLS-119s5645is.htm",
+     "text": "State, local and Tribal governments could request Energy Department help estimating power, water and infrastructure impacts. The department could not recommend whether to approve or reject an individual project."
+    }
+   ]
+  },
+  {
+   "id": "data-center-siting",
+   "label": "Data center siting",
+   "question": "Who decides where a data center can be built, and when is environmental review required?",
+   "section": "1102",
+   "baseline": "BAAJA would exclude a proposed agency action on a non-federal project from the definition of major federal action if the only federal involvement is a loan or loan guarantee.",
+   "entries": [
+    {
+     "label": "Protecting Local Control of Data Centers Act (H.R. 10119)",
+     "cite": "House introduced text, §2 · August 20, 2026",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr10119ih/html/BILLS-119hr10119ih.htm",
+     "text": "For data centers on non-federal land, federal agencies could neither override state or local siting and permitting authority nor condition federal funding on its surrender."
+    },
+    {
+     "label": "Public Lands Accountability Act (H.R. 10465)",
+     "cite": "House introduced text, §2 · September 16, 2026",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr10465ih/html/BILLS-119hr10465ih.htm",
+     "text": "A Bureau of Land Management authorization for a hyperscale data center on public lands would require an environmental impact statement. The bill would rule out categorical exclusions and require at least 45 days for written comments and a hearing in the affected community."
+    },
+    {
+     "label": "Data center construction on federal land (S. 5658)",
+     "cite": "Senate introduced text, §1 · September 30, 2026",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5658is/html/BILLS-119s5658is.htm",
+     "text": "The bill would prohibit construction on National Forest System and Interior-managed lands, with specified Tribal lands excluded. Newly conveyed land would revert to the United States if used for a data center unless Congress specifically authorized that use."
+    }
+   ]
+  },
+  {
+   "id": "digital-permitting",
+   "label": "Digital permitting",
+   "question": "Would agencies study a permitting portal or have to build one?",
+   "section": "1121",
+   "baseline": "BAAJA would direct CEQ to implement the ePermit interagency system by December 1, 2028, to the maximum extent practicable.",
+   "entries": [
+    {
+     "label": "E-NEPA (current law)",
+     "cite": "42 U.S.C. §4336d · NEPA §110",
+     "url": "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap55-subchapI-sec4336d.htm",
+     "text": "Congress directed the Council on Environmental Quality (CEQ) to study digital environmental review tools and report to Congress. A permit portal was a subject of that study; the statute did not direct CEQ to build it."
+    },
+    {
+     "label": "ePermit Act (H.R. 4503)",
+     "cite": "House-passed text, §§3, 5, 7 and 8 · December 9, 2025",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4503eh/html/BILLS-119hr4503eh.htm",
+     "text": "CEQ would publish data standards within 60 days and implementation guidance within 120 days. The target for the shared system is December 1, 2027, to the maximum extent practicable: one year earlier than BAAJA. Section 8 expressly conditions CEQ contracting authority on available appropriations."
+    },
+    {
+     "label": "ePermit Act (S. 3800)",
+     "cite": "Senate introduced text, §§3, 5, 7 and 8 · February 5, 2026",
+     "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3800is/html/BILLS-119s3800is.htm",
+     "text": "The Senate text sets the same 60-day and 120-day deadlines and the same qualified December 1, 2027 system target as the House text. Its contracting clause omits the House version’s express appropriations condition."
+    }
+   ]
+  }
+ ]
 }
