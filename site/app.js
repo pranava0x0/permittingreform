@@ -210,7 +210,7 @@
         const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
         if (window.PR_NEWS) { done(); return; }
         const tag = document.createElement("script");
-        tag.src = "data/news.js?v=6";
+        tag.src = "data/news.js?v=7";
         tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
         tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
         document.head.appendChild(tag);
@@ -1593,14 +1593,14 @@
         el("h2", null, "Bill text"),
         el("p", null, "Draft " + m.draft_id + ", " + m.pages + " pages, posted by Senate EPW on " + S.formatDate(m.released) + ": ",
           ext(m.source_pdf, "EPW copy"), ", ", ext(m.mirror_pdfs[0], "Energy Committee copy"), "."),
-        el("p", null, "A cite such as 44:6 is page 44, line 6 of that PDF. A word split across printed lines is indexed on the line where it begins; the final word of a cited passage may continue onto the next line. The draft has no bill number, and its page numbers will change when the sponsors post a new text.")),
+        el("p", null, "A cite such as 44:6 is page 44, line 6 of that PDF. A word split across printed lines is indexed on the line where it begins; the final word of a cited passage may continue onto the next line. Citations use the September 30 draft of S. 5653. Page numbers may change in a later version.")),
       el("section", { class: "block prose" },
         el("h2", null, "Summaries"),
         el("p", null, "Drafted with Claude and reviewed with AI assistance against the bill and from the two earlier bills: ",
           m.prior_bills.map((b, i) => [i ? "; " : "", ext(b.url, b.label)]), ". A green rule marks AI-written text. It is not legal advice.")),
       el("section", { class: "block prose" },
         el("h2", null, "Timeline, people, media"),
-        el("p", null, "Collected by web search on " + S.formatDate(m.as_of) + ". A person's or group's position is taken from its own statements."),
+        el("p", null, "Coverage updated through " + S.formatDate(m.as_of) + ". A person's or group's position is taken from its own statements."),
         el("p", null, "Reddit could not be searched by script or by browser; it has no entries.")),
       el("section", { class: "block" },
         el("h2", null, "Checks"),
