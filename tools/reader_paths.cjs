@@ -34,15 +34,15 @@ const PATHS = [
   ['vs-earlier-bills', [fold('Changes from earlier bills')], 'details[data-fold="overview:Changes from earlier bills"][open] > section'],
   ['vs-speed-courts', [{ tab: 'bill' }, { href: '#/compare' }, { chipIn: '[data-comparison="main"]', name: 'SPEED Act' }, { row: 'row-sol' }], '#row-sol .col-speed'],
   ['cost-allocation', [{ tab: 'bill' }, { href: '#/compare' }, { row: 'row-cost' }], '#row-cost .col-senate'],
-  ['dc-page', [{ tab: 'effects' }, row('.cm-row')], '.cm-row .cm-body'],
-  ['counties', [{ tab: 'effects' }, { href: '#/communities' }, row('.cm-row')], '.cm-row .cm-body'],
+  ['dc-page', [{ tab: 'topics' }, row('.cm-row')], '.cm-row .cm-body'],
+  ['counties', [{ tab: 'topics' }, { href: '#/communities' }, row('.cm-row')], '.cm-row .cm-body'],
   ['wind-solar', [fold('Where it stands|Status')], open('#h-status')],
   ['agency-deadlines', [fold('Deadlines')], open('#h-clocks')],
   ['coverage', [{ tab: 'news' }], '.event'], // the headlines are the answer
 ];
 
 (async () => {
-  const b = await chromium.launch();
+  const b = await chromium.launch({channel:"chrome"});
   const p = await b.newPage({ viewport: { width: 375, height: H } });
   const rows = [];
   for (const [id, steps, target] of PATHS) {
@@ -52,7 +52,7 @@ const PATHS = [
       else if (s.row) await p.locator(`#${s.row} .row-toggle`).click();
       else if (s.toggle) await p.locator(`${s.toggle} .event-toggle`).first().click();
       else if (s.tab) await p.locator(`.tabs a[data-tab="${s.tab}"]`).click();
-      else if (s.href) await p.locator(`#view a[href="${s.href}"]`).first().click();
+      else if (s.href) await p.locator(`.subtabs:not([hidden]) a[href="${s.href}"], #view a[href="${s.href}"]`).first().click();
       else if (s.chipIn) await p.locator(s.chipIn).getByRole('button', { name: s.name, exact: true }).click();
       await p.waitForTimeout(250);
     }

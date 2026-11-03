@@ -199,9 +199,8 @@
     return billPromise;
   }
 
-  /* Timeline, people and media load with the first News page. They merge into
-     D, so the News views (Positions included) read them as before. */
-  const NEWS_TABS = ["timeline", "positions", "people", "media"];
+  /* Debate and News share the same research bundle. */
+  const RESEARCH_PAGES = ["timeline", "positions", "people", "media"];
   let newsPromise = null;
   function ensureNews() {
     if (D.timeline) return Promise.resolve(D);
@@ -294,9 +293,8 @@
       el("p", { class: "subtitle" }, m.short_title),
       el("p", { class: "summary" }, o.summary.text + " ", el("span", { class: "sources-inline" }, ext(o.summary.source.url, o.summary.source.label))),
       // A scheduled date in the past says so, rather than reading as upcoming.
-      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Senate schedule: " : "Previously scheduled: "),
-        S.formatDate(o.next.date) + ". " + o.next.text + " ",
-        el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null);
+      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next Senate vote: " : "Previously scheduled: "),
+        ext(o.next.source.url, S.formatDate(o.next.date)), ". " + o.next.text) : null);
     const posRow = pos ? el("a", { class: "link-row", href: "#/positions" },
       "Who's for and against", el("span", { class: "row-count" }, pos.supports + " support · " + pos.opposes + " oppose")) : null;
     const about = el("p", { class: "note overview-note" }, "This is a proposed law. " + num(m.pages) + " pages, " + m.sections + " sections, released " + S.formatDate(m.released) + ". ",
@@ -1229,7 +1227,7 @@
           safeUrl(p.social.bluesky) ? ext(p.social.bluesky, "Bluesky") : null) : null,
         sourceList(p.sources))))));
     return [
-      el("div", { class: "lede" }, el("h1", null, "People"), el("p", { class: "facts", role: "status" }, "Showing " + Math.min(pplLimit, list.length) + " of " + list.length + " people · " + S.formatDate(D.meta.as_of))),
+      el("div", { class: "lede" }, el("h1", null, "People and groups"), el("p", { class: "facts", role: "status" }, "Showing " + Math.min(pplLimit, list.length) + " of " + list.length + " people · " + S.formatDate(D.meta.as_of))),
       filters,
       list.length ? body : el("p", { class: "empty" }, "No entries match."),
       list.length > pplLimit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
@@ -1331,7 +1329,7 @@
         chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; mediaLimit = MEDIA_PAGE; route(); }, topicCounts[t])));
     refresh();
     const active = (mediaType !== "all") + mediaVisual + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
-    return [el("div", { class: "lede" }, el("h1", null, "Media"), countHost), wordFilter,
+    return [el("div", { class: "lede" }, el("h1", null, "Coverage"), countHost), wordFilter,
       moreFilters(active, [typeChips, stanceChips, topicChips]), listHost];
   }
 
@@ -1628,32 +1626,33 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Media", method: "Method" };
-  /* Five top tabs fit a phone's width; the pages under a group share a subtab row.
-     Each page keeps its own route, so existing links still work. */
-  const GROUPS = [
-    { key: "overview", pages: ["overview"] },
-    { key: "bill", label: "Bill pages", pages: [["bill", "Sections"], ["compare", "Compare with earlier bills"]] },
-    { key: "effects", label: "Effects pages", pages: [["datacenters", "Data centers"], ["speed", "Speed"], ["communities", "Communities"]] },
-    { key: "news", label: "News pages", pages: [["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]] },
-    { key: "method", pages: ["method"] },
-  ];
-  function groupOf(tab) {
-    return GROUPS.find((g) => g.pages.some((p) => (Array.isArray(p) ? p[0] : p) === tab));
-  }
+  const TITLES = { overview: "Overview", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Coverage", method: "Method" };
+  // Page URLs stay independent of the navigation groups. Keep sibling links in
+  // the DOM while switching pages so keyboard focus survives content updates.
+  const GROUPS = {
+    bill: [["bill", "Sections"], ["compare", "Compare bills"]],
+    topics: [["datacenters", "Data centers"], ["speed", "Project delays"], ["communities", "Communities"]],
+    debate: [["positions", "Positions"], ["people", "People and groups"]],
+    news: [["timeline", "Timeline"], ["media", "Coverage"]],
+  };
+  const sectionNav = document.getElementById("section-nav");
   function markTab(tab) {
-    const group = groupOf(tab).key;
-    document.querySelectorAll(".tabs a").forEach((a) => {
-      if (a.getAttribute("data-tab") === group) a.setAttribute("aria-current", "page");
+    const group = Object.keys(GROUPS).find(k => GROUPS[k].some(([page]) => page === tab));
+    document.querySelectorAll(".masthead [data-tab]").forEach(a => {
+      if (a.dataset.tab === (group || tab)) a.setAttribute("aria-current", group ? "location" : "page");
       else a.removeAttribute("aria-current");
     });
-  }
-
-  function subtabs(tab) {
-    const g = groupOf(tab);
-    if (!g || !g.label) return null;
-    return el("nav", { class: "subtabs", "aria-label": g.label }, g.pages.map(([key, label]) =>
-      el("a", { href: "#/" + key, "aria-current": key === tab ? "page" : null }, label)));
+    sectionNav.hidden = !group;
+    if (!group) return;
+    if (sectionNav.dataset.group !== group) {
+      sectionNav.dataset.group = group;
+      sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
+      fill(sectionNav, GROUPS[group].map(([key, label]) => el("a", { href: "#/" + key }, label)));
+    }
+    for (const a of sectionNav.children) {
+      if (a.hash === "#/" + tab) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    }
   }
   let lastPath = null;
 
@@ -1661,14 +1660,14 @@
     const hash = location.hash.replace(/^#\/?/, "");
     const parts = hash.split("/").map((p) => { try { return decodeURIComponent(p); } catch (e) { return p; } });
     const tab = TITLES[parts[0]] ? parts[0] : "overview";
+    markTab(tab);
     let nodes;
     let keepScroll = false;
-    if (NEWS_TABS.indexOf(tab) >= 0 && !D.timeline) {
+    if (RESEARCH_PAGES.indexOf(tab) >= 0 && !D.timeline) {
       // Render once the data arrives; lastPath stays unset so a linked event still opens.
-      fill(view, subtabs(tab), loading("Loading"));
-      markTab(tab);
+      fill(view, loading("Loading"));
       ensureNews().then(() => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) route(); })
-        .catch((err) => fill(view, subtabs(tab), failure(err, "The timeline, people and media")));
+        .catch((err) => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) fill(view, failure(err, "The timeline, people and coverage")); });
       return;
     }
     if (tab === "bill" && parts[1] === "sec") { nodes = renderSection(parts[2], parts[3], parts[4]); keepScroll = Boolean(parts[3]); }
@@ -1695,7 +1694,7 @@
     else if (tab === "media") nodes = renderMedia();
     else if (tab === "method") nodes = renderMethod();
     else nodes = renderOverview();
-    fill(view, subtabs(tab), nodes);
+    fill(view, nodes);
     view.className = "view view-" + tab;
     if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
     else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities") jumpRow(view.querySelector(".lede"));
@@ -1714,7 +1713,6 @@
         window.scrollTo(0, row.getBoundingClientRect().top + window.scrollY - cover - 8);
       }
     }
-    markTab(tab);
     const h1 = view.querySelector("h1");
     document.title = (h1 && tab !== "overview" ? h1.firstChild.textContent + " · " : "") + "Permitting Reform";
     const path = location.hash;

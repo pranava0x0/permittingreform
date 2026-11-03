@@ -40,3 +40,7 @@ Sonnet inference and a small availability probe were blocked by the subscription
 Read the November 2 Senate floor log and seven news or organization pages. Added seven media entries and three timeline events. Compared every existing record with the prior release; the comparison caught one House vote missing from the refresh inputs. Restored it and added research integration to CI. Used local Python, Chrome, the web reader and GitHub. No subagents; token cost was not separately metered.
 
 All 174 bill quotes matched. The source checker found no missing quotes; eight older quotes remained unreachable to the checker. The Claude CLI was signed out, so there was no new inference review.
+
+## November 3, 2026: vote wording and navigation
+
+Read the Senate floor order and the September 30 roll call. Audited vote references in the tracker’s narrative fields, keeping quoted source text intact. Regrouped the masthead using the reader questions and checked the same 24 phone paths before and after. Used local Python, Playwright, Chrome and GitHub; no subagents or separately metered token figure.

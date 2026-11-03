@@ -126,7 +126,7 @@ class Page(unittest.TestCase):
         # The bill-text failure message once covered every lazy load, so a takes.js failure on the
         # Positions page said "The bill text did not load" and offered the PDF (Codex, PR 8).
         self.assertIn('failure(err, "The outside readings")', JS)
-        self.assertIn('failure(err, "The timeline, people and media")', JS)
+        self.assertIn('failure(err, "The timeline, people and coverage")', JS)
         self.assertNotIn("fill(host, failure(err)));\n    return el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-disputes\" }", JS)
 
     def test_a_concerned_reading_is_not_counted_as_opposition(self):
@@ -138,13 +138,6 @@ class Page(unittest.TestCase):
     def test_the_positions_page_leads_with_disputed_readings(self):
         self.assertIn("disputesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
         self.assertIn('"None found yet."', JS)
-
-    def test_the_positions_page_is_routed_in_the_news_group(self):
-        self.assertIn('const NEWS_TABS = ["timeline", "positions", "people", "media"];', JS)
-        self.assertIn('[["timeline", "Timeline"], ["positions", "Positions"], ["media", "Media"], ["people", "People"]]', JS)
-        self.assertIn('positions: "Positions"', JS)
-        self.assertIn('else if (tab === "positions") nodes = renderPositions();', JS)
-        self.assertIn('href: "#/positions"', JS)
 
     def test_the_sector_table_links_to_people_routes_the_router_reads(self):
         self.assertIn('"#/people/" + (rows[k].inside ? "inside" : "outside") + "/" + c[0] + "/" + k', JS)

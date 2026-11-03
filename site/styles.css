@@ -124,26 +124,23 @@ h2, h3, tr[id], .para, .event, .block, .sec-part { scroll-margin-top: calc(var(-
   font-size: var(--fs-small); font-weight: 700; border-bottom: 4px solid transparent; white-space: nowrap;
 }
 .tabs a:hover { border-bottom-color: var(--on-brand-muted); }
-.tabs a[aria-current="page"] { border-bottom-color: var(--mark); }
+.tabs a[aria-current] { border-bottom-color: var(--mark); }
+.method-link { display: inline-flex; align-items: center; min-height: 44px; padding: 0 6px; color: var(--on-brand); font-size: var(--fs-small); }
+.method-link[aria-current] { text-decoration-thickness: 3px; }
 .masthead :focus-visible { outline-color: var(--mark); }
 .next-step { margin: 10px 0 0; max-width: var(--measure); }
-/* Pages within a top tab: folder tabs on a rule. The current page joins the page below it;
-   the others sit tinted behind. Rectangular and joined, so they never read as chips or links. */
+/* The primary row selects a subject; this quieter row selects a page within it. */
+main:has(> .subtabs:not([hidden])) { padding-top: 0; }
 .subtabs {
-  display: flex; gap: 4px; margin: 0 0 14px; padding: 0; border-bottom: 2px solid var(--rule);
-  font-family: var(--font-head); font-size: var(--fs-body);
+  display: flex; align-items: stretch; gap: 8px; margin: 0 0 16px;
+  border-bottom: 1px solid var(--border); font-family: var(--font-head); font-size: var(--fs-small);
 }
 .subtabs a {
-  display: flex; align-items: center; justify-content: center; text-align: center; line-height: 1.2;
-  min-height: 44px; padding: 8px 16px; margin-bottom: -2px; color: var(--text-muted); font-weight: 700;
-  text-decoration: none; background: var(--accent-weak); border: 1px solid var(--border); border-bottom: 2px solid var(--rule);
-  border-radius: 6px 6px 0 0;
+  display: inline-flex; align-items: center; justify-content: center; padding: 4px 12px;
+  min-height: 44px; color: var(--text-muted); text-decoration: none; border-bottom: 3px solid transparent;
 }
 .subtabs a:hover { color: var(--text); background: var(--surface); }
-.subtabs a[aria-current="page"] {
-  color: var(--text); font-weight: 700; background: var(--bg);
-  border: 2px solid var(--rule); border-top-width: 4px; border-bottom-color: var(--bg);
-}
+.subtabs a[aria-current="page"] { font-weight: 700; color: var(--text); border-bottom-color: var(--rule); }
 
 /* ---------- page furniture ---------- */
 
@@ -586,7 +583,7 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 }
 
 @media print {
-  .theme-toggle, .tabs, .filters, .search, .outline-wrap, .pager { display: none; }
+  .theme-toggle, .method-link, .tabs, .subtabs, .filters, .search, .outline-wrap, .pager { display: none; }
   .masthead { background: none; color: inherit; }
   .brand { color: inherit; }
   body { background: none; }
@@ -608,14 +605,15 @@ input::placeholder { color: var(--text-muted); opacity: 1; }
 
 @media (max-width: 639px) {
   .masthead-top { gap: 6px; padding-top: 6px; padding-bottom: 2px; }
-  .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; }
+  .tabs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; }
   .filters { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: thin; padding-bottom: 2px; }
   .filters .chip, .filters .inline-filter { white-space: nowrap; flex: 0 0 auto; }
   .filters .filter-gap { display: none; }
-  .tabs a { flex: none; padding: 8px 10px 7px; font-size: var(--fs-small); }
+  .tabs a { justify-content: center; text-align: center; padding: 8px 1px 7px; font-size: var(--fs-small); }
   .subtabs { font-size: var(--fs-small); gap: 3px; }
   .subtabs a { flex: 1 1 0; min-width: 0; padding: 6px 4px; }
   main { padding-top: 16px; }
+  .overview-lede + .rows + .block { margin-top: 16px; }
   .sec-meta .topics, .sec-meta .tag-major, .index-tags { display: none; }
 }
 

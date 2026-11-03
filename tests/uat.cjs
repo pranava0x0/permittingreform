@@ -55,8 +55,8 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
             await page.locator('.provision-detail summary').first().click();
             assert.equal(await page.locator('a[href="#/compare/data-center-bills"]').count(),1);
           }
-          // Subtabs are folder tabs (DESIGN.md, 2026-10-21): one row that never clips, 44px targets (43.5 allows subpixel rounding), one current page.
-          const sub = await page.evaluate(() => { const n = document.querySelector('.subtabs'); if (!n) return null;
+          // Sibling pages: one row that never clips, 44px targets (43.5 allows subpixel rounding), one current page.
+          const sub = await page.evaluate(() => { const n = document.querySelector('.subtabs'); if (!n || n.hidden) return null;
             const a = [...n.querySelectorAll('a')], r = a.map(x => x.getBoundingClientRect());
             return { clip: n.scrollWidth > n.clientWidth + 1, rows: new Set(r.map(b => Math.round(b.top))).size,
               short: r.filter(b => b.height < 43.5).length, current: a.filter(x => x.getAttribute('aria-current') === 'page').length }; });
@@ -295,6 +295,34 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
     await textPage.evaluate(() => document.fonts.ready);
     await textPage.screenshot({path:'uat-screenshots/1280-text-index.png'});
     await textContext.close();
+    // Navigate as a reader would. Each primary link opens its first child and keeps
+    // focus on a sibling link after activation. Old deep links select the same group.
+    const nav = await browser.newPage({viewport:{width:320,height:812},hasTouch:true});
+    await nav.goto(base);
+    for (const [label, pages] of [
+      ['Bill',['Sections','Compare bills']], ['Topics',['Data centers','Project delays','Communities']],
+      ['Debate',['Positions','People and groups']], ['News',['Timeline','Coverage']]]) {
+      const top = nav.locator('.tabs').getByRole('link',{name:label,exact:true});
+      await top.click();
+      const siblings = nav.getByRole('navigation',{name:label+' pages'});
+      await siblings.getByRole('link',{name:pages[0],exact:true}).waitFor();
+      assert.deepEqual(await siblings.getByRole('link').allTextContents(),pages);
+      assert.equal(await siblings.locator('[aria-current="page"]').textContent(),pages[0]);
+      const last = siblings.getByRole('link',{name:pages.at(-1),exact:true});
+      await last.focus(); await last.press('Enter');
+      await nav.waitForFunction(()=>document.activeElement?.getAttribute('aria-current')==='page');
+      assert.equal(await last.evaluate(a=>a===document.activeElement),true);
+      assert.equal(await top.getAttribute('aria-current'),'location');
+    }
+    await nav.goto(base+'#/people/outside/supports/trade_association');
+    await nav.getByRole('navigation',{name:'Debate pages'}).waitFor();
+    await nav.locator('.method-link').click();
+    await nav.getByRole('heading',{name:'Method',exact:true}).waitFor();
+    assert.equal(await nav.locator('.method-link').getAttribute('aria-current'),'page');
+    assert.equal(await nav.locator('.subtabs').isVisible(),false);
+    assert.ok(await nav.locator('.tabs').evaluate(n=>n.scrollWidth<=n.clientWidth+1));
+    await nav.goBack(); await nav.getByRole('navigation',{name:'Debate pages'}).waitFor();
+    await nav.close();
     const race = await browser.newPage();
     await race.route('**/data/bill.js*', async route => {
       await new Promise(resolve => setTimeout(resolve, 250));
