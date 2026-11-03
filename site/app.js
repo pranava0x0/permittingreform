@@ -210,7 +210,7 @@
         const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
         if (window.PR_NEWS) { done(); return; }
         const tag = document.createElement("script");
-        tag.src = "data/news.js?v=7";
+        tag.src = "data/news.js?v=8";
         tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
         tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
         document.head.appendChild(tag);
@@ -294,7 +294,7 @@
       el("p", { class: "subtitle" }, m.short_title),
       el("p", { class: "summary" }, o.summary.text + " ", el("span", { class: "sources-inline" }, ext(o.summary.source.url, o.summary.source.label))),
       // A scheduled date in the past says so, rather than reading as upcoming.
-      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next vote: " : "Was scheduled for "),
+      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Senate schedule: " : "Previously scheduled: "),
         S.formatDate(o.next.date) + ". " + o.next.text + " ",
         el("span", { class: "sources-inline" }, ext(o.next.source.url, o.next.source.label))) : null);
     const posRow = pos ? el("a", { class: "link-row", href: "#/positions" },

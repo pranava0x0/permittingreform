@@ -18,7 +18,7 @@ Use 375×812, 768×800 and 1280×800 for browser checks. Verify DOM counts befor
 
 ## Editorial rules
 
-Describe proposed changes as proposals. Keep dates, triggers, exceptions and affected parties explicit. Authorization of funding is not appropriation. An agency decision deadline is not a promise of approval.
+Describe proposed changes as proposals. Keep dates, triggers, exceptions and affected parties explicit. Every vote reference in tracker copy names the body, the measure and the decision: committee approval, ending debate on a motion, adopting an amendment or passing a bill. If a source only predicts floor action, say so. Preserve original headlines and quotations; explain their vote references in the accompanying summary. Authorization of funding is not appropriation. An agency decision deadline is not a promise of approval.
 
 Use BAAJA for the September 30, 2026 draft; SPEED Act for the House-passed H.R. 4776; EPRA 2024 for reported S. 4753. A numbered list is a reading aid, not a ranking.
 

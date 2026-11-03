@@ -9,7 +9,7 @@
   {
    "key": "epra",
    "label": "EPRA 2024",
-   "sub": "S. 4753 (Manchin, Barrasso). Reported July 31, 2024. No floor vote.",
+   "sub": "S. 4753 (Manchin, Barrasso). Reported July 31, 2024. The full Senate never voted on passage.",
    "url": "https://www.govinfo.gov/content/pkg/BILLS-118s4753rs/html/BILLS-118s4753rs.htm"
   },
   {
@@ -708,7 +708,7 @@
      },
      "note": {
       "label": "Earlier bill",
-      "text": "The Ratepayer Protection Act (H.R. 9340) would ask state regulators to consider making data centers of 100 megawatts or more pay the full incremental cost of upgrades, including after they leave, with financial assurance before construction. States would not have to adopt it. It passed the House 417-3 on September 16, 2026, and the Senate rejected cloture 57-43 on September 30. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts, and section 2107(a) adds an embedded-cost charge for transmission. Harvard's Ari Peskoe called the House bill's consider standard 'largely symbolic', since Congress cannot force state regulators to act, and called BAAJA's data center rules 'an improvement on the status quo'.",
+      "text": "H.R. 9340 asks states to consider charging data centers of 100 megawatts or more for all added upgrade costs, even after departure, with financial assurance before construction. States could decline. The House passed it 417-3 on September 16. On September 30 the Senate fell short of ending debate on taking it up: 57 for, 43 against, 60 needed. BAAJA section 228 uses similar terms but makes them binding at 20 megawatts, and section 2107(a) adds an embedded-cost charge for transmission. Harvard's Ari Peskoe called the House bill's consider standard 'largely symbolic', since Congress cannot force state regulators to act, and called BAAJA's data center rules 'an improvement on the status quo'.",
       "sources": [
        {
         "cite": "H.R. 9340, as passed by the House",
@@ -1205,7 +1205,7 @@
    {
     "key": "rpa",
     "label": "Ratepayer Protection Act (H.R. 9340)",
-    "sub": "Evans (R-Colo.) and Castor (D-Fla.). House-passed text, September 16, 2026. Senate cloture failed September 30; vote sources are in the large-load comparison note.",
+    "sub": "Evans (R-Colo.) and Castor (D-Fla.). House-passed text, September 16, 2026. On September 30 the Senate fell short of ending debate on whether to take it up.",
     "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm"
    },
    {
