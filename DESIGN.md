@@ -10,7 +10,7 @@ Colors live in `site/styles.css`: white `--bg` (cream until 2026-10-22, dropped 
 
 ## Layout
 
-The site title dominates the masthead. Five top tabs (Overview, Bill, Effects, News, Method) fit a 375px screen; Bill, Effects and News open a subtab row at the top of the view (Sections and Compare; Data centers and Communities; Timeline, Media and People). Every page keeps its own route. Nine tabs in one scrollable row left five of them off screen on a phone, with nothing to show they existed (2026-10-05). BAAJA is the bill label; its full title and source links expand under Bill details. Search appears on Overview and bill views. Main provisions precede status and sponsors.
+The site title dominates the masthead. Five primary links fit on a phone: Overview; Bill (Sections, Compare bills); Topics (Data centers, Project delays, Communities); Debate (Positions, People and groups); News (Timeline, Coverage). Method is a utility link beside the theme switch and in the footer. The active subject stays marked in the masthead. Its sibling pages sit directly below on a quieter rule; the selected page has a green underline. Keep page URLs stable when regrouping them. At 375×812 the November 3 layout keeps the vote explanation 0.4 screens from the top without a tap. The first positions letter still takes two taps from Overview; data center details take two and community details three. BAAJA is the bill label; its full title and source links expand under Bill details. Search appears on Overview and bill views. Main provisions precede status and sponsors.
 
 Hairline rules divide rows. Avoid cards, shadows, gradients, eyebrow labels and promotional metrics. Comparison tables become labeled rows on phones; the BAAJA column has a pale green background on larger screens. Each statutory paragraph has a page-and-line gutter linked to the PDF.
 
@@ -18,7 +18,7 @@ Use 375×812, 768×800 and 1280×800 for browser checks. Verify DOM counts befor
 
 ## Editorial rules
 
-Describe proposed changes as proposals. Keep dates, triggers, exceptions and affected parties explicit. Authorization of funding is not appropriation. An agency decision deadline is not a promise of approval.
+Describe proposed changes as proposals. Keep dates, triggers, exceptions and affected parties explicit. Every vote reference in tracker copy names the body, the measure and the decision: committee approval, ending debate on a motion, adopting an amendment or passing a bill. If a source only predicts floor action, say so. Preserve original headlines and quotations; explain their vote references in the accompanying summary. Authorization of funding is not appropriation. An agency decision deadline is not a promise of approval.
 
 Use BAAJA for the September 30, 2026 draft; SPEED Act for the House-passed H.R. 4776; EPRA 2024 for reported S. 4753. A numbered list is a reading aid, not a ranking.
 
@@ -56,7 +56,7 @@ Measured at 375×812, before and after: the next Senate vote moved from 1.1 scre
 
 ## Positions (2026-10-18)
 
-A fourth News subtab answers "who is for and against" on one page. Three blocks, in the order a reader asks: the letters and joint statements (date, stance, signer count, title; each opens to recipients, the ask, sample signers, the quote and the source), the voices on each issue (For, Against and Mixed under the issue's cited headline, four shown and the rest behind one chip), and a by-sector table whose counts link into the People page with the sector carried in the route. Only statements dated on or after the bill text's release count as voices on an issue; earlier statements were about prior bills or reform in general. The Overview carries one line, "Who's for and against: N support, N oppose", on its first screen; the letters count was left off because the line wraps at 375px with it.
+The Positions page, now under Debate, answers "who is for and against" on one page. Three blocks, in the order a reader asks: the letters and joint statements (date, stance, signer count, title; each opens to recipients, the ask, sample signers, the quote and the source), the voices on each issue (For, Against and Mixed under the issue's cited headline, four shown and the rest behind one chip), and a by-sector table whose counts link into the People page with the sector carried in the route. Only statements dated on or after the bill text's release count as voices on an issue; earlier statements were about prior bills or reform in general. The Overview carries one line, "Who's for and against: N support, N oppose", on its first screen; the letters count was left off because the line wraps at 375px with it.
 
 Measured at 375×812: the page is 3.1 screens with every row closed (the budget is 4), the first letter row sits on the first screen, and the first letter's signers are two taps from the Overview (the link, then the row), with the signers at 0.93 screens. No horizontal scroll at 375, 768 or 1280; the sector table is 640px wide at 768. Light and dark both render; the only sub-44px targets are inline text links and the masthead, which are exempt.
 
@@ -76,9 +76,9 @@ The reader preferred the earlier Compare page, where every subject table was ope
 
 Subtabs sit in a tinted track with the current page filled, so they read as a second row of tabs rather than a line of bold text. "On this page" jump links carry a label and render as outlined pills with a down arrow, distinct from the grey filter chips. Section-page cross links (`.sec-links`) are semibold with a thicker underline. Page height cost: +0.02 screens at 375×812.
 
-## Subtabs as folder tabs (2026-10-21)
+## Previous subtab design (2026-10-21; replaced November 3)
 
-The tinted track from 2026-10-20 still read as links, and its filled current page looked like a pressed filter chip. Subtabs are now folder tabs on a 2px rule: the other pages sit behind in the tint with muted text, and the current page has a thick top edge, bold text and the page background, so it joins the content below. On phones the tabs split the full width equally (News: four tabs of about 85px; "Compare with earlier bills" wraps to two lines inside its tab), so all of them show without sideways scrolling. Every subtab is at least 44px tall at every width. Filter chips stay small rectangles with gaps between them, and jump links stay outlined pills with a down arrow; none of the three uses the others' shape. `tests/uat.cjs` checks that the subtab row fits one line without clipping, that every subtab is at least 44px tall and that exactly one is current.
+The tinted track from 2026-10-20 still read as links, and its filled current page looked like a pressed filter chip. That version used folder tabs on a 2px rule: the other pages sit behind in the tint with muted text, and the current page has a thick top edge, bold text and the page background, so it joins the content below. On phones the tabs split the full width equally (News: four tabs of about 85px; "Compare with earlier bills" wraps to two lines inside its tab), so all of them show without sideways scrolling. Every subtab is at least 44px tall at every width. Filter chips stay small rectangles with gaps between them, and jump links stay outlined pills with a down arrow; none of the three uses the others' shape. `tests/uat.cjs` checks that the subtab row fits one line without clipping, that every subtab is at least 44px tall and that exactly one is current.
 
 ## One filter row per page; the rest behind More filters (2026-10-21)
 

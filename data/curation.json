@@ -104,10 +104,10 @@
    }
   },
   "2026-09-24-permitting-talks-stall-vote-slips-past-midterms": {
-   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it.",
    "set": {
     "significance": "The open issue was wind and solar 'regular order'. The Senate was not due back until November 9.",
-    "summary": "Roll Call and Deseret News reported that Senate permitting talks had stalled and a vote would likely come after the midterms. Whitehouse said negotiators were 'over the hump on the deal-break issues' and that colleagues' feedback could go into a manager's amendment, but wanted clarity on 'regular order' for wind and solar; Thune and Barrasso accused Democrats of backing away. POLITICO reported that Democrats wanted strong interstate transmission measures and limits on the administration's power to cancel projects, and Republicans wanted to limit state reviews under Clean Water Act section 401.",
+    "summary": "Roll Call and Deseret News reported that Senate permitting talks had stalled and the Senate would likely wait until after the midterms to consider a permitting deal. Whitehouse said negotiators were 'over the hump on the deal-break issues' and that colleagues' feedback could go into a manager's amendment, but wanted clarity on 'regular order' for wind and solar; Thune and Barrasso accused Democrats of backing away. POLITICO reported that Democrats wanted strong interstate transmission measures and limits on the administration's power to cancel projects, and Republicans wanted to limit state reviews under Clean Water Act section 401.",
     "sources": [
      {
       "title": "Permitting reform talks fall apart in the Senate, deal punted until after midterms",
@@ -130,14 +130,15 @@
       "date": "2026-09-24",
       "verified": true
      }
-    ]
+    ],
+    "title": "Senate permitting talks stall; senators expect to take up a deal after the midterms"
    }
   },
   "2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act": {
-   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it.",
    "set": {
     "significance": "The first full bipartisan Senate text since the 2024 Manchin-Barrasso bill. The wind and solar question is unresolved.",
-    "summary": "Sens. Capito, Lee, Whitehouse and Heinrich released the 417-page bill at a press conference. It sets a 150-day limit for NEPA claims, bars agencies from revoking issued permits except in listed cases (Sec. 1401), and requires data centers to pay their transmission costs. Wind and solar 'regular order' terms remain under negotiation with the White House, with amendment work in parallel and a vote aimed for after the Senate returns in November. In the House, Natural Resources ranking member Jared Huffman said most Democrats would not support the bill as written, and Energy and Commerce Chair Brett Guthrie had not endorsed it.",
+    "summary": "Sens. Capito, Lee, Whitehouse and Heinrich released the 417-page bill at a press conference. It sets a 150-day limit for NEPA claims, bars agencies from revoking issued permits except in listed cases (Sec. 1401), and requires data centers to pay their transmission costs. Wind and solar 'regular order' terms remain under negotiation with the White House, with amendment work in parallel and sponsors hoping the Senate would take up the bill in November. In the House, Natural Resources ranking member Jared Huffman said most Democrats would not support the bill as written, and Energy and Commerce Chair Brett Guthrie had not endorsed it.",
     "sources": [
      {
       "title": "Bipartisan American Affordability and Jobs Act of 2026 (bill text, 417 pages)",
@@ -170,10 +171,10 @@
    }
   },
   "2026-06-18-ferc-large-load-show-cause-orders": {
-   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "House style: a plainer significance line that states what happened next. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it.",
    "set": {
     "significance": "FERC chose regional tariff changes over one national rule. The Senate bill would set a national cost rule by statute.",
-    "summary": "In place of a single national rule, FERC voted unanimously on June 18, 2026 to issue Section 206 show cause orders to PJM, MISO, SPP, CAISO, ISO-NE and NYISO, preliminarily finding their tariffs may be unjust and unreasonable for lacking clear large-load and co-location provisions. Responses were due in 60 days, with generation-adequacy reports due in 30 days; DOE had asked for final action on its October 2025 proposal by April 30. The vote was 5-0. The orders cover five areas: study rules, safeguards against cost shifts, co-location, flexible service and generation near load.",
+    "summary": "In place of a single national rule, FERC voted unanimously on June 18, 2026 to issue Section 206 show cause orders to PJM, MISO, SPP, CAISO, ISO-NE and NYISO, preliminarily finding their tariffs may be unjust and unreasonable for lacking clear large-load and co-location provisions. Responses were due in 60 days, with generation-adequacy reports due in 30 days; DOE had asked for final action on its October 2025 proposal by April 30. All five commissioners backed the orders. The orders cover five areas: study rules, safeguards against cost shifts, co-location, flexible service and generation near load.",
     "sources": [
      {
       "title": "FERC Issues Large Load Interconnection Show Cause Orders to Each RTO/ISO",
@@ -212,9 +213,9 @@
    }
   },
   "2026-09-30-senate-rejects-cloture-on-ratepayer-protection-act": {
-   "reason": "Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it.",
    "set": {
-    "summary": "The Senate rejected cloture on the motion to proceed to H.R. 9340, the Ratepayer Protection Act, by 57-43, short of the 60 votes needed. Sen. Jon Husted (R-Ohio) had sought unanimous consent on September 17, when Sen. Martin Heinrich objected, arguing that Congress needs legislation that requires, not merely asks states to consider, that data centers pay for grid upgrades. Democratic Sens. Ossoff, Warnock, Klobuchar and Hassan voted yes with all Republicans.",
+    "summary": "The Senate voted 57-43 to end debate on whether to take up H.R. 9340, the Ratepayer Protection Act. The motion needed 60 votes and failed. The Senate did not vote on passage. Sen. Jon Husted (R-Ohio) had sought unanimous consent on September 17, when Sen. Martin Heinrich objected, arguing that Congress needs legislation that requires, not merely asks states to consider, that data centers pay for grid upgrades. Democratic Sens. Ossoff, Warnock, Klobuchar and Hassan voted yes with all Republicans.",
     "sources": [
      {
       "title": "Roll Call Votes, 119th Congress, 2nd Session (Vote 254, September 30, 2026)",
@@ -237,22 +238,122 @@
       "date": "2026-09-30",
       "verified": true
      }
-    ]
+    ],
+    "title": "Senate falls three votes short of ending debate on taking up the Ratepayer Protection Act"
    }
+  },
+  "2025-12-18-house-passes-speed-act-221-196": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "The House passed H.R. 4776 on Roll Call 356 by 221-196: 210 Republicans and 11 Democrats voted yes, 195 Democrats and one Republican voted no. Before the House voted on the rules for debating the SPEED Act, leaders agreed to text exempting agency decisions since January 20, 2025 to reopen permits from the bill's anti-revocation language, at the urging of offshore wind opponents including Reps. Andy Harris and Jeff Van Drew."
+   }
+  },
+  "2026-05-19-wright-dines-with-republican-lawmakers-on-permitting": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "A Monday dinner organized by Sen. Hickenlooper brought together Capito, Lee, Whitehouse and Heinrich; on Tuesday Energy Secretary Chris Wright dined with Republican lawmakers. Whitehouse said Democrats would decide within their caucus whether to back a permitting deal before bringing one to the floor."
+   }
+  },
+  "2026-09-10-hr9340-reported": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "significance": "Cleared the Ratepayer Protection Act for the full House to decide on passage."
+   }
+  },
+  "2026-09-17-capito-and-whitehouse-say-permitting-talks-in-final-stages": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Capito said a deal was very close and Whitehouse said talks were in final wrap-up, with the hardest issues resolved last. Capito said Senate consideration of the permitting deal could slip into the third week of the work session, later than the timeline she and Thune had set.",
+    "significance": "Marked the point at which negotiators publicly expected the Senate to consider the permitting deal before the November elections."
+   }
+  },
+  "2026-10-01-senate-schedules-november-9-cloture-vote": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "title": "Senate sets November 9 decision on ending debate over taking up permitting reform",
+    "summary": "The Senate's floor schedule set November 9 for a decision on whether to end debate on taking up H.R. 2347, the Survivor Justice Tax Prevention Act, which the Senate Press Gallery describes as the legislative vehicle for the permitting reform bill. The procedural decision is scheduled for about 5:30 p.m.; passing the bill would require a separate vote."
+   }
+  },
+  "2026-10-02-blue-dog-coalition-november-vote-call": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "title": "Blue Dog Coalition asks both chambers to pass the permitting bill in November",
+    "summary": "The House Blue Dog Coalition backed the Senate-negotiated bill, citing the parts that came from the SPEED Act, and asked House and Senate leaders to bring the permitting bill to the floor in November. The statement names no individual member.",
+    "significance": "A House bloc of Democrats wants Congress to take up the Senate deal, while Rep. Huffman says most House Democrats will not back the text as written."
+   }
+  },
+  "2026-10-11-capito-white-house-concessions-wind-solar": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "title": "Capito says the White House made wind and solar concessions to advance permitting reform",
+    "summary": "Capito told WV MetroNews the White House has made some tremendous concessions on wind and solar projects. She said leaders promised to put permitting reform first when the Senate reconvened."
+   }
+  },
+  "2026-10-12-huffman-no-vote-before-election": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "title": "Huffman expects Congress to wait until after the election to consider the permitting bill",
+    "summary": "In an interview with Heatmap, Rep. Jared Huffman said Congress would wait until after the election to consider the permitting bill. He said its judgment-fund provision could pay developers without approving their projects."
+   }
+  },
+  "2026-10-15-senate-floor-log-nov-9-cloture": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "title": "Senate schedule: November 9 decision on ending debate over taking up the permitting bill",
+    "summary": "The October 15 floor log lists pro forma sessions on October 19, 22, 26, 29, November 2 and November 5. The Senate returns November 9 at 3:00 p.m. and decides whether to end debate on taking up H.R. 2347 at about 5:30 p.m. The log calls H.R. 2347 the legislative vehicle for the permitting reform bill.",
+    "significance": "Ending debate on the motion would bring the Senate closer to taking up the bill. It would not pass the bill."
+   }
+  },
+  "2026-10-21-clean-energy-trades-endorse": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "significance": "The clean energy industry's main trade groups jointly endorsed passage of the permitting bill."
+   }
+  },
+  "2026-10-22-api-coalition-letter": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "title": "API and 137 other organizations ask Congress to pass S. 5653 this year"
+   }
+  },
+  "2026-10-22-dod-advances-two-wind-projects": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "significance": "The administration's first concession on wind after Democrats linked their support for permitting reform to action on wind projects."
+   }
+  },
+  "2026-10-22-nine-ags-letter": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "significance": "State officials from the Democratic side asked senators to change the permitting bill before taking it up."
+   }
+  },
+  "2026-10-27-duckworth-doe-awards": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "title": "Four senators seek restored grants ahead of Senate motion to take up permitting reform",
+    "summary": "Tammy Duckworth, Ron Wyden, Jeff Merkley and Ed Markey asked the bill’s sponsors to secure the release of canceled Energy Department grants before the Senate decides on November 9 whether to end debate on taking up the permitting bill. They did not commit to supporting that motion."
+   }
+  },
+  "2025-12-11-house-passes-permit-act-and-companion-bills": {
+   "set": {
+    "title": "House passes the PERMIT Act 221-205 after unanimously passing the ePermit Act"
+   },
+   "reason": "Distinguish the two House passage decisions."
   }
  },
  "people": {
   "shelley-moore-capito": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 11 WV MetroNews interview.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 11 WV MetroNews interview. Name the measure and decision; distinguish taking up a bill from passing it.",
    "set": {
-    "position": "Co-negotiated and co-introduced the bill. She says its reforms will 'transform our nation's ability to power our economy' while protecting land, water and wildlife, and that a permitting bill must be bipartisan and 'project neutral.' On October 11 she said the White House had made concessions on wind and solar projects and that she was promised the first vote when senators return.",
+    "position": "Co-negotiated and co-introduced the bill. She says its reforms will 'transform our nation's ability to power our economy' while protecting land, water and wildlife, and that a permitting bill must be bipartisan and 'project neutral.' On October 11 she said the White House had made concessions on wind and solar projects and that leaders promised to put permitting reform first when the Senate reconvened.",
     "key_actions": [
      "2026-01-28: Chaired the EPW hearing 'Federal Environmental Review and Permitting Processes, Part II' to get talks 'back on the path to fruitful compromise'",
      "2026-06-10: Warned the White House that favoring some projects over others could cost the deal",
      "2026-08-07: Said a September deal would be a policy and political win for both parties",
-     "2026-09-17: Said a deal was 'very close' and that the floor vote could slip",
-     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act; said at the press conference that negotiators want it to be the first vote when the Senate returns",
-     "2026-10-11: Told WV MetroNews the White House has made concessions on wind and solar and that she was promised the first vote when senators return on November 8"
+     "2026-09-17: Said a deal was 'very close' and that the Senate might take up a permitting deal later than planned",
+     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act; said at the press conference that negotiators want the Senate to take up the permitting bill first when it returns",
+     "2026-10-11: Told WV MetroNews the White House has made concessions on wind and solar and that leaders promised to put permitting reform first when the Senate reconvened"
     ],
     "sources": [
      {
@@ -460,13 +561,13 @@
    }
   },
   "john-thune": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it.",
    "set": {
     "position": "Says Republicans and the White House 'closed the deal' on permitting legislation that 'incorporated essentially all' of Democrats' asks, and accuses Democrats of wanting to deny Republicans a legislative win before the midterms.",
     "key_actions": [
      "2026-09-22: Set a deadline for negotiators to strike a deal; it passed without one",
      "2026-09-24: Told the Senate that Democrats 'can't take yes for an answer' on permitting reform",
-     "2026-09-30: The Senate rejected cloture 57-43 on the House-passed Ratepayer Protection Act, which Republican leaders brought to the floor that week"
+     "2026-09-30: Republican leaders brought the Ratepayer Protection Act to the Senate floor. Ending debate on taking it up drew 57 votes in favor and 43 against, short of the 60 needed."
     ],
     "sources": [
      {
@@ -646,15 +747,15 @@
    }
   },
   "jared-huffman": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 12 Heatmap interview.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 12 Heatmap interview. Name the measure and decision; distinguish taking up a bill from passing it.",
    "set": {
     "stance": "opposes",
-    "position": "Opposed the SPEED Act in committee and on the floor, calling the administration's posture on renewable permitting a 'war on renewable energy'. On September 30 he said most House Democrats will not support the Senate bill as written and urged them to resume talks after the midterms. On October 12 he told Heatmap that no one will vote on the bill before the election.",
+    "position": "Opposed the SPEED Act in committee and on the floor, calling the administration's posture on renewable permitting a 'war on renewable energy'. On September 30 he said most House Democrats will not support the Senate bill as written and urged them to resume talks after the midterms. On October 12 he told Heatmap that he expected no congressional action on the permitting bill before the election.",
     "key_actions": [
      "2025-11-20: Voiced opposition as the House Natural Resources Committee advanced the SPEED Act 25-18",
      "2025-12-17: Said the House deal on offshore wind language spoke volumes about the inability to deal with Trump's war on clean energy",
      "2026-09-30: Said most House Democrats will not back the Senate bill as written and should reassess after the November 3 election",
-     "2026-10-12: Told Heatmap no one will vote on the Senate bill until after the election and that its judgment-fund provision could pay developers without approving their projects"
+     "2026-10-12: Told Heatmap Congress would wait until after the election to consider the permitting bill and that its judgment-fund provision could pay developers without approving their projects"
     ],
     "sources": [
      {
@@ -929,6 +1030,16 @@
      }
     ]
    }
+  },
+  "jon-husted": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "key_actions": [
+     "2026-07-16: Introduced S. 5028",
+     "2026-09-17: Sought unanimous consent",
+     "Urged Senate leaders to end debate on taking up the Ratepayer Protection Act on September 30"
+    ]
+   }
   }
  },
  "media": {
@@ -1013,6 +1124,181 @@
    "set": {
     "url": "https://www.pbs.org/newshour/politics/senate-reaches-bipartisan-deal-on-permitting-bill-to-speed-approvals-of-new-energy-projects",
     "outlet": "Associated Press (via PBS NewsHour)"
+   }
+  },
+  "2026-10-27-duckworth-doe-awards": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "title": "Four senators seek restored grants before Senate considers taking up the bill",
+    "summary": "Tammy Duckworth, Ron Wyden, Jeff Merkley and Ed Markey asked the bill’s sponsors to secure the release of canceled Energy Department grants before the Senate decides on November 9 whether to end debate on taking up the permitting bill. They did not commit to supporting that motion."
+   }
+  },
+  "2026-10-22-siegelscribe-x-dod-wind": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "A White House official says the Defense Department advanced two wind projects in Maine and South Dakota, with more to come, as the administration seeks Democratic support for the permitting bill."
+   }
+  },
+  "2026-10-22-rollcall-aides-seek-industry-aid": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Top aides to the four lead senators told an ACORE conference that the bill is a compromise and asked developers to speak up before the November 9 decision on ending debate on whether to take up the permitting bill. Roll Call also reports Democratic concern over offshore wind filings and House GOP skepticism."
+   }
+  },
+  "2026-10-16-tribal-claim-vs-fact": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "A 17-page paper under the logos of NATHPO, NCAI, AAIA, NARF and Cultural Heritage Partners checks nine supporter claims about Title III against the bill text and asks senators to remove Title III or reject the bill."
+   }
+  },
+  "2026-10-15-senate-floor-log-h-r-2347-cloture": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "The floor log lists pro forma sessions through November 5, the Senate's return on November 9 at 3:00 p.m. and a decision on whether to end debate on taking up H.R. 2347, the vehicle for the permitting bill."
+   }
+  },
+  "2026-10-12-heatmap-huffman-wants-changes-bill": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Rep. Jared Huffman tells Heatmap that Congress would wait until after the election to consider the permitting bill and says its judgment-fund provision could pay developers without approving their projects."
+   }
+  },
+  "2026-10-11-wv-metronews-capito-white-house-wind-solar": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Capito tells MetroNews the White House has made concessions on wind and solar projects and that leaders promised to put permitting reform first when the Senate reconvened."
+   }
+  },
+  "2026-10-09-heatmap-data-centers-permitting-collide": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Reports that LCV, NRDC, Wilderness Society and Earthjustice are pressing the data center fight as the Senate prepares to consider whether to take up the permitting bill, and weighs the case that the bill speeds gas-fired data centers through federal land and pipeline permits."
+   }
+  },
+  "2026-10-02-blue-dog-coalition-floor-vote-call": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "The House Blue Dog Coalition backs the Senate bill, notes that it carries parts of the SPEED Act, and asks House and Senate leaders to bring the permitting bill before both chambers in November."
+   }
+  },
+  "2026-10-01-heatmap-am-permitting-reform-bill-dropped": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "The morning newsletter's lead item reports the 417-page bill and links Heatmap's explainer. It says the bill would change how data centers are built and whether transmission lines get constructed, then focuses on passage odds: House Democrats are weighing whether to wait past the November election, and a Republican source says the House will not return to consider the permitting bill before the election."
+   }
+  },
+  "rollcall-2026-09-30-voluntary-rpa": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Four Democrats joined Republicans in the 57-43 Senate vote to end debate on whether to take up the Ratepayer Protection Act. The motion needed 60 votes. Schumer objected that states need only consider the proposed standard, starting within a year and finishing within two."
+   }
+  },
+  "heinrich-2026-09-30-statement-rpa-vote": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Heinrich explains why he voted against ending debate on whether to take up the Ratepayer Protection Act and points to the GRID Savings Act."
+   }
+  },
+  "cnn-2026-09-30-rpa-senate-vote": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "CNN covers the failed Senate motion to end debate on taking up the Ratepayer Protection Act and the Husted-Brown race in Ohio. Democrats called the standard optional and without enforcement."
+   }
+  },
+  "cnbc-2026-09-30-rpa-senate-vote": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Reports the 57-43 Senate vote that fell short of ending debate on whether to take up the Ratepayer Protection Act, Warren's call for a moratorium, and that Heinrich blocked the unanimous-consent request earlier in September."
+   }
+  },
+  "2026-09-30-wv-metronews-capito-colleagues-praise-deal": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Reports Sen. Capito and her Republican and Democratic co-negotiators announcing the permitting deal and calling for the Senate to take up their bill after the midterm elections."
+   }
+  },
+  "2026-09-30-the-hill-senators-reach-bipartisan-deal-permitting": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Reports the four senators announced the deal and want the Senate to take up the bill after the election, that Whitehouse says wind and solar permitting under the Trump administration remains unresolved, and that a White House official expressed support."
+   }
+  },
+  "2026-09-30-politico-capitol-agenda-one-day-more": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Live-update page for the day the bill text was due and the Senate considered ending debate on whether to take up the Ratepayer Protection Act. A summary of the permitting package had circulated and senators wanted the text, especially on issues that could determine support for the permitting package after the election. The motion to end debate on taking up the Ratepayer Protection Act fell three votes short, 57-43; four Democrats joined all Republicans in favor."
+   }
+  },
+  "2026-09-30-green-tape-permitting-grand-bargain-is-here": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Hochman walks through each title of the bill and calls it more aggressive than he expected on both grid and conventional permitting reform. He highlights the 150-day NEPA limitations period, the end of injunctions and vacatur for NEPA-only claims, new revocation limits with damages, FERC backstop siting without a designated corridor, and the state referral power over local transmission spending. He expects both chambers to consider the permitting deal after the election. His account of the NEPA remedies, revocation damages and FERC siting matches the text (sections 1110, 1401 and 2101)."
+   }
+  },
+  "2026-09-30-cnbc-senators-clinch-construction-permitting-deal": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Reports senators reached the permitting deal just before leaving for the midterm recess, that the bill makes data center developers pay their own transmission costs, and that negotiators want the Senate to take up the permitting deal first after the election."
+   }
+  },
+  "2026-09-29-politico-senate-negotiators-reach-deal-permitting-text": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Reports Senate negotiators from both parties reached a deal on bill text, with release expected that week but did not expect the Senate to take up the deal before recess."
+   }
+  },
+  "2026-09-29-politico-democrats-gear-up-to-oppose-data-center-legislation": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Senate Democrats prepared to block the Wednesday motion to end debate on taking up the House-passed Ratepayer Protection Act. Schumer called it a fraud and pointed to the Van Hollen and Heinrich bills as stronger options."
+   }
+  },
+  "2026-09-24-roll-call-permitting-bill-off-until-after-midterms": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Reports Whitehouse saying the Senate will likely wait until November to take up a permitting deal and that negotiators were close to finalizing text."
+   }
+  },
+  "2026-09-24-politico-permitting-wont-get-vote-ahead-of-election": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Senate negotiators did not close a deal that week, so the Senate would wait until after the elections to consider a permitting deal. Democrats wanted more review time and firmer assurances that the administration would stop attacking clean energy projects. The story lists Section 401, NEPA limits and NHPA as likely parts of any package."
+   }
+  },
+  "2026-09-17-politico-pro-permitting-talks-reach-final-stages": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Capito said a deal was very close and Whitehouse said talks were in their final wrap-up, with the hardest issues resolved last. Capito conceded Senate consideration of the permitting deal could slip a week from the timeline she and Thune had set."
+   }
+  },
+  "2026-07-21-politico-power-switch-can-congress-get-behind-this-data-center-bill": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "After the House Energy and Commerce Committee voted 52-0 to advance the Ratepayer Protection Act, the newsletter notes the bill echoes a voluntary White House pledge and has a shot in the Senate, though Mike Lee had called data center legislation not a priority. It also reports Sen. David McCormick in line to chair the Energy Committee next Congress."
+   }
+  },
+  "2026-07-13-politico-where-the-permitting-talks-stand": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Negotiators agreed on the broad contours but were haggling over details. A Democrat close to the talks said Republicans made a broad offer before the July Fourth recess covering faster environmental and historic preservation reviews, some transmission permitting and GOP priorities. Democrats wanted stronger transmission and limits on the president's power to cancel permits, and advocates worried Congress would wait until after the election to consider a permitting deal."
+   }
+  },
+  "2026-06-25-ee-news-data-center-energy-bill-hits-speed-bump": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "Frank Pallone's call for a national data center moratorium overshadowed House Energy and Commerce Committee consideration of whether to advance the Ratepayer Protection Act. The bill would require states to consider a federal cost standard that state regulators could reject. Google, Microsoft and the Data Center Coalition backed it; environmental groups opposed it."
+   }
+  },
+  "2026-05-22-ee-news-wright-meets-with-republicans-on-permitting": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "After a dinner of the four Senate committee leaders and a separate Wright dinner with Republicans, E&E reported broad support for a deal but no clear path. Heinrich said the administration's stalled solar, wind and battery permits were the biggest threat. Whitehouse said Democrats would decide within their caucus whether to back a permitting deal before bringing one to the floor."
+   }
+  },
+  "2025-11-25-heatmap-trump-is-the-biggest-wild-card-in-permitting-reform": {
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "set": {
+    "summary": "After the House Natural Resources Committee voted 25-18 to advance the SPEED Act, Holzman reports that Democrats in both chambers would not back a deal without limits on the president's power over wind and solar permits. Reps. Levin and Casten proposed a parity rule between fossil and non-fossil projects; Golden's no-rescission language was added in committee."
    }
   }
  }
