@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01",
+ "generated": "2026-11-03",
  "events": [
   {
    "id": "2023-06-03-fiscal-responsibility-act-nepa-amendments",
@@ -4092,6 +4092,81 @@
      "publisher": "Rep. Teresa Leger Fernández",
      "url": "https://x.com/RepTeresaLF/status/2114006840979677187",
      "date": "2026-10-24",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-duckworth-doe-awards",
+   "date": "2026-10-27",
+   "title": "Four senators seek action on canceled grants before cloture",
+   "branch": "congress_senate",
+   "summary": "Tammy Duckworth, Ron Wyden, Jeff Merkley and Ed Markey asked the bill’s sponsors to secure the release of canceled Energy Department grants before the November 9 vote. The senators said they were still weighing how to vote.",
+   "actors": [
+    "Tammy Duckworth",
+    "Ron Wyden",
+    "Jeff Merkley",
+    "Ed Markey"
+   ],
+   "topics": [
+    "congress",
+    "wind-solar"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Four senators ask for energy grants to be restored before the vote",
+     "publisher": "Office of Sen. Tammy Duckworth",
+     "url": "https://www.duckworth.senate.gov/news/press-releases/duckworth-colleagues-to-committee-leadership-trump-must-begin-restoring-illegally-cancelled-energy-projects-before-critical-vote-on-bipartisan-permitting-reform-bill",
+     "date": "2026-10-27",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-new-mexico-student-walkouts",
+   "date": "2026-10-27",
+   "title": "Protesters march to Heinrich’s Albuquerque office",
+   "branch": "other",
+   "summary": "Students walked out in Santa Fe and Albuquerque. More than 100 protesters marched to Sen. Martin Heinrich’s Albuquerque office, where speakers objected to the bill’s treatment of Tribal consultation.",
+   "actors": [
+    "Youth United for Climate Crisis Action"
+   ],
+   "topics": [
+    "data-centers",
+    "tribal"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "New Mexico students walk out over data centers and permitting",
+     "publisher": "Source NM",
+     "url": "https://www.newsfromthestates.com/article/new-mexico-students-walk-out-classes-protest-data-centers-us-sen-heinrichs-permitting-bill",
+     "date": "2026-10-27",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-apta-transit-endorsement",
+   "date": "2026-11-02",
+   "title": "Transit association backs the bill over repair delays",
+   "branch": "other",
+   "summary": "The American Public Transportation Association endorsed the bill, citing shorter reviews for repairs to existing transit and passenger rail facilities.",
+   "actors": [
+    "American Public Transportation Association"
+   ],
+   "topics": [
+    "nepa",
+    "categorical-exclusions"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Transit association endorses S. 5653",
+     "publisher": "American Public Transportation Association",
+     "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+     "date": "2026-11-02",
      "verified": true
     }
    ]

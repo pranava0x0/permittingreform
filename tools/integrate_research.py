@@ -19,6 +19,8 @@ import sys
 from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
+from build import DATA_AS_OF
+
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data/research"
 OUT = ROOT / "data"
@@ -148,7 +150,7 @@ def curate(name: str, rows: list[dict]) -> list[dict]:
 
 def write(name: str, key: str, rows: list[dict]) -> None:
     path = OUT / f"{name}.json"
-    payload = {"generated": "2026-10-01", key: rows}
+    payload = {"generated": DATA_AS_OF, key: rows}
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     log(f"wrote {len(rows)} rows -> {path.relative_to(ROOT)}")
 

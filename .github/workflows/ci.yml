@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Rebuild research datasets from their inputs
+        run: python3 tools/integrate_research.py
+
       - name: Offline gates
         run: make check
 

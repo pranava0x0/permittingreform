@@ -34,3 +34,9 @@ Sonnet inference and a small availability probe were blocked by the subscription
 - Tokens: the subagent made 25 requests: 353K cache-write (5 min), 3.77M cache-read and 96K output tokens (deduplicated by request id, largest output per request), about 1.30M weighted. The main session's share is not separately metered.
 - Result: 361 questions. 354 name a source URL across 110 pages; 14 of those were "same URL" placeholders matched to the page the raw log records. 203 come from the 41 pages the agent fetched and are the only ones counted. 151 come from search summaries whose page was never opened, so they are listed as unverified and left out of the counts. 7 name an outlet but no page and are listed as unchecked leads. Codex review found placeholder sources in the first draft (no URL, "same URL", a PBS link labelled King & Spalding); link text is now the URL's domain.
 - Worth it: yes, with a caveat. The gaps (vote count, electricity prices, emissions, time saved, amendments) and the slow Compare paths came straight from it. But 151 of the 354 linked entries rest on search summaries and are not counted, so the counts cover 41 pages and show which topics come up most, not how many people asked.
+
+## November 3, 2026: news and floor schedule
+
+Read the November 2 Senate floor log and seven news or organization pages. Added seven media entries and three timeline events. Compared every existing record with the prior release; the comparison caught one House vote missing from the refresh inputs. Restored it and added research integration to CI. Used local Python, Chrome, the web reader and GitHub. No subagents; token cost was not separately metered.
+
+All 174 bill quotes matched. The source checker found no missing quotes; eight older quotes remained unreachable to the checker. The Claude CLI was signed out, so there was no new inference review.

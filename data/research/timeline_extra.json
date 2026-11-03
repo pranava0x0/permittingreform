@@ -1,7 +1,51 @@
 {
- "generated": "2026-10-02",
- "note": "Rows the main session added after the agent sweeps. From data/research/datacenter_bills.json, with duplicates of held events dropped.",
+ "generated": "2026-11-03",
+ "note": "Additional sourced events, including records selected from data/research/datacenter_bills.json. Events already in the original research are omitted.",
  "events": [
+  {
+   "id": "2026-09-02-house-passes-protecting-domestic-mining-act-218-201",
+   "date": "2026-09-02",
+   "title": "House passes the Protecting Domestic Mining Act 218-201, writing mining into FAST-41",
+   "branch": "congress_house",
+   "summary": "The House passed H.R. 1501, sponsored by Rep. Jefferson Shreve (R-Ind.), 218-201. It writes mining and mineral processing into law as a sector eligible for FAST-41, the Permitting Council's coordinated review program, and blocks a Biden-era proposed rule that would have limited that coverage to critical minerals. Rep. Adelita Grijalva (D-Ariz.) opposed it; her amendment requiring consultation with Tribal Nations before expedited permitting was not adopted. The Senate referred it to the Homeland Security and Governmental Affairs Committee on September 14.",
+   "significance": "A separate House route for FAST-41 changes. The Senate bill adds no sectors to FAST-41: its section 2201(h) says only that a project can still be designated a FAST-41 covered project, and for energy and mineral projects its 150-day limit on lawsuits is shorter than FAST-41's 2 years.",
+   "actors": [
+    "Jefferson Shreve (Representative, R-Ind.)",
+    "Blake Moore (Representative, R-Utah)",
+    "Adelita Grijalva (Representative, D-Ariz.)",
+    "Jared Huffman (Representative, D-Calif.; Ranking Member, House Natural Resources Committee)"
+   ],
+   "topics": [
+    "mining"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "H.R.1501 - Protecting Domestic Mining Act of 2025: All Actions",
+     "publisher": "Congress.gov",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/1501/all-actions",
+     "date": "2026-09-14",
+     "verified": true
+    },
+    {
+     "title": "Representatives Moore, Shreve's Protecting Domestic Mining Act Passes the House",
+     "publisher": "Office of Rep. Blake Moore",
+     "url": "https://blakemoore.house.gov/media/press-releases/representatives-moore-shreves-protecting-domestic-mining-act-passes-the-house",
+     "date": "2026-09-04",
+     "verified": true
+    },
+    {
+     "title": "Rep. Grijalva Slams Bill to Fast-Track Mining Permits",
+     "publisher": "Office of Rep. Adelita Grijalva",
+     "url": "https://grijalva.house.gov/media/press-releases/rep-grijalva-slams-bill-to-fast-track-mining-permits",
+     "date": "2026-09-03",
+     "verified": true
+    }
+   ],
+   "sections": [
+    "2201"
+   ]
+  },
   {
    "id": "2026-06-18-hr9340-introduced",
    "date": "2026-06-18",
@@ -2056,6 +2100,81 @@
      "publisher": "Rep. Teresa Leger Fernández",
      "url": "https://x.com/RepTeresaLF/status/2114006840979677187",
      "date": "2026-10-24",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-duckworth-doe-awards",
+   "date": "2026-10-27",
+   "title": "Four senators seek action on canceled grants before cloture",
+   "branch": "congress_senate",
+   "summary": "Tammy Duckworth, Ron Wyden, Jeff Merkley and Ed Markey asked the bill’s sponsors to secure the release of canceled Energy Department grants before the November 9 vote. The senators said they were still weighing how to vote.",
+   "actors": [
+    "Tammy Duckworth",
+    "Ron Wyden",
+    "Jeff Merkley",
+    "Ed Markey"
+   ],
+   "topics": [
+    "congress",
+    "wind-solar"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Four senators ask for energy grants to be restored before the vote",
+     "publisher": "Office of Sen. Tammy Duckworth",
+     "url": "https://www.duckworth.senate.gov/news/press-releases/duckworth-colleagues-to-committee-leadership-trump-must-begin-restoring-illegally-cancelled-energy-projects-before-critical-vote-on-bipartisan-permitting-reform-bill",
+     "date": "2026-10-27",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-10-27-new-mexico-student-walkouts",
+   "date": "2026-10-27",
+   "title": "Protesters march to Heinrich’s Albuquerque office",
+   "branch": "other",
+   "summary": "Students walked out in Santa Fe and Albuquerque. More than 100 protesters marched to Sen. Martin Heinrich’s Albuquerque office, where speakers objected to the bill’s treatment of Tribal consultation.",
+   "actors": [
+    "Youth United for Climate Crisis Action"
+   ],
+   "topics": [
+    "data-centers",
+    "tribal"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "New Mexico students walk out over data centers and permitting",
+     "publisher": "Source NM",
+     "url": "https://www.newsfromthestates.com/article/new-mexico-students-walk-out-classes-protest-data-centers-us-sen-heinrichs-permitting-bill",
+     "date": "2026-10-27",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-02-apta-transit-endorsement",
+   "date": "2026-11-02",
+   "title": "Transit association backs the bill over repair delays",
+   "branch": "other",
+   "summary": "The American Public Transportation Association endorsed the bill, citing shorter reviews for repairs to existing transit and passenger rail facilities.",
+   "actors": [
+    "American Public Transportation Association"
+   ],
+   "topics": [
+    "nepa",
+    "categorical-exclusions"
+   ],
+   "milestone": false,
+   "sources": [
+    {
+     "title": "Transit association endorses S. 5653",
+     "publisher": "American Public Transportation Association",
+     "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+     "date": "2026-11-02",
      "verified": true
     }
    ]

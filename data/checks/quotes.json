@@ -1,5 +1,5 @@
 {
- "checked": "2026-10-27",
+ "checked": "2026-11-03",
  "bill": {
   "total": 174,
   "verified": 174
@@ -217,9 +217,9 @@
    "text": "Further mischief will undo our willingness to resume negotiations.",
    "speaker": "Martin Heinrich and Sheldon Whitehouse (joint statement)",
    "url": "https://www.energy.senate.gov/2026/3/heinrich-and-whitehouse-joint-statement-on-permitting-reform",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "timeline.2026-03-23-interior-totalenergies-offshore-wind-lease-buyout",
@@ -622,9 +622,9 @@
    "text": "A project can be approved one day and tied up in court the next.",
    "speaker": "Brent Booker",
    "url": "https://www.epw.senate.gov/public/_cache/files/a/9/a99fa191-51ec-433e-b7b1-ebee3409471a/BAB28A9720FCB677BECB159BF0F8F3D61C2E42BFE3B856E1EBC17A754B2464FE.01-28-2026-booker-testimony.pdf",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "people.lee-zeldin",
@@ -640,9 +640,9 @@
    "text": "America desperately needs permitting reform, and this bipartisan proposal contains plenty of promising ideas for taxpayers and consumers to welcome.",
    "speaker": "Ross Marchand",
    "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.brent-gardner",
@@ -712,9 +712,9 @@
    "text": "In plain language, if you create the cost, you should pay the cost.",
    "speaker": "Jon Husted",
    "url": "https://www.husted.senate.gov/media/press-releases/husted-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers-blocked-from-passage/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.brian-fitzpatrick",
@@ -739,9 +739,9 @@
    "text": "the huge corporations building and running data centers should cover the costs of the energy they need – not push those costs onto the backs of consumers",
    "speaker": "Chris Van Hollen",
    "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-leads-new-bill-to-ensure-americans-arent-footing-the-bill-for-big-data-centers",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.paul-tonko",
@@ -766,18 +766,18 @@
    "text": "there is legitimate concern about how these projects could raise utility bills, harm our environment, or impact public health",
    "speaker": "Lisa Blunt Rochester",
    "url": "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.john-curtis",
    "text": "Americans are rightly skeptical when a large company tells them not to worry about the impacts of a new data center in their community,",
    "speaker": "John Curtis",
    "url": "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.angus-king",
@@ -928,18 +928,18 @@
    "text": "I’m still reviewing text of this proposal, and I will be looking closely at the details.",
    "speaker": "Edward J. Markey",
    "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.roger-wicker",
    "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
    "speaker": "Roger Wicker",
    "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.ira-matt",
@@ -973,18 +973,18 @@
    "text": "Business Roundtable strongly supports the Bipartisan American Affordability and Jobs Act of 2026.",
    "speaker": "Joshua Bolten",
    "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.xan-fishman",
    "text": "This bill would fix our permitting processes so that we can review and build efficiently, reducing costs, improving quality of life, growing our economy, and improving economic outcomes.",
    "speaker": "Xan Fishman",
    "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.bill-mckibben",
@@ -1009,9 +1009,9 @@
    "text": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk.",
    "speaker": "Greg Gianforte",
    "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "people.mark-macarro",
@@ -1027,6 +1027,24 @@
    "text": "much of the opposition has stemmed from misreads and/or mischaracterization of the BAAJA’s contents",
    "speaker": "Thomas Hochman",
    "url": "https://x.com/ThomasHochman/status/2112264100994527699",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-02-apta-transit-endorsement",
+   "text": "Too many public transit and passenger rail projects spend years in review before construction can begin",
+   "speaker": "Paul P. Skoutelas, American Public Transportation Association",
+   "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-03"
+  },
+  {
+   "where": "media.2026-10-28-plf-coalition-letter",
+   "text": "This coalition urges Congress to seize this bipartisan opportunity to enact meaningful permitting reform.",
+   "speaker": "Joe Luppino-Esposito, Pacific Legal Foundation",
+   "url": "https://pacificlegal.org/press-release/pacific-legal-foundation-leads-more-than-35-coalition-partners-urging-congress-to-advance-permitting-deal/",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1162,9 +1180,9 @@
    "text": "More than 100 groups urged Congress in a letter Thursday to reject the Senate permitting bill from Senators Whitehouse, Heinrich, Capito and Lee due to its negative impacts on public lands.",
    "speaker": "Center for Western Priorities",
    "url": "https://westernpriorities.org/2026/10/doj-moves-to-kill-offshore-wind-permits-as-congress-weighs-permitting-bill/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "error: HTTP 502"
   },
   {
    "where": "media.2026-10-23-trcp-hunters-anglers",
@@ -1324,9 +1342,9 @@
    "text": "the attorneys general warned that certain provisions would undermine state authority under the Clean Water Act and National Historic Preservation Act",
    "speaker": "SWACCA summary of the AG letter",
    "url": "https://swacca.org/nine-democratic-state-attorneys-general-raise-concerns-over-bipartisan-permitting-reform-bill/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "error: RemoteDisconnected: Remote end closed connection without response"
   },
   {
    "where": "media.2026-10-22-nathpo_org-x-coalition",
@@ -1801,9 +1819,9 @@
    "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
    "speaker": "Sen. Roger Wicker",
    "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-10-13-washington-monthly-populist-permitting-deal",
@@ -1936,9 +1954,9 @@
    "text": "The few definitive statements on the bill from lawmakers in both parties are supportive.",
    "speaker": "Axios",
    "url": "https://www.axios.com/2026/10/09/congress-permitting-bill-risks",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "blocked: HTTP 403"
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-03"
   },
   {
    "where": "media.2026-10-08-naco-county-advocacy-hub",
@@ -2017,9 +2035,9 @@
    "text": "The Bipartisan American Affordability and Jobs Act delivers cheaper energy, more well-paying jobs, and responsible growth by accelerating the permitting and construction of critical energy and infrastructure projects while maintaining key environmental and historic preservation safeguards.",
    "speaker": "EPW majority press office",
    "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-10-06-cbd-fof-200-conservation-groups-esa-letter",
@@ -2170,9 +2188,9 @@
    "text": "The answer to that distrust is transparency.",
    "speaker": "Sen. John Curtis",
    "url": "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-10-01-x-siegelscribe-whats-next-for-permitting",
@@ -2224,9 +2242,9 @@
    "text": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk.",
    "speaker": "Joint statement of 22 Republican governors",
    "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw",
@@ -2269,9 +2287,9 @@
    "text": "I’m still reviewing text of this proposal, and I will be looking closely at the details.",
    "speaker": "Sen. Edward J. Markey",
    "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-10-01-heatmap-data-center-double-tap",
@@ -2341,9 +2359,9 @@
    "text": "The Ratepayer Protection Act is exactly what Congress is known for: all message and no substance.",
    "speaker": "Sen. Martin Heinrich",
    "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-statement-on-vote-against-husted-backed-bill-that-fails-to-make-data-centers-pay-for-grid-upgrades",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.cnn-2026-09-30-rpa-senate-vote",
@@ -2449,18 +2467,18 @@
    "text": "Projects should not spend years or even decades navigating duplicative reviews and regulatory uncertainty before construction can begin.",
    "speaker": "Ross Marchand, Taxpayers Protection Alliance",
    "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-09-30-the-hill-senators-reach-bipartisan-deal-permitting",
    "text": "Our goal is to have it be the first vote when we come back — at least to begin the process",
    "speaker": "Sen. Shelley Moore Capito",
    "url": "https://thehill.com/policy/energy-environment/6120853-permitting-reform-bipartisan-deal-infrastructure-energy-projects/",
-   "result": "verified",
+   "result": "browser",
    "share": 1.0,
-   "note": ""
+   "note": "read in a browser on 2026-10-01"
   },
   {
    "where": "media.2026-09-30-sierra-club-reaction-permitting-bill-introduction",
@@ -2809,9 +2827,9 @@
    "text": "In plain language, if you create the cost, you should pay the cost.",
    "speaker": "Sen. Jon Husted",
    "url": "https://www.husted.senate.gov/media/press-releases/husted-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers-blocked-from-passage/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.cbs-2026-09-17-heinrich-blocks-rpa",
@@ -2872,9 +2890,9 @@
    "text": "If a company is driving the need for expensive new facilities, that company should pay for it — not families and small businesses.",
    "speaker": "Sen. Martin Heinrich",
    "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-introduces-legislation-to-ensure-large-users-of-electricity-pay-for-grid-upgrades-protect-customers-from-costs-of-data-center-expansion",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-08-03-ee-news-permitting-deal-may-come-after-recess",
@@ -3007,9 +3025,9 @@
    "text": "The Ratepayer Protection Act would codify key elements of that pledge.",
    "speaker": "Sen. Jon Husted",
    "url": "https://www.husted.senate.gov/media/press-releases/husted-leads-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-07-17-ee-news-permitting-deal-deadline-remains-elusive",
@@ -3214,9 +3232,9 @@
    "text": "Seeing permits continuing to be approved by the administration is critical for ensuring that talks can continue.",
    "speaker": "Sens. Martin Heinrich and Sheldon Whitehouse",
    "url": "https://www.energy.senate.gov/2026/3/heinrich-and-whitehouse-joint-statement-on-permitting-reform",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.whitehouse-2026-03-04-ratepayer-protection-pledge",
@@ -3295,9 +3313,9 @@
    "text": "The responsibility for resuscitating permitting reform rests now upon the executive branch, upon credible confidence that the nonsense will stop",
    "speaker": "Sen. Sheldon Whitehouse",
    "url": "https://www.epw.senate.gov/public/index.cfm/2026/1/whitehouse-opening-statement-at-permitting-reform-hearing",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-01-28-epw-capito-opening-statement-permitting-hearing",
@@ -3313,9 +3331,9 @@
    "text": "the huge corporations building and running data centers should cover the costs of the energy they need – not push those costs onto the backs of consumers",
    "speaker": "Sen. Chris Van Hollen",
    "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-leads-new-bill-to-ensure-americans-arent-footing-the-bill-for-big-data-centers",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": ""
   },
   {
    "where": "media.2026-01-07-white-house-ceq-removes-nepa-regulations",
@@ -3592,9 +3610,9 @@
    "text": "supporters saying they will cut down on lawsuits that can interrupt a project years after it is approved, while opponents say the short window could stymie legitimate complaints.",
    "speaker": "The Hill (reporter)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-beveridge-diamond-1",
@@ -3781,18 +3799,18 @@
    "text": "You would never be able to stop Pebble Mine in the future because of the changes made today",
    "speaker": "Brett Hartl, government affairs director, Center for Biological Diversity (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-01-pacific-legal-foundation-1",
    "text": "really gives the EPA administrator more or less carte blanche to cancel projects",
    "speaker": "John Nagle, federal policy manager, Pacific Legal Foundation (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-nrdc-1",
@@ -3835,9 +3853,9 @@
    "text": "saying the proposed definition creates too high a threshold and could prevent truly threatened creatures from being protected.",
    "speaker": "The Hill, summarizing Brett Hartl of the Center for Biological Diversity",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-eno-center-for-transportatio-3",
@@ -4060,9 +4078,9 @@
    "text": "the threat of the FERC decision leads to changes in routes or configuration of the proposals to get to yes at the state and local level.",
    "speaker": "Rob Gramlich, president, Grid Strategies (as quoted by The Hill)",
    "url": "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "takes.2026-10-02-mcguirewoods-3",
@@ -4816,9 +4834,9 @@
    "text": "Trump’s wind and solar cancellations would stand, while the data centers, drilling, and nuclear projects Interior Secretary Doug Burgum approves over the next two years would be nearly impossible for a future administration to undo.",
    "speaker": "Center for Western Priorities",
    "url": "https://westernpriorities.org/2026/10/doj-moves-to-kill-offshore-wind-permits-as-congress-weighs-permitting-bill/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "error: HTTP 502"
   },
   {
    "where": "takes.2026-10-23-trcp-1",

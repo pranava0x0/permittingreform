@@ -20,7 +20,7 @@ The sponsors expect a manager's amendment before the Senate votes. Page and sect
 1. Add events, people and coverage to `data/research/*_extra.json`, or rerun a research agent and replace `data/research/*.json`.
 2. Put corrections in `data/curation.json` with a reason. Do not edit the agent files.
 3. `python3 tools/integrate_research.py && python3 tools/build.py`
-4. `make links && make quotes`, then set `DATA_AS_OF` in `tools/build.py` and rebuild.
+4. `make links && make quotes`, then set `DATA_AS_OF` in `tools/build.py` and repeat integration and build. Both the research datasets and the site use that date.
 
 ## Outside readings
 

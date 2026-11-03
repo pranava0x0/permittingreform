@@ -1,6 +1,120 @@
 {
- "generated": "2026-10-01",
+ "generated": "2026-11-03",
  "items": [
+  {
+   "id": "2026-11-02-apta-transit-endorsement",
+   "date": "2026-11-02",
+   "type": "org_statement",
+   "outlet": "American Public Transportation Association",
+   "title": "Transit association endorses S. 5653",
+   "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+   "verified": true,
+   "summary": "The American Public Transportation Association endorsed the bill, citing shorter reviews for repairs to existing transit and passenger rail facilities.",
+   "stance": "supports",
+   "topics": [
+    "nepa",
+    "categorical-exclusions"
+   ],
+   "quote": {
+    "text": "Too many public transit and passenger rail projects spend years in review before construction can begin",
+    "speaker": "Paul P. Skoutelas, American Public Transportation Association"
+   }
+  },
+  {
+   "id": "2026-10-30-axios-casten-gas",
+   "date": "2026-10-30",
+   "type": "news",
+   "outlet": "Axios",
+   "title": "Casten seeks changes over natural gas",
+   "url": "https://www.axios.com/2026/10/30/key-house-democrat-permitting-bill-gold-rush-gas",
+   "verified": true,
+   "summary": "Rep. Sean Casten told Axios he was withholding support while discussing changes with Whitehouse and Heinrich. He worried the bill would favor gas developers over wind and solar developers.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "wind-solar",
+    "fossil"
+   ]
+  },
+  {
+   "id": "2026-10-28-plf-coalition-letter",
+   "date": "2026-10-28",
+   "type": "org_statement",
+   "outlet": "Pacific Legal Foundation",
+   "title": "Pacific Legal Foundation and more than 35 partners urge passage",
+   "url": "https://pacificlegal.org/press-release/pacific-legal-foundation-leads-more-than-35-coalition-partners-urging-congress-to-advance-permitting-deal/",
+   "verified": true,
+   "summary": "A coalition including Americans for Prosperity and ClearPath Action asked congressional leaders to pass BAAJA, citing property rights and more predictable permits.",
+   "stance": "supports",
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "quote": {
+    "text": "This coalition urges Congress to seize this bipartisan opportunity to enact meaningful permitting reform.",
+    "speaker": "Joe Luppino-Esposito, Pacific Legal Foundation"
+   }
+  },
+  {
+   "id": "2026-10-28-axios-granholm",
+   "date": "2026-10-28",
+   "type": "news",
+   "outlet": "Axios",
+   "title": "Granholm urges Democrats to pass the bill this year",
+   "url": "https://www.axios.com/2026/10/28/granholm-permitting-warning-trump-democrats",
+   "verified": true,
+   "summary": "Former Energy Secretary Jennifer Granholm backed passage but warned that the administration’s restrictions on wind power could cost the deal Democratic support.",
+   "stance": "reporting",
+   "topics": [
+    "congress",
+    "wind-solar"
+   ]
+  },
+  {
+   "id": "2026-10-27-new-mexico-student-walkouts",
+   "date": "2026-10-27",
+   "type": "news",
+   "outlet": "Source NM",
+   "title": "New Mexico students walk out over data centers and permitting",
+   "url": "https://www.newsfromthestates.com/article/new-mexico-students-walk-out-classes-protest-data-centers-us-sen-heinrichs-permitting-bill",
+   "verified": true,
+   "summary": "Students walked out in Santa Fe and Albuquerque. More than 100 protesters marched to Sen. Martin Heinrich’s Albuquerque office, where speakers objected to the bill’s treatment of Tribal consultation.",
+   "stance": "reporting",
+   "topics": [
+    "data-centers",
+    "tribal"
+   ]
+  },
+  {
+   "id": "2026-10-27-duckworth-doe-awards",
+   "date": "2026-10-27",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Tammy Duckworth",
+   "title": "Four senators ask for energy grants to be restored before the vote",
+   "url": "https://www.duckworth.senate.gov/news/press-releases/duckworth-colleagues-to-committee-leadership-trump-must-begin-restoring-illegally-cancelled-energy-projects-before-critical-vote-on-bipartisan-permitting-reform-bill",
+   "verified": true,
+   "summary": "Tammy Duckworth, Ron Wyden, Jeff Merkley and Ed Markey asked the bill’s sponsors to secure the release of canceled Energy Department grants before the November 9 vote. The senators said they were still weighing how to vote.",
+   "stance": "mixed",
+   "topics": [
+    "congress",
+    "wind-solar"
+   ]
+  },
+  {
+   "id": "2026-10-26-tlingit-haida-title-iii",
+   "date": "2026-10-26",
+   "type": "org_statement",
+   "outlet": "Tlingit & Haida",
+   "title": "Tlingit & Haida asks Congress to withdraw Title III",
+   "url": "https://tlingitandhaida.gov/news/alaska-tribes-and-native-corporations-take-stand-to-protect-tribal-sovereignty-sacred-places-lands-and-waters/",
+   "verified": true,
+   "summary": "Tlingit & Haida called for removing Title III to protect Tribal consultation. It distinguished its request from a Southeast Alaska caucus resolution asking Alaska’s delegation to work with Tribal leaders on revisions.",
+   "stance": "opposes",
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ]
+  },
   {
    "id": "2026-10-26-thomashochman-x-survey-scope",
    "date": "2026-10-26",
