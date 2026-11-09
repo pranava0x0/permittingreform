@@ -890,7 +890,8 @@ def amendments_html(core: dict) -> str:
            '</head><body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
            f'<h1>{esc(AMEND_TITLE)}</h1><p>{esc(AMEND_DESCRIPTION)}</p>',
            f'<p>Updated {esc(a["as_of"])} · ' + link("index.html#/amendments", "Open interactive view") + '</p>',
-           '<p>Jump to: ' + ' · '.join(link("#" + k, v) for k, v in (("substitute", "Substitute"), ("floor", "Other amendments"), ("reactions", "Reactions"))) + '</p>',
+           '<p>Jump to: ' + ' · '.join(link("#" + k, v) for k, v in (("key", "Key changes"), ("substitute", "All changes"), ("reactions", "Reactions"), ("floor", "Other amendments"))) + '</p>',
+           '<h2 id="key">Key changes</h2><ul>' + ''.join(f'<li><a href="#sec-{esc(h["id"])}">{esc(h["label"])}, Sec. {esc(h["n"])}</a>: {esc(h["t"])} {pcite(h)}</li>' for h in a["highlights"]) + '</ul>',
            f'<h2 id="substitute">{esc(sub["title"])}</h2>',
            f'<p>{esc(sub["summary"])} ' + ' · '.join(link(s["url"], s["label"]) for s in sub["links"]) + '</p>',
            f'<p>{a["old"]["pages"]} pages and {a["old"]["sections"]} sections on September 30; {a["new"]["pages"]} pages and {a["new"]["sections"]} sections on November 7. '
@@ -924,7 +925,7 @@ def amendments_html(core: dict) -> str:
         for st in f.get("positions", []):
             out.append(f'<p>{esc(st["who"])} ({esc(st["stance"])}): “{esc(st["quote"])}” {link(st["url"], st["publisher"])}</p>')
         out.append('</section>')
-    out.append('<h2 id="reactions">Reactions to the substitute</h2>')
+    out.append('<h2 id="reactions">Reactions to the substitute</h2><p>Statements on the November 7 substitute. Positions on the bill as introduced are on the <a href="issues.html#debate">Key issues</a> page.</p>')
     for st in amendments.STANCES:
         rows = [x for x in a["reactions"] if x["stance"] == st]
         if not rows:

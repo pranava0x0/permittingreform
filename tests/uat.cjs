@@ -301,7 +301,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
     const nav = await browser.newPage({viewport:{width:320,height:812},hasTouch:true});
     await nav.goto(base);
     for (const [label, pages] of [
-      ['Bill',['Sections','Compare bills']],
+      ['Bill',['Sections','Amendments','Compare bills']],
       ['Key issues',['Topics','Debate','People and groups']]]) {
       const top = nav.locator('.tabs').getByRole('link',{name:label,exact:true});
       await top.click();
