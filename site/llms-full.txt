@@ -16962,7 +16962,35 @@ Each question quotes the bill, then what critics and supporters say it means, qu
 ```
 
 ```json
+{"id": "2026-11-05-davids-statement", "date": "2026-11-05", "title": "Rep. Sharice Davids issues statement on tribal sovereignty and the bill", "branch": "congress_house", "summary": "Rep. Sharice Davids (D-Kan.) urged lawmakers to advance reform while strengthening tribal protections, in a Nov. 5 statement.", "actors": ["Sharice Davids"], "milestone": false, "topics": ["tribal", "historic-preservation"], "sources": [{"title": "Senators revise permitting bill ahead of Monday vote; tribal concerns remain", "publisher": "Tribal Business News", "url": "https://tribalbusinessnews.com/policy-and-law/senators-revise-permitting-bill-ahead-of-monday-vote-tribal-concerns-remain/", "date": "2026-11-08"}]}
+```
+
+```json
+{"id": "2026-11-05-jeffries-statement", "date": "2026-11-05", "title": "Jeffries spokesperson says he will not rubber-stamp the Senate permitting bill", "branch": "congress_house", "summary": "A spokesman for House Minority Leader Hakeem Jeffries said Thursday night that he will not rubber-stamp legislation from the Senate without more constructive involvement with the House Democratic Caucus. A spokesperson for Sen. Whitehouse replied that the committees had solicited input from many House members.", "actors": ["Hakeem Jeffries", "Sheldon Whitehouse"], "milestone": false, "topics": ["congress"], "sources": [{"title": "White House counters Jeffries on permitting", "publisher": "Punchbowl News", "url": "https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/", "date": "2026-11-06"}]}
+```
+
+```json
+{"id": "2026-11-06-chamber-coalition-letter", "date": "2026-11-06", "title": "U.S. Chamber-led coalition letter urges Congress to pass BAAJA", "branch": "other", "summary": "A coalition letter led by the U.S. Chamber of Commerce urges Congress to pass the Bipartisan American Affordability and Jobs Act of 2026 and send it to the President.", "actors": ["U.S. Chamber of Commerce"], "milestone": false, "topics": ["congress"], "sources": [{"title": "Coalition in Support of the Bipartisan American Affordability and Jobs Act of 2026", "publisher": "U.S. Chamber of Commerce", "url": "https://www.uschamber.com/energy/coalition-in-support-of-the-bipartisan-american-affordability-and-jobs-act-of-2026", "date": "2026-11-06"}]}
+```
+
+```json
+{"id": "2026-11-06-dod-nine-wind-projects", "date": "2026-11-06", "title": "White House official says Defense Department is advancing nine wind projects", "branch": "executive", "summary": "A White House official told Punchbowl News the Defense Department was advancing nine more wind projects held up at the Pentagon, including two in New Mexico, two in Wyoming, two in Texas, and one each in Illinois, Indiana and Kansas.", "actors": ["White House", "Department of Defense"], "milestone": false, "topics": ["wind-solar", "white-house"], "sources": [{"title": "White House counters Jeffries on permitting", "publisher": "Punchbowl News", "url": "https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/", "date": "2026-11-06"}]}
+```
+
+```json
 {"id": "2026-11-07-substitute-amendment", "date": "2026-11-07", "title": "Sponsors release a 494-page substitute amendment", "branch": "congress_senate", "summary": "Sens. Capito, Lee, Whitehouse and Heinrich released an amendment in the nature of a substitute to H.R. 2347, the vehicle for the permitting bill. It edits 43 sections of the September 30 text, adds 13 and drops one; the sponsors' release calls the changes clarifying, conforming and technical edits.", "actors": ["Shelley Moore Capito", "Mike Lee", "Sheldon Whitehouse", "Martin Heinrich"], "topics": ["nepa"], "milestone": true, "sources": [{"title": "Lee, Capito, Heinrich, and Whitehouse Release Substitute Amendment to Bipartisan American Affordability and Jobs Act of 2026", "publisher": "Senate Energy and Natural Resources Committee", "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/", "date": "2026-11-07"}]}
+```
+
+```json
+{"id": "2026-11-08-trump-endorsement", "date": "2026-11-08", "title": "Trump posts endorsement of the bill on Truth Social", "branch": "executive", "summary": "Per Heatmap, President Trump posted on Truth Social the night before the vote urging all senators to vote for the bill on Monday.", "actors": ["Donald Trump"], "milestone": false, "topics": ["white-house"], "sources": [{"title": "The Senate Prepares for First Vote on Permitting Reform", "publisher": "Heatmap", "url": "https://heatmap.news/am/baaja-senate-vote", "date": "2026-11-09"}]}
+```
+
+```json
+{"id": "2026-11-09-house-suspension-nuclear", "date": "2026-11-09", "title": "House schedules four nuclear bills folded into the substitute for suspension votes", "branch": "congress_house", "summary": "The House majority leader's schedule lists H.R. 3978, 5549, 9084, 9612 and 9614 under suspension of the rules on Monday, with votes postponed until 6:30 p.m. BPC says four bills incorporated in the Senate bill were scheduled for a suspension vote Nov. 9. Result not yet posted at time of research.", "actors": ["House of Representatives"], "milestone": false, "topics": ["congress"], "sources": [{"title": "Majority Leader weekly schedule", "publisher": "House Majority Leader", "url": "https://www.majorityleader.gov/schedule", "date": "2026-11-09"}, {"title": "Explaining the Senate Permitting Bill", "publisher": "Bipartisan Policy Center", "url": "https://bipartisanpolicy.org/explainer/explaining-the-senate-permitting-bill-the-bipartisan-american-affordability-and-jobs-act/", "date": "2026-11-09"}]}
+```
+
+```json
+{"id": "2026-11-09-senate-cloture-scheduled", "date": "2026-11-09", "title": "Senate scheduled to vote on cloture on the motion to proceed to H.R. 2347", "branch": "congress_senate", "summary": "The Senate convened at 3:00 p.m. to resume consideration of the motion to proceed to H.R. 2347, the vehicle for the permitting bill, with a cloture vote set for about 5:30 p.m. Outcome not posted at time of research.", "actors": ["U.S. Senate"], "milestone": false, "topics": ["congress"], "sources": [{"title": "Monday, November 9, 2026", "publisher": "Senate Press Gallery", "url": "https://www.dailypress.senate.gov/monday-november-9-2026/", "date": "2026-11-09"}]}
 ```
 
 
@@ -17302,6 +17330,46 @@ Each question quotes the bill, then what critics and supporters say it means, qu
 
 
 ## Media
+
+```json
+{"id": "2026-11-09-heatmap-senate-prepares", "date": "2026-11-09", "type": "news", "outlet": "Heatmap", "title": "The Senate Prepares for First Vote on Permitting Reform", "url": "https://heatmap.news/am/baaja-senate-vote", "summary": "Morning briefing: reports the manager's amendment, Trump's Truth Social endorsement, and a procedural vote later that day.", "stance": "reporting", "topics": ["congress"], "quote": {"text": "The chamber is scheduled to hold a procedural vote on the bill later today.", "speaker": "Heatmap"}}
+```
+
+```json
+{"id": "2026-11-09-bgov-support-to-proceed", "date": "2026-11-09", "type": "news", "outlet": "Bloomberg Government", "title": "Permitting Bill Has Support to Proceed in Senate, Say Democrats", "url": "https://news.bgov.com/bloomberg-government-news/permitting-bill-has-support-to-proceed-in-senate-say-democrats", "summary": "Reports Democratic negotiators Whitehouse and Heinrich said at a press conference the bill has enough votes to advance Monday.", "stance": "reporting", "topics": ["congress"], "quote": {"text": "Democratic negotiators of a bipartisan permitting overhaul bill believe they have enough votes to advance the legislation Monday, they said in a press conference.", "speaker": "Bloomberg Government"}}
+```
+
+```json
+{"id": "2026-11-08-tribalbusinessnews-senators-revise", "date": "2026-11-08", "type": "news", "outlet": "Tribal Business News", "title": "Senators revise permitting bill ahead of Monday vote; tribal concerns remain", "url": "https://tribalbusinessnews.com/policy-and-law/senators-revise-permitting-bill-ahead-of-monday-vote-tribal-concerns-remain/", "summary": "Reports the substitute drops the proposed federal takeover of tribal historic preservation programs, and that 11 tribal organizations asked Congress to hold the bill.", "stance": "reporting", "topics": ["congress"], "author": "Brian Edwards", "quote": {"text": "The proposed amendment would remove that requirement, provide technical assistance for tribal preservation programs and give tribes more time to raise objections during project reviews", "speaker": "Tribal Business News"}}
+```
+
+```json
+{"id": "2026-11-08-santafenewmexican-heinrich-vote-monday", "date": "2026-11-08", "type": "news", "outlet": "Santa Fe New Mexican", "title": "Senate set to vote on Heinrich permitting bill Monday", "url": "https://www.santafenewmexican.com/news/local_news/senate-set-to-vote-on-heinrich-permitting-bill-monday/article_477f5b0a-c1d0-419d-8860-86c3a3735398.html", "summary": "Reports opposition from Reps. Stansbury and Leger Fernandez, tribal leaders and the All Pueblo Council of Governors, and Heinrich's office's defense of the bill's tribal consultation provisions.", "stance": "reporting", "topics": ["congress"], "author": "Victoria Traxler", "quote": {"text": "“Let's be clear: BAAJA preserves the federal government’s obligation to consult with Tribes under Section 106", "speaker": "Heinrich spokesperson"}}
+```
+
+```json
+{"id": "2026-11-07-heatmap-last-minute-changes", "date": "2026-11-07", "type": "analysis", "outlet": "Heatmap", "title": "The Last-Minute Changes to the Senate Permitting Deal, Explained", "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill", "summary": "Walks through the manager's amendment changes on transmission, permit certainty and data centers, and notes the cloture vote needs 60 votes.", "stance": "reporting", "topics": ["congress"], "author": "Robinson Meyer, Jael Holzman", "quote": {"text": "The motion will require at least 60 votes to pass.", "speaker": "Heatmap"}}
+```
+
+```json
+{"id": "2026-11-06-punchbowl-white-house-counters-jeffries", "date": "2026-11-06", "type": "news", "outlet": "Punchbowl News", "title": "White House counters Jeffries on permitting", "url": "https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/", "summary": "Reports the Defense Department advancing nine wind projects and Jeffries' spokesman saying House Democrats will not take up the Senate bill as written.", "stance": "reporting", "topics": ["congress"], "author": "Josh Siegel", "quote": {"text": "The Trump administration is making its most aggressive move yet to unlock Democratic support for the Senate’s bipartisan energy permitting deal", "speaker": "Punchbowl News"}}
+```
+
+```json
+{"id": "2026-11-06-icn-election-shakeup", "date": "2026-11-06", "type": "news", "outlet": "Inside Climate News", "title": "Election Shakeup Threatens Bipartisan Deal to Speed Energy Projects", "url": "https://insideclimatenews.org/news/06112026/bipartisan-permitting-reform-outlook-after-election-shakeup/", "summary": "Reports Jeffries' opposition to the bill in its current form, a Purdue report on emissions effects, and clean energy trade groups' continued support ahead of Monday's Senate vote.", "stance": "reporting", "topics": ["congress"], "author": "Dan Gearino, Marianne Lavelle", "quote": {"text": "Democrats’ electoral sweep has shaken the ground beneath a permitting reform bill in Congress, raising doubts about whether the measure has enough support to advance in an initial Senate vote scheduled for Monday.", "speaker": "Inside Climate News"}}
+```
+
+```json
+{"id": "2026-11-06-heatmap-levin", "date": "2026-11-06", "type": "analysis", "outlet": "Heatmap", "title": "How an Undecided Congressman Is Thinking Through the Permitting Bill", "url": "https://heatmap.news/politics/mike-levin-permitting-bill", "summary": "Interview with Rep. Mike Levin (D-Calif.), who is undecided on the bill, plus context on Jeffries' and Sen. Mark Kelly's positions.", "stance": "reporting", "topics": ["congress"], "quote": {"text": "Levin told me he was decidedly undecided on the bill", "speaker": "Heatmap"}}
+```
+
+```json
+{"id": "2026-11-06-chamber-coalition-letter", "date": "2026-11-06", "type": "org_statement", "outlet": "U.S. Chamber of Commerce", "title": "Coalition in Support of the Bipartisan American Affordability and Jobs Act of 2026", "url": "https://www.uschamber.com/energy/coalition-in-support-of-the-bipartisan-american-affordability-and-jobs-act-of-2026", "summary": "Coalition letter signed by the U.S. Chamber and national and regional organizations urging passage of the bill.", "stance": "supports", "topics": ["congress"], "quote": {"text": "we urge Congress to pass the Bipartisan American Affordability and Jobs Act of 2026, historic comprehensive permitting reform legislation, and send it to the President’s desk as soon as possible.", "speaker": "U.S. Chamber of Commerce and coalition"}}
+```
+
+```json
+{"id": "2026-11-04-heatmap-blue-wave", "date": "2026-11-04", "type": "analysis", "outlet": "Heatmap", "title": "What Does the Blue Wave Mean for Permitting Reform?", "url": "https://heatmap.news/politics/midterms-permitting-reform", "summary": "Reports that after the Nov. 3 elections the bill's odds are worse, that Rep. Huffman wants the Senate to wait, and that Whitehouse and Heinrich plan to proceed with the Nov. 9 vote.", "stance": "reporting", "topics": ["congress"], "author": "Emily Pontecorvo, Jael Holzman", "quote": {"text": "Post-election, the odds of the Bipartisan American Affordability and Jobs Act’s passage are likely a few degrees worse.", "speaker": "Heatmap"}}
+```
 
 ```json
 {"id": "2026-11-02-apta-transit-endorsement", "date": "2026-11-02", "type": "org_statement", "outlet": "American Public Transportation Association", "title": "Transit association endorses S. 5653", "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/", "summary": "The American Public Transportation Association endorsed the bill, citing shorter reviews for repairs to existing transit and passenger rail facilities.", "stance": "supports", "topics": ["nepa", "categorical-exclusions"], "quote": {"text": "Too many public transit and passenger rail projects spend years in review before construction can begin", "speaker": "Paul P. Skoutelas, American Public Transportation Association"}}

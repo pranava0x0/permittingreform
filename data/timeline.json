@@ -4172,6 +4172,102 @@
    ]
   },
   {
+   "id": "2026-11-05-davids-statement",
+   "date": "2026-11-05",
+   "title": "Rep. Sharice Davids issues statement on tribal sovereignty and the bill",
+   "branch": "congress_house",
+   "summary": "Rep. Sharice Davids (D-Kan.) urged lawmakers to advance reform while strengthening tribal protections, in a Nov. 5 statement.",
+   "actors": [
+    "Sharice Davids"
+   ],
+   "milestone": false,
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sources": [
+    {
+     "title": "Senators revise permitting bill ahead of Monday vote; tribal concerns remain",
+     "publisher": "Tribal Business News",
+     "url": "https://tribalbusinessnews.com/policy-and-law/senators-revise-permitting-bill-ahead-of-monday-vote-tribal-concerns-remain/",
+     "date": "2026-11-08",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-05-jeffries-statement",
+   "date": "2026-11-05",
+   "title": "Jeffries spokesperson says he will not rubber-stamp the Senate permitting bill",
+   "branch": "congress_house",
+   "summary": "A spokesman for House Minority Leader Hakeem Jeffries said Thursday night that he will not rubber-stamp legislation from the Senate without more constructive involvement with the House Democratic Caucus. A spokesperson for Sen. Whitehouse replied that the committees had solicited input from many House members.",
+   "actors": [
+    "Hakeem Jeffries",
+    "Sheldon Whitehouse"
+   ],
+   "milestone": false,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "White House counters Jeffries on permitting",
+     "publisher": "Punchbowl News",
+     "url": "https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/",
+     "date": "2026-11-06",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-chamber-coalition-letter",
+   "date": "2026-11-06",
+   "title": "U.S. Chamber-led coalition letter urges Congress to pass BAAJA",
+   "branch": "other",
+   "summary": "A coalition letter led by the U.S. Chamber of Commerce urges Congress to pass the Bipartisan American Affordability and Jobs Act of 2026 and send it to the President.",
+   "actors": [
+    "U.S. Chamber of Commerce"
+   ],
+   "milestone": false,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Coalition in Support of the Bipartisan American Affordability and Jobs Act of 2026",
+     "publisher": "U.S. Chamber of Commerce",
+     "url": "https://www.uschamber.com/energy/coalition-in-support-of-the-bipartisan-american-affordability-and-jobs-act-of-2026",
+     "date": "2026-11-06",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-06-dod-nine-wind-projects",
+   "date": "2026-11-06",
+   "title": "White House official says Defense Department is advancing nine wind projects",
+   "branch": "executive",
+   "summary": "A White House official told Punchbowl News the Defense Department was advancing nine more wind projects held up at the Pentagon, including two in New Mexico, two in Wyoming, two in Texas, and one each in Illinois, Indiana and Kansas.",
+   "actors": [
+    "White House",
+    "Department of Defense"
+   ],
+   "milestone": false,
+   "topics": [
+    "wind-solar",
+    "white-house"
+   ],
+   "sources": [
+    {
+     "title": "White House counters Jeffries on permitting",
+     "publisher": "Punchbowl News",
+     "url": "https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/",
+     "date": "2026-11-06",
+     "verified": true
+    }
+   ]
+  },
+  {
    "id": "2026-11-07-substitute-amendment",
    "date": "2026-11-07",
    "title": "Sponsors release a 494-page substitute amendment",
@@ -4193,6 +4289,82 @@
      "publisher": "Senate Energy and Natural Resources Committee",
      "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
      "date": "2026-11-07",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-08-trump-endorsement",
+   "date": "2026-11-08",
+   "title": "Trump posts endorsement of the bill on Truth Social",
+   "branch": "executive",
+   "summary": "Per Heatmap, President Trump posted on Truth Social the night before the vote urging all senators to vote for the bill on Monday.",
+   "actors": [
+    "Donald Trump"
+   ],
+   "milestone": false,
+   "topics": [
+    "white-house"
+   ],
+   "sources": [
+    {
+     "title": "The Senate Prepares for First Vote on Permitting Reform",
+     "publisher": "Heatmap",
+     "url": "https://heatmap.news/am/baaja-senate-vote",
+     "date": "2026-11-09",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-house-suspension-nuclear",
+   "date": "2026-11-09",
+   "title": "House schedules four nuclear bills folded into the substitute for suspension votes",
+   "branch": "congress_house",
+   "summary": "The House majority leader's schedule lists H.R. 3978, 5549, 9084, 9612 and 9614 under suspension of the rules on Monday, with votes postponed until 6:30 p.m. BPC says four bills incorporated in the Senate bill were scheduled for a suspension vote Nov. 9. Result not yet posted at time of research.",
+   "actors": [
+    "House of Representatives"
+   ],
+   "milestone": false,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Majority Leader weekly schedule",
+     "publisher": "House Majority Leader",
+     "url": "https://www.majorityleader.gov/schedule",
+     "date": "2026-11-09",
+     "verified": true
+    },
+    {
+     "title": "Explaining the Senate Permitting Bill",
+     "publisher": "Bipartisan Policy Center",
+     "url": "https://bipartisanpolicy.org/explainer/explaining-the-senate-permitting-bill-the-bipartisan-american-affordability-and-jobs-act/",
+     "date": "2026-11-09",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-senate-cloture-scheduled",
+   "date": "2026-11-09",
+   "title": "Senate scheduled to vote on cloture on the motion to proceed to H.R. 2347",
+   "branch": "congress_senate",
+   "summary": "The Senate convened at 3:00 p.m. to resume consideration of the motion to proceed to H.R. 2347, the vehicle for the permitting bill, with a cloture vote set for about 5:30 p.m. Outcome not posted at time of research.",
+   "actors": [
+    "U.S. Senate"
+   ],
+   "milestone": false,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Monday, November 9, 2026",
+     "publisher": "Senate Press Gallery",
+     "url": "https://www.dailypress.senate.gov/monday-november-9-2026/",
+     "date": "2026-11-09",
      "verified": true
     }
    ]

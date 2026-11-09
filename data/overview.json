@@ -9,17 +9,45 @@
  "status": {
   "points": [
    {
+    "text": "The Senate reconvened November 9 at 3 p.m. At about 5:30 p.m., 60 senators must agree to end debate on taking up H.R. 2347, the vehicle for the permitting bill.",
+    "source": {
+     "label": "U.S. Senate Press Gallery, Nov. 9",
+     "url": "https://www.dailypress.senate.gov/monday-november-9-2026/"
+    }
+   },
+   {
+    "text": "The four sponsors released their substitute on November 7. It edits 43 sections of the September 30 text, adds 13 and drops one.",
+    "source": {
+     "label": "Senate Energy and Natural Resources Committee",
+     "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/"
+    }
+   },
+   {
+    "text": "A spokesman for House Democratic Leader Hakeem Jeffries said November 5 that he will not rubber-stamp the Senate bill without more involvement from his caucus.",
+    "source": {
+     "label": "Punchbowl News",
+     "url": "https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/"
+    }
+   },
+   {
+    "text": "A White House official said November 6 that the Defense Department was advancing nine more wind projects held at the Pentagon.",
+    "source": {
+     "label": "Punchbowl News",
+     "url": "https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/"
+    }
+   },
+   {
+    "text": "Heatmap reported that President Trump urged all senators on November 8 to vote for the bill.",
+    "source": {
+     "label": "Heatmap",
+     "url": "https://heatmap.news/am/baaja-senate-vote"
+    }
+   },
+   {
     "text": "Sponsors: Shelley Moore Capito (R-W.Va.) and Sheldon Whitehouse (D-R.I.) of Environment and Public Works; Mike Lee (R-Utah) and Martin Heinrich (D-N.M.) of Energy and Natural Resources.",
     "source": {
      "label": "Senate EPW Committee",
      "url": "https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026"
-    }
-   },
-   {
-    "text": "After conducting no business on November 2, the Senate returns November 9 at 3 p.m. At about 5:30 p.m., 60 senators must agree to end debate on whether to take up H.R. 2347, the vehicle for permitting reform. The Senate would still have to agree to take it up before considering passage.",
-    "source": {
-     "label": "U.S. Senate Press Gallery, Nov. 2",
-     "url": "https://www.dailypress.senate.gov/monday-november-2-2026/"
     }
    },
    {
@@ -58,13 +86,6 @@
     }
    },
    {
-    "text": "The four sponsors' aides said on October 22 that the senators expect to offer a manager's amendment with changes before the Senate decides whether to end debate on taking up the bill.",
-    "source": {
-     "label": "Roll Call",
-     "url": "https://rollcall.com/2026/10/22/permitting-bill-writers-seek-industry-aid-ahead-of-senate-vote/"
-    }
-   },
-   {
     "text": "The Defense Department advanced two onshore wind projects on October 22, which a White House official tied to the bill's passage; Whitehouse called it a start and asked for more on wind and solar.",
     "source": {
      "label": "Joshua Siegel, Punchbowl News (X)",
@@ -99,7 +120,7 @@
   "text": "About 5:30 p.m.: 60 senators must agree to end debate on taking up the permitting bill. Passing it takes a separate vote.",
   "source": {
    "label": "Senate floor schedule",
-   "url": "https://www.dailypress.senate.gov/monday-november-2-2026/"
+   "url": "https://www.dailypress.senate.gov/monday-november-9-2026/"
   }
  },
  "headlines": [
