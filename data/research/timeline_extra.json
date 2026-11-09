@@ -2178,6 +2178,32 @@
      "verified": true
     }
    ]
+  },
+  {
+   "id": "2026-11-07-substitute-amendment",
+   "date": "2026-11-07",
+   "title": "Sponsors release a 494-page substitute amendment",
+   "branch": "congress_senate",
+   "summary": "Sens. Capito, Lee, Whitehouse and Heinrich released an amendment in the nature of a substitute to H.R. 2347, the vehicle for the permitting bill. It edits 43 sections of the September 30 text, adds 13 and drops one; the sponsors' release calls the changes clarifying, conforming and technical edits.",
+   "actors": [
+    "Shelley Moore Capito",
+    "Mike Lee",
+    "Sheldon Whitehouse",
+    "Martin Heinrich"
+   ],
+   "topics": [
+    "nepa"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Lee, Capito, Heinrich, and Whitehouse Release Substitute Amendment to Bipartisan American Affordability and Jobs Act of 2026",
+     "publisher": "Senate Energy and Natural Resources Committee",
+     "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+     "date": "2026-11-07",
+     "verified": true
+    }
+   ]
   }
  ]
 }

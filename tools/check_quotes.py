@@ -144,6 +144,13 @@ def web_quotes(core: dict) -> list[dict]:
     for b in (core.get("speed") or {}).get("blockers", []):
         for i, ev in enumerate(b["evidence"]):
             rows.append({"where": f"speed.{b['id']}.{i}", "text": ev["quote"], "speaker": ev["org"], "url": ev["url"]})
+    amend = core.get("amend") or {}
+    for where, items in (("substitute", [amend.get("substitute", {})]), ("floor", amend.get("floor", [])), ("reactions", amend.get("reactions", []))):
+        for it in items:
+            for i, src in enumerate(it.get("sources", [])):
+                rows.append({"where": f"amend.{where}.{it.get('id', 'main')}.{i}", "text": src["quote"], "speaker": it.get("who", ""), "url": src["url"]})
+    if amend.get("vote"):
+        rows.append({"where": "amend.vote", "text": amend["vote"]["quote"], "speaker": "", "url": amend["vote"]["url"]})
     bills = core["compare"].get("bills") or {"rows": []}
     for r in bills["rows"]:
         for k, cell in r.items():

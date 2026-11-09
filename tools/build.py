@@ -40,7 +40,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-11-03"
+DATA_AS_OF = "2026-11-09"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -902,7 +902,8 @@ def amendments_html(core: dict) -> str:
         g = (r["div"], r["ti"])
         if g != group:
             group = g
-            out.append(f'<h3>{esc(r["div"].title())}, {esc(r["ti"].title())}: {esc(r["tih"].title())}</h3>')
+            label = f'{r["div"]}, {r["ti"]}: {r["tih"]}' if r["ti"] else f'{r["div"]}: {r["divh"]}'
+            out.append(f'<h3>{esc(label.title())}</h3>')
         was = ""
         if "old" in r and "new" in r and (r["old"]["n"] != r["new"]["n"] or r["old"]["h"] != r["new"]["h"]):
             was = f' (September 30: Sec. {esc(r["old"]["n"])}. {esc(r["old"]["h"])})'

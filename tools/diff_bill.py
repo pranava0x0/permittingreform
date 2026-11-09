@@ -161,7 +161,9 @@ def build() -> dict:
             if m:
                 return order[m["new"]["n"]] + 0.5
         return -1
-    rows.sort(key=pos)
+    # Keys first: list.sort empties the list while it runs, so pos() could not see the rows.
+    keys = {id(r): pos(r) for r in rows}
+    rows.sort(key=lambda r: keys[id(r)])
     counts: dict[str, int] = {}
     for r in rows:
         counts[r["status"]] = counts.get(r["status"], 0) + 1

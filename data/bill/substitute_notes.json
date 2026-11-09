@@ -1,4 +1,13 @@
 {
+ "2242-dropped": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The September text amended section 4(c)(10)(B) of the Pacific Northwest Electric Power Planning and Conservation Act by adding the words “since the date of enactment” of the bill, and the substitute omits this section.",
+    "old": "is amended by inserting “since the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026” before the period at the end"
+   }
+  ]
+ },
  "1102": {
   "kind": "substantive",
   "points": [
@@ -122,7 +131,7 @@
     "new": "maintain, as a component of the Dashboard,"
    },
    {
-    "t": "The substitute provides that the Dashboard entry for a FAST-41 covered project serves as its Tracker entry, and that no agency or sponsor must submit duplicate information.",
+    "t": "The substitute makes a FAST-41 covered project's Dashboard entry its Tracker entry, and that no agency or sponsor must submit duplicate information.",
     "new": "no Federal agency or project sponsor shall be required to submit information for the Tracker that duplicates information submitted for the Dashboard"
    },
    {
@@ -212,7 +221,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The substitute makes a petition for review subject to the venue rules in section 111 of NEPA and section 306108(c)(9)(E) of title 54.",
+    "t": "Under the substitute, a petition for review follows the venue rules in section 111 of NEPA and section 306108(c)(9)(E) of title 54.",
     "new": "If an opinion issued by the Secretary under subsection (b) relates to an agency action for which venue for judicial review of such action is provided"
    }
   ]
@@ -238,7 +247,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The section requires the Secretary of the Interior to approve a State's wildlife conservation and restoration program within 180 days after the State submits its comprehensive plan.",
+    "t": "The section requires the Secretary of the Interior to approve a State's wildlife conservation and restoration program within 180 days after the State submits its plan.",
     "new": "not later than 180 days after the date on which the State submitted the comprehensive plan,"
    },
    {
@@ -327,6 +336,486 @@
    {
     "t": "The substitute adds the District of Columbia district court as an alternative venue for a complaint over a missed deadline.",
     "new": "the United States District Court for the District of Columbia."
+   }
+  ]
+ },
+ "1501": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The Nuclear Regulatory Commission may issue construction permits, operating licenses, combined licenses and amendments without a hearing when no one whose interest may be affected requests one, after 30 days notice in the Federal Register.",
+    "new": "issue a construction permit, an operating license, a combined construction permit and operating license"
+   },
+   {
+    "t": "Any hearing the Commission does hold under this subparagraph must use informal adjudicatory procedures.",
+    "new": "The Commission shall use informal adjudicatory procedures for any hearing held by the Commission"
+   },
+   {
+    "t": "The section applies to all applications and proceedings pending before the Commission on or after enactment.",
+    "new": "shall apply to all applications and proceedings pending before the Nuclear Regulatory Commission on or after the date of enactment of this section"
+   }
+  ]
+ },
+ "1502": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "Construction of a uranium enrichment facility may begin before its license is issued, on the same terms that apply to other fuel cycle facilities.",
+    "new": "Construction of a uranium enrichment facility prior to the issuance of a license under sections 53 and 63 for that facility shall be permitted"
+   },
+   {
+    "t": "An applicant must certify that it will notify the Governor, local governments and certain Tribes in writing at least 15 days before starting construction.",
+    "new": "not fewer than 15 days before commencing construction of the uranium enrichment facility"
+   },
+   {
+    "t": "The Commission keeps its authority to deny a license for failure to meet regulatory requirements, and the section does not affect NEPA, hearing rights or inspections.",
+    "new": "including the authority to deny an application for such a license for the failure of an applicant to meet regulatory requirements"
+   },
+   {
+    "t": "The Commission must issue or revise regulations within 180 days after enactment.",
+    "new": "Not later than 180 days after the date of enactment of this Act, the Commission shall issue or revise regulations"
+   }
+  ]
+ },
+ "1503": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "Certain NEPA environmental assessment and impact statement deadlines and the permitting deadline in section 1403(b) of this Act do not apply to authorizations for nuclear reactors and other facilities licensed under the Atomic Energy Act.",
+    "new": "the covered deadlines shall not apply with respect to certifications, permits, approvals, licenses, license amendments, certificates of compliance, or other authorizations"
+   },
+   {
+    "t": "The exemption also covers authorizations issued under Atomic Energy Act sections 53, 63 or 81 and under parts 60 or 61 of title 10 of the Code of Federal Regulations.",
+    "new": "pursuant to sections 53, 63, or 81 of the Atomic Energy Act of 1954"
+   }
+  ]
+ },
+ "1504": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The Chairman of the Nuclear Regulatory Commission may set pay for a career appointee at up to 110 percent of the maximum basic pay for Senior Executive Service positions at the Commission.",
+    "new": "not greater than 110 percent of the maximum annual rate of basic pay for Senior Executive Service positions within the Commission"
+   },
+   {
+    "t": "The authority applies regardless of when the career appointee was appointed and may not affect certification of the Commission's performance appraisal system.",
+    "new": "shall apply regardless of when the career appointee was appointed"
+   },
+   {
+    "t": "The annual report on compensation authority must also state the number of career appointees whose pay is fixed under the new subsection.",
+    "new": "the total number of career appointees that have their compensation fixed"
+   }
+  ]
+ },
+ "1601": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "A prescribed fire counts as an exceptional event for Clean Air Act air quality monitoring data, and the term includes cultural burning as determined by an Indian tribe.",
+    "new": "The term ‘prescribed fire’ includes cultural burning activities, as determined by an Indian tribe."
+   },
+   {
+    "t": "A state petition for an exceptional event designation is deemed approved if the EPA Administrator does not act within 1 year, unless the Administrator later determines the event is not an exceptional event.",
+    "new": "if the Administrator does not act on a State petition described in clause (iv) by that date, the State petition be deemed approved"
+   },
+   {
+    "t": "The Administrator must publish proposed revisions to the exceptional-event regulations within 270 days of enactment and finalize them within 180 days after that.",
+    "new": "Not later than 270 days after the date of enactment"
+   },
+   {
+    "t": "The Administrator may make competitive grants, with a federal share of up to 90 percent, for assessing and controlling wildfire smoke hazards in community buildings including schools, with no more than 25 percent of each year's funds going to recipients in one State.",
+    "new": "not more than 25 percent may be awarded to recipients in any 1 State"
+   }
+  ]
+ },
+ "1602": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "Appropriations of $200,000,000 for each of fiscal years 2027 through 2031 are authorized for the brownfields grant and loan program.",
+    "new": "$200,000,000 for each of fiscal years 2027"
+   },
+   {
+    "t": "The remediation grant cap rises to $1,000,000 per site and the multipurpose grant cap rises from $1,000,000 to $2,000,000.",
+    "new": "$1,000,000 for each site"
+   },
+   {
+    "t": "Grant recipients may use up to 10 percent of the funds for demolition, subject to the EPA Administrator's approval.",
+    "new": "may use up to 10 percent of the amounts made available under the grant or loan for demolition"
+   },
+   {
+    "t": "State and Tribal response program funding is authorized at $60 million in fiscal year 2027, rising by $5 million each year to $80 million in fiscal year 2031.",
+    "new": "$60,000,000 for fiscal year 2027;"
+   },
+   {
+    "t": "Nonprofits described in section 501(c)(6) of the tax code become eligible entities for brownfields grants.",
+    "new": "or 501(c)(6)"
+   },
+   {
+    "t": "The Administrator must waive the matching share requirement for entities in small communities or disadvantaged areas.",
+    "new": "the Administrator shall waive the matching share requirement"
+   }
+  ]
+ },
+ "2101": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute drops the September provision that let FERC receive a permit application for facilities of 345 kilovolts or more at the same time as, or any time after, the state siting application.",
+    "old": "In the case of transmission facilities that are capable of transmitting electric energy at a voltage of not less than 345 kilovolts, an application under subsection (c) shall be submitted to the Commission simultaneously with"
+   },
+   {
+    "t": "A transmitting utility, or an entity that will become one, must file a cost allocation tariff when FERC finds the permit criteria met, and the filing does not require a permit to have been issued.",
+    "new": "shall not be required to make, or otherwise act as a prerequisite to making, that filing pursuant to section 205"
+   },
+   {
+    "t": "Facilities below 230 kilovolts also qualify for a permit if they are necessary to safely and reliably interconnect or operate a qualifying facility for which the permit is provided.",
+    "new": "necessary to safely and reliably interconnect or operate 1 or more facilities described in clause (i) for which the permit is provided"
+   },
+   {
+    "t": "FERC must also find that the project will facilitate just and reasonable rates, in addition to protecting consumers and providing improved reliability.",
+    "new": "consumers, provide improved reliability, and facilitate just and reasonable rates"
+   },
+   {
+    "t": "The September wording that the facilities carry energy in interstate commerce, including from the outer Continental Shelf to a State, is replaced with interstate or foreign commerce.",
+    "old": "commerce (including transmission from the outer Continental Shelf to a State)"
+   },
+   {
+    "t": "Tribal governments are listed with State and local governments as affected landowners.",
+    "new": "State, local, or Tribal government"
+   },
+   {
+    "t": "The ratepayer protection rule now covers customers of existing or proposed facilities whose costs are allocated under the cost allocation paragraph, and utilities may recover costs through voluntary agreement and allocate the remaining costs under the subsection.",
+    "new": "allocating any remaining costs in accordance with this subsection"
+   }
+  ]
+ },
+ "2102": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The additional area next to an existing right-of-way that counts for covered activities may extend no more than one-quarter mile from the right-of-way boundary.",
+    "new": "adjacent to an existing right-of-way, provided that the total additional area is not more than 1⁄4 mile from the boundary of the right-of-way, that is necessary— “(i) to comply with"
+   },
+   {
+    "t": "Covered transmission capacity activities and agency actions authorizing them are not considered a major Federal action under NEPA, where the September text designated them a category excluded from preparing an environmental assessment or impact statement.",
+    "new": "shall not be considered to be— “(A) a major Federal action for purposes of"
+   },
+   {
+    "t": "Installation of grid-enhancing advanced transmission technologies is added to the list of covered activities.",
+    "new": "installation of grid-enhancing advanced transmission technologies (as defined in section 232(a))"
+   }
+  ]
+ },
+ "2103": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The definition of exempt transmitting utility covers a State or political subdivision, a Rural Electrification Act financed cooperative, or a cooperative selling under 4,000,000 megawatt hours a year, plus agencies and wholly owned corporations of those entities; the September text listed only a State or subdivision and a cooperative under that sales level.",
+    "new": "an electric cooperative that receives financing under the Rural Electrification Act of 1936 (7 U.S.C. 901 et seq.) or"
+   },
+   {
+    "t": "Rights, roles and opportunities given to States or their subdivisions in transmission planning must be given on a commensurate basis to Indian Tribes or their subdivisions.",
+    "new": "shall be afforded on a commensurate basis to Indian Tribes or subdivisions of Indian Tribes"
+   },
+   {
+    "t": "Planning must be conducted at least every 4 years, with the first planning cycle starting within 1 year after FERC approves the planning process, where the September text only required updates every 4 years.",
+    "new": "with the first planning cycle commencing not later than 1 year after the date on which the Commission approves the applicable planning process under subsection (f)(2)"
+   },
+   {
+    "t": "A FERC order or rulemaking on transmission planning in effect on the date of enactment counts as compliance with the section and relieves FERC of the requirements in subsection (c)(1).",
+    "new": "relieves the Commission of the requirements under subsection (c)(1)"
+   },
+   {
+    "t": "The cost allocation tariff filing duty applies to utilities that own, control, operate or propose to construct facilities selected in a regional or joint interregional plan, where the September text covered facilities constructed or modified as a result of the section.",
+    "new": "operates, or proposes to construct, electric transmission facilities selected in a regional or joint interregional transmission plan for the purposes of cost allocation"
+   },
+   {
+    "t": "New text states that, except as expressly provided, nothing in the section confers, limits or impairs FERC authority under any other law.",
+    "new": "nothing in this section shall be construed as conferring, limiting, or impairing any authority of the Commission under any other provision of law"
+   }
+  ]
+ },
+ "2104": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "A referral to FERC for investigation of local transmission planning must now come from a State commission with jurisdiction over the utility, where the September text let States make the referral.",
+    "new": "establish procedures by which 1 or more State commissions may refer a public utility"
+   },
+   {
+    "t": "The investigative team must issue a preliminary findings report within 120 days of the notice opening an investigation, and then a final report and recommendation to FERC.",
+    "new": "Not later than 120 days after notice for initial public comment of the initiation of an investigation under paragraph (1)(B)(i)"
+   },
+   {
+    "t": "FERC must notice the final report for comment within 14 business days and issue an order within 120 days after that notice.",
+    "new": "Not later than 14 business days after receiving a final report and recommendation under paragraph (3)(B)"
+   },
+   {
+    "t": "The investigative team includes non-decisional individuals from an office designated by the FERC Chairman, where the September text named individuals from the Office of Enforcement and Regulatory Accounting.",
+    "new": "1 or more non-decisional individuals from an office designated by the Chairman of the Commission"
+   },
+   {
+    "t": "The fine of up to $5,000,000 per facility becomes a civil penalty credited to the transmission customers who bore the facility's costs, where the September text made the fine payable to the referring State.",
+    "new": "civil penalty, credited to the transmission customers who bore the costs of the applicable local transmission facility,"
+   },
+   {
+    "t": "A local transmission facility qualifies only if it is located solely within a public utility transmission provider's retail distribution service territory and is not selected in a regional plan for cost allocation; the section also now covers replacement of facilities.",
+    "new": "is not selected in a regional transmission plan for purposes of cost allocation"
+   },
+   {
+    "t": "FERC orders under the section are subject to rehearing and judicial review under section 313, and civil penalty orders follow section 31(d).",
+    "new": "shall be subject to rehearing and judicial review pursuant to section 313"
+   }
+  ]
+ },
+ "2105": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The ban on a federal right of first refusal for transmission facilities selected in a regional or interregional plan for cost allocation yields to any FERC rule or order in effect on the date of enactment, where the September text applied notwithstanding any such rule or order.",
+    "new": "Except as otherwise provided by any rule or order of the Federal Energy Regulatory Commission in effect as of the date of enactment of this section"
+   }
+  ]
+ },
+ "2106": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The consolidated planning rule applies to each Transmission Organization, where the September text applied to each transmission planning region.",
+    "new": "shall issue a rule requiring each Transmission"
+   },
+   {
+    "t": "The consolidated process must publish planned interconnection locations for generating and storage capacity and for transmission capacity for customers, and an upfront, fixed, subregional per-megawatt fee, where the September text called for a zonal cost.",
+    "new": "an upfront, fixed, subregional, per-megawatt"
+   },
+   {
+    "t": "The study process covers generator interconnection and transmission service requests, with withdrawal penalties applying after total interconnection costs and contingency limitations are given to the customer, and the process aims to co-optimize solutions to demand growth.",
+    "new": "aims to co-optimize solutions to cost-effectively address electricity demand growth while integrating new generation and storage resources"
+   },
+   {
+    "t": "FERC may find that current interconnection and planning processes comply with its rule, or that a Transmission Organization meets the rule's objectives through comparable processes.",
+    "new": "achieves the objectives of this section through comparable processes"
+   },
+   {
+    "t": "FERC approves the process if it meets the just and reasonable requirement of sections 205 and 206 and is consistent with the rule, where the September text asked whether it is consistent with the public interest.",
+    "new": "is consistent with the rule issued under subsection (a)"
+   }
+  ]
+ },
+ "2107": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute drops the September definition of covered load, which set a floor of 20 megawatts; it uses computational load sites with no megawatt floor and leaves the definition of an eligible customer to FERC by rule or order.",
+    "old": "equals or exceeds 20 megawatts or, in the case of data centers or high-density computing facilities developed in phases"
+   },
+   {
+    "t": "FERC must revise its 1994 transmission pricing policy statement and issue a notice of proposed rulemaking within 90 days of enactment, where the September text allowed 270 days for the policy statement and a further 270 days after its publication for the proposed rule.",
+    "new": "Not later than 90 days after the date of enactment of this Act, the Commission shall—"
+   },
+   {
+    "t": "Eligible computational load customers pay the embedded cost and a reasonable assessment, as determined by FERC, of the incremental cost of transmission service, where the September text referred to the incremental cost itself.",
+    "new": "the embedded cost and a reasonable assessment, as determined by the Commission, of the incremental cost of transmission service"
+   },
+   {
+    "t": "FERC may treat these customers as a customer class and assign some or all costs to the class rather than to individual customers.",
+    "new": "may treat eligible computational load customers seeking transmission service on behalf of computational load owners and computational load operators as a customer class"
+   },
+   {
+    "t": "States may revise an existing arrangement to serve a computational load site, to the extent state law permits, to match the new rate rules from the effective date of the revision.",
+    "new": "a State may revise an arrangement described in subparagraph (A) to achieve consistency"
+   },
+   {
+    "t": "The findings add a statement that computational load owners and operators bear the full cost of the electric service and infrastructure built to serve them, whether or not they take the service requested.",
+    "new": "it is the policy of the United States that computational load owners and computational load operators bear the full cost of any electric service that they require"
+   }
+  ]
+ },
+ "2108": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "A qualifying behind-the-meter resource must have a rated capacity of at least 5 kilowatts and no more than 5 megawatts, where the September text set no upper limit.",
+    "new": "not more than 5 megawatts; and “(D) maintains metering and telemetry capabilities"
+   },
+   {
+    "t": "The list of practices that are unjust and unreasonable takes effect 18 months after enactment, and a Transmission Organization may set narrowly tailored performance rules for aggregations that join capacity markets but not energy markets.",
+    "new": "Nothing in this section prohibits a Transmission Organization from establishing performance rules for qualifying BTM DES aggregations"
+   },
+   {
+    "t": "Metering, telemetry or equipment requirements are barred when more stringent than the statutory definitions, where the September text barred those inconsistent with the definitions.",
+    "new": "more stringent than"
+   },
+   {
+    "t": "The bar on requiring energy market participation as a precondition to capacity market participation now applies when the energy participation is with compensation, and the capacity participation is on equal terms.",
+    "new": "to participate in the energy market with compensation as a precondition to participating in the capacity market on equal terms"
+   },
+   {
+    "t": "The September provision barring distribution utilities from purposefully using control of the distribution system to keep eligible resources out of wholesale markets is removed, and the voluntary-compliance exception covers only subsections (b) and (c).",
+    "old": "No distribution utility shall purposefully use its control over the distribution system or retail sales to prevent any behind-the-meter resource eligible to participate in a wholesale market"
+   },
+   {
+    "t": "The penalty for double compensation is three times the amount received, where the September text counted each day the compensation was knowingly retained.",
+    "old": "received for each day that the double compensation was knowingly retained after the date of receipt,"
+   }
+  ]
+ },
+ "2109": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The section covers grid-enhancing advanced transmission technologies, defined as dynamic line rating, advanced power flow control, transmission topology optimization and high-performance transmission conductors, where the September text covered advanced transmission technology as defined in the Energy Policy Act of 2005.",
+    "new": "means— “(A) dynamic line rating; “(B) advanced power flow control; “(C) transmission topology optimization; and “(D) high-performance transmission conductors."
+   },
+   {
+    "t": "Public utilities must evaluate their systems for opportunities to deploy these technologies and use them on covered projects whenever the benefits would exceed the costs, where the September text required their use on covered projects without a benefit-cost condition.",
+    "new": "whenever the benefits of doing so would exceed the costs"
+   },
+   {
+    "t": "The best-available standard applies to a class of high-performance conductors that FERC determines is an economically reasonable alternative, taking into account reliability, safety and affordability.",
+    "new": "provides an economically reasonable alternative to a transmission conductor that is not a high-performance transmission conductor"
+   },
+   {
+    "t": "FERC also presumes that the costs of using a grid-enhancing technology are an economically reasonable alternative to other technologies.",
+    "new": "provide an economically reasonable alternative to the use of transmission technologies that are not grid-enhancing advanced transmission technologies"
+   },
+   {
+    "t": "Deployment follows general schedules set by FERC, where the September text had FERC set a timeline for the deployment.",
+    "new": "based on general schedules for deployment, as determined by the Commission"
+   },
+   {
+    "t": "The September amendment adding the four technologies to the Energy Policy Act of 2005 definition of advanced transmission technology is removed.",
+    "old": "DEFINITION OF ADVANCED TRANSMISSION TECHNOLOGY.—Section 1223(a) of the Energy Policy Act of 2005 (42 U.S.C. 16422(a)) is amended"
+   }
+  ]
+ },
+ "2110": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "FERC must initiate and finalize a rulemaking at least once every 4 years on whether utilities are adequately deploying advanced computing technologies, where the September text required it to reopen the earlier rulemaking.",
+    "new": "shall initiate and finalize a rulemaking pursuant to subsection (a) not less frequently than once every 4 years"
+   }
+  ]
+ },
+ "2111": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "A transmission provider's failure to comply with the grid data duties is subject to civil penalties under section 316A, where the September text treated it as a matter affecting the reliable operation of the bulk-power system under section 215.",
+    "new": "subject to civil penalties as specified in"
+   },
+   {
+    "t": "Covered studies include studies or analyses under sections 224, 225, 226, 228, 229 or 232 of the Federal Power Act, in addition to interconnection and similar tariff studies.",
+    "new": "a study or analysis under section 224, 225, 226, 228, 229, or 232"
+   },
+   {
+    "t": "For the study-related duties in subsection (b), an entity legally responsible for a covered study counts as a transmission provider.",
+    "new": "an entity legally responsible for a covered study"
+   },
+   {
+    "t": "Each transmission provider must obtain, assemble and maintain grid data, where the September text added the duty to use it.",
+    "new": "Each transmission provider shall obtain, assemble, and maintain the grid data"
+   }
+  ]
+ },
+ "2112": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The section does not apply to any power marketing administration employee whose position, before March 27, 2025, was governed by a collective bargaining agreement covered by the two named federal pay laws.",
+    "new": "whose position, prior to March 27, 2025, was governed by a collective bargaining agreement"
+   },
+   {
+    "t": "Chapter 71 of title 5 applies to all power marketing administration employees as it did on March 26, 2025, and collective bargaining agreements in effect on that date stay in force through their stated terms.",
+    "new": "shall have full force and effect through the stated term of the applicable agreement"
+   },
+   {
+    "t": "Pay must be comparable to the electric industry in the locality of the administration, where the September text referred to the public sectors of the electric industry and to consumer-owned utilities.",
+    "new": "electric industry in the locality in which the Federal power marketing administration is located"
+   },
+   {
+    "t": "The pay authority applies except as otherwise provided in the section, where the September text applied notwithstanding any other law, rule, regulation or directive on Federal employee pay other than chapter 83 of title 5.",
+    "new": "GENERAL.—Except as otherwise provided in this section, the Administrator of each Federal power marketing"
+   }
+  ]
+ },
+ "2113": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "The section is renumbered as section 318 of the Federal Power Act and defines the Commission by a short reference instead of repeating its full name.",
+    "new": "(referred to in this section as the ‘Commission’)"
+   }
+  ]
+ },
+ "2114": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The data collection term changes from “data center entity,” an end-user or group of co-located end-users whose primary purpose is housing computing equipment, to “computational load site,” one or more buildings or installations at a single location that primarily contain information technology infrastructure.",
+    "new": "means 1 or more buildings, structures, or installations at a single location that primarily contain information technology infrastructure"
+   },
+   {
+    "t": "The listed uses are software services, artificial intelligence, cryptocurrency mining and other computational activities at a data center, where the September text listed AI, cloud computing or data hosting, and cryptocurrency or other digital-asset computation.",
+    "new": "or (D) other computational activities at a data center"
+   },
+   {
+    "t": "The Energy Information Administration must revise Form 861 or any successor form to separately include information from computational load sites, where the September text required it to include load from data center entities.",
+    "new": "separately include information from computational load sites"
+   }
+  ]
+ },
+ "2115": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "Civil penalties assessed under section 22 of the Natural Gas Act are reviewed under the same procedures that apply to civil penalties under section 31(d) of the Federal Power Act.",
+    "new": "in accordance with the same procedures as are applicable under section 31(d)"
+   }
+  ]
+ },
+ "2116": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The text states that FERC has jurisdiction over the corporate governance of a Transmission Organization for purposes of Federal Power Act section 205.",
+    "new": "“(h) CLARIFICATION.—For purposes of this section,\nthe Commission has jurisdiction over the corporate governance\nof a Transmission Organization.”"
+   },
+   {
+    "t": "The same statement is added to section 206, covering FERC review of existing rates and practices.",
+    "new": "“(f) CLARIFICATION.—For purposes of this section,\nthe Commission has jurisdiction over the corporate governance\nof a Transmission Organization.”"
+   }
+  ]
+ },
+ "2117": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The Secretary of Energy must establish a Data Center Community Assistance Program within 180 days of enactment to give State, local and Tribal governments, on request, information and technical assistance on the energy, water, infrastructure and economic impacts of computational load site development.",
+    "new": "Not later than 180 days after the date of enactment of this Act, the Secretary shall establish a program, to be known as the"
+   },
+   {
+    "t": "The Secretary must develop a publicly accessible toolkit in plain English for local officials within 180 days of enactment.",
+    "new": "shall develop a Data Center Community Toolkit, which shall be publicly accessible and specifically written for nontechnical local officials in plain English"
+   },
+   {
+    "t": "At a government's request, the Secretary may ask a developer to voluntarily provide project data and may independently assess the reasonableness of its assumptions, data and conclusions.",
+    "new": "request the applicable computational load site developer to voluntarily provide to the Secretary information"
+   },
+   {
+    "t": "The Secretary may not recommend whether a computational load site should be approved or rejected, and nothing in the Act lets the Secretary take part in a State, local or Tribal siting decision.",
+    "new": "shall not make any recommendation to a State, local, or Tribal government regarding whether any particular computational load site should be approved"
+   }
+  ]
+ },
+ "2118": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "The Federal Power Act section 201 cross-reference lists add section 234 to the list ending at section 233, and the section moves from number 2115 to 2118.",
+    "new": "232, 233, and 234”"
    }
   ]
  },
@@ -449,15 +938,6 @@
    }
   ]
  },
- "2242-dropped": {
-  "kind": "substantive",
-  "points": [
-   {
-    "t": "The September text amended section 4(c)(10)(B) of the Pacific Northwest Electric Power Planning and Conservation Act by adding the words “since the date of enactment” of the bill, and the substitute omits this section.",
-    "old": "is amended by inserting “since the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026” before the period at the end"
-   }
-  ]
- },
  "2261": {
   "kind": "substantive",
   "points": [
@@ -476,27 +956,6 @@
    {
     "t": "The section requires an annual report by January 31 to the House Energy and Commerce and Senate Energy and Natural Resources Committees on the Secretary's authorization activities during the prior calendar year.",
     "new": "Not later than January 31 of each year, the Secretary of Energy shall submit to the Committee on Energy and Commerce of the House of Representatives"
-   }
-  ]
- },
- "3001": {
-  "kind": "substantive",
-  "points": [
-   {
-    "t": "The section amends Internal Revenue Code section 104(a)(2) to exclude from gross income damages received on account of any sexual act or sexual contact, whether or not there are medical records or observable injuries.",
-    "new": "whether or not there are medical records or observable injuries of such act or contact"
-   },
-   {
-    "t": "The section provides that a statement in a decision or agreement that damages are on account of a sexual act or contact is credible evidence and that the taxpayer meets the substantiation requirement under section 7491(a)(2).",
-    "new": "such statement shall be treated as credible evidence that such damages are so on account for purposes of section 7491(a)"
-   },
-   {
-    "t": "The section applies to amounts received under decisions made and agreements entered into after enactment, and an agreement that replaces or revises an earlier agreement is not treated as entered into after enactment.",
-    "new": "The amendments made by this section shall apply to amounts received pursuant to decisions made, and agreements entered into, after the date of the enactment of this Act."
-   },
-   {
-    "t": "The section directs the Secretary of the Treasury, in consultation with the Justice Department Office on Violence Against Women, to run a program promoting public awareness of the exclusion.",
-    "new": "shall conduct a program to promote public awareness of the exclusion from gross income"
    }
   ]
  },
@@ -555,6 +1014,27 @@
    {
     "t": "The substitute removes the cross-reference to the section 302706(a)(1) definition from the provision on properties of traditional religious or cultural importance in the Tribal grant program.",
     "old": "of properties of traditional religious or cultural importance (as defined in section 302706(a)(1))"
+   }
+  ]
+ },
+ "3001": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The section amends Internal Revenue Code section 104(a)(2) to exclude from gross income damages received on account of any sexual act or sexual contact, whether or not there are medical records or observable injuries.",
+    "new": "whether or not there are medical records or observable injuries of such act or contact"
+   },
+   {
+    "t": "The section provides that a statement in a decision or agreement that damages are on account of a sexual act or contact is credible evidence and that the taxpayer meets the substantiation requirement under section 7491(a)(2).",
+    "new": "such statement shall be treated as credible evidence that such damages are so on account for purposes of section 7491(a)"
+   },
+   {
+    "t": "The section applies to amounts received under decisions made and agreements entered into after enactment, and an agreement that replaces or revises an earlier agreement is not treated as entered into after enactment.",
+    "new": "The amendments made by this section shall apply to amounts received pursuant to decisions made, and agreements entered into, after the date of the enactment of this Act."
+   },
+   {
+    "t": "The section directs the Secretary of the Treasury, in consultation with the Justice Department Office on Violence Against Women, to run a program promoting public awareness of the exclusion.",
+    "new": "shall conduct a program to promote public awareness of the exclusion from gross income"
    }
   ]
  }

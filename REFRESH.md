@@ -15,6 +15,16 @@ The sponsors expect a manager's amendment before the Senate votes. Page and sect
 
 `HEADER_RE` in `parse_bill.py` matches the running header of the September 30 draft (`KAT26642 TWY S.L.C.`). A new draft has a new header.
 
+## The November 7 substitute and later amendments
+
+The Amendments view compares `site/substitute.pdf` with the September 30 text. The September text stays the base of the Bill pages until the Senate adopts a new text.
+
+1. A new substitute or manager's amendment: save it as `site/substitute.pdf`, update `VERSIONS["substitute"]` in `tools/parse_bill.py` (header regex, draft id, date, URL), then `python3 tools/parse_bill.py --version substitute` and `python3 tools/diff_bill.py`. `python3 tools/diff_bill.py --dump 1401 2107` prints the hunks for reading.
+2. Write a note for every section that is not unchanged in `data/bill/substitute_notes.json`: a plain sentence per change and one verbatim `new` or `old` span. The build fails on a changed section with no note and on any span it cannot find exactly once.
+3. Map the sponsors' summary of changes to sections in `data/amendments.json` (`sponsor_summary.by_section`). Each bullet that says the substitute "Adds H.R." or "Adds S." needs an `origins` entry naming that bill's sponsor and cosponsors, read from the bill's govinfo text (`BILLS-119<type><number>ih` or `is`).
+4. Reactions and floor amendments carry a source URL and a verbatim quote; `make quotes` checks them. Count only statements made after the text they react to.
+5. `tests/test_amendments.py` checks that every section of both texts appears once, every hunk reads in both texts and every changed section has cited notes.
+
 ## Research
 
 1. Add events, people and coverage to `data/research/*_extra.json`, or rerun a research agent and replace `data/research/*.json`.
@@ -77,6 +87,9 @@ See [docs/data-sources.md](docs/data-sources.md) for sources that refuse scripts
 - 2026-10-26. X collection is a script now: paste `tools/x_collect.js` into the browser's javascript tool on any x.com page, run `__xs.start([...paths], {since, held})`, poll `__xs.status()`, then `__xs.dump()` and read the page with get_page_text. It moves between timelines and searches with in-app navigation and saves to localStorage on every scroll, so a reload loses nothing. Pass held status ids so posts already in the data are skipped. 235 posts in one run; 37 became media items.
 - 2026-10-26. A pinned post carries its old date and sits at the top of a timeline, so a collector that stops after a few older posts quit on accounts whose pinned post was months old. Reposts also carry the original date but count as recent activity. The collector now tells them apart by the social-context line ("Pinned" versus "reposted").
 - 2026-10-26. To pull selected posts after a dump, read `localStorage["xs:results"]` by id in a javascript call rather than searching the dumped text; the dump breaks the X app until reload.
+- 2026-11-09. The sponsors' Democratic staff posted a summary of the substitute's changes (heinrich.senate.gov, `enr_and_epw_democrats_summary_of_changes_contained_in_substitute_amendment.pdf`). It names the House and Senate bills folded into the substitute; govinfo's introduced text names each one's sponsor and cosponsors. Heinrich's copy of the substitute PDF has a different hash from ENR's but the same text on all 494 pages; the site keeps ENR's.
+- 2026-11-09. Python's `list.sort(key=...)` empties the list while it runs. A key function that looks other rows up in the same list sees nothing; compute the keys first (`tools/diff_bill.py`, where the dropped section 2242 sorted to the top).
+- 2026-11-09. In-page links like `href="#reactions"` are routes to this site's hash router and send the reader to the Overview. Use the `jumpRow` buttons for on-page jumps.
 - 2026-10-26. `data/speed.json` holds the Speed page. A blocker's passages must come from sections the row names, each found exactly once; its readings are take ids. Studies cited there go through `make quotes` like takes. A cause the bill does not address keeps an empty `sections` list, and the page says no section is aimed at it.
 - 2026-10-26. A web research agent returns media types, sectors and stances outside the vocabulary (letter, statement, preservation, legal_analyst) and takes without ids. Map them in a merge script before integrating; `integrate_research.py` rejects the rest with a clear error.
 - 2026-10-27. Senate member sites (epw, energy, husted, heinrich, markey, wicker, vanhollen, bluntrochester) now answer scripts with HTTP 403, and X status pages render too little text to search, so `make quotes` reported 34 unreachable against 8 on Oct 20. Checking each page in the logged-in browser with one javascript call that tests every quote against `document.body.innerText` (navigate, wait 4 seconds, then run the check; an in-page sleep fails when the page redirects) recorded 19 pages in `data/checks/browser.json` in two batches. Axios served a stub and the EPW testimony is a PDF, so both stay unreachable.

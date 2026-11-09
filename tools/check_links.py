@@ -90,6 +90,20 @@ def collect(core: dict) -> dict[str, list[str]]:
         add(it["url"], f"media.{it['id']}")
         for v in it.get("visuals", []):
             add(v.get("url"), f"media.{it['id']}.visual")
+    amend = core.get("amend") or {}
+    if amend:
+        for i, ln in enumerate(amend["substitute"]["links"]):
+            add(ln["url"], f"amend.substitute.link.{i}")
+        add(amend["summary_source"]["url"], "amend.summary_source")
+        add((amend.get("vote") or {}).get("url"), "amend.vote")
+        for x in amend["reactions"] + amend["floor"]:
+            for s in x.get("sources", []):
+                add(s["url"], f"amend.{x.get('id')}.source")
+        for r in amend["rows"]:
+            o = r.get("origin")
+            if o:
+                add(o["url"], f"amend.{r['id']}.origin")
+                add((o.get("related") or {}).get("url"), f"amend.{r['id']}.origin.related")
     return found
 
 

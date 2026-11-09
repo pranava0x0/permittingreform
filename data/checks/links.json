@@ -1,6 +1,15 @@
 {
- "checked": "2026-11-03",
+ "checked": "2026-11-09",
  "results": {
+  "http://legal-planet.org/2026/11/08/the-revised-permitting-reform-bill/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.biber.source"
+   ]
+  },
   "http://pv-magazine-usa.com/2026/10/01/senate-introduces-landmark-permitting-bill-as-industry-data-and-environmental-groups-clash-over-reforms/": {
    "cls": "ok",
    "kind": "page",
@@ -31,6 +40,15 @@
     "people.ray-long.source",
     "people.ray-long.quote",
     "media.2026-09-30-acore-statement-supporting-affordability-jobs-act"
+   ]
+  },
+  "https://acra-crm.org/senate-managers-amendment-on-permitting-bill/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.acra.source"
    ]
   },
   "https://americansforprosperity.org/press-release/americans-for-prosperity-celebrates-bipartisan-passage-of-the-speed-act-in-the-house/": {
@@ -122,10 +140,11 @@
    ]
   },
   "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/": {
-   "cls": "ok",
+   "browser": "2026-10-01",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "media.2025-12-19-bpc-whats-in-the-speed-act"
    ]
@@ -352,6 +371,15 @@
    "status": 200,
    "where": [
     "speed.local-state-siting.0"
+   ]
+  },
+  "https://commondreams.org/news/democrats-permitting-reform": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.oci.source"
    ]
   },
   "https://ctmirror.org/2026/07/22/tweed-new-haven-airport-expansion/": {
@@ -592,6 +620,16 @@
    "where": [
     "people.brian-fitzpatrick.source",
     "people.brian-fitzpatrick.quote"
+   ]
+  },
+  "https://foe.org/news/statement-friends-of-the-earth-u-s-still-opposes-disastrous-senate-permitting-bill/": {
+   "browser": "2026-11-09",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "amend.foe.source"
    ]
   },
   "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-a-second-wind-certainty-cables-and-cost-allocation-for-offshore-wind-under-the-senat/": {
@@ -885,6 +923,20 @@
    "where": [
     "timeline.2026-06-18-ferc-large-load-show-cause-orders.source",
     "media.2026-06-18-heatmap-ferc-has-a-new-plan-for-data-centers"
+   ]
+  },
+  "https://heatmap.news/energy/managers-amendment-policy-permitting-bill": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.huffman.source",
+    "amend.colt.source",
+    "amend.coalition106.source",
+    "amend.tws.source",
+    "amend.epi.source",
+    "amend.gridstrategies.source"
    ]
   },
   "https://heatmap.news/plus/the-fight/hotspots/the-trump-administration-is-still-messing-with-offshore-wind-farms": {
@@ -1199,10 +1251,10 @@
    ]
   },
   "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/": {
-   "cls": "blocked",
+   "cls": "error",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "RemoteDisconnected: Remote end closed connection without response",
+   "status": null,
    "where": [
     "timeline.2026-09-29-ferc-pjm-reliability-backstop-order.source"
    ]
@@ -1270,10 +1322,11 @@
    ]
   },
   "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html": {
-   "cls": "ok",
+   "browser": "2026-10-27",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 429",
+   "status": 429,
    "where": [
     "timeline.2026-10-01-republican-governors-joint-statement.source",
     "people.greg-gianforte.source",
@@ -1346,6 +1399,15 @@
    "where": [
     "timeline.2026-10-16-tribal-claim-vs-fact-paper.source",
     "media.2026-10-16-nathpo-heritage-not-a-bargaining-chip"
+   ]
+  },
+  "https://nativenewsonline.net/sovereignty/tribal-leaders-oppose-senate-permitting-bill-despite-changes-in-substitute-amendment/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.ncai.source"
    ]
   },
   "https://naturalresources.house.gov/UploadedFiles/Testimony_Li.pdf": {
@@ -1722,6 +1784,15 @@
    "status": 200,
    "where": [
     "timeline.2026-03-23-interior-totalenergies-offshore-wind-lease-buyout.source"
+   ]
+  },
+  "https://tribalbusinessnews.com/policy-and-law/senators-revise-permitting-bill-ahead-of-monday-vote-tribal-concerns-remain/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.tribal11.source"
    ]
   },
   "https://washingtonmonthly.com/2026/10/13/the-senates-surprisingly-populist-permitting-reform-deal/": {
@@ -2138,6 +2209,15 @@
     "overview.next"
    ]
   },
+  "https://www.dailypress.senate.gov/monday-november-9-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.vote"
+   ]
+  },
   "https://www.dailypress.senate.gov/thursday-october-1-2026/": {
    "cls": "ok",
    "kind": "page",
@@ -2226,11 +2306,10 @@
    ]
   },
   "https://www.duckworth.senate.gov/news/press-releases/duckworth-colleagues-to-committee-leadership-trump-must-begin-restoring-illegally-cancelled-energy-projects-before-critical-vote-on-bipartisan-permitting-reform-bill": {
-   "browser": "2026-11-03",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "overview.status",
     "timeline.2026-10-27-duckworth-doe-awards.source",
@@ -2626,6 +2705,20 @@
     "people.mike-lee.source"
    ]
   },
+  "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-11-07-substitute-amendment.source",
+    "amend.substitute.link.1",
+    "amend.capito.source",
+    "amend.lee.source",
+    "amend.heinrich.source",
+    "amend.whitehouse.source"
+   ]
+  },
   "https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf": {
    "cls": "ok",
    "kind": "pdf",
@@ -2643,6 +2736,15 @@
    "status": 200,
    "where": [
     "meta.mirror_pdfs"
+   ]
+  },
+  "https://www.energy.senate.gov/wp-content/uploads/2026/11/KAT26764.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.substitute.link.0"
    ]
   },
   "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html": {
@@ -2928,6 +3030,51 @@
     "compare.dropped"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr10119ih/html/BILLS-119hr10119ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.data-center-siting.Protecting Local Control of Data Centers Act (H.R. 10119)"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr10465ih/html/BILLS-119hr10465ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.data-center-siting.Public Lands Accountability Act (H.R. 10465)"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr1676ih/html/BILLS-119hr1676ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.1309.origin"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr2347eh/html/BILLS-119hr2347eh.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.3001.origin"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr4503eh/html/BILLS-119hr4503eh.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.digital-permitting.ePermit Act (H.R. 4503)"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm": {
    "cls": "ok",
    "kind": "page",
@@ -2961,6 +3108,15 @@
     "compare.dropped"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr5549ih/html/BILLS-119hr5549ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.1501.origin"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/BILLS-119hr6984ih/html/BILLS-119hr6984ih.htm": {
    "cls": "ok",
    "kind": "page",
@@ -2978,6 +3134,24 @@
    "where": [
     "timeline.2026-04-09-power-for-the-people-act-house-companion.source",
     "people.paul-tonko.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr8739ih/html/BILLS-119hr8739ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.1602.origin"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr9084ih/html/BILLS-119hr9084ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.2261.origin"
    ]
   },
   "https://www.govinfo.gov/content/pkg/BILLS-119hr9340eh/html/BILLS-119hr9340eh.htm": {
@@ -3007,6 +3181,24 @@
     "timeline.2026-09-10-hr9340-reported.source"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr9612ih/html/BILLS-119hr9612ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.1502.origin"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119hr9614ih/html/BILLS-119hr9614ih.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.1504.origin"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/BILLS-119hr9777ih/html/BILLS-119hr9777ih.htm": {
    "cls": "ok",
    "kind": "page",
@@ -3014,6 +3206,24 @@
    "status": 200,
    "where": [
     "timeline.2026-07-20-donalds-protecting-ratepayers-act.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s1757is/html/BILLS-119s1757is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.1501.origin.related"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s3383is/html/BILLS-119s3383is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.2212.origin"
    ]
   },
   "https://www.govinfo.gov/content/pkg/BILLS-119s3682is/html/BILLS-119s3682is.htm": {
@@ -3025,6 +3235,15 @@
     "timeline.2026-01-15-power-for-the-people-act-introduced.source"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s3800is/html/BILLS-119s3800is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.digital-permitting.ePermit Act (S. 3800)"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/BILLS-119s3852is/html/BILLS-119s3852is.htm": {
    "cls": "ok",
    "kind": "page",
@@ -3032,6 +3251,15 @@
    "status": 200,
    "where": [
     "timeline.2026-02-11-grid-act-introduced.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s4213is/html/BILLS-119s4213is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.data-center-disclosure.Data Center Water and Energy Transparency Act of 2026 (S. 4213)"
    ]
   },
   "https://www.govinfo.gov/content/pkg/BILLS-119s5028is/html/BILLS-119s5028is.htm": {
@@ -3043,6 +3271,15 @@
     "timeline.2026-07-16-s5028-introduced.source"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s5045is/html/BILLS-119s5045is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.1601.origin"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/BILLS-119s5199is/html/BILLS-119s5199is.htm": {
    "cls": "ok",
    "kind": "page",
@@ -3050,6 +3287,43 @@
    "status": 200,
    "where": [
     "timeline.2026-08-03-grid-savings-act-introduced.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s5249is/html/BILLS-119s5249is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.1502.origin.related"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s5640is/html/BILLS-119s5640is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.data-center-disclosure.Data Center Transparency Act of 2026 (S. 5640)"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s5645is/html/BILLS-119s5645is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.data-center-disclosure.Data Center Community Empowerment Act of 2026 (S. 5645)",
+    "amend.2117.origin"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/BILLS-119s5658is/html/BILLS-119s5658is.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.data-center-siting.Data center construction on federal land (S. 5658)"
    ]
   },
   "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf": {
@@ -3159,6 +3433,15 @@
     "timeline.2025-07-04-one-big-beautiful-bill-act-nepa-opt-in-fee.source"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/USCODE-2024-title42/html/USCODE-2024-title42-chap55-subchapI-sec4336d.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "compare.digital-permitting.E-NEPA (current law)"
+   ]
+  },
   "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here": {
    "cls": "ok",
    "kind": "page",
@@ -3207,6 +3490,16 @@
     "people.josh-hawley.source",
     "people.josh-hawley.quote",
     "media.hawley-2026-02-11-grid-act"
+   ]
+  },
+  "https://www.heinrich.senate.gov/imo/media/doc/enr_and_epw_democrats_summary_of_changes_contained_in_substitute_amendment.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.substitute.link.2",
+    "amend.summary_source"
    ]
   },
   "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-introduces-legislation-to-ensure-large-users-of-electricity-pay-for-grid-upgrades-protect-customers-from-costs-of-data-center-expansion": {
@@ -3662,6 +3955,15 @@
     "media.2025-01-27-morgan-lewis-executive-orders-move-oil-gas-permitting-reform-to-top-of-agenda"
    ]
   },
+  "https://www.naco.org/news/us-senate-releases-updates-bipartisan-american-affordability-and-jobs-act-ahead-anticipated": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.naco.source"
+   ]
+  },
   "https://www.naco.org/news/us-senators-introduce-bipartisan-comprehensive-permitting-reform-package-major-county-wins": {
    "cls": "ok",
    "kind": "page",
@@ -3947,10 +4249,11 @@
    ]
   },
   "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/": {
-   "cls": "ok",
+   "browser": "2026-10-27",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "people.ross-marchand.source",
     "people.ross-marchand.quote",
@@ -5348,10 +5651,10 @@
    ]
   },
   "https://x.com/ThomasHochman/status/2114712948929413206": {
-   "cls": "ok",
+   "cls": "dead",
    "kind": "x",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 404",
+   "status": 404,
    "where": [
     "media.2026-10-26-thomashochman-x-survey-scope"
    ]

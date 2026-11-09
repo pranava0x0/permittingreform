@@ -18,33 +18,13 @@
   "sections": 83
  },
  "counts": {
-  "dropped": 1,
   "unchanged": 25,
   "edited": 43,
   "new": 13,
-  "moved": 2
+  "moved": 2,
+  "dropped": 1
  },
  "rows": [
-  {
-   "id": "2242-dropped",
-   "n": "2242",
-   "h": "Northwest Power and Conservation Council",
-   "status": "dropped",
-   "div": "DIVISION B",
-   "divh": "COMMITTEE ON ENERGY AND NATURAL RESOURCES",
-   "ti": "TITLE II",
-   "tih": "ENERGY PERMITTING",
-   "su": "Subtitle E",
-   "suh": "Hiring and Retention",
-   "old": {
-    "n": "2242",
-    "h": "Northwest Power and Conservation Council",
-    "p1": 362,
-    "l1": 17,
-    "p2": 362,
-    "words": 40
-   }
-  },
   {
    "id": "1101",
    "n": "1101",
@@ -8543,6 +8523,26 @@
     "l1": 16,
     "p2": 431,
     "words": 56
+   }
+  },
+  {
+   "id": "2242-dropped",
+   "n": "2242",
+   "h": "Northwest Power and Conservation Council",
+   "status": "dropped",
+   "div": "DIVISION B",
+   "divh": "COMMITTEE ON ENERGY AND NATURAL RESOURCES",
+   "ti": "TITLE II",
+   "tih": "ENERGY PERMITTING",
+   "su": "Subtitle E",
+   "suh": "Hiring and Retention",
+   "old": {
+    "n": "2242",
+    "h": "Northwest Power and Conservation Council",
+    "p1": 362,
+    "l1": 17,
+    "p2": 362,
+    "words": 40
    }
   },
   {

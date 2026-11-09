@@ -35,6 +35,10 @@
   --stance-opposes: #9A2A1F;
   --stance-mixed: #7B5816;
   --stance-neutral: #5F6068;
+  --del-bg: #FBE4E1;
+  --del-text: #8A2419;
+  --ins-bg: #DDEDD3;
+  --ins-text: #1F4A19;
 
   --font-head: "Raleway", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --font-body: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
@@ -68,6 +72,10 @@
   --stance-opposes: #F0998C;
   --stance-mixed: #E3B55A;
   --stance-neutral: #D0D6CC;
+  --del-bg: #43231F;
+  --del-text: #F6B3A9;
+  --ins-bg: #22391E;
+  --ins-text: #C4E6AE;
 }
 
 * { box-sizing: border-box; }
@@ -668,3 +676,37 @@ input::placeholder { color: var(--text-muted); opacity: 1; }
 
 /* Every + and − marker at one size, so rows open the same way on every page. */
 .event-toggle::after, .row-toggle::after, details.index-group > summary h2::after { font-size: var(--fs-section); line-height: 1.2; }
+
+/* Amendments: the substitute against the September text. */
+.am-tag { font-size: var(--fs-small); font-weight: 700; border: 1px solid var(--border); border-radius: 2px; padding: 0 6px; white-space: nowrap; color: var(--text); font-family: var(--font-body); }
+.am-new { border-color: var(--stance-supports); color: var(--stance-supports); }
+.am-dropped { border-color: var(--stance-opposes); color: var(--stance-opposes); }
+.am-moved { border-color: var(--stance-mixed); color: var(--stance-mixed); }
+.am-stats { font-weight: 700; margin: 12px 0 4px; }
+.am-group { font-size: var(--fs-small); color: var(--text-muted); margin: 18px 0 0; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.am-list { border-top: 0; margin-top: 0; }
+.am-row-main { display: flex; flex-direction: column; min-width: 0; }
+.am-row-title { display: flex; gap: 8px; align-items: center; }
+.am-row-head { font-family: var(--font-body); font-weight: 400; font-size: var(--fs-small); color: var(--text-muted); overflow-wrap: anywhere; }
+.am-row .row-count { flex: 0 0 auto; }
+.am-unchanged { margin-top: 14px; }
+.am-unchanged > summary, .am-text > summary { cursor: pointer; min-height: 44px; display: flex; align-items: center; font-weight: 700; }
+.am-reactions { list-style: none; margin: 0; padding: 0; }
+.am-reaction { padding: 10px 0; border-bottom: 1px solid var(--border); max-width: var(--measure); }
+.am-reaction p { margin: 0; }
+.am-reaction blockquote { margin: 6px 0; padding-left: 12px; border-left: 3px solid var(--border); font-family: var(--font-serif); }
+.am-stance > summary h3 { display: inline; margin: 0; font-size: var(--fs-body); }
+.am-note { margin: 10px 0 0; padding: 8px 12px; background: var(--surface); border-left: 3px solid var(--rule); font-size: var(--fs-small); max-width: var(--measure); }
+.crumb { margin: 0 0 6px; font-size: var(--fs-small); }
+.crumb a { display: inline-flex; align-items: center; min-height: 44px; }
+.hunks { list-style: none; margin: 10px 0; padding: 0; }
+.hunk { padding: 8px 0; border-bottom: 1px solid var(--border); }
+.hunk p { margin: 0; max-width: var(--measure); overflow-wrap: anywhere; }
+.hunk-cite { font-size: var(--fs-small); color: var(--text-muted); }
+.hunk-text { font-family: var(--font-serif); color: var(--text-muted); }
+del { background: var(--del-bg); color: var(--del-text); text-decoration-thickness: 1px; }
+ins { background: var(--ins-bg); color: var(--ins-text); text-decoration: underline; text-decoration-thickness: 1px; }
+.hunk-text del, .hunk-text ins { padding: 0 2px; }
+.sec-part h2 .row-count, .am-stance .row-count { margin-left: 8px; }
+.am-stance .row-count { margin-left: auto; }
+.am-stance > summary::after { margin-left: 12px; }

@@ -3,6 +3,7 @@
 A static site that indexes the Bipartisan American Affordability and Jobs Act of 2026, the 417-page permitting bill four senators released on September 30, 2026.
 
 - **BAAJA.** All 71 substantive sections: a summary, key points, verbatim quotes, and the full text. Each passage carries its page and line in the printed bill and links to that page of the PDF.
+- **Amendments.** The sponsors' November 7 substitute against the September 30 text: for each section, what changed, cited to the page and line in both PDFs, a word-level redline, the sponsors' own description, the bill each added section came from and who introduced it, and who has said they support or oppose the substitute. The [text edition](site/amendments.html) works without JavaScript.
 - **Compare.** Current law, the 2024 Senate bill (S. 4753), the House-passed SPEED Act (H.R. 4776) and the 2026 Senate text, subject against subject.
 - **Data center bills.** BAAJA sections 2107 and 2114 beside current policy, the Ratepayer Protection Act (H.R. 9340), the GRID Savings Act, the Power for the People Act and the GRID Act, on Compare.
 - **Data center disclosure and digital permitting.** Compare siting proposals H.R. 10119, H.R. 10465 and S. 5658 with BAAJA section 1102; compare S. 5640, S. 4213 and S. 5645 with BAAJA section 2114; compare current E-NEPA law and the House and Senate ePermit proposals with section 1121. The [text edition](site/comparisons.html) works without JavaScript.
@@ -30,6 +31,10 @@ Open http://127.0.0.1:8766. The site has no backend and loads nothing from anoth
 | `data/bill/sections.json` | The parsed bill: every printed line with its page and line number. |
 | `data/bill/analysis.json` | Summaries, key points, quotes and notes on earlier versions, by section. |
 | `data/bill/point_cites.json` | The passage that backs each key point. |
+| `site/substitute.pdf`, `data/bill/substitute_sections.json` | The November 7 substitute (KAT26764) and its parse, from `tools/parse_bill.py --version substitute`. |
+| `data/bill/substitute_diff.json` | Section matching and word-level hunks, from `tools/diff_bill.py`. |
+| `data/bill/substitute_notes.json` | One or more change notes per changed section, each with a verbatim span from the text it describes. The build locates every span. |
+| `data/amendments.json` | The substitute's sponsors and links, the sponsors' staff summary mapped to sections, source bills for added sections, other amendments, reactions with verbatim quotes, and the next vote. |
 | `data/compare.json`, `data/overview.json` | The comparison tables (including `bills`, the data center bills table) and the overview page. |
 | `data/speed.json` | The Speed page: research on what slows energy projects, one row per cause, each with sourced findings, the bill passages aimed at that cause (located by the build) and outside readings from `data/takes.json`. |
 | `data/communities.json` | The Communities view: one row per change to comment, consultation, planning or court rights, with a quoted passage the build checks. |
