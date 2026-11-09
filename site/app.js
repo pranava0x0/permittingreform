@@ -1969,13 +1969,14 @@
     });
     const wasHidden = sectionNav.hidden;
     sectionNav.hidden = !group;
-    if (wasHidden !== sectionNav.hidden) pinMasthead();
-    if (!group) return;
+    if (!group) { if (!wasHidden) pinMasthead(); return; }
     if (sectionNav.dataset.group !== group) {
       sectionNav.dataset.group = group;
       sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
       fill(sectionNav, GROUPS[group].map(([key, name]) => el("a", { href: "#/" + key }, name)));
     }
+    // Measure once the row is filled, or the pinned height misses it until the next resize (Codex, PR 16).
+    if (wasHidden) pinMasthead();
     for (const a of sectionNav.querySelectorAll("a")) {
       if (a.hash === "#/" + parent) a.setAttribute("aria-current", parent === tab ? "page" : "location");
       else a.removeAttribute("aria-current");
