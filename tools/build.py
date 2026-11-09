@@ -6,6 +6,9 @@ same-origin copy that makes #page=N links work, is committed as is):
   site/data/bill.js   window.PR_BILL  (full bill text as paragraphs with page and line cites)
   site/data/takes.js  window.PR_TAKES (outside readings; section pages load it on demand)
   site/data/news.js   window.PR_NEWS  (timeline, people, media; the News pages load it on demand)
+  site/data/amend.js  window.PR_AMEND (the November 7 substitute against the September text, and
+                      other amendments; the Amendments pages load it on demand)
+  site/amendments.html the same, without JavaScript
   site/llms.txt       compact agent index
   site/llms-full.txt  full text and analysis
   site/sections/*.md  cited analysis and statutory text, one section per file
@@ -27,6 +30,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import amendments  # noqa: E402
 import billtext  # noqa: E402
 
 ROOT = billtext.ROOT
@@ -63,7 +67,8 @@ def browser_core(core: dict) -> dict:
     """What core.js carries on every page. The outside readings (takes.js) and
     the timeline, people and media (news.js) load on demand; the Overview gets
     its short lists from "recent"."""
-    out = {k: v for k, v in core.items() if k != "takes" and k not in NEWS_KEYS}
+    out = {k: v for k, v in core.items() if k not in ("takes", "amend") and k not in NEWS_KEYS}
+    out["amend_index"] = amendments.index(core.get("amend"))
     media = sorted(core["media"], key=lambda it: it["date"], reverse=True)[:6]
     marks = sorted((e for e in core["timeline"] if e.get("milestone")), key=lambda e: e["date"], reverse=True)[:6]
     out["recent"] = {
@@ -532,6 +537,7 @@ def build() -> tuple[dict, dict, list[str]]:
         "people": extra["people"],
         "media": extra["media"],
         "checks": checks,
+        "amend": amendments.build(errors),
     }
     return core, paras, errors
 
@@ -551,6 +557,8 @@ def llms_txt(core: dict) -> str:
         "",
         "Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.",
         "PDF citations use printed bill pages and lines. A matching quote proves occurrence; it does not validate nearby interpretations. Source positions describe the cited item, not every position held by its author.",
+        f"- [{AMEND_TITLE}]({m['site_url']}amendments.html): {AMEND_DESCRIPTION}",
+        f"- [Amendments JSON]({m['site_url']}data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments and reactions with sources.",
         *[f"- [{title}]({m['site_url']}{page}.html): {description}" for page, (title, description) in READER_PAGES.items()],
         f"- [No-JavaScript section index]({m['site_url']}reading.html)",
         f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
@@ -851,6 +859,82 @@ def reader_html(core: dict, page: str) -> str:
     return '\n'.join(out + ['</main></body></html>']) + '\n'
 
 
+AMEND_TITLE = "Amendments to the permitting bill"
+AMEND_DESCRIPTION = ("What the November 7 substitute changes in each section of the September 30 text, with page and line cites "
+                     "in both PDFs, other amendments filed or announced, and who has said they support or oppose them.")
+AMEND_STATUS = {"edited": "Edited", "new": "New", "dropped": "Dropped", "moved": "Renumbered", "unchanged": "Unchanged"}
+
+
+def amendments_html(core: dict) -> str:
+    """The Amendments view as plain HTML for readers without JavaScript and for crawlers."""
+    esc = html.escape
+    a = core["amend"]
+    old_pdf, new_pdf = PDF_NAME, a["new"]["pdf"]
+
+    def link(url, label):
+        return f'<a href="{esc(url)}">{esc(label)}</a>'
+
+    def pcite(p):
+        pdf, label = (new_pdf, "Nov. 7") if p["side"] == "new" else (old_pdf, "Sept. 30")
+        c = p["c"]
+        return link(f"{pdf}#page={c[0]}", f"{label} p. {c[0]}, line {c[1]}")
+
+    sub = a["substitute"]
+    nav = [link("index.html", "Overview"), link("reading.html", "Bill"), link("issues.html", "Key issues"),
+           link("timeline.html", "Timeline"), link("coverage.html", "Coverage")]
+    c = a["counts"]
+    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
+           '<meta name="viewport" content="width=device-width, initial-scale=1">',
+           f'<title>{esc(AMEND_TITLE)} · BAAJA (S. 5653)</title><meta name="description" content="{esc(AMEND_DESCRIPTION)}">',
+           f'<link rel="canonical" href="{SITE_URL}amendments.html"><link rel="stylesheet" href="styles.css">',
+           '</head><body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
+           f'<h1>{esc(AMEND_TITLE)}</h1><p>{esc(AMEND_DESCRIPTION)}</p>',
+           f'<p>Updated {esc(a["as_of"])} · ' + link("index.html#/amendments", "Open interactive view") + '</p>',
+           '<p>Jump to: ' + ' · '.join(link("#" + k, v) for k, v in (("substitute", "Substitute"), ("floor", "Other amendments"), ("reactions", "Reactions"))) + '</p>',
+           f'<h2 id="substitute">{esc(sub["title"])}</h2>',
+           f'<p>{esc(sub["summary"])} ' + ' · '.join(link(s["url"], s["label"]) for s in sub["links"]) + '</p>',
+           f'<p>{a["old"]["pages"]} pages and {a["old"]["sections"]} sections on September 30; {a["new"]["pages"]} pages and {a["new"]["sections"]} sections on November 7. '
+           f'{c["edited"]} sections edited, {c["new"]} added, {c["dropped"]} dropped, {c["moved"]} renumbered, {c["unchanged"]} unchanged.</p>']
+    group = None
+    for r in a["rows"]:
+        if r["status"] == "unchanged":
+            continue
+        g = (r["div"], r["ti"])
+        if g != group:
+            group = g
+            out.append(f'<h3>{esc(r["div"].title())}, {esc(r["ti"].title())}: {esc(r["tih"].title())}</h3>')
+        was = ""
+        if "old" in r and "new" in r and (r["old"]["n"] != r["new"]["n"] or r["old"]["h"] != r["new"]["h"]):
+            was = f' (September 30: Sec. {esc(r["old"]["n"])}. {esc(r["old"]["h"])})'
+        out.append(f'<section id="sec-{esc(r["id"])}"><h4>Sec. {esc(r["n"])}. {esc(r["h"])} · {AMEND_STATUS[r["status"]]}{was}</h4><ul>')
+        for p in r["points"]:
+            out.append(f'<li>{esc(p["t"])} {pcite(p)}</li>')
+        out.append('</ul></section>')
+    unchanged = [r for r in a["rows"] if r["status"] == "unchanged"]
+    out.append(f'<p>Unchanged ({len(unchanged)}): ' + ', '.join(link(f'sections/{r["n"]}.md', "Sec. " + r["n"]) for r in unchanged) + '</p>')
+    out.append('<h2 id="floor">Other amendments</h2>')
+    if not a["floor"]:
+        out.append('<p>None filed or announced in the sources checked.</p>')
+    for f in a["floor"]:
+        out.append(f'<section><h3>{esc(f.get("number") or "Unnumbered")} · {esc(f["sponsor"])}</h3>'
+                   f'<p>{esc(f["summary"])} Status: {esc(f["status"])}, {esc(f["date"])}.</p>')
+        for s in f["sources"]:
+            out.append(f'<p>“{esc(s["quote"])}” {link(s["url"], s["publisher"])}</p>')
+        for st in f.get("positions", []):
+            out.append(f'<p>{esc(st["who"])} ({esc(st["stance"])}): “{esc(st["quote"])}” {link(st["url"], st["publisher"])}</p>')
+        out.append('</section>')
+    out.append('<h2 id="reactions">Reactions to the substitute</h2>')
+    for st in ("supports", "opposes", "mixed", "undecided"):
+        rows = [x for x in a["reactions"] if x["stance"] == st]
+        if not rows:
+            continue
+        out.append(f'<h3>{st.capitalize()}</h3>')
+        for x in rows:
+            src = x["sources"][0]
+            out.append(f'<p><strong>{esc(x["who"])}</strong>, {esc(x["role"])}, {esc(x["date"])}: “{esc(src["quote"])}” {link(src["url"], src["publisher"])}</p>')
+    return "\n".join(out + ['</main></body></html>']) + "\n"
+
+
 def reading_html(core: dict) -> str:
     esc = html.escape
     out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
@@ -861,7 +945,7 @@ def reading_html(core: dict) -> str:
            '<main id="main"><h1>Permitting Reform: section index</h1>',
            '<p>September 30, 2026 BAAJA draft. Proposed changes; AI-assisted summaries.</p>',
            f'<p>{esc(review_coverage(core))}</p>',
-           '<p><a href="index.html">Interactive tracker</a> · <a href="llms.txt">Agent index</a> · <a href="llms-full.txt">Full text and analysis</a> · <a href="data/core.json">Tracker JSON</a></p>']
+           '<p><a href="index.html">Interactive tracker</a> · <a href="amendments.html">November 7 substitute and amendments</a> · <a href="llms.txt">Agent index</a> · <a href="llms-full.txt">Full text and analysis</a> · <a href="data/core.json">Tracker JSON</a></p>']
     for sec in core["sections"]:
         out += [f'<section id="sec-{sec["n"]}"><h2>Sec. {sec["n"]}. {esc(sec["h"])}</h2>',
                 f'<p>{esc(sec["plain"])}</p>',
@@ -888,6 +972,8 @@ def main() -> int:
     (SITE / "data/bill.js").write_text(dump_js("PR_BILL", paras), encoding="utf-8")
     (SITE / "data/takes.js").write_text(dump_js("PR_TAKES", core["takes"]), encoding="utf-8")
     (SITE / "data/news.js").write_text(dump_js("PR_NEWS", browser_news(core)), encoding="utf-8")
+    (SITE / "data/amend.js").write_text(dump_js("PR_AMEND", core["amend"]), encoding="utf-8")
+    (SITE / "amendments.html").write_text(amendments_html(core), encoding="utf-8")
     (SITE / "llms.txt").write_text(llms_txt(core), encoding="utf-8")
     (SITE / "llms-full.txt").write_text(llms_full(core, paras), encoding="utf-8")
     (SITE / "reading.html").write_text(reading_html(core), encoding="utf-8")
@@ -914,14 +1000,14 @@ def main() -> int:
         raise SystemExit("build: missing static overview markers")
     if stamped != page:
         index.write_text(stamped, encoding="utf-8")
-    for name, data in (("core", browser_core(core)), ("bill", paras), ("takes", core["takes"]), ("news", browser_news(core))):
+    for name, data in (("core", browser_core(core)), ("bill", paras), ("takes", core["takes"]), ("news", browser_news(core)), ("amend", core["amend"])):
         (SITE / f"data/{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
     (SITE / "sections").mkdir(exist_ok=True)
     for sec in core["sections"]:
         (SITE / f"sections/{sec['n']}.md").write_text(section_markdown(core, paras, sec), encoding="utf-8")
     (SITE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
                                     "\n".join(f"<url><loc>{SITE_URL}{path}</loc></url>" for path in
-                                              ("", "reading.html", *(page + ".html" for page in READER_PAGES), "llms.txt", "llms-full.txt", *(f"sections/{s['n']}.md" for s in core["sections"]))) + "\n</urlset>\n", encoding="utf-8")
+                                              ("", "reading.html", "amendments.html", *(page + ".html" for page in READER_PAGES), "llms.txt", "llms-full.txt", *(f"sections/{s['n']}.md" for s in core["sections"]))) + "\n</urlset>\n", encoding="utf-8")
     if not (SITE / PDF_NAME).exists():
         print(f"build: site/{PDF_NAME} is missing; download it from {core['meta']['source_pdf']}", file=sys.stderr)
         return 1
@@ -931,7 +1017,7 @@ def main() -> int:
         f"{sum(len(g['rows']) for g in core['compare']['groups'])} comparison rows, "
         f"{len(core['timeline'])} events, {len(core['people'])} people, {len(core['media'])} media items -> site/data/"
     )
-    for name in ("core.js", "bill.js", "takes.js", "news.js"):
+    for name in ("core.js", "bill.js", "takes.js", "news.js", "amend.js"):
         print(f"build:   site/data/{name} {(SITE / 'data' / name).stat().st_size / 1024:.0f} KB")
     return 0
 

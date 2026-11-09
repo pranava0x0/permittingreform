@@ -1,0 +1,675 @@
+{
+ "as_of": "2026-11-09",
+ "substitute": {
+  "title": "Substitute amendment, November 7, 2026",
+  "date": "2026-11-07",
+  "sponsor": "Sen. Shelley Moore Capito (R-W.Va.)",
+  "cosponsors": [
+   "Sen. Mike Lee (R-Utah)",
+   "Sen. Sheldon Whitehouse (D-R.I.)",
+   "Sen. Martin Heinrich (D-N.M.)"
+  ],
+  "vehicle": "H.R. 2347",
+  "summary": "Sens. Capito, Lee, Whitehouse and Heinrich released an amendment in the nature of a substitute to H.R. 2347, the House-passed bill the Senate is using to carry the permitting bill. It strikes the House text and inserts a revised BAAJA; the sponsors' release calls the changes clarifying, conforming and technical edits.",
+  "links": [
+   {
+    "label": "Substitute PDF",
+    "url": "https://www.energy.senate.gov/wp-content/uploads/2026/11/KAT26764.pdf"
+   },
+   {
+    "label": "Sponsors' release",
+    "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/"
+   },
+   {
+    "label": "Sponsors' staff summary of changes",
+    "url": "https://www.heinrich.senate.gov/imo/media/doc/enr_and_epw_democrats_summary_of_changes_contained_in_substitute_amendment.pdf"
+   }
+  ],
+  "sources": [
+   {
+    "publisher": "Senate Energy and Natural Resources Committee",
+    "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+    "quote": "The substitute amendment includes clarifying, conforming, and technical edits to reflect feedback received since BAAJA’s introduction in September.",
+    "date": "2026-11-07"
+   }
+  ]
+ },
+ "sponsor_summary": {
+  "publisher": "ENR and EPW Democrats",
+  "date": "2026-11-07",
+  "url": "https://www.heinrich.senate.gov/imo/media/doc/enr_and_epw_democrats_summary_of_changes_contained_in_substitute_amendment.pdf",
+  "by_section": {
+   "1102": [
+    "Clarifies that the term “environmental infrastructure program or authority” means a program or authority of the Secretary of the Army to provide assistance to a non-federal interest for carrying out civil works water-related environmental infrastructure or environmental assistance and resource protection and development projects.",
+    "Expands the list of entities that can serve as a “lead agency” with respect to a proposed agency action to include a Tribal or state government agency that is conducting an environmental review of a proposed agency action pursuant to an authority that was granted by federal law.",
+    "Clarifies that projects financed by the Transportation Infrastructure Finance and Innovation Act or Railroad Rehabilitation and Improvement Financing programs are not excluded.",
+    "Adds exclusion for federally-funded broadband projects in a previously analyzed right-of-way.",
+    "Clarifies that extraterritorial activities are still subject to the requirements of the Deep Seabed Hard Mineral Resources Act.",
+    "Clarifies that projects to reconstruct, restore, retrofit, or replace wireline communications facilities are not subject to a capacity expansion cap in order to qualify for an exclusion.",
+    "Clarifies that projects funded by the Department of Transportation are not excluded unless the federal cost share is less than $10,000,000."
+   ],
+   "1106": [
+    "Clarifies that agency comments must also be carried out concurrently with the environmental review.",
+    "Clarifies that existing analysis and documentation prepared by a federal agency for a different but similar project can be used in an environmental review.",
+    "Clarifies that the head of the Army Corps of Engineers is eligible for the “no travel outside of duty station” provision if the Army Corps of Engineers is the agency unable to resolve a dispute or delay it has caused.",
+    "Clarifies that the district court for the District of Columbia can serve as the ‘court of competent jurisdiction’ in addition to the district court where the project is located."
+   ],
+   "1109": [
+    "Adds a clause that nothing in BAAJA will supersede existing law that sets shorter timelines for completeness determinations or application decisions."
+   ],
+   "1110": [
+    "Clarifies that judicial review provision conditioning standing on participation in the comment period does not take effect for projects whose comment periods occurred before the date of enactment.",
+    "Clarifies that litigation related to NEPA claims for projects subject to the Natural Gas Act, projects subject to the Federal Power Act, agency regulations, or projects with no physical location will be heard in the D.C. Circuit; all other NEPA-related claims would be heard in the court of appeals for the circuit where the project is located."
+   ],
+   "1121": [
+    "Adds the Federal Permitting Improvement Steering Council (FPISC) to the list of entities that shall be consulted on data standards.",
+    "Adds FPISC to the list of entities that shall be consulted on the design, testing, and build-out of prototype tools for environmental reviews.",
+    "Adds FPISC to the list of entities to submit reports to Congress on progress towards developing the ePermit system and the performance of each key permitting agency as compared to the previous year."
+   ],
+   "1131": [
+    "Clarifies that the terms “covered project”, “Dashboard”, and “Executive Director” have the meanings given to those terms in the FAST Act."
+   ],
+   "1132": [
+    "Folds the environmental review and permitting tracker, created in BAAJA, into the existing FAST Act dashboard.",
+    "Adds language that in the event that a transparency project is a covered project, the entry for the covered project on the dashboard will serve as the entry for the transparency tracker on the project, the Executive Director shall ensure that entry includes the required information, and no federal agency or project sponsor will be required to submit info from the tracker that duplicates information submitted for the Dashboard."
+   ],
+   "1134": [
+    "Shortens timelines set forth under Section 41007(a) of the FAST Act and stipulates that the shortened timelines will only apply to a claim seeking judicial review of an authorization for which the notice of final agency action is published in the Federal Register on or after the date of enactment of this Act."
+   ],
+   "1202": [
+    "Clarifies that a certifying authority may deny certification if an application is incomplete.",
+    "Removes requirement that conditions imposed must be consistent with the requirements of the Federal license or permit for which the certification application was made in order to avoid conflicting with existing requirements under section 401(d).",
+    "Clarifies that it is the certifying authority that determines if the conditions are necessary to ensure compliance with water quality requirements.",
+    "Provides for a transition period for the state to develop implementing regulations to determine application completeness.",
+    "Clarifies that a state shall notify an applicant of any missing materials required by the state, not just the minimum required under statute.",
+    "Clarifies that a waiver can satisfy the requirement under section (g)(2)."
+   ],
+   "1204": [
+    "Clarifies the period during which the EPA administrator may exercise authority under section 404(c) to withdraw an area from eligibility for a permit.",
+    "Expands the list of general permits on a nationwide basis to be maintained by the Army Corps to include nationwide permit 27 (Aquatic Ecosystem Restoration)."
+   ],
+   "1205": [
+    "Clarifies that the judicial review provision conditioning standing on participation in the comment period does not take effect for certifications whose comment periods occurred before the date of enactment."
+   ],
+   "1304": [
+    "Clarifies that an applicant may elect for the relevant federal agency to consult with the Secretary rather than that State, even if that State has assumed consultation responsibilities.",
+    "Stipulates that if a state is not adequately executing their assumption of consultation responsibilities, the Secretary must end that state’s ability to assume consultation responsibility."
+   ],
+   "1305": [
+    "Clarifies that the venue provision under NEPA prevails if the biological opinion is done as part of NEPA."
+   ],
+   "1308": [
+    "Clarifies eligible activities for grants from the National Fish and Wildlife Foundation Coastal State Fund.",
+    "Clarifies reallocation rules for unused grant funding.",
+    "Requires timely transfer of any appropriated funds."
+   ],
+   "1309": [
+    "Adds H.R. 1676, “Make SWAPs Efficient Act,” which passed the House, 400 to 0."
+   ],
+   "1401": [
+    "Provides a definition of covered project under Section 1401 such that a covered project must have all necessary federal authorizations and permits for construction or operation before it can be eligible for relief under this section.",
+    "Expands the definition of “Federal authorization or permit” to include any variance, departure, or determination that is necessary to construct or operate a project.",
+    "Changes “full” capacity to “normal” capacity.",
+    "Adds “vacate,” “remand,” and “reopen” to the list of things a federal agency may only do during certain enumerated circumstances.",
+    "Adds harms to “human health” and “the environment” to the list of harms justifying agency action against a permit or project.",
+    "Clarifies that agency action is justified against a permit or project pursuant to applicable law or regulation.",
+    "Adds the District Court for the District of Columbia in addition to a United States district court in which the project is at least partially located as an available venue for litigation.",
+    "Clarifies that if the original judge is no longer sitting in the same district, a different judge from the same district shall hear litigation under this section.",
+    "Strikes “clear and convincing evidence” from the standard of review.",
+    "Adds a savings clause that stipulates that nothing in the “Relief” subparagraph limits or supersedes any existing equitable authority of a court to grant any available form of temporary or injunctive relief against the federal department or agency",
+    "Requires proof of bad faith before a covered project sponsor can obtain additional damages under subsection (d)(i)(V).",
+    "Clarifies that the relief offered in this section does not supersede existing equitable relief or have an effect on a litigant’s ability to demonstrate the irreparable harm necessary for an injunction.",
+    "Modifies the special rule applicable to the projects that have already had agency actions taken against them enjoined by a court so that agencies may take no further action against them without first obtaining a court order.",
+    "Adds a requirement that conditions settlements on court approval and requires that any funds in a settlement go towards the construction of the covered project at issue.",
+    "Adds a savings clause that nothing in section 1401 limits or modifies any authority under any applicable law, compact, or treaty."
+   ],
+   "1402": [
+    "In section 1402, changes the comparative baseline from five years to ten years.",
+    "Changes “improper” denial to “bad faith” denial.",
+    "Adds the District Court for the District of Columbia in addition to a United States district court in which the project is at least partially located as an available venue for litigation.",
+    "Adds evidence of a pattern of bad faith denials to prima facie evidence.",
+    "Adds the ability of the government to rebut the evidence presented and offer a lawful reason for the observed pattern of disparate treatment.",
+    "Limits the opportunity for remedy under this section to applicants that can prove their ability to construct the project in question as well as other projects for which the applicant has sought federal authorizations or permits.",
+    "Replaces force majeure with impossibility as an allowable reason to not build a project for which one has received damages under this section.",
+    "Adds a requirement that conditions settlements on court approval and requires that any funds in a settlement go towards the construction of the covered project at issue."
+   ],
+   "1403": [
+    "In 1403, the one-year timeline for non-NEPA projects is brought over from 1402 and clarified that it starts from the date the last application is submitted.",
+    "Provides an exception to this timeline for rehearings.",
+    "Adds the district court for the District of Columbia as an available venue."
+   ],
+   "1501": [
+    "Adds H.R. 5549, Efficient Nuclear Licensing Hearings Act. Identical to S. 1757. Passed Energy & Commerce unanimously; on the House suspension calendar for Monday, November 9."
+   ],
+   "1502": [
+    "Adds H.R. 9612, American Enrichment Deployment Act, modified to include the public notice requirements from Lummis/Kelly related bill S. 5249. Passed Energy & Commerce unanimously; on the House suspension calendar for Monday, November 9."
+   ],
+   "1504": [
+    "Adds H.R. 9614, NRC Staff Pay Alignment Act. Passed Energy & Commerce unanimously; on the House suspension calendar for Monday, November 9."
+   ],
+   "2261": [
+    "Adds H.R.9084 - Department of Energy Nuclear Transparency Act. Passed Energy & Commerce unanimously; on the House suspension calendar for Monday, November 9."
+   ],
+   "1503": [
+    "Clarifies that the deadlines in the NEPA title do not apply to nuclear energy projects."
+   ],
+   "1601": [
+    "Adds S. 5045, Wildfire Emissions Prevention Act. Passed Senate without amendment by Unanimous Consent on September 29, 2026."
+   ],
+   "1602": [
+    "Adds H.R. 8739, Brownfields Revitalization for a Better Tomorrow Act, but includes authorization levels from Senate companion."
+   ],
+   "2101": [
+    "Includes Tribal governments as an “affected landowner,” for purposes of transmission permitting."
+   ],
+   "2102": [
+    "Clarifies that for grid expansion and pipeline activities, a covered area for the purposes of a non-major federal action would be no more than ¼ mile in overall width for both sides."
+   ],
+   "2103": [
+    "Adds to the definition of “exempt transmitting utility” for purposes of transmission permitting and planning to more clearly exclude municipal power and electrical cooperatives.",
+    "Puts Tribal participation in transmission planning on equal footing with states."
+   ],
+   "2104": [
+    "Clarifies that a state’s public utility commission has the authority to ask the Federal Energy Regulatory Commission (FERC) to investigate local utility projects."
+   ],
+   "2106": [
+    "Makes consolidated planning processes applicable to regional transmission organizations and independent system operators only (i.e., not the Southeast or West—outside of California/CAISO)."
+   ],
+   "2108": [
+    "Provides a ceiling on distributed energy resources that qualify for a VPP of not more than 5 megawatts—to prevent large, behind the meter, sources from qualifying.",
+    "Enforces “must offer” rules on generators to provide power when called upon."
+   ],
+   "2112": [
+    "Ensures that collective bargaining agreements remain for power marketing administration employees."
+   ],
+   "2116": [
+    "Clarifies FERC’s jurisdiction over the corporate governance of transmission organizations."
+   ],
+   "2115": [
+    "Clarifies FERC’s authority relating to civil penalties under the Natural Gas Act, making the procedures consistent with FERC’s authorities under the Federal Power Act."
+   ],
+   "2117": [
+    "Adds S. 5645, which establishes a Data Center Community Assistance Program at the Department of Energy to provide State, local, and Tribal governments, on request, with technical assistance on the potential energy, water, infrastructure, economic, and other community impacts associated with data center development (Curtis/Blunt Rochester)."
+   ],
+   "2201": [
+    "Removes record of decision from the definition of environmental document under NEPA for the purposes of the section on Accelerating Claims."
+   ],
+   "2212": [
+    "Replaces the section on Rights-of-Way Across Indian Land with the Senate Indian Affairs Committee-passed version of the Unlocking Native Land and Opportunities for Commerce and Key Economic Developments Act (S. 3383)."
+   ],
+   "2215": [
+    "Makes a technical edit in the section on Hardrock Mining Mill Sites to correct a reference to the section establishing the Hardrock Mine Fund."
+   ],
+   "2221": [
+    "Strikes “at least 30 days” ahead of the requirement that a party wishing to conduct casual use provide notice of intent to the Sectary before the start of those activities in the section on Geothermal Observation Test Projects."
+   ],
+   "2225": [
+    "Adds circumstances in which federal drilling permits are not required in the section on No Federal Permit Required for Geothermal Activities on Certain Land: if the well is located on non-federal land overlying non-federal mineral estate but a portion of the wellbore enters and produces from the federal mineral estate or simply traverses the federal mineral estate. Also clarifies notification requirements in that section."
+   ],
+   "2229": [
+    "Adds a citation to Title V of the Federal Land Policy and Management Act (FLPMA) and makes a technical correction to a citation under the Mineral Leasing Act in the section on NEPA Review that exempts geothermal activities on public lands from NEPA review."
+   ],
+   "2234": [
+    "Corrects a section number in the Section on Micro Hydrokinetic Energy Projects."
+   ],
+   "2242-dropped": [
+    "Strikes a section on the Northwest Power and Conservation Council."
+   ],
+   "2252": [
+    "Fixes a typo in the section on Offshore Energy Transmission."
+   ],
+   "2301": [
+    "Strikes the definition of property of traditional religious or cultural importance.",
+    "Requires written notice to a tribe if the Secretary of the Interior finds a Tribal Historic Preservation Office (THPO) program is not in compliance with program requirements.",
+    "Strikes the provision requiring the Secretary of the Interior to assume the duties of a THPO if a THPO program is not compliant.",
+    "Adds a provision allowing non-compliant THPOs to use a corrective action process to bring the program into compliance.",
+    "Delays any withholding of grants or other funding to THPOs until two years of continued non-compliance with program requirements after implementation of a corrective action plan.",
+    "Clarifies that THPO program compliance activities do not relieve any agency of the requirement to consult with an Indian tribe under 302706(b) of the National Historic Preservation Act.",
+    "Requires the Department of the Interior to provide technical assistance, training, and support to THPOs.",
+    "Clarifies that Federal Highway Administration projects are subject to section 106 requirements even if the only federal nexus for the project is a formula grant implemented by a state.",
+    "Adds additional allowance for “routine” projects to be excluded from section 106 consideration if they do not diminish the historic integrity of a historic property.",
+    "Codifies in statute the current regulatory language that excludes from section 106 review undertakings that are of a type of activity that does not have the potential to cause adverse effects on historic properties.",
+    "Adds a requirement that, if an undertaking is governed by a program alternative, the agency shall proceed in accordance with the program alternative.",
+    "Expands original requirement that the federal agency considering the undertaking solicit information, discuss that information, and incorporate that information into a report on the area of potential effects and the identification of historic properties with the area of potential effects, to now also include whether there are any adverse effects on those historic properties. The federal agency must prepare a report including those elements and incorporating information from SHPOS, THPOs, Indian tribes, Native Hawaiian organizations, local governments, and project, activity, or program applicants.",
+    "Requires consultation with SHPOS, THPOs, Indian tribes, Native Hawaiian organizations, local governments, and project, activity, or program applicants on the report, including the area of potential effect, the identification of historic properties, the determination of adverse effects, and any actions to avoid, minimize, or mitigate those adverse effects.",
+    "Removes the requirement for SHPOs and THPOs to spend 50 percent of their time on a specific project if a deadline is missed.",
+    "Adds deadlines for courts to act on complaints related to a federal agency missing section 106 deadlines.",
+    "Extends the deadline from 30 days to 45 days for substantive objections to be provided after the report is provided to consulting parties.",
+    "Removes the provision allowing the Advisory Council on Historic Preservation to consult or sign an agreement in lieu of an Indian tribe or Native Hawaiian Organization.",
+    "When there is both a federal and state or Tribal programmatic agreement governing an undertaking, allows the SHPO or THPO to choose the federal programmatic agreement over the state or Tribal programmatic agreement.",
+    "Removes requirement for comments to be “unique” to establish standing. Replaces it with language that excludes form letter comments from establishing standing."
+   ],
+   "2302": [
+    "Changes language for the Historic Preservation Fund (HPF) to ensure the funding will continue to flow into the HPF and be appropriated at the discretion of the Appropriations Committee annually.",
+    "Adds an exemption from the Freedom of Information Act for information included in a Tribal database established under the new Historic Preservation Fund grant program."
+   ]
+  }
+ },
+ "origins": {
+  "1309": {
+   "bill": "H.R. 1676",
+   "name": "Make SWAPs Efficient Act",
+   "sponsor": "Rep. Byron Donalds (R-Fla.)",
+   "cosponsors": [
+    "Rep. Jared Moskowitz (D-Fla.)"
+   ],
+   "introduced": "2025-02-27",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr1676ih/html/BILLS-119hr1676ih.htm"
+  },
+  "1501": {
+   "bill": "H.R. 5549",
+   "name": "Efficient Nuclear Licensing Hearings Act",
+   "sponsor": "Rep. Morgan Griffith (R-Va.)",
+   "cosponsors": [
+    "Rep. Kim Schrier (D-Wash.)",
+    "Rep. Marc Veasey (D-Texas)"
+   ],
+   "introduced": "2025-09-23",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr5549ih/html/BILLS-119hr5549ih.htm",
+   "related": {
+    "bill": "S. 1757",
+    "sponsor": "Sen. Tim Scott (R-S.C.)",
+    "cosponsors": [
+     "Sen. Chris Coons (D-Del.)"
+    ],
+    "introduced": "2025-05-14",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119s1757is/html/BILLS-119s1757is.htm"
+   }
+  },
+  "1502": {
+   "bill": "H.R. 9612",
+   "name": "American Enrichment Deployment Act",
+   "sponsor": "Rep. Russell Fry (R-S.C.)",
+   "cosponsors": [
+    "Rep. Kim Schrier (D-Wash.)",
+    "Rep. Erin Houchin (R-Ind.)"
+   ],
+   "introduced": "2026-07-09",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9612ih/html/BILLS-119hr9612ih.htm",
+   "related": {
+    "bill": "S. 5249",
+    "sponsor": "Sen. Mark Kelly (D-Ariz.)",
+    "cosponsors": [
+     "Sen. Cynthia Lummis (R-Wyo.)"
+    ],
+    "introduced": "2026-08-05",
+    "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5249is/html/BILLS-119s5249is.htm"
+   }
+  },
+  "1504": {
+   "bill": "H.R. 9614",
+   "name": "NRC Staff Pay Alignment Act",
+   "sponsor": "Rep. Rob Menendez (D-N.J.)",
+   "cosponsors": [],
+   "introduced": "2026-07-09",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9614ih/html/BILLS-119hr9614ih.htm"
+  },
+  "2261": {
+   "bill": "H.R. 9084",
+   "name": "Department of Energy Nuclear Transparency Act",
+   "sponsor": "Rep. Kathy Castor (D-Fla.)",
+   "cosponsors": [],
+   "introduced": "2026-06-02",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr9084ih/html/BILLS-119hr9084ih.htm"
+  },
+  "1601": {
+   "bill": "S. 5045",
+   "name": "Wildfire Emissions Prevention Act",
+   "sponsor": "Sen. John Curtis (R-Utah)",
+   "cosponsors": [
+    "Sen. Jeff Merkley (D-Ore.)",
+    "Sen. Shelley Moore Capito (R-W.Va.)",
+    "Sen. Alex Padilla (D-Calif.)",
+    "Sen. John Boozman (R-Ark.)",
+    "Sen. Mark Kelly (D-Ariz.)"
+   ],
+   "introduced": "2026-07-21",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5045is/html/BILLS-119s5045is.htm"
+  },
+  "1602": {
+   "bill": "H.R. 8739",
+   "name": "Brownfields Revitalization for a Better Tomorrow Act",
+   "sponsor": "Rep. Brett Guthrie (R-Ky.)",
+   "cosponsors": [],
+   "introduced": "2026-05-12",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr8739ih/html/BILLS-119hr8739ih.htm"
+  },
+  "2117": {
+   "bill": "S. 5645",
+   "name": "Data Center Community Assistance Program",
+   "sponsor": "Sen. John Curtis (R-Utah)",
+   "cosponsors": [
+    "Sen. Lisa Blunt Rochester (D-Del.)"
+   ],
+   "introduced": "2026-09-30",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119s5645is/html/BILLS-119s5645is.htm"
+  },
+  "2212": {
+   "bill": "S. 3383",
+   "name": "Unlocking Native Land and Opportunities for Commerce and Key Economic Developments Act",
+   "sponsor": "Sen. Brian Schatz (D-Hawaii)",
+   "cosponsors": [
+    "Sen. Lisa Murkowski (R-Alaska)"
+   ],
+   "introduced": "2025-12-08",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119s3383is/html/BILLS-119s3383is.htm"
+  },
+  "3001": {
+   "bill": "H.R. 2347",
+   "name": "Survivor Justice Tax Prevention Act",
+   "sponsor": "Rep. Lloyd Smucker (R-Pa.)",
+   "cosponsors": [
+    "Rep. Gwen Moore (D-Wis.)"
+   ],
+   "introduced": "2025-03-25",
+   "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr2347eh/html/BILLS-119hr2347eh.htm",
+   "note": "The House-passed bill the Senate is using as the vehicle; the substitute keeps its text as section 3001."
+  }
+ },
+ "floor": [],
+ "floor_note": "No other amendment had been filed or announced by November 9 in the Senate floor log or the statements checked.",
+ "reactions": [
+  {
+   "id": "capito",
+   "who": "Sen. Shelley Moore Capito (R-W.Va.)",
+   "role": "Sponsor; chair, Environment and Public Works",
+   "stance": "supports",
+   "date": "2026-11-07",
+   "sections": [],
+   "sources": [
+    {
+     "publisher": "Senate Energy and Natural Resources Committee",
+     "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+     "quote": "I urge the swift passage of BAAJA to make life more affordable for American families",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "lee",
+   "who": "Sen. Mike Lee (R-Utah)",
+   "role": "Sponsor; chair, Energy and Natural Resources",
+   "stance": "supports",
+   "date": "2026-11-07",
+   "sections": [],
+   "sources": [
+    {
+     "publisher": "Senate Energy and Natural Resources Committee",
+     "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+     "quote": "It’s time to finish what we started",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "heinrich",
+   "who": "Sen. Martin Heinrich (D-N.M.)",
+   "role": "Sponsor; ranking member, Energy and Natural Resources",
+   "stance": "supports",
+   "date": "2026-11-07",
+   "sections": [],
+   "sources": [
+    {
+     "publisher": "Senate Energy and Natural Resources Committee",
+     "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+     "quote": "Americans can’t afford to wait for lower electricity prices. We need to pass this bill now",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "whitehouse",
+   "who": "Sen. Sheldon Whitehouse (D-R.I.)",
+   "role": "Sponsor; ranking member, Environment and Public Works",
+   "stance": "supports",
+   "date": "2026-11-07",
+   "sections": [],
+   "sources": [
+    {
+     "publisher": "Senate Energy and Natural Resources Committee",
+     "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+     "quote": "Our manager’s amendment improves BAAJA and addresses the thoughtful feedback we have received",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "huffman",
+   "who": "Rep. Jared Huffman (D-Calif.)",
+   "role": "Ranking member, House Natural Resources",
+   "stance": "mixed",
+   "date": "2026-11-07",
+   "sections": [
+    "1401"
+   ],
+   "sources": [
+    {
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+     "quote": "we could improve it further in this and other areas with a hearing and a more open negotiation process with more Democrats in the room",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "colt",
+   "who": "Coalition of Large Tribes",
+   "role": "Tribal coalition",
+   "stance": "mixed",
+   "date": "2026-11-07",
+   "sections": [
+    "2301"
+   ],
+   "sources": [
+    {
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+     "quote": "grateful to see many positive changes for tribes",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "biber",
+   "who": "Eric Biber",
+   "role": "Law professor, UC Berkeley; writes for Legal Planet",
+   "stance": "undecided",
+   "date": "2026-11-08",
+   "sections": [
+    "1401",
+    "1402"
+   ],
+   "sources": [
+    {
+     "publisher": "Legal Planet",
+     "url": "http://legal-planet.org/2026/11/08/the-revised-permitting-reform-bill/",
+     "quote": "still undecided about the bill, in part because I keep discovering major issues in the text",
+     "date": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "id": "ncai",
+   "who": "Mark Macarro",
+   "role": "President, National Congress of American Indians",
+   "stance": "opposes",
+   "date": "2026-11-07",
+   "sections": [
+    "2301"
+   ],
+   "sources": [
+    {
+     "publisher": "Native News Online",
+     "url": "https://nativenewsonline.net/sovereignty/tribal-leaders-oppose-senate-permitting-bill-despite-changes-in-substitute-amendment/",
+     "quote": "Any amendments to S. 5653 merely puts lipstick on a pig.",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "coalition106",
+   "who": "106 Coalition",
+   "role": "Tribal organizations, including NCAI; as reported by Heatmap",
+   "stance": "opposes",
+   "date": "2026-11-07",
+   "sections": [
+    "2301"
+   ],
+   "sources": [
+    {
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+     "quote": "sent a statement to media saying they’ll still oppose the bill and want the entire section of NHPA changes removed",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "tribal11",
+   "who": "11 tribal organizations, including NCAI, NARF and NATHPO",
+   "role": "Joint statement; as reported by Tribal Business News",
+   "stance": "opposes",
+   "date": "2026-11-08",
+   "sections": [
+    "2301"
+   ],
+   "sources": [
+    {
+     "publisher": "Tribal Business News",
+     "url": "https://tribalbusinessnews.com/policy-and-law/senators-revise-permitting-bill-ahead-of-monday-vote-tribal-concerns-remain/",
+     "quote": "urged Congress to hold the bill until the next Congress can conduct meaningful tribal consultation",
+     "date": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "id": "acra",
+   "who": "American Cultural Resources Association",
+   "role": "Trade association for cultural resource firms",
+   "stance": "opposes",
+   "date": "2026-11-08",
+   "sections": [
+    "2301"
+   ],
+   "sources": [
+    {
+     "publisher": "American Cultural Resources Association",
+     "url": "https://acra-crm.org/senate-managers-amendment-on-permitting-bill/",
+     "quote": "even the managers' amendment would end Section 106 as we know it",
+     "date": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "id": "foe",
+   "who": "Erich Pica",
+   "role": "President, Friends of the Earth U.S.",
+   "stance": "opposes",
+   "date": "2026-11-07",
+   "sections": [],
+   "sources": [
+    {
+     "publisher": "Friends of the Earth",
+     "url": "https://foe.org/news/statement-friends-of-the-earth-u-s-still-opposes-disastrous-senate-permitting-bill/",
+     "quote": "This isn’t a permitting compromise, it’s a sellout.",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "tws",
+   "who": "Tracy Stone-Manning",
+   "role": "President, The Wilderness Society",
+   "stance": "opposes",
+   "date": "2026-11-07",
+   "sections": [],
+   "sources": [
+    {
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+     "quote": "Americans deserve permitting reform that isn’t crafted behind closed doors and rushed to the Senate floor",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "oci",
+   "who": "Elizabeth Bast",
+   "role": "Executive director, Oil Change International",
+   "stance": "opposes",
+   "date": "2026-11-08",
+   "sections": [],
+   "sources": [
+    {
+     "publisher": "Common Dreams",
+     "url": "https://commondreams.org/news/democrats-permitting-reform",
+     "quote": "No amount of last-minute tinkering can disguise that this bill is a massive giveaway to fossil fuel companies and Big Tech",
+     "date": "2026-11-08"
+    }
+   ]
+  },
+  {
+   "id": "epi",
+   "who": "David Pomerantz",
+   "role": "Executive director, Energy and Policy Institute",
+   "stance": "comments",
+   "date": "2026-11-07",
+   "sections": [
+    "2104"
+   ],
+   "sources": [
+    {
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+     "quote": "I am relieved that the section survived generally, given what a target this was for utility lobbying.",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "gridstrategies",
+   "who": "Rob Gramlich",
+   "role": "President, Grid Strategies",
+   "stance": "comments",
+   "date": "2026-11-07",
+   "sections": [
+    "2101"
+   ],
+   "sources": [
+    {
+     "publisher": "Heatmap News",
+     "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+     "quote": "they provide more flexibility for more types of projects to go through",
+     "date": "2026-11-07"
+    }
+   ]
+  },
+  {
+   "id": "naco",
+   "who": "National Association of Counties",
+   "role": "County governments",
+   "stance": "comments",
+   "date": "2026-11-09",
+   "sections": [
+    "1102",
+    "1602",
+    "2117"
+   ],
+   "sources": [
+    {
+     "publisher": "National Association of Counties",
+     "url": "https://www.naco.org/news/us-senate-releases-updates-bipartisan-american-affordability-and-jobs-act-ahead-anticipated",
+     "quote": "The ANS maintains core county wins in the legislation, including codifying counties as cooperating agencies during NEPA reviews",
+     "date": "2026-11-09"
+    }
+   ]
+  }
+ ],
+ "vote": {
+  "date": "2026-11-09",
+  "question": "Cloture on the motion to proceed to H.R. 2347",
+  "result": null,
+  "url": "https://www.dailypress.senate.gov/monday-november-9-2026/",
+  "quote": "At approximately 5:30 p.m., the Senate will vote on cloture on the motion to proceed to H.R.2347."
+ }
+}

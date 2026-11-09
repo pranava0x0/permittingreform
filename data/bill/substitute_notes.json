@@ -1,0 +1,561 @@
+{
+ "1102": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute exempts from NEPA review any agency action for deploying broadband over wireline facilities on a previously analyzed right-of-way that is funded in whole or in part with Federal financial assistance.",
+    "new": "for the deployment of a broadband service"
+   },
+   {
+    "t": "The substitute adds a State or Tribal government agency conducting an environmental review under authority granted by Federal law to the definition of lead agency.",
+    "new": "a State or Tribal government agency conducting an environmental review of such action pursuant to authority granted under Federal law"
+   },
+   {
+    "t": "The substitute excludes assistance under chapter 6 of title 23 or chapter 224 of title 49 from the exemption for actions whose only Federal involvement is a loan or loan guarantee.",
+    "new": "excluding assistance under chapter 6 of title 23 or chapter 224 of title 49, United States Code"
+   },
+   {
+    "t": "The substitute adds a rule that the Department of Transportation is treated as having predominant control over financial assistance for any project receiving more than $10,000,000 from it.",
+    "new": "the Department of Transportation shall be considered to have predominant control and responsibility over the subsequent use of financial assistance"
+   },
+   {
+    "t": "The substitute states that the offshore exemption does not alter any requirement under the Deep Seabed Hard Mineral Resources Act.",
+    "new": "subject to the condition that nothing in this clause alters, limits, supersedes, or otherwise affects any requirement under the Deep Seabed Hard Mineral Resources Act"
+   },
+   {
+    "t": "The substitute says the limit on capacity increases for lifeline infrastructure repairs does not apply to replacing existing fiber-optic cable, or replacing copper or coaxial cable with fiber-optic cable.",
+    "new": "the limitation on an increase in capacity shall not apply to the repair, reconstruction, restoration, retrofit, or replacement of existing fiber-optic cable"
+   }
+  ]
+ },
+ "1103": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute adds guidance documents to the list of existing agency regulations, procedures, and policies that agencies may not change under this section except as provided.",
+    "new": "guidance documents,"
+   }
+  ]
+ },
+ "1106": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute adds the U.S. District Court for the District of Columbia as an alternative venue for a project sponsor's petition over agency failures to meet deadlines.",
+    "new": "the United States District Court for the District of Columbia."
+   },
+   {
+    "t": "The substitute treats the Assistant Secretary of the Army for Civil Works as the head of the Corps of Engineers for the rule on agency heads whose reviews are late.",
+    "new": "the Assistant Secretary of the Army for Civil Works shall be considered to be the head of the Corps of Engineers"
+   },
+   {
+    "t": "The substitute requires each agency to carry out its obligations under Federal law, including its comments on an applicable environmental document, concurrently with other reviews.",
+    "new": "including requirements under Federal law for a Federal agency to comment on an applicable environmental document,"
+   },
+   {
+    "t": "The substitute lets a lead agency tier to, as well as adopt or incorporate, existing analysis, including analysis prepared under Federal law or State and Tribal law.",
+    "new": "adopt, tier to,"
+   },
+   {
+    "t": "The substitute requires that an environmental impact statement notice in the Federal Register be published by the lead agency.",
+    "new": "published by the lead agency in the Federal Register."
+   },
+   {
+    "t": "The substitute replaces the term environmental review with preparation of an environmental document in several deadline and dispute provisions.",
+    "new": "the preparation of an environmental document, a comment by a Federal agency required by Federal law, or an"
+   }
+  ]
+ },
+ "1109": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute adds that a shorter statutory deadline for finding an application complete stays in force, and that review starts on receipt of a notice of staking or similar pre-permit notification.",
+    "new": "nothing in this Act supersedes such shorter period"
+   },
+   {
+    "t": "The substitute changes the information-request timing reference from environmental review to preparation of an environmental document.",
+    "new": "the preparation of an environmental document,"
+   }
+  ]
+ },
+ "1110": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute limits the review provision to claims where the public comment opportunity occurs after the date of enactment of the Act.",
+    "new": "and for which the opportunity for public comment occurs after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026,"
+   },
+   {
+    "t": "The substitute gives the D.C. Circuit original and exclusive jurisdiction over claims challenging an agency rule for NEPA compliance and claims challenging an authorization for a project with no physical location.",
+    "new": "A claim challenging an authorization for a project that has no physical location."
+   },
+   {
+    "t": "The substitute makes the courts of appeals' jurisdiction subject to section 9(b) of the Natural Gas Act and section 313(b) of the Federal Power Act.",
+    "new": "Except as provided in section 9(b) of the Natural Gas Act (15 U.S.C. 717r(b)) and section 313(b) of the Federal Power Act (16 U.S.C. 825l(b))"
+   }
+  ]
+ },
+ "1121": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute adds the Federal Permitting Improvement Steering Council to the bodies consulted on the permitting portal and data standards, and replaces environmental review with environmental document in one notice reference.",
+    "new": "Office of Management and Budget, the Federal Permitting Improvement Steering Council, and each key permitting agency shall design, test,"
+   }
+  ]
+ },
+ "1131": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "The substitute adds FAST Act definitions of covered project, Dashboard, and Executive Director, adds environmental document to the NEPA terms, and renumbers later paragraphs.",
+    "new": "The terms “covered project”, “Dashboard”, and “Executive Director” have the meanings given those terms in section 41001 of the FAST Act"
+   }
+  ]
+ },
+ "1132": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute has the Federal Permitting Improvement Steering Council's Executive Director, rather than the CEQ Chairman, maintain the Tracker as a component of the Dashboard.",
+    "new": "maintain, as a component of the Dashboard,"
+   },
+   {
+    "t": "The substitute provides that the Dashboard entry for a FAST-41 covered project serves as its Tracker entry, and that no agency or sponsor must submit duplicate information.",
+    "new": "no Federal agency or project sponsor shall be required to submit information for the Tracker that duplicates information submitted for the Dashboard"
+   },
+   {
+    "t": "The substitute has the Tracker's information posted on the Dashboard instead of the Council's website.",
+    "new": "shall be posted on the Dashboard not later than 7 days after the date"
+   }
+  ]
+ },
+ "1134": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute shortens the filing period for judicial review claims over FAST-41 covered project authorizations from 2 years to 150 days.",
+    "new": "by striking “2 years” and inserting “150 days”; and"
+   },
+   {
+    "t": "The shorter period applies to claims over authorizations whose notice of final agency action is published in the Federal Register on or after enactment.",
+    "new": "shall apply to a claim seeking judicial review of an authorization for which the notice of final agency action is published in the Federal Register on or after the date of enactment of this Act."
+   }
+  ]
+ },
+ "1202": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute lets a certifying authority deny certification if, after notifying the applicant and giving a reasonable opportunity to supply missing materials, the application still lacks required information.",
+    "new": "the application continues to lack the information required under clause (ii)"
+   },
+   {
+    "t": "The substitute removes the requirement that conditions be consistent with the requirements of the Federal license or permit.",
+    "old": "consistent with the requirements of the Federal license or permit for which the certification application was made."
+   },
+   {
+    "t": "The substitute allows a certifying authority, before December 31, 2027, to require additional application materials through one written notice to all applicants without promulgating regulations.",
+    "new": "Prior to December 31, 2027, a certifying authority may require materials beyond the materials described"
+   },
+   {
+    "t": "The substitute applies the consequence of failing to promulgate regulations only on or after December 31, 2027.",
+    "new": "Beginning on or after December 31, 2027, if"
+   },
+   {
+    "t": "The substitute allows a Federal license or permit condition to override certification conditions only if the certifying authority determines the conditions are necessary.",
+    "new": "the certifying authority determines the conditions are necessary to ensure compliance with"
+   },
+   {
+    "t": "The substitute allows a point source discharge to comply with water quality requirements or a waiver under this section.",
+    "new": "requirements or a waiver pursuant to this section."
+   }
+  ]
+ },
+ "1204": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute adds Nationwide Permit 27 to the list of nationwide permits covered by the section.",
+    "new": "Nationwide Permit 27,"
+   },
+   {
+    "t": "The substitute rewrites the period-of-prohibition paragraph to say the Administrator may act under paragraph (1) only during the period that begins and ends as listed.",
+    "new": "Administrator may act pursuant to paragraph (1) only during the period that—"
+   }
+  ]
+ },
+ "1205": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute limits the 30-day public comment condition to comment periods that occur after the date of enactment of the Act.",
+    "new": "such public comment period occurred after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026."
+   }
+  ]
+ },
+ "1304": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute requires the Secretary to terminate a State's participation in the program in the listed circumstances, where the September text said the Secretary may.",
+    "new": "The Secretary shall terminate the participation of a State"
+   },
+   {
+    "t": "The substitute lets a permit or license applicant elect to have the relevant Federal agency consult with the Secretary rather than with the State, where the September text let the applicant elect to consult with the Secretary itself.",
+    "new": "for the relevant Federal agency"
+   }
+  ]
+ },
+ "1305": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute makes a petition for review subject to the venue rules in section 111 of NEPA and section 306108(c)(9)(E) of title 54.",
+    "new": "If an opinion issued by the Secretary under subsection (b) relates to an agency action for which venue for judicial review of such action is provided"
+   }
+  ]
+ },
+ "1308": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute redirects the Coastal State Fund from understanding and using coastal resources to natural and nature-based infrastructure, habitat restoration and protection, and related capacity building and planning.",
+    "new": "that implement natural and nature-based infrastructure, habitat restoration and protection, and related capacity building and planning."
+   },
+   {
+    "t": "The substitute requires amounts above the 5 percent single-State cap to be reallocated among States that have not reached the cap.",
+    "new": "such amounts shall be reallocated among the remaining coastal States that have not reached that limitation."
+   },
+   {
+    "t": "The substitute requires the Treasury Secretary to distribute appropriated funds to the Foundation within 60 days, and makes the funds available until expended.",
+    "new": "not later than 60 days after the date on which the appropriation is made"
+   }
+  ]
+ },
+ "1309": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The section requires the Secretary of the Interior to approve a State's wildlife conservation and restoration program within 180 days after the State submits its comprehensive plan.",
+    "new": "not later than 180 days after the date on which the State submitted the comprehensive plan,"
+   },
+   {
+    "t": "The section requires the Secretary to conditionally authorize a State's program on submission of its plan and to set aside the State's amounts.",
+    "new": "conditionally authorize the implementation of the wildlife conservation and restoration program of the State"
+   },
+   {
+    "t": "The section requires a status report to the House Natural Resources and Senate Environment and Public Works Committees when a program is not approved in time, including the reason.",
+    "new": "a report on the status of such comprehensive plan, which shall include the reason why the wildlife conservation and restoration program was not so approved."
+   }
+  ]
+ },
+ "1401": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute lets an agency act in response to a federal court order or under any applicable law or regulation; the September text allowed action only where a court required it.",
+    "new": "such action is taken pursuant to any applicable law or regulation."
+   },
+   {
+    "t": "The substitute removes the clear and convincing evidence standard, so the agency must demonstrate that an exception applies without a stated heightened standard.",
+    "old": "agency to demonstrate by clear and convincing evidence"
+   },
+   {
+    "t": "The substitute adds vacate, remand, reopen, and materially as terms in the list of barred actions, and replaces full capacity with normal capacity.",
+    "new": "vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026"
+   },
+   {
+    "t": "The substitute makes the District of Columbia district court an additional venue for review of an agency action.",
+    "new": "the United States District Court for the District of Columbia."
+   },
+   {
+    "t": "The substitute limits the 25 to 50 percent cost award to cases where Federal agencies interfered in bad faith, and bars treating that cost recovery as relief when judging irreparable harm on a motion for temporary relief.",
+    "new": "on a showing that 1 or more Federal agencies interfered with a Federal authorization or permit in bad faith"
+   },
+   {
+    "t": "The substitute bars any payment resolving a dispute over a Federal permit unless a federal court issues a final judgment, which can be a court-approved settlement or consent decree meeting listed findings.",
+    "new": "No payment shall be issued under clause (i) or from any other source to resolve any dispute related to a Federal authorization or permit"
+   }
+  ]
+ },
+ "1402": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute changes the standard for relief from improper denial or delay to denial in bad faith, or delay, as part of a pattern of disparate treatment.",
+    "new": "denied in bad faith as part of"
+   },
+   {
+    "t": "The substitute adds that, once an applicant makes a prima facie case, the Federal Government bears the burden of disproving it or showing a lawful basis for the pattern.",
+    "new": "the Federal Government shall bear the burden of either"
+   },
+   {
+    "t": "The substitute extends the comparison period for denial and delay data from 5 to 10 calendar years.",
+    "new": "the 10 most recent calendar years of empirical data"
+   },
+   {
+    "t": "The substitute adds the District of Columbia district court as an alternative venue for the cause of action.",
+    "new": "or the United States District Court for the District of Columbia,"
+   },
+   {
+    "t": "The substitute bars any payment to resolve a dispute over a Federal permit for a specific type of covered project without a final federal court judgment, including a court-approved settlement or consent decree meeting listed findings.",
+    "new": "No payment shall be issued under subparagraph (A) or from any other source"
+   },
+   {
+    "t": "The substitute removes subsection (c), the 1-year decision timeline for permits not subject to environmental review, which section 1403 now carries.",
+    "old": "all Federal departments and agencies shall render decisions on all applicable covered applications not later than 1 year after the date on which the latest of the covered applications is determined to be complete."
+   }
+  ]
+ },
+ "1403": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute moves the 1-year decision deadline from section 1402(c) into this section, for permits not requiring an environmental impact statement or environmental assessment.",
+    "new": "all Federal agencies shall render decisions on all applicable covered applications not later than 1 year after the date on which the latest of the covered applications was submitted."
+   },
+   {
+    "t": "The substitute measures the 1-year period from submission of the latest covered application, where the September text in section 1402(c) measured from the date it was determined complete.",
+    "new": "after the date on which the latest of the covered applications was submitted."
+   },
+   {
+    "t": "The substitute starts the 1-year period after a rehearing is complete, or after the deadline to seek rehearing expires, where Federal law provides for rehearing.",
+    "new": "the day after the rehearing is complete"
+   },
+   {
+    "t": "The substitute adds the District of Columbia district court as an alternative venue for a complaint over a missed deadline.",
+    "new": "the United States District Court for the District of Columbia."
+   }
+  ]
+ },
+ "2201": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute removes “a record of decision” from the list of documents that count as an environmental document in this section, leaving the environmental assessment, the finding of no significant impact and the environmental impact statement.",
+    "old": "(C) An environmental impact statement. (D) A record of decision."
+   }
+  ]
+ },
+ "2212": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute adds amendments to the Long-Term Leasing Act that extend its leasing provision to land held in trust for any other Tribe on the Secretary's most recent list of federally recognized Tribes, where the September text only amended the rights-of-way law.",
+    "new": "(1) in subsection (a), in the second sentence, by inserting “, land held in trust for any other Indian tribe included on the most recent list published by the Secretary"
+   },
+   {
+    "t": "The substitute strikes the lease-term limits in subsection (h)(1) of the Long-Term Leasing Act by deleting the clause that the term of the lease not exceed a stated period and subparagraphs (A) and (B).",
+    "new": "by striking “and the term of the lease does not exceed—” and inserting a period"
+   },
+   {
+    "t": "The substitute adds a technical correction that inserts “of the Interior” after “Secretary” in section 2 of the Long-Term Leasing Act.",
+    "new": "(b) TECHNICAL CORRECTION.—Section 2 of the Act of August 9, 1955"
+   }
+  ]
+ },
+ "2215": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "The substitute changes a cross-reference to the Abandoned Hardrock Mine Fund from section 205(d) to section 2215(d) of the bill.",
+    "new": "Abandoned Hardrock Mine Fund established by section 2215(d)"
+   }
+  ]
+ },
+ "2221": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute drops the 30-day lead time, so a party planning casual-use geothermal activities gives the Secretary a notice of intent before the activities start with no minimum number of days.",
+    "old": "notice of intent to carry out those activities at least 30 days before the start of the activities"
+   }
+  ]
+ },
+ "2222": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "The substitute rewords one drafting instruction to read “indenting the paragraphs appropriately” and leaves the royalty provisions unchanged.",
+    "new": "indenting the paragraphs appropriately,"
+   }
+  ]
+ },
+ "2224": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "The substitute changes the capitalization of the section heading to “Geothermal Ombudsman and Permitting Task Force” and leaves the text unchanged.",
+    "new": "(1) BUREAU.—The term “Bureau” means the Bureau of Land Management."
+   }
+  ]
+ },
+ "2225": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute lets the Secretary skip a Federal drilling permit when any one of three conditions holds (the United States owns under 50 percent, or the wellbore enters and produces from, or only traverses, the Federal mineral estate), where the September text required the first condition and a State permit.",
+    "new": "the well is located on non-Federal land overlying a non-Federal mineral estate, but some portion of the wellbore enters and produces from the Federal mineral estate subject to the lease"
+   },
+   {
+    "t": "The substitute removes the September requirement that the operator submit a State permit to the Secretary.",
+    "old": "the operator submits to the Secretary a State permit to conduct geothermal exploration and production activities on the non-Federal surface estate"
+   },
+   {
+    "t": "The substitute changes the notification rule to cover State permits that would affect geothermal resources owned by the Federal Government, where the September text referred to oil and gas.",
+    "new": "would impact or extract geothermal resources owned by the Federal Government"
+   }
+  ]
+ },
+ "2229": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute adds title V of the Federal Land Policy and Management Act of 1976 to the laws that the NEPA-exclusion requirements override when they apply to drilling-permit activities.",
+    "new": "or title V of the Federal Land Policy and Management Act of 1976 (43 U.S.C. 1761 et seq.), activities described in subsection (b)"
+   },
+   {
+    "t": "The substitute changes the Mineral Leasing Act citation in that clause from 30 U.S.C. 1001 to 30 U.S.C. 181.",
+    "new": "permit under the Mineral Leasing Act (30 U.S.C. 181 et seq.) or a geothermal drilling permit under"
+   }
+  ]
+ },
+ "2234": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "The substitute renumbers the new Federal Power Act section on micro hydrokinetic projects from section 37 to section 38.",
+    "new": "SEC. 38. LICENSING OF MICRO HYDROKINETIC ENERGY PROJECTS"
+   }
+  ]
+ },
+ "2242": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "This section was section 2243 in the September text and is renumbered 2242 after the substitute drops the Northwest Power and Conservation Council section; its text is unchanged.",
+    "new": "to perform law enforcement duties as needed to ensure the safety of the Chairman and Commissioners"
+   }
+  ]
+ },
+ "2252": {
+  "kind": "technical",
+  "points": [
+   {
+    "t": "The substitute corrects the typo “substitutions” to “substations” in the definition of an offshore transmission line.",
+    "new": "connects multiple offshore transmission substations"
+   }
+  ]
+ },
+ "2242-dropped": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The September text amended section 4(c)(10)(B) of the Pacific Northwest Electric Power Planning and Conservation Act by adding the words “since the date of enactment” of the bill, and the substitute omits this section.",
+    "old": "is amended by inserting “since the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026” before the period at the end"
+   }
+  ]
+ },
+ "2261": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The section requires the Secretary of Energy to post a public announcement within 72 hours of altering a directive or safety standard for a covered DOE nuclear facility, with a summary of how it was altered.",
+    "new": "Not later than 72 hours after altering a directive or safety standard relating to covered DOE nuclear facilities"
+   },
+   {
+    "t": "The section requires an announcement within 72 hours of issuing a preliminary or final documented safety analysis, which must include the analysis, modified only to remove commercially sensitive, classified or controlled information.",
+    "new": "Not later than 72 hours after issuing any preliminary documented safety analysis or documented safety analysis"
+   },
+   {
+    "t": "The section requires an announcement within 72 hours of entering an agreement to authorize a covered DOE nuclear facility, including any conditions in the agreement.",
+    "new": "Not later than 72 hours after entering into an agreement to authorize a covered DOE nuclear facility"
+   },
+   {
+    "t": "The section requires an annual report by January 31 to the House Energy and Commerce and Senate Energy and Natural Resources Committees on the Secretary's authorization activities during the prior calendar year.",
+    "new": "Not later than January 31 of each year, the Secretary of Energy shall submit to the Committee on Energy and Commerce of the House of Representatives"
+   }
+  ]
+ },
+ "3001": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The section amends Internal Revenue Code section 104(a)(2) to exclude from gross income damages received on account of any sexual act or sexual contact, whether or not there are medical records or observable injuries.",
+    "new": "whether or not there are medical records or observable injuries of such act or contact"
+   },
+   {
+    "t": "The section provides that a statement in a decision or agreement that damages are on account of a sexual act or contact is credible evidence and that the taxpayer meets the substantiation requirement under section 7491(a)(2).",
+    "new": "such statement shall be treated as credible evidence that such damages are so on account for purposes of section 7491(a)"
+   },
+   {
+    "t": "The section applies to amounts received under decisions made and agreements entered into after enactment, and an agreement that replaces or revises an earlier agreement is not treated as entered into after enactment.",
+    "new": "The amendments made by this section shall apply to amounts received pursuant to decisions made, and agreements entered into, after the date of the enactment of this Act."
+   },
+   {
+    "t": "The section directs the Secretary of the Treasury, in consultation with the Justice Department Office on Violence Against Women, to run a program promoting public awareness of the exclusion.",
+    "new": "shall conduct a program to promote public awareness of the exclusion from gross income"
+   }
+  ]
+ },
+ "2301": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute omits the September amendment to 54 U.S.C. 302706 that defined “property of traditional religious or cultural importance” as a geographic location or feature where an event of continuing religious or cultural significance to a living community occurred.",
+    "old": "the term ‘property of traditional religious or cultural importance’ means an identifiable geographic location or feature at which an event of continuing religious or cultural significance"
+   },
+   {
+    "t": "The substitute strikes the September provision under which the Secretary of the Interior assumes the functions of a Tribal Historic Preservation Officer when a tribal program stays inconsistent after the 2-year period.",
+    "old": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer until the date on which"
+   },
+   {
+    "t": "Before the Secretary disapproves a tribal program or suspends its agreements, the substitute requires a written determination, technical assistance and at least 180 days to submit a corrective action plan, and it adds a process to reinstate a program and restore suspended grants.",
+    "new": "allow at least 180 days for the Indian tribe and the Tribal Historic Preservation Officer to submit to the Secretary a corrective action plan"
+   },
+   {
+    "t": "The substitute requires the agency to prepare a report on each undertaking that is not exempt and to start consultation by sending it to the State and Tribal Historic Preservation Officers, Tribes and Native Hawaiian organizations within 60 days, where the September text required a report only when adverse effects were found.",
+    "new": "shall complete the report in accordance with subclause (II) and initiate consultation by submitting the report"
+   },
+   {
+    "t": "The substitute sets 45 days, instead of 30, for a Historic Preservation Officer, Tribe or other consulting party to submit substantive objections before the agency proceeds.",
+    "new": "does not provide any substantive objections by the date that is 45 days after the date of receipt of a report or finding"
+   },
+   {
+    "t": "The substitute limits judicial review claims to parties that submitted a substantive comment other than a form letter, where the September text required a substantive and unique comment.",
+    "new": "filed by a party that submitted a substantive comment (excluding a form letter)"
+   },
+   {
+    "t": "When a court finds that an agency missed its consultation deadline, the substitute requires the court to set a schedule of no more than 90 days for the agency to act and to decide the applicant's case within 120 days after the complaint.",
+    "new": "issue a decision as expeditiously as practicable, but not later than 120 days, after the date on which the applicable complaint is filed"
+   },
+   {
+    "t": "The substitute excludes from the definition of undertaking a project whose only Federal involvement is financial assistance, except projects receiving more than $10,000,000 from the Department of Transportation, and limits the repair exclusion to “minor or routine” work.",
+    "new": "subject to the condition that this clause shall not apply to a project that receives more than $10,000,000 of financial assistance from the Department of Transportation"
+   }
+  ]
+ },
+ "2302": {
+  "kind": "substantive",
+  "points": [
+   {
+    "t": "The substitute specifies that the $200,000,000 authorized each year for fiscal years 2027 through 2036 comes from the unappropriated balance of the Historic Preservation Fund on September 30, 2026, or the general fund of the Treasury.",
+    "new": "from the unappropriated balance of the Historic Preservation Fund on September 30, 2026, or the general fund of the Treasury"
+   },
+   {
+    "t": "The substitute omits the September section 303103 that made deposited amounts available for expenditure from fiscal year 2028 on without further appropriation or fiscal year limitation.",
+    "old": "shall be made available for expenditure for fiscal year 2028 and each fiscal year thereafter, without further appropriation or fiscal year limitation"
+   },
+   {
+    "t": "The substitute exempts information in the Tribal Historic Preservation Officer online database that agencies and State Historic Preservation Officers share from disclosure under section 552(b)(3)(B) of title 5.",
+    "new": "shall be exempt from disclosure under section 552(b)(3)(B) of title 5"
+   },
+   {
+    "t": "The substitute removes the cross-reference to the section 302706(a)(1) definition from the provision on properties of traditional religious or cultural importance in the Tribal grant program.",
+    "old": "of properties of traditional religious or cultural importance (as defined in section 302706(a)(1))"
+   }
+  ]
+ }
+}
