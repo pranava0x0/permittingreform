@@ -1766,8 +1766,8 @@
   function renderAmendSection(id) {
     const A = window.PR_AMEND;
     const changed = A.rows.filter((r) => r.status !== "unchanged");
-    const r = A.rows.find((x) => x.id === id);
-    if (!r) return [el("div", { class: "notice" }, el("p", null, "No change recorded for section " + id + "."), el("p", null, el("a", { href: "#/amendments" }, "All amendments")))];
+    const r = changed.find((x) => x.id === id);
+    if (!r) return [el("div", { class: "notice" }, el("p", null, "The substitute does not change section " + id + "."), el("p", null, byNum[id] ? [secLink(id), " · "] : null, el("a", { href: "#/amendments" }, "All amendments")))];
     const at = changed.indexOf(r);
     const prev = changed[at - 1];
     const next = changed[at + 1];

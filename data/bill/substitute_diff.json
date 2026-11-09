@@ -1163,7 +1163,7 @@
      "before": "(a) IN GENERAL.—The",
      "del": "Chairman, in coordination with",
      "ins": "Executive Director, in coordination with the Chairman and",
-     "after": "the General Services Administration, shall maintain an online",
+     "after": "the General Services Administration, shall",
      "a": [
       97,
       20
@@ -1174,7 +1174,7 @@
      ]
     },
     {
-     "before": "in coordination with the General Services Administration, shall",
+     "before": "the General Services Administration, shall",
      "del": "maintain",
      "ins": "maintain, as a component of the Dashboard,",
      "after": "an online database, to be known as the",
@@ -2033,7 +2033,7 @@
      "before": "and any amount exceeding that limitation shall be",
      "del": "reallocated",
      "ins": "reallocated, in accordance with paragraph (2),",
-     "after": "equally among the remaining coastal States. (e) FUNDING.—",
+     "after": "equally among the remaining coastal States.",
      "a": [
       158,
       7
@@ -2044,7 +2044,7 @@
      ]
     },
     {
-     "before": "be reallocated equally among the remaining coastal States.",
+     "before": "equally among the remaining coastal States.",
      "del": "",
      "ins": "(2) REALLOCATION LIMITATION.—If a reallocation of amounts under paragraph (1) results in another coastal State exceeding the limitation described in that paragraph, such amounts shall be reallocated among the remaining coastal States that have not reached that limitation.",
      "after": "(e) FUNDING.— (1) AUTHORIZATION OF APPROPRIATIONS.— There is",
@@ -2351,7 +2351,7 @@
      "before": "takes an action under paragraph (1), the Federal",
      "del": "agency shall notify the non-Federal project sponsor or",
      "ins": "department or agency shall notify the",
-     "after": "holder of the Federal authorization or permit, in",
+     "after": "holder of the Federal authorization or",
      "a": [
       160,
       24
@@ -2362,7 +2362,7 @@
      ]
     },
     {
-     "before": "sponsor or holder of the Federal authorization or",
+     "before": "holder of the Federal authorization or",
      "del": "permit,",
      "ins": "permit for a covered project or action,",
      "after": "in writing, of such action, including by— (A)",
@@ -2379,7 +2379,7 @@
      "before": "court of appeals of the United States, a",
      "del": "non-Federal project sponsor or",
      "ins": "",
-     "after": "holder of a Federal authorization or permit seeking",
+     "after": "holder of a Federal authorization or permit",
      "a": [
       161,
       12
@@ -2390,7 +2390,7 @@
      ]
     },
     {
-     "before": "or holder of a Federal authorization or permit",
+     "before": "holder of a Federal authorization or permit",
      "del": "",
      "ins": "for a covered project or action",
      "after": "seeking judicial review of an action taken by",
@@ -2561,7 +2561,7 @@
      "before": "not met its burden under subparagraph (B), the",
      "del": "non-Federal project sponsor or",
      "ins": "",
-     "after": "holder of the Federal authorization or permit shall",
+     "after": "holder of the Federal authorization or permit",
      "a": [
       162,
       25
@@ -2572,7 +2572,7 @@
      ]
     },
     {
-     "before": "or holder of the Federal authorization or permit",
+     "before": "holder of the Federal authorization or permit",
      "del": "shall be entitled to— (i)",
      "ins": "for a covered project or action shall be entitled to— (I)",
      "after": "the reinstatement of the Federal authorization or permit",
@@ -2603,7 +2603,7 @@
      "before": "agency preventing the construction or operation of the",
      "del": "project; (ii)",
      "ins": "covered project or action; (II)",
-     "after": "injunctive relief preventing a Federal agency from taking",
+     "after": "injunctive relief preventing a Federal",
      "a": [
       163,
       7
@@ -2614,7 +2614,7 @@
      ]
     },
     {
-     "before": "the project; (ii) injunctive relief preventing a Federal",
+     "before": "injunctive relief preventing a Federal",
      "del": "",
      "ins": "department or",
      "after": "agency from taking any new action that would",
@@ -2701,7 +2701,7 @@
      "before": "delay in the construction or operation of the",
      "del": "project,",
      "ins": "covered project or action,",
-     "after": "as the court determines appropriate; and (v) costs",
+     "after": "as the court determines appropriate; and",
      "a": [
       164,
       1
@@ -2712,7 +2712,7 @@
      ]
     },
     {
-     "before": "the project, as the court determines appropriate; and",
+     "before": "as the court determines appropriate; and",
      "del": "(v) costs in an amount equal to",
      "ins": "(V) on a showing that 1 or more Federal agencies interfered with a Federal authorization or permit in bad faith or interfered in bad faith with the construction or operation of a project that has secured all necessary Federal authorizations or permits, costs in an amount",
      "after": "not less than 25 percent and not more",
@@ -2729,7 +2729,7 @@
      "before": "than 50 percent of the total of all",
      "del": "costs incurred by the non-Federal project sponsor or",
      "ins": "development and construction costs incurred by the",
-     "after": "holder of the Federal authorization or permit in",
+     "after": "holder of the Federal authorization or permit",
      "a": [
       164,
       5
@@ -2740,7 +2740,7 @@
      ]
     },
     {
-     "before": "or holder of the Federal authorization or permit",
+     "before": "holder of the Federal authorization or permit",
      "del": "",
      "ins": "for a covered project or action",
      "after": "in connection with the project as of the",
@@ -2841,7 +2841,7 @@
      "before": "with or prevent the construction or operation at",
      "del": "full",
      "ins": "normal",
-     "after": "capacity of a project and said order has",
+     "after": "capacity of a project and",
      "a": [
       165,
       5
@@ -2852,7 +2852,7 @@
      ]
     },
     {
-     "before": "operation at full capacity of a project and",
+     "before": "capacity of a project and",
      "del": "said order has been enjoined",
      "ins": "such order has been enjoined or stayed",
      "after": "by a court of competent jurisdiction, then, if",
@@ -3195,7 +3195,7 @@
      "before": "disparate treatment under clause (i)(III): (aa) EMPIRICAL EVIDENCE.—",
      "del": "",
      "ins": "(AA) IN GENERAL.—",
-     "after": "Empirical evidence demonstrating a pattern of improper denial",
+     "after": "Empirical evidence demonstrating a pattern of",
      "a": [
       175,
       19
@@ -3206,7 +3206,7 @@
      ]
     },
     {
-     "before": "EMPIRICAL EVIDENCE.— Empirical evidence demonstrating a pattern of",
+     "before": "Empirical evidence demonstrating a pattern of",
      "del": "improper",
      "ins": "",
      "after": "denial or unreasonable delay with respect to the",
@@ -3423,7 +3423,7 @@
      "before": "not necessary, for the construction or operation at",
      "del": "full",
      "ins": "normal",
-     "after": "capacity of a project. (b) RIGHT TO PETITION.—An",
+     "after": "capacity of a project. (b)",
      "a": [
       182,
       23
@@ -3434,7 +3434,7 @@
      ]
     },
     {
-     "before": "operation at full capacity of a project. (b)",
+     "before": "capacity of a project. (b)",
      "del": "",
      "ins": "TIMELINE FOR ISSUANCE OF CERTAIN AUTHORIZATIONS OR PERMITS NOT SUBJECT TO THE PREPARATION OF AN ENVIRONMENTAL DOCUMENT.— (1) IN GENERAL.—For any Federal authorizations or permits that are not agency actions for which an environmental impact statement or environmental assessment (as those terms are defined in section 3 of the National Environmental Policy Act of 1969) is required, all Federal agencies shall render decisions on all applicable covered applications not later than 1 year after the date on which the latest of the covered applications was submitted. (2) EFFECT OF REHEARING PROVISIONS.—If applicable Federal law provides for a rehearing on a Federal authorization or permit, the 1-year period described in paragraph (1) shall begin on— (A) the day after the rehearing is complete; or (B) in the event a rehearing is not pursued, the day after the deadline to seek a rehearing expires. (c)",
      "after": "RIGHT TO PETITION.—An applicant seeking a Federal authorization",
@@ -3451,7 +3451,7 @@
      "before": "judicial review of the compliance by a Federal",
      "del": "",
      "ins": "department or",
-     "after": "agency with the deadline established under section 1402(c)",
+     "after": "agency with the deadline established under",
      "a": [
       183,
       4
@@ -3462,7 +3462,7 @@
      ]
     },
     {
-     "before": "a Federal agency with the deadline established under",
+     "before": "agency with the deadline established under",
      "del": "section 1402(c)",
      "ins": "subsection (b)",
      "after": "with respect to the covered application by filing",
@@ -3493,7 +3493,7 @@
      "before": "which the applicable project is at least partially",
      "del": "located. (c)",
      "ins": "located; or (2) the United States District Court for the District of Columbia. (d)",
-     "after": "EXCEPTIONS.—The failure of a Federal agency to comply",
+     "after": "EXCEPTIONS.—The failure of a Federal",
      "a": [
       183,
       8
@@ -3504,7 +3504,7 @@
      ]
     },
     {
-     "before": "partially located. (c) EXCEPTIONS.—The failure of a Federal",
+     "before": "EXCEPTIONS.—The failure of a Federal",
      "del": "",
      "ins": "department or",
      "after": "agency to comply with the deadline established under",
@@ -3661,7 +3661,7 @@
      "before": "is filed under subsection (b), absent extraordinary circumstances.",
      "del": "(f)",
      "ins": "(g)",
-     "after": "ORDER.—A court awarding injunctive relief under subsection (d)(1)",
+     "after": "ORDER.—A court awarding injunctive relief under subsection",
      "a": [
       185,
       1
@@ -3672,7 +3672,7 @@
      ]
     },
     {
-     "before": "(f) ORDER.—A court awarding injunctive relief under subsection",
+     "before": "ORDER.—A court awarding injunctive relief under subsection",
      "del": "(d)(1)",
      "ins": "(e)(1)",
      "after": "shall issue an order requiring a decision on",
@@ -3897,7 +3897,7 @@
      "before": "conductors (including superconductors), as defined by the Commission,",
      "del": "",
      "ins": "are capable of transmitting electric energy at",
-     "after": "voltages determined to be appropriate by the Commission;",
+     "after": "voltages determined to be appropriate by the",
      "a": [
       189,
       22
@@ -3908,7 +3908,7 @@
      ]
     },
     {
-     "before": "Commission, voltages determined to be appropriate by the",
+     "before": "voltages determined to be appropriate by the",
      "del": "Commission;",
      "ins": "Commission for facilities of a comparable throughput specifically with respect to an application for an individual project under this section;",
      "after": "and “(6) if applicable, the proposed modification (including",
@@ -3925,7 +3925,7 @@
      "before": "authority to approve the siting of the applicable",
      "del": "facility. “(6) SIMULTANEOUS PROCESSING.—In the case of transmission facilities that are capable of transmitting electric energy at a voltage of not less than 345 kilovolts, an application under subsection (c) shall be submitted to the Commission simultaneously with, or any time after, the submission of an application to the applicable State commission or other entity that has authority to approve the siting of the applicable facility, and the Commission shall commence a proceeding under subsection (b). “(7) LIMITATIONS.—Simultaneous processing under paragraph (6) is subject to the condition that the Commission shall not issue a permit under subsection (b) unless the Commission first makes a finding described in subparagraph (A), (B), or (C) of subsection (b)(1) with respect to the applicable electric transmission facility.”. (d) RIGHTS-OF-WAY.—Section 216(e)(3)",
      "ins": "facility.”. (d) RIGHTS-OF-WAY.—Section 216(e)",
-     "after": "of the Federal Power Act (16 U.S.C. 824p(e)(3))",
+     "after": "of the Federal Power Act (16 U.S.C.",
      "a": [
       191,
       16
@@ -3936,7 +3936,7 @@
      ]
     },
     {
-     "before": "216(e)(3) of the Federal Power Act (16 U.S.C.",
+     "before": "of the Federal Power Act (16 U.S.C.",
      "del": "824p(e)(3)) is amended by striking “shall conform” and all that follows through the period at the end",
      "ins": "824p(e)) is amended by striking “or a State” in paragraph (1) and by striking “shall conform as nearly as practicable to the practice and procedure in a similar action or proceeding in the courts of the State in which the property is located” in paragraph (3)",
      "after": "and inserting “shall be in accordance with rule",
@@ -4009,7 +4009,7 @@
      "before": "section shall prevent a transmitting utility from recovering",
      "del": "",
      "ins": "all or part of",
-     "after": "such costs through voluntary agreement with its customers.”.",
+     "after": "such costs through voluntary agreement with its",
      "a": [
       194,
       17
@@ -4020,7 +4020,7 @@
      ]
     },
     {
-     "before": "recovering such costs through voluntary agreement with its",
+     "before": "such costs through voluntary agreement with its",
      "del": "customers.”.",
      "ins": "customers and allocating any remaining costs in accordance with this subsection.”.",
      "after": "(2) SAVINGS PROVISION.—If the Federal Energy Regulatory Commission",
@@ -4037,7 +4037,7 @@
      "before": "Regulatory Commission finds that the considerations under paragraphs",
      "del": "(1)",
      "ins": "(2)",
-     "after": "through (5) and, if applicable, (6) of section",
+     "after": "through (5) and, if applicable, (6)",
      "a": [
       194,
       21
@@ -4048,7 +4048,7 @@
      ]
     },
     {
-     "before": "paragraphs (1) through (5) and, if applicable, (6)",
+     "before": "through (5) and, if applicable, (6)",
      "del": "",
      "ins": "of subsection (b)",
      "after": "of section 216 of the Federal Power Act",
@@ -4339,7 +4339,7 @@
      "before": "date of enactment of this section; and “(2)",
      "del": "updated",
      "ins": "conducted, including the identification of transmission needs and the evaluation and selection of transmission facilities in accordance with subsection (d),",
-     "after": "not less frequently than once every 4 years.",
+     "after": "not less frequently than once every 4",
      "a": [
       214,
       24
@@ -4350,7 +4350,7 @@
      ]
     },
     {
-     "before": "updated not less frequently than once every 4",
+     "before": "not less frequently than once every 4",
      "del": "years.",
      "ins": "years, with the first planning cycle commencing not later than 1 year after the date on which the Commission approves the applicable planning process under subsection (f)(2).",
      "after": "“(f) COMMISSION REVIEW.—The Commission shall— “(1) review each",
@@ -4483,7 +4483,7 @@
      "before": "term ‘referring State’ means 1 or more States",
      "del": "",
      "ins": "with jurisdiction over a referring State commission that has jurisdiction over the referred public utility. “(4) REFERRING STATE COMMISSION.—The term ‘referring State commission’ means 1 or more State commissions",
-     "after": "making a referral under subsection (b). “(4) REGIONAL",
+     "after": "making a referral under subsection (b).",
      "a": [
       219,
       10
@@ -4494,7 +4494,7 @@
      ]
     },
     {
-     "before": "more States making a referral under subsection (b).",
+     "before": "making a referral under subsection (b).",
      "del": "“(4)",
      "ins": "“(5)",
      "after": "REGIONAL TRANSMISSION FACILITY.—The term ‘regional transmission facility’ means",
@@ -4539,7 +4539,7 @@
      "before": "rule, establish procedures by which 1 or more",
      "del": "States",
      "ins": "State commissions",
-     "after": "may refer a public utility to the Commission",
+     "after": "may refer a public utility",
      "a": [
       220,
       7
@@ -4550,7 +4550,7 @@
      ]
     },
     {
-     "before": "or more States may refer a public utility",
+     "before": "may refer a public utility",
      "del": "",
      "ins": "over which those State commissions have jurisdiction",
      "after": "to the Commission for an investigation into the",
@@ -4581,7 +4581,7 @@
      "before": "used by the public utility for local transmission",
      "del": "planning and development",
      "ins": "planning, development, and replacement",
-     "after": "about which the referring State is concerned; “(B)",
+     "after": "about which the referring State",
      "a": [
       220,
       15
@@ -4592,7 +4592,7 @@
      ]
     },
     {
-     "before": "planning and development about which the referring State",
+     "before": "about which the referring State",
      "del": "",
      "ins": "commission",
      "after": "is concerned; “(B) a description of the harm",
@@ -4665,7 +4665,7 @@
      "before": "public comment the initiation of an investigation; and",
      "del": "“(B) concurrently with that notice, certify",
      "ins": "“(ii) concurrently with that notice, establish",
-     "after": "an investigative team to be composed of— “(i)",
+     "after": "an investigative team to be composed of—",
      "a": [
       221,
       9
@@ -4676,7 +4676,7 @@
      ]
     },
     {
-     "before": "certify an investigative team to be composed of—",
+     "before": "an investigative team to be composed of—",
      "del": "“(i) 1 or more individuals from the Office of Enforcement and Regulatory Accounting of the Commission; and “(ii)",
      "ins": "“(I) 1 or more non-decisional individuals from an office designated by the Chairman of the Commission; and “(II)",
      "after": "up to 3 representatives appointed by the referring",
@@ -4819,7 +4819,7 @@
      "before": "the presumption of prudence for local transmission facilities",
      "del": "planned or developed",
      "ins": "planned, developed, or replaced",
-     "after": "by the public utility. “(iv) A fine, payable",
+     "after": "by the public utility. “(iv) A",
      "a": [
       223,
       6
@@ -4830,7 +4830,7 @@
      ]
     },
     {
-     "before": "or developed by the public utility. “(iv) A",
+     "before": "by the public utility. “(iv) A",
      "del": "fine, payable to the referring State,",
      "ins": "civil penalty, credited to the transmission customers who bore the costs of the applicable local transmission facility,",
      "after": "of up to $5,000,000 for each local transmission",
@@ -4953,7 +4953,7 @@
      "before": "Part",
      "del": "III",
      "ins": "II",
-     "after": "of the Federal Power Act is amended by",
+     "after": "of the Federal Power Act",
      "a": [
       224,
       16
@@ -4964,7 +4964,7 @@
      ]
     },
     {
-     "before": "Part III of the Federal Power Act",
+     "before": "of the Federal Power Act",
      "del": "is amended by inserting after section 317 (16 U.S.C. 825p) the following: “SEC. 318.",
      "ins": "(16 U.S.C. 824 et seq.) (as amended by section 2105) is amended by adding at the end the following: “SEC. 228.",
      "after": "CONSOLIDATED PLANNING PROCESS. “(a) CONSOLIDATED GENERATION AND TRANSMISSION",
@@ -4995,7 +4995,7 @@
      "before": "the generating capacity reasonably anticipated to be needed",
      "del": "to meet future forecasted demand and forecasted generation over the next 20 years; “(2) routinely identifies and publishes",
      "ins": "over the next 20 years to meet both forecasted demand and forecasted generation; “(2) routinely identifies and publishes— “(A)",
-     "after": "resource and fuel-neutral planned interconnection locations for generating",
+     "after": "resource and fuel-neutral planned interconnection locations",
      "a": [
       225,
       5
@@ -5006,10 +5006,10 @@
      ]
     },
     {
-     "before": "and publishes resource and fuel-neutral planned interconnection locations",
+     "before": "resource and fuel-neutral planned interconnection locations",
      "del": "for generating capacity and an upfront, fixed, zonal, per-megawatt cost for each planned interconnection location; and",
      "ins": "for— “(i) generating and storage capacity; and “(ii) transmission capacity for customers; and “(B) an upfront, fixed, subregional, per-megawatt fee for each planned generation and storage interconnection location;",
-     "after": "“(3) establishes a streamlined generator cluster study process",
+     "after": "“(3) establishes a streamlined generator",
      "a": [
       225,
       10
@@ -5020,7 +5020,7 @@
      ]
     },
     {
-     "before": "interconnection location; and “(3) establishes a streamlined generator",
+     "before": "“(3) establishes a streamlined generator",
      "del": "cluster study process with a single decision point, meaningful and nonrefundable financial security, and withdrawal penalties sufficient to deter speculative projects. “(b) DEADLINE; UPDATES.—The",
      "ins": "interconnection and transmission service request study process with— “(A) a single decision point; “(B) meaningful and nonrefundable financial security; and “(C) withdrawal penalties after the determination of total costs of interconnection and any limitations from contingencies are provided to the customer that are sufficient to deter speculative projects; and “(4) aims to co-optimize solutions to cost-effectively address electricity demand growth while integrating new generation and storage resources. “(b) DEADLINE; PLANNING CYCLES.—The",
      "after": "consolidated interconnection and regional transmission planning process required",
@@ -5051,7 +5051,7 @@
      "before": "if the Commission finds that the process— “(A)",
      "del": "ensures",
      "ins": "as adopted pursuant to this section, including any revisions to the rule issued under subsection (a), meets the requirement of sections 205 and 206",
-     "after": "that all rates, charges, terms, and conditions will",
+     "after": "that all rates, charges, terms, and conditions",
      "a": [
       226,
       10
@@ -5062,7 +5062,7 @@
      ]
     },
     {
-     "before": "ensures that all rates, charges, terms, and conditions",
+     "before": "that all rates, charges, terms, and conditions",
      "del": "will",
      "ins": "",
      "after": "be just and reasonable and not unduly discriminatory",
@@ -5139,7 +5139,7 @@
      "before": "embedded costs and incremental expansion costs to eligible",
      "del": "customers seeking transmission service from",
      "ins": "computational load customers seeking transmission service on behalf of",
-     "after": "computational load owners and computational load operators; (B)",
+     "after": "computational load owners and computational load operators;",
      "a": [
       227,
       2
@@ -5150,10 +5150,10 @@
      ]
     },
     {
-     "before": "from computational load owners and computational load operators;",
+     "before": "computational load owners and computational load operators;",
      "del": "(B) transmission service costs",
      "ins": "(C) transmission costs incurred in response to transmission service from eligible computational load customers",
-     "after": "should be fully assigned to computational load owners",
+     "after": "should be fully assigned to",
      "a": [
       227,
       5
@@ -5164,7 +5164,7 @@
      ]
     },
     {
-     "before": "transmission service costs should be fully assigned to",
+     "before": "should be fully assigned to",
      "del": "computational load owners and computational load operators",
      "ins": "such customers",
      "after": "so as to minimize or avoid the cost",
@@ -5237,7 +5237,7 @@
      "before": "structures, or installations at a single location that—",
      "del": "(i)",
      "ins": "(I)",
-     "after": "primarily contain information technology infrastructure used for— (I)",
+     "after": "primarily contain information technology infrastructure used for—",
      "a": [
       228,
       15
@@ -5248,7 +5248,7 @@
      ]
     },
     {
-     "before": "(i) primarily contain information technology infrastructure used for—",
+     "before": "primarily contain information technology infrastructure used for—",
      "del": "(I)",
      "ins": "(aa)",
      "after": "creating, executing, and delivering software applications and services;",
@@ -5265,7 +5265,7 @@
      "before": "creating, executing, and delivering software applications and services;",
      "del": "(II)",
      "ins": "(bb)",
-     "after": "artificial intelligence training, deployment, and delivery; (III) cryptocurrency",
+     "after": "artificial intelligence training, deployment, and delivery;",
      "a": [
       228,
       20
@@ -5276,7 +5276,7 @@
      ]
     },
     {
-     "before": "services; (II) artificial intelligence training, deployment, and delivery;",
+     "before": "artificial intelligence training, deployment, and delivery;",
      "del": "(III) cryptocurrency mining; or (IV)",
      "ins": "(cc) cryptocurrency mining; or (dd)",
      "after": "other computational activities at a data center; and",
@@ -5321,7 +5321,7 @@
      "before": "other than an activity described in subparagraph (A).",
      "del": "“(4) EMBEDDED AVERAGE COST.—The term ‘embedded average",
      "ins": "(F) ELIGIBLE COMPUTATIONAL LOAD CUSTOMER.— The term “eligible computational load customer” has the meaning given the term by the Commission by rule or order. (G) PUBLIC UTILITY.—The term “public utility” has the meaning given the term in section 201(e) of the Federal Power Act (16 U.S.C. 824(e)). (H) TRANSMITTING UTILITY.—The term “transmitting utility” has the meaning given the term in section 3 of the Federal Power Act (16 U.S.C. 796). (3) REVISIONS OF POLICY STATEMENT.— (A) IN GENERAL.—Not later than 90 days after the date of enactment of this Act, the Commission shall— (i) revise the 1994 transmission pricing policy statement— (I) to require public utilities and transmitting utilities to charge eligible computational load customers seeking transmission service on behalf of computational load owners and computational load operators the embedded cost and a reasonable assessment, as determined by the Commission, of the incremental cost of transmission service; (II) to ensure that any incremental costs paid are credited to the annual transmission revenue requirement of the applicable public utility or transmitting utility to prevent double recovery from other customers; and (III) to provide for a lower cost of transmission service for eligible computational load customers seeking transmission service on behalf of computational load owners and computational load operators that elect non-firm transmission service; and (ii) issue a notice of proposed rulemaking requiring public utilities and transmitting utilities— (I) to establish or revise transmission rates for eligible computational load customers seeking transmission service on behalf of computational load owners and computational load operators in accordance with that revised transmission pricing policy statement; (II) to conduct a standardized analysis to identify a reasonable assessment of the incremental costs of transmission service to eligible computational load customers; (III) to conduct a standardized analysis to identify and evaluate cost reduction options; (IV) to provide a transmission rate that includes the embedded cost and a reasonable assessment of the incremental cost of transmission service to eligible computational load customers; and (V) to establish or revise transmission rates for existing customers to go into effect following the issuance of the final rule under subparagraph (B), consistent with subclauses (I) through (IV). (B) FINAL RULE.—Not later than 1 year after the date on which the notice of proposed rulemaking described in subparagraph (A)(ii) is issued, the Commission shall issue a final rule requiring public utilities and transmitting utilities to establish or revise transmission rates for eligible computational load customers seeking transmission service on behalf of computational load owners and computational load operators. (C) COST ASSIGNMENT.—In revising the 1994 transmission pricing policy statement and issuing a notice of proposed rulemaking and final rule under this paragraph, the Commission may treat eligible computational load customers seeking transmission service on behalf of computational load owners and computational load operators as a customer class and assign some or all costs to the class rather than to individual customers. (D) COORDINATION.— (i) REGIONAL AND INTERREGIONAL TRANSMISSION PLANS.—For transmission facilities subject to section 216(f) of the Federal Power Act, selected under section 225 of that Act, or pursuant to a Commission rule or order, a reasonable assessment of the incremental cost shall be assigned under each respective section or Commission rule or order. (ii) CONSOLIDATED PLANNING PROCESS.— For transmission facilities selected pursuant to section 228 of the Federal Power Act, a reasonable assessment of incremental cost shall be such costs assigned under such section or an applicable Commission rule or order. (b) RATEPAYER PROTECTION WITH RESPECT TO DATA CENTERS.—Part II of the Federal Power Act (16 U.S.C. 824 et seq.) (as amended by section 2106) is amended by adding at the end the following: “SEC. 229. RATEPAYER PROTECTION WITH RESPECT TO DATA CENTERS. “(a) DEFINITIONS.—In this section: “(1) COMMISSION.—The term ‘Commission’ means the Federal Energy Regulatory Commission. “(2) COMPUTATIONAL LOAD OPERATOR.—The term ‘computational load operator’ means an entity that operates a computational load site. “(3) COMPUTATIONAL LOAD OWNER.—The term ‘computational load owner’ means an entity that owns a computational load site. “(4) COMPUTATIONAL LOAD SITE.— “(A) IN GENERAL.—The term ‘computational load site’ means 1 or more buildings, structures, or installations at a single location that primarily contain information technology infrastructure used for— “(i) creating, executing, and delivering software applications and services; “(ii) artificial intelligence training, deployment, and delivery; “(iii) cryptocurrency mining; or “(iv) other computational activities at a data center. “(B) EXCLUSION.—The term ‘computational load site’ does not include computing or data storage equipment that is ancillary to a facility the primary purpose of which is a commercial or industrial activity other than an activity described in subparagraph (A). “(5) RETAIL EMBEDDED COST.—The term ‘retail embedded",
-     "after": "cost’ means the average cost of service reflected",
+     "after": "cost’ means the average cost of",
      "a": [
       233,
       13
@@ -5332,7 +5332,7 @@
      ]
     },
     {
-     "before": "‘embedded average cost’ means the average cost of",
+     "before": "cost’ means the average cost of",
      "del": "",
      "ins": "retail",
      "after": "service reflected in the rates otherwise in effect",
@@ -5349,7 +5349,7 @@
      "before": "customer class that would apply to the applicable",
      "del": "covered load. “(5) INCREMENTAL COST.—The term ‘incremental cost’ means the cost",
      "ins": "computational load owner or computational load operator. “(6) RETAIL INCREMENTAL COST.—The term ‘retail incremental cost’ means a reasonable assessment of costs",
-     "after": "that would be avoided had a specific covered",
+     "after": "that would be avoided had a specific",
      "a": [
       233,
       17
@@ -5360,7 +5360,7 @@
      ]
     },
     {
-     "before": "cost that would be avoided had a specific",
+     "before": "that would be avoided had a specific",
      "del": "covered load not been served by the",
      "ins": "computational load owner or computational load operator not been served by an",
      "after": "electric utility, including all costs to construct, own,",
@@ -5377,7 +5377,7 @@
      "before": "transmission and distribution services associated with serving the",
      "del": "covered load, based on costs estimated by the electric utility at or around the time that the covered load becomes operational and subject to approval by the Commission or a State, as appropriate. “(6) STATE.—The term ‘State’ includes the applicable State commission and any other State authority having",
      "ins": "computational load site. “(7) STATE.—The term ‘State’ includes— “(A) an applicable State commission; and “(B) any other State authority with",
-     "after": "jurisdiction over retail electric service. “(7) TRANSMISSION SERVICE",
+     "after": "jurisdiction over retail electric service.",
      "a": [
       233,
       24
@@ -5388,7 +5388,7 @@
      ]
     },
     {
-     "before": "State authority having jurisdiction over retail electric service.",
+     "before": "jurisdiction over retail electric service.",
      "del": "“(7)",
      "ins": "“(8)",
      "after": "TRANSMISSION SERVICE CATEGORY.—The term ‘transmission service category’ means",
@@ -5461,7 +5461,7 @@
      "before": "rate, charge, or agreement for service to a",
      "del": "covered load",
      "ins": "computational load site",
-     "after": "shall be designed to recover from the covered",
+     "after": "shall be designed to recover from the",
      "a": [
       235,
       11
@@ -5472,7 +5472,7 @@
      ]
     },
     {
-     "before": "load shall be designed to recover from the",
+     "before": "shall be designed to recover from the",
      "del": "covered load the full",
      "ins": "computational load owner or computational load operator the full retail",
      "after": "incremental cost of the electric utility, and such",
@@ -5531,7 +5531,7 @@
      "before": "transmission, or distribution facility necessary to serve a",
      "del": "covered load,",
      "ins": "computational load site,",
-     "after": "an electric utility shall require the covered load",
+     "after": "an electric utility shall require the",
      "a": [
       235,
       23
@@ -5542,7 +5542,7 @@
      ]
     },
     {
-     "before": "covered load, an electric utility shall require the",
+     "before": "an electric utility shall require the",
      "del": "covered load to provide",
      "ins": "computational load owner or computational load operator to provide reasonable",
      "after": "financial assurances or contributions sufficient to cover the",
@@ -5643,7 +5643,7 @@
      "before": "or contract terms that recover more than the",
      "del": "embedded average",
      "ins": "retail embedded",
-     "after": "cost, and more than the incremental cost, of",
+     "after": "cost, and more than the",
      "a": [
       236,
       15
@@ -5654,10 +5654,10 @@
      ]
     },
     {
-     "before": "the embedded average cost, and more than the",
+     "before": "cost, and more than the",
      "del": "",
      "ins": "retail",
-     "after": "incremental cost, of serving a covered load; “(B)",
+     "after": "incremental cost, of serving a",
      "a": [
       236,
       16
@@ -5668,10 +5668,10 @@
      ]
     },
     {
-     "before": "more than the incremental cost, of serving a",
+     "before": "incremental cost, of serving a",
      "del": "covered load;",
      "ins": "computational load site;",
-     "after": "“(B) require that revenue collected from a covered",
+     "after": "“(B) require that revenue collected from a",
      "a": [
       236,
       17
@@ -5682,7 +5682,7 @@
      ]
     },
     {
-     "before": "load; “(B) require that revenue collected from a",
+     "before": "“(B) require that revenue collected from a",
      "del": "covered load in excess of",
      "ins": "computational load owner or computational load operator in excess of retail",
      "after": "incremental cost be credited or applied to reduce",
@@ -5951,7 +5951,7 @@
      "before": "subparagraph (A). “(d) PROTECTION OF AMERICAN INDUSTRY.—A State",
      "del": "may treat covered loads",
      "ins": "may— “(1) treat computational load owners and computational load operators",
-     "after": "as a separate class of service, and may",
+     "after": "as a separate class of",
      "a": [
       238,
       25
@@ -5962,7 +5962,7 @@
      ]
     },
     {
-     "before": "treat covered loads as a separate class of",
+     "before": "as a separate class of",
      "del": "service, and may",
      "ins": "retail electric service; and “(2)",
      "after": "establish rates, charges, terms, conditions, and interconnection or",
@@ -6435,7 +6435,7 @@
      "before": "commercially available electrical efficiency at that voltage level;",
      "del": "and “(C) provides the greatest",
      "ins": "“(C) provides the greatest feasible and commercially",
-     "after": "available level of mechanical performance, including mitigating thermal",
+     "after": "available level of mechanical performance,",
      "a": [
       260,
       22
@@ -6446,7 +6446,7 @@
      ]
     },
     {
-     "before": "provides the greatest available level of mechanical performance,",
+     "before": "available level of mechanical performance,",
      "del": "including mitigating thermal sag at the maximum rated transmission-carrying capacity of the applicable transmission facility. “(3)",
      "ins": "taking into account relevant factors, including reliability, safety, and affordability; and “(D) provides an economically reasonable alternative to a transmission conductor that is not a high-performance transmission conductor. “(2)",
      "after": "COMMISSION.—The term ‘Commission’ means the Federal Energy Regulatory",
@@ -6519,7 +6519,7 @@
      "before": "and 206, the Commission shall require that public",
      "del": "utilities use advanced transmission technologies, including best-available transmission conductors, when carrying out covered projects.",
      "ins": "utilities— “(1) evaluate their transmission systems to assess all technically achievable opportunities to deploy grid-enhancing advanced transmission technologies, including the costs and benefits of such deployment; and “(2) when carrying out covered projects, use grid-enhancing advanced transmission technologies, including transmission conductors in the best-available class of transmission conductors, whenever the benefits of doing so would exceed the costs.",
-     "after": "“(c) PRESUMPTION OF PRUDENCE FOR ADVANCED TRANSMISSION TECHNOLOGIES.—In",
+     "after": "“(c) PRESUMPTION OF PRUDENCE FOR",
      "a": [
       261,
       13
@@ -6530,7 +6530,7 @@
      ]
     },
     {
-     "before": "out covered projects. “(c) PRESUMPTION OF PRUDENCE FOR",
+     "before": "“(c) PRESUMPTION OF PRUDENCE FOR",
      "del": "",
      "ins": "GRID-ENHANCING",
      "after": "ADVANCED TRANSMISSION TECHNOLOGIES.—In any filing seeking to recover",
@@ -6561,7 +6561,7 @@
      "before": "Commission shall presume that— “(1) the use of",
      "del": "an",
      "ins": "a grid-enhancing",
-     "after": "advanced transmission technology is a prudent practice; and",
+     "after": "advanced transmission technology is a prudent practice;",
      "a": [
       261,
       23
@@ -6572,7 +6572,7 @@
      ]
     },
     {
-     "before": "an advanced transmission technology is a prudent practice;",
+     "before": "advanced transmission technology is a prudent practice;",
      "del": "and",
      "ins": "",
      "after": "“(2) the costs associated with the use of",
@@ -6589,7 +6589,7 @@
      "before": "“(2) the costs associated with the use of",
      "del": "an",
      "ins": "a grid-enhancing",
-     "after": "advanced transmission technology are just and reasonable. “(d)",
+     "after": "advanced transmission technology are just and",
      "a": [
       262,
       1
@@ -6600,7 +6600,7 @@
      ]
     },
     {
-     "before": "of an advanced transmission technology are just and",
+     "before": "advanced transmission technology are just and",
      "del": "reasonable.",
      "ins": "reasonable; and “(3) the costs associated with the use of a grid-enhancing advanced transmission technology provide an economically reasonable alternative to the use of transmission technologies that are not grid-enhancing advanced transmission technologies.",
      "after": "“(d) APPLICABILITY.—The requirements of this section apply only",
@@ -6617,7 +6617,7 @@
      "before": "paragraph (1), the Commission shall— “(A) require that",
      "del": "public utilities conduct, on Commission-established timelines, recurring evaluations— “(i) to determine whether",
      "ins": "each public utility conducts, on Commission-established timelines, a recurring evaluation of the transmission systems of the public utility— “(i) to determine when",
-     "after": "the benefits associated with deploying advanced transmission technologies",
+     "after": "the benefits associated with deploying",
      "a": [
       262,
       14
@@ -6628,7 +6628,7 @@
      ]
     },
     {
-     "before": "to determine whether the benefits associated with deploying",
+     "before": "the benefits associated with deploying",
      "del": "advanced transmission technologies through 1 or more",
      "ins": "grid-enhancing advanced transmission technologies through",
      "after": "covered projects, including benefits to the current transmission",
@@ -6701,7 +6701,7 @@
      "before": "1), the applicable public utility shall deploy the",
      "del": "advanced transmission technologies on a timeline determined by the Commission; “(D)",
      "ins": "grid-enhancing advanced transmission technology based on general schedules for deployment, as determined by the Commission; “(C)",
-     "after": "require that decisions on whether to implement advanced",
+     "after": "require that decisions on whether to implement",
      "a": [
       263,
       17
@@ -6712,7 +6712,7 @@
      ]
     },
     {
-     "before": "“(D) require that decisions on whether to implement",
+     "before": "require that decisions on whether to implement",
      "del": "",
      "ins": "grid-enhancing",
      "after": "advanced transmission technologies based on the recurring evaluations",
@@ -6757,7 +6757,7 @@
      "before": "methodology for determining whether a transmission conductor is",
      "del": "a best-available transmission conductor",
      "ins": "in the best-available class of transmission conductors",
-     "after": "for purposes of this section; “(F) ensure that",
+     "after": "for purposes of this section;",
      "a": [
       264,
       3
@@ -6768,7 +6768,7 @@
      ]
     },
     {
-     "before": "best-available transmission conductor for purposes of this section;",
+     "before": "for purposes of this section;",
      "del": "“(F) ensure that the methodology established under subparagraph (E) is consistent with the criteria described in clauses (i) through (iii) of subparagraph (A); “(G)",
      "ins": "“(E)",
      "after": "provide for periodic review and updating of the",
@@ -7119,7 +7119,7 @@
      "before": "AND HIRING ISSUES AT THE FEDERAL POWER MARKETING",
      "del": "AGENCIES.",
      "ins": "ADMINISTRATIONS.",
-     "after": "“(a) EMPLOYEE COMPENSATION PROGRAM.— “(1) IN GENERAL.—Notwithstanding any",
+     "after": "“(a) EMPLOYEE COMPENSATION PROGRAM.— “(1) IN",
      "a": [
       272,
       21
@@ -7130,10 +7130,10 @@
      ]
     },
     {
-     "before": "MARKETING AGENCIES. “(a) EMPLOYEE COMPENSATION PROGRAM.— “(1) IN",
+     "before": "“(a) EMPLOYEE COMPENSATION PROGRAM.— “(1) IN",
      "del": "GENERAL.—Notwithstanding any other law, rule, regulation, or directive relating to the payment of Federal employees (other than chapter 83 of title 5, United States Code),",
      "ins": "GENERAL.—Except as otherwise provided in this section,",
-     "after": "the Administrator of each Federal power marketing agency",
+     "after": "the Administrator of each Federal power marketing",
      "a": [
       272,
       23
@@ -7144,7 +7144,7 @@
      ]
     },
     {
-     "before": "Code), the Administrator of each Federal power marketing",
+     "before": "the Administrator of each Federal power marketing",
      "del": "agency",
      "ins": "administration",
      "after": "(referred to in this section as an ‘Administrator’)",
@@ -7463,7 +7463,7 @@
      "before": "(a) DEFINITION OF",
      "del": "DATA CENTER ENTITY.—",
      "ins": "COMPUTATIONAL LOAD SITE.—",
-     "after": "(1) IN GENERAL.—In this section, the term “data",
+     "after": "(1) IN GENERAL.—In this section, the term",
      "a": [
       279,
       3
@@ -7474,10 +7474,10 @@
      ]
     },
     {
-     "before": "ENTITY.— (1) IN GENERAL.—In this section, the term",
+     "before": "(1) IN GENERAL.—In this section, the term",
      "del": "“data center entity” means an end-user, or group of co-located end-users, the primary purpose of which is to house computing, networking, or data storage equipment used to process, store, or transmit digital data, including equipment used for— (A) artificial intelligence training or inference; (B) cloud computing or data hosting; or (C) cryptocurrency mining or other distributed-ledger or digital-asset computation.",
      "ins": "“computational load site” means 1 or more buildings, structures, or installations at a single location that primarily contain information technology infrastructure used for— (A) creating, executing, and delivering software applications and services; (B) artificial intelligence training, deployment, and delivery; (C) cryptocurrency mining; or (D) other computational activities at a data center.",
-     "after": "(2) EXCLUSION.—In this section, the term “data center",
+     "after": "(2) EXCLUSION.—In this section, the term",
      "a": [
       279,
       5
@@ -7488,7 +7488,7 @@
      ]
     },
     {
-     "before": "digital-asset computation. (2) EXCLUSION.—In this section, the term",
+     "before": "(2) EXCLUSION.—In this section, the term",
      "del": "“data center entity”",
      "ins": "“computational load site”",
      "after": "does not include computing or data storage equipment",
@@ -7519,7 +7519,7 @@
      "before": "the Energy Information Administration shall revise Form 861",
      "del": "",
      "ins": "(or any successor form)",
-     "after": "of the Energy Information Administration to include load",
+     "after": "of the Energy Information Administration to",
      "a": [
       279,
       24
@@ -7530,7 +7530,7 @@
      ]
     },
     {
-     "before": "Form 861 of the Energy Information Administration to",
+     "before": "of the Energy Information Administration to",
      "del": "include load from data center entities.",
      "ins": "separately include information from computational load sites.",
      "after": "",
@@ -7843,7 +7843,7 @@
      "before": "before the Indian tribe approves the right-of-way. “(B)",
      "del": "APPLICABLE LAWS.—The",
      "ins": "STATUTORY EXEMPTIONS.—The",
-     "after": "Secretary of the Interior, in making a decision",
+     "after": "Secretary of the Interior, in making",
      "a": [
       293,
       11
@@ -7854,7 +7854,7 @@
      ]
     },
     {
-     "before": "APPLICABLE LAWS.—The Secretary of the Interior, in making",
+     "before": "Secretary of the Interior, in making",
      "del": "a decision to approve a Tribal regulation",
      "ins": "an approval decision",
      "after": "under this subsection, shall not be subject to—",
@@ -8153,7 +8153,7 @@
      "before": "less than 50 percent of the subsurface geothermal",
      "del": "estate",
      "ins": "resources",
-     "after": "to be accessed by the proposed action; and",
+     "after": "to be accessed by the proposed action;",
      "a": [
       339,
       1
@@ -8164,7 +8164,7 @@
      ]
     },
     {
-     "before": "estate to be accessed by the proposed action;",
+     "before": "to be accessed by the proposed action;",
      "del": "and “(2) the operator submits to the Secretary a State permit to conduct geothermal exploration and production activities on the non-Federal surface estate.",
      "ins": "“(2) the well is located on non-Federal land overlying a non-Federal mineral estate, but some portion of the wellbore enters and produces from the Federal mineral estate subject to the lease; or “(3) the well is located on non-Federal land overlying a non-Federal mineral estate, but some portion of the wellbore traverses but does not produce from the Federal minerals or mineral estate subject to the lease.",
      "after": "“(b) NOTIFICATION.—For each State permit to drill or",
@@ -8741,7 +8741,7 @@
      "before": "or meet required metrics under this division. “(3)",
      "del": "DISAPPROVAL.—If the Secretary disapproves of a tribal program or",
      "ins": "CORRECTIVE ACTION.—Before the Secretary disapproves of",
-     "after": "a major aspect of a tribal program under",
+     "after": "a major aspect of a tribal program",
      "a": [
       376,
       17
@@ -8752,7 +8752,7 @@
      ]
     },
     {
-     "before": "or a major aspect of a tribal program",
+     "before": "a major aspect of a tribal program",
      "del": "under paragraph (1),",
      "ins": "or suspends in whole or in part any contract or cooperative agreement with an Indian tribe and the Tribal Historic Preservation Officer pursuant to paragraph (1), the Secretary shall— “(A) provide to the Indian tribe and the Tribal Historic Preservation Officer a written determination, including an explanation and reasoning for the determination, with respect to the finding that is the basis for possible disapproval; “(B) offer relevant technical assistance to the Indian tribe and the Tribal Historic Preservation Officer to aid the Indian tribe and the Tribal Historic Preservation Officer in becoming consistent with this division; “(C) allow at least 180 days for the Indian tribe and the Tribal Historic Preservation Officer to submit to the Secretary a corrective action plan to return the tribal program to consistency with this division within 2 years of the date on which the determination is provided under subparagraph (A); and “(D) provide to the Indian tribe and the Tribal Historic Preservation Officer a reasonable opportunity to implement an accepted corrective action plan. “(4) DISAPPROVAL.—If, after the corrective action plan in paragraph (3) is implemented, the Secretary determines a major aspect of a tribal program remains inconsistent with this division on the date that is 2 years after the date of the determination under paragraph (3)(A),",
      "after": "the Secretary shall require the suspension in whole",
@@ -8909,7 +8909,7 @@
      "before": "is an undertaking, the applicable Federal official shall",
      "del": "establish",
      "ins": "prepare a report that includes— “(I) a determination regarding",
-     "after": "the area of potential effects for the undertaking.",
+     "after": "the area of potential effects for the",
      "a": [
       386,
       22
@@ -8920,7 +8920,7 @@
      ]
     },
     {
-     "before": "establish the area of potential effects for the",
+     "before": "the area of potential effects for the",
      "del": "undertaking. “(ii) IDENTIFICATION OF HISTORIC PROPERTIES.—The applicable Federal official shall identify and determine",
      "ins": "undertaking; “(II) identification of",
      "after": "any historic properties within the area of potential",
@@ -9021,7 +9021,7 @@
      "before": "area of potential effects for the undertaking; “(bb)",
      "del": "identifies the historic properties",
      "ins": "shall identify whether any historic properties are present within the applicable area of potential effects; “(cc) if a historic property is present",
-     "after": "within the area of potential effects; “(cc) considers",
+     "after": "within the area of potential",
      "a": [
       390,
       20
@@ -9032,7 +9032,7 @@
      ]
     },
     {
-     "before": "the historic properties within the area of potential",
+     "before": "within the area of potential",
      "del": "effects; “(cc) considers",
      "ins": "effects, shall— “(AA) consider",
      "after": "only the portion of the property within the",
@@ -9049,7 +9049,7 @@
      "before": "the property within the area of potential effects;",
      "del": "“(dd) documents the",
      "ins": "“(BB) document any adverse effects of the undertaking, or determine that the proposed project, activity, or program is an undertaking for which there are no",
-     "after": "adverse effects of the undertaking; “(ee) identifies prudent",
+     "after": "adverse effects of the undertaking;",
      "a": [
       391,
       1
@@ -9060,7 +9060,7 @@
      ]
     },
     {
-     "before": "“(dd) documents the adverse effects of the undertaking;",
+     "before": "adverse effects of the undertaking;",
      "del": "“(ee) identifies",
      "ins": "“(CC) identify",
      "after": "prudent and feasible measures within the area of",
@@ -9077,7 +9077,7 @@
      "before": "of potential effects to avoid, minimize, or mitigate",
      "del": "the",
      "ins": "any",
-     "after": "adverse effects of the undertaking; “(ff) identifies and",
+     "after": "adverse effects of the undertaking;",
      "a": [
       391,
       6
@@ -9088,7 +9088,7 @@
      ]
     },
     {
-     "before": "or mitigate the adverse effects of the undertaking;",
+     "before": "adverse effects of the undertaking;",
      "del": "“(ff) identifies and explains",
      "ins": "and “(DD) identify and explain",
      "after": "any case in which, as applicable, the applicable",
@@ -9105,7 +9105,7 @@
      "before": "or all adverse effects of the undertaking; and",
      "del": "“(gg) does",
      "ins": "“(dd) shall",
-     "after": "not identify measures described in item (ee) that",
+     "after": "not identify measures described in item",
      "a": [
       391,
       20
@@ -9116,7 +9116,7 @@
      ]
     },
     {
-     "before": "“(gg) does not identify measures described in item",
+     "before": "not identify measures described in item",
      "del": "(ee)",
      "ins": "(cc)(CC)",
      "after": "that are not prudent or would occur outside",
@@ -9287,7 +9287,7 @@
      "before": "the matters included in the applicable report under",
      "del": "items (aa) through (ff) of paragraph (2)(D)(iii)(II)",
      "ins": "subitems (AA) through (DD) of paragraph (2)(B)(iii)(II)(cc)",
-     "after": "by the date that is 30 days after",
+     "after": "by the date that is",
      "a": [
       402,
       12
@@ -9298,7 +9298,7 @@
      ]
     },
     {
-     "before": "of paragraph (2)(D)(iii)(II) by the date that is",
+     "before": "by the date that is",
      "del": "30",
      "ins": "45",
      "after": "days after the date of receipt of the",
@@ -9455,7 +9455,7 @@
      "before": "public; and “(bb) the applicable State Historic Preservation",
      "del": "Officer or Tribal Historic Preservation Officer",
      "ins": "Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government",
-     "after": "is notified of the final agency action; “(II)",
+     "after": "is notified of the final agency",
      "a": [
       409,
       5
@@ -9466,7 +9466,7 @@
      ]
     },
     {
-     "before": "Preservation Officer is notified of the final agency",
+     "before": "is notified of the final agency",
      "del": "action;",
      "ins": "action under paragraph (5)(C)(vii);",
      "after": "“(II) the claim is filed by a party",
@@ -9525,7 +9525,7 @@
      "before": "respect to a claim brought under paragraph (5)(B)(iii),",
      "del": "the courts",
      "ins": "and except as provided in section 19(b) of the Natural Gas Act (15 U.S.C. 717r(b)) or section 313(b) of the Federal Power Act (16 U.S.C. 825l(b)), the court",
-     "after": "of appeals of the United States shall have",
+     "after": "of appeals of the United States",
      "a": [
       411,
       20
@@ -9536,7 +9536,7 @@
      ]
     },
     {
-     "before": "the courts of appeals of the United States",
+     "before": "of appeals of the United States",
      "del": "",
      "ins": "circuit in which the applicable undertaking is located",
      "after": "shall have original and exclusive jurisdiction over a",
@@ -9599,7 +9599,7 @@
      "before": "amended to read as follows: “§ 303102. Funding",
      "del": "“There is authorized to be appropriated",
      "ins": "“For each of fiscal years 2027 through 2036, there is authorized to be appropriated, from the unappropriated balance of the Historic Preservation Fund on September 30, 2026, or the general fund of the Treasury, $200,000,000",
-     "after": "for deposit in the Historic Preservation Fund $200,000,000",
+     "after": "for deposit in the Historic Preservation",
      "a": [
       414,
       9
@@ -9610,7 +9610,7 @@
      ]
     },
     {
-     "before": "be appropriated for deposit in the Historic Preservation",
+     "before": "for deposit in the Historic Preservation",
      "del": "Fund $200,000,000 for each of fiscal years 2027 through 2036.”. (b) USE AND AVAILABILITY.—Section 303103 of title 54, United States Code, is amended to read as follows: “SEC. 303103. USE AND AVAILABILITY. “Any amounts deposited in the Historic Preservation Fund under section 303102 for fiscal year 2027 and each fiscal year thereafter shall be made available for expenditure for fiscal year 2028 and each fiscal year thereafter, without further appropriation or fiscal year limitation, to carry out this division (including programs made available from the Historic Preservation Fund).”. (c)",
      "ins": "Fund.”. (b)",
      "after": "GRANTS FOR TRIBAL HISTORIC PRESERVATION OFFICERS.—Section 302703 of",

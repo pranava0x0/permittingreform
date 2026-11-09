@@ -43,3 +43,5 @@
 - (medium, 2026-11-09) If the Senate adopts the substitute, rebase the Bill pages on it: follow REFRESH.md "A new bill text" with `site/substitute.pdf`, then re-run `make infer`.
 - (low, 2026-11-09) Change notes for 2101 (the struck "or a State" in FPA 216(e)(1)), 2107 (subsection (c) open-season and state-rate edits) and 2301 (new appellate venue; the dropped Council-in-lieu provision) leave those edits to the redline. Write notes for them.
 - (low, 2026-11-09) media.2026-10-26-thomashochman-x-survey-scope: the cited X post (status 2114712948929413206) returns 404 as of the November 9 link check. Find a copy or drop the item.
+- (low, 2026-11-09) amend.js (78 KB gzipped) carries every hunk and the new sections' text; split an index payload from per-section detail if first load on phones matters.
+- (low, 2026-11-09) tests/test_amendments.py checks inserted words appear in the new section but not their position; record word offsets in hunks to test placement.

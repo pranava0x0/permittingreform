@@ -1,6 +1,7 @@
 """The November 7 substitute: parse, diff and the Amendments payload."""
 import copy
 import json
+import re
 import sys
 import unittest
 from pathlib import Path
@@ -101,6 +102,29 @@ class Substitute(unittest.TestCase):
         for r in AMEND["rows"]:
             if any(b.startswith(("Adds H.R.", "Adds S.")) for b in r.get("sponsor_summary", [])):
                 self.assertIn("origin", r, f"section {r['id']} names no source bill")
+
+    def test_status_labels_match_in_every_render_path(self):
+        js = (ROOT / "site/app.js").read_text(encoding="utf-8")
+        m = re.search(r"const AM_STATUS = \{([^}]*)\}", js)
+        js_keys = set(re.findall(r'"?(\w+)"?:', m.group(1)))
+        self.assertEqual(js_keys, set(amendments.STATUSES))
+        self.assertEqual(set(build.AMEND_STATUS), set(amendments.STATUSES))
+
+    def test_the_timeline_states_the_diff_counts(self):
+        ev = next(e for e in CORE["timeline"] if e["id"] == "2026-11-07-substitute-amendment")
+        c = AMEND["counts"]
+        self.assertIn(f"edits {c['edited']} sections", ev["summary"])
+        self.assertIn(f"adds {c['new']}", ev["summary"])
+        self.assertEqual(c["dropped"], 1)
+        self.assertIn("drops one", ev["summary"])
+
+    def test_context_never_overlaps_a_neighboring_hunk(self):
+        old = {s["number"]: " ".join(s["text"].split()) for s in OLD}
+        for r in AMEND["rows"]:
+            text = old.get(r.get("old", {}).get("n"), "")
+            for h in r.get("hunks", []):
+                for words in (h["before"], h["after"]):
+                    self.assertIn(words, text, r["id"])
 
     def test_payload_and_static_page_are_in_sync(self):
         self.assertEqual((ROOT / "site/data/amend.js").read_text(encoding="utf-8"), build.dump_js("PR_AMEND", AMEND))

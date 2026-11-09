@@ -91,18 +91,21 @@ def hunks(a: list[tuple[str, int, int]], b: list[tuple[str, int, int]]) -> list[
                 continue
         groups.append([op])
     out = []
-    for g in groups:
+    for k, g in enumerate(groups):
         i1, i2 = g[0][1], g[-1][2]
+        # Context stops at a neighboring hunk, so it never quotes words that hunk strikes.
+        lo = max(i1 - CONTEXT, groups[k - 1][-1][2] if k else 0)
+        hi = min(i2 + CONTEXT, groups[k + 1][0][1] if k + 1 < len(groups) else len(a))
         j1, j2 = g[0][3], g[-1][4]
         old_words = [w for w, _, _ in a[i1:i2]]
         new_words = [w for w, _, _ in b[j1:j2]]
         at_a = a[i1] if i1 < len(a) else a[-1]
         at_b = b[j1] if j1 < len(b) else b[-1]
         out.append({
-            "before": " ".join(w for w, _, _ in a[max(0, i1 - CONTEXT):i1]),
+            "before": " ".join(w for w, _, _ in a[lo:i1]),
             "del": " ".join(old_words),
             "ins": " ".join(new_words),
-            "after": " ".join(w for w, _, _ in a[i2:i2 + CONTEXT]),
+            "after": " ".join(w for w, _, _ in a[i2:hi]),
             "a": [at_a[1], at_a[2]],
             "b": [at_b[1], at_b[2]],
         })

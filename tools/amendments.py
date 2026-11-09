@@ -136,6 +136,9 @@ def build(errors: list[str]) -> dict | None:
         if not r["reactions"]:
             del r["reactions"]
 
+    vote = extra.get("vote")
+    if vote and not (vote.get("result") or vote.get("when")):
+        errors.append("amendments vote: needs a result or a scheduled time ('when')")
     counts = {k: sum(1 for r in rows if r["status"] == k) for k in STATUSES}
     counts["substantive"] = sum(1 for r in rows if r.get("kind") == "substantive")
     counts["technical"] = sum(1 for r in rows if r.get("kind") == "technical")
