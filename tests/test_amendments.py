@@ -135,6 +135,23 @@ class Substitute(unittest.TestCase):
         for k, label in amendments.STANCE_LABELS.items():
             self.assertIn(f'["{k}", "{label}"]', js)
 
+    def test_key_changes_reuse_cited_notes(self):
+        rows = {r["id"]: r for r in AMEND["rows"]}
+        self.assertGreaterEqual(len(AMEND["highlights"]), 6)
+        for h in AMEND["highlights"]:
+            self.assertIn({k: h[k] for k in ("t", "side", "c")}, rows[h["id"]]["points"], h["label"])
+
+    def test_overview_counts_bill_positions_and_substitute_reactions_apart(self):
+        ix = build.browser_core(CORE)["amend_index"]
+        self.assertEqual(sum(ix["reactions"].values()), len(AMEND["reactions"]))
+
+    def test_every_changed_section_has_a_redline(self):
+        for r in AMEND["rows"]:
+            if r["status"] == "unchanged":
+                continue
+            renamed = "old" in r and "new" in r and (r["old"]["n"] != r["new"]["n"] or r["old"]["h"] != r["new"]["h"])
+            self.assertTrue(r.get("hunks") or r.get("text") or r.get("old_text") or renamed, r["id"])
+
     def test_payload_and_static_page_are_in_sync(self):
         self.assertEqual((ROOT / "site/data/amend.js").read_text(encoding="utf-8"), build.dump_js("PR_AMEND", AMEND))
         self.assertEqual((ROOT / "site/amendments.html").read_text(encoding="utf-8"), build.amendments_html(CORE))

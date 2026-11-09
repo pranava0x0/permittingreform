@@ -93,8 +93,11 @@ def build(errors: list[str]) -> dict | None:
         if r.get("hunks"):
             row["hunks"] = r["hunks"]
             row["struck"], row["inserted"] = r["struck"], r["inserted"]
+        # A new or dropped section's redline is its whole text, inserted or struck.
         if r["status"] == "new":
             row["text"] = billtext.paragraphs(new_by[r["n"]]["lines"])
+        elif r["status"] == "dropped":
+            row["old_text"] = billtext.paragraphs(old_by[r["old"]["n"]]["lines"])
         rows.append(row)
 
     extra = load(DATA / "amendments.json")
@@ -141,6 +144,15 @@ def build(errors: list[str]) -> dict | None:
     vote = extra.get("vote")
     if vote and not (vote.get("result") or vote.get("when")):
         errors.append("amendments vote: needs a result or a scheduled time ('when')")
+    # Key changes: a label over one change note, so each carries that note's text and cite.
+    row_by = {r["id"]: r for r in rows}
+    highlights = []
+    for h in extra.get("highlights", []):
+        r = row_by.get(h["id"])
+        if not r or h["point"] >= len(r.get("points", [])):
+            errors.append(f"amendments highlight {h['id']}#{h['point']}: no such change note")
+            continue
+        highlights.append({"id": r["id"], "n": r["n"], "label": h["label"], **r["points"][h["point"]]})
     counts = {k: sum(1 for r in rows if r["status"] == k) for k in STATUSES}
     counts["substantive"] = sum(1 for r in rows if r.get("kind") == "substantive")
     counts["technical"] = sum(1 for r in rows if r.get("kind") == "technical")
@@ -150,6 +162,7 @@ def build(errors: list[str]) -> dict | None:
         "substitute": extra["substitute"],
         "counts": counts,
         "rows": rows,
+        "highlights": highlights,
         "floor": extra["floor"],
         "floor_note": extra["floor_note"],
         "summary_source": {k: summary[k] for k in ("publisher", "date", "url")},
@@ -169,4 +182,5 @@ def index(amend: dict | None) -> dict | None:
         if "old" in r:
             by_old[r["old"]["n"]] = {"id": r["id"], "status": r["status"], "kind": r.get("kind"), "n": r["n"]}
     return {"date": amend["new"]["released"], "counts": amend["counts"], "sections": by_old,
-            "floor": len(amend["floor"]), "pages": amend["new"]["pages"]}
+            "floor": len(amend["floor"]), "pages": amend["new"]["pages"],
+            "reactions": {k: sum(1 for x in amend["reactions"] if x["stance"] == k) for k in STANCES}}

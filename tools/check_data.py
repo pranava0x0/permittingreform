@@ -106,6 +106,7 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     if amend:
         out.append(("amendments substitute summary", amend["substitute"]["summary"]))
         out.append(("amendments floor note", amend["floor_note"]))
+        out += [(f"amendments highlight {h['id']}", h["label"]) for h in amend["highlights"]]
         out += [(f"amendments {r['id']} change", p["t"]) for r in amend["rows"] for p in r.get("points", [])]
     return out
 

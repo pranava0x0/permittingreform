@@ -287,16 +287,25 @@
     const o = D.overview;
     const m = D.meta;
     const pos = D.recent.positions;
+    const ix = D.amend_index;
     // A first-time reader gets the name, what the bill does and the next vote, in that order, before any control.
     const head = el("div", { class: "lede overview-lede" },
       el("h1", null, "BAAJA"),
       el("p", { class: "subtitle" }, m.short_title),
+      el("p", { class: "facts" }, "Introduced " + S.formatDate(m.released) + " by Sens. " + m.sponsors.map((x) => x.replace(/ \(.*$/, "").split(" ").pop()).join(", ").replace(/, ([^,]*)$/, " and $1") +
+        (ix ? ". Latest text: the " + S.formatDate(ix.date) + " substitute." : ".")),
       el("p", { class: "summary" }, o.summary.text + " ", el("span", { class: "sources-inline" }, ext(o.summary.source.url, o.summary.source.label))),
       // A scheduled date in the past says so, rather than reading as upcoming.
       o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next Senate vote: " : "Previously scheduled: "),
         ext(o.next.source.url, S.formatDate(o.next.date)), ". " + o.next.text) : null);
-    const posRow = pos ? el("a", { class: "link-row", href: "#/positions" },
-      "Who's for and against", el("span", { class: "row-count" }, pos.supports + " support · " + pos.opposes + " oppose")) : null;
+    /* The four questions a first-time reader asks after "what is it", one tap each. Positions on the
+       September bill and reactions to the November substitute are counted apart, never pooled. */
+    const card = (href, title, sub) => el("a", { class: "start-card", href: href }, el("span", { class: "start-title" }, title), el("span", { class: "start-sub" }, sub));
+    const start = el("nav", { class: "start-grid", "aria-label": "Start here" },
+      ix ? card("#/amendments", "What changed on " + S.formatDate(ix.date).replace(/, \d{4}$/, ""), ix.counts.edited + " sections edited, " + ix.counts["new"] + " added") : null,
+      pos ? card("#/positions", "Positions on the bill", pos.supports + " support · " + pos.opposes + " oppose") : null,
+      ix ? card("#/amendments/reactions", "Reactions to the substitute", ix.reactions.supports + " support · " + ix.reactions.opposes + " oppose") : null,
+      card("#/compare", "Compare with other bills", "Current law, SPEED Act, 2024 Senate bill"));
     const about = el("p", { class: "note overview-note" }, "This is a proposed law. " + num(m.pages) + " pages, " + m.sections + " sections, released " + S.formatDate(m.released) + ". ",
       pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release"), " · ",
       el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status"));
@@ -373,10 +382,7 @@
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.recent.counts.timeline + " events")))));
 
-    const ix = D.amend_index;
-    const amRow = ix ? el("a", { class: "link-row", href: "#/amendments" }, "Substitute of " + S.formatDate(ix.date),
-      el("span", { class: "row-count" }, ix.counts.edited + " sections edited · " + ix.counts["new"] + " added")) : null;
-    return [head, el("div", { class: "rows" }, foldBlock(status), posRow, amRow), provisions,
+    return [head, start, el("div", { class: "rows" }, foldBlock(status)), provisions,
       el("section", { class: "block", "aria-labelledby": "h-more" }, el("h2", { id: "h-more" }, "More detail"),
         el("div", { class: "rows" }, foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest))), about];
   }
@@ -732,7 +738,7 @@
         el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), b.versions.map((v) => el("th", { scope: "col", class: phoneClass("bills", v.key) }, v.label)))),
         el("tbody", null, b.rows.map((r) => el("tr", { id: "row-bills-" + r.id, class: cmpOpen.has("bills-" + r.id) ? "open" : null },
           el("th", { scope: "row" }, rowHead(r.topic, "bills-" + r.id)),
-          keys.map((k) => el("td", { class: phoneClass("bills", k), "data-label": b.versions.find((v) => v.key === k).label }, compareCell(r[k])))))))),
+          keys.map((k) => el("td", { class: phoneClass("bills", k), "data-label": b.versions.find((v) => v.key === k).label }, compareCell(r[k]), k === "senate" ? subNote(r[k]) : null))))))),
       b.others && b.others.length ? [el("h3", null, b.others_label),
         el("ul", { class: "plain-list" }, b.others.map((o) => el("li", null, o.text + " ", el("span", { class: "where" }, citeNode(o)))))] : null);
   }
@@ -740,8 +746,20 @@
   function focusedComparison(g) {
     return el("section", {class:"block focused-comparison", id:g.id},
       el("h2", null, g.label), el("p", null, g.question),
-      el("h3", null, "BAAJA · Sec. " + g.section), el("p", null, citedText(g, "baseline")),
+      el("h3", null, "BAAJA · Sec. " + g.section), el("p", null, citedText(g, "baseline")), subNote({ sections: [g.section] }),
       g.entries.map(e => el("div", null, el("h3", null, e.label), el("p", null, e.text, " ", ext(e.url, e.cite)))));
+  }
+
+  /* Under a BAAJA cell: what the November substitute did to the sections it cites. */
+  function subNote(cell) {
+    const ix = D.amend_index;
+    const nums = (cell && cell.sections) || [];
+    if (!ix || !nums.length) return null;
+    const hits = nums.map((n) => [n, ix.sections[n]]).filter(([, h]) => h && h.status !== "unchanged");
+    const date = S.formatDate(ix.date).replace(/, \d{4}$/, "");
+    if (!hits.length) return el("p", { class: "sub-note" }, date + " substitute: unchanged");
+    return el("p", { class: "sub-note" }, date + " substitute: ", hits.map(([n, h], i) => [i ? ", " : null,
+      el("a", { href: "#/amendments/sec/" + h.id }, ({ edited: "edits", dropped: "drops", moved: "renumbers" })[h.status] + " Sec. " + n)]));
   }
 
   function renderCompare(groupId) {
@@ -767,7 +785,7 @@
         el("thead", null, el("tr", null, el("th", { scope: "col" }, "Subject"), c.versions.map((v) => el("th", { scope: "col", class: phoneClass("main", v.key) }, v.label)))),
         el("tbody", null, g.rows.map((r) => [el("tr", { id: "row-" + r.id, class: cmpOpen.has(r.id) ? "open" : null },
           el("th", { scope: "row" }, rowHead(r.topic, r.id)),
-          keys.map((k) => el("td", { class: phoneClass("main", k), "data-label": versionLabel(k) }, compareCell(r[k])))),
+          keys.map((k) => el("td", { class: phoneClass("main", k), "data-label": versionLabel(k) }, compareCell(r[k]), k === "senate" ? subNote(r[k]) : null))),
           r.note ? el("tr", { class: "row-note" + (cmpOpen.has(r.id) ? " open" : "") },
             el("td", { colspan: keys.length + 1 }, el("strong", null, r.note.label + ". "), el("span", { class: "cell-text" }, r.note.text),
               el("span", { class: "cell-cite" }, r.note.sources.map((src, i) => [i ? " · " : null, citeNode(src)])))) : null]))))));
@@ -1553,10 +1571,12 @@
     const letters = D.media.filter((it) => it.letter && it.date >= D.meta.released).sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
     const issues = (D.positions && D.positions.issues) || [];
     return [
-      el("div", { class: "lede" }, el("h1", null, "Who's for and against"),
+      el("div", { class: "lede" }, el("h1", null, "Positions on the bill"),
         el("p", { class: "facts", role: "status" }, count("supports") + " support, " + count("opposes") + " oppose, " + count("mixed") + " mixed, of " +
           D.people.length + " people and groups tracked · " + plural(letters.length, "letter or joint statement", "letters and joint statements") +
-          " · as of " + S.formatDate(D.meta.as_of))),
+          " · as of " + S.formatDate(D.meta.as_of)),
+        D.amend_index ? el("p", { class: "facts" }, "Positions on the bill as introduced " + S.formatDate(D.meta.released) + ". ",
+          el("a", { href: "#/amendments/reactions" }, "Reactions to the " + S.formatDate(D.amend_index.date) + " substitute")) : null),
       disputesBlock(),
       el("section", { class: "block", "aria-labelledby": "h-letters" },
         el("h2", { id: "h-letters" }, "Letters and joint statements"),
@@ -1658,7 +1678,7 @@
     if (!amendPromise) {
       amendPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/amend.js?v=1";
+        tag.src = "data/amend.js?v=3";
         tag.onload = () => (window.PR_AMEND ? resolve(window.PR_AMEND) : reject(new Error("amendments did not load")));
         tag.onerror = () => { amendPromise = null; reject(new Error("amendments could not be fetched")); };
         document.head.appendChild(tag);
@@ -1705,51 +1725,58 @@
     const c = A.counts;
     const shown = A.rows.filter(amRowMatches);
     const count = (k) => A.rows.filter((r) => r.status !== "unchanged" && (k === "all" || (k === "new" ? r.status === "new" : r.kind === k))).length;
-    const list = [];
-    let group = null;
+    /* Sections fold by title, so the page is a dozen rows long until the reader opens one. */
+    const groups = [];
     shown.forEach((r) => {
       const key = r.div + "|" + r.ti;
-      if (key !== group) {
-        group = key;
-        list.push(el("h3", { class: "am-group" }, r.ti ? titleCase(r.div) + ", " + titleCase(r.ti) + ": " + titleCase(r.tih) : titleCase(r.div) + ": " + titleCase(r.divh)));
+      if (!groups.length || groups[groups.length - 1].key !== key) {
+        groups.push({ key: key, label: r.ti ? titleCase(r.div) + ", " + titleCase(r.ti) + ": " + titleCase(r.tih) : titleCase(r.div) + ": " + titleCase(r.divh), rows: [] });
       }
-      list.push(el("a", { class: "link-row am-row", href: "#/amendments/sec/" + r.id },
-        el("span", { class: "am-row-main" },
-          el("span", { class: "am-row-title" }, "Sec. " + r.n + " ", amTag(r.status)),
-          el("span", { class: "am-row-head" }, r.h)),
-        el("span", { class: "row-count" }, r.points.length + (r.points.length === 1 ? " change" : " changes"))));
+      groups[groups.length - 1].rows.push(r);
     });
     const unchanged = A.rows.filter((r) => r.status === "unchanged");
     const vote = A.vote;
     const byStance = AM_STANCE.map(([k, label]) => [label, A.reactions.filter((x) => x.stance === k)]).filter((g) => g[1].length);
     return [
-      el("h1", null, "Amendments"),
-      el("p", { class: "lede" }, "The sponsors' substitute of " + S.formatDate(sub.date) + " is the only amendment filed or announced as of " + S.formatDate(A.as_of) + "."),
-      el("section", { class: "block", id: "am-sub", "aria-labelledby": "h-am-sub" },
-        el("h2", { id: "h-am-sub" }, sub.title),
+      el("div", { class: "lede" },
+        el("h1", null, "Amendments"),
         el("p", null, sub.summary),
-        el("p", { class: "where" }, "Offered by " + sub.sponsor + " with " + sub.cosponsors.join(", ") + " · ",
-          sub.links.map((l, i) => [i ? " · " : null, ext(l.url, l.label)])),
-        el("p", { class: "am-stats" }, num(A.old.pages) + " → " + num(A.new.pages) + " pages · " + A.old.sections + " → " + A.new.sections + " sections · " +
-          c.edited + " edited, " + c["new"] + " new, " + c.dropped + " dropped, " + c.moved + " renumbered, " + c.unchanged + " unchanged")),
-      el("section", { class: "block", id: "am-react", "aria-labelledby": "h-am-react" },
-        el("h2", { id: "h-am-react" }, "Reactions"),
+        el("p", { class: "facts" }, S.formatDate(sub.date) + " · " + num(A.old.pages) + " → " + num(A.new.pages) + " pages · " +
+          c.edited + " sections edited, " + c["new"] + " new, " + c.dropped + " dropped, " + c.moved + " renumbered, " + c.unchanged + " unchanged · ",
+          sub.links.map((l, i) => [i ? " · " : null, ext(l.url, l.label)]))),
+      el("section", { class: "block", "aria-labelledby": "h-am-key" },
+        el("h2", { id: "h-am-key" }, "Key changes", el("span", { class: "credit-inline" }, "AI-written")),
+        el("ul", { class: "am-keys" }, A.highlights.map((h) => el("li", null,
+          el("a", { class: "am-key", href: "#/amendments/sec/" + h.id },
+            el("span", { class: "am-key-label" }, h.label, el("span", { class: "row-count" }, "Sec. " + h.n)),
+            el("span", { class: "am-key-text" }, h.t)),
+          el("span", { class: "am-key-cite" }, amCite(A, h.side, h.c)))))),
+      el("section", { class: "block", "aria-labelledby": "h-am-react" },
+        el("h2", { id: "h-am-react" }, "Reactions to the substitute"),
+        el("p", { class: "facts" }, byStance.map(([label, items], i) => [i ? " · " : null, items.length + " " + label.toLowerCase()]), ". Statements made on or after " + S.formatDate(sub.date) + ". ",
+          el("a", { href: "#/positions" }, "Positions on the bill as introduced")),
         el("div", { class: "rows am-stances" }, byStance.map(([label, items]) => el("details", { class: "section-fold am-stance" },
           el("summary", null, el("h3", null, label), el("span", { class: "row-count" }, items.length)),
           el("ul", { class: "am-reactions" }, items.map((x) => reactionItem(A, x, true))))))),
-      el("section", { class: "block", id: "am-floor", "aria-labelledby": "h-am-floor" },
+      el("section", { class: "block", id: "am-list", "aria-labelledby": "h-am-list" },
+        el("h2", { id: "h-am-list" }, "All changes by section"),
+        el("div", { class: "filters", role: "group", "aria-label": "Change" },
+          AM_FILTERS.map(([k, label]) => chip(label, amFilter === k, () => { amFilter = k; route(); }, count(k)))),
+        el("div", { class: "rows" }, groups.map((g) => el("details", { class: "section-fold am-title", open: amFilter !== "all" || null },
+          el("summary", null, el("h3", null, g.label), el("span", { class: "row-count" }, g.rows.length)),
+          el("div", { class: "am-list" }, g.rows.map((r) => el("a", { class: "link-row am-row", href: "#/amendments/sec/" + r.id },
+            el("span", { class: "am-row-main" },
+              el("span", { class: "am-row-title" }, "Sec. " + r.n + " ", amTag(r.status)),
+              el("span", { class: "am-row-head" }, r.h)),
+            el("span", { class: "row-count" }, r.points.length + (r.points.length === 1 ? " change" : " changes")))))))),
+        el("details", { class: "am-unchanged" },
+          el("summary", null, unchanged.length + " sections unchanged"),
+          el("p", { class: "where" }, unchanged.map((r, i) => [i ? ", " : null, secLink(r.n)])))),
+      el("section", { class: "block", "aria-labelledby": "h-am-floor" },
         el("h2", { id: "h-am-floor" }, "Other amendments and votes"),
         A.floor.length ? el("ul", { class: "plain-list" }, A.floor.map((f) => el("li", null, el("strong", null, (f.number || "Unnumbered") + " · " + f.sponsor), " ", f.summary))) : el("p", null, A.floor_note),
         vote ? el("p", null, el("strong", null, S.formatDate(vote.date) + ": "), vote.question + ". ",
-          (vote.result || vote.when) + ". ", ext(vote.url, "Senate floor log")) : null),
-      el("section", { class: "block", id: "am-list", "aria-labelledby": "h-am-list" },
-        el("h2", { id: "h-am-list" }, "Changes by section"),
-        el("div", { class: "filters", role: "group", "aria-label": "Change" },
-          AM_FILTERS.map(([k, label]) => chip(label, amFilter === k, () => { amFilter = k; route(); }, count(k)))),
-        el("div", { class: "rows am-list" }, list),
-        el("details", { class: "am-unchanged" },
-          el("summary", null, unchanged.length + " sections unchanged"),
-          el("p", { class: "where" }, unchanged.map((r, i) => [i ? ", " : null, secLink(r.n)]))))];
+          (vote.result || vote.when) + ". ", ext(vote.url, "Senate floor log")) : null)];
   }
 
   function hunkNode(A, h) {
@@ -1763,6 +1790,70 @@
   }
 
   const HUNK_PAGE = 12;
+
+  /* Desktop sidebar: every changed section, grouped by title, with the current one marked. */
+  function amendOutline(A, current) {
+    const groups = [];
+    A.rows.filter((r) => r.status !== "unchanged").forEach((r) => {
+      const key = r.div + "|" + r.ti;
+      if (!groups.length || groups[groups.length - 1].key !== key) {
+        groups.push({ key: key, label: titleCase(r.div).replace("Division ", "Div. ") + (r.ti ? ", " + titleCase(r.ti) + ": " + titleCase(r.tih) : ": " + titleCase(r.divh)), rows: [] });
+      }
+      groups[groups.length - 1].rows.push(r);
+    });
+    const nav = el("nav", { class: "outline", "aria-label": "Changed sections" },
+      el("p", { class: "outline-head" }, el("a", { href: "#/amendments" }, "All amendments")),
+      groups.map((g) => el("details", { open: g.rows.some((r) => r.id === current) },
+        el("summary", null, g.label),
+        el("ul", null, g.rows.map((r) => el("li", null,
+          el("a", { href: "#/amendments/sec/" + r.id, "aria-current": r.id === current ? "true" : null },
+            r.n + " " + r.h + (r.status === "edited" ? "" : " (" + AM_STATUS[r.status].toLowerCase() + ")"))))))));
+    return el("details", { class: "outline-wrap", open: window.matchMedia("(min-width: 1024px)").matches },
+      el("summary", { class: "outline-toggle" }, "Changed sections"), nav);
+  }
+
+  /* The whole text of a new or dropped section, marked inserted or struck, in pages. */
+  function wholeRedline(paras, pdf, tag) {
+    const item = (p) => el("li", { class: "hunk hunk-whole" },
+      el("p", { class: "hunk-cite" }, el("a", { href: pdf + "#page=" + p[0], target: "_blank", rel: "noopener" }, "p. " + p[0] + (p[1] == null ? "" : ", line " + p[1]))),
+      el("p", { class: "hunk-text lvl" + Math.min(p[2], 6) }, el(tag, null, p[3])));
+    const list = el("ol", { class: "hunks" }, paras.slice(0, HUNK_PAGE).map(item));
+    const more = paras.length > HUNK_PAGE ? el("button", { type: "button", class: "chip", onclick: (ev) => {
+      append(list, paras.slice(HUNK_PAGE).map(item)); ev.currentTarget.remove();
+    } }, "Show all " + paras.length + " paragraphs") : null;
+    return [list, more];
+  }
+
+  /* Floating arrows that step through a long redline's edits. */
+  function hunkArrows(expand) {
+    const counter = el("span", { class: "hunk-count", "aria-live": "polite" });
+    const hunks = () => Array.from(view.querySelectorAll(".hunks .hunk:not(.hunk-whole)"));
+    const top = () => parseInt(getComputedStyle(document.documentElement).getPropertyValue("--pinned"), 10) + 16 || 64;
+    /* Step from the edit last jumped to; after the reader scrolls on their own, step from what is on screen. */
+    let cur = -1;
+    let landed = null;
+    const go = (dir) => {
+      expand();
+      const list = hunks();
+      const t = top();
+      let at;
+      if (landed !== null && Math.abs(window.scrollY - landed) < 2) at = cur + dir;
+      else {
+        const below = list.findIndex((h) => h.getBoundingClientRect().top > t + 4);
+        at = dir > 0 ? (below < 0 ? list.length : below) : (below < 0 ? list.length : below) - 1;
+        if (dir < 0 && at >= 0 && Math.abs(list[at].getBoundingClientRect().top - t) <= 4) at -= 1;
+      }
+      if (at < 0 || at >= list.length) return;
+      cur = at;
+      window.scrollTo({ top: list[at].getBoundingClientRect().top + window.scrollY - t, behavior: "instant" });
+      landed = window.scrollY;
+      counter.textContent = "Edit " + (at + 1) + " of " + list.length;
+    };
+    return el("div", { class: "hunk-arrows", role: "group", "aria-label": "Step through edits" },
+      counter,
+      el("button", { type: "button", "aria-label": "Previous edit", onclick: () => go(-1) }, "▲"),
+      el("button", { type: "button", "aria-label": "Next edit", onclick: () => go(1) }, "▼"));
+  }
   function renderAmendSection(id) {
     const A = window.PR_AMEND;
     const changed = A.rows.filter((r) => r.status !== "unchanged");
@@ -1784,7 +1875,7 @@
     const origin = r.origin;
     return [
       el("p", { class: "crumb" }, el("a", { href: "#/amendments" }, "‹ Amendments")),
-      el("article", { class: "section am-section" },
+      el("div", { class: "bill-layout" }, amendOutline(A, r.id), el("article", { class: "section am-section" },
         el("h1", null, "Sec. " + r.n + ". " + r.h),
         el("p", { class: "sec-meta" }, amTag(r.status),
           r.kind ? el("span", null, r.kind === "technical" ? "Technical edit" : "Substantive") : null,
@@ -1793,6 +1884,7 @@
           r.struck != null ? ["·", el("span", null, num(r.struck) + " words struck, " + num(r.inserted) + " inserted")] : null),
         renamed ? el("p", { class: "note" }, "September 30: Sec. " + o.n + ". " + o.h + ".") : null,
         o ? el("p", { class: "where" }, el("a", { href: secHref(o.n) }, "September text, summary and outside readings")) : null,
+        o ? compareLinks(o.n) : null,
         origin ? el("section", { class: "sec-part", "aria-labelledby": "h-am-origin" },
           el("h2", { id: "h-am-origin" }, "Source bill"),
           el("p", null, ext(origin.url, origin.bill + ", " + origin.name), ". Introduced " + S.formatDate(origin.introduced) + " by " + origin.sponsor +
@@ -1810,20 +1902,22 @@
         reactions.length ? el("section", { class: "sec-part", "aria-labelledby": "h-am-react" },
           el("h2", { id: "h-am-react" }, "Reactions"),
           el("ul", { class: "am-reactions" }, reactions.map((x) => reactionItem(A, x, false)))) : null,
-        hunks.length ? el("section", { class: "sec-part", "aria-labelledby": "h-am-red" },
-          el("h2", { id: "h-am-red" }, "Redline", el("span", { class: "row-count" }, hunks.length + (hunks.length === 1 ? " edit" : " edits"))),
-          el("p", { class: "note" }, el("del", null, "Struck"), " · ", el("ins", null, "Inserted"), " · Each edit cites the September page and line, then the November one."),
-          redline, more) : null,
-        r.text ? el("section", { class: "sec-part", "aria-labelledby": "h-am-text" },
-          el("h2", { id: "h-am-text" }, "Full text"),
-          el("details", { class: "am-text" }, el("summary", null, num(n.words) + " words"),
-            el("div", { class: "fulltext" }, r.text.map((p) => el("div", { class: "para lvl" + Math.min(p[2], 6) },
-              el("a", { class: "gutter", href: A.new.pdf + "#page=" + p[0], target: "_blank", rel: "noopener", "aria-label": "Page " + p[0] + (p[1] == null ? "" : ", line " + p[1]) },
-                p[0] + (p[1] == null ? "" : ":" + p[1])),
-              el("p", null, p[3])))))) : null,
+        el("section", { class: "sec-part", "aria-labelledby": "h-am-red" },
+          el("h2", { id: "h-am-red" }, "Redline", el("span", { class: "row-count" },
+            hunks.length ? hunks.length + (hunks.length === 1 ? " edit" : " edits") : r.status === "new" ? "whole section inserted" : r.status === "dropped" ? "whole section struck" : "")),
+          el("p", { class: "note" }, el("del", null, "Struck"), " · ", el("ins", null, "Inserted"),
+            hunks.length ? " · Each edit cites the September page and line, then the November one." : null),
+          renamed ? el("p", { class: "hunk-text am-heading-red" }, "Sec. ",
+            o.n !== n.n ? [el("del", null, o.n), " ", el("ins", null, n.n)] : n.n, ". ",
+            o.h !== n.h ? [el("del", null, o.h), " ", el("ins", null, n.h)] : n.h) : null,
+          hunks.length ? [redline, more] : null,
+          r.text ? wholeRedline(r.text, A["new"].pdf, "ins") : null,
+          r.old_text ? wholeRedline(r.old_text, D.meta.pdf, "del") : null,
+          !hunks.length && !r.text && !r.old_text ? el("p", null, "The text is unchanged apart from the heading or number above.") : null),
+        hunks.length > 1 ? hunkArrows(() => { if (more && more.isConnected) more.click(); }) : null,
         el("nav", { class: "pager", "aria-label": "Neighboring changes" },
           prev ? el("a", { href: "#/amendments/sec/" + prev.id, rel: "prev" }, "Previous: Sec. " + prev.n + ". " + prev.h) : el("span"),
-          next ? el("a", { href: "#/amendments/sec/" + next.id, rel: "next" }, "Next: Sec. " + next.n + ". " + next.h) : el("span")))];
+          next ? el("a", { href: "#/amendments/sec/" + next.id, rel: "next" }, "Next: Sec. " + next.n + ". " + next.h) : el("span"))))];
   }
 
   /* On a September section page: what the substitute did to it. */
@@ -1861,6 +1955,14 @@
   const sectionNav = document.getElementById("section-nav");
   // Ordinary links work without JavaScript; enhance them with the interactive routes.
   document.querySelectorAll(".tabs [data-tab]").forEach(a => { a.href = "#/" + a.dataset.tab; });
+  /* On a wide screen with a mouse, a grouped tab lists its pages on hover or keyboard focus. */
+  Object.keys(GROUPS).forEach((key) => {
+    const tab = document.querySelector('.tabs [data-tab="' + key + '"]');
+    if (!tab) return;
+    const wrap = el("span", { class: "tab-group" });
+    tab.replaceWith(wrap);
+    append(wrap, [tab, el("span", { class: "tab-menu" }, GROUPS[key].map(([page, name]) => el("a", { href: "#/" + page }, name)))]);
+  });
   function markTab(tab) {
     const parent = guidesByPage.some(([key]) => key === tab) ? "issues" : tab;
     const group = Object.keys(GROUPS).find(k => GROUPS[k].some(([page]) => page === parent));
@@ -1868,7 +1970,9 @@
       if (a.dataset.tab === (group || tab)) a.setAttribute("aria-current", group ? "location" : "page");
       else a.removeAttribute("aria-current");
     });
+    const wasHidden = sectionNav.hidden;
     sectionNav.hidden = !group;
+    if (wasHidden !== sectionNav.hidden) pinMasthead();
     if (!group) return;
     if (sectionNav.dataset.group !== group) {
       sectionNav.dataset.group = group;
@@ -1902,7 +2006,7 @@
         .catch((err) => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) fill(view, failure(err, "The amendments")); });
       return;
     }
-    if (tab === "amendments") nodes = parts[1] === "sec" ? renderAmendSection(parts[2]) : renderAmendments();
+    if (tab === "amendments") { nodes = parts[1] === "sec" ? renderAmendSection(parts[2]) : renderAmendments(); keepScroll = parts[1] === "reactions"; }
     else if (tab === "bill" && parts[1] === "sec") { nodes = renderSection(parts[2], parts[3], parts[4]); keepScroll = Boolean(parts[3]); }
     else if (tab === "bill" && parts[1] === "search") nodes = renderSearch(parts.slice(2).join("/"));
     else if (tab === "bill") nodes = renderBillIndex();
@@ -1935,6 +2039,10 @@
     if (tab === "timeline") {
       const target = tlRefocus && view.querySelector(tlRefocus);
       if (target && lastPath && lastPath.indexOf("#/timeline") === 0) target.focus({ preventScroll: true });
+    }
+    if (tab === "amendments" && parts[1] === "reactions" && location.hash !== lastPath) {
+      const h = document.getElementById("h-am-react");
+      if (h) requestAnimationFrame(() => h.scrollIntoView({ block: "start" }));
     }
     if (tab === "compare" && parts[2]) {
       const row = document.getElementById("row-" + parts[2]);
