@@ -299,6 +299,33 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
     // focus on a sibling link after activation. Old deep links select the same group.
     const nav = await browser.newPage({viewport:{width:320,height:812},hasTouch:true});
     await nav.goto(base);
+    // Hover menus open on hover, close when the mouse leaves, and a click on a menu link does not leave them pinned open by focus.
+    {
+      const desk = await browser.newPage({viewport:{width:1280,height:800}});
+      await desk.goto(base);
+      const group = desk.locator('.tabs .tab-group').first();
+      await group.hover();
+      assert.ok(await group.locator('.tab-menu').isVisible(), 'menu opens on hover');
+      await desk.mouse.move(5, desk.viewportSize().height - 5);
+      assert.ok(await group.locator('.tab-menu').isHidden(), 'menu closes when the mouse leaves');
+      await group.hover();
+      await group.locator('.tab-menu a').nth(1).click();
+      await desk.mouse.move(5, desk.viewportSize().height - 5);
+      assert.ok(await group.locator('.tab-menu').isHidden(), 'menu closes after a click and mouse-out');
+      await group.locator('a').first().focus();
+      assert.ok(await group.locator('.tab-menu').isVisible(), 'menu opens on keyboard focus');
+      await desk.keyboard.press('Escape');
+      assert.ok(await group.locator('.tab-menu').isHidden(), 'Escape closes the menu');
+      // The same for a page in the sub-page row.
+      await desk.goto(base + '#/compare');
+      const sub = desk.locator('.subtabs .tab-group').first();
+      await sub.hover();
+      assert.ok(await sub.locator('.tab-menu').isVisible(), 'sub-page menu opens on hover');
+      await sub.locator('.tab-menu a').first().click();
+      await desk.mouse.move(5, desk.viewportSize().height - 5);
+      assert.ok(await desk.locator('.subtabs .tab-menu:visible').count() === 0, 'sub-page menu closes after a click and mouse-out');
+      await desk.close();
+    }
     for (const [label, pages] of [
       ['Bill',['Sections','Amendments','Compare bills']],
       ['Key issues',['Topics','Debate','People and groups']]]) {

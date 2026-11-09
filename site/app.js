@@ -1330,13 +1330,24 @@
         el("p", { class: "feed-meta media-meta" }, it.outlet + " · " + shortDate(it.date) + ", " + it.date.slice(0, 4) + " · " + g[1],
           it.stance && STANCE[it.stance] ? [" · ", stanceTag(it.stance)] : null,
           it.lk ? [" · ", el("span", { class: "unchecked" }, LINK_NOTE[it.lk])] : null,
-          (it.summary || "").length > 140 || (it.quote && it.quote.text) || (it.visuals && it.visuals.length) ? moreButton() : null),
-        it.summary ? el("p", { class: "lead" }, it.summary) : null,
+          moreButton()),
+        /* The summary and the source's own words read as one block; the quote is marked by its quotation marks and speaker. */
+        it.summary || (it.quote && it.quote.text) ? el("p", { class: "lead" }, it.summary || null,
+          it.quote && it.quote.text ? [it.summary ? " " : null, el("q", { class: "inline-quote" }, it.quote.text), it.quote.speaker ? " (" + it.quote.speaker + ")" : null] : null) : null,
         it.visuals && it.visuals.length ? el("ul", { class: "visuals" }, it.visuals.map((v) => el("li", null,
           el("strong", null, "Cheat sheet: " + v.title + ". "), v.text + " ", ext(v.url, "View image")))) : null,
-        it.quote && it.quote.text ? el("figure", { class: "quote small" },
-          el("blockquote", null, it.quote.text),
-          it.quote.speaker ? el("figcaption", null, it.quote.speaker) : null) : null);
+        null);
+    }));
+  }
+
+  /* A More that would reveal nothing is removed once the list is laid out. */
+  function pruneMore(host) {
+    requestAnimationFrame(() => host.querySelectorAll(".media-item:not(.open), .person:not(.open), .event:not(.open)").forEach((li) => {
+      const b = li.querySelector(":scope > * .more-toggle, :scope > .more-toggle");
+      if (!b) return;
+      const lead = li.querySelector(":scope > .lead");
+      const hidden = li.querySelector(":scope > .visuals, :scope > .quote, :scope > .actions, :scope > .social, :scope > .sources");
+      if (!hidden && (!lead || lead.scrollHeight <= lead.clientHeight + 1)) b.remove();
     }));
   }
 
@@ -1353,6 +1364,7 @@
           const next = mediaLimit; mediaLimit += MEDIA_PAGE; refresh();
           const node = listHost.querySelectorAll(".media-item")[next]; node.tabIndex = -1; node.focus();
         } }, "Show " + Math.min(MEDIA_PAGE, rest) + " more items") : null);
+      pruneMore(listHost);
       countHost.textContent = "Showing " + Math.min(mediaLimit, list.length) + " of " + list.length + " matching items (" + D.media.length + " total)";
     };
     const visualCount = D.media.filter((it) => it.visuals && it.visuals.length).length;
@@ -1607,54 +1619,42 @@
     const ck = D.checks || {};
     const billTotal = ck.quotes ? ck.quotes.bill_total : m.quotes;
     const billVerified = ck.quotes ? ck.quotes.bill_verified : m.quotes;
-    const rows = [["Bill quotes", billVerified + " of " + billTotal + " match the PDF text word for word."]];
-    if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " carry a passage from the bill, matched the same way."]);
-    if (ck.cites) rows.push(["Cites for claims", ck.cites.summary.cited + " of " + ck.cites.summary.total + " summary sentences and " + ck.cites.rows.cited + " of " + ck.cites.rows.total +
-      " sentences in headlines, comparison cells and the Communities and Data centers rows carry a bill passage, found word for word in a section the claim cites." +
-      (ck.cites.summary.absent + ck.cites.rows.absent ? " " + (ck.cites.summary.absent + ck.cites.rows.absent) + " more say the text is silent on a point, which the summary review confirmed; they have no passage to cite." : "") +
-      " A claim without a passage, or one the summary review flagged, stops the build."]);
-    if (ck.takes) rows.push(["Outside readings", ck.takes.total + " readings of specific sections from industry, advocates, lawyers and analysts. Their quotes go through the web-quote check below, and a reading that argues over particular words names that passage. They are the sources' claims about effects, not verified findings."]);
+    const rows = [["Bill quotes", billVerified + " of " + billTotal + " match the PDF word for word."]];
+    if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " cite a passage from the bill."]);
+    if (ck.cites) rows.push(["Claim cites", ck.cites.summary.cited + " of " + ck.cites.summary.total + " summary sentences and " + ck.cites.rows.cited + " of " + ck.cites.rows.total +
+      " other claims cite a passage from the section they describe. The build stops on a claim without one."]);
+    if (D.amend_index) rows.push(["Amendment notes", "Each change note cites a passage found word for word in the September or November text."]);
+    if (ck.takes) rows.push(["Outside readings", ck.takes.total + " readings of specific sections, quoted from their sources. They are the sources' claims, not checked findings."]);
     if (ck.inference) {
       const i = ck.inference;
-      rows.push(["Summary review", i.stale ? "The saved review predates changes to its inputs. Re-check pending." :
-        i.supported + " of " + i.total + " statements have a saved supported verdict; " + i.flagged + " remain flagged and " + (i.unchecked || 0) + " are unchecked. " +
-        (i.cached_only ? "Saved results were reconciled with the current wording; the fresh Sonnet review is unfinished. " : "") +
-        "This check covers section summaries, key points, overview headlines, the comparison tables' BAAJA cells and their SPEED Act and EPRA 2024 cells, and the Communities and Data centers rows. It does not verify every sentence on the site or establish legal accuracy."]);
+      rows.push(["Summary review", i.stale ? "Out of date: wording changed after the last review, and a rerun is pending." :
+        "A Sonnet model checked " + i.total + " statements against the bill text: " + i.supported + " supported, " + i.flagged + " flagged, " + (i.unchecked || 0) + " unchecked. It does not establish legal accuracy."]);
     }
-
     if (ck.quotes) {
       const q = ck.quotes;
-      const parts = [q.verified + " of " + q.total + " found on the cited page by script."];
-      if (q.browser) parts.push(q.browser + " more read on the page in a browser, where the site refuses scripts.");
-      if (q.near) parts.push(q.near + " found with small differences in wording.");
-      if (q.unreachable) parts.push(q.unreachable + " on pages that could not be opened.");
-      if (q.unverifiable) parts.push(q.unverifiable + " from video, where only the title can be read.");
-      parts.push("Checked " + S.formatDate(q.checked) + ".");
-      rows.push(["Quotes from the web", parts.join(" ")]);
+      rows.push(["Web quotes", q.verified + " of " + q.total + " found on the cited page by script" + (q.browser ? ", " + q.browser + " more in a browser" : "") +
+        (q.unreachable ? ", " + q.unreachable + " on pages that would not open" : "") + (q.near ? ", " + q.near + " with small differences" : "") + ". Checked " + S.formatDate(q.checked) + "."]);
     }
     if (ck.links) {
       const l = ck.links;
-      const parts = [l.ok + " of " + l.total + " answered a script."];
-      if (l.blocked) parts.push(l.blocked + " refuse scripts" + (l.browser ? "; " + l.browser + " of those opened in a browser." : "."));
-      if (l.error) parts.push(l.error + " gave no answer.");
-      parts.push(l.dead + " dead. Checked " + S.formatDate(l.checked) + ".");
-      rows.push(["Links", parts.join(" ")]);
+      rows.push(["Links", l.ok + " of " + l.total + " answered" + (l.blocked ? ", " + l.blocked + " refuse scripts" : "") + (l.error ? ", " + l.error + " gave no answer" : "") +
+        ", " + l.dead + " dead. Checked " + S.formatDate(l.checked) + "."]);
     }
     return [
       el("div", { class: "lede" }, el("h1", null, "Method"), el("p", { class: "facts" }, "Data as of " + S.formatDate(m.as_of))),
       el("section", { class: "block prose" },
         el("h2", null, "Bill text"),
-        el("p", null, "Draft " + m.draft_id + ", " + m.pages + " pages, posted by Senate EPW on " + S.formatDate(m.released) + ": ",
-          ext(m.source_pdf, "EPW copy"), ", ", ext(m.mirror_pdfs[0], "Energy Committee copy"), "."),
-        el("p", null, "A cite such as 44:6 is page 44, line 6 of that PDF. A word split across printed lines is indexed on the line where it begins; the final word of a cited passage may continue onto the next line. Citations use the September 30 draft of S. 5653. Page numbers may change in a later version.")),
+        el("p", null, "Draft " + m.draft_id + ", " + m.pages + " pages, posted " + S.formatDate(m.released) + ": ",
+          ext(m.source_pdf, "EPW copy"), ", ", ext(m.mirror_pdfs[0], "Energy Committee copy"), ". A cite such as 44:6 means page 44, line 6 of that PDF."),
+        D.amend_index ? el("p", null, "The " + S.formatDate(D.amend_index.date) + " substitute (" + D.amend_index.pages + " pages) is compared section by section on ", el("a", { href: "#/amendments" }, "Amendments"), ".") : null),
       el("section", { class: "block prose" },
-        el("h2", null, "Summaries"),
-        el("p", null, "Drafted with Claude and reviewed with AI assistance against the bill and from the two earlier bills: ",
-          m.prior_bills.map((b, i) => [i ? "; " : "", ext(b.url, b.label)]), ". A green rule marks AI-written text. It is not legal advice.")),
+        el("h2", null, "How it was built"),
+        el("p", null, "Two coding-agent systems built this site. Claude Code (Anthropic) wrote the parsers, build and pages, drafted the summaries and ran the research agents on Claude Opus, Sonnet, Haiku and Fable models. Codex (OpenAI) reviewed each pull request on GitHub. The site's author directed the work and decided what shipped."),
+        el("p", null, "Text under a green rule is AI-written and checked against the bill as described below. It is not legal advice.")),
       el("section", { class: "block prose" },
-        el("h2", null, "Timeline, people, media"),
-        el("p", null, "Coverage updated through " + S.formatDate(m.as_of) + ". A person's or group's position is taken from its own statements."),
-        el("p", null, "Reddit could not be searched by script or by browser; it has no entries.")),
+        el("h2", null, "Research"),
+        el("p", null, "Coverage runs through " + S.formatDate(m.as_of) + ". A position comes from the person's or group's own statement. Reddit refuses scripts and browsers, so it has no entries. Earlier bills compared: ",
+          m.prior_bills.map((b, i) => [i ? "; " : "", ext(b.url, b.label)]), ".")),
       el("section", { class: "block" },
         el("h2", null, "Checks"),
         el("dl", { class: "versus" }, rows.map((r) => [el("dt", null, r[0]), el("dd", null, r[1])]))),
@@ -1981,6 +1981,14 @@
     compare: () => D.compare.groups.map((g) => ["#/compare/" + g.id, g.label]).concat(D.compare.bills ? [["#/compare/" + D.compare.bills.id, D.compare.bills.label]] : []),
     issues: () => guidesByPage.map(([key, label]) => ["#/" + key, label]),
   };
+  /* A hover menu closes once the mouse leaves: a click on one of its links drops the focus that would hold it open, and Escape closes it. */
+  document.addEventListener("click", (ev) => {
+    const link = ev.target.closest && ev.target.closest(".tab-menu a");
+    if (link) link.blur();
+  });
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && document.activeElement && document.activeElement.closest(".tab-group")) document.activeElement.blur();
+  });
   const sectionNav = document.getElementById("section-nav");
   // Ordinary links work without JavaScript; enhance them with the interactive routes.
   document.querySelectorAll(".tabs [data-tab]").forEach(a => { a.href = "#/" + a.dataset.tab; });
@@ -2068,6 +2076,7 @@
     else nodes = renderOverview();
     fill(view, nodes);
     view.className = "view view-" + tab;
+    pruneMore(view);
     if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
     else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities" || (tab === "amendments" && parts[1] !== "sec")) jumpRow(view.querySelector(".lede"));
     if (tab === "timeline") {

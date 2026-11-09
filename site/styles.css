@@ -775,3 +775,4 @@ ins { background: var(--ins-bg); color: var(--ins-text); text-decoration: underl
 .media-meta .stance { font-size: inherit; }
 .media-meta .more-toggle { margin-left: 8px; }
 .media-meta .more-toggle { display: inline; }
+.inline-quote { font-family: var(--font-serif); }
