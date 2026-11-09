@@ -925,11 +925,11 @@ def amendments_html(core: dict) -> str:
             out.append(f'<p>{esc(st["who"])} ({esc(st["stance"])}): “{esc(st["quote"])}” {link(st["url"], st["publisher"])}</p>')
         out.append('</section>')
     out.append('<h2 id="reactions">Reactions to the substitute</h2>')
-    for st in ("supports", "opposes", "mixed", "undecided"):
+    for st in amendments.STANCES:
         rows = [x for x in a["reactions"] if x["stance"] == st]
         if not rows:
             continue
-        out.append(f'<h3>{st.capitalize()}</h3>')
+        out.append(f'<h3>{esc(amendments.STANCE_LABELS[st])}</h3>')
         for x in rows:
             src = x["sources"][0]
             out.append(f'<p><strong>{esc(x["who"])}</strong>, {esc(x["role"])}, {esc(x["date"])}: “{esc(src["quote"])}” {link(src["url"], src["publisher"])}</p>')

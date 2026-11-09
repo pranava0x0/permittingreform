@@ -27,6 +27,8 @@ SUB_PDF = "substitute.pdf"
 STATUSES = ("edited", "new", "dropped", "moved", "unchanged")
 KINDS = ("substantive", "technical")
 STANCES = ("supports", "opposes", "mixed", "undecided", "comments")
+# Headings for each stance group; the interactive view uses the same words (AM_STANCE in site/app.js).
+STANCE_LABELS = {"supports": "Support", "opposes": "Oppose", "mixed": "Mixed", "undecided": "Undecided", "comments": "Comment on a section"}
 FLOOR_STATUS = ("announced", "submitted", "filed", "pending", "adopted", "rejected", "withdrawn", "tabled")
 
 

@@ -1,5 +1,6 @@
 """The November 7 substitute: parse, diff and the Amendments payload."""
 import copy
+import html
 import json
 import re
 import sys
@@ -125,6 +126,14 @@ class Substitute(unittest.TestCase):
             for h in r.get("hunks", []):
                 for words in (h["before"], h["after"]):
                     self.assertIn(words, text, r["id"])
+
+    def test_the_static_edition_prints_every_reaction(self):
+        page = build.amendments_html(CORE)
+        for x in AMEND["reactions"]:
+            self.assertIn(html.escape(x["who"]), page, x["id"])
+        js = (ROOT / "site/app.js").read_text(encoding="utf-8")
+        for k, label in amendments.STANCE_LABELS.items():
+            self.assertIn(f'["{k}", "{label}"]', js)
 
     def test_payload_and_static_page_are_in_sync(self):
         self.assertEqual((ROOT / "site/data/amend.js").read_text(encoding="utf-8"), build.dump_js("PR_AMEND", AMEND))
