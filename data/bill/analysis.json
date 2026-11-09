@@ -2,7 +2,7 @@
  "generated": "2026-09-30",
  "sections": {
   "1101": {
-   "plain": "Rewrites NEPA's opening section. Adds a statement that NEPA prescribes a procedure for considering and informing the public about the reasonably foreseeable environmental effects of major federal actions, producing an informational document, and a savings clause that NEPA mandates no particular outcome.",
+   "plain": "Rewrites NEPA's opening section. Adds a statement that NEPA prescribes a procedure for considering and informing the public about the reasonably foreseeable environmental effects of major federal actions. Under that statement, the procedure produces an informational document. Also adds a savings clause that NEPA mandates no particular outcome.",
    "key_points": [
     "Codifies NEPA as a procedural statute whose product is an informational document",
     "New savings provision: nothing in NEPA mandates a particular outcome"
@@ -22,7 +22,7 @@
    "vs_epra_2024": "EPRA 2024 did not amend NEPA's purposes section."
   },
   "1102": {
-   "plain": "Moves NEPA's definitions from section 111 to a new section 3 and expands them. New terms include agency chief environmental review and permitting officers, eNEPA technologies, key permitting agencies, a 20-page record of stakeholder engagement, record of decision, and statement of purpose and need.\n\nThe bill lists 14 kinds of action that are not major federal actions and so fall outside NEPA. A project whose only federal involvement is a loan or loan guarantee is out. So are routine administrative actions under $10 million, and repair or replacement of lifeline infrastructure that adds no more than 20 percent capacity.\n\nThe list also excludes geothermal observation test projects, transmission upgrades under new Federal Power Act section 216A(b), covered Natural Gas Act pipeline work, actions another agency already evaluated, and Army Corps continuing-authority or environmental-infrastructure projects with a federal share of $50 million or less.",
+   "plain": "Moves NEPA's definitions from section 111 to a new section 3 and expands them. New terms include agency chief environmental review and permitting officers, eNEPA technologies, key permitting agencies, a 20-page record of stakeholder engagement, record of decision, and statement of purpose and need.\n\nThe bill lists 14 kinds of action that are not major federal actions and so fall outside NEPA. A project whose only federal involvement is a loan or loan guarantee is out. So are routine administrative actions under $10 million, and repair or replacement of lifeline infrastructure that adds no more than 20 percent capacity.\n\nThe list also excludes geothermal observation test projects. Transmission upgrades under new Federal Power Act section 216A(b) and covered Natural Gas Act pipeline work are excluded too. Actions another agency already evaluated are excluded, as are Army Corps continuing-authority or environmental-infrastructure projects with a federal share of $50 million or less.",
    "key_points": [
     "Loans and loan guarantees alone no longer make a project a major federal action",
     "Lifeline infrastructure repair and replacement excluded if capacity grows by 20 percent or less and no new through lanes",
@@ -89,7 +89,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "1105": {
-   "plain": "Expands when an agency can skip an environmental document. An agency may apply one or a combination of categorical exclusions (but may not stack the same size-based exclusion repeatedly), may rely on a categorical exclusion Congress created, and may treat a state or tribal environmental review, or compliance with another federal law, as serving NEPA's function. A project sponsor can ask the lead agency to stop an environmental assessment and go straight to an environmental impact statement. If the lead agency decides no environmental document is needed, no other agency may prepare one.",
+   "plain": "Expands when an agency can skip an environmental document. An agency may apply one or a combination of categorical exclusions, but may not stack the same size-based exclusion repeatedly. A categorical exclusion Congress created is also available to the agency. The agency may treat a state or tribal environmental review, or compliance with another federal law, as serving NEPA's function. A project sponsor can ask the lead agency to stop an environmental assessment and go straight to an environmental impact statement. If the lead agency decides no environmental document is needed, no other agency may prepare one.",
    "key_points": [
     "Combination of multiple categorical exclusions allowed",
     "State or tribal review that serves a similar function can substitute for federal review",
@@ -140,7 +140,7 @@
      "why": "A CEQ dispute order satisfies consultation duties under other statutes."
     },
     {
-     "text": "eliminate from consideration any alternative (except for a no-action alternative) that does not\u2014 \u201c(I) fulfill the purpose and need of the proposed agency action; and \u201c(II) meet the goals of an applicable non-Federal project sponsor.",
+     "text": "eliminate from consideration any alternative (except for a no-action alternative) that does not— “(I) fulfill the purpose and need of the proposed agency action; and “(II) meet the goals of an applicable non-Federal project sponsor.",
      "why": "Alternatives that miss the sponsor's goals are dropped from the analysis."
     },
     {
@@ -165,7 +165,7 @@
    ],
    "quotes": [
     {
-     "text": "by striking \u201c5 years\u201d and inserting \u201c10 years\u201d.",
+     "text": "by striking “5 years” and inserting “10 years”.",
      "why": "The whole section."
     }
    ],
@@ -181,7 +181,7 @@
    "plain": "Requires every agency to report all its categorical exclusions to CEQ within 30 days and each new one within 7 days; CEQ keeps a public register on its website. An agency may adopt another agency's exclusion after consulting it and documenting the adoption.",
    "key_points": [
     "Government-wide public register of categorical exclusions at CEQ",
-    "Streamlined adoption of other agencies' exclusions"
+    "Agencies may adopt other agencies' listed exclusions"
    ],
    "quotes": [
     {
@@ -200,14 +200,14 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "1109": {
-   "plain": "Sets an application clock: within 60 days an agency must say whether an application is complete, and within another 60 days it must tell the sponsor whether the action is excluded from NEPA, needs an environmental assessment, or gets a notice of intent for an EIS. Applicants must submit a list of all known permits, a record of stakeholder engagement, and a statement of purpose and need.",
+   "plain": "Sets an application clock: within 60 days, an agency must say whether an application is complete. Within another 60 days, the agency must tell the sponsor whether the action is excluded from NEPA. The agency must also say whether the action needs an environmental assessment or gets a notice of intent for an EIS. Applicants must submit a list of all known permits, a record of stakeholder engagement, and a statement of purpose and need.",
    "key_points": [
     "60 days to declare an application complete; 60 more to pick the level of review",
     "Applicants file a record of stakeholder engagement with the application"
    ],
    "quotes": [
     {
-     "text": "not later than 60 days after the date on which the project sponsor submits the application, the Federal agency shall\u2014 \u201c(A) document receipt of the application; and \u201c(B)(i) notify the project sponsor that the application is complete",
+     "text": "not later than 60 days after the date on which the project sponsor submits the application, the Federal agency shall— “(A) document receipt of the application; and “(B)(i) notify the project sponsor that the application is complete",
      "why": "The 60-day completeness check."
     }
    ],
@@ -235,7 +235,7 @@
      "why": "Remand is the only remedy; a court cannot vacate or enjoin."
     },
     {
-     "text": "a claim shall be barred unless the claim\u2014 \u201c(1) is filed not later than 150 days",
+     "text": "a claim shall be barred unless the claim— “(1) is filed not later than 150 days",
      "why": "The 150-day filing deadline."
     },
     {
@@ -258,7 +258,7 @@
    "vs_epra_2024": "EPRA 2024 (sec. 101) set a 150-day limit for energy and mineral project authorizations and a 180-day remand deadline. It did not require prior comment, did not change standing, and left courts their ordinary remedies. That section survives as section 2201 of this bill."
   },
   "1121": {
-   "plain": "Replaces NEPA section 209 with an eNEPA technology mandate. Within 60 days CEQ must publish data standards for permitting data, within 120 days guidance on minimum functional requirements (automated project screening, case management, GIS tools, AI-assisted comment analysis, administrative-record tools), and agencies must begin implementing within 180 days. CEQ and the key permitting agencies build an ePermit unified interagency data system and a public authorization portal hosted by GSA.\n\nA pilot is due within a year and the system by December 1, 2028, 'to the maximum extent practicable'. Congress gets access to the data, fine-tuning procedures and prompt configurations agencies create or adapt for AI tools, but not proprietary or general pre-training materials. CEQ also sets outcome-based performance measures for agencies and staff. Authorizes $5 million a year for NEPA.",
+   "plain": "Replaces NEPA section 209 with an eNEPA technology mandate. Within 60 days, CEQ must publish data standards for permitting data. CEQ must publish guidance on minimum functional requirements (automated project screening, case management, GIS tools, AI-assisted comment analysis, administrative-record tools) within 120 days. Agencies must begin implementing within 180 days. CEQ and the key permitting agencies build an ePermit unified interagency data system and a public authorization portal hosted by GSA.\n\nA pilot is due within a year and the system by December 1, 2028, 'to the maximum extent practicable'. Congress gets access to the data, fine-tuning procedures and prompt configurations agencies create or adapt for AI tools, but not proprietary or general pre-training materials. CEQ also sets outcome-based performance measures for agencies and staff. Authorizes $5 million a year for NEPA.",
    "key_points": [
     "Government-wide permitting data standards within 60 days",
     "Public ePermit portal hosted by GSA, targeted for December 1, 2028",
@@ -305,7 +305,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "1132": {
-   "plain": "Requires CEQ, with GSA, to run a public Environmental Review and Permitting Tracker listing every EIS project within 14 days of its notice of intent, with location, purpose and need, sponsor and agency contacts, quarterly schedule-compliance status explaining every slip and who caused it, and litigation status.",
+   "plain": "Requires CEQ, with GSA, to run a public Environmental Review and Permitting Tracker listing every EIS project within 14 days of its notice of intent. Each entry lists the location, purpose and need, and sponsor and agency contacts. Quarterly schedule-compliance status, which explains every slip and who caused it, and litigation status are also posted.",
    "key_points": [
     "Public tracker for every EIS project",
     "Each schedule change must say whether the agency or the sponsor caused it"
@@ -346,14 +346,14 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "1201": {
-   "plain": "Requires EPA to use notice-and-comment rulemaking when it develops Clean Water Act water quality criteria, and routes challenges to those criteria and to any definition of 'waters of the United States' directly to the federal courts of appeals.",
+   "plain": "Requires EPA to use notice-and-comment rulemaking when it develops Clean Water Act water quality criteria. Challenges to those criteria and to any definition of 'waters of the United States' go directly to the federal courts of appeals.",
    "key_points": [
     "WOTUS definitions reviewed in courts of appeals, not district courts",
     "Water quality criteria become rulemakings"
    ],
    "quotes": [
     {
-     "text": "in defining the scope of the term \u2018waters of the United States\u2019 for purposes of this Act",
+     "text": "in defining the scope of the term ‘waters of the United States’ for purposes of this Act",
      "why": "Challenges to a 'waters of the United States' definition go to the courts of appeals."
     }
    ],
@@ -367,7 +367,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "1202": {
-   "plain": "Rewrites Clean Water Act section 401 state certification. Certification is limited to water quality requirements. A state may deny only on clear and convincing evidence that no condition could make the project comply, and may impose only conditions that are necessary, least burdensome, and consistent with the federal permit.\n\nThe process gets a prefiling meeting, a defined complete application, a 3-day receipt acknowledgment, a 90-day completeness notice, and a review period of up to 1 year that can be extended only if the applicant asks in writing and the certifying authority agrees in writing. Silence is a waiver. Denials must name the specific water quality requirement violated. On judicial review the burden of proof falls on the state by clear and convincing evidence.\n\nFor interstate gas pipelines and bulk-power transmission lines, certification covers only direct point source discharges and must be decided within 9 months.",
+   "plain": "Rewrites Clean Water Act section 401 state certification. Certification is limited to water quality requirements. A state may deny only on clear and convincing evidence that no condition could make the project comply, and may impose only conditions that are necessary, least burdensome, and consistent with the federal permit.\n\nThe process gets a prefiling meeting, a defined complete application, and a 3-day receipt acknowledgment. A 90-day completeness notice and a review period of up to 1 year follow. The period can be extended only if the applicant asks in writing and the certifying authority agrees in writing. Silence is a waiver. Denials must name the specific water quality requirement violated. On judicial review the burden of proof falls on the state by clear and convincing evidence.\n\nFor interstate gas pipelines and bulk-power transmission lines, certification covers only direct point source discharges and must be decided within 9 months.",
    "key_points": [
     "Certification scope narrowed to water quality requirements; clear-and-convincing standard for denials",
     "One-year cap, extendable only at the applicant's written request and with the certifying authority's written agreement",
@@ -376,7 +376,7 @@
    ],
    "quotes": [
     {
-     "text": "no certifying authority may\u2014 \u201c(i) deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements",
+     "text": "no certifying authority may— “(i) deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements",
      "why": "A state can deny only when no condition could make the project comply."
     },
     {
@@ -401,7 +401,7 @@
    ],
    "quotes": [
     {
-     "text": "by striking \u201cfive years\u201d and inserting \u201c10 years\u201d.",
+     "text": "by striking “five years” and inserting “10 years”.",
      "why": "The whole section."
     }
    ],
@@ -414,7 +414,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "1204": {
-   "plain": "Limits EPA's section 404(c) veto to the period between a complete application and permit issuance. Extends nationwide permits from 5 to 10 years, lets the Corps modify them mid-term, and requires it to keep nationwide permits 12, 14, 43, 57 and 58 for projects filling under 2 acres, which are deemed a minimal adverse effect. Reissuing a nationwide permit needs no Endangered Species Act consultation, only a programmatic environmental assessment under NEPA, and no National Historic Preservation Act consultation, so long as the permit does not loosen preconstruction requirements.",
+   "plain": "Limits EPA's section 404(c) veto to the period between a complete application and permit issuance. Extends nationwide permits from 5 to 10 years and lets the Corps modify them mid-term. Requires the Corps to keep nationwide permits 12, 14, 43, 57 and 58 for projects filling under 2 acres. Filling under 2 acres of navigable waters counts as a minimal adverse effect. Reissuing a nationwide permit needs no Endangered Species Act consultation, only a programmatic environmental assessment under NEPA, and no National Historic Preservation Act consultation, so long as the permit does not loosen preconstruction requirements.",
    "key_points": [
     "No section 404(c) veto before an application or after a permit issues",
     "Nationwide permits last 10 years",
@@ -570,7 +570,7 @@
    ],
    "quotes": [
     {
-     "text": "the Secretary shall accept and integrate State-collected data, subject to the condition that the State-collected data meets the definition of \u2018best scientific and commercial data available\u2019",
+     "text": "the Secretary shall accept and integrate State-collected data, subject to the condition that the State-collected data meets the definition of ‘best scientific and commercial data available’",
      "why": "State-collected data must be used in listing decisions."
     }
    ],
@@ -602,7 +602,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "1308": {
-   "plain": "Creates a National Fish and Wildlife Foundation Coastal State Fund granting money to coastal states for coastal resource and natural infrastructure programs, allocated 70 percent equally, 15 percent by tidal shoreline and 15 percent by coastal population density, capped at 5 percent per state. Authorizes $50 million a year for fiscal years 2028 through 2032.",
+   "plain": "Creates a National Fish and Wildlife Foundation Coastal State Fund granting money to coastal states for coastal resource and natural infrastructure programs. The money is allocated 70 percent equally among coastal states and 15 percent by tidal shoreline. Another 15 percent is allocated by coastal population density, and no state gets more than 5 percent. Authorizes $50 million a year for fiscal years 2028 through 2032.",
    "key_points": [
     "$50 million a year to coastal states through NFWF"
    ],
@@ -621,7 +621,7 @@
    "vs_epra_2024": "EPRA 2024 had offshore wind revenue-sharing provisions rather than a grant fund."
   },
   "1401": {
-   "plain": "For projects with non-federal sponsors, a federal agency may not revoke, suspend, amend, or otherwise interfere with a federal authorization in effect on or after September 16, 2026.\n\nThere are five exceptions. A court can order the action. The holder can have materially breached the permit or the law, or obtained the permit by fraud. The action can be needed to prevent specific, urgent, substantial and proximate harm to life, property, national security or defense, based on new information not considered in the original review. Or the holder can ask for it.\n\nAgencies must give written notice with the statutory authority and evidence. The sponsor can sue in district court, where the agency carries the burden by clear and convincing evidence and classified information is reviewed in camera. A winning sponsor gets the permit reinstated, an injunction against repeat interference without a court order, attorney fees, delay costs, and an additional 25 to 50 percent of all project costs incurred, paid from the Judgment Fund without appropriation.\n\nWhere a stop-work order issued within the year before enactment was enjoined, the same judge keeps jurisdiction.",
+   "plain": "For projects with non-federal sponsors, a federal agency may not revoke, suspend, amend, or otherwise interfere with a federal authorization in effect on or after September 16, 2026.\n\nThere are five exceptions. A court can order the action. The holder can have materially breached the permit or the law, or obtained the permit by fraud. The action can be needed to prevent specific, urgent, substantial and proximate harm to life, property, national security or defense, based on new information not considered in the original review. Or the holder can ask for it.\n\nAgencies must give written notice with the statutory authority and evidence. The sponsor can sue in district court, where the agency carries the burden by clear and convincing evidence and classified information is reviewed in camera. A winning sponsor gets the permit reinstated and an injunction against repeat interference without a court order. The sponsor also gets attorney fees, delay costs, and an additional 25 to 50 percent of all project costs incurred. Awards are paid from the Judgment Fund without appropriation.\n\nWhere a stop-work order issued within the year before enactment was enjoined, the same judge keeps jurisdiction.",
    "key_points": [
     "No permit revocation absent a court order, breach, fraud, new-information emergency, or the holder's request",
     "Burden on the government by clear and convincing evidence",
@@ -734,7 +734,7 @@
    "vs_epra_2024": "EPRA 2024 (sec. 401) made the same core change: FERC backstop siting without corridor designation, FERC action once a state has had 1 year, beneficiary-pays cost allocation and the trivial-benefit protection.\n\nDifferences: EPRA said FERC 'may' issue a permit after a 60-day comment period and set the floor at 100 kilovolts. This bill says 'shall' after 45 days and sets the floor at 230 kilovolts. It drops EPRA's findings that a line 'significantly reduce transmission congestion' and be 'consistent with sound national energy policy'. It adds simultaneous state and FERC filing at 345 kilovolts, the state record, an opt-in for public power and small co-ops, FERC-led coordination of state water certifications, and review of all related permits in the courts of appeals."
   },
   "2102": {
-   "plain": "Adds Federal Power Act section 216A: work that maintains or increases grid capacity inside an existing right-of-way (reconductoring, higher operating voltage, added circuits, advanced transmission technologies, added storage at an existing facility, a parallel circuit) is categorically excluded from NEPA, is not a major federal action, and is not an undertaking under the National Historic Preservation Act. It also amends Natural Gas Act section 7 so that repair, replacement, looping, compression and capacity-enhancement of interstate gas pipelines inside an existing right-of-way or previously reviewed footprint are not major federal actions or historic-preservation undertakings.",
+   "plain": "Adds Federal Power Act section 216A: work that maintains or increases grid capacity inside an existing right-of-way is categorically excluded from NEPA. Covered work includes reconductoring, higher operating voltage, added circuits, advanced transmission technologies, added storage at an existing facility, and a parallel circuit. Work under section 216A is also not a major federal action and not an undertaking under the National Historic Preservation Act. The bill also amends Natural Gas Act section 7 for repair, replacement, looping, compression and capacity-enhancement of interstate gas pipelines. That work is not a major federal action or a historic-preservation undertaking when it stays inside an existing right-of-way or previously reviewed footprint.",
    "key_points": [
     "Reconductoring and in-corridor grid upgrades exempt from NEPA and NHPA section 106",
     "Gas pipeline looping and compression in existing corridors exempt from NEPA and NHPA section 106",
@@ -742,11 +742,11 @@
    ],
    "quotes": [
     {
-     "text": "Activities to maintain or increase the capacity of the electric grid within a covered area, and any Federal agency action authorizing such activities\u2014 \u201c(A) are a category of actions designated as being categorically excluded",
+     "text": "Activities to maintain or increase the capacity of the electric grid within a covered area, and any Federal agency action authorizing such activities— “(A) are a category of actions designated as being categorically excluded",
      "why": "Grid upgrades inside an existing right-of-way are excluded from NEPA."
     },
     {
-     "text": "The term \u2018covered activity\u2019 means any repair, maintenance, replacement, upgrade, rebuilding, modification, optimization, minor relocation, looping, compression, capacity-enhancement project, or addition to a covered facility.",
+     "text": "The term ‘covered activity’ means any repair, maintenance, replacement, upgrade, rebuilding, modification, optimization, minor relocation, looping, compression, capacity-enhancement project, or addition to a covered facility.",
      "why": "The same exemption for gas pipeline work, including looping and compression."
     }
    ],
@@ -789,7 +789,7 @@
    "vs_epra_2024": "EPRA 2024 (sec. 402) created the same sections 224 and 225 but required only interregional plans. This bill also requires regional planning processes, deems FERC Order No. 1920 compliance sufficient for the regional piece, and exempts public power and small co-ops unless they opt in. It drops EPRA's 60-day FERC dispute resolution between regions and FERC's power to impose a plan when regions fail to file one; the only consequence left is a 6-month extension."
   },
   "2104": {
-   "plain": "Adds Federal Power Act section 226. One or more states may refer a utility to FERC for an investigation of its local transmission planning. FERC forms an investigative team with up to 3 state appointees. If the team finds the utility's process is not selecting the more efficient or cost-effective local projects, or is crowding out regional planning, FERC may order process changes, cut the utility's return on equity on local projects, remove the presumption of prudence, or fine the utility. A fine, paid to the referring state, can reach $5 million for each local facility developed or energized from 60 days before the referral that FERC finds imprudent and harmful to that state's customers.",
+   "plain": "Adds Federal Power Act section 226. One or more states may refer a utility to FERC for an investigation of its local transmission planning. FERC forms an investigative team with up to 3 state appointees.\n\nThe team may find that the utility's process is not selecting the more efficient or cost-effective local projects, or is crowding out regional planning. FERC may then order process changes or cut the utility's return on equity on local projects. Further remedies are removing the presumption of prudence or fining the utility. A fine, paid to the referring state, can reach $5 million for each local facility developed or energized from 60 days before the referral that FERC finds imprudent and harmful to that state's customers.",
    "key_points": [
     "States can trigger FERC investigations of local transmission spending",
     "Remedies include lower return on equity and fines up to $5 million per facility"
@@ -829,7 +829,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "2106": {
-   "plain": "Requires FERC, within 18 months, to make each planning region file a consolidated interconnection and transmission planning process that looks 20 years ahead, publishes fuel-neutral planned interconnection locations with a fixed per-megawatt cost, and runs a cluster study with one decision point and nonrefundable security to deter speculative projects. Regions file within 2 years and update every 2 years.",
+   "plain": "Requires FERC, within 18 months, to make each planning region file a consolidated interconnection and transmission planning process that looks 20 years ahead. The process publishes fuel-neutral planned interconnection locations with a fixed per-megawatt cost. A cluster study in the process has one decision point and nonrefundable security to deter speculative projects. Regions file within 2 years and update every 2 years.",
    "key_points": [
     "Generation interconnection and transmission planned together",
     "Published zonal per-megawatt interconnection prices",
@@ -1045,7 +1045,7 @@
    "vs_epra_2024": "EPRA 2024 had a comparable savings clause."
   },
   "2201": {
-   "plain": "A 150-day statute of limitations for any lawsuit challenging a federal agency's grant or denial of an authorization for an energy, carbon dioxide, mineral or wildfire fuel-reduction project, unless the underlying law sets a shorter one. Covered authorizations include leases, drilling permits, rights-of-way, mining plans, Endangered Species Act statements and permits, and forest restoration approvals. Agencies must publish the decision within 3 days. Courts must expedite the case, and a remand cannot give the agency more than 180 days unless the law requires longer. Agencies must tell the project sponsor about any suit within 30 days.",
+   "plain": "A 150-day statute of limitations applies to any lawsuit challenging a federal agency's grant or denial of an authorization. The limit covers authorizations for an energy, carbon dioxide, mineral or wildfire fuel-reduction project. A shorter limit set by the underlying law applies instead. Covered authorizations include leases, drilling permits, rights-of-way, mining plans, Endangered Species Act statements and permits, and forest restoration approvals. Agencies must publish the decision within 3 days. Courts must expedite the case, and a remand cannot give the agency more than 180 days unless the law requires longer. Agencies must tell the project sponsor about any suit within 30 days.",
    "key_points": [
     "150 days to sue over energy and mineral project decisions under any federal law",
     "180-day cap on agency action after a court remand",
@@ -1073,7 +1073,7 @@
    "vs_epra_2024": "Carried over from EPRA 2024 (sec. 101) nearly word for word: the 150-day limit, the 180-day remand cap and the 30-day notice to sponsors. This version adds leases, rights-of-way and easements to the definition and starts the clock when the decision is made public, which must happen within 3 days."
   },
   "2211": {
-   "plain": "Removes the federal drilling permit requirement for oil and gas wells on non-federal surface land where the federal government owns less than half the minerals in the drilling unit, or where the wellbore only enters or passes through federal minerals. Lessees notify Interior of state permits. Interior cannot require bonds, mitigation or reclamation approval on that non-federal land. Royalties are unchanged; Indian lands are excluded.",
+   "plain": "Removes the federal drilling permit requirement for oil and gas wells on non-federal surface land. The exemption applies where the federal government owns less than half the minerals in the drilling unit. Wells whose wellbore only enters or passes through federal minerals are exempt too. Lessees notify Interior of state permits. Interior cannot require bonds, mitigation or reclamation approval on that non-federal land. Royalties are unchanged; Indian lands are excluded.",
    "key_points": [
     "No federal permit to drill for wells on private or state surface with a minority federal mineral interest",
     "State permits govern; royalties still owed"
@@ -1122,7 +1122,7 @@
    ],
    "quotes": [
     {
-     "text": "The installation, modification, operation, or removal of commercially available solar photovoltaic systems located on\u2014 (i) a building or other structure (such as a rooftop, parking lot, or facility, or mounted to signage, lighting, gates, or fences); or (ii) previously disturbed or developed land comprising less than 10 acres.",
+     "text": "The installation, modification, operation, or removal of commercially available solar photovoltaic systems located on— (i) a building or other structure (such as a rooftop, parking lot, or facility, or mounted to signage, lighting, gates, or fences); or (ii) previously disturbed or developed land comprising less than 10 acres.",
      "why": "Small solar installations are to be excluded from NEPA review."
     }
    ],
@@ -1136,7 +1136,7 @@
    "vs_epra_2024": "Carried over from EPRA 2024 (secs. 206 and 207): the right-of-way clocks, the low-disturbance exclusions, storage as an eligible project, and the BLM review standards. EPRA's national goal of at least 50 gigawatts of renewable energy authorized on federal land by 2030 is not in this bill."
   },
   "2214": {
-   "plain": "Directs Interior and Agriculture to adopt, within 180 days, categorical exclusions for placing power lines in approved corridors, for upgrades and reconductoring of existing lines in existing rights-of-way or on previously disturbed land, and for battery storage on previously disturbed land.",
+   "plain": "Directs Interior and Agriculture to adopt, within 180 days, categorical exclusions for placing power lines in approved corridors. Another exclusion covers upgrades and reconductoring of existing lines in existing rights-of-way or on previously disturbed land. A third exclusion covers battery storage on previously disturbed land.",
    "key_points": [
     "Categorical exclusions for grid work on federal land within 180 days"
    ],
@@ -1156,7 +1156,7 @@
    "vs_epra_2024": "Carried over from EPRA 2024 (sec. 209, electric grid projects)."
   },
   "2215": {
-   "plain": "Lets a hardrock mine operator locate as many 5-acre mill sites on public land as are reasonably necessary for waste rock, tailings and other operations under an approved plan of operations, for a $400 annual fee per site. Mill sites convey no mineral rights and cannot be patented. Hardrock minerals on acquired federal lands become leasable. Mill site fees and those lease receipts go to a new Abandoned Hardrock Mine Fund for cleanup.",
+   "plain": "Lets a hardrock mine operator locate as many mill sites on public land as are reasonably necessary for waste rock, tailings and other operations. Each mill site covers up to 5 acres and sits under an approved plan of operations. The operator pays a $400 annual fee per site. Mill sites convey no mineral rights and cannot be patented. Hardrock minerals on acquired federal lands become leasable. Mill site fees and those lease receipts go to a new Abandoned Hardrock Mine Fund for cleanup.",
    "key_points": [
     "A mine operator may locate as many 5-acre mill sites as its plan of operations needs",
     "$400 per mill site per year, paid into an abandoned mine cleanup fund"
@@ -1235,7 +1235,7 @@
    "vs_epra_2024": "Carried over from EPRA 2024 (sec. 208(b) and (c)), with the completeness check lengthened from 10 to 30 days and a hard 10-day deadline added for deferred decisions."
   },
   "2224": {
-   "plain": "Creates a Geothermal Ombudsman and a Geothermal Permitting Task Force inside BLM within 60 days to resolve disputes between field offices and applicants, move staff to offices with backlogs, and pay retention allowances of up to 25 percent of basic pay.",
+   "plain": "Creates a Geothermal Ombudsman and a Geothermal Permitting Task Force inside BLM within 60 days. The Ombudsman resolves disputes between field offices and applicants and may assign staff to help other offices complete geothermal authorizations. The Ombudsman may also pay retention allowances of up to 25 percent of basic pay.",
    "key_points": [
     "BLM geothermal ombudsman and strike team"
    ],
@@ -1273,7 +1273,7 @@
    "vs_epra_2024": "Parallel to EPRA 2024's oil and gas provision; the geothermal version is new."
   },
   "2226": {
-   "plain": "Requires Interior to keep processing geothermal permits, sundry notices and rights-of-way under a valid lease despite pending litigation, and to decide within 60 days of completing legal requirements, unless a court has vacated or enjoined the lease or permit.",
+   "plain": "Requires Interior to keep processing geothermal permits, sundry notices and rights-of-way under a valid lease despite pending litigation. Interior must decide within 60 days of completing legal requirements. The duty ends if a court has vacated or enjoined the lease or permit.",
    "key_points": [
     "Litigation alone does not pause geothermal permitting"
    ],
@@ -1354,7 +1354,7 @@
    "vs_epra_2024": "EPRA 2024 (sec. 208(f)) extended the section 390 categorical exclusions to geothermal. Declaring the activities not major federal actions, and stripping NEPA from the drilling permits, goes further and applies to oil and gas as well."
   },
   "2231": {
-   "plain": "FERC, with the Energy Department, reports to Congress within 270 days on market barriers to hydropower and pumped storage and on how to pay hydropower for the grid services it provides, after a technical conference and public comment.",
+   "plain": "FERC, with the Energy Department, reports to Congress within 270 days on market barriers to hydropower and pumped storage. The report also covers how to pay hydropower for the grid services it provides. FERC prepares the report after a technical conference and public comment.",
    "key_points": [
     "FERC report on hydropower market barriers"
    ],
@@ -1379,7 +1379,7 @@
    ],
    "quotes": [
     {
-     "text": "by inserting \u201cand are reasonably related to the effects of the project\u201d after \u201cof such reservation\u201d.",
+     "text": "by inserting “and are reasonably related to the effects of the project” after “of such reservation”.",
      "why": "Mandatory license conditions must relate to the project's effects."
     }
    ],
@@ -1412,7 +1412,7 @@
    "vs_epra_2024": "Not in EPRA 2024."
   },
   "2234": {
-   "plain": "Creates an expedited FERC license of 10 to 20 years for micro hydrokinetic projects of 5 megawatts or less (wave, tidal, current and free-flowing river turbines with no impoundment), with final action within 1 year of the application and categorical exclusions for low-disturbance activities.",
+   "plain": "Creates an expedited FERC license of 10 to 20 years for micro hydrokinetic projects of 5 megawatts or less. Qualifying projects are wave, tidal, current and free-flowing river turbines with no impoundment. FERC takes final action within 1 year of the application, with categorical exclusions for low-disturbance activities.",
    "key_points": [
     "One-year licensing for hydrokinetic projects up to 5 MW"
    ],
@@ -1437,7 +1437,7 @@
    ],
    "quotes": [
     {
-     "text": "by striking \u201cor mathematical\u201d and inserting \u201cmathematical, economic, or legal\u201d",
+     "text": "by striking “or mathematical” and inserting “mathematical, economic, or legal”",
      "why": "Adds economists and lawyers to FERC's special hiring authority."
     }
    ],
@@ -1495,7 +1495,7 @@
    ],
    "quotes": [
     {
-     "text": "by striking \u201cprevention of interference with reasonable uses\u201d and inserting \u201cprevention of unreasonable interference with other uses\u201d",
+     "text": "by striking “prevention of interference with reasonable uses” and inserting “prevention of unreasonable interference with other uses”",
      "why": "The offshore wind test becomes 'unreasonable interference' with other uses."
     }
    ],
@@ -1509,7 +1509,7 @@
    "vs_epra_2024": "The three Outer Continental Shelf Lands Act amendments come from EPRA 2024 (sec. 302(d)), with one change: sanctuary rights-of-way are no longer limited to electricity from renewable energy. EPRA's mandates do not appear here: one offshore oil and gas lease sale and one offshore wind lease sale a year from 2025 to 2029, 400,000 acres of wind leasing a year, and a 30-gigawatt offshore wind goal."
   },
   "2252": {
-   "plain": "Directs Interior and Energy to identify preferred routes for offshore transmission cables within 2 years and review them every 3 years, makes Interior the lead agency for offshore transmission permitting, requires a final rule within 2 years, and lets Interior issue offshore transmission rights-of-way competitively or noncompetitively.",
+   "plain": "Directs Interior and Energy to identify preferred routes for offshore transmission cables within 2 years and review them every 3 years. Interior is the lead agency for offshore transmission permitting, and a final rule is required within 2 years. Offshore transmission rights-of-way may be issued competitively or noncompetitively by Interior.",
    "key_points": [
     "Planned offshore transmission routes within 2 years",
     "Interior is lead agency; rights-of-way can be noncompetitive"
@@ -1530,7 +1530,7 @@
    "vs_epra_2024": "Not in EPRA 2024, which made offshore lines eligible for FERC backstop siting and cost allocation (kept in section 2101)."
   },
   "2301": {
-   "plain": "Rewrites section 106 of the National Historic Preservation Act. An 'adverse effect' must be reasonably foreseeable and must directly alter a historic property. Temporary alterations are excluded. Visual, atmospheric and audible effects are excluded unless they directly and significantly diminish the property. An 'undertaking' excludes projects whose only federal tie is a loan, guarantee or grant, the non-federal parts of a project, minor repairs, permit renewals and post-approval operations.\n\nThe process gets deadlines: 30 days to decide whether a project is an undertaking, 60 days for the agency's report, 90 days for a determination, then 60 days of consultation, 45 days for Advisory Council comments and 30 days for a final decision. Consultation must be finished by the time the NEPA document is completed, unless the Secretary grants an extension for extraordinary circumstances. State and tribal preservation officers who do not respond in 30 days are passed over, and the agency may decide in its sole discretion that other considerations outweigh preservation.\n\nCourts give substantial deference and may only remand without vacatur or injunction; a preliminary injunction is available only for a likely violation of another law. Claims go to the courts of appeals, within 150 days, from parties who commented and suffered direct harm. A suit over a missed consultation deadline goes to a court where the project is located. Non-signatories cannot challenge programmatic agreements. State and tribal programs are evaluated every 2 years and lose grants if they miss consultation timelines.",
+   "plain": "Rewrites section 106 of the National Historic Preservation Act. An 'adverse effect' must be reasonably foreseeable and must directly alter a historic property. Temporary alterations are excluded. Visual, atmospheric and audible effects are excluded unless they directly and significantly diminish the property. An 'undertaking' excludes projects whose only federal tie is a loan, guarantee or grant, the non-federal parts of a project, minor repairs, permit renewals and post-approval operations.\n\nThe process gets deadlines: 30 days to decide whether a project is an undertaking and 60 days for the agency's report. A determination or an agreement on the adverse effects follows within 90 days of the report. Advisory Council comments take 45 days, and the final decision takes 30 days. Consultation must be finished by the time the NEPA document is completed, unless the Secretary grants an extension for extraordinary circumstances. State and tribal preservation officers who do not respond in 30 days are passed over, and the agency may decide in its sole discretion that other considerations outweigh preservation.\n\nCourts give substantial deference and may only remand without vacatur or injunction; a preliminary injunction is available only for a likely violation of another law. Claims go to the courts of appeals, within 150 days, from parties who commented and suffered direct harm. A suit over a missed consultation deadline goes to a court where the project is located. Non-signatories cannot challenge programmatic agreements. State and tribal programs are evaluated every 2 years and lose grants if they miss consultation timelines.",
    "key_points": [
     "Adverse effect limited to direct physical alteration; visual and noise effects mostly excluded",
     "Loans and grants alone no longer trigger section 106",
@@ -1564,7 +1564,7 @@
    "vs_epra_2024": "Not in EPRA 2024. This is the first major permitting bill to rewrite section 106."
   },
   "2302": {
-   "plain": "Authorizes $200 million a year for deposit in the Historic Preservation Fund for fiscal years 2027 through 2036. Deposits become available the next fiscal year without a further appropriation. Creates a $20 million-a-year grant program (fiscal years 2027 through 2030) for tribal historic preservation officers to build online databases of records and of properties of traditional religious or cultural importance, with protections against disclosing sensitive site locations.",
+   "plain": "Authorizes $200 million a year for deposit in the Historic Preservation Fund for fiscal years 2027 through 2036. Deposits become available the next fiscal year without a further appropriation. Creates a $20 million-a-year grant program (fiscal years 2027 through 2030) for tribal historic preservation officers. The grants build online databases of records and of properties of traditional religious or cultural importance. Protections against disclosing sensitive site locations are included.",
    "key_points": [
     "$200 million a year for the Historic Preservation Fund through 2036",
     "$20 million a year for tribal preservation databases"

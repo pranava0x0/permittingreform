@@ -613,7 +613,8 @@
       }
     }).catch((err) => fill(textHost, failure(err)));
 
-    return [searchBox(query || ""), el("div", { class: "bill-layout" }, outline(n), article)];
+    return [searchBox(query || ""), el("div", { class: "bill-layout" }, outline(n), article),
+      stepDock(sectionArrows(prev && secHref(prev.n), next && secHref(next.n), "section"))];
   }
 
   function renderSearch(raw) {
@@ -1851,10 +1852,25 @@
       landed = window.scrollY;
       counter.textContent = "Edit " + (at + 1) + " of " + list.length;
     };
-    return el("div", { class: "hunk-arrows", role: "group", "aria-label": "Step through edits" },
-      counter,
+    return el("div", { class: "step-row", role: "group", "aria-label": "Step through edits" },
+      el("span", { class: "step-label" }, "Edit"), counter,
       el("button", { type: "button", "aria-label": "Previous edit", onclick: () => go(-1) }, "▲"),
       el("button", { type: "button", "aria-label": "Next edit", onclick: () => go(1) }, "▼"));
+  }
+
+  /* Previous and next section, as arrows; an end of the list shows a dimmed arrow. */
+  function sectionArrows(prevHref, nextHref, what) {
+    const arrow = (href, label, glyph) => href
+      ? el("a", { href: href, "aria-label": label + " " + what }, glyph)
+      : el("span", { class: "step-off", "aria-hidden": "true" }, glyph);
+    return el("div", { class: "step-row", role: "group", "aria-label": "Step through " + what + "s" },
+      el("span", { class: "step-label" }, "Section"),
+      arrow(prevHref, "Previous", "▲"), arrow(nextHref, "Next", "▼"));
+  }
+
+  /* The floating dock that holds the step arrows, bottom right. */
+  function stepDock(...rows) {
+    return el("nav", { class: "step-dock", "aria-label": "Step through the page" }, rows);
   }
   function renderAmendSection(id) {
     const A = window.PR_AMEND;
@@ -1911,7 +1927,8 @@
           r.text ? wholeRedline(r.text, A["new"].pdf, "ins") : null,
           r.old_text ? wholeRedline(r.old_text, D.meta.pdf, "del") : null,
           !hunks.length && !r.text && !r.old_text ? el("p", null, "The text is unchanged apart from the heading or number above.") : null),
-        hunks.length > 1 ? hunkArrows(() => { if (more && more.isConnected) more.click(); }) : null,
+        stepDock(sectionArrows(prev && "#/amendments/sec/" + prev.id, next && "#/amendments/sec/" + next.id, "changed section"),
+          hunks.length > 1 ? hunkArrows(() => { if (more && more.isConnected) more.click(); }) : null),
         el("nav", { class: "pager", "aria-label": "Neighboring changes" },
           prev ? el("a", { href: "#/amendments/sec/" + prev.id, rel: "prev" }, "Previous: Sec. " + prev.n + ". " + prev.h) : el("span"),
           next ? el("a", { href: "#/amendments/sec/" + next.id, rel: "next" }, "Next: Sec. " + next.n + ". " + next.h) : el("span"))))];
@@ -1949,6 +1966,13 @@
         el("h2", null, el("a", {href:"#/" + key}, label)), el("p", null, question))),
       el("p", null, el("a", {href:"issues.html"}, "Read the provisions and cited debate on one page"))];
   }
+  /* On desktop, a page in the row lists what is inside it on hover or keyboard focus. */
+  const SUBMENUS = {
+    bill: () => structureGroups(D.sections).map((g) => [secHref(g.sections[0].n), titleCase(g.div).replace("Division ", "Div. ") + ", " + titleCase(g.ti) + ": " + titleCase(g.tih)]),
+    amendments: () => [["#/amendments", "Key changes"], ["#/amendments/reactions", "Reactions to the substitute"]],
+    compare: () => D.compare.groups.map((g) => ["#/compare/" + g.id, g.label]).concat(D.compare.bills ? [["#/compare/" + D.compare.bills.id, D.compare.bills.label]] : []),
+    issues: () => guidesByPage.map(([key, label]) => ["#/" + key, label]),
+  };
   const sectionNav = document.getElementById("section-nav");
   // Ordinary links work without JavaScript; enhance them with the interactive routes.
   document.querySelectorAll(".tabs [data-tab]").forEach(a => { a.href = "#/" + a.dataset.tab; });
@@ -1973,7 +1997,11 @@
     if (sectionNav.dataset.group !== group) {
       sectionNav.dataset.group = group;
       sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
-      fill(sectionNav, GROUPS[group].map(([key, name]) => el("a", { href: "#/" + key }, name)));
+      fill(sectionNav, GROUPS[group].map(([key, name]) => {
+        const link = el("a", { href: "#/" + key }, name);
+        const items = SUBMENUS[key] ? SUBMENUS[key]() : [];
+        return items.length ? el("span", { class: "tab-group" }, link, el("span", { class: "tab-menu" }, items.map(([href, label]) => el("a", { href: href }, label)))) : link;
+      }));
     }
     // Measure once the row is filled, or the pinned height misses it until the next resize (Codex, PR 16).
     if (wasHidden) pinMasthead();

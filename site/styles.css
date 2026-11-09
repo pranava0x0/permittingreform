@@ -748,8 +748,18 @@ ins { background: var(--ins-bg); color: var(--ins-text); text-decoration: underl
 .am-heading-red { margin: 8px 0; }
 .hunk-whole .hunk-text ins, .hunk-whole .hunk-text del { padding: 0; }
 .outline-head { margin: 0; padding: 8px 0; border-bottom: 1px solid var(--border); font-size: var(--fs-small); font-weight: 700; }
-.hunk-arrows { position: fixed; right: 16px; bottom: 16px; z-index: 15; display: flex; align-items: center; gap: 4px; background: var(--bg); border: 1px solid var(--border); padding: 4px; }
-.hunk-arrows button { min-width: 44px; min-height: 44px; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; font-size: var(--fs-body); }
-.hunk-arrows button:hover { border-color: var(--accent); }
+.step-dock { position: fixed; right: 16px; bottom: 16px; z-index: 15; display: flex; flex-direction: column; gap: 4px; background: var(--bg); border: 1px solid var(--border); padding: 4px; }
+.step-row { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+.step-label { font-size: var(--fs-small); font-weight: 700; color: var(--text-muted); padding: 0 4px; }
+.step-row button, .step-row a, .step-off { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; font-size: var(--fs-body); text-decoration: none; }
+.step-row button:hover, .step-row a:hover { border-color: var(--accent); }
+.step-off { opacity: 0.35; cursor: default; }
 .hunk-count { font-size: var(--fs-small); color: var(--text-muted); padding: 0 6px; }
 .hunk-count:empty { display: none; }
+.subtabs .tab-group { display: inline-flex; }
+.subtabs .tab-menu a { justify-content: flex-start; min-height: 0; border-bottom: 0; font-weight: 700; }
+@media (hover: hover) and (min-width: 640px) {
+  .subtabs .tab-group:hover > .tab-menu, .subtabs .tab-group:focus-within > .tab-menu { max-height: 70vh; overflow-y: auto; min-width: 260px; }
+}
+@media (max-width: 639px) { .subtabs .tab-group { display: contents; } }
+#view:has(> .step-dock), #view:has(.am-section) { padding-bottom: 140px; }
