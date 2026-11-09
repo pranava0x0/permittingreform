@@ -1340,15 +1340,15 @@
     }));
   }
 
-  /* A More that would reveal nothing is removed once the list is laid out. */
+  /* A More that would reveal nothing is hidden once the list is laid out, and measured again when the width changes (Codex, PR 17). */
   function pruneMore(host) {
-    requestAnimationFrame(() => host.querySelectorAll(".media-item:not(.open), .person:not(.open), .event:not(.open)").forEach((li) => {
+    host.querySelectorAll(".media-item:not(.open), .person:not(.open), .event:not(.open)").forEach((li) => {
       const b = li.querySelector(":scope > * .more-toggle, :scope > .more-toggle");
       if (!b) return;
       const lead = li.querySelector(":scope > .lead");
       const hidden = li.querySelector(":scope > .visuals, :scope > .quote, :scope > .actions, :scope > .social, :scope > .sources");
-      if (!hidden && (!lead || lead.scrollHeight <= lead.clientHeight + 1)) b.remove();
-    }));
+      b.hidden = !hidden && (!lead || lead.scrollHeight <= lead.clientHeight + 1);
+    });
   }
 
   function renderMedia() {
@@ -2117,7 +2117,12 @@
   PHONE.addEventListener("change", () => {
     route();
   });
-  window.addEventListener("resize", pinMasthead);
+  let resizeFrame = 0;
+  window.addEventListener("resize", () => {
+    pinMasthead();
+    clearTimeout(resizeFrame);
+    resizeFrame = setTimeout(() => pruneMore(view), 120);
+  });
   pinMasthead();
   document.querySelectorAll(".tabs a").forEach((a) => a.addEventListener("click", () => {
     if (a.getAttribute("href") === location.hash) window.scrollTo(0, 0);
