@@ -655,7 +655,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Drops the 20-megawatt floor for data center load by replacing “covered load” with computational load owners, operators and sites. Was: rules applied only to load of 20 megawatts or more.",
+    "t": "Drops the 20-megawatt floor from the ratepayer protection rules in subsection (b) by replacing “covered load” with computational load sites. Was: those rules reached only load of 20 megawatts or more.",
     "old": "equals or exceeds 20 megawatts or, in the case of data centers or high-density computing facilities developed in phases"
    },
    {
