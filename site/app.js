@@ -292,9 +292,10 @@
     const head = el("div", { class: "lede overview-lede" },
       el("h1", null, "BAAJA"),
       el("p", { class: "subtitle" }, m.short_title),
-      el("p", { class: "facts" }, "Introduced " + S.formatDate(m.released) + " by Sens. " + m.sponsors.map((x) => x.replace(/ \(.*$/, "").split(" ").pop()).join(", ").replace(/, ([^,]*)$/, " and $1") +
-        (ix ? ". Latest text: the " + S.formatDate(ix.date) + " substitute." : ".")),
-      el("p", { class: "summary" }, o.summary.text + " ", el("span", { class: "sources-inline" }, ext(o.summary.source.url, o.summary.source.label))),
+      el("p", { class: "summary" }, o.summary.text),
+      el("p", { class: "facts" }, "Introduced " + S.formatDate(m.released).replace(/, \d{4}$/, "") + " by Sens. " + m.sponsors.map((x) => x.replace(/ \(.*$/, "").split(" ").pop()).join(", ").replace(/, ([^,]*)$/, " and $1") +
+        (ix ? ". Latest text: " + S.formatDate(ix.date).replace(/, \d{4}$/, "") + " substitute. " : ". "), ext(o.summary.source.url, o.summary.source.label)),
+
       // A scheduled date in the past says so, rather than reading as upcoming.
       o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next Senate vote: " : "Previously scheduled: "),
         ext(o.next.source.url, S.formatDate(o.next.date)), ". " + o.next.text) : null);
@@ -382,7 +383,7 @@
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.recent.counts.timeline + " events")))));
 
-    return [head, start, el("div", { class: "rows" }, foldBlock(status)), provisions,
+    return [head, el("div", { class: "rows" }, foldBlock(status)), provisions, start,
       el("section", { class: "block", "aria-labelledby": "h-more" }, el("h2", { id: "h-more" }, "More detail"),
         el("div", { class: "rows" }, foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest))), about];
   }
@@ -1688,12 +1689,13 @@
   }
 
   const AM_STATUS = { edited: "Edited", "new": "New", dropped: "Dropped", moved: "Renumbered", unchanged: "Unchanged" };
+  const AM_TAG = Object.assign({ technical: "Technical edit" }, AM_STATUS);
   const AM_FILTERS = [["all", "All changes"], ["substantive", "Substantive"], ["new", "New sections"], ["technical", "Technical"]];
   const AM_STANCE = [["supports", "Support"], ["opposes", "Oppose"], ["mixed", "Mixed"], ["undecided", "Undecided"], ["comments", "Comment on a section"]];
   let amFilter = "all";
 
   function amTag(status) {
-    return el("span", { class: "am-tag am-" + status }, AM_STATUS[status]);
+    return el("span", { class: "am-tag am-" + status }, AM_TAG[status]);
   }
 
   /* A cite into either print: September cites open bill.pdf, November cites open the substitute. */
@@ -1874,16 +1876,13 @@
     } }, "Show all " + hunks.length) : null;
     const origin = r.origin;
     return [
-      el("p", { class: "crumb" }, el("a", { href: "#/amendments" }, "‹ Amendments")),
       el("div", { class: "bill-layout" }, amendOutline(A, r.id), el("article", { class: "section am-section" },
         el("h1", null, "Sec. " + r.n + ". " + r.h),
-        el("p", { class: "sec-meta" }, amTag(r.status),
-          r.kind ? el("span", null, r.kind === "technical" ? "Technical edit" : "Substantive") : null,
-          o ? ["·", el("a", { href: D.meta.pdf + "#page=" + o.p1, target: "_blank", rel: "noopener" }, "Sept. 30: " + S.formatPages(o.p1, o.p2))] : null,
-          n ? ["·", el("a", { href: A.new.pdf + "#page=" + n.p1, target: "_blank", rel: "noopener" }, "Nov. 7: " + S.formatPages(n.p1, n.p2))] : null,
-          r.struck != null ? ["·", el("span", null, num(r.struck) + " words struck, " + num(r.inserted) + " inserted")] : null),
-        renamed ? el("p", { class: "note" }, "September 30: Sec. " + o.n + ". " + o.h + ".") : null,
-        o ? el("p", { class: "where" }, el("a", { href: secHref(o.n) }, "September text, summary and outside readings")) : null,
+        /* One line: what happened, where it sits in each print, and the September page. A rename shows in the redline. */
+        el("p", { class: "sec-meta" }, amTag(r.kind === "technical" && r.status === "edited" ? "technical" : r.status),
+          o ? el("a", { href: D.meta.pdf + "#page=" + o.p1, target: "_blank", rel: "noopener" }, "Sept. 30 " + S.formatPages(o.p1, o.p2)) : null,
+          n ? el("a", { href: A["new"].pdf + "#page=" + n.p1, target: "_blank", rel: "noopener" }, "Nov. 7 " + S.formatPages(n.p1, n.p2)) : null,
+          o ? el("a", { href: secHref(o.n) }, "September version") : null),
         o ? compareLinks(o.n) : null,
         origin ? el("section", { class: "sec-part", "aria-labelledby": "h-am-origin" },
           el("h2", { id: "h-am-origin" }, "Source bill"),
@@ -1904,9 +1903,7 @@
           el("ul", { class: "am-reactions" }, reactions.map((x) => reactionItem(A, x, false)))) : null,
         el("section", { class: "sec-part", "aria-labelledby": "h-am-red" },
           el("h2", { id: "h-am-red" }, "Redline", el("span", { class: "row-count" },
-            hunks.length ? hunks.length + (hunks.length === 1 ? " edit" : " edits") : r.status === "new" ? "whole section inserted" : r.status === "dropped" ? "whole section struck" : "")),
-          el("p", { class: "note" }, el("del", null, "Struck"), " · ", el("ins", null, "Inserted"),
-            hunks.length ? " · Each edit cites the September page and line, then the November one." : null),
+            hunks.length ? hunks.length + (hunks.length === 1 ? " edit · " : " edits · ") : null, el("del", null, "struck"), " ", el("ins", null, "inserted"))),
           renamed ? el("p", { class: "hunk-text am-heading-red" }, "Sec. ",
             o.n !== n.n ? [el("del", null, o.n), " ", el("ins", null, n.n)] : n.n, ". ",
             o.h !== n.h ? [el("del", null, o.h), " ", el("ins", null, n.h)] : n.h) : null,
