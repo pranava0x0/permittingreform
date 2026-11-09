@@ -995,7 +995,8 @@
   let tlBranch = "all";
   let tlMilestones = false;
   let tlTopic = "all";
-  let tlLimit = 12;
+  const TL_PAGE = 24;
+  let tlLimit = TL_PAGE;
   let tlRefocus = null; /* the control to focus after the milestone line re-renders */
 
   function branchLabel(key) {
@@ -1053,16 +1054,16 @@
       (tlTopic === "all" || (e.topics || []).indexOf(tlTopic) >= 0));
     const list = month ? matching.filter((e) => monthKey(e) === month) : matching;
     /* A linked event past the current batch widens this render's batch to reach it, so the link always opens its event.
-       tlLimit itself stays put, so leaving the link for the full list starts again at 12. */
+       tlLimit itself stays put, so leaving the link for the full list starts again at one page. */
     const at = picked ? list.findIndex((e) => e.id === picked) : -1;
-    const limit = at >= tlLimit ? Math.ceil((at + 1) / 12) * 12 : tlLimit;
+    const limit = at >= tlLimit ? Math.ceil((at + 1) / TL_PAGE) * TL_PAGE : tlLimit;
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Branch" },
       BRANCHES.filter((b) => b[0] === "all" || counts[b[0]]).map((b) =>
-        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
+        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = TL_PAGE; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
     const topicCounts = {};
     all.forEach((e) => (e.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
     const topicSelect = el("select", { class: "chip chip-select", "aria-label": "Topic", onchange: (ev) => {
-      tlTopic = ev.currentTarget.value; tlLimit = 12; route();
+      tlTopic = ev.currentTarget.value; tlLimit = TL_PAGE; route();
       const again = view.querySelector(".chip-select");
       if (again) again.focus({ preventScroll: true });
     } },
@@ -1071,7 +1072,7 @@
         el("option", { value: t, selected: tlTopic === t }, D.topics[t] + " (" + topicCounts[t] + ")")));
     const more = el("div", { class: "filters", role: "group", "aria-label": "Topic and detail" },
       topicSelect,
-      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = 12; route(); }, all.filter((e) => e.milestone).length),
+      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = TL_PAGE; route(); }, all.filter((e) => e.milestone).length),
       briefChip());
     const out = [];
     let year = null;
@@ -1104,10 +1105,10 @@
     return [
       el("div", { class: "lede" }, el("h1", null, "Timeline")),
       timelineLine(month, picked, status),
-      filters, moreFilters((tlTopic !== "all") + tlMilestones + !brief, more),
+      el("div", { class: "filter-bar" }, filters), moreFilters((tlTopic !== "all") + tlMilestones + !brief, more),
       list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
       list.length > limit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
-        const next = list[limit].id; tlLimit = limit + 12; route();
+        const next = list[limit].id; tlLimit = limit + TL_PAGE; route();
         const node = document.getElementById("ev-" + next); node.tabIndex = -1; node.focus();
       } }, "Show " + Math.min(12, list.length - limit) + " more events") : null];
   }
@@ -1299,7 +1300,8 @@
   let mediaTopic = "all";
   let mediaVisual = false;
   let mediaText = "";
-  const MEDIA_PAGE = 12;
+  const MEDIA_PAGE = 24;
+  let mediaMore = false;
   let mediaLimit = MEDIA_PAGE;
 
   function mediaGroup(type) {
@@ -1324,11 +1326,12 @@
       const g = MEDIA_TYPES.find((t) => t[0] === mediaGroup(it.type));
       return el("li", { class: "media-item" },
         el("h2", null, ext(it.url, it.title)),
-        el("p", { class: "feed-meta" }, it.outlet + (it.author ? " · " + it.author : "") + " · " + S.formatDate(it.date) + " · " + g[1]),
+        /* One meta line: source, date, type, position, and More when there is more to show. */
+        el("p", { class: "feed-meta media-meta" }, it.outlet + " · " + shortDate(it.date) + ", " + it.date.slice(0, 4) + " · " + g[1],
+          it.stance && STANCE[it.stance] ? [" · ", stanceTag(it.stance)] : null,
+          it.lk ? [" · ", el("span", { class: "unchecked" }, LINK_NOTE[it.lk])] : null,
+          (it.summary || "").length > 140 || (it.quote && it.quote.text) || (it.visuals && it.visuals.length) ? moreButton() : null),
         it.summary ? el("p", { class: "lead" }, it.summary) : null,
-        el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
-          it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null,
-          (it.summary || "").length > 180 || (it.quote && it.quote.text) || (it.visuals && it.visuals.length) ? moreButton() : null),
         it.visuals && it.visuals.length ? el("ul", { class: "visuals" }, it.visuals.map((v) => el("li", null,
           el("strong", null, "Cheat sheet: " + v.title + ". "), v.text + " ", ext(v.url, "View image")))) : null,
         it.quote && it.quote.text ? el("figure", { class: "quote small" },
@@ -1373,9 +1376,14 @@
       Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
         chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; mediaLimit = MEDIA_PAGE; route(); }, topicCounts[t])));
     refresh();
-    const active = (mediaType !== "all") + mediaVisual + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
-    return [el("div", { class: "lede" }, el("h1", null, "Coverage"), countHost), wordFilter,
-      moreFilters(active, [typeChips, stanceChips, topicChips]), listHost];
+    const active = mediaVisual + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
+    /* Search, a Filters toggle and the source-type chips stay pinned while the list scrolls. */
+    const panel = el("div", { class: "filter-panel", hidden: !(mediaMore || active) }, stanceChips, topicChips);
+    const toggle = el("button", { type: "button", class: "chip filter-toggle", "aria-expanded": panel.hidden ? "false" : "true", onclick: (ev) => {
+      panel.hidden = !panel.hidden; mediaMore = !panel.hidden; ev.currentTarget.setAttribute("aria-expanded", panel.hidden ? "false" : "true");
+    } }, active ? "Filters (" + active + ")" : "Filters");
+    return [el("div", { class: "lede" }, el("h1", null, "Coverage"), countHost),
+      el("div", { class: "filter-bar" }, el("div", { class: "filter-line" }, wordFilter, toggle), typeChips, panel), listHost];
   }
 
   /* ---------- positions ---------- */
