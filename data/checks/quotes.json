@@ -1032,6 +1032,96 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-09-heatmap-senate-prepares",
+   "text": "The chamber is scheduled to hold a procedural vote on the bill later today.",
+   "speaker": "Heatmap",
+   "url": "https://heatmap.news/am/baaja-senate-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-bgov-support-to-proceed",
+   "text": "Democratic negotiators of a bipartisan permitting overhaul bill believe they have enough votes to advance the legislation Monday, they said in a press conference.",
+   "speaker": "Bloomberg Government",
+   "url": "https://news.bgov.com/bloomberg-government-news/permitting-bill-has-support-to-proceed-in-senate-say-democrats",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-08-tribalbusinessnews-senators-revise",
+   "text": "The proposed amendment would remove that requirement, provide technical assistance for tribal preservation programs and give tribes more time to raise objections during project reviews",
+   "speaker": "Tribal Business News",
+   "url": "https://tribalbusinessnews.com/policy-and-law/senators-revise-permitting-bill-ahead-of-monday-vote-tribal-concerns-remain/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-08-santafenewmexican-heinrich-vote-monday",
+   "text": "“Let's be clear: BAAJA preserves the federal government’s obligation to consult with Tribes under Section 106",
+   "speaker": "Heinrich spokesperson",
+   "url": "https://www.santafenewmexican.com/news/local_news/senate-set-to-vote-on-heinrich-permitting-bill-monday/article_477f5b0a-c1d0-419d-8860-86c3a3735398.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-07-heatmap-last-minute-changes",
+   "text": "The motion will require at least 60 votes to pass.",
+   "speaker": "Heatmap",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-06-punchbowl-white-house-counters-jeffries",
+   "text": "The Trump administration is making its most aggressive move yet to unlock Democratic support for the Senate’s bipartisan energy permitting deal",
+   "speaker": "Punchbowl News",
+   "url": "https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-09"
+  },
+  {
+   "where": "media.2026-11-06-icn-election-shakeup",
+   "text": "Democrats’ electoral sweep has shaken the ground beneath a permitting reform bill in Congress, raising doubts about whether the measure has enough support to advance in an initial Senate vote scheduled for Monday.",
+   "speaker": "Inside Climate News",
+   "url": "https://insideclimatenews.org/news/06112026/bipartisan-permitting-reform-outlook-after-election-shakeup/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-09"
+  },
+  {
+   "where": "media.2026-11-06-heatmap-levin",
+   "text": "Levin told me he was decidedly undecided on the bill",
+   "speaker": "Heatmap",
+   "url": "https://heatmap.news/politics/mike-levin-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-06-chamber-coalition-letter",
+   "text": "we urge Congress to pass the Bipartisan American Affordability and Jobs Act of 2026, historic comprehensive permitting reform legislation, and send it to the President’s desk as soon as possible.",
+   "speaker": "U.S. Chamber of Commerce and coalition",
+   "url": "https://www.uschamber.com/energy/coalition-in-support-of-the-bipartisan-american-affordability-and-jobs-act-of-2026",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-04-heatmap-blue-wave",
+   "text": "Post-election, the odds of the Bipartisan American Affordability and Jobs Act’s passage are likely a few degrees worse.",
+   "speaker": "Heatmap",
+   "url": "https://heatmap.news/politics/midterms-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-02-apta-transit-endorsement",
    "text": "Too many public transit and passenger rail projects spend years in review before construction can begin",
    "speaker": "Paul P. Skoutelas, American Public Transportation Association",

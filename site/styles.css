@@ -150,17 +150,6 @@ h2, h3, tr[id], .para, .event, .block, .sec-part { scroll-margin-top: calc(var(-
 }
 .subtabs a:hover { background: var(--bg); }
 .subtabs a[aria-current] { font-weight: 700; background: var(--bg); border-bottom-color: var(--rule); }
-.tab-group { position: relative; display: inline-flex; }
-.tab-menu { display: none; }
-@media (hover: hover) and (min-width: 640px) {
-  .tab-group:hover > .tab-menu, .tab-group:focus-within > .tab-menu {
-    display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; z-index: 30; min-width: 190px;
-    background: var(--bg); border: 1px solid var(--border); border-top: 3px solid var(--mark); padding: 4px 0;
-  }
-  .tab-menu a { color: var(--text); text-decoration: none; padding: 10px 14px; font-family: var(--font-head); font-size: var(--fs-small); font-weight: 700; }
-  .tab-menu a:hover, .tab-menu a:focus-visible { background: var(--surface); }
-}
-
 /* ---------- page furniture ---------- */
 
 main { padding-top: 22px; padding-bottom: 48px; min-height: 60vh; }
@@ -631,7 +620,7 @@ input::placeholder { color: var(--text-muted); opacity: 1; }
   .tabs a { justify-content: center; text-align: center; padding: 8px 1px 7px; font-size: var(--fs-small); }
   .subtabs { gap: 0; }
   .subtabs a { flex: 1 1 auto; min-width: 0; padding: 6px 4px; }
-  .tab-group { display: contents; }
+
   main { padding-top: 16px; }
   .overview-lede + .rows + .block { margin-top: 16px; }
   .sec-meta .topics, .sec-meta .tag-major, .index-tags { display: none; }
@@ -756,12 +745,6 @@ ins { background: var(--ins-bg); color: var(--ins-text); text-decoration: underl
 .step-off { opacity: 0.35; cursor: default; }
 .hunk-count { font-size: var(--fs-small); color: var(--text-muted); padding: 0 6px; }
 .hunk-count:empty { display: none; }
-.subtabs .tab-group { display: inline-flex; }
-.subtabs .tab-menu a { justify-content: flex-start; min-height: 0; border-bottom: 0; font-weight: 700; }
-@media (hover: hover) and (min-width: 640px) {
-  .subtabs .tab-group:hover > .tab-menu, .subtabs .tab-group:focus-within > .tab-menu { max-height: 70vh; overflow-y: auto; min-width: 260px; }
-}
-@media (max-width: 639px) { .subtabs .tab-group { display: contents; } }
 #view:has(> .step-dock), #view:has(.am-section) { padding-bottom: 140px; }
 
 /* Coverage and Timeline: the filters stay in reach while the list scrolls. */
@@ -776,3 +759,4 @@ ins { background: var(--ins-bg); color: var(--ins-text); text-decoration: underl
 .media-meta .more-toggle { margin-left: 8px; }
 .media-meta .more-toggle { display: inline; }
 .inline-quote { font-family: var(--font-serif); }
+@media (max-width: 359px) { .subtabs { padding: 0 8px; } .subtabs a { padding: 6px 2px; } }

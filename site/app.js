@@ -1960,48 +1960,14 @@
   // the DOM while switching pages so keyboard focus survives content updates.
   const GROUPS = {
     bill: [["bill", "Sections"], ["amendments", "Amendments"], ["compare", "Compare bills"]],
-    issues: [["issues", "Topics"], ["positions", "Debate"], ["people", "People and groups"]],
+    issues: [["datacenters", "Data centers"], ["speed", "Delays"], ["communities", "Communities"], ["positions", "Debate"], ["people", "People"]],
   };
-  const guidesByPage = [
-    ["datacenters", "Data centers", "Who pays for new transmission lines, and how would data centers connect to the grid?"],
-    ["speed", "Project delays", "What slows energy projects, and which delays would the bill address?"],
-    ["communities", "Communities", "Who can comment, request consultation or challenge a decision in court?"],
-  ];
-  function renderIssues() {
-    return [el("h1", null, "Key issues in permitting reform"),
-      el("p", {class:"lede"}, "Start with a topic to see the bill language and its effects. Open Debate for competing interpretations and their sources."),
-      guidesByPage.map(([key, label, question]) => el("section", {class:"block issue-guide"},
-        el("h2", null, el("a", {href:"#/" + key}, label)), el("p", null, question))),
-      el("p", null, el("a", {href:"issues.html"}, "Read the provisions and cited debate on one page"))];
-  }
-  /* On desktop, a page in the row lists what is inside it on hover or keyboard focus. */
-  const SUBMENUS = {
-    bill: () => structureGroups(D.sections).map((g) => [secHref(g.sections[0].n), titleCase(g.div).replace("Division ", "Div. ") + ", " + titleCase(g.ti) + ": " + titleCase(g.tih)]),
-    amendments: () => [["#/amendments", "Key changes"], ["#/amendments/reactions", "Reactions to the substitute"]],
-    compare: () => D.compare.groups.map((g) => ["#/compare/" + g.id, g.label]).concat(D.compare.bills ? [["#/compare/" + D.compare.bills.id, D.compare.bills.label]] : []),
-    issues: () => guidesByPage.map(([key, label]) => ["#/" + key, label]),
-  };
-  /* A hover menu closes once the mouse leaves: a click on one of its links drops the focus that would hold it open, and Escape closes it. */
-  document.addEventListener("click", (ev) => {
-    const link = ev.target.closest && ev.target.closest(".tab-menu a");
-    if (link) link.blur();
-  });
-  document.addEventListener("keydown", (ev) => {
-    if (ev.key === "Escape" && document.activeElement && document.activeElement.closest(".tab-group")) document.activeElement.blur();
-  });
   const sectionNav = document.getElementById("section-nav");
   // Ordinary links work without JavaScript; enhance them with the interactive routes.
-  document.querySelectorAll(".tabs [data-tab]").forEach(a => { a.href = "#/" + a.dataset.tab; });
-  /* On a wide screen with a mouse, a grouped tab lists its pages on hover or keyboard focus. */
-  Object.keys(GROUPS).forEach((key) => {
-    const tab = document.querySelector('.tabs [data-tab="' + key + '"]');
-    if (!tab) return;
-    const wrap = el("span", { class: "tab-group" });
-    tab.replaceWith(wrap);
-    append(wrap, [tab, el("span", { class: "tab-menu" }, GROUPS[key].map(([page, name]) => el("a", { href: "#/" + page }, name)))]);
-  });
+  // A grouped tab opens its first page; Key issues has no page of its own.
+  document.querySelectorAll(".tabs [data-tab]").forEach(a => { a.href = "#/" + (GROUPS[a.dataset.tab] ? GROUPS[a.dataset.tab][0][0] : a.dataset.tab); });
   function markTab(tab) {
-    const parent = guidesByPage.some(([key]) => key === tab) ? "issues" : tab;
+    const parent = tab;
     const group = Object.keys(GROUPS).find(k => GROUPS[k].some(([page]) => page === parent));
     document.querySelectorAll(".masthead [data-tab]").forEach(a => {
       if (a.dataset.tab === (group || tab)) a.setAttribute("aria-current", group ? "location" : "page");
@@ -2013,11 +1979,7 @@
     if (sectionNav.dataset.group !== group) {
       sectionNav.dataset.group = group;
       sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
-      fill(sectionNav, GROUPS[group].map(([key, name]) => {
-        const link = el("a", { href: "#/" + key }, name);
-        const items = SUBMENUS[key] ? SUBMENUS[key]() : [];
-        return items.length ? el("span", { class: "tab-group" }, link, el("span", { class: "tab-menu" }, items.map(([href, label]) => el("a", { href: href }, label)))) : link;
-      }));
+      fill(sectionNav, GROUPS[group].map(([key, name]) => el("a", { href: "#/" + key }, name)));
     }
     // Measure once the row is filled, or the pinned height misses it until the next resize (Codex, PR 16).
     if (wasHidden) pinMasthead();
@@ -2054,7 +2016,7 @@
     else if (tab === "bill") nodes = renderBillIndex();
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
     else if (tab === "communities") nodes = renderCommunities();
-    else if (tab === "issues") nodes = renderIssues();
+    else if (tab === "issues") { location.replace("#/datacenters"); return; }
     else if (tab === "datacenters") nodes = renderDataCenters();
     else if (tab === "speed") nodes = renderSpeed();
     else if (tab === "timeline") {
