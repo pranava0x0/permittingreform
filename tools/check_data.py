@@ -102,6 +102,11 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     for i in (core.get("positions") or {}).get("issues", []):
         for d in i.get("disputes", []):
             out += [(f"positions {i['id']} dispute {d['id']} {k}", d[k]) for k in ("question", "note") if d.get(k)]
+    amend = core.get("amend") or {}
+    if amend:
+        out.append(("amendments substitute summary", amend["substitute"]["summary"]))
+        out.append(("amendments floor note", amend["floor_note"]))
+        out += [(f"amendments {r['id']} change", p["t"]) for r in amend["rows"] for p in r.get("points", [])]
     return out
 
 

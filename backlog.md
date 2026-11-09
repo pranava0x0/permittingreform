@@ -38,3 +38,10 @@
 | medium | Reader gap: emissions. Cite the published emissions modeling and the arguments on each side (Flegal, Roberts threads in the X notes). |
 | medium | Reader gap: time saved. Link Columbia CGEP's time-saved tool (posted October 21) and the transmission-vs-gas permitting durations it reports, once the numbers are read from the tool itself. |
 | low | Reader paths into Compare are long at 375px: the SPEED Act lawsuit deadline takes 4 taps (Bill, Compare, SPEED Act chip, the row) and who pays for transmission takes 3 taps and 3.1 screens. Links from the Lawsuit limits and Transmission siting provisions to their open comparison rows would make each 2. |
+
+- (medium, 2026-11-09) Coverage and Debate were not swept for November 4 to 9 beyond reactions to the substitute. Items seen but not added: the November 6 Chamber of Commerce coalition letter, Rep. Jeffries' November 6 statement, the October 27 letter from Sens. Duckworth, Markey, Merkley and Wyden.
+- (medium, 2026-11-09) If the Senate adopts the substitute, rebase the Bill pages on it: follow REFRESH.md "A new bill text" with `site/substitute.pdf`, then re-run `make infer`.
+- (low, 2026-11-09) Change notes for 2101 (the struck "or a State" in FPA 216(e)(1)), 2107 (subsection (c) open-season and state-rate edits) and 2301 (new appellate venue; the dropped Council-in-lieu provision) leave those edits to the redline. Write notes for them.
+- (low, 2026-11-09) media.2026-10-26-thomashochman-x-survey-scope: the cited X post (status 2114712948929413206) returns 404 as of the November 9 link check. Find a copy or drop the item.
+- (low, 2026-11-09) amend.js (78 KB gzipped) carries every hunk and the new sections' text; split an index payload from per-section detail if first load on phones matters.
+- (low, 2026-11-09) tests/test_amendments.py checks inserted words appear in the new section but not their position; record word offsets in hunks to test placement.

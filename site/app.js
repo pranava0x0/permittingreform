@@ -373,7 +373,10 @@
             el("span", { class: "feed-meta" }, S.formatDate(e.date))))),
           el("p", null, el("a", { href: "#/timeline" }, "All " + D.recent.counts.timeline + " events")))));
 
-    return [head, el("div", { class: "rows" }, foldBlock(status), posRow), provisions,
+    const ix = D.amend_index;
+    const amRow = ix ? el("a", { class: "link-row", href: "#/amendments" }, "Substitute of " + S.formatDate(ix.date),
+      el("span", { class: "row-count" }, ix.counts.edited + " sections edited · " + ix.counts["new"] + " added")) : null;
+    return [head, el("div", { class: "rows" }, foldBlock(status), posRow, amRow), provisions,
       el("section", { class: "block", "aria-labelledby": "h-more" }, el("h2", { id: "h-more" }, "More detail"),
         el("div", { class: "rows" }, foldBlock(clocks), foldBlock(money), foldBlock(changes), foldBlock(latest))), about];
   }
@@ -563,6 +566,7 @@
         s.imp === 3 ? ["·", el("span", { class: "tag-major" }, "Major")] : null,
         topicTags(s.topics)),
       compareLinks(s.n),
+      amendNote(s.n),
       el("section", { class: "sec-part machine", "aria-labelledby": "h-sum" },
         el("h2", { id: "h-sum" }, "Summary", el("span", { class: "credit-inline" }, "AI-written")),
         s.ps.map((para) => el("p", { class: "summary" }, citedSentences(para, s.n))),
@@ -1645,13 +1649,201 @@
       } }, h.firstChild.textContent))));
   }
 
+  /* ---------- amendments ---------- */
+
+  /* The substitute's comparison loads with the first Amendments page; the promise is shared. */
+  let amendPromise = null;
+  function ensureAmend() {
+    if (window.PR_AMEND) return Promise.resolve(window.PR_AMEND);
+    if (!amendPromise) {
+      amendPromise = new Promise((resolve, reject) => {
+        const tag = document.createElement("script");
+        tag.src = "data/amend.js?v=1";
+        tag.onload = () => (window.PR_AMEND ? resolve(window.PR_AMEND) : reject(new Error("amendments did not load")));
+        tag.onerror = () => { amendPromise = null; reject(new Error("amendments could not be fetched")); };
+        document.head.appendChild(tag);
+      });
+    }
+    return amendPromise;
+  }
+
+  const AM_STATUS = { edited: "Edited", "new": "New", dropped: "Dropped", moved: "Renumbered", unchanged: "Unchanged" };
+  const AM_FILTERS = [["all", "All changes"], ["substantive", "Substantive"], ["new", "New sections"], ["technical", "Technical"]];
+  const AM_STANCE = [["supports", "Support"], ["opposes", "Oppose"], ["mixed", "Mixed"], ["undecided", "Undecided"], ["comments", "Comment on a section"]];
+  let amFilter = "all";
+
+  function amTag(status) {
+    return el("span", { class: "am-tag am-" + status }, AM_STATUS[status]);
+  }
+
+  /* A cite into either print: September cites open bill.pdf, November cites open the substitute. */
+  function amCite(A, side, c) {
+    const pdf = side === "new" ? A.new.pdf : D.meta.pdf;
+    const label = (side === "new" ? "Nov. 7" : "Sept. 30") + " p. " + c[0] + (c[1] == null ? "" : ", line " + c[1]);
+    return el("a", { class: "cite-mark", href: pdf + "#page=" + c[0], target: "_blank", rel: "noopener", "aria-label": label }, label);
+  }
+
+  function amRowMatches(r) {
+    if (r.status === "unchanged") return false;
+    if (amFilter === "new") return r.status === "new";
+    if (amFilter === "substantive" || amFilter === "technical") return r.kind === amFilter;
+    return true;
+  }
+
+  function reactionItem(A, x, withSections) {
+    const src = x.sources[0];
+    return el("li", { class: "am-reaction" },
+      el("p", { class: "am-who" }, el("strong", null, x.who), " ", el("span", { class: "where" }, x.role + " · " + S.formatDate(x.date))),
+      el("blockquote", null, "“" + src.quote + "”"),
+      el("p", { class: "where" }, ext(src.url, src.publisher),
+        withSections && x.sections.length ? [" · On ", x.sections.map((n, i) => [i ? ", " : null, el("a", { href: "#/amendments/sec/" + n }, "Sec. " + n)])] : null));
+  }
+
+  function renderAmendments() {
+    const A = window.PR_AMEND;
+    const sub = A.substitute;
+    const c = A.counts;
+    const shown = A.rows.filter(amRowMatches);
+    const count = (k) => A.rows.filter((r) => r.status !== "unchanged" && (k === "all" || (k === "new" ? r.status === "new" : r.kind === k))).length;
+    const list = [];
+    let group = null;
+    shown.forEach((r) => {
+      const key = r.div + "|" + r.ti;
+      if (key !== group) {
+        group = key;
+        list.push(el("h3", { class: "am-group" }, r.ti ? titleCase(r.div) + ", " + titleCase(r.ti) + ": " + titleCase(r.tih) : titleCase(r.div) + ": " + titleCase(r.divh)));
+      }
+      list.push(el("a", { class: "link-row am-row", href: "#/amendments/sec/" + r.id },
+        el("span", { class: "am-row-main" },
+          el("span", { class: "am-row-title" }, "Sec. " + r.n + " ", amTag(r.status)),
+          el("span", { class: "am-row-head" }, r.h)),
+        el("span", { class: "row-count" }, r.points.length + (r.points.length === 1 ? " change" : " changes"))));
+    });
+    const unchanged = A.rows.filter((r) => r.status === "unchanged");
+    const vote = A.vote;
+    const byStance = AM_STANCE.map(([k, label]) => [label, A.reactions.filter((x) => x.stance === k)]).filter((g) => g[1].length);
+    return [
+      el("h1", null, "Amendments"),
+      el("p", { class: "lede" }, "The sponsors' substitute of " + S.formatDate(sub.date) + " is the only amendment filed or announced as of " + S.formatDate(A.as_of) + "."),
+      el("section", { class: "block", id: "am-sub", "aria-labelledby": "h-am-sub" },
+        el("h2", { id: "h-am-sub" }, sub.title),
+        el("p", null, sub.summary),
+        el("p", { class: "where" }, "Offered by " + sub.sponsor + " with " + sub.cosponsors.join(", ") + " · ",
+          sub.links.map((l, i) => [i ? " · " : null, ext(l.url, l.label)])),
+        el("p", { class: "am-stats" }, num(A.old.pages) + " → " + num(A.new.pages) + " pages · " + A.old.sections + " → " + A.new.sections + " sections · " +
+          c.edited + " edited, " + c["new"] + " new, " + c.dropped + " dropped, " + c.moved + " renumbered, " + c.unchanged + " unchanged")),
+      el("section", { class: "block", id: "am-react", "aria-labelledby": "h-am-react" },
+        el("h2", { id: "h-am-react" }, "Reactions"),
+        el("div", { class: "rows am-stances" }, byStance.map(([label, items]) => el("details", { class: "section-fold am-stance" },
+          el("summary", null, el("h3", null, label), el("span", { class: "row-count" }, items.length)),
+          el("ul", { class: "am-reactions" }, items.map((x) => reactionItem(A, x, true))))))),
+      el("section", { class: "block", id: "am-floor", "aria-labelledby": "h-am-floor" },
+        el("h2", { id: "h-am-floor" }, "Other amendments and votes"),
+        A.floor.length ? el("ul", { class: "plain-list" }, A.floor.map((f) => el("li", null, el("strong", null, (f.number || "Unnumbered") + " · " + f.sponsor), " ", f.summary))) : el("p", null, A.floor_note),
+        vote ? el("p", null, el("strong", null, S.formatDate(vote.date) + ": "), vote.question + ". ",
+          (vote.result || vote.when) + ". ", ext(vote.url, "Senate floor log")) : null),
+      el("section", { class: "block", id: "am-list", "aria-labelledby": "h-am-list" },
+        el("h2", { id: "h-am-list" }, "Changes by section"),
+        el("div", { class: "filters", role: "group", "aria-label": "Change" },
+          AM_FILTERS.map(([k, label]) => chip(label, amFilter === k, () => { amFilter = k; route(); }, count(k)))),
+        el("div", { class: "rows am-list" }, list),
+        el("details", { class: "am-unchanged" },
+          el("summary", null, unchanged.length + " sections unchanged"),
+          el("p", { class: "where" }, unchanged.map((r, i) => [i ? ", " : null, secLink(r.n)]))))];
+  }
+
+  function hunkNode(A, h) {
+    return el("li", { class: "hunk" },
+      el("p", { class: "hunk-cite" }, amCite(A, "old", h.a), " → ", amCite(A, "new", h.b)),
+      el("p", { class: "hunk-text" },
+        h.before ? "…" + h.before + " " : null,
+        h.del ? el("del", null, h.del) : null, h.del && h.ins ? " " : null,
+        h.ins ? el("ins", null, h.ins) : null,
+        h.after ? " " + h.after + "…" : null));
+  }
+
+  const HUNK_PAGE = 12;
+  function renderAmendSection(id) {
+    const A = window.PR_AMEND;
+    const changed = A.rows.filter((r) => r.status !== "unchanged");
+    const r = changed.find((x) => x.id === id);
+    if (!r) return [el("div", { class: "notice" }, el("p", null, "The substitute does not change section " + id + "."), el("p", null, byNum[id] ? [secLink(id), " · "] : null, el("a", { href: "#/amendments" }, "All amendments")))];
+    const at = changed.indexOf(r);
+    const prev = changed[at - 1];
+    const next = changed[at + 1];
+    const o = r.old;
+    const n = r["new"];
+    const renamed = o && n && (o.n !== n.n || o.h !== n.h);
+    const reactions = (r.reactions || []).map((rid) => A.reactions.find((x) => x.id === rid));
+    const hunks = r.hunks || [];
+    const redline = el("ol", { class: "hunks" }, hunks.slice(0, HUNK_PAGE).map((h) => hunkNode(A, h)));
+    const more = hunks.length > HUNK_PAGE ? el("button", { type: "button", class: "chip", onclick: (ev) => {
+      append(redline, hunks.slice(HUNK_PAGE).map((h) => hunkNode(A, h)));
+      ev.currentTarget.remove();
+    } }, "Show all " + hunks.length) : null;
+    const origin = r.origin;
+    return [
+      el("p", { class: "crumb" }, el("a", { href: "#/amendments" }, "‹ Amendments")),
+      el("article", { class: "section am-section" },
+        el("h1", null, "Sec. " + r.n + ". " + r.h),
+        el("p", { class: "sec-meta" }, amTag(r.status),
+          r.kind ? el("span", null, r.kind === "technical" ? "Technical edit" : "Substantive") : null,
+          o ? ["·", el("a", { href: D.meta.pdf + "#page=" + o.p1, target: "_blank", rel: "noopener" }, "Sept. 30: " + S.formatPages(o.p1, o.p2))] : null,
+          n ? ["·", el("a", { href: A.new.pdf + "#page=" + n.p1, target: "_blank", rel: "noopener" }, "Nov. 7: " + S.formatPages(n.p1, n.p2))] : null,
+          r.struck != null ? ["·", el("span", null, num(r.struck) + " words struck, " + num(r.inserted) + " inserted")] : null),
+        renamed ? el("p", { class: "note" }, "September 30: Sec. " + o.n + ". " + o.h + ".") : null,
+        o ? el("p", { class: "where" }, el("a", { href: secHref(o.n) }, "September text, summary and outside readings")) : null,
+        origin ? el("section", { class: "sec-part", "aria-labelledby": "h-am-origin" },
+          el("h2", { id: "h-am-origin" }, "Source bill"),
+          el("p", null, ext(origin.url, origin.bill + ", " + origin.name), ". Introduced " + S.formatDate(origin.introduced) + " by " + origin.sponsor +
+            (origin.cosponsors.length ? " with " + origin.cosponsors.join(", ") : "") + "."),
+          origin.note ? el("p", { class: "note" }, origin.note) : null,
+          origin.related ? el("p", { class: "where" }, "Senate companion: ", ext(origin.related.url, origin.related.bill), ", " + origin.related.sponsor +
+            (origin.related.cosponsors.length ? " with " + origin.related.cosponsors.join(", ") : "") + ", introduced " + S.formatDate(origin.related.introduced) + ".") : null) : null,
+        el("section", { class: "sec-part machine", "aria-labelledby": "h-am-what" },
+          el("h2", { id: "h-am-what" }, r.status === "new" ? "What it does" : "What changed", el("span", { class: "credit-inline" }, "AI-written")),
+          el("ul", { class: "points" }, r.points.map((p) => el("li", null, p.t, " ", amCite(A, p.side, p.c))))),
+        r.sponsor_summary ? el("section", { class: "sec-part", "aria-labelledby": "h-am-spon" },
+          el("h2", { id: "h-am-spon" }, "Sponsors' description"),
+          el("ul", { class: "plain-list" }, r.sponsor_summary.map((b) => el("li", null, b))),
+          el("p", { class: "where" }, ext(A.summary_source.url, A.summary_source.publisher + ", summary of changes"), ", " + S.formatDate(A.summary_source.date))) : null,
+        reactions.length ? el("section", { class: "sec-part", "aria-labelledby": "h-am-react" },
+          el("h2", { id: "h-am-react" }, "Reactions"),
+          el("ul", { class: "am-reactions" }, reactions.map((x) => reactionItem(A, x, false)))) : null,
+        hunks.length ? el("section", { class: "sec-part", "aria-labelledby": "h-am-red" },
+          el("h2", { id: "h-am-red" }, "Redline", el("span", { class: "row-count" }, hunks.length + (hunks.length === 1 ? " edit" : " edits"))),
+          el("p", { class: "note" }, el("del", null, "Struck"), " · ", el("ins", null, "Inserted"), " · Each edit cites the September page and line, then the November one."),
+          redline, more) : null,
+        r.text ? el("section", { class: "sec-part", "aria-labelledby": "h-am-text" },
+          el("h2", { id: "h-am-text" }, "Full text"),
+          el("details", { class: "am-text" }, el("summary", null, num(n.words) + " words"),
+            el("div", { class: "fulltext" }, r.text.map((p) => el("div", { class: "para lvl" + Math.min(p[2], 6) },
+              el("a", { class: "gutter", href: A.new.pdf + "#page=" + p[0], target: "_blank", rel: "noopener", "aria-label": "Page " + p[0] + (p[1] == null ? "" : ", line " + p[1]) },
+                p[0] + (p[1] == null ? "" : ":" + p[1])),
+              el("p", null, p[3])))))) : null,
+        el("nav", { class: "pager", "aria-label": "Neighboring changes" },
+          prev ? el("a", { href: "#/amendments/sec/" + prev.id, rel: "prev" }, "Previous: Sec. " + prev.n + ". " + prev.h) : el("span"),
+          next ? el("a", { href: "#/amendments/sec/" + next.id, rel: "next" }, "Next: Sec. " + next.n + ". " + next.h) : el("span")))];
+  }
+
+  /* On a September section page: what the substitute did to it. */
+  function amendNote(n) {
+    const ix = D.amend_index;
+    const hit = ix && ix.sections[n];
+    if (!hit) return null;
+    if (hit.status === "unchanged") return el("p", { class: "am-note" }, "Unchanged in the " + S.formatDate(ix.date) + " substitute.");
+    const verb = { edited: "edits", dropped: "drops", moved: "renumbers" }[hit.status];
+    return el("p", { class: "am-note" }, "The " + S.formatDate(ix.date) + " substitute " + verb + " this section" + (hit.status === "moved" ? " as Sec. " + hit.n : "") + ". ",
+      el("a", { href: "#/amendments/sec/" + hit.id }, "See the changes"));
+  }
+
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", issues: "Key issues", bill: "BAAJA", compare: "Compare", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Coverage", method: "Method" };
+  const TITLES = { overview: "Overview", issues: "Key issues", bill: "BAAJA", compare: "Compare", amendments: "Amendments", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Coverage", method: "Method" };
   // Page URLs stay independent of the navigation groups. Keep sibling links in
   // the DOM while switching pages so keyboard focus survives content updates.
   const GROUPS = {
-    bill: [["bill", "Sections"], ["compare", "Compare bills"]],
+    bill: [["bill", "Sections"], ["amendments", "Amendments"], ["compare", "Compare bills"]],
     issues: [["issues", "Topics"], ["positions", "Debate"], ["people", "People and groups"]],
   };
   const guidesByPage = [
@@ -1704,7 +1896,14 @@
         .catch((err) => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) fill(view, failure(err, "The timeline, people and coverage")); });
       return;
     }
-    if (tab === "bill" && parts[1] === "sec") { nodes = renderSection(parts[2], parts[3], parts[4]); keepScroll = Boolean(parts[3]); }
+    if (tab === "amendments" && !window.PR_AMEND) {
+      fill(view, loading("Loading"));
+      ensureAmend().then(() => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) route(); })
+        .catch((err) => { if (location.hash.replace(/^#\/?/, "").split("/")[0] === tab) fill(view, failure(err, "The amendments")); });
+      return;
+    }
+    if (tab === "amendments") nodes = parts[1] === "sec" ? renderAmendSection(parts[2]) : renderAmendments();
+    else if (tab === "bill" && parts[1] === "sec") { nodes = renderSection(parts[2], parts[3], parts[4]); keepScroll = Boolean(parts[3]); }
     else if (tab === "bill" && parts[1] === "search") nodes = renderSearch(parts.slice(2).join("/"));
     else if (tab === "bill") nodes = renderBillIndex();
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
@@ -1732,7 +1931,7 @@
     fill(view, nodes);
     view.className = "view view-" + tab;
     if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
-    else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities") jumpRow(view.querySelector(".lede"));
+    else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities" || (tab === "amendments" && parts[1] !== "sec")) jumpRow(view.querySelector(".lede"));
     if (tab === "timeline") {
       const target = tlRefocus && view.querySelector(tlRefocus);
       if (target && lastPath && lastPath.indexOf("#/timeline") === 0) target.focus({ preventScroll: true });

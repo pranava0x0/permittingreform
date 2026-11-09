@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-03",
+ "checked": "2026-11-09",
  "bill": {
   "total": 174,
   "verified": 174
@@ -640,9 +640,9 @@
    "text": "America desperately needs permitting reform, and this bipartisan proposal contains plenty of promising ideas for taxpayers and consumers to welcome.",
    "speaker": "Ross Marchand",
    "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
-   "result": "verified",
+   "result": "browser",
    "share": 1.0,
-   "note": ""
+   "note": "read in a browser on 2026-10-27"
   },
   {
    "where": "people.brent-gardner",
@@ -1009,9 +1009,9 @@
    "text": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk.",
    "speaker": "Greg Gianforte",
    "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
-   "result": "verified",
+   "result": "browser",
    "share": 1.0,
-   "note": ""
+   "note": "read in a browser on 2026-10-27"
   },
   {
    "where": "people.mark-macarro",
@@ -1054,9 +1054,9 @@
    "text": "The study in question comes from a survey of exclusively wind and solar developers.",
    "speaker": "Thomas Hochman, Green Tape",
    "url": "https://x.com/ThomasHochman/status/2114712948929413206",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "media.2026-10-26-taitdl-x-utility-lobbying",
@@ -2242,9 +2242,9 @@
    "text": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk.",
    "speaker": "Joint statement of 22 Republican governors",
    "url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
-   "result": "verified",
+   "result": "browser",
    "share": 1.0,
-   "note": ""
+   "note": "read in a browser on 2026-10-27"
   },
   {
    "where": "media.2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw",
@@ -2467,9 +2467,9 @@
    "text": "Projects should not spend years or even decades navigating duplicative reviews and regulatory uncertainty before construction can begin.",
    "speaker": "Ross Marchand, Taxpayers Protection Alliance",
    "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
-   "result": "verified",
+   "result": "browser",
    "share": 1.0,
-   "note": ""
+   "note": "read in a browser on 2026-10-27"
   },
   {
    "where": "media.2026-09-30-the-hill-senators-reach-bipartisan-deal-permitting",
@@ -3358,9 +3358,9 @@
    "text": "The SPEED Act marks the first major bipartisan permitting reform proposal in the 119th Congress.",
    "speaker": "Bipartisan Policy Center",
    "url": "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/",
-   "result": "verified",
+   "result": "browser",
    "share": 1.0,
-   "note": ""
+   "note": "read in a browser on 2026-10-01"
   },
   {
    "where": "media.2025-12-18-house-natural-resources-house-passes-speed-act",
@@ -5221,6 +5221,177 @@
    "text": "solar, wind, and geothermal projects have historically seen shorter review times on average than other infrastructure projects, although other process steps may be just as time-consuming.",
    "speaker": "Resources for the Future",
    "url": "https://www.rff.org/news/press-releases/most-renewable-projects-overcome-lawsuits-and-move-through-federal-review-faster-on-average-than-other-infrastructure-projects/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.substitute.main.0",
+   "text": "The substitute amendment includes clarifying, conforming, and technical edits to reflect feedback received since BAAJA’s introduction in September.",
+   "speaker": "",
+   "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.capito.0",
+   "text": "I urge the swift passage of BAAJA to make life more affordable for American families",
+   "speaker": "Sen. Shelley Moore Capito (R-W.Va.)",
+   "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.lee.0",
+   "text": "It’s time to finish what we started",
+   "speaker": "Sen. Mike Lee (R-Utah)",
+   "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.heinrich.0",
+   "text": "Americans can’t afford to wait for lower electricity prices. We need to pass this bill now",
+   "speaker": "Sen. Martin Heinrich (D-N.M.)",
+   "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.whitehouse.0",
+   "text": "Our manager’s amendment improves BAAJA and addresses the thoughtful feedback we have received",
+   "speaker": "Sen. Sheldon Whitehouse (D-R.I.)",
+   "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.huffman.0",
+   "text": "we could improve it further in this and other areas with a hearing and a more open negotiation process with more Democrats in the room",
+   "speaker": "Rep. Jared Huffman (D-Calif.)",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.colt.0",
+   "text": "grateful to see many positive changes for tribes",
+   "speaker": "Coalition of Large Tribes",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.biber.0",
+   "text": "still undecided about the bill, in part because I keep discovering major issues in the text",
+   "speaker": "Eric Biber",
+   "url": "http://legal-planet.org/2026/11/08/the-revised-permitting-reform-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.ncai.0",
+   "text": "Any amendments to S. 5653 merely puts lipstick on a pig.",
+   "speaker": "Mark Macarro",
+   "url": "https://nativenewsonline.net/sovereignty/tribal-leaders-oppose-senate-permitting-bill-despite-changes-in-substitute-amendment/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.coalition106.0",
+   "text": "sent a statement to media saying they’ll still oppose the bill and want the entire section of NHPA changes removed",
+   "speaker": "106 Coalition",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.tribal11.0",
+   "text": "urged Congress to hold the bill until the next Congress can conduct meaningful tribal consultation",
+   "speaker": "11 tribal organizations, including NCAI, NARF and NATHPO",
+   "url": "https://tribalbusinessnews.com/policy-and-law/senators-revise-permitting-bill-ahead-of-monday-vote-tribal-concerns-remain/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.acra.0",
+   "text": "even the managers' amendment would end Section 106 as we know it",
+   "speaker": "American Cultural Resources Association",
+   "url": "https://acra-crm.org/senate-managers-amendment-on-permitting-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.foe.0",
+   "text": "This isn’t a permitting compromise, it’s a sellout.",
+   "speaker": "Erich Pica",
+   "url": "https://foe.org/news/statement-friends-of-the-earth-u-s-still-opposes-disastrous-senate-permitting-bill/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-09"
+  },
+  {
+   "where": "amend.reactions.tws.0",
+   "text": "Americans deserve permitting reform that isn’t crafted behind closed doors and rushed to the Senate floor",
+   "speaker": "Tracy Stone-Manning",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.oci.0",
+   "text": "No amount of last-minute tinkering can disguise that this bill is a massive giveaway to fossil fuel companies and Big Tech",
+   "speaker": "Elizabeth Bast",
+   "url": "https://commondreams.org/news/democrats-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.epi.0",
+   "text": "I am relieved that the section survived generally, given what a target this was for utility lobbying.",
+   "speaker": "David Pomerantz",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.gridstrategies.0",
+   "text": "they provide more flexibility for more types of projects to go through",
+   "speaker": "Rob Gramlich",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.reactions.naco.0",
+   "text": "The ANS maintains core county wins in the legislation, including codifying counties as cooperating agencies during NEPA reviews",
+   "speaker": "National Association of Counties",
+   "url": "https://www.naco.org/news/us-senate-releases-updates-bipartisan-american-affordability-and-jobs-act-ahead-anticipated",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.vote",
+   "text": "At approximately 5:30 p.m., the Senate will vote on cloture on the motion to proceed to H.R.2347.",
+   "speaker": "",
+   "url": "https://www.dailypress.senate.gov/monday-november-9-2026/",
    "result": "verified",
    "share": 1.0,
    "note": ""

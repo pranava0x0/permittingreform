@@ -38,6 +38,10 @@ const PATHS = [
   ['counties', [{ tab: 'issues' }, { href: '#/communities' }, row('.cm-row')], '.cm-row .cm-body'],
   ['wind-solar', [fold('Where it stands|Status')], open('#h-status')],
   ['agency-deadlines', [fold('Deadlines')], open('#h-clocks')],
+  // Amendments: what the November 7 substitute changed, one section's change, and who reacted.
+  ['amend-list', [{ href: '#/amendments' }], '.am-row'],
+  ['amend-section', [{ href: '#/amendments' }, { sel: 'a.am-row[href="#/amendments/sec/1401"]' }], '#h-am-what'],
+  ['amend-reactions', [{ href: '#/amendments' }, { jump: 'Reactions' }, fold('Oppose\\d+')], '.am-stance[open] .am-reaction'],
   ['coverage', [{ tab: 'media' }], '.media-item'],
   ['timeline', [{ tab: 'timeline' }], '.event'],
 ];
@@ -54,6 +58,8 @@ const PATHS = [
       else if (s.toggle) await p.locator(`${s.toggle} .event-toggle`).first().click();
       else if (s.tab) await p.locator(`.tabs a[data-tab="${s.tab}"]`).click();
       else if (s.href) await p.locator(`.subtabs:not([hidden]) a[href="${s.href}"], #view a[href="${s.href}"]`).first().click();
+      else if (s.sel) await p.locator(s.sel).first().click();
+      else if (s.jump) await p.locator('.jumps button').filter({ hasText: s.jump }).first().click();
       else if (s.chipIn) await p.locator(s.chipIn).getByRole('button', { name: s.name, exact: true }).click();
       await p.waitForTimeout(250);
     }

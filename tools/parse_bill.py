@@ -4,6 +4,9 @@ Input:  site/bill.pdf (the PDF as posted by Senate EPW on September 30, 2026)
         (text cached at data/bill/bill_raw.txt, pages split by '===== PAGE N =====')
 Output: data/bill/sections.json
 
+`--version substitute` parses the November 7, 2026 substitute amendment
+(site/substitute.pdf) the same way into data/bill/substitute_sections.json.
+
 Each section carries its printed lines as [page, line_number, text] so that any
 quote or search hit can be cited the way Senate staff cite a bill print:
 "page 44, line 6". Words the typesetter split across two lines are rejoined on
@@ -21,12 +24,46 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-RAW = ROOT / "data/bill/bill_raw.txt"
-PDF = ROOT / "site/bill.pdf"
-OUT = ROOT / "data/bill/sections.json"
+SPONSORS = ["Shelley Moore Capito (R-W.Va.)", "Mike Lee (R-Utah)", "Sheldon Whitehouse (D-R.I.)", "Martin Heinrich (D-N.M.)"]
+VERSIONS = {
+    "introduced": {
+        "raw": ROOT / "data/bill/bill_raw.txt",
+        "pdf": ROOT / "site/bill.pdf",
+        "out": ROOT / "data/bill/sections.json",
+        "header": r"^KAT26642 TWY\s+S\.L\.C\.\s*$",
+        "meta": {
+            "short_title": "Bipartisan American Affordability and Jobs Act of 2026",
+            "draft_id": "KAT26642",
+            "released": "2026-09-30",
+            "source_pdf": "https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf",
+            "mirror_pdfs": [
+                "https://www.energy.senate.gov/wp-content/uploads/2026/09/KAT26642FINAL.pdf",
+                "https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf",
+            ],
+        },
+    },
+    "substitute": {
+        "raw": ROOT / "data/bill/substitute_raw.txt",
+        "pdf": ROOT / "site/substitute.pdf",
+        "out": ROOT / "data/bill/substitute_sections.json",
+        "header": r"^KAT26764 MSK\s+S\.L\.C\.\s*$",
+        "meta": {
+            "short_title": "Bipartisan American Affordability and Jobs Act of 2026",
+            "draft_id": "KAT26764",
+            "released": "2026-11-07",
+            "kind": "Amendment in the nature of a substitute to H.R. 2347",
+            "source_pdf": "https://www.energy.senate.gov/wp-content/uploads/2026/11/KAT26764.pdf",
+            "press_release": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/",
+            "mirror_pdfs": [],
+        },
+    },
+}
+RAW = VERSIONS["introduced"]["raw"]
+PDF = VERSIONS["introduced"]["pdf"]
+OUT = VERSIONS["introduced"]["out"]
 
 PAGE_RE = re.compile(r"^===== PAGE (\d+) =====$")
-HEADER_RE = re.compile(r"^KAT26642 TWY\s+S\.L\.C\.\s*$")
+HEADER_RE = re.compile(VERSIONS["introduced"]["header"])
 SEC_RE = re.compile(r"^SEC\. (\d+)\. (.*)$")
 TOC_SEC_RE = re.compile(r"^Sec\. (\d+)\. (.*)$")
 DIV_RE = re.compile(r"^(DIVISION [A-Z])—(.*)$")
@@ -192,7 +229,12 @@ def parse_toc(texts: list[str]) -> list[dict]:
     return entries
 
 
-def main() -> int:
+def main(argv: list[str] | None = None) -> int:
+    global RAW, PDF, OUT, HEADER_RE
+    argv = sys.argv[1:] if argv is None else argv
+    name = argv[argv.index("--version") + 1] if "--version" in argv else "introduced"
+    version = VERSIONS[name]
+    RAW, PDF, OUT, HEADER_RE = version["raw"], version["pdf"], version["out"], re.compile(version["header"])
     pages = split_pages(extract_raw())
     if not pages:
         print("parse_bill: no pages found", file=sys.stderr)
@@ -284,18 +326,16 @@ def main() -> int:
     unnumbered = sum(1 for s in sections for r in s["lines"] if r[1] is None)
     meta = {
         "pdf_sha256": hashlib.sha256(PDF.read_bytes()).hexdigest(),
-        "short_title": "Bipartisan American Affordability and Jobs Act of 2026",
-        "draft_id": "KAT26642",
+        **{k: v for k, v in version["meta"].items() if k not in ("short_title", "draft_id", "released", "source_pdf", "mirror_pdfs")},
+        "short_title": version["meta"]["short_title"],
+        "draft_id": version["meta"]["draft_id"],
         "congress": "119th Congress, 2d Session",
         "chamber": "Senate",
-        "sponsors": ["Shelley Moore Capito (R-W.Va.)", "Mike Lee (R-Utah)", "Sheldon Whitehouse (D-R.I.)", "Martin Heinrich (D-N.M.)"],
-        "released": "2026-09-30",
+        "sponsors": SPONSORS,
+        "released": version["meta"]["released"],
         "pages": len(pages),
-        "source_pdf": "https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf",
-        "mirror_pdfs": [
-            "https://www.energy.senate.gov/wp-content/uploads/2026/09/KAT26642FINAL.pdf",
-            "https://www.energy.senate.gov/wp-content/uploads/2026/09/Bipartisan-American-Affordability-and-Jobs-Act.pdf",
-        ],
+        "source_pdf": version["meta"]["source_pdf"],
+        "mirror_pdfs": version["meta"]["mirror_pdfs"],
         "total_words": sum(s["words"] for s in sections),
         "total_lines": sum(len(s["lines"]) for s in sections),
     }

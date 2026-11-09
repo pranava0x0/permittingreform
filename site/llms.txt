@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-03.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-09.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -10,6 +10,8 @@
 
 Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.
 PDF citations use printed bill pages and lines. A matching quote proves occurrence; it does not validate nearby interpretations. Source positions describe the cited item, not every position held by its author.
+- [Amendments to the permitting bill](https://pranava0x0.github.io/permittingreform/amendments.html): What the November 7 substitute changes in each section of the September 30 text, with page and line cites in both PDFs, other amendments filed or announced, and who has said they support or oppose them.
+- [Amendments JSON](https://pranava0x0.github.io/permittingreform/data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments and reactions with sources.
 - [Data center and digital permitting bills compared](https://pranava0x0.github.io/permittingreform/comparisons.html): Compare BAAJA with data center siting and disclosure proposals, current E-NEPA law and the House and Senate ePermit bills.
 - [Key issues in permitting reform](https://pranava0x0.github.io/permittingreform/issues.html): What S. 5653 would change, the bill sections behind each provision, and how supporters and critics read them.
 - [Permitting reform timeline](https://pranava0x0.github.io/permittingreform/timeline.html): Dated legislative, legal and agency events, with source records for each event.
