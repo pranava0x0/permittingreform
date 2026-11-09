@@ -995,7 +995,7 @@
   let tlBranch = "all";
   let tlMilestones = false;
   let tlTopic = "all";
-  const TL_PAGE = 24;
+  const TL_PAGE = 12;
   let tlLimit = TL_PAGE;
   let tlRefocus = null; /* the control to focus after the milestone line re-renders */
 
@@ -1300,7 +1300,7 @@
   let mediaTopic = "all";
   let mediaVisual = false;
   let mediaText = "";
-  const MEDIA_PAGE = 24;
+  const MEDIA_PAGE = 12;
   let mediaMore = false;
   let mediaLimit = MEDIA_PAGE;
 
