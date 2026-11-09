@@ -3,7 +3,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Omits the September amendment adding “since the date of enactment” to section 4(c)(10)(B) of the Pacific Northwest Electric Power Planning and Conservation Act.",
+    "t": "Drops the amendment to section 4(c)(10)(B) of the Pacific Northwest Electric Power Planning and Conservation Act. Was: inserted “since the date of enactment” before the period at the end.",
     "old": "is amended by inserting “since the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026” before the period at the end"
    }
   ]
@@ -12,27 +12,27 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Exempts from NEPA review agency actions that deploy broadband over wireline facilities on a previously analyzed right-of-way and are funded in whole or in part with Federal financial assistance.",
+    "t": "Exempts wireline broadband projects on a previously analyzed right-of-way that get Federal funding from NEPA review. Was: no such exemption.",
     "new": "for the deployment of a broadband service"
    },
    {
-    "t": "Adds a State or Tribal agency conducting an environmental review under Federal-law authority to the definition of lead agency.",
+    "t": "Adds a State or Tribal agency that reviews the action under Federal-law authority to the lead agency definition. Was: Federal agencies only.",
     "new": "a State or Tribal government agency conducting an environmental review of such action pursuant to authority granted under Federal law"
    },
    {
-    "t": "Excludes assistance under chapter 6 of title 23 or chapter 224 of title 49 from the exemption for actions whose only Federal involvement is a loan or loan guarantee.",
+    "t": "Excludes assistance under chapter 6 of title 23 or chapter 224 of title 49 from the loan and loan guarantee exemption. Was: every loan or loan guarantee qualified.",
     "new": "excluding assistance under chapter 6 of title 23 or chapter 224 of title 49, United States Code"
    },
    {
-    "t": "Treats the Department of Transportation as having predominant control over financial assistance for any project receiving more than $10,000,000 from it.",
+    "t": "Treats the Department of Transportation as controlling use of financial assistance for any project it gives more than $10,000,000. Was: no such rule.",
     "new": "the Department of Transportation shall be considered to have predominant control and responsibility over the subsequent use of financial assistance"
    },
    {
-    "t": "States that the offshore exemption does not alter any requirement under the Deep Seabed Hard Mineral Resources Act.",
+    "t": "Conditions the exemption for activities outside U.S. territory on leaving Deep Seabed Hard Mineral Resources Act requirements unchanged. Was: no such condition.",
     "new": "subject to the condition that nothing in this clause alters, limits, supersedes, or otherwise affects any requirement under the Deep Seabed Hard Mineral Resources Act"
    },
    {
-    "t": "Says the limit on capacity increases for lifeline infrastructure repairs does not apply to replacing existing fiber-optic cable, or to replacing copper or coaxial cable with fiber-optic cable.",
+    "t": "Lifts the 20 percent capacity limit for lifeline wireline communications repairs that replace fiber-optic cable, or copper or coaxial cable with fiber. Was: the limit applied to every lifeline repair.",
     "new": "the limitation on an increase in capacity shall not apply to the repair, reconstruction, restoration, retrofit, or replacement of existing fiber-optic cable"
    }
   ]
@@ -41,7 +41,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Adds guidance documents to the agency regulations, procedures and policies that agencies may not change under this section except as provided.",
+    "t": "Adds guidance documents to the agency materials that cannot be changed under this section. Was: only regulations, procedures and policies.",
     "new": "guidance documents,"
    }
   ]
@@ -50,27 +50,27 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Adds the U.S. District Court for the District of Columbia as an alternative venue for a project sponsor's petition over missed agency deadlines.",
+    "t": "Adds the D.C. federal district court as a venue for missed-deadline suits. Was: only the district where the project sits.",
     "new": "the United States District Court for the District of Columbia."
    },
    {
-    "t": "Treats the Assistant Secretary of the Army for Civil Works as the head of the Corps of Engineers for the rule on agency heads whose reviews are late.",
+    "t": "Counts the Assistant Secretary of the Army for Civil Works as head of the Corps of Engineers under the rule barring late agency heads from traveling over 25 miles. Was: no such designation.",
     "new": "the Assistant Secretary of the Army for Civil Works shall be considered to be the head of the Corps of Engineers"
    },
    {
-    "t": "Requires each agency to carry out its obligations under Federal law, including its comments on an applicable environmental document, concurrently with other reviews.",
+    "t": "Lists an agency's legally required comments on an environmental document among the obligations to run concurrently with other reviews. Was: obligations unspecified.",
     "new": "including requirements under Federal law for a Federal agency to comment on an applicable environmental document,"
    },
    {
-    "t": "Lets a lead agency tier to existing analysis, as well as adopt or incorporate it, including analysis prepared under Federal law or State and Tribal law.",
+    "t": "Lets a lead agency tier to existing analysis, and use analysis prepared under Federal law. Was: only adopt or incorporate analysis prepared under State or Tribal law.",
     "new": "adopt, tier to,"
    },
    {
-    "t": "Assigns to the lead agency the Federal Register publication of the environmental impact statement notice.",
+    "t": "Assigns the lead agency to publish the environmental impact statement notice of intent in the Federal Register. Was: no publisher named.",
     "new": "published by the lead agency in the Federal Register."
    },
    {
-    "t": "Replaces the term environmental review with preparation of an environmental document in several deadline and dispute provisions.",
+    "t": "Extends the interagency dispute provisions to a Federal agency's required comments, and calls the covered step preparing an environmental document. Was: disputes over an environmental review or authorization.",
     "new": "the preparation of an environmental document, a comment by a Federal agency required by Federal law, or an"
    }
   ]
@@ -79,15 +79,11 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Keeps in force a shorter statutory deadline for finding an application complete.",
+    "t": "Adds a paragraph keeping any shorter period other law sets for finding an application complete, and starting reviews on receipt of a notice of staking. Was: no such paragraph.",
     "new": "nothing in this Act supersedes such shorter period"
    },
    {
-    "t": "Starts review on receipt of a notice of staking or similar pre-permit notification.",
-    "new": "on receipt of a notice of staking or similar pre-permit submission notification"
-   },
-   {
-    "t": "Changes the information-request timing reference from environmental review to preparation of an environmental document.",
+    "t": "Ties the application-information requirement to actions needing preparation of an environmental document. Was: actions requiring an environmental review.",
     "new": "the preparation of an environmental document,"
    }
   ]
@@ -96,15 +92,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Limits the review provision to claims where the public comment opportunity occurs after the date of enactment of the Act.",
+    "t": "Requires a claimant to have submitted a substantive comment only if the comment opportunity came after the Act's enactment. Was: required whenever a comment opportunity was provided.",
     "new": "and for which the opportunity for public comment occurs after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026,"
    },
    {
-    "t": "Gives the D.C. Circuit original and exclusive jurisdiction over claims challenging an agency rule for NEPA compliance and claims challenging an authorization for a project with no physical location.",
+    "t": "Sends claims challenging a federal agency's NEPA rule, or an authorization for a project with no physical location, only to the D.C. Circuit. Was: the circuit where the project would be built or run.",
     "new": "A claim challenging an authorization for a project that has no physical location."
    },
    {
-    "t": "Subjects the courts of appeals' jurisdiction to section 9(b) of the Natural Gas Act and section 313(b) of the Federal Power Act.",
+    "t": "Lets section 9(b) of the Natural Gas Act and section 313(b) of the Federal Power Act override the circuit rule for these claims. Was: no such exceptions.",
     "new": "Except as provided in section 9(b) of the Natural Gas Act (15 U.S.C. 717r(b)) and section 313(b) of the Federal Power Act (16 U.S.C. 825l(b))"
    }
   ]
@@ -113,11 +109,11 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Adds the Federal Permitting Improvement Steering Council to the bodies consulted on the permitting portal and data standards.",
+    "t": "Adds the Federal Permitting Improvement Steering Council to the bodies consulted on permitting portal design and data standards. Was: not on the lists.",
     "new": "Office of Management and Budget, the Federal Permitting Improvement Steering Council, and each key permitting agency shall design, test,"
    },
    {
-    "t": "Replaces environmental review with environmental document in one notice reference.",
+    "t": "Words the notice to local communities as one of intent to “prepare an environmental document”. Was: “begin an environmental review”.",
     "new": "or a notice of intent to prepare an environmental document"
    }
   ]
@@ -126,7 +122,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Adds FAST Act definitions of covered project, Dashboard and Executive Director, adds environmental document to the NEPA terms and renumbers later paragraphs.",
+    "t": "Adds definitions of covered project, Dashboard and Executive Director from the FAST Act, plus “environmental document” among the NEPA terms. Was: none of the four terms defined.",
     "new": "The terms “covered project”, “Dashboard”, and “Executive Director” have the meanings given those terms in section 41001 of the FAST Act"
    }
   ]
@@ -135,15 +131,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Has the Federal Permitting Improvement Steering Council's Executive Director maintain the Tracker as a component of the Dashboard (was: the CEQ Chairman).",
+    "t": "Makes the Executive Director of the Federal Permitting Improvement Steering Council maintain the Tracker as part of the Dashboard. Was: the CEQ Chairman maintained it, with the General Services Administration.",
     "new": "maintain, as a component of the Dashboard,"
    },
    {
-    "t": "Treats a FAST-41 covered project's Dashboard entry as its Tracker entry, so no agency or sponsor must submit duplicate information.",
+    "t": "Counts a FAST-41 covered project's Dashboard entry as its Tracker entry, so no agency or sponsor submits duplicate information. Was: no such rule.",
     "new": "no Federal agency or project sponsor shall be required to submit information for the Tracker that duplicates information submitted for the Dashboard"
    },
    {
-    "t": "Posts Tracker information on the Dashboard (was: the Council's website).",
+    "t": "Posts Tracker updates on the Dashboard within 7 days. Was: on the Council's website.",
     "new": "shall be posted on the Dashboard not later than 7 days after the date"
    }
   ]
@@ -152,11 +148,11 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Shortens the filing period for judicial review of FAST-41 covered project authorizations to 150 days (was 2 years).",
+    "t": "Cuts the filing period for judicial review of FAST-41 covered project authorizations from 2 years to 150 days.",
     "new": "by striking “2 years” and inserting “150 days”; and"
    },
    {
-    "t": "Applies the shorter period to claims over authorizations whose notice of final agency action is published in the Federal Register on or after enactment.",
+    "t": "Applies the 150-day period to claims over authorizations whose notice of final agency action appears in the Federal Register on or after enactment.",
     "new": "shall apply to a claim seeking judicial review of an authorization for which the notice of final agency action is published in the Federal Register on or after the date of enactment of this Act."
    }
   ]
@@ -165,27 +161,27 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Allows a certifying authority to deny certification if the application still lacks required information after notice to the applicant and a reasonable chance to supply missing materials.",
+    "t": "Permits denial when an application still lacks required information after notice and a chance to supply it. Was: denial only on clear and convincing evidence that no condition could prevent a violation.",
     "new": "the application continues to lack the information required under clause (ii)"
    },
    {
-    "t": "Removes the requirement that conditions be consistent with the requirements of the Federal license or permit.",
+    "t": "Drops consistency with the Federal license or permit from the tests certification conditions must meet. Was: a third test, alongside necessity and least burden.",
     "old": "consistent with the requirements of the Federal license or permit for which the certification application was made."
    },
    {
-    "t": "Permits a certifying authority, before December 31, 2027, to require additional application materials through one written notice to all applicants without promulgating regulations.",
+    "t": "Allows a certifying authority, before December 31, 2027, to require extra application materials by one written notice to all applicants. Was: extra materials only through regulations.",
     "new": "Prior to December 31, 2027, a certifying authority may require materials beyond the materials described"
    },
    {
-    "t": "Applies the consequence of failing to promulgate regulations only on or after December 31, 2027.",
+    "t": "Counts an application as complete with only the listed items, if the authority has not promulgated regulations, only from December 31, 2027. Was: applied immediately.",
     "new": "Beginning on or after December 31, 2027, if"
    },
    {
-    "t": "Limits a Federal license or permit condition's override of certification conditions to cases where the certifying authority determines the conditions are necessary.",
+    "t": "Ties the savings clause to the certifying authority's own determination that conditions are necessary. Was: conditions that were necessary, with no one named to decide.",
     "new": "the certifying authority determines the conditions are necessary to ensure compliance with"
    },
    {
-    "t": "Lets a point source discharge comply with water quality requirements or a waiver under this section.",
+    "t": "Accepts a certifying authority's statement that a discharge has a waiver under this section, as well as compliance with water quality requirements. Was: compliance statements only.",
     "new": "requirements or a waiver pursuant to this section."
    }
   ]
@@ -194,11 +190,11 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Adds Nationwide Permit 27 to the list of nationwide permits covered by the section.",
+    "t": "Adds Nationwide Permit 27 to the permits the Secretary must keep as nationwide general permits. Was: Permits 12, 14, 43, 57 and 58.",
     "new": "Nationwide Permit 27,"
    },
    {
-    "t": "Rewrites the period-of-prohibition paragraph to say the Administrator may act under paragraph (1) only during the period that begins and ends as listed.",
+    "t": "Reworks the paragraph into a limit: the Administrator may act under paragraph (1) only between a complete application and permit issuance. Was: the same window, written as a period definition.",
     "new": "Administrator may act pursuant to paragraph (1) only during the period that—"
    }
   ]
@@ -207,7 +203,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Limits the 30-day public comment condition to comment periods that occur after the date of enactment of the Act.",
+    "t": "Limits the rule that only parties who commented may sue to actions with a 30-day comment period that came after the Act's enactment. Was: any 30-day comment period.",
     "new": "such public comment period occurred after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026."
    }
   ]
@@ -216,11 +212,11 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Requires the Secretary to terminate a State's participation in the program in the listed circumstances (was: the Secretary may).",
+    "t": "Requires the Secretary to terminate a State's participation after the listed steps fail to produce corrective action. Was: the Secretary may terminate.",
     "new": "The Secretary shall terminate the participation of a State"
    },
    {
-    "t": "Lets a permit or license applicant elect to have the relevant Federal agency consult with the Secretary instead of the State (was: the applicant consults with the Secretary itself).",
+    "t": "Lets a permit or license applicant elect to have the relevant Federal agency consult with the Secretary instead of the State. Was: the applicant itself elected to consult with the Secretary.",
     "new": "for the relevant Federal agency"
    }
   ]
@@ -229,7 +225,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Applies the venue rules in section 111 of NEPA and section 306108(c)(9)(E) of title 54 to a petition for review.",
+    "t": "Lets the venue rules in section 111 of NEPA and section 306108(c)(9)(E) of title 54 control petitions on opinions tied to actions they cover. Was: all petitions went to the D.C. Circuit.",
     "new": "If an opinion issued by the Secretary under subsection (b) relates to an agency action for which venue for judicial review of such action is provided"
    }
   ]
@@ -238,15 +234,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Redirects the Coastal State Fund (was: understanding and using coastal resources) to natural and nature-based infrastructure, habitat restoration and protection, and related capacity building and planning.",
+    "t": "Directs Coastal State Fund grants to programs that implement natural and nature-based infrastructure, habitat restoration and protection, capacity building and planning. Was: programs to understand and use coastal resources and ecosystem services.",
     "new": "that implement natural and nature-based infrastructure, habitat restoration and protection, and related capacity building and planning."
    },
    {
-    "t": "Requires amounts above the 5 percent single-State cap to be reallocated among States that have not reached the cap.",
+    "t": "Sends amounts that push a second State over the 5 percent cap to States still under it. Was: excess reallocated equally among the remaining States, with no cap check.",
     "new": "such amounts shall be reallocated among the remaining coastal States that have not reached that limitation."
    },
    {
-    "t": "Has the Treasury Secretary distribute appropriated funds to the Foundation within 60 days; the funds stay available until expended.",
+    "t": "Requires the Treasury Secretary to give the Foundation appropriated funds within 60 days, available until expended. Was: no timing rule.",
     "new": "not later than 60 days after the date on which the appropriation is made"
    }
   ]
@@ -255,15 +251,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The Secretary of the Interior must approve a State's wildlife conservation and restoration program within 180 days after the State submits its plan.",
+    "t": "Gives the Secretary of the Interior 180 days after a State submits its plan to approve the State's wildlife conservation and restoration program.",
     "new": "not later than 180 days after the date on which the State submitted the comprehensive plan,"
    },
    {
-    "t": "On submission of a State's plan, the Secretary must conditionally authorize its program and set aside the State's amounts.",
+    "t": "Has the Secretary conditionally authorize a State's program and set aside the State's amounts when its plan arrives.",
     "new": "conditionally authorize the implementation of the wildlife conservation and restoration program of the State"
    },
    {
-    "t": "A status report, with the reason, goes to the House Natural Resources and Senate Environment and Public Works Committees when a program is not approved in time.",
+    "t": "Sends a status report with the reason to the House Natural Resources and Senate Environment and Public Works Committees when a program is not approved in time.",
     "new": "a report on the status of such comprehensive plan, which shall include the reason why the wildlife conservation and restoration program was not so approved."
    }
   ]
@@ -272,36 +268,36 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Lets an agency act in response to a federal court order or under any applicable law or regulation (was: only where a court required it).",
+    "t": "Lets agencies act on any federal court order or under any applicable law. Was: only where a court required it.",
     "new": "such action is taken pursuant to any applicable law or regulation."
    },
    {
-    "t": "Drops the clear and convincing evidence standard for an agency to show that an exception applies.",
+    "t": "Drops “clear and convincing evidence” from the agency's burden of proof for showing an exception applies. Was: the agency had to meet that standard.",
     "old": "agency to demonstrate by clear and convincing evidence"
    },
    {
-    "t": "Adds “vacate,” “remand,” “reopen” and “materially” to the list of barred actions, and replaces full capacity with normal capacity.",
+    "t": "Adds vacating, remanding and reopening to the barred actions, limits the bar on amending to material changes, and protects normal capacity. Was: any amendment or alteration, and full capacity.",
     "new": "vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026"
    },
    {
-    "t": "Names the U.S. District Court for the District of Columbia as an additional venue for review of an agency action.",
+    "t": "Opens the D.C. federal district court as a venue for suits over an agency action. Was: only a district where the project is at least partly located.",
     "new": "the United States District Court for the District of Columbia."
    },
    {
-    "t": "Limits the 25 to 50 percent cost award to cases where Federal agencies interfered in bad faith.",
+    "t": "Limits the cost award of 25 to 50 percent of project costs to cases of Federal bad-faith interference. Was: part of relief whenever the agency failed its burden.",
     "new": "on a showing that 1 or more Federal agencies interfered with a Federal authorization or permit in bad faith"
    },
    {
-    "t": "Rules out treating that cost recovery as relief when judging irreparable harm on a motion for temporary relief.",
+    "t": "Bars courts from counting available cost recovery when judging irreparable harm on a motion for temporary or preliminary relief. Was: no such rule.",
     "new": "shall not consider available cost recovery under subclause"
    },
    {
-    "t": "Bars any payment resolving a dispute over a Federal permit unless a federal court issues a final judgment.",
+    "t": "Prohibits payments to resolve a Federal permit dispute without a federal court's final judgment, which may be a court-approved settlement or consent decree meeting listed findings. Was: no such bar.",
     "new": "No payment shall be issued under clause (i) or from any other source to resolve any dispute related to a Federal authorization or permit"
    },
    {
-    "t": "A court-approved settlement or consent decree meeting listed findings counts as that final judgment.",
-    "new": "a final judgment includes a court-approved settlement or consent decree"
+    "t": "Reaches stop-work orders issued within 2 years before the Act's enactment. Was: within 1 year.",
+    "new": "within 2 years prior to the date of enactment"
    }
   ]
  },
@@ -309,31 +305,27 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Changes the standard for relief from improper denial or delay to denial in bad faith, or delay, as part of a pattern of disparate treatment.",
+    "t": "Narrows the denial ground to denial in bad faith as part of a pattern of disparate treatment. Was: improper denial due to such a pattern.",
     "new": "denied in bad faith as part of"
    },
    {
-    "t": "Puts the burden on the Federal Government, once an applicant makes a prima facie case, to disprove it or show a lawful basis for the pattern.",
+    "t": "Once an applicant makes a prima facie case, requires the Federal Government to disprove it or show a lawful basis for the pattern. Was: only a duty to produce raw statistical data.",
     "new": "the Federal Government shall bear the burden of either"
    },
    {
-    "t": "Extends the comparison period for denial and delay data from 5 to 10 calendar years.",
+    "t": "Counts the 10 most recent calendar years of denial and delay data. Was: the 5 most recent.",
     "new": "the 10 most recent calendar years of empirical data"
    },
    {
-    "t": "Adds the District of Columbia district court as an alternative venue for the cause of action.",
+    "t": "Adds the D.C. federal district court as a venue for the cause of action. Was: only a district where the project is at least partly located.",
     "new": "or the United States District Court for the District of Columbia,"
    },
    {
-    "t": "Bars any payment resolving a dispute over a Federal permit for a specific type of covered project unless a federal court issues a final judgment.",
+    "t": "Bars payments to resolve a Federal permit dispute without a federal court's final judgment, which may be a court-approved settlement or consent decree meeting listed findings. Was: no such bar.",
     "new": "No payment shall be issued under subparagraph (A) or from any other source"
    },
    {
-    "t": "A court-approved settlement or consent decree meeting listed findings counts as that final judgment.",
-    "new": "a final judgment includes a court-approved settlement or consent decree"
-   },
-   {
-    "t": "Removes subsection (c), the 1-year decision timeline for permits not subject to environmental review, which section 1403 now carries.",
+    "t": "Moves the 1-year decision timeline for permits without environmental review to section 1403(b). Was: subsection (c) of this section carried it.",
     "old": "all Federal departments and agencies shall render decisions on all applicable covered applications not later than 1 year after the date on which the latest of the covered applications is determined to be complete."
    }
   ]
@@ -342,19 +334,19 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Moves the 1-year decision deadline from section 1402(c) into this section, for permits not requiring an environmental impact statement or environmental assessment.",
+    "t": "Carries the 1-year decision deadline for permits that need no environmental impact statement or assessment. Was: section 1402(c) carried it.",
     "new": "all Federal agencies shall render decisions on all applicable covered applications not later than 1 year after the date on which the latest of the covered applications was submitted."
    },
    {
-    "t": "Measures the 1-year period from submission of the latest covered application (was: the date it was determined complete).",
+    "t": "Runs the 1-year period from submission of the latest covered application. Was: the date it was determined complete.",
     "new": "after the date on which the latest of the covered applications was submitted."
    },
    {
-    "t": "Starts the 1-year period after a rehearing is complete, or after the deadline to seek rehearing expires, where Federal law provides for rehearing.",
+    "t": "Starts the 1-year period the day after a rehearing ends, or after the deadline to seek one expires, where Federal law allows rehearing. Was: no rehearing rule.",
     "new": "the day after the rehearing is complete"
    },
    {
-    "t": "Adds the District of Columbia district court as an alternative venue for a complaint over a missed deadline.",
+    "t": "Adds the D.C. federal district court as a venue for suits over a missed deadline. Was: only a district where the project is at least partly located.",
     "new": "the United States District Court for the District of Columbia."
    }
   ]
@@ -363,19 +355,19 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The Nuclear Regulatory Commission may issue construction permits, operating licenses, combined licenses and amendments without a hearing.",
+    "t": "Lets the Nuclear Regulatory Commission issue construction permits, operating licenses, combined licenses and amendments without a hearing.",
     "new": "issue a construction permit, an operating license, a combined construction permit and operating license"
    },
    {
-    "t": "It must give 30 days notice and publication in the Federal Register of its intent.",
+    "t": "Requires 30 days notice of its intent, published once in the Federal Register.",
     "new": "upon thirty days notice and publication once in the Federal Register of its intent to do so"
    },
    {
-    "t": "Any hearing the Commission does hold under this subparagraph must use informal adjudicatory procedures.",
+    "t": "Limits any hearing the Commission does hold under this subparagraph to informal adjudicatory procedures.",
     "new": "The Commission shall use informal adjudicatory procedures for any hearing held by the Commission"
    },
    {
-    "t": "All applications and proceedings pending before the Commission on or after enactment fall under the section.",
+    "t": "Applies to all applications and proceedings pending before the Commission on or after enactment.",
     "new": "shall apply to all applications and proceedings pending before the Nuclear Regulatory Commission on or after the date of enactment of this section"
    }
   ]
@@ -384,19 +376,19 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Construction of a uranium enrichment facility may begin before its license is issued, on the same terms that apply to other fuel cycle facilities.",
+    "t": "Allows construction of a uranium enrichment facility to begin before its license is issued, on the same terms as other fuel cycle facilities.",
     "new": "Construction of a uranium enrichment facility prior to the issuance of a license under sections 53 and 63 for that facility shall be permitted"
    },
    {
-    "t": "An applicant must certify that it will notify the Governor, local governments and certain Tribes in writing at least 15 days before starting construction.",
+    "t": "Requires an applicant to certify that it will notify the Governor, local governments and certain Tribes in writing at least 15 days before construction starts.",
     "new": "not fewer than 15 days before commencing construction of the uranium enrichment facility"
    },
    {
-    "t": "The Commission keeps its authority to deny a license for failure to meet regulatory requirements, and the section does not affect NEPA, hearing rights or inspections.",
+    "t": "Keeps the Commission's authority to deny a license for failure to meet regulatory requirements; NEPA, hearing rights and inspections are unaffected.",
     "new": "including the authority to deny an application for such a license for the failure of an applicant to meet regulatory requirements"
    },
    {
-    "t": "Within 180 days after enactment, the Commission must issue or revise regulations.",
+    "t": "Gives the Commission 180 days after enactment to issue or revise regulations.",
     "new": "Not later than 180 days after the date of enactment of this Act, the Commission shall issue or revise regulations"
    }
   ]
@@ -409,7 +401,7 @@
     "new": "the covered deadlines shall not apply with respect to certifications, permits, approvals, licenses, license amendments, certificates of compliance, or other authorizations"
    },
    {
-    "t": "The exemption also covers authorizations issued under Atomic Energy Act sections 53, 63 or 81 and under parts 60 or 61 of title 10 of the Code of Federal Regulations.",
+    "t": "Extends the exemption to authorizations issued under Atomic Energy Act sections 53, 63 or 81 and under parts 60 or 61 of title 10 of the Code of Federal Regulations.",
     "new": "pursuant to sections 53, 63, or 81 of the Atomic Energy Act of 1954"
    }
   ]
@@ -418,15 +410,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The Nuclear Regulatory Commission Chairman may set a career appointee's pay at up to 110 percent of the maximum basic pay for Senior Executive Service positions at the Commission.",
+    "t": "Lets the Nuclear Regulatory Commission Chairman set a career appointee's pay at up to 110 percent of the maximum basic pay for Senior Executive Service positions at the Commission.",
     "new": "not greater than 110 percent of the maximum annual rate of basic pay for Senior Executive Service positions within the Commission"
    },
    {
-    "t": "This authority applies regardless of when the career appointee was appointed and may not affect certification of the Commission's performance appraisal system.",
+    "t": "Covers a career appointee whenever appointed, and cannot affect certification of the Commission's performance appraisal system.",
     "new": "shall apply regardless of when the career appointee was appointed"
    },
    {
-    "t": "Each annual report on compensation authority must also state the number of career appointees whose pay is fixed under the new subsection.",
+    "t": "Adds to each annual report on compensation authority the number of career appointees whose pay is fixed under the new subsection.",
     "new": "the total number of career appointees that have their compensation fixed"
    }
   ]
@@ -435,23 +427,23 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Prescribed fire counts as an exceptional event for Clean Air Act air quality monitoring data; the term includes cultural burning as determined by an Indian tribe.",
+    "t": "Treats prescribed fire as an exceptional event for Clean Air Act air quality monitoring data; the term includes cultural burning as an Indian tribe determines.",
     "new": "The term ‘prescribed fire’ includes cultural burning activities, as determined by an Indian tribe."
    },
    {
-    "t": "A State petition for an exceptional event is deemed approved if EPA does not act within 1 year, unless the Administrator later determines it is not one.",
+    "t": "Deems a State petition for an exceptional event approved if EPA does not act within 1 year, unless the Administrator later determines it is not one.",
     "new": "if the Administrator does not act on a State petition described in clause (iv) by that date, the State petition be deemed approved"
    },
    {
-    "t": "Within 270 days of enactment, the Administrator must publish proposed revisions to the exceptional-event regulations and finalize them within 180 days after that.",
+    "t": "Gives the Administrator 270 days after enactment to propose revisions to the exceptional-event regulations and 180 more days to finalize them.",
     "new": "Not later than 270 days after the date of enactment"
    },
    {
-    "t": "The Administrator may make competitive grants, with a federal share of up to 90 percent, for assessing and controlling wildfire smoke hazards in community buildings including schools.",
+    "t": "Allows competitive grants with a federal share of up to 90 percent for assessing and controlling wildfire smoke hazards in community buildings, including schools.",
     "new": "the Federal share of the cost of an activity carried out using a grant under paragraph (1) shall be not more than 90 percent"
    },
    {
-    "t": "No more than 25 percent of each year's grant funds may go to recipients in one State.",
+    "t": "Caps at 25 percent the share of each year's grant funds going to recipients in one State.",
     "new": "not more than 25 percent may be awarded to recipients in any 1 State"
    }
   ]
@@ -460,7 +452,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Appropriations of $200,000,000 for each of fiscal years 2027 through 2031 are authorized for the brownfields grant and loan program.",
+    "t": "Authorizes $200,000,000 for each of fiscal years 2027 through 2031 for the brownfields grant and loan program.",
     "new": "$200,000,000 for each of fiscal years 2027"
    },
    {
@@ -468,19 +460,19 @@
     "new": "$1,000,000 for each site"
    },
    {
-    "t": "Grant recipients may use up to 10 percent of the funds for demolition, subject to the EPA Administrator's approval.",
+    "t": "Lets grant recipients use up to 10 percent of the funds for demolition, with the EPA Administrator's approval.",
     "new": "may use up to 10 percent of the amounts made available under the grant or loan for demolition"
    },
    {
-    "t": "State and Tribal response program funding is authorized at $60 million in fiscal year 2027, rising by $5 million each year to $80 million in fiscal year 2031.",
+    "t": "Sets State and Tribal response program authorizations at $60 million for fiscal year 2027, rising by $5 million each year to $80 million for fiscal year 2031.",
     "new": "$60,000,000 for fiscal year 2027;"
    },
    {
-    "t": "Nonprofits described in section 501(c)(6) of the tax code become eligible entities for brownfields grants.",
+    "t": "Adds nonprofits described in section 501(c)(6) of the tax code to the eligible entities for brownfields grants.",
     "new": "or 501(c)(6)"
    },
    {
-    "t": "The Administrator must waive the matching share requirement for entities in small communities or disadvantaged areas.",
+    "t": "Requires the Administrator to waive the matching share requirement for entities in small communities or disadvantaged areas.",
     "new": "the Administrator shall waive the matching share requirement"
    }
   ]
@@ -489,39 +481,39 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Drops the provision that let FERC receive a permit application for facilities of 345 kilovolts or more at the same time as, or any time after, the state siting application.",
+    "t": "Removes the rule letting an application for lines of 345 kilovolts or more reach FERC at the same time as, or after, the state siting application. Was: allowed.",
     "old": "In the case of transmission facilities that are capable of transmitting electric energy at a voltage of not less than 345 kilovolts, an application under subsection (c) shall be submitted to the Commission simultaneously with"
    },
    {
-    "t": "A transmitting utility, or an entity that will become one, must file a cost allocation tariff when FERC finds the permit criteria met.",
+    "t": "Requires a utility, or an entity about to become one, to file a cost allocation tariff when FERC finds the permit criteria met. Was: only utilities that own, control or operate the facilities.",
     "new": "shall file a tariff or tariff revision with the Commission pursuant to section 205 and the regulations of the Commission allocating the costs"
    },
    {
-    "t": "No permit needs to have been issued before that filing.",
+    "t": "Allows that tariff filing before any permit is issued. Was: no such rule.",
     "new": "shall not be required to make, or otherwise act as a prerequisite to making, that filing pursuant to section 205"
    },
    {
-    "t": "Facilities below 230 kilovolts also qualify for a permit if they are necessary to safely and reliably interconnect or operate a qualifying facility for which the permit is provided.",
+    "t": "Qualifies lines below 230 kilovolts for a permit if needed to safely and reliably interconnect or operate a 230-kilovolt facility. Was: only lines of 230 kilovolts or more, or advanced conductors at FERC's voltage.",
     "new": "necessary to safely and reliably interconnect or operate 1 or more facilities described in clause (i) for which the permit is provided"
    },
    {
-    "t": "FERC must also find that the project will facilitate just and reasonable rates, in addition to protecting consumers and providing improved reliability.",
+    "t": "Makes FERC also find that the project will facilitate just and reasonable rates. Was: consumer protection and reliability only.",
     "new": "consumers, provide improved reliability, and facilitate just and reasonable rates"
    },
    {
-    "t": "Replaces the wording that the facilities carry energy in interstate commerce, including from the outer Continental Shelf to a State, with interstate or foreign commerce.",
+    "t": "Drops “including transmission from the outer Continental Shelf to a State” from the commerce test. Was: that phrase followed “interstate commerce”.",
     "old": "commerce (including transmission from the outer Continental Shelf to a State)"
    },
    {
-    "t": "Tribal governments are listed with State and local governments as affected landowners.",
+    "t": "Adds Tribal governments to the State and local governments listed among affected landowners. Was: State and local governments only.",
     "new": "State, local, or Tribal government"
    },
    {
-    "t": "The ratepayer protection rule now covers customers of existing or proposed facilities whose costs are allocated under the cost allocation paragraph.",
+    "t": "Extends the rule against involuntary cost allocation to customers of existing or proposed facilities whose costs are allocated under the cost allocation paragraph. Was: facilities built or modified under this section.",
     "new": "from existing or proposed electric transmission facilities the costs of which are allocated pursuant to paragraph (1)"
    },
    {
-    "t": "Utilities may recover costs through voluntary agreement and allocate the remaining costs under the subsection.",
+    "t": "Lets utilities recover part of the costs by voluntary agreement and allocate the remaining costs under the subsection. Was: recovery by voluntary agreement only.",
     "new": "allocating any remaining costs in accordance with this subsection"
    }
   ]
@@ -530,15 +522,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The additional area next to an existing right-of-way that counts for covered activities may extend no more than one-quarter mile from the right-of-way boundary.",
+    "t": "Limits the added area next to an existing right-of-way that covered activities may use to one-quarter mile from the boundary. Was: no distance limit.",
     "new": "adjacent to an existing right-of-way, provided that the total additional area is not more than 1⁄4 mile from the boundary of the right-of-way, that is necessary— “(i) to comply with"
    },
    {
-    "t": "Covered transmission capacity activities and agency actions authorizing them are not a major Federal action under NEPA (was: a category excluded from environmental assessment or impact statement preparation).",
-    "new": "shall not be considered to be— “(A) a major Federal action for purposes of"
+    "t": "Drops the categorical exclusion for covered capacity activities and the agency actions authorizing them; the not-a-major-Federal-action rule stays. Was: both applied.",
+    "old": "are a category of actions designated as being categorically excluded from the preparation of an environmental assessment"
    },
    {
-    "t": "Adds installation of grid-enhancing advanced transmission technologies to the list of covered activities.",
+    "t": "Adds installation of grid-enhancing advanced transmission technologies to the covered activities. Was: not listed.",
     "new": "installation of grid-enhancing advanced transmission technologies (as defined in section 232(a))"
    }
   ]
@@ -547,35 +539,31 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Exempt transmitting utilities now include a State or political subdivision, a Rural Electrification Act financed cooperative, or a cooperative selling under 4,000,000 megawatt hours a year.",
+    "t": "Adds cooperatives financed under the Rural Electrification Act of 1936 to the exempt transmitting utilities. Was: only cooperatives selling under 4,000,000 megawatt hours a year.",
     "new": "an electric cooperative that receives financing under the Rural Electrification Act of 1936 (7 U.S.C. 901 et seq.) or"
    },
    {
-    "t": "Agencies and wholly owned corporations of those entities are also covered (was: only a State or subdivision and a cooperative under that sales level).",
+    "t": "Covers agencies, authorities and instrumentalities of those entities, and corporations they wholly own, as exempt transmitting utilities. Was: a State or subdivision and small cooperatives only.",
     "new": "or any agency, authority, or instrumentality of any one or more of the foregoing, or any corporation which is wholly owned, directly or indirectly"
    },
    {
-    "t": "Rights, roles and opportunities given to States or their subdivisions in transmission planning must be given on a commensurate basis to Indian Tribes or their subdivisions.",
+    "t": "Gives Indian Tribes and their subdivisions any right, role or opportunity States or their subdivisions get in transmission planning, on a commensurate basis. Was: no such rule.",
     "new": "shall be afforded on a commensurate basis to Indian Tribes or subdivisions of Indian Tribes"
    },
    {
-    "t": "Planning must be conducted at least every 4 years, with the first planning cycle starting within 1 year after FERC approves the planning process (was: only updates every 4 years).",
+    "t": "Runs planning at least every 4 years, with the first cycle starting within 1 year after FERC approves the process. Was: only updates every 4 years.",
     "new": "with the first planning cycle commencing not later than 1 year after the date on which the Commission approves the applicable planning process under subsection (f)(2)"
    },
    {
-    "t": "A FERC order or rulemaking on transmission planning in effect at enactment counts as compliance with the section and relieves FERC of the requirements in subsection (c)(1).",
+    "t": "Relieves FERC of the requirements in subsection (c)(1) where a planning order or rulemaking was already in effect at enactment. Was: such orders only counted as compliance with the planning and cost allocation requirements.",
     "new": "relieves the Commission of the requirements under subsection (c)(1)"
    },
    {
-    "t": "Cost allocation tariff filings are required of utilities that own, control, operate or propose to construct facilities selected in a regional or joint interregional plan.",
+    "t": "Has utilities that own, operate or propose to build facilities selected in a regional or interregional plan file a cost allocation tariff. Was: facilities built or modified as a result of the section.",
     "new": "operates, or proposes to construct, electric transmission facilities selected in a regional or joint interregional transmission plan for the purposes of cost allocation"
    },
    {
-    "t": "The September text covered facilities constructed or modified as a result of the section.",
-    "old": "electric transmission facilities constructed or modified as a result of this section"
-   },
-   {
-    "t": "States that, except as expressly provided, nothing in the section confers, limits or impairs FERC authority under any other law.",
+    "t": "Includes a savings clause: except as expressly provided, nothing in the section confers, limits or impairs FERC authority under other law. Was: no such clause.",
     "new": "nothing in this section shall be construed as conferring, limiting, or impairing any authority of the Commission under any other provision of law"
    }
   ]
@@ -584,35 +572,35 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Limits referrals to FERC for investigation of local transmission planning to State commissions with jurisdiction over the utility (was: States).",
+    "t": "Limits referrals to FERC to State commissions with jurisdiction over the utility. Was: States.",
     "new": "establish procedures by which 1 or more State commissions may refer a public utility"
    },
    {
-    "t": "The investigative team must issue a preliminary findings report within 120 days of the notice opening an investigation, and then a final report and recommendation to FERC.",
+    "t": "Requires the investigative team to issue a preliminary findings report within 120 days of the notice opening an investigation, then a final report and recommendation. Was: one preliminary findings report, no deadline.",
     "new": "Not later than 120 days after notice for initial public comment of the initiation of an investigation under paragraph (1)(B)(i)"
    },
    {
-    "t": "FERC must notice the final report for comment within 14 business days and issue an order within 120 days after that notice.",
+    "t": "Sets 14 business days for FERC to notice the final report for comment, and 120 days after that to issue an order. Was: no deadlines.",
     "new": "Not later than 14 business days after receiving a final report and recommendation under paragraph (3)(B)"
    },
    {
-    "t": "Draws investigative team members from non-decisional individuals in an office designated by the FERC Chairman (was: individuals from the Office of Enforcement and Regulatory Accounting).",
+    "t": "Draws investigative team members from non-decisional individuals in an office the FERC Chairman designates. Was: individuals from the Office of Enforcement and Regulatory Accounting.",
     "new": "1 or more non-decisional individuals from an office designated by the Chairman of the Commission"
    },
    {
-    "t": "Turns the fine of up to $5,000,000 per facility into a civil penalty credited to the transmission customers who bore the facility's costs (was: payable to the referring State).",
+    "t": "Makes the fine of up to $5,000,000 per facility a civil penalty credited to transmission customers who bore the facility's costs. Was: payable to the referring State.",
     "new": "civil penalty, credited to the transmission customers who bore the costs of the applicable local transmission facility,"
    },
    {
-    "t": "A local transmission facility must lie solely within a public utility transmission provider's retail distribution service territory and not be selected in a regional plan for cost allocation.",
+    "t": "Defines local facilities as lying solely within a utility's retail distribution territory and not selected in a regional plan for cost allocation. Was: within one utility's territory, with costs recovered entirely from its customers.",
     "new": "is not selected in a regional transmission plan for purposes of cost allocation"
    },
    {
-    "t": "Replacement of facilities is now covered.",
+    "t": "Adds replacement of local transmission facilities to the processes FERC can examine. Was: planning and development only.",
     "new": "EXERCISE OVERSIGHT OF LOCAL TRANSMISSION PLANNING, DEVELOPMENT, AND REPLACEMENT"
    },
    {
-    "t": "Orders under the section are subject to rehearing and judicial review under section 313; civil penalty orders follow section 31(d).",
+    "t": "Subjects Commission orders under the section to rehearing and judicial review under section 313, with civil penalty orders following section 31(d). Was: no review provision.",
     "new": "shall be subject to rehearing and judicial review pursuant to section 313"
    }
   ]
@@ -621,12 +609,8 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The federal right of first refusal ban for transmission facilities selected in a regional or interregional plan for cost allocation yields to FERC rules or orders in effect at enactment.",
+    "t": "Lets any FERC rule or order in effect at enactment override the federal ban on a right of first refusal for planned transmission facilities. Was: the ban applied despite any such rule or order.",
     "new": "Except as otherwise provided by any rule or order of the Federal Energy Regulatory Commission in effect as of the date of enactment of this section"
-   },
-   {
-    "t": "September text applied the ban notwithstanding any such rule or order.",
-    "old": "Notwithstanding any rule or order of the Federal Energy Regulatory Commission in effect as of the date of enactment of this section"
    }
   ]
  },
@@ -634,35 +618,35 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Applies the consolidated planning rule to each Transmission Organization (was: each transmission planning region).",
+    "t": "Applies the consolidated planning rule to each Transmission Organization. Was: each transmission planning region.",
     "new": "shall issue a rule requiring each Transmission"
    },
    {
-    "t": "Planned interconnection locations for generating and storage capacity and for transmission capacity must be published for customers.",
+    "t": "Lists storage capacity, and transmission capacity for customers, among the planned interconnection locations the rule must publish. Was: generating capacity only.",
     "new": "planned interconnection locations for"
    },
    {
-    "t": "An upfront, fixed, subregional per-megawatt fee must be published too (was: a zonal cost).",
+    "t": "Makes the upfront, fixed per-megawatt charge a subregional fee for each planned generation and storage location. Was: a zonal cost for each planned interconnection location.",
     "new": "an upfront, fixed, subregional, per-megawatt"
    },
    {
-    "t": "The study process covers generator interconnection and transmission service requests.",
+    "t": "Extends the study process from generator clusters to interconnection and transmission service requests. Was: a generator cluster study process.",
     "new": "establishes a streamlined generator interconnection and transmission service request study process"
    },
    {
-    "t": "Withdrawal penalties apply after total interconnection costs and contingency limitations are given to the customer.",
+    "t": "Starts withdrawal penalties only after the customer receives total interconnection costs and contingency limits. Was: penalties with no stated trigger.",
     "new": "withdrawal penalties after the determination of total costs of interconnection and any limitations from contingencies are provided to the customer"
    },
    {
-    "t": "Its aim is to co-optimize solutions that cost-effectively address electricity demand growth while integrating new generation and storage resources.",
+    "t": "Adds an aim to co-optimize solutions that cost-effectively address demand growth while integrating new generation and storage. Was: no such aim.",
     "new": "aims to co-optimize solutions to cost-effectively address electricity demand growth while integrating new generation and storage resources"
    },
    {
-    "t": "FERC may find that current interconnection and planning processes comply with its rule, or that a Transmission Organization meets the rule's objectives through comparable processes.",
+    "t": "Lets FERC find that current interconnection and planning processes comply with the rule, or that a Transmission Organization meets its objectives through comparable processes. Was: no such provision.",
     "new": "achieves the objectives of this section through comparable processes"
    },
    {
-    "t": "A process wins FERC approval if it meets the just and reasonable requirement of sections 205 and 206 and is consistent with the rule (was: consistent with the public interest).",
+    "t": "Tests a process for consistency with the rule under subsection (a). Was: consistency with the public interest.",
     "new": "is consistent with the rule issued under subsection (a)"
    }
   ]
@@ -671,35 +655,31 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Drops the September definition of covered load, which set a floor of 20 megawatts.",
+    "t": "Drops the 20-megawatt floor for data center load by replacing “covered load” with computational load owners, operators and sites. Was: rules applied only to load of 20 megawatts or more.",
     "old": "equals or exceeds 20 megawatts or, in the case of data centers or high-density computing facilities developed in phases"
    },
    {
-    "t": "Uses computational load sites with no megawatt floor and leaves the definition of an eligible customer to FERC by rule or order.",
-    "new": "The term “computational load site” means 1 or more buildings, structures, or installations at a single location"
+    "t": "Leaves the definition of an eligible computational load customer to FERC by rule or order. Was: no such delegation.",
+    "new": "has the meaning given the term by the Commission by rule or order"
    },
    {
-    "t": "FERC must revise its 1994 transmission pricing policy statement and issue a notice of proposed rulemaking within 90 days of enactment.",
+    "t": "Gives FERC 90 days after enactment to revise the 1994 transmission pricing policy statement and issue a proposed rule. Was: 270 days for the statement, then 270 days from publication for the rule.",
     "new": "Not later than 90 days after the date of enactment of this Act, the Commission shall—"
    },
    {
-    "t": "The September text allowed 270 days for the policy statement and a further 270 days after its publication for the proposed rule.",
-    "old": "Not later than 270 days after the date of enactment of this Act, the Commission shall revise the 1994 transmission pricing policy statement"
-   },
-   {
-    "t": "Eligible computational load customers pay the embedded cost and a reasonable assessment, as determined by FERC, of the incremental cost of transmission service (was: the incremental cost itself).",
+    "t": "Charges eligible computational load customers the embedded cost and a reasonable assessment, set by FERC, of the incremental cost of transmission service. Was: the incremental cost itself.",
     "new": "the embedded cost and a reasonable assessment, as determined by the Commission, of the incremental cost of transmission service"
    },
    {
-    "t": "Lets FERC treat these customers as a customer class and assign some or all costs to the class instead of to individual customers.",
+    "t": "Lets FERC treat these customers as a customer class and assign some or all costs to the class. Was: no class treatment.",
     "new": "may treat eligible computational load customers seeking transmission service on behalf of computational load owners and computational load operators as a customer class"
    },
    {
-    "t": "States may revise an existing arrangement to serve a computational load site, to the extent state law permits, to match the new rate rules from the revision's effective date.",
+    "t": "Permits a State, to the extent State law allows, to revise an existing arrangement to match the new rate rules from the revision's effective date. Was: existing arrangements remained in effect.",
     "new": "a State may revise an arrangement described in subparagraph (A) to achieve consistency"
    },
    {
-    "t": "Adds a policy that computational load owners and operators bear the full cost of electric service and infrastructure built for them, whether or not they take the service requested.",
+    "t": "Adds a policy that computational load owners and operators bear the full cost of service and infrastructure built for them. Was: no such policy.",
     "new": "it is the policy of the United States that computational load owners and computational load operators bear the full cost of any electric service that they require"
    }
   ]
@@ -708,35 +688,35 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Qualifying behind-the-meter resources need a rated capacity of at least 5 kilowatts and no more than 5 megawatts (was: no upper limit).",
+    "t": "Limits qualifying behind-the-meter resources to a rated capacity of 5 kilowatts to 5 megawatts. Was: 5 kilowatts or more, with no upper limit.",
     "new": "not more than 5 megawatts; and “(D) maintains metering and telemetry capabilities"
    },
    {
-    "t": "Practices listed as unjust and unreasonable take effect 18 months after enactment.",
+    "t": "Delays the practices listed as unjust and unreasonable until 18 months after enactment. Was: no delay.",
     "new": "18 months after the date of enactment of this section, the following practices shall not be considered to be just and reasonable"
    },
    {
-    "t": "A Transmission Organization may set narrowly tailored performance rules for aggregations that join capacity markets but not energy markets.",
+    "t": "Lets a Transmission Organization set narrowly tailored performance rules for aggregations that join capacity markets but not energy markets. Was: no such allowance.",
     "new": "Nothing in this section prohibits a Transmission Organization from establishing performance rules for qualifying BTM DES aggregations"
    },
    {
-    "t": "Bars metering, telemetry or equipment requirements that are more stringent than the statutory definitions (was: inconsistent with the definitions).",
+    "t": "Bars metering, telemetry or equipment requirements more stringent than the statutory definitions. Was: barred requirements inconsistent with the definitions.",
     "new": "more stringent than"
    },
    {
-    "t": "The bar on requiring energy market participation as a precondition to capacity market participation now applies when energy participation is with compensation and capacity participation is on equal terms.",
+    "t": "Narrows the bar on requiring energy market participation before capacity market participation to compensated participation and equal terms. Was: any such precondition.",
     "new": "to participate in the energy market with compensation as a precondition to participating in the capacity market on equal terms"
    },
    {
-    "t": "Removes the September provision barring distribution utilities from purposefully using control of the distribution system to keep eligible resources out of wholesale markets.",
+    "t": "Drops the prohibition on distribution utilities purposefully blocking eligible resources from wholesale markets. Was: a prohibition on using control of the distribution system or retail sales to do so.",
     "old": "No distribution utility shall purposefully use its control over the distribution system or retail sales to prevent any behind-the-meter resource eligible to participate in a wholesale market"
    },
    {
-    "t": "Only subsections (b) and (c) fall under the voluntary-compliance exception.",
+    "t": "Confines the voluntary-compliance exception to subsections (b) and (c). Was: subsections (b), (c) and (d).",
     "new": "the requirements of subsections (b) and (c) shall be voluntary with respect to distribution utilities"
    },
    {
-    "t": "Double compensation draws a penalty of three times the amount received (was: counted each day the compensation was knowingly retained).",
+    "t": "Sets the penalty for double compensation at 3 times the amount received. Was: 3 times the amount for each day it was knowingly retained.",
     "old": "received for each day that the double compensation was knowingly retained after the date of receipt,"
    }
   ]
@@ -745,35 +725,31 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Covers grid-enhancing advanced transmission technologies, defined as dynamic line rating, advanced power flow control, transmission topology optimization and high-performance transmission conductors.",
+    "t": "Defines grid-enhancing advanced transmission technology as dynamic line rating, advanced power flow control, transmission topology optimization and high-performance conductors. Was: advanced transmission technology as defined in the Energy Policy Act of 2005.",
     "new": "means— “(A) dynamic line rating; “(B) advanced power flow control; “(C) transmission topology optimization; and “(D) high-performance transmission conductors."
    },
    {
-    "t": "The September text covered advanced transmission technology as defined in the Energy Policy Act of 2005.",
-    "old": "The term ‘advanced transmission technology’ has the meaning given the term in section 1223(a) of the Energy Policy Act of 2005"
-   },
-   {
-    "t": "Public utilities must evaluate their systems for opportunities to deploy these technologies.",
+    "t": "Requires public utilities to evaluate their transmission systems for chances to deploy these technologies. Was: subsection (b) required only use on covered projects.",
     "new": "evaluate their transmission systems to assess all technically achievable opportunities to deploy grid-enhancing advanced transmission technologies"
    },
    {
-    "t": "They must use them on covered projects whenever the benefits would exceed the costs (was: no benefit-cost condition).",
+    "t": "Conditions use on covered projects on benefits exceeding costs. Was: use required with no benefit-cost condition.",
     "new": "whenever the benefits of doing so would exceed the costs"
    },
    {
-    "t": "A class of high-performance conductors that FERC determines is an economically reasonable alternative falls under the best-available standard, taking into account reliability, safety and affordability.",
+    "t": "Makes the best-available standard a class of high-performance conductors that FERC finds economically reasonable, considering reliability, safety and affordability. Was: an individual conductor with the best feasible performance.",
     "new": "provides an economically reasonable alternative to a transmission conductor that is not a high-performance transmission conductor"
    },
    {
-    "t": "FERC also presumes that the costs of using a grid-enhancing technology are an economically reasonable alternative to other technologies.",
+    "t": "Adds a presumption that the costs of using a grid-enhancing technology are an economically reasonable alternative to other technologies. Was: presumptions of prudence and just and reasonable costs only.",
     "new": "provide an economically reasonable alternative to the use of transmission technologies that are not grid-enhancing advanced transmission technologies"
    },
    {
-    "t": "Deployment follows general schedules set by FERC (was: FERC set a timeline for the deployment).",
+    "t": "Sets deployment on general schedules determined by FERC. Was: a timeline determined by FERC.",
     "new": "based on general schedules for deployment, as determined by the Commission"
    },
    {
-    "t": "Removes the September amendment adding the four technologies to the Energy Policy Act of 2005 definition of advanced transmission technology.",
+    "t": "Drops the amendment adding the four technologies to the Energy Policy Act of 2005 definition of advanced transmission technology. Was: the four technologies were added to that definition.",
     "old": "DEFINITION OF ADVANCED TRANSMISSION TECHNOLOGY.—Section 1223(a) of the Energy Policy Act of 2005 (42 U.S.C. 16422(a)) is amended"
    }
   ]
@@ -782,7 +758,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "FERC must initiate and finalize a rulemaking at least once every 4 years on whether utilities are adequately deploying advanced computing technologies (was: reopen the earlier rulemaking).",
+    "t": "Requires FERC to initiate and finalize a rulemaking at least every 4 years on whether utilities adequately deploy advanced computing technologies. Was: reopen the rulemaking at that interval.",
     "new": "shall initiate and finalize a rulemaking pursuant to subsection (a) not less frequently than once every 4 years"
    }
   ]
@@ -791,19 +767,19 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "A transmission provider that fails to follow the grid data duties faces civil penalties under section 316A (was: a matter affecting reliable operation of the bulk-power system under section 215).",
+    "t": "Makes any provider's noncompliance subject to civil penalties under section 316A. Was: a bulk-power reliability matter under section 215, with 316A penalties for public utilities only.",
     "new": "subject to civil penalties as specified in"
    },
    {
-    "t": "Covered studies include studies or analyses under sections 224, 225, 226, 228, 229 or 232 of the Federal Power Act, in addition to interconnection and similar tariff studies.",
+    "t": "Counts studies or analyses under sections 224, 225, 226, 228, 229 or 232 of the Federal Power Act as covered studies. Was: interconnection and similar tariff studies only.",
     "new": "a study or analysis under section 224, 225, 226, 228, 229, or 232"
    },
    {
-    "t": "For the study-related duties in subsection (b), an entity legally responsible for a covered study counts as a transmission provider.",
+    "t": "Treats an entity legally responsible for a covered study as a transmission provider for the study-related duties in subsection (b). Was: only entities administering an open access tariff.",
     "new": "an entity legally responsible for a covered study"
    },
    {
-    "t": "Each transmission provider must obtain, assemble and maintain the grid data (was: and use it).",
+    "t": "Requires each transmission provider only to obtain, assemble and maintain grid data. Was: obtain, assemble, maintain and use it.",
     "new": "Each transmission provider shall obtain, assemble, and maintain the grid data"
    }
   ]
@@ -812,23 +788,23 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Excludes from the section any power marketing administration employee whose position, before March 27, 2025, was governed by a collective bargaining agreement covered by the two named federal pay laws.",
+    "t": "Excludes employees whose positions were governed, before March 27, 2025, by a collective bargaining agreement under two named federal pay laws. Was: no such exclusion.",
     "new": "whose position, prior to March 27, 2025, was governed by a collective bargaining agreement"
    },
    {
-    "t": "Chapter 71 of title 5 applies to all power marketing administration employees as it did on March 26, 2025.",
+    "t": "Applies chapter 71 of title 5 to all power marketing administration employees as it stood on March 26, 2025, despite later law, rule or order. Was: no such provision.",
     "new": "shall apply to all employees of any Federal power marketing administration in the same manner that those provisions applied on March 26, 2025"
    },
    {
-    "t": "Collective bargaining agreements in effect on that date stay in force through their stated terms.",
+    "t": "Keeps any collective bargaining agreement in effect on March 26, 2025 in force through its stated term. Was: no such provision.",
     "new": "shall have full force and effect through the stated term of the applicable agreement"
    },
    {
-    "t": "Pay must be comparable to the electric industry in the locality of the administration (was: the public sectors of the electric industry and consumer-owned utilities).",
+    "t": "Benchmarks prevailing pay to the electric industry in the locality of the administration, and to utilities in its Interconnection. Was: the public sectors of the electric industry, and consumer-owned utilities.",
     "new": "electric industry in the locality in which the Federal power marketing administration is located"
    },
    {
-    "t": "The authority applies except as otherwise provided in the section (was: notwithstanding any other law, rule, regulation or directive on Federal employee pay other than chapter 83 of title 5).",
+    "t": "Subjects the compensation authority to the rest of the section. Was: it applied notwithstanding any other law, rule or directive on Federal employee pay, except chapter 83 of title 5.",
     "new": "GENERAL.—Except as otherwise provided in this section, the Administrator of each Federal power marketing"
    }
   ]
@@ -837,7 +813,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Renumbers the section as section 318 of the Federal Power Act and defines the Commission by a short reference instead of repeating its full name.",
+    "t": "Renumbers the section as section 318 of the Federal Power Act and shortens the references to the Commission. Was: section 318A, placed after section 318 (as added by section 2106).",
     "new": "(referred to in this section as the ‘Commission’)"
    }
   ]
@@ -846,23 +822,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Replaces “data center entity,” an end-user or group of co-located end-users whose primary purpose is housing computing equipment, with “computational load site.”",
-    "old": "the term “data center entity” means an end-user, or group of co-located end-users, the primary purpose of which is to house computing"
-   },
-   {
-    "t": "A computational load site is one or more buildings or installations at a single location that primarily contain information technology infrastructure.",
+    "t": "Defines a computational load site as buildings or installations at one location that primarily contain information technology infrastructure. Was: a “data center entity”, an end-user or co-located end-users housing computing equipment.",
     "new": "means 1 or more buildings, structures, or installations at a single location that primarily contain information technology infrastructure"
    },
    {
-    "t": "Listed uses are software services, artificial intelligence, cryptocurrency mining and other computational activities at a data center.",
+    "t": "Lists the uses as software services, AI, cryptocurrency mining and other computational activities at a data center. Was: AI, cloud computing or data hosting, and cryptocurrency or other digital-asset computation.",
     "new": "or (D) other computational activities at a data center"
    },
    {
-    "t": "September text listed AI, cloud computing or data hosting, and cryptocurrency or other digital-asset computation.",
-    "old": "(B) cloud computing or data hosting; or (C) cryptocurrency mining or other distributed-ledger or digital-asset computation"
-   },
-   {
-    "t": "The Energy Information Administration must revise Form 861 or any successor form to separately include information from computational load sites (was: include load from data center entities).",
+    "t": "Has the Energy Information Administration revise Form 861 or any successor form to include information from computational load sites separately. Was: include load from data center entities.",
     "new": "separately include information from computational load sites"
    }
   ]
@@ -871,7 +839,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Civil penalties assessed under section 22 of the Natural Gas Act are reviewed under the same procedures that apply to civil penalties under section 31(d) of the Federal Power Act.",
+    "t": "Applies the section 31(d) Federal Power Act review procedures to civil penalties assessed under section 22 of the Natural Gas Act.",
     "new": "in accordance with the same procedures as are applicable under section 31(d)"
    }
   ]
@@ -880,11 +848,11 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "FERC has jurisdiction over the corporate governance of a Transmission Organization for purposes of Federal Power Act section 205.",
+    "t": "Puts a Transmission Organization's corporate governance within FERC's reach under Federal Power Act section 205.",
     "new": "“(h) CLARIFICATION.—For purposes of this section,\nthe Commission has jurisdiction over the corporate governance\nof a Transmission Organization.”"
    },
    {
-    "t": "The same statement is added to section 206, covering FERC review of existing rates and practices.",
+    "t": "Adds the same language to section 206, which covers FERC review of existing rates and practices.",
     "new": "“(f) CLARIFICATION.—For purposes of this section,\nthe Commission has jurisdiction over the corporate governance\nof a Transmission Organization.”"
    }
   ]
@@ -893,23 +861,23 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The Secretary of Energy must establish a Data Center Community Assistance Program within 180 days of enactment.",
+    "t": "Directs the Secretary of Energy to set up a Data Center Community Assistance Program within 180 days of enactment.",
     "new": "Not later than 180 days after the date of enactment of this Act, the Secretary shall establish a program, to be known as the"
    },
    {
-    "t": "On request, the program gives State, local and Tribal governments information and technical assistance on the energy, water, infrastructure and economic impacts of computational load site development.",
+    "t": "Gives State, local and Tribal governments, on request, information and technical assistance on the energy, water, infrastructure and economic effects of computational load site development.",
     "new": "provide State, local, and Tribal governments, on request, with objective and technically sound information, resources, and technical assistance"
    },
    {
-    "t": "Within 180 days of enactment, the Secretary must develop a publicly accessible toolkit in plain English for local officials.",
+    "t": "Requires a publicly accessible toolkit in plain English for local officials, due within 180 days of enactment.",
     "new": "shall develop a Data Center Community Toolkit, which shall be publicly accessible and specifically written for nontechnical local officials in plain English"
    },
    {
-    "t": "At a government's request, the Secretary may ask a developer to voluntarily provide project data and may independently assess the reasonableness of its assumptions, data and conclusions.",
+    "t": "Lets the Secretary, at a government's request, ask a developer to provide project data voluntarily and assess the reasonableness of its assumptions, data and conclusions.",
     "new": "request the applicable computational load site developer to voluntarily provide to the Secretary information"
    },
    {
-    "t": "No recommendation on approving or rejecting a computational load site is allowed, and the Act gives the Secretary no part in a State, local or Tribal siting decision.",
+    "t": "Bars the program from recommending approval or rejection of a computational load site; the Act gives the Secretary no part in a State, local or Tribal siting decision.",
     "new": "shall not make any recommendation to a State, local, or Tribal government regarding whether any particular computational load site should be approved"
    }
   ]
@@ -918,7 +886,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Adds section 234 to the Federal Power Act section 201 cross-reference list ending at section 233, and moves the section from number 2115 to 2118.",
+    "t": "Adds section 234 to the cross-reference lists in the conforming amendments. Was: the lists ended at section 233.",
     "new": "232, 233, and 234”"
    }
   ]
@@ -927,7 +895,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Removes “a record of decision” from the list of documents that count as an environmental document in this section.",
+    "t": "Drops “a record of decision” from the documents counted as an environmental document in this section. Was: the list included a record of decision.",
     "old": "(C) An environmental impact statement. (D) A record of decision."
    }
   ]
@@ -936,19 +904,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Extends the Long-Term Leasing Act's leasing provision to land held in trust for any other Tribe on the Secretary's most recent list of federally recognized Tribes.",
+    "t": "Amends the Long-Term Leasing Act to cover land held in trust for any other federally recognized Tribe. Was: the section did not amend that Act.",
     "new": "(1) in subsection (a), in the second sentence, by inserting “, land held in trust for any other Indian tribe included on the most recent list published by the Secretary"
    },
    {
-    "t": "The September text amended only the rights-of-way law.",
-    "old": "RIGHTS-OF-WAY FOR ALL PURPOSES ACROSS INDIAN LAND"
-   },
-   {
-    "t": "Strikes the lease-term limits in subsection (h)(1) of the Long-Term Leasing Act, deleting the clause that the term not exceed a stated period and subparagraphs (A) and (B).",
+    "t": "Removes the clause limiting lease terms in subsection (h)(1) of the Long-Term Leasing Act, with subparagraphs (A) and (B). Was: the section left that subsection alone.",
     "new": "by striking “and the term of the lease does not exceed—” and inserting a period"
    },
    {
-    "t": "Inserts “of the Interior” after “Secretary” in section 2 of the Long-Term Leasing Act, a technical correction.",
+    "t": "Inserts “of the Interior” after “Secretary” in section 2 of the Long-Term Leasing Act. Was: the section did not amend that Act.",
     "new": "(b) TECHNICAL CORRECTION.—Section 2 of the Act of August 9, 1955"
    }
   ]
@@ -957,7 +921,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Changes a cross-reference to the Abandoned Hardrock Mine Fund from section 205(d) to section 2215(d) of the bill.",
+    "t": "Points the Abandoned Hardrock Mine Fund reference at section 2215(d) of the bill. Was: section 205(d).",
     "new": "Abandoned Hardrock Mine Fund established by section 2215(d)"
    }
   ]
@@ -966,7 +930,7 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Drops the 30-day minimum for the notice of intent a party planning casual-use geothermal activities gives the Secretary before the activities start.",
+    "t": "Drops the 30-day minimum for the notice of intent a party gives the Secretary before casual-use geothermal activities start. Was: notice at least 30 days before the start.",
     "old": "notice of intent to carry out those activities at least 30 days before the start of the activities"
    }
   ]
@@ -975,7 +939,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Rewords one drafting instruction to read “indenting the paragraphs appropriately”; the royalty provisions are unchanged.",
+    "t": "Rewords a drafting instruction to read “indenting the paragraphs appropriately”; the royalty provisions do not change. Was: “and indenting”.",
     "new": "indenting the paragraphs appropriately,"
    }
   ]
@@ -984,7 +948,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Changes the capitalization of the section heading to “Geothermal Ombudsman and Permitting Task Force”; the text is unchanged.",
+    "t": "Changes the heading to “Geothermal Ombudsman and Permitting Task Force”; the text does not change. Was: “Geothermal ombudsman and permitting task force”.",
     "new": "(1) BUREAU.—The term “Bureau” means the Bureau of Land Management."
    }
   ]
@@ -993,19 +957,15 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Bars the Secretary from requiring a Federal drilling permit when any one of three conditions holds (was: the first condition plus a State permit).",
+    "t": "Waives the Federal drilling permit under any one of three conditions, and no longer requires a State permit. Was: Federal ownership under 50 percent, plus a State permit submitted to the Secretary.",
     "new": "The Secretary shall not require an operator to obtain a Federal drilling permit for geothermal exploration and production activities"
    },
    {
-    "t": "The conditions are U.S. ownership of under 50 percent of the subsurface geothermal resources, or a wellbore that enters and produces from, or only traverses, the Federal mineral estate.",
+    "t": "Adds wellbore conditions: the well sits on non-Federal land and its wellbore enters and produces from, or only traverses, the Federal mineral estate. Was: no such condition.",
     "new": "the well is located on non-Federal land overlying a non-Federal mineral estate, but some portion of the wellbore enters and produces from the Federal mineral estate subject to the lease"
    },
    {
-    "t": "Removes the requirement that the operator submit a State permit to the Secretary.",
-    "old": "the operator submits to the Secretary a State permit to conduct geothermal exploration and production activities on the non-Federal surface estate"
-   },
-   {
-    "t": "Changes the notification rule to cover State permits that would affect geothermal resources owned by the Federal Government (was: oil and gas).",
+    "t": "Applies the notification rule to State permits affecting geothermal resources owned by the Federal Government. Was: oil and gas.",
     "new": "would impact or extract geothermal resources owned by the Federal Government"
    }
   ]
@@ -1014,11 +974,11 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Adds title V of the Federal Land Policy and Management Act of 1976 to the laws that the NEPA-exclusion requirements override when they apply to drilling-permit activities.",
+    "t": "Adds title V of the Federal Land Policy and Management Act of 1976 to the laws the NEPA-exclusion requirements override for drilling-permit activities. Was: the Mineral Leasing Act and Geothermal Steam Act provisions only.",
     "new": "or title V of the Federal Land Policy and Management Act of 1976 (43 U.S.C. 1761 et seq.), activities described in subsection (b)"
    },
    {
-    "t": "Changes the Mineral Leasing Act citation in that clause from 30 U.S.C. 1001 to 30 U.S.C. 181.",
+    "t": "Changes the Mineral Leasing Act citation in that clause to 30 U.S.C. 181. Was: 30 U.S.C. 1001.",
     "new": "permit under the Mineral Leasing Act (30 U.S.C. 181 et seq.) or a geothermal drilling permit under"
    }
   ]
@@ -1027,7 +987,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Renumbers the new Federal Power Act section on micro hydrokinetic projects from section 37 to section 38.",
+    "t": "Renumbers the new Federal Power Act section on micro hydrokinetic projects as section 38. Was: section 37.",
     "new": "SEC. 38. LICENSING OF MICRO HYDROKINETIC ENERGY PROJECTS"
    }
   ]
@@ -1036,7 +996,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Renumbers the section from 2243 to 2242 after the substitute drops the Northwest Power and Conservation Council section; the text is unchanged.",
+    "t": "Takes number 2242 after the Northwest Power and Conservation Council section is dropped; the text does not change. Was: section 2243.",
     "new": "to perform law enforcement duties as needed to ensure the safety of the Chairman and Commissioners"
    }
   ]
@@ -1045,7 +1005,7 @@
   "kind": "technical",
   "points": [
    {
-    "t": "Corrects “substitutions” to “substations” in the definition of an offshore transmission line.",
+    "t": "Fixes a typo in the offshore transmission line definition, which now connects multiple offshore transmission “substations”. Was: “substitutions”.",
     "new": "connects multiple offshore transmission substations"
    }
   ]
@@ -1054,19 +1014,19 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The Secretary of Energy must announce publicly, within 72 hours, any alteration of a directive or safety standard for a covered DOE nuclear facility, with a summary of the alteration.",
+    "t": "Requires the Secretary of Energy to announce any alteration of a directive or safety standard for a covered DOE nuclear facility within 72 hours, with a summary.",
     "new": "Not later than 72 hours after altering a directive or safety standard relating to covered DOE nuclear facilities"
    },
    {
-    "t": "Within 72 hours of issuing a preliminary or final documented safety analysis, an announcement must include the analysis, modified only to remove commercially sensitive, classified or controlled information.",
+    "t": "Applies the same 72 hours to issuing a preliminary or final documented safety analysis; the announcement includes the analysis, redacted only for commercially sensitive, classified or controlled information.",
     "new": "Not later than 72 hours after issuing any preliminary documented safety analysis or documented safety analysis"
    },
    {
-    "t": "Announcements are also due within 72 hours of entering an agreement to authorize a covered DOE nuclear facility, including any conditions in the agreement.",
+    "t": "Adds a third announcement, due within 72 hours of entering an agreement to authorize a covered DOE nuclear facility, that lists any conditions in the agreement.",
     "new": "Not later than 72 hours after entering into an agreement to authorize a covered DOE nuclear facility"
    },
    {
-    "t": "By January 31 each year, the Secretary must report to the House Energy and Commerce and Senate Energy and Natural Resources Committees on authorization activities during the prior calendar year.",
+    "t": "Sets January 31 each year as the date for the Secretary to report to the House Energy and Commerce and Senate Energy and Natural Resources Committees on the prior calendar year's authorization activities.",
     "new": "Not later than January 31 of each year, the Secretary of Energy shall submit to the Committee on Energy and Commerce of the House of Representatives"
    }
   ]
@@ -1075,51 +1035,47 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Omits the September definition of “property of traditional religious or cultural importance”: a location or feature where an event of continuing religious or cultural significance to a living community occurred.",
+    "t": "Omits the definition of “property of traditional religious or cultural importance” in section 302706(a). Was: a place where an event of continuing religious or cultural significance to a living community occurred.",
     "old": "the term ‘property of traditional religious or cultural importance’ means an identifiable geographic location or feature at which an event of continuing religious or cultural significance"
    },
    {
-    "t": "Strikes the provision under which the Secretary of the Interior assumes the functions of a Tribal Historic Preservation Officer when a tribal program stays inconsistent after the 2-year period.",
+    "t": "Drops the rule that the Secretary assumes the functions of a Tribal Historic Preservation Officer when a tribal program stays inconsistent after 2 years. Was: the Secretary took over all or part of those functions.",
     "old": "the Secretary shall assume all or part of the functions of the Tribal Historic Preservation Officer until the date on which"
    },
    {
-    "t": "Requires, before the Secretary disapproves a tribal program or suspends its agreements, a written determination, technical assistance and at least 180 days to submit a corrective action plan.",
+    "t": "Requires a written determination, technical assistance and at least 180 days to submit a corrective action plan before the Secretary disapproves a tribal program or suspends its agreements. Was: no such steps.",
     "new": "allow at least 180 days for the Indian tribe and the Tribal Historic Preservation Officer to submit to the Secretary a corrective action plan"
    },
    {
-    "t": "Adds a process to reinstate a program and restore suspended grants.",
+    "t": "Adds a process to reinstate a tribal program and restore eligibility for suspended contracts, agreements and grants. Was: no such process.",
     "new": "Secretary shall establish a process under which an Indian tribe or Tribal Historic Preservation Officer may"
    },
    {
-    "t": "Requires a report on every undertaking, covering its area of potential effects, historic properties and any adverse effects (was: only when the agency found adverse effects).",
+    "t": "Covers each undertaking with a 60-day report on its area of potential effects, historic properties and adverse effects, sent to start consultation. Was: a report only when the agency found adverse effects.",
     "new": "description of the adverse effects, if any, of the undertaking on historic properties within the area of potential effects"
    },
    {
-    "t": "The agency must start consultation within 60 days by sending the report to the State and Tribal Historic Preservation Officers, Tribes and Native Hawaiian organizations.",
-    "new": "shall complete the report in accordance with subclause (II) and initiate consultation by submitting the report"
-   },
-   {
-    "t": "Sets 45 days (was 30) for a Historic Preservation Officer, Tribe or other consulting party to submit substantive objections before the agency proceeds.",
+    "t": "Gives State and Tribal Historic Preservation Officers, Tribes and other consulting parties 45 days to submit substantive objections before the agency proceeds. Was: 30 days.",
     "new": "does not provide any substantive objections by the date that is 45 days after the date of receipt of a report or finding"
    },
    {
-    "t": "Allows judicial review claims only from parties that submitted a substantive comment other than a form letter (was: a substantive and unique comment).",
+    "t": "Accepts any substantive comment other than a form letter as the comment a claimant needs. Was: a substantive and unique comment.",
     "new": "filed by a party that submitted a substantive comment (excluding a form letter)"
    },
    {
-    "t": "When a court finds that an agency missed its consultation deadline, it must set a schedule of no more than 90 days for the agency to act.",
+    "t": "Sets a schedule of no more than 90 days for the agency to act when a court finds it missed its consultation deadline. Was: injunctive relief with no stated deadline.",
     "new": "set a schedule and deadline for the Federal agency to act as soon as practicable with respect to the injunctive relief, which shall not exceed 90 days"
    },
    {
-    "t": "It must decide the applicant's case within 120 days after the complaint.",
+    "t": "Caps the time for the court to decide at 120 days after the complaint, absent extraordinary circumstances. Was: as expeditiously as practicable.",
     "new": "issue a decision as expeditiously as practicable, but not later than 120 days, after the date on which the applicable complaint is filed"
    },
    {
-    "t": "Excludes from the definition of undertaking a project whose only Federal involvement is financial assistance, except projects receiving more than $10,000,000 from the Department of Transportation.",
+    "t": "Removes projects receiving more than $10,000,000 from the Department of Transportation from the exclusion for projects with only financial assistance. Was: the exclusion applied to all such projects.",
     "new": "subject to the condition that this clause shall not apply to a project that receives more than $10,000,000 of financial assistance from the Department of Transportation"
    },
    {
-    "t": "Limits the repair exclusion to “minor or routine” work.",
+    "t": "Limits the repair exclusion to “minor or routine” work. Was: “minor” work.",
     "new": "a project, activity, or program that consists of minor or routine restoration, rehabilitation, repair, maintenance"
    }
   ]
@@ -1128,20 +1084,16 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "The $200,000,000 authorized each year for fiscal years 2027 through 2036 comes from the Historic Preservation Fund's unappropriated balance on September 30, 2026, or the Treasury's general fund.",
+    "t": "Takes the $200,000,000 a year for fiscal years 2027 through 2036 from the Historic Preservation Fund's unappropriated balance on September 30, 2026, or the general fund. Was: authorized with no named source.",
     "new": "from the unappropriated balance of the Historic Preservation Fund on September 30, 2026, or the general fund of the Treasury"
    },
    {
-    "t": "Omits the September section 303103 that made deposited amounts available for expenditure from fiscal year 2028 on without further appropriation or fiscal year limitation.",
+    "t": "Drops section 303103. Was: amounts deposited in the Historic Preservation Fund became available for expenditure from fiscal year 2028 on, without further appropriation or fiscal year limit.",
     "old": "shall be made available for expenditure for fiscal year 2028 and each fiscal year thereafter, without further appropriation or fiscal year limitation"
    },
    {
-    "t": "Exempts information in the Tribal Historic Preservation Officer online database that agencies and State Historic Preservation Officers share from disclosure under section 552(b)(3)(B) of title 5.",
+    "t": "Exempts information in the Tribal Historic Preservation Officer online database that agencies and State officers share from disclosure under section 552(b)(3)(B) of title 5. Was: no such exemption.",
     "new": "shall be exempt from disclosure under section 552(b)(3)(B) of title 5"
-   },
-   {
-    "t": "Removes the cross-reference to the section 302706(a)(1) definition from the provision on properties of traditional religious or cultural importance in the Tribal grant program.",
-    "old": "of properties of traditional religious or cultural importance (as defined in section 302706(a)(1))"
    }
   ]
  },
@@ -1149,23 +1101,23 @@
   "kind": "substantive",
   "points": [
    {
-    "t": "Internal Revenue Code section 104(a)(2) excludes from gross income damages received on account of any sexual act or sexual contact, whether or not there are medical records or observable injuries.",
+    "t": "Excludes from gross income, under Internal Revenue Code section 104(a)(2), damages received on account of any sexual act or sexual contact, with or without medical records or observable injuries.",
     "new": "whether or not there are medical records or observable injuries of such act or contact"
    },
    {
-    "t": "A decision or agreement stating that damages are on account of a sexual act or contact is credible evidence, and the taxpayer meets the substantiation requirement under section 7491(a)(2).",
+    "t": "Treats a statement in a decision or agreement that damages are on account of a sexual act or contact as credible evidence, and treats the taxpayer as meeting the substantiation requirement of section 7491(a)(2).",
     "new": "such statement shall be treated as credible evidence that such damages are so on account for purposes of section 7491(a)"
    },
    {
-    "t": "It applies to amounts received under decisions made, and agreements entered into, after enactment.",
+    "t": "Applies to amounts received under decisions made, and agreements entered into, after enactment.",
     "new": "The amendments made by this section shall apply to amounts received pursuant to decisions made, and agreements entered into, after the date of the enactment of this Act."
    },
    {
-    "t": "An agreement that replaces, supersedes or revises an earlier agreement is not treated as entered into after enactment.",
+    "t": "Counts an agreement that replaces, supersedes or revises an earlier agreement as not entered into after enactment.",
     "new": "an agreement shall not be treated as entered into after the date of the enactment of this Act if such agreement replaces, supersedes, or revises an agreement"
    },
    {
-    "t": "The Secretary of the Treasury, in consultation with the Justice Department Office on Violence Against Women, must run a program promoting public awareness of the exclusion.",
+    "t": "Directs the Secretary of the Treasury, with the Justice Department Office on Violence Against Women, to run a program promoting public awareness of the exclusion.",
     "new": "shall conduct a program to promote public awareness of the exclusion from gross income"
    }
   ]

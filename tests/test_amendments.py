@@ -152,6 +152,13 @@ class Substitute(unittest.TestCase):
             renamed = "old" in r and "new" in r and (r["old"]["n"] != r["new"]["n"] or r["old"]["h"] != r["new"]["h"])
             self.assertTrue(r.get("hunks") or r.get("text") or r.get("old_text") or renamed, r["id"])
 
+    def test_every_change_says_what_it_was(self):
+        # A change note on an edited, moved or dropped section names the September wording too.
+        for r in AMEND["rows"]:
+            if r["status"] in ("edited", "moved", "dropped"):
+                for p in r["points"]:
+                    self.assertIn(" Was: ", p["t"], f"{r['id']}: {p['t'][:60]}")
+
     def test_payload_and_static_page_are_in_sync(self):
         self.assertEqual((ROOT / "site/data/amend.js").read_text(encoding="utf-8"), build.dump_js("PR_AMEND", AMEND))
         self.assertEqual((ROOT / "site/amendments.html").read_text(encoding="utf-8"), build.amendments_html(CORE))

@@ -1688,7 +1688,7 @@
     if (!amendPromise) {
       amendPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/amend.js?v=3";
+        tag.src = "data/amend.js?v=4";
         tag.onload = () => (window.PR_AMEND ? resolve(window.PR_AMEND) : reject(new Error("amendments did not load")));
         tag.onerror = () => { amendPromise = null; reject(new Error("amendments could not be fetched")); };
         document.head.appendChild(tag);
@@ -1764,7 +1764,7 @@
           el("span", { class: "am-key-cite" }, amCite(A, h.side, h.c)))))),
       el("section", { class: "block", "aria-labelledby": "h-am-react" },
         el("h2", { id: "h-am-react" }, "Reactions to the substitute"),
-        el("p", { class: "facts" }, byStance.map(([label, items], i) => [i ? " · " : null, items.length + " " + label.toLowerCase()]), ". Statements made on or after " + S.formatDate(sub.date) + ". ",
+        el("p", { class: "facts" }, byStance.map(([label, items], i) => [i ? " · " : null, items.length + " " + label.toLowerCase()]), " · since " + S.formatDate(sub.date).replace(/, \d{4}$/, "") + " · ",
           el("a", { href: "#/positions" }, "Positions on the bill as introduced")),
         el("div", { class: "rows am-stances" }, byStance.map(([label, items]) => el("details", { class: "section-fold am-stance" },
           el("summary", null, el("h3", null, label), el("span", { class: "row-count" }, items.length)),
@@ -1934,7 +1934,7 @@
           hunks.length ? [redline, more] : null,
           r.text ? wholeRedline(r.text, A["new"].pdf, "ins") : null,
           r.old_text ? wholeRedline(r.old_text, D.meta.pdf, "del") : null,
-          !hunks.length && !r.text && !r.old_text ? el("p", null, "The text is unchanged apart from the heading or number above.") : null),
+          !hunks.length && !r.text && !r.old_text ? el("p", null, "Only the heading or number changed.") : null),
         stepDock(sectionArrows(prev && "#/amendments/sec/" + prev.id, next && "#/amendments/sec/" + next.id, "changed section"),
           hunks.length > 1 ? hunkArrows(() => { if (more && more.isConnected) more.click(); }) : null),
         el("nav", { class: "pager", "aria-label": "Neighboring changes" },
