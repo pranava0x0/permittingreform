@@ -58,7 +58,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           }
           // Sibling links share a row that fits on phones, with 44px targets (43.5 allows subpixel rounding), one current page.
           const sub = await page.evaluate(() => { const n = document.querySelector('.subtabs'); if (!n || n.hidden) return null;
-            const a = [...n.querySelectorAll('a')], r = a.map(x => x.getBoundingClientRect());
+            const a = [...n.querySelectorAll('a:not(.tab-menu a)')], r = a.map(x => x.getBoundingClientRect());
             return { clip: n.scrollWidth > n.clientWidth + 1, rows: new Set(r.map(b => Math.round(b.top))).size,
               short: r.filter(b => b.height < 43.5).length, current: a.filter(x => x.hasAttribute('aria-current')).length }; });
           if (sub) assert.deepEqual(sub, {clip:false,rows:1,short:0,current:1}, route+' subtabs at '+width);
@@ -87,19 +87,18 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.equal(await page.locator('.media-item').count(),0);
       await page.locator('#media-filter').fill('');
       assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>Math.min(12,PR_DATA.media.length)));
-      // Secondary filters sit closed behind one control; setting one keeps it open and counts it (DESIGN.md, 2026-10-21).
-      assert.equal(await page.locator('.more-filters').evaluate(d=>d.open), false);
-      assert.equal(await page.locator('.more-filters > summary').innerText(), 'More filters');
-      await page.locator('.more-filters > summary').click();
+      // Source-type chips sit in the pinned bar; position and topic sit behind one Filters toggle, which counts what is set (DESIGN.md, 2026-10-21).
+      assert.equal(await page.locator('.filter-panel').isHidden(), true);
+      assert.equal(await page.locator('.filter-toggle').innerText(), 'Filters');
       await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').nth(1).click();
       assert.ok(await page.locator('.media-item').count() < await page.evaluate(()=>PR_DATA.media.length));
-      assert.equal(await page.locator('.more-filters > summary').innerText(), 'More filters (1 on)');
-      await page.goto(base+'#/media');
       await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').first().click();
-      assert.ok(await page.locator('.more-filters').evaluate(d=>d.open), 'More filters stays open once opened');
+      await page.locator('.filter-toggle').click();
+      assert.equal(await page.locator('.filter-panel').isVisible(), true);
       await page.getByRole('group',{name:'Topic',exact:true}).getByRole('button',{name:/^Data centers/}).click();
       await page.getByRole('group',{name:'Position',exact:true}).getByRole('button',{name:'Mixed',exact:true}).click();
       assert.equal(await page.locator('.media-item').count(), await page.evaluate(()=>Math.min(12,PR_DATA.media.filter(x=>x.stance==='mixed'&&x.topics.includes('data-centers')).length)));
+      assert.equal(await page.locator('.filter-toggle').innerText(), 'Filters (2)');
       await page.getByRole('group',{name:'Topic',exact:true}).getByRole('button',{name:'All topics'}).click();
       await page.getByRole('group',{name:'Position',exact:true}).getByRole('button',{name:'All positions'}).click();
       await page.goto(base+'#/media');
@@ -300,6 +299,33 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
     // focus on a sibling link after activation. Old deep links select the same group.
     const nav = await browser.newPage({viewport:{width:320,height:812},hasTouch:true});
     await nav.goto(base);
+    // Hover menus open on hover, close when the mouse leaves, and a click on a menu link does not leave them pinned open by focus.
+    {
+      const desk = await browser.newPage({viewport:{width:1280,height:800}});
+      await desk.goto(base);
+      const group = desk.locator('.tabs .tab-group').first();
+      await group.hover();
+      assert.ok(await group.locator('.tab-menu').isVisible(), 'menu opens on hover');
+      await desk.mouse.move(5, desk.viewportSize().height - 5);
+      assert.ok(await group.locator('.tab-menu').isHidden(), 'menu closes when the mouse leaves');
+      await group.hover();
+      await group.locator('.tab-menu a').nth(1).click();
+      await desk.mouse.move(5, desk.viewportSize().height - 5);
+      assert.ok(await group.locator('.tab-menu').isHidden(), 'menu closes after a click and mouse-out');
+      await group.locator('a').first().focus();
+      assert.ok(await group.locator('.tab-menu').isVisible(), 'menu opens on keyboard focus');
+      await desk.keyboard.press('Escape');
+      assert.ok(await group.locator('.tab-menu').isHidden(), 'Escape closes the menu');
+      // The same for a page in the sub-page row.
+      await desk.goto(base + '#/compare');
+      const sub = desk.locator('.subtabs .tab-group').first();
+      await sub.hover();
+      assert.ok(await sub.locator('.tab-menu').isVisible(), 'sub-page menu opens on hover');
+      await sub.locator('.tab-menu a').first().click();
+      await desk.mouse.move(5, desk.viewportSize().height - 5);
+      assert.ok(await desk.locator('.subtabs .tab-menu:visible').count() === 0, 'sub-page menu closes after a click and mouse-out');
+      await desk.close();
+    }
     for (const [label, pages] of [
       ['Bill',['Sections','Amendments','Compare bills']],
       ['Key issues',['Topics','Debate','People and groups']]]) {

@@ -613,7 +613,8 @@
       }
     }).catch((err) => fill(textHost, failure(err)));
 
-    return [searchBox(query || ""), el("div", { class: "bill-layout" }, outline(n), article)];
+    return [searchBox(query || ""), el("div", { class: "bill-layout" }, outline(n), article),
+      stepDock(sectionArrows(prev && secHref(prev.n), next && secHref(next.n), "section"))];
   }
 
   function renderSearch(raw) {
@@ -994,7 +995,8 @@
   let tlBranch = "all";
   let tlMilestones = false;
   let tlTopic = "all";
-  let tlLimit = 12;
+  const TL_PAGE = 12;
+  let tlLimit = TL_PAGE;
   let tlRefocus = null; /* the control to focus after the milestone line re-renders */
 
   function branchLabel(key) {
@@ -1052,16 +1054,16 @@
       (tlTopic === "all" || (e.topics || []).indexOf(tlTopic) >= 0));
     const list = month ? matching.filter((e) => monthKey(e) === month) : matching;
     /* A linked event past the current batch widens this render's batch to reach it, so the link always opens its event.
-       tlLimit itself stays put, so leaving the link for the full list starts again at 12. */
+       tlLimit itself stays put, so leaving the link for the full list starts again at one page. */
     const at = picked ? list.findIndex((e) => e.id === picked) : -1;
-    const limit = at >= tlLimit ? Math.ceil((at + 1) / 12) * 12 : tlLimit;
+    const limit = at >= tlLimit ? Math.ceil((at + 1) / TL_PAGE) * TL_PAGE : tlLimit;
     const filters = el("div", { class: "filters", role: "group", "aria-label": "Branch" },
       BRANCHES.filter((b) => b[0] === "all" || counts[b[0]]).map((b) =>
-        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = 12; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
+        chip(b[1], tlBranch === b[0], () => { tlBranch = b[0]; tlLimit = TL_PAGE; route(); }, b[0] === "all" ? all.length : counts[b[0]])));
     const topicCounts = {};
     all.forEach((e) => (e.topics || []).forEach((t) => { topicCounts[t] = (topicCounts[t] || 0) + 1; }));
     const topicSelect = el("select", { class: "chip chip-select", "aria-label": "Topic", onchange: (ev) => {
-      tlTopic = ev.currentTarget.value; tlLimit = 12; route();
+      tlTopic = ev.currentTarget.value; tlLimit = TL_PAGE; route();
       const again = view.querySelector(".chip-select");
       if (again) again.focus({ preventScroll: true });
     } },
@@ -1070,7 +1072,7 @@
         el("option", { value: t, selected: tlTopic === t }, D.topics[t] + " (" + topicCounts[t] + ")")));
     const more = el("div", { class: "filters", role: "group", "aria-label": "Topic and detail" },
       topicSelect,
-      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = 12; route(); }, all.filter((e) => e.milestone).length),
+      chip("Milestones", tlMilestones, () => { tlMilestones = !tlMilestones; tlLimit = TL_PAGE; route(); }, all.filter((e) => e.milestone).length),
       briefChip());
     const out = [];
     let year = null;
@@ -1103,10 +1105,10 @@
     return [
       el("div", { class: "lede" }, el("h1", null, "Timeline")),
       timelineLine(month, picked, status),
-      filters, moreFilters((tlTopic !== "all") + tlMilestones + !brief, more),
+      el("div", { class: "filter-bar" }, filters), moreFilters((tlTopic !== "all") + tlMilestones + !brief, more),
       list.length ? el("div", { class: "timeline" + (brief ? " brief" : "") }, out) : el("p", { class: "empty" }, "No events match."),
       list.length > limit ? el("button", { type: "button", class: "chip show-rest", onclick: () => {
-        const next = list[limit].id; tlLimit = limit + 12; route();
+        const next = list[limit].id; tlLimit = limit + TL_PAGE; route();
         const node = document.getElementById("ev-" + next); node.tabIndex = -1; node.focus();
       } }, "Show " + Math.min(12, list.length - limit) + " more events") : null];
   }
@@ -1299,6 +1301,7 @@
   let mediaVisual = false;
   let mediaText = "";
   const MEDIA_PAGE = 12;
+  let mediaMore = false;
   let mediaLimit = MEDIA_PAGE;
 
   function mediaGroup(type) {
@@ -1323,17 +1326,29 @@
       const g = MEDIA_TYPES.find((t) => t[0] === mediaGroup(it.type));
       return el("li", { class: "media-item" },
         el("h2", null, ext(it.url, it.title)),
-        el("p", { class: "feed-meta" }, it.outlet + (it.author ? " · " + it.author : "") + " · " + S.formatDate(it.date) + " · " + g[1]),
-        it.summary ? el("p", { class: "lead" }, it.summary) : null,
-        el("p", { class: "media-tags" }, stanceTag(it.stance), topicTags(it.topics),
-          it.lk ? el("span", { class: "unchecked" }, LINK_NOTE[it.lk]) : null,
-          (it.summary || "").length > 180 || (it.quote && it.quote.text) || (it.visuals && it.visuals.length) ? moreButton() : null),
+        /* One meta line: source, date, type, position, and More when there is more to show. */
+        el("p", { class: "feed-meta media-meta" }, it.outlet + " · " + shortDate(it.date) + ", " + it.date.slice(0, 4) + " · " + g[1],
+          it.stance && STANCE[it.stance] ? [" · ", stanceTag(it.stance)] : null,
+          it.lk ? [" · ", el("span", { class: "unchecked" }, LINK_NOTE[it.lk])] : null,
+          moreButton()),
+        /* The summary and the source's own words read as one block; the quote is marked by its quotation marks and speaker. */
+        it.summary || (it.quote && it.quote.text) ? el("p", { class: "lead" }, it.summary || null,
+          it.quote && it.quote.text ? [it.summary ? " " : null, el("q", { class: "inline-quote" }, it.quote.text), it.quote.speaker ? " (" + it.quote.speaker + ")" : null] : null) : null,
         it.visuals && it.visuals.length ? el("ul", { class: "visuals" }, it.visuals.map((v) => el("li", null,
           el("strong", null, "Cheat sheet: " + v.title + ". "), v.text + " ", ext(v.url, "View image")))) : null,
-        it.quote && it.quote.text ? el("figure", { class: "quote small" },
-          el("blockquote", null, it.quote.text),
-          it.quote.speaker ? el("figcaption", null, it.quote.speaker) : null) : null);
+        null);
     }));
+  }
+
+  /* A More that would reveal nothing is hidden once the list is laid out, and measured again when the width changes (Codex, PR 17). */
+  function pruneMore(host) {
+    host.querySelectorAll(".media-item:not(.open), .person:not(.open), .event:not(.open)").forEach((li) => {
+      const b = li.querySelector(":scope > * .more-toggle, :scope > .more-toggle");
+      if (!b) return;
+      const lead = li.querySelector(":scope > .lead");
+      const hidden = li.querySelector(":scope > .visuals, :scope > .quote, :scope > .actions, :scope > .social, :scope > .sources");
+      b.hidden = !hidden && (!lead || lead.scrollHeight <= lead.clientHeight + 1);
+    });
   }
 
   function renderMedia() {
@@ -1349,6 +1364,7 @@
           const next = mediaLimit; mediaLimit += MEDIA_PAGE; refresh();
           const node = listHost.querySelectorAll(".media-item")[next]; node.tabIndex = -1; node.focus();
         } }, "Show " + Math.min(MEDIA_PAGE, rest) + " more items") : null);
+      pruneMore(listHost);
       countHost.textContent = "Showing " + Math.min(mediaLimit, list.length) + " of " + list.length + " matching items (" + D.media.length + " total)";
     };
     const visualCount = D.media.filter((it) => it.visuals && it.visuals.length).length;
@@ -1372,9 +1388,14 @@
       Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
         chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; mediaLimit = MEDIA_PAGE; route(); }, topicCounts[t])));
     refresh();
-    const active = (mediaType !== "all") + mediaVisual + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
-    return [el("div", { class: "lede" }, el("h1", null, "Coverage"), countHost), wordFilter,
-      moreFilters(active, [typeChips, stanceChips, topicChips]), listHost];
+    const active = mediaVisual + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
+    /* Search, a Filters toggle and the source-type chips stay pinned while the list scrolls. */
+    const panel = el("div", { class: "filter-panel", hidden: !(mediaMore || active) }, stanceChips, topicChips);
+    const toggle = el("button", { type: "button", class: "chip filter-toggle", "aria-expanded": panel.hidden ? "false" : "true", onclick: (ev) => {
+      panel.hidden = !panel.hidden; mediaMore = !panel.hidden; ev.currentTarget.setAttribute("aria-expanded", panel.hidden ? "false" : "true");
+    } }, active ? "Filters (" + active + ")" : "Filters");
+    return [el("div", { class: "lede" }, el("h1", null, "Coverage"), countHost),
+      el("div", { class: "filter-bar" }, el("div", { class: "filter-line" }, wordFilter, toggle), typeChips, panel), listHost];
   }
 
   /* ---------- positions ---------- */
@@ -1598,54 +1619,42 @@
     const ck = D.checks || {};
     const billTotal = ck.quotes ? ck.quotes.bill_total : m.quotes;
     const billVerified = ck.quotes ? ck.quotes.bill_verified : m.quotes;
-    const rows = [["Bill quotes", billVerified + " of " + billTotal + " match the PDF text word for word."]];
-    if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " carry a passage from the bill, matched the same way."]);
-    if (ck.cites) rows.push(["Cites for claims", ck.cites.summary.cited + " of " + ck.cites.summary.total + " summary sentences and " + ck.cites.rows.cited + " of " + ck.cites.rows.total +
-      " sentences in headlines, comparison cells and the Communities and Data centers rows carry a bill passage, found word for word in a section the claim cites." +
-      (ck.cites.summary.absent + ck.cites.rows.absent ? " " + (ck.cites.summary.absent + ck.cites.rows.absent) + " more say the text is silent on a point, which the summary review confirmed; they have no passage to cite." : "") +
-      " A claim without a passage, or one the summary review flagged, stops the build."]);
-    if (ck.takes) rows.push(["Outside readings", ck.takes.total + " readings of specific sections from industry, advocates, lawyers and analysts. Their quotes go through the web-quote check below, and a reading that argues over particular words names that passage. They are the sources' claims about effects, not verified findings."]);
+    const rows = [["Bill quotes", billVerified + " of " + billTotal + " match the PDF word for word."]];
+    if (ck.points) rows.push(["Key points", ck.points.cited + " of " + ck.points.total + " cite a passage from the bill."]);
+    if (ck.cites) rows.push(["Claim cites", ck.cites.summary.cited + " of " + ck.cites.summary.total + " summary sentences and " + ck.cites.rows.cited + " of " + ck.cites.rows.total +
+      " other claims cite a passage from the section they describe. The build stops on a claim without one."]);
+    if (D.amend_index) rows.push(["Amendment notes", "Each change note cites a passage found word for word in the September or November text."]);
+    if (ck.takes) rows.push(["Outside readings", ck.takes.total + " readings of specific sections, quoted from their sources. They are the sources' claims, not checked findings."]);
     if (ck.inference) {
       const i = ck.inference;
-      rows.push(["Summary review", i.stale ? "The saved review predates changes to its inputs. Re-check pending." :
-        i.supported + " of " + i.total + " statements have a saved supported verdict; " + i.flagged + " remain flagged and " + (i.unchecked || 0) + " are unchecked. " +
-        (i.cached_only ? "Saved results were reconciled with the current wording; the fresh Sonnet review is unfinished. " : "") +
-        "This check covers section summaries, key points, overview headlines, the comparison tables' BAAJA cells and their SPEED Act and EPRA 2024 cells, and the Communities and Data centers rows. It does not verify every sentence on the site or establish legal accuracy."]);
+      rows.push(["Summary review", i.stale ? "Out of date: wording changed after the last review, and a rerun is pending." :
+        "A Sonnet model checked " + i.total + " statements against the bill text: " + i.supported + " supported, " + i.flagged + " flagged, " + (i.unchecked || 0) + " unchecked. It does not establish legal accuracy."]);
     }
-
     if (ck.quotes) {
       const q = ck.quotes;
-      const parts = [q.verified + " of " + q.total + " found on the cited page by script."];
-      if (q.browser) parts.push(q.browser + " more read on the page in a browser, where the site refuses scripts.");
-      if (q.near) parts.push(q.near + " found with small differences in wording.");
-      if (q.unreachable) parts.push(q.unreachable + " on pages that could not be opened.");
-      if (q.unverifiable) parts.push(q.unverifiable + " from video, where only the title can be read.");
-      parts.push("Checked " + S.formatDate(q.checked) + ".");
-      rows.push(["Quotes from the web", parts.join(" ")]);
+      rows.push(["Web quotes", q.verified + " of " + q.total + " found on the cited page by script" + (q.browser ? ", " + q.browser + " more in a browser" : "") +
+        (q.unreachable ? ", " + q.unreachable + " on pages that would not open" : "") + (q.near ? ", " + q.near + " with small differences" : "") + ". Checked " + S.formatDate(q.checked) + "."]);
     }
     if (ck.links) {
       const l = ck.links;
-      const parts = [l.ok + " of " + l.total + " answered a script."];
-      if (l.blocked) parts.push(l.blocked + " refuse scripts" + (l.browser ? "; " + l.browser + " of those opened in a browser." : "."));
-      if (l.error) parts.push(l.error + " gave no answer.");
-      parts.push(l.dead + " dead. Checked " + S.formatDate(l.checked) + ".");
-      rows.push(["Links", parts.join(" ")]);
+      rows.push(["Links", l.ok + " of " + l.total + " answered" + (l.blocked ? ", " + l.blocked + " refuse scripts" : "") + (l.error ? ", " + l.error + " gave no answer" : "") +
+        ", " + l.dead + " dead. Checked " + S.formatDate(l.checked) + "."]);
     }
     return [
       el("div", { class: "lede" }, el("h1", null, "Method"), el("p", { class: "facts" }, "Data as of " + S.formatDate(m.as_of))),
       el("section", { class: "block prose" },
         el("h2", null, "Bill text"),
-        el("p", null, "Draft " + m.draft_id + ", " + m.pages + " pages, posted by Senate EPW on " + S.formatDate(m.released) + ": ",
-          ext(m.source_pdf, "EPW copy"), ", ", ext(m.mirror_pdfs[0], "Energy Committee copy"), "."),
-        el("p", null, "A cite such as 44:6 is page 44, line 6 of that PDF. A word split across printed lines is indexed on the line where it begins; the final word of a cited passage may continue onto the next line. Citations use the September 30 draft of S. 5653. Page numbers may change in a later version.")),
+        el("p", null, "Draft " + m.draft_id + ", " + m.pages + " pages, posted " + S.formatDate(m.released) + ": ",
+          ext(m.source_pdf, "EPW copy"), ", ", ext(m.mirror_pdfs[0], "Energy Committee copy"), ". A cite such as 44:6 means page 44, line 6 of that PDF."),
+        D.amend_index ? el("p", null, "The " + S.formatDate(D.amend_index.date) + " substitute (" + D.amend_index.pages + " pages) is compared section by section on ", el("a", { href: "#/amendments" }, "Amendments"), ".") : null),
       el("section", { class: "block prose" },
-        el("h2", null, "Summaries"),
-        el("p", null, "Drafted with Claude and reviewed with AI assistance against the bill and from the two earlier bills: ",
-          m.prior_bills.map((b, i) => [i ? "; " : "", ext(b.url, b.label)]), ". A green rule marks AI-written text. It is not legal advice.")),
+        el("h2", null, "How it was built"),
+        el("p", null, "Two coding-agent systems built this site. Claude Code (Anthropic) wrote the parsers, build and pages, drafted the summaries and ran the research agents on Claude Opus, Sonnet, Haiku and Fable models. Codex (OpenAI) reviewed each pull request on GitHub. The site's author directed the work and decided what shipped."),
+        el("p", null, "Text under a green rule is AI-written and checked against the bill as described below. It is not legal advice.")),
       el("section", { class: "block prose" },
-        el("h2", null, "Timeline, people, media"),
-        el("p", null, "Coverage updated through " + S.formatDate(m.as_of) + ". A person's or group's position is taken from its own statements."),
-        el("p", null, "Reddit could not be searched by script or by browser; it has no entries.")),
+        el("h2", null, "Research"),
+        el("p", null, "Coverage runs through " + S.formatDate(m.as_of) + ". A position comes from the person's or group's own statement. Reddit refuses scripts and browsers, so it has no entries. Earlier bills compared: ",
+          m.prior_bills.map((b, i) => [i ? "; " : "", ext(b.url, b.label)]), ".")),
       el("section", { class: "block" },
         el("h2", null, "Checks"),
         el("dl", { class: "versus" }, rows.map((r) => [el("dt", null, r[0]), el("dd", null, r[1])]))),
@@ -1851,10 +1860,25 @@
       landed = window.scrollY;
       counter.textContent = "Edit " + (at + 1) + " of " + list.length;
     };
-    return el("div", { class: "hunk-arrows", role: "group", "aria-label": "Step through edits" },
-      counter,
+    return el("div", { class: "step-row", role: "group", "aria-label": "Step through edits" },
+      el("span", { class: "step-label" }, "Edit"), counter,
       el("button", { type: "button", "aria-label": "Previous edit", onclick: () => go(-1) }, "▲"),
       el("button", { type: "button", "aria-label": "Next edit", onclick: () => go(1) }, "▼"));
+  }
+
+  /* Previous and next section, as arrows; an end of the list shows a dimmed arrow. */
+  function sectionArrows(prevHref, nextHref, what) {
+    const arrow = (href, label, glyph) => href
+      ? el("a", { href: href, "aria-label": label + " " + what }, glyph)
+      : el("span", { class: "step-off", "aria-hidden": "true" }, glyph);
+    return el("div", { class: "step-row", role: "group", "aria-label": "Step through " + what + "s" },
+      el("span", { class: "step-label" }, "Section"),
+      arrow(prevHref, "Previous", "▲"), arrow(nextHref, "Next", "▼"));
+  }
+
+  /* The floating dock that holds the step arrows, bottom right. */
+  function stepDock(...rows) {
+    return el("nav", { class: "step-dock", "aria-label": "Step through the page" }, rows);
   }
   function renderAmendSection(id) {
     const A = window.PR_AMEND;
@@ -1911,7 +1935,8 @@
           r.text ? wholeRedline(r.text, A["new"].pdf, "ins") : null,
           r.old_text ? wholeRedline(r.old_text, D.meta.pdf, "del") : null,
           !hunks.length && !r.text && !r.old_text ? el("p", null, "The text is unchanged apart from the heading or number above.") : null),
-        hunks.length > 1 ? hunkArrows(() => { if (more && more.isConnected) more.click(); }) : null,
+        stepDock(sectionArrows(prev && "#/amendments/sec/" + prev.id, next && "#/amendments/sec/" + next.id, "changed section"),
+          hunks.length > 1 ? hunkArrows(() => { if (more && more.isConnected) more.click(); }) : null),
         el("nav", { class: "pager", "aria-label": "Neighboring changes" },
           prev ? el("a", { href: "#/amendments/sec/" + prev.id, rel: "prev" }, "Previous: Sec. " + prev.n + ". " + prev.h) : el("span"),
           next ? el("a", { href: "#/amendments/sec/" + next.id, rel: "next" }, "Next: Sec. " + next.n + ". " + next.h) : el("span"))))];
@@ -1949,6 +1974,21 @@
         el("h2", null, el("a", {href:"#/" + key}, label)), el("p", null, question))),
       el("p", null, el("a", {href:"issues.html"}, "Read the provisions and cited debate on one page"))];
   }
+  /* On desktop, a page in the row lists what is inside it on hover or keyboard focus. */
+  const SUBMENUS = {
+    bill: () => structureGroups(D.sections).map((g) => [secHref(g.sections[0].n), titleCase(g.div).replace("Division ", "Div. ") + ", " + titleCase(g.ti) + ": " + titleCase(g.tih)]),
+    amendments: () => [["#/amendments", "Key changes"], ["#/amendments/reactions", "Reactions to the substitute"]],
+    compare: () => D.compare.groups.map((g) => ["#/compare/" + g.id, g.label]).concat(D.compare.bills ? [["#/compare/" + D.compare.bills.id, D.compare.bills.label]] : []),
+    issues: () => guidesByPage.map(([key, label]) => ["#/" + key, label]),
+  };
+  /* A hover menu closes once the mouse leaves: a click on one of its links drops the focus that would hold it open, and Escape closes it. */
+  document.addEventListener("click", (ev) => {
+    const link = ev.target.closest && ev.target.closest(".tab-menu a");
+    if (link) link.blur();
+  });
+  document.addEventListener("keydown", (ev) => {
+    if (ev.key === "Escape" && document.activeElement && document.activeElement.closest(".tab-group")) document.activeElement.blur();
+  });
   const sectionNav = document.getElementById("section-nav");
   // Ordinary links work without JavaScript; enhance them with the interactive routes.
   document.querySelectorAll(".tabs [data-tab]").forEach(a => { a.href = "#/" + a.dataset.tab; });
@@ -1973,7 +2013,11 @@
     if (sectionNav.dataset.group !== group) {
       sectionNav.dataset.group = group;
       sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
-      fill(sectionNav, GROUPS[group].map(([key, name]) => el("a", { href: "#/" + key }, name)));
+      fill(sectionNav, GROUPS[group].map(([key, name]) => {
+        const link = el("a", { href: "#/" + key }, name);
+        const items = SUBMENUS[key] ? SUBMENUS[key]() : [];
+        return items.length ? el("span", { class: "tab-group" }, link, el("span", { class: "tab-menu" }, items.map(([href, label]) => el("a", { href: href }, label)))) : link;
+      }));
     }
     // Measure once the row is filled, or the pinned height misses it until the next resize (Codex, PR 16).
     if (wasHidden) pinMasthead();
@@ -2032,6 +2076,7 @@
     else nodes = renderOverview();
     fill(view, nodes);
     view.className = "view view-" + tab;
+    pruneMore(view);
     if (tab === "bill" && parts[1] === "sec") jumpRow(view.querySelector(".sec-links") || view.querySelector(".sec-meta"));
     else if (tab === "people" || tab === "positions" || tab === "timeline" || tab === "communities" || (tab === "amendments" && parts[1] !== "sec")) jumpRow(view.querySelector(".lede"));
     if (tab === "timeline") {
@@ -2072,7 +2117,12 @@
   PHONE.addEventListener("change", () => {
     route();
   });
-  window.addEventListener("resize", pinMasthead);
+  let resizeFrame = 0;
+  window.addEventListener("resize", () => {
+    pinMasthead();
+    clearTimeout(resizeFrame);
+    resizeFrame = setTimeout(() => pruneMore(view), 120);
+  });
   pinMasthead();
   document.querySelectorAll(".tabs a").forEach((a) => a.addEventListener("click", () => {
     if (a.getAttribute("href") === location.hash) window.scrollTo(0, 0);

@@ -1,9 +1,11 @@
 {
  "1101": {
-  "Adds a statement that NEPA prescribes a procedure for considering and informing the public about the reasonably foreseeable environmental effects of major federal actions, producing an informational document, and a savings clause that NEPA mandates no particular outcome.": "Federal agencies shall consider and inform the public about the reasonably foreseeable environmental effects of major Federal actions on the human environment",
   "Codifies NEPA as a procedural statute whose product is an informational document": "the result of which shall be an informational document for the purposes of consideration in Federal decisionmaking",
   "New savings provision: nothing in NEPA mandates a particular outcome": "Nothing in this Act mandates a particular outcome as a result of the use of the procedure described in subsection (b)",
-  "Rewrites NEPA's opening section.": "Section 2 of the National Environmental Policy Act of 1969 (42 U.S.C. 4321) is amended"
+  "Rewrites NEPA's opening section.": "Section 2 of the National Environmental Policy Act of 1969 (42 U.S.C. 4321) is amended",
+  "Adds a statement that NEPA prescribes a procedure for considering and informing the public about the reasonably foreseeable environmental effects of major federal actions.": "Federal agencies shall consider and inform the public about the reasonably foreseeable environmental effects of major Federal actions on the human environment",
+  "Under that statement, the procedure produces an informational document.": "the result of which shall be an informational document for the purposes of consideration in Federal decisionmaking",
+  "Also adds a savings clause that NEPA mandates no particular outcome.": "Nothing in this Act mandates a particular outcome as a result of the use of the procedure described in subsection (b)."
  },
  "1102": {
   "A project whose only federal involvement is a loan or loan guarantee is out.": "for which the only Federal involvement is a loan guarantee or loan",
@@ -16,7 +18,9 @@
   "New terms include agency chief environmental review and permitting officers, eNEPA technologies, key permitting agencies, a 20-page record of stakeholder engagement, record of decision, and statement of purpose and need.": "AGENCY CERPO.—The term ‘agency CERPO’ means the chief environmental review and permitting officer of each key permitting agency",
   "So are routine administrative actions under $10 million, and repair or replacement of lifeline infrastructure that adds no more than 20 percent capacity.": "subject to the condition that the cost of the action does not exceed $10,000,000",
   "The bill lists 14 kinds of action that are not major federal actions and so fall outside NEPA.": "EXCLUSIONS.—The term ‘major Federal action’ does not include—",
-  "The list also excludes geothermal observation test projects, transmission upgrades under new Federal Power Act section 216A(b), covered Natural Gas Act pipeline work, actions another agency already evaluated, and Army Corps continuing-authority or environmental-infrastructure projects with a federal share of $50 million or less.": "any proposed agency action associated with a geothermal observation test project"
+  "The list also excludes geothermal observation test projects.": "any proposed agency action associated with a geothermal observation test project",
+  "Transmission upgrades under new Federal Power Act section 216A(b) and covered Natural Gas Act pipeline work are excluded too.": "transmission activities described in section 216A(b) of the Federal Power Act; “(xii) notwithstanding any other provision of law, any proposed agency action associated with a covered activity",
+  "Actions another agency already evaluated are excluded, as are Army Corps continuing-authority or environmental-infrastructure projects with a federal share of $50 million or less.": "previously evaluated by another agency in compliance with this Act; or “(xiv) any proposed agency action associated with a project— “(I) carried out under—"
  },
  "1103": {
   "180-day deadline for agencies to conform their NEPA procedures": "Not later than 180 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026",
@@ -29,13 +33,15 @@
  },
  "1105": {
   "A project sponsor can ask the lead agency to stop an environmental assessment and go straight to an environmental impact statement.": "the lead agency shall discontinue the preparation of the environmental assessment and proceed to the preparation of an environmental impact statement",
-  "An agency may apply one or a combination of categorical exclusions (but may not stack the same size-based exclusion repeatedly), may rely on a categorical exclusion Congress created, and may treat a state or tribal environmental review, or compliance with another federal law, as serving NEPA's function.": "excluding multiple applications of the same or similar categorical exclusions that are based on size, acreage, or dollar amount thresholds",
   "Combination of multiple categorical exclusions allowed": "1 or a combination of multiple categorical exclusions",
   "Expands when an agency can skip an environmental document.": "“(6) the agency determines the proposed agency action is an action for which compliance by the agency with the requirements of another Federal law",
   "If the lead agency decides no environmental document is needed, no other agency may prepare one.": "no agency shall prepare an environmental document with respect to the proposed agency action",
   "Lead agency threshold determination binds all other agencies": "no agency shall prepare an environmental document with respect to the proposed agency action",
   "Sponsor can demand an EIS instead of an EA": "the lead agency shall discontinue the preparation of the environmental assessment and proceed to the preparation of an environmental impact statement",
-  "State or tribal review that serves a similar function can substitute for federal review": "the lead agency determines that the review serves a similar function as Federal agency compliance with this Act"
+  "State or tribal review that serves a similar function can substitute for federal review": "the lead agency determines that the review serves a similar function as Federal agency compliance with this Act",
+  "An agency may apply one or a combination of categorical exclusions, but may not stack the same size-based exclusion repeatedly.": "1 or a combination of multiple categorical exclusions (excluding multiple applications of the same or similar categorical exclusions that are based on size, acreage, or dollar amount thresholds) of the agency”; and (ii)",
+  "A categorical exclusion Congress created is also available to the agency.": "inserting “a categorical exclusion established by Congress,” after “section 109 of this Act,”; (B) in paragraph (3)",
+  "The agency may treat a state or tribal environmental review, or compliance with another federal law, as serving NEPA's function.": "has been reviewed pursuant to a State environmental review statute or a Tribal environmental review statute, ordinance, resolution, regulation, or formally adopted policy and the lead agency determines that the review serves a similar function"
  },
  "1106": {
   "A record of decision follows a final EIS within 45 days.": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, the lead agency shall issue a record of decision",
@@ -69,13 +75,15 @@
   "CEQ keeps a public register on its website.": "The Council shall maintain, on the website of the Council, an accurate and publicly available record",
   "Government-wide public register of categorical exclusions at CEQ": "The Council shall maintain, on the website of the Council, an accurate and publicly available record",
   "Requires every agency to report all its categorical exclusions to CEQ within 30 days and each new one within 7 days;": "Not later than 30 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026, each Federal agency shall submit to the Council a notification",
-  "Streamlined adoption of other agencies' exclusions": "A Federal agency may adopt a categorical exclusion of another Federal agency listed in the record required under subsection (b)"
+  "Agencies may adopt other agencies' listed exclusions": "A Federal agency may adopt a categorical exclusion of another Federal agency listed in the record required under subsection (b)"
  },
  "1109": {
   "60 days to declare an application complete; 60 more to pick the level of review": "not later than 60 days after the date on which the Federal agency makes that determination",
   "Applicants file a record of stakeholder engagement with the application": "a record of stakeholder engagement for the proposed agency action as of the date of the application",
   "Applicants must submit a list of all known permits, a record of stakeholder engagement, and a statement of purpose and need.": "a list of each known Federal, State, Tribal, or local authorization required to complete the proposed agency action",
-  "Sets an application clock: within 60 days an agency must say whether an application is complete, and within another 60 days it must tell the sponsor whether the action is excluded from NEPA, needs an environmental assessment, or gets a notice of intent for an EIS.": "not later than 60 days after the date on which the project sponsor submits the application, the Federal agency shall"
+  "Sets an application clock: within 60 days, an agency must say whether an application is complete.": "not later than 60 days after the date on which the project sponsor submits the application, the Federal agency shall",
+  "Within another 60 days, the agency must tell the sponsor whether the action is excluded from NEPA.": "60 days after the date on which the Federal agency makes that determination, unless a shorter period is provided for by law— “(i) notify the project sponsor that the Federal agency has determined that— “(I) the proposed agency action",
+  "The agency must also say whether the action needs an environmental assessment or gets a notice of intent for an EIS.": "notify the project sponsor that the agency has determined that preparation of an environmental assessment is necessary; or “(iii) issue a notice of intent to prepare an environmental impact statement"
  },
  "1110": {
   "150-day statute of limitations": "is filed not later than 150 days after the date on which",
@@ -107,7 +115,9 @@
   "Government-wide permitting data standards within 60 days": "Not later than 60 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026, the Chairman",
   "Public ePermit portal hosted by GSA, targeted for December 1, 2028": "To the maximum extent practicable, not later than December 1, 2028, the Chairman shall develop and implement the ePermit unified interagency data system",
   "Replaces NEPA section 209 with an eNEPA technology mandate.": "striking section 209 (42 U.S.C. 4347) and inserting the following",
-  "Within 60 days CEQ must publish data standards for permitting data, within 120 days guidance on minimum functional requirements (automated project screening, case management, GIS tools, AI-assisted comment analysis, administrative-record tools), and agencies must begin implementing within 180 days.": "Not later than 60 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026, the Chairman"
+  "Within 60 days, CEQ must publish data standards for permitting data.": "Not later than 60 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026, the Chairman",
+  "CEQ must publish guidance on minimum functional requirements (automated project screening, case management, GIS tools, AI-assisted comment analysis, administrative-record tools) within 120 days.": "Not later than 120 days after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026, the Chairman shall publish guidance for how each Federal agency responsible for environmental reviews or authorizations shall implement",
+  "Agencies must begin implementing within 180 days.": "not later than 180 days after that date of enactment, begin implementing the data standards published and the minimum functional requirements"
  },
  "1131": {
   "A 'transparency project' is any action that needs an EIS, or an environmental assessment still unfinished 13 months past its deadline.": "a proposed agency action requiring the preparation of an environmental assessment that has not been completed by the date that is 13 months after the deadline",
@@ -117,7 +127,9 @@
  "1132": {
   "Each schedule change must say whether the agency or the sponsor caused it": "an explanation of each modification, including whether the modification is due to a delay on the part of an agency or the project sponsor",
   "Public tracker for every EIS project": "an up-to-date list of all transparency projects.",
-  "Requires CEQ, with GSA, to run a public Environmental Review and Permitting Tracker listing every EIS project within 14 days of its notice of intent, with location, purpose and need, sponsor and agency contacts, quarterly schedule-compliance status explaining every slip and who caused it, and litigation status.": "the date that is 14 days after the date on which a notice of intent to prepare an environmental impact statement for that transparency project is published"
+  "Requires CEQ, with GSA, to run a public Environmental Review and Permitting Tracker listing every EIS project within 14 days of its notice of intent.": "the date that is 14 days after the date on which a notice of intent to prepare an environmental impact statement for that transparency project is published",
+  "Quarterly schedule-compliance status, which explains every slip and who caused it, and litigation status are also posted.": "to be updated quarterly, including each modification of the applicable schedule, which shall describe— (i) an explanation of each modification, including whether the modification is due to a delay on the part of an agency or the project sponsor",
+  "Each entry lists the location, purpose and need, and sponsor and agency contacts.": "the statement of purpose and need for the transparency project, consistent with section 107(d) of the National Environmental Policy Act of 1969 (42 U.S.C. 4336a(d)); (C) contact information, including the email address, of"
  },
  "1133": {
   "$20 million a year, FY2027-2033, spent at CEQ's discretion": "shall be available to the Chairman to transfer to a key permitting agency for 1 or more uses",
@@ -125,9 +137,10 @@
   "Creates a Permitting Improvement Fund at Treasury that CEQ can transfer to permitting agencies for detailees, training, project managers, standardized processes, and public engagement.": "to support interagency detailee and rotation opportunities"
  },
  "1201": {
-  "Requires EPA to use notice-and-comment rulemaking when it develops Clean Water Act water quality criteria, and routes challenges to those criteria and to any definition of 'waters of the United States' directly to the federal courts of appeals.": "the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code.",
   "WOTUS definitions reviewed in courts of appeals, not district courts": "in defining the scope of the term ‘waters of the United States’ for purposes of this Act",
-  "Water quality criteria become rulemakings": "the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code."
+  "Water quality criteria become rulemakings": "the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code.",
+  "Requires EPA to use notice-and-comment rulemaking when it develops Clean Water Act water quality criteria.": "the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code.",
+  "Challenges to those criteria and to any definition of 'waters of the United States' go directly to the federal courts of appeals.": "(H) in finalizing any criteria under section 304(a), and (I) in defining the scope of the term ‘waters of the United States’ for purposes of this Act,"
  },
  "1202": {
   "A state may deny only on clear and convincing evidence that no condition could make the project comply, and may impose only conditions that are necessary, least burdensome, and consistent with the federal permit.": "no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements",
@@ -141,20 +154,24 @@
   "One-year cap, extendable only at the applicant's written request and with the certifying authority's written agreement": "may only be extended if— “(i) the extension is requested, in writing, by the applicant; and “(ii) the certifying authority concurs, in writing, with the extension",
   "Rewrites Clean Water Act section 401 state certification.": "Section 401 of the Federal Water Pollution Control Act (33 U.S.C. 1341) is amended by adding at the end",
   "Silence is a waiver.": "the requirement for a certification under subsection (a) shall be waived",
-  "The process gets a prefiling meeting, a defined complete application, a 3-day receipt acknowledgment, a 90-day completeness notice, and a review period of up to 1 year that can be extended only if the applicant asks in writing and the certifying authority agrees in writing.": "a reasonable period of time (not to exceed 1 year from the date of receipt of the certification application) within which a certifying authority shall issue a final action"
+  "The process gets a prefiling meeting, a defined complete application, and a 3-day receipt acknowledgment.": "Not later than 3 days after the date on which an applicant submits to a certifying authority a certification application for an individual Federal license or permit, the certifying authority shall acknowledge receipt of the certification application in writing",
+  "A 90-day completeness notice and a review period of up to 1 year follow.": "Not later than 90 days after the date on which a certifying authority acknowledges receipt of a certification application under clause (iv), the certifying authority shall",
+  "The period can be extended only if the applicant asks in writing and the certifying authority agrees in writing.": "the reasonable period of time established under subparagraph (A) may only be extended if— “(i) the extension is requested, in writing, by the applicant; and “(ii) the certifying authority concurs, in writing, with the extension"
  },
  "1203": {
   "10-year NPDES permits": "by striking “five years” and inserting “10 years”",
   "Extends the maximum term of state-issued NPDES discharge permits from 5 years to 10 years.": "by striking “five years” and inserting “10 years”"
  },
  "1204": {
-  "Extends nationwide permits from 5 to 10 years, lets the Corps modify them mid-term, and requires it to keep nationwide permits 12, 14, 43, 57 and 58 for projects filling under 2 acres, which are deemed a minimal adverse effect.": "any effects of a discharge of dredged or fill material into less than 2 acres of navigable waters to be a minimal adverse environmental effect",
   "Limits EPA's section 404(c) veto to the period between a complete application and permit issuance.": "begins on the date on which an applicant submits a complete application under this section; and “(B) ends on the date on which the Secretary issues the permit",
   "Nationwide permits last 10 years": "by striking “five years” and inserting “10 years”; and",
   "No ESA or NHPA consultation to reissue a nationwide permit that keeps its preconstruction requirements": "Clauses (i) through (iv) of subparagraph (A) shall only apply to a general permit being reissued pursuant to that subparagraph if the general permit does not",
   "No section 404(c) veto before an application or after a permit issues": "ends on the date on which the Secretary issues the permit.",
   "Reissuing a nationwide permit needs no Endangered Species Act consultation, only a programmatic environmental assessment under NEPA, and no National Historic Preservation Act consultation, so long as the permit does not loosen preconstruction requirements.": "no consultation under section 306108 of title 54, United States Code, is required.",
-  "Under 2 acres of fill is a minimal effect by statute": "shall consider any effects of a discharge of dredged or fill material into less than 2 acres of navigable waters to be a minimal adverse environmental effect"
+  "Under 2 acres of fill is a minimal effect by statute": "shall consider any effects of a discharge of dredged or fill material into less than 2 acres of navigable waters to be a minimal adverse environmental effect",
+  "Extends nationwide permits from 5 to 10 years and lets the Corps modify them mid-term.": "by striking “five years” and inserting “10 years”; and (C) by adding at the end the following: “(B) TIMING OF MODIFICATION.—The Secretary may modify a general permit",
+  "Requires the Corps to keep nationwide permits 12, 14, 43, 57 and 58 for projects filling under 2 acres.": "authorized under Nationwide Permit 12, Nationwide Permit 14, Nationwide Permit 43, Nationwide Permit 57, or Nationwide Permit 58",
+  "Filling under 2 acres of navigable waters counts as a minimal adverse effect.": "shall consider any effects of a discharge of dredged or fill material into less than 2 acres of navigable waters to be a minimal adverse environmental effect"
  },
  "1205": {
   "150-day limit on 404 permit suits": "shall be filed not later than the date that is 150 days after the date on which the permit was issued",
@@ -205,11 +222,12 @@
  "1308": {
   "$50 million a year to coastal states through NFWF": "$50,000,000 for each of fiscal years 2028 through 2032.",
   "Authorizes $50 million a year for fiscal years 2028 through 2032.": "$50,000,000 for each of fiscal years 2028 through 2032.",
-  "Creates a National Fish and Wildlife Foundation Coastal State Fund granting money to coastal states for coastal resource and natural infrastructure programs, allocated 70 percent equally, 15 percent by tidal shoreline and 15 percent by coastal population density, capped at 5 percent per state.": "70 percent shall be allocated equally among coastal States."
+  "Creates a National Fish and Wildlife Foundation Coastal State Fund granting money to coastal states for coastal resource and natural infrastructure programs.": "to award grants to coastal States to support State programs and activities intended to better understand and use coastal resources, coastal and natural infrastructure, and ecosystem services provided by natural systems",
+  "The money is allocated 70 percent equally among coastal states and 15 percent by tidal shoreline.": "(1) 70 percent shall be allocated equally among coastal States. (2) 15 percent shall be allocated on the basis of the ratio of tidal shoreline in a coastal State to the tidal shoreline of all coastal States.",
+  "Another 15 percent is allocated by coastal population density, and no state gets more than 5 percent.": "population density of all coastal counties based on the most recent data available from the Bureau of the Census. (d) LIMITATION FOR SINGLE COASTAL STATE.—Notwithstanding subsection (c), not more than 5 percent of the total amounts"
  },
  "1401": {
   "A court can order the action.": "the Federal agency is required to take such action by order of a court of competent jurisdiction",
-  "A winning sponsor gets the permit reinstated, an injunction against repeat interference without a court order, attorney fees, delay costs, and an additional 25 to 50 percent of all project costs incurred, paid from the Judgment Fund without appropriation.": "the reinstatement of the Federal authorization or permit and the termination of any action by the Federal agency preventing the construction or operation of the project",
   "Agencies must give written notice with the statutory authority and evidence.": "the Federal agency shall notify the non-Federal project sponsor or holder of the Federal authorization or permit, in writing, of such action, including by—",
   "Burden on the government by clear and convincing evidence": "place the burden of proof on the Federal agency to demonstrate by clear and convincing evidence that 1 or more of the matters",
   "Cutoff date of September 16, 2026 for permits in effect": "in effect on or after September 16, 2026",
@@ -222,7 +240,10 @@
   "The sponsor can sue in district court, where the agency carries the burden by clear and convincing evidence and classified information is reviewed in camera.": "place the burden of proof on the Federal agency to demonstrate by clear and convincing evidence that 1 or more of the matters described in subparagraphs",
   "There are five exceptions.": "the Federal agency is required to take such action by order of a court of competent jurisdiction",
   "Where a stop-work order from the year before enactment was enjoined, the same judge hears any new attempt": "If, within 1 year prior to the date of enactment of this Act, a Federal Agency has issued a stop-work order",
-  "Where a stop-work order issued within the year before enactment was enjoined, the same judge keeps jurisdiction.": "the same judge (assuming that judge continues to sit in the same district) that heard the original matter shall have jurisdiction to hear a complaint or motion under this section."
+  "Where a stop-work order issued within the year before enactment was enjoined, the same judge keeps jurisdiction.": "the same judge (assuming that judge continues to sit in the same district) that heard the original matter shall have jurisdiction to hear a complaint or motion under this section.",
+  "A winning sponsor gets the permit reinstated and an injunction against repeat interference without a court order.": "injunctive relief preventing a Federal agency from taking any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a previously granted Federal authorization or permit",
+  "The sponsor also gets attorney fees, delay costs, and an additional 25 to 50 percent of all project costs incurred.": "costs associated with the applicable delay in the construction or operation of the project, as the court determines appropriate; and (v) costs in an amount equal to not less than 25 percent and not more than 50 percent",
+  "Awards are paid from the Judgment Fund without appropriation.": "Amounts awarded under subparagraph (D)— (i) shall be paid from the fund described in section 1304 of title 31, United States Code; and (ii) shall not be subject to the availability of appropriations"
  },
  "1402": {
   "Anti-discrimination rule across 46 named project types, from offshore wind to coal, plus any similar type a court certifies": "(UU) Any other specific type of energy related project not described in subparagraphs (A) through (TT) that a United States district court of competent jurisdiction certifies",
@@ -266,11 +287,14 @@
   "The state's clock starts on the date the application is filed with the state": "inserting “the date on which the application was filed with the State commission or other entity;”"
  },
  "2102": {
-  "Adds Federal Power Act section 216A: work that maintains or increases grid capacity inside an existing right-of-way (reconductoring, higher operating voltage, added circuits, advanced transmission technologies, added storage at an existing facility, a parallel circuit) is categorically excluded from NEPA, is not a major federal action, and is not an undertaking under the National Historic Preservation Act.": "are a category of actions designated as being categorically excluded from the preparation of an environmental assessment or an environmental impact statement under the National Environmental Policy Act",
   "Clean Water Act and Clean Air Act requirements for pipelines stay in place": "Nothing in this subsection affects the applicability of any requirement under",
   "Gas pipeline looping and compression in existing corridors exempt from NEPA and NHPA section 106": "shall not be considered a major Federal action under the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.) if the covered activity remains within a covered area",
-  "It also amends Natural Gas Act section 7 so that repair, replacement, looping, compression and capacity-enhancement of interstate gas pipelines inside an existing right-of-way or previously reviewed footprint are not major federal actions or historic-preservation undertakings.": "Section 7 of the Natural Gas Act (15 U.S.C. 717f) is amended by adding at the end the following: “(i) COVERED PIPELINE ACTIVITIES.",
-  "Reconductoring and in-corridor grid upgrades exempt from NEPA and NHPA section 106": "are a category of actions designated as being categorically excluded from the preparation of an environmental assessment or an environmental impact statement under the National Environmental Policy Act of 1969"
+  "Reconductoring and in-corridor grid upgrades exempt from NEPA and NHPA section 106": "are a category of actions designated as being categorically excluded from the preparation of an environmental assessment or an environmental impact statement under the National Environmental Policy Act of 1969",
+  "Adds Federal Power Act section 216A: work that maintains or increases grid capacity inside an existing right-of-way is categorically excluded from NEPA.": "are a category of actions designated as being categorically excluded from the preparation of an environmental assessment or an environmental impact statement under the National Environmental Policy Act",
+  "Covered work includes reconductoring, higher operating voltage, added circuits, advanced transmission technologies, added storage at an existing facility, and a parallel circuit.": "(i) reconductoring; “(ii) an increase in operating voltage; “(iii) a circuit addition or adjustment; and “(iv) installation of advanced transmission technologies",
+  "Work under section 216A is also not a major federal action and not an undertaking under the National Historic Preservation Act.": "shall not be considered to be— “(i) a major Federal action for purposes of that Act; or “(ii) an undertaking for purposes of section 306108 of title 54",
+  "The bill also amends Natural Gas Act section 7 for repair, replacement, looping, compression and capacity-enhancement of interstate gas pipelines.": "any repair, maintenance, replacement, upgrade, rebuilding, modification, optimization, minor relocation, looping, compression, capacity-enhancement project",
+  "That work is not a major federal action or a historic-preservation undertaking when it stays inside an existing right-of-way or previously reviewed footprint.": "A covered activity and any Federal agency action authorizing that covered activity— “(A) shall not be considered a major Federal action under the National Environmental Policy Act"
  },
  "2103": {
   "A project selected in a regional or interregional plan is deemed to meet most of the findings for a FERC backstop permit.": "a project that is selected by 1 or more transmission planning regions pursuant to a regional or joint interregional transmission plan in accordance with this section shall be considered",
@@ -291,10 +315,12 @@
   "A fine, paid to the referring state, can reach $5 million for each local facility developed or energized from 60 days before the referral that FERC finds imprudent and harmful to that state's customers.": "caused financial harm to wholesale or retail electric customers within the referring State",
   "Adds Federal Power Act section 226.": "Part II of the Federal Power Act (16 U.S.C. 824 et seq.) (as amended by section 2103) is amended by adding at the end the following",
   "FERC forms an investigative team with up to 3 state appointees.": "up to 3 representatives appointed by the referring State.",
-  "If the team finds the utility's process is not selecting the more efficient or cost-effective local projects, or is crowding out regional planning, FERC may order process changes, cut the utility's return on equity on local projects, remove the presumption of prudence, or fine the utility.": "Reducing the return on equity of the public utility with respect to local transmission facilities",
   "One or more states may refer a utility to FERC for an investigation of its local transmission planning.": "1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities.",
   "Remedies include lower return on equity and fines up to $5 million per facility": "A fine, payable to the referring State, of up to $5,000,000 for each local transmission facility",
-  "States can trigger FERC investigations of local transmission spending": "1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities."
+  "States can trigger FERC investigations of local transmission spending": "1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities.",
+  "The team may find that the utility's process is not selecting the more efficient or cost-effective local projects, or is crowding out regional planning.": "are not resulting in the selection of the more efficient or cost-effective local transmission facilities or that those processes are interfering with the processes of the relevant transmission planning region",
+  "FERC may then order process changes or cut the utility's return on equity on local projects.": "Requiring changes to the processes used by the applicable public utility for planning local transmission facilities. “(ii) Reducing the return on equity of the public utility with respect to local transmission facilities",
+  "Further remedies are removing the presumption of prudence or fining the utility.": "Eliminating the presumption of prudence for local transmission facilities planned or developed by the public utility. “(iv) A fine, payable to the referring State"
  },
  "2105": {
   "Bans any federal right of first refusal for transmission facilities selected in a regional or interregional plan for cost allocation, overriding any FERC rule or order to the contrary.": "a Federal right of first refusal is prohibited with respect to a transmission facility selected in a regional or interregional transmission plan for the purposes of cost allocation.",
@@ -305,7 +331,9 @@
   "Nonrefundable deposits and withdrawal penalties for queue entrants": "establishes a streamlined generator cluster study process with a single decision point, meaningful and nonrefundable financial security, and withdrawal penalties sufficient to deter speculative projects.",
   "Published zonal per-megawatt interconnection prices": "routinely identifies and publishes resource and fuel-neutral planned interconnection locations for generating capacity and an upfront, fixed, zonal, per-megawatt cost for each planned interconnection location;",
   "Regions file within 2 years and update every 2 years.": "filed with the Commission not later than 2 years after the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026",
-  "Requires FERC, within 18 months, to make each planning region file a consolidated interconnection and transmission planning process that looks 20 years ahead, publishes fuel-neutral planned interconnection locations with a fixed per-megawatt cost, and runs a cluster study with one decision point and nonrefundable security to deter speculative projects.": "shall issue a rule requiring each transmission planning region (as defined in section 225(a)) to file a consolidated interconnection and regional transmission planning process that—"
+  "Requires FERC, within 18 months, to make each planning region file a consolidated interconnection and transmission planning process that looks 20 years ahead.": "shall issue a rule requiring each transmission planning region (as defined in section 225(a)) to file a consolidated interconnection and regional transmission planning process that—",
+  "The process publishes fuel-neutral planned interconnection locations with a fixed per-megawatt cost.": "routinely identifies and publishes resource and fuel-neutral planned interconnection locations for generating capacity and an upfront, fixed, zonal, per-megawatt cost for each planned interconnection location",
+  "A cluster study in the process has one decision point and nonrefundable security to deter speculative projects.": "establishes a streamlined generator cluster study process with a single decision point, meaningful and nonrefundable financial security, and withdrawal penalties sufficient to deter speculative projects"
  },
  "2107": {
   "Congress finds it is not just and reasonable to charge data center, AI and cryptocurrency loads less than the embedded and incremental cost of the transmission they need.": "charge less than the embedded costs and incremental expansion costs to eligible customers seeking transmission service from computational load owners and computational load operators",
@@ -380,22 +408,26 @@
  "2201": {
   "150 days to sue over energy and mineral project decisions under any federal law": "shall be barred unless the civil action is filed by the date that is 150 days after the date on which the grant or denial",
   "180-day cap on agency action after a court remand": "shall not exceed 180 days from the date on which the order of the court was issued",
-  "A 150-day statute of limitations for any lawsuit challenging a federal agency's grant or denial of an authorization for an energy, carbon dioxide, mineral or wildfire fuel-reduction project, unless the underlying law sets a shorter one.": "the civil action is filed by the date that is 150 days after the date on which the grant or denial of the authorization is required to be made public",
   "Agencies must publish the decision within 3 days.": "a final agency action granting or denying an authorization shall be made public not later than 3 days after that final agency action is taken.",
   "Agencies must tell the project sponsor about any suit within 30 days.": "Not later than 30 days after the date on which an agency is served a copy of a petition for review or a complaint",
   "Courts must expedite the case, and a remand cannot give the agency more than 180 days unless the law requires longer.": "A reviewing court shall set for expedited consideration any civil action arising under Federal law seeking judicial review of a final agency action granting or denying an authorization.",
   "Covered authorizations include leases, drilling permits, rights-of-way, mining plans, Endangered Species Act statements and permits, and forest restoration approvals.": "agency approvals of lease sales, permits, rights-of-way, or plans required to explore for, develop, or produce energy or minerals under—",
   "Covers oil and gas, mining, offshore, geothermal, rights-of-way and forest fuel-reduction projects": "agency approvals of lease sales, permits, rights-of-way, or plans required to explore for, develop, or produce energy or minerals",
-  "A project can still be designated a FAST-41 covered project": "Nothing in this title precludes a project from being designated as a covered project"
+  "A project can still be designated a FAST-41 covered project": "Nothing in this title precludes a project from being designated as a covered project",
+  "A 150-day statute of limitations applies to any lawsuit challenging a federal agency's grant or denial of an authorization.": "the civil action is filed by the date that is 150 days after the date on which the grant or denial of the authorization is required to be made public",
+  "The limit covers authorizations for an energy, carbon dioxide, mineral or wildfire fuel-reduction project.": "to develop, produce, generate, store, transport, or distribute energy; (II) to capture, remove, transport, or store carbon dioxide; or (III) to mine, extract, beneficiate, or process minerals; or (ii) hazardous fuel reduction and forest restoration",
+  "A shorter limit set by the underlying law applies instead.": "unless a shorter time is specified in the Federal law pursuant to which judicial review is allowed"
  },
  "2211": {
   "Indian lands are excluded.": "any land located within the boundaries of an Indian reservation, pueblo, or rancheria",
   "Interior cannot require bonds, mitigation or reclamation approval on that non-federal land.": "to require a bond to protect non-Federal land",
   "Lessees notify Interior of state permits.": "notify the Secretary of the Interior of the submission of a State application for a permit to drill or drilling plan on submission of the application",
   "No federal permit to drill for wells on private or state surface with a minority federal mineral interest": "the well is located on non-Federal land and the Federal Government owns less than 50 percent of the oil and gas minerals within the oil and gas drilling or spacing",
-  "Removes the federal drilling permit requirement for oil and gas wells on non-federal surface land where the federal government owns less than half the minerals in the drilling unit, or where the wellbore only enters or passes through federal minerals.": "the well is located on non-Federal land and the Federal Government owns less than 50 percent of the oil and gas minerals within the oil and gas drilling or spacing",
   "Royalties are unchanged;": "the amount of royalties due to the Federal Government from the production of the Federal minerals within the oil and gas drilling or spacing unit.",
-  "State permits govern; royalties still owed": "the amount of royalties due to the Federal Government from the production of the Federal minerals within the oil and gas drilling or spacing unit."
+  "State permits govern; royalties still owed": "the amount of royalties due to the Federal Government from the production of the Federal minerals within the oil and gas drilling or spacing unit.",
+  "Removes the federal drilling permit requirement for oil and gas wells on non-federal surface land.": "the Secretary of the Interior shall not require a permit to drill for an oil and gas lease under the Mineral Leasing Act",
+  "The exemption applies where the federal government owns less than half the minerals in the drilling unit.": "the well is located on non-Federal land and the Federal Government owns less than 50 percent of the oil and gas minerals within the oil and gas drilling or spacing",
+  "Wells whose wellbore only enters or passes through federal minerals are exempt too.": "(2) the well is located on non-Federal land overlying a non-Federal mineral estate, but some portion of the wellbore enters and produces from the Federal mineral estate subject to the lease; or"
  },
  "2212": {
   "Interior has 180 days to approve or disapprove a tribe's regulation": "“(A) IN GENERAL.—Not later than 180 days after the date on which the Indian tribe submits a Tribal regulation to the Secretary of the Interior under paragraph (1)(A), the Secretary of the Interior shall— “(i) review the Tribal regulation; “(ii) approve or disapprove the Tribal regulation; and “(iii) notify the Indian tribe that submitted the Tribal regulation of the approval or disapproval.",
@@ -418,15 +450,19 @@
  },
  "2214": {
   "Categorical exclusions for grid work on federal land within 180 days": "Not later than 180 days after the date of enactment of this Act, to facilitate timely permitting, the Secretary of the Interior and the Secretary of Agriculture shall each develop",
-  "Directs Interior and Agriculture to adopt, within 180 days, categorical exclusions for placing power lines in approved corridors, for upgrades and reconductoring of existing lines in existing rights-of-way or on previously disturbed land, and for battery storage on previously disturbed land.": "Not later than 180 days after the date of enactment of this Act, to facilitate timely permitting, the Secretary of the Interior and the Secretary of Agriculture shall each develop"
+  "Directs Interior and Agriculture to adopt, within 180 days, categorical exclusions for placing power lines in approved corridors.": "Not later than 180 days after the date of enactment of this Act, to facilitate timely permitting, the Secretary of the Interior and the Secretary of Agriculture shall each develop",
+  "Another exclusion covers upgrades and reconductoring of existing lines in existing rights-of-way or on previously disturbed land.": "an existing electric transmission or distribution facility or associated infrastructure, including electrical substations, within an existing right-of-way or on otherwise previously disturbed or developed land, including reconductoring and installation of grid-enhancing technologies",
+  "A third exclusion covers battery storage on previously disturbed land.": "Construction, operation, upgrade, or decommissioning of a battery or other energy storage technology on previously disturbed or developed land"
  },
  "2215": {
   "$400 per mill site per year, paid into an abandoned mine cleanup fund": "a claim maintenance fee of $400 per site",
   "A mine operator may locate as many 5-acre mill sites as its plan of operations needs": "“(2) AUTHORIZATION.—Notwithstanding subsections (a) and (b), where public land is needed by the proprietor of a lode or placer claim for operations in connection with any lode or placer claim within the proposed plan of operations, the proprietor may— “(A) locate and include within the plan of operations as many mill site claims under this subsection as are reasonably necessary for its operations; and “(B) use or occupy public land in accordance with an approved plan of operations. “(3) MILL SITES CONVEY NO MINERAL RIGHTS.—A mill site under this subsection does not convey mineral rights to the locator.",
   "Hardrock minerals on acquired federal lands become leasable.": "is amended, in the first sentence, by striking “and sulfur” and inserting “sulfur, and hardrock minerals”",
-  "Lets a hardrock mine operator locate as many 5-acre mill sites on public land as are reasonably necessary for waste rock, tailings and other operations under an approved plan of operations, for a $400 annual fee per site.": "locate and include within the plan of operations as many mill site claims under this subsection as are reasonably necessary for its operations",
   "Mill site fees and those lease receipts go to a new Abandoned Hardrock Mine Fund for cleanup.": "shall be deposited into the Fund.",
-  "Mill sites convey no mineral rights and cannot be patented.": "A mill site under this subsection does not convey mineral rights to the locator."
+  "Mill sites convey no mineral rights and cannot be patented.": "A mill site under this subsection does not convey mineral rights to the locator.",
+  "Lets a hardrock mine operator locate as many mill sites on public land as are reasonably necessary for waste rock, tailings and other operations.": "locate and include within the plan of operations as many mill site claims under this subsection as are reasonably necessary for its operations",
+  "Each mill site covers up to 5 acres and sits under an approved plan of operations.": "A location of a single mill site under this subsection shall not exceed 5 acres",
+  "The operator pays a $400 annual fee per site.": "shall pay to the Secretary of the Interior, on or before September 1 of each year, to the extent provided in advance in appropriations Acts, a claim maintenance fee of $400 per site"
  },
  "2221": {
   "Casual-use activities need only 30 days' notice and are not major federal actions.": "A party wishing to conduct activities that are casual use shall provide to the Secretary a notice of intent to carry out those activities at least 30",
@@ -444,7 +480,9 @@
  },
  "2224": {
   "BLM geothermal ombudsman and strike team": "Not later than 60 days after the date of enactment of this Act, the Secretary of the Interior shall appoint from within the Bureau an individual to serve as Geothermal",
-  "Creates a Geothermal Ombudsman and a Geothermal Permitting Task Force inside BLM within 60 days to resolve disputes between field offices and applicants, move staff to offices with backlogs, and pay retention allowances of up to 25 percent of basic pay.": "Not later than 60 days after the date of enactment of this Act, the Secretary of the Interior shall appoint from within the Bureau an individual to serve as Geothermal"
+  "Creates a Geothermal Ombudsman and a Geothermal Permitting Task Force inside BLM within 60 days.": "Not later than 60 days after the date of enactment of this Act, the Secretary of the Interior shall appoint from within the Bureau an individual to serve as Geothermal",
+  "The Ombudsman may also pay retention allowances of up to 25 percent of basic pay.": "such an allowance may not exceed 25 percent of that rate of basic pay",
+  "The Ombudsman resolves disputes between field offices and applicants and may assign staff to help other offices complete geothermal authorizations.": "assign personnel with relevant expertise to assist with the completion of geothermal authorizations"
  },
  "2225": {
   "Indian lands are excluded; royalties are unchanged.": "Subsection (a) shall not apply to",
@@ -453,7 +491,9 @@
  },
  "2226": {
   "Litigation alone does not pause geothermal permitting": "Notwithstanding any pending civil action that affects an application for a geothermal drilling permit",
-  "Requires Interior to keep processing geothermal permits, sundry notices and rights-of-way under a valid lease despite pending litigation, and to decide within 60 days of completing legal requirements, unless a court has vacated or enjoined the lease or permit.": "approve and issue, or deny, each such application not later than 60 days after completing all requirements under applicable Federal laws (including regulations)"
+  "Requires Interior to keep processing geothermal permits, sundry notices and rights-of-way under a valid lease despite pending litigation.": "Notwithstanding any pending civil action that affects an application for a geothermal drilling permit, sundry notice, notice to proceed, right-of-way, or any other authorization under a valid existing geothermal lease",
+  "Interior must decide within 60 days of completing legal requirements.": "approve and issue, or deny, each such application not later than 60 days after completing all requirements under applicable Federal laws (including regulations)",
+  "The duty ends if a court has vacated or enjoined the lease or permit.": "unless a Federal court vacates or provides injunctive relief for the applicable geothermal lease, geothermal drilling permit, sundry notice, notice to proceed, right-of-way, or other authorization,"
  },
  "2227": {
   "Geothermal cost recovery through fiscal year 2033": "During the period beginning on the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026 and ending on September 30, 2033, the Secretary may require",
@@ -474,7 +514,9 @@
  },
  "2231": {
   "FERC report on hydropower market barriers": "Not later than 270 days after the date of enactment of this Act, the Commission, in consultation with the Secretary of Energy, shall submit to the Committee on Energy and Natural Resources",
-  "FERC, with the Energy Department, reports to Congress within 270 days on market barriers to hydropower and pumped storage and on how to pay hydropower for the grid services it provides, after a technical conference and public comment.": "Not later than 270 days after the date of enactment of this Act, the Commission, in consultation with the Secretary of Energy, shall submit to the Committee on Energy and Natural Resources"
+  "FERC, with the Energy Department, reports to Congress within 270 days on market barriers to hydropower and pumped storage.": "Not later than 270 days after the date of enactment of this Act, the Commission, in consultation with the Secretary of Energy, shall submit to the Committee on Energy and Natural Resources",
+  "The report also covers how to pay hydropower for the grid services it provides.": "properly compensate conventional, storage, conduit, and emerging hydropower technologies for the full range of services provided to the electric grid",
+  "FERC prepares the report after a technical conference and public comment.": "the Commission shall solicit public input, including by convening a technical conference and providing an opportunity for public submission of written comments on a draft report"
  },
  "2232": {
   "Limits the mandatory conditions federal land agencies can attach to a hydropower license under Federal Power Act section 4(e) to those 'reasonably related to the effects of the project'.": "by inserting “and are reasonably related to the effects of the project” after “of such reservation”",
@@ -487,8 +529,10 @@
   "No FERC approval needed for routine hydropower maintenance": "The Commission shall not require approval or an amendment to a project license for any routine maintenance, repair, or replacement of any portion of a project works"
  },
  "2234": {
-  "Creates an expedited FERC license of 10 to 20 years for micro hydrokinetic projects of 5 megawatts or less (wave, tidal, current and free-flowing river turbines with no impoundment), with final action within 1 year of the application and categorical exclusions for low-disturbance activities.": "The Commission may issue a license in accordance with this section for a term of not less than 10, and not more than 20, years",
-  "One-year licensing for hydrokinetic projects up to 5 MW": "The Commission may issue a license in accordance with this section for a term of not less than 10, and not more than 20, years"
+  "One-year licensing for hydrokinetic projects up to 5 MW": "The Commission may issue a license in accordance with this section for a term of not less than 10, and not more than 20, years",
+  "Creates an expedited FERC license of 10 to 20 years for micro hydrokinetic projects of 5 megawatts or less.": "The Commission may issue a license in accordance with this section for a term of not less than 10, and not more than 20, years",
+  "Qualifying projects are wave, tidal, current and free-flowing river turbines with no impoundment.": "waves, tides, or currents in oceans, estuaries, or tidal areas; or “(ii) free flowing water in rivers, lakes, streams, or man-made channels; and “(2) does not include a project that impounds water to generate electricity",
+  "FERC takes final action within 1 year of the application, with categorical exclusions for low-disturbance activities.": "The Commission shall take final action on an application for a license under this section not later than 1 year after the date on which the application is filed under paragraph (2)"
  },
  "2241": {
   "FERC can use special pay rates for economists and lawyers": "by striking “or mathematical” and inserting “mathematical, economic, or legal”",
@@ -511,9 +555,11 @@
   "Transmission cables allowed through marine sanctuaries": "may grant rights-of-way on the outer Continental Shelf within units of the National Marine Sanctuary System for the transmission of electricity"
  },
  "2252": {
-  "Directs Interior and Energy to identify preferred routes for offshore transmission cables within 2 years and review them every 3 years, makes Interior the lead agency for offshore transmission permitting, requires a final rule within 2 years, and lets Interior issue offshore transmission rights-of-way competitively or noncompetitively.": "Not later than 2 years after the date of enactment of this Act, the Secretary and the Secretary of Energy",
   "Interior is lead agency; rights-of-way can be noncompetitive": "the Department of the Interior shall act as the lead agency for purposes of coordinating all applicable Federal authorizations",
-  "Planned offshore transmission routes within 2 years": "(A) INITIAL IDENTIFICATION.—Not later than 2 years after the date of enactment of this Act, the Secretary and the Secretary of Energy (referred to in this subsection as the “Secretaries”), in coordination with relevant Federal agencies involved in the permitting of offshore generation facilities and offshore transmission facilities, shall identify preferred routes on the outer Continental Shelf for transmission cables and sub-seabed infrastructure (where such routes have not yet been identified), including— (i) between offshore generation facilities; and (ii) between offshore generation facilities and optimal points of interconnection with onshore electric grids. (B) PERIODIC REVIEW.—Not less frequently than once every 3 years after the initial identification of preferred routes in accordance with subparagraph (A), the Secretaries, in coordination with relevant Federal agencies involved in the permitting of offshore generation facilities and offshore transmission facilities, shall—"
+  "Planned offshore transmission routes within 2 years": "(A) INITIAL IDENTIFICATION.—Not later than 2 years after the date of enactment of this Act, the Secretary and the Secretary of Energy (referred to in this subsection as the “Secretaries”), in coordination with relevant Federal agencies involved in the permitting of offshore generation facilities and offshore transmission facilities, shall identify preferred routes on the outer Continental Shelf for transmission cables and sub-seabed infrastructure (where such routes have not yet been identified), including— (i) between offshore generation facilities; and (ii) between offshore generation facilities and optimal points of interconnection with onshore electric grids. (B) PERIODIC REVIEW.—Not less frequently than once every 3 years after the initial identification of preferred routes in accordance with subparagraph (A), the Secretaries, in coordination with relevant Federal agencies involved in the permitting of offshore generation facilities and offshore transmission facilities, shall—",
+  "Directs Interior and Energy to identify preferred routes for offshore transmission cables within 2 years and review them every 3 years.": "Not later than 2 years after the date of enactment of this Act, the Secretary and the Secretary of Energy",
+  "Interior is the lead agency for offshore transmission permitting, and a final rule is required within 2 years.": "the Department of the Interior shall act as the lead agency for purposes of coordinating all applicable Federal authorizations and related environmental reviews of the facility",
+  "Offshore transmission rights-of-way may be issued competitively or noncompetitively by Interior.": "establishing a process for the issuance of rights-of-way, on a competitive or noncompetitive basis, as appropriate"
  },
  "2301": {
   "150-day limit, court of appeals jurisdiction, remand without vacatur": "the claim is filed not later than 150 days after the later of",
@@ -533,14 +579,18 @@
   "State and tribal preservation officers who do not respond in 30 days are passed over, and the agency may decide in its sole discretion that other considerations outweigh preservation.": "the applicable Federal official shall proceed to the determination under paragraph (3)(A)",
   "State and tribal programs are evaluated every 2 years and lose grants if they miss consultation timelines.": "A State program shall not be considered consistent with this division under paragraph (1) if the applicable State Historic Preservation Officer does not regularly comply with timelines",
   "Temporary alterations are excluded.": "any temporary alteration to a historic property that is limited to the time it takes to complete an undertaking",
-  "The process gets deadlines: 30 days to decide whether a project is an undertaking, 60 days for the agency's report, 90 days for a determination, then 60 days of consultation, 45 days for Advisory Council comments and 30 days for a final decision.": "Not later than 30 days after the date of receipt of a request for review of a proposed project, activity, or program under this section",
-  "Visual, atmospheric and audible effects are excluded unless they directly and significantly diminish the property.": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics"
+  "Visual, atmospheric and audible effects are excluded unless they directly and significantly diminish the property.": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics",
+  "The process gets deadlines: 30 days to decide whether a project is an undertaking and 60 days for the agency's report.": "Not later than 30 days after the date of receipt of a request for review of a proposed project, activity, or program under this section",
+  "Advisory Council comments take 45 days, and the final decision takes 30 days.": "45 days after the date on which the Council receives a request under subclause (I), the Council shall submit to the head of the Federal agency the formal advisory comments requested. “(III) FINAL DETERMINATION.— Not later than 30 days",
+  "A determination or an agreement on the adverse effects follows within 90 days of the report.": "Not later than 90 days after the date of submission of a report under paragraph (2)(D)(iii)"
  },
  "2302": {
   "$20 million a year for tribal preservation databases": "$20,000,000 for each of fiscal years 2027 through 2030",
   "$200 million a year for the Historic Preservation Fund through 2036": "$200,000,000 for each of fiscal years 2027 through 2036",
   "Authorizes $200 million a year for deposit in the Historic Preservation Fund for fiscal years 2027 through 2036.": "$200,000,000 for each of fiscal years 2027 through 2036",
-  "Creates a $20 million-a-year grant program (fiscal years 2027 through 2030) for tribal historic preservation officers to build online databases of records and of properties of traditional religious or cultural importance, with protections against disclosing sensitive site locations.": "$20,000,000 for each of fiscal years 2027 through 2030",
-  "Deposits become available the next fiscal year without a further appropriation.": "shall be made available for expenditure for fiscal year 2028 and each fiscal year thereafter, without further appropriation"
+  "Deposits become available the next fiscal year without a further appropriation.": "shall be made available for expenditure for fiscal year 2028 and each fiscal year thereafter, without further appropriation",
+  "Creates a $20 million-a-year grant program (fiscal years 2027 through 2030) for tribal historic preservation officers.": "$20,000,000 for each of fiscal years 2027 through 2030",
+  "The grants build online databases of records and of properties of traditional religious or cultural importance.": "to develop an online database to maintain— “(A) all records relating to the assumption by the applicable Indian tribe of the functions",
+  "Protections against disclosing sensitive site locations are included.": "Nothing in this section requires a recipient of a grant under this subsection to disclose information to the public about the location, character, or ownership of a historic property"
  }
 }
