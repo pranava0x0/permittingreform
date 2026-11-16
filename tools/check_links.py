@@ -90,6 +90,12 @@ def collect(core: dict) -> dict[str, list[str]]:
         add(it["url"], f"media.{it['id']}")
         for v in it.get("visuals", []):
             add(v.get("url"), f"media.{it['id']}.visual")
+    for e in (core.get("estimates") or {}).get("estimates", []):
+        add(e["url"], f"estimates.{e['id']}")
+        add(e.get("method_url"), f"estimates.{e['id']}.method")
+    for r in (core.get("votes") or {}).get("roll_calls", []):
+        add(r["url"], f"votes.{r['number']}")
+        add(r.get("xml_url"), f"votes.{r['number']}.xml")  # the tally and names are read from this file
     amend = core.get("amend") or {}
     if amend:
         for i, ln in enumerate(amend["substitute"]["links"]):

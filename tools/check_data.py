@@ -31,6 +31,8 @@ import build  # noqa: E402
 import integrate_research as vocab  # noqa: E402
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# A number as printed: 148, 1.5, 1,200. Digits inside a name (C2ES, H.R. 2347's "2347" aside) do not count.
+NUMBER_RE = re.compile(r"(?<![A-Za-z\d.,])\d+(?:,\d{3})*(?:\.\d+)?")
 BANNED = re.compile(
     r"\b(delve|leverag\w*|robust|seamless\w*|elevate[sd]?|unlock\w*|empower\w*|harness\w*|tapestry|testament|"
     r"underscore[sd]?|pivotal|crucial|comprehensive|cutting-edge|game-chang\w*|ever-evolving|realm|landmark|"
@@ -108,7 +110,59 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out.append(("amendments floor note", amend["floor_note"]))
         out += [(f"amendments highlight {h['id']}", h["label"]) for h in amend["highlights"]]
         out += [(f"amendments {r['id']} change", p["t"]) for r in amend["rows"] for p in r.get("points", [])]
+    votes = core.get("votes") or {"roll_calls": []}
+    if votes.get("note"):
+        out.append(("votes note", votes["note"]))
+    out += [(f"votes {rc['number']} question", rc["question"]) for rc in votes["roll_calls"]]
+    est = core.get("estimates") or {"estimates": [], "metrics": []}
+    if est.get("intro"):
+        out.append(("estimates intro", est["intro"]))
+    out += [("estimates absent", a) for a in est.get("absent", [])]
+    out += [(f"estimates metric {m['id']}", m["title"]) for m in est["metrics"]]
+    for e in est["estimates"]:
+        out += [(f"estimates {e['id']} {k}", e[k]) for k in ("figure", "text", "scenario", "covers")]
     return out
+
+
+def check_votes_estimates(core: dict) -> list[str]:
+    """Roll calls and published estimates: dated on or before the data date, linked
+    over https, and every publisher in the site's own sector and stance vocabularies."""
+    errs = []
+    as_of = core["meta"]["as_of"]
+    for rc in (core.get("votes") or {"roll_calls": []})["roll_calls"]:
+        w = f"votes {rc.get('number')}"
+        if not DATE_RE.match(rc.get("date", "")) or rc["date"] > as_of:
+            errs.append(f"{w}: date {rc.get('date')!r} is malformed or after the data date {as_of}")
+        for k in ("url", "xml_url"):
+            if not str(rc.get(k, "")).startswith("https://www.senate.gov/"):
+                errs.append(f"{w}: {k} must be the Senate's own record")
+        for k in ("question", "official_question", "result", "quote"):
+            if not str(rc.get(k, "")).strip():
+                errs.append(f"{w}: missing {k}")
+        if f"({rc.get('yeas')}-{rc.get('nays')}" not in rc.get("quote", ""):
+            errs.append(f"{w}: the quoted result does not carry the tally {rc.get('yeas')}-{rc.get('nays')}")
+    est = core.get("estimates") or {"estimates": [], "publishers": {}}
+    for key, p in est["publishers"].items():
+        if not p.get("name") or p.get("sector") not in vocab.SECTORS:
+            errs.append(f"estimates publisher {key}: needs a name and a known sector, not {p.get('sector')!r}")
+        if p.get("stance") is not None and p["stance"] not in vocab.STANCES - {"reporting"}:
+            errs.append(f"estimates publisher {key}: stance {p['stance']!r} is not a position on the bill")
+    for e in est["estimates"]:
+        w = f"estimates {e.get('id')}"
+        if not DATE_RE.match(e.get("date", "")) or e["date"] > as_of:
+            errs.append(f"{w}: date {e.get('date')!r} is malformed or after the data date {as_of}")
+        for k in ("url", "method_url"):
+            if k in e and not str(e[k]).startswith("https://"):
+                errs.append(f"{w}: {k} must be https")
+        if len(e.get("quote", "").split()) < 8:
+            errs.append(f"{w}: the quote is too short to carry the figure's sentence")
+        # Every number the row states has to be in the sentence it quotes; a figure the quote does
+        # not carry is a figure the reader cannot check against the source.
+        stated = set(NUMBER_RE.findall(e.get("figure", "") + " " + e.get("text", "")))
+        loose = sorted(stated - set(NUMBER_RE.findall(e.get("quote", ""))))
+        if loose:
+            errs.append(f"{w}: the quote does not carry {', '.join(loose)}")
+    return errs
 
 
 def check_letter(where: str, letter) -> list[str]:
@@ -175,7 +229,10 @@ def check(core: dict) -> tuple[list[str], dict]:
     errs: list[str] = []
     counts = {"sections": len(core["sections"]), "compare rows": 0, "timeline": len(core["timeline"]),
               "people": len(core["people"]), "media": len(core["media"]), "letters": 0,
-              "position issues": len((core.get("positions") or {}).get("issues", [])), "prose strings": 0}
+              "position issues": len((core.get("positions") or {}).get("issues", [])),
+              "roll calls": len((core.get("votes") or {"roll_calls": []})["roll_calls"]),
+              "estimates": len((core.get("estimates") or {"estimates": []})["estimates"]), "prose strings": 0}
+    errs += check_votes_estimates(core)
 
     for s in core["sections"]:
         if not s["plain"]:

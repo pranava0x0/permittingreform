@@ -1,0 +1,200 @@
+{
+ "_about": "Published numbers on what the bill would do. One row per figure, each with the sentence it was copied from and the page that sentence is on. tools/check_quotes.py checks every quote against its page. Figures are the publisher's own; the tracker computes none. Add a row only after reading the sentence on the cited page.",
+ "as_of": "2026-11-15",
+ "intro": "Each figure is the publisher's own, with its scenario and source sentence. Most model the September 30 text or part of it. The tracker has not checked the models.",
+ "absent": [
+  "No Congressional Budget Office estimate of the bill was found through November 15."
+ ],
+ "metrics": [
+  {"id": "emissions", "title": "Emissions"},
+  {"id": "electricity_cost", "title": "Electricity costs"},
+  {"id": "buildout", "title": "Generation and transmission built"},
+  {"id": "lng", "title": "LNG exports"},
+  {"id": "economy", "title": "Economic output"},
+  {"id": "time", "title": "Review time"}
+ ],
+ "publishers": {
+  "rhodium": {"name": "Rhodium Group", "sector": "think_tank", "kind": "research firm", "stance": null},
+  "c2es": {"name": "Center for Climate and Energy Solutions, with Greenline Insights", "sector": "think_tank", "kind": "research group", "stance": "supports"},
+  "rff": {"name": "Resources for the Future", "sector": "think_tank", "kind": "research institute", "stance": null},
+  "cea": {"name": "White House Council of Economic Advisers", "sector": "white_house", "kind": "White House office", "stance": "supports"},
+  "cgep": {"name": "Columbia Center on Global Energy Policy", "sector": "academic", "kind": "university research center", "stance": null},
+  "seia": {"name": "Solar Energy Industries Association", "sector": "trade_association", "kind": "trade association", "stance": "supports"},
+  "acp": {"name": "American Clean Power Association", "sector": "trade_association", "kind": "trade association", "stance": "supports"},
+  "public-citizen": {"name": "Public Citizen", "sector": "environmental_group", "kind": "advocacy group", "stance": "opposes"}
+ },
+ "estimates": [
+  {
+   "id": "rhodium-emissions", "metric": "emissions", "publisher": "rhodium", "date": "2026-11-02",
+   "figure": "5 to 148 million metric tons a year lower in 2040",
+   "text": "Rhodium projects economy-wide greenhouse gas emissions 5 to 148 million metric tons a year lower in 2040, and as much as 1.5 gigatons lower in total.",
+   "scenario": "Compared with current policy without the bill.",
+   "covers": "The transmission, gas pipeline and data center cost provisions of the September 30 text.",
+   "quote": "Taken together, these provisions uniformly reduce economywide greenhouse gas (GHG) emissions by 5-148 million metric tons annually in 2040 and as much as 1.5 gigatons cumulatively, compared to without BAAJA.",
+   "url": "https://rhg.com/?p=24167",
+   "method_url": "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf"
+  },
+  {
+   "id": "c2es-emissions", "metric": "emissions", "publisher": "c2es", "date": "2026-11-06",
+   "figure": "173 million metric tons a year lower in 2035, or 13 percent",
+   "text": "C2ES reports annual power-sector carbon dioxide 173 million metric tons lower in 2035, a 13 percent cut.",
+   "scenario": "Compared with business as usual, in modeling by Greenline Insights.",
+   "covers": "The interconnection and transmission planning provisions. The release does not say which text was modeled.",
+   "quote": "And in 2035 alone, reform would: ... Reduce annual power sector carbon dioxide emissions by 173 million metric tons, a 13 percent reduction relative to business as usual.",
+   "url": "https://www.c2es.org/?p=25710",
+   "method_url": "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national"
+  },
+  {
+   "id": "c2es-delay", "metric": "emissions", "publisher": "c2es", "date": "2026-11-06",
+   "figure": "800 million metric tons and about $55 billion forgone through 2040 if the changes wait until 2030",
+   "text": "C2ES reports that putting the changes off until 2030 would give up about 800 million metric tons of emissions cuts and about $55 billion in electricity system savings through 2040.",
+   "scenario": "The same modeled changes, starting in 2030.",
+   "covers": "The interconnection and transmission planning provisions. The release does not say which text was modeled.",
+   "quote": "a delay until 2030 would mean achieving only about 40 percent of the modeled benefits by 2035 ... Through 2040, this delay would forgo roughly $55 billion in electricity system savings and 800 million metric tons of emissions reductions.",
+   "url": "https://www.c2es.org/?p=25710",
+   "method_url": "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national"
+  },
+  {
+   "id": "rff-emissions", "metric": "emissions", "publisher": "rff", "date": "2026-10-29",
+   "figure": "About 200 million tonnes lower in the near term; about 1.8 gigatonnes lower through 2041",
+   "text": "RFF projects power-sector carbon dioxide about 200 million tonnes lower in the near term and about 1.8 gigatonnes lower in total through 2041.",
+   "scenario": "Compared with a baseline without the bill, in the ReEDS power-sector model.",
+   "covers": "The power-sector provisions of the September 30 text.",
+   "quote": "We project near-term emissions reductions from the power sector of roughly 200 million tonnes (Mt) of carbon dioxide, with cumulative carbon dioxide emissions from the power sector declining by about 1.8 gigatonnes (Gt) through 2041 as compared to the baseline.",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/"
+  },
+  {
+   "id": "seia-emissions", "metric": "emissions", "publisher": "seia", "date": "2026-11-09",
+   "figure": "About 20 percent lower cumulative power-sector carbon dioxide",
+   "text": "SEIA says its analysis finds cumulative power-sector carbon dioxide about 20 percent lower and $54 billion in public health damages avoided.",
+   "scenario": "SEIA's own analysis, announced in its November 9 statement. The statement gives no baseline in this sentence.",
+   "covers": "The bill as SEIA modeled it. The statement does not say which text.",
+   "quote": "The analysis finds that the bill’s reforms could reduce cumulative power sector CO2 emissions by approximately 20% and avoid $54 billion in public health damages.",
+   "url": "https://seia.org/?p=18691",
+   "method_url": "https://seia.org/research-resources/baaja-impact-on-the-electricity-sector/"
+  },
+  {
+   "id": "acp-emissions", "metric": "emissions", "publisher": "acp", "date": "2026-10-09",
+   "figure": "290 million metric tons of carbon dioxide avoided a year",
+   "text": "ACP says the bill would avoid 290 million metric tons of carbon dioxide a year.",
+   "scenario": "The page states no scenario, baseline or year. It points to an ACP fact sheet.",
+   "covers": "The September 30 text; the page predates the substitute.",
+   "quote": "290 million metric tons of avoided CO₂ emissions annually — equivalent to the emissions of 63 million cars.",
+   "url": "https://cleanpower.org/resources/the-clean-energy-and-environmental-case-for-the-bipartisan-american-affordability-and-jobs-act/"
+  },
+  {
+   "id": "rhodium-bills", "metric": "electricity_cost", "publisher": "rhodium", "date": "2026-11-02",
+   "figure": "$50 to $78 a year lower per household in 2040",
+   "text": "Rhodium projects household electricity bills $50 to $78 a year lower in 2040.",
+   "scenario": "Compared with current policy without the bill.",
+   "covers": "The transmission, gas pipeline and data center cost provisions of the September 30 text.",
+   "quote": "We project that the combined impact of these provisions would reduce household electricity bills by $50-78 per year in 2040 compared to without BAAJA",
+   "url": "https://rhg.com/?p=24167",
+   "method_url": "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf"
+  },
+  {
+   "id": "rff-savings", "metric": "electricity_cost", "publisher": "rff", "date": "2026-10-29",
+   "figure": "More than $350 billion saved through 2050, in net present value",
+   "text": "RFF projects savings of more than $350 billion through 2050 in net present value, with lower national electricity prices.",
+   "scenario": "Compared with a baseline without the bill, in the ReEDS power-sector model.",
+   "covers": "The power-sector provisions of the September 30 text.",
+   "quote": "BAAJA is projected to save more than $350 billion through 2050 in net-present-value terms, decreasing national electricity prices.",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/"
+  },
+  {
+   "id": "rff-system-cost", "metric": "electricity_cost", "publisher": "rff", "date": "2026-10-29",
+   "figure": "Electricity system costs 3.5 to 7.0 percent lower a year",
+   "text": "RFF projects the average yearly cost of the electricity system 3.5 to 7.0 percent lower over the modeled period.",
+   "scenario": "Compared with a baseline without the bill, in the ReEDS power-sector model.",
+   "covers": "The power-sector provisions of the September 30 text.",
+   "quote": "Reduce the costs of providing electricity, decreasing the average annual costs of the electricity system by 3.5–7.0 percent over the modeled period.",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/"
+  },
+  {
+   "id": "rhodium-buildout", "metric": "buildout", "publisher": "rhodium", "date": "2026-11-02",
+   "figure": "17 to 249 gigawatts more clean generation through 2040",
+   "text": "Rhodium projects 17 to 249 gigawatts more clean generation built through 2040, and interregional transmission built at nearly three times the pace of the past decade.",
+   "scenario": "Compared with current policy without the bill.",
+   "covers": "The transmission provisions of the September 30 text.",
+   "quote": "The transmission provisions of the bill enable accelerated average interregional transmission build rates nearly triple that of the last decade or more and drive an additional 17-249 GW of clean resources to be built through 2040.",
+   "url": "https://rhg.com/?p=24167",
+   "method_url": "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf"
+  },
+  {
+   "id": "c2es-buildout", "metric": "buildout", "publisher": "c2es", "date": "2026-11-06",
+   "figure": "170 gigawatts more wind, solar and battery storage by 2035",
+   "text": "C2ES reports 170 gigawatts more wind, solar and battery storage capacity by 2035.",
+   "scenario": "Compared with business as usual, in modeling by Greenline Insights.",
+   "covers": "The interconnection and transmission planning provisions. The release does not say which text was modeled.",
+   "quote": "by 2035 the modeled reforms would enable 170 GW of additional wind, solar, and battery storage capacity",
+   "url": "https://www.c2es.org/?p=25710",
+   "method_url": "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national"
+  },
+  {
+   "id": "rff-transmission", "metric": "buildout", "publisher": "rff", "date": "2026-10-29",
+   "figure": "30 percent more transmission capacity by 2041",
+   "text": "RFF projects total transmission capacity 30 percent higher by 2041, with interregional capacity more than doubling.",
+   "scenario": "Compared with a baseline without the bill, in the ReEDS power-sector model.",
+   "covers": "The power-sector provisions of the September 30 text.",
+   "quote": "By 2041, we project overall transmission capacity to increase by 30 percent over the baseline; interregional transmission capacity more than doubles.",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/"
+  },
+  {
+   "id": "seia-solar", "metric": "buildout", "publisher": "seia", "date": "2026-11-09",
+   "figure": "167 gigawatts more solar, 2028 to 2035",
+   "text": "SEIA says its analysis shows 167 gigawatts more solar capacity between 2028 and 2035, bringing solar to over 18 percent of U.S. generation by 2035.",
+   "scenario": "SEIA's own analysis, announced in its November 9 statement. The statement gives no baseline in this sentence.",
+   "covers": "The bill as SEIA modeled it. The statement does not say which text.",
+   "quote": "shows that BAAJA could unlock 167 gigawatts of additional solar capacity between 2028 and 2035, bringing solar to over 18% of U.S. electricity generation by 2035.",
+   "url": "https://seia.org/?p=18691",
+   "method_url": "https://seia.org/research-resources/baaja-impact-on-the-electricity-sector/"
+  },
+  {
+   "id": "acp-buildout", "metric": "buildout", "publisher": "acp", "date": "2026-10-09",
+   "figure": "More than 350 gigawatts of clean energy; more than $800 billion of transmission and clean power",
+   "text": "ACP says the bill can bring more than 350 gigawatts of new clean energy and over $800 billion in new transmission and clean power infrastructure.",
+   "scenario": "The page states no scenario, baseline or year. It points to an ACP fact sheet.",
+   "covers": "The September 30 text; the page predates the substitute.",
+   "quote": "By creating a more predictable path to build, BAAJA can unleash: Over $800 billion in new transmission and clean power infrastructure; 350+ GW of new clean energy;",
+   "url": "https://cleanpower.org/resources/the-clean-energy-and-environmental-case-for-the-bipartisan-american-affordability-and-jobs-act/"
+  },
+  {
+   "id": "rhodium-lng", "metric": "lng", "publisher": "rhodium", "date": "2026-11-02",
+   "figure": "LNG exports 8 to 15 percent higher",
+   "text": "Rhodium projects LNG exports 8 to 15 percent higher with the bill, on top of a 76 to 145 percent rise it expects under current policy.",
+   "scenario": "Compared with current policy without the bill. The sentence gives no year.",
+   "covers": "The bill as a whole, as Rhodium modeled the September 30 text.",
+   "quote": "The bill as a whole increases liquefied natural gas (LNG) export levels by 8-15% beyond a 76-145% increase already happening under current policy.",
+   "url": "https://rhg.com/?p=24167",
+   "method_url": "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf"
+  },
+  {
+   "id": "public-citizen-lng", "metric": "lng", "publisher": "public-citizen", "date": "2026-11-08",
+   "figure": "39 billion cubic feet a day of authorized LNG export capacity",
+   "text": "Public Citizen says Title IV would keep the Energy Department from changing export approvals that cover 39 billion cubic feet a day of capacity already authorized.",
+   "scenario": "A count of existing approvals under current law. It is not a model result.",
+   "covers": "Title IV. The page does not say which text.",
+   "quote": "Title IV of BAAJA directly impedes this Natural Gas Act authority, and will lock in this already-authorized 39 bcf/d of LNG export capacity.",
+   "url": "https://www.citizen.org/article/senate-permitting-legislation-baaja-lng-exports-affordability-harm/"
+  },
+  {
+   "id": "cea-gdp", "metric": "economy", "publisher": "cea", "date": "2026-10-28",
+   "figure": "Long-run GDP 0.28 to 0.56 percent higher, or $82 billion to $164 billion a year",
+   "text": "The Council of Economic Advisers estimates long-run GDP 0.28 to 0.56 percent higher, or $82 billion to $164 billion more output a year, if federal reviews are shortened to the deadlines the bill sets.",
+   "scenario": "Compared with current federal review times.",
+   "covers": "The review deadlines. The page does not say which text.",
+   "quote": "We find that reducing review times down to the levels required by the BAAJA would: Increase long-run GDP by between 0.28 percent and 0.56 percent (i.e., $82 billion to $164 billion in additional output each year).",
+   "url": "https://www.whitehouse.gov/research/2026/10/the-economic-benefits-of-permitting-reform/"
+  },
+  {
+   "id": "cgep-months", "metric": "time", "publisher": "cgep", "date": "2026-10-21",
+   "figure": "64 months sooner to a federal decision, for a composite transmission project",
+   "text": "Columbia's tool replays past projects under the bill's deadlines. Its composite transmission project reaches the federal decision 64 months sooner.",
+   "scenario": "Compared with the dates those projects recorded under current law. The count stops at the federal decision and leaves out state siting and the FERC backstop permit.",
+   "covers": "The deadlines in the September 30 text.",
+   "quote": "which account for most of the projected time savings for the transmission archetype. Up to the federal decision, that archetype saves 64 months.",
+   "url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+   "method_url": "https://www.energypolicy.columbia.edu/project-timeline-savings-under-baaja/"
+  }
+ ]
+}

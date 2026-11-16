@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-09",
+ "as_of": "2026-11-15",
  "substitute": {
   "title": "The November 7 substitute",
   "date": "2026-11-07",
@@ -366,8 +366,39 @@
    "note": "The House-passed bill the Senate is using as the vehicle; the substitute keeps its text as section 3001."
   }
  },
- "floor": [],
- "floor_note": "No other amendment filed or announced as of November 9.",
+ "floor": [
+  {
+   "id": "sa-6883",
+   "number": "SA 6883",
+   "sponsor": "Thune for Capito",
+   "date": "2026-11-10",
+   "status": "pending",
+   "summary": "The sponsors' November 7 substitute, offered as a full replacement for the text of H.R. 2347. Thune filed to end debate on it on November 11.",
+   "sources": [
+    {
+     "publisher": "U.S. Senate Press Gallery",
+     "url": "https://www.dailypress.senate.gov/wednesday-november-11-2026/",
+     "quote": "Capito substitute amendment #6883 to H.R.2347, Bipartisan American Affordability and Jobs Act of 2026."
+    }
+   ]
+  },
+  {
+   "id": "sa-6884-6890",
+   "number": "SA 6884 to SA 6890",
+   "sponsor": "Thune",
+   "date": "2026-11-10",
+   "status": "pending",
+   "summary": "Seven amendments the majority leader proposed after the substitute, with a motion to commit the bill to the Finance Committee. Their text was not read; congress.gov refused the request.",
+   "sources": [
+    {
+     "publisher": "Senate floor activity, November 10",
+     "url": "https://www.senate.gov/legislative/LIS/floor_activity/11_10_2026_Senate_Floor.htm",
+     "quote": "Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate."
+    }
+   ]
+  }
+ ],
+ "floor_note": "No other amendment proposed in the sources checked as of November 15.",
  "reactions": [
   {
    "id": "capito",
@@ -666,12 +697,12 @@
   }
  ],
  "vote": {
-  "date": "2026-11-09",
-  "question": "Cloture on the motion to proceed to H.R. 2347",
+  "date": "2026-11-16",
+  "question": "Ending debate on the substitute, SA 6883",
   "result": null,
-  "url": "https://www.dailypress.senate.gov/monday-november-9-2026/",
-  "quote": "At approximately 5:30 p.m., the Senate will vote on cloture on the motion to proceed to H.R.2347.",
-  "when": "Scheduled for about 5:30 p.m."
+  "url": "https://www.dailypress.senate.gov/thursday-november-12-2026/",
+  "quote": "Cloture on the Capito substitute amendment #6883 to H.R.2347, legislative vehicle for the permitting reform bill.",
+  "when": "Scheduled for 5:30 p.m."
  },
  "highlights": [
   {

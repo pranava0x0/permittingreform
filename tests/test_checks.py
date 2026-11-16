@@ -1,7 +1,9 @@
 """The validators themselves: each must be able to fail."""
 import json
+import os
 import sys
 import tempfile
+import time
 import unittest
 from unittest.mock import patch
 from pathlib import Path
@@ -11,7 +13,9 @@ sys.path.insert(0, str(ROOT / "tools"))
 import billtext  # noqa: E402
 import build  # noqa: E402
 import check_links  # noqa: E402
+import browser_quotes  # noqa: E402
 import check_quotes  # noqa: E402
+import final_checks  # noqa: E402
 import infer_check  # noqa: E402
 import webfetch  # noqa: E402
 
@@ -106,7 +110,15 @@ class Links(unittest.TestCase):
         found = check_links.collect(CORE)
         places = {where.split(".")[0] for wheres in found.values() for where in wheres}
         # Speed sources went unchecked until 2026-10-26: the quote check read them, the link check did not.
-        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media", "takes", "speed", "amend"})
+        # Estimate sources and method pages went unchecked until 2026-11-15, the day the estimates were added.
+        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media", "takes", "speed", "amend", "estimates", "votes"})
+        for e in CORE["estimates"]["estimates"]:
+            for key in ("url", "method_url"):
+                if e.get(key):
+                    self.assertIn(e[key].split("#", 1)[0], found, f"{e['id']} {key}")
+        for r in CORE["votes"]["roll_calls"]:
+            self.assertIn(r["url"].split("#", 1)[0], found)
+            self.assertIn(r["xml_url"], found)
         for x in CORE["amend"]["reactions"]:
             self.assertIn(x["sources"][0]["url"], found)
         self.assertIn(CORE["meta"]["source_pdf"], found)
@@ -289,3 +301,55 @@ class BrowserRecords(unittest.TestCase):
             check_quotes.from_browser(row, opened)
         self.assertEqual([hit["result"], miss["result"], other["result"]], ["browser", "unreachable", "unreachable"])
 
+
+class BrowserScripts(unittest.TestCase):
+    def test_every_script_the_final_run_names_exists_and_has_a_usual_time(self):
+        for name, (cmd, _) in final_checks.steps("http://127.0.0.1:1/").items():
+            self.assertTrue((ROOT / cmd[1]).is_file(), f"{name}: {cmd[1]} is missing")
+            self.assertIn(name, final_checks.USUAL)
+
+    def test_status_reports_a_run_whose_process_is_gone_as_died(self):
+        import contextlib
+        import io
+        with tempfile.TemporaryDirectory() as tmp:
+            status = Path(tmp) / "status.json"
+            by_hand = Path(tmp) / "clicks-progress.json"
+            run = {"started": "2026-11-15T10:00:00", "pid": 2 ** 22 + 12345, "state": "running",
+                   "steps": [{"name": "clicks", "state": "running", "usual": 2040, "began": 0}]}
+            for state, code, needle in (("running", 2, "died"), ("passed", 0, "state: passed")):
+                run["state"] = state
+                run["steps"][0].update(state=state)
+                status.write_text(json.dumps(run), encoding="utf-8")
+                out = io.StringIO()
+                with patch.object(final_checks, "STATUS", status), patch.object(final_checks, "OUT", Path(tmp)), \
+                        patch.object(final_checks, "STANDALONE_PROGRESS", by_hand), contextlib.redirect_stdout(out):
+                    self.assertEqual(final_checks.show_status(), code)
+                self.assertIn(needle, out.getvalue())
+            status.unlink()
+            with patch.object(final_checks, "STATUS", status), patch.object(final_checks, "STANDALONE_PROGRESS", by_hand), contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(final_checks.show_status(), 1)
+            # A crawl started by hand has no status file, only its own progress file.
+            by_hand.write_text(json.dumps({"state": "running", "pid": os.getpid(), "width": 375, "phase": "clicking controls", "route": "people",
+                                           "route_n": 2, "routes": 13, "controls_done": 40, "page_loads": 90, "problems": 0}), encoding="utf-8")
+            for age, code, needle in ((0, 0, "started by hand is running"), (600, 2, "STALLED")):
+                os.utime(by_hand, (time.time() - age, time.time() - age))
+                out = io.StringIO()
+                with patch.object(final_checks, "STATUS", status), patch.object(final_checks, "STANDALONE_PROGRESS", by_hand), contextlib.redirect_stdout(out):
+                    self.assertEqual(final_checks.show_status(), code)
+                self.assertIn(needle, out.getvalue())
+
+    def test_only_unreachable_quotes_are_sent_to_the_browser(self):
+        import argparse
+        rows = [{"url": "https://example.org/a", "text": "first", "result": "unreachable"},
+                {"url": "https://example.org/a", "text": "first", "result": "unreachable"},
+                {"url": "https://example.org/a", "text": "second", "result": "unreachable"},
+                {"url": "https://example.org/b", "text": "third", "result": "verified"},
+                {"url": "https://example.org/c", "text": "fourth", "result": "browser"}]
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "quotes.json"
+            out.write_text(json.dumps({"web": rows}), encoding="utf-8")
+            args = argparse.Namespace(quote=None, url=None, recheck=False)
+            import contextlib
+            import io
+            with patch.object(check_quotes, "OUT", out), contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(browser_quotes.wanted(args), {"https://example.org/a": ["first", "second"]})

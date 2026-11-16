@@ -1,7 +1,13 @@
 /* Click crawler: loads every view (all 71 sections included) at phone and desktop widths,
    then clicks every control on the main views from a fresh load and times it.
    Fails on page errors, horizontal overflow, dead controls, or any load or click over 20s.
-   Usage: NODE_PATH=<dir with playwright> UAT_BASE=http://127.0.0.1:8766/ node tests/clicks.cjs */
+   Usage: NODE_PATH=<dir with playwright> UAT_BASE=http://127.0.0.1:8766/ node tests/clicks.cjs
+
+   A full run is about 5,400 page loads and took 34 minutes on 2026-11-15 (Apple M-series laptop,
+   headless Chrome). It prints one line per route as it goes and rewrites
+   .test-artifacts/clicks-progress.json every two seconds; `make progress` reads that file and says
+   whether the run is moving. Do not rebuild site/ while it runs.
+   CLICK_ROUTES=positions,overview limits the run to those routes; CLICK_WIDTHS=375 to one width. */
 const { chromium } = require('playwright');
 const fs = require('node:fs');
 const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
@@ -9,9 +15,16 @@ const RED_MS = 20000;   /* the hard limit: anything slower is a ship blocker */
 const SLOW_MS = 1000;   /* reported, not failed */
 const out = process.env.CLICKS_OUT || '.test-artifacts/clicks.json';
 
-const WIDTHS = [{ w: 375, h: 812, touch: true }, { w: 1280, h: 800, touch: false }];
-const CLICK_ROUTES = ['overview', 'bill', 'bill/sec/1106', 'bill/sec/2107', 'bill/search/transmission', 'compare',
+const progressAt = process.env.CLICKS_PROGRESS || '.test-artifacts/clicks-progress.json';
+const only = (name) => (process.env[name] || '').split(',').map((s) => s.trim()).filter(Boolean);
+
+const ALL_WIDTHS = [{ w: 375, h: 812, touch: true }, { w: 1280, h: 800, touch: false }];
+const WIDTHS = only('CLICK_WIDTHS').length ? ALL_WIDTHS.filter((v) => only('CLICK_WIDTHS').includes(String(v.w))) : ALL_WIDTHS;
+const ALL_ROUTES = ['overview', 'bill', 'bill/sec/1106', 'bill/sec/2107', 'bill/search/transmission', 'compare',
   'compare/data-center-bills', 'communities', 'datacenters', 'speed', 'timeline', 'positions', 'people', 'media', 'method', 'amendments', 'amendments/reactions', 'amendments/sec/1401', 'amendments/sec/2242-dropped', 'amendments/sec/1602'];
+const CLICK_ROUTES = only('CLICK_ROUTES').length ? ALL_ROUTES.filter((r) => only('CLICK_ROUTES').includes(r)) : ALL_ROUTES;
+const unknown = only('CLICK_WIDTHS').filter((w) => !ALL_WIDTHS.some((v) => String(v.w) === w)).concat(only('CLICK_ROUTES').filter((r) => !ALL_ROUTES.includes(r)));
+if (unknown.length) { console.error(`clicks: CLICK_WIDTHS or CLICK_ROUTES names something this crawl does not have: ${unknown.join(', ')}`); process.exit(2); }
 const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"], .tabs a, .subtabs:not([hidden]) a, .method-link, #theme-toggle';
 
 (async () => {
@@ -19,6 +32,22 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
   const report = { loads: [], clicks: [], problems: [], slow: [] };
   let n = 0;
   const problem = (p) => { report.problems.push(p); console.log('PROBLEM', JSON.stringify(p)); };
+
+  /* Progress: a line per route on stdout, and a small file a second terminal can read. */
+  const started = Date.now();
+  const clock = () => { const s = Math.round((Date.now() - started) / 1000); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
+  const now = { state: 'running', phase: 'start' };
+  let wrote = 0;
+  const progress = (fields, force) => {
+    Object.assign(now, fields);
+    if (!force && Date.now() - wrote < 2000) return;
+    wrote = Date.now();
+    fs.mkdirSync(require('node:path').dirname(progressAt), { recursive: true });
+    fs.writeFileSync(progressAt, JSON.stringify({ started: new Date(started).toISOString(), updated: new Date().toISOString(),
+      elapsed_s: Math.round((Date.now() - started) / 1000), pid: process.pid, ...now, page_loads: n,
+      controls_done: report.clicks.length, problems: report.problems.length }) + '\n');
+  };
+  process.on('exit', (code) => progress({ state: code === 0 ? 'passed' : 'failed', exit: code }, true));
 
   for (const vp of WIDTHS) {
     const ctx = await browser.newContext({ viewport: { width: vp.w, height: vp.h }, hasTouch: vp.touch, isMobile: vp.touch });
@@ -48,8 +77,11 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
 
     /* 1. Every view, every section: load time, errors, overflow, length. */
     const sections = await (async () => { await open('overview'); return page.evaluate(() => PR_DATA.sections.map((s) => s.n)); })();
-    const all = CLICK_ROUTES.concat(sections.map((s) => 'bill/sec/' + s)).filter((r, i, a) => a.indexOf(r) === i);
+    /* A run limited to some routes loads only those; the full run also loads every section. */
+    const all = (only('CLICK_ROUTES').length ? CLICK_ROUTES : CLICK_ROUTES.concat(sections.map((s) => 'bill/sec/' + s))).filter((r, i, a) => a.indexOf(r) === i);
+    console.log(`[${clock()}] ${vp.w}px: loading ${all.length} views`);
     for (const route of all) {
+      progress({ width: vp.w, phase: 'loading views', route, route_n: all.indexOf(route) + 1, routes: all.length });
       const ms = await open(route);
       const s = await page.evaluate(() => ({ h: document.documentElement.scrollHeight, overflow: document.documentElement.scrollWidth > innerWidth + 1, text: document.getElementById('view').innerText }));
       const rec = { width: vp.w, route, ms, screens: +(s.h / vp.h).toFixed(1) };
@@ -68,7 +100,10 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
     for (const route of CLICK_ROUTES) {
       await open(route);
       const total = await page.locator(CONTROLS).count();
+      const at = { width: vp.w, phase: 'clicking controls', route, route_n: CLICK_ROUTES.indexOf(route) + 1, routes: CLICK_ROUTES.length, controls: total };
+      console.log(`[${clock()}] ${vp.w}px ${route}: ${total} controls (route ${at.route_n} of ${at.routes}; ${report.problems.length} problems so far)`);
       for (let i = 0; i < total; i++) {
+        progress({ ...at, control: i + 1 }, i === 0);
         await open(route);
         const loc = page.locator(CONTROLS).nth(i);
         if (!(await loc.count())) continue;
@@ -137,7 +172,9 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
     }
 
     /* 3. Load-more lists: count taps to reach the last entry. */
+    console.log(`[${clock()}] ${vp.w}px: load-more lists`);
     for (const route of ['timeline', 'people', 'media']) {
+      progress({ width: vp.w, phase: 'load-more lists', route }, true);
       await open(route);
       let taps = 0;
       const t0 = Date.now();
@@ -155,6 +192,6 @@ const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"],
   console.log(`views loaded: ${report.loads.length}; controls clicked: ${clicked.length} (hidden ${report.clicks.filter((c) => c.result === 'hidden').length}, disabled ${report.clicks.filter((c) => c.result === 'disabled').length})`);
   console.log('slowest load:', JSON.stringify(max(report.loads)));
   console.log('slowest click:', JSON.stringify(max(clicked)));
-  console.log(`over ${SLOW_MS}ms: ${report.slow.length}; problems: ${report.problems.length}`);
+  console.log(`over ${SLOW_MS}ms: ${report.slow.length}; problems: ${report.problems.length}; ${clock()} elapsed`);
   process.exit(report.problems.length ? 1 : 0);
 })().catch((e) => { console.error(e); process.exit(2); });

@@ -317,6 +317,140 @@ class Positions(unittest.TestCase):
         self.assertIn("issues", core_js["positions"])
         self.assertNotIn("_about", core_js["positions"])
 
+    def test_roll_call_members_add_up_to_the_printed_tally(self):
+        calls = CORE["votes"]["roll_calls"]
+        self.assertTrue(calls)
+        for rc in calls:
+            cast = [m[3] for m in rc["members"]]
+            self.assertEqual(len(rc["members"]), 100, rc["number"])
+            self.assertEqual((cast.count("Yea"), cast.count("Nay"), cast.count("Not Voting")), (rc["yeas"], rc["nays"], rc["not_voting"]))
+            self.assertEqual([sum(p[i] for p in rc["parties"]) for i in (1, 2, 3)], [rc["yeas"], rc["nays"], rc["not_voting"]])
+            self.assertIn(f"({rc['yeas']}-{rc['nays']}", rc["quote"])
+
+    def test_a_roll_call_that_does_not_add_up_fails_the_build(self):
+        votes = json.loads((ROOT / "data/votes.json").read_text(encoding="utf-8"))
+        votes["roll_calls"][0]["members"][0][3] = "Nay" if votes["roll_calls"][0]["members"][0][3] == "Yea" else "Yea"
+        votes["roll_calls"][1]["members"][1][3] = "Present"
+        errors: list[str] = []
+        with patch.object(build, "load", return_value=votes):
+            build.load_votes(CORE["people"], errors)
+        self.assertTrue(any("members add up to" in e for e in errors), errors)
+        self.assertTrue(any("unknown vote value" in e for e in errors), errors)
+
+    def test_every_held_senator_links_to_one_roll_call_name(self):
+        people = {p["id"]: p for p in CORE["people"]}
+        senators = {p["id"] for p in CORE["people"] if p.get("inside_government") and p["sector"] == "congress" and p["affiliation"].startswith("U.S. Senate")}
+        self.assertGreaterEqual(len(senators), 20)
+        for rc in CORE["votes"]["roll_calls"]:
+            linked = [m[4] for m in rc["members"] if len(m) > 4]
+            self.assertEqual(len(linked), len(set(linked)))
+            self.assertEqual(set(linked), senators)
+            for m in rc["members"]:
+                if len(m) > 4:
+                    self.assertEqual(people[m[4]].get("party", m[1]), m[1], m)
+        # A senator held under a name the roll call does not carry is an error, not a silent gap.
+        ghost = dict(next(p for p in CORE["people"] if p["id"] in senators), id="ghost", name="Pat Nobody")
+        errors: list[str] = []
+        build.load_votes(CORE["people"] + [ghost], errors)
+        self.assertTrue(any("Pat Nobody" in e for e in errors), errors)
+
+    def test_two_senators_with_one_surname_are_told_apart_by_full_name(self):
+        # Rick Scott and Tim Scott are both Republicans; a surname match alone would give one
+        # tracked senator both rows.
+        template = next(p for p in CORE["people"] if p.get("inside_government") and p["affiliation"].startswith("U.S. Senate"))
+        scott = dict(template, id="tim-scott", name="Tim Scott", party="R")
+        errors: list[str] = []
+        votes = build.load_votes(CORE["people"] + [scott], errors)
+        self.assertEqual([e for e in errors if "Scott" in e or "two names" in e], [])
+        for rc in votes["roll_calls"]:
+            self.assertEqual([m[0] for m in rc["members"] if m[4:] == ["tim-scott"]], ["Tim Scott"])
+
+    def test_every_vote_is_checked_against_the_committed_senate_xml(self):
+        doc = json.loads((ROOT / "data/votes.json").read_text(encoding="utf-8"))
+        errors: list[str] = []
+        build.load_votes(CORE["people"], errors, doc=json.loads(json.dumps(doc)))
+        self.assertEqual(errors, [])
+        # Swapping one Yea with one Nay leaves the tally intact; only the Senate file can catch it.
+        swapped = json.loads(json.dumps(doc))
+        members = swapped["roll_calls"][0]["members"]
+        yea = next(m for m in members if m[3] == "Yea")
+        nay = next(m for m in members if m[3] == "Nay")
+        yea[3], nay[3] = "Nay", "Yea"
+        errors = []
+        build.load_votes(CORE["people"], errors, doc=swapped)
+        self.assertEqual(len(errors), 2, errors)
+        for m in (yea, nay):
+            self.assertTrue(any(m[0] in e and "in the Senate file" in e for e in errors), (m[0], errors))
+        # A wrong party, a dropped senator and a changed result are caught the same way.
+        for change, needle in ((lambda rc: rc["members"][0].__setitem__(1, "I"), "in the Senate file"),
+                               (lambda rc: rc["members"].pop(), "missing here"),
+                               (lambda rc: rc.__setitem__("result", "Rejected"), "result is 'Rejected'")):
+            broken = json.loads(json.dumps(doc))
+            change(broken["roll_calls"][1])
+            errors = []
+            build.load_votes(CORE["people"], errors, doc=broken)
+            self.assertTrue(any(needle in e for e in errors), (needle, errors))
+
+    def test_a_roll_call_without_its_committed_xml_fails_the_build(self):
+        doc = json.loads((ROOT / "data/votes.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp, patch.object(build.roll_call, "RAW", Path(tmp)):
+            errors: list[str] = []
+            build.load_votes(CORE["people"], errors, doc=doc)
+        self.assertEqual(sum("is not committed under data/votes/" in e for e in errors), len(doc["roll_calls"]))
+
+    def test_every_estimate_names_its_publisher_scenario_and_source_sentence(self):
+        est = CORE["estimates"]
+        self.assertTrue(est["estimates"])
+        for e in est["estimates"]:
+            for key in ("figure", "text", "scenario", "covers", "quote", "url", "date"):
+                self.assertTrue(e[key].strip(), (e["id"], key))
+            self.assertIn(e["publisher"], est["publishers"])
+            self.assertIn(e["metric"], {m["id"] for m in est["metrics"]})
+        for key, pub in est["publishers"].items():
+            self.assertIn(pub["sector"], vocab.SECTORS, key)
+            self.assertIn(pub["stance"], (None, "supports", "opposes", "mixed"), key)
+        self.assertEqual(check_data.check_votes_estimates(CORE), [])
+
+    def test_broken_votes_and_estimates_are_reported(self):
+        broken = json.loads(json.dumps({k: CORE[k] for k in ("meta", "votes", "estimates")}))
+        broken["votes"]["roll_calls"][0]["date"] = "2099-01-01"
+        broken["votes"]["roll_calls"][1]["quote"] = "Agreed to"
+        broken["estimates"]["estimates"][0]["url"] = "http://example.org/a"
+        broken["estimates"]["estimates"][1]["quote"] = "Too short."
+        broken["estimates"]["estimates"][2]["text"] += " It adds 999 gigawatts."
+        next(iter(broken["estimates"]["publishers"].values()))["stance"] = "reporting"
+        errs = check_data.check_votes_estimates(broken)
+        for needle in ("after the data date", "does not carry the tally", "url must be https", "too short", "is not a position on the bill",
+                       "the quote does not carry 999"):
+            self.assertTrue(any(needle in e for e in errs), (needle, errs))
+
+    def test_votes_and_estimates_reach_every_edition(self):
+        news = json.loads((ROOT / "site/data/news.json").read_text(encoding="utf-8"))
+        core_js = json.loads((ROOT / "site/data/core.json").read_text(encoding="utf-8"))
+        self.assertEqual(news["votes"], CORE["votes"])
+        self.assertEqual(news["estimates"], CORE["estimates"])
+        self.assertNotIn("votes", core_js)
+        self.assertEqual([v["number"] for v in core_js["recent"]["votes"]], [rc["number"] for rc in CORE["votes"]["roll_calls"]])
+        self.assertEqual(core_js["recent"]["estimates"]["count"], len(CORE["estimates"]["estimates"]))
+        full = (ROOT / "site/llms-full.txt").read_text(encoding="utf-8")
+        issues = (ROOT / "site/issues.html").read_text(encoding="utf-8")
+        index = (ROOT / "site/index.html").read_text(encoding="utf-8")
+        for rc in CORE["votes"]["roll_calls"]:
+            self.assertIn(f"### Vote {rc['number']}, {rc['date']}", full)
+            self.assertIn(f'id="vote-{rc["number"]}"', issues)
+            self.assertIn(f'issues.html#vote-{rc["number"]}', index)
+            for m in rc["members"]:
+                self.assertIn(html.escape(f"{m[0]} ({m[1]}-{m[2]})"), issues)
+        for e in CORE["estimates"]["estimates"]:
+            self.assertIn(e["quote"], full)
+            self.assertIn(html.escape(e["quote"]), issues)
+            self.assertIn(html.escape(e["url"]), issues)
+        checked = {r["where"] for r in check_quotes.web_quotes(CORE)}
+        self.assertTrue({f"estimates.{e['id']}" for e in CORE["estimates"]["estimates"]} <= checked)
+        self.assertTrue({f"votes.{rc['number']}" for rc in CORE["votes"]["roll_calls"]} <= checked)
+        fields = {w for w, _ in check_data.prose_fields(CORE)}
+        self.assertTrue({f"estimates {e['id']} text" for e in CORE["estimates"]["estimates"]} <= fields)
+
     def test_the_letters_count_follows_letter_presence(self):
         core = json.loads(json.dumps(CORE))
         before = build.browser_core(core)["recent"]["positions"]["letters"]

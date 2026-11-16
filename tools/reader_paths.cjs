@@ -43,6 +43,13 @@ const PATHS = [
   ['amend-section', [{ href: '#/amendments' }, { sel: 'a.am-key[href="#/amendments/sec/1401"]' }], '#h-am-what'],
   ['amend-reactions', [{ href: '#/amendments/reactions' }, fold('Oppose\\d+')], '.am-stance[open] .am-reaction'],
   ['bill-positions', [{ href: '#/positions' }], '.pos-letter'],
+  // Votes and estimates: one tap from the Overview card to the section, one more to open a row.
+  ['senate-votes', [{ href: '#/positions/votes' }], '.pos-vote'],
+  ['how-each-senator-voted', [{ href: '#/positions/votes' }, row('#vote-258')], '#vote-258 .vote-names'],
+  ['stated-vs-vote', [{ href: '#/positions/votes' }, row('#votes-stated')], '#votes-stated .vote-stated'],
+  ['estimates-emissions', [{ href: '#/positions/estimates' }, row('#estimates-emissions')], '#estimates-emissions .estimate'],
+  ['estimates-prices', [{ href: '#/positions/estimates' }, row('#estimates-electricity_cost')], '#estimates-electricity_cost .estimate'],
+  ['estimates-time', [{ href: '#/positions/estimates' }, row('#estimates-time')], '#estimates-time .estimate'],
   ['amend-vs-bills', [{ href: '#/compare' }, { row: 'row-cost' }], '#row-cost .sub-note'],
   ['coverage', [{ tab: 'media' }], '.media-item'],
   ['timeline', [{ tab: 'timeline' }], '.event'],

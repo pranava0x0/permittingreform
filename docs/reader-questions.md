@@ -67,6 +67,25 @@ On 2026-10-22 the Overview gained a two-sentence lead that says what the bill is
 
 The Positions path used to stop at the page heading, which says only "Who's for and against" above a tally. It now ends in the newest letter, opened, where the signers are named with their stance: 2 taps and 1.4 screens, and 1.3 before the simplification. The disputed readings added above the issue rows on 2026-10-22 moved the "why the split" answer from 1.9 to 2.1 screens. On 2026-10-27 the disputed questions folded into one row per issue, which brought it back to 2.0 and the newest letter up to 1.1, and put the tribal consultation question one tap further in (3 taps, 0.9 screens).
 
+### Re-measured November 15, 2026
+
+Senate votes and Published estimates were added to Positions. Paths that moved or are new (after PR 20, then now; the full run is in `uat.md`):
+
+| Question | Path id | After PR 20 | Now |
+|---|---|---|---|
+| Who is for it and who is against it? | `who-for-against` | 2 · 1.09 | 2 · 1.48 |
+| Why do the groups split? | `why-split` | 2 · 2.04 | 2 · 2.74 |
+| Is the tribal consultation claim right? | `tribes-dispute` | 3 · 0.91 | 3 · 1.27 |
+| Positions on one section | `bill-positions` | 1 · 1.01 | 1 · 1.37 |
+| How it differs from earlier bills | `vs-earlier-bills` | 1 · 1.93 | 1 · 2.04 |
+| Agency deadlines | `agency-deadlines` | 1 · 1.81 | 1 · 1.92 |
+| How did the Senate vote? | `senate-votes` | new | 1 · 0.61 |
+| How did each senator vote? | `how-each-senator-voted` | new | 2 · 1 |
+| Did a senator vote the way they said? | `stated-vs-vote` | new | 2 · 0.9 |
+| Published emissions estimates | `estimates-emissions` | new | 2 · 2.18 |
+| Published electricity cost estimates | `estimates-prices` | new | 2 · 2.24 |
+| Published estimates of time saved | `estimates-time` | new | 2 · 2.51 |
+
 ## Questions the site does not answer yet
 
 Each needs new cited material before the site can answer it; they are in `backlog.md`.
@@ -79,6 +98,8 @@ Each needs new cited material before the site can answer it; they are in `backlo
 | Will amendments change the text before the vote? | 1 | [gtlaw.com](https://www.gtlaw.com/ar/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text)
 
 The vote-count half of "will it pass" is also open: the site names supporters and opponents but does not count declared senators or say what the House would do.
+
+November 15, 2026: Positions now holds published estimates for the first three questions in this table (emissions, electricity cost, time saved), each with its publisher, scenario and source sentence. They are the publishers' figures; the tracker has not checked the models, and no Congressional Budget Office estimate was found. The two Senate roll calls of November 9 and 10 are recorded with every senator's vote. Both were procedural, so the count for passage and the House's plans are still open.
 
 ## What this changed on the site
 

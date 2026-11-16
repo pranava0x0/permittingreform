@@ -25,6 +25,7 @@ import hashlib
 import html
 import json
 import re
+import unicodedata
 import sys
 from pathlib import Path
 from urllib.parse import quote
@@ -32,6 +33,7 @@ from urllib.parse import quote
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import amendments  # noqa: E402
 import billtext  # noqa: E402
+import roll_call  # noqa: E402
 
 ROOT = billtext.ROOT
 DATA = ROOT / "data"
@@ -40,7 +42,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-11-09"
+DATA_AS_OF = "2026-11-15"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -61,13 +63,15 @@ def dump_js(var: str, value) -> str:
 
 
 NEWS_KEYS = ("timeline", "people", "media")
+# Loaded with the lists above, but not lists themselves: the Senate roll calls and the published estimates.
+NEWS_EXTRA = ("votes", "estimates")
 
 
 def browser_core(core: dict) -> dict:
     """What core.js carries on every page. The outside readings (takes.js) and
     the timeline, people and media (news.js) load on demand; the Overview gets
     its short lists from "recent"."""
-    out = {k: v for k, v in core.items() if k not in ("takes", "amend") and k not in NEWS_KEYS}
+    out = {k: v for k, v in core.items() if k not in ("takes", "amend") and k not in NEWS_KEYS + NEWS_EXTRA}
     out["amend_index"] = amendments.index(core.get("amend"))
     media = sorted(core["media"], key=lambda it: it["date"], reverse=True)[:6]
     marks = sorted((e for e in core["timeline"] if e.get("milestone")), key=lambda e: e["date"], reverse=True)[:6]
@@ -76,6 +80,8 @@ def browser_core(core: dict) -> dict:
         "milestones": [{k: e[k] for k in ("id", "date", "title")} for e in marks],
         "counts": {k: len(core[k]) for k in NEWS_KEYS},
         "positions": positions_summary(core),
+        "votes": [{k: rc[k] for k in ("number", "date", "question", "yeas", "nays", "not_voting")} for rc in core["votes"]["roll_calls"]],
+        "estimates": {"count": len(core["estimates"]["estimates"]), "publishers": len({e["publisher"] for e in core["estimates"]["estimates"]})},
     }
     return out
 
@@ -91,7 +97,139 @@ def positions_summary(core: dict) -> dict:
 
 
 def browser_news(core: dict) -> dict:
-    return {k: core[k] for k in NEWS_KEYS}
+    return {k: core[k] for k in NEWS_KEYS + NEWS_EXTRA}
+
+
+VOTE_CAST = ("Yea", "Nay", "Not Voting")
+# What the Senate's "required" field means in votes. A threshold the map does not know is a build error.
+VOTE_REQUIRED = {"3/5": "three-fifths of all senators (60 votes)", "1/2": "a majority of senators voting"}
+PARTIES = (("R", "Republicans"), ("D", "Democrats"), ("I", "Independents"))
+
+
+def load_votes(people: list[dict], errors: list[str], doc: dict | None = None) -> dict:
+    """Senate roll calls on the bill's vehicle. The member list must add up to the
+    printed tally, or the page would show a count the names do not support. Every
+    field copied from the Senate's XML, each senator's vote included, must equal the
+    file committed under data/votes/. Each senator the tracker holds a stated
+    position for gets that person's id."""
+    doc = doc if doc is not None else load(DATA / "votes.json")
+    senators = {}
+    def fold(name: str) -> str:
+        return unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
+
+    def surname(name: str) -> str:
+        return fold(name.split()[-1])
+
+    for p in people:
+        if p.get("inside_government") and p["sector"] == "congress" and "Senate" in p["affiliation"]:
+            senators.setdefault(surname(p["name"]), []).append(p)
+    for rc in doc["roll_calls"]:
+        where = f"votes {rc['number']}"
+        raw = roll_call.RAW / Path(str(rc.get("xml_url", ""))).name
+        if raw.suffix != ".xml" or not raw.is_file():
+            errors.append(f"{where}: the Senate XML is not committed under data/votes/; run tools/roll_call.py {rc['number']}")
+        else:
+            errors += [f"{where}: {d}" for d in roll_call.differences(rc, roll_call.read(raw))]
+        cast = [m[3] for m in rc["members"]]
+        if set(cast) - set(VOTE_CAST):
+            errors.append(f"{where}: unknown vote value {sorted(set(cast) - set(VOTE_CAST))}")
+        tally = (cast.count("Yea"), cast.count("Nay"), cast.count("Not Voting"))
+        if tally != (rc["yeas"], rc["nays"], rc["not_voting"]):
+            errors.append(f"{where}: members add up to {tally}, the record says {(rc['yeas'], rc['nays'], rc['not_voting'])}")
+        if len({(m[0], m[2]) for m in rc["members"]}) != len(rc["members"]):
+            errors.append(f"{where}: a senator is listed twice")
+        shared = {s for s in map(surname, (m[0] for m in rc["members"])) if [surname(m[0]) for m in rc["members"]].count(s) > 1}
+        for m in rc["members"]:
+            held = [p for p in senators.get(surname(m[0]), []) if p.get("party", m[1]) == m[1]]
+            if surname(m[0]) in shared:
+                # Two senators share this surname (the Scotts), so only the full name tells them apart.
+                held = [p for p in held if fold(p["name"]) == fold(m[0])]
+            del m[4:]
+            if len(held) == 1:
+                m.append(held[0]["id"])
+        ids = [m[4] for m in rc["members"] if len(m) > 4]
+        if len(ids) != len(set(ids)):
+            errors.append(f"{where}: one tracked senator is linked to two names in the roll call")
+        if rc["required"] not in VOTE_REQUIRED:
+            errors.append(f"{where}: unknown threshold {rc['required']!r}")
+        rc["required_text"] = VOTE_REQUIRED.get(rc["required"], rc["required"])
+        rc["parties"] = [[code, *(sum(1 for m in rc["members"] if m[1] == code and m[3] == v) for v in VOTE_CAST)]
+                         for code, _ in PARTIES if any(m[1] == code for m in rc["members"])]
+        linked = {m[4] for m in rc["members"] if len(m) > 4}
+        for p in people:
+            # A sitting senator the tracker holds a position for must appear in every roll call.
+            if p.get("inside_government") and p["sector"] == "congress" and p["affiliation"].startswith("U.S. Senate") and p["id"] not in linked:
+                errors.append(f"{where}: {p['name']} is held as a senator and matches no name in the roll call")
+    return doc
+
+
+def load_estimates(errors: list[str]) -> dict:
+    """Published figures on what the bill would do. Every row names its publisher,
+    its scenario and the sentence the figure was copied from."""
+    doc = load(DATA / "estimates.json")
+    doc.pop("_about", None)
+    metrics = {m["id"] for m in doc["metrics"]}
+    seen: set[str] = set()
+    for e in doc["estimates"]:
+        where = f"estimates {e.get('id')}"
+        for key in ("id", "metric", "publisher", "date", "figure", "text", "scenario", "covers", "quote", "url"):
+            if not e.get(key):
+                errors.append(f"{where}: missing {key}")
+        if e.get("id") in seen:
+            errors.append(f"{where}: duplicate id")
+        seen.add(e.get("id"))
+        if e.get("metric") not in metrics:
+            errors.append(f"{where}: unknown metric {e.get('metric')!r}")
+        if e.get("publisher") not in doc["publishers"]:
+            errors.append(f"{where}: unknown publisher {e.get('publisher')!r}")
+    for key, pub in doc["publishers"].items():
+        for field in ("name", "sector", "kind"):
+            if not pub.get(field):
+                errors.append(f"estimates publisher {key}: missing {field}")
+        if "stance" not in pub:
+            errors.append(f"estimates publisher {key}: stance must be stated, or null when the publisher has taken none")
+    for m in doc["metrics"]:
+        if not any(e.get("metric") == m["id"] for e in doc["estimates"]):
+            errors.append(f"estimates: metric {m['id']} has no rows")
+    return doc
+
+
+def votes_markdown(core: dict) -> list[str]:
+    """The Senate roll calls as text: question, threshold, tally, party split and every name."""
+    v = core["votes"]
+    party = dict(PARTIES)
+    out = ["", "## Senate votes", "", v["note"], ""]
+    for rc in v["roll_calls"]:
+        out += [f"### Vote {rc['number']}, {rc['date']}: {rc['question']}", "",
+                f"- Senate's wording: {rc['official_question']}. Needed: {rc['required_text']}. Result: {rc['result']}.",
+                f"- Tally: {rc['yeas']} yea, {rc['nays']} nay, {rc['not_voting']} not voting. Source: [Senate roll call {rc['number']}]({rc['url']})",
+                "- By party: " + "; ".join(f"{party[c]} {y} yea, {n} nay, {nv} not voting" for c, y, n, nv in rc["parties"])]
+        for cast in VOTE_CAST:
+            names = [f"{m[0]} ({m[1]}-{m[2]})" for m in rc["members"] if m[3] == cast]
+            out.append(f"- {cast} ({len(names)}): " + ", ".join(names))
+        out.append("")
+    return out
+
+
+def publisher_label(core: dict, key: str) -> str:
+    """A publisher's name with what kind of body it is and its own stated position on the bill."""
+    p = core["estimates"]["publishers"][key]
+    stance = {"supports": "supports the bill", "opposes": "opposes the bill", "mixed": "mixed on the bill"}.get(p["stance"], "no stated position on the bill")
+    return f"{p['name']} ({p['kind']}; {stance})"
+
+
+def estimates_markdown(core: dict) -> list[str]:
+    """Published figures on what the bill would do, grouped by what they measure."""
+    e = core["estimates"]
+    out = ["", "## Published estimates", "", e["intro"], "", *e.get("absent", []), ""]
+    for m in e["metrics"]:
+        out += [f"### {m['title']}", ""]
+        for row in (r for r in e["estimates"] if r["metric"] == m["id"]):
+            method = f" Method: {row['method_url']}" if row.get("method_url") else ""
+            out.append(f"- {publisher_label(core, row['publisher'])}, {row['date']}: {row['text']} Measured against: {row['scenario']} "
+                       f"Covers: {row['covers']} \"{row['quote']}\" Source: {row['url']}{method}")
+        out.append("")
+    return out
 
 
 def cite(loc: dict) -> list:
@@ -495,7 +633,9 @@ def build() -> tuple[dict, dict, list[str]]:
             row["lk"] = cls
         row.pop("verified", None)
 
-    for it in extra["media"] + takes["takes"]:
+    votes = load_votes(extra["people"], errors)
+    estimates = load_estimates(errors)
+    for it in extra["media"] + takes["takes"] + estimates["estimates"]:
         stamp(it)
     for b in (speed or {}).get("blockers", []):
         for ev in b.get("evidence", []):
@@ -539,6 +679,8 @@ def build() -> tuple[dict, dict, list[str]]:
         "timeline": extra["timeline"],
         "people": extra["people"],
         "media": extra["media"],
+        "votes": votes,
+        "estimates": estimates,
         "checks": checks,
         "amend": amendments.build(errors),
     }
@@ -572,7 +714,7 @@ def llms_txt(core: dict) -> str:
         f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
         f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
         f"- [Bill paragraph JSON]({m['site_url']}data/bill.json): section number to [printed page, line, indent level, text] arrays.",
-        f"- [Timeline, people and media JSON]({m['site_url']}data/news.json): dated events, positions and coverage, each with its sources.",
+        f"- [Timeline, people and media JSON]({m['site_url']}data/news.json): dated events, positions and coverage, each with its sources; `votes` holds each Senate roll call with every senator's vote, and `estimates` holds published figures on what the bill would do, each with its scenario and source sentence.",
         f"- [Outside readings JSON]({m['site_url']}data/takes.json): what named industry groups, advocates, lawyers and analysts say sections would do, each with its verbatim quote, source link and the bill passage it concerns.",
         "- Fetch sections/{number}.md for one section. Each file includes its summary with a page-and-line cite after every sentence, cited key points, quotes, outside readings of what the section would do (quoted from their sources), comparison notes and full statutory text.",
         "- Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}; cited range: #/bill/sec/{number}/{page}-{line}-{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.",
@@ -591,6 +733,8 @@ def llms_txt(core: dict) -> str:
             f"- [Data center bills and Communities]({m['site_url']}llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.",
             f"- [Timeline, people and media]({m['site_url']}llms-full.txt): dated records with source links and attributed positions.",
             f"- [Disputed readings]({m['site_url']}issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.",
+            f"- [Senate votes]({m['site_url']}issues.html#votes): " + "; ".join(f"{rc['date']}, {rc['question'][0].lower() + rc['question'][1:]}, {rc['yeas']} to {rc['nays']}" for rc in core["votes"]["roll_calls"]) + ". Every senator's vote is listed.",
+            f"- [Published estimates]({m['site_url']}issues.html#estimates): {len(core['estimates']['estimates'])} figures from {len({e['publisher'] for e in core['estimates']['estimates']})} publishers on " + ", ".join(x["title"].lower() if x["id"] != "lng" else x["title"] for x in core["estimates"]["metrics"]) + ", each with its scenario, the provisions it covers and the sentence it was copied from.",
             f"- [Method and check status]({m['site_url']}#/method): browser view; equivalent checks are in data/core.json.",
             f"- [Subject comparisons]({m['site_url']}#/compare): browser view; retrieve the compare object in data/core.json without JavaScript."]
     return "\n".join(out) + "\n"
@@ -773,6 +917,8 @@ def llms_full(core: dict, paras: dict) -> str:
                 f"BAAJA §{g['section']}: {md_cited(core, g, 'baseline')}"]
         out += [f"- {e['label']}: {e['text']} [{e['cite']}]({e['url']})" for e in g["entries"]]
     out += disputes_markdown(core)
+    out += votes_markdown(core)
+    out += estimates_markdown(core)
     out += ["", "## Added and dropped provisions", "", "```json", json.dumps({k: core["compare"][k] for k in ("added", "dropped")}, ensure_ascii=False), "```", ""]
     for label, rows in (("Timeline", core["timeline"]), ("People", core["people"]), ("Media", core["media"])):
         out += ["", f"## {label}", ""]
@@ -822,7 +968,8 @@ def reader_html(core: dict, page: str) -> str:
             out.append('</section>')
     elif page == "issues":
         out.append('<p>Jump to: ' + ' · '.join(link("#" + key, name) for key, name in
-                   (("datacenters", "Data centers"), ("speed", "Project delays"), ("communities", "Communities"), ("debate", "Debate"))) + '</p>')
+                   (("datacenters", "Data centers"), ("speed", "Project delays"), ("communities", "Communities"), ("debate", "Debate"),
+                    ("votes", "Senate votes"), ("estimates", "Published estimates"))) + '</p>')
         out.append('<h2>What would the bill change?</h2>')
         for h in core["overview"]["headlines"]:
             out.append(f'<h3>{esc(h["title"])}</h3>')
@@ -860,6 +1007,25 @@ def reader_html(core: dict, page: str) -> str:
                         take = takes[take_id]
                         out.append('<p>' + label + ' · ' + link(take["url"], take["who"]) + ' (' + esc(take["date"]) + '): “' + esc(take["quote"]) + '”</p>')
                 out.append('</section>')
+        votes, party = core["votes"], dict(PARTIES)
+        out.append(f'<h2 id="votes">Senate votes</h2><p>{esc(votes["note"])}</p>')
+        for rc in votes["roll_calls"]:
+            out.append(f'<section id="vote-{rc["number"]}"><h3>{esc(rc["question"])}</h3><p><time datetime="{esc(rc["date"])}">{esc(rc["date"])}</time> · '
+                       f'{rc["yeas"]} yea, {rc["nays"]} nay, {rc["not_voting"]} not voting · needed {esc(rc["required_text"])} · {esc(rc["result"])} · '
+                       + link(rc["url"], f'Senate roll call {rc["number"]}') + '</p>')
+            out.append('<p>' + '; '.join(f'{party[c]}: {y} yea, {n} nay, {nv} not voting' for c, y, n, nv in rc["parties"]) + '</p>')
+            for cast in VOTE_CAST:
+                names = [f'{m[0]} ({m[1]}-{m[2]})' for m in rc["members"] if m[3] == cast]
+                out.append(f'<p><strong>{cast} ({len(names)}):</strong> ' + esc(', '.join(names)) + '</p>')
+            out.append('</section>')
+        est = core["estimates"]
+        out.append(f'<h2 id="estimates">Published estimates</h2><p>{esc(est["intro"])}</p>' + ''.join(f'<p>{esc(a)}</p>' for a in est.get("absent", [])))
+        for metric in est["metrics"]:
+            out.append(f'<h3 id="est-{esc(metric["id"])}">{esc(metric["title"])}</h3>')
+            for row in (r for r in est["estimates"] if r["metric"] == metric["id"]):
+                method = (' · ' + link(row["method_url"], "Method")) if row.get("method_url") else ''
+                out.append(f'<p id="est-{esc(row["id"])}"><strong>{esc(publisher_label(core, row["publisher"]))}</strong>, {esc(row["date"])}: {esc(row["text"])} '
+                           f'Measured against: {esc(row["scenario"])} Covers: {esc(row["covers"])} “{esc(row["quote"])}” ' + link(row["url"], "Source") + method + '</p>')
     else:
         items = core["media" if page == "coverage" else "timeline"]
         for row in sorted(items, key=lambda r: r["date"], reverse=True):
@@ -1011,6 +1177,12 @@ def main() -> int:
     content = [f'<h1>{html.escape(core["meta"]["short_title"])}</h1>']
     content += [f"<p>{sourced(record)}</p>" for record in (summary, upcoming) if record]
     content += ["<h2>Status</h2>", "<ul>", *(f"<li>{sourced(p)}</li>" for p in overview["status"]["points"]), "</ul>"]
+    content += ["<h2>Senate votes</h2>", "<ul>",
+                *(f'<li>{html.escape(rc["date"])}: {html.escape(rc["question"])}. {rc["yeas"]} yea, {rc["nays"]} nay, {rc["not_voting"]} not voting. '
+                  f'<a href="{html.escape(rc["url"])}">Senate roll call {rc["number"]}</a> · <a href="issues.html#vote-{rc["number"]}">every senator\'s vote</a></li>'
+                  for rc in core["votes"]["roll_calls"]), "</ul>",
+                f'<p><a href="issues.html#estimates">Published estimates</a>: {len(core["estimates"]["estimates"])} figures from '
+                f'{len({e["publisher"] for e in core["estimates"]["estimates"]})} publishers on what the bill would do, each with its scenario and source sentence.</p>']
     content += ["<h2>Provisions</h2>", "<ul>",
                 *(f'<li><strong>{html.escape(h["title"])}.</strong> {html.escape(h["text"])}</li>' for h in overview["headlines"]), "</ul>"]
     content.append('<p>Text editions: <a href="reading.html">every section</a> · <a href="amendments.html">amendments</a> · '

@@ -1,0 +1,280 @@
+{
+ "agent": "gapfill",
+ "generated": "2026-11-15",
+ "status": [],
+ "items": [
+  {
+   "date": "2026-11-08",
+   "type": "org_statement",
+   "outlet": "Sierra Club",
+   "author": "Loren Blackford, Executive Director",
+   "title": "Sierra Club: BAAJA Remains Fundamentally Flawed Despite Manager’s Amendment",
+   "url": "https://www.sierraclub.org/press-releases/2026/11/sierra-club-baaja-remains-fundamentally-flawed-despite-manager-s-amendment",
+   "summary": "Sierra Club said the manager's amendment released Nov. 7 improved the bill but left it flawed, called for an open amendment process, and said it could not support the bill unless more changes were made.",
+   "stance": "opposes",
+   "reacts_to": "substitute",
+   "quote": {
+    "text": "The Sierra Club appreciates the improvements made by the manager’s amendment, but the draft legislation remains deeply flawed. The Senate must allow an open amendment process for additional changes to be made.",
+    "speaker": "Loren Blackford, Executive Director, Sierra Club"
+   },
+   "topics": [
+    "congress",
+    "tribal",
+    "clean-water-act",
+    "esa"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "note": "Page read through r.jina.ai; the page dates itself Nov. 8, 2026. Sierra Club's Nov. 6 statement is already held; the Nov. 8 release is not in held_urls."
+  },
+  {
+   "date": "2026-11-07",
+   "type": "org_statement",
+   "outlet": "Defenders of Wildlife",
+   "author": "Andrew Bowman, president and CEO",
+   "title": "Revised Permitting Bill Fails to Address Threats to Endangered Species Act",
+   "url": "https://defenders.org/newsroom/revised-permitting-bill-fails-address-threats-endangered-species-act",
+   "summary": "Defenders of Wildlife said it remained opposed to the bill after the revisions and asked the Senate to reject it and leave negotiations to the next Congress.",
+   "stance": "opposes",
+   "reacts_to": "substitute",
+   "quote": {
+    "text": "Defenders of Wildlife remains opposed to the Bipartisan American Affordability and Jobs Act (BAAJA) following revisions that leave the bill's most damaging provisions affecting the Endangered Species Act largely unchanged.",
+    "speaker": "Defenders of Wildlife release"
+   },
+   "topics": [
+    "esa",
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-11",
+   "type": "analysis",
+   "outlet": "Earthjustice",
+   "author": "Sambhav Sankar, Senior Vice President of Programs",
+   "title": "The permitting bill will let the Trump administration ignore NEPA",
+   "url": "https://earthjustice.org/experts/sambhav-sankar/the-permitting-bill-will-let-the-trump-administration-ignore-nepa",
+   "summary": "Earthjustice's Sankar wrote that Section 1110 limits a court's NEPA remedy to remand without vacatur or injunction and argued that the Administrative Procedure Act would not preserve injunctive relief.",
+   "stance": "opposes",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "Without meaningful judicial remedies, the National Environmental Policy Act (NEPA) will be virtually impossible to enforce, especially against bad faith actors.",
+    "speaker": "Sambhav Sankar, Senior Vice President of Programs, Earthjustice"
+   },
+   "topics": [
+    "nepa",
+    "courts"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "note": "Earthjustice URL ?p=58002 resolves to the URL given. The earlier-held Earthjustice items are ?p=57975 and ?p=57922; this one is not held."
+  },
+  {
+   "date": "2026-11-11",
+   "type": "news",
+   "outlet": "Multifamily Dive",
+   "author": "Julie Strupp",
+   "title": "Federal permitting bill that could speed apartment construction advances in Senate",
+   "url": "https://www.multifamilydive.com/news/baaja-permitting-bill-speed-apartment-construction-advances-in/874433/",
+   "summary": "Multifamily Dive reported that the National Association of Home Builders and YIMBY Action released a letter supporting the bill's housing measures on Nov. 9, and that the National Apartment Association commented on the bill's housing provisions.",
+   "stance": "reporting",
+   "reacts_to": "substitute",
+   "quote": {
+    "text": "Industry groups, including the National Association of Home Builders and YIMBY Action, released a letter of support for BAAJA’s housing measures on Monday",
+    "speaker": "Julie Strupp, Multifamily Dive"
+   },
+   "topics": [
+    "historic-preservation",
+    "congress"
+   ],
+   "sector": "media",
+   "read": "full"
+  }
+ ],
+ "events": [],
+ "people": [
+  {
+   "name": "Brian Schatz",
+   "role": "U.S. Senator (D-Hawaii)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "party": "D",
+   "stance": "supports",
+   "position": "Nov. 9: said he will vote to pass the bill, after changes to the historic preservation title; reacted to the Nov. 7 substitute.",
+   "quote": {
+    "text": "While BAAJA is not perfect, it represents a rare opportunity to pass strong, bipartisan legislation that will help lower costs and make it easier for American workers to build the things our country needs. I will vote to pass it",
+    "source_url": "https://www.schatz.senate.gov/news/press-releases/schatz-statement-on-bipartisan-american-affordability-and-jobs-act",
+    "date": "2026-11-09"
+   },
+   "note": "Primary release; the held Schatz entry rests on The Washington Sun. The release says 'I will vote to pass it' and does not mention amendments."
+  },
+  {
+   "name": "Tammy Duckworth",
+   "role": "U.S. Senator (D-Ill.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "party": "D",
+   "stance": "opposes",
+   "position": "Nov. 9: announced she would vote against advancing the bill; said the latest committee version was not good enough.",
+   "quote": {
+    "text": "While I appreciate some of the changes in the latest version put forward by committee leadership, the bill still isn’t good enough. Not for Illinois, not for the communities who won’t have a say",
+    "source_url": "https://www.duckworth.senate.gov/news/press-releases/duckworth-to-vote-against-permitting-reform-bill",
+    "date": "2026-11-09"
+   },
+   "note": "Primary release; the held Duckworth entry rests on The Washington Sun."
+  },
+  {
+   "name": "Ben Ray Luján",
+   "role": "U.S. Senator (D-N.M.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "party": "D",
+   "stance": "opposes",
+   "position": "Nov. 9: said he voted against advancing the bill and could not support advancing it in its current form; no stated position on final passage.",
+   "quote": {
+    "text": "After spending the last month listening to these concerns, I cannot support advancing the bill in its current form.",
+    "source_url": "https://www.lujan.senate.gov/newsroom/press-releases/lujan-statement-on-vote-against-advancing-permitting-reform-legislation/",
+    "date": "2026-11-09"
+   },
+   "note": "Primary release; the held Luján entry rests on The Washington Sun."
+  },
+  {
+   "name": "John Hickenlooper",
+   "role": "U.S. Senator (D-Colo.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "party": "D",
+   "stance": "supports",
+   "position": "Nov. 9: said he voted to advance the bill, that it is not perfect, and that it should be strengthened with Tribal Nations and environmental groups as it moves through the legislative process.",
+   "quote": {
+    "text": "This bill isn’t perfect. No bill is. We should continue working with Tribal Nations and environmental groups to strengthen it as it moves through the legislative process.",
+    "source_url": "https://www.hickenlooper.senate.gov/press_releases/hickenlooper-votes-to-advance-long-overdue-permitting-reform-bill/",
+    "date": "2026-11-09"
+   },
+   "note": "Not in the held people list. The release says the Senate will vote on final passage early the next week; it does not state how he will vote on passage."
+  }
+ ],
+ "rechecks": [
+  {
+   "claim": "American Clean Power analysis: BAAJA could unleash 350+ GW of new clean energy, over $800 billion of investment, 290 million metric tons of avoided CO2 annually",
+   "url": "https://cleanpower.org/resources/the-clean-energy-and-environmental-case-for-the-bipartisan-american-affordability-and-jobs-act/",
+   "title": "The Clean Energy and Environmental Case for the Bipartisan American Affordability and Jobs Act of 2026 (BAAJA)",
+   "date": "2026-10-09",
+   "quote": "By creating a more predictable path to build, BAAJA can unleash: Over $800 billion in new transmission and clean power infrastructure; 350+ GW of new clean energy;",
+   "verdict": "confirmed",
+   "note": "URL was real and the figures are on the page, which says 'Resource uploaded Oct. 9, 2026'. The page's third figure reads '290 million metric tons of avoided CO₂ emissions annually — equivalent to the emissions of 63 million cars.' The page states no scenario, baseline or method for any figure and names only 'ACP's latest analysis' (a downloadable fact sheet PDF that was not read). It describes the September 30 text; it predates the November 7 substitute. The figures are ACP's own and no independent model is cited."
+  },
+  {
+   "claim": "Public Citizen: Title IV of BAAJA would affect about 39 bcf/d of LNG export capacity",
+   "url": "https://www.citizen.org/article/senate-permitting-legislation-baaja-lng-exports-affordability-harm/",
+   "title": "Senate Permitting Legislation—S. 5653, or BAAJA—Undermines Regulation of Existing LNG Exports, Exposing Consumers To Massive Affordability Harm",
+   "date": "2026-11-08",
+   "quote": "Title IV of BAAJA directly impedes this Natural Gas Act authority, and will lock in this already-authorized 39 bcf/d of LNG export capacity.",
+   "verdict": "corrected",
+   "note": "The figure is on the page but the earlier inferred URL (a /news/ path) returned 404; the page lives at the URL given (citizen.org/?p=128552 redirects to it). It is an analysis piece dated Nov. 8, 2026 (author line not captured by the reader; the search summary names Tyson Slocum). Scenario and baseline: current law, under which the page says the Secretary of Energy can modify export volumes for the 39 bcf/d of authorized exports at existing and under-construction facilities; the page gives the 39 as the sum of 'more 14 billion cubic feet per day' for seven operating facilities and 'the additional 25 bcf/d' commissioned or under construction. It is Public Citizen's claim about Title IV's effect, not a CBO or CRS figure, and it reacts to the Sept. 30 text and the Nov. 7 substitute (the page does not say which)."
+  }
+ ],
+ "unread": [
+  {
+   "url": "https://www.capito.senate.gov/news/in-the-news/capito-backed-permitting-reform-bill-advances-in-senate-with-bipartisan-vote",
+   "outlet": "Sen. Capito",
+   "title": "Capito-backed permitting reform bill advances in Senate with bipartisan vote",
+   "reason": "Read again through r.jina.ai: the page is a reprint of a WV News story, its only date is metadata 'Wed, 28 Oct 2026' (before the Nov. 9 vote it describes), so it was not recorded."
+  },
+  {
+   "url": "https://thehill.com/policy/energy-environment/6208626-bipartisan-permitting-reform-bill-energy-infrastructure/",
+   "outlet": "The Hill",
+   "title": "unknown",
+   "reason": "403 on reader and on r.jina.ai"
+  },
+  {
+   "url": "https://www.politico.com/news/2026/11/06/jeffries-senate-permitting-bill",
+   "outlet": "POLITICO",
+   "title": "unknown",
+   "reason": "r.jina.ai returned POLITICO's 'page cannot be found'; URL was probably inferred and is wrong"
+  },
+  {
+   "url": "https://gvwire.com/?p=269577",
+   "outlet": "GV Wire",
+   "title": "unknown",
+   "reason": "bot check on reader and on r.jina.ai"
+  },
+  {
+   "url": "https://www.newkerala.com/news/a/this-bill-big-win-us-trump-urges-senators-547.htm",
+   "outlet": "NewKerala",
+   "title": "unknown",
+   "reason": "403 / Cloudflare on reader and on r.jina.ai"
+  },
+  {
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "outlet": "CounterPunch",
+   "title": "The Bipartisan American Affordability and Jobs Act reveals that ecosystems and the people who defend them are red tape",
+   "reason": "403 on reader; opinion piece, snippet only"
+  }
+ ],
+ "not_found": [
+  {
+   "question": "Statements dated Nov 7-15 from groups not previously searched: Center for Biological Diversity, Friends of the Earth, Food & Water Watch, Sunrise Movement, 350.org, WE ACT, Earthworks, The Wilderness Society, Southern Environmental Law Center, League of Conservation Voters (Nov), Citizens' Climate Lobby, Clean Air Task Force (Nov, beyond the held Nov 9 item), National Wildlife Federation, Oil Change International (own release), Conservation Law Foundation",
+   "queries": [
+    "Center for Biological Diversity statement Senate permitting bill vote November 2026 BAAJA",
+    "Friends of the Earth statement Senate permitting bill BAAJA cloture vote",
+    "Sunrise Movement OR 350.org OR \"WE ACT\" OR Earthworks BAAJA permitting Senate vote statement November 2026",
+    "Wilderness Society OR \"Defenders of Wildlife\" OR \"Southern Environmental Law Center\" BAAJA permitting Senate substitute statement",
+    "League of Conservation Voters BAAJA permitting bill Senate vote statement",
+    "Food & Water Watch OR \"Oil Change International\" OR \"Citizens' Climate Lobby\" OR \"Clean Air Task Force\" permitting bill Senate vote November 10 2026 statement",
+    "National Wildlife Federation BAAJA permitting bill opposes statement",
+    "Conservation Law Foundation opposes Senate permitting bill BAAJA November 2026"
+   ],
+   "note": "Searches returned no dated Nov 7-15 release from these groups. A search summary attributed language to LCV ('substantial risks to our air, water, lands...') and said NWF and CLF opposed the bill, but no LCV, NWF or CLF page dated in the window was found or fetched, so none was recorded. Brett Hartl (CBD) 'climate kill shot' and Elizabeth Bast (Oil Change International) quotes appeared only in search summaries; Hartl is already in held_people."
+  },
+  {
+   "question": "Statements dated Nov 7-15 from Bipartisan Policy Center, Niskanen Center, Institute for Progress, R Street, Heritage, American Petroleum Institute, Edison Electric Institute, NRECA, Data Center Coalition, LIUNA, IBEW, North America's Building Trades Unions, National Congress of American Indians, National Trust for Historic Preservation",
+   "queries": [
+    "Bipartisan Policy Center OR Niskanen OR \"Institute for Progress\" statement Senate cloture permitting BAAJA November 2026",
+    "Edison Electric Institute OR NRECA OR \"Data Center Coalition\" statement Senate vote permitting bill BAAJA November 2026",
+    "LIUNA OR IBEW OR \"Building Trades\" statement Senate vote Bipartisan American Affordability and Jobs Act November 2026",
+    "Heritage Foundation OR \"American Petroleum Institute\" Sommers statement Senate advances permitting BAAJA November 9 2026",
+    "National Wildlife Federation OR \"National Trust for Historic Preservation\" OR \"National Congress of American Indians\" permitting bill Senate vote November 2026"
+   ],
+   "note": "No new dated statements. The only new in-window supporter material found was a Nov. 9 NAHB and YIMBY Action letter, reached through the Multifamily Dive item and not read at the source. Union of Concerned Scientists blog (Oct. 27, 2026) is outside the window and was not recorded; its sentence 'Without significant improvements, which seem unlikely, enactment of BAAJA could be worse than the status quo.' was read in full."
+  },
+  {
+   "question": "House side Nov 9-15: statements from Speaker Johnson, Leader Jeffries, Rep. Westerman, Rep. Huffman, Congressional Progressive Caucus, New Democrat Coalition, Problem Solvers Caucus on what the House will do with a Senate-passed bill",
+   "queries": [
+    "Speaker Johnson House Senate permitting bill BAAJA after Senate vote what House will do November 2026",
+    "Westerman Huffman Jeffries Senate-passed permitting bill House BAAJA lame duck statement November 11 2026",
+    "Congressional Progressive Caucus OR \"New Democrat Coalition\" OR \"Problem Solvers Caucus\" BAAJA permitting Senate bill statement",
+    "Speaker Mike Johnson permitting reform Senate bill House \"lame duck\" Johnson said BAAJA",
+    "Jeffries permitting bill Senate \"House Democrats\" Westerman Senate permitting bill take up House December Huffman statement Senate vote",
+    "Westerman statement Senate advances permitting reform BAAJA House Natural Resources chairman"
+   ],
+   "note": "No statement dated Nov 9-15 from any of these. The Senate has not passed the bill as of the pages read, so no House plan for a Senate-passed bill was found. speaker.gov and naturalresources.house.gov remained unreadable for the window."
+  },
+  {
+   "question": "CBO cost estimate for S. 5653 or H.R. 2347 substitute",
+   "queries": [
+    "cbo.gov cost estimate S. 5653 Bipartisan American Affordability and Jobs Act H.R. 2347 substitute amendment"
+   ],
+   "note": "https://www.cbo.gov/cost-estimates read through r.jina.ai (page timestamp Nov. 16, 2026 01:36 GMT) lists only the ten most recent estimates, dated Nov. 3 to Nov. 13, 2026, with bill titles stripped by the reader; none names S. 5653, H.R. 2347 or the Act. cbo.gov search pages returned 403 or a CAPTCHA. Result: no CBO estimate located, which is not proof none exists."
+  },
+  {
+   "question": "Senators' stated votes on cloture on SA 6883 or on passage (Nov 9-15) for Markey, Merkley, Kaine, Van Hollen, Bennet, Rounds, Cortez Masto, Lee, Capito, Heinrich, Schumer, Whitehouse beyond held entries",
+   "queries": [
+    "Schumer will vote cloture permitting bill substitute Capito amendment November 2026 Democrats caucus position",
+    "Markey Merkley Van Hollen vote against permitting bill final passage Senate Monday cloture substitute",
+    "Kaine OR Bennet OR Duckworth OR Luján OR \"Cortez Masto\" OR Schatz permitting bill \"final passage\" vote statement November 2026",
+    "Rounds Mike Lee Capito Heinrich Whitehouse permitting bill Senate floor vote Monday November 16 cloture substitute",
+    "senator says will vote no final passage permitting bill BAAJA tribal Title III Lujan Cortez Masto Heinrich amendment tribal consultation November 12",
+    "Mike Lee permitting bill BAAJA statement Senate vote Utah public lands November 2026"
+   ],
+   "note": "No new dated statement on the substitute cloture vote or passage from these senators. Search summaries repeated the held Cortez Masto line ('If Title III stays in this bill, I will not vote for final passage') and a Luján 'awaiting updated text' line; neither was fetched from a primary page."
+  }
+ ],
+ "notes": [
+  "Rechecks: ACP page confirmed at the inferred-from-title URL; Public Citizen's inferred /news/ URL was a 404 and the correct URL is the /article/ path in rechecks[1].",
+  "people[] for Schatz, Duckworth and Luján replace secondary sourcing (The Washington Sun) in the held entries with the senators' own releases dated Nov. 9.",
+  "items[0..3] carry a non-contract 'note' key; drop it at build time.",
+  "Nothing found contradicts the established facts (roll calls 257 and 258, SA 6883 to SA 6890, cloture filed Nov. 11, votes Nov. 16 at 5:30 p.m.). A Yahoo/Santa Fe New Mexican preview dated Nov. 9 was read; it matches the Nov. 7 substitute (494 pages) and the Nov. 9 vote date."
+ ]
+}
