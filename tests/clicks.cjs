@@ -23,7 +23,8 @@ const WIDTHS = only('CLICK_WIDTHS').length ? ALL_WIDTHS.filter((v) => only('CLIC
 const ALL_ROUTES = ['overview', 'bill', 'bill/sec/1106', 'bill/sec/2107', 'bill/search/transmission', 'compare',
   'compare/data-center-bills', 'communities', 'datacenters', 'speed', 'timeline', 'positions', 'people', 'media', 'method', 'amendments', 'amendments/reactions', 'amendments/sec/1401', 'amendments/sec/2242-dropped', 'amendments/sec/1602'];
 const CLICK_ROUTES = only('CLICK_ROUTES').length ? ALL_ROUTES.filter((r) => only('CLICK_ROUTES').includes(r)) : ALL_ROUTES;
-if (!WIDTHS.length || !CLICK_ROUTES.length) { console.error('clicks: CLICK_WIDTHS or CLICK_ROUTES matches nothing'); process.exit(2); }
+const unknown = only('CLICK_WIDTHS').filter((w) => !ALL_WIDTHS.some((v) => String(v.w) === w)).concat(only('CLICK_ROUTES').filter((r) => !ALL_ROUTES.includes(r)));
+if (unknown.length) { console.error(`clicks: CLICK_WIDTHS or CLICK_ROUTES names something this crawl does not have: ${unknown.join(', ')}`); process.exit(2); }
 const CONTROLS = '#view button, #view summary, #view select, #view a[href^="#"], .tabs a, .subtabs:not([hidden]) a, .method-link, #theme-toggle';
 
 (async () => {

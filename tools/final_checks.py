@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / ".test-artifacts" / "final"
 STATUS = OUT / "status.json"
 CLICKS_PROGRESS = OUT / "clicks-progress.json"
+STANDALONE_PROGRESS = ROOT / ".test-artifacts" / "clicks-progress.json"
 # Seconds each full step took on 2026-11-15 (Apple M-series laptop, headless Chrome). Only used by
 # --status to say when a step has run more than three times as long.
 USUAL = {"perf": 60, "paths": 90, "uat": 150, "clicks": 2040}
@@ -67,11 +68,27 @@ def clock() -> str:
     return time.strftime("%H:%M:%S")
 
 
+def crawl(path: Path) -> tuple[str, int, bool] | None:
+    """Where a click crawl is, the seconds since it last wrote, and whether its process is alive."""
+    if not path.exists():
+        return None
+    p = json.loads(path.read_text(encoding="utf-8"))
+    text = (f"{p.get('width')}px {p.get('phase')}, route {p.get('route')} ({p.get('route_n')} of {p.get('routes')})"
+            f", {p['controls_done']} controls done, {p['page_loads']} page loads, {p['problems']} problems")
+    return text, int(time.time() - path.stat().st_mtime), p.get("state") == "running" and alive(p.get("pid"))
+
+
 def show_status() -> int:
     doc = read_status()
+    # A crawl started by hand (node tests/clicks.cjs) writes its own progress file.
+    alone = crawl(STANDALONE_PROGRESS)
+    if alone and alone[2]:
+        print(f"a crawl started by hand is running: {alone[0]}; last output {alone[1]}s ago" + (" -- STALLED" if alone[1] > QUIET_S else ""))
+        if alone[1] > QUIET_S:
+            return 2
     if not doc:
-        print("final_checks: no run recorded (.test-artifacts/final/status.json is missing)")
-        return 1
+        print("final_checks: no `make final` run recorded (.test-artifacts/final/status.json is missing)")
+        return 0 if alone and alone[2] else 1
     running = doc["state"] == "running" and alive(doc.get("pid"))
     state = doc["state"] if doc["state"] != "running" or running else "died (the process is gone and the run never finished)"
     print(f"run started {doc['started']}, state: {state}")
@@ -84,10 +101,9 @@ def show_status() -> int:
             quiet = int(time.time() - max(marks)) if marks else None
             took = int(time.time() - s["began"])
             line += f" {took}s so far (usually about {s['usual']}s)"
-            if s["name"] == "clicks" and CLICKS_PROGRESS.exists():
-                p = json.loads(CLICKS_PROGRESS.read_text(encoding="utf-8"))
-                line += (f"; {p.get('width')}px {p.get('phase')}, route {p.get('route')} ({p.get('route_n')} of {p.get('routes')})"
-                         f", {p['controls_done']} controls done, {p['page_loads']} page loads, {p['problems']} problems")
+            here = crawl(CLICKS_PROGRESS) if s["name"] == "clicks" else None
+            if here:
+                line += f"; {here[0]}"
             if quiet is not None:
                 line += f"; last output {quiet}s ago"
                 if quiet > QUIET_S and s["name"] == "clicks":

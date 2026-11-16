@@ -1,7 +1,9 @@
 """The validators themselves: each must be able to fail."""
 import json
+import os
 import sys
 import tempfile
+import time
 import unittest
 from unittest.mock import patch
 from pathlib import Path
@@ -303,6 +305,7 @@ class BrowserScripts(unittest.TestCase):
         import io
         with tempfile.TemporaryDirectory() as tmp:
             status = Path(tmp) / "status.json"
+            by_hand = Path(tmp) / "clicks-progress.json"
             run = {"started": "2026-11-15T10:00:00", "pid": 2 ** 22 + 12345, "state": "running",
                    "steps": [{"name": "clicks", "state": "running", "usual": 2040, "began": 0}]}
             for state, code, needle in (("running", 2, "died"), ("passed", 0, "state: passed")):
@@ -310,12 +313,22 @@ class BrowserScripts(unittest.TestCase):
                 run["steps"][0].update(state=state)
                 status.write_text(json.dumps(run), encoding="utf-8")
                 out = io.StringIO()
-                with patch.object(final_checks, "STATUS", status), patch.object(final_checks, "OUT", Path(tmp)), contextlib.redirect_stdout(out):
+                with patch.object(final_checks, "STATUS", status), patch.object(final_checks, "OUT", Path(tmp)), \
+                        patch.object(final_checks, "STANDALONE_PROGRESS", by_hand), contextlib.redirect_stdout(out):
                     self.assertEqual(final_checks.show_status(), code)
                 self.assertIn(needle, out.getvalue())
             status.unlink()
-            with patch.object(final_checks, "STATUS", status), contextlib.redirect_stdout(io.StringIO()):
+            with patch.object(final_checks, "STATUS", status), patch.object(final_checks, "STANDALONE_PROGRESS", by_hand), contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(final_checks.show_status(), 1)
+            # A crawl started by hand has no status file, only its own progress file.
+            by_hand.write_text(json.dumps({"state": "running", "pid": os.getpid(), "width": 375, "phase": "clicking controls", "route": "people",
+                                           "route_n": 2, "routes": 13, "controls_done": 40, "page_loads": 90, "problems": 0}), encoding="utf-8")
+            for age, code, needle in ((0, 0, "started by hand is running"), (600, 2, "STALLED")):
+                os.utime(by_hand, (time.time() - age, time.time() - age))
+                out = io.StringIO()
+                with patch.object(final_checks, "STATUS", status), patch.object(final_checks, "STANDALONE_PROGRESS", by_hand), contextlib.redirect_stdout(out):
+                    self.assertEqual(final_checks.show_status(), code)
+                self.assertIn(needle, out.getvalue())
 
     def test_only_unreachable_quotes_are_sent_to_the_browser(self):
         import argparse
