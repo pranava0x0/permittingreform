@@ -15,17 +15,17 @@
   "checked": "2026-11-16",
   "dead": 0,
   "error": 1,
-  "ok": 617,
-  "total": 664
+  "ok": 624,
+  "total": 671
  },
  "quotes": {
   "bill_total": 174,
   "bill_verified": 174,
-  "browser": 83,
+  "browser": 85,
   "checked": "2026-11-16",
   "missing": 0,
   "near": 0,
-  "total": 762,
+  "total": 764,
   "unreachable": 0,
   "unverifiable": 0,
   "verified": 679
