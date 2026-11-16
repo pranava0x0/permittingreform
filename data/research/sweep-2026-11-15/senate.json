@@ -1,0 +1,991 @@
+{
+ "agent": "senate",
+ "generated": "2026-11-15",
+ "status": [
+  {
+   "date": "2026-11-12",
+   "text": "As of the Senate floor log for Nov. 12, the Senate had adopted the motion to proceed to H.R. 2347 and cloture motions on the Capito substitute (SA 6883) and on the bill were set to ripen at 5:30 p.m. Monday, Nov. 16.",
+   "source": {
+    "label": "U.S. Senate Daily Press, Thursday, November 12, 2026",
+    "url": "https://www.dailypress.senate.gov/thursday-november-12-2026/"
+   },
+   "quote": "Finally, that the cloture motions filed during Wednesday’s session of the Senate ripen at 5:30 p.m. on Monday, November 16th."
+  },
+  {
+   "date": "2026-11-12",
+   "text": "Per Senate records as reported by WLJ, neither the Nov. 9 cloture vote nor the Nov. 10 motion-to-proceed vote was final passage of the bill.",
+   "source": {
+    "label": "Western Livestock Journal, Nov. 12, 2026",
+    "url": "https://www.wlj.net/senate-advances-bill-overhauling-federal-permitting-rules/"
+   },
+   "quote": "Senators voted 62-21 Nov. 10 to begin consideration of the Bipartisan American Affordability and Jobs Act (BAAJA), following a 73-25 procedural vote Nov. 9. Neither vote constituted final passage, according to Senate records."
+  }
+ ],
+ "items": [
+  {
+   "date": "2026-11-09",
+   "type": "gov_press_release",
+   "outlet": "Senate Democratic Caucus",
+   "author": "Chuck Schumer",
+   "title": "Leader Schumer Statement After Permitting Reform Bill Advances In The Senate",
+   "url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate",
+   "summary": "Schumer said he is voting to move the debate forward despite outstanding concerns with parts of the bill that he will seek to address through amendments. He credited Sens. Whitehouse and Heinrich.",
+   "stance": "mixed",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "While I have outstanding concerns with parts of the bill that I’ll fight to address through the amendment process, I’m voting today to move this debate forward.",
+    "speaker": "Chuck Schumer, Democratic Leader, U.S. Senate"
+   },
+   "topics": [
+    "congress",
+    "data-centers",
+    "clean-water-act"
+   ],
+   "sector": "congress",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Edward J. Markey",
+   "author": "Edward J. Markey",
+   "title": "Senator Markey Statement on Permitting Reform Deal",
+   "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-permitting-reform-deal",
+   "summary": "Markey said he will vote against the motion to invoke cloture, citing timing, transparency, and threats to clean air, water and Tribes.",
+   "stance": "opposes",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "Because of these issues on timing, transparency, and threats to our clean air, water, and Tribes, I will vote against the motion to invoke cloture on this legislation.",
+    "speaker": "Edward J. Markey, U.S. Senator (D-Mass.)"
+   },
+   "topics": [
+    "congress",
+    "clean-water-act",
+    "tribal"
+   ],
+   "sector": "congress",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Jeff Merkley",
+   "author": "Jeff Merkley",
+   "title": "Sen. Merkley Statement on Senate Permitting Legislation",
+   "url": "https://www.merkley.senate.gov/sen-merkley-statement-on-senate-permitting-legislation/",
+   "summary": "Merkley said he supports the transmission and data-center cost provisions, said the bill accelerates fossil fuel extraction, and said he will vote against the bill before the Senate.",
+   "stance": "opposes",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "But the current bill raises too many serious issues that require more deliberation. I will vote against the bill before us today, but I look forward to working with my colleagues to get permitting reform right.",
+    "speaker": "Jeff Merkley, U.S. Senator (D-Ore.)"
+   },
+   "topics": [
+    "transmission",
+    "data-centers",
+    "fossil",
+    "congress"
+   ],
+   "sector": "congress",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Tim Kaine",
+   "author": "Tim Kaine",
+   "title": "Kaine Statement on Permitting Reform Legislation",
+   "url": "https://www.kaine.senate.gov/press-releases/kaine-statement-on-permitting-reform-legislation",
+   "summary": "Kaine said he is voting against the procedural motion over changes to the National Historic Preservation Act and will seek amendments that could lead him to support the bill.",
+   "stance": "mixed",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "For this reason, I am voting against today’s procedural motion. I will seek to amend the bill to address my concerns and, if successful, could support it with appropriate changes.",
+    "speaker": "Tim Kaine, U.S. Senator (D-Va.)"
+   },
+   "topics": [
+    "historic-preservation",
+    "tribal",
+    "congress"
+   ],
+   "sector": "congress",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Chris Van Hollen",
+   "author": "Chris Van Hollen",
+   "title": "Van Hollen Statement on Current Opposition to Moving Forward with Permitting Reform Legislation",
+   "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-statement-on-current-opposition-to-moving-forward-with-permitting-reform-legislation",
+   "summary": "Van Hollen said he voted against moving forward, citing offshore wind and Chesapeake Bay provisions, and said he is putting forward changes.",
+   "stance": "opposes",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "I’m putting forward changes to the bill to address these concerns; however, while I support the goal behind tackling our burdensome and outdated permitting system, given this bill’s impact on Maryland, I cannot support it in its current form.",
+    "speaker": "Chris Van Hollen, U.S. Senator (D-Md.)"
+   },
+   "topics": [
+    "offshore",
+    "clean-water-act",
+    "congress"
+   ],
+   "sector": "congress",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-10",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Michael Bennet",
+   "author": "Michael Bennet",
+   "title": "Bennet Statement on Permitting Reform Vote",
+   "url": "https://www.bennet.senate.gov/2026/11/10/bennet-statement-on-permitting-reform-vote/",
+   "summary": "Bennet said he voted against advancing the bill, citing protection of Tribal cultural resources and changes to public engagement, and that he wants the bill vetted more thoroughly.",
+   "stance": "opposes",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "These changes must be vetted more thoroughly before passing into law. Given these concerns, I cannot support advancing this bill at this time.",
+    "speaker": "Michael Bennet, U.S. Senator (D-Colo.)"
+   },
+   "topics": [
+    "tribal",
+    "congress"
+   ],
+   "sector": "congress",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-10",
+   "type": "gov_press_release",
+   "outlet": "Office of Sen. Alan Armstrong",
+   "author": "Alan Armstrong",
+   "title": "Senator Armstrong Praises Senate Vote to Advance Landmark Bipartisan Permitting Reform Legislation",
+   "url": "https://www.armstrong.senate.gov/senator-armstrong-praises-senate-vote-to-advance-landmark-bipartisan-permitting-reform-legislation/",
+   "summary": "Armstrong said the 73-25 cloture vote on the motion to proceed to H.R. 2347 was a major step and urged the Senate to pass the bill.",
+   "stance": "supports",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "Tonight’s vote marks a major step forward. I applaud my colleagues on both sides of the aisle for coming together to advance meaningful permitting reforms",
+    "speaker": "Alan Armstrong, U.S. Senator (R-Okla.)"
+   },
+   "topics": [
+    "congress",
+    "permit-certainty"
+   ],
+   "sector": "congress",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "org_statement",
+   "outlet": "Environmental Defense Fund",
+   "author": "Fred Krupp",
+   "title": "Statement: Senate to hold initial vote on permitting bill",
+   "url": "https://www.edf.org/media/statement-senate-hold-initial-vote-permitting-bill",
+   "summary": "EDF's president said the latest version contains reforms to get clean energy on the grid and also unwinds protections for air, water and communities, and that the group wants improvements before final passage.",
+   "stance": "mixed",
+   "reacts_to": "substitute",
+   "quote": {
+    "text": "The latest version has important reforms to get clean energy on the grid and upgrade our aging infrastructure, but it also unwinds protections for our air, water and communities,",
+    "speaker": "Fred Krupp, President, Environmental Defense Fund"
+   },
+   "topics": [
+    "transmission",
+    "clean-water-act",
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-10",
+   "type": "news",
+   "outlet": "SDPB",
+   "author": "",
+   "title": "Rounds is lone Republican vote against permitting reform, noting state-level concerns",
+   "url": "https://www.sdpb.org/politics/2026-11-10/rounds-is-lone-republican-vote-against-permitting-reform-noting-state-level-concerns",
+   "summary": "SDPB reports that Rounds was the only Republican to vote against the cloture motion and cited, in a Facebook post, landowners' ability to negotiate with state and local stakeholders before federal intervention.",
+   "stance": "opposes",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "South Dakota landowners deserve to negotiate with stakeholders at the state and local level before federal intervention is required,",
+    "speaker": "Mike Rounds, U.S. Senator (R-S.D.)"
+   },
+   "topics": [
+    "transmission",
+    "congress"
+   ],
+   "sector": "media",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-10",
+   "type": "gov_document",
+   "outlet": "Congressional Record (Senate)",
+   "author": "Mike Lee",
+   "title": "Congressional Record, Senate, November 10, 2026 (floor remarks, permitting reform)",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
+   "summary": "Lee's floor remarks on permitting reform state that current permitting processes delay energy projects and that more energy on the grid is needed.",
+   "stance": "supports",
+   "reacts_to": "other",
+   "quote": {
+    "text": "Today, a company can spend years trying to get permission just to build a powerplant, and a transmission line",
+    "speaker": "Mike Lee, U.S. Senator (R-Utah)"
+   },
+   "topics": [
+    "transmission",
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "congress",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-15",
+   "type": "news",
+   "outlet": "Santa Fe New Mexican",
+   "author": "",
+   "title": "How they voted, Nov. 15, 2026",
+   "url": "https://www.santafenewmexican.com/news/briefs/how-they-voted-nov-15-2026/article_9f223b42-50ef-45d1-95a4-0f0a54bed5c3.html",
+   "summary": "The roundup reports the Nov. 9 cloture vote, lists the New Mexico delegation's votes, and quotes Capito as a supporter of the bill.",
+   "stance": "reporting",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "creates predictability, consistency, and finality in securing a permit. And it will allow our laws to balance public health, the environment, and the needs of our economy.",
+    "speaker": "Shelley Moore Capito, U.S. Senator (R-W.Va.), as quoted by the Santa Fe New Mexican"
+   },
+   "topics": [
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "media",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "news",
+   "outlet": "The Washington Sun",
+   "author": "Mara Hoplamazian",
+   "title": "Senators Advance Bipartisan Permitting Reform. Democrats Were Divided.",
+   "url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+   "summary": "The report lists Democrats who voted no on the Nov. 9 cloture vote and the reasons given, including Duckworth's concern about presidential power and Luján's citation of tribal concerns.",
+   "stance": "reporting",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "Sen. Tammy Duckworth (D-Illinois) voted no, saying she was concerned the package could hand Trump more power.",
+    "speaker": "Mara Hoplamazian, reporter, The Washington Sun"
+   },
+   "topics": [
+    "congress",
+    "tribal"
+   ],
+   "sector": "media",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-12",
+   "type": "news",
+   "outlet": "Western Livestock Journal",
+   "author": "Charles Wallace",
+   "title": "Senate advances bill overhauling federal permitting rules",
+   "url": "https://www.wlj.net/senate-advances-bill-overhauling-federal-permitting-rules/",
+   "summary": "The article reports the 73-25 cloture vote on Nov. 9 and the 62-21 vote on Nov. 10, notes that neither was final passage, and says the Nov. 7 substitute was released by Lee, Capito, Heinrich and Whitehouse.",
+   "stance": "reporting",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "Senators voted 62-21 Nov. 10 to begin consideration of the Bipartisan American Affordability and Jobs Act (BAAJA), following a 73-25 procedural vote Nov. 9. Neither vote constituted final passage, according to Senate records.",
+    "speaker": "Charles Wallace, reporter, Western Livestock Journal"
+   },
+   "topics": [
+    "congress",
+    "permit-certainty",
+    "esa"
+   ],
+   "sector": "media",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "analysis",
+   "outlet": "Bommarito Consulting",
+   "author": "Michael Bommarito",
+   "title": "BAAJA’s First Senate Vote: Who Voted Yes, Who Voted No",
+   "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
+   "summary": "The consultancy's roll-call comparison, updated Nov. 11, compares roll calls 257 and 258 and lists the senators who did not vote on one or the other.",
+   "stance": "reporting",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "No senator switched sides. Roll calls 257 and 258 differ for 17 senators. Every difference involves a senator who did not vote in one of the two roll calls.",
+    "speaker": "Michael Bommarito, Bommarito Consulting"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "industry",
+   "read": "full"
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-09",
+   "title": "Senate agreed to cloture on the motion to proceed to H.R. 2347",
+   "branch": "congress_senate",
+   "milestone": true,
+   "summary": "The Senate agreed, 73 to 25, to end debate on the motion to proceed to H.R. 2347, the vehicle for the Bipartisan American Affordability and Jobs Act. Roll call vote 257; 2 senators not voting.",
+   "actors": [
+    "U.S. Senate",
+    "Majority Leader John Thune"
+   ],
+   "sources": [
+    {
+     "title": "Monday, November 9, 2026",
+     "publisher": "U.S. Senate Daily Press",
+     "url": "https://www.dailypress.senate.gov/monday-november-9-2026/",
+     "date": "2026-11-09",
+     "quote": "The Senate is currently voting on the motion to proceed to H.R.2347, the Survivor Justice Tax Prevention Act; the legislative vehicle for the permitting reform bill. Cloture was invoked by a roll call vote of 73-25."
+    },
+    {
+     "title": "Roll Call Vote 119th Congress - 2nd Session, Vote 257",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm",
+     "date": "2026-11-09",
+     "quote": "Vote Date: November 9, 2026, 05:31 PM Required For Majority: 3/5 Vote Result: Cloture on the Motion to Proceed Agreed to"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Senate adopted the motion to proceed to H.R. 2347",
+   "branch": "congress_senate",
+   "milestone": true,
+   "summary": "The Senate agreed, 62 to 21, to adopt the motion to proceed to H.R. 2347, bringing the bill before the Senate. Roll call vote 258; 17 senators not voting. The vote did not adopt the substitute or pass the bill.",
+   "actors": [
+    "U.S. Senate"
+   ],
+   "sources": [
+    {
+     "title": "Tuesday, November 10, 2026",
+     "publisher": "U.S. Senate Daily Press",
+     "url": "https://www.dailypress.senate.gov/tuesday-november-10-2026/",
+     "date": "2026-11-10",
+     "quote": "By a vote of 62-21, the Senate adopted the motion to proceed to H.R. 2347, the vehicle for the permitting reform bill."
+    },
+    {
+     "title": "Roll Call Vote 119th Congress - 2nd Session, Vote 258",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm",
+     "date": "2026-11-10",
+     "quote": "Vote Date: November 10, 2026, 07:37 PM Required For Majority: 1/2 Vote Result: Motion to Proceed Agreed to"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "title": "Thune offered Capito substitute SA 6883 and filed amendments SA 6884 to SA 6890",
+   "branch": "congress_senate",
+   "milestone": true,
+   "summary": "The Senate record shows Thune proposed SA 6883, in the nature of a substitute, for Capito, and proposed amendments SA 6884 through SA 6890. The record also shows a motion by Thune to commit H.R. 2347 to the Senate Finance Committee with instructions to report back forthwith with amendment SA 6888.",
+   "actors": [
+    "Sen. John Thune",
+    "Sen. Shelley Moore Capito"
+   ],
+   "sources": [
+    {
+     "title": "Senate Floor Activity - Tuesday, November 10, 2026",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/floor_activity/11_10_2026_Senate_Floor.htm",
+     "date": "2026-11-10",
+     "quote": "Motion by Senator Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate."
+    }
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "title": "Thune filed cloture on SA 6883 and on H.R. 2347",
+   "branch": "congress_senate",
+   "milestone": true,
+   "summary": "At 12:29 p.m. Thune filed cloture on the Capito substitute amendment SA 6883 and on H.R. 2347. The Senate floor log lists both cloture motions as filed.",
+   "actors": [
+    "Majority Leader John Thune"
+   ],
+   "sources": [
+    {
+     "title": "Wednesday, November 11, 2026",
+     "publisher": "U.S. Senate Daily Press",
+     "url": "https://www.dailypress.senate.gov/wednesday-november-11-2026/",
+     "date": "2026-11-11",
+     "quote": "Senator Thune filed cloture filed cloture on the following: Capito substitute amendment #6883 to H.R.2347, Bipartisan American Affordability and Jobs Act of 2026."
+    }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "title": "Scheduled: cloture votes on SA 6883 and on H.R. 2347 at 5:30 p.m.",
+   "branch": "congress_senate",
+   "milestone": false,
+   "summary": "Per the Nov. 12 floor log, the cloture motions on the substitute and on the bill ripen at 5:30 p.m. Monday, Nov. 16, and the Senate reconvenes at 3:00 p.m. that day. No vote on these motions had occurred as of Nov. 15.",
+   "actors": [
+    "U.S. Senate"
+   ],
+   "sources": [
+    {
+     "title": "Thursday, November 12, 2026",
+     "publisher": "U.S. Senate Daily Press",
+     "url": "https://www.dailypress.senate.gov/thursday-november-12-2026/",
+     "date": "2026-11-12",
+     "quote": "Finally, that the cloture motions filed during Wednesday’s session of the Senate ripen at 5:30 p.m. on Monday, November 16th."
+    }
+   ]
+  }
+ ],
+ "people": [
+  {
+   "name": "Chuck Schumer",
+   "role": "Democratic Leader",
+   "affiliation": "U.S. Senate (D-N.Y.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "mixed",
+   "position": "Nov. 9: voted for cloture on the motion to proceed and said he has outstanding concerns he will try to address through amendments.",
+   "quote": {
+    "text": "While I have outstanding concerns with parts of the bill that I’ll fight to address through the amendment process, I’m voting today to move this debate forward.",
+    "source_url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Edward J. Markey",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-Mass.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "opposes",
+   "position": "Nov. 9: said he will vote against the motion to invoke cloture, citing timing, transparency and threats to clean air, water and Tribes.",
+   "quote": {
+    "text": "Because of these issues on timing, transparency, and threats to our clean air, water, and Tribes, I will vote against the motion to invoke cloture on this legislation.",
+    "source_url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-permitting-reform-deal",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Jeff Merkley",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-Ore.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "opposes",
+   "position": "Nov. 9: said he supports the transmission and data-center cost provisions but will vote against the bill before the Senate, citing fossil fuel provisions.",
+   "quote": {
+    "text": "But the current bill raises too many serious issues that require more deliberation. I will vote against the bill before us today, but I look forward to working with my colleagues to get permitting reform right.",
+    "source_url": "https://www.merkley.senate.gov/sen-merkley-statement-on-senate-permitting-legislation/",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Tim Kaine",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-Va.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "mixed",
+   "position": "Nov. 9: voted against the procedural motion over National Historic Preservation Act changes; said he could support the bill if his amendments succeed.",
+   "quote": {
+    "text": "For this reason, I am voting against today’s procedural motion. I will seek to amend the bill to address my concerns and, if successful, could support it with appropriate changes.",
+    "source_url": "https://www.kaine.senate.gov/press-releases/kaine-statement-on-permitting-reform-legislation",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Chris Van Hollen",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-Md.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "opposes",
+   "position": "Nov. 9: voted against moving forward; said he cannot support the bill in its current form and is putting forward changes.",
+   "quote": {
+    "text": "I’m putting forward changes to the bill to address these concerns; however, while I support the goal behind tackling our burdensome and outdated permitting system, given this bill’s impact on Maryland, I cannot support it in its current form.",
+    "source_url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-statement-on-current-opposition-to-moving-forward-with-permitting-reform-legislation",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Michael Bennet",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-Colo.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "opposes",
+   "position": "Nov. 9 vote: voted against advancing the bill; said it does not adequately protect Tribal cultural resources and should be vetted more thoroughly.",
+   "quote": {
+    "text": "These changes must be vetted more thoroughly before passing into law. Given these concerns, I cannot support advancing this bill at this time.",
+    "source_url": "https://www.bennet.senate.gov/2026/11/10/bennet-statement-on-permitting-reform-vote/",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "name": "Alan Armstrong",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (R-Okla.)",
+   "sector": "congress",
+   "party": "R",
+   "stance": "supports",
+   "position": "Nov. 9 vote: called the 73-25 cloture vote a major step and urged the Senate to finish the bill.",
+   "quote": {
+    "text": "Tonight’s vote marks a major step forward. I applaud my colleagues on both sides of the aisle for coming together to advance meaningful permitting reforms",
+    "source_url": "https://www.armstrong.senate.gov/senator-armstrong-praises-senate-vote-to-advance-landmark-bipartisan-permitting-reform-legislation/",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "name": "Mike Rounds",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (R-S.D.)",
+   "sector": "congress",
+   "party": "R",
+   "stance": "opposes",
+   "position": "Nov. 9: the only Republican to vote against cloture; cited landowners' right to negotiate at state and local levels before federal intervention, in a Facebook post reported by SDPB.",
+   "quote": {
+    "text": "South Dakota landowners deserve to negotiate with stakeholders at the state and local level before federal intervention is required,",
+    "source_url": "https://www.sdpb.org/politics/2026-11-10/rounds-is-lone-republican-vote-against-permitting-reform-noting-state-level-concerns",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "name": "Mike Lee",
+   "role": "U.S. Senator, sponsor of the substitute",
+   "affiliation": "U.S. Senate (R-Utah)",
+   "sector": "congress",
+   "party": "R",
+   "stance": "supports",
+   "position": "Nov. 10 floor remarks: said it can take years to get permission to build a powerplant or transmission line, and that more energy is needed on the grid.",
+   "quote": {
+    "text": "Today, a company can spend years trying to get permission just to build a powerplant, and a transmission line",
+    "source_url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
+    "date": "2026-11-10"
+   }
+  },
+  {
+   "name": "Tammy Duckworth",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-Ill.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "opposes",
+   "position": "Nov. 9 vote: voted no; per The Washington Sun, concerned the package could hand Trump more power.",
+   "quote": {
+    "text": "Sen. Tammy Duckworth (D-Illinois) voted no, saying she was concerned the package could hand Trump more power.",
+    "source_url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Ben Ray Luján",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-N.M.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "opposes",
+   "position": "Nov. 9 vote: voted no, citing concerns from tribal leaders, per The Washington Sun.",
+   "quote": {
+    "text": "Sen. Ben Ray Luján (D-New Mexico) also voted against the bill, citing concerns from tribal leaders.",
+    "source_url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Catherine Cortez Masto",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-Nev.)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "mixed",
+   "position": "Voted yes on the Nov. 9 cloture motion; per Punchbowl News as reported by The Washington Sun, said she would not support the bill unless tribal-rights provisions are removed.",
+   "quote": {
+    "text": "to say she would not support the bill unless provisions that affect tribal rights are removed",
+    "source_url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Brian Schatz",
+   "role": "U.S. Senator",
+   "affiliation": "U.S. Senate (D-Hawaii)",
+   "sector": "congress",
+   "party": "D",
+   "stance": "supports",
+   "position": "Nov. 9 vote: voted yes; said he would introduce amendments on Native Hawaiian and Tribal voice.",
+   "quote": {
+    "text": "Schatz said he would introduce amendments and continue working to ensure Native Hawaiian organizations and Tribes have a meaningful voice in decisions affecting their communities.",
+    "source_url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+    "date": "2026-11-09"
+   }
+  },
+  {
+   "name": "Fred Krupp",
+   "role": "President",
+   "affiliation": "Environmental Defense Fund",
+   "sector": "environmental_group",
+   "party": "",
+   "stance": "mixed",
+   "position": "Nov. 9: said the latest version has important grid reforms but unwinds protections; wants improvements before final passage.",
+   "quote": {
+    "text": "The latest version has important reforms to get clean energy on the grid and upgrade our aging infrastructure, but it also unwinds protections for our air, water and communities,",
+    "source_url": "https://www.edf.org/media/statement-senate-hold-initial-vote-permitting-bill",
+    "date": "2026-11-09"
+   }
+  }
+ ],
+ "roll_calls": [
+  {
+   "date": "2026-11-09",
+   "vote_number": 257,
+   "question": "On Cloture on the Motion to Proceed (Motion to Invoke Cloture: Motion to Proceed to H.R. 2347)",
+   "measure": "H.R. 2347",
+   "result": "Cloture on the Motion to Proceed Agreed to",
+   "yeas": 73,
+   "nays": 25,
+   "not_voting": 2,
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm",
+   "quote": "The Senate is currently voting on the motion to proceed to H.R.2347, the Survivor Justice Tax Prevention Act; the legislative vehicle for the permitting reform bill. Cloture was invoked by a roll call vote of 73-25.",
+   "yea_list": [
+    "Armstrong (R-OK)",
+    "Banks (R-IN)",
+    "Barrasso (R-WY)",
+    "Blackburn (R-TN)",
+    "Blumenthal (D-CT)",
+    "Boozman (R-AR)",
+    "Britt (R-AL)",
+    "Budd (R-NC)",
+    "Capito (R-WV)",
+    "Cassidy (R-LA)",
+    "Collins (R-ME)",
+    "Coons (D-DE)",
+    "Cornyn (R-TX)",
+    "Cortez Masto (D-NV)",
+    "Cotton (R-AR)",
+    "Cramer (R-ND)",
+    "Crapo (R-ID)",
+    "Cruz (R-TX)",
+    "Curtis (R-UT)",
+    "Daines (R-MT)",
+    "Ernst (R-IA)",
+    "Fetterman (D-PA)",
+    "Fischer (R-NE)",
+    "Gallego (D-AZ)",
+    "Gillibrand (D-NY)",
+    "Graham (R-SC)",
+    "Grassley (R-IA)",
+    "Hagerty (R-TN)",
+    "Hawley (R-MO)",
+    "Heinrich (D-NM)",
+    "Hickenlooper (D-CO)",
+    "Hoeven (R-ND)",
+    "Husted (R-OH)",
+    "Hyde-Smith (R-MS)",
+    "Johnson (R-WI)",
+    "Justice (R-WV)",
+    "Kennedy (R-LA)",
+    "Kim (D-NJ)",
+    "King (I-ME)",
+    "Klobuchar (D-MN)",
+    "Lankford (R-OK)",
+    "Lee (R-UT)",
+    "Lummis (R-WY)",
+    "Marshall (R-KS)",
+    "McConnell (R-KY)",
+    "McCormick (R-PA)",
+    "Moody (R-FL)",
+    "Moran (R-KS)",
+    "Moreno (R-OH)",
+    "Murkowski (R-AK)",
+    "Ossoff (D-GA)",
+    "Paul (R-KY)",
+    "Peters (D-MI)",
+    "Reed (D-RI)",
+    "Ricketts (R-NE)",
+    "Risch (R-ID)",
+    "Rosen (D-NV)",
+    "Schatz (D-HI)",
+    "Schmitt (R-MO)",
+    "Schumer (D-NY)",
+    "Scott (R-FL)",
+    "Scott (R-SC)",
+    "Shaheen (D-NH)",
+    "Slotkin (D-MI)",
+    "Sullivan (R-AK)",
+    "Thune (R-SD)",
+    "Tillis (R-NC)",
+    "Tuberville (R-AL)",
+    "Warner (D-VA)",
+    "Warnock (D-GA)",
+    "Whitehouse (D-RI)",
+    "Wicker (R-MS)",
+    "Young (R-IN)"
+   ],
+   "nay_list": [
+    "Alsobrooks (D-MD)",
+    "Baldwin (D-WI)",
+    "Bennet (D-CO)",
+    "Blunt Rochester (D-DE)",
+    "Booker (D-NJ)",
+    "Cantwell (D-WA)",
+    "Duckworth (D-IL)",
+    "Durbin (D-IL)",
+    "Hassan (D-NH)",
+    "Hirono (D-HI)",
+    "Kaine (D-VA)",
+    "Kelly (D-AZ)",
+    "Lujan (D-NM)",
+    "Markey (D-MA)",
+    "Merkley (D-OR)",
+    "Murray (D-WA)",
+    "Padilla (D-CA)",
+    "Rounds (R-SD)",
+    "Sanders (I-VT)",
+    "Schiff (D-CA)",
+    "Smith (D-MN)",
+    "Van Hollen (D-MD)",
+    "Warren (D-MA)",
+    "Welch (D-VT)",
+    "Wyden (D-OR)"
+   ],
+   "not_voting_list": [
+    "Murphy (D-CT)",
+    "Sheehy (R-MT)"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "vote_number": 258,
+   "question": "On the Motion to Proceed (Motion to Proceed to H.R. 2347)",
+   "measure": "H.R. 2347",
+   "result": "Motion to Proceed Agreed to",
+   "yeas": 62,
+   "nays": 21,
+   "not_voting": 17,
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm",
+   "quote": "By a vote of 62-21, the Senate adopted the motion to proceed to H.R. 2347, the vehicle for the permitting reform bill.",
+   "yea_list": [
+    "Armstrong (R-OK)",
+    "Banks (R-IN)",
+    "Barrasso (R-WY)",
+    "Blackburn (R-TN)",
+    "Blumenthal (D-CT)",
+    "Boozman (R-AR)",
+    "Britt (R-AL)",
+    "Budd (R-NC)",
+    "Capito (R-WV)",
+    "Cassidy (R-LA)",
+    "Collins (R-ME)",
+    "Coons (D-DE)",
+    "Cotton (R-AR)",
+    "Cramer (R-ND)",
+    "Crapo (R-ID)",
+    "Cruz (R-TX)",
+    "Curtis (R-UT)",
+    "Daines (R-MT)",
+    "Fetterman (D-PA)",
+    "Fischer (R-NE)",
+    "Gallego (D-AZ)",
+    "Gillibrand (D-NY)",
+    "Graham (R-SC)",
+    "Grassley (R-IA)",
+    "Hagerty (R-TN)",
+    "Heinrich (D-NM)",
+    "Hoeven (R-ND)",
+    "Husted (R-OH)",
+    "Hyde-Smith (R-MS)",
+    "Johnson (R-WI)",
+    "Kennedy (R-LA)",
+    "Kim (D-NJ)",
+    "King (I-ME)",
+    "Klobuchar (D-MN)",
+    "Lankford (R-OK)",
+    "Lee (R-UT)",
+    "Lummis (R-WY)",
+    "Marshall (R-KS)",
+    "McCormick (R-PA)",
+    "Moody (R-FL)",
+    "Moran (R-KS)",
+    "Moreno (R-OH)",
+    "Murkowski (R-AK)",
+    "Ossoff (D-GA)",
+    "Paul (R-KY)",
+    "Reed (D-RI)",
+    "Ricketts (R-NE)",
+    "Risch (R-ID)",
+    "Schatz (D-HI)",
+    "Schmitt (R-MO)",
+    "Schumer (D-NY)",
+    "Scott (R-FL)",
+    "Scott (R-SC)",
+    "Sheehy (R-MT)",
+    "Slotkin (D-MI)",
+    "Sullivan (R-AK)",
+    "Thune (R-SD)",
+    "Tillis (R-NC)",
+    "Warnock (D-GA)",
+    "Whitehouse (D-RI)",
+    "Wicker (R-MS)",
+    "Young (R-IN)"
+   ],
+   "nay_list": [
+    "Alsobrooks (D-MD)",
+    "Baldwin (D-WI)",
+    "Bennet (D-CO)",
+    "Blunt Rochester (D-DE)",
+    "Booker (D-NJ)",
+    "Cantwell (D-WA)",
+    "Duckworth (D-IL)",
+    "Durbin (D-IL)",
+    "Hassan (D-NH)",
+    "Hirono (D-HI)",
+    "Kaine (D-VA)",
+    "Lujan (D-NM)",
+    "Markey (D-MA)",
+    "Merkley (D-OR)",
+    "Murray (D-WA)",
+    "Padilla (D-CA)",
+    "Rounds (R-SD)",
+    "Sanders (I-VT)",
+    "Van Hollen (D-MD)",
+    "Welch (D-VT)",
+    "Wyden (D-OR)"
+   ],
+   "not_voting_list": [
+    "Cornyn (R-TX)",
+    "Cortez Masto (D-NV)",
+    "Ernst (R-IA)",
+    "Hawley (R-MO)",
+    "Hickenlooper (D-CO)",
+    "Justice (R-WV)",
+    "Kelly (D-AZ)",
+    "McConnell (R-KY)",
+    "Murphy (D-CT)",
+    "Peters (D-MI)",
+    "Rosen (D-NV)",
+    "Schiff (D-CA)",
+    "Shaheen (D-NH)",
+    "Smith (D-MN)",
+    "Tuberville (R-AL)",
+    "Warner (D-VA)",
+    "Warren (D-MA)"
+   ]
+  }
+ ],
+ "unread": [
+  {
+   "url": "https://www.congress.gov/bill/119th-congress/house-bill/2347/all-actions",
+   "outlet": "congress.gov",
+   "title": "Actions - H.R.2347 (all actions)",
+   "reason": "403 (blocked to the reader)"
+  },
+  {
+   "url": "https://www.congress.gov/bill/119th-congress/senate-bill/5653/all-actions",
+   "outlet": "congress.gov",
+   "title": "Actions - S.5653 (all actions)",
+   "reason": "403 (blocked to the reader)"
+  },
+  {
+   "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883",
+   "outlet": "congress.gov",
+   "title": "Senate amendment 6883",
+   "reason": "403 (blocked to the reader)"
+  },
+  {
+   "url": "https://www.capito.senate.gov/news/in-the-news/capito-backed-permitting-reform-bill-advances-in-senate-with-bipartisan-vote",
+   "outlet": "Sen. Shelley Moore Capito",
+   "title": "Capito-backed permitting reform bill advances in Senate with bipartisan vote",
+   "reason": "page fetched but body text not rendered (shell only)"
+  },
+  {
+   "url": "https://x.com/SenatePress/status/2119938132543946807",
+   "outlet": "Senate Press Gallery (X)",
+   "title": "The #Senate invoked cloture on the motion to proceed to H.R. 2347...",
+   "reason": "snippet only; not fetched"
+  },
+  {
+   "url": "https://www.washingtonpost.com/opinions/2026/11/09/senate-advances-potentially-historic-permitting-reform-bill/",
+   "outlet": "The Washington Post",
+   "title": "Opinion: Senate advances potentially historic permitting reform bill",
+   "reason": "403"
+  },
+  {
+   "url": "https://upriseri.com/article/whitehouse-energy-bill-advances-critics-say-it-tilts-to-fossil-fuels/",
+   "outlet": "Upriser",
+   "title": "Whitehouse Permitting Bill Advances in Senate, 73-25",
+   "reason": "403; snippet only"
+  },
+  {
+   "url": "https://sourcenm.com/2026/11/09/us-senate-advances-new-mexico-us-sen-heinrichs-controversial-permit-reform-bill",
+   "outlet": "Source New Mexico",
+   "title": "US Senate advances New Mexico US Sen. Heinrich's controversial permit reform bill",
+   "reason": "403; snippet only"
+  },
+  {
+   "url": "https://thehill.com/policy/energy-environment/6208626-bipartisan-permitting-reform-bill-energy-infrastructure/",
+   "outlet": "The Hill",
+   "title": "Senate advances bipartisan permitting reform bill, teeing up passage",
+   "reason": "403; snippet only"
+  },
+  {
+   "url": "https://okenergytoday.com/2026/11/permitting-reform-act-wins-senate-vote/",
+   "outlet": "Oklahoma Energy Today",
+   "title": "Permitting reform act wins Senate vote",
+   "reason": "fetch error; snippet says the vote began debate, which conflicts with senate.gov's 'cloture agreed' wording"
+  }
+ ],
+ "not_found": [
+  {
+   "question": "Floor activity on Friday, Nov. 13, 2026",
+   "queries": [
+    "https://www.dailypress.senate.gov/friday-november-13-2026/ (404 / no content)"
+   ]
+  },
+  {
+   "question": "Floor activity on Monday, Nov. 16, 2026 (outcome of scheduled cloture votes)",
+   "queries": [
+    "https://www.dailypress.senate.gov/monday-november-16-2026/ (404; not yet held as of Nov. 15)"
+   ]
+  },
+  {
+   "question": "Any Nov. 12 floor vote on H.R. 2347 or SA 6883",
+   "queries": [
+    "https://www.dailypress.senate.gov/thursday-november-12-2026/ (lists only nomination votes 259-262)"
+   ]
+  },
+  {
+   "question": "Congress.gov action records for H.R. 2347, S. 5653 and SA 6883",
+   "queries": [
+    "congress.gov all-actions pages (403)"
+   ]
+  },
+  {
+   "question": "Rounds's own press release on the cloture vote",
+   "queries": [
+    "Rounds statement permitting reform bill vote against cloture November 2026"
+   ]
+  },
+  {
+   "question": "Senator statements on how they will vote on the substitute amendment or final passage, Nov. 12-15",
+   "queries": [
+    "senator says will vote permitting reform bill substitute amendment Capito Lee Heinrich Whitehouse November 12 2026"
+   ]
+  },
+  {
+   "question": "Whitehouse and Cortez Masto conditions on final passage (Title III; tribal provisions)",
+   "queries": [
+    "senator says will vote permitting reform bill substitute amendment Capito Lee Heinrich Whitehouse November 12 2026"
+   ]
+  },
+  {
+   "question": "Statements by senators not searched in this run (budget): Thune, Peters, Murphy, Sheehy, Murkowski, Sullivan, Daines, Cramer, Hawley, Paul, Kennedy, Cassidy, Fetterman, Padilla, Schiff, Warren, Sanders, Welch, Blunt Rochester, Hickenlooper, Kelly, King, Durbin, Wyden, Barrasso",
+   "queries": []
+  },
+  {
+   "question": "Published whip count of declared senators (yes, no, undecided) from a news outlet",
+   "queries": []
+  }
+ ]
+}

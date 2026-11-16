@@ -93,7 +93,7 @@ class Tokens(unittest.TestCase):
 
 class Page(unittest.TestCase):
     def test_local_assets_exist(self):
-        refs = re.findall(r'(?:src|href)="([^"#]+?)(?:\?v=\d+)?"', HTML)
+        refs = re.findall(r'(?:src|href)="([^"#]+?)(?:\?v=[0-9a-f]+)?"', HTML)
         local = [r for r in refs if not r.startswith(("http", "#"))]
         self.assertIn("styles.css", local)
         for ref in local:
@@ -169,9 +169,9 @@ class Page(unittest.TestCase):
 
     def test_the_disputes_reach_the_agent_text(self):
         full = (ROOT / "site/llms-full.txt").read_text(encoding="utf-8")
-        self.assertIn("## Where the two sides disagree", full)
+        self.assertIn("## Disputed readings", full)
         self.assertIn("- Critics: **", full)
-        self.assertIn("Where the two sides disagree", (ROOT / "site/llms.txt").read_text(encoding="utf-8"))
+        self.assertIn("Disputed readings", (ROOT / "site/llms.txt").read_text(encoding="utf-8"))
 
 
 if __name__ == "__main__":

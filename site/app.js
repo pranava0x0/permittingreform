@@ -190,7 +190,7 @@
     if (!billPromise) {
       billPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/bill.js?v=4";
+        tag.src = "data/bill.js?v=" + window.PR_V.bill;
         tag.onload = () => (window.PR_BILL ? resolve(window.PR_BILL) : reject(new Error("bill text did not load")));
         tag.onerror = () => { billPromise = null; reject(new Error("bill text could not be fetched")); };
         document.head.appendChild(tag);
@@ -209,7 +209,7 @@
         const done = () => { Object.assign(D, window.PR_NEWS); resolve(D); };
         if (window.PR_NEWS) { done(); return; }
         const tag = document.createElement("script");
-        tag.src = "data/news.js?v=8";
+        tag.src = "data/news.js?v=" + window.PR_V.news;
         tag.onload = () => (window.PR_NEWS ? done() : reject(new Error("news did not load")));
         tag.onerror = () => { newsPromise = null; reject(new Error("news could not be fetched")); };
         document.head.appendChild(tag);
@@ -226,7 +226,7 @@
     if (!takesPromise) {
       takesPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/takes.js?v=7";
+        tag.src = "data/takes.js?v=" + window.PR_V.takes;
         tag.onload = () => (window.PR_TAKES ? resolve(window.PR_TAKES) : reject(new Error("readings did not load")));
         tag.onerror = () => { takesPromise = null; reject(new Error("readings could not be fetched")); };
         document.head.appendChild(tag);
@@ -312,17 +312,17 @@
       el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status"));
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
-      el("h2", { id: "h-status" }, "Where it stands"),
+      el("h2", { id: "h-status" }, "Status"),
       el("ul", { class: "status-list" }, o.status.points.map((p) =>
         el("li", null, p.text + " ", el("span", { class: "sources-inline" }, ext(p.source.url, p.source.label))))));
 
     const guides = {
-      deadlines: ["speed", "What slows projects"],
+      deadlines: ["speed", "Research on project delays"],
       datacenters: ["datacenters", "How the bill affects data centers"],
       historic: ["communities", "How communities take part"],
     };
     const provisions = el("section", { class: "block", "aria-labelledby": "h-prov" },
-      el("h2", { id: "h-prov" }, "What it changes"),
+      el("h2", { id: "h-prov" }, "Provisions"),
       el("ul", { class: "provisions" }, o.headlines.map((h) =>
         el("li", null,
           el("details", { class: "provision-detail" },
@@ -929,7 +929,7 @@
         })));
     });
     return [
-      el("div", { class: "lede" }, el("h1", null, "Data centers & speed", el("span", { class: "credit-inline" }, "AI-written")),
+      el("div", { class: "lede" }, el("h1", null, "Data centers and interconnection", el("span", { class: "credit-inline" }, "AI-written")),
         d.intro ? el("p", null, d.intro) : null,
         el("p", { class: "facts", role: "status" }, rows.length + " of " + d.rows.length + " provisions")),
       whoChips, moreFilters((dcEffect !== "all") + !brief, effectChips),
@@ -979,11 +979,11 @@
 
   function renderSpeed() {
     const d = D.speed;
-    if (!d) return [el("div", { class: "lede" }, el("h1", null, "What slows projects")), el("p", { class: "empty" }, "Not yet compiled.")];
+    if (!d) return [el("div", { class: "lede" }, el("h1", null, "Research on project delays")), el("p", { class: "empty" }, "Not yet compiled.")];
     const studies = new Set();
     d.blockers.forEach((b) => b.evidence.forEach((ev) => studies.add(ev.url)));
     return [
-      el("div", { class: "lede" }, el("h1", null, "What slows projects"),
+      el("div", { class: "lede" }, el("h1", null, "Research on project delays"),
         el("p", null, d.intro),
         el("p", { class: "facts", role: "status" }, plural(d.blockers.length, "cause", "causes") + " · " + plural(studies.size, "study or dataset", "studies and datasets"))),
       el("div", { class: "pos-list" }, d.blockers.map(speedRow))];
@@ -1558,8 +1558,8 @@
         } }, "Show " + rest + " more questions") : null]);
     })))).catch((err) => fill(host, failure(err, "The outside readings")));
     return el("section", { class: "block", "aria-labelledby": "h-disputes" },
-      el("h2", { id: "h-disputes" }, "Where the two sides disagree"),
-      el("p", { class: "facts" }, "Each question quotes the bill, then what critics and supporters say it means, in their own words. We don't say who is right."),
+      el("h2", { id: "h-disputes" }, "Disputed readings"),
+      el("p", { class: "facts" }, "Each question quotes the bill, then what critics and supporters say it means, in their own words. This page does not rule on them."),
       host);
   }
 
@@ -1688,7 +1688,7 @@
     if (!amendPromise) {
       amendPromise = new Promise((resolve, reject) => {
         const tag = document.createElement("script");
-        tag.src = "data/amend.js?v=4";
+        tag.src = "data/amend.js?v=" + window.PR_V.amend;
         tag.onload = () => (window.PR_AMEND ? resolve(window.PR_AMEND) : reject(new Error("amendments did not load")));
         tag.onerror = () => { amendPromise = null; reject(new Error("amendments could not be fetched")); };
         document.head.appendChild(tag);
@@ -1955,13 +1955,11 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", issues: "Key issues", bill: "BAAJA", compare: "Compare", amendments: "Amendments", communities: "Communities", datacenters: "Data centers", speed: "What slows projects", timeline: "Timeline", positions: "Positions", people: "People", media: "Coverage", method: "Method" };
+  const TITLES = { overview: "Overview", issues: "Key issues", bill: "BAAJA", compare: "Compare", amendments: "Amendments", communities: "Communities", datacenters: "Data centers", speed: "Research on project delays", timeline: "Timeline", positions: "Positions", people: "People", media: "Coverage", method: "Method" };
   // Page URLs stay independent of the navigation groups. Keep sibling links in
   // the DOM while switching pages so keyboard focus survives content updates.
-  const GROUPS = {
-    bill: [["bill", "Sections"], ["amendments", "Amendments"], ["compare", "Compare bills"]],
-    issues: [["datacenters", "Data centers"], ["speed", "Delays"], ["communities", "Communities"], ["positions", "Debate"], ["people", "People"]],
-  };
+  // Defined in index.html, which draws the menu before first paint.
+  const GROUPS = window.PR_GROUPS;
   const sectionNav = document.getElementById("section-nav");
   // Ordinary links work without JavaScript; enhance them with the interactive routes.
   // A grouped tab opens its first page; Key issues has no page of its own.
@@ -1976,9 +1974,9 @@
     const wasHidden = sectionNav.hidden;
     sectionNav.hidden = !group;
     if (!group) { if (!wasHidden) pinMasthead(); return; }
+    sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
     if (sectionNav.dataset.group !== group) {
       sectionNav.dataset.group = group;
-      sectionNav.setAttribute("aria-label", document.querySelector('.tabs [data-tab="' + group + '"]').textContent + " pages");
       fill(sectionNav, GROUPS[group].map(([key, name]) => el("a", { href: "#/" + key }, name)));
     }
     // Measure once the row is filled, or the pinned height misses it until the next resize (Codex, PR 16).

@@ -374,7 +374,7 @@ class Speed(unittest.TestCase):
 
     def test_the_agent_export_carries_every_blocker_and_its_sources(self):
         full = build.llms_full(CORE, PARAS)
-        self.assertIn("## What slows projects", full)
+        self.assertIn("## Research on project delays", full)
         for b in CORE["speed"]["blockers"]:
             self.assertIn(f"### {b['title']}", full)
             for ev in b["evidence"]:

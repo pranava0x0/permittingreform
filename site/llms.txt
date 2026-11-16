@@ -6,6 +6,25 @@
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
 - Source data: https://github.com/pranava0x0/permittingreform
 
+## Status
+
+- The Senate reconvened November 9 at 3 p.m. At about 5:30 p.m., 60 senators must agree to end debate on taking up H.R. 2347, the vehicle for the permitting bill. (source: U.S. Senate Press Gallery, Nov. 9, https://www.dailypress.senate.gov/monday-november-9-2026/)
+- The four sponsors released their substitute on November 7. It edits 43 sections of the September 30 text, adds 13 and drops one. (source: Senate Energy and Natural Resources Committee, https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/)
+- A spokesman for House Democratic Leader Hakeem Jeffries said November 5 that he will not rubber-stamp the Senate bill without more involvement from his caucus. (source: Punchbowl News, https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/)
+- A White House official said November 6 that the Defense Department was advancing nine more wind projects held at the Pentagon. (source: Punchbowl News, https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/)
+- Heatmap reported that President Trump urged all senators on November 8 to vote for the bill. (source: Heatmap, https://heatmap.news/am/baaja-senate-vote)
+- Sponsors: Shelley Moore Capito (R-W.Va.) and Sheldon Whitehouse (D-R.I.) of Environment and Public Works; Mike Lee (R-Utah) and Martin Heinrich (D-N.M.) of Energy and Natural Resources. (source: Senate EPW Committee, https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026)
+- On October 27, Duckworth, Wyden, Merkley and Markey asked for canceled clean energy grants to be restored before the Senate decides whether to end debate on taking up the permitting bill. The four did not say which way they would vote on that motion. (source: Letter to the four bill sponsors, https://www.duckworth.senate.gov/news/press-releases/duckworth-colleagues-to-committee-leadership-trump-must-begin-restoring-illegally-cancelled-energy-projects-before-critical-vote-on-bipartisan-permitting-reform-bill)
+- Capito told WV MetroNews on October 11 that the White House has made concessions on wind and solar projects. She said Senate leaders promised to take up permitting reform first after the election. (source: WV MetroNews, https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/)
+- The Senate EPW majority's October 7 roundup lists statements of support from the U.S. Chamber, Business Roundtable, American Clean Power, API, LIUNA and the National Governors Association. (source: Senate EPW Committee, https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth)
+- A coalition of 185 community, labor, climate and environmental justice groups asked congressional leaders on October 13 to oppose the bill. (source: Center for Biological Diversity, https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/)
+- NPR reported on October 15 that Tribal groups sent Senate leaders a letter the week before. Preservation advocates quoted in the report call the bill's Section 106 changes the most serious threat to the law in its 60-year history. (source: NPR, https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary)
+- The Defense Department advanced two onshore wind projects on October 22, which a White House official tied to the bill's passage; Whitehouse called it a start and asked for more on wind and solar. (source: Joshua Siegel, Punchbowl News (X), https://x.com/SiegelScribe/status/2113279782419128579)
+- House Speaker Mike Johnson said on October 23 that he supports the Senate bill. (source: Joshua Siegel, Punchbowl News (X), https://x.com/SiegelScribe/status/2113682338181779731)
+- More opponents declared in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups and nine Democratic attorneys general. More than 100 public lands groups, the People's Environmental Justice Caucus and Rep. Leger Fernández joined them. (source: POLITICO (X), https://x.com/NicoPortuondo/status/2112571938484957230)
+- Support letters the same week came from 19 former economic and national security officials, the five main clean energy trade groups, and API with 137 other organizations. (source: Institute for Progress, https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf)
+- Next step, 2026-11-09: About 5:30 p.m.: 60 senators must agree to end debate on taking up the permitting bill. Passing it takes a separate vote. (source: https://www.dailypress.senate.gov/monday-november-9-2026/)
+
 ## Reading and retrieval
 
 Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.
@@ -36,31 +55,31 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 - [Sec. 1103. Implementing procedures](https://pranava0x0.github.io/permittingreform/sections/1103.md) (pp. 25 to 26; NEPA, CEQ)
 - [Sec. 1104. Cooperation of agencies; reports; availability of information; recommendations; international and national coordination of efforts](https://pranava0x0.github.io/permittingreform/sections/1104.md) (pp. 26 to 27; NEPA)
 - [Sec. 1105. Procedure for determination of level of review](https://pranava0x0.github.io/permittingreform/sections/1105.md) (pp. 28 to 31; NEPA, Exclusions)
-- [Sec. 1106. Timely and unified Federal reviews](https://pranava0x0.github.io/permittingreform/sections/1106.md) (pp. 31 to 61; NEPA, CEQ, Lawsuits)
+- [Sec. 1106. Timely and unified Federal reviews](https://pranava0x0.github.io/permittingreform/sections/1106.md) (pp. 31 to 61; NEPA, CEQ, Court challenges)
 - [Sec. 1107. Programmatic environmental document](https://pranava0x0.github.io/permittingreform/sections/1107.md) (pp. 61 to 62; NEPA)
 - [Sec. 1108. Use of categorical exclusions by other agencies](https://pranava0x0.github.io/permittingreform/sections/1108.md) (pp. 62 to 64; NEPA, Exclusions, CEQ)
 - [Sec. 1109. Applications for authorizations](https://pranava0x0.github.io/permittingreform/sections/1109.md) (pp. 64 to 67; NEPA)
-- [Sec. 1110. Judicial review](https://pranava0x0.github.io/permittingreform/sections/1110.md) (pp. 67 to 74; NEPA, Lawsuits, Tribal)
+- [Sec. 1110. Judicial review](https://pranava0x0.github.io/permittingreform/sections/1110.md) (pp. 67 to 74; NEPA, Court challenges, Tribal)
 - [Sec. 1121. Council on Environmental Quality](https://pranava0x0.github.io/permittingreform/sections/1121.md) (pp. 74 to 96; NEPA, CEQ)
 - [Sec. 1131. Definitions](https://pranava0x0.github.io/permittingreform/sections/1131.md) (pp. 96 to 97; NEPA, CEQ)
 - [Sec. 1132. Environmental Review and Permitting Tracker](https://pranava0x0.github.io/permittingreform/sections/1132.md) (pp. 97 to 101; NEPA, CEQ)
 - [Sec. 1133. Permitting Improvement Fund](https://pranava0x0.github.io/permittingreform/sections/1133.md) (pp. 101 to 102; NEPA, CEQ)
-- [Sec. 1201. Water quality criteria](https://pranava0x0.github.io/permittingreform/sections/1201.md) (pp. 102 to 103; Clean Water Act, Lawsuits)
+- [Sec. 1201. Water quality criteria](https://pranava0x0.github.io/permittingreform/sections/1201.md) (pp. 102 to 103; Clean Water Act, Court challenges)
 - [Sec. 1202. Clean Water Act permitting and State certification](https://pranava0x0.github.io/permittingreform/sections/1202.md) (pp. 103 to 122; Clean Water Act, Oil, gas and pipelines, Transmission)
 - [Sec. 1203. Permit term for NPDES permits](https://pranava0x0.github.io/permittingreform/sections/1203.md) (pp. 123 to 123; Clean Water Act)
 - [Sec. 1204. Permits for dredged or fill material](https://pranava0x0.github.io/permittingreform/sections/1204.md) (pp. 123 to 128; Clean Water Act, Endangered Species Act, Oil, gas and pipelines, Transmission)
-- [Sec. 1205. Judicial review timeline clarity](https://pranava0x0.github.io/permittingreform/sections/1205.md) (pp. 128 to 133; Clean Water Act, Lawsuits)
+- [Sec. 1205. Judicial review timeline clarity](https://pranava0x0.github.io/permittingreform/sections/1205.md) (pp. 128 to 133; Clean Water Act, Court challenges)
 - [Sec. 1301. Definitions](https://pranava0x0.github.io/permittingreform/sections/1301.md) (pp. 133 to 134; Endangered Species Act)
 - [Sec. 1302. Timeline for Section 7 consultations](https://pranava0x0.github.io/permittingreform/sections/1302.md) (pp. 134 to 136; Endangered Species Act)
 - [Sec. 1303. Projects in the operational right-of-way](https://pranava0x0.github.io/permittingreform/sections/1303.md) (pp. 136 to 137; Endangered Species Act)
 - [Sec. 1304. State assumption of consultation responsibilities](https://pranava0x0.github.io/permittingreform/sections/1304.md) (pp. 137 to 154; Endangered Species Act)
-- [Sec. 1305. Judicial review](https://pranava0x0.github.io/permittingreform/sections/1305.md) (pp. 154 to 155; Endangered Species Act, Lawsuits)
+- [Sec. 1305. Judicial review](https://pranava0x0.github.io/permittingreform/sections/1305.md) (pp. 154 to 155; Endangered Species Act, Court challenges)
 - [Sec. 1306. Listing determinations](https://pranava0x0.github.io/permittingreform/sections/1306.md) (pp. 155 to 155; Endangered Species Act)
 - [Sec. 1307. Authorization of appropriations](https://pranava0x0.github.io/permittingreform/sections/1307.md) (pp. 155 to 155; Endangered Species Act)
 - [Sec. 1308. National Fish and Wildlife Foundation Coastal State Fund](https://pranava0x0.github.io/permittingreform/sections/1308.md) (pp. 156 to 158; Offshore)
-- [Sec. 1401. Maintaining Federal authorizations or permits for projects with non-Federal sponsors](https://pranava0x0.github.io/permittingreform/sections/1401.md) (pp. 158 to 166; Permit certainty, Wind and solar, Offshore, Lawsuits)
-- [Sec. 1402. Ensuring fairness for specific types of covered projects](https://pranava0x0.github.io/permittingreform/sections/1402.md) (pp. 166 to 182; Permit certainty, Wind and solar, Offshore, Oil, gas and pipelines, Lawsuits)
-- [Sec. 1403. Avoiding unreasonable delays in permitting](https://pranava0x0.github.io/permittingreform/sections/1403.md) (pp. 182 to 185; Permit certainty, Lawsuits)
+- [Sec. 1401. Maintaining Federal authorizations or permits for projects with non-Federal sponsors](https://pranava0x0.github.io/permittingreform/sections/1401.md) (pp. 158 to 166; Issued permits, Wind and solar, Offshore, Court challenges)
+- [Sec. 1402. Ensuring fairness for specific types of covered projects](https://pranava0x0.github.io/permittingreform/sections/1402.md) (pp. 166 to 182; Issued permits, Wind and solar, Offshore, Oil, gas and pipelines, Court challenges)
+- [Sec. 1403. Avoiding unreasonable delays in permitting](https://pranava0x0.github.io/permittingreform/sections/1403.md) (pp. 182 to 185; Issued permits, Court challenges)
 - [Sec. 2101. Transmission permitting](https://pranava0x0.github.io/permittingreform/sections/2101.md) (pp. 185 to 200; Transmission)
 - [Sec. 2102. Reconductoring and other activities in existing rights-of-way](https://pranava0x0.github.io/permittingreform/sections/2102.md) (pp. 200 to 205; Transmission, Oil, gas and pipelines, Exclusions, Historic preservation)
 - [Sec. 2103. Transmission planning](https://pranava0x0.github.io/permittingreform/sections/2103.md) (pp. 205 to 218; Transmission)
@@ -76,7 +95,7 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 - [Sec. 2113. FERC fee assessments](https://pranava0x0.github.io/permittingreform/sections/2113.md) (pp. 278 to 278; Transmission)
 - [Sec. 2114. Collection of data on computational load entities](https://pranava0x0.github.io/permittingreform/sections/2114.md) (pp. 279 to 279; Data centers)
 - [Sec. 2115. Conforming amendments; savings provision](https://pranava0x0.github.io/permittingreform/sections/2115.md) (pp. 280 to 280; Transmission)
-- [Sec. 2201. Accelerating claims](https://pranava0x0.github.io/permittingreform/sections/2201.md) (pp. 280 to 286; Lawsuits, Oil, gas and pipelines, Mining)
+- [Sec. 2201. Accelerating claims](https://pranava0x0.github.io/permittingreform/sections/2201.md) (pp. 280 to 286; Court challenges, Oil, gas and pipelines, Mining)
 - [Sec. 2211. Permitting compliance on non-Federal land](https://pranava0x0.github.io/permittingreform/sections/2211.md) (pp. 286 to 290; Oil, gas and pipelines)
 - [Sec. 2212. Rights-of-way across Indian land](https://pranava0x0.github.io/permittingreform/sections/2212.md) (pp. 290 to 298; Tribal, Transmission)
 - [Sec. 2213. Accelerating renewable energy permitting](https://pranava0x0.github.io/permittingreform/sections/2213.md) (pp. 298 to 304; Wind and solar, Exclusions)
@@ -87,7 +106,7 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 - [Sec. 2223. Geothermal leasing reform](https://pranava0x0.github.io/permittingreform/sections/2223.md) (pp. 329 to 332; Geothermal)
 - [Sec. 2224. Geothermal ombudsman and permitting task force](https://pranava0x0.github.io/permittingreform/sections/2224.md) (pp. 332 to 338; Geothermal)
 - [Sec. 2225. No Federal permit required for geothermal activities on certain land](https://pranava0x0.github.io/permittingreform/sections/2225.md) (pp. 338 to 341; Geothermal)
-- [Sec. 2226. Effect of pending civil actions on processing applications relating to geothermal leasing](https://pranava0x0.github.io/permittingreform/sections/2226.md) (pp. 341 to 342; Geothermal, Lawsuits)
+- [Sec. 2226. Effect of pending civil actions on processing applications relating to geothermal leasing](https://pranava0x0.github.io/permittingreform/sections/2226.md) (pp. 341 to 342; Geothermal, Court challenges)
 - [Sec. 2227. Cost recovery from geothermal leasing, permitting, and inspections](https://pranava0x0.github.io/permittingreform/sections/2227.md) (pp. 342 to 346; Geothermal)
 - [Sec. 2228. Publication of Gold Book for geothermal operations on Federal land](https://pranava0x0.github.io/permittingreform/sections/2228.md) (pp. 346 to 348; Geothermal)
 - [Sec. 2229. NEPA Review](https://pranava0x0.github.io/permittingreform/sections/2229.md) (pp. 349 to 351; Oil, gas and pipelines, Geothermal, NEPA, Exclusions)
@@ -100,13 +119,13 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 - [Sec. 2243. Federal Energy Regulatory Commission personnel safety](https://pranava0x0.github.io/permittingreform/sections/2243.md) (pp. 363 to 363; Transmission)
 - [Sec. 2251. Offshore energy](https://pranava0x0.github.io/permittingreform/sections/2251.md) (pp. 363 to 364; Offshore, Wind and solar)
 - [Sec. 2252. Offshore energy transmission](https://pranava0x0.github.io/permittingreform/sections/2252.md) (pp. 365 to 371; Offshore, Transmission)
-- [Sec. 2301. Historic preservation](https://pranava0x0.github.io/permittingreform/sections/2301.md) (pp. 372 to 413; Historic preservation, Tribal, Lawsuits)
+- [Sec. 2301. Historic preservation](https://pranava0x0.github.io/permittingreform/sections/2301.md) (pp. 372 to 413; Historic preservation, Tribal, Court challenges)
 - [Sec. 2302. Funding for the Historic Preservation Fund; use and availability; grants for Tribal Historic Preservation officers; additional funding](https://pranava0x0.github.io/permittingreform/sections/2302.md) (pp. 414 to 417; Historic preservation, Tribal)
 
 ## Research
 
 - [Data center bills and Communities](https://pranava0x0.github.io/permittingreform/llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.
 - [Timeline, people and media](https://pranava0x0.github.io/permittingreform/llms-full.txt): dated records with source links and attributed positions.
-- [Where the two sides disagree](https://pranava0x0.github.io/permittingreform/issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.
+- [Disputed readings](https://pranava0x0.github.io/permittingreform/issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.
 - [Method and check status](https://pranava0x0.github.io/permittingreform/#/method): browser view; equivalent checks are in data/core.json.
 - [Subject comparisons](https://pranava0x0.github.io/permittingreform/#/compare): browser view; retrieve the compare object in data/core.json without JavaScript.

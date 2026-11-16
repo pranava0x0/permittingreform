@@ -79,7 +79,7 @@
     }
    },
    {
-    "text": "NPR reported on October 15 that Tribal groups sent Senate leaders a letter the week before, and that preservation advocates call the bill's Section 106 changes the most serious threat to the law in its 60-year history.",
+    "text": "NPR reported on October 15 that Tribal groups sent Senate leaders a letter the week before. Preservation advocates quoted in the report call the bill's Section 106 changes the most serious threat to the law in its 60-year history.",
     "source": {
      "label": "NPR",
      "url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary"
@@ -100,7 +100,7 @@
     }
    },
    {
-    "text": "Opposition grew in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups, nine Democratic attorneys general, more than 100 public lands groups, the People's Environmental Justice Caucus and Rep. Leger Fernández.",
+    "text": "More opponents declared in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups and nine Democratic attorneys general. More than 100 public lands groups, the People's Environmental Justice Caucus and Rep. Leger Fernández joined them.",
     "source": {
      "label": "POLITICO (X)",
      "url": "https://x.com/NicoPortuondo/status/2112571938484957230"
@@ -135,7 +135,8 @@
   },
   {
    "id": "lawsuits",
-   "title": "Lawsuit limits",
+   "title": "Court challenges",
+   "reviewed_as": "Lawsuit limits",
    "text": "Generally allows 150 days for NEPA challenges in a court of appeals, with direct-harm and conditional comment requirements. Limits remedies to remand, with a fix due within 180 days; preliminary injunctions remain available under specified conditions involving other law.",
    "sections": [
     "1110",
@@ -144,7 +145,8 @@
   },
   {
    "id": "certainty",
-   "title": "Permit certainty",
+   "title": "Issued permits",
+   "reviewed_as": "Permit certainty",
    "text": "Restricts interference with permits in effect on or after September 16, 2026, subject to listed exceptions including the holder’s request. If the agency fails to meet its burden in court, the sponsor is entitled to specified relief, including a court-determined 25 to 50 percent of incurred project costs not otherwise recovered.",
    "sections": [
     "1401",
@@ -199,7 +201,8 @@
   },
   {
    "id": "historic",
-   "title": "Historic preservation",
+   "title": "Historic preservation and tribal consultation",
+   "reviewed_as": "Historic preservation",
    "text": "Narrows the effects covered by historic-preservation review and sets deadlines. Adds a 150-day challenge window and limits remedies, with separate rules for missed deadlines.",
    "sections": [
     "2301",

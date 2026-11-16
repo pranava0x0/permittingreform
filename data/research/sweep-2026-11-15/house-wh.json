@@ -1,0 +1,127 @@
+{
+ "agent": "house-wh",
+ "generated": "2026-11-15",
+ "status": [
+  {
+   "date": "2026-11-09",
+   "text": "The Senate voted 73-25 on November 9, 2026 to take up the bipartisan permitting bill, and the White House issued a Statement of Administration Policy the same day strongly supporting S. 5653.",
+   "source": {"label": "OPB (reprint of Bloomberg/AP-style wire report)", "url": "https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/"},
+   "quote": "The Senate voted 73-25 to formally take up the bill"
+  }
+ ],
+ "items": [
+  {
+   "date": "2026-11-09",
+   "type": "gov_document",
+   "outlet": "Executive Office of the President, Office of Management and Budget",
+   "author": "Office of Management and Budget",
+   "title": "S. 5653 - Bipartisan American Affordability and Jobs Act of 2026 (Statement of Administration Policy)",
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
+   "summary": "The Statement of Administration Policy, dated November 9, 2026, says the Administration strongly supports passage of S. 5653 and that his advisors would recommend the President sign it. The SAP does not say which text it reacts to (the September 30 bill or the November 7 substitute), and it names no requested changes in the portion read.",
+   "stance": "supports",
+   "reacts_to": "other",
+   "quote": {"text": "The Administration strongly supports passage of S. 5653, the Bipartisan American Affordability and Jobs Act of 2026.", "speaker": "Executive Office of the President, Office of Management and Budget"},
+   "topics": ["permit-certainty", "nepa", "data-centers", "transmission", "wind-solar", "congress", "white-house"],
+   "sector": "white_house",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "news",
+   "outlet": "Bloomberg (via energyconnects.com)",
+   "author": "Ari Natter",
+   "title": "Trump says he backs energy permitting bill on eve of Senate vote",
+   "url": "https://www.energyconnects.com/news/renewables/2026/november/trump-says-he-backs-energy-permitting-bill-on-eve-of-senate-vote/",
+   "summary": "President Trump posted on social media on a Sunday, which the article's Monday framing places at November 8, 2026, urging support for the permitting bill. The article does not state the post date or the platform; the post text is quoted as reported.",
+   "stance": "supports",
+   "reacts_to": "other",
+   "quote": {"text": "This Landmark Permitting Reform Legislation will codify our America First Energy Agenda, and ensure that we can build Pipelines, Mines, and Power Plants faster than ever before", "speaker": "President Donald J. Trump, social media post as quoted by Bloomberg"},
+   "topics": ["permit-certainty", "fossil", "congress", "white-house"],
+   "sector": "media",
+   "read": "full"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "news",
+   "outlet": "OPB",
+   "author": "not captured in fetch",
+   "title": "Senate advances sweeping energy legislation in first major action since midterm elections",
+   "url": "https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/",
+   "summary": "The Senate voted 73-25 on Monday, November 9, 2026 to take up the bipartisan permitting bill. The article reports that House Minority Leader Hakeem Jeffries's office said the bill falls short in a number of areas.",
+   "stance": "reporting",
+   "reacts_to": "vote",
+   "quote": {"text": "The Senate on Monday advanced bipartisan legislation aimed at speeding up permitting reviews", "speaker": "OPB news report"},
+   "topics": ["permit-certainty", "congress", "tribal"],
+   "sector": "media",
+   "read": "full"
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-08",
+   "title": "President Trump posts support for the bipartisan permitting bill on social media (reported as a Sunday post)",
+   "branch": "executive",
+   "summary": "Per Bloomberg (published November 9), Trump's Sunday social media post called the permitting legislation landmark and said it would let pipelines, mines and power plants be built faster. The date is inferred from the Sunday reference; the article does not give it.",
+   "actors": ["Donald J. Trump"],
+   "milestone": false,
+   "sources": [
+    {"title": "Trump says he backs energy permitting bill on eve of Senate vote", "publisher": "Bloomberg via energyconnects.com", "url": "https://www.energyconnects.com/news/renewables/2026/november/trump-says-he-backs-energy-permitting-bill-on-eve-of-senate-vote/", "date": "2026-11-09", "quote": "This Landmark Permitting Reform Legislation will codify our America First Energy Agenda, and ensure that we can build Pipelines, Mines, and Power Plants faster than ever before"}
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "title": "Senate votes 73-25 to take up the bipartisan permitting bill",
+   "branch": "congress_senate",
+   "summary": "The Senate voted 73-25 on Monday, November 9, 2026 to proceed to the bipartisan permitting bill, the first major Senate action after the midterm elections, per OPB's wire-based report. The OPB article does not name H.R. 2347 in the excerpt read; the measure is the one the tracker calls the Senate floor vehicle.",
+   "actors": ["U.S. Senate"],
+   "milestone": true,
+   "sources": [
+    {"title": "Senate advances sweeping energy legislation in first major action since midterm elections", "publisher": "OPB", "url": "https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/", "date": "2026-11-09", "quote": "The Senate voted 73-25 to formally take up the bill"}
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "title": "OMB issues Statement of Administration Policy strongly supporting S. 5653",
+   "branch": "executive",
+   "summary": "The Executive Office of the President's Office of Management and Budget issued a Statement of Administration Policy dated November 9, 2026 on S. 5653; it supports passage and says advisors would recommend signature.",
+   "actors": ["Office of Management and Budget", "Executive Office of the President"],
+   "milestone": true,
+   "sources": [
+    {"title": "S. 5653 - Bipartisan American Affordability and Jobs Act of 2026 (Statement of Administration Policy)", "publisher": "whitehouse.gov", "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf", "date": "2026-11-09", "quote": "The Administration strongly supports passage of S. 5653, the Bipartisan American Affordability and Jobs Act of 2026."}
+   ]
+  }
+ ],
+ "people": [],
+ "unread": [
+  {"url": "https://www.politico.com/news/2026/11/06/jeffries-senate-permitting-bill", "outlet": "POLITICO", "title": "Jeffries statement on Senate permitting bill (Nov 5 to 6, 2026)", "reason": "guessed URL returned a POLITICO 404 through r.jina.ai; the Jeffries statement is known only from a WebSearch snippet saying he opposed the bill 'in its current form' and that it 'falls short in several areas'. Not fetched."},
+  {"url": "https://www.axios.com/2026/11/09/senate-advances-bipartisan-permitting-bill-key-test-vote", "outlet": "Axios", "title": "Senate advances bipartisan permitting bill in key test vote", "reason": "403"},
+  {"url": "https://wisconsinexaminer.com/?p=48840", "outlet": "Wisconsin Examiner", "title": "Permitting overhaul advances in US Senate with tepid bipartisan support", "reason": "403"},
+  {"url": "https://www.newkerala.com/news/a/this-bill-big-win-us-trump-urges-senators-547.htm", "outlet": "NewKerala", "title": "Trump urges senators on permitting bill (Nov 9, 2026)", "reason": "403"},
+  {"url": "https://www.nrdc.org/press-releases/president-trump-undermines-baaja-senate-debate-begins", "outlet": "NRDC", "title": "President Trump Undermines BAAJA As Senate Debate Begins", "reason": "403; the title is a search result only"},
+  {"url": "https://newsweek.com/trump-wind-turbines-bipartisan-energy-permitting-bill-12691384", "outlet": "Newsweek", "title": "Trump wind turbines bipartisan energy permitting bill", "reason": "snippet only; search snippet reports Trump saying he would not approve wind turbines; not fetched"},
+  {"url": "https://www.speaker.gov/newsroom/", "outlet": "speaker.gov", "title": "Speaker newsroom", "reason": "404 on the URL used"},
+  {"url": "https://naturalresources.house.gov/", "outlet": "House Natural Resources (majority)", "title": "Majority press releases, Nov 2026", "reason": "not fetched in this run; the democrats-naturalresources press list was read and had no permitting release in Nov 4 to 12"},
+  {"url": "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/", "outlet": "E&E News", "title": "Debate over preservation law tripping up permitting talks", "reason": "paywall; not fetched; undated in search result"}
+ ],
+ "not_found": [
+  {"question": "Speaker Mike Johnson: whether the House will take up, amend or conference S. 5653 in Nov 4 to 15", "queries": ["House Speaker Johnson Senate permitting bill S. 5653 H.R. 2347 November 2026", "Speaker Johnson permitting reform Senate bill House will take up November 2026"]},
+  {"question": "Majority Leader Scalise on the Senate bill or H.R. 2347", "queries": ["Scalise House floor permitting Senate bill H.R. 2347 House vote conference"]},
+  {"question": "Natural Resources Chair Westerman on the Senate bill or substitute (Nov)", "queries": ["Westerman Huffman statement Senate permitting bill substitute November 2026"]},
+  {"question": "Ranking Member Huffman on the Senate bill or Nov 7 substitute (Nov 4 to 15)", "queries": ["Westerman Huffman statement Senate permitting bill substitute November 2026", "House Democrats letter Senate permitting bill Section 106 wind November 2026 members urge sponsors"]},
+  {"question": "Energy and Commerce Chair Guthrie and Ranking Member Pallone on the Senate bill (Nov)", "queries": ["Guthrie Pallone Energy and Commerce permitting bill grid transmission Senate substitute November 2026"]},
+  {"question": "Transportation and Infrastructure Committee leaders on the Senate bill", "queries": ["Speaker Johnson permitting reform Senate bill House will take up November 2026 (no T&I hits)"]},
+  {"question": "Rep. Jared Golden on the Senate bill (Nov)", "queries": ["Jared Golden SPEED Act permitting Senate bill statement November 2026"]},
+  {"question": "Congressional Progressive Caucus, New Democrat Coalition, SEEC position on the bill or substitute (Nov 4 to 15)", "queries": ["Congressional Progressive Caucus OR New Democrat Coalition OR Blue Dog permitting bill position November 2026"]},
+  {"question": "Blue Dog Coalition position on the bill (Nov)", "queries": ["Congressional Progressive Caucus OR New Democrat Coalition OR Blue Dog permitting bill position November 2026"]},
+  {"question": "Problem Solvers Caucus, Congressional Hispanic Caucus, Congressional Black Caucus positions", "queries": ["Congressional Hispanic Caucus OR Congressional Black Caucus OR Problem Solvers Caucus permitting bill Senate November 2026"]},
+  {"question": "House Freedom Caucus, Republican Study Committee, Western Caucus positions on S. 5653 (Nov)", "queries": ["House Freedom Caucus OR Republican Study Committee OR Western Caucus statement Senate permitting bill S. 5653 November"]},
+  {"question": "Congressional Native American Caucus and Climate Solutions Caucus positions", "queries": ["Congressional Native American Caucus OR Climate Solutions Caucus statement Senate permitting bill tribal Section 106 2026"]},
+  {"question": "Statements by Energy Secretary Wright, Interior Secretary Burgum, EPA Administrator Zeldin on the bill (Nov 4 to 15)", "queries": ["Burgum OR Wright OR Zeldin statement permitting bill Senate vote November 9 2026"]},
+  {"question": "CEQ or Permitting Council action in window tied to the bill", "queries": ["CEQ NEPA rule November 2026 permitting council energy dominance"]},
+  {"question": "Defense Department or Interior releases of held wind or solar projects dated Nov 4 to 15", "queries": ["Defense Department wind projects released Interior solar wind permits November 2026 permitting bill"]},
+  {"question": "FERC action on large-load interconnection dated Nov 4 to 15", "queries": ["FERC large load interconnection final rule November 2026 Swett"]},
+  {"question": "Any CBO cost estimate or score of S. 5653 or the Nov 7 substitute", "queries": ["CBO cost estimate Senate permitting bill BAAJA 2026"]},
+  {"question": "Letters from groups of House members about the bill, Nov 4 to 15", "queries": ["House Democrats letter Senate permitting bill Section 106 wind November 2026 members urge sponsors"]},
+  {"question": "A Statement of Administration Policy on H.R. 2347 (separate from S. 5653)", "queries": ["Statement of Administration Policy S. 5653 Bipartisan American Affordability and Jobs Act"]}
+ ]
+}

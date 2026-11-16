@@ -682,7 +682,7 @@
   {
    "id": "1401",
    "point": 0,
-   "label": "Permit certainty"
+   "label": "Issued permits"
   },
   {
    "id": "1402",
@@ -692,7 +692,7 @@
   {
    "id": "2301",
    "point": 0,
-   "label": "Historic preservation and Tribes"
+   "label": "Historic preservation and tribal consultation"
   },
   {
    "id": "2301",
@@ -722,7 +722,7 @@
   {
    "id": "2117",
    "point": 0,
-   "label": "Help for communities weighing data centers"
+   "label": "Data center community assistance program"
   },
   {
    "id": "1501",

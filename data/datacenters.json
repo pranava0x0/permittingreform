@@ -1,6 +1,6 @@
 {
  "_about": "What BAAJA does for data centers, high-density computing loads and grid speed. The build checks each quote against the cited section.",
- "intro": "How the bill impacts data centers, AI computing facilities and interconnection speed. Covers study automation, transmission rate carrots and sticks, grid-enhancing technologies, behind-the-meter resources, and ratepayer protections. Each row gives current policy, the change and the sections that make it.",
+ "intro": "What the bill would change for data centers, AI computing facilities and grid interconnection: study automation, transmission rates, grid-enhancing technologies, behind-the-meter resources and cost allocation.",
  "who": {
   "hyperscalers": "Hyperscalers & AI",
   "data_centers": "Data center operators",
@@ -15,7 +15,7 @@
   },
   {
    "id": "pricing",
-   "label": "Transmission rates and non-firm carrots"
+   "label": "Transmission rates and non-firm service"
   },
   {
    "id": "grid-tech",
@@ -27,7 +27,7 @@
   },
   {
    "id": "protection",
-   "label": "Ratepayer protection and financial assurance"
+   "label": "Cost allocation and financial assurance"
   }
  ],
  "rows": [

@@ -1,10 +1,10 @@
 {
  "_about": "Research on what slows energy and infrastructure projects, grouped by cause. Evidence rows come from data/research/sweep-2026-10-26/evidence.json (each quote checked against the fetched page). Section mapping is this site's judgment; passages are verbatim bill text the build locates; readings are take ids in data/takes.json.",
- "intro": "Studies of why energy projects take years, grouped by cause. Each row shows what the research found, the bill text aimed at that cause, and named analysts' readings of what the text would change. Where studies disagree, the row says so.",
+ "intro": "Studies of how long energy projects take and why, grouped by cause, with the bill text on each cause and named analysts' readings of it. Disagreements between studies are noted on the cause they concern.",
  "blockers": [
   {
    "id": "nepa-eis-duration",
-   "title": "Environmental impact statements take years",
+   "title": "Environmental impact statement timelines",
    "headline": "Median EIS took 2.2 years in 2024, down from 3.1",
    "sections": [
     "1105",
@@ -197,7 +197,7 @@
   },
   {
    "id": "transmission-build",
-   "title": "High-voltage transmission is built slowly",
+   "title": "High-voltage transmission construction",
    "headline": "322 miles of 345 kV+ line finished in 2024, against nearly 4,000 in 2013",
    "sections": [
     "2101",
@@ -261,7 +261,7 @@
   },
   {
    "id": "local-state-siting",
-   "title": "Local and state opposition",
+   "title": "Local and state siting",
    "headline": "At least 459 local governments restrict wind or solar; studies disagree on how much federal review adds",
    "sections": [],
    "evidence": [
@@ -332,7 +332,7 @@
   },
   {
    "id": "federal-reversals",
-   "title": "Federal reversals of approved projects",
+   "title": "Federal action on approved projects",
    "headline": "Agencies halted large solar and offshore wind projects in 2025; judges let the offshore ones resume",
    "sections": [
     "1401",
@@ -569,7 +569,7 @@
   },
   {
    "id": "clean-vs-fossil-review",
-   "title": "How clean energy fares in federal review",
+   "title": "Clean energy and fossil projects in federal review",
    "headline": "Solar and wind reviews ran shorter than average; no study compares clean and fossil shares",
    "sections": [
     "2213",

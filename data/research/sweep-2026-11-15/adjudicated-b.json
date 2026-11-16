@@ -1,0 +1,1436 @@
+{
+ "agent": "adjudicated-b",
+ "generated": "2026-11-15",
+ "status": [
+  {
+   "date": "2026-11-10",
+   "text": "Senators released a last-minute amendment to BAAJA, and Earthjustice wrote that the Senate was expected to vote on the bill very soon.",
+   "source": {
+    "label": "Earthjustice, Congress Tweaks Permitting Bill, But Deal Remains Fatally Flawed",
+    "url": "https://earthjustice.org/?p=57975"
+   },
+   "quote": "The Senate is expected to vote on BAAJA very soon."
+  }
+ ],
+ "items": [
+  {
+   "date": "2026-11-02",
+   "type": "analysis",
+   "outlet": "Rhodium Group",
+   "author": "Ben King, Galen Bower, Parker Case, Hannah Kolus, John Larsen, Nathan Pastorek, Nathan Wiens",
+   "title": "Estimating the US Energy System Impacts of the Bipartisan American Affordability and Jobs Act",
+   "url": "https://rhg.com/?p=24167",
+   "summary": "Rhodium modeled transmission, gas pipeline and data-center ratepayer provisions of the initial text introduced September 30 against a current-policy baseline, and reports 2040 ranges for emissions, household bills and clean-resource build.",
+   "stance": "neutral",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "Taken together, these provisions uniformly reduce economywide greenhouse gas (GHG) emissions by 5-148 million metric tons annually in 2040 and as much as 1.5 gigatons cumulatively, compared to without BAAJA.",
+    "speaker": "Rhodium Group authors, analysis note"
+   },
+   "topics": [
+    "transmission",
+    "fossil",
+    "data-centers",
+    "congress"
+   ],
+   "sector": "think_tank",
+   "read": "full",
+   "checked": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-10-29",
+   "type": "analysis",
+   "outlet": "Resources for the Future",
+   "author": "Kevin Rennert and Aaron Bergman",
+   "title": "Projected Effects of the Bipartisan American Affordability and Jobs Act on the Power Sector",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "summary": "RFF ran the power-sector provisions of BAAJA through the ReEDS model and reports emissions, electricity-system cost and transmission effects relative to a baseline.",
+   "stance": "neutral",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "We project near-term emissions reductions from the power sector of roughly 200 million tonnes (Mt) of carbon dioxide, with cumulative carbon dioxide emissions from the power sector declining by about 1.8 gigatonnes (Gt) through 2041 as compared to the baseline.",
+    "speaker": "Kevin Rennert and Aaron Bergman, authors"
+   },
+   "topics": [
+    "transmission",
+    "data-centers",
+    "wind-solar",
+    "congress"
+   ],
+   "sector": "think_tank",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-06",
+   "type": "analysis",
+   "outlet": "Center for Climate and Energy Solutions (C2ES)",
+   "author": "Greenline Insights (modeling for C2ES)",
+   "title": "New Nationwide Analysis: Bipartisan Transmission Reforms Would Boost Clean Energy, Cut Power Sector Emissions, Lower Electricity Bills, and Strengthen Grid Reliability",
+   "url": "https://www.c2es.org/?p=25710",
+   "summary": "C2ES and Greenline Insights modeled the bill's interconnection and transmission provisions to 2035 and stated that a delay to 2030 would forgo part of the modeled benefits. The release does not say which text was modeled.",
+   "stance": "neutral",
+   "reacts_to": "other",
+   "quote": {
+    "text": "Reduce annual power sector carbon dioxide emissions by 173 million metric tons, a 13 percent reduction relative to business as usual.",
+    "speaker": "C2ES release, modeling by Greenline Insights"
+   },
+   "topics": [
+    "transmission",
+    "wind-solar",
+    "data-centers",
+    "congress"
+   ],
+   "sector": "think_tank",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-10-28",
+   "type": "gov_document",
+   "outlet": "The White House (Council of Economic Advisers)",
+   "author": "Council of Economic Advisers",
+   "title": "The Economic Benefits of Permitting Reform",
+   "url": "https://www.whitehouse.gov/research/2026/10/the-economic-benefits-of-permitting-reform/",
+   "summary": "The Council of Economic Advisers estimates long-run GDP and tax-revenue effects of cutting federal review times to the levels BAAJA requires.",
+   "stance": "neutral",
+   "reacts_to": "other",
+   "quote": {
+    "text": "We find that reducing review times down to the levels required by the BAAJA would: Increase long-run GDP by between 0.28 percent and 0.56 percent (i.e., $82 billion to $164 billion in additional output each year).",
+    "speaker": "Council of Economic Advisers, The White House"
+   },
+   "topics": [
+    "nepa",
+    "congress",
+    "white-house"
+   ],
+   "sector": "white_house",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-06",
+   "type": "gov_document",
+   "outlet": "Congressional Research Service",
+   "author": "not stated",
+   "title": "Bipartisan American Affordability and Jobs Act (BAAJA) of 2026: Analysis of Division A, Title I, Including National Environmental Policy Act Provisions",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "summary": "CRS compares each NEPA provision of Division A, Title I as introduced with current law; the report gives statutory deadlines and appropriation levels, not outcome estimates.",
+   "stance": "neutral",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "Section 1101 of BAAJA would specify that NEPA prescribes a procedure to inform the public about environmental effects of federal actions, describes the result of the NEPA process as an informational document, and does not mandate a particular outcome.",
+    "speaker": "Congressional Research Service report R49510"
+   },
+   "topics": [
+    "nepa",
+    "categorical-exclusions",
+    "congress"
+   ],
+   "sector": "congress",
+   "read": "full",
+   "verdict": "corrected",
+   "correction": "First-pass quote omitted 'of BAAJA' and did not match the page; replaced with the real span."
+  },
+  {
+   "date": "2026-11-10",
+   "type": "org_statement",
+   "outlet": "Earthjustice",
+   "author": "not stated",
+   "title": "Congress Tweaks Permitting Bill, But Deal Remains Fatally Flawed",
+   "url": "https://earthjustice.org/?p=57975",
+   "summary": "Earthjustice says the November 7 amendment makes no substantial Clean Water Act improvements and that the bill would still limit court review of permits and projects.",
+   "stance": "opposes",
+   "reacts_to": "substitute",
+   "quote": {
+    "text": "What the amendment does: The amendment makes no substantial improvements to the Clean Water Act provisions of BAAJA.",
+    "speaker": "Earthjustice, policy analysis"
+   },
+   "topics": [
+    "clean-water-act",
+    "nepa",
+    "courts",
+    "permit-certainty"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "org_statement",
+   "outlet": "Clean Air Task Force",
+   "author": "Frank Sturges",
+   "title": "Revisions to BAAJA permitting certainty provisions fall short of addressing risks",
+   "url": "https://www.catf.us/2026/11/revisions-baaja-permitting-certainty-provisions-fall-short-addressing-risks/",
+   "summary": "CATF says the November 7 manager's amendment reduces but does not eliminate risks that section 1401 poses to future greenhouse-gas and other pollution control standards.",
+   "stance": "mixed",
+   "reacts_to": "substitute",
+   "quote": {
+    "text": "The manager’s amendment to BAAJA released on Saturday, November 7, makes several changes to section 1401, many of which improve the section by reducing future risks.",
+    "speaker": "Frank Sturges, Clean Air Task Force"
+   },
+   "topics": [
+    "permit-certainty",
+    "fossil",
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-10-30",
+   "type": "analysis",
+   "outlet": "R Street Institute",
+   "author": "Jordan Nader, Tom Opdyke",
+   "title": "BAAJA Blast Part 2: What Does Permitting Reform Mean for the Environment?",
+   "url": "https://www.rstreet.org/?p=103280",
+   "summary": "R Street reviews the NEPA, Clean Water Act, Endangered Species Act and permit-certainty titles that fall under the Environment and Public Works Committee, and says it has reservations but supports the bill overall.",
+   "stance": "mixed",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "Ultimately, we believe that, despite our noted reservations, BAAJA as a whole is a product of serious negotiation between political parties and committees that will benefit the American people",
+    "speaker": "Jordan Nader and Tom Opdyke, R Street Institute"
+   },
+   "topics": [
+    "nepa",
+    "clean-water-act",
+    "esa",
+    "permit-certainty"
+   ],
+   "sector": "think_tank",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-10-19",
+   "type": "news",
+   "outlet": "pv magazine USA",
+   "author": "William Driscoll",
+   "title": "Watchdog group predicts utilities will oppose transmission reform that could yield 200 GW of clean energy",
+   "url": "https://pv-magazine-usa.com/2026/10/19/watchdog-group-predicts-utilities-will-oppose-transmission-reform-that-could-yield-200-gw-of-clean-energy/",
+   "summary": "pv magazine USA reported that American Clean Power projects the bill's transmission planning and siting reforms could enable about 200 GW of clean energy. The 200 GW figure does not appear on ACP's own fact-sheet page, which gives 350+ GW (see estimates and resolved).",
+   "stance": "reporting",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "ACP projects that the bill’s reforms of transmission planning and siting could enable “roughly 200 GW of clean energy, with more as the grid expands.”",
+    "speaker": "William Driscoll, pv magazine USA"
+   },
+   "topics": [
+    "transmission",
+    "wind-solar",
+    "congress"
+   ],
+   "sector": "media",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "outlet": "Breakthrough Institute",
+   "type": "analysis",
+   "author": "not stated",
+   "title": "The Faulty Logic at the Heart of Environmentalist Opposition to BAAJA",
+   "url": "https://thebreakthrough.org/issues/energy/the-faulty-logic-at-the-heart-of-environmentalist-opposition-to-baaja",
+   "summary": "Breakthrough argued that critics' emissions estimates depend on their assumptions and said more recent modeling shows lower emissions. Its per-year figures attributed to RFF and SEIA do not match either organisation's own page (see resolved).",
+   "stance": "supports",
+   "reacts_to": "other",
+   "quote": {
+    "text": "Since these reflexive pronouncements, more modeling has been released, which shows the ways in which BAAJA’s passage is likely to lower, not raise, emissions.",
+    "speaker": "Breakthrough Institute, analysis"
+   },
+   "topics": [
+    "fossil",
+    "transmission",
+    "congress"
+   ],
+   "sector": "think_tank",
+   "read": "full",
+   "date": "2026-10-30",
+   "verdict": "corrected",
+   "correction": "Date added from the page (Oct 30, 2026); summary notes figures that could not be reproduced."
+  },
+  {
+   "date": "2026-11-09",
+   "type": "org_statement",
+   "outlet": "Clean Energy and business coalition letter (C2ES listed as host)",
+   "author": "Undersigned organisations (86 counted)",
+   "title": "Sign-on Letter: Bipartisan American Affordability and Jobs Act of 2026 (Senate Committee Leadership)",
+   "url": "https://www.c2es.org/wp-content/uploads/2026/11/Sign-on-Letter_Bipartisan-American-Affordability-and-Jobs-Act-of-2026_Senate-Committee-Leadership-1.pdf",
+   "summary": "Eighty-six organisations signed a letter dated November 9, 2026 to the four Senate committee leaders encouraging passage of the bill. The letter does not mention the November 7 substitute.",
+   "stance": "supports",
+   "reacts_to": "other",
+   "quote": {
+    "text": "We encourage passage of this bipartisan legislation that represents a crucial step toward improving permitting and review processes",
+    "speaker": "The undersigned organisations, to Chair Capito, Chair Lee, Ranking Member Whitehouse and Ranking Member Heinrich"
+   },
+   "topics": [
+    "permit-certainty",
+    "transmission",
+    "congress"
+   ],
+   "sector": "trade_association",
+   "read": "full",
+   "letter": {
+    "to": "Chair Shelley Moore Capito; Chair Mike Lee; Ranking Member Sheldon Whitehouse; Ranking Member Martin Heinrich",
+    "signer_count": 86,
+    "signers_sample": [
+     "323 North Consulting, LLC",
+     "A. O. Smith",
+     "Absolute Climate, Inc.",
+     "Alliance for Automotive Innovation",
+     "American Advanced Membrane Technology"
+    ],
+    "ask": "Encourages passage of the Bipartisan American Affordability and Jobs Act of 2026.",
+    "count_note": "Counted exactly from the signature block (90 lines minus 4 wrapped lines); the letter states no count."
+   },
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-06",
+   "type": "org_statement",
+   "outlet": "U.S. Chamber of Commerce",
+   "author": "U.S. Chamber of Commerce and coalition signers",
+   "title": "Coalition letter: Bipartisan American Affordability and Jobs Act of 2026 (PDF)",
+   "url": "https://www.uschamber.com/assets/documents/Coalition-Letter_Bipartisan-American-Affordability-and-Jobs-Act_11.9.26.pdf",
+   "summary": "The U.S. Chamber of Commerce and coalition signers urged Congress to pass the Bipartisan American Affordability and Jobs Act of 2026 in a letter dated November 6, 2026. The letter does not cite S. 5653 and does not mention the November 7 substitute.",
+   "stance": "supports",
+   "reacts_to": "other",
+   "quote": {
+    "text": "we urge Congress to pass the Bipartisan American Affordability and Jobs Act of 2026, historic comprehensive permitting reform legislation, and send it to the President's desk as soon as possible",
+    "speaker": "U.S. Chamber of Commerce, on behalf of the undersigned organizations"
+   },
+   "topics": [
+    "permit-certainty",
+    "nepa",
+    "congress"
+   ],
+   "sector": "trade_association",
+   "read": "full",
+   "letter": {
+    "to": "To the Members of the United States Congress",
+    "signer_count": null,
+    "signers_sample": [
+     "Advanced Woody Biomass Alliance",
+     "Aerospace Industries Association",
+     "Agricultural Retailers Association",
+     "Airlines for America",
+     "Airports Council International - North America"
+    ],
+    "ask": "Pass the Bipartisan American Affordability and Jobs Act of 2026 and send it to the President's desk as soon as possible.",
+    "count_note": "count not stated"
+   },
+   "verdict": "corrected",
+   "correction": "First pass said the letter names S. 5653 (it does not) and gave ~521 signers (not stated; null). Letter's own date is November 6, 2026; the 11.9.26 in the filename is not its date."
+  },
+  {
+   "date": "2026-11-10",
+   "type": "org_statement",
+   "outlet": "Third Way",
+   "author": "Ryan Fitzpatrick, Vice President of Climate and Energy",
+   "title": "Statement on the Successful Cloture Vote for the Bipartisan American Affordability and Jobs Act",
+   "url": "https://www.thirdway.org/press/statement-on-the-successful-cloture-vote-for-the-bipartisan-american-affordability-and-jobs-act",
+   "summary": "Third Way said it supports passing the bill this year, cited the Senate's support, and thanked the negotiators for the manager's amendment. The statement gives no vote tally.",
+   "stance": "supports",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "The overwhelming support for the Bipartisan American Affordability and Jobs Act reflects the Senate's commitment to addressing the nation's energy affordability challenges.",
+    "speaker": "Ryan Fitzpatrick, Vice President for Climate and Energy, Third Way"
+   },
+   "topics": [
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "think_tank",
+   "read": "full",
+   "_note": "Read through the cached fetch summariser; quote is as returned by it, not raw page bytes. Verify before publishing.",
+   "verdict": "corrected",
+   "correction": "Raw page now read in full (first pass used a summariser); quote extended to a full sentence."
+  },
+  {
+   "date": "2026-11-09",
+   "type": "org_statement",
+   "outlet": "National Association of Counties",
+   "author": "NACo (Charlotte Mitchell Duyshart and Zeke Lee named as authors on the page)",
+   "title": "U.S. Senate advances Bipartisan American Affordability and Jobs Act in initial procedural vote",
+   "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
+   "summary": "NACo said the November 7 substitute kept county provisions such as cooperating-agency status in NEPA reviews and that it continues to support the bill, ahead of the November 9 vote. A later November 10 update on the same page reports the 73-25 cloture vote.",
+   "stance": "supports",
+   "reacts_to": "substitute",
+   "quote": {
+    "text": "NACo continues to support this important legislation, which delivers long-needed commonsense reforms to the federal permitting process while advancing county priorities.",
+    "speaker": "National Association of Counties"
+   },
+   "topics": [
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "state_local",
+   "read": "full",
+   "verdict": "corrected",
+   "correction": "Quote predates the Nov 9 vote (it is the Nov 9 update about the substitute); first pass described it as post-vote."
+  },
+  {
+   "date": "2026-10-21",
+   "type": "org_statement",
+   "outlet": "American Petroleum Institute (letter lead signer)",
+   "author": "Undersigned energy, housing, infrastructure, manufacturing, labor and business organisations",
+   "title": "Leadership Stakeholder Letter on the Bipartisan American Affordability and Jobs Act (PDF)",
+   "url": "https://www.api.org/-/media/Files/misc/2026/Leadership-Stakeholder-Letter-BAAJA.pdf",
+   "summary": "A letter dated October 21, 2026 from API and other organisations to Thune, Johnson, Schumer and Jeffries urged floor action on S. 5653 this year. It predates the November 7 substitute.",
+   "stance": "supports",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "we urge you to bring the Bipartisan American Affordability and Jobs Act of 2026 (S. 5653) to the floor and deliver much-needed permitting reform for American consumers this year",
+    "speaker": "Undersigned organisations (lead: American Petroleum Institute)"
+   },
+   "topics": [
+    "permit-certainty",
+    "nepa",
+    "congress"
+   ],
+   "sector": "trade_association",
+   "read": "full",
+   "letter": {
+    "to": "Majority Leader John Thune; Speaker Mike Johnson; Minority Leader Charles Schumer; Minority Leader Hakeem Jeffries",
+    "signer_count": null,
+    "signers_sample": [
+     "American Petroleum Institute",
+     "Alliance for Automotive Innovation",
+     "Alliance for Chemical Distribution",
+     "American Cement Association",
+     "American Chemistry Council"
+    ],
+    "ask": "Bring S. 5653 to the floor and deliver permitting reform this year.",
+    "count_note": "count not stated"
+   },
+   "verdict": "corrected",
+   "correction": "Signer count (~137) was a rough line count; set to null."
+  },
+  {
+   "date": "2026-11-09",
+   "type": "org_statement",
+   "outlet": "American Clean Power Association",
+   "author": "Frank Macchiarola, Chief Advocacy Officer",
+   "title": "ACP Urges Senators to Move Permitting Reform Forward",
+   "url": "https://cleanpower.org/news/acp-urges-senators-to-move-permitting-reform-forward/",
+   "summary": "ACP said the Senate vote was a step toward modernizing permitting and urged senators to vote yes on cloture.",
+   "stance": "supports",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "Today's vote is a critical step toward modernizing our outdated permitting process and getting ready-to-build clean energy projects moving.",
+    "speaker": "Frank Macchiarola, Chief Advocacy Officer, ACP"
+   },
+   "topics": [
+    "permit-certainty",
+    "wind-solar",
+    "congress"
+   ],
+   "sector": "trade_association",
+   "read": "full",
+   "verdict": "verified",
+   "correction": "Replaces the mgrid.org-attributed quote, which is not on the mgrid page."
+  },
+  {
+   "date": "2026-09-30",
+   "type": "org_statement",
+   "outlet": "American Clean Power Association",
+   "author": "Jason Grumet, CEO",
+   "title": "ACP Statement on Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://cleanpower.org/news/acp-statement-on-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "summary": "ACP said it appreciated the sponsors' work and that passage before the end of the year was essential.",
+   "stance": "supports",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "Passage before the end of the year is essential to enable the construction of critical energy infrastructure and lower consumer prices.",
+    "speaker": "Jason Grumet, CEO, ACP"
+   },
+   "topics": [
+    "transmission",
+    "wind-solar",
+    "congress"
+   ],
+   "sector": "trade_association",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "org_statement",
+   "outlet": "Solar Energy Industries Association",
+   "author": "Tim Pawlenty, CEO",
+   "title": "Solar and Storage Industry Statement on Bipartisan Permitting Reform Bill Passing First Procedural Vote",
+   "url": "https://seia.org/?p=18691",
+   "summary": "SEIA's CEO said the bill delivers lower energy costs, a better grid and more U.S.-made energy, and the statement cites SEIA's own analysis.",
+   "stance": "supports",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "Americans urgently need lower energy costs, a better electric grid and more energy made in the U.S.A. This bipartisan legislation delivers all three.",
+    "speaker": "Tim Pawlenty, CEO, SEIA"
+   },
+   "topics": [
+    "wind-solar",
+    "transmission",
+    "congress"
+   ],
+   "sector": "trade_association",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-04",
+   "type": "org_statement",
+   "outlet": "Semiconductor Industry Association",
+   "author": "Michael Robbins, President and CEO",
+   "title": "SIA Urges Senate to Pass Bipartisan Permitting Reform Legislation to Boost U.S. Competitiveness",
+   "url": "https://www.semiconductors.org/sia-urges-senate-to-pass-bipartisan-permitting-reform-legislation-to-boost-u-s-competitiveness/",
+   "summary": "SIA said it supports the bill (S. 5653) and called for passage.",
+   "stance": "supports",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "Permitting reform will help America build faster. That is why SIA is pleased to support the Bipartisan American Affordability and Jobs Act of 2026.",
+    "speaker": "Michael Robbins, President and CEO, SIA"
+   },
+   "topics": [
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "trade_association",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-08",
+   "type": "org_statement",
+   "outlet": "Natural Resources Defense Council",
+   "author": "Manish Bapna, President and CEO",
+   "title": "Senate Permitting Bill Still Needs Improvements; Opposed as Written",
+   "url": "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-still-needs-improvements",
+   "summary": "NRDC said it supports the bill's transmission, clean energy and grid provisions and opposes the package as currently written.",
+   "stance": "opposes",
+   "reacts_to": "other",
+   "quote": {
+    "text": "We support the elements of the legislation that help accelerate needed transmission, clean energy deployment, and grid modernization; but the current package goes too far in weakening essential environmental safeguards and public participation requirements.",
+    "speaker": "Manish Bapna, President and CEO, NRDC"
+   },
+   "topics": [
+    "nepa",
+    "transmission",
+    "courts"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "verdict": "verified",
+   "correction": "The first-pass 'I will vote against' quote is not on the NRDC page and was dropped. The page does not say whether it reacts to the Sept 30 text or the Nov 7 substitute."
+  },
+  {
+   "date": "2026-11-06",
+   "type": "org_statement",
+   "outlet": "Sierra Club",
+   "author": "not stated",
+   "title": "Sierra Club: We Cannot Support the Permitting Bill As Currently Written",
+   "url": "https://www.sierraclub.org/press-releases/2026/11/sierra-club-we-cannot-support-permitting-bill-currently-written",
+   "summary": "Sierra Club said the bill has provisions that would help clean energy and lower bills, and that it cannot support the legislation without fundamental changes.",
+   "stance": "opposes",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "The Sierra Club cannot support this legislation without fundamental changes. Congressional Democrats must demand the following:",
+    "speaker": "Sierra Club"
+   },
+   "topics": [
+    "permit-certainty",
+    "tribal",
+    "courts"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "verdict": "verified",
+   "correction": "Read through r.jina.ai. The first-pass 'remains deeply flawed' Nov 9 quote is not on this page and was dropped. Dated Nov 6, before the Nov 7 substitute."
+  },
+  {
+   "date": "2026-11-06",
+   "type": "org_statement",
+   "outlet": "Public Citizen",
+   "author": "David Arkush, Director, Climate Program",
+   "title": "Public Citizen Opposes Senate Permitting Bill",
+   "url": "https://www.citizen.org/news/public-citizen-opposes-senate-permitting-bill/",
+   "summary": "Public Citizen said the bill's transmission and ratepayer provisions should be enacted and that its drawbacks outweigh them.",
+   "stance": "opposes",
+   "reacts_to": "sept30",
+   "quote": {
+    "text": "The bill's provisions on transmission and ratepayer protections are strong and sorely needed, and they ought to be enacted. Unfortunately, the bill's drawbacks are greater, more immediate, and more certain.",
+    "speaker": "David Arkush, Director of Public Citizen's Climate Program"
+   },
+   "topics": [
+    "fossil",
+    "nepa",
+    "clean-water-act",
+    "esa"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-09",
+   "type": "org_statement",
+   "outlet": "Environmental Defense Fund",
+   "author": "Fred Krupp, President",
+   "title": "Statement: Senate to hold initial vote on permitting bill",
+   "url": "https://www.edf.org/media/statement-senate-hold-initial-vote-permitting-bill",
+   "summary": "EDF said the latest version has important reforms and also unwinds protections, and that a positive vote would let the process continue.",
+   "stance": "mixed",
+   "reacts_to": "substitute",
+   "quote": {
+    "text": "The latest version has important reforms to get clean energy on the grid and upgrade our aging infrastructure, but it also unwinds protections for our air, water and communities",
+    "speaker": "Fred Krupp, President, EDF"
+   },
+   "topics": [
+    "transmission",
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "verdict": "verified"
+  },
+  {
+   "date": "2026-11-07",
+   "type": "org_statement",
+   "outlet": "Evergreen Action",
+   "author": "Lena Moffitt",
+   "title": "Why We're Supporting the Permitting Bill",
+   "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+   "summary": "Evergreen Action's leader wrote that the organisation supports the bill and set out why.",
+   "stance": "supports",
+   "reacts_to": "other",
+   "quote": {
+    "text": "Evergreen Action, the organization I lead, is supporting the Senate's permitting bill (BAAJA). Here's why.",
+    "speaker": "Lena Moffitt, Evergreen Action"
+   },
+   "topics": [
+    "transmission",
+    "wind-solar",
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "read": "full",
+   "verdict": "verified",
+   "correction": "The page does not say which text it addresses.",
+   "url_note": "Inferred from the page title; fetched copy is the evergreenaction.com page cached as de4f3fc6 (jina) and 94100b19. Re-check the exact URL."
+  },
+  {
+   "date": "2026-11-10",
+   "type": "news",
+   "outlet": "Source NM",
+   "author": "not stated",
+   "title": "All Pueblo Council of Governors condemns US Senate vote advancing permitting reform bill",
+   "url": "https://sourcenm.com/2026/11/10/all-pueblo-council-of-governors-condemns-us-senate-vote-advancing-permitting-reform-bill/",
+   "summary": "Source NM reported that the All Pueblo Council of Governors said it remained opposed after the Nov 9 vote and the sponsors' changes.",
+   "stance": "opposes",
+   "reacts_to": "vote",
+   "quote": {
+    "text": "That is a government-to-government relationship running in one direction. Nobody consulted the Pueblos before this bill was written, and the changes made since don't fix that.",
+    "speaker": "Joey Sanchez, Chairman, All Pueblo Council of Governors"
+   },
+   "topics": [
+    "tribal",
+    "congress"
+   ],
+   "sector": "state_local",
+   "read": "full",
+   "verdict": "verified"
+  }
+ ],
+ "events": [
+  {
+   "date": "2026-11-09",
+   "title": "Senate cloture vote on the motion to proceed to H.R. 2347",
+   "branch": "congress_senate",
+   "summary": "The Senate voted 73-25 to invoke cloture on the motion to proceed to H.R. 2347, the vehicle for the Bipartisan American Affordability and Jobs Act. The vote was procedural, not final passage.",
+   "actors": [
+    "U.S. Senate"
+   ],
+   "milestone": true,
+   "sources": [
+    {
+     "title": "Senate Advances Permitting Reform Bill 73-25 Vote to Take Up Legislation",
+     "publisher": "Political.org",
+     "url": "https://political.org/2026/11/09/senate-advances-bipartisan-permitting-reform-bill-73-25-vote-to-take-up-legislation/",
+     "date": "2026-11-09",
+     "quote": "The Senate voted 73-25 on Monday, November 9, 2026, to invoke cloture on the motion to proceed"
+    },
+    {
+     "title": "U.S. Senate advances Bipartisan American Affordability and Jobs Act in initial procedural vote",
+     "publisher": "National Association of Counties",
+     "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
+     "date": "2026-11-10",
+     "quote": "The 73-25 vote sets up further debate and consideration in the chamber."
+    }
+   ]
+  }
+ ],
+ "people": [
+  {
+   "name": "Ryan Fitzpatrick",
+   "role": "Vice President for Climate and Energy",
+   "affiliation": "Third Way",
+   "sector": "think_tank",
+   "party": "D",
+   "stance": "supports",
+   "position": "Statement dated November 10, 2026 said Third Way supports passing permitting reform this year and backs the bill after the cloture vote.",
+   "quote": {
+    "text": "The overwhelming support for the Bipartisan American Affordability and Jobs Act reflects the Senate's commitment to addressing the nation's energy affordability challenges.",
+    "source_url": "https://www.thirdway.org/press/statement-on-the-successful-cloture-vote-for-the-bipartisan-american-affordability-and-jobs-act",
+    "date": "2026-11-10"
+   }
+  }
+ ],
+ "estimates": [
+  {
+   "org": "Rhodium Group",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "Estimating the US Energy System Impacts of the Bipartisan American Affordability and Jobs Act",
+   "url": "https://rhg.com/?p=24167",
+   "date": "2026-11-02",
+   "metric": "emissions",
+   "figure": "5-148 million metric tons annually in 2040 (1.5 gigatons cumulative as a maximum)",
+   "direction": "Rhodium reports that the provisions reduce economywide GHG emissions compared with a no-BAAJA case; the note also says gas pipeline changes would add emissions in isolation and that the bill is not a climate bill.",
+   "scenario": "2040, compared with a current-policy baseline without BAAJA; 1.5 gigatons cumulative reduction also reported",
+   "assumptions": "Models key components of the initial version introduced September 30, against a current-policy baseline. Heatmap's account of the base case says data centers make up about 17% of electricity demand by 2040.",
+   "quote": "Taken together, these provisions uniformly reduce economywide greenhouse gas (GHG) emissions by 5-148 million metric tons annually in 2040 and as much as 1.5 gigatons cumulatively, compared to without BAAJA.",
+   "method_url": "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf",
+   "disputed_by": [
+    {
+     "who": "Heatmap (reporting Rhodium's best case; figures differ from Rhodium's own note)",
+     "url": "https://heatmap.news/energy/rhodium-group-modeling-permitting-bill",
+     "quote": "economy-wide emissions by 4%, reduce energy bills by $78 per year, and drive more than 200 gigawatts of new clean energy capacity by 2040, compared to status quo policy."
+    }
+   ],
+   "covers": "Transmission, gas pipeline and data-center ratepayer provisions of the Sept 30 text (as introduced); not the whole bill",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Current-policy baseline without BAAJA"
+  },
+  {
+   "org": "Rhodium Group",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "Estimating the US Energy System Impacts of the Bipartisan American Affordability and Jobs Act",
+   "url": "https://rhg.com/?p=24167",
+   "date": "2026-11-02",
+   "metric": "electricity_cost",
+   "figure": "$50-78 per year in 2040",
+   "direction": "Household electricity bills fall, because easier permitting lets lower-cost resources connect and the bill bars charging non-data-center customers for data-center grid costs.",
+   "scenario": "2040, compared with the same world without BAAJA",
+   "assumptions": "Combined impact of the modeled provisions; base case assumes data centers about 17% of electricity demand by 2040 (per Heatmap's account).",
+   "quote": "We project that the combined impact of these provisions would reduce household electricity bills by $50-78 per year in 2040 compared to without BAAJA",
+   "method_url": "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf",
+   "covers": "Transmission, gas pipeline and data-center ratepayer provisions of the Sept 30 text (as introduced); not the whole bill",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Current-policy baseline without BAAJA"
+  },
+  {
+   "org": "Rhodium Group",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "Estimating the US Energy System Impacts of the Bipartisan American Affordability and Jobs Act",
+   "url": "https://rhg.com/?p=24167",
+   "date": "2026-11-02",
+   "metric": "buildout",
+   "figure": "17-249 GW of clean resources through 2040",
+   "direction": "Transmission provisions raise the interregional build rate to nearly three times the last decade's average and add clean resources, per Rhodium.",
+   "scenario": "Through 2040, compared with a world without BAAJA; build rate 1.9 to 2.6 terawatt-miles per year (Rhodium's range, per Heatmap)",
+   "assumptions": "Transmission provisions of the initial text; 17-249 GW is the range Rhodium reports.",
+   "quote": "The transmission provisions of the bill enable accelerated average interregional transmission build rates nearly triple that of the last decade or more and drive an additional 17-249 GW of clean resources to be built through 2040.",
+   "method_url": "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf",
+   "covers": "Transmission, gas pipeline and data-center ratepayer provisions of the Sept 30 text (as introduced); not the whole bill",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Current-policy baseline without BAAJA"
+  },
+  {
+   "org": "Rhodium Group",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "Estimating the US Energy System Impacts of the Bipartisan American Affordability and Jobs Act",
+   "url": "https://rhg.com/?p=24167",
+   "date": "2026-11-02",
+   "metric": "other",
+   "figure": "8-15% increase in LNG export levels",
+   "direction": "The bill as a whole increases LNG export levels, on top of a 76-145% increase already under current policy.",
+   "scenario": "Compared with a no-BAAJA baseline (current policy); time frame not stated in the sentence",
+   "assumptions": "Rhodium says it did not account for how exports affect the energy mix or emissions in the rest of the world (per Heatmap).",
+   "quote": "The bill as a whole increases liquefied natural gas (LNG) export levels by 8-15% beyond a 76-145% increase already happening under current policy.",
+   "method_url": "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf",
+   "covers": "Transmission, gas pipeline and data-center ratepayer provisions of the Sept 30 text (as introduced); not the whole bill",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Current-policy baseline without BAAJA"
+  },
+  {
+   "org": "Center for Climate and Energy Solutions (C2ES), with Greenline Insights",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "New Nationwide Analysis: Bipartisan Transmission Reforms Would Boost Clean Energy, Cut Power Sector Emissions, Lower Electricity Bills, and Strengthen Grid Reliability",
+   "url": "https://www.c2es.org/?p=25710",
+   "date": "2026-11-06",
+   "metric": "emissions",
+   "figure": "173 million metric tons, a 13 percent reduction",
+   "direction": "Annual power-sector CO2 falls relative to business as usual in 2035.",
+   "scenario": "2035, annual, relative to business as usual; contiguous US; reform scenario modelled by Greenline Insights",
+   "assumptions": "Models the key BAAJA provisions on interconnection and transmission planning; the release says the reforms would enable 170 GW of added wind, solar and storage by 2035.",
+   "quote": "Reduce annual power sector carbon dioxide emissions by 173 million metric tons, a 13 percent reduction relative to business as usual.",
+   "method_url": "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national",
+   "covers": "Key interconnection and transmission provisions; the release does not say which text (Sept 30 or Nov 7) was modeled",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Business as usual",
+   "funder_or_commissioner": "C2ES (modeling by Greenline Insights); funder not stated on the page"
+  },
+  {
+   "org": "Center for Climate and Energy Solutions (C2ES), with Greenline Insights",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "New Nationwide Analysis: Bipartisan Transmission Reforms Would Boost Clean Energy, Cut Power Sector Emissions, Lower Electricity Bills, and Strengthen Grid Reliability",
+   "url": "https://www.c2es.org/?p=25710",
+   "date": "2026-11-06",
+   "metric": "buildout",
+   "figure": "170 GW of additional wind, solar, and battery storage capacity",
+   "direction": "The modeled reforms add capacity relative to business as usual, and expand interregional transmission capacity by 61 GW.",
+   "scenario": "2035, relative to business-as-usual",
+   "assumptions": "Modeled provisions include interconnection and transmission planning; the release does not restate other assumptions in the quoted sentence.",
+   "quote": "by 2035 the modeled reforms would enable 170 GW of additional wind, solar, and battery storage capacity",
+   "method_url": "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national",
+   "covers": "Key interconnection and transmission provisions; the release does not say which text (Sept 30 or Nov 7) was modeled",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Business as usual",
+   "funder_or_commissioner": "C2ES (modeling by Greenline Insights); funder not stated on the page"
+  },
+  {
+   "org": "Center for Climate and Energy Solutions (C2ES), with Greenline Insights",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "New Nationwide Analysis: Bipartisan Transmission Reforms Would Boost Clean Energy, Cut Power Sector Emissions, Lower Electricity Bills, and Strengthen Grid Reliability",
+   "url": "https://www.c2es.org/?p=25710",
+   "date": "2026-11-06",
+   "metric": "emissions",
+   "figure": "800 million metric tons of emissions reductions (forgone) and roughly $55 billion in electricity system savings",
+   "direction": "A delay of the reforms until 2030 would forgo part of the modeled savings and emissions reductions through 2040.",
+   "scenario": "Through 2040, if the reforms are delayed to 2030 (the release says a 2030 delay yields about 40 percent of 2035 benefits by 2035)",
+   "assumptions": "Release says new interconnection processes and transmission projects take years to deliver.",
+   "quote": "Through 2040, this delay would forgo roughly $55 billion in electricity system savings and 800 million metric tons of emissions reductions.",
+   "method_url": "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national",
+   "covers": "Key interconnection and transmission provisions; the release does not say which text (Sept 30 or Nov 7) was modeled",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Business as usual",
+   "funder_or_commissioner": "C2ES (modeling by Greenline Insights); funder not stated on the page"
+  },
+  {
+   "org": "Resources for the Future",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "Projected Effects of the Bipartisan American Affordability and Jobs Act on the Power Sector",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "date": "2026-10-29",
+   "metric": "emissions",
+   "figure": "roughly 200 million tonnes (Mt) of carbon dioxide near-term; about 1.8 gigatonnes (Gt) cumulative through 2041",
+   "direction": "Power-sector CO2 falls relative to baseline, with near-term cuts of about 200 Mt and cumulative cuts of about 1.8 Gt through 2041.",
+   "scenario": "Central policy scenario, ReEDS model, baseline without BAAJA; near-term and cumulative through 2041",
+   "assumptions": "ReEDS (90 regions, detailed transmission) run on the modeled provisions of BAAJA as introduced September 30, 2026.",
+   "quote": "We project near-term emissions reductions from the power sector of roughly 200 million tonnes (Mt) of carbon dioxide, with cumulative carbon dioxide emissions from the power sector declining by about 1.8 gigatonnes (Gt) through 2041 as compared to the baseline.",
+   "method_url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "disputed_by": [
+    {
+     "who": "Breakthrough Institute (cites RFF and SEIA modeling at different figures; does not match RFF's own 200 Mt near-term figure)",
+     "url": "https://thebreakthrough.org/issues/energy/the-faulty-logic-at-the-heart-of-environmentalist-opposition-to-baaja",
+     "quote": "Fresh modeling from Resources for the Future and the Solar Energy Industries Association pegs power sector emissions benefits at around 114 million and 300 million tons of CO2 reductions per year over the next decade, respectively."
+    }
+   ],
+   "covers": "Power-sector provisions of the Sept 30 text (as introduced); RFF models the bill as introduced",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Baseline without BAAJA (ReEDS)"
+  },
+  {
+   "org": "Resources for the Future",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "Projected Effects of the Bipartisan American Affordability and Jobs Act on the Power Sector",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "date": "2026-10-29",
+   "metric": "electricity_cost",
+   "figure": "more than $350 billion through 2050 in net-present-value terms",
+   "direction": "Savings on the electricity system, with national electricity prices decreasing.",
+   "scenario": "Net present value through 2050, central policy scenario versus baseline",
+   "assumptions": "ReEDS modeling of BAAJA's provisions; RFF's summary does not state the discount rate in the quoted sentence.",
+   "quote": "BAAJA is projected to save more than $350 billion through 2050 in net-present-value terms, decreasing national electricity prices.",
+   "method_url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "covers": "Power-sector provisions of the Sept 30 text (as introduced); RFF models the bill as introduced",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Baseline without BAAJA (ReEDS)"
+  },
+  {
+   "org": "Resources for the Future",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "Projected Effects of the Bipartisan American Affordability and Jobs Act on the Power Sector",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "date": "2026-10-29",
+   "metric": "electricity_cost",
+   "figure": "3.5-7.0 percent lower average annual costs of the electricity system",
+   "direction": "Average annual electricity-system costs fall over the modeled period.",
+   "scenario": "Over the modeled period, central policy scenario versus baseline",
+   "assumptions": "ReEDS, 90 regions; central policy scenario.",
+   "quote": "Reduce the costs of providing electricity, decreasing the average annual costs of the electricity system by 3.5–7.0 percent over the modeled period.",
+   "method_url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "covers": "Power-sector provisions of the Sept 30 text (as introduced); RFF models the bill as introduced",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Baseline without BAAJA (ReEDS)"
+  },
+  {
+   "org": "Resources for the Future",
+   "org_type": "think_tank",
+   "org_stance_on_bill": "none stated",
+   "title": "Projected Effects of the Bipartisan American Affordability and Jobs Act on the Power Sector",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "date": "2026-10-29",
+   "metric": "buildout",
+   "figure": "30 percent increase in overall transmission capacity by 2041",
+   "direction": "Transmission capacity rises over the baseline, and interregional transmission capacity more than doubles.",
+   "scenario": "By 2041, relative to baseline",
+   "assumptions": "ReEDS, which has detailed transmission representation.",
+   "quote": "By 2041, we project overall transmission capacity to increase by 30 percent over the baseline; interregional transmission capacity more than doubles.",
+   "method_url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "covers": "Power-sector provisions of the Sept 30 text (as introduced); RFF models the bill as introduced",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Baseline without BAAJA (ReEDS)"
+  },
+  {
+   "org": "Council of Economic Advisers (The White House)",
+   "org_type": "white_house",
+   "org_stance_on_bill": "none stated",
+   "title": "The Economic Benefits of Permitting Reform",
+   "url": "https://www.whitehouse.gov/research/2026/10/the-economic-benefits-of-permitting-reform/",
+   "date": "2026-10-28",
+   "metric": "economy",
+   "figure": "$82 billion to $164 billion in additional output each year (0.28 to 0.56 percent long-run GDP)",
+   "direction": "Reducing review times to the levels BAAJA requires raises long-run GDP.",
+   "scenario": "Long-run, relative to current review times; BAAJA's two-year EIS deadline",
+   "assumptions": "Review times reduced to the levels BAAJA requires (the page says BAAJA would require EISs within two years); the page's other scenario (completion in one year) gives 0.41 to 0.83 percent.",
+   "quote": "We find that reducing review times down to the levels required by the BAAJA would: Increase long-run GDP by between 0.28 percent and 0.56 percent (i.e., $82 billion to $164 billion in additional output each year).",
+   "method_url": "https://www.whitehouse.gov/research/2026/10/the-economic-benefits-of-permitting-reform/",
+   "covers": "Review-time provisions (EIS deadlines) of the bill generally; text version not stated",
+   "verdict": "verified",
+   "checked": "full",
+   "baseline": "Current federal review times"
+  },
+  {
+   "org": "Columbia Center on Global Energy Policy",
+   "org_type": "academic",
+   "org_stance_on_bill": "none stated",
+   "title": "Project timeline savings under BAAJA (interactive tool, potential time saved by project type)",
+   "url": "https://www.energypolicy.columbia.edu/project-timeline-savings-under-baaja/",
+   "date": "2026-10-21",
+   "metric": "time",
+   "figure": "64 months (up to the federal decision, transmission archetype)",
+   "direction": "Under BAAJA's deadlines the replayed transmission archetype reaches the federal decision 64 months sooner than under current law.",
+   "scenario": "Composite transmission archetype replayed under BAAJA's deadlines; time counted only up to the federal decision; excludes state siting and the FERC backstop permit (Sec. 2101), which the tool says account for most of the projected transmission time savings",
+   "assumptions": "Replays recorded past project dates under the bill's deadlines; months counted only up to the federal decision; the replays exclude state siting and the FERC backstop permit (Sec. 2101).",
+   "quote": "which account for most of the projected time savings for the transmission archetype. Up to the federal decision, that archetype saves 64 months.",
+   "method_url": "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html",
+   "date_note": "Page's own date ('Dataset by Jack Andreasen Cavanaugh, October 21, 2026'). The 64-month sentence is on the tool's method page (method_url), which the main page embeds.",
+   "baseline": "Current law timelines for the same replayed projects",
+   "covers": "Sept 30 text (as introduced) deadlines; transmission archetype only",
+   "verdict": "corrected",
+   "checked": "full"
+  },
+  {
+   "org": "Solar Energy Industries Association (SEIA)",
+   "org_type": "trade_association",
+   "org_stance_on_bill": "supports",
+   "title": "BAAJA Impact on the Electricity Sector: Capacity, Generation, Emissions and Public Health",
+   "url": "https://seia.org/?p=18628",
+   "date": "2026-11-09",
+   "date_note": "Date is that of SEIA's Nov 9 statement announcing the analysis; the analysis page itself shows no date in the fetched text.",
+   "quote": "New SEIA analysis shows that BAAJA could unlock 167 gigawatts of additional solar capacity between 2028 and 2035, bringing solar to over 18% of U.S. electricity generation by 2035.",
+   "method_url": "https://seia.org/media/18629/baaja-impact-on-electricity-sector.pdf",
+   "baseline": "Obstructed permitting (current law): unapproved solar, wind and battery projects do not proceed",
+   "assumptions": "Common policy assumptions include OBBBA tax-credit changes and removal of Section 111(d) power plant carbon limits; the obstructed case required state carbon policies to be switched off for the model to solve.",
+   "covers": "Whole bill as modeled by SEIA; text version (Sept 30 or Nov 7) not stated in the page text",
+   "verdict": "verified",
+   "checked": "full",
+   "funder_or_commissioner": "SEIA (own analysis)",
+   "metric": "buildout",
+   "figure": "167 gigawatts of additional solar capacity, 2028 to 2035 (SEIA analysis page: 167 GWac more net solar additions)",
+   "direction": "More net solar capacity than under current law",
+   "scenario": "2028-2035, BAAJA versus obstructed permitting"
+  },
+  {
+   "org": "Solar Energy Industries Association (SEIA)",
+   "org_type": "trade_association",
+   "org_stance_on_bill": "supports",
+   "title": "BAAJA Impact on the Electricity Sector: Capacity, Generation, Emissions and Public Health",
+   "url": "https://seia.org/?p=18628",
+   "date": "2026-11-09",
+   "date_note": "Date is that of SEIA's Nov 9 statement announcing the analysis; the analysis page itself shows no date in the fetched text.",
+   "quote": "The analysis finds that the bill's reforms could reduce cumulative power sector CO2 emissions by approximately 20% and avoid $54 billion in public health damages.",
+   "method_url": "https://seia.org/media/18629/baaja-impact-on-electricity-sector.pdf",
+   "baseline": "Obstructed permitting (current law): unapproved solar, wind and battery projects do not proceed",
+   "assumptions": "Common policy assumptions include OBBBA tax-credit changes and removal of Section 111(d) power plant carbon limits; the obstructed case required state carbon policies to be switched off for the model to solve.",
+   "covers": "Whole bill as modeled by SEIA; text version (Sept 30 or Nov 7) not stated in the page text",
+   "verdict": "verified",
+   "checked": "full",
+   "funder_or_commissioner": "SEIA (own analysis)",
+   "metric": "emissions",
+   "figure": "cumulative power sector CO2 emissions cut by approximately 20%",
+   "direction": "Lower cumulative power-sector CO2 than under current law",
+   "scenario": "2028-2035 (cumulative), BAAJA versus obstructed permitting; the page gives a percentage, not tonnes"
+  },
+  {
+   "org": "American Clean Power Association (ACP)",
+   "org_type": "trade_association",
+   "org_stance_on_bill": "supports",
+   "title": "The Clean Energy and Environmental Case for the BAAJA",
+   "url": "https://cleanpower.org/resources/the-clean-energy-and-environmental-case-for-the-baaja/",
+   "date": "2026-10-09",
+   "date_note": "Page states 'Resource uploaded Oct. 9, 2026'. URL path inferred from the page title; the fetched copy was the cleanpower.org resource page.",
+   "direction": "Per ACP, passage would unleash the stated amounts",
+   "scenario": "not stated on the page",
+   "baseline": "not stated on the page",
+   "assumptions": "Not stated on the page; it refers to a downloadable fact sheet that was not read.",
+   "covers": "Bill generally; text version not stated",
+   "verdict": "verified",
+   "checked": "preview",
+   "metric": "buildout",
+   "figure": "350+ GW of new clean energy; over $800 billion in new transmission and clean power infrastructure",
+   "quote": "By creating a more predictable path to build, BAAJA can unleash: Over $800 billion in new transmission and clean power infrastructure; 350+ GW of new clean energy; Increased access to low-cost, domestic energy, helping lower consumer prices"
+  },
+  {
+   "org": "American Clean Power Association (ACP)",
+   "org_type": "trade_association",
+   "org_stance_on_bill": "supports",
+   "title": "The Clean Energy and Environmental Case for the BAAJA",
+   "url": "https://cleanpower.org/resources/the-clean-energy-and-environmental-case-for-the-baaja/",
+   "date": "2026-10-09",
+   "date_note": "Page states 'Resource uploaded Oct. 9, 2026'. URL path inferred from the page title; the fetched copy was the cleanpower.org resource page.",
+   "direction": "Per ACP, passage would unleash the stated amounts",
+   "scenario": "not stated on the page",
+   "baseline": "not stated on the page",
+   "assumptions": "Not stated on the page; it refers to a downloadable fact sheet that was not read.",
+   "covers": "Bill generally; text version not stated",
+   "verdict": "verified",
+   "checked": "preview",
+   "metric": "emissions",
+   "figure": "290 million metric tons of avoided CO2 emissions annually",
+   "quote": "290 million metric tons of avoided CO₂ emissions annually — equivalent to the emissions of 63 million cars."
+  },
+  {
+   "org": "Public Citizen",
+   "org_type": "environmental_group",
+   "org_stance_on_bill": "opposes",
+   "title": "Senate Permitting Legislation—S. 5653, or BAAJA—Undermines Regulation of Existing LNG Exports, Exposing Consumers To Massive Affordability Harm",
+   "url": "https://www.citizen.org/article/senate-permitting-legislation-s-5653-or-baaja-undermines-regulation-of-existing-lng-exports-exposing-consumers-to-massive-affordability-harm/",
+   "date": "2026-11-08",
+   "metric": "other",
+   "figure": "39 bcf/d of already-authorized LNG export capacity that Title IV is said to lock in",
+   "direction": "Not a modeled outcome: a quantity of export authority Public Citizen says the bill would remove from DOE modification. The page says other organisations' models undercount the bill's impacts.",
+   "scenario": "Title IV of BAAJA, existing and under-construction LNG export facilities",
+   "baseline": "Current Natural Gas Act authority of the Secretary of Energy",
+   "assumptions": "14 bcf/d from seven facilities in commercial operation plus 25 bcf/d commissioned or under construction, per the page.",
+   "covers": "Title IV of the bill; text version not stated in the quoted sentence",
+   "quote": "Title IV of BAAJA directly impedes this Natural Gas Act authority, and will lock in this already-authorized 39 bcf/d of LNG export capacity.",
+   "verdict": "verified",
+   "checked": "full",
+   "url_note": "URL path inferred from the page title and tracker; the fetched copy was f35e0d7d under citizen.org/article/. Re-check before publishing."
+  }
+ ],
+ "resolved": [
+  {
+   "topic": "Rhodium: 5-148 Mt vs Heatmap '4% / $78 / >200 GW'",
+   "answer": "Same study, different cut. Rhodium's own note gives ranges (5-148 Mt in 2040; $50-78 per household; 17-249 GW). Heatmap and MIT Technology Review report the high end of each range, which Rhodium labels its best case. Not a misreport; the low ends are the other scenario."
+  },
+  {
+   "topic": "Breakthrough: 114 Mt/yr (RFF) and 300 Mt/yr (SEIA)",
+   "answer": "Neither figure is on either primary page. RFF gives about 200 Mt near term, about 1.8 Gt cumulative to 2041 (and 107 Mt in 2041 in the detail). SEIA gives about 20% cumulative power-sector CO2 over 2028-2035 and a page-level caveat on absolute magnitudes. Breakthrough's per-year numbers are unreproducible and no derivation is stated. They are not published as estimates."
+  },
+  {
+   "topic": "ACP: pv magazine 'roughly 200 GW' vs 350+ GW",
+   "answer": "ACP's own fact-sheet page (uploaded Oct 9, 2026) says 350+ GW of new clean energy, over $800 billion and 290 Mt avoided CO2 per year, with no scenario or baseline. The 200 GW in pv magazine is not on that page; it may come from a different ACP document that was not located. The ACP page figures are published as ACP's, scenario 'not stated'."
+  },
+  {
+   "topic": "Columbia '~100 GW by 2035' vs C2ES/Greenline 170 GW",
+   "answer": "Columbia's white paper cites 'some estimates' for about 100 GW without naming a study, so it is a secondary citation and is not published. C2ES/Greenline's own release says 170 GW of added wind, solar and storage by 2035."
+  },
+  {
+   "topic": "Different studies, same bill: units and scope",
+   "answer": "Rhodium (economy-wide, 2040, three provision groups), RFF (power sector, ReEDS, through 2041, power-sector provisions), C2ES/Greenline (power sector, 2035, interconnection and transmission), SEIA (power sector, cumulative 2028-2035, obstructed-permitting baseline) and CEA (GDP from review-time cuts) measure different things. No figure was averaged, converted or combined."
+  }
+ ],
+ "rejected": [
+  {
+   "what": "API/ICF $55.6 billion residential bills 2026-2035 (estimate)",
+   "reason": "The ICF study is an API-commissioned analysis of 'comprehensive permitting reform' with assumptions chosen by API; neither the release nor the ICF page names this bill. Not applied to BAAJA by the org on a page that could be read."
+  },
+  {
+   "what": "pv magazine USA 'roughly 200 GW' ACP figure (as an estimate)",
+   "reason": "Secondhand; the figure is not on ACP's own page. Kept only as a news item stating what pv magazine reported."
+  },
+  {
+   "what": "Columbia white paper '~100 GW by 2035' (as an estimate)",
+   "reason": "Cites unnamed 'some estimates'; no primary."
+  },
+  {
+   "what": "Breakthrough 114 Mt and 300 Mt per year figures",
+   "reason": "Not on RFF's or SEIA's page; no derivation."
+  },
+  {
+   "what": "Sierra Club Nov 9 quote 'remains deeply flawed'",
+   "reason": "Not on the Sierra Club page; secondary snippet only. The Nov 6 press release was read instead."
+  },
+  {
+   "what": "NRDC quote 'I will vote against the bill before us today' (Bapna)",
+   "reason": "Not on the NRDC page; the real NRDC statement says it opposes the bill 'as currently written'."
+  },
+  {
+   "what": "mgrid.org as source of ACP's Macchiarola quote",
+   "reason": "The quote is not on the mgrid page; it is on cleanpower.org and was verified there."
+  },
+  {
+   "what": "Chamber letter claim that it names S. 5653",
+   "reason": "The letter names the Act but not S. 5653; its date is Nov 6, not Nov 9."
+  },
+  {
+   "what": "Signer counts ~521 (Chamber) and ~137 (API letter)",
+   "reason": "Not stated and not exactly countable from the extracted blocks; set to null."
+  },
+  {
+   "what": "EPRA 2024 and CRS R49510 as outcome estimates",
+   "reason": "EPRA 2024 figures do not apply to this bill; CRS R49510 gives provisions and statutory deadlines, no outcome estimates (kept as an item only)."
+  },
+  {
+   "what": "Kevin Kircher (Purdue) 'BAAJA in 2025 would have raised emissions' (MIT Technology Review, Nov 5)",
+   "reason": "Secondary; the model and its numbers were not located. Not published as an estimate."
+  }
+ ],
+ "unread": [
+  {
+   "url": "https://heatmap.news/energy/rhodium-group-modeling-permitting-bill",
+   "outlet": "Heatmap",
+   "title": "Exclusive: New Modeling Finds Permitting Bill Would Likely Cut Emissions (Rhodium modeling)",
+   "reason": "Read through the reader as a paywalled preview; Rhodium's own note was used instead."
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/11/05/1148062/permitting-reform/",
+   "outlet": "MIT Technology Review",
+   "title": "A new bill could change how the US builds energy infrastructure",
+   "reason": "Read in preview via the amp page. Secondary; its Kircher (Purdue) modeling claim has no located primary."
+  },
+  {
+   "url": "https://insideclimatenews.org/?p=116018",
+   "outlet": "Inside Climate News",
+   "title": "Senate Advances Permitting Overhaul But Roadblocks Loom",
+   "reason": "Read via r.jina.ai but secondary; EDF and Evergreen statements were located directly and added as items."
+  },
+  {
+   "url": "https://docs.google.com/document/d/1CL5v2dFXxt0d_BUyUx1icRkaSB2IBQCEByUKwVTajqw/export?format=pdf",
+   "outlet": "Google Doc (unknown author)",
+   "title": "unknown",
+   "reason": "Export returned an empty response."
+  },
+  {
+   "url": "https://lda.senate.gov/api/v1/filings/?filing_specific_lobbying_issues=%22American+Affordability+and+Jobs%22",
+   "outlet": "Senate Lobbying Disclosure API",
+   "title": "LDA filings naming the bill",
+   "reason": "HTTP 503 / maintenance page in the first pass; not retried."
+  }
+ ],
+ "not_found": [
+  {
+   "question": "Energy Innovation: any BAAJA emissions or cost estimate?",
+   "queries": [
+    "Energy Innovation policy BAAJA permitting bill emissions cost analysis 2026"
+   ]
+  },
+  {
+   "question": "Princeton ZERO Lab / REPEAT Project: any BAAJA emissions modeling?",
+   "queries": [
+    "Princeton REPEAT Project Energy Innovation permitting bill BAAJA emissions modeling"
+   ]
+  },
+  {
+   "question": "RMI: any BAAJA analysis with a number?",
+   "queries": [
+    "RMI Rocky Mountain Institute BAAJA permitting bill analysis 2026"
+   ]
+  },
+  {
+   "question": "Brattle Group: any BAAJA cost or data-center cost estimate?",
+   "queries": [
+    "Brattle Group analysis Senate permitting bill transmission data center costs 2026"
+   ]
+  },
+  {
+   "question": "Grid Strategies: BAAJA-specific transmission miles?",
+   "queries": [
+    "Grid Strategies BAAJA transmission miles estimate permitting bill 2026"
+   ]
+  },
+  {
+   "question": "Wood Mackenzie, BloombergNEF, Aurora: any BAAJA forecast?",
+   "queries": [
+    "Wood Mackenzie OR BloombergNEF OR Aurora Energy Research BAAJA Senate permitting bill forecast 2026"
+   ]
+  },
+  {
+   "question": "Third Way: a 2026 BAAJA emissions estimate?",
+   "queries": [
+    "Third Way BAAJA permitting bill emissions estimate worst-case 2026"
+   ],
+   "note": "Found only the 2024 EPRA memo (offshore leasing 0.38 to 0.69 Gt CO2e by 2050). EPRA is an earlier bill and the source does not apply it to BAAJA, so not counted."
+  },
+  {
+   "question": "Bipartisan Policy Center: any BAAJA jobs, GDP or savings estimate?",
+   "queries": [
+    "Bipartisan Policy Center permitting BAAJA analysis jobs GDP savings estimate"
+   ]
+  },
+  {
+   "question": "Heritage, Cato, AEI, CEI: any BAAJA analysis?",
+   "queries": [
+    "Heritage Foundation OR Cato OR AEI OR Competitive Enterprise Institute BAAJA permitting bill analysis"
+   ]
+  },
+  {
+   "question": "Employ America, Roosevelt Institute, Center for American Progress: any BAAJA estimate?",
+   "queries": [
+    "Employ America OR Roosevelt Institute OR Center for American Progress BAAJA permitting bill estimate"
+   ]
+  },
+  {
+   "question": "EPIC, ClearPath, Abundance Institute, Foundation for American Innovation: any BAAJA analysis?",
+   "queries": [
+    "EPIC Energy Policy Institute Chicago OR ClearPath OR Abundance Institute OR Foundation for American Innovation BAAJA permitting analysis"
+   ]
+  },
+  {
+   "question": "CBO: a cost estimate for S. 5653?",
+   "queries": [
+    "CBO cost estimate Bipartisan American Affordability and Jobs Act S. 5653"
+   ],
+   "note": "No CBO estimate for S. 5653 was found in search. CBO results were for H.R. 8870 and the 2025 reconciliation bill, both different bills."
+  },
+  {
+   "question": "CRS: any outcome estimate (not statutory text)?",
+   "queries": [
+    "CRS R49510 BAAJA Division A Title I NEPA"
+   ],
+   "note": "Fetched the 2026-11-06 report. It describes provisions and statutory deadlines; no emissions, cost, time-saved or count estimates."
+  },
+  {
+   "question": "Earthjustice, Sierra Club, Food & Water Watch: counts of projects exempted or lawsuits barred under BAAJA?",
+   "queries": [
+    "Earthjustice Sierra Club Food and Water Watch BAAJA permitting bill analysis number of projects lawsuits"
+   ],
+   "note": "Earthjustice and Sierra Club pages are qualitative. Food & Water Watch surfaced only a statement by its legal director."
+  },
+  {
+   "question": "NRDC: an estimate of added fossil development or cost?",
+   "queries": [
+    "NRDC Hard Questions permitting bill fossil fuel development emissions BAAJA"
+   ],
+   "note": "NRDC assessment page returned 403. 'Hard Questions' piece asks the question without a number."
+  },
+  {
+   "question": "Center for Biological Diversity: the 'climate kill shot' analysis?",
+   "queries": [
+    "Center for Biological Diversity BAAJA climate kill shot fossil fuel analysis"
+   ],
+   "note": "Not found in search."
+  },
+  {
+   "question": "Oil Change International: BAAJA emissions estimate?",
+   "queries": [
+    "Oil Change International BAAJA permitting bill fossil fuel emissions estimate"
+   ],
+   "note": "Only the 2022 Manchin-bill figure (about 665 Mt CO2e per year for proposed projects) surfaced. That bill is not BAAJA."
+  },
+  {
+   "question": "Symons LNG emissions (273-413 Mt) and LCV 616 Mt: do they apply to BAAJA?",
+   "queries": [
+    "Symons critique permitting bill LNG emissions 273 413 million metric tons"
+   ],
+   "note": "Both figures concern the 2024 EPRA bill, not BAAJA. Not counted. Breakthrough disputes the Symons figures."
+  },
+  {
+   "question": "IFP, Niskanen, Evergreen Action, R Street: any BAAJA number?",
+   "queries": [
+    "Institute for Progress how the permitting deal works BAAJA",
+    "Niskanen BAAJA transmission policy 4 ways",
+    "Evergreen Action BAAJA"
+   ],
+   "note": "IFP and Niskanen pages are qualitative; R Street's BAAJA Blast Part 2 has no BAAJA estimate; Evergreen's page covers PJM, not BAAJA."
+  },
+  {
+   "question": "Chamber, NAM, business groups: a BAAJA-specific jobs or investment estimate?",
+   "queries": [
+    "U.S. Chamber of Commerce NAM permitting BAAJA statement jobs investment billion estimate",
+    "Bipartisan Policy Center permitting BAAJA analysis jobs GDP savings estimate"
+   ],
+   "note": "Chamber letters give no BAAJA jobs or dollar estimate. NAM's $7.9bn and Business Roundtable's $1.5trn are general permitting figures, not BAAJA-specific. ACP's 350 GW / $800bn projection appeared only in a search summary and was not fetched."
+  },
+  {
+   "question": "Brookings, PPI, Abundance Institute: BAAJA estimate?",
+   "queries": [
+    "Employ America OR Roosevelt Institute OR Center for American Progress BAAJA permitting bill estimate"
+   ],
+   "note": "Brookings and PPI were not searched on their own. PPI's figures are general permitting figures."
+  },
+  {
+   "question": "Chamber of Commerce key-vote letter for the Nov 9 cloture vote or the Nov 16 votes on SA 6883 / H.R. 2347",
+   "queries": [
+    "Chamber of Commerce coalition letter Senate permitting bill H.R. 2347 Senate Amendment 6883 November 2026",
+    "Chamber of Commerce key vote H.R. 2347 cloture November 16"
+   ]
+  },
+  {
+   "question": "LCV key-vote or scorecard notice on H.R. 2347 / S. 5653",
+   "queries": [
+    "League of Conservation Voters key vote permitting bill H.R. 2347 cloture November 2026"
+   ]
+  },
+  {
+   "question": "Heritage Action key-vote notice on H.R. 2347",
+   "queries": [
+    "Heritage Action key vote H.R. 2347 permitting November 2026",
+    "Heritage Foundation OR Club for Growth OR Americans for Tax Reform opposes Senate permitting bill BAAJA data centers November 2026"
+   ]
+  },
+  {
+   "question": "Americans for Prosperity, Club for Growth, ClearPath Action (own statement), CRES, American Conservation Coalition, ATR statements on BAAJA",
+   "queries": [
+    "Americans for Prosperity OR Club for Growth OR ClearPath permitting reform Senate bill statement November 2026"
+   ]
+  },
+  {
+   "question": "National Association of Manufacturers statement on the Nov 9 vote (own release)",
+   "queries": [
+    "National Association of Manufacturers statement Senate permitting bill motion to proceed November 2026"
+   ]
+  },
+  {
+   "question": "National Mining Association: statement on the bill (Sept 30 reaction quoted by secondary report: Rich Nolan, 'Standing in our way is a permitting process mired in duplication, endless litigation and uncertainty'); primary page not located",
+   "queries": [
+    "\"National Mining Association\" OR \"Western Energy Alliance\" OR \"American Farm Bureau\" permitting bill Senate vote November 2026 statement"
+   ]
+  },
+  {
+   "question": "Western Energy Alliance, American Farm Bureau: statement on the bill",
+   "queries": [
+    "\"National Mining Association\" OR \"Western Energy Alliance\" OR \"American Farm Bureau\" permitting bill Senate vote November 2026 statement"
+   ]
+  },
+  {
+   "question": "Business Roundtable, AGC (own statement, not as signer), ARTBA statements in Nov",
+   "queries": [
+    "Associated General Contractors OR ARTBA OR Business Roundtable OR American Petroleum Institute statement Senate permitting bill November 2026"
+   ]
+  },
+  {
+   "question": "NRECA, American Public Power Association, WIRES, Americans for a Clean Energy Grid, Advanced Energy United statements on the Nov votes",
+   "queries": [
+    "Edison Electric Institute OR NRECA OR American Public Power statement Senate permitting bill vote November 2026",
+    "Advanced Energy United OR Americans for a Clean Energy Grid OR WIRES OR ACORE statement Senate permitting bill cloture vote November 2026"
+   ]
+  },
+  {
+   "question": "Clean Energy Buyers Association, NEI, National Hydropower Association, Oceantic Network, Geothermal Rising standalone statements (CEBA, Geothermal Rising Action and others appear only as signers of the Nov 9 C2ES letter)",
+   "queries": [
+    "Nuclear Energy Institute OR National Hydropower Association OR Geothermal Rising OR Oceantic Network statement Senate permitting bill November 2026",
+    "American Clean Power OR SEIA OR Clean Energy Buyers statement Senate permitting bill cloture November 9 2026"
+   ]
+  },
+  {
+   "question": "Data Center Coalition, TechNet, ITI, Chamber of Progress (own statement), Microsoft, Google, Amazon, Meta, OpenAI public statements on the bill in November",
+   "queries": [
+    "Data Center Coalition OR TechNet OR Chamber of Progress OR Microsoft OR Google statement Senate permitting bill AFFORDABILITY vote November 2026"
+   ]
+  },
+  {
+   "question": "IBEW, North America's Building Trades Unions, LIUNA, United Association, Operating Engineers, AFL-CIO, BlueGreen Alliance, USW statements in November",
+   "queries": [
+    "IBEW OR Building Trades OR LIUNA statement permitting reform Senate vote November 2026"
+   ]
+  },
+  {
+   "question": "Earthjustice, Nature Conservancy, Audubon, EDF statements on the Nov 9 vote (not located; EDF and Evergreen named only in a secondary report)",
+   "queries": [
+    "Earthjustice OR Environmental Defense Fund OR Nature Conservancy OR Audubon statement Senate permitting bill cloture November 9 2026"
+   ]
+  },
+  {
+   "question": "NCAI, NARF, NATHPO, USET, Coalition of Large Tribes, Navajo Nation statements dated November",
+   "queries": [
+    "National Congress of American Indians statement permitting bill Senate vote November 2026 tribal coalition letter substitute"
+   ]
+  },
+  {
+   "question": "National Governors Association, Western Governors' Association, U.S. Conference of Mayors statements dated November",
+   "queries": [
+    "Western Governors Association OR National Governors Association OR U.S. Conference of Mayors statement permitting bill Senate November 2026"
+   ]
+  },
+  {
+   "question": "Senate Lobbying Disclosure (LDA) filings naming the bill; OpenSecrets client list",
+   "queries": [
+    "OpenSecrets lobbying permitting reform S. 5653 American Affordability and Jobs Act lobbying clients 2026",
+    "lda.senate.gov API filing_specific_lobbying_issues American Affordability and Jobs"
+   ]
+  },
+  {
+   "question": "Senate Amendment 6883 text and any group reaction to the November 7 substitute",
+   "queries": [
+    "Senate Amendment 6883 Bipartisan American Affordability and Jobs Act substitute manager's amendment groups react"
+   ]
+  },
+  {
+   "question": "Not searched within budget: Center for Biological Diversity, Friends of the Earth, Food & Water Watch, Sunrise, 350.org, WE ACT, Earthworks, Wilderness Society, Defenders, SELC, CCL, CATF, Oil Change International, NWF, Evergreen (own statement), Heritage/AFP ACTION",
+   "queries": []
+  },
+  {
+   "question": "CBO cost estimate or score for S. 5653",
+   "queries": [
+    "CBO S. 5653 score",
+    "Congressional Budget Office Bipartisan American Affordability and Jobs Act cost estimate"
+   ],
+   "result": "None found; searches returned H.R. 8870 and the 2025 reconciliation bill only."
+  },
+  {
+   "question": "Emissions or cost modeling of BAAJA by NRDC, Earthjustice, Sierra Club, CBD, Oil Change, Heritage, Cato, AEI",
+   "queries": [
+    "NRDC BAAJA emissions analysis",
+    "Earthjustice BAAJA modeling",
+    "Heritage BAAJA permitting",
+    "Cato BAAJA",
+    "AEI BAAJA"
+   ],
+   "result": "No BAAJA-specific number from any of them. NRDC's assessment is qualitative."
+  },
+  {
+   "question": "Critic-side estimate applied to this bill",
+   "queries": [
+    "BAAJA LNG exports emissions estimate",
+    "BAAJA models undercount"
+   ],
+   "result": "Only Public Citizen's 39 bcf/d (a quantity of export authority, not a modeled outcome) and the unlocated Kircher (Purdue) modeling."
+  }
+ ]
+}

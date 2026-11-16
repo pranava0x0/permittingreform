@@ -1,6 +1,6 @@
 {
  "_about": "Curated from data/research/communities.json (a Sonnet reading of the bill text, 2026-10-02). The build checks each quote against the cited section.",
- "intro": "How the bill changes who can comment, be consulted, take part in planning or go to court. Each row gives current law, the change and the sections that make it.",
+ "intro": "How the bill changes who can comment, be consulted, take part in planning or go to court.",
  "who": {
   "public": "The public",
   "tribes": "Tribes",
@@ -52,7 +52,8 @@
   {
    "id": "ce-combine",
    "group": "comment",
-   "topic": "Combining categorical exclusions to skip a review",
+   "topic": "Combining categorical exclusions",
+   "reviewed_as": "Combining categorical exclusions to skip a review",
    "who": [
     "public",
     "tribes",
@@ -399,7 +400,8 @@
   {
    "id": "esa-state-assumption",
    "group": "consult",
-   "topic": "State takeover of Endangered Species Act consultation",
+   "topic": "State-run Endangered Species Act consultation",
+   "reviewed_as": "State takeover of Endangered Species Act consultation",
    "who": [
     "states",
     "public"
