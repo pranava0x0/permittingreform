@@ -38,6 +38,7 @@ Open http://127.0.0.1:8766. The site has no backend and loads nothing from anoth
 | `data/amendments.json` | The substitute's sponsors and links, the sponsors' staff summary mapped to sections, source bills for added sections, other amendments, reactions with verbatim quotes, and the next vote. |
 | `data/compare.json`, `data/overview.json` | The comparison tables (including `bills`, the data center bills table) and the overview page. |
 | `data/votes.json` | Senate roll calls on the bill: the question, the threshold, the tally and each senator's vote, from the Senate's roll-call XML. The build fails if the names do not add up to the printed tally. |
+| `data/votes/` | The Senate's roll-call XML for each vote, as fetched by `tools/roll_call.py`. The build re-reads each file and fails if the tally, the result or any senator's vote in `data/votes.json` differs from it. |
 | `data/estimates.json` | Published estimates of what the bill would do, by measure. Each row names its publisher, the scenario and the sentence the figure comes from. A figure without a fetched source sentence is not added. |
 | `data/speed.json` | The Speed page: research on what slows energy projects, one row per cause, each with sourced findings, the bill passages aimed at that cause (located by the build) and outside readings from `data/takes.json`. |
 | `data/communities.json` | The Communities view: one row per change to comment, consultation, planning or court rights, with a quoted passage the build checks. |
@@ -67,6 +68,7 @@ make browser-quotes   # read in Chrome the pages `make quotes` could not fetch
 | `tools/check_links.py` | Each link answers. Sites that refuse scripts are listed as blocked. |
 | `tools/check_data.py` | Each record has its required fields, a known vocabulary value and a source. Each key point cites a passage. |
 | `tools/infer_check.py` | A Sonnet model judges whether each summary sentence is supported by the section text. The script confirms the model's evidence is in the text. |
+| `tools/roll_call.py` | Fetches a Senate roll call's XML into `data/votes/` and prints its record for `data/votes.json`. `--offline` re-reads the committed file. |
 | `tools/final_checks.py` | Runs `tools/perf_audit.cjs`, `tools/reader_paths.cjs`, `tests/uat.cjs` and `tests/clicks.cjs` against its own server. Writes each step's log and state to `.test-artifacts/final/`. `--status` reads that state from another terminal. |
 | `tools/browser_quotes.py` | Opens each unreachable page in a scripted Chrome and applies the quote gate's own match. `--write` records found quotes in `data/checks/browser.json`. A page behind a sign-in or a human check is listed for a hand read. |
 

@@ -365,6 +365,39 @@ class Positions(unittest.TestCase):
         for rc in votes["roll_calls"]:
             self.assertEqual([m[0] for m in rc["members"] if m[4:] == ["tim-scott"]], ["Tim Scott"])
 
+    def test_every_vote_is_checked_against_the_committed_senate_xml(self):
+        doc = json.loads((ROOT / "data/votes.json").read_text(encoding="utf-8"))
+        errors: list[str] = []
+        build.load_votes(CORE["people"], errors, doc=json.loads(json.dumps(doc)))
+        self.assertEqual(errors, [])
+        # Swapping one Yea with one Nay leaves the tally intact; only the Senate file can catch it.
+        swapped = json.loads(json.dumps(doc))
+        members = swapped["roll_calls"][0]["members"]
+        yea = next(m for m in members if m[3] == "Yea")
+        nay = next(m for m in members if m[3] == "Nay")
+        yea[3], nay[3] = "Nay", "Yea"
+        errors = []
+        build.load_votes(CORE["people"], errors, doc=swapped)
+        self.assertEqual(len(errors), 2, errors)
+        for m in (yea, nay):
+            self.assertTrue(any(m[0] in e and "in the Senate file" in e for e in errors), (m[0], errors))
+        # A wrong party, a dropped senator and a changed result are caught the same way.
+        for change, needle in ((lambda rc: rc["members"][0].__setitem__(1, "I"), "in the Senate file"),
+                               (lambda rc: rc["members"].pop(), "missing here"),
+                               (lambda rc: rc.__setitem__("result", "Rejected"), "result is 'Rejected'")):
+            broken = json.loads(json.dumps(doc))
+            change(broken["roll_calls"][1])
+            errors = []
+            build.load_votes(CORE["people"], errors, doc=broken)
+            self.assertTrue(any(needle in e for e in errors), (needle, errors))
+
+    def test_a_roll_call_without_its_committed_xml_fails_the_build(self):
+        doc = json.loads((ROOT / "data/votes.json").read_text(encoding="utf-8"))
+        with tempfile.TemporaryDirectory() as tmp, patch.object(build.roll_call, "RAW", Path(tmp)):
+            errors: list[str] = []
+            build.load_votes(CORE["people"], errors, doc=doc)
+        self.assertEqual(sum("is not committed under data/votes/" in e for e in errors), len(doc["roll_calls"]))
+
     def test_every_estimate_names_its_publisher_scenario_and_source_sentence(self):
         est = CORE["estimates"]
         self.assertTrue(est["estimates"])

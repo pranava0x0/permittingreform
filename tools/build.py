@@ -33,6 +33,7 @@ from urllib.parse import quote
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import amendments  # noqa: E402
 import billtext  # noqa: E402
+import roll_call  # noqa: E402
 
 ROOT = billtext.ROOT
 DATA = ROOT / "data"
@@ -105,11 +106,13 @@ VOTE_REQUIRED = {"3/5": "three-fifths of all senators (60 votes)", "1/2": "a maj
 PARTIES = (("R", "Republicans"), ("D", "Democrats"), ("I", "Independents"))
 
 
-def load_votes(people: list[dict], errors: list[str]) -> dict:
+def load_votes(people: list[dict], errors: list[str], doc: dict | None = None) -> dict:
     """Senate roll calls on the bill's vehicle. The member list must add up to the
-    printed tally, or the page would show a count the names do not support. Each
-    senator the tracker holds a stated position for gets that person's id."""
-    doc = load(DATA / "votes.json")
+    printed tally, or the page would show a count the names do not support. Every
+    field copied from the Senate's XML, each senator's vote included, must equal the
+    file committed under data/votes/. Each senator the tracker holds a stated
+    position for gets that person's id."""
+    doc = doc if doc is not None else load(DATA / "votes.json")
     senators = {}
     def fold(name: str) -> str:
         return unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
@@ -122,6 +125,11 @@ def load_votes(people: list[dict], errors: list[str]) -> dict:
             senators.setdefault(surname(p["name"]), []).append(p)
     for rc in doc["roll_calls"]:
         where = f"votes {rc['number']}"
+        raw = roll_call.RAW / Path(str(rc.get("xml_url", ""))).name
+        if raw.suffix != ".xml" or not raw.is_file():
+            errors.append(f"{where}: the Senate XML is not committed under data/votes/; run tools/roll_call.py {rc['number']}")
+        else:
+            errors += [f"{where}: {d}" for d in roll_call.differences(rc, roll_call.read(raw))]
         cast = [m[3] for m in rc["members"]]
         if set(cast) - set(VOTE_CAST):
             errors.append(f"{where}: unknown vote value {sorted(set(cast) - set(VOTE_CAST))}")
