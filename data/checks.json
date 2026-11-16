@@ -10,13 +10,13 @@
   "unchecked": 18
  },
  "links": {
-  "blocked": 46,
+  "blocked": 47,
   "browser": 43,
   "checked": "2026-11-16",
   "dead": 0,
   "error": 1,
-  "ok": 616,
-  "total": 663
+  "ok": 623,
+  "total": 671
  },
  "quotes": {
   "bill_total": 174,

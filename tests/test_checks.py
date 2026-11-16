@@ -110,7 +110,15 @@ class Links(unittest.TestCase):
         found = check_links.collect(CORE)
         places = {where.split(".")[0] for wheres in found.values() for where in wheres}
         # Speed sources went unchecked until 2026-10-26: the quote check read them, the link check did not.
-        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media", "takes", "speed", "amend"})
+        # Estimate sources and method pages went unchecked until 2026-11-15, the day the estimates were added.
+        self.assertEqual(places, {"meta", "overview", "compare", "timeline", "people", "media", "takes", "speed", "amend", "estimates", "votes"})
+        for e in CORE["estimates"]["estimates"]:
+            for key in ("url", "method_url"):
+                if e.get(key):
+                    self.assertIn(e[key].split("#", 1)[0], found, f"{e['id']} {key}")
+        for r in CORE["votes"]["roll_calls"]:
+            self.assertIn(r["url"].split("#", 1)[0], found)
+            self.assertIn(r["xml_url"], found)
         for x in CORE["amend"]["reactions"]:
             self.assertIn(x["sources"][0]["url"], found)
         self.assertIn(CORE["meta"]["source_pdf"], found)

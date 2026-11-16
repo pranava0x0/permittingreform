@@ -399,6 +399,16 @@
     "media.2026-11-09-american-clean-power-acp-urges-senators-to"
    ]
   },
+  "https://cleanpower.org/resources/the-clean-energy-and-environmental-case-for-the-bipartisan-american-affordability-and-jobs-act/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "estimates.acp-emissions",
+    "estimates.acp-buildout"
+   ]
+  },
   "https://clerk.house.gov/Votes/2025356": {
    "cls": "ok",
    "kind": "page",
@@ -1741,7 +1751,11 @@
    "note": "",
    "status": 200,
    "where": [
-    "media.2026-11-02-rhodium-group-estimating-the-us-energy"
+    "media.2026-11-02-rhodium-group-estimating-the-us-energy",
+    "estimates.rhodium-emissions",
+    "estimates.rhodium-bills",
+    "estimates.rhodium-buildout",
+    "estimates.rhodium-lng"
    ]
   },
   "https://rmi.org/resources/understanding-fercs-large-load-orders/": {
@@ -1836,7 +1850,19 @@
    "note": "HTTP 403",
    "status": 403,
    "where": [
-    "media.2026-11-09-solar-energy-industries-solar-and-storage-industry"
+    "media.2026-11-09-solar-energy-industries-solar-and-storage-industry",
+    "estimates.seia-emissions",
+    "estimates.seia-solar"
+   ]
+  },
+  "https://seia.org/research-resources/baaja-impact-on-the-electricity-sector/": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "estimates.seia-emissions.method",
+    "estimates.seia-solar.method"
    ]
   },
   "https://semafor.com/article/09/29/2026/democrats-flex-filibuster-muscle-ahead-of-election": {
@@ -2351,7 +2377,10 @@
    "note": "",
    "status": 200,
    "where": [
-    "media.2026-11-06-center-for-climate-new-nationwide-analysis-bipartisan"
+    "media.2026-11-06-center-for-climate-new-nationwide-analysis-bipartisan",
+    "estimates.c2es-emissions",
+    "estimates.c2es-delay",
+    "estimates.c2es-buildout"
    ]
   },
   "https://www.c2es.org/document/federal-permitting-reform-in-the-119th-congress/": {
@@ -2433,6 +2462,15 @@
    "where": [
     "timeline.2026-09-17-heinrich-objects-rpa-uc-moreno-objects-grid-savings.source",
     "media.cbs-2026-09-17-heinrich-blocks-rpa"
+   ]
+  },
+  "https://www.citizen.org/article/senate-permitting-legislation-baaja-lng-exports-affordability-harm/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "estimates.public-citizen-lng"
    ]
   },
   "https://www.citizen.org/news/public-citizen-opposes-senate-permitting-bill/": {
@@ -3207,6 +3245,15 @@
     "media.2026-11-09-bloomberg-via-energyconnectscom-trump-says-he-backs"
    ]
   },
+  "https://www.energypolicy.columbia.edu/project-timeline-savings-under-baaja/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "estimates.cgep-months.method"
+   ]
+  },
   "https://www.energypolicy.columbia.edu/wp-content/uploads/2026/10/baaja-timelines-v6.html": {
    "cls": "ok",
    "kind": "page",
@@ -3217,7 +3264,8 @@
     "takes.2026-10-21-cgep-timelines-2",
     "takes.2026-10-21-cgep-timelines-3",
     "speed.nepa-eis-duration.3",
-    "timeline.2026-10-21-cgep-timeline-analysis.source"
+    "timeline.2026-10-21-cgep-timeline-analysis.source",
+    "estimates.cgep-months"
    ]
   },
   "https://www.environmentallawandpolicy.com/2025/02/a-hard-look-at-ceqs-hard-luck-north-dakota-court-decision-accelerates-nepa-regulations-rapid-fall/": {
@@ -3937,6 +3985,17 @@
    "status": 200,
    "where": [
     "compare.digital-permitting.E-NEPA (current law)"
+   ]
+  },
+  "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "estimates.c2es-emissions.method",
+    "estimates.c2es-delay.method",
+    "estimates.c2es-buildout.method"
    ]
   },
   "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here": {
@@ -4957,7 +5016,11 @@
    "note": "",
    "status": 200,
    "where": [
-    "media.2026-10-29-resources-for-the-projected-effects-of-the"
+    "media.2026-10-29-resources-for-the-projected-effects-of-the",
+    "estimates.rff-emissions",
+    "estimates.rff-savings",
+    "estimates.rff-system-cost",
+    "estimates.rff-transmission"
    ]
   },
   "https://www.rff.org/publications/reports/taking-green-energy-projects-to-court-nepa-review-and-court-challenges-to-renewable-energy/": {
@@ -4967,6 +5030,18 @@
    "status": 200,
    "where": [
     "speed.nepa-litigation.2"
+   ]
+  },
+  "https://www.rhg.com/wp-content/uploads/2026/11/Estimating-the-Energy-System-and-Emissions-Impacts-of-BAAJA.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "estimates.rhodium-emissions.method",
+    "estimates.rhodium-bills.method",
+    "estimates.rhodium-buildout.method",
+    "estimates.rhodium-lng.method"
    ]
   },
   "https://www.rstreet.org/?p=103280": {
@@ -5103,7 +5178,17 @@
    "status": 200,
    "where": [
     "overview.status",
-    "timeline.2026-11-09-senate-cloture-motion-to-proceed.source"
+    "timeline.2026-11-09-senate-cloture-motion-to-proceed.source",
+    "votes.257"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "votes.257.xml"
    ]
   },
   "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm": {
@@ -5113,7 +5198,17 @@
    "status": 200,
    "where": [
     "overview.status",
-    "timeline.2026-11-10-senate-motion-to-proceed.source"
+    "timeline.2026-11-10-senate-motion-to-proceed.source",
+    "votes.258"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "votes.258.xml"
    ]
   },
   "https://www.sierraclub.org/press-releases/2026/09/sierra-club-reaction-permitting-bill-introduction": {
@@ -5641,7 +5736,8 @@
    "note": "",
    "status": 200,
    "where": [
-    "media.2026-10-28-the-white-house-the-economic-benefits-of"
+    "media.2026-10-28-the-white-house-the-economic-benefits-of",
+    "estimates.cea-gdp"
    ]
   },
   "https://www.whitehouse.gov/wp-content/uploads/2025/04/Memorandum-CEQ-Establishment-of-Permitting-Innovation-Center_4.30.2025.pdf": {
