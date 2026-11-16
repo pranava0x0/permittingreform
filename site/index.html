@@ -58,7 +58,7 @@ document.documentElement.setAttribute("data-theme",t)})();
   window.PR_V={"bill":"4ffa9e66","news":"7c634ea8","takes":"4f7f6a25","amend":"fc11898f"};
   (function(){var r=location.hash.replace(/^#\/?/,"").split("/")[0],n=document.getElementById("section-nav"),g=null,k;
   if(r==="issues")r="datacenters";
-  if(r&&r!=="overview")document.documentElement.className="deep";
+  if(r&&r!=="overview")document.documentElement.classList.add("deep");
   for(k in PR_GROUPS)if(PR_GROUPS[k].some(function(p){return p[0]===r}))g=k;
   if(!g)return;n.hidden=false;n.dataset.group=g;
   n.innerHTML=PR_GROUPS[g].map(function(p){return'<a href="#/'+p[0]+'"'+(p[0]===r?' aria-current="page"':"")+">"+p[1]+"</a>"}).join("")})();
@@ -111,7 +111,7 @@ document.documentElement.setAttribute("data-theme",t)})();
 </ul>
 <p>Text editions: <a href="reading.html">every section</a> · <a href="amendments.html">amendments</a> · <a href="comparisons.html">Data center and digital permitting bills compared</a> · <a href="issues.html">Key issues in permitting reform</a> · <a href="timeline.html">Permitting reform timeline</a> · <a href="coverage.html">Permitting reform news and coverage</a></p><!-- /static overview --></div>
   <script>/* A linked page other than the overview starts empty instead of flashing the overview text. */
-  if(document.documentElement.className==="deep")document.getElementById("view").textContent="";</script>
+  if(document.documentElement.classList.contains("deep"))document.getElementById("view").textContent="";</script>
 </main>
 <footer class="footer">
   <p>Independent tracker · Bill text: <a href="https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026" rel="noopener">Senate EPW</a>, September 30, 2026 · Summaries: AI-assisted · <span id="footer-asof"></span> · <a href="#/method">Method</a> · <a href="reading.html">Text index</a> · <a href="comparisons.html">Bill comparisons</a> · <a href="llms.txt">For agents</a></p>
