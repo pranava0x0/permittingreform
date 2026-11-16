@@ -1,4 +1,5 @@
 """The static site's contract: tokens, contrast, assets, and no unsafe HTML sinks."""
+import json
 import re
 import sys
 import unittest
@@ -135,9 +136,31 @@ class Page(unittest.TestCase):
         self.assertIn('x === "concerns"', JS)
         self.assertIn('el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance])', JS)
 
-    def test_the_positions_page_leads_with_disputed_readings(self):
-        self.assertIn("disputesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
+    def test_the_positions_page_runs_votes_readings_estimates_then_letters(self):
+        self.assertIn("votesBlock(),\n      disputesBlock(),\n      estimatesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
         self.assertIn('"None found yet."', JS)
+
+    def test_votes_and_estimates_headings_name_the_category_only(self):
+        # Headings carry no direction of change; whether a figure rises or falls is in the publisher's sentence.
+        self.assertIn('el("h2", { id: "h-votes" }, "Senate votes")', JS)
+        self.assertIn('el("h2", { id: "h-estimates" }, "Published estimates")', JS)
+        news = json.loads((ROOT / "site/data/news.json").read_text(encoding="utf-8"))
+        for m in news["estimates"]["metrics"]:
+            self.assertNotRegex(m["title"].lower(), r"\b(cut|cuts|lower|higher|saving|savings|reduc\w*|increas\w*|gain\w*|loss\w*|faster|slower|benefit\w*|harm\w*)\b", m)
+
+    def test_the_overview_cards_link_to_routes_the_router_lands_on(self):
+        for part in ("votes", "estimates"):
+            self.assertIn('card("#/positions/' + part + '"', JS)
+            self.assertIn('id: "h-' + part + '"', JS)
+        self.assertIn('parts[1] === "votes" || parts[1] === "estimates") && location.hash !== lastPath', JS)
+
+    def test_a_vote_is_shown_beside_a_stated_position_and_never_recolored(self):
+        css = (ROOT / "site/styles.css").read_text(encoding="utf-8")
+        for cls in ("vote-party", "vote-stated", "vote-names", "estimate"):
+            rules = [line for line in css.splitlines() if "." + cls in line]
+            self.assertTrue(rules, cls)
+            for rule in rules:
+                self.assertNotRegex(rule, r"(?<![-\w])color:|background", rule)
 
     def test_the_sector_table_links_to_people_routes_the_router_reads(self):
         self.assertIn('"#/people/" + (rows[k].inside ? "inside" : "outside") + "/" + c[0] + "/" + k', JS)

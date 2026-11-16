@@ -399,7 +399,7 @@
    }
   },
   "mike-lee": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 8 Daily Caller report.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 8 Daily Caller report. Updated 2026-11-15 with the senator's statement on the November 9 vote, read on the cited page.",
    "set": {
     "position": "Co-introduced the bill, describing a permitting system that 'takes too long and costs too much.' He says the deal should hold through the midterm elections. On October 8 the Daily Caller News Foundation, citing the AP, reported he is confident the Senate will pass it in a November lame-duck session.",
     "key_actions": [
@@ -407,7 +407,8 @@
      "2026-06-09: Pressed for National Historic Preservation Act changes in the talks, with limits on lawsuits as a priority",
      "2026-07-21: Said data center legislation was not currently a priority",
      "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act and posted the bill text on X",
-     "2026-10-08: Reported by the Daily Caller News Foundation, citing the AP, as confident the Senate will pass the bill in a November lame-duck session"
+     "2026-10-08: Reported by the Daily Caller News Foundation, citing the AP, as confident the Senate will pass the bill in a November lame-duck session",
+     "2026-11-10: Spoke for the bill on the Senate floor after the motion to proceed was adopted"
     ],
     "sources": [
      {
@@ -442,12 +443,19 @@
       "url": "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/",
       "date": "2026-10-08",
       "verified": true
+     },
+     {
+      "title": "Congressional Record, Senate, November 10, 2026 (floor remarks, permitting reform)",
+      "publisher": "Congressional Record (Senate)",
+      "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
+      "date": "2026-11-10",
+      "verified": true
      }
     ]
    }
   },
   "sheldon-whitehouse": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-11-15 with the senator's statement on the November 9 vote, read on the cited page.",
    "set": {
     "position": "Co-introduced the bill and ties final Democratic support to the administration's treatment of wind and solar, calling the question of 'returning to regular order' unresolved. He and Heinrich ended talks in December 2025 over the offshore wind halt.",
     "key_actions": [
@@ -459,7 +467,8 @@
      "2026-08-07: Said Democrats had a strong hand in the talks and he preferred not to push the deal into the lame duck",
      "2026-09-17: Said talks were in final wrap-up, with the hardest issues resolved last",
      "2026-09-24: Said negotiators were 'over the hump on the deal-break issues'",
-     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act"
+     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act",
+     "2026-11-09: At a press conference before the vote, called the bill 'the floor, not the ceiling' of Democrats' climate and environmental aims"
     ],
     "sources": [
      {
@@ -499,6 +508,13 @@
       "publisher": "POLITICO Pro",
       "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
       "date": "2026-09-17"
+     },
+     {
+      "title": "Senate advances energy permitting bill opposed by some Democrats, tribes",
+      "publisher": "Reuters (via KFGO)",
+      "url": "https://kfgo.com/?p=1372744",
+      "date": "2026-11-09",
+      "verified": true
      }
     ]
    }
@@ -608,12 +624,13 @@
    }
   },
   "chuck-schumer": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-11-15 with the senator's statement on the November 9 vote, read on the cited page.",
    "set": {
-    "position": "No public position on the Senate permitting bill was found. On September 29 he called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud', saying data center cost rules should be mandatory, not optional. He joined Whitehouse on September 24 to release a staff report on fossil fuel industry political spending.",
+    "position": "Voted on November 9 to end debate on taking up the bill and said he has outstanding concerns with parts of it that he will try to address through amendments. On September 29 he called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud', saying data center cost rules should be mandatory, not optional.",
     "key_actions": [
      "2026-09-24: Joined Sen. Whitehouse at a news conference on a 79-page staff report on oil and gas industry political spending",
-     "2026-09-29: Called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud' on the Senate floor"
+     "2026-09-29: Called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud' on the Senate floor",
+     "2026-11-09: Issued a statement after the bill advanced, saying he would seek changes through amendments"
     ],
     "sources": [
      {
@@ -635,13 +652,21 @@
       "publisher": "CNBC",
       "url": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html",
       "date": "2026-09-30"
+     },
+     {
+      "title": "Leader Schumer Statement After Permitting Reform Bill Advances In The Senate",
+      "publisher": "Senate Democratic Caucus",
+      "url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate",
+      "date": "2026-11-09",
+      "verified": true
      }
     ],
     "quote": {
-     "text": "I can sum up the shortcomings of Republicans' data center bill with one word: optional",
-     "source_url": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html",
-     "date": "2026-09-29"
-    }
+     "text": "While I have outstanding concerns with parts of the bill that I’ll fight to address through the amendment process, I’m voting today to move this debate forward.",
+     "source_url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate",
+     "date": "2026-11-09"
+    },
+    "stance": "mixed"
    }
   },
   "katherine-scarlett": {
@@ -829,15 +854,16 @@
    }
   },
   "brian-schatz": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-11-15 with the senator's statement on the November 9 vote, read on the cited page. Updated 2026-11-15 with the senator's own November 9 release, read on the cited page.",
    "set": {
-    "stance": "neutral",
-    "position": "Joined Heinrich and Whitehouse in December 2025 in opposing the House SPEED Act over its treatment of renewables and transmission. Before the Senate text was released he said he could not whip votes for any bill while the administration stalled solar and wind permits, and that a deal could come together in five days once that changed. No statement on the released bill was found.",
+    "stance": "supports",
+    "position": "Said on November 9 that the bill is not perfect and that he will vote to pass it. He voted that day to end debate on taking up the bill. In December 2025 he joined Heinrich and Whitehouse in opposing the House SPEED Act over its treatment of renewables and transmission.",
     "key_actions": [
      "2025-12-09: Issued, with Heinrich and Whitehouse, a joint statement opposing passage of the SPEED Act (Heatmap exclusive)",
      "2025-12: Posted on X criticizing American Clean Power's deal with the American Petroleum Institute on the House bill",
      "2026-05-22: Said he could not whip votes for any permitting bill while the administration stalled solar and wind permits",
-     "2026-08-03: Said a deal could come together quickly once the administration lifted its holds"
+     "2026-08-03: Said a deal could come together quickly once the administration lifted its holds",
+     "2026-11-09: Voted to end debate and issued a statement saying he will vote to pass the bill"
     ],
     "sources": [
      {
@@ -865,22 +891,99 @@
       "publisher": "E&E News by POLITICO",
       "url": "https://www.eenews.net/articles/permitting-deal-may-come-after-recess-negotiators-say-thats-ok/",
       "date": "2026-08-03"
+     },
+     {
+      "title": "Senators Advance Bipartisan Permitting Reform. Democrats Were Divided.",
+      "publisher": "The Washington Sun",
+      "url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+      "date": "2026-11-09",
+      "verified": true
+     },
+     {
+      "title": "Schatz Statement on Bipartisan American Affordability and Jobs Act",
+      "publisher": "Sen. Schatz",
+      "url": "https://www.schatz.senate.gov/news/press-releases/schatz-statement-on-bipartisan-american-affordability-and-jobs-act",
+      "date": "2026-11-09",
+      "verified": true
+     }
+    ],
+    "quote": {
+     "text": "While BAAJA is not perfect, it represents a rare opportunity to pass strong, bipartisan legislation that will help lower costs and make it easier for American workers to build the things our country needs. I will vote to pass it",
+     "source_url": "https://www.schatz.senate.gov/news/press-releases/schatz-statement-on-bipartisan-american-affordability-and-jobs-act",
+     "date": "2026-11-09"
+    }
+   }
+  },
+  "john-hickenlooper": {
+   "reason": "The earlier record stays in the text. Updated 2026-11-15 with the senator's own November 9 release, read on the cited page.",
+   "set": {
+    "stance": "supports",
+    "position": "Voted on November 9 to end debate on taking up the bill. His statement says the bill is not perfect and that work with Tribal Nations and environmental groups to strengthen it should continue. It does not say how he will vote on passage. In December 2025 he predicted a Senate agreement in the first quarter of 2026.",
+    "key_actions": [
+     "2025-12: Told a Washington event a Senate permitting deal could come in the first quarter of 2026, even if some environmental groups were unhappy",
+     "2026-11-09: Issued a statement on his vote to advance the bill"
+    ],
+    "quote": {
+     "text": "This bill isn’t perfect. No bill is. We should continue working with Tribal Nations and environmental groups to strengthen it as it moves through the legislative process.",
+     "source_url": "https://www.hickenlooper.senate.gov/press_releases/hickenlooper-votes-to-advance-long-overdue-permitting-reform-bill/",
+     "date": "2026-11-09"
+    },
+    "sources": [
+     {
+      "title": "House passes SPEED Act, a first step toward broader permitting reform",
+      "publisher": "Latitude Media",
+      "url": "https://www.latitudemedia.com/news/house-passes-speed-act-a-first-step-toward-broader-permitting-reform/",
+      "date": "2025-12-18",
+      "verified": true
+     },
+     {
+      "title": "Hickenlooper Votes to Advance Long-Overdue Permitting Reform Bill",
+      "publisher": "Sen. Hickenlooper",
+      "url": "https://www.hickenlooper.senate.gov/press_releases/hickenlooper-votes-to-advance-long-overdue-permitting-reform-bill/",
+      "date": "2026-11-09",
+      "verified": true
      }
     ]
    }
   },
-  "john-hickenlooper": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
-   "set": {
-    "stance": "neutral",
-    "position": "Predicted in December 2025 that a Senate agreement could come in the first quarter of 2026 and signaled he was willing to lose some environmental-group support. No statement on the Senate bill was found."
-   }
-  },
   "alan-armstrong": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Updated 2026-11-15 with the senator's statement on the November 9 vote, read on the cited page.",
    "set": {
-    "stance": "neutral",
-    "position": "Pipeline-industry executive appointed to Markwayne Mullin's seat after Mullin became Homeland Security Secretary; Oklahoma's governor said his perspective would help move permitting reform. In September 2026 he said Democratic leadership was blocking permitting reform to deny Republicans a win before the midterms."
+    "stance": "supports",
+    "position": "Called the Senate's 73 to 25 vote of November 9 a major step and urged the Senate to finish the bill. Pipeline-industry executive appointed to Markwayne Mullin's seat after Mullin became Homeland Security Secretary. In September 2026 he said Democratic leadership was blocking permitting reform to deny Republicans a win before the midterms.",
+    "key_actions": [
+     "2026-03-24: Appointed by Gov. Kevin Stitt to the Senate seat vacated by Markwayne Mullin; under Oklahoma law he pledged not to run for a full term",
+     "2026-09-24: Issued a statement blaming Democratic leadership for the stalled permitting talks",
+     "2026-11-10: Issued a statement on the Senate vote to advance the bill"
+    ],
+    "sources": [
+     {
+      "title": "Governor Stitt Appoints Alan Armstrong as U.S. Senator",
+      "publisher": "Office of Oklahoma Governor Kevin Stitt",
+      "url": "https://oklahoma.gov/governor/newsroom/newsroom/2026/governor-stitt-appoints-alan-armstrong-as-us-senator.html",
+      "date": "2026-03-24",
+      "verified": true
+     },
+     {
+      "title": "Permitting reform talks fall apart in the Senate, deal punted until after midterms",
+      "publisher": "Deseret News",
+      "url": "https://www.deseret.com/politics/2026/09/24/permitting-reform-talks-fall-apart-in-senate/",
+      "date": "2026-09-24",
+      "verified": true
+     },
+     {
+      "title": "Senator Armstrong Praises Senate Vote to Advance Landmark Bipartisan Permitting Reform Legislation",
+      "publisher": "Office of Sen. Alan Armstrong",
+      "url": "https://www.armstrong.senate.gov/senator-armstrong-praises-senate-vote-to-advance-landmark-bipartisan-permitting-reform-legislation/",
+      "date": "2026-11-10",
+      "verified": true
+     }
+    ],
+    "quote": {
+     "text": "Tonight’s vote marks a major step forward. I applaud my colleagues on both sides of the aisle for coming together to advance meaningful permitting reforms",
+     "source_url": "https://www.armstrong.senate.gov/senator-armstrong-praises-senate-vote-to-advance-landmark-bipartisan-permitting-reform-legislation/",
+     "date": "2026-11-10"
+    }
    }
   },
   "hakeem-jeffries": {

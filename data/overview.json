@@ -9,10 +9,38 @@
  "status": {
   "points": [
    {
-    "text": "The Senate reconvened November 9 at 3 p.m. At about 5:30 p.m., 60 senators must agree to end debate on taking up H.R. 2347, the vehicle for the permitting bill.",
+    "text": "The Senate agreed on November 9, 73 to 25, to end debate on taking up H.R. 2347, the vehicle for the permitting bill. Voting no were 23 Democrats, Republican Mike Rounds and independent Bernie Sanders.",
     "source": {
-     "label": "U.S. Senate Press Gallery, Nov. 9",
-     "url": "https://www.dailypress.senate.gov/monday-november-9-2026/"
+     "label": "Senate roll call vote 257",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm"
+    }
+   },
+   {
+    "text": "On November 10 the Senate agreed to take up the bill, 62 to 21, with 17 senators not voting. Neither vote was on passage.",
+    "source": {
+     "label": "Senate roll call vote 258",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm"
+    }
+   },
+   {
+    "text": "Majority Leader John Thune then offered the sponsors' substitute as amendment SA 6883. On November 11 he filed motions to end debate on it and on H.R. 2347.",
+    "source": {
+     "label": "U.S. Senate Press Gallery, Nov. 11",
+     "url": "https://www.dailypress.senate.gov/wednesday-november-11-2026/"
+    }
+   },
+   {
+    "text": "The White House's Statement of Administration Policy, dated November 9, says the administration strongly supports passage of S. 5653.",
+    "source": {
+     "label": "Office of Management and Budget",
+     "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf"
+    }
+   },
+   {
+    "text": "Senate Democratic Leader Chuck Schumer voted on November 9 to end debate and said he will seek changes to parts of the bill through amendments.",
+    "source": {
+     "label": "Senate Democrats",
+     "url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate"
     }
    },
    {
@@ -116,11 +144,11 @@
   ]
  },
  "next": {
-  "date": "2026-11-09",
-  "text": "About 5:30 p.m.: 60 senators must agree to end debate on taking up the permitting bill. Passing it takes a separate vote.",
+  "date": "2026-11-16",
+  "text": "About 5:30 p.m.: the Senate votes on ending debate on the sponsors' substitute, amendment SA 6883. 60 senators must agree. Passing the bill takes a separate vote.",
   "source": {
    "label": "Senate floor schedule",
-   "url": "https://www.dailypress.senate.gov/monday-november-9-2026/"
+   "url": "https://www.dailypress.senate.gov/thursday-november-12-2026/"
   }
  },
  "headlines": [

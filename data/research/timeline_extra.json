@@ -2355,13 +2355,98 @@
    ]
   },
   {
-   "id": "2026-11-09-senate-cloture-scheduled",
+   "id": "2026-11-09-senate-cloture-motion-to-proceed",
    "date": "2026-11-09",
-   "title": "Senate scheduled to vote on cloture on the motion to proceed to H.R. 2347",
+   "title": "Senate votes 73 to 25 to end debate on taking up H.R. 2347",
    "branch": "congress_senate",
-   "summary": "The Senate convened at 3:00 p.m. to resume consideration of the motion to proceed to H.R. 2347, the vehicle for the permitting bill, with a cloture vote set for about 5:30 p.m. Outcome not posted at time of research.",
+   "summary": "The Senate agreed, 73 to 25, to end debate on the motion to proceed to H.R. 2347, the vehicle for the permitting bill (roll call vote 257). Two senators did not vote. Sixty votes were needed.",
+   "actors": [
+    "U.S. Senate",
+    "Majority Leader John Thune"
+   ],
+   "milestone": true,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Monday, November 9, 2026",
+     "publisher": "U.S. Senate Daily Press",
+     "url": "https://www.dailypress.senate.gov/monday-november-9-2026/",
+     "date": "2026-11-09",
+     "verified": true
+    },
+    {
+     "title": "Roll Call Vote 119th Congress - 2nd Session, Vote 257",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm",
+     "date": "2026-11-09",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-senate-motion-to-proceed",
+   "date": "2026-11-10",
+   "title": "Senate votes 62 to 21 to take up H.R. 2347",
+   "branch": "congress_senate",
+   "summary": "The Senate agreed, 62 to 21, to the motion to proceed to H.R. 2347 (roll call vote 258). Seventeen senators did not vote. The vote was not on passage.",
    "actors": [
     "U.S. Senate"
+   ],
+   "milestone": true,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Tuesday, November 10, 2026",
+     "publisher": "U.S. Senate Daily Press",
+     "url": "https://www.dailypress.senate.gov/tuesday-november-10-2026/",
+     "date": "2026-11-10",
+     "verified": true
+    },
+    {
+     "title": "Roll Call Vote 119th Congress - 2nd Session, Vote 258",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm",
+     "date": "2026-11-10",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-substitute-sa-6883-proposed",
+   "date": "2026-11-10",
+   "title": "Thune offers the sponsors' substitute as SA 6883, with amendments SA 6884 to SA 6890",
+   "branch": "congress_senate",
+   "summary": "The Senate floor record shows Majority Leader Thune proposed SA 6883, a full substitute, for Sen. Capito, and proposed SA 6884 through SA 6890. He also moved to commit H.R. 2347 to the Finance Committee with instructions to report it back with SA 6888.",
+   "actors": [
+    "Sen. John Thune",
+    "Sen. Shelley Moore Capito"
+   ],
+   "milestone": true,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Senate Floor Activity - Tuesday, November 10, 2026",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/floor_activity/11_10_2026_Senate_Floor.htm",
+     "date": "2026-11-10",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-cloture-filed-sa-6883",
+   "date": "2026-11-11",
+   "title": "Thune files cloture on SA 6883 and on H.R. 2347",
+   "branch": "congress_senate",
+   "summary": "At 12:29 p.m. Majority Leader Thune filed motions to end debate on the substitute, SA 6883, and on H.R. 2347, the Senate Press Gallery reported.",
+   "actors": [
+    "Majority Leader John Thune"
    ],
    "milestone": false,
    "topics": [
@@ -2369,10 +2454,90 @@
    ],
    "sources": [
     {
-     "title": "Monday, November 9, 2026",
-     "publisher": "Senate Press Gallery",
-     "url": "https://www.dailypress.senate.gov/monday-november-9-2026/",
+     "title": "Wednesday, November 11, 2026",
+     "publisher": "U.S. Senate Daily Press",
+     "url": "https://www.dailypress.senate.gov/wednesday-november-11-2026/",
+     "date": "2026-11-11",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-statement-of-administration-policy",
+   "date": "2026-11-09",
+   "title": "White House issues a Statement of Administration Policy on S. 5653",
+   "branch": "executive",
+   "summary": "The Office of Management and Budget's statement on S. 5653, dated November 9, says the administration strongly supports passage and that the President's advisors would recommend he sign the bill.",
+   "actors": [
+    "Office of Management and Budget",
+    "Executive Office of the President"
+   ],
+   "milestone": false,
+   "topics": [
+    "congress",
+    "white-house"
+   ],
+   "sources": [
+    {
+     "title": "S. 5653 - Bipartisan American Affordability and Jobs Act of 2026 (Statement of Administration Policy)",
+     "publisher": "whitehouse.gov",
+     "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
      "date": "2026-11-09",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-09-trump-wind-remarks",
+   "date": "2026-11-09",
+   "title": "Trump says he backs the bill and will not approve wind turbines",
+   "branch": "executive",
+   "summary": "President Trump told reporters he was 100 percent behind the permitting bill. Asked about its wind provisions, he said he would not approve wind turbines.",
+   "actors": [
+    "President Trump"
+   ],
+   "milestone": false,
+   "topics": [
+    "white-house",
+    "wind-solar"
+   ],
+   "sources": [
+    {
+     "title": "Trump Backs Energy Bill '100%' Before Balking at Wind Turbines",
+     "publisher": "Newsweek",
+     "url": "https://newsweek.com/trump-wind-turbines-bipartisan-energy-permitting-bill-12691384",
+     "date": "2026-11-09",
+     "verified": true
+    },
+    {
+     "title": "Senate Advances Permitting Overhaul But Roadblocks Loom",
+     "publisher": "Inside Climate News",
+     "url": "https://insideclimatenews.org/?p=116018",
+     "date": "2026-11-10",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-10-apcg-after-vote",
+   "date": "2026-11-10",
+   "title": "All Pueblo Council of Governors restates its opposition after the Senate vote",
+   "branch": "other",
+   "summary": "The All Pueblo Council of Governors, which represents 19 New Mexico Pueblos, said it remains opposed to the bill after the November 9 vote.",
+   "actors": [
+    "All Pueblo Council of Governors"
+   ],
+   "milestone": false,
+   "topics": [
+    "tribal",
+    "historic-preservation"
+   ],
+   "sources": [
+    {
+     "title": "All Pueblo Council of Governors condemns US Senate vote advancing permitting reform bill",
+     "publisher": "Source New Mexico",
+     "url": "https://sourcenm.com/2026/11/10/all-pueblo-council-of-governors-condemns-us-senate-vote-advancing-permitting-reform-bill/",
+     "date": "2026-11-10",
      "verified": true
     }
    ]

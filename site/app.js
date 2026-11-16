@@ -275,6 +275,13 @@
     return new Date().toLocaleDateString("sv"); // Swedish format is YYYY-MM-DD
   }
 
+  /* The scheduled vote, on the Overview and above the roll calls. A date in the past says so, rather than reading as upcoming. */
+  function nextStep() {
+    const n = D.overview.next;
+    return n ? el("p", { class: "next-step" }, el("strong", null, n.date >= localToday() ? "Next Senate vote: " : "Previously scheduled: "),
+      ext(n.source.url, S.formatDate(n.date)), ". " + n.text) : null;
+  }
+
   /* "What others say" links for sections that have outside readings. */
   function readingsLinks(nums) {
     const withTakes = nums.filter((n) => byNum[n] && byNum[n].takes);
@@ -287,6 +294,8 @@
     const o = D.overview;
     const m = D.meta;
     const pos = D.recent.positions;
+    const rv = D.recent.votes || [];
+    const re = D.recent.estimates;
     const ix = D.amend_index;
     // A first-time reader gets the name, what the bill does and the next vote, in that order, before any control.
     const head = el("div", { class: "lede overview-lede" },
@@ -297,8 +306,7 @@
         (ix ? ". Latest text: " + S.formatDate(ix.date).replace(/, \d{4}$/, "") + " substitute. " : ". "), ext(o.summary.source.url, o.summary.source.label)),
 
       // A scheduled date in the past says so, rather than reading as upcoming.
-      o.next ? el("p", { class: "next-step" }, el("strong", null, o.next.date >= localToday() ? "Next Senate vote: " : "Previously scheduled: "),
-        ext(o.next.source.url, S.formatDate(o.next.date)), ". " + o.next.text) : null);
+      nextStep());
     /* The four questions a first-time reader asks after "what is it", one tap each. Positions on the
        September bill and reactions to the November substitute are counted apart, never pooled. */
     const card = (href, title, sub) => el("a", { class: "start-card", href: href }, el("span", { class: "start-title" }, title), el("span", { class: "start-sub" }, sub));
@@ -306,7 +314,9 @@
       ix ? card("#/amendments", "What changed on " + S.formatDate(ix.date).replace(/, \d{4}$/, ""), ix.counts.edited + " sections edited, " + ix.counts["new"] + " added") : null,
       pos ? card("#/positions", "Positions on the bill", pos.supports + " support · " + pos.opposes + " oppose") : null,
       ix ? card("#/amendments/reactions", "Reactions to the substitute", ix.reactions.supports + " support · " + ix.reactions.opposes + " oppose") : null,
-      card("#/compare", "Compare with other bills", "Current law, SPEED Act, 2024 Senate bill"));
+      card("#/compare", "Compare with other bills", "Current law, SPEED Act, 2024 Senate bill"),
+      rv.length ? card("#/positions/votes", "Senate votes", rv.slice().reverse().map((v) => shortDate(v.date) + ": " + v.yeas + " to " + v.nays).join(" · ")) : null,
+      re && re.count ? card("#/positions/estimates", "Published estimates", re.count + " figures from " + re.publishers + " publishers") : null);
     const about = el("p", { class: "note overview-note" }, "This is a proposed law. " + num(m.pages) + " pages, " + m.sections + " sections, released " + S.formatDate(m.released) + ". ",
       pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release"), " · ",
       el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status"));
@@ -1563,6 +1573,103 @@
       host);
   }
 
+  /* ---------- Senate votes and published estimates ---------- */
+
+  const PARTY = { R: "Republicans", D: "Democrats", I: "Independents" };
+  const CAST = [["Yea", "Yea"], ["Nay", "Nay"], ["Not Voting", "Not voting"]];
+
+  /* One roll call: the tally and threshold, the party split, then every name under the vote cast. */
+  function voteRow(rc) {
+    const head = el("span", { class: "event-head" },
+      el("span", { class: "event-date" }, datedShort(rc.date)), " ",
+      el("span", { class: "pos-count" }, rc.yeas + " to " + rc.nays), " ",
+      el("span", { class: "event-title" }, rc.question));
+    return openRow("pos-vote", "vote-" + rc.number, head, [
+      el("p", null, rc.yeas + " yea, " + rc.nays + " nay, " + rc.not_voting + " not voting. Needed: " + rc.required_text + ". ",
+        ext(rc.url, "Senate roll call " + rc.number)),
+      el("p", { class: "facts" }, "The Senate's wording: " + rc.official_question + ". Result: " + rc.result + "."),
+      el("div", { class: "table-wrap" }, el("table", { class: "tally vote-party" },
+        el("thead", null, el("tr", null, el("th", { scope: "col" }, "Party"), CAST.map((c) => el("th", { scope: "col", class: "n" }, c[1])))),
+        el("tbody", null, rc.parties.map((p) => el("tr", null, el("th", { scope: "row" }, PARTY[p[0]]),
+          [1, 2, 3].map((i) => el("td", { class: "n" }, String(p[i])))))))),
+      CAST.map((c) => {
+        const names = rc.members.filter((m) => m[3] === c[0]);
+        return names.length ? el("div", { class: "vote-names" }, el("h4", null, c[1] + " (" + names.length + ")"),
+          el("p", null, names.map((m) => m[0] + " (" + m[1] + "-" + m[2] + ")").join(", "))) : null;
+      })]);
+  }
+
+  /* Senators the People page holds a stated position for, beside how each voted. A stated position and a
+     procedural vote are separate facts, so they sit in separate columns and nothing is inferred from either. */
+  function statedRow(v) {
+    const people = {};
+    D.people.forEach((p) => { people[p.id] = p; });
+    const cast = v.roll_calls.map((rc) => {
+      const by = {};
+      rc.members.forEach((m) => { by[m[0] + "|" + m[2]] = m[3]; });
+      return by;
+    });
+    const held = v.roll_calls[0].members.filter((m) => m[4] && people[m[4]]);
+    if (!held.length) return null;
+    const head = el("span", { class: "event-head" },
+      el("span", { class: "event-title" }, "Senators with a stated position"),
+      el("span", { class: "pos-tally" }, held.length + " senators, with each one's vote on " + plural(v.roll_calls.length, "question", "questions")));
+    return openRow("pos-stated", "votes-stated", head, [
+      el("p", { class: "facts" }, "Stated positions are the ones on the ", el("a", { href: "#/people" }, "People"), " page. Some were stated before the " +
+        (D.amend_index ? S.formatDate(D.amend_index.date) + " " : "") + "substitute."),
+      el("div", { class: "table-wrap" }, el("table", { class: "tally vote-stated" },
+        el("thead", null, el("tr", null, el("th", { scope: "col" }, "Senator"), el("th", { scope: "col" }, "Stated position"),
+          v.roll_calls.map((rc) => el("th", { scope: "col" }, shortDate(rc.date) + " vote")))),
+        el("tbody", null, held.map((m) => el("tr", null,
+          el("th", { scope: "row" }, people[m[4]].name + " (" + m[1] + "-" + m[2] + ")"),
+          el("td", null, STANCE[people[m[4]].stance] || "No position stated"),
+          cast.map((by) => el("td", null, (CAST.filter((c) => c[0] === by[m[0] + "|" + m[2]])[0] || ["", "No record"])[1])))))))]);
+  }
+
+  function votesBlock() {
+    const v = D.votes;
+    if (!v || !v.roll_calls.length) return null;
+    return el("section", { class: "block", "aria-labelledby": "h-votes" },
+      el("h2", { id: "h-votes" }, "Senate votes"),
+      nextStep(),
+      el("p", { class: "facts" }, v.note),
+      el("div", { class: "pos-list" }, v.roll_calls.slice().reverse().map(voteRow), statedRow(v)));
+  }
+
+  const PUB_STANCE = { supports: "Supports the bill", opposes: "Opposes the bill", mixed: "Mixed on the bill" };
+
+  function estimateItem(E, e) {
+    const p = E.publishers[e.publisher];
+    return el("article", { class: "estimate", id: "est-" + e.id },
+      el("h4", null, p.name),
+      el("p", { class: "facts" }, p.kind.charAt(0).toUpperCase() + p.kind.slice(1) + " · " + (PUB_STANCE[p.stance] || "No stated position on the bill") + " · " + S.formatDate(e.date)),
+      el("p", null, e.text),
+      el("p", null, el("strong", null, "Measured against: "), e.scenario),
+      el("p", null, el("strong", null, "Covers: "), e.covers),
+      el("blockquote", { class: "take-quote" }, "“" + e.quote + "”"),
+      el("p", { class: "facts" }, ext(e.url, "Source"), e.method_url ? [" · ", ext(e.method_url, "Method")] : null));
+  }
+
+  /* Published figures on what the bill would do, one folded row per thing measured. Headings name the
+     measure only; whether a figure goes up or down is in the publisher's own sentence. */
+  function estimatesBlock() {
+    const E = D.estimates;
+    if (!E || !E.estimates.length) return null;
+    return el("section", { class: "block", "aria-labelledby": "h-estimates" },
+      el("h2", { id: "h-estimates" }, "Published estimates"),
+      el("p", { class: "facts" }, E.intro),
+      (E.absent || []).map((a) => el("p", { class: "facts" }, a)),
+      el("div", { class: "pos-list" }, E.metrics.map((m) => {
+        const rows = E.estimates.filter((e) => e.metric === m.id);
+        const pubs = {};
+        rows.forEach((e) => { pubs[e.publisher] = 1; });
+        const head = el("span", { class: "event-head" },
+          el("span", { class: "event-title" }, m.title),
+          el("span", { class: "pos-tally" }, plural(rows.length, "figure", "figures") + " from " + plural(Object.keys(pubs).length, "publisher", "publishers")));
+        return openRow("pos-estimate", "estimates-" + m.id, head, rows.map((e) => estimateItem(E, e)));
+      })));
+  }
+
   const GOV_SECTORS = { congress: 1, white_house: 1, agency: 1, court: 1 };
   function sectorKey(p) {
     return !p.inside_government && GOV_SECTORS[p.sector] ? "former" : p.sector;
@@ -1599,7 +1706,9 @@
           " · as of " + S.formatDate(D.meta.as_of)),
         D.amend_index ? el("p", { class: "facts" }, "Positions on the bill as introduced " + S.formatDate(D.meta.released) + ". ",
           el("a", { href: "#/amendments/reactions" }, "Reactions to the " + S.formatDate(D.amend_index.date) + " substitute")) : null),
+      votesBlock(),
       disputesBlock(),
+      estimatesBlock(),
       el("section", { class: "block", "aria-labelledby": "h-letters" },
         el("h2", { id: "h-letters" }, "Letters and joint statements"),
         letters.length ? el("div", { class: "pos-list" }, letters.map(letterRow)) : el("p", { class: "empty" }, "No letters recorded yet.")),
@@ -1787,7 +1896,8 @@
         el("h2", { id: "h-am-floor" }, "Other amendments and votes"),
         A.floor.length ? el("ul", { class: "plain-list" }, A.floor.map((f) => el("li", null, el("strong", null, (f.number || "Unnumbered") + " · " + f.sponsor), " ", f.summary))) : el("p", null, A.floor_note),
         vote ? el("p", null, el("strong", null, S.formatDate(vote.date) + ": "), vote.question + ". ",
-          (vote.result || vote.when) + ". ", ext(vote.url, "Senate floor log")) : null)];
+          (vote.result || vote.when) + ". ", ext(vote.url, "Senate floor log")) : null,
+        (D.recent.votes || []).length ? el("p", null, el("a", { href: "#/positions/votes" }, "Senate roll calls on the bill, with each senator's vote")) : null)];
   }
 
   function hunkNode(A, h) {
@@ -2030,7 +2140,7 @@
         pplLimit = 12;
       }
       nodes = renderPeople(); }
-    else if (tab === "positions") nodes = renderPositions();
+    else if (tab === "positions") { nodes = renderPositions(); keepScroll = parts[1] === "votes" || parts[1] === "estimates"; }
     else if (tab === "media") nodes = renderMedia();
     else if (tab === "method") nodes = renderMethod();
     else nodes = renderOverview();
@@ -2045,6 +2155,11 @@
     }
     if (tab === "amendments" && parts[1] === "reactions" && location.hash !== lastPath) {
       const h = document.getElementById("h-am-react");
+      if (h) requestAnimationFrame(() => h.scrollIntoView({ block: "start" }));
+    }
+    /* #/positions/votes and #/positions/estimates, linked from the Overview, land on that section. */
+    if (tab === "positions" && (parts[1] === "votes" || parts[1] === "estimates") && location.hash !== lastPath) {
+      const h = document.getElementById("h-" + parts[1]);
       if (h) requestAnimationFrame(() => h.scrollIntoView({ block: "start" }));
     }
     if (tab === "compare" && parts[2]) {

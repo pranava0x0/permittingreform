@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-09.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-15.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -8,7 +8,11 @@
 
 ## Status
 
-- The Senate reconvened November 9 at 3 p.m. At about 5:30 p.m., 60 senators must agree to end debate on taking up H.R. 2347, the vehicle for the permitting bill. (source: U.S. Senate Press Gallery, Nov. 9, https://www.dailypress.senate.gov/monday-november-9-2026/)
+- The Senate agreed on November 9, 73 to 25, to end debate on taking up H.R. 2347, the vehicle for the permitting bill. Voting no were 23 Democrats, Republican Mike Rounds and independent Bernie Sanders. (source: Senate roll call vote 257, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm)
+- On November 10 the Senate agreed to take up the bill, 62 to 21, with 17 senators not voting. Neither vote was on passage. (source: Senate roll call vote 258, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm)
+- Majority Leader John Thune then offered the sponsors' substitute as amendment SA 6883. On November 11 he filed motions to end debate on it and on H.R. 2347. (source: U.S. Senate Press Gallery, Nov. 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
+- The White House's Statement of Administration Policy, dated November 9, says the administration strongly supports passage of S. 5653. (source: Office of Management and Budget, https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf)
+- Senate Democratic Leader Chuck Schumer voted on November 9 to end debate and said he will seek changes to parts of the bill through amendments. (source: Senate Democrats, https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate)
 - The four sponsors released their substitute on November 7. It edits 43 sections of the September 30 text, adds 13 and drops one. (source: Senate Energy and Natural Resources Committee, https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/)
 - A spokesman for House Democratic Leader Hakeem Jeffries said November 5 that he will not rubber-stamp the Senate bill without more involvement from his caucus. (source: Punchbowl News, https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/)
 - A White House official said November 6 that the Defense Department was advancing nine more wind projects held at the Pentagon. (source: Punchbowl News, https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/)
@@ -23,7 +27,7 @@
 - House Speaker Mike Johnson said on October 23 that he supports the Senate bill. (source: Joshua Siegel, Punchbowl News (X), https://x.com/SiegelScribe/status/2113682338181779731)
 - More opponents declared in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups and nine Democratic attorneys general. More than 100 public lands groups, the People's Environmental Justice Caucus and Rep. Leger Fernández joined them. (source: POLITICO (X), https://x.com/NicoPortuondo/status/2112571938484957230)
 - Support letters the same week came from 19 former economic and national security officials, the five main clean energy trade groups, and API with 137 other organizations. (source: Institute for Progress, https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf)
-- Next step, 2026-11-09: About 5:30 p.m.: 60 senators must agree to end debate on taking up the permitting bill. Passing it takes a separate vote. (source: https://www.dailypress.senate.gov/monday-november-9-2026/)
+- Next step, 2026-11-16: About 5:30 p.m.: the Senate votes on ending debate on the sponsors' substitute, amendment SA 6883. 60 senators must agree. Passing the bill takes a separate vote. (source: https://www.dailypress.senate.gov/thursday-november-12-2026/)
 
 ## Reading and retrieval
 
@@ -39,7 +43,7 @@ PDF citations use printed bill pages and lines. A matching quote proves occurren
 - [Full text and analysis](https://pranava0x0.github.io/permittingreform/llms-full.txt): all sections, comparisons, timeline, people and media with citations.
 - [Tracker JSON](https://pranava0x0.github.io/permittingreform/data/core.json): the same data the browser renders, including check coverage.
 - [Bill paragraph JSON](https://pranava0x0.github.io/permittingreform/data/bill.json): section number to [printed page, line, indent level, text] arrays.
-- [Timeline, people and media JSON](https://pranava0x0.github.io/permittingreform/data/news.json): dated events, positions and coverage, each with its sources.
+- [Timeline, people and media JSON](https://pranava0x0.github.io/permittingreform/data/news.json): dated events, positions and coverage, each with its sources; `votes` holds each Senate roll call with every senator's vote, and `estimates` holds published figures on what the bill would do, each with its scenario and source sentence.
 - [Outside readings JSON](https://pranava0x0.github.io/permittingreform/data/takes.json): what named industry groups, advocates, lawyers and analysts say sections would do, each with its verbatim quote, source link and the bill passage it concerns.
 - Fetch sections/{number}.md for one section. Each file includes its summary with a page-and-line cite after every sentence, cited key points, quotes, outside readings of what the section would do (quoted from their sources), comparison notes and full statutory text.
 - Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}; cited range: #/bill/sec/{number}/{page}-{line}-{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.
@@ -127,5 +131,7 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 - [Data center bills and Communities](https://pranava0x0.github.io/permittingreform/llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.
 - [Timeline, people and media](https://pranava0x0.github.io/permittingreform/llms-full.txt): dated records with source links and attributed positions.
 - [Disputed readings](https://pranava0x0.github.io/permittingreform/issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.
+- [Senate votes](https://pranava0x0.github.io/permittingreform/issues.html#votes): 2026-11-09, ending debate on the motion to proceed to H.R. 2347, 73 to 25; 2026-11-10, the motion to proceed to H.R. 2347, 62 to 21. Every senator's vote is listed.
+- [Published estimates](https://pranava0x0.github.io/permittingreform/issues.html#estimates): 18 figures from 8 publishers on emissions, electricity costs, generation and transmission built, LNG exports, economic output, review time, each with its scenario, the provisions it covers and the sentence it was copied from.
 - [Method and check status](https://pranava0x0.github.io/permittingreform/#/method): browser view; equivalent checks are in data/core.json.
 - [Subject comparisons](https://pranava0x0.github.io/permittingreform/#/compare): browser view; retrieve the compare object in data/core.json without JavaScript.

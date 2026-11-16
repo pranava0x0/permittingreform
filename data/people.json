@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-09",
+ "generated": "2026-11-15",
  "people": [
   {
    "id": "shelley-moore-capito",
@@ -84,7 +84,8 @@
     "2026-06-09: Pressed for National Historic Preservation Act changes in the talks, with limits on lawsuits as a priority",
     "2026-07-21: Said data center legislation was not currently a priority",
     "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act and posted the bill text on X",
-    "2026-10-08: Reported by the Daily Caller News Foundation, citing the AP, as confident the Senate will pass the bill in a November lame-duck session"
+    "2026-10-08: Reported by the Daily Caller News Foundation, citing the AP, as confident the Senate will pass the bill in a November lame-duck session",
+    "2026-11-10: Spoke for the bill on the Senate floor after the motion to proceed was adopted"
    ],
    "quote": {
     "text": "We have negotiated this thing in a way that really is good for both sides.",
@@ -127,6 +128,13 @@
      "url": "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/",
      "date": "2026-10-08",
      "verified": true
+    },
+    {
+     "title": "Congressional Record, Senate, November 10, 2026 (floor remarks, permitting reform)",
+     "publisher": "Congressional Record (Senate)",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
+     "date": "2026-11-10",
+     "verified": true
     }
    ]
   },
@@ -149,7 +157,8 @@
     "2026-08-07: Said Democrats had a strong hand in the talks and he preferred not to push the deal into the lame duck",
     "2026-09-17: Said talks were in final wrap-up, with the hardest issues resolved last",
     "2026-09-24: Said negotiators were 'over the hump on the deal-break issues'",
-    "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act"
+    "2026-09-30: Co-introduced the Bipartisan American Affordability and Jobs Act",
+    "2026-11-09: At a press conference before the vote, called the bill 'the floor, not the ceiling' of Democrats' climate and environmental aims"
    ],
    "quote": {
     "text": "The American people want lower energy bills, and they want more clean energy.",
@@ -198,6 +207,13 @@
      "publisher": "POLITICO Pro",
      "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
      "date": "2026-09-17"
+    },
+    {
+     "title": "Senate advances energy permitting bill opposed by some Democrats, tribes",
+     "publisher": "Reuters (via KFGO)",
+     "url": "https://kfgo.com/?p=1372744",
+     "date": "2026-11-09",
+     "verified": true
     }
    ]
   },
@@ -442,11 +458,12 @@
    "sector": "congress",
    "party": "D",
    "inside_government": true,
-   "stance": "neutral",
-   "position": "No public position on the Senate permitting bill was found. On September 29 he called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud', saying data center cost rules should be mandatory, not optional. He joined Whitehouse on September 24 to release a staff report on fossil fuel industry political spending.",
+   "stance": "mixed",
+   "position": "Voted on November 9 to end debate on taking up the bill and said he has outstanding concerns with parts of it that he will try to address through amendments. On September 29 he called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud', saying data center cost rules should be mandatory, not optional.",
    "key_actions": [
     "2026-09-24: Joined Sen. Whitehouse at a news conference on a 79-page staff report on oil and gas industry political spending",
-    "2026-09-29: Called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud' on the Senate floor"
+    "2026-09-29: Called the House-passed Ratepayer Protection Act a 'toothless messaging bill' and 'a fraud' on the Senate floor",
+    "2026-11-09: Issued a statement after the bill advanced, saying he would seek changes through amendments"
    ],
    "social": {
     "x": "https://x.com/SenSchumer",
@@ -472,12 +489,19 @@
      "publisher": "CNBC",
      "url": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html",
      "date": "2026-09-30"
+    },
+    {
+     "title": "Leader Schumer Statement After Permitting Reform Bill Advances In The Senate",
+     "publisher": "Senate Democratic Caucus",
+     "url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate",
+     "date": "2026-11-09",
+     "verified": true
     }
    ],
    "quote": {
-    "text": "I can sum up the shortcomings of Republicans' data center bill with one word: optional",
-    "source_url": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html",
-    "date": "2026-09-29"
+    "text": "While I have outstanding concerns with parts of the bill that I’ll fight to address through the amendment process, I’m voting today to move this debate forward.",
+    "source_url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate",
+    "date": "2026-11-09"
    }
   },
   {
@@ -884,18 +908,19 @@
    "sector": "congress",
    "party": "D",
    "inside_government": true,
-   "stance": "neutral",
-   "position": "Joined Heinrich and Whitehouse in December 2025 in opposing the House SPEED Act over its treatment of renewables and transmission. Before the Senate text was released he said he could not whip votes for any bill while the administration stalled solar and wind permits, and that a deal could come together in five days once that changed. No statement on the released bill was found.",
+   "stance": "supports",
+   "position": "Said on November 9 that the bill is not perfect and that he will vote to pass it. He voted that day to end debate on taking up the bill. In December 2025 he joined Heinrich and Whitehouse in opposing the House SPEED Act over its treatment of renewables and transmission.",
    "key_actions": [
     "2025-12-09: Issued, with Heinrich and Whitehouse, a joint statement opposing passage of the SPEED Act (Heatmap exclusive)",
     "2025-12: Posted on X criticizing American Clean Power's deal with the American Petroleum Institute on the House bill",
     "2026-05-22: Said he could not whip votes for any permitting bill while the administration stalled solar and wind permits",
-    "2026-08-03: Said a deal could come together quickly once the administration lifted its holds"
+    "2026-08-03: Said a deal could come together quickly once the administration lifted its holds",
+    "2026-11-09: Voted to end debate and issued a statement saying he will vote to pass the bill"
    ],
    "quote": {
-    "text": "Congratulations to ‘American Clean Power’ for cutting a deal with the American Petroleum Institute, but to enact a law both the house and the Senate have to agree, and Senators are finding out about this for the first time",
-    "source_url": "https://heatmap.news/politics/schatz-whitehouse-heinrich-speed-act",
-    "date": "2025-12-09"
+    "text": "While BAAJA is not perfect, it represents a rare opportunity to pass strong, bipartisan legislation that will help lower costs and make it easier for American workers to build the things our country needs. I will vote to pass it",
+    "source_url": "https://www.schatz.senate.gov/news/press-releases/schatz-statement-on-bipartisan-american-affordability-and-jobs-act",
+    "date": "2026-11-09"
    },
    "social": {
     "x": "https://x.com/brianschatz"
@@ -926,6 +951,20 @@
      "publisher": "E&E News by POLITICO",
      "url": "https://www.eenews.net/articles/permitting-deal-may-come-after-recess-negotiators-say-thats-ok/",
      "date": "2026-08-03"
+    },
+    {
+     "title": "Senators Advance Bipartisan Permitting Reform. Democrats Were Divided.",
+     "publisher": "The Washington Sun",
+     "url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+     "date": "2026-11-09",
+     "verified": true
+    },
+    {
+     "title": "Schatz Statement on Bipartisan American Affordability and Jobs Act",
+     "publisher": "Sen. Schatz",
+     "url": "https://www.schatz.senate.gov/news/press-releases/schatz-statement-on-bipartisan-american-affordability-and-jobs-act",
+     "date": "2026-11-09",
+     "verified": true
     }
    ]
   },
@@ -937,15 +976,16 @@
    "sector": "congress",
    "party": "D",
    "inside_government": true,
-   "stance": "neutral",
-   "position": "Predicted in December 2025 that a Senate agreement could come in the first quarter of 2026 and signaled he was willing to lose some environmental-group support. No statement on the Senate bill was found.",
+   "stance": "supports",
+   "position": "Voted on November 9 to end debate on taking up the bill. His statement says the bill is not perfect and that work with Tribal Nations and environmental groups to strengthen it should continue. It does not say how he will vote on passage. In December 2025 he predicted a Senate agreement in the first quarter of 2026.",
    "key_actions": [
-    "2025-12: Told a Washington event a Senate permitting deal could come in the first quarter of 2026, even if some environmental groups were unhappy"
+    "2025-12: Told a Washington event a Senate permitting deal could come in the first quarter of 2026, even if some environmental groups were unhappy",
+    "2026-11-09: Issued a statement on his vote to advance the bill"
    ],
    "quote": {
-    "text": "I think we’ll probably get it done in the first quarter, maybe even sooner than that, just because there is this unique alignment of self interest",
-    "source_url": "https://www.latitudemedia.com/news/house-passes-speed-act-a-first-step-toward-broader-permitting-reform/",
-    "date": "2025-12-18"
+    "text": "This bill isn’t perfect. No bill is. We should continue working with Tribal Nations and environmental groups to strengthen it as it moves through the legislative process.",
+    "source_url": "https://www.hickenlooper.senate.gov/press_releases/hickenlooper-votes-to-advance-long-overdue-permitting-reform-bill/",
+    "date": "2026-11-09"
    },
    "social": {
     "x": "https://x.com/senatorhick",
@@ -958,6 +998,13 @@
      "url": "https://www.latitudemedia.com/news/house-passes-speed-act-a-first-step-toward-broader-permitting-reform/",
      "date": "2025-12-18",
      "verified": true
+    },
+    {
+     "title": "Hickenlooper Votes to Advance Long-Overdue Permitting Reform Bill",
+     "publisher": "Sen. Hickenlooper",
+     "url": "https://www.hickenlooper.senate.gov/press_releases/hickenlooper-votes-to-advance-long-overdue-permitting-reform-bill/",
+     "date": "2026-11-09",
+     "verified": true
     }
    ]
   },
@@ -969,16 +1016,17 @@
    "sector": "congress",
    "party": "R",
    "inside_government": true,
-   "stance": "neutral",
-   "position": "Pipeline-industry executive appointed to Markwayne Mullin's seat after Mullin became Homeland Security Secretary; Oklahoma's governor said his perspective would help move permitting reform. In September 2026 he said Democratic leadership was blocking permitting reform to deny Republicans a win before the midterms.",
+   "stance": "supports",
+   "position": "Called the Senate's 73 to 25 vote of November 9 a major step and urged the Senate to finish the bill. Pipeline-industry executive appointed to Markwayne Mullin's seat after Mullin became Homeland Security Secretary. In September 2026 he said Democratic leadership was blocking permitting reform to deny Republicans a win before the midterms.",
    "key_actions": [
     "2026-03-24: Appointed by Gov. Kevin Stitt to the Senate seat vacated by Markwayne Mullin; under Oklahoma law he pledged not to run for a full term",
-    "2026-09-24: Issued a statement blaming Democratic leadership for the stalled permitting talks"
+    "2026-09-24: Issued a statement blaming Democratic leadership for the stalled permitting talks",
+    "2026-11-10: Issued a statement on the Senate vote to advance the bill"
    ],
    "quote": {
-    "text": "Democratic leadership is blocking permitting reform simply to prevent Republicans from getting a win before the midterms",
-    "source_url": "https://www.deseret.com/politics/2026/09/24/permitting-reform-talks-fall-apart-in-senate/",
-    "date": "2026-09-24"
+    "text": "Tonight’s vote marks a major step forward. I applaud my colleagues on both sides of the aisle for coming together to advance meaningful permitting reforms",
+    "source_url": "https://www.armstrong.senate.gov/senator-armstrong-praises-senate-vote-to-advance-landmark-bipartisan-permitting-reform-legislation/",
+    "date": "2026-11-10"
    },
    "sources": [
     {
@@ -993,6 +1041,13 @@
      "publisher": "Deseret News",
      "url": "https://www.deseret.com/politics/2026/09/24/permitting-reform-talks-fall-apart-in-senate/",
      "date": "2026-09-24",
+     "verified": true
+    },
+    {
+     "title": "Senator Armstrong Praises Senate Vote to Advance Landmark Bipartisan Permitting Reform Legislation",
+     "publisher": "Office of Sen. Alan Armstrong",
+     "url": "https://www.armstrong.senate.gov/senator-armstrong-praises-senate-vote-to-advance-landmark-bipartisan-permitting-reform-legislation/",
+     "date": "2026-11-10",
      "verified": true
     }
    ]
@@ -1893,19 +1948,28 @@
    "sector": "congress",
    "party": "D",
    "inside_government": true,
-   "stance": "neutral",
-   "position": "Lead sponsor of the Power for the People Act; wants FERC-run data center load queues and data center rate classes.",
+   "stance": "opposes",
+   "position": "Voted on November 9 against ending debate on taking up the bill. He said he cannot support it in its current form because of its effect on Maryland and that he is putting forward changes. Lead sponsor of the Power for the People Act; wants FERC-run data center load queues and data center rate classes.",
    "key_actions": [
-    "2026-01-15: Introduced S. 3682"
+    "2026-01-15: Introduced S. 3682",
+    "2026-11-09: Issued a statement opposing moving forward with the bill as written"
    ],
    "quote": {
-    "text": "the huge corporations building and running data centers should cover the costs of the energy they need – not push those costs onto the backs of consumers",
-    "source_url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-leads-new-bill-to-ensure-americans-arent-footing-the-bill-for-big-data-centers"
+    "text": "I’m putting forward changes to the bill to address these concerns; however, while I support the goal behind tackling our burdensome and outdated permitting system, given this bill’s impact on Maryland, I cannot support it in its current form.",
+    "source_url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-statement-on-current-opposition-to-moving-forward-with-permitting-reform-legislation",
+    "date": "2026-11-09"
    },
    "sources": [
     {
      "title": "Van Hollen release",
      "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-leads-new-bill-to-ensure-americans-arent-footing-the-bill-for-big-data-centers"
+    },
+    {
+     "title": "Van Hollen Statement on Current Opposition to Moving Forward with Permitting Reform Legislation",
+     "publisher": "Office of Sen. Chris Van Hollen",
+     "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-statement-on-current-opposition-to-moving-forward-with-permitting-reform-legislation",
+     "date": "2026-11-09",
+     "verified": true
     }
    ]
   },
@@ -2046,15 +2110,17 @@
    "sector": "congress",
    "party": "D",
    "inside_government": true,
-   "stance": "neutral",
-   "position": "Led the Senate Democrats' push for permit certainty: a June letter to appropriators asking for riders that bar technology-specific permitting barriers, and the June 16 Senate FREEDOM Act with Sen. Tom Cotton. Her position on the final bill was not found in the sources read.",
+   "stance": "mixed",
+   "position": "Voted on November 9 to end debate on taking up the bill and did not vote on November 10. The Washington Sun, citing Punchbowl News, reported she said she would not support the bill unless provisions that affect tribal rights are removed. Earlier she led the Senate Democrats' push for permit certainty: a June letter to appropriators asking for riders that bar technology-specific permitting barriers, and the June 16 Senate FREEDOM Act with Sen. Tom Cotton.",
    "key_actions": [
     "2026-06-08: Led an ENR Democrats' letter urging fiscal 2027 spending-bill language on fair permitting of solar and wind",
-    "2026-06-16: Released the Senate FREEDOM Act with Sen. Tom Cotton (R-Ark.)"
+    "2026-06-16: Released the Senate FREEDOM Act with Sen. Tom Cotton (R-Ark.)",
+    "2026-11-09: Voted yes on cloture and said tribal provisions must change, per The Washington Sun"
    ],
    "quote": {
-    "text": "directs the agencies under your jurisdiction to permit energy projects fairly and without arbitrary technology-specific barriers",
-    "source_url": "https://www.eenews.net/articles/senate-dems-push-spending-rider-on-wind-solar-permits/"
+    "text": "to say she would not support the bill unless provisions that affect tribal rights are removed",
+    "source_url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+    "date": "2026-11-09"
    },
    "sources": [
     {
@@ -2064,6 +2130,13 @@
     {
      "title": "Freedom (It Won't Slow You Down)",
      "url": "https://heatmap.news/daily/senate-bipartisan-permitting-reform"
+    },
+    {
+     "title": "Senators Advance Bipartisan Permitting Reform. Democrats Were Divided.",
+     "publisher": "The Washington Sun",
+     "url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+     "date": "2026-11-09",
+     "verified": true
     }
    ]
   },
@@ -2437,20 +2510,29 @@
    "affiliation": "U.S. Senate",
    "sector": "congress",
    "inside_government": true,
-   "stance": "neutral",
-   "position": "Said he was still reviewing the text and would look closely at the details. He warned against locking in more fossil fuels and locking out communities, and neither endorsed nor opposed the bill.",
+   "stance": "opposes",
+   "position": "Said on November 9 he would vote against ending debate on taking up the bill, citing its timing, transparency and threats to clean air, water and Tribes. On October 1 he had said he was still reviewing the text.",
    "key_actions": [
-    "2026-10-01: Issued a statement withholding a position pending review of the text"
+    "2026-10-01: Issued a statement withholding a position pending review of the text",
+    "2026-11-09: Issued a statement saying he would vote against cloture"
    ],
    "party": "D",
    "quote": {
-    "text": "I’m still reviewing text of this proposal, and I will be looking closely at the details.",
-    "source_url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal"
+    "text": "Because of these issues on timing, transparency, and threats to our clean air, water, and Tribes, I will vote against the motion to invoke cloture on this legislation.",
+    "source_url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-permitting-reform-deal",
+    "date": "2026-11-09"
    },
    "sources": [
     {
      "title": "Senator Markey Statement on Bipartisan Permitting Reform Proposal",
      "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-bipartisan-permitting-reform-proposal"
+    },
+    {
+     "title": "Senator Markey Statement on Permitting Reform Deal",
+     "publisher": "Office of Sen. Edward J. Markey",
+     "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-permitting-reform-deal",
+     "date": "2026-11-09",
+     "verified": true
     }
    ]
   },
@@ -2722,6 +2804,297 @@
      "verified": true
     }
    ]
+  },
+  {
+   "id": "jeff-merkley",
+   "name": "Jeff Merkley",
+   "role": "U.S. Senator (D-Ore.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "stance": "opposes",
+   "position": "Said on November 9 that transmission permitting reform is essential, that the bill speeds the extraction and burning of fossil fuels, and that he would vote against it.",
+   "key_actions": [
+    "2026-11-09: Issued a statement saying he would vote against the bill"
+   ],
+   "quote": {
+    "text": "I will vote against the bill before us today, but I look forward to working with my colleagues to get permitting reform right.",
+    "source_url": "https://www.merkley.senate.gov/sen-merkley-statement-on-senate-permitting-legislation/",
+    "date": "2026-11-09"
+   },
+   "sources": [
+    {
+     "title": "Sen. Merkley Statement on Senate Permitting Legislation",
+     "publisher": "Office of Sen. Jeff Merkley",
+     "url": "https://www.merkley.senate.gov/sen-merkley-statement-on-senate-permitting-legislation/",
+     "date": "2026-11-09",
+     "verified": true
+    }
+   ],
+   "party": "D",
+   "inside_government": true
+  },
+  {
+   "id": "tim-kaine",
+   "name": "Tim Kaine",
+   "role": "U.S. Senator (D-Va.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "stance": "mixed",
+   "position": "Voted on November 9 against ending debate on taking up the bill, citing its changes to the National Historic Preservation Act. He said he will offer amendments and could support the bill if they succeed.",
+   "key_actions": [
+    "2026-11-09: Issued a statement on his vote against the procedural motion"
+   ],
+   "quote": {
+    "text": "For this reason, I am voting against today’s procedural motion. I will seek to amend the bill to address my concerns and, if successful, could support it with appropriate changes.",
+    "source_url": "https://www.kaine.senate.gov/press-releases/kaine-statement-on-permitting-reform-legislation",
+    "date": "2026-11-09"
+   },
+   "sources": [
+    {
+     "title": "Kaine Statement on Permitting Reform Legislation",
+     "publisher": "Office of Sen. Tim Kaine",
+     "url": "https://www.kaine.senate.gov/press-releases/kaine-statement-on-permitting-reform-legislation",
+     "date": "2026-11-09",
+     "verified": true
+    }
+   ],
+   "party": "D",
+   "inside_government": true
+  },
+  {
+   "id": "michael-bennet",
+   "name": "Michael Bennet",
+   "role": "U.S. Senator (D-Colo.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "stance": "opposes",
+   "position": "Voted against advancing the bill. He said on November 10 that it does not adequately protect Tribal cultural resources and that its changes should be vetted more thoroughly.",
+   "key_actions": [
+    "2026-11-10: Issued a statement on his vote"
+   ],
+   "quote": {
+    "text": "These changes must be vetted more thoroughly before passing into law. Given these concerns, I cannot support advancing this bill at this time.",
+    "source_url": "https://www.bennet.senate.gov/2026/11/10/bennet-statement-on-permitting-reform-vote/",
+    "date": "2026-11-10"
+   },
+   "sources": [
+    {
+     "title": "Bennet Statement on Permitting Reform Vote",
+     "publisher": "Office of Sen. Michael Bennet",
+     "url": "https://www.bennet.senate.gov/2026/11/10/bennet-statement-on-permitting-reform-vote/",
+     "date": "2026-11-10",
+     "verified": true
+    }
+   ],
+   "party": "D",
+   "inside_government": true
+  },
+  {
+   "id": "mike-rounds",
+   "name": "Mike Rounds",
+   "role": "U.S. Senator (R-S.D.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "stance": "opposes",
+   "position": "The only Republican to vote against ending debate on November 9. In a Facebook post reported by SDPB, he said South Dakota landowners should be able to negotiate at the state and local level before the federal government steps in.",
+   "key_actions": [
+    "2026-11-09: Posted his reasons for voting no, as reported by SDPB"
+   ],
+   "quote": {
+    "text": "South Dakota landowners deserve to negotiate with stakeholders at the state and local level before federal intervention is required,",
+    "source_url": "https://www.sdpb.org/politics/2026-11-10/rounds-is-lone-republican-vote-against-permitting-reform-noting-state-level-concerns",
+    "date": "2026-11-10"
+   },
+   "sources": [
+    {
+     "title": "Rounds is lone Republican vote against permitting reform, noting state-level concerns",
+     "publisher": "SDPB",
+     "url": "https://www.sdpb.org/politics/2026-11-10/rounds-is-lone-republican-vote-against-permitting-reform-noting-state-level-concerns",
+     "date": "2026-11-10",
+     "verified": true
+    }
+   ],
+   "party": "R",
+   "inside_government": true
+  },
+  {
+   "id": "tammy-duckworth",
+   "name": "Tammy Duckworth",
+   "role": "U.S. Senator (D-Ill.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "stance": "opposes",
+   "position": "Said on November 9 she would vote against advancing the bill. Her statement says she appreciates some changes in the latest version and that the bill is still not good enough for Illinois or for communities that would not have a say.",
+   "key_actions": [
+    "2026-11-09: Issued a statement saying she would vote against advancing the bill"
+   ],
+   "quote": {
+    "text": "While I appreciate some of the changes in the latest version put forward by committee leadership, the bill still isn’t good enough. Not for Illinois, not for the communities who won’t have a say",
+    "source_url": "https://www.duckworth.senate.gov/news/press-releases/duckworth-to-vote-against-permitting-reform-bill",
+    "date": "2026-11-09"
+   },
+   "sources": [
+    {
+     "title": "Duckworth to Vote Against Permitting Reform Bill",
+     "publisher": "Sen. Duckworth",
+     "url": "https://www.duckworth.senate.gov/news/press-releases/duckworth-to-vote-against-permitting-reform-bill",
+     "date": "2026-11-09",
+     "verified": true
+    },
+    {
+     "title": "Senators Advance Bipartisan Permitting Reform. Democrats Were Divided.",
+     "publisher": "The Washington Sun",
+     "url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+     "date": "2026-11-09",
+     "verified": true
+    }
+   ],
+   "party": "D",
+   "inside_government": true
+  },
+  {
+   "id": "ben-ray-lujan",
+   "name": "Ben Ray Luján",
+   "role": "U.S. Senator (D-N.M.)",
+   "affiliation": "U.S. Senate",
+   "sector": "congress",
+   "stance": "opposes",
+   "position": "Voted against ending debate on November 9. His statement says that after a month of listening to concerns he cannot support advancing the bill in its current form. It does not say how he would vote on passage.",
+   "key_actions": [
+    "2026-11-09: Issued a statement on his vote against advancing the bill"
+   ],
+   "quote": {
+    "text": "After spending the last month listening to these concerns, I cannot support advancing the bill in its current form.",
+    "source_url": "https://www.lujan.senate.gov/newsroom/press-releases/lujan-statement-on-vote-against-advancing-permitting-reform-legislation/",
+    "date": "2026-11-09"
+   },
+   "sources": [
+    {
+     "title": "Luján Statement on Vote Against Advancing Permitting Reform Legislation",
+     "publisher": "Sen. Luján",
+     "url": "https://www.lujan.senate.gov/newsroom/press-releases/lujan-statement-on-vote-against-advancing-permitting-reform-legislation/",
+     "date": "2026-11-09",
+     "verified": true
+    },
+    {
+     "title": "Senators Advance Bipartisan Permitting Reform. Democrats Were Divided.",
+     "publisher": "The Washington Sun",
+     "url": "https://www.washingtonsun.com/energy-environment/senate-advanced-bipartisan-permitting-reform?redirected=notus_org",
+     "date": "2026-11-09",
+     "verified": true
+    }
+   ],
+   "party": "D",
+   "inside_government": true
+  },
+  {
+   "id": "fred-krupp",
+   "name": "Fred Krupp",
+   "role": "President",
+   "affiliation": "Environmental Defense Fund",
+   "sector": "environmental_group",
+   "stance": "mixed",
+   "position": "Said on November 9 that the latest version has reforms to get clean energy on the grid and also unwinds protections for air, water and communities. He said EDF wants improvements before final passage.",
+   "key_actions": [
+    "2026-11-09: Issued a statement before the Senate's first vote"
+   ],
+   "quote": {
+    "text": "The latest version has important reforms to get clean energy on the grid and upgrade our aging infrastructure, but it also unwinds protections for our air, water and communities,",
+    "source_url": "https://www.edf.org/media/statement-senate-hold-initial-vote-permitting-bill",
+    "date": "2026-11-09"
+   },
+   "sources": [
+    {
+     "title": "Statement: Senate to hold initial vote on permitting bill",
+     "publisher": "Environmental Defense Fund",
+     "url": "https://www.edf.org/media/statement-senate-hold-initial-vote-permitting-bill",
+     "date": "2026-11-09",
+     "verified": true
+    }
+   ],
+   "inside_government": false
+  },
+  {
+   "id": "joey-sanchez",
+   "name": "Joey Sanchez",
+   "role": "Chairman",
+   "affiliation": "All Pueblo Council of Governors",
+   "sector": "state_local",
+   "stance": "opposes",
+   "position": "Said after the November 9 vote that nobody consulted the Pueblos before the bill was written and that the changes made since do not fix that.",
+   "key_actions": [
+    "2026-11-10: Issued the council's statement on the Senate vote, reported by Source New Mexico"
+   ],
+   "quote": {
+    "text": "Nobody consulted the Pueblos before this bill was written, and the changes made since don’t fix that.",
+    "source_url": "https://sourcenm.com/2026/11/10/all-pueblo-council-of-governors-condemns-us-senate-vote-advancing-permitting-reform-bill/",
+    "date": "2026-11-10"
+   },
+   "sources": [
+    {
+     "title": "All Pueblo Council of Governors condemns US Senate vote advancing permitting reform bill",
+     "publisher": "Source NM",
+     "url": "https://sourcenm.com/2026/11/10/all-pueblo-council-of-governors-condemns-us-senate-vote-advancing-permitting-reform-bill/",
+     "date": "2026-11-10",
+     "verified": true
+    }
+   ],
+   "inside_government": false
+  },
+  {
+   "id": "nikki-budzinski",
+   "name": "Nikki Budzinski",
+   "role": "U.S. Representative (D-Ill.); vice chair for policy, New Democrat Coalition",
+   "affiliation": "U.S. House",
+   "sector": "congress",
+   "stance": "supports",
+   "position": "At a Heatmap event on November 10 she said she disagreed with waiting until the next Congress to pass a permitting bill and called this a unique opportunity.",
+   "key_actions": [
+    "2026-11-10: Spoke at a Heatmap event on what the House would do with the bill"
+   ],
+   "quote": {
+    "text": "\"I'm done after the last two years of doing messaging bills on the floor. I think this is a very unique opportunity.\"",
+    "source_url": "https://heatmap.news/politics/house-baaja",
+    "date": "2026-11-10"
+   },
+   "sources": [
+    {
+     "title": "House Moderates Say Now Is the Time for Permitting Reform",
+     "publisher": "Heatmap",
+     "url": "https://heatmap.news/politics/house-baaja",
+     "date": "2026-11-10",
+     "verified": true
+    }
+   ],
+   "party": "D",
+   "inside_government": true
+  },
+  {
+   "id": "ryan-fitzpatrick",
+   "name": "Ryan Fitzpatrick",
+   "role": "Vice President for Climate and Energy",
+   "affiliation": "Third Way",
+   "sector": "think_tank",
+   "stance": "supports",
+   "position": "In a November 10 statement after the first Senate vote, he said Third Way supports passing permitting reform this year.",
+   "key_actions": [
+    "2026-11-10: Issued Third Way's statement on the cloture vote"
+   ],
+   "quote": {
+    "text": "The overwhelming support for the Bipartisan American Affordability and Jobs Act reflects the Senate's commitment to addressing the nation's energy affordability challenges.",
+    "source_url": "https://www.thirdway.org/press/statement-on-the-successful-cloture-vote-for-the-bipartisan-american-affordability-and-jobs-act",
+    "date": "2026-11-10"
+   },
+   "sources": [
+    {
+     "title": "Statement on the Successful Cloture Vote for the Bipartisan American Affordability and Jobs Act",
+     "publisher": "Third Way",
+     "url": "https://www.thirdway.org/press/statement-on-the-successful-cloture-vote-for-the-bipartisan-american-affordability-and-jobs-act",
+     "date": "2026-11-10",
+     "verified": true
+    }
+   ],
+   "inside_government": false
   }
  ]
 }

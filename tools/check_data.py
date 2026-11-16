@@ -108,7 +108,53 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         out.append(("amendments floor note", amend["floor_note"]))
         out += [(f"amendments highlight {h['id']}", h["label"]) for h in amend["highlights"]]
         out += [(f"amendments {r['id']} change", p["t"]) for r in amend["rows"] for p in r.get("points", [])]
+    votes = core.get("votes") or {"roll_calls": []}
+    if votes.get("note"):
+        out.append(("votes note", votes["note"]))
+    out += [(f"votes {rc['number']} question", rc["question"]) for rc in votes["roll_calls"]]
+    est = core.get("estimates") or {"estimates": [], "metrics": []}
+    if est.get("intro"):
+        out.append(("estimates intro", est["intro"]))
+    out += [("estimates absent", a) for a in est.get("absent", [])]
+    out += [(f"estimates metric {m['id']}", m["title"]) for m in est["metrics"]]
+    for e in est["estimates"]:
+        out += [(f"estimates {e['id']} {k}", e[k]) for k in ("figure", "text", "scenario", "covers")]
     return out
+
+
+def check_votes_estimates(core: dict) -> list[str]:
+    """Roll calls and published estimates: dated on or before the data date, linked
+    over https, and every publisher in the site's own sector and stance vocabularies."""
+    errs = []
+    as_of = core["meta"]["as_of"]
+    for rc in (core.get("votes") or {"roll_calls": []})["roll_calls"]:
+        w = f"votes {rc.get('number')}"
+        if not DATE_RE.match(rc.get("date", "")) or rc["date"] > as_of:
+            errs.append(f"{w}: date {rc.get('date')!r} is malformed or after the data date {as_of}")
+        for k in ("url", "xml_url"):
+            if not str(rc.get(k, "")).startswith("https://www.senate.gov/"):
+                errs.append(f"{w}: {k} must be the Senate's own record")
+        for k in ("question", "official_question", "result", "quote"):
+            if not str(rc.get(k, "")).strip():
+                errs.append(f"{w}: missing {k}")
+        if f"({rc.get('yeas')}-{rc.get('nays')}" not in rc.get("quote", ""):
+            errs.append(f"{w}: the quoted result does not carry the tally {rc.get('yeas')}-{rc.get('nays')}")
+    est = core.get("estimates") or {"estimates": [], "publishers": {}}
+    for key, p in est["publishers"].items():
+        if not p.get("name") or p.get("sector") not in vocab.SECTORS:
+            errs.append(f"estimates publisher {key}: needs a name and a known sector, not {p.get('sector')!r}")
+        if p.get("stance") is not None and p["stance"] not in vocab.STANCES - {"reporting"}:
+            errs.append(f"estimates publisher {key}: stance {p['stance']!r} is not a position on the bill")
+    for e in est["estimates"]:
+        w = f"estimates {e.get('id')}"
+        if not DATE_RE.match(e.get("date", "")) or e["date"] > as_of:
+            errs.append(f"{w}: date {e.get('date')!r} is malformed or after the data date {as_of}")
+        for k in ("url", "method_url"):
+            if k in e and not str(e[k]).startswith("https://"):
+                errs.append(f"{w}: {k} must be https")
+        if len(e.get("quote", "").split()) < 8:
+            errs.append(f"{w}: the quote is too short to carry the figure's sentence")
+    return errs
 
 
 def check_letter(where: str, letter) -> list[str]:
@@ -175,7 +221,10 @@ def check(core: dict) -> tuple[list[str], dict]:
     errs: list[str] = []
     counts = {"sections": len(core["sections"]), "compare rows": 0, "timeline": len(core["timeline"]),
               "people": len(core["people"]), "media": len(core["media"]), "letters": 0,
-              "position issues": len((core.get("positions") or {}).get("issues", [])), "prose strings": 0}
+              "position issues": len((core.get("positions") or {}).get("issues", [])),
+              "roll calls": len((core.get("votes") or {"roll_calls": []})["roll_calls"]),
+              "estimates": len((core.get("estimates") or {"estimates": []})["estimates"]), "prose strings": 0}
+    errs += check_votes_estimates(core)
 
     for s in core["sections"]:
         if not s["plain"]:

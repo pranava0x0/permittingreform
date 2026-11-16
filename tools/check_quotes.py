@@ -151,6 +151,12 @@ def web_quotes(core: dict) -> list[dict]:
                 rows.append({"where": f"amend.{where}.{it.get('id', 'main')}.{i}", "text": src["quote"], "speaker": it.get("who", ""), "url": src["url"]})
     if amend.get("vote"):
         rows.append({"where": "amend.vote", "text": amend["vote"]["quote"], "speaker": "", "url": amend["vote"]["url"]})
+    # A roll call's result line is checked against the Senate's XML record: the HTML page builds the same line with scripts.
+    for rc in (core.get("votes") or {"roll_calls": []})["roll_calls"]:
+        rows.append({"where": f"votes.{rc['number']}", "text": rc["quote"], "speaker": "", "url": rc["xml_url"]})
+    est = core.get("estimates") or {"estimates": [], "publishers": {}}
+    for e in est["estimates"]:
+        rows.append({"where": f"estimates.{e['id']}", "text": e["quote"], "speaker": est["publishers"][e["publisher"]]["name"], "url": e["url"]})
     bills = core["compare"].get("bills") or {"rows": []}
     for r in bills["rows"]:
         for k, cell in r.items():
