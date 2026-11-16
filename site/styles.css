@@ -369,8 +369,7 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
   display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 .brief > .media-item:not(.open) > .quote, .brief > .media-item:not(.open) > .visuals { display: none; }
-.brief > .person:not(.open) > .lead { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.brief > .person:not(.open) > .actions, .brief > .person:not(.open) > .quote,
+.brief > .person:not(.open) > .quote blockquote { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .brief > .person:not(.open) > .social, .brief > .person:not(.open) > .sources { display: none; }
 .person-stance .more-toggle { display: inline; margin-left: 8px; }
 /* Communities and Data centers: one card per change (2026-11-16). */
@@ -486,7 +485,6 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 .role { font-size: var(--fs-small); color: var(--text-muted); margin: 2px 0 4px; }
 .party { font-family: var(--font-body); font-weight: 400; font-size: var(--fs-small); color: var(--text-muted); }
 .person-stance { margin-bottom: 4px; }
-.actions { list-style: disc; padding-left: 18px; font-size: var(--fs-small); color: var(--text-muted); margin-bottom: 8px; }
 .social { font-size: var(--fs-small); }
 
 /* ---------- media ---------- */

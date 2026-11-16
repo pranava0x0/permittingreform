@@ -577,7 +577,7 @@
    }
   },
   "john-thune": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it. 2026-11-16: the stance must rest on a quote made after the bill text was public (September 30, 2026). His only quote is from September 24, before the text, and is about Democrats, not the bill; no later statement of his position on the bill was found, so the stance is 'no clear public position'.",
    "set": {
     "position": "Says Republicans and the White House 'closed the deal' on permitting legislation that 'incorporated essentially all' of Democrats' asks, and accuses Democrats of wanting to deny Republicans a legislative win before the midterms.",
     "key_actions": [
@@ -606,7 +606,8 @@
       "url": "https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842",
       "date": "2026-09-22"
      }
-    ]
+    ],
+    "stance": "neutral"
    }
   },
   "jared-golden": {
@@ -677,7 +678,7 @@
    }
   },
   "donald-trump": {
-   "reason": "The White House issued a statement of support on September 30, 2026 (AP); the stance is the position on the Senate bill. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "The White House issued a statement of support on September 30, 2026 (AP); the stance is the position on the Senate bill. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. 2026-11-16: the stance must rest on a quote made after the bill text was public (September 30, 2026). The January 2025 executive-order quote was replaced with his November 9 post as quoted by Bloomberg (media item 2026-11-09-bloomberg-via-energyconnectscom-trump-says-he-backs).",
    "set": {
     "stance": "supports",
     "position": "Signed the executive orders that began the NEPA rollback and declared an energy emergency, while his administration froze wind permitting and halted offshore wind projects. The White House said on September 30, 2026 that the Senate bill would “deliver transformative policies to lower Americans’ energy and housing costs”. Its offer to ease the hold on wind and solar projects is still being negotiated with Senate Democrats.",
@@ -713,7 +714,12 @@
      "2025-07-04: Signed the One Big Beautiful Bill Act, which added NEPA's paid expedited-review option",
      "2025-07-23: Signed EO 14318 on federal permitting of data center infrastructure",
      "2026-09-21: Told advisers he would direct the Defense Department to start clearing delayed onshore wind projects to close a permitting deal (POLITICO Pro, two unnamed sources)"
-    ]
+    ],
+    "quote": {
+     "text": "This Landmark Permitting Reform Legislation will codify our America First Energy Agenda, and ensure that we can build Pipelines, Mines, and Power Plants faster than ever before",
+     "source_url": "https://www.energyconnects.com/news/renewables/2026/november/trump-says-he-backs-energy-permitting-bill-on-eve-of-senate-vote/",
+     "date": "2026-11-09"
+    }
    }
   },
   "doug-burgum": {
@@ -772,7 +778,7 @@
    }
   },
   "jared-huffman": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 12 Heatmap interview. Name the measure and decision; distinguish taking up a bill from passing it.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 12 Heatmap interview. Name the measure and decision; distinguish taking up a bill from passing it. 2026-11-16: the stance must rest on a quote made after the bill text was public (September 30, 2026). The December 2025 SPEED Act quote was replaced with his October 1 POLITICO quote on the Senate deal.",
    "set": {
     "stance": "opposes",
     "position": "Opposed the SPEED Act in committee and on the floor, calling the administration's posture on renewable permitting a 'war on renewable energy'. On September 30 he said most House Democrats will not support the Senate bill as written and urged them to resume talks after the midterms. On October 12 he told Heatmap that he expected no congressional action on the permitting bill before the election.",
@@ -816,7 +822,12 @@
       "date": "2026-10-12",
       "verified": true
      }
-    ]
+    ],
+    "quote": {
+     "text": "Folding our hand now or in the lame duck makes no sense when we can keep working on this and, in a few more months, have a much better deal that works for everyone.",
+     "source_url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247",
+     "date": "2026-10-01"
+    }
    }
   },
   "scott-peters": {
@@ -1085,7 +1096,7 @@
    "drop": true
   },
   "brett-guthrie": {
-   "reason": "Stance moved from neutral to mixed on 2026-10-07: at the Punchbowl Tech Summit he said he would love to see changes to the Senate bill's grid section, as posted by Punchbowl's Joshua Siegel. He has not endorsed or opposed the bill.",
+   "reason": "Stance moved from neutral to mixed on 2026-10-07: at the Punchbowl Tech Summit he said he would love to see changes to the Senate bill's grid section, as posted by Punchbowl's Joshua Siegel. He has not endorsed or opposed the bill. 2026-11-16: the stance must rest on a quote made after the bill text was public (September 30, 2026). The June Ratepayer Protection Act quote was replaced with his October 7 words on the Senate bill's grid section, as posted by Joshua Siegel.",
    "set": {
     "stance": "mixed",
     "position": "Backed the Ratepayer Protection Act as a way to build power for AI responsibly. POLITICO reported on Oct. 1 that he had not endorsed the Senate permitting bill. On Oct. 7 he said he would love to see changes to its grid section.",
@@ -1107,7 +1118,12 @@
       "title": "X post by Joshua Siegel quoting Brett Guthrie",
       "url": "https://x.com/SiegelScribe/status/2107892025182114178"
      }
-    ]
+    ],
+    "quote": {
+     "text": "we absolutely would love to see changes to the",
+     "source_url": "https://x.com/SiegelScribe/status/2107892025182114178",
+     "date": "2026-10-07"
+    }
    }
   },
   "melanie-stansbury": {

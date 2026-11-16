@@ -1240,10 +1240,6 @@
   let pplLimit = 12;
 
   /* "2026-01-28: Chaired the hearing" -> "January 28, 2026: Chaired the hearing" */
-  function datedAction(text) {
-    const m = /^(\d{4}-\d{2}-\d{2}):\s*(.*)$/.exec(text);
-    return m ? S.formatDate(m[1]) + ": " + m[2] : text;
-  }
 
   function renderPeople() {
     const all = D.people;
@@ -1274,9 +1270,7 @@
       el("div", { class: "people" + (brief ? " brief" : "") }, groups[k].map((p) => el("article", { class: "person", id: "person-" + p.id },
         el("h3", null, p.name, p.party ? el("span", { class: "party" }, " (" + p.party + ")") : null),
         el("p", { class: "role" }, [p.role, p.affiliation].filter(Boolean).join(", ")),
-        el("p", { class: "lead" }, p.position),
-        el("p", { class: "person-stance" }, stanceTag(p.stance), moreButton()),
-        p.key_actions && p.key_actions.length ? el("ul", { class: "actions" }, p.key_actions.map((a) => el("li", null, datedAction(a)))) : null,
+        el("p", { class: "person-stance" }, p.stance === "neutral" ? el("span", { class: "muted" }, "No clear public position found") : stanceTag(p.stance), moreButton()),
         p.quote && p.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, p.quote.text),
           el("figcaption", null, safeUrl(p.quote.source_url) ? ext(p.quote.source_url, p.quote.date ? S.formatDate(p.quote.date) : "Source") : null)) : null,

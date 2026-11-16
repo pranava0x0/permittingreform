@@ -129,7 +129,7 @@
    "url": "https://golden.house.gov/media/press-releases/golden-s-bipartisan-permitting-reform-bill-passes-house-natural-resources-committee",
    "result": "verified",
    "share": 1.0,
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+   "note": ""
   },
   {
    "where": "timeline.2025-12-08-new-york-v-trump-wind-memo-vacated",
@@ -421,9 +421,9 @@
   },
   {
    "where": "people.donald-trump",
-   "text": "all agencies must prioritize efficiency and certainty over any other objectives, including those of activist groups",
+   "text": "This Landmark Permitting Reform Legislation will codify our America First Energy Agenda, and ensure that we can build Pipelines, Mines, and Power Plants faster than ever before",
    "speaker": "Donald J. Trump",
-   "url": "https://www.whitehouse.gov/presidential-actions/2025/01/unleashing-american-energy/",
+   "url": "https://www.energyconnects.com/news/renewables/2026/november/trump-says-he-backs-energy-permitting-bill-on-eve-of-senate-vote/",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -466,12 +466,12 @@
   },
   {
    "where": "people.jared-huffman",
-   "text": "speaks volumes just about the complete inability to deal with Trump’s war on clean energy",
+   "text": "Folding our hand now or in the lame duck makes no sense when we can keep working on this and, in a few more months, have a much better deal that works for everyone.",
    "speaker": "Jared Huffman",
-   "url": "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/",
-   "result": "verified",
+   "url": "https://www.politico.com/news/2026/10/01/senate-bipartisan-permitting-deal-faces-house-buzz-saw-01102247",
+   "result": "browser",
    "share": 1.0,
-   "note": ""
+   "note": "read in a browser on 2026-10-02"
   },
   {
    "where": "people.scott-peters",
@@ -651,7 +651,7 @@
    "url": "https://americansforprosperity.org/press-release/americans-for-prosperity-celebrates-bipartisan-passage-of-the-speed-act-in-the-house/",
    "result": "verified",
    "share": 1.0,
-   "note": "URLError: <urlopen error [Errno 54] Connection reset by peer>"
+   "note": ""
   },
   {
    "where": "people.brett-hartl",
@@ -799,9 +799,9 @@
   },
   {
    "where": "people.brett-guthrie",
-   "text": "Winning the race to AI dominance is essential to securing America’s future global leadership, and that means expeditiously building the power infrastructure needed to support new technologies, while doing so in a responsible way.",
+   "text": "we absolutely would love to see changes to the",
    "speaker": "Brett Guthrie",
-   "url": "https://heatmap.news/politics/ratepayer-protection-act-explained",
+   "url": "https://x.com/SiegelScribe/status/2107892025182114178",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -3099,7 +3099,7 @@
    "url": "https://heatmap.news/daily/data-center-permitting-deal",
    "result": "verified",
    "share": 1.0,
-   "note": "timeout: The read operation timed out"
+   "note": ""
   },
   {
    "where": "media.2026-10-01-heatmap-climate-tech-winners-losers",
@@ -3135,7 +3135,7 @@
    "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
    "result": "verified",
    "share": 1.0,
-   "note": "URLError: <urlopen error [Errno 54] Connection reset by peer>"
+   "note": ""
   },
   {
    "where": "media.utilitydive-2026-09-30-ferc-pjm-backstop",
@@ -3612,7 +3612,7 @@
    "url": "https://heatmap.news/daily/exelon-permitting-reform",
    "result": "verified",
    "share": 1.0,
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+   "note": ""
   },
   {
    "where": "media.2026-09-18-politico-senate-roadblock-sparks-competition-over-data-center-bills",
@@ -4168,9 +4168,9 @@
    "text": "The SPEED Act marks the first major bipartisan permitting reform proposal in the 119th Congress.",
    "speaker": "Bipartisan Policy Center",
    "url": "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/",
-   "result": "verified",
+   "result": "browser",
    "share": 1.0,
-   "note": "ConnectionResetError: [Errno 54] Connection reset by peer"
+   "note": "read in a browser on 2026-10-01"
   },
   {
    "where": "media.2025-12-18-house-natural-resources-house-passes-speed-act",
@@ -4521,7 +4521,7 @@
    "url": "https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse",
    "result": "verified",
    "share": 1.0,
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+   "note": ""
   },
   {
    "where": "takes.2026-10-04-stanford-law-school-1",
@@ -4764,7 +4764,7 @@
    "url": "https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse",
    "result": "verified",
    "share": 1.0,
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+   "note": ""
   },
   {
    "where": "takes.2026-10-03-tc-energy-1",
@@ -4773,7 +4773,7 @@
    "url": "https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse",
    "result": "verified",
    "share": 1.0,
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+   "note": ""
   },
   {
    "where": "takes.2026-10-05-travis-annatoyn-former-inter-1",
@@ -4845,7 +4845,7 @@
    "url": "https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse",
    "result": "verified",
    "share": 1.0,
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
+   "note": ""
   },
   {
    "where": "takes.2026-10-05-heatmap-1",
@@ -6058,9 +6058,9 @@
    "text": "Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate.",
    "speaker": "",
    "url": "https://www.senate.gov/legislative/LIS/floor_activity/11_10_2026_Senate_Floor.htm",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-11-15"
+   "note": ""
   },
   {
    "where": "amend.reactions.capito.0",
@@ -6253,7 +6253,7 @@
   },
   {
    "where": "estimates.c2es-emissions",
-   "text": "Reduce annual power sector carbon dioxide emissions by 173 million metric tons, a 13 percent reduction relative to business as usual.",
+   "text": "And in 2035 alone, reform would: ... Reduce annual power sector carbon dioxide emissions by 173 million metric tons, a 13 percent reduction relative to business as usual.",
    "speaker": "Center for Climate and Energy Solutions, with Greenline Insights",
    "url": "https://www.c2es.org/?p=25710",
    "result": "verified",
@@ -6262,7 +6262,7 @@
   },
   {
    "where": "estimates.c2es-delay",
-   "text": "Through 2040, this delay would forgo roughly $55 billion in electricity system savings and 800 million metric tons of emissions reductions.",
+   "text": "a delay until 2030 would mean achieving only about 40 percent of the modeled benefits by 2035 ... Through 2040, this delay would forgo roughly $55 billion in electricity system savings and 800 million metric tons of emissions reductions.",
    "speaker": "Center for Climate and Energy Solutions, with Greenline Insights",
    "url": "https://www.c2es.org/?p=25710",
    "result": "verified",
