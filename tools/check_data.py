@@ -93,8 +93,7 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
         if e.get("significance"):
             out.append((f"timeline {e['id']} significance", e["significance"]))
     for p in core["people"]:
-        out += [(f"people {p['id']} role", p["role"]), (f"people {p['id']} position", p["position"])]
-        out += [(f"people {p['id']} action", a) for a in p.get("key_actions", [])]
+        out += [(f"people {p['id']} role", p["role"])]
     out += [(f"media {it['id']} summary", it["summary"]) for it in core["media"] if it.get("summary")]
     out += [(f"media {it['id']} visual", v["title"] + ". " + v["text"]) for it in core["media"] for v in it.get("visuals", [])]
     out += [(f"take {t['id']} claim", t["claim"]) for t in (core.get("takes") or {}).get("takes", [])]

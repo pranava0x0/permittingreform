@@ -193,6 +193,17 @@ def timeline(known: dict) -> list[dict] | None:
     return out
 
 
+def authoritative(url: str, person: dict, quote_url: str) -> bool:
+    """A government site, the person's own social account, or the page their quote came from."""
+    host = urlsplit(url).netloc.lower()
+    if host.endswith(".gov") or host.endswith(".mil"):
+        return True
+    if quote_url and url.rstrip("/") == quote_url:
+        return True
+    own = [v.rstrip("/").lower() + "/" for v in (person.get("social") or {}).values() if v]
+    return any((url.rstrip("/").lower() + "/").startswith(o) for o in own)
+
+
 def people(known: dict) -> list[dict] | None:
     raw = load("people", "people")
     if raw is None:
@@ -200,7 +211,7 @@ def people(known: dict) -> list[dict] | None:
     seen: set[str] = set()
     out = []
     for p in raw:
-        missing = [k for k in ("id", "name", "role", "sector", "stance", "position") if not p.get(k)]
+        missing = [k for k in ("id", "name", "role", "sector", "stance") if not p.get(k)]
         p["sources"] = sources(p.get("sources"))
         if missing or p.get("sector") not in SECTORS or p.get("stance") not in STANCES or not p["sources"]:
             log(f"people: dropped {p.get('name')!r}: missing={missing} sector={p.get('sector')!r} stance={p.get('stance')!r} sources={len(p['sources'])}")
@@ -226,6 +237,17 @@ def people(known: dict) -> list[dict] | None:
                 p["quote"] = {"text": q["text"], "source_url": q_url, **({"date": q["date"]} if valid_date(q.get("date", "")) else {})}
             else:
                 del p["quote"]
+        # The page shows only what a source states: the person's quote and the sources themselves.
+        # An agent's summary of their position and its list of dated actions carry no per-claim cite.
+        p.pop("position", None)
+        p.pop("key_actions", None)
+        # Sources are limited to authoritative ones: government sites, the person's own social
+        # accounts, and the page their quote was copied from. Reporting about them is left out.
+        quote_url = (p.get("quote") or {}).get("source_url", "").rstrip("/")
+        p["sources"] = [s for s in p["sources"] if authoritative(s["url"], p, quote_url)]
+        if not p["sources"] and not p.get("quote"):
+            log(f"people: dropped {p['id']}: no quote and no government or own-account source")
+            continue
         out.append(p)
     return out
 

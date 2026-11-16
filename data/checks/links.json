@@ -54,7 +54,7 @@
   "https://americansforprosperity.org/press-release/americans-for-prosperity-celebrates-bipartisan-passage-of-the-speed-act-in-the-house/": {
    "cls": "ok",
    "kind": "page",
-   "note": "URLError: <urlopen error [Errno 54] Connection reset by peer>",
+   "note": "",
    "status": 200,
    "where": [
     "people.brent-gardner.source",
@@ -73,7 +73,7 @@
   "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural": {
    "cls": "ok",
    "kind": "page",
-   "note": "URLError: <urlopen error [Errno 54] Connection reset by peer>",
+   "note": "",
    "status": 200,
    "where": [
     "media.2026-10-01-artificial-weights-permitting-bill-procedural-reforms"
@@ -159,10 +159,11 @@
    ]
   },
   "https://bipartisanpolicy.org/issue-brief/whats-in-the-speed-act/": {
-   "cls": "ok",
+   "browser": "2026-10-01",
+   "cls": "blocked",
    "kind": "page",
-   "note": "ConnectionResetError: [Errno 54] Connection reset by peer",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "media.2025-12-19-bpc-whats-in-the-speed-act"
    ]
@@ -170,7 +171,7 @@
   "https://blakemoore.house.gov/media/press-releases/representatives-moore-shreves-protecting-domestic-mining-act-passes-the-house": {
    "cls": "ok",
    "kind": "page",
-   "note": "RemoteDisconnected: Remote end closed connection without response",
+   "note": "",
    "status": 200,
    "where": [
     "timeline.2026-09-02-house-passes-protecting-domestic-mining-act-218-201.source"
@@ -347,7 +348,7 @@
   "https://cen.acs.org/policy/legislation-/permitting-reform-nepa-esa-energy-renewable-pipeline/104/web/2026/05": {
    "cls": "ok",
    "kind": "page",
-   "note": "timeout: The read operation timed out",
+   "note": "",
    "status": 200,
    "where": [
     "media.2026-05-27-cen-bipartisan-drive-for-permitting-reform-outlook-murky"
@@ -438,10 +439,10 @@
    ]
   },
   "https://ctmirror.org/2026/07/22/tweed-new-haven-airport-expansion/": {
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 429",
-   "status": 429,
+   "note": "",
+   "status": 200,
    "where": [
     "timeline.2026-07-21-dc-circuit-save-the-sound-v-faa-seven-county-deference.source"
    ]
@@ -477,7 +478,7 @@
   "https://dailycaller.com/2026/10/03/kevin-cramer-senate-permitting-bill-class-energy-projects-fines-capito-lee-heinrich-whitehouse": {
    "cls": "ok",
    "kind": "page",
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>",
+   "note": "",
    "status": 200,
    "where": [
     "takes.2026-10-03-sen-kevin-cramer-1",
@@ -502,7 +503,6 @@
    "status": 200,
    "where": [
     "timeline.2026-10-08-lee-confident-lame-duck-vote.source",
-    "people.mike-lee.source",
     "media.2026-10-08-daily-caller-lee-lame-duck-confidence"
    ]
   },
@@ -797,7 +797,7 @@
   "https://golden.house.gov/media/press-releases/golden-s-bipartisan-permitting-reform-bill-passes-house-natural-resources-committee": {
    "cls": "ok",
    "kind": "page",
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>",
+   "note": "",
    "status": 200,
    "where": [
     "timeline.2025-11-20-house-natural-resources-advances-speed-act.source",
@@ -871,7 +871,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.jared-huffman.source",
     "media.2026-10-01-heatmap-am-permitting-reform-bill-dropped"
    ]
   },
@@ -932,7 +931,7 @@
   "https://heatmap.news/daily/data-center-permitting-deal": {
    "cls": "ok",
    "kind": "page",
-   "note": "timeout: The read operation timed out",
+   "note": "",
    "status": 200,
    "where": [
     "compare.datacenters.note",
@@ -942,7 +941,7 @@
   "https://heatmap.news/daily/exelon-permitting-reform": {
    "cls": "ok",
    "kind": "page",
-   "note": "URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>",
+   "note": "",
    "status": 200,
    "where": [
     "media.2026-09-22-heatmap-daily-whats-a-utility-to-do-when-everyone-is-mad-at-them"
@@ -955,7 +954,6 @@
    "status": 200,
    "where": [
     "timeline.2026-07-16-heinrich-introduces-connect-and-manage-interconnection-bill.source",
-    "people.martin-heinrich.source",
     "media.2026-07-16-heatmap-daily-scoop-heinrich-connect-and-manage-bill"
    ]
   },
@@ -984,7 +982,6 @@
    "status": 200,
    "where": [
     "timeline.2026-06-16-senate-freedom-act-released-cortez-masto-cotton.source",
-    "people.catherine-cortez-masto.source",
     "media.2026-06-16-heatmap-daily-freedom-senate-permit-certainty-bill"
    ]
   },
@@ -1013,7 +1010,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.martin-heinrich.source",
     "media.2026-09-25-heatmap-daily-the-wright-interview-and-permittings-peril"
    ]
   },
@@ -1077,7 +1073,6 @@
    "status": 200,
    "where": [
     "timeline.2026-09-22-trump-tells-advisers-he-will-clear-defense-wind-queue-to-close-permitting-deal.source",
-    "people.chris-wright.source",
     "media.2026-09-25-heatmap-the-fight-offshore-wind-existential-crisis-at-climate-week"
    ]
   },
@@ -1162,7 +1157,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.scott-peters.source",
     "media.2026-09-18-heatmap-the-bipartisan-buddies-with-a-plan-to-fix-transmission"
    ]
   },
@@ -1194,7 +1188,6 @@
    "status": 200,
    "where": [
     "timeline.2026-10-12-huffman-no-vote-before-election.source",
-    "people.jared-huffman.source",
     "media.2026-10-12-heatmap-huffman-wants-changes-bill"
    ]
   },
@@ -1250,9 +1243,6 @@
    "status": 200,
    "where": [
     "compare.datacenters.note",
-    "people.brett-guthrie.source",
-    "people.brett-guthrie.quote",
-    "people.travis-fisher.source",
     "people.ari-peskoe.source",
     "people.ari-peskoe.quote",
     "media.2026-06-23-heatmap-the-mystery-of-the-ratepayer-protection-act"
@@ -1266,8 +1256,6 @@
    "where": [
     "timeline.2025-12-09-senate-democrats-oppose-passing-house-speed-act.source",
     "timeline.2025-12-09-senate-democrats-oppose-passing-house-speed-act.quote",
-    "people.brian-schatz.source",
-    "people.jael-holzman.source",
     "media.2025-12-09-heatmap-exclusive-key-senate-democrats-oppose-permitting-bill"
    ]
   },
@@ -1426,7 +1414,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.sheldon-whitehouse.source",
     "media.2026-11-09-reuters-via-kfgo-senate-advances-energy-permitting"
    ]
   },
@@ -1522,15 +1509,6 @@
    "status": 200,
    "where": [
     "media.2026-09-30-nam-bipartisan-senate-deal-statement"
-   ]
-  },
-  "https://nam.org/house-passes-speed-act-35434/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "people.jay-timmons.source"
    ]
   },
   "https://nam.org/timmons-manufacturers-are-all-in-on-permitting-reform-deal/": {
@@ -1777,7 +1755,6 @@
     "timeline.2026-09-24-permitting-talks-stall-vote-slips-past-midterms.quote",
     "people.john-thune.source",
     "people.john-thune.quote",
-    "people.chuck-schumer.source",
     "media.2026-09-24-roll-call-permitting-bill-off-until-after-midterms"
    ]
   },
@@ -1865,15 +1842,6 @@
     "estimates.seia-solar.method"
    ]
   },
-  "https://semafor.com/article/09/29/2026/democrats-flex-filibuster-muscle-ahead-of-election": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "people.john-thune.source"
-   ]
-  },
   "https://sourcenm.com/2026/11/09/new-mexico-us-sen-heinrich-urges-senate-passage-of-permitting-reform-bill-amid-ongoing-opposition/": {
    "browser": "2026-11-15",
    "cls": "blocked",
@@ -1932,8 +1900,6 @@
    "status": 200,
    "where": [
     "timeline.2026-09-17-capito-and-whitehouse-say-permitting-talks-in-final-stages.source",
-    "people.shelley-moore-capito.source",
-    "people.sheldon-whitehouse.source",
     "media.2026-09-17-politico-pro-permitting-talks-reach-final-stages"
    ]
   },
@@ -1944,8 +1910,6 @@
    "status": 200,
    "where": [
     "timeline.2026-09-22-trump-tells-advisers-he-will-clear-defense-wind-queue-to-close-permitting-deal.source",
-    "people.john-thune.source",
-    "people.donald-trump.source",
     "media.2026-09-22-politico-pro-trump-will-green-light-wind-energy-projects"
    ]
   },
@@ -1957,15 +1921,6 @@
    "where": [
     "timeline.2026-10-22-nine-ags-letter.source",
     "media.2026-10-22-nine-ags-letter"
-   ]
-  },
-  "https://talkingbiznews.com/media-news/punchbowl-news-hires-siegel-to-cover-energy/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "people.josh-siegel.source"
    ]
   },
   "https://theabundantfuture.substack.com/p/the-senate-permitting-deal-is-abundance": {
@@ -2162,7 +2117,6 @@
    "where": [
     "overview.status",
     "timeline.2026-10-11-capito-white-house-concessions-wind-solar.source",
-    "people.shelley-moore-capito.source",
     "media.2026-10-11-wv-metronews-capito-white-house-wind-solar"
    ]
   },
@@ -2272,8 +2226,7 @@
    "note": "",
    "status": 200,
    "where": [
-    "timeline.2026-06-18-ferc-large-load-show-cause-orders.source",
-    "people.laura-swett.source"
+    "timeline.2026-06-18-ferc-large-load-show-cause-orders.source"
    ]
   },
   "https://www.axios.com/2026/10/09/congress-permitting-bill-risks": {
@@ -2398,7 +2351,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.nathaniel-keohane.source",
     "media.2026-09-30-c2es-transmission-reforms-modeling-analysis"
    ]
   },
@@ -2417,7 +2369,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.rob-gramlich.source",
     "people.nathaniel-keohane.source",
     "people.nathaniel-keohane.quote",
     "media.2026-09-30-canary-media-senate-permitting-bill-power-lines"
@@ -2449,9 +2400,7 @@
    "where": [
     "compare.datacenters.note",
     "timeline.2026-09-16-house-passes-ratepayer-protection-act-417-3.source",
-    "timeline.2026-09-16-house-passes-ratepayer-protection-act-417-3.quote",
-    "people.mike-johnson.source",
-    "people.hakeem-jeffries.source"
+    "timeline.2026-09-16-house-passes-ratepayer-protection-act-417-3.quote"
    ]
   },
   "https://www.cbsnews.com/news/senate-data-center-energy-bill-martin-heinrich/": {
@@ -2533,15 +2482,6 @@
     "timeline.2025-12-08-new-york-v-trump-wind-memo-vacated.quote"
    ]
   },
-  "https://www.cnbc.com/2025/12/18/house-passes-permit-reform-bill-ai.html": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "people.scott-peters.source"
-   ]
-  },
   "https://www.cnbc.com/2026/09/30/permitting-deal-congress-election.html": {
    "cls": "ok",
    "kind": "page",
@@ -2557,7 +2497,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.chuck-schumer.source",
     "media.cnbc-2026-09-30-rpa-senate-vote"
    ]
   },
@@ -2567,7 +2506,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.jon-husted.source",
     "media.cnn-2026-09-30-rpa-senate-vote"
    ]
   },
@@ -2706,7 +2644,6 @@
     "timeline.2026-09-24-permitting-talks-stall-vote-slips-past-midterms.source",
     "people.john-barrasso.source",
     "people.john-barrasso.quote",
-    "people.alan-armstrong.source",
     "media.2026-09-24-deseret-permitting-talks-fall-apart-deal-punted"
    ]
   },
@@ -2721,7 +2658,6 @@
     "people.shelley-moore-capito.quote",
     "people.mike-lee.source",
     "people.mike-lee.quote",
-    "people.donald-trump.source",
     "media.2026-09-30-deseret-senate-unveils-deal-energy-data-centers"
    ]
   },
@@ -2850,7 +2786,6 @@
    "status": 200,
    "where": [
     "timeline.2026-06-09-lee-nhpa-overhaul-becomes-sticking-point-in-senate-permitting-talks.source",
-    "people.mike-lee.source",
     "people.teresa-leger-fernandez.source",
     "people.teresa-leger-fernandez.quote",
     "media.2026-06-09-ee-news-debate-over-preservation-law-tripping-up-permitting-talks"
@@ -2892,7 +2827,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.martin-heinrich.source",
     "media.2026-08-03-ee-news-heinrich-releases-data-center-energy-plan"
    ]
   },
@@ -2925,8 +2859,6 @@
    "where": [
     "timeline.2025-12-18-house-passes-speed-act-221-196.source",
     "timeline.2025-12-18-house-passes-speed-act-221-196.quote",
-    "people.jared-huffman.source",
-    "people.jared-huffman.quote",
     "people.scott-peters.source",
     "people.scott-peters.quote",
     "media.2025-12-17-ee-news-how-republicans-saved-speed-act-from-oblivion"
@@ -2947,11 +2879,7 @@
    "note": "",
    "status": 200,
    "where": [
-    "timeline.2025-12-09-senate-democrats-oppose-passing-house-speed-act.source",
-    "people.brian-schatz.source",
-    "people.jason-grumet.source",
-    "people.ray-long.source",
-    "people.rich-powell.source"
+    "timeline.2025-12-09-senate-democrats-oppose-passing-house-speed-act.source"
    ]
   },
   "https://www.eenews.net/articles/permitting-deal-deadline-remains-elusive/": {
@@ -2960,7 +2888,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.angus-king.source",
     "media.2026-07-17-ee-news-permitting-deal-deadline-remains-elusive"
    ]
   },
@@ -2970,7 +2897,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.brian-schatz.source",
     "media.2026-08-03-ee-news-permitting-deal-may-come-after-recess"
    ]
   },
@@ -2981,17 +2907,7 @@
    "status": 200,
    "where": [
     "timeline.2026-03-13-doj-declines-to-appeal-revolution-wind-ruling.source",
-    "people.sheldon-whitehouse.source",
     "media.2026-03-16-ee-news-permitting-talks-live-on-as-doj-declines-to-appeal-revolution-wind"
-   ]
-  },
-  "https://www.eenews.net/articles/senate-dems-push-spending-rider-on-wind-solar-permits/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "people.catherine-cortez-masto.source"
    ]
   },
   "https://www.eenews.net/articles/senate-lawmakers-debate-ideas-for-grid-upgrades/": {
@@ -3020,9 +2936,6 @@
    "status": 200,
    "where": [
     "timeline.2026-08-06-oregon-judge-orders-pentagon-to-complete-onshore-wind-reviews.source",
-    "people.shelley-moore-capito.source",
-    "people.sheldon-whitehouse.source",
-    "people.josh-siegel.source",
     "people.frank-macchiarola.source",
     "people.frank-macchiarola.quote",
     "media.2026-08-07-ee-news-senators-outline-future-of-permitting-talks"
@@ -3079,8 +2992,6 @@
    "status": 200,
    "where": [
     "timeline.2026-05-19-wright-dines-with-republican-lawmakers-on-permitting.source",
-    "people.martin-heinrich.source",
-    "people.brian-schatz.source",
     "people.alex-epstein.source",
     "people.alex-epstein.quote",
     "media.2026-05-22-ee-news-wright-meets-with-republicans-on-permitting"
@@ -3242,6 +3153,7 @@
    "note": "",
    "status": 200,
    "where": [
+    "people.donald-trump.quote",
     "media.2026-11-09-bloomberg-via-energyconnectscom-trump-says-he-backs"
    ]
   },
@@ -4155,8 +4067,7 @@
    "note": "",
    "status": 200,
    "where": [
-    "timeline.2025-10-23-doe-directs-ferc-large-load-interconnection-rulemaking.source",
-    "people.chris-wright.source"
+    "timeline.2025-10-23-doe-directs-ferc-large-load-interconnection-rulemaking.source"
    ]
   },
   "https://www.klgates.com/Department-of-the-Interior-Issues-Flurry-of-Actions-Targeting-Wind-and-Solar-Energy-Projects-8-25-2025": {
@@ -4215,16 +4126,6 @@
     "media.2026-09-23-latitude-media-exclusive-heinrich-30-percent-credit-long-haul-transmission"
    ]
   },
-  "https://www.latitudemedia.com/news/house-passes-speed-act-a-first-step-toward-broader-permitting-reform/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "people.john-hickenlooper.source",
-    "people.catherine-boudreau.source"
-   ]
-  },
   "https://www.latitudemedia.com/news/one-senate-democrats-answer-to-trumps-ratepayer-protection-pledge/": {
    "cls": "ok",
    "kind": "page",
@@ -4250,10 +4151,8 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.chuck-schumer.source",
     "people.drew-maloney.source",
     "people.drew-maloney.quote",
-    "people.catherine-boudreau.source",
     "media.2026-09-30-latitude-media-senators-strike-permitting-deal"
    ]
   },
@@ -4730,7 +4629,6 @@
     "timeline.2026-10-15-npr-section-106-threat-story.source",
     "people.greg-werkheiser.source",
     "people.greg-werkheiser.quote",
-    "people.ira-matt.source",
     "media.2026-10-15-npr-section-106-threat-anniversary"
    ]
   },
@@ -4812,7 +4710,6 @@
    "status": 200,
    "where": [
     "speed.federal-reversals.1",
-    "people.donald-trump.source",
     "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting"
    ]
   },
@@ -4908,7 +4805,7 @@
     "timeline.2026-09-30-huffman-says-most-house-democrats-oppose-senate-permitting-deal.source",
     "timeline.2026-09-30-senate-leaders-release-bipartisan-american-affordability-and-jobs-act.source",
     "people.jared-huffman.source",
-    "people.brett-guthrie.source",
+    "people.jared-huffman.quote",
     "media.2026-10-01-politico-senate-bipartisan-permitting-deal-faces-house-buzz-saw"
    ]
   },
@@ -4920,8 +4817,6 @@
    "status": 403,
    "where": [
     "timeline.2026-06-10-capito-and-whitehouse-urge-white-house-to-stop-attacks-on-renewables.source",
-    "people.shelley-moore-capito.source",
-    "people.sheldon-whitehouse.source",
     "people.jarrod-agen.source",
     "people.jarrod-agen.quote",
     "media.2026-06-10-politico-power-switch-energy-summit-hot-permitting-summer"
@@ -4934,7 +4829,6 @@
    "note": "HTTP 403",
    "status": 403,
    "where": [
-    "people.mike-lee.source",
     "media.2026-07-21-politico-power-switch-can-congress-get-behind-this-data-center-bill"
    ]
   },
@@ -4975,8 +4869,7 @@
    "note": "",
    "status": 200,
    "where": [
-    "timeline.2025-11-20-house-natural-resources-advances-speed-act.source",
-    "people.jared-huffman.source"
+    "timeline.2025-11-20-house-natural-resources-advances-speed-act.source"
    ]
   },
   "https://www.publicpower.org/periodical/article/senate-energy-natural-resources-committee-passes-permitting-bill": {
@@ -4985,8 +4878,7 @@
    "note": "",
    "status": 200,
    "where": [
-    "timeline.2024-07-31-senate-enr-advances-energy-permitting-reform-act.source",
-    "people.joe-manchin.source"
+    "timeline.2024-07-31-senate-enr-advances-energy-permitting-reform-act.source"
    ]
   },
   "https://www.pv-tech.org/us-planning-reform-bill-gets-mixed-response-from-clean-energy-groups/": {
@@ -5143,11 +5035,10 @@
    ]
   },
   "https://www.senate.gov/legislative/LIS/floor_activity/11_10_2026_Senate_Floor.htm": {
-   "browser": "2026-11-15",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "timeline.2026-11-10-substitute-sa-6883-proposed.source",
     "amend.sa-6884-6890.source"
@@ -5236,15 +5127,6 @@
    "status": 200,
    "where": [
     "media.2026-11-06-sierra-club-sierra-club-we-cannot"
-   ]
-  },
-  "https://www.solarpowerworldonline.com/2026/04/federal-court-halts-trump-administrations-orders-impeding-solar-wind-development/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "people.tim-pawlenty.source"
    ]
   },
   "https://www.solarpowerworldonline.com/2026/11/senate-advances-federal-energy-permitting-bill/": {
@@ -5450,7 +5332,6 @@
     "timeline.2025-12-22-interior-pauses-five-offshore-wind-leases.source",
     "timeline.2025-12-22-senate-democrats-end-permitting-talks-over-offshore-wind.source",
     "timeline.2025-12-22-senate-democrats-end-permitting-talks-over-offshore-wind.quote",
-    "people.sheldon-whitehouse.source",
     "media.2025-12-23-utility-dive-senate-democrats-end-permitting-talks-offshore-wind"
    ]
   },
@@ -5476,7 +5357,6 @@
     "timeline.2026-01-12-courts-enjoin-offshore-wind-stop-work-orders.source",
     "timeline.2026-01-28-senate-epw-permitting-hearing-part-ii.source",
     "timeline.2026-01-28-senate-epw-permitting-hearing-part-ii.quote",
-    "people.shelley-moore-capito.source",
     "media.2026-01-29-utility-dive-senators-call-for-project-certainty-at-hearing"
    ]
   },
@@ -5595,11 +5475,8 @@
    "note": "",
    "status": 200,
    "where": [
-    "people.brian-schatz.source",
     "people.catherine-cortez-masto.source",
     "people.catherine-cortez-masto.quote",
-    "people.tammy-duckworth.source",
-    "people.ben-ray-lujan.source",
     "media.2026-11-09-the-washington-sun-senators-advance-bipartisan-permitting"
    ]
   },
@@ -5610,7 +5487,6 @@
    "note": "HTTP 403",
    "status": 403,
    "where": [
-    "people.greg-werkheiser.source",
     "people.terry-klein.source",
     "people.terry-klein.quote",
     "media.2026-10-14-washington-times-rush-to-cut-permitting-red-tape-runs-into-historic-sites-law"
@@ -5679,8 +5555,7 @@
    "where": [
     "timeline.2025-01-20-eo-14154-unleashing-american-energy.source",
     "timeline.2025-01-20-eo-14154-unleashing-american-energy.quote",
-    "people.donald-trump.source",
-    "people.donald-trump.quote"
+    "people.donald-trump.source"
    ]
   },
   "https://www.whitehouse.gov/presidential-actions/2025/02/establishing-the-national-energy-dominance-council/": {
@@ -6175,7 +6050,6 @@
    "status": 200,
    "where": [
     "timeline.2026-10-14-stansbury-cannot-support.source",
-    "people.melanie-stansbury.source",
     "media.2026-10-14-portuondo-x-stansbury"
    ]
   },
@@ -6493,6 +6367,7 @@
    "where": [
     "timeline.2026-10-07-guthrie-wants-grid-section-changes.source",
     "people.brett-guthrie.source",
+    "people.brett-guthrie.quote",
     "media.2026-10-07-siegel-x-guthrie-grid-changes"
    ]
   },
