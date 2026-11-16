@@ -1,9 +1,9 @@
 {
  "_about": "Published numbers on what the bill would do. One row per figure, each with the sentence it was copied from and the page that sentence is on. tools/check_quotes.py checks every quote against its page. Figures are the publisher's own; the tracker computes none. Add a row only after reading the sentence on the cited page.",
  "as_of": "2026-11-15",
- "intro": "Each figure is the publisher's own, quoted from the page linked beside it, with the scenario it was measured against. Most model the September 30 text or only some of its provisions. The tracker has not checked the models.",
+ "intro": "Each figure is the publisher's own, with its scenario and source sentence. Most model the September 30 text or part of it. The tracker has not checked the models.",
  "absent": [
-  "No Congressional Budget Office cost estimate for S. 5653 or H.R. 2347 appeared in the sources checked through November 15."
+  "No Congressional Budget Office estimate of the bill was found through November 15."
  ],
  "metrics": [
   {"id": "emissions", "title": "Emissions"},

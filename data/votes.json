@@ -1,6 +1,6 @@
 {
  "as_of": "2026-11-15",
- "note": "Member lists are parsed from the Senate's roll call XML. A vote on a procedural question is not a position on the bill.",
+ "note": "Both votes were on procedure. Neither was a vote on passing the bill.",
  "roll_calls": [
   {
    "number": 257,

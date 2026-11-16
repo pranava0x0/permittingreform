@@ -1403,6 +1403,10 @@
    "set": {
     "summary": "After the House Natural Resources Committee voted 25-18 to advance the SPEED Act, Holzman reports that Democrats in both chambers would not back a deal without limits on the president's power over wind and solar permits. Reps. Levin and Casten proposed a parity rule between fossil and non-fossil projects; Golden's no-rescission language was added in committee."
    }
+  },
+  "2026-10-26-thomashochman-x-survey-scope": {
+   "reason": "The X post returned HTTP 404 on 2026-11-15 from x.com and from the oEmbed endpoint; the post is gone, so the item has no source to link.",
+   "drop": true
   }
  }
 }

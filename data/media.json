@@ -1119,10 +1119,10 @@
    "date": "2026-11-09",
    "type": "news",
    "outlet": "Axios",
-   "title": "Climate, nature and energy groups on the permitting debate",
+   "title": "Planet-sized problems collide in permitting debate",
    "url": "https://www.axios.com/2026/11/09/climate-nature-energy-permitting-debate",
    "verified": true,
-   "summary": "Axios reported, ahead of the Nov. 9 procedural vote, that the permitting debate is raising trade-offs between climate and nature conservation goals, and that the House would still need to approve the bill after the Senate.",
+   "summary": "Axios reported that efforts to fight climate change, conserve nature and build clean energy are colliding in the permitting debate. Only the opening of the article was read; the rest is for subscribers.",
    "stance": "reporting",
    "topics": [
     "congress",
@@ -1131,9 +1131,11 @@
    ],
    "sector": "media",
    "quote": {
-    "text": "Building the infrastructure needed to combat climate change can threaten nature, while protecting nature can complicate efforts to build that infrastructure.",
+    "text": "Congress' sweeping permitting debate is forcing those competing priorities into the same conversation, with major consequences for climate action and conservation.",
     "speaker": "Axios (reporter)"
-   }
+   },
+   "author": "Amy Harder",
+   "read": "preview"
   },
   {
    "id": "2026-11-09-american-clean-power-acp-urges-senators-to",
@@ -1807,27 +1809,6 @@
     "tribal",
     "historic-preservation"
    ]
-  },
-  {
-   "id": "2026-10-26-thomashochman-x-survey-scope",
-   "date": "2026-10-26",
-   "type": "social_x",
-   "outlet": "X",
-   "title": "Reply on the study cited against the bill",
-   "url": "https://x.com/ThomasHochman/status/2114712948929413206",
-   "verified": true,
-   "summary": "Hochman says the study critics cited to argue permitting rarely delays projects rests on a survey of wind and solar developers only.",
-   "stance": "supports",
-   "quote": {
-    "text": "The study in question comes from a survey of exclusively wind and solar developers.",
-    "speaker": "Thomas Hochman, Green Tape"
-   },
-   "topics": [
-    "nepa",
-    "wind-solar"
-   ],
-   "sector": "think_tank",
-   "author": "Thomas Hochman"
   },
   {
    "id": "2026-10-26-taitdl-x-utility-lobbying",

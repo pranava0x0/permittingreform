@@ -201,7 +201,9 @@ def main() -> int:
         page = pages[r["url"]]
         if page.cls != "ok":
             r["result"], r["share"], r["note"] = "unreachable", 0.0, f"{page.cls}: {page.note}"
-            if page.cls == "blocked":
+            # A fetch that was refused or timed out says nothing about the page, so a browser read
+            # stands in for it. A dead page (404, 410) gets no such pass: the record would be stale.
+            if page.cls in ("blocked", "error"):
                 from_browser(r, opened)
         elif page.kind == "youtube":
             r["result"], r["share"], r["note"] = "unverifiable", 0.0, "video: only the title is machine-readable"

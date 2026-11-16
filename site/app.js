@@ -1412,6 +1412,7 @@
 
   const POSITION_SIDES = [["supports", "For"], ["opposes", "Against"], ["mixed", "Mixed"]];
   const VOICES_SHOWN = 4;
+  const LETTERS_SHOWN = 6;
 
   function plural(n, one, many) {
     return n + " " + (n === 1 ? one : many);
@@ -1631,7 +1632,6 @@
     if (!v || !v.roll_calls.length) return null;
     return el("section", { class: "block", "aria-labelledby": "h-votes" },
       el("h2", { id: "h-votes" }, "Senate votes"),
-      nextStep(),
       el("p", { class: "facts" }, v.note),
       el("div", { class: "pos-list" }, v.roll_calls.slice().reverse().map(voteRow), statedRow(v)));
   }
@@ -1699,6 +1699,12 @@
     /* Same cutoff as issueVoices: a letter before the text's release was about an earlier bill or reform in general. */
     const letters = D.media.filter((it) => it.letter && it.date >= D.meta.released).sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
     const issues = (D.positions && D.positions.issues) || [];
+    /* Newest letters first; the rest sit behind one chip so the page stays inside its phone budget (2026-11-15). */
+    const letterRows = letters.map((it, n) => {
+      const row = letterRow(it);
+      row.hidden = n >= LETTERS_SHOWN;
+      return row;
+    });
     return [
       el("div", { class: "lede" }, el("h1", null, "Positions on the bill"),
         el("p", { class: "facts", role: "status" }, count("supports") + " support, " + count("opposes") + " oppose, " + count("mixed") + " mixed, of " +
@@ -1708,10 +1714,15 @@
           el("a", { href: "#/amendments/reactions" }, "Reactions to the " + S.formatDate(D.amend_index.date) + " substitute")) : null),
       votesBlock(),
       disputesBlock(),
-      estimatesBlock(),
       el("section", { class: "block", "aria-labelledby": "h-letters" },
         el("h2", { id: "h-letters" }, "Letters and joint statements"),
-        letters.length ? el("div", { class: "pos-list" }, letters.map(letterRow)) : el("p", { class: "empty" }, "No letters recorded yet.")),
+        letters.length ? el("div", { class: "pos-list" }, letterRows) : el("p", { class: "empty" }, "No letters recorded yet."),
+        letterRows.length > LETTERS_SHOWN ? el("button", { type: "button", class: "chip show-rest", onclick: (ev) => {
+          letterRows.forEach((r) => { r.hidden = false; });
+          ev.currentTarget.remove();
+          letterRows[LETTERS_SHOWN].querySelector(".event-toggle").focus();
+        } }, "Show " + (letterRows.length - LETTERS_SHOWN) + " earlier letters") : null),
+      estimatesBlock(),
       el("section", { class: "block", "aria-labelledby": "h-issues" },
         el("h2", { id: "h-issues" }, "By issue"),
         el("p", { class: "facts" }, "Quoted statements since the bill text was released on " + S.formatDate(D.meta.released) + "."),

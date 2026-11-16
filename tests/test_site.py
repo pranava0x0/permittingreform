@@ -136,8 +136,9 @@ class Page(unittest.TestCase):
         self.assertIn('x === "concerns"', JS)
         self.assertIn('el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance])', JS)
 
-    def test_the_positions_page_runs_votes_readings_estimates_then_letters(self):
-        self.assertIn("votesBlock(),\n      disputesBlock(),\n      estimatesBlock(),\n      el(\"section\", { class: \"block\", \"aria-labelledby\": \"h-letters\" },", JS)
+    def test_the_positions_page_runs_votes_readings_letters_then_estimates(self):
+        order = [JS.index(s, JS.index("function renderPositions()")) for s in ("votesBlock(),", "disputesBlock(),", '"h-letters"', "estimatesBlock(),", '"h-issues"', '"h-sectors"')]
+        self.assertEqual(order, sorted(order))
         self.assertIn('"None found yet."', JS)
 
     def test_votes_and_estimates_headings_name_the_category_only(self):

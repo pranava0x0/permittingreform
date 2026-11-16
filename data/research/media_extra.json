@@ -6226,10 +6226,10 @@
    "date": "2026-11-09",
    "type": "news",
    "outlet": "Axios",
-   "title": "Climate, nature and energy groups on the permitting debate",
+   "title": "Planet-sized problems collide in permitting debate",
    "url": "https://www.axios.com/2026/11/09/climate-nature-energy-permitting-debate",
    "verified": true,
-   "summary": "Axios reported, ahead of the Nov. 9 procedural vote, that the permitting debate is raising trade-offs between climate and nature conservation goals, and that the House would still need to approve the bill after the Senate.",
+   "summary": "Axios reported that efforts to fight climate change, conserve nature and build clean energy are colliding in the permitting debate. Only the opening of the article was read; the rest is for subscribers.",
    "stance": "reporting",
    "topics": [
     "congress",
@@ -6238,9 +6238,11 @@
    ],
    "sector": "media",
    "quote": {
-    "text": "Building the infrastructure needed to combat climate change can threaten nature, while protecting nature can complicate efforts to build that infrastructure.",
+    "text": "Congress' sweeping permitting debate is forcing those competing priorities into the same conversation, with major consequences for climate action and conservation.",
     "speaker": "Axios (reporter)"
-   }
+   },
+   "author": "Amy Harder",
+   "read": "preview"
   },
   {
    "id": "2026-11-09-natural-resources-defense-president-trump-undermines-baaja",
