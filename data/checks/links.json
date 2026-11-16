@@ -80,6 +80,7 @@
    ]
   },
   "https://axios.com/2026/11/10/baaja-permitting-bill-senate": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -1371,6 +1372,7 @@
    ]
   },
   "https://insideclimatenews.org/?p=116018": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -1828,6 +1830,7 @@
    ]
   },
   "https://seia.org/?p=18691": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -1846,6 +1849,7 @@
    ]
   },
   "https://sourcenm.com/2026/11/09/new-mexico-us-sen-heinrich-urges-senate-passage-of-permitting-reform-bill-amid-ongoing-opposition/": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -1855,6 +1859,7 @@
    ]
   },
   "https://sourcenm.com/2026/11/09/us-senate-advances-new-mexico-us-sen-heinrichs-controversial-permit-reform-bill": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -1864,6 +1869,7 @@
    ]
   },
   "https://sourcenm.com/2026/11/10/all-pueblo-council-of-governors-condemns-us-senate-vote-advancing-permitting-reform-bill/": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -1994,6 +2000,7 @@
    ]
   },
   "https://thehill.com/policy/energy-environment/6124792-bipartisan-permitting-reform-data-centers-energy-projects/": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -2055,6 +2062,7 @@
    ]
   },
   "https://upriseri.com/article/whitehouse-energy-bill-advances-critics-say-it-tilts-to-fossil-fuels/": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -2102,6 +2110,7 @@
    ]
   },
   "https://wisconsinexaminer.com/?p=48840": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -2272,6 +2281,7 @@
    ]
   },
   "https://www.axios.com/2026/11/09/climate-nature-energy-permitting-debate": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -2281,6 +2291,7 @@
    ]
   },
   "https://www.axios.com/2026/11/09/senate-advances-bipartisan-permitting-bill-key-test-vote": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -4688,6 +4699,7 @@
    ]
   },
   "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-still-needs-improvements": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -4707,6 +4719,7 @@
    ]
   },
   "https://www.nrdc.org/press-releases/president-trump-undermines-baaja-senate-debate-begins": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -4773,6 +4786,7 @@
    ]
   },
   "https://www.planetizen.com/news/2026/11/138849-bill-overhaul-energy-permitting-advances-through-senate": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -5044,6 +5058,7 @@
    ]
   },
   "https://www.semiconductors.org/sia-urges-senate-to-pass-bipartisan-permitting-reform-legislation-to-boost-u-s-competitiveness/": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -5053,6 +5068,7 @@
    ]
   },
   "https://www.senate.gov/legislative/LIS/floor_activity/11_10_2026_Senate_Floor.htm": {
+   "browser": "2026-11-15",
    "cls": "blocked",
    "kind": "page",
    "note": "HTTP 403",
@@ -6508,15 +6524,6 @@
     "people.thomas-hochman.source",
     "people.thomas-hochman.quote",
     "media.2026-10-19-hochman-x-nhpa-thread"
-   ]
-  },
-  "https://x.com/ThomasHochman/status/2114712948929413206": {
-   "cls": "dead",
-   "kind": "x",
-   "note": "HTTP 404",
-   "status": 404,
-   "where": [
-    "media.2026-10-26-thomashochman-x-survey-scope"
    ]
   },
   "https://x.com/WHCEQ47/status/2008908645837250964": {

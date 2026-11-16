@@ -11,12 +11,12 @@
  },
  "links": {
   "blocked": 46,
-  "browser": 27,
+  "browser": 43,
   "checked": "2026-11-16",
-  "dead": 1,
+  "dead": 0,
   "error": 1,
   "ok": 616,
-  "total": 664
+  "total": 663
  },
  "quotes": {
   "bill_total": 174,
