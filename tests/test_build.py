@@ -149,6 +149,26 @@ class Build(unittest.TestCase):
             if r.get("quote"):
                 self.assertIn("c", r, f"communities {r['id']}: quote has no cite")
 
+    def test_every_communities_part_has_rows(self):
+        c = CORE["communities"]
+        self.assertEqual({r["page"] for r in c["rows"]}, {pg["id"] for pg in c["pages"]})
+
+    def test_a_communities_row_outside_any_part_fails_the_build(self):
+        original = build.load
+
+        def sabotaged(path):
+            data = original(path)
+            if path.name == "communities.json":
+                data["rows"][0]["page"] = "no-such-part"
+            return data
+
+        build.load = sabotaged
+        try:
+            _, _, errors = build.build()
+        finally:
+            build.load = original
+        self.assertTrue(any("unknown page 'no-such-part'" in e for e in errors), errors)
+
     def test_every_datacenters_quote_carries_a_computed_cite(self):
         rows = (CORE.get("datacenters") or {"rows": []})["rows"]
         self.assertTrue(rows, "data/datacenters.json produced no rows")
