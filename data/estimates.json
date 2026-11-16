@@ -40,7 +40,7 @@
    "text": "C2ES reports annual power-sector carbon dioxide 173 million metric tons lower in 2035, a 13 percent cut.",
    "scenario": "Compared with business as usual, in modeling by Greenline Insights.",
    "covers": "The interconnection and transmission planning provisions. The release does not say which text was modeled.",
-   "quote": "Reduce annual power sector carbon dioxide emissions by 173 million metric tons, a 13 percent reduction relative to business as usual.",
+   "quote": "And in 2035 alone, reform would: ... Reduce annual power sector carbon dioxide emissions by 173 million metric tons, a 13 percent reduction relative to business as usual.",
    "url": "https://www.c2es.org/?p=25710",
    "method_url": "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national"
   },
@@ -50,7 +50,7 @@
    "text": "C2ES reports that putting the changes off until 2030 would give up about 800 million metric tons of emissions cuts and about $55 billion in electricity system savings through 2040.",
    "scenario": "The same modeled changes, starting in 2030.",
    "covers": "The interconnection and transmission planning provisions. The release does not say which text was modeled.",
-   "quote": "Through 2040, this delay would forgo roughly $55 billion in electricity system savings and 800 million metric tons of emissions reductions.",
+   "quote": "a delay until 2030 would mean achieving only about 40 percent of the modeled benefits by 2035 ... Through 2040, this delay would forgo roughly $55 billion in electricity system savings and 800 million metric tons of emissions reductions.",
    "url": "https://www.c2es.org/?p=25710",
    "method_url": "https://www.greenlineinsights.com/interconnection-and-transmission-reform-national"
   },
@@ -171,7 +171,7 @@
   {
    "id": "public-citizen-lng", "metric": "lng", "publisher": "public-citizen", "date": "2026-11-08",
    "figure": "39 billion cubic feet a day of authorized LNG export capacity",
-   "text": "Public Citizen says Title IV would keep the Energy Department from changing export approvals that cover 39 billion cubic feet a day: 14 at seven operating terminals and 25 commissioned or under construction.",
+   "text": "Public Citizen says Title IV would keep the Energy Department from changing export approvals that cover 39 billion cubic feet a day of capacity already authorized.",
    "scenario": "A count of existing approvals under current law. It is not a model result.",
    "covers": "Title IV. The page does not say which text.",
    "quote": "Title IV of BAAJA directly impedes this Natural Gas Act authority, and will lock in this already-authorized 39 bcf/d of LNG export capacity.",

@@ -111,8 +111,11 @@ def load_votes(people: list[dict], errors: list[str]) -> dict:
     senator the tracker holds a stated position for gets that person's id."""
     doc = load(DATA / "votes.json")
     senators = {}
+    def fold(name: str) -> str:
+        return unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
+
     def surname(name: str) -> str:
-        return unicodedata.normalize("NFKD", name.split()[-1]).encode("ascii", "ignore").decode().lower()
+        return fold(name.split()[-1])
 
     for p in people:
         if p.get("inside_government") and p["sector"] == "congress" and "Senate" in p["affiliation"]:
@@ -127,11 +130,18 @@ def load_votes(people: list[dict], errors: list[str]) -> dict:
             errors.append(f"{where}: members add up to {tally}, the record says {(rc['yeas'], rc['nays'], rc['not_voting'])}")
         if len({(m[0], m[2]) for m in rc["members"]}) != len(rc["members"]):
             errors.append(f"{where}: a senator is listed twice")
+        shared = {s for s in map(surname, (m[0] for m in rc["members"])) if [surname(m[0]) for m in rc["members"]].count(s) > 1}
         for m in rc["members"]:
             held = [p for p in senators.get(surname(m[0]), []) if p.get("party", m[1]) == m[1]]
+            if surname(m[0]) in shared:
+                # Two senators share this surname (the Scotts), so only the full name tells them apart.
+                held = [p for p in held if fold(p["name"]) == fold(m[0])]
             del m[4:]
             if len(held) == 1:
                 m.append(held[0]["id"])
+        ids = [m[4] for m in rc["members"] if len(m) > 4]
+        if len(ids) != len(set(ids)):
+            errors.append(f"{where}: one tracked senator is linked to two names in the roll call")
         if rc["required"] not in VOTE_REQUIRED:
             errors.append(f"{where}: unknown threshold {rc['required']!r}")
         rc["required_text"] = VOTE_REQUIRED.get(rc["required"], rc["required"])
@@ -194,7 +204,7 @@ def votes_markdown(core: dict) -> list[str]:
 
 
 def publisher_label(core: dict, key: str) -> str:
-    """A publisher's name with its sector and its own stated position on the bill."""
+    """A publisher's name with what kind of body it is and its own stated position on the bill."""
     p = core["estimates"]["publishers"][key]
     stance = {"supports": "supports the bill", "opposes": "opposes the bill", "mixed": "mixed on the bill"}.get(p["stance"], "no stated position on the bill")
     return f"{p['name']} ({p['kind']}; {stance})"

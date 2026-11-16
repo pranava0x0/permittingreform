@@ -45,3 +45,8 @@
 - (low, 2026-11-09) media.2026-10-26-thomashochman-x-survey-scope: the cited X post (status 2114712948929413206) returns 404 as of the November 9 link check. Find a copy or drop the item.
 - (low, 2026-11-09) amend.js (78 KB gzipped) carries every hunk and the new sections' text; split an index payload from per-section detail if first load on phones matters.
 - (low, 2026-11-09) tests/test_amendments.py checks inserted words appear in the new section but not their position; record word offsets in hunks to test placement.
+| high | Record the vote on ending debate on the substitute, SA 6883 (scheduled for about 5:30 p.m. November 16), and any vote on passage, in `data/votes.json`. |
+| medium | No Congressional Budget Office estimate of S. 5653 or H.R. 2347 was found through November 15. Search again at each refresh and add it to `data/estimates.json` first if it appears. |
+| medium | The Senate Lobbying Disclosure API answered 503 on November 15; the filings sweep for registrants naming S. 5653 is not done. |
+| low | Drop `reviewed_as` from renamed position labels after the next `make infer`. |
+| low | Sweep items left unread behind paywalls (E&E, POLITICO Pro, Punchbowl) are listed under `unread` in `data/research/sweep-2026-11-15/`. |

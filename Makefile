@@ -2,7 +2,7 @@
 PY := python3
 PROSE := .test-artifacts/prose.md
 
-.PHONY: check build test data quotes-bill quotes links infer prose design serve
+.PHONY: check build test data quotes-bill quotes links infer prose design serve final progress browser-quotes
 
 check: build test data quotes-bill prose design
 	@echo "make check: all gates green"
@@ -41,3 +41,18 @@ design:
 
 serve:
 	$(PY) -m http.server 8766 --bind 127.0.0.1 --directory site
+
+# Browser checks in order (perf, reader paths, UAT, click crawl), each logged under .test-artifacts/final/.
+# Needs NODE_PATH pointing at a node_modules with playwright. The click crawl takes about 34 minutes;
+# `make final SKIP=clicks` runs the three short ones.
+final:
+	$(PY) tools/final_checks.py $(if $(SKIP),--skip $(SKIP),)
+
+# Is a `make final` run moving? Prints each step's state; exits 2 if it stalled or died.
+progress:
+	$(PY) tools/final_checks.py --status
+
+# Reads every page `make quotes` could not reach in a scripted Chrome and tests its quotes.
+# `make browser-quotes WRITE=1` records each quote it found in data/checks/browser.json.
+browser-quotes:
+	$(PY) tools/browser_quotes.py $(if $(WRITE),--write,)

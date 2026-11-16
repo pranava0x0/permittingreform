@@ -354,6 +354,17 @@ class Positions(unittest.TestCase):
         build.load_votes(CORE["people"] + [ghost], errors)
         self.assertTrue(any("Pat Nobody" in e for e in errors), errors)
 
+    def test_two_senators_with_one_surname_are_told_apart_by_full_name(self):
+        # Rick Scott and Tim Scott are both Republicans; a surname match alone would give one
+        # tracked senator both rows.
+        template = next(p for p in CORE["people"] if p.get("inside_government") and p["affiliation"].startswith("U.S. Senate"))
+        scott = dict(template, id="tim-scott", name="Tim Scott", party="R")
+        errors: list[str] = []
+        votes = build.load_votes(CORE["people"] + [scott], errors)
+        self.assertEqual([e for e in errors if "Scott" in e or "two names" in e], [])
+        for rc in votes["roll_calls"]:
+            self.assertEqual([m[0] for m in rc["members"] if m[4:] == ["tim-scott"]], ["Tim Scott"])
+
     def test_every_estimate_names_its_publisher_scenario_and_source_sentence(self):
         est = CORE["estimates"]
         self.assertTrue(est["estimates"])
@@ -373,9 +384,11 @@ class Positions(unittest.TestCase):
         broken["votes"]["roll_calls"][1]["quote"] = "Agreed to"
         broken["estimates"]["estimates"][0]["url"] = "http://example.org/a"
         broken["estimates"]["estimates"][1]["quote"] = "Too short."
+        broken["estimates"]["estimates"][2]["text"] += " It adds 999 gigawatts."
         next(iter(broken["estimates"]["publishers"].values()))["stance"] = "reporting"
         errs = check_data.check_votes_estimates(broken)
-        for needle in ("after the data date", "does not carry the tally", "url must be https", "too short", "is not a position on the bill"):
+        for needle in ("after the data date", "does not carry the tally", "url must be https", "too short", "is not a position on the bill",
+                       "the quote does not carry 999"):
             self.assertTrue(any(needle in e for e in errs), (needle, errs))
 
     def test_votes_and_estimates_reach_every_edition(self):

@@ -31,6 +31,8 @@ import build  # noqa: E402
 import integrate_research as vocab  # noqa: E402
 
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+# A number as printed: 148, 1.5, 1,200. Digits inside a name (C2ES, H.R. 2347's "2347" aside) do not count.
+NUMBER_RE = re.compile(r"(?<![A-Za-z\d.,])\d+(?:,\d{3})*(?:\.\d+)?")
 BANNED = re.compile(
     r"\b(delve|leverag\w*|robust|seamless\w*|elevate[sd]?|unlock\w*|empower\w*|harness\w*|tapestry|testament|"
     r"underscore[sd]?|pivotal|crucial|comprehensive|cutting-edge|game-chang\w*|ever-evolving|realm|landmark|"
@@ -154,6 +156,12 @@ def check_votes_estimates(core: dict) -> list[str]:
                 errs.append(f"{w}: {k} must be https")
         if len(e.get("quote", "").split()) < 8:
             errs.append(f"{w}: the quote is too short to carry the figure's sentence")
+        # Every number the row states has to be in the sentence it quotes; a figure the quote does
+        # not carry is a figure the reader cannot check against the source.
+        stated = set(NUMBER_RE.findall(e.get("figure", "") + " " + e.get("text", "")))
+        loose = sorted(stated - set(NUMBER_RE.findall(e.get("quote", ""))))
+        if loose:
+            errs.append(f"{w}: the quote does not carry {', '.join(loose)}")
     return errs
 
 

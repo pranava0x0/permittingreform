@@ -37,6 +37,8 @@ Open http://127.0.0.1:8766. The site has no backend and loads nothing from anoth
 | `data/bill/substitute_notes.json` | One or more change notes per changed section, each with a verbatim span from the text it describes. The build locates every span. |
 | `data/amendments.json` | The substitute's sponsors and links, the sponsors' staff summary mapped to sections, source bills for added sections, other amendments, reactions with verbatim quotes, and the next vote. |
 | `data/compare.json`, `data/overview.json` | The comparison tables (including `bills`, the data center bills table) and the overview page. |
+| `data/votes.json` | Senate roll calls on the bill: the question, the threshold, the tally and each senator's vote, from the Senate's roll-call XML. The build fails if the names do not add up to the printed tally. |
+| `data/estimates.json` | Published estimates of what the bill would do, by measure. Each row names its publisher, the scenario and the sentence the figure comes from. A figure without a fetched source sentence is not added. |
 | `data/speed.json` | The Speed page: research on what slows energy projects, one row per cause, each with sourced findings, the bill passages aimed at that cause (located by the build) and outside readings from `data/takes.json`. |
 | `data/communities.json` | The Communities view: one row per change to comment, consultation, planning or court rights, with a quoted passage the build checks. |
 | `data/research/` | What the research agents returned, unedited. |
@@ -54,6 +56,9 @@ make check     # tests, data, bill quotes, prose and design gates; no network
 make links     # every link on the site
 make quotes    # every quote against its source page
 make infer     # a second AI reading of each summary against the bill text
+make final     # browser checks in order: load cost, reader paths, UAT, click crawl (needs Playwright)
+make progress  # where a `make final` run is, and whether it stalled or died
+make browser-quotes   # read in Chrome the pages `make quotes` could not fetch
 ```
 
 | Script | Proves |
@@ -62,6 +67,8 @@ make infer     # a second AI reading of each summary against the bill text
 | `tools/check_links.py` | Each link answers. Sites that refuse scripts are listed as blocked. |
 | `tools/check_data.py` | Each record has its required fields, a known vocabulary value and a source. Each key point cites a passage. |
 | `tools/infer_check.py` | A Sonnet model judges whether each summary sentence is supported by the section text. The script confirms the model's evidence is in the text. |
+| `tools/final_checks.py` | Runs `tools/perf_audit.cjs`, `tools/reader_paths.cjs`, `tests/uat.cjs` and `tests/clicks.cjs` against its own server. Writes each step's log and state to `.test-artifacts/final/`. `--status` reads that state from another terminal. |
+| `tools/browser_quotes.py` | Opens each unreachable page in a scripted Chrome and applies the quote gate's own match. `--write` records found quotes in `data/checks/browser.json`. A page behind a sign-in or a human check is listed for a hand read. |
 
 The build refuses a changed PDF, an unverifiable bill quote or a stored key-point passage that no longer matches. The data gate also requires a citation for every key point.
 
@@ -81,7 +88,7 @@ The fresh Sonnet review remains incomplete: 401 saved supported statements, 12 f
 
 Run browser checks with an existing Playwright installation and Google Chrome: `node tests/uat.cjs` while `make serve` runs. It checks all views in both themes at three widths, then exercises search, filters, load-more, source passages, comparison switching, viewport transitions, keyboard navigation and a delayed-load regression.
 
-`node tests/clicks.cjs` loads every view and all 71 sections at 375 and 1280 pixels, then clicks every control on the main views from a fresh load, opening folded parents first. It fails on page errors, sideways overflow, controls that do nothing or are covered, a milestone symbol that opens the wrong event, and any load or click over 20 seconds. Results go to `.test-artifacts/clicks.json`.
+`node tests/clicks.cjs` loads every view and all 71 sections at 375 and 1280 pixels, then clicks every control on the main views from a fresh load, opening folded parents first. It fails on page errors, sideways overflow, controls that do nothing or are covered, a milestone symbol that opens the wrong event, and any load or click over 20 seconds. Results go to `.test-artifacts/clicks.json`. A full run takes about 34 minutes (5,188 controls on November 15, 2026). It prints a line per route and writes `.test-artifacts/clicks-progress.json` every two seconds. `CLICK_ROUTES=people,method` and `CLICK_WIDTHS=375` limit a run.
 
 ## Agent and text access
 

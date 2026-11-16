@@ -103,3 +103,11 @@ Measured at 375×812, first screen of the Overview: type sizes 9 to 4, weights 4
 ## Disputes: each part looks different (2026-10-22)
 
 A reader found the dispute rows hard to read: the issue, the question, the bill's words and each side's readings were all the same plain text, and the side headings ran into their counts ("Opponents and critics read it as 4"). The bill's words now sit on the pale green the bill column uses with a rule at the left; each side is headed "Critics (4)" or "Supporters (3)" in its stance color with a rule under it; the tally under each question is colored by side; and each reading puts the source's name on its own line above the stance, outlet and date, then the quote. The one-line paraphrase above each quote is gone from disputes, because it restated the quote under it; it stays in a section's "What others say" list. At 375×812 the browser tests still pass the Positions page against its 4-screen budget with every row closed.
+
+## Senate votes and published estimates (2026-11-15)
+
+Both sit on Positions under neutral headings: "Senate votes" and "Published estimates". A heading names the subject and never the direction; "Emissions", not "Emissions cuts". The direction is in the row text, in the publisher's own words. Votes use a plain party table and name lists with no party colors and no green or red for yea and nay, because color on a vote reads as a verdict. Each estimate shows the publisher and what kind of body it is (research firm, trade association, advocacy group, White House office) before the figure, then the scenario, then the source sentence. Order on the page: votes, disputed readings, letters (newest six), estimates, by issue, by sector. At 375 px the page is 4.3 screens against 3.6 before.
+
+## Rules between tabs (2026-11-15)
+
+At 375 pixels the tab labels sit a few pixels apart, and "Bill Key issues Timeline" read as one phrase. Each tab and subtab after the first now carries a 1-pixel rule, 1.15em tall, on its left edge (`.tabs a + a::before`, `.subtabs a + a::before`). The rule is absolutely placed, so it adds no width and no label wraps. It uses `--on-brand-muted` on the green band and `--text-muted` on the light one.

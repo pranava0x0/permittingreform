@@ -150,6 +150,14 @@ h2, h3, tr[id], .para, .event, .block, .sec-part { scroll-margin-top: calc(var(-
 }
 .subtabs a:hover { background: var(--bg); }
 .subtabs a[aria-current] { font-weight: 700; background: var(--bg); border-bottom-color: var(--rule); }
+/* A short rule between neighbouring labels, so "Bill" and "Key issues" never read as one phrase.
+   It is drawn over the link's left edge and takes no room, so no label moves or wraps. */
+.tabs a, .subtabs a { position: relative; }
+.tabs a + a::before, .subtabs a + a::before {
+  content: ""; position: absolute; left: -1px; top: 50%; width: 1px; height: 1.15em; transform: translateY(-50%);
+  background: var(--on-brand-muted);
+}
+.subtabs a + a::before { background: var(--text-muted); }
 /* ---------- page furniture ---------- */
 
 /* A full screen of height keeps the footer below the fold while a page loads, so it never jumps. */
