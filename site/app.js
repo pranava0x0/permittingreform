@@ -1096,7 +1096,6 @@
         el("p", { class: "event-meta" }, S.formatDate(e.date) + " · " + branchLabel(e.branch) + (e.background ? " · before 2025" : "") + (e.milestone ? " · milestone" : "")),
         el("p", null, e.summary),
         e.sections && e.sections.length ? el("p", { class: "where" }, "In the bill: ", secLinks(e.sections)) : null,
-        e.significance ? el("p", { class: "signif" }, e.significance) : null,
         e.quote && e.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, e.quote.text),
           el("figcaption", null, safeUrl(e.quote.source_url) ? ext(e.quote.source_url, e.quote.speaker || "Source") : e.quote.speaker)) : null,
@@ -1270,15 +1269,18 @@
       el("div", { class: "people" + (brief ? " brief" : "") }, groups[k].map((p) => el("article", { class: "person", id: "person-" + p.id },
         el("h3", null, p.name, p.party ? el("span", { class: "party" }, " (" + p.party + ")") : null),
         el("p", { class: "role" }, [p.role, p.affiliation].filter(Boolean).join(", ")),
-        el("p", { class: "person-stance" }, p.stance === "neutral" ? el("span", { class: "muted" }, "No clear public position found") : stanceTag(p.stance), moreButton()),
+        el("p", { class: "person-stance" }, p.stance !== "neutral" ? stanceTag(p.stance)
+          : el("span", { class: "muted" }, p.general_stance === "supports" ? "Supports permitting reform; no statement on this bill found" : "No clear public position found")),
         p.quote && p.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, p.quote.text),
-          el("figcaption", null, safeUrl(p.quote.source_url) ? ext(p.quote.source_url, p.quote.date ? S.formatDate(p.quote.date) : "Source") : null)) : null,
+          // More sits where the clamped quote ends, on its date line; the sources it reveals follow.
+          el("figcaption", null, safeUrl(p.quote.source_url) ? ext(p.quote.source_url, p.quote.date ? S.formatDate(p.quote.date) : "Source") : null, moreButton())) : null,
         p.social && (safeUrl(p.social.x) || safeUrl(p.social.bluesky)) ? el("p", { class: "social" },
           safeUrl(p.social.x) ? ext(p.social.x, "X") : null,
           safeUrl(p.social.x) && safeUrl(p.social.bluesky) ? " · " : null,
           safeUrl(p.social.bluesky) ? ext(p.social.bluesky, "Bluesky") : null) : null,
-        sourceList(p.sources))))));
+        sourceList(p.sources),
+        p.quote && p.quote.text ? null : el("p", { class: "person-more" }, moreButton()))))));
     return [
       el("div", { class: "lede" }, el("h1", null, "People and groups"), el("p", { class: "facts", role: "status" }, "Showing " + Math.min(pplLimit, list.length) + " of " + list.length + " people · " + S.formatDate(D.meta.as_of))),
       filters,

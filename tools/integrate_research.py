@@ -188,6 +188,9 @@ def timeline(known: dict) -> list[dict] | None:
                         secs.append(n)
         if secs:
             e["sections"] = secs
+        # Events state what happened and who said it; the agent's "significance" line was the
+        # site's own judgment of what each event meant (editorial audit, 2026-11-16).
+        e.pop("significance", None)
         out.append(e)
     out.sort(key=lambda e: (e["date"], e["id"]))
     return out

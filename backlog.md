@@ -50,3 +50,4 @@
 | medium | The Senate Lobbying Disclosure API answered 503 on November 15; the filings sweep for registrants naming S. 5653 is not done. |
 | low | Drop `reviewed_as` from renamed position labels after the next `make infer`. |
 | low | Sweep items left unread behind paywalls (E&E, POLITICO Pro, Punchbowl) are listed under `unread` in `data/research/sweep-2026-11-15/`. |
+- (medium) Bill section pages: put a "Read the text" jump at the top, or fold the readings, so the statutory text is not 6.3 phone screens down (UAT 2026-11-16).

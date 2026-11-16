@@ -1,0 +1,160 @@
+[
+ {
+  "id": "doug-burgum",
+  "found": true,
+  "quote": "Folks that are concerned about that should just read the bill because that's what will become law, and this is an administration that follows the law",
+  "url": "https://www.washingtonexaminer.com/?p=4799215",
+  "date": "2026-11-10",
+  "speaker_context": "Said at a Daily Caller permitting event in Washington, answering concern over President Trump's remarks that he would not approve wind turbines; reported in the Washington Examiner's Daily on Energy",
+  "about": "the bill",
+  "reading": "supports",
+  "reading_reason": "He tells doubters to read the bill because 'that's what will become law', defending it against the wind-turbine worry; the same article also quotes him saying 'The bill is the bill.'",
+  "route": "direct"
+ },
+ {
+  "id": "laura-swett",
+  "found": true,
+  "quote": "we need durable, consistent, efficient regulatory frameworks for permitting new infrastructure.",
+  "url": "https://www.utilitydive.com/news/ferc-gas-pipeline-lng-blanket-authorization-permitting-reform/833234/",
+  "date": "2026-10-15",
+  "speaker_context": "Said at FERC's monthly meeting on Oct. 15, 2026, per Utility Dive (published Oct. 16), which reports she was encouraged by the Senate permitting bill; the bill-specific remark is paraphrased, only this sentence is a direct quote",
+  "about": "permitting reform generally",
+  "reading": "supports",
+  "reading_reason": "She calls for 'durable, consistent, efficient' permitting frameworks, and the article reports she was encouraged by the Senate bill (paraphrase, not a quote).",
+  "route": "direct"
+ },
+ {
+  "id": "hakeem-jeffries",
+  "found": true,
+  "quote": "falls short in several areas",
+  "url": "https://justthenews.com/nation/states/center-square/democrats-midterm-gains-complicate-path-forward-permitting-bill",
+  "date": "2026-11-07",
+  "speaker_context": "Post-election comments to Politico about the Senate bill, quoted as a fragment in a Center Square article (Nov. 7); City Journal (Nov. 9) quotes the same words and adds 'failure to adequately protect tribal sovereignty'",
+  "about": "the bill",
+  "reading": "mixed",
+  "reading_reason": "'falls short in several areas' is a criticism of the bill as written, without the fragment saying he will oppose it outright.",
+  "route": "direct"
+ },
+ {
+  "id": "john-thune",
+  "found": true,
+  "quote": "The Bipartisan American Affordability and Jobs Act would streamline and reform the permitting process to ensure that projects are approved or rejected in a timely fashion.",
+  "url": "https://www.republicanleader.senate.gov/newsroom/remarks/thune-on-congress-generational-opportunity-to-reform-the-permitting-process-lower-energy-costs/",
+  "date": "2026-11-12",
+  "speaker_context": "Senate floor remarks titled 'Thune on Congress' Generational Opportunity to Reform the Permitting Process, Lower Energy Costs'; he closes with 'Mr. President, I look forward to swift Senate passage.'",
+  "about": "the bill",
+  "reading": "supports",
+  "reading_reason": "He describes what the bill would do and says he looks forward to swift Senate passage.",
+  "route": "direct"
+ },
+ {
+  "id": "scott-peters",
+  "found": true,
+  "quote": "A permitting reform agreement with this much support from Republicans and Democrats should pass this Congress.",
+  "url": "https://scottpeters.house.gov/press-releases/peters-applauds-senate-permitting-package-touts-his-priorities-to-speed-up-clean-energy-and-lower-costs",
+  "date": "2026-09-30",
+  "speaker_context": "Press release on his House site welcoming the Senate permitting package the day it was released; he also asks for 'adjustments or clarifications' to the text",
+  "about": "the bill",
+  "reading": "supports",
+  "reading_reason": "He says the agreement 'should pass this Congress' and calls it 'a great step toward fixing our broken permitting system.'",
+  "route": "direct"
+ },
+ {
+  "id": "brent-booker",
+  "found": true,
+  "quote": "We urge lawmakers in both parties to seize this moment, pass the Bipartisan American Affordability and Jobs Act of 2026, and finally deliver meaningful permitting reform.",
+  "url": "https://www.liuna.org/news/story/liuna-general-president-brent-bookers-statement-on-permitting-reform",
+  "date": "2026-10-02",
+  "speaker_context": "LIUNA press statement by General President Brent Booker on S. 5653",
+  "about": "the bill",
+  "reading": "supports",
+  "reading_reason": "He urges lawmakers in both parties to 'pass the Bipartisan American Affordability and Jobs Act of 2026'.",
+  "route": "direct"
+ },
+ {
+  "id": "brent-gardner",
+  "found": true,
+  "quote": "Energy powers nearly every part of our economy, and BAAJA would help expand energy supply and make life more affordable by cutting red tape that drives up costs throughout our economy, from housing to groceries to infrastructure.",
+  "url": "https://americansforprosperity.org/press-release/congress-cannot-let-this-moment-pass-we-must-fix-our-broken-permitting-system/",
+  "date": "2026-11-09",
+  "speaker_context": "Americans for Prosperity press release after the 73-25 cloture vote, titled 'Congress cannot let this moment pass. We must fix our broken permitting system.'; the same release asks senators to 'vote YES' on the Senate amendment",
+  "about": "the bill",
+  "reading": "supports",
+  "reading_reason": "He says BAAJA 'would help expand energy supply and make life more affordable' and urges senators to vote yes.",
+  "route": "direct"
+ },
+ {
+  "id": "chris-wright",
+  "found": true,
+  "quote": "If it gets passed in November instead of September, it's still a big win for the American people",
+  "url": "https://www.washingtonexaminer.com/?p=4741806",
+  "date": "2026-09-24",
+  "speaker_context": "Told Politico, as quoted in the Washington Examiner's Daily on Energy on Sept. 24, before the bill text was released; the same article quotes him: 'We want to get permitting reform done.' No later quote about the bill was found.",
+  "about": "permitting reform generally",
+  "reading": "supports",
+  "reading_reason": "He calls passage of the pending deal, even delayed to November, 'a big win for the American people'.",
+  "route": "direct"
+ },
+ {
+  "id": "jared-golden",
+  "found": false,
+  "searched": [
+   "Jared Golden Senate permitting bill SPEED Act statement November 2026",
+   "Golden permitting Maine congressman Senate bill BAAJA says",
+   "Jared Golden statement permitting reform Senate November 2026 (domain-limited)",
+   "Jared Golden Maine Democrat Senate permitting bill BAAJA House Democrats SPEED Act November"
+  ]
+ },
+ {
+  "id": "john-barrasso",
+  "found": false,
+  "searched": [
+   "Barrasso permitting reform bill Capito Whitehouse Heinrich Lee statement",
+   "Barrasso Wyoming Senator permitting bill remarks November 2026 Whip",
+   "Barrasso floor speech permitting bill 2026 Bipartisan American Affordability and Jobs Act",
+   "Barrasso permitting cloture vote Senate November 9 2026 Barrasso said"
+  ]
+ },
+ {
+  "id": "katherine-scarlett",
+  "found": false,
+  "searched": [
+   "Katherine Scarlett CEQ permitting Senate bill statement",
+   "CEQ Chair Scarlett BAAJA permitting bill Senate Scarlett said 2026"
+  ]
+ },
+ {
+  "id": "emily-domenech",
+  "found": false,
+  "searched": [
+   "Emily Domenech Permitting Council Senate permitting bill BAAJA",
+   "Domenech Permitting Council executive director remarks Senate permitting bill October 2026 OR November 2026"
+  ]
+ },
+ {
+  "id": "mike-johnson",
+  "found": false,
+  "searched": [
+   "Mike Johnson Speaker Senate permitting bill House take up lame duck Johnson said",
+   "Speaker Johnson permitting reform Senate bill House vote Johnson BAAJA lame duck wind",
+   "Speaker Mike Johnson says Senate permitting bill House Johnson told reporters"
+  ]
+ },
+ {
+  "id": "lee-zeldin",
+  "found": false,
+  "searched": [
+   "Zeldin EPA statement Senate permitting reform bill",
+   "Zeldin permitting Senate bill BAAJA EPA administrator says Clean Water Act",
+   "Lee Zeldin permitting reform Senate deal November 2026 interview Zeldin said"
+  ]
+ },
+ {
+  "id": "joe-manchin",
+  "found": false,
+  "searched": [
+   "Joe Manchin permitting reform Senate bill Capito Heinrich comments November 2026",
+   "Manchin says Senate permitting deal Manchin 2026 interview permitting reform bill former senator"
+  ]
+ }
+]

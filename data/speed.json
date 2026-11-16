@@ -326,7 +326,7 @@
      "kind": "survey"
     }
    ],
-   "disagreement": "No study found here splits cancellations into local and federal shares. Sabin and LBNL rank local opposition among the top causes. Adelman and co-authors find environmental review rarely delays or blocks utility-scale renewables. Third Way and Crux put federal permitting first, for length of delay or how often it is a factor. Both developer surveys are small, and Crux counts federal permitting as a factor, not as the main cause.",
+   "disagreement": "No study found here splits cancellations into local and federal shares. Sabin and LBNL rank local opposition among the top causes. Adelman and co-authors find environmental review rarely delays or blocks utility-scale renewables. Third Way and Crux put federal permitting first, for length of delay or how often it is a factor. Crux counts federal permitting as a factor, not as the main cause.",
    "passages": [],
    "readings": []
   },
@@ -541,7 +541,7 @@
      "url": "https://ifp.org/?p=9257",
      "date": "2026-06-30",
      "period": "state offices",
-     "finding": "IFP reports Utah's digital SHPO finishes about 98% of reviews within seven days while offices without modern systems lag badly.",
+     "finding": "IFP reports Utah's digital SHPO finishes about 98% of reviews within seven days.",
      "quote": "Utah’s fully digital SHPO completes about 98% of reviews within seven days, while offices without modern data systems lag badly.",
      "kind": "review"
     },

@@ -1,0 +1,15 @@
+- gabe-evans: Gabe Evans, U.S. Representative (CO-08)
+- kathy-castor: Kathy Castor, U.S. Representative (FL-14)
+- jon-husted: Jon Husted, U.S. Senator (R-OH)
+- brian-fitzpatrick: Brian Fitzpatrick, U.S. Representative (PA-01)
+- josh-hawley: Josh Hawley, U.S. Senator (R-MO)
+- paul-tonko: Paul Tonko, U.S. Representative (NY-20)
+- byron-donalds: Byron Donalds, U.S. Representative (R-FL); candidate for Florida governor
+- lisa-blunt-rochester: Lisa Blunt Rochester, U.S. Senator (D-DE)
+- john-curtis: John Curtis, U.S. Senator (R-UT)
+- angus-king: Angus King, U.S. Senator and member of the Senate Energy and Natural Resources Committee
+- jarrod-agen: Jarrod Agen, Executive Director, National Energy Dominance Council
+- travis-fisher: Travis Fisher, Director of Energy and Environmental Policy Studies, Cato Institute
+- ari-peskoe: Ari Peskoe, Director, Electricity Law Initiative, Harvard Law School
+- alex-epstein: Alex Epstein, Author and fossil fuel advocate
+- brett-kavanaugh: Brett Kavanaugh, Associate Justice, Supreme Court of the United States

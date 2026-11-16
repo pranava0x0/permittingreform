@@ -38,6 +38,15 @@ USUAL = {"perf": 60, "paths": 90, "uat": 150, "clicks": 2040}
 QUIET_S = 180
 
 
+
+SERVE = """
+import functools, http.server, sys
+class Server(http.server.ThreadingHTTPServer):
+    request_queue_size = 128
+handler = functools.partial(http.server.SimpleHTTPRequestHandler, directory=sys.argv[2])
+Server(("127.0.0.1", int(sys.argv[1])), handler).serve_forever()
+"""
+
 def steps(base: str) -> dict[str, tuple[list[str], dict[str, str]]]:
     return {
         "perf": (["node", "tools/perf_audit.cjs", "--json", str(OUT / "perf.json")], {}),
@@ -142,7 +151,10 @@ def main() -> int:
         sock.bind(("127.0.0.1", 0))
         port = sock.getsockname()[1]
     base = f"http://127.0.0.1:{port}/"
-    server = subprocess.Popen([sys.executable, "-m", "http.server", str(port), "--bind", "127.0.0.1", "--directory", str(ROOT / "site")],
+    # `python -m http.server` queues only 5 pending connections; Chrome opens more at once and the
+    # overflow comes back as ERR_CONNECTION_RESET on a script, which left the UAT waiting on data
+    # that never loaded (2026-11-16). SERVE raises the queue to 128.
+    server = subprocess.Popen([sys.executable, "-c", SERVE, str(port), str(ROOT / "site")],
                               stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     doc = {"started": time.strftime("%Y-%m-%dT%H:%M:%S"), "pid": os.getpid(), "state": "running", "base": base,
            "steps": [{"name": n, "state": "pending", "usual": USUAL[n]} for n in names]}

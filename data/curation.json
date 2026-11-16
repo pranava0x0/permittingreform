@@ -56,9 +56,10 @@
    }
   },
   "2025-05-29-seven-county-v-eagle-county": {
-   "reason": "House style: a plainer significance line that states what happened next.",
+   "reason": "House style: a plainer significance line that states what happened next. Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
    "set": {
-    "significance": "Made NEPA challenges harder to win. The Senate bill writes the same deference into the statute."
+    "significance": "Made NEPA challenges harder to win. The Senate bill writes the same deference into the statute.",
+    "title": "Supreme Court decides Seven County v. Eagle County, 8-0 in the judgment"
    }
   },
   "2025-07-04-one-big-beautiful-bill-act-nepa-opt-in-fee": {
@@ -340,11 +341,29 @@
     "title": "House passes the PERMIT Act 221-205 after unanimously passing the ePermit Act"
    },
    "reason": "Distinguish the two House passage decisions."
+  },
+  "2026-04-21-casper-enjoins-directives-stalling-wind-and-solar-permits": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "title": "Judge Casper preliminarily enjoins five directives on federal wind and solar permitting"
+   }
+  },
+  "2026-10-15-npr-section-106-threat-story": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "title": "NPR reports on the bill's Section 106 changes; advocates it quotes call them the biggest threat in 60 years"
+   }
+  },
+  "2026-06-09-lee-nhpa-overhaul-becomes-sticking-point-in-senate-permitting-talks": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "title": "E&E News reports Lee's push to change the preservation law is tripping up permitting talks"
+   }
   }
  },
  "people": {
   "shelley-moore-capito": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 11 WV MetroNews interview. Name the measure and decision; distinguish taking up a bill from passing it.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 11 WV MetroNews interview. Name the measure and decision; distinguish taking up a bill from passing it. 2026-11-16: newest quote from the person, copied from the coverage item 2026-11-15-santa-fe-new-how-they-voted-nov, already checked by make quotes. The quote's page is added to the sources.",
    "set": {
     "position": "Co-negotiated and co-introduced the bill. She says its reforms will 'transform our nation's ability to power our economy' while protecting land, water and wildlife, and that a permitting bill must be bipartisan and 'project neutral.' On October 11 she said the White House had made concessions on wind and solar projects and that leaders promised to put permitting reform first when the Senate reconvened.",
     "key_actions": [
@@ -357,49 +376,29 @@
     ],
     "sources": [
      {
+      "title": "How they voted, Nov. 15, 2026",
+      "publisher": "Santa Fe New Mexican",
+      "url": "https://www.santafenewmexican.com/news/briefs/how-they-voted-nov-15-2026/article_9f223b42-50ef-45d1-95a4-0f0a54bed5c3.html",
+      "date": "2026-11-15",
+      "verified": true
+     },
+     {
       "title": "Capito, Lee, Whitehouse, and Heinrich Introduce Bipartisan American Affordability and Jobs Act of 2026",
       "publisher": "U.S. Senate Committee on Environment and Public Works",
       "url": "https://www.epw.senate.gov/public/index.cfm/press-releases-republican?ID=D3555B5D-34C2-4D95-B99B-5B460BB9895D",
       "date": "2026-09-30",
       "verified": true
-     },
-     {
-      "title": "Republican, Democratic senators call for project certainty at permitting reform hearing",
-      "publisher": "Utility Dive",
-      "url": "https://www.utilitydive.com/news/senate-permitting-reform-project-certainty/810827/",
-      "date": "2026-01-29",
-      "verified": true
-     },
-     {
-      "title": "Special edition: POLITICO's Energy Summit kicks off hot permitting summer (Power Switch)",
-      "publisher": "POLITICO",
-      "url": "https://www.politico.com/newsletters/power-switch/2026/06/10/special-edition-politicos-energy-summit-kicks-off-hot-permitting-summer-00957736",
-      "date": "2026-06-10"
-     },
-     {
-      "title": "Senators outline future of permitting talks",
-      "publisher": "E&E News by POLITICO",
-      "url": "https://www.eenews.net/articles/senators-outline-future-of-permitting-talks/",
-      "date": "2026-08-07"
-     },
-     {
-      "title": "Permitting talks reach 'final' stages",
-      "publisher": "POLITICO Pro",
-      "url": "https://subscriber.politicopro.com/article/2026/09/permitting-talks-reach-final-stages-01083362",
-      "date": "2026-09-17"
-     },
-     {
-      "title": "Capito says permitting bill would blast away delays and protect approved projects",
-      "publisher": "WV MetroNews",
-      "url": "https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/",
-      "date": "2026-10-11",
-      "verified": true
      }
-    ]
+    ],
+    "quote": {
+     "text": "creates predictability, consistency, and finality in securing a permit. And it will allow our laws to balance public health, the environment, and the needs of our economy.",
+     "source_url": "https://www.santafenewmexican.com/news/briefs/how-they-voted-nov-15-2026/article_9f223b42-50ef-45d1-95a4-0f0a54bed5c3.html",
+     "date": "2026-11-15"
+    }
    }
   },
   "mike-lee": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 8 Daily Caller report. Updated 2026-11-15 with the senator's statement on the November 9 vote, read on the cited page.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Updated 2026-10-18 with the October 8 Daily Caller report. Updated 2026-11-15 with the senator's statement on the November 9 vote, read on the cited page. 2026-11-16: newest quote from the person, copied from the coverage item 2026-11-10-congressional-record-senate-congressional-record-senate-november, already checked by make quotes. The quote's page is added to the sources.",
    "set": {
     "position": "Co-introduced the bill, describing a permitting system that 'takes too long and costs too much.' He says the deal should hold through the midterm elections. On October 8 the Daily Caller News Foundation, citing the AP, reported he is confident the Senate will pass it in a November lame-duck session.",
     "key_actions": [
@@ -412,46 +411,25 @@
     ],
     "sources": [
      {
-      "title": "Lee, Capito, Heinrich, and Whitehouse Introduce Bipartisan American Affordability and Jobs Act of 2026",
-      "publisher": "U.S. Senate Committee on Energy and Natural Resources",
-      "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-introduce-bipartisan-american-affordability-and-jobs-act-of-2026/",
-      "date": "2026-09-30",
-      "verified": true
-     },
-     {
-      "title": "Senate unveils bipartisan deal tackling energy and data centers, but wind and solar questions remain",
-      "publisher": "Deseret News",
-      "url": "https://www.deseret.com/politics/2026/09/30/republicans-democrats-release-permitting-reform-text/",
-      "date": "2026-09-30",
-      "verified": true
-     },
-     {
-      "title": "Debate over preservation law tripping up permitting talks",
-      "publisher": "E&E News by POLITICO",
-      "url": "https://www.eenews.net/articles/debate-over-preservation-law-tripping-up-permitting-talks/",
-      "date": "2026-06-09"
-     },
-     {
-      "title": "Can Congress get behind this data center bill? (Power Switch)",
-      "publisher": "POLITICO",
-      "url": "https://www.politico.com/newsletters/power-switch/2026/07/21/can-congress-get-behind-this-data-center-bill-01006436",
-      "date": "2026-07-21"
-     },
-     {
-      "title": "Senators Want To Make AI Data Centers Pay For The Grid Upgrades Driving Up Your Electric Bill",
-      "publisher": "Daily Caller News Foundation",
-      "url": "https://dailycaller.com/2026/10/08/senate-permitting-bill-data-centers-pay-grid-upgrades-electric-bills-capito-heinrich-lee-whitehouse/",
-      "date": "2026-10-08",
-      "verified": true
-     },
-     {
       "title": "Congressional Record, Senate, November 10, 2026 (floor remarks, permitting reform)",
       "publisher": "Congressional Record (Senate)",
       "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
       "date": "2026-11-10",
       "verified": true
+     },
+     {
+      "title": "Lee, Capito, Heinrich, and Whitehouse Introduce Bipartisan American Affordability and Jobs Act of 2026",
+      "publisher": "U.S. Senate Committee on Energy and Natural Resources",
+      "url": "https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-introduce-bipartisan-american-affordability-and-jobs-act-of-2026/",
+      "date": "2026-09-30",
+      "verified": true
      }
-    ]
+    ],
+    "quote": {
+     "text": "Today, a company can spend years trying to get permission just to build a powerplant, and a transmission line",
+     "source_url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
+     "date": "2026-11-10"
+    }
    }
   },
   "sheldon-whitehouse": {
@@ -577,7 +555,7 @@
    }
   },
   "john-thune": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it. 2026-11-16: the stance must rest on a quote made after the bill text was public (September 30, 2026). His only quote is from September 24, before the text, and is about Democrats, not the bill; no later statement of his position on the bill was found, so the stance is 'no clear public position'.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. Name the measure and decision; distinguish taking up a bill from passing it. 2026-11-16: the stance must rest on a quote made after the bill text was public (September 30, 2026). His only quote is from September 24, before the text, and is about Democrats, not the bill; no later statement of his position on the bill was found, so the stance is 'no clear public position'. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): newer quote from Senate floor remarks titled 'Thune on Congress' Generational Opportunity to Reform the Permitting Pr; the quote states a position on the bill, so the stance is 'supports'.",
    "set": {
     "position": "Says Republicans and the White House 'closed the deal' on permitting legislation that 'incorporated essentially all' of Democrats' asks, and accuses Democrats of wanting to deny Republicans a legislative win before the midterms.",
     "key_actions": [
@@ -587,41 +565,42 @@
     ],
     "sources": [
      {
+      "title": "Senate floor remarks titled 'Thune on Congress' Generational Opportunity to Reform the Permitting Process, Lower Energy ",
+      "publisher": "Office of Senate Majority Leader John Thune",
+      "url": "https://www.republicanleader.senate.gov/newsroom/remarks/thune-on-congress-generational-opportunity-to-reform-the-permitting-process-lower-energy-costs/",
+      "date": "2026-11-12",
+      "verified": true
+     },
+     {
       "title": "Permitting bill off until after midterms even as talks close in",
       "publisher": "Roll Call",
       "url": "https://rollcall.com/2026/09/24/permitting-bill-off-until-after-midterms-even-as-talks-close-in/",
       "date": "2026-09-24",
       "verified": true
-     },
-     {
-      "title": "Democrats flex filibuster muscle ahead of election",
-      "publisher": "Semafor",
-      "url": "https://semafor.com/article/09/29/2026/democrats-flex-filibuster-muscle-ahead-of-election",
-      "date": "2026-09-30",
-      "verified": true
-     },
-     {
-      "title": "Trump will green-light wind energy projects to strike permitting deal",
-      "publisher": "POLITICO Pro",
-      "url": "https://subscriber.politicopro.com/article/2026/09/trump-will-green-light-wind-energy-projects-to-strike-permitting-deal-01087842",
-      "date": "2026-09-22"
      }
     ],
-    "stance": "neutral"
+    "stance": "supports",
+    "quote": {
+     "text": "The Bipartisan American Affordability and Jobs Act would streamline and reform the permitting process to ensure that projects are approved or rejected in a timely fashion.",
+     "source_url": "https://www.republicanleader.senate.gov/newsroom/remarks/thune-on-congress-generational-opportunity-to-reform-the-permitting-process-lower-energy-costs/",
+     "date": "2026-11-12"
+    }
    }
   },
   "jared-golden": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
    "set": {
     "stance": "neutral",
-    "position": "Co-led the SPEED Act with Chairman Westerman and won committee adoption of an amendment blocking the executive branch from revoking energy permits after approval, noting both Trump and Biden used that tactic. No statement on the Senate bill was found."
+    "position": "Co-led the SPEED Act with Chairman Westerman and won committee adoption of an amendment blocking the executive branch from revoking energy permits after approval, noting both Trump and Biden used that tactic. No statement on the Senate bill was found.",
+    "general_stance": "supports"
    }
   },
   "john-barrasso": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
    "set": {
     "stance": "neutral",
-    "position": "Co-wrote the 2024 Manchin-Barrasso permitting bill. In September 2026 he said Republicans are '100% committed to permitting reform' and blamed Schumer and Democrats for the stall. He is not a sponsor of the Senate bill."
+    "position": "Co-wrote the 2024 Manchin-Barrasso permitting bill. In September 2026 he said Republicans are '100% committed to permitting reform' and blamed Schumer and Democrats for the stall. He is not a sponsor of the Senate bill.",
+    "general_stance": "supports"
    }
   },
   "chuck-schumer": {
@@ -671,10 +650,11 @@
    }
   },
   "katherine-scarlett": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
    "set": {
     "stance": "neutral",
-    "position": "Signed CEQ's removal of its NEPA regulations and the guidance that replaced them, and backs legislation to digitize permitting. CEQ has not commented on the Senate bill."
+    "position": "Signed CEQ's removal of its NEPA regulations and the guidance that replaced them, and backs legislation to digitize permitting. CEQ has not commented on the Senate bill.",
+    "general_stance": "supports"
    }
   },
   "donald-trump": {
@@ -723,28 +703,28 @@
    }
   },
   "doug-burgum": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): newer quote from Said at a Daily Caller permitting event in Washington, answering concern over President Trump's rema; the quote states a position on the bill, so the stance is 'supports'.",
    "set": {
-    "stance": "neutral",
-    "position": "Drove Interior's emergency permitting procedures for energy and minerals while his department froze and slowed wind and solar approvals. He told the House in May 2026 that Interior would appeal the injunction against those policies. Interior's wind and solar 'regular order' terms are still being negotiated with Senate Democrats."
-   }
-  },
-  "chris-wright": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
-   "set": {
-    "stance": "neutral",
-    "position": "Used Section 403 of the DOE Organization Act to direct FERC to start a large-load interconnection rulemaking aimed at data centers, asking for final action by April 30, 2026. Whitehouse has accused the Energy and Interior secretaries of misstating the cost of the halted wind projects.",
-    "key_actions": [
-     "2025-02-14: Named Vice Chair of the National Energy Dominance Council",
-     "2025-10-23: Sent FERC an advance notice of proposed rulemaking on interconnecting loads above 20 MW, citing data-center growth",
-     "2026-09-23: Told Heatmap a permitting deal would change the playing field for everything built in the country, including wind"
-    ],
+    "stance": "supports",
+    "position": "Drove Interior's emergency permitting procedures for energy and minerals while his department froze and slowed wind and solar approvals. He told the House in May 2026 that Interior would appeal the injunction against those policies. Interior's wind and solar 'regular order' terms are still being negotiated with Senate Democrats.",
+    "quote": {
+     "text": "Folks that are concerned about that should just read the bill because that's what will become law, and this is an administration that follows the law",
+     "source_url": "https://www.washingtonexaminer.com/?p=4799215",
+     "date": "2026-11-10"
+    },
     "sources": [
      {
-      "title": "DOE Directs FERC to Take Action on Large Load Interconnection",
-      "publisher": "K&L Gates",
-      "url": "https://www.klgates.com/DOE-Directs-FERC-to-Take-Action-on-Large-Load-Interconnection-10-30-2025",
-      "date": "2025-10-30",
+      "title": "Said at a Daily Caller permitting event in Washington, answering concern over President Trump's remarks that he would no",
+      "publisher": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/?p=4799215",
+      "date": "2026-11-10",
+      "verified": true
+     },
+     {
+      "title": "Department of the Interior Implements Emergency Permitting Procedures to Strengthen Domestic Energy Supply",
+      "publisher": "U.S. Department of the Interior",
+      "url": "https://www.doi.gov/pressreleases/department-interior-implements-emergency-permitting-procedures-strengthen-domestic",
+      "date": "2025-04-23",
       "verified": true
      },
      {
@@ -755,26 +735,63 @@
       "verified": true
      },
      {
-      "title": "Offshore Wind's Existential Crisis at Climate Week",
-      "publisher": "Heatmap News",
-      "url": "https://heatmap.news/plus/the-fight/spotlight/offshore-wind-permitting-reform",
-      "date": "2026-09-25"
+      "title": "Burgum: DOI will fight judge's ruling lifting renewable energy blockade",
+      "publisher": "Latitude Media",
+      "url": "https://www.latitudemedia.com/news/burgum-doi-will-fight-judges-ruling-lifting-renewable-energy-blockade/",
+      "date": "2026-05-13",
+      "verified": true
      }
     ]
    }
   },
-  "emily-domenech": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+  "chris-wright": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
    "set": {
     "stance": "neutral",
-    "position": "Runs the FAST-41 permitting process and has signed federal-state agreements that commit states to opt in to FAST-41 and align state and federal review timelines. She was the top House Republican staffer on permitting and energy policy."
+    "position": "Used Section 403 of the DOE Organization Act to direct FERC to start a large-load interconnection rulemaking aimed at data centers, asking for final action by April 30, 2026. Whitehouse has accused the Energy and Interior secretaries of misstating the cost of the halted wind projects.",
+    "key_actions": [
+     "2025-02-14: Named Vice Chair of the National Energy Dominance Council",
+     "2025-10-23: Sent FERC an advance notice of proposed rulemaking on interconnecting loads above 20 MW, citing data-center growth",
+     "2026-09-23: Told Heatmap a permitting deal would change the playing field for everything built in the country, including wind"
+    ],
+    "sources": [
+     {
+      "title": "Told Politico, as quoted in the Washington Examiner's Daily on Energy on Sept. 24, before the bill text was released",
+      "publisher": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/?p=4741806",
+      "date": "2026-09-24",
+      "verified": true
+     },
+     {
+      "title": "Establishing the National Energy Dominance Council",
+      "publisher": "The White House",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/02/establishing-the-national-energy-dominance-council/",
+      "date": "2025-02-14",
+      "verified": true
+     }
+    ],
+    "quote": {
+     "text": "If it gets passed in November instead of September, it's still a big win for the American people",
+     "source_url": "https://www.washingtonexaminer.com/?p=4741806",
+     "date": "2026-09-24"
+    },
+    "general_stance": "supports"
+   }
+  },
+  "emily-domenech": {
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
+   "set": {
+    "stance": "neutral",
+    "position": "Runs the FAST-41 permitting process and has signed federal-state agreements that commit states to opt in to FAST-41 and align state and federal review timelines. She was the top House Republican staffer on permitting and energy policy.",
+    "general_stance": "supports"
    }
   },
   "mike-johnson": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
    "set": {
     "stance": "neutral",
-    "position": "Framed the House's December 2025 permitting package, including the SPEED Act, as fixing a 'broken permitting system' and codifying President Trump's executive orders. He also backed the Ratepayer Protection Act on data-center costs. No statement on the Senate bill was found."
+    "position": "Framed the House's December 2025 permitting package, including the SPEED Act, as fixing a 'broken permitting system' and codifying President Trump's executive orders. He also backed the Ratepayer Protection Act on data-center costs. No statement on the Senate bill was found.",
+    "general_stance": "supports"
    }
   },
   "jared-huffman": {
@@ -831,9 +848,9 @@
    }
   },
   "scott-peters": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. Heatmap and POLITICO sweep, 2026-10-02: each added line cites the article it came from. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): newer quote from Press release on his House site welcoming the Senate permitting package the day it was released; he ; the quote states a position on the bill, so the stance is 'supports'.",
    "set": {
-    "stance": "neutral",
+    "stance": "supports",
     "position": "Long-time advocate of NEPA changes who co-led the ePermit Act, which passed the House unanimously. He opposed the SPEED Act as passed and said it would not be fixed until it reached the Senate. On September 18, before the text was out, he said the Senate package was coming together and expected NEPA timelines, limits on presidents cancelling projects and Section 401 changes. No statement on the released bill was found.",
     "key_actions": [
      "2025-12-09: The ePermit Act he co-led with Rep. Dusty Johnson passed the House unanimously",
@@ -842,26 +859,25 @@
     ],
     "sources": [
      {
+      "title": "Press release on his House site welcoming the Senate permitting package the day it was released",
+      "publisher": "Office of Rep. Scott Peters",
+      "url": "https://scottpeters.house.gov/press-releases/peters-applauds-senate-permitting-package-touts-his-priorities-to-speed-up-clean-energy-and-lower-costs",
+      "date": "2026-09-30",
+      "verified": true
+     },
+     {
       "title": "How Republicans saved the 'SPEED Act' from oblivion",
       "publisher": "E&E News by POLITICO",
       "url": "https://www.eenews.net/articles/how-republicans-saved-the-speed-act-from-oblivion/",
       "date": "2025-12-17",
       "verified": true
-     },
-     {
-      "title": "AI: House passes permit reform bill Big Tech wants",
-      "publisher": "CNBC",
-      "url": "https://www.cnbc.com/2025/12/18/house-passes-permit-reform-bill-ai.html",
-      "date": "2025-12-18",
-      "verified": true
-     },
-     {
-      "title": "The Bipartisan Buddies With a Plan to Fix Transmission",
-      "publisher": "Heatmap News",
-      "url": "https://heatmap.news/politics/evans-peters-transmission",
-      "date": "2026-09-18"
      }
-    ]
+    ],
+    "quote": {
+     "text": "A permitting reform agreement with this much support from Republicans and Democrats should pass this Congress.",
+     "source_url": "https://scottpeters.house.gov/press-releases/peters-applauds-senate-permitting-package-touts-his-priorities-to-speed-up-clean-energy-and-lower-costs",
+     "date": "2026-09-30"
+    }
    }
   },
   "brian-schatz": {
@@ -998,16 +1014,66 @@
    }
   },
   "hakeem-jeffries": {
-   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text.",
+   "reason": "Stance is the position on the September 30, 2026 Senate bill; the note about which stance was meant is folded into the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): newer quote from Post-election comments to Politico about the Senate bill, quoted as a fragment in a Center Square ar; the quoted fragment criticizes the bill but states no position, so the stance stays 'no clear public position'.",
    "set": {
-    "position": "No public position on the Senate bill was found. He called the House-passed Ratepayer Protection Act 'a step forward' but said more needed to be done. On December 18, 2025, 195 of the 206 House Democrats voting opposed the SPEED Act."
+    "position": "No public position on the Senate bill was found. He called the House-passed Ratepayer Protection Act 'a step forward' but said more needed to be done. On December 18, 2025, 195 of the 206 House Democrats voting opposed the SPEED Act.",
+    "quote": {
+     "text": "falls short in several areas",
+     "source_url": "https://justthenews.com/nation/states/center-square/democrats-midterm-gains-complicate-path-forward-permitting-bill",
+     "date": "2026-11-07"
+    },
+    "stance": "neutral",
+    "sources": [
+     {
+      "title": "Post-election comments to Politico about the Senate bill, quoted as a fragment in a Center Square article (Nov. 7)",
+      "publisher": "Just the News (The Center Square)",
+      "url": "https://justthenews.com/nation/states/center-square/democrats-midterm-gains-complicate-path-forward-permitting-bill",
+      "date": "2026-11-07",
+      "verified": true
+     },
+     {
+      "title": "Roll Call 356, H.R. 4776 (SPEED Act), On Passage",
+      "publisher": "Office of the Clerk, U.S. House of Representatives",
+      "url": "https://clerk.house.gov/Votes/2025356",
+      "date": "2025-12-18",
+      "verified": true
+     }
+    ]
    }
   },
   "brent-booker": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): newer quote from LIUNA press statement by General President Brent Booker on S. 5653; the quote states a position on the bill, so the stance is 'supports'.",
    "set": {
-    "stance": "neutral",
-    "position": "Told the Senate EPW Committee in January 2026 that LIUNA, representing more than 530,000 construction workers, has supported permitting reform for more than a decade and that fully permitted projects are routinely derailed by litigation. No LIUNA statement on the Senate bill was found."
+    "stance": "supports",
+    "position": "Told the Senate EPW Committee in January 2026 that LIUNA, representing more than 530,000 construction workers, has supported permitting reform for more than a decade and that fully permitted projects are routinely derailed by litigation. No LIUNA statement on the Senate bill was found.",
+    "quote": {
+     "text": "We urge lawmakers in both parties to seize this moment, pass the Bipartisan American Affordability and Jobs Act of 2026, and finally deliver meaningful permitting reform.",
+     "source_url": "https://www.liuna.org/news/story/liuna-general-president-brent-bookers-statement-on-permitting-reform",
+     "date": "2026-10-02"
+    },
+    "sources": [
+     {
+      "title": "LIUNA press statement by General President Brent Booker on S. 5653",
+      "publisher": "LIUNA",
+      "url": "https://www.liuna.org/news/story/liuna-general-president-brent-bookers-statement-on-permitting-reform",
+      "date": "2026-10-02",
+      "verified": true
+     },
+     {
+      "title": "Testimony of General President Brent Booker, Senate EPW Committee hearing, Part II",
+      "publisher": "U.S. Senate Committee on Environment and Public Works",
+      "url": "https://www.epw.senate.gov/public/_cache/files/a/9/a99fa191-51ec-433e-b7b1-ebee3409471a/BAB28A9720FCB677BECB159BF0F8F3D61C2E42BFE3B856E1EBC17A754B2464FE.01-28-2026-booker-testimony.pdf",
+      "date": "2026-01-28",
+      "verified": true
+     },
+     {
+      "title": "Hearing to Examine the Federal Environmental Review and Permitting Processes, Part II",
+      "publisher": "U.S. Senate Committee on Environment and Public Works",
+      "url": "https://www.epw.senate.gov/public/index.cfm/2026/1/hearing-to-improve-the-federal-environmental-review-and-permitting-processes-part-ii",
+      "date": "2026-01-28",
+      "verified": true
+     }
+    ]
    }
   },
   "lee-zeldin": {
@@ -1018,17 +1084,39 @@
    }
   },
   "brent-gardner": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): newer quote from Americans for Prosperity press release after the 73-25 cloture vote, titled 'Congress cannot let thi; the quote states a position on the bill, so the stance is 'supports'.",
    "set": {
-    "stance": "neutral",
-    "position": "AFP celebrated House passage of the SPEED Act as the most significant NEPA reform in more than 50 years and urged the Senate to take it up. No AFP statement on the Senate bill was found."
+    "stance": "supports",
+    "position": "AFP celebrated House passage of the SPEED Act as the most significant NEPA reform in more than 50 years and urged the Senate to take it up. No AFP statement on the Senate bill was found.",
+    "quote": {
+     "text": "Energy powers nearly every part of our economy, and BAAJA would help expand energy supply and make life more affordable by cutting red tape that drives up costs throughout our economy, from housing to groceries to infrastructure.",
+     "source_url": "https://americansforprosperity.org/press-release/congress-cannot-let-this-moment-pass-we-must-fix-our-broken-permitting-system/",
+     "date": "2026-11-09"
+    },
+    "sources": [
+     {
+      "title": "Americans for Prosperity press release after the 73-25 cloture vote, titled 'Congress cannot let this moment pass. We mu",
+      "publisher": "Americans for Prosperity",
+      "url": "https://americansforprosperity.org/press-release/congress-cannot-let-this-moment-pass-we-must-fix-our-broken-permitting-system/",
+      "date": "2026-11-09",
+      "verified": true
+     },
+     {
+      "title": "Americans for Prosperity Celebrates Bipartisan Passage of the SPEED Act in the House",
+      "publisher": "Americans for Prosperity",
+      "url": "https://americansforprosperity.org/press-release/americans-for-prosperity-celebrates-bipartisan-passage-of-the-speed-act-in-the-house/",
+      "date": "2025-12-18",
+      "verified": true
+     }
+    ]
    }
   },
   "joe-manchin": {
-   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text.",
+   "reason": "No statement on the Senate bill was found, so the stance is 'no position stated'; the earlier record stays in the text. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
    "set": {
     "stance": "neutral",
-    "position": "Co-wrote the 2024 Energy Permitting Reform Act with John Barrasso. It cleared the Senate Energy Committee 15-4 and never reached a floor vote. He has left office, and no statement from him on the Senate bill was found."
+    "position": "Co-wrote the 2024 Energy Permitting Reform Act with John Barrasso. It cleared the Senate Energy Committee 15-4 and never reached a floor vote. He has left office, and no statement from him on the Senate bill was found.",
+    "general_stance": "supports"
    }
   },
   "liza-reed": {
@@ -1127,7 +1215,7 @@
    }
   },
   "melanie-stansbury": {
-   "reason": "2026-10-20: On October 14 she said she cannot support the bill in its current form (Portuondo, X), which moves her from mixed to opposes.",
+   "reason": "2026-10-20: On October 14 she said she cannot support the bill in its current form (Portuondo, X), which moves her from mixed to opposes. 2026-11-16: quote dated October 13 from the Punchbowl story it was read in.",
    "set": {
     "stance": "opposes",
     "position": "Says she cannot support the bill in its current form, citing Tribal sovereignty and consultation.",
@@ -1147,17 +1235,437 @@
       "date": "2026-10-14",
       "verified": true
      }
-    ]
+    ],
+    "quote": {
+     "text": "tribal sovereignty, the rights of our communities, and the environment will always be my line in the sand",
+     "source_url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
+     "date": "2026-10-13"
+    }
    }
   },
   "jon-husted": {
-   "reason": "Name the measure and decision; distinguish taking up a bill from passing it.",
+   "reason": "Name the measure and decision; distinguish taking up a bill from passing it. 2026-11-16: quote dated 2026-09-17 from the coverage item with the same page. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
    "set": {
     "key_actions": [
      "2026-07-16: Introduced S. 5028",
      "2026-09-17: Sought unanimous consent",
      "Urged Senate leaders to end debate on taking up the Ratepayer Protection Act on September 30"
+    ],
+    "quote": {
+     "text": "Ohio's economy is growing, and the grid has to keep up. We can't build Ohio's energy future and lower costs for working families if it takes up to a decade just to get a permit.",
+     "source_url": "https://www.husted.senate.gov/media/press-releases/husted-barrasso-host-permitting-reform-roundtable-in-columbus/",
+     "date": "2026-10-13"
+    },
+    "sources": [
+     {
+      "title": "Quoted in his Senate press release on a permitting reform roundtable in Columbus with Sen. Barrasso, at which participan",
+      "publisher": "Office of Sen. Jon Husted",
+      "url": "https://www.husted.senate.gov/media/press-releases/husted-barrasso-host-permitting-reform-roundtable-in-columbus/",
+      "date": "2026-10-13",
+      "verified": true
+     },
+     {
+      "title": "Husted release",
+      "url": "https://www.husted.senate.gov/media/press-releases/husted-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers-blocked-from-passage/"
+     }
+    ],
+    "general_stance": "supports"
+   }
+  },
+  "teresa-leger-fernandez": {
+   "reason": "2026-11-16: newest quote from the person, copied from the coverage item 2026-10-24-repteresalf-x-nhpa, already checked by make quotes. The quote states a position, so the stance is 'opposes'. The quote's page is added to the sources.",
+   "set": {
+    "quote": {
+     "text": "I cannot support the Bipartisan American Affordability and Jobs Act in its current form.",
+     "source_url": "https://x.com/RepTeresaLF/status/2114006840979677187",
+     "date": "2026-10-24"
+    },
+    "stance": "opposes",
+    "sources": [
+     {
+      "title": "Statement opposing the bill over historic preservation",
+      "publisher": "X",
+      "url": "https://x.com/RepTeresaLF/status/2114006840979677187",
+      "date": "2026-10-24",
+      "verified": true
+     }
     ]
+   }
+  },
+  "frank-macchiarola": {
+   "reason": "2026-11-16: newest quote from the person, copied from the coverage item 2026-11-09-american-clean-power-acp-urges-senators-to, already checked by make quotes. The quote states a position, so the stance is 'supports'. The quote's page is added to the sources.",
+   "set": {
+    "quote": {
+     "text": "Today's vote is a critical step toward modernizing our outdated permitting process and getting ready-to-build clean energy projects moving.",
+     "source_url": "https://cleanpower.org/news/acp-urges-senators-to-move-permitting-reform-forward/",
+     "date": "2026-11-09"
+    },
+    "stance": "supports",
+    "sources": [
+     {
+      "title": "ACP Urges Senators to Move Permitting Reform Forward",
+      "publisher": "American Clean Power Association",
+      "url": "https://cleanpower.org/news/acp-urges-senators-to-move-permitting-reform-forward/",
+      "date": "2026-11-09",
+      "verified": true
+     }
+    ]
+   }
+  },
+  "tim-pawlenty": {
+   "reason": "2026-11-16: newest quote from the person, copied from the coverage item 2026-11-09-solar-energy-industries-solar-and-storage-industry, already checked by make quotes. The quote's page is added to the sources.",
+   "set": {
+    "quote": {
+     "text": "Americans urgently need lower energy costs, a better electric grid and more energy made in the U.S.A. This bipartisan legislation delivers all three.",
+     "source_url": "https://seia.org/?p=18691",
+     "date": "2026-11-09"
+    },
+    "sources": [
+     {
+      "title": "Solar and Storage Industry Statement on Bipartisan Permitting Reform Bill Passing First Procedural Vote",
+      "publisher": "Solar Energy Industries Association",
+      "url": "https://seia.org/?p=18691",
+      "date": "2026-11-09",
+      "verified": true
+     }
+    ]
+   }
+  },
+  "ben-schifman": {
+   "reason": "2026-11-16: newest quote from the person, copied from the coverage item 2026-10-13-ifp-baaja-protects-tribal-consultation, already checked by make quotes. The quote's page is added to the sources. 2026-11-16: quote dated October 13 from the Punchbowl story it was read in.",
+   "set": {
+    "quote": {
+     "text": "This was a pretty even compromise, changing around the edges some excesses of the 106 process, but writing into the law for the first time stuff that's important to tribes.",
+     "source_url": "https://punchbowl.news/article/energy/heinrich-faces-backlash-over-permitting-deal/",
+     "date": "2026-10-13"
+    }
+   }
+  },
+  "ira-matt": {
+   "reason": "2026-11-16: newest quote from the person, copied from the coverage item 2026-10-16-nathpo-heritage-not-a-bargaining-chip, already checked by make quotes. The quote's page is added to the sources.",
+   "set": {
+    "quote": {
+     "text": "Our heritage is not a bargaining chip, and the sovereignty and sacred places of Tribal Nations are not leverage for Senators’ backroom negotiations.",
+     "source_url": "https://nathpo.org/2026/10/16/nathpo-october-16th-2026-news-release/",
+     "date": "2026-10-16"
+    },
+    "sources": [
+     {
+      "title": "NATHPO to Senators: “Our Heritage Is Not a Bargaining Chip”",
+      "publisher": "National Association of Tribal Historic Preservation Officers",
+      "url": "https://nathpo.org/2026/10/16/nathpo-october-16th-2026-news-release/",
+      "date": "2026-10-16",
+      "verified": true
+     }
+    ]
+   }
+  },
+  "jeff-merkley": {
+   "reason": "2026-11-16: newest quote from the person, copied from the coverage item 2026-11-10-common-dreams-days-after-midterm-blowout, already checked by make quotes. The quote's page is added to the sources.",
+   "set": {
+    "quote": {
+     "text": "It shortens timelines that make it hard-to-impossible for grassroots and community groups to raise concerns about projects.",
+     "source_url": "https://www.commondreams.org/news/senate-advances-permitting-reform",
+     "date": "2026-11-10"
+    },
+    "sources": [
+     {
+      "title": "Days After Midterm Blowout, 22 Democrats Join GOP to Advance 'Massive Giveaway' to Big Oil",
+      "publisher": "Common Dreams",
+      "url": "https://www.commondreams.org/news/senate-advances-permitting-reform",
+      "date": "2026-11-10",
+      "verified": true
+     },
+     {
+      "title": "Sen. Merkley Statement on Senate Permitting Legislation",
+      "publisher": "Office of Sen. Jeff Merkley",
+      "url": "https://www.merkley.senate.gov/sen-merkley-statement-on-senate-permitting-legislation/",
+      "date": "2026-11-09",
+      "verified": true
+     }
+    ]
+   }
+  },
+  "gabe-evans": {
+   "reason": "2026-11-16: quote dated 2026-09-16 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "My bipartisan Ratepayer Protection Act ensures large data centers pay for the infrastructure they require while giving states the flexibility to determine what works best for their communities.",
+     "source_url": "https://gabeevans.house.gov/media/press-releases/congressman-gabe-evans-bipartisan-ratepayer-protection-act-passes-house",
+     "date": "2026-09-16"
+    }
+   }
+  },
+  "kathy-castor": {
+   "reason": "2026-11-16: quote dated 2026-09-16 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "The bipartisan Ratepayer Protection Act is an important first step that can help lower costs for our neighbors back home and empower states to set additional, strict guardrails.",
+     "source_url": "https://gabeevans.house.gov/media/press-releases/congressman-gabe-evans-bipartisan-ratepayer-protection-act-passes-house",
+     "date": "2026-09-16"
+    }
+   }
+  },
+  "josh-hawley": {
+   "reason": "2026-11-16: quote dated 2026-02-11 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "American families should not have to shoulder the burden of the rising electricity costs produced by data centers in Missouri and across the country.",
+     "source_url": "https://www.hawley.senate.gov/hawley-blumenthal-introduce-bill-to-prevent-data-centers-from-increasing-electricity-costs-for-americans",
+     "date": "2026-02-11"
+    }
+   }
+  },
+  "paul-tonko": {
+   "reason": "2026-11-16: quote dated 2026-07-21 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "We are not doing what this moment demands of us,",
+     "source_url": "https://www.eenews.net/articles/house-committee-narrows-data-center-energy-bill-3/",
+     "date": "2026-07-21"
+    }
+   }
+  },
+  "byron-donalds": {
+   "reason": "2026-11-16: quote dated 2026-07-21 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "It’s in their interest to make sure that we can construct these centers, and I think the number one way you address and mitigate the concerns that people are having is to just ensure their utility bills aren’t going up in the process.",
+     "source_url": "https://fortune.com/2026/07/21/byron-donalds-ai-data-centers-florida-desantis/",
+     "date": "2026-07-21"
+    }
+   }
+  },
+  "lisa-blunt-rochester": {
+   "reason": "2026-11-16: quote dated 2026-10-01 from the coverage item with the same page. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): newer quote from Statement in her Senate press release titled 'Senator Blunt Rochester Opposes Senate Permitting Refo; the quote states a position on the bill, so the stance is 'opposes'.",
+   "set": {
+    "quote": {
+     "text": "My goals for this bill were to create a strong economy with clean energy, lower costs, and protect our health and environment. While I commend the work Senators Heinrich and Whitehouse put into the negotiations of this updated permitting reform package, and I’m grateful two of my bills were included, this bill still falls short.",
+     "source_url": "https://www.bluntrochester.senate.gov/news/press-releases/statement-senator-blunt-rochester-opposes-senate-permitting-reform-bill/",
+     "date": "2026-11-09"
+    },
+    "stance": "opposes",
+    "sources": [
+     {
+      "title": "Statement in her Senate press release titled 'Senator Blunt Rochester Opposes Senate Permitting Reform Bill', on the Bip",
+      "publisher": "Office of Sen. Lisa Blunt Rochester",
+      "url": "https://www.bluntrochester.senate.gov/news/press-releases/statement-senator-blunt-rochester-opposes-senate-permitting-reform-bill/",
+      "date": "2026-11-09",
+      "verified": true
+     },
+     {
+      "title": "Blunt Rochester release",
+      "url": "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/"
+     }
+    ]
+   }
+  },
+  "john-curtis": {
+   "reason": "2026-11-16: quote dated 2026-10-01 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "Americans are rightly skeptical when a large company tells them not to worry about the impacts of a new data center in their community,",
+     "source_url": "https://www.bluntrochester.senate.gov/news/press-releases/news-senators-blunt-rochester-curtis-introduce-bills-to-help-public-understand-impacts-of-data-center/",
+     "date": "2026-10-01"
+    }
+   }
+  },
+  "angus-king": {
+   "reason": "2026-11-16: quote dated 2026-09-30 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "All the issues are solved in concept",
+     "source_url": "https://www.politico.com/live-updates/2026/09/30/congress/one-day-more-01098791",
+     "date": "2026-09-30"
+    }
+   }
+  },
+  "jarrod-agen": {
+   "reason": "2026-11-16: quote dated 2026-06-10 from the coverage item with the same page. 2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
+   "set": {
+    "quote": {
+     "text": "We’re not going to give bad projects at the cost of good projects",
+     "source_url": "https://www.politico.com/newsletters/power-switch/2026/06/10/special-edition-politicos-energy-summit-kicks-off-hot-permitting-summer-00957736",
+     "date": "2026-06-10"
+    },
+    "general_stance": "supports"
+   }
+  },
+  "ari-peskoe": {
+   "reason": "2026-11-16: quote dated 2026-06-23 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "largely symbolic",
+     "source_url": "https://heatmap.news/politics/ratepayer-protection-act-explained",
+     "date": "2026-06-23"
+    }
+   }
+  },
+  "alex-epstein": {
+   "reason": "2026-11-16: quote dated 2026-05-22 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "I’m against any sort of technology-related crackdown of any kind by any administration",
+     "source_url": "https://www.eenews.net/articles/wright-meets-with-republicans-on-permitting-but-deal-remains-elusive-as-ever/",
+     "date": "2026-05-22"
+    }
+   }
+  },
+  "rob-gramlich": {
+   "reason": "2026-11-16: quote dated 2026-10-01 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "The transmission title as well as the impact of the other sections on transmission development are very well-crafted.",
+     "source_url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/",
+     "date": "2026-10-01"
+    }
+   }
+  },
+  "devin-hartman": {
+   "reason": "2026-11-16: quote dated 2026-10-01 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "This is what stakeholders have been working on — permitting and transmission reform — for the last several Congresses",
+     "source_url": "https://www.utilitydive.com/news/senate-permitting-bill-would-expand-federal-role-in-electric-transmission-s/831886/",
+     "date": "2026-10-01"
+    }
+   }
+  },
+  "nathaniel-keohane": {
+   "reason": "2026-11-16: quote dated 2026-09-30 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "Really simply, we need to build more energy infrastructure in this country... We need to do that faster, and these reforms will help.",
+     "source_url": "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines",
+     "date": "2026-09-30"
+    }
+   }
+  },
+  "greg-werkheiser": {
+   "reason": "2026-11-16: quote dated 2026-10-15 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "It will effectively rewrite the National Historic Preservation Act in ways that, for all intents and purposes, gut its meaning and protections for hundreds of thousands of sites across the country,",
+     "source_url": "https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary",
+     "date": "2026-10-15"
+    }
+   }
+  },
+  "terry-klein": {
+   "reason": "2026-11-16: quote dated 2026-10-14 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "in the context of historic preservation, it does exactly the opposite",
+     "source_url": "https://www.washingtontimes.com/news/2026/oct/14/rush-cut-permitting-red-tape-runs-law-protect-americas-historic-sites/",
+     "date": "2026-10-14"
+    }
+   }
+  },
+  "roger-wicker": {
+   "reason": "2026-11-16: quote dated 2026-10-13 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
+     "source_url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
+     "date": "2026-10-13"
+    }
+   }
+  },
+  "brandon-tatum": {
+   "reason": "2026-11-16: quote dated 2026-10-01 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "The National Governors Association and its partners are encouraged by the introduction of the Bipartisan American Affordability and Jobs Act of 2026 and look forward to working with Congress to further develop this legislation.",
+     "source_url": "https://www.nga.org/?p=81333",
+     "date": "2026-10-01"
+    }
+   }
+  },
+  "bill-owens": {
+   "reason": "2026-11-16: quote dated 2026-10-01 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "NAHB applauds Senators Lee, Capito, Heinrich and Whitehouse and for their leadership and bipartisan approach to crafting the most meaningful reforms in decades to several key federal environmental permitting programs.",
+     "source_url": "https://www.nahb.org/news-and-economics/press-releases/2026/10/nahb-applauds-bipartisan-american-affordability-and-jobs-act",
+     "date": "2026-10-01"
+    }
+   }
+  },
+  "joshua-bolten": {
+   "reason": "2026-11-16: quote dated 2026-10-07 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "Business Roundtable strongly supports the Bipartisan American Affordability and Jobs Act of 2026.",
+     "source_url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+     "date": "2026-10-07"
+    }
+   }
+  },
+  "xan-fishman": {
+   "reason": "2026-11-16: quote dated 2026-10-07 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "This bill would fix our permitting processes so that we can review and build efficiently, reducing costs, improving quality of life, growing our economy, and improving economic outcomes.",
+     "source_url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+     "date": "2026-10-07"
+    }
+   }
+  },
+  "bill-mckibben": {
+   "reason": "2026-11-16: quote dated 2026-10-13 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "It would be highly ironic if the first action Congress took after an election largely defined by opposition to data centers would be to make it easier to build them,",
+     "source_url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+     "date": "2026-10-13"
+    }
+   }
+  },
+  "neil-bradley": {
+   "reason": "2026-11-16: quote dated 2026-10-15 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "Congress should seize this bipartisan opportunity and send the bill to the President's desk as soon as possible",
+     "source_url": "https://www.uschamber.com/assets/documents/261013_Hill_Support-for-American-Affordability-and-Jobs-Act-of-2026_EPW-ENR_Clean.pdf",
+     "date": "2026-10-15"
+    }
+   }
+  },
+  "greg-gianforte": {
+   "reason": "2026-11-16: quote dated 2026-10-01 from the coverage item with the same page.",
+   "set": {
+    "quote": {
+     "text": "Republican governors urge Congress to act swiftly, pass meaningful permitting reform, and send this legislation to President Trump's desk.",
+     "source_url": "https://missoulian.com/news/community/article_8c2bc906-1e54-5dd6-aac9-63436a1e716e.html",
+     "date": "2026-10-01"
+    }
+   }
+  },
+  "laura-swett": {
+   "reason": "2026-11-16 quote sweep (data/research/sweep-2026-11-16): the quote supports permitting reform but names no position on this bill, so the bill stance stays neutral and the page says the person supports permitting reform generally.",
+   "set": {
+    "quote": {
+     "text": "we need durable, consistent, efficient regulatory frameworks for permitting new infrastructure.",
+     "source_url": "https://www.utilitydive.com/news/ferc-gas-pipeline-lng-blanket-authorization-permitting-reform/833234/",
+     "date": "2026-10-15"
+    },
+    "sources": [
+     {
+      "title": "Said at FERC's monthly meeting on Oct. 15, 2026, per Utility Dive (published Oct. 16), which reports she was encouraged ",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/ferc-gas-pipeline-lng-blanket-authorization-permitting-reform/833234/",
+      "date": "2026-10-15",
+      "verified": true
+     },
+     {
+      "title": "Trump taps Swett to lead FERC",
+      "publisher": "Utility Dive",
+      "url": "https://www.utilitydive.com/news/trump-taps-swett-to-lead-ferc/803735/",
+      "date": "2025-10-24",
+      "verified": true
+     }
+    ],
+    "general_stance": "supports"
    }
   }
  },
@@ -1423,6 +1931,30 @@
   "2026-10-26-thomashochman-x-survey-scope": {
    "reason": "The X post returned HTTP 404 on 2026-11-15 from x.com and from the oEmbed endpoint; the post is gone, so the item has no source to link.",
    "drop": true
+  },
+  "2026-10-15-npr-section-106-threat-anniversary": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "summary": "NPR reports on the bill's Section 106 changes, quotes NATHPO's executive director, and says Tribal groups sent Senate leaders a letter the week before."
+   }
+  },
+  "2026-10-14-heatmap-mini-marine-power": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "summary": "Heatmap reports that the bill's marine and hydrokinetic licensing provisions apply to small wave, tidal and river-current projects."
+   }
+  },
+  "2026-06-09-ee-news-debate-over-preservation-law-tripping-up-permitting-talks": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "summary": "E&E News reported that Mike Lee's push to change the National Historic Preservation Act was tripping up the talks. Lee wanted limits on lawsuits; some Democrats were wary because the law matters to tribes and preservation groups. Heinrich said the aim was to preserve the law's intent while making reviews more predictable."
+   }
+  },
+  "2025-10-23-ee-news-whitehouse-threatens-to-blow-up-permitting-talks": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "summary": "At an EPW hearing Whitehouse said it made little sense to pursue bipartisan permitting reform while the administration would not faithfully execute the law, citing the Revolution Wind stop-work order and canceled solar approvals. He also said he might oppose routine water and highway bills."
+   }
   }
  }
 }

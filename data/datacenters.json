@@ -79,7 +79,7 @@
     "grid_operators"
    ],
    "effect": "changes",
-   "now": "Each regional grid operator and utility maintains bespoke engineering criteria and proprietary software workflows, requiring repeated supplemental data requests.",
+   "now": "Each regional grid operator and utility maintains its own engineering criteria and software workflows.",
    "now_cite": "RMI on FERC's June 2026 orders",
    "now_url": "https://rmi.org/resources/understanding-fercs-large-load-orders/",
    "baaja": "Requires FERC and the Department of Energy to publish, within 1 year, a joint reference specification for fully automated interconnection studies, including system impact studies, without supplemental data requests during the study process.",
@@ -248,7 +248,7 @@
     "ratepayers"
    ],
    "effect": "narrows",
-   "now": "Cost allocation for large loads is decided in utility rate cases before state commissions or FERC, with no federal statutory floor preventing cost-shifting to residential ratepayers.",
+   "now": "Cost allocation for large loads is decided in utility rate cases before state commissions or FERC.",
    "now_cite": "White House, Ratepayer Protection Pledge",
    "now_url": "https://www.whitehouse.gov/releases/2026/03/ratepayer-protection-pledge/",
    "baaja": "Adds Federal Power Act section 228. For data centers and high-density computing loads of 20 MW or more that interconnect on or after enactment, no portion of the incremental generation, storage, transmission, or distribution cost may be allocated to or recovered in rates of any other customer. Existing approved arrangements remain grandfathered.",

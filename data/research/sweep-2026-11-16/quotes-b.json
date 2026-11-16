@@ -1,0 +1,148 @@
+[
+ {
+  "id": "jon-husted",
+  "found": true,
+  "quote": "Ohio's economy is growing, and the grid has to keep up. We can't build Ohio's energy future and lower costs for working families if it takes up to a decade just to get a permit.",
+  "url": "https://www.husted.senate.gov/media/press-releases/husted-barrasso-host-permitting-reform-roundtable-in-columbus/",
+  "date": "2026-10-13",
+  "speaker_context": "Quoted in his Senate press release on a permitting reform roundtable in Columbus with Sen. Barrasso, at which participants discussed S. 5653. The quoted sentences do not name the bill; the release says he worked to include stronger protections in it.",
+  "about": "permitting reform generally",
+  "reading": "supports",
+  "reading_reason": "He says Ohio cannot build its energy future 'if it takes up to a decade just to get a permit', and the release says he worked to include ratepayer protections in the permitting bill.",
+  "route": "r.jina.ai"
+ },
+ {
+  "id": "josh-hawley",
+  "found": true,
+  "quote": "Today, U.S. Senator Josh Hawley (R-Mo.) introduced four amendments to the Senate’s permitting and transmission bill to better protect farmers in Missouri and across the country.",
+  "url": "https://www.hawley.senate.gov/hawley-works-to-protect-missouri-farmers-landowners-in-senate-transmission-bill/",
+  "date": "2026-11-11",
+  "speaker_context": "Opening sentence of his official Senate press release; the release has no direct quotation from him, so this is his office's statement of his action. The release does not name S. 5653 or BAAJA.",
+  "about": "the bill",
+  "reading": "mixed",
+  "reading_reason": "He files four amendments to the Senate permitting and transmission bill to protect landowners, seeking changes rather than stating support or opposition.",
+  "route": "r.jina.ai"
+ },
+ {
+  "id": "lisa-blunt-rochester",
+  "found": true,
+  "quote": "My goals for this bill were to create a strong economy with clean energy, lower costs, and protect our health and environment. While I commend the work Senators Heinrich and Whitehouse put into the negotiations of this updated permitting reform package, and I’m grateful two of my bills were included, this bill still falls short.",
+  "url": "https://www.bluntrochester.senate.gov/news/press-releases/statement-senator-blunt-rochester-opposes-senate-permitting-reform-bill/",
+  "date": "2026-11-09",
+  "speaker_context": "Statement in her Senate press release titled 'Senator Blunt Rochester Opposes Senate Permitting Reform Bill', on the Bipartisan American Affordability and Jobs Act (date from her press-release listing; the page's own metadata shows 28 Oct).",
+  "about": "the bill",
+  "reading": "opposes",
+  "reading_reason": "She says 'this bill still falls short' and the release adds 'I can’t support this iteration of the Bipartisan American Affordability and Jobs Act'.",
+  "route": "r.jina.ai"
+ },
+ {
+  "id": "kathy-castor",
+  "found": true,
+  "quote": "I hope my Republican colleagues will work with us to make progress on building a 21st century grid – particularly to permit and build new transmission lines, and support all forms of clean, affordable energy.",
+  "url": "https://democrats-energycommerce.house.gov/sites/evo-subsites/democrats-energycommerce.house.gov/files/evo-media-document/castor_os_eng.2026.7.14.pdf",
+  "date": "2026-07-14",
+  "speaker_context": "Closing of her prepared opening statement as Energy Subcommittee ranking member at a markup of six bills; not about the Senate bill and predates it.",
+  "about": "permitting reform generally",
+  "reading": "none",
+  "reading_reason": "She asks for bipartisan progress on permitting and building transmission alongside clean energy but takes no position on the Senate bill.",
+  "route": "r.jina.ai"
+ },
+ {
+  "id": "gabe-evans",
+  "found": true,
+  "quote": "In case you missed it, Heatmap News highlighted Congressman Gabe Evans (R-CO) and Congressman Scott Peters’ (D-CA) bipartisan work to reform America’s permitting system and make it easier to build the energy and transmission infrastructure communities need.",
+  "url": "https://gabeevans.house.gov/media/press-releases",
+  "date": "2026-09-18",
+  "speaker_context": "His office's press release on his own House press-release listing page (individual release URL not confirmed); not a direct quote from Evans, predates S. 5653, and does not mention the Senate bill.",
+  "about": "permitting reform generally",
+  "reading": "supports",
+  "reading_reason": "His office describes his 'bipartisan work to reform America’s permitting system' as something to highlight.",
+  "route": "r.jina.ai"
+ },
+ {
+  "id": "jarrod-agen",
+  "found": true,
+  "quote": "once projects are permitted and moving forward — that the lawsuits can’t kill them.",
+  "url": "https://www.eenews.net/articles/white-house-wants-energy-projects-lawsuits-cant-kill/",
+  "date": "2026-02-12",
+  "speaker_context": "E&E News/Greenwire (Robin Bravender, 2026-02-13) quoting Agen on a Thursday panel at the Foundation for Defense of Democracies, where he said permitting reform is one of the White House's 'huge pushes' on Capitol Hill. Predates S. 5653.",
+  "about": "permitting reform generally",
+  "reading": "supports",
+  "reading_reason": "He calls permitting reform a 'huge push' for the White House and wants permitted projects protected from lawsuits.",
+  "route": "r.jina.ai"
+ },
+ {
+  "id": "brian-fitzpatrick",
+  "found": false,
+  "searched": [
+   "Brian Fitzpatrick permitting reform Senate bill SPEED Act statement",
+   "Rep. Fitzpatrick Problem Solvers Caucus Senate permitting bill statement November 2026",
+   "fitzpatrick.house.gov press-release listing (no permitting item)"
+  ]
+ },
+ {
+  "id": "paul-tonko",
+  "found": false,
+  "searched": [
+   "Paul Tonko Senate permitting bill statement November",
+   "Tonko statement Bipartisan American Affordability and Jobs Act",
+   "tonko.house.gov 2026 press-release listing (no permitting item)"
+  ]
+ },
+ {
+  "id": "byron-donalds",
+  "found": false,
+  "searched": [
+   "Byron Donalds permitting reform Senate bill",
+   "Donalds permitting reform Florida governor candidate energy permitting Senate bill",
+   "donalds.house.gov press listing (empty); only a June 2026 state-level Florida Means Business permitting agenda, not federal reform"
+  ]
+ },
+ {
+  "id": "john-curtis",
+  "found": false,
+  "searched": [
+   "Senator John Curtis permitting reform bill statement Utah Lee permitting deal",
+   "Curtis senator Utah vote permitting bill cloture November 9 2026 statement",
+   "curtis.senate.gov press-release listing through Nov 13 2026 (no permitting-bill item)"
+  ]
+ },
+ {
+  "id": "angus-king",
+  "found": false,
+  "searched": [
+   "Angus King permitting bill Senate vote statement King Heinrich Capito Whitehouse permitting",
+   "king.senate.gov press-release listing through Nov 12 2026 (no permitting item); Axios reports he voted yes on the Nov 9 cloture vote, no quote"
+  ]
+ },
+ {
+  "id": "travis-fisher",
+  "found": false,
+  "searched": [
+   "Travis Fisher Cato Institute Senate permitting deal Bipartisan American Affordability and Jobs Act",
+   "Cato Institute Travis Fisher permitting reform Senate NEPA bill 2026"
+  ]
+ },
+ {
+  "id": "ari-peskoe",
+  "found": false,
+  "searched": [
+   "Ari Peskoe Harvard Electricity Law Initiative permitting bill Senate transmission data centers comment"
+  ]
+ },
+ {
+  "id": "alex-epstein",
+  "found": false,
+  "searched": [
+   "Alex Epstein permitting reform Senate bill Lee Heinrich energy permitting 2026",
+   "Substack post 'Meaningful permitting reform that Republicans and Democrats can agree on' seen in results but not fetched or dated"
+  ]
+ },
+ {
+  "id": "brett-kavanaugh",
+  "found": false,
+  "searched": [
+   "Kavanaugh NEPA Seven County decision permitting reform Senate bill Justice Kavanaugh statement 2026 (only his 2025 judicial opinion; a sitting justice made no public statement on the bill)"
+  ]
+ }
+]
