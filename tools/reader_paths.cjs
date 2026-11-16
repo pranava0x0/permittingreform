@@ -35,7 +35,7 @@ const PATHS = [
   ['vs-speed-courts', [{ tab: 'bill' }, { href: '#/compare' }, { chipIn: '[data-comparison="main"]', name: 'SPEED Act' }, { row: 'row-sol' }], '#row-sol .col-speed'],
   ['cost-allocation', [{ tab: 'bill' }, { href: '#/compare' }, { row: 'row-cost' }], '#row-cost .col-senate'],
   ['dc-page', [{ tab: 'issues' }, row('.cm-row')], '.cm-row .cm-body'],
-  ['counties', [{ tab: 'issues' }, { href: '#/communities' }, row('.cm-row')], '.cm-row .cm-body'],
+  ['counties', [{ tab: 'issues' }, { href: '#/communities' }, { href: '#/communities/courts' }, row('.cm-row')], '.cm-row .cm-body'],
   ['wind-solar', [fold('Where it stands|Status')], open('#h-status')],
   ['agency-deadlines', [fold('Deadlines')], open('#h-clocks')],
   // Amendments: the key changes, one section's change, reactions to the substitute, and the substitute beside other bills.

@@ -12,7 +12,7 @@ Colors live in `site/styles.css`: white `--bg` (cream until 2026-10-22, dropped 
 
 The site title dominates the masthead. Five primary links fit on a phone: Overview, Bill, Key issues, Timeline and Coverage. Bill holds Sections and Compare bills. Key issues opens a topic directory, next to Debate and People and groups. Topic guides keep Topics selected. Events and reporting each open in one tap. Method stays beside the theme switch and in the footer. Preserve page URLs and keyboard focus when switching sibling pages. BAAJA is the bill label; its full title and source links expand under Bill details. Search appears on Overview and bill views. Main provisions precede status and sponsors.
 
-Hairline rules divide rows. Avoid cards, shadows, gradients, eyebrow labels and promotional metrics. Comparison tables become labeled rows on phones; the BAAJA column has a pale green background on larger screens. Each statutory paragraph has a page-and-line gutter linked to the PDF.
+Hairline rules divide rows. Communities, Data centers and Delays use bordered cards (2026-11-16, below); elsewhere, rows stay plain. Avoid shadows, gradients, eyebrow labels and promotional metrics. Comparison tables become labeled rows on phones; the BAAJA column has a pale green background on larger screens. Each statutory paragraph has a page-and-line gutter linked to the PDF.
 
 Use 375×812, 768×800 and 1280×800 for browser checks. Verify DOM counts before screenshots. The mobile masthead title stays on one line. The 18px theme icon keeps a 44px hit area. Controls on touch devices have a 44px minimum height. Preserve keyboard focus and the skip link.
 
@@ -111,3 +111,13 @@ Both sit on Positions under neutral headings: "Senate votes" and "Published esti
 ## Rules between tabs (2026-11-15)
 
 At 375 pixels the tab labels sit a few pixels apart, and "Bill Key issues Timeline" read as one phrase. Each tab and subtab after the first now carries a 1-pixel rule, 1.15em tall, on its left edge (`.tabs a + a::before`, `.subtabs a + a::before`). The rule is absolutely placed, so it adds no width and no label wraps. It uses `--on-brand-muted` on the green band and `--text-muted` on the light one.
+
+## Communities in four parts; cards for long entries (2026-11-16)
+
+The reader found Communities too big and the Communities and Delays text hard to read. Delays was the worst: an open cause ran each study's finding, quote and three-line source title together with nothing between one study and the next.
+
+Communities is now a list of four parts the reader named, each at `#/communities/<part>`: Section 106 and tribes (13), Species and water (9), Siting and transmission (7), Court rules and public comment (17). A part holds every row on its subject, consultation and lawsuits alike, so a reader following Section 106 stays on one page. Inside a part the rows keep their stage headings (comment, consultation, planning, court). Each row has a `page` field in `data/communities.json`, and the build rejects a row whose part is not listed. Filters reset when the reader opens another part. The part links carry a "Parts:" label so they do not read as a second Who filter.
+
+Each change is a bordered card with no shadow. The topic, the effect and who it affects stay visible when the card is closed. Open, it shows "Current law" on grey and "Under the bill" on the bill's pale green, side by side from 720 px. Data centers shares the same card function. On Delays each cause is a card, and each study inside it is a grey card: the finding, the quote, then the publisher and year, then the source title on its own line. The note on how studies differ sits under "About these figures".
+
+Measured at 375×812, in screen-heights, before and after: Communities 4.35 to 1.33 for the list of parts; the parts are 3.08, 2.28, 1.95 and 3.52. Data centers 2.51 to 3.66, because the who line now shows on each closed card. Delays 1.70 to 2.17 with every cause closed. `tests/uat.cjs` budgets the parts list at 2 screens and the Section 106 part at 4.

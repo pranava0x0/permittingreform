@@ -9,6 +9,28 @@
   "landowners": "Landowners",
   "consulting": "Consulting parties"
  },
+ "pages": [
+  {
+   "id": "tribes",
+   "label": "Section 106 and tribes",
+   "note": "Historic preservation review, tribal land and the lawsuits that follow from them."
+  },
+  {
+   "id": "water",
+   "label": "Species and water",
+   "note": "Endangered Species Act consultation and Clean Water Act permits and certifications, with their court rules."
+  },
+  {
+   "id": "siting",
+   "label": "Siting and transmission",
+   "note": "Federal siting of transmission lines, landowners, payments to places a line crosses and where challenges go."
+  },
+  {
+   "id": "courts",
+   "label": "Court rules and public comment",
+   "note": "Environmental review: comment periods, who can sue, how long they have and which court hears them."
+  }
+ ],
  "groups": [
   {
    "id": "comment",
@@ -47,7 +69,8 @@
    "sections": [
     "1106"
    ],
-   "quote": "The lead agency shall establish a comment period of not less than 45 days and not more than 60 days after the date on which the notice to prepare an environmental impact statement is published in the Federal Register"
+   "quote": "The lead agency shall establish a comment period of not less than 45 days and not more than 60 days after the date on which the notice to prepare an environmental impact statement is published in the Federal Register",
+   "page": "courts"
   },
   {
    "id": "ce-combine",
@@ -68,7 +91,8 @@
    "sections": [
     "1105"
    ],
-   "quote": "1 or a combination of multiple categorical exclusions (excluding multiple applications of the same or similar categorical exclusions that are based on size, acreage, or dollar amount thresholds) of the agency"
+   "quote": "1 or a combination of multiple categorical exclusions (excluding multiple applications of the same or similar categorical exclusions that are based on size, acreage, or dollar amount thresholds) of the agency",
+   "page": "courts"
   },
   {
    "id": "not-major-action",
@@ -88,7 +112,8 @@
    "sections": [
     "1102"
    ],
-   "quote": "a proposed agency action, the effects of which were previously evaluated by another agency in compliance with this Act"
+   "quote": "a proposed agency action, the effects of which were previously evaluated by another agency in compliance with this Act",
+   "page": "courts"
   },
   {
    "id": "state-tribal-substitute",
@@ -110,7 +135,8 @@
     "1106"
    ],
    "quote": "the proposed agency action relates to a project or action that has been reviewed pursuant to a State environmental review statute or a Tribal environmental review statute, ordinance, resolution, regulation, or formally adopted policy",
-   "quote_section": "1105"
+   "quote_section": "1105",
+   "page": "courts"
   },
   {
    "id": "research-cutoff",
@@ -130,7 +156,8 @@
    "sections": [
     "1106"
    ],
-   "quote": "No Federal agency shall be required to consider any scientific or technical research that becomes publicly available after the date of publication of a notice of intent or decision to prepare an environmental document"
+   "quote": "No Federal agency shall be required to consider any scientific or technical research that becomes publicly available after the date of publication of a notice of intent or decision to prepare an environmental document",
+   "page": "courts"
   },
   {
    "id": "alternatives-scope",
@@ -152,7 +179,8 @@
     "1102"
    ],
    "quote": "a cooperating agency shall be bound by the purpose and need of the proposed agency action and consider only those alternatives to the proposed agency action that the lead agency has, consistent with paragraph (1)(C), determined are reasonable",
-   "quote_section": "1106"
+   "quote_section": "1106",
+   "page": "courts"
   },
   {
    "id": "tracker-portal",
@@ -174,7 +202,8 @@
     "1121"
    ],
    "quote": "include a mechanism for the dissemination of relevant information (such as a notice of intent for public comment, public meetings, project statuses, or a notice of intent to begin an environmental review) to local communities, as applicable",
-   "quote_section": "1121"
+   "quote_section": "1121",
+   "page": "courts"
   },
   {
    "id": "stakeholder-record",
@@ -194,7 +223,8 @@
     "1102"
    ],
    "quote": "a record of stakeholder engagement for the proposed agency action as of the date of the application",
-   "quote_section": "1109"
+   "quote_section": "1109",
+   "page": "courts"
   },
   {
    "id": "statutory-exemptions",
@@ -217,7 +247,8 @@
     "2229"
    ],
    "quote": "shall not be considered an undertaking for purposes of section 306108 of title 54, United States Code, if the covered activity remains within a covered area",
-   "quote_section": "2102"
+   "quote_section": "2102",
+   "page": "courts"
   },
   {
    "id": "water-criteria-rulemaking",
@@ -236,7 +267,8 @@
    "sections": [
     "1201"
    ],
-   "quote": "In developing any criterion under this subsection, the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code."
+   "quote": "In developing any criterion under this subsection, the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code.",
+   "page": "water"
   },
   {
    "id": "tribal-row-review",
@@ -255,7 +287,8 @@
    "sections": [
     "2212"
    ],
-   "quote": "the Indian tribe provides a response to each relevant and substantive public comment on the significant environmental impacts identified by the Indian tribe under subclause (I) before the Indian tribe approves the right-of-way"
+   "quote": "the Indian tribe provides a response to each relevant and substantive public comment on the significant environmental impacts identified by the Indian tribe under subclause (I) before the Indian tribe approves the right-of-way",
+   "page": "tribes"
   },
   {
    "id": "cooperating-agencies",
@@ -274,7 +307,8 @@
    "sections": [
     "1106"
    ],
-   "quote": "Comments submitted by a cooperating agency under clause (i) shall be limited to matters relating to the jurisdiction by law of the cooperating agency"
+   "quote": "Comments submitted by a cooperating agency under clause (i) shall be limited to matters relating to the jurisdiction by law of the cooperating agency",
+   "page": "courts"
   },
   {
    "id": "s106-who",
@@ -295,7 +329,8 @@
    "sections": [
     "2301"
    ],
-   "quote": "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes, or Native Hawaiian organizations, local governments, and project, activity, or program applicants"
+   "quote": "may consult with any applicable State Historic Preservation Officers, Tribal Historic Preservation Officers, Indian tribes, or Native Hawaiian organizations, local governments, and project, activity, or program applicants",
+   "page": "tribes"
   },
   {
    "id": "s106-scope",
@@ -316,7 +351,8 @@
    "sections": [
     "2301"
    ],
-   "quote": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics of the historic property"
+   "quote": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics of the historic property",
+   "page": "tribes"
   },
   {
    "id": "s106-clocks",
@@ -336,7 +372,8 @@
    "sections": [
     "2301"
    ],
-   "quote": "The consultation process initiated under subparagraph (A) shall be completed not later than the date on which the applicable environmental document under section 107(g) of the National Environmental Policy Act of 1969"
+   "quote": "The consultation process initiated under subparagraph (A) shall be completed not later than the date on which the applicable environmental document under section 107(g) of the National Environmental Policy Act of 1969",
+   "page": "tribes"
   },
   {
    "id": "s106-objections",
@@ -356,7 +393,8 @@
    "sections": [
     "2301"
    ],
-   "quote": "shall provide a response explaining how the Federal agency has considered the substantive objections in the report"
+   "quote": "shall provide a response explaining how the Federal agency has considered the substantive objections in the report",
+   "page": "tribes"
   },
   {
    "id": "s106-offices",
@@ -376,7 +414,8 @@
     "2301"
    ],
    "quote": "shall be made available for expenditure for fiscal year 2028 and each fiscal year thereafter, without further appropriation or fiscal year limitation",
-   "quote_section": "2302"
+   "quote_section": "2302",
+   "page": "tribes"
   },
   {
    "id": "esa-clock",
@@ -395,7 +434,8 @@
    "sections": [
     "1302"
    ],
-   "quote": "the consultation process under subsection (a)(2) shall be completed by not later than the date on which the applicable environmental document (as so defined) for the agency action is completed"
+   "quote": "the consultation process under subsection (a)(2) shall be completed by not later than the date on which the applicable environmental document (as so defined) for the agency action is completed",
+   "page": "water"
   },
   {
    "id": "esa-state-assumption",
@@ -414,7 +454,8 @@
    "sections": [
     "1304"
    ],
-   "quote": "a State shall be required to respond to public comments received under subparagraph (A)(ii)"
+   "quote": "a State shall be required to respond to public comments received under subparagraph (A)(ii)",
+   "page": "water"
   },
   {
    "id": "s401-scope",
@@ -434,7 +475,8 @@
    "sections": [
     "1202"
    ],
-   "quote": "deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements"
+   "quote": "deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements",
+   "page": "water"
   },
   {
    "id": "s401-time",
@@ -454,7 +496,8 @@
    "sections": [
     "1202"
    ],
-   "quote": "a licensing or permitting agency shall, categorically or on a case-by-case basis for each certification application, establish a reasonable period of time (not to exceed 9 months from the date of receipt of the certification application)"
+   "quote": "a licensing or permitting agency shall, categorically or on a case-by-case basis for each certification application, establish a reasonable period of time (not to exceed 9 months from the date of receipt of the certification application)",
+   "page": "water"
   },
   {
    "id": "nwp-reissue",
@@ -476,7 +519,8 @@
     "1203"
    ],
    "quote": "no consultation with a Federal agency pursuant to section 7(a)(2) of that Act (16 U.S.C. 1536(a)(2)) is required",
-   "quote_section": "1204"
+   "quote_section": "1204",
+   "page": "water"
   },
   {
    "id": "tribal-consent",
@@ -493,7 +537,8 @@
    "sections": [
     "2212"
    ],
-   "quote": "organized under the Act of June 18, 1934 (48 Stat. 984), as amended; the Act of May 1, 1936 (49 Stat. 1250); or the Act of June 26, 1936 (49 Stat. 1967),"
+   "quote": "organized under the Act of June 18, 1934 (48 Stat. 984), as amended; the Act of May 1, 1936 (49 Stat. 1250); or the Act of June 26, 1936 (49 Stat. 1967),",
+   "page": "tribes"
   },
   {
    "id": "ferc-backstop",
@@ -514,7 +559,8 @@
    "sections": [
     "2101"
    ],
-   "quote": "the electric transmission facilities are capable of transmitting electric energy at a voltage of not less than 230 kilovolts"
+   "quote": "the electric transmission facilities are capable of transmitting electric energy at a voltage of not less than 230 kilovolts",
+   "page": "siting"
   },
   {
    "id": "ferc-voices",
@@ -535,7 +581,8 @@
    "sections": [
     "2101"
    ],
-   "quote": "In authorizing the construction or modification of an electric transmission facility under subsection (b), the Commission shall take into account landowner input."
+   "quote": "In authorizing the construction or modification of an electric transmission facility under subsection (b), the Commission shall take into account landowner input.",
+   "page": "siting"
   },
   {
    "id": "eminent-domain",
@@ -553,7 +600,8 @@
    "sections": [
     "2101"
    ],
-   "quote": "shall be in accordance with rule 71.1 of the Federal Rules of Civil Procedure"
+   "quote": "shall be in accordance with rule 71.1 of the Federal Rules of Civil Procedure",
+   "page": "siting"
   },
   {
    "id": "jurisdiction-payments",
@@ -571,7 +619,8 @@
    "sections": [
     "2101"
    ],
-   "quote": "all prudently incurred costs associated with payments to jurisdictions impacted by electric transmission facilities developed pursuant to section 216 or 225"
+   "quote": "all prudently incurred costs associated with payments to jurisdictions impacted by electric transmission facilities developed pursuant to section 216 or 225",
+   "page": "siting"
   },
   {
    "id": "state-referral",
@@ -588,7 +637,8 @@
    "sections": [
     "2104"
    ],
-   "quote": "the Commission shall, by rule, establish procedures by which 1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities"
+   "quote": "the Commission shall, by rule, establish procedures by which 1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities",
+   "page": "siting"
   },
   {
    "id": "selected-projects-deemed",
@@ -608,7 +658,8 @@
    "sections": [
     "2103"
    ],
-   "quote": "a project that is selected by 1 or more transmission planning regions pursuant to a regional or joint interregional transmission plan in accordance with this section shall be considered to satisfy paragraphs (2) through (5)"
+   "quote": "a project that is selected by 1 or more transmission planning regions pursuant to a regional or joint interregional transmission plan in accordance with this section shall be considered to satisfy paragraphs (2) through (5)",
+   "page": "siting"
   },
   {
    "id": "nepa-sol",
@@ -629,7 +680,8 @@
    "sections": [
     "1110"
    ],
-   "quote": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law"
+   "quote": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law",
+   "page": "courts"
   },
   {
    "id": "nepa-who-can-sue",
@@ -649,7 +701,8 @@
    "sections": [
     "1110"
    ],
-   "quote": "in the case of an authorization for which an opportunity for comment was provided, the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization"
+   "quote": "in the case of an authorization for which an opportunity for comment was provided, the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization",
+   "page": "courts"
   },
   {
    "id": "nepa-court",
@@ -668,7 +721,8 @@
    "sections": [
     "1110"
    ],
-   "quote": "The court of appeals of the United States for the circuit in which a project subject to an authorization will be constructed, expanded, or operated shall have original and exclusive jurisdiction over a claim."
+   "quote": "The court of appeals of the United States for the circuit in which a project subject to an authorization will be constructed, expanded, or operated shall have original and exclusive jurisdiction over a claim.",
+   "page": "courts"
   },
   {
    "id": "nepa-remedy",
@@ -687,7 +741,8 @@
    "sections": [
     "1110"
    ],
-   "quote": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction"
+   "quote": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction",
+   "page": "courts"
   },
   {
    "id": "nepa-tribal-trust",
@@ -707,7 +762,8 @@
     "1106"
    ],
    "quote": "there shall be no administrative or judicial review of such final agency action based on a claim of failure to comply with the requirements of this Act",
-   "quote_section": "1110"
+   "quote_section": "1110",
+   "page": "tribes"
   },
   {
    "id": "nepa-outreach-record",
@@ -726,7 +782,8 @@
     "1102"
    ],
    "quote": "there shall not be a claim or judicial review of whether a final agency action complies with the requirements of this Act for any omission from the list described in section 3(22)(B)",
-   "quote_section": "1110"
+   "quote_section": "1110",
+   "page": "courts"
   },
   {
    "id": "energy-sol",
@@ -747,7 +804,8 @@
    "sections": [
     "2201"
    ],
-   "quote": "a civil action arising under Federal law seeking judicial review of a final agency action granting or denying an authorization shall be barred unless the civil action is filed by the date that is 150 days after"
+   "quote": "a civil action arising under Federal law seeking judicial review of a final agency action granting or denying an authorization shall be barred unless the civil action is filed by the date that is 150 days after",
+   "page": "courts"
   },
   {
    "id": "s404-courts",
@@ -768,7 +826,8 @@
    "sections": [
     "1205"
    ],
-   "quote": "of an individual permit or general permit issued under this section shall be filed not later than the date that is 150 days after the date on which the permit was issued"
+   "quote": "of an individual permit or general permit issued under this section shall be filed not later than the date that is 150 days after the date on which the permit was issued",
+   "page": "water"
   },
   {
    "id": "esa-biop-suit",
@@ -788,7 +847,8 @@
    "sections": [
     "1305"
    ],
-   "quote": "in the United States Court of Appeals for the District of Columbia Circuit by filing in such court not later than 150 days after the date on which the opinion is made public a written petition for review"
+   "quote": "in the United States Court of Appeals for the District of Columbia Circuit by filing in such court not later than 150 days after the date on which the opinion is made public a written petition for review",
+   "page": "water"
   },
   {
    "id": "s106-suit",
@@ -809,7 +869,8 @@
    "sections": [
     "2301"
    ],
-   "quote": "the claim is filed not later than 150 days after the later of"
+   "quote": "the claim is filed not later than 150 days after the later of",
+   "page": "tribes"
   },
   {
    "id": "s106-gov-exemption",
@@ -827,7 +888,8 @@
    "sections": [
     "2301"
    ],
-   "quote": "a claim in which a State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government has provided detailed notice in writing during the consultation process"
+   "quote": "a claim in which a State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government has provided detailed notice in writing during the consultation process",
+   "page": "tribes"
   },
   {
    "id": "s106-remedy",
@@ -846,7 +908,8 @@
    "sections": [
     "2301"
    ],
-   "quote": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction, the applicable agency action to the Federal agency"
+   "quote": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction, the applicable agency action to the Federal agency",
+   "page": "tribes"
   },
   {
    "id": "s106-programmatic",
@@ -865,7 +928,8 @@
    "sections": [
     "2301"
    ],
-   "quote": "A party that is not a signatory to a programmatic agreement entered into for purposes of this subsection may not bring a civil action to challenge the implementation of the programmatic agreement."
+   "quote": "A party that is not a signatory to a programmatic agreement entered into for purposes of this subsection may not bring a civil action to challenge the implementation of the programmatic agreement.",
+   "page": "tribes"
   },
   {
    "id": "s401-courts",
@@ -885,7 +949,8 @@
    "sections": [
     "1202"
    ],
-   "quote": "a court shall place the burden of proof on the certifying authority to demonstrate, by clear and convincing evidence, that no reasonable modifications to or reasonable conditions on the certification would make it possible to grant the certification"
+   "quote": "a court shall place the burden of proof on the certifying authority to demonstrate, by clear and convincing evidence, that no reasonable modifications to or reasonable conditions on the certification would make it possible to grant the certification",
+   "page": "water"
   },
   {
    "id": "permit-revocation",
@@ -903,7 +968,8 @@
    "sections": [
     "1401"
    ],
-   "quote": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026"
+   "quote": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026",
+   "page": "courts"
   },
   {
    "id": "tribal-row-petition",
@@ -923,7 +989,8 @@
    "sections": [
     "2212"
    ],
-   "quote": "An interested party, after exhaustion of any applicable Tribal remedies, may submit a petition to the Secretary of the Interior"
+   "quote": "An interested party, after exhaustion of any applicable Tribal remedies, may submit a petition to the Secretary of the Interior",
+   "page": "tribes"
   },
   {
    "id": "transmission-courts",
@@ -944,7 +1011,8 @@
    "sections": [
     "2101"
    ],
-   "quote": "shall be subject to judicial review in the same courts in which an order of the Commission is subject to judicial review under section 313"
+   "quote": "shall be subject to judicial review in the same courts in which an order of the Commission is subject to judicial review under section 313",
+   "page": "siting"
   }
  ]
 }

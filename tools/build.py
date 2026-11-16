@@ -437,10 +437,15 @@ def build() -> tuple[dict, dict, list[str]]:
     communities = load(comm_path) if comm_path.exists() else None
     if communities:
         gids = {g["id"] for g in communities["groups"]}
+        pids = [pg["id"] for pg in communities["pages"]]
+        if len(set(pids)) != len(pids):
+            errors.append("communities: duplicate page id")
         for r in communities["rows"]:
             where = f"communities {r['id']}"
             if r["group"] not in gids:
                 errors.append(f"{where}: unknown group {r['group']!r}")
+            if r.get("page") not in pids:
+                errors.append(f"{where}: unknown page {r.get('page')!r}")
             for w in r["who"]:
                 if w not in communities["who"]:
                     errors.append(f"{where}: unknown party {w!r}")
@@ -869,9 +874,10 @@ def llms_full(core: dict, paras: dict) -> str:
     comm = core.get("communities")
     if comm:
         out += ["", "## Communities: who can comment, consult, plan or sue", "", comm["intro"], ""]
-        for row in comm["rows"]:
+        for row in sorted(comm["rows"], key=lambda r: [pg["id"] for pg in comm["pages"]].index(r["page"])):
             who = ", ".join(comm["who"].get(w, w) for w in row["who"])
-            out += [f"### {row['topic']}", "", f"- Effect: {row['effect']}; affects: {who}",
+            part = next(pg["label"] for pg in comm["pages"] if pg["id"] == row["page"])
+            out += [f"### {row['topic']}", "", f"- Part: {part}", f"- Effect: {row['effect']}; affects: {who}",
                     f"- Now: {row['now']}" + (f" Source: [{row['now_cite']}]({row['now_url']})" if row.get("now_url") else ""),
                     f"- BAAJA: {md_cited(core, row, 'baaja')}",
                     "- Bill: " + ", ".join(f"[{n}]({core['meta']['site_url']}sections/{n}.md)" for n in row.get("sections", []))]
@@ -985,6 +991,12 @@ def reader_html(core: dict, page: str) -> str:
                     out.append(f'<h3>{esc(blocker["title"])}</h3>')
                     for evidence in blocker["evidence"]:
                         out.append('<p>' + esc(evidence["finding"]) + ' ' + link(evidence["url"], evidence["org"]) + '</p>')
+            elif key == "communities":
+                for part in guide["pages"]:
+                    out.append(f'<h3 id="communities-{esc(part["id"])}">{esc(part["label"])}</h3><p>{esc(part["note"])}</p>')
+                    for row in (r for r in guide["rows"] if r["page"] == part["id"]):
+                        refs = " · ".join(link(f'sections/{n}.md', f'Sec. {n}') for n in row["sections"])
+                        out.append(f'<h4>{esc(row["topic"])}</h4><p>{esc(row["baaja"])} {refs}</p>')
             else:
                 for row in guide["rows"]:
                     refs = " · ".join(link(f'sections/{n}.md', f'Sec. {n}') for n in row["sections"])

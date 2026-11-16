@@ -372,15 +372,43 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
 .brief > .person:not(.open) > .quote blockquote { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .brief > .person:not(.open) > .social, .brief > .person:not(.open) > .sources { display: none; }
 .person-stance .more-toggle { display: inline; margin-left: 8px; }
-.cm-row { padding: 6px 0; border-bottom: 1px solid var(--border); max-width: 86ch; }
+/* Communities and Data centers: one card per change (2026-11-16). */
+.cm-list { display: grid; gap: 10px; }
+.cm-row { padding: 10px 14px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); max-width: 86ch; }
 .cm-row h3 { font-size: var(--fs-body); margin: 0 0 2px; }
 .cm-row p { margin: 4px 0; }
 .cm-who { font-size: var(--fs-small); color: var(--text-muted); }
-.cm-now { color: var(--text-muted); font-size: var(--fs-small); }
 .cm-row h3 .event-toggle { font-weight: 700; }
 .brief .cm-row:not(.open) > .cm-body { display: none; }
-.cm-body { font-size: var(--fs-small); margin-top: 4px; }
-.effect { font-family: var(--font-body); font-size: var(--fs-small); font-weight: 700; color: var(--text-muted); white-space: nowrap; }
+.cm-body { font-size: var(--fs-small); margin-top: 8px; }
+.cm-compare { display: grid; gap: 8px; }
+.cm-now, .cm-bill { padding: 8px 12px; }
+.cm-now { background: var(--surface); }
+.cm-bill { background: var(--accent-weak); border-left: 3px solid var(--rule); }
+.cm-now h4, .cm-bill h4, .study-gap h4 { font-family: var(--font-head); font-size: var(--fs-small); margin: 0 0 2px; }
+@media (min-width: 720px) { .cm-compare { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.part-grid { display: grid; gap: 10px; margin: 16px 0; max-width: 86ch; }
+@media (min-width: 640px) { .part-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+.part-card { display: flex; flex-direction: column; gap: 4px; min-height: 56px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 4px; color: var(--text); text-decoration: none; }
+.part-card:hover, .part-card:focus-visible { border-color: var(--rule); }
+.part-title { font-family: var(--font-head); font-weight: 700; }
+.part-name { text-decoration: underline; text-underline-offset: 3px; }
+.part-title .chip-count { color: var(--text-muted); font-weight: 400; }
+.part-note { font-size: var(--fs-small); color: var(--text-muted); }
+
+/* Delays: one card per cause, one card per study inside it (2026-11-16). */
+.pos-row.speed-row { padding: 10px 14px; border: 1px solid var(--border); border-radius: 4px; margin-bottom: 10px; }
+.pos-row.speed-row .pos-tally { font-size: var(--fs-body); color: var(--text); margin-top: 2px; }
+.study-list { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 8px; }
+.study { padding: 10px 12px; background: var(--surface); border-radius: 4px; }
+.study p { margin: 0; }
+.study-finding { font-size: var(--fs-body); line-height: 1.5; }
+.study .voice-quote { margin: 8px 0; }
+.study-source { font-size: var(--fs-small); }
+.study-link { font-size: var(--fs-small); color: var(--text-muted); }
+.study-gap { margin: 10px 0 4px; padding: 8px 12px; border-left: 3px solid var(--border); }
+.study-gap p { margin: 0; }
+.effect { font-family: var(--font-body); font-size: var(--fs-small); font-weight: 700; color: var(--text-muted); white-space: nowrap; border: 1px solid var(--border); border-radius: 2px; padding: 0 5px; }
 
 /* Timeline: one row per event, opened in place. */
 .event h3 { font-size: var(--fs-small); font-weight: 700; line-height: 1.35; margin: 0; }
