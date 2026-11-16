@@ -97,7 +97,8 @@
     },
     {
      "id": "skip",
-     "topic": "Ways to skip a full review",
+     "topic": "Reviews short of a full statement",
+     "reviewed_as": "Ways to skip a full review",
      "current": {
       "text": "An agency's own categorical exclusions, or another agency's after consultation and public notice.",
       "cite": "42 U.S.C. 4336(a), 4336c"
@@ -423,7 +424,7 @@
   },
   {
    "id": "certainty",
-   "label": "Permit certainty",
+   "label": "Issued permits",
    "rows": [
     {
      "id": "revoke",
@@ -467,7 +468,8 @@
     },
     {
      "id": "disparate",
-     "topic": "Unequal treatment of energy types",
+     "topic": "Treatment of energy types",
+     "reviewed_as": "Unequal treatment of energy types",
      "current": {
       "text": "No cause of action."
      },

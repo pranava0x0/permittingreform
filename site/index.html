@@ -4,13 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Permitting reform tracker: BAAJA (S. 5653)</title>
-<meta name="description" content="The Bipartisan American Affordability and Jobs Act of 2026: every section with page and line cites, a comparison with the SPEED Act and the 2024 Senate bill, a timeline, the people involved, and coverage.">
+<meta name="description" content="Tracker for the Bipartisan American Affordability and Jobs Act of 2026 (S. 5653, Senate vehicle H.R. 2347): where the bill stands, every section with page and line cites, the November 7 substitute, comparisons with the SPEED Act and the 2024 Senate bill, stated positions, a timeline and coverage.">
 <link rel="canonical" href="https://pranava0x0.github.io/permittingreform/">
 <meta name="robots" content="index,follow">
 <link rel="alternate" type="text/plain" href="llms.txt" title="Agent index">
+<link rel="alternate" type="application/json" href="data/core.json" title="Tracker data">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Permitting Reform">
-<meta property="og:description" content="The Senate's 2026 permitting bill: every section with page and line cites, and a comparison with earlier bills.">
+<meta property="og:site_name" content="Permitting Reform">
+<meta property="og:title" content="Permitting reform tracker: BAAJA (S. 5653)">
+<meta property="og:description" content="The Senate's 2026 permitting bill: where it stands, every section with page and line cites, stated positions, and a comparison with earlier bills.">
 <meta property="og:url" content="https://pranava0x0.github.io/permittingreform/">
 <meta name="twitter:card" content="summary">
 <meta name="color-scheme" content="light dark">
@@ -23,9 +25,9 @@ document.documentElement.setAttribute("data-theme",t)})();
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/OpenSans-Roman-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/Raleway-Roman-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=48">
+<link rel="stylesheet" href="styles.css?v=b5dbe319">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Dataset","name":"Permitting Reform","description":"Section index, summaries, verbatim quotes with page and line cites, and cross-version comparison for the Bipartisan American Affordability and Jobs Act of 2026.","url":"https://pranava0x0.github.io/permittingreform/","dateModified":"2026-11-09","about":"United States federal permitting reform","isAccessibleForFree":true}
+{"@context":"https://schema.org","@type":"Dataset","name":"Permitting reform tracker: BAAJA (S. 5653)","alternateName":["Permitting Reform","Bipartisan American Affordability and Jobs Act tracker"],"description":"Section index, summaries, verbatim quotes with page and line cites, the November 7 substitute, stated positions, a timeline, coverage and cross-version comparison for the Bipartisan American Affordability and Jobs Act of 2026.","url":"https://pranava0x0.github.io/permittingreform/","dateModified":"2026-11-09","inLanguage":"en","isAccessibleForFree":true,"keywords":["permitting reform","BAAJA","S. 5653","H.R. 2347","NEPA","transmission","data centers","Section 106","Endangered Species Act","Clean Water Act"],"about":{"@type":"Legislation","name":"Bipartisan American Affordability and Jobs Act of 2026","legislationIdentifier":"S. 5653","legislationDate":"2026-09-30","legislationJurisdiction":"US"},"distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://pranava0x0.github.io/permittingreform/data/core.json"},{"@type":"DataDownload","encodingFormat":"text/plain","contentUrl":"https://pranava0x0.github.io/permittingreform/llms-full.txt"},{"@type":"DataDownload","encodingFormat":"text/markdown","contentUrl":"https://pranava0x0.github.io/permittingreform/llms.txt"}]}
 </script>
 </head>
 <body>
@@ -49,6 +51,18 @@ document.documentElement.setAttribute("data-theme",t)})();
     <a href="coverage.html" data-tab="media">Coverage</a>
   </nav>
   <nav id="section-nav" class="subtabs" aria-label="Section pages" hidden></nav>
+  <script>
+  /* The section menu is drawn before first paint, so the page does not jump when app.js starts.
+     app.js reads PR_GROUPS (the one list of grouped pages) and PR_V (bundle versions, stamped by tools/build.py). */
+  window.PR_GROUPS={bill:[["bill","Sections"],["amendments","Amendments"],["compare","Compare bills"]],issues:[["datacenters","Data centers"],["speed","Delays"],["communities","Communities"],["positions","Debate"],["people","People"]]};
+  window.PR_V={"bill":"4ffa9e66","news":"7c634ea8","takes":"4f7f6a25","amend":"fc11898f"};
+  (function(){var r=location.hash.replace(/^#\/?/,"").split("/")[0],n=document.getElementById("section-nav"),g=null,k;
+  if(r==="issues")r="datacenters";
+  if(r&&r!=="overview")document.documentElement.classList.add("deep");
+  for(k in PR_GROUPS)if(PR_GROUPS[k].some(function(p){return p[0]===r}))g=k;
+  if(!g)return;n.hidden=false;n.dataset.group=g;
+  n.innerHTML=PR_GROUPS[g].map(function(p){return'<a href="#/'+p[0]+'"'+(p[0]===r?' aria-current="page"':"")+">"+p[1]+"</a>"}).join("")})();
+  </script>
 </header>
 <main id="main" tabindex="-1">
   <noscript>
@@ -63,13 +77,47 @@ document.documentElement.setAttribute("data-theme",t)})();
   </noscript>
   <div id="view"><!-- static overview --><h1>Bipartisan American Affordability and Jobs Act of 2026</h1>
 <p>This bipartisan Senate bill would change federal permitting for energy and infrastructure projects and make data centers pay for the transmission lines they need. <a href="https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026">Senate EPW Committee</a></p>
-<p>2026-11-09: About 5:30 p.m.: 60 senators must agree to end debate on taking up the permitting bill. Passing it takes a separate vote. <a href="https://www.dailypress.senate.gov/monday-november-9-2026/">Senate floor schedule</a></p><!-- /static overview --></div>
+<p>2026-11-09: About 5:30 p.m.: 60 senators must agree to end debate on taking up the permitting bill. Passing it takes a separate vote. <a href="https://www.dailypress.senate.gov/monday-november-9-2026/">Senate floor schedule</a></p>
+<h2>Status</h2>
+<ul>
+<li>The Senate reconvened November 9 at 3 p.m. At about 5:30 p.m., 60 senators must agree to end debate on taking up H.R. 2347, the vehicle for the permitting bill. <a href="https://www.dailypress.senate.gov/monday-november-9-2026/">U.S. Senate Press Gallery, Nov. 9</a></li>
+<li>The four sponsors released their substitute on November 7. It edits 43 sections of the September 30 text, adds 13 and drops one. <a href="https://www.energy.senate.gov/press/rep/lee-capito-heinrich-and-whitehouse-release-substitute-amendment-to-bipartisan-american-affordability-and-jobs-act-of-2026/">Senate Energy and Natural Resources Committee</a></li>
+<li>A spokesman for House Democratic Leader Hakeem Jeffries said November 5 that he will not rubber-stamp the Senate bill without more involvement from his caucus. <a href="https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/">Punchbowl News</a></li>
+<li>A White House official said November 6 that the Defense Department was advancing nine more wind projects held at the Pentagon. <a href="https://punchbowl.news/article/energy/trump-jeffries-senate-on-permitting/">Punchbowl News</a></li>
+<li>Heatmap reported that President Trump urged all senators on November 8 to vote for the bill. <a href="https://heatmap.news/am/baaja-senate-vote">Heatmap</a></li>
+<li>Sponsors: Shelley Moore Capito (R-W.Va.) and Sheldon Whitehouse (D-R.I.) of Environment and Public Works; Mike Lee (R-Utah) and Martin Heinrich (D-N.M.) of Energy and Natural Resources. <a href="https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026">Senate EPW Committee</a></li>
+<li>On October 27, Duckworth, Wyden, Merkley and Markey asked for canceled clean energy grants to be restored before the Senate decides whether to end debate on taking up the permitting bill. The four did not say which way they would vote on that motion. <a href="https://www.duckworth.senate.gov/news/press-releases/duckworth-colleagues-to-committee-leadership-trump-must-begin-restoring-illegally-cancelled-energy-projects-before-critical-vote-on-bipartisan-permitting-reform-bill">Letter to the four bill sponsors</a></li>
+<li>Capito told WV MetroNews on October 11 that the White House has made concessions on wind and solar projects. She said Senate leaders promised to take up permitting reform first after the election. <a href="https://wvmetronews.com/2026/10/11/capito-says-permitting-bill-would-blast-away-delays-and-protect-approved-projects/">WV MetroNews</a></li>
+<li>The Senate EPW majority&#x27;s October 7 roundup lists statements of support from the U.S. Chamber, Business Roundtable, American Clean Power, API, LIUNA and the National Governors Association. <a href="https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth">Senate EPW Committee</a></li>
+<li>A coalition of 185 community, labor, climate and environmental justice groups asked congressional leaders on October 13 to oppose the bill. <a href="https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/">Center for Biological Diversity</a></li>
+<li>NPR reported on October 15 that Tribal groups sent Senate leaders a letter the week before. Preservation advocates quoted in the report call the bill&#x27;s Section 106 changes the most serious threat to the law in its 60-year history. <a href="https://www.npr.org/2026/10/15/nx-s1-6001504/section-106-historic-preservation-act-threats-anniversary">NPR</a></li>
+<li>The Defense Department advanced two onshore wind projects on October 22, which a White House official tied to the bill&#x27;s passage; Whitehouse called it a start and asked for more on wind and solar. <a href="https://x.com/SiegelScribe/status/2113279782419128579">Joshua Siegel, Punchbowl News (X)</a></li>
+<li>House Speaker Mike Johnson said on October 23 that he supports the Senate bill. <a href="https://x.com/SiegelScribe/status/2113682338181779731">Joshua Siegel, Punchbowl News (X)</a></li>
+<li>More opponents declared in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups and nine Democratic attorneys general. More than 100 public lands groups, the People&#x27;s Environmental Justice Caucus and Rep. Leger Fernández joined them. <a href="https://x.com/NicoPortuondo/status/2112571938484957230">POLITICO (X)</a></li>
+<li>Support letters the same week came from 19 former economic and national security officials, the five main clean energy trade groups, and API with 137 other organizations. <a href="https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf">Institute for Progress</a></li>
+</ul>
+<h2>Provisions</h2>
+<ul>
+<li><strong>Review deadlines.</strong> Sets 2-year EIS and 1-year assessment deadlines, followed by deadlines for agency decisions. Extensions and enforcement conditions apply; the travel sanction limits official trips beyond 25 miles after a qualifying deadline is 60 days overdue.</li>
+<li><strong>Court challenges.</strong> Generally allows 150 days for NEPA challenges in a court of appeals, with direct-harm and conditional comment requirements. Limits remedies to remand, with a fix due within 180 days; preliminary injunctions remain available under specified conditions involving other law.</li>
+<li><strong>Issued permits.</strong> Restricts interference with permits in effect on or after September 16, 2026, subject to listed exceptions including the holder’s request. If the agency fails to meet its burden in court, the sponsor is entitled to specified relief, including a court-determined 25 to 50 percent of incurred project costs not otherwise recovered.</li>
+<li><strong>Data center costs.</strong> Newly connected data-center loads of 20 megawatts or more must cover their incremental electricity costs. Previously approved service arrangements remain in effect. The bill recognizes state authority to require new generation.</li>
+<li><strong>Transmission siting.</strong> FERC can permit interstate lines of 230 kilovolts and up that states have not approved, after making required findings, and planning regions must plan lines with their neighbors.</li>
+<li><strong>Actions outside NEPA.</strong> Excludes specified loan-only actions, qualifying work in existing grid and pipeline corridors, and listed oil, gas and geothermal activities from NEPA. Each exclusion has its own scope and conditions.</li>
+<li><strong>Clean Water Act.</strong> Narrows state water-quality certification review and generally limits it to one year; extensions require written agreement. Extends nationwide permits to 10 years.</li>
+<li><strong>Endangered Species Act.</strong> Cuts the standard formal consultation period from 90 days to 60, with extension rules. Lets approved state programs assume specified consultation responsibilities; applicants can opt for federal consultation.</li>
+<li><strong>Historic preservation and tribal consultation.</strong> Narrows the effects covered by historic-preservation review and sets deadlines. Adds a 150-day challenge window and limits remedies, with separate rules for missed deadlines.</li>
+<li><strong>Digital permitting.</strong> Requires a public tracker of defined transparency projects, and targets December 1, 2028 for an interagency ePermit system, to the maximum extent practicable.</li>
+</ul>
+<p>Text editions: <a href="reading.html">every section</a> · <a href="amendments.html">amendments</a> · <a href="comparisons.html">Data center and digital permitting bills compared</a> · <a href="issues.html">Key issues in permitting reform</a> · <a href="timeline.html">Permitting reform timeline</a> · <a href="coverage.html">Permitting reform news and coverage</a></p><!-- /static overview --></div>
+  <script>/* A linked page other than the overview starts empty instead of flashing the overview text. */
+  if(document.documentElement.classList.contains("deep"))document.getElementById("view").textContent="";</script>
 </main>
 <footer class="footer">
   <p>Independent tracker · Bill text: <a href="https://www.epw.senate.gov/public/index.cfm/2026/9/capito-lee-whitehouse-and-heinrich-introduce-bipartisan-american-affordability-and-jobs-act-of-2026" rel="noopener">Senate EPW</a>, September 30, 2026 · Summaries: AI-assisted · <span id="footer-asof"></span> · <a href="#/method">Method</a> · <a href="reading.html">Text index</a> · <a href="comparisons.html">Bill comparisons</a> · <a href="llms.txt">For agents</a></p>
 </footer>
-<script src="data/core.js?v=37"></script>
-<script src="search.js?v=20"></script>
-<script src="app.js?v=67"></script>
+<script src="data/core.js?v=f45b0068"></script>
+<script src="search.js?v=a7216de8"></script>
+<script src="app.js?v=1467e3f9"></script>
 </body>
 </html>

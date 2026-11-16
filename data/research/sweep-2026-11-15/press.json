@@ -1,0 +1,245 @@
+{
+ "agent": "press",
+ "generated": "2026-11-15",
+ "status": [
+  {"date": "2026-11-07", "text": "The sponsors' committee leaders introduced a substitute amendment to the Bipartisan American Affordability and Jobs Act on November 7.", "source": {"label": "MLex (summary, paywalled)", "url": "https://www.mlex.com/mlex/articles/2548198"}, "quote": "Leadership of the US Senate Environment and Public Works Committee and Energy and Natural Resources committee introduced a subsitute amendment to the Bipartisan American Affordability and Jobs Act of 2026"},
+  {"date": "2026-11-08", "text": "President Trump endorsed the amended bill on Sunday night, according to Energy Connects.", "source": {"label": "Energy Connects, 2026-11-09", "url": "https://www.energyconnects.com/news/gas-lng/2026/november/plan-to-overhaul-energy-permitting-regime-clears-senate-hurdle/"}, "quote": "President Donald Trump endorsed the amended bill on Sunday night, saying it will lower energy costs for Americans."},
+  {"date": "2026-11-09", "text": "The Senate voted 73-25 on cloture on the motion to proceed to H.R. 2347, the vehicle for BAAJA; Axios reports 51 Republicans and 21 Democrats plus Sen. King voting yes, and 23 Democrats plus Sen. Sanders voting no.", "source": {"label": "Axios, 2026-11-10", "url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate"}, "quote": "The Senate's bipartisan permitting bill advanced in a lopsided vote on Monday, but key hurdles lie ahead."},
+  {"date": "2026-11-09", "text": "The vote was a procedural step; McGuireWoods says the Senate must still complete the remaining procedural steps, consider the substitute and additional amendments, and take a final vote.", "source": {"label": "McGuireWoods alert, 2026-11-10", "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/"}, "quote": "With cloture invoked on the motion to proceed, the Senate must complete the remaining procedural steps before formally taking up the bill."},
+  {"date": "2026-11-09", "text": "Sen. Schumer said after the vote that he has outstanding concerns with the bill and will seek to address them through amendments.", "source": {"label": "Axios, 2026-11-10", "url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate"}, "quote": "Senate Minority Leader Chuck Schumer (D-N.Y.) said in a statement afterward that he has \"outstanding concerns\" with the bill that he'll \"fight to address\" through amendments."},
+  {"date": "2026-11-09", "text": "Sen. Cortez Masto is against final passage unless changes to the National Historic Preservation Act are made, citing tribal concerns, per Axios.", "source": {"label": "Axios, 2026-11-10", "url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate"}, "quote": "unless changes to the National Historic Preservation Act are jettisoned, citing tribal concerns."},
+  {"date": "2026-11-09", "text": "The Albuquerque Journal reports that, per Jefferies analysts, if the Senate passes the bill the House must either accept it or negotiate changes that clear both chambers by Jan. 3.", "source": {"label": "Albuquerque Journal, 2026-11-09", "url": "https://www.abqjournal.com/news/heinrich-permitting-bill-clears-senate-hurdle/3159360"}, "quote": "If the Senate passes the bill, the House must decide whether to accept it or negotiate changes that can clear both chambers by Jan. 3, Jefferies analysts said."},
+  {"date": "2026-11-09", "text": "Trump said at a press conference during the Senate vote that he would not approve wind turbines, and that he was behind the bill 100 percent.", "source": {"label": "Inside Climate News, 2026-11-10", "url": "https://insideclimatenews.org/?p=116018"}, "quote": "\"I will not approve wind turbines because wind turbines are a major loser,\" he said during an impromptu news conference."},
+  {"date": "2026-11-09", "text": "The Reuters report says the bill now heads to the Senate floor where senators can add amendments before a final vote expected in the coming days; Energy Connects instead says the final vote is expected in the coming weeks.", "source": {"label": "News From The States (Patrick Lohmann), 2026-11-09", "url": "https://www.newsfromthestates.com/node/437577"}, "quote": "The bill now heads to the Senate floor, where senators can add additional amendments, before a final floor vote expected in the coming days."},
+  {"date": "2026-11-09", "text": "Energy Connects reports a final Senate vote is expected in the coming weeks and the measure still faces House hurdles.", "source": {"label": "Energy Connects, 2026-11-09", "url": "https://www.energyconnects.com/news/gas-lng/2026/november/plan-to-overhaul-energy-permitting-regime-clears-senate-hurdle/"}, "quote": "A final Senate vote is expected in the coming weeks, but the measure still faces hurdles in the House."},
+  {"date": "2026-11-10", "text": "Latitude Media's update says the Senate voted 73-25 to advance the bill, setting up full floor debate in the weeks ahead.", "source": {"label": "Latitude Media, updated 2026-11-10", "url": "https://www.latitudemedia.com/news/senates-bipartisan-permitting-bill-faces-crucial-test/"}, "quote": "Update Nov. 10, 2026: The Senate last night voted 73-25 to advance the bill, setting up a full floor debate in the weeks ahead."},
+  {"date": "2026-11-10", "text": "Axios reports Whitehouse pledged a very healthy amendment process, while the House would still need to act on whatever the Senate produces.", "source": {"label": "Axios, 2026-11-10", "url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate"}, "quote": "and the House would still need to act on whatever emerges."}
+ ],
+ "items": [
+  {
+   "date": "2026-11-09", "type": "news", "outlet": "Axios", "author": "Axios reporter (unbylined)",
+   "title": "Senate advances bipartisan permitting bill in key test vote",
+   "url": "https://www.axios.com/2026/11/09/senate-advances-bipartisan-permitting-bill-key-test-vote",
+   "summary": "Axios reports the Senate cleared its first procedural hurdle on Monday, 73 to 25, on the bill that would limit NEPA and Clean Water Act review, and that the Democratic co-authors pitched it at a pre-vote press conference.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "The bipartisan Senate permitting bill cleared its first hurdle Monday with a 73-25 procedural vote.", "speaker": "Axios reporter (unbylined)"},
+   "topics": ["nepa", "permit-certainty", "congress", "data-centers", "tribal"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-10", "type": "news", "outlet": "Axios", "author": "Axios reporter (unbylined)",
+   "title": "The path ahead for the permitting bill",
+   "url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate",
+   "summary": "Axios reports on the 73-25 vote, the GOP split of 51-1 with only Sen. Rounds voting no, and Schumer's statement of outstanding concerns, and says the House is the next hurdle.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "The Senate's bipartisan permitting bill advanced in a lopsided vote on Monday, but key hurdles lie ahead.", "speaker": "Axios reporter (unbylined)"},
+   "topics": ["congress", "permit-certainty", "tribal", "white-house"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-10", "type": "news", "outlet": "Inside Climate News", "author": "Inside Climate News staff (byline not captured)",
+   "title": "Senate Advances Permitting Overhaul But Roadblocks Loom",
+   "url": "https://insideclimatenews.org/?p=116018",
+   "summary": "Inside Climate News reports the Monday cloture vote, Democratic senators' plans to amend tribal consultation provisions, and environmental groups' objections to the bill's limits on state and tribal challenges to pipelines and infrastructure.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "The Senate voted Monday to advance long-sought bipartisan legislation to speed permitting of big energy projects, amid acrimony over whether the bill’s support for clean energy will be overwhelmed by the fossil fuel industry’s expansion plans.", "speaker": "Inside Climate News (reporter)"},
+   "topics": ["nepa", "tribal", "congress", "clean-water-act", "wind-solar", "fossil"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-09", "type": "news", "outlet": "News From The States", "author": "Patrick Lohmann",
+   "title": "US Senate advances New Mexico US Sen. Heinrich’s controversial permit reform bill",
+   "url": "https://www.newsfromthestates.com/node/437577",
+   "summary": "The States Newsroom report says the Senate voted 73-25 to end debate, that Sen. Luján voted no, and that the Western Environmental Law Center called for the bill to wait until January.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "The U.S. Senate voted 73-25 to end debate on the bill, which requires 60 \"yes\" votes.", "speaker": "Patrick Lohmann, reporter"},
+   "topics": ["congress", "tribal", "wind-solar", "permit-certainty"],
+   "sector": "media", "read": "full"
+  },
+  {
+   "date": "2026-11-09", "type": "news", "outlet": "Source New Mexico", "author": "Source NM staff (byline not captured)",
+   "title": "New Mexico US Sen. Heinrich urges Senate passage of permitting reform bill amid ongoing opposition",
+   "url": "https://sourcenm.com/2026/11/09/new-mexico-us-sen-heinrich-urges-senate-passage-of-permitting-reform-bill-amid-ongoing-opposition/",
+   "summary": "Source New Mexico reports Heinrich's call for passage on the day of the cloture vote, and tribal, environmental and New Mexico delegation objections to the new amendments.",
+   "stance": "mixed", "reacts_to": "substitute",
+   "quote": {"text": "U.S. Sen. Martin Heinrich (D-N.M.) on Monday urged his Senate colleagues to pass his bipartisan permitting reform bill, even as tribal coalitions, environmental advocates and members of New Mexico’s congressional delegation dismissed new amendments to the bill as insufficient.", "speaker": "Source New Mexico (reporter)"},
+   "topics": ["tribal", "congress", "nepa"],
+   "sector": "media", "read": "full"
+  },
+  {
+   "date": "2026-11-10", "type": "news", "outlet": "Source New Mexico", "author": "Source NM staff (byline not captured)",
+   "title": "All Pueblo Council of Governors condemns US Senate vote advancing permitting reform bill",
+   "url": "https://sourcenm.com/2026/11/10/all-pueblo-council-of-governors-condemns-us-senate-vote-advancing-permitting-reform-bill/",
+   "summary": "The All Pueblo Council of Governors, which represents 19 New Mexico Pueblos, reiterated its opposition to the bill on Tuesday after the Monday vote; its chairman said the Pueblos delivered opposition statements to senators before the vote and that the Senate went ahead anyway.",
+   "stance": "opposes", "reacts_to": "vote",
+   "quote": {"text": "Nobody consulted the Pueblos before this bill was written, and the changes made since don’t fix that.", "speaker": "Joey Sanchez, Council Chairman, All Pueblo Council of Governors"},
+   "topics": ["tribal", "nepa", "congress"],
+   "sector": "environmental_group", "read": "full"
+  },
+  {
+   "date": "2026-11-09", "type": "news", "outlet": "Latitude Media", "author": "Latitude Media staff (byline not captured)",
+   "title": "Senate’s bipartisan permitting bill passed a crucial test",
+   "url": "https://www.latitudemedia.com/news/senates-bipartisan-permitting-bill-faces-crucial-test/",
+   "summary": "Latitude Media reports the 73-25 vote, the Edison Electric Institute endorsement, and doubts that the bill can pass the House in the lame duck. Its headline calls the vote a passed test; the update line says the vote advanced the bill.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "Update Nov. 10, 2026: The Senate last night voted 73-25 to advance the bill, setting up a full floor debate in the weeks ahead.", "speaker": "Latitude Media (update line)"},
+   "topics": ["congress", "data-centers", "permit-certainty", "transmission"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-09", "type": "news", "outlet": "Reuters (via KFGO)", "author": "Nichola Groom",
+   "title": "Senate advances energy permitting bill opposed by some Democrats, tribes",
+   "url": "https://kfgo.com/?p=1372744",
+   "summary": "Reuters reports the Senate voted 73-25 to invoke cloture on the motion to proceed, and that Heinrich and Whitehouse said the November 7 changes address tribal consultation, utility and environmental concerns.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "The vote marked an early test of whether the bill’s Democratic sponsors could keep enough of their party aligned behind a measure opposed by some environmental and tribes but backed by labor unions and energy companies.", "speaker": "Nichola Groom, Reuters"},
+   "topics": ["congress", "tribal", "data-centers", "permit-certainty"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-09", "type": "news", "outlet": "Albuquerque Journal", "author": "Albuquerque Journal staff (byline not captured)",
+   "title": "Heinrich permitting bill clears Senate hurdle",
+   "url": "https://www.abqjournal.com/news/heinrich-permitting-bill-clears-senate-hurdle/3159360",
+   "summary": "The Albuquerque Journal reports the 73-25 cloture vote, that Sen. Luján voted no, and a Jefferies analysis that the House must accept the Senate bill or negotiate changes by Jan. 3.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "Senators voted 73-25 in favor of Sen. Martin Heinrich’s controversial Bipartisan American Affordability and Jobs Act in a cloture vote", "speaker": "Albuquerque Journal (reporter)"},
+   "topics": ["congress", "tribal", "permit-certainty"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-09", "type": "news", "outlet": "Just the News", "author": "Just the News staff (byline not captured)",
+   "title": "Senate advances bipartisan permitting reform bill in return from midterms recess",
+   "url": "https://justthenews.com/government/congress/senate-advances-bipartisan-permitting-reform-bill-return-midterms-recess",
+   "summary": "Just the News reports the Senate voted Monday to advance the bill as the chamber returned from recess, and that Sen. Whitehouse said the bill would save Americans about $60 to $80 a month. The article also says the bill 'passed' 73-25, which conflicts with the procedural-vote reporting of other outlets.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "The Republican-led Senate voted Monday to advance a bipartisan permitting reform bill as the chamber returns from its month-long recess for the November midterm elections.", "speaker": "Just the News (reporter)"},
+   "topics": ["congress", "permit-certainty", "data-centers"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-09", "type": "news", "outlet": "Energy Connects", "author": "Energy Connects staff (byline not captured)",
+   "title": "Plan to Overhaul Energy Permitting Regime Clears Senate Hurdle",
+   "url": "https://www.energyconnects.com/news/gas-lng/2026/november/plan-to-overhaul-energy-permitting-regime-clears-senate-hurdle/",
+   "summary": "Energy Connects reports that the 73-25 procedural vote lets the Senate begin consideration of the measure, that a final vote is expected in the coming weeks, and that the measure still faces hurdles in the House.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "A final Senate vote is expected in the coming weeks, but the measure still faces hurdles in the House.", "speaker": "Energy Connects (reporter)"},
+   "topics": ["congress", "permit-certainty", "fossil"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-10", "type": "news", "outlet": "Solar Power World", "author": "Solar Power World staff (byline not captured)",
+   "title": "Senate advances federal energy permitting bill",
+   "url": "https://www.solarpowerworldonline.com/2026/11/senate-advances-federal-energy-permitting-bill/",
+   "summary": "Solar Power World reports the Senate advance and cites SEIA's own analysis of the bill's effect on solar, and Sierra Club's statement supporting transmission and clean energy permitting.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "SEIA conducted an analysis that claims passing BAAJA could spur 167 GW of new solar energy on the grid between 2028 and 2035, while curbing the country’s CO2 emissions by 20%.", "speaker": "Solar Power World (reporter), citing SEIA analysis"},
+   "topics": ["wind-solar", "transmission", "permit-certainty"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-11", "type": "news", "outlet": "Planetizen", "author": "Zachary Whalen",
+   "title": "Bill to overhaul energy permitting advances through Senate",
+   "url": "https://www.planetizen.com/news/2026/11/138849-bill-overhaul-energy-permitting-advances-through-senate",
+   "summary": "Planetizen reports the Senate advanced the bill 73-25 and that the Bipartisan American Affordability and Jobs Act still needs House passage.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "The Bipartisan American Affordability and Jobs Act of 2026 still needs to pass the House of Representatives.", "speaker": "Zachary Whalen, reporter"},
+   "topics": ["congress", "permit-certainty"],
+   "sector": "media", "read": "full"
+  },
+  {
+   "date": "2026-11-10", "type": "news", "outlet": "Common Dreams", "author": "Common Dreams staff (byline not captured)",
+   "title": "Days After Midterm Blowout, 22 Democrats Join GOP to Advance 'Massive Giveaway' to Big Oil",
+   "url": "https://www.commondreams.org/news/senate-advances-permitting-reform",
+   "summary": "Common Dreams reports the vote as 22 Democrats joining Republicans (Axios counts 21 Democrats plus independent Sen. King) and quotes Sen. Merkley on shortened timelines and limits on community challenges.",
+   "stance": "opposes", "reacts_to": "vote",
+   "quote": {"text": "It shortens timelines that make it hard-to-impossible for grassroots and community groups to raise concerns about projects.", "speaker": "Sen. Jeff Merkley (D-Ore.)"},
+   "topics": ["nepa", "permit-certainty", "congress", "fossil"],
+   "sector": "environmental_group", "read": "preview"
+  },
+  {
+   "date": "2026-11-10", "type": "news", "outlet": "Finger Lakes 1", "author": "Finger Lakes 1 staff (byline not captured)",
+   "title": "Schumer backs permitting debate, seeks changes to protect water and communities",
+   "url": "https://www.fingerlakes1.com/2026/11/10/schumer-permitting-reform-energy-bill-senate-debate/",
+   "summary": "The article reports Sen. Schumer voted to advance debate on the bill while saying he wants changes to protect New York's water and local project review, and that the 73-25 vote does not constitute final passage.",
+   "stance": "mixed", "reacts_to": "vote",
+   "quote": {"text": "Senate Democratic Leader Chuck Schumer voted Monday to advance debate on a bipartisan permitting overhaul while warning that he wants changes to protect New York’s water, land and communities.", "speaker": "Finger Lakes 1 (reporter)"},
+   "topics": ["congress", "clean-water-act", "nepa"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-10", "type": "news", "outlet": "Heatmap", "author": "Heatmap reporter (byline not captured)",
+   "title": "House Moderates Say Now Is the Time for Permitting Reform",
+   "url": "https://heatmap.news/politics/house-baaja",
+   "summary": "Heatmap reports on a Tuesday Heatmap event where Reps. Budzinski, Whitesides and Peters rejected waiting until the next Congress to pass the bill, while Huffman and Merkley had argued for a pause.",
+   "stance": "reporting", "reacts_to": "vote",
+   "quote": {"text": "Key House Democrats batted back against waiting until the next Congress to do a major permitting reform bill.", "speaker": "Heatmap (reporter)"},
+   "topics": ["congress", "permit-certainty", "wind-solar"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-10", "type": "analysis", "outlet": "McGuireWoods", "author": "McGuireWoods (firm alert; author not captured)",
+   "title": "Addressing Concerns of Utilities and Other Stakeholders, Senate Advances Bipartisan Permitting Reform Legislation",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+   "summary": "The McGuireWoods alert describes the November 7 substitute's changes for utilities, including exemptions for certain vertically integrated utilities and a one-year state-approval step before federal siting, and the 73-25 cloture vote.",
+   "stance": "neutral", "reacts_to": "substitute",
+   "quote": {"text": "With cloture invoked on the motion to proceed, the Senate must complete the remaining procedural steps before formally taking up the bill.", "speaker": "McGuireWoods (law firm alert)"},
+   "topics": ["transmission", "permit-certainty", "congress"],
+   "sector": "industry", "read": "preview"
+  },
+  {
+   "date": "2026-11-07", "type": "news", "outlet": "MLex", "author": "MLex staff (byline not captured)",
+   "title": "US Senators introduce amendments to legislation on permit reform",
+   "url": "https://www.mlex.com/mlex/articles/2548198",
+   "summary": "MLex summarizes the November 7 substitute amendment to the Bipartisan American Affordability and Jobs Act introduced by the EPW and ENR committee leaders.",
+   "stance": "reporting", "reacts_to": "substitute",
+   "quote": {"text": "Leadership of the US Senate Environment and Public Works Committee and Energy and Natural Resources committee introduced a subsitute amendment to the Bipartisan American Affordability and Jobs Act of 2026", "speaker": "MLex (summary)"},
+   "topics": ["congress", "permit-certainty"],
+   "sector": "media", "read": "preview"
+  },
+  {
+   "date": "2026-11-10", "type": "news", "outlet": "Earthjustice", "author": "Earthjustice (organization; byline not captured)",
+   "title": "Congress Tweaks Permitting Bill, But Deal Remains Fatally Flawed",
+   "url": "https://earthjustice.org/?p=57975",
+   "summary": "Earthjustice's analysis of the November 7 amendment says it leaves the 'forever permits' issue unfixed, leaves the 'best available science' definition compromised, and adds nuclear fuel-cycle licensing provisions, and urges senators to shelve the version.",
+   "stance": "opposes", "reacts_to": "substitute",
+   "quote": {"text": "Earthjustice is urging senators to shelve this version, then come back in the new year and give these reforms the full attention they require.", "speaker": "Earthjustice (organization)"},
+   "topics": ["nepa", "esa", "courts", "permit-certainty", "nuclear"],
+   "sector": "environmental_group", "read": "full"
+  }
+ ],
+ "events": [
+  {"date": "2026-11-07", "title": "Sponsors release a substitute amendment to H.R. 2347 / BAAJA", "branch": "congress_senate", "summary": "The EPW and ENR committee leaders introduced a substitute amendment to the Bipartisan American Affordability and Jobs Act, per MLex.", "actors": ["Sen. Capito", "Sen. Whitehouse", "Sen. Lee", "Sen. Heinrich"], "milestone": true, "sources": [{"title": "US Senators introduce amendments to legislation on permit reform", "publisher": "MLex", "url": "https://www.mlex.com/mlex/articles/2548198", "date": "2026-11-07", "quote": "Leadership of the US Senate Environment and Public Works Committee and Energy and Natural Resources committee introduced a subsitute amendment to the Bipartisan American Affordability and Jobs Act of 2026"}]},
+  {"date": "2026-11-09", "title": "Senate votes 73-25 on cloture on the motion to proceed to H.R. 2347", "branch": "congress_senate", "summary": "The Senate voted 73-25 to invoke cloture on the motion to proceed to H.R. 2347, the vehicle for BAAJA. Sixty votes were needed. This was a procedural vote, not final passage.", "actors": ["Senate"], "milestone": true, "sources": [{"title": "The path ahead for the permitting bill", "publisher": "Axios", "url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate", "date": "2026-11-10", "quote": "The Senate's bipartisan permitting bill advanced in a lopsided vote on Monday, but key hurdles lie ahead."}]},
+  {"date": "2026-11-09", "title": "Trump says he will not approve wind turbines while backing the bill", "branch": "executive", "summary": "During the Senate vote, President Trump said he would not approve wind turbines and said he was behind the bill 100 percent.", "actors": ["President Trump"], "milestone": false, "sources": [{"title": "Senate Advances Permitting Overhaul But Roadblocks Loom", "publisher": "Inside Climate News", "url": "https://insideclimatenews.org/?p=116018", "date": "2026-11-10", "quote": "\"I will not approve wind turbines because wind turbines are a major loser,\" he said during an impromptu news conference."}]},
+  {"date": "2026-11-10", "title": "All Pueblo Council of Governors reiterates opposition after Senate vote", "branch": "other", "summary": "The All Pueblo Council of Governors said on Tuesday it remains opposed to the bill after the Monday cloture vote.", "actors": ["All Pueblo Council of Governors"], "milestone": false, "sources": [{"title": "All Pueblo Council of Governors condemns US Senate vote advancing permitting reform bill", "publisher": "Source New Mexico", "url": "https://sourcenm.com/2026/11/10/all-pueblo-council-of-governors-condemns-us-senate-vote-advancing-permitting-reform-bill/", "date": "2026-11-10", "quote": "Nobody consulted the Pueblos before this bill was written, and the changes made since don’t fix that."}]}
+ ],
+ "people": [
+  {"name": "Chuck Schumer", "role": "Senate Democratic Leader", "affiliation": "U.S. Senate", "sector": "congress", "party": "D", "stance": "mixed", "position": "After the Nov. 9 cloture vote, said he has outstanding concerns with the bill and will seek to address them through amendments.", "quote": {"text": "Senate Minority Leader Chuck Schumer (D-N.Y.) said in a statement afterward that he has \"outstanding concerns\" with the bill that he'll \"fight to address\" through amendments.", "source_url": "https://axios.com/2026/11/10/baaja-permitting-bill-senate", "date": "2026-11-09"}},
+  {"name": "Sheldon Whitehouse", "role": "Senator (co-sponsor; EPW ranking member)", "affiliation": "U.S. Senate", "sector": "congress", "party": "D", "stance": "supports", "position": "At the Nov. 9 press conference, called the bill the floor, not the ceiling, of climate and environmental aspirations.", "quote": {"text": "This bill is the floor, not the ceiling, of our climate and environmental aspirations,", "source_url": "https://kfgo.com/?p=1372744", "date": "2026-11-09"}},
+  {"name": "Jeff Merkley", "role": "Senator", "affiliation": "U.S. Senate", "sector": "congress", "party": "D", "stance": "opposes", "position": "Opposed the bill's shortened timelines and limits on community challenges, per Common Dreams (Nov. 10); Axios reports he voted no on the cloture vote.", "quote": {"text": "It shortens timelines that make it hard-to-impossible for grassroots and community groups to raise concerns about projects.", "source_url": "https://www.commondreams.org/news/senate-advances-permitting-reform", "date": "2026-11-10"}},
+  {"name": "Joey Sanchez", "role": "Council Chairman", "affiliation": "All Pueblo Council of Governors (19 New Mexico Pueblos)", "sector": "tribal", "party": "I", "stance": "opposes", "position": "After the Nov. 9 vote, said the Senate advanced the bill without consulting the Pueblos and that the changes do not fix that.", "quote": {"text": "Nobody consulted the Pueblos before this bill was written, and the changes made since don’t fix that.", "source_url": "https://sourcenm.com/2026/11/10/all-pueblo-council-of-governors-condemns-us-senate-vote-advancing-permitting-reform-bill/", "date": "2026-11-10"}},
+  {"name": "Rep. Nikki Budzinski", "role": "Representative (New Democratic Coalition vice-chair for policy)", "affiliation": "U.S. House", "sector": "congress", "party": "D", "stance": "supports", "position": "At a Heatmap event on Tuesday Nov. 10, said she disagreed with waiting until the next Congress to pass the bill.", "quote": {"text": "\"I disagree with that,\"", "source_url": "https://heatmap.news/politics/house-baaja", "date": "2026-11-10"}}
+ ],
+ "unread": [
+  {"url": "https://www.opb.org/article/2026/11/09/senate-advances-sweeping-energy-legislation-in-first-major-action-since-midterm-elections/", "outlet": "OPB (AP, Daly and McDermott)", "title": "Senate advances sweeping energy legislation in first major action since midterm elections", "reason": "Confirmed the lead through a summarizer only; the AP piece is dated Nov. 10, 2026 12:05 a.m. and states the Senate voted 73-25 to take up the bill, but the verbatim sentence could not be captured from the raw text."},
+  {"url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote", "outlet": "White & Case", "title": "Senate permitting bill bolsters data center provisions, moves to full vote", "reason": "Read, but the reader output shows no publication date; it describes the Nov. 9 cloture vote and the Nov. 7 substitute, so it is not dated and was not recorded as an item."},
+  {"url": "https://www.rstreet.org/?p=103280", "outlet": "R Street Institute", "title": "BAAJA Blast Part 2: What Does Permitting Reform Mean for the Environment?", "reason": "Read, but no publication date in reader output."},
+  {"url": "https://www.axios.com/2026/11/09/climate-nature-energy-permitting-debate", "outlet": "Axios", "title": "Climate, nature and energy groups on the permitting debate", "reason": "403 / bot-check page; not readable."},
+  {"url": "https://energynewsbeat.co/?p=230775", "outlet": "Energy News Beat", "title": "73–25: The Senate Moves to Build Faster. Your Power Bill Will Have to Wait.", "reason": "Dated Nov. 10 in reader metadata; snippet only, body not verified."},
+  {"url": "https://www.eenews.net/articles/permitting-rulemaking-imperils-capitol-hill-talks/", "outlet": "E&E News", "title": "Permitting rulemaking imperils Capitol Hill talks", "reason": "Read; dated July 22, 2026, so outside the window and not recorded."},
+  {"url": "https://gvwire.com/?p=269577", "outlet": "GV Wire", "title": "(untitled, Senate permitting story)", "reason": "Bot-check page; not readable."}
+ ],
+ "not_found": [
+  {"question": "Did the Senate hold floor amendment votes, a second cloture vote, or final passage on H.R. 2347 after Nov. 9 (through Nov. 15)?", "queries": ["Senate permitting bill H.R. 2347 vote November 2026", "Senate permitting reform BAAJA Capito Heinrich amendment vote cloture", "Senate permitting bill passage vote November 2026 BAAJA final passage", "permitting bill Senate floor amendments Thune Capito November 12 2026", "Senate permitting bill November 13 2026"]},
+  {"question": "Any dated coverage from Nov. 11 to Nov. 15 on the bill. The search index returned nothing dated after Nov. 11 for any query.", "queries": ["permitting bill Senate Schumer amendments tribal consultation Cortez Masto vote this week", "Senate permitting bill November 13 2026"]},
+  {"question": "A search summary claimed a final Senate vote was scheduled for the week of Nov. 16. I could not confirm this from any fetched page, so it is not recorded.", "queries": ["Utility Dive Senate permitting bill substitute transmission November 2026"]},
+  {"question": "House leadership (Speaker Johnson) statement on the Senate bill after Nov. 9. Only Dec. 2024 statements were found.", "queries": ["Speaker Johnson House permitting bill Senate BAAJA lame duck November 2026"]},
+  {"question": "Indian Country Today or Native News Online coverage of the Nov. 9 vote or Section 106 amendments.", "queries": ["Indian Country Today Senate permitting bill Section 106 tribal vote November 2026"]},
+  {"question": "Holland & Knight, Bracewell, Latham or similar law-firm alerts dated Nov. 4 to 15 on the Nov. 7 substitute to H.R. 2347.", "queries": ["Holland & Knight OR Bracewell OR Latham alert Senate substitute amendment permitting H.R. 2347 November 2026"]},
+  {"question": "Wall Street Journal editorial board, Washington Post editorial board, or Bloomberg Opinion on the bill in Nov. 4 to 15.", "queries": ["Wall Street Journal editorial permitting reform Senate Heinrich Capito 2026 November"]},
+  {"question": "Roll Call, Politico, E&E News or Utility Dive coverage of the Nov. 9 vote, Nov. 4 to 15.", "queries": ["Roll Call permitting bill Senate cloture motion to proceed Capito Whitehouse November 2026", "Politico permitting bill Senate Democrats tribes Heinrich vote Monday November 2026", "eenews permitting Senate vote Capito Whitehouse Heinrich November 10 2026", "Utility Dive Senate permitting bill substitute transmission November 2026"]},
+  {"question": "Deseret News, Salt Lake Tribune, WV MetroNews coverage of the bill in Nov. 4 to 15.", "queries": ["Deseret News OR Salt Lake Tribune OR WV MetroNews Capito permitting bill Senate vote November 2026"]},
+  {"question": "Canary Media, Grist, Latitude Media coverage other than the Nov. 9 item, and the Heatmap Shift Key podcast on the bill.", "queries": ["Canary Media OR Latitude Media OR Grist Senate permitting BAAJA vote analysis November 2026", "heatmap.news permitting bill Senate Shift Key podcast November 2026"]},
+  {"question": "Washington Examiner, Bloomberg Law, The Hill and Punchbowl coverage dated Nov. 11 to 15.", "queries": ["Senate permitting bill November 13 2026"]}
+ ]
+}

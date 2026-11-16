@@ -118,11 +118,14 @@ def row_claims(overview: dict, compare: dict, communities: dict | None, datacent
         for i, s in enumerate(sents, 1):
             out.append({"id": f"{prefix}.s{i}", "t": s, "sections": sections, "context": context, "holder": holder, "key": key})
 
+    # The saved model review keys each verdict by "[label] sentence". A row whose display label
+    # changed after its sentences were reviewed names the label the review saw in `reviewed_as`,
+    # so an unchanged sentence keeps its verdict. Drop the field at the next `make infer`.
     for h in overview["headlines"]:
-        add(f"hl.{h['id']}", h, "text", h["sections"], h["title"])
+        add(f"hl.{h['id']}", h, "text", h["sections"], h.get("reviewed_as", h["title"]))
     for g in compare["groups"]:
         for r in g["rows"]:
-            add(f"cmp.{r['id']}.senate", r["senate"], "text", r["senate"].get("sections", []), r["topic"])
+            add(f"cmp.{r['id']}.senate", r["senate"], "text", r["senate"].get("sections", []), r.get("reviewed_as", r["topic"]))
     if compare.get("bills"):
         for r in compare["bills"]["rows"]:
             cell = r.get("senate") or {}
@@ -133,7 +136,7 @@ def row_claims(overview: dict, compare: dict, communities: dict | None, datacent
         add(f"add.{i}", a, "text", a["sections"], "New in this bill")
     for prefix, doc in (("com", communities), ("dc", datacenters)):
         for r in (doc or {}).get("rows", []):
-            add(f"{prefix}.{r['id']}", r, "baaja", r["sections"], r["topic"])
+            add(f"{prefix}.{r['id']}", r, "baaja", r["sections"], r.get("reviewed_as", r["topic"]))
     return out
 
 
@@ -553,6 +556,11 @@ def llms_txt(core: dict) -> str:
         f"- Bill PDF (official): {m['source_pdf']}",
         f"- Source data: {m['repo_url']}",
         "",
+        "## Status",
+        "",
+        *(f"- {p['text']} (source: {p['source']['label']}, {p['source']['url']})" for p in core["overview"]["status"]["points"]),
+        *([f"- Next step, {core['overview']['next']['date']}: {core['overview']['next']['text']} (source: {core['overview']['next']['source']['url']})"] if core["overview"].get("next") else []),
+        "",
         "## Reading and retrieval",
         "",
         "Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.",
@@ -582,7 +590,7 @@ def llms_txt(core: dict) -> str:
     out += ["", "## Research", "",
             f"- [Data center bills and Communities]({m['site_url']}llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.",
             f"- [Timeline, people and media]({m['site_url']}llms-full.txt): dated records with source links and attributed positions.",
-            f"- [Where the two sides disagree]({m['site_url']}issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.",
+            f"- [Disputed readings]({m['site_url']}issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.",
             f"- [Method and check status]({m['site_url']}#/method): browser view; equivalent checks are in data/core.json.",
             f"- [Subject comparisons]({m['site_url']}#/compare): browser view; retrieve the compare object in data/core.json without JavaScript."]
     return "\n".join(out) + "\n"
@@ -657,7 +665,7 @@ def disputes_markdown(core: dict) -> list[str]:
     issues = [i for i in core["positions"]["issues"] if i.get("disputes")]
     if not issues:
         return []
-    out = ["", "## Where the two sides disagree", "",
+    out = ["", "## Disputed readings", "",
            "Each question quotes the bill, then what critics and supporters say it means, quoted from their sources. The tracker does not say which reading is right.", ""]
     for issue in issues:
         for d in issue["disputes"]:
@@ -744,7 +752,7 @@ def llms_full(core: dict, paras: dict) -> str:
             out.append("")
     sp = core.get("speed")
     if sp:
-        out += ["", "## What slows projects: research on causes of delay", "", sp["intro"], ""]
+        out += ["", "## Research on project delays, by cause", "", sp["intro"], ""]
         takes = {t["id"]: t for t in core["takes"]["takes"]}
         for b in sp["blockers"]:
             out += [f"### {b['title']}", "", f"- Headline: {b['headline']}"]
@@ -774,6 +782,8 @@ def llms_full(core: dict, paras: dict) -> str:
     return "\n".join(out) + "\n"
 
 
+# Bundles app.js fetches on demand; index.html carries a content hash for each (window.PR_V).
+LAZY_BUNDLES = ("bill", "news", "takes", "amend")
 READER_PAGES = {
     "comparisons": ("Data center and digital permitting bills compared", "Compare BAAJA with data center siting and disclosure proposals, current E-NEPA law and the House and Senate ePermit bills."),
     "issues": ("Key issues in permitting reform", "What S. 5653 would change, the bill sections behind each provision, and how supporters and critics read them."),
@@ -988,14 +998,33 @@ def main() -> int:
     stamped, n = re.subn(r'("dateModified":")\d{4}-\d{2}-\d{2}(")', r"\g<1>" + DATA_AS_OF + r"\g<2>", page)
     if n != 1:
         raise SystemExit(f"build: expected one JSON-LD dateModified in site/index.html, found {n}")
-    summary, upcoming = core["overview"]["summary"], core["overview"].get("next")
-    content = [f'<h1>{html.escape(core["meta"]["short_title"])}</h1>']
-    for record in (summary, upcoming):
-        if not record:
-            continue
+    # What a crawler, an answer engine or a reader without JavaScript gets from the home page:
+    # the summary, where the bill stands, the next step and each headline provision, all sourced.
+    overview = core["overview"]
+    summary, upcoming = overview["summary"], overview.get("next")
+
+    def sourced(record: dict) -> str:
         source = record["source"]
         date = (html.escape(record["date"]) + ": ") if record.get("date") else ""
-        content.append(f'<p>{date}{html.escape(record["text"])} <a href="{html.escape(source["url"])}">{html.escape(source["label"])}</a></p>')
+        return f'{date}{html.escape(record["text"])} <a href="{html.escape(source["url"])}">{html.escape(source["label"])}</a>'
+
+    content = [f'<h1>{html.escape(core["meta"]["short_title"])}</h1>']
+    content += [f"<p>{sourced(record)}</p>" for record in (summary, upcoming) if record]
+    content += ["<h2>Status</h2>", "<ul>", *(f"<li>{sourced(p)}</li>" for p in overview["status"]["points"]), "</ul>"]
+    content += ["<h2>Provisions</h2>", "<ul>",
+                *(f'<li><strong>{html.escape(h["title"])}.</strong> {html.escape(h["text"])}</li>' for h in overview["headlines"]), "</ul>"]
+    content.append('<p>Text editions: <a href="reading.html">every section</a> · <a href="amendments.html">amendments</a> · '
+                   + " · ".join(f'<a href="{page}.html">{html.escape(title)}</a>' for page, (title, _) in READER_PAGES.items()) + "</p>")
+    # Asset URLs carry a hash of the file's bytes, so a returning reader never runs new HTML against old CSS or JS.
+    def asset_hash(rel: str) -> str:
+        return hashlib.sha256((SITE / rel).read_bytes()).hexdigest()[:8]
+    for rel in ("styles.css", "data/core.js", "search.js", "app.js"):
+        stamped, n = re.subn(r'((?:href|src)="' + re.escape(rel) + r'\?v=)[0-9a-f]+(")', lambda m: m[1] + asset_hash(rel) + m[2], stamped)
+        if n != 1:
+            raise SystemExit(f"build: expected one versioned reference to {rel} in site/index.html, found {n}")
+    stamped, n = re.subn(r"(window\.PR_V=)\{[^}]*\}", lambda m: m[1] + json.dumps({k: asset_hash(f"data/{k}.js") for k in LAZY_BUNDLES}, separators=(",", ":")), stamped)
+    if n != 1:
+        raise SystemExit(f"build: expected one window.PR_V in site/index.html, found {n}")
     stamped, count = re.subn(r'(<!-- static overview -->).*?(<!-- /static overview -->)',
                              lambda m: m[1] + "\n".join(content) + m[2], stamped, flags=re.S)
     if count != 1:
@@ -1008,7 +1037,7 @@ def main() -> int:
     for sec in core["sections"]:
         (SITE / f"sections/{sec['n']}.md").write_text(section_markdown(core, paras, sec), encoding="utf-8")
     (SITE / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
-                                    "\n".join(f"<url><loc>{SITE_URL}{path}</loc></url>" for path in
+                                    "\n".join(f"<url><loc>{SITE_URL}{path}</loc><lastmod>{DATA_AS_OF}</lastmod></url>" for path in
                                               ("", "reading.html", "amendments.html", *(page + ".html" for page in READER_PAGES), "llms.txt", "llms-full.txt", *(f"sections/{s['n']}.md" for s in core["sections"]))) + "\n</urlset>\n", encoding="utf-8")
     if not (SITE / PDF_NAME).exists():
         print(f"build: site/{PDF_NAME} is missing; download it from {core['meta']['source_pdf']}", file=sys.stderr)
