@@ -1096,7 +1096,6 @@
         el("p", { class: "event-meta" }, S.formatDate(e.date) + " · " + branchLabel(e.branch) + (e.background ? " · before 2025" : "") + (e.milestone ? " · milestone" : "")),
         el("p", null, e.summary),
         e.sections && e.sections.length ? el("p", { class: "where" }, "In the bill: ", secLinks(e.sections)) : null,
-        e.significance ? el("p", { class: "signif" }, e.significance) : null,
         e.quote && e.quote.text ? el("figure", { class: "quote small" },
           el("blockquote", null, e.quote.text),
           el("figcaption", null, safeUrl(e.quote.source_url) ? ext(e.quote.source_url, e.quote.speaker || "Source") : e.quote.speaker)) : null,

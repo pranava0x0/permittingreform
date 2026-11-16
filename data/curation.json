@@ -56,9 +56,10 @@
    }
   },
   "2025-05-29-seven-county-v-eagle-county": {
-   "reason": "House style: a plainer significance line that states what happened next.",
+   "reason": "House style: a plainer significance line that states what happened next. Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
    "set": {
-    "significance": "Made NEPA challenges harder to win. The Senate bill writes the same deference into the statute."
+    "significance": "Made NEPA challenges harder to win. The Senate bill writes the same deference into the statute.",
+    "title": "Supreme Court decides Seven County v. Eagle County, 8-0 in the judgment"
    }
   },
   "2025-07-04-one-big-beautiful-bill-act-nepa-opt-in-fee": {
@@ -340,6 +341,24 @@
     "title": "House passes the PERMIT Act 221-205 after unanimously passing the ePermit Act"
    },
    "reason": "Distinguish the two House passage decisions."
+  },
+  "2026-04-21-casper-enjoins-directives-stalling-wind-and-solar-permits": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "title": "Judge Casper preliminarily enjoins five directives on federal wind and solar permitting"
+   }
+  },
+  "2026-10-15-npr-section-106-threat-story": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "title": "NPR reports on the bill's Section 106 changes; advocates it quotes call them the biggest threat in 60 years"
+   }
+  },
+  "2026-06-09-lee-nhpa-overhaul-becomes-sticking-point-in-senate-permitting-talks": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "title": "E&E News reports Lee's push to change the preservation law is tripping up permitting talks"
+   }
   }
  },
  "people": {
@@ -1912,6 +1931,30 @@
   "2026-10-26-thomashochman-x-survey-scope": {
    "reason": "The X post returned HTTP 404 on 2026-11-15 from x.com and from the oEmbed endpoint; the post is gone, so the item has no source to link.",
    "drop": true
+  },
+  "2026-10-15-npr-section-106-threat-anniversary": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "summary": "NPR reports on the bill's Section 106 changes, quotes NATHPO's executive director, and says Tribal groups sent Senate leaders a letter the week before."
+   }
+  },
+  "2026-10-14-heatmap-mini-marine-power": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "summary": "Heatmap reports that the bill's marine and hydrokinetic licensing provisions apply to small wave, tidal and river-current projects."
+   }
+  },
+  "2026-06-09-ee-news-debate-over-preservation-law-tripping-up-permitting-talks": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "summary": "E&E News reported that Mike Lee's push to change the National Historic Preservation Act was tripping up the talks. Lee wanted limits on lawsuits; some Democrats were wary because the law matters to tribes and preservation groups. Heinrich said the aim was to preserve the law's intent while making reviews more predictable."
+   }
+  },
+  "2025-10-23-ee-news-whitehouse-threatens-to-blow-up-permitting-talks": {
+   "reason": "Editorial audit 2026-11-16: the site's own wording judged or characterized; restated as a plain fact or attributed to the source.",
+   "set": {
+    "summary": "At an EPW hearing Whitehouse said it made little sense to pursue bipartisan permitting reform while the administration would not faithfully execute the law, citing the Revolution Wind stop-work order and canceled solar approvals. He also said he might oppose routine water and highway bills."
+   }
   }
  }
 }
