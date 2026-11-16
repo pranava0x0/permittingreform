@@ -71,6 +71,8 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     cm = core.get("communities") or {"rows": []}
     if cm.get("intro"):
         out.append(("communities intro", cm["intro"]))
+    for pg in cm.get("pages", []):
+        out += [(f"communities part {pg['id']} label", pg["label"]), (f"communities part {pg['id']} note", pg["note"])]
     for r in cm["rows"]:
         out += [(f"communities {r['id']} topic", r["topic"]), (f"communities {r['id']} now", r["now"]), (f"communities {r['id']} baaja", r["baaja"])]
     dc = core.get("datacenters") or {"rows": []}
@@ -282,7 +284,7 @@ def check(core: dict) -> tuple[list[str], dict]:
 
     for dataset, name in (("communities", "communities"), ("datacenters", "datacenters")):
         for r in (core.get(dataset) or {"rows": []})["rows"]:
-            for f in ("id", "group", "topic", "who", "effect", "now", "baaja", "sections"):
+            for f in ("id", "group", "topic", "who", "effect", "now", "baaja", "sections") + (("page",) if dataset == "communities" else ()):
                 if not r.get(f):
                     errs.append(f"{name} {r.get('id')}: missing {f}")
             if r.get("now_cite") and not str(r.get("now_url", "")).startswith("https://"):

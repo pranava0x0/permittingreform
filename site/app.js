@@ -329,7 +329,7 @@
     const guides = {
       deadlines: ["speed", "Research on project delays"],
       datacenters: ["datacenters", "How the bill affects data centers"],
-      historic: ["communities", "How communities take part"],
+      historic: ["communities/tribes", "Section 106 and tribes"],
     };
     const provisions = el("section", { class: "block", "aria-labelledby": "h-prov" },
       el("h2", { id: "h-prov" }, "Provisions"),
@@ -842,54 +842,91 @@
   const EFFECT = { narrows: "Narrows", expands: "Expands", changes: "Changes" };
   let cmWho = "all";
   let cmEffect = "all";
+  let cmPart = null;
 
-  function renderCommunities() {
-    const c = D.communities;
-    if (!c) return [el("div", { class: "lede" }, el("h1", null, "Communities")), el("p", { class: "empty" }, "Not yet compiled.")];
-    const rows = c.rows.filter((r) => (cmWho === "all" || r.who.indexOf(cmWho) >= 0) && (cmEffect === "all" || r.effect === cmEffect));
+  /* One change as a card: topic, effect and who it touches stay visible; current law and the
+     bill's text open below as two labeled blocks, side by side on wide screens. Shared by
+     Communities and Data centers so the two pages cannot drift. */
+  function changeCard(r, who, id, bodyId) {
+    const head = [el("span", { class: "cm-topic" }, r.topic), " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])];
+    return el("article", { class: "cm-row", id: id },
+      el("h3", null, brief
+        ? el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": bodyId, onclick: (ev) => {
+            const open = ev.currentTarget.closest(".cm-row").classList.toggle("open");
+            ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
+          } }, head)
+        : head),
+      el("p", { class: "cm-who" }, r.who.map((w) => who[w]).join(" · ")),
+      el("div", { class: "cm-body", id: bodyId },
+        el("div", { class: "cm-compare" },
+          el("div", { class: "cm-now" }, el("h4", null, "Current law"), el("p", null, r.now),
+            r.now_cite ? el("p", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite) : null),
+          el("div", { class: "cm-bill" }, el("h4", null, "Under the bill"), el("p", null, citedText(r, "baaja")),
+            el("p", { class: "where" }, secLinks(r.sections), readingsLinks(r.sections)))),
+        r.quote ? el("figure", { class: "quote small" },
+          el("blockquote", null, r.quote),
+          r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null));
+  }
+
+  /* Who and Effect chips over a set of rows; the Who row stays in view, the rest sit under More filters. */
+  function changeFilters(doc, all, whoLabel, everyone, getWho, setWho, getEffect, setEffect) {
     const whoCount = {};
-    c.rows.forEach((r) => r.who.forEach((w) => { whoCount[w] = (whoCount[w] || 0) + 1; }));
+    all.forEach((r) => r.who.forEach((w) => { whoCount[w] = (whoCount[w] || 0) + 1; }));
     const effCount = {};
-    c.rows.forEach((r) => { effCount[r.effect] = (effCount[r.effect] || 0) + 1; });
-    const whoChips = el("div", { class: "filters", role: "group", "aria-label": "Who" },
-      chip("Everyone", cmWho === "all", () => { cmWho = "all"; route(); }, c.rows.length),
-      Object.keys(c.who).filter((w) => whoCount[w]).map((w) => chip(c.who[w], cmWho === w, () => { cmWho = w; route(); }, whoCount[w])));
+    all.forEach((r) => { effCount[r.effect] = (effCount[r.effect] || 0) + 1; });
+    const whoChips = el("div", { class: "filters", role: "group", "aria-label": whoLabel },
+      chip(everyone, getWho() === "all", () => { setWho("all"); route(); }, all.length),
+      Object.keys(doc.who).filter((w) => whoCount[w]).map((w) => chip(doc.who[w], getWho() === w, () => { setWho(w); route(); }, whoCount[w])));
     const effectChips = el("div", { class: "filters", role: "group", "aria-label": "Effect" },
-      chip("All changes", cmEffect === "all", () => { cmEffect = "all"; route(); }),
-      Object.keys(EFFECT).filter((k) => effCount[k]).map((k) => chip(EFFECT[k], cmEffect === k, () => { cmEffect = k; route(); }, effCount[k])),
+      chip("All changes", getEffect() === "all", () => { setEffect("all"); route(); }),
+      Object.keys(EFFECT).filter((k) => effCount[k]).map((k) => chip(EFFECT[k], getEffect() === k, () => { setEffect(k); route(); }, effCount[k])),
       briefChip());
-    const body = c.groups.map((g) => {
+    return [whoChips, moreFilters((getEffect() !== "all") + !brief, effectChips)];
+  }
+
+  function changeGroups(doc, rows, headPrefix, idPrefix, bodyPrefix) {
+    return doc.groups.map((g) => {
       const list = rows.filter((r) => r.group === g.id);
       if (!list.length) return null;
       return el("section", { class: "block" },
-        el("h2", { id: "cg-" + g.id }, g.label, el("span", { class: "chip-count" }, list.length)),
+        el("h2", { id: headPrefix + g.id }, g.label, el("span", { class: "chip-count" }, list.length)),
         g.note ? el("p", { class: "muted" }, g.note) : null,
-        el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => {
-          const head = [el("span", { class: "cm-topic" }, r.topic), " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])];
-          return el("article", { class: "cm-row", id: "cm-" + r.id },
-            el("h3", null, brief
-              ? el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": "cb-" + r.id, onclick: (ev) => {
-                  const open = ev.currentTarget.closest(".cm-row").classList.toggle("open");
-                  ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
-                } }, head)
-              : head),
-            el("div", { class: "cm-body", id: "cb-" + r.id },
-              el("p", { class: "cm-who" }, r.who.map((w) => c.who[w]).join(" · ")),
-              el("p", null, el("strong", null, "BAAJA: "), citedText(r, "baaja")),
-              el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
-                r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
-              el("p", { class: "where" }, secLinks(r.sections), readingsLinks(r.sections)),
-              r.quote ? el("figure", { class: "quote small" },
-                el("blockquote", null, r.quote),
-                r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null));
-        })));
+        el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => changeCard(r, doc.who, idPrefix + r.id, bodyPrefix + r.id))));
     });
+  }
+
+  /* #/communities lists the four parts; #/communities/<part> shows one part's changes. */
+  function renderCommunities(partId) {
+    const c = D.communities;
+    if (!c) return [el("div", { class: "lede" }, el("h1", null, "Communities")), el("p", { class: "empty" }, "Not yet compiled.")];
+    const part = c.pages.find((pg) => pg.id === partId);
+    const count = (id) => c.rows.filter((r) => r.page === id).length;
+    const picker = el("nav", { class: "filters part-picker", "aria-label": "Parts of Communities" },
+      el("span", { class: "jumps-label", "aria-hidden": "true" }, "Parts:"),
+      el("a", { class: "chip", href: "#/communities", "aria-current": part ? null : "true" }, "All parts"),
+      c.pages.map((pg) => el("a", { class: "chip", href: "#/communities/" + pg.id, "aria-current": part === pg ? "true" : null },
+        pg.label, el("span", { class: "chip-count" }, count(pg.id)))));
+    if (!part) {
+      return [
+        el("div", { class: "lede" }, el("h1", null, "Communities", el("span", { class: "credit-inline" }, "AI-written")),
+          c.intro ? el("p", null, c.intro) : null,
+          el("p", { class: "facts" }, c.rows.length + " changes in " + c.pages.length + " parts")),
+        el("nav", { class: "part-grid", "aria-label": "Parts of Communities" }, c.pages.map((pg) =>
+          el("a", { class: "part-card", href: "#/communities/" + pg.id },
+            el("span", { class: "part-title" }, el("span", { class: "part-name" }, pg.label), el("span", { class: "chip-count" }, count(pg.id))),
+            el("span", { class: "part-note" }, pg.note))))];
+    }
+    // Filters belong to one part; opening another part starts from all of its changes.
+    if (cmPart !== part.id) { cmPart = part.id; cmWho = "all"; cmEffect = "all"; }
+    const all = c.rows.filter((r) => r.page === part.id);
+    const rows = all.filter((r) => (cmWho === "all" || r.who.indexOf(cmWho) >= 0) && (cmEffect === "all" || r.effect === cmEffect));
     return [
-      el("div", { class: "lede" }, el("h1", null, "Communities", el("span", { class: "credit-inline" }, "AI-written")),
-        c.intro ? el("p", null, c.intro) : null,
-        el("p", { class: "facts", role: "status" }, rows.length + " of " + c.rows.length + " changes")),
-      whoChips, moreFilters((cmEffect !== "all") + !brief, effectChips),
-      rows.length ? body : el("p", { class: "empty" }, "No changes match.")];
+      picker,
+      el("div", { class: "lede" }, el("h1", null, part.label, el("span", { class: "credit-inline" }, "AI-written")),
+        el("p", null, part.note),
+        el("p", { class: "facts", role: "status" }, rows.length + " of " + all.length + " changes")),
+      changeFilters(c, all, "Who", "Everyone", () => cmWho, (v) => { cmWho = v; }, () => cmEffect, (v) => { cmEffect = v; }),
+      rows.length ? changeGroups(c, rows, "cg-", "cm-", "cb-") : el("p", { class: "empty" }, "No changes match.")];
   }
 
   /* ---------- data centers ---------- */
@@ -901,49 +938,12 @@
     const d = D.datacenters;
     if (!d) return [el("div", { class: "lede" }, el("h1", null, "Data centers")), el("p", { class: "empty" }, "Not yet compiled.")];
     const rows = d.rows.filter((r) => (dcWho === "all" || r.who.indexOf(dcWho) >= 0) && (dcEffect === "all" || r.effect === dcEffect));
-    const whoCount = {};
-    d.rows.forEach((r) => r.who.forEach((w) => { whoCount[w] = (whoCount[w] || 0) + 1; }));
-    const effCount = {};
-    d.rows.forEach((r) => { effCount[r.effect] = (effCount[r.effect] || 0) + 1; });
-    const whoChips = el("div", { class: "filters", role: "group", "aria-label": "Affected party" },
-      chip("All entities", dcWho === "all", () => { dcWho = "all"; route(); }, d.rows.length),
-      Object.keys(d.who).filter((w) => whoCount[w]).map((w) => chip(d.who[w], dcWho === w, () => { dcWho = w; route(); }, whoCount[w])));
-    const effectChips = el("div", { class: "filters", role: "group", "aria-label": "Effect" },
-      chip("All changes", dcEffect === "all", () => { dcEffect = "all"; route(); }),
-      Object.keys(EFFECT).filter((k) => effCount[k]).map((k) => chip(EFFECT[k], dcEffect === k, () => { dcEffect = k; route(); }, effCount[k])),
-      briefChip());
-    const body = d.groups.map((g) => {
-      const list = rows.filter((r) => r.group === g.id);
-      if (!list.length) return null;
-      return el("section", { class: "block" },
-        el("h2", { id: "dcg-" + g.id }, g.label, el("span", { class: "chip-count" }, list.length)),
-        g.note ? el("p", { class: "muted" }, g.note) : null,
-        el("div", { class: "cm-list" + (brief ? " brief" : "") }, list.map((r) => {
-          const head = [el("span", { class: "cm-topic" }, r.topic), " ", el("span", { class: "effect effect-" + r.effect }, EFFECT[r.effect])];
-          return el("article", { class: "cm-row", id: "dc-" + r.id },
-            el("h3", null, brief
-              ? el("button", { type: "button", class: "event-toggle", "aria-expanded": "false", "aria-controls": "dcb-" + r.id, onclick: (ev) => {
-                  const open = ev.currentTarget.closest(".cm-row").classList.toggle("open");
-                  ev.currentTarget.setAttribute("aria-expanded", open ? "true" : "false");
-                } }, head)
-              : head),
-            el("div", { class: "cm-body", id: "dcb-" + r.id },
-              el("p", { class: "cm-who" }, r.who.map((w) => d.who[w]).join(" · ")),
-              el("p", null, el("strong", null, "BAAJA: "), citedText(r, "baaja")),
-              el("p", { class: "cm-now" }, el("strong", null, "Now: "), r.now,
-                r.now_cite ? [" ", el("span", { class: "where" }, safeUrl(r.now_url) ? ext(r.now_url, r.now_cite) : r.now_cite)] : null),
-              el("p", { class: "where" }, secLinks(r.sections), readingsLinks(r.sections)),
-              r.quote ? el("figure", { class: "quote small" },
-                el("blockquote", null, r.quote),
-                r.c ? el("figcaption", null, pdfLink(r.c[0], S.formatCite(r.c))) : null) : null));
-        })));
-    });
     return [
       el("div", { class: "lede" }, el("h1", null, "Data centers and interconnection", el("span", { class: "credit-inline" }, "AI-written")),
         d.intro ? el("p", null, d.intro) : null,
         el("p", { class: "facts", role: "status" }, rows.length + " of " + d.rows.length + " provisions")),
-      whoChips, moreFilters((dcEffect !== "all") + !brief, effectChips),
-      rows.length ? body : el("p", { class: "empty" }, "No provisions match.")];
+      changeFilters(d, d.rows, "Affected party", "All entities", () => dcWho, (v) => { dcWho = v; }, () => dcEffect, (v) => { dcEffect = v; }),
+      rows.length ? changeGroups(d, rows, "dcg-", "dc-", "dcb-") : el("p", { class: "empty" }, "No provisions match.")];
   }
 
   /* ---------- speed ---------- */
@@ -951,12 +951,15 @@
   /* What research found slows projects, row by row. A row's heading carries its
      headline figure, so the collapsed list answers "what slows projects" without a tap.
      The bill appears only as passages the build located; readings load with takes.js. */
+  /* One study as a card: what it found, the sentence it was copied from, then who published it.
+     The source title goes on its own line so a long title does not bury the finding. */
   function speedEvidence(ev) {
-    return el("li", { class: "voice" },
-      el("p", { class: "dispute-claim" }, ev.finding),
+    return el("li", { class: "study" },
+      el("p", { class: "study-finding" }, ev.finding),
       el("blockquote", { class: "voice-quote" }, ev.quote),
-      el("p", { class: "voice-who" }, el("strong", null, ev.org), " · ", ext(ev.url, ev.title), ", " + ev.date.slice(0, 4) +
-        (ev.period ? " · data: " + ev.period : ""),
+      el("p", { class: "study-source" }, el("strong", null, ev.org), ", " + ev.date.slice(0, 4) +
+        (ev.period ? " · data: " + ev.period : "")),
+      el("p", { class: "study-link" }, ext(ev.url, ev.title),
         ev.lk ? el("span", { class: "unchecked" }, " (" + LINK_NOTE[ev.lk] + ")") : null));
   }
 
@@ -975,8 +978,8 @@
     }
     return openRow("pos-issue speed-row", "speed-" + b.id, head, [
       el("div", { class: "voices" }, el("h4", null, "What research found", el("span", { class: "chip-count" }, b.evidence.length)),
-        el("ul", null, b.evidence.map(speedEvidence))),
-      b.disagreement ? el("p", { class: "muted" }, b.disagreement) : null,
+        el("ul", { class: "study-list" }, b.evidence.map(speedEvidence))),
+      b.disagreement ? el("div", { class: "study-gap" }, el("h4", null, "About these figures"), el("p", null, b.disagreement)) : null,
       el("div", { class: "dispute-text" }, el("h4", null, "The bill's text"),
         (b.passages || []).map((p) => el("figure", { class: "quote small" },
           el("blockquote", null, p.text),
@@ -1500,7 +1503,7 @@
     return openRow("pos-issue", "issue-" + issue.id, head, [
       h ? el("p", null, citedText(h)) : null,
       sections.length ? el("p", { class: "where" }, secLinks(sections), readingsLinks(sections)) : null,
-      issue.link ? el("p", { class: "sec-links" }, el("a", { href: issue.link }, "Rows in Communities")) : null,
+      issue.link ? el("p", { class: "sec-links" }, el("a", { href: issue.link }, "Related changes in Communities")) : null,
       POSITION_SIDES.map((s) => voiceList(s[1], by[s[0]])),
       voices.length ? null : el("p", { class: "empty" }, "No quoted voices on this issue yet.")]);
   }
@@ -2134,7 +2137,7 @@
     else if (tab === "bill" && parts[1] === "search") nodes = renderSearch(parts.slice(2).join("/"));
     else if (tab === "bill") nodes = renderBillIndex();
     else if (tab === "compare") { nodes = renderCompare(parts[1]); keepScroll = Boolean(parts[2]); }
-    else if (tab === "communities") nodes = renderCommunities();
+    else if (tab === "communities") nodes = renderCommunities(parts[1]);
     else if (tab === "issues") { location.replace("#/datacenters"); return; }
     else if (tab === "datacenters") nodes = renderDataCenters();
     else if (tab === "speed") nodes = renderSpeed();

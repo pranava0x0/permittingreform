@@ -20,13 +20,13 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
         const n = await page.evaluate(() => ({
           compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0) + (window.PR_DATA.compare.bills ? window.PR_DATA.compare.bills.rows.length : 0),
           media: Math.min(12,window.PR_DATA.media.length), timeline: Math.min(12,window.PR_DATA.timeline.length),
-          communities: window.PR_DATA.communities.rows.length, bills: window.PR_DATA.compare.bills.rows.length,
+          communities: window.PR_DATA.communities.pages.length, tribes: window.PR_DATA.communities.rows.filter(r=>r.page==='tribes').length, bills: window.PR_DATA.compare.bills.rows.length,
           datacenters: window.PR_DATA.datacenters.rows.length, speed: window.PR_DATA.speed.blockers.length, issues: window.PR_DATA.positions.issues.length,
           people: Math.min(12,window.PR_DATA.people.filter(p=>p.inside_government).length) }));
         const routes = [
           ['overview','.provisions li',10], ['bill','.index li',71],
           ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
-          ['communities','.cm-row',n.communities], ['datacenters','.cm-row',n.datacenters], ['compare/data-center-bills','.compare tbody tr',n.bills], ['speed','.speed-row',n.speed],
+          ['communities','.part-card',n.communities], ['communities/tribes','.cm-row',n.tribes], ['datacenters','.cm-row',n.datacenters], ['compare/data-center-bills','.compare tbody tr',n.bills], ['speed','.speed-row',n.speed],
           ['compare/data-center-siting','.focused-comparison h3',4], ['compare/data-center-disclosure','.focused-comparison h3',4], ['compare/digital-permitting','.focused-comparison h3',4],
           ['timeline','.event',n.timeline], ['positions','.pos-issue',n.issues], ['people','.person',n.people], ['media','.media-item',n.media], ['method','.versus dd',null]
         ];
@@ -67,7 +67,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
           /* Positions went from 4 to 4.75 on 2026-11-15: it gained Senate votes and Published estimates (both folded,
              both one tap from the Overview and from the jump row), and letters past the newest six moved behind a chip. */
-          const budget = {overview:2.5,bill:2.5,compare:11,'compare/data-center-bills':4,communities:5,datacenters:5,speed:4,timeline:2,positions:4.75,people:4.5,media:5};
+          const budget = {overview:2.5,bill:2.5,compare:11,'compare/data-center-bills':4,communities:2,'communities/tribes':4,datacenters:5,speed:4,timeline:2,positions:4.75,people:4.5,media:5};
           if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')
@@ -113,21 +113,33 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       await page.locator('#media-filter').fill('zzzznoresult');
       await page.locator('#media-filter').fill('');
       assert.equal(await page.locator('.media-item').count(),Math.min(12,mediaCount));
+      // Communities lists its parts; every row sits in exactly one part, and each part's Who filter counts that part's rows.
       await page.goto(base+'#/communities');
-      await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:/^States/}).click();
-      assert.equal(await page.locator('.cm-row').count(),await page.evaluate(()=>PR_DATA.communities.rows.filter(r=>r.who.includes('states')).length));
-      assert.ok(await page.locator('.cm-row').first().isVisible(), 'Communities rows are visible without opening a fold');
-      await page.locator('.cm-row .event-toggle').first().click();
-      assert.ok(await page.locator('.cm-row.open .cm-body').first().isVisible());
-      assert.ok(await page.locator('.cm-row.open a[href*="bill.pdf#page="]').first().isVisible());
-      await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:/^Everyone/}).click();
-      // A filter that empties a whole group must still render (regression: null group passed to foldBlock).
-      for (const who of await page.evaluate(()=>Object.keys(PR_DATA.communities.who))) {
-        await page.goto(base+'#/communities');
-        await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:new RegExp('^'+(await page.evaluate(w=>PR_DATA.communities.who[w],who)))}).click();
-        const want=await page.evaluate(w=>PR_DATA.communities.rows.filter(r=>r.who.includes(w)).length,who);
-        assert.equal(await page.locator('.cm-row').count(),want,'communities filter '+who);
+      const parts = await page.evaluate(()=>PR_DATA.communities.pages.map(p=>p.id));
+      assert.equal(await page.locator('.part-card').count(), parts.length);
+      assert.equal(await page.evaluate(()=>PR_DATA.communities.rows.filter(r=>!PR_DATA.communities.pages.some(p=>p.id===r.page)).length), 0, 'every Communities row has a part');
+      await page.locator('.part-card').first().click();
+      assert.equal(await page.evaluate(()=>location.hash), '#/communities/'+parts[0]);
+      for (const part of parts) {
+        await page.goto(base+'#/communities/'+part);
+        const rows = await page.evaluate(p=>PR_DATA.communities.rows.filter(r=>r.page===p).length, part);
+        assert.equal(await page.locator('.cm-row').count(), rows, 'communities part '+part);
+        assert.equal(await page.locator('.part-picker a[aria-current="true"]').count(), 1, 'one current part on '+part);
+        // A filter that empties a whole group must still render (regression: null group passed to foldBlock).
+        for (const who of await page.evaluate(p=>Object.keys(PR_DATA.communities.who).filter(w=>PR_DATA.communities.rows.some(r=>r.page===p&&r.who.includes(w))), part)) {
+          await page.goto(base+'#/communities/'+part);
+          await page.getByRole('group',{name:'Who',exact:true}).getByRole('button',{name:new RegExp('^'+(await page.evaluate(w=>PR_DATA.communities.who[w],who)))}).click();
+          const want=await page.evaluate(([w,p])=>PR_DATA.communities.rows.filter(r=>r.page===p&&r.who.includes(w)).length,[who,part]);
+          assert.equal(await page.locator('.cm-row').count(),want,'communities filter '+part+' '+who);
+        }
       }
+      await page.goto(base+'#/communities/tribes');
+      assert.ok(await page.locator('.cm-row').first().isVisible(), 'Communities rows are visible without opening a fold');
+      assert.ok(await page.locator('.cm-row .cm-who').first().isVisible(), 'who a change affects shows on the closed card');
+      await page.locator('.cm-row .event-toggle').first().click();
+      assert.ok(await page.locator('.cm-row.open .cm-now').first().isVisible());
+      assert.ok(await page.locator('.cm-row.open .cm-bill a').first().isVisible(), 'the bill block carries its cites');
+      assert.ok(await page.locator('.cm-row.open a[href*="bill.pdf#page="]').first().isVisible());
       await page.goto(base+'#/datacenters');
       await page.getByRole('group',{name:'Affected party',exact:true}).getByRole('button',{name:/^Data center operators/}).click();
       assert.equal(await page.locator('.cm-row').count(),await page.evaluate(()=>PR_DATA.datacenters.rows.filter(r=>r.who.includes('data_centers')).length));

@@ -15673,104 +15673,18 @@ BAAJA's data center and load-growth rules beside the federal bills that would re
 
 How the bill changes who can comment, be consulted, take part in planning or go to court.
 
-### Comment period on a notice of intent for an EIS
-
-- Effect: changes; affects: The public, Tribes, States, Local governments, Landowners
-- Now: Each notice of intent to prepare an environmental impact statement must request public comment on alternatives, impacts and relevant studies. The statute sets no minimum or maximum comment period. Source: [42 U.S.C. 4336a(c)](https://www.law.cornell.edu/uscode/text/42/4336a)
-- BAAJA: Each notice of intent would be published in the Federal Register with a request for comment. (Sec. 1106, [p. 44, line 9 to p. 44, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=44)) The lead agency would set a comment period of 45 to 60 days after publication, or up to 75 days if the lead agency and the project sponsor agree. (Sec. 1106, [p. 44, line 24 to p. 45, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=44))
-- Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
-- Quote: "The lead agency shall establish a comment period of not less than 45 days and not more than 60 days after the date on which the notice to prepare an environmental impact statement is published in the Federal Register", [p. 44, line 24 to p. 45, line 4](https://pranava0x0.github.io/permittingreform/bill.pdf#page=44)
-
-### Combining categorical exclusions
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments
-- Now: An agency need not prepare an environmental document if the action fits one of its own categorical exclusions, another agency's exclusion adopted under section 109, or another provision of law. Source: [42 U.S.C. 4336(a)(2)](https://www.law.cornell.edu/uscode/text/42/4336)
-- BAAJA: A lead agency could rely on one exclusion or a combination of several. (Sec. 1105, [p. 28, line 8 to p. 28, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) Repeated use of the same or similar exclusions based on size, acreage or dollar thresholds would not count as a combination. (Sec. 1105, [p. 28, line 10 to p. 28, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) An exclusion established by Congress would also qualify. (Sec. 1105, [p. 28, line 14 to p. 28, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) The text adds no notice or comment step for relying on an exclusion. (the text is silent on this; confirmed by the summary review)
-- Bill: [1105](https://pranava0x0.github.io/permittingreform/sections/1105.md)
-- Quote: "1 or a combination of multiple categorical exclusions (excluding multiple applications of the same or similar categorical exclusions that are based on size, acreage, or dollar amount thresholds) of the agency", [p. 28, line 8 to p. 28, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)
-
-### Actions defined as not a major Federal action
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments
-- Now: NEPA excludes seven kinds of action from 'major Federal action', including projects with no or minimal federal funding or involvement and non-discretionary actions. Source: [42 U.S.C. 4336e(10)](https://www.law.cornell.edu/uscode/text/42/4336e)
-- BAAJA: The list would grow to fourteen. (Sec. 1102, [p. 20, line 13 to p. 20, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=20)) New entries include projects whose only federal involvement is a loan or loan guarantee, and routine agency actions costing up to $10,000,000. (Sec. 1102, [p. 18, line 18 to p. 18, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=18)) Others cover lifeline infrastructure repair that adds no more than 20 percent capacity, geothermal observation tests, transmission activities described in a new section 216A(b) of the Federal Power Act and covered activities under Natural Gas Act section 7(i)(1). (Sec. 1102, [p. 19, line 8 to p. 19, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=19)) Actions another agency already evaluated under NEPA, and some Corps projects with a federal share of up to $50,000,000, also qualify. (Sec. 1102, [p. 20, line 9 to p. 20, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=20)) These actions fall outside the Act's review requirements. (Sec. 1102, [p. 16, line 13 to p. 16, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=16))
-- Bill: [1102](https://pranava0x0.github.io/permittingreform/sections/1102.md)
-- Quote: "a proposed agency action, the effects of which were previously evaluated by another agency in compliance with this Act", [p. 20, line 9 to p. 20, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=20)
-
-### State or tribal review standing in for NEPA
-
-- Effect: changes; affects: The public, Tribes, States, Local governments
-- Now: An agency need not prepare an environmental document when the action is excluded under a categorical exclusion or 'another provision of law'. The threshold test does not refer to state or tribal reviews. Source: [42 U.S.C. 4336(a)](https://www.law.cornell.edu/uscode/text/42/4336)
-- BAAJA: An agency would not need an environmental document if the action was reviewed under a state or tribal environmental review law or policy and the lead agency finds the review serves a similar function. (Sec. 1105, [p. 28, line 23 to p. 28, line 26](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) The same applies where another federal law serves a similar function. (Sec. 1105, [p. 29, line 5 to p. 29, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=29)) On a sponsor's request the lead agency must also consider, and as appropriate adopt, state or tribal analysis. (Sec. 1106, [p. 45, line 19 to p. 45, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=45)) The text does not say what notice or comment the earlier review must have had. (the text is silent on this; confirmed by the summary review)
-- Bill: [1105](https://pranava0x0.github.io/permittingreform/sections/1105.md), [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
-- Quote (Sec. 1105): "the proposed agency action relates to a project or action that has been reviewed pursuant to a State environmental review statute or a Tribal environmental review statute, ordinance, resolution, regulation, or formally adopted policy", [p. 28, line 23 to p. 29, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)
-
-### New science that arrives after a notice of intent
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments
-- Now: Agencies may use any reliable data source and need not do new research unless it is essential to a reasoned choice among alternatives and the cost and time are not unreasonable. The statute sets no cutoff date for outside information. Source: [42 U.S.C. 4336(b)(3)](https://www.law.cornell.edu/uscode/text/42/4336)
-- BAAJA: No federal agency would have to consider research that becomes public after the notice of intent or the decision to prepare an environmental document, and an agency could not delay past a deadline to wait for it. (Sec. 1106, [p. 43, line 12 to p. 43, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=43)) A savings clause leaves in place Administrative Procedure Act review of information in comments received during a comment period. (Sec. 1106, [p. 44, line 2 to p. 44, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=44))
-- Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
-- Quote: "No Federal agency shall be required to consider any scientific or technical research that becomes publicly available after the date of publication of a notice of intent or decision to prepare an environmental document", [p. 43, line 12 to p. 43, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=43)
-
-### Alternatives the public can ask an agency to study
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments
-- Now: An environmental impact statement studies a reasonable range of alternatives that are technically and economically feasible and meet the purpose and need. Source: [42 U.S.C. 4332(2)(C)(iii)](https://www.law.cornell.edu/uscode/text/42/4332)
-- BAAJA: The lead agency must eliminate any alternative, except no-action, that does not fulfill the purpose and need or meet the goals of an applicable non-federal sponsor. (Sec. 1106, [p. 38, line 6 to p. 38, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) Cooperating agencies must consider only the alternatives the lead agency found reasonable. (Sec. 1106, [p. 41, line 22 to p. 42, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41)) The statement of purpose and need would include the sponsor's goals. (Sec. 1102, [p. 23, line 18 to p. 23, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=23))
-- Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md), [1102](https://pranava0x0.github.io/permittingreform/sections/1102.md)
-- Quote (Sec. 1106): "a cooperating agency shall be bound by the purpose and need of the proposed agency action and consider only those alternatives to the proposed agency action that the lead agency has, consistent with paragraph (1)(C), determined are reasonable", [p. 41, line 22 to p. 42, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41)
-
-### Public tracker and portal for large reviews
-
-- Effect: expands; affects: The public, Local governments, Landowners, Tribes
-- Now: The 2023 NEPA amendments called for a study of an online permitting portal, not for a portal or a project tracker. Source: [42 U.S.C. 4336d](https://www.law.cornell.edu/uscode/text/42/4336d)
-- BAAJA: CEQ would keep a public tracker with an entry for every project needing an EIS, and for any EA still open 13 months after its deadline. (Sec. 1132, [p. 98, line 9 to p. 98, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=98)) Entries show location, purpose and need, contacts for the sponsor and lead agency, schedule changes and litigation status. (Sec. 1132, [p. 99, line 10 to p. 99, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=99)) A common authorization portal, targeted for December 1, 2028, must include a way to tell local communities about notices of intent, public meetings and project status. (Sec. 1121, [p. 86, line 24 to p. 87, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=86))
-- Bill: [1132](https://pranava0x0.github.io/permittingreform/sections/1132.md), [1121](https://pranava0x0.github.io/permittingreform/sections/1121.md)
-- Quote (Sec. 1121): "include a mechanism for the dissemination of relevant information (such as a notice of intent for public comment, public meetings, project statuses, or a notice of intent to begin an environmental review) to local communities, as applicable", [p. 86, line 21 to p. 87, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=86)
-
-### Record of the sponsor's outreach before applying
-
-- Effect: changes; affects: Local governments, Tribes, The public, States
-- Now: The NEPA statute does not require a sponsor to file a record of its community outreach with an application.
-- BAAJA: A sponsor would file, with its application, a record of stakeholder engagement of up to 20 pages. (Sec. 1102, [p. 21, line 23 to p. 21, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=21)) It lists pre-application contacts with state, local and tribal officials and community entities, the meeting dates, a brief summary of feedback and how feedback shaped the proposal. (Sec. 1102, [p. 22, line 14 to p. 22, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=22)) The bill requires the record, not any particular outreach. (Sec. 1109, [p. 67, line 1 to p. 67, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=67))
-- Bill: [1109](https://pranava0x0.github.io/permittingreform/sections/1109.md), [1102](https://pranava0x0.github.io/permittingreform/sections/1102.md)
-- Quote (Sec. 1109): "a record of stakeholder engagement for the proposed agency action as of the date of the application", [p. 67, line 1 to p. 67, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=67)
-
-### Corridor work and routine drilling placed outside NEPA
-
-- Effect: narrows; affects: The public, Tribes, Landowners, Consulting parties, Local governments
-- Now: Agencies can use categorical exclusions for some of this work. Five routine oil and gas activities on public land have a categorical exclusion that can be set aside in extraordinary circumstances. Source: [42 U.S.C. 15942](https://www.law.cornell.edu/uscode/text/42/15942)
-- BAAJA: Grid capacity work in or next to an existing right-of-way, and interstate gas pipeline repair, looping and compression in covered areas, would be outside NEPA and would not be a section 106 undertaking. (Sec. 2102, [p. 204, line 22 to p. 204, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=204)) Routine oil, gas and geothermal drilling activities on public and national forest land would not be a major Federal action and would carry no NEPA requirements. (Sec. 2229, [p. 351, line 2 to p. 351, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=351)) Clean Water Act and Clean Air Act duties remain for pipelines. (Sec. 2102, [p. 205, line 4 to p. 205, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=205))
-- Bill: [2102](https://pranava0x0.github.io/permittingreform/sections/2102.md), [2229](https://pranava0x0.github.io/permittingreform/sections/2229.md)
-- Quote (Sec. 2102): "shall not be considered an undertaking for purposes of section 306108 of title 54, United States Code, if the covered activity remains within a covered area", [p. 204, line 22 to p. 204, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=204)
-
-### Public comment on federal water quality criteria
-
-- Effect: expands; affects: The public, States, Tribes
-- Now: EPA develops and publishes water quality criteria after consulting federal and state agencies and other interested persons. The statute does not require notice-and-comment rulemaking. Source: [33 U.S.C. 1314(a)(1)](https://www.law.cornell.edu/uscode/text/33/1314)
-- BAAJA: EPA would have to use rulemaking under 5 U.S.C. 553 when it develops any section 304(a) criterion. (Sec. 1201, [p. 102, line 22 to p. 102, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=102)) Final criteria, and a definition of waters of the United States, would be added to the actions reviewed first in the courts of appeals under section 509(b)(1). (Sec. 1201, [p. 103, line 6 to p. 103, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=103))
-- Bill: [1201](https://pranava0x0.github.io/permittingreform/sections/1201.md)
-- Quote: "In developing any criterion under this subsection, the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code.", [p. 102, line 22 to p. 102, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=102)
-
 ### Environmental review of tribal rights-of-way
 
+- Part: Section 106 and tribes
 - Effect: changes; affects: Tribes, The public, Landowners
 - Now: The Secretary of the Interior grants rights-of-way across Indian land under the 1948 Act, as a federal decision. Source: [25 U.S.C. 323](https://www.law.cornell.edu/uscode/text/25/323)
 - BAAJA: A tribe could grant rights-of-way over its own land without Interior's approval if it follows a tribal regulation Interior has approved. (Sec. 2212, [p. 291, line 12 to p. 291, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=291)) The regulation must provide an environmental review that informs the public, gives a reasonable opportunity to comment and requires the tribe to answer each relevant and substantive comment before approval. (Sec. 2212, [p. 293, line 4 to p. 293, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=293)) Interior's approval of a tribal regulation is not subject to NEPA, section 106 or the Endangered Species Act. (Sec. 2212, [p. 293, line 15 to p. 293, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=293))
 - Bill: [2212](https://pranava0x0.github.io/permittingreform/sections/2212.md)
 - Quote: "the Indian tribe provides a response to each relevant and substantive public comment on the significant environmental impacts identified by the Indian tribe under subclause (I) before the Indian tribe approves the right-of-way", [p. 293, line 3 to p. 293, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=293)
 
-### State, tribal and local governments as cooperating agencies
-
-- Effect: narrows; affects: States, Tribes, Local governments
-- Now: A lead agency may designate any federal, state, tribal or local agency with jurisdiction by law or special expertise over an environmental impact as a cooperating agency. It may comment by the date in the schedule. Source: [42 U.S.C. 4336a(a)(3)](https://www.law.cornell.edu/uscode/text/42/4336a)
-- BAAJA: The designation test names jurisdiction by law over an environmental effect. (Sec. 1106, [p. 38, line 20 to p. 38, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) It does not mention special expertise. (the text is silent on this; confirmed by the summary review) The lead agency must identify and invite likely agencies within 30 days of the notice of intent or EA decision, and each has 7 days to accept or decline. (Sec. 1106, [p. 38, line 24 to p. 39, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) A cooperating agency's comments are limited to matters within its jurisdiction by law, and designation gives it no authority over the action. (Sec. 1106, [p. 41, line 8 to p. 41, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41))
-- Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
-- Quote: "Comments submitted by a cooperating agency under clause (i) shall be limited to matters relating to the jurisdiction by law of the cooperating agency", [p. 41, line 6 to p. 41, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41)
-
 ### Who is consulted under section 106
 
+- Part: Section 106 and tribes
 - Effect: narrows; affects: Consulting parties, Tribes, States, Local governments, The public
 - Now: The statute says only that agencies must take into account effects on historic properties and give the Advisory Council a chance to comment. The Advisory Council's rules let individuals and organizations with a demonstrated interest join as consulting parties and require the agency to seek public input. Source: [54 U.S.C. 306108; 36 CFR 800.2(c)(5), (d)](https://www.law.cornell.edu/uscode/text/54/306108)
 - BAAJA: The new consultation steps name state and tribal historic preservation officers, Indian tribes, Native Hawaiian organizations, local governments and the applicant. (Sec. 2301, [p. 387, line 10 to p. 387, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)) They do not name other consulting parties or the public. (the text is silent on this; confirmed by the summary review) The agency 'may' consult the named parties on the area of effects and on historic properties, and must seek and, as applicable, incorporate their information if received within 30 days of a request. (Sec. 2301, [p. 387, line 10 to p. 387, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=387)) The agency's duty is limited to the area of potential effects it identifies. (Sec. 2301, [p. 386, line 3 to p. 386, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=386))
@@ -15779,6 +15693,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ### What counts as an effect or an undertaking under section 106
 
+- Part: Section 106 and tribes
 - Effect: narrows; affects: Consulting parties, Tribes, States, Local governments, The public
 - Now: Review covers federal or federally assisted undertakings and federally licensed ones. Under the Advisory Council's rules, visual, atmospheric and audible effects can count. Source: [54 U.S.C. 306108; 36 CFR part 800](https://www.law.cornell.edu/uscode/text/54/306108)
 - BAAJA: An adverse effect must be reasonably foreseeable and directly alter a property's characteristics. (Sec. 2301, [p. 380, line 4 to p. 380, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380)) Visual, atmospheric or audible elements count only if they directly and significantly diminish the property's eligible characteristics. (Sec. 2301, [p. 380, line 13 to p. 380, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=380)) An undertaking would exclude work where the only federal involvement is a loan, loan guarantee or grant not made for historic preservation, and the area of potential effects would exclude areas affected only by a non-federal part of a project. (Sec. 2301, [p. 381, line 11 to p. 381, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=381))
@@ -15787,6 +15702,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ### Deadlines in section 106 consultation
 
+- Part: Section 106 and tribes
 - Effect: narrows; affects: Consulting parties, Tribes, States, Local governments
 - Now: The statute sets no deadlines for consultation. Source: [54 U.S.C. 306108](https://www.law.cornell.edu/uscode/text/54/306108)
 - BAAJA: The agency has 30 days to decide whether a proposal is an undertaking and 60 days after that to send a report when there are adverse effects. (Sec. 2301, [p. 386, line 8 to p. 386, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=386)) It then has 90 days to find the effects acceptable or reach an agreement, followed by 60 days of consultation, 45 days for formal Advisory Council comments and 30 days for a final determination. (Sec. 2301, [p. 392, line 4 to p. 392, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=392)) Consultation must end by the date the environmental document is due, unless the Secretary approves an extension for extraordinary circumstances. (Sec. 2301, [p. 398, line 3 to p. 398, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=398))
@@ -15795,6 +15711,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ### Silence and objections in section 106 consultation
 
+- Part: Section 106 and tribes
 - Effect: narrows; affects: Consulting parties, Tribes, States, Local governments
 - Now: The statute requires the agency to take effects into account and give the Council a chance to comment. It does not address silence or objections. Source: [54 U.S.C. 306108](https://www.law.cornell.edu/uscode/text/54/306108)
 - BAAJA: If a preservation officer, tribe, Native Hawaiian organization or local government does not respond within 30 days of a request to review a report or finding, the agency proceeds. (Sec. 2301, [p. 400, line 16 to p. 400, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=400)) If a party raises substantive objections within 30 days, the agency has 30 days to explain how it considered them, and its duty to consult on that report is then fulfilled. (Sec. 2301, [p. 402, line 18 to p. 402, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=402)) The agency may decide, in its sole discretion, that other considerations outweigh historic preservation. (Sec. 2301, [p. 393, line 4 to p. 393, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=393))
@@ -15803,182 +15720,34 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ### Funding and oversight of state and tribal preservation offices
 
+- Part: Section 106 and tribes
 - Effect: changes; affects: States, Tribes
 - Now: Money in the Historic Preservation Fund is available for expenditure only when Congress appropriates it. Source: [54 U.S.C. 303103](https://www.law.cornell.edu/uscode/text/54/303103)
 - BAAJA: The bill authorizes $200,000,000 a year for the Fund for fiscal years 2027 to 2036 and makes deposits available from fiscal year 2028 without further appropriation. (Sec. 2302, [p. 414, line 15 to p. 414, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=414)) It adds $20,000,000 a year for fiscal years 2027 to 2030 in competitive grants for tribal preservation officers' online databases. (Sec. 2302, [p. 416, line 24 to p. 417, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=416)) Programs would be evaluated at least every 2 years, and a program that does not regularly meet consultation timelines is not consistent, which can lead to suspended grants and the Secretary taking over the officer's functions. (Sec. 2301, [p. 373, line 18 to p. 373, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=373))
 - Bill: [2302](https://pranava0x0.github.io/permittingreform/sections/2302.md), [2301](https://pranava0x0.github.io/permittingreform/sections/2301.md)
 - Quote (Sec. 2302): "shall be made available for expenditure for fiscal year 2028 and each fiscal year thereafter, without further appropriation or fiscal year limitation", [p. 414, line 17 to p. 414, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=414)
 
-### Time for Endangered Species Act section 7 consultation
-
-- Effect: narrows; affects: States, Tribes, The public
-- Now: Formal consultation concludes within 90 days, and an extension to 150 days or more needs the applicant's consent. Consultation is between the wildlife agency, the federal agency and the permit applicant. Source: [16 U.S.C. 1536(b)(1)](https://www.law.cornell.edu/uscode/text/16/1536)
-- BAAJA: The 90-day period becomes 60 days and the 150-day mark becomes 100 days. (Sec. 1302, [p. 134, line 16 to p. 134, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=134)) An applicant becomes eligible for relief under 5 U.S.C. 706(1) if an extended consultation passes 145 days without the required statement or consent. (Sec. 1302, [p. 135, line 18 to p. 135, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=135)) When an environmental document is required, consultation must finish by the date that document is due, unless the Secretary approves an extension for extraordinary circumstances. (Sec. 1302, [p. 136, line 4 to p. 136, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=136))
-- Bill: [1302](https://pranava0x0.github.io/permittingreform/sections/1302.md)
-- Quote: "the consultation process under subsection (a)(2) shall be completed by not later than the date on which the applicable environmental document (as so defined) for the agency action is completed", [p. 136, line 4 to p. 136, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=136)
-
-### State-run Endangered Species Act consultation
-
-- Effect: expands; affects: States, The public
-- Now: Only the federal wildlife agencies consult under section 7. States cannot take over that role. Source: [16 U.S.C. 1536(a)(2), (b)](https://www.law.cornell.edu/uscode/text/16/1536)
-- BAAJA: Interior could assign its consultation duties to a state by written agreement of up to 10 years, for projects within that state. (Sec. 1304, [p. 146, line 22 to p. 146, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=146)) The state must publish its complete application at least 60 days before filing, take public comment for at least 30 days and respond to comments. (Sec. 1304, [p. 143, line 11 to p. 143, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=143)) Audits for the first 4 years go out for public comment and Interior must respond within 60 days. (Sec. 1304, [p. 149, line 11 to p. 149, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=149)) District courts would hear suits against a state that fails to carry out its duties, under the same standards as against Interior. (Sec. 1304, [p. 147, line 6 to p. 147, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=147)) A permit applicant may still choose to consult Interior. (Sec. 1304, [p. 148, line 7 to p. 148, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=148))
-- Bill: [1304](https://pranava0x0.github.io/permittingreform/sections/1304.md)
-- Quote: "a State shall be required to respond to public comments received under subparagraph (A)(ii)", [p. 143, line 22 to p. 143, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=143)
-
-### What a state can deny or condition under Clean Water Act section 401
-
-- Effect: narrows; affects: States, Tribes, Local governments, The public
-- Now: A state certifies that a federally permitted project meets water quality standards and other appropriate state law. Conditions it sets become conditions of the federal permit. Source: [33 U.S.C. 1341(a), (d)](https://www.law.cornell.edu/uscode/text/33/1341)
-- BAAJA: Scope would be limited to 'water quality requirements', meaning sections 301, 302, 303, 306 and 307 and the federal, state and tribal laws implementing them. (Sec. 1202, [p. 122, line 15 to p. 122, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=122)) A certifying authority could deny only on clear and convincing evidence that no modification or reasonable condition would allow certification. (Sec. 1202, [p. 105, line 1 to p. 105, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=105)) Each condition needs clear and convincing evidence that it is necessary, the least burdensome and consistent with the federal permit. (Sec. 1202, [p. 105, line 8 to p. 105, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=105))
-- Bill: [1202](https://pranava0x0.github.io/permittingreform/sections/1202.md)
-- Quote: "deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements", [p. 105, line 1 to p. 105, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=105)
-
-### Time for a state to act on a section 401 certification
-
-- Effect: narrows; affects: States, Tribes, The public, Local governments
-- Now: A state must act within a reasonable period, not over one year, or the certification requirement is waived. States must set procedures for public notice of all applications and for public hearings to the extent they deem appropriate. Source: [33 U.S.C. 1341(a)(1)](https://www.law.cornell.edu/uscode/text/33/1341)
-- BAAJA: The federal agency sets a reasonable period of up to 1 year that must account for time needed under state or tribal law for public notice and comment. (Sec. 1202, [p. 114, line 18 to p. 114, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=114)) An extension needs the applicant's written request and the state's written concurrence. (Sec. 1202, [p. 115, line 20 to p. 115, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=115)) Certifying authorities must keep procedures for public notice of all applications and, as they see fit, hearings. (Sec. 1202, [p. 106, line 9 to p. 106, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=106)) For interstate gas pipelines and interstate transmission lines the period is up to 9 months and certification covers only direct point-source discharges. (Sec. 1202, [p. 118, line 23 to p. 119, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=118))
-- Bill: [1202](https://pranava0x0.github.io/permittingreform/sections/1202.md)
-- Quote: "a licensing or permitting agency shall, categorically or on a case-by-case basis for each certification application, establish a reasonable period of time (not to exceed 9 months from the date of receipt of the certification application)", [p. 121, line 12 to p. 121, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=121)
-
-### Reissuing nationwide Clean Water Act permits
-
-- Effect: narrows; affects: States, Tribes, The public, Consulting parties
-- Now: Nationwide permits and state discharge permits last 5 years. A 2020 court ruling required wildlife consultation to reissue a nationwide permit. Source: [33 U.S.C. 1344(e)](https://www.law.cornell.edu/uscode/text/33/1344)
-- BAAJA: Reissuing a nationwide permit would need no state consultation under ESA section 6(a), no federal consultation under ESA section 7(a)(2) and no section 106 consultation, and NEPA would be met by a programmatic assessment, if the permit does not narrow or raise the threshold for preconstruction requirements. (Sec. 1204, [p. 127, line 16 to p. 127, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=127)) The Corps would consider only effects on water quality requirements and treat a discharge into less than 2 acres as minimal. (Sec. 1204, [p. 125, line 19 to p. 125, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=125)) General permits would last 10 years. (Sec. 1204, [p. 125, line 2 to p. 125, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=125))
-- Bill: [1204](https://pranava0x0.github.io/permittingreform/sections/1204.md), [1203](https://pranava0x0.github.io/permittingreform/sections/1203.md)
-- Quote (Sec. 1204): "no consultation with a Federal agency pursuant to section 7(a)(2) of that Act (16 U.S.C. 1536(a)(2)) is required", [p. 127, line 20 to p. 127, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=127)
-
 ### Tribal consent to rights-of-way across tribal land
 
+- Part: Section 106 and tribes
 - Effect: expands; affects: Tribes
 - Now: A right-of-way across land of a tribe organized under the 1934 and 1936 Acts needs the consent of the proper tribal officials. Source: [25 U.S.C. 324](https://www.law.cornell.edu/uscode/text/25/324)
 - BAAJA: The bill strikes the references to the 1934 and 1936 Acts from that sentence, which as amended reads as covering lands of any tribe. (Sec. 2212, [p. 290, line 25 to p. 291, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=290)) A tribe could also grant rights-of-way itself under an approved regulation and set compensation and terms by negotiation or regulation. (Sec. 2212, [p. 298, line 9 to p. 298, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=298)) An approved regulation does not stop a tribe from consenting to a grant by Interior. (Sec. 2212, [p. 298, line 5 to p. 298, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=298))
 - Bill: [2212](https://pranava0x0.github.io/permittingreform/sections/2212.md)
 - Quote: "organized under the Act of June 18, 1934 (48 Stat. 984), as amended; the Act of May 1, 1936 (49 Stat. 1250); or the Act of June 26, 1936 (49 Stat. 1967),", [p. 290, line 25 to p. 291, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=290)
 
-### FERC siting of a line over a state's objection
-
-- Effect: narrows; affects: States, Local governments, Landowners, Tribes, The public
-- Now: FERC can permit a line only in a national interest corridor the Energy Department has designated, and only if the state lacks authority, has not decided within 1 year, has set conditions that make the line uneconomic, or has denied the application. Source: [16 U.S.C. 824p(b)](https://www.law.cornell.edu/uscode/text/16/824p)
-- BAAJA: The corridor requirement is dropped. (Sec. 2101, [p. 199, line 11 to p. 199, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=199)) FERC 'shall' issue a permit for lines of 230 kilovolts or more that meet the findings, including one of the state-related triggers. (Sec. 2101, [p. 188, line 10 to p. 188, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188)) The state's clock would start when the application is filed with the state. (Sec. 2101, [p. 189, line 3 to p. 189, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=189)) Developers of lines of 345 kilovolts or more could file at FERC at the same time as at the state, but FERC may not issue a permit until it makes one of the state-related findings. (Sec. 2101, [p. 192, line 5 to p. 192, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192))
-- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
-- Quote: "the electric transmission facilities are capable of transmitting electric energy at a voltage of not less than 230 kilovolts", [p. 189, line 17 to p. 189, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=189)
-
-### Views before FERC in a siting case
-
-- Effect: expands; affects: The public, States, Tribes, Landowners, Local governments
-- Now: FERC must give each state, affected federal agency and tribe, private property owners and other interested persons a reasonable opportunity to present views on need and impact. The statute sets no minimum comment period. Source: [16 U.S.C. 824p(d)](https://www.law.cornell.edu/uscode/text/16/824p)
-- BAAJA: FERC must hold a public comment period of at least 45 days and must take landowner input into account. (Sec. 2101, [p. 188, line 12 to p. 188, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188)) Affected landowners include owners of land crossed, used as a facility site or abutting the right-of-way, owners of a residence within 500 feet of the right-of-way, and federal, state and local governments. (Sec. 2101, [p. 187, line 8 to p. 187, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=187)) A state may file any part of its state record, and FERC must consider it. (Sec. 2101, [p. 191, line 6 to p. 191, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=191))
-- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
-- Quote: "In authorizing the construction or modification of an electric transmission facility under subsection (b), the Commission shall take into account landowner input.", [p. 190, line 23 to p. 191, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=190)
-
-### Eminent domain and compensation for a FERC-permitted line
-
-- Effect: changes; affects: Landowners, Local governments
-- Now: A permit holder that cannot agree on compensation, and that FERC finds made good-faith efforts to engage landowners early, may use eminent domain in federal or state court. Federal procedure follows state practice as nearly as practicable. Just compensation is fair market value including severance damages. Source: [16 U.S.C. 824p(e), (f)](https://www.law.cornell.edu/uscode/text/16/824p)
-- BAAJA: Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. (Sec. 2101, [p. 192, line 13 to p. 192, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)) Section 2101(e) also strikes subsection (f) of section 216 and replaces it with a cost allocation subsection. (Sec. 2101, [p. 192, line 17 to p. 192, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)) As written, the statutory fair market value language would no longer appear in section 216. (the text is silent on this; confirmed by the summary review) The text does not change the Fifth Amendment's just-compensation requirement. (the text is silent on this; confirmed by the summary review)
-- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
-- Quote: "shall be in accordance with rule 71.1 of the Federal Rules of Civil Procedure", [p. 192, line 13 to p. 192, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)
-
-### Payments to places a transmission line crosses
-
-- Effect: expands; affects: Local governments, States
-- Now: Section 219(b)(4) lists categories of costs FERC may allow utilities to recover as transmission rate incentives. Source: [16 U.S.C. 824s(b)(4)](https://www.law.cornell.edu/uscode/text/16/824s)
-- BAAJA: The list would add all prudently incurred costs of payments to jurisdictions impacted by lines developed under section 216 or 225. (Sec. 2101, [p. 198, line 9 to p. 198, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=198)) The text does not require any payment or set an amount. (the text is silent on this; confirmed by the summary review)
-- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
-- Quote: "all prudently incurred costs associated with payments to jurisdictions impacted by electric transmission facilities developed pursuant to section 216 or 225", [p. 198, line 9 to p. 198, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=198)
-
-### States referring a utility's local transmission planning to FERC
-
-- Effect: expands; affects: States, The public, Local governments
-- Now: There is little federal review of transmission a utility plans for itself within its service territory.
-- BAAJA: Within 1 year FERC must set procedures for states to refer a public utility for investigation of its local transmission planning. (Sec. 2104, [p. 220, line 4 to p. 220, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=220)) FERC must notice the investigation for public comment and certify a team that includes up to 3 state-appointed members, then notice the team's report for comment. (Sec. 2104, [p. 221, line 14 to p. 221, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=221)) Remedies include changed processes, a lower return on equity, loss of the prudence presumption and a fine of up to $5,000,000 per facility paid to the referring state. (Sec. 2104, [p. 223, line 7 to p. 223, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=223))
-- Bill: [2104](https://pranava0x0.github.io/permittingreform/sections/2104.md)
-- Quote: "the Commission shall, by rule, establish procedures by which 1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities", [p. 220, line 5 to p. 220, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=220)
-
-### Selected regional projects and FERC siting findings
-
-- Effect: narrows; affects: States, Local governments, Landowners, The public
-- Now: For each permit, FERC must find that a line is in the public interest, protects or benefits consumers and meets the other findings before issuing a siting permit. Source: [16 U.S.C. 824p(b)](https://www.law.cornell.edu/uscode/text/16/824p)
-- BAAJA: A project selected in a regional or joint interregional plan would be considered to satisfy the findings in paragraphs (2) through (5) and, if applicable, (6) of section 216(b). (Sec. 2103, [p. 217, line 12 to p. 217, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=217)) The planning section lists required process elements, and none addresses state or public participation. (Sec. 2103, [p. 214, line 9 to p. 214, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=214)) Approval of a planning process is not a major Federal action under NEPA. (Sec. 2103, [p. 218, line 5 to p. 218, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=218))
-- Bill: [2103](https://pranava0x0.github.io/permittingreform/sections/2103.md)
-- Quote: "a project that is selected by 1 or more transmission planning regions pursuant to a regional or joint interregional transmission plan in accordance with this section shall be considered to satisfy paragraphs (2) through (5)", [p. 217, line 9 to p. 217, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=217)
-
-### Time to sue over a NEPA decision
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments, Landowners
-- Now: A suit against a federal agency generally must be filed within 6 years. Projects covered by FAST-41 have a 2-year limit. Source: [28 U.S.C. 2401(a); 42 U.S.C. 4370m-6](https://www.law.cornell.edu/uscode/text/28/2401)
-- BAAJA: A claim that an environmental review was not properly conducted under NEPA would be barred unless filed within 150 days after the authorization is published in the Federal Register (where an EIS was prepared) or made public (any other case), unless a shorter deadline applies. (Sec. 1110, [p. 68, line 1 to p. 68, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)) A supplemental document required by court order starts a new 150-day clock, and the claim is limited to information not in the earlier document. (Sec. 1110, [p. 72, line 10 to p. 72, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=72))
-- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
-- Quote: "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law", [p. 68, line 1 to p. 68, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)
-
-### Who can bring a NEPA claim
-
-- Effect: narrows; affects: The public, Tribes, Local governments, Landowners
-- Now: Any party with standing who is adversely affected may sue. The comment-first requirement applies to FAST-41 covered projects, not to NEPA claims generally. Source: [42 U.S.C. 4370m-6](https://www.law.cornell.edu/uscode/text/42/4370m-6)
-- BAAJA: Where an opportunity for comment was provided, the plaintiff must have submitted a substantive comment, detailed enough to put the agency on notice of the issue, during a public comment period. (Sec. 1110, [p. 68, line 11 to p. 68, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)) The plaintiff, or one of its members, must allege an actual or imminent injury in fact amounting to a direct harm. (Sec. 1110, [p. 68, line 18 to p. 68, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)) The section says it does not create a cause of action. (Sec. 1110, [p. 74, line 9 to p. 74, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=74))
-- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
-- Quote: "in the case of an authorization for which an opportunity for comment was provided, the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization", [p. 68, line 10 to p. 68, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)
-
-### Which court hears a NEPA claim
-
-- Effect: changes; affects: The public, Tribes, States, Local governments, Landowners
-- Now: Claims go to a federal district court unless another statute sends them to a court of appeals.
-- BAAJA: The court of appeals for the circuit where the project will be built or operated would have original and exclusive jurisdiction, with supplemental jurisdiction over related claims on the authorization's validity. (Sec. 1110, [p. 68, line 22 to p. 69, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)) Judges are to be randomly assigned to the maximum extent practicable. (Sec. 1110, [p. 69, line 9 to p. 69, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=69)) Courts must give substantial deference to the agency on the scope and contents of the document and must rule 'as expeditiously as possible', with no fixed deadline. (Sec. 1110, [p. 73, line 25 to p. 74, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=73))
-- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
-- Quote: "The court of appeals of the United States for the circuit in which a project subject to an authorization will be constructed, expanded, or operated shall have original and exclusive jurisdiction over a claim.", [p. 68, line 22 to p. 69, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)
-
-### Remedy when a court finds a NEPA violation
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments, Landowners
-- Now: Courts may vacate the approval or enjoin the project.
-- BAAJA: The only remedy would be a remand without vacatur or injunction, with instructions and a deadline of no more than 180 days. (Sec. 1110, [p. 69, line 24 to p. 70, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=69)) The authorization stays in effect and the project may proceed during the remand. (Sec. 1110, [p. 71, line 15 to p. 71, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=71)) A preliminary injunction is allowed only if the authorization is likely to violate a federal law other than NEPA and the National Historic Preservation Act, and the usual harm, equity and public interest tests are met. (Sec. 1110, [p. 70, line 18 to p. 70, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=70))
-- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
-- Quote: "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction", [p. 69, line 24 to p. 70, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=69)
-
 ### NEPA challenges to actions on tribal trust land
 
+- Part: Section 106 and tribes
 - Effect: changes; affects: Tribes, The public, States, Local governments
 - Now: There is no separate rule for actions on tribal trust land. The general NEPA rules apply.
 - BAAJA: For an action authorizing use of land, minerals or other resources held in trust for a tribe, there would be no administrative or judicial review based on a failure to comply with NEPA. (Sec. 1110, [p. 73, line 8 to p. 73, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=73)) The exceptions are a claim by the tribe whose trust resources are used and a claim about reasonably foreseeable effects outside those resources. (Sec. 1110, [p. 73, line 15 to p. 73, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=73)) For tribe-initiated actions, the lead agency must presume the no-action alternative has negative effects. (Sec. 1106, [p. 37, line 24 to p. 38, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=37))
 - Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md), [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
 - Quote (Sec. 1110): "there shall be no administrative or judicial review of such final agency action based on a claim of failure to comply with the requirements of this Act", [p. 73, line 8 to p. 73, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=73)
 
-### Claims over gaps in the sponsor's outreach record
-
-- Effect: narrows; affects: The public, Local governments, Tribes
-- Now: No such record is required today, so no claim arises over it.
-- BAAJA: There would be no claim or judicial review of whether a final agency action complies with NEPA for any omission from the list described in section 3(22)(B). (Sec. 1110, [p. 74, line 5 to p. 74, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=74)) In the bill's definitions that list is the sponsor's pre-application engagement with state, local and tribal officials and community entities. (Sec. 1102, [p. 22, line 10 to p. 22, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=22))
-- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md), [1102](https://pranava0x0.github.io/permittingreform/sections/1102.md)
-- Quote (Sec. 1110): "there shall not be a claim or judicial review of whether a final agency action complies with the requirements of this Act for any omission from the list described in section 3(22)(B)", [p. 74, line 5 to p. 74, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=74)
-
-### Time to sue over energy and mineral permits under any federal law
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments, Landowners
-- Now: A suit against a federal agency generally must be filed within 6 years. Source: [28 U.S.C. 2401(a)](https://www.law.cornell.edu/uscode/text/28/2401)
-- BAAJA: A civil action under federal law seeking review of a final agency action granting or denying an authorization for an energy, carbon capture or mineral project would be barred unless filed within 150 days after the action is made public, which must happen within 3 days of the action. (Sec. 2201, [p. 284, line 12 to p. 284, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=284)) Courts must expedite, and a remand deadline is up to 180 days unless a longer time is needed to comply with law. (Sec. 2201, [p. 284, line 22 to p. 284, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=284))
-- Bill: [2201](https://pranava0x0.github.io/permittingreform/sections/2201.md)
-- Quote: "a civil action arising under Federal law seeking judicial review of a final agency action granting or denying an authorization shall be barred unless the civil action is filed by the date that is 150 days after", [p. 284, line 10 to p. 284, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=284)
-
-### Challenges to Clean Water Act section 404 permits
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments, Landowners
-- Now: A suit generally has a 6-year limit, is heard in district court, and the ordinary remedies apply. Source: [28 U.S.C. 2401(a)](https://www.law.cornell.edu/uscode/text/28/2401)
-- BAAJA: Suits over individual and general permits, verifications under a general permit, and EPA approval of a state permit program would be barred unless filed within 150 days. (Sec. 1205, [p. 129, line 21 to p. 129, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=129)) Where a draft was published in the Federal Register with at least 30 days of comment, the plaintiff must have filed a detailed comment and the claim must relate to it. (Sec. 1205, [p. 131, line 1 to p. 131, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=131)) A court must remand and may not vacate or enjoin a permit unless activities would present an imminent and substantial danger to human health or the environment for which no other equitable remedy is available. (Sec. 1205, [p. 132, line 9 to p. 132, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=132))
-- Bill: [1205](https://pranava0x0.github.io/permittingreform/sections/1205.md)
-- Quote: "of an individual permit or general permit issued under this section shall be filed not later than the date that is 150 days after the date on which the permit was issued", [p. 129, line 19 to p. 129, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=129)
-
-### Time and court for challenges to biological opinions
-
-- Effect: narrows; affects: The public, States, Tribes, Local governments
-- Now: Challenges to a biological opinion are brought under general law with a 6-year default limit. Source: [28 U.S.C. 2401(a)](https://www.law.cornell.edu/uscode/text/28/2401)
-- BAAJA: Any person could seek review of a biological opinion only in the D.C. Circuit, by a petition filed within 150 days after the opinion is made public on the agency's website. (Sec. 1305, [p. 154, line 18 to p. 154, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=154))
-- Bill: [1305](https://pranava0x0.github.io/permittingreform/sections/1305.md)
-- Quote: "in the United States Court of Appeals for the District of Columbia Circuit by filing in such court not later than 150 days after the date on which the opinion is made public a written petition for review", [p. 154, line 17 to p. 154, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=154)
-
 ### Time, comment and court rules for section 106 claims
 
+- Part: Section 106 and tribes
 - Effect: narrows; affects: Consulting parties, The public, Tribes, States, Local governments
 - Now: A section 106 decision is challenged under the Administrative Procedure Act with a 6-year default limit. The statute has no comment-first rule. Source: [28 U.S.C. 2401(a)](https://www.law.cornell.edu/uscode/text/28/2401)
 - BAAJA: A claim would be barred unless filed within 150 days after the later of the final agency action being made public and the preservation officer being notified. (Sec. 2301, [p. 408, line 23 to p. 409, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=408)) The plaintiff must have suffered or imminently will suffer direct harm and, where there was a comment period, filed a substantive and unique comment by the noticed deadline on the same subject. (Sec. 2301, [p. 409, line 9 to p. 409, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=409)) Claims go to the courts of appeals, with substantial deference to the agency. (Sec. 2301, [p. 406, line 14 to p. 406, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=406))
@@ -15987,6 +15756,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ### Governments that raise issues in consultation keep their right to sue
 
+- Part: Section 106 and tribes
 - Effect: changes; affects: Tribes, States, Local governments, Consulting parties
 - Now: No comment-first rule applies today to section 106 claims.
 - BAAJA: The direct-harm and comment requirements would not apply where a state or tribal preservation officer, tribe, Native Hawaiian organization or local government gave detailed written notice during consultation that identified the issues. (Sec. 2301, [p. 410, line 13 to p. 410, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=410)) The exemption does not name other consulting parties or the public. (the text is silent on this; confirmed by the summary review)
@@ -15995,6 +15765,7 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ### Remedy when a court finds a section 106 violation
 
+- Part: Section 106 and tribes
 - Effect: narrows; affects: Consulting parties, The public, Tribes, States, Local governments
 - Now: Courts may vacate or enjoin under ordinary remedies.
 - BAAJA: The only remedy would be a remand without vacatur or injunction, with a deadline of no more than 180 days. (Sec. 2301, [p. 406, line 25 to p. 407, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=406)) A preliminary injunction is allowed only if the action likely violates a federal law other than the historic preservation division of title 54 or NEPA, and the usual tests are met. (Sec. 2301, [p. 407, line 18 to p. 407, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=407))
@@ -16003,43 +15774,318 @@ How the bill changes who can comment, be consulted, take part in planning or go 
 
 ### Challenges to section 106 programmatic agreements
 
+- Part: Section 106 and tribes
 - Effect: narrows; affects: Consulting parties, Tribes, The public, States, Local governments
 - Now: The statute says nothing about programmatic agreements. The Advisory Council's rules allow them.
 - BAAJA: Only signatories could sue over how a programmatic agreement is implemented; no court would have jurisdiction over a suit by anyone else. (Sec. 2301, [p. 412, line 24 to p. 413, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=412)) Federal agencies must develop programmatic agreements for routine and repetitive categories, and a state or tribal officer's agreement for the same category would apply. (Sec. 2301, [p. 404, line 12 to p. 404, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=404))
 - Bill: [2301](https://pranava0x0.github.io/permittingreform/sections/2301.md)
 - Quote: "A party that is not a signatory to a programmatic agreement entered into for purposes of this subsection may not bring a civil action to challenge the implementation of the programmatic agreement.", [p. 412, line 24 to p. 413, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=412)
 
-### Court review of state certification decisions
-
-- Effect: narrows; affects: States, Tribes, The public, Local governments
-- Now: Section 401 sets no burden of proof for review of a denial or condition. Source: [33 U.S.C. 1341](https://www.law.cornell.edu/uscode/text/33/1341)
-- BAAJA: A court reviewing a denial must put the burden on the certifying authority to show by clear and convincing evidence that no reasonable modification or condition would allow certification. (Sec. 1202, [p. 117, line 5 to p. 117, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=117)) For a challenged condition, the authority must show by clear and convincing evidence that it is necessary, least burdensome and consistent with the federal permit. (Sec. 1202, [p. 117, line 14 to p. 117, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=117)) A waiver of certification would not be subject to judicial review. (Sec. 1202, [p. 116, line 8 to p. 116, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=116))
-- Bill: [1202](https://pranava0x0.github.io/permittingreform/sections/1202.md)
-- Quote: "a court shall place the burden of proof on the certifying authority to demonstrate, by clear and convincing evidence, that no reasonable modifications to or reasonable conditions on the certification would make it possible to grant the certification", [p. 117, line 5 to p. 117, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=117)
-
-### Asking an agency to revoke or change an issued permit
-
-- Effect: narrows; affects: The public, Tribes, States, Local governments
-- Now: Agencies may revoke, suspend or amend authorizations under their own statutes and permit terms, subject to court review.
-- BAAJA: For projects with non-federal sponsors, a federal agency could not take new action to revoke, suspend, amend or alter an authorization in effect on or after September 16, 2026, except in five cases. (Sec. 1401, [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159)) These include a court order, a material breach or violation of law, fraud, a need to prevent specific, urgent, substantial and proximate harm based on new information, or a request from the holder. (Sec. 1401, [p. 160, line 6 to p. 160, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=160)) The agency carries the burden by clear and convincing evidence. (Sec. 1401, [p. 162, line 4 to p. 162, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=162))
-- Bill: [1401](https://pranava0x0.github.io/permittingreform/sections/1401.md)
-- Quote: "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026", [p. 159, line 11 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159)
-
 ### Objecting to a tribe's handling of a right-of-way
 
+- Part: Section 106 and tribes
 - Effect: expands; affects: The public, Landowners, Local governments, Tribes
 - Now: The Secretary of the Interior grants rights-of-way across Indian land. Source: [25 U.S.C. 323](https://www.law.cornell.edu/uscode/text/25/323)
 - BAAJA: An interested party that has exhausted tribal remedies could petition Interior to review a tribe's compliance with its approved regulation. (Sec. 2212, [p. 296, line 10 to p. 296, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=296)) If Interior finds a violation it may act, including rescinding approval of the regulation, after the tribe gets a formal hearing and a chance to cure. (Sec. 2212, [p. 296, line 20 to p. 296, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=296))
 - Bill: [2212](https://pranava0x0.github.io/permittingreform/sections/2212.md)
 - Quote: "An interested party, after exhaustion of any applicable Tribal remedies, may submit a petition to the Secretary of the Interior", [p. 296, line 10 to p. 296, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=296)
 
+### Public comment on federal water quality criteria
+
+- Part: Species and water
+- Effect: expands; affects: The public, States, Tribes
+- Now: EPA develops and publishes water quality criteria after consulting federal and state agencies and other interested persons. The statute does not require notice-and-comment rulemaking. Source: [33 U.S.C. 1314(a)(1)](https://www.law.cornell.edu/uscode/text/33/1314)
+- BAAJA: EPA would have to use rulemaking under 5 U.S.C. 553 when it develops any section 304(a) criterion. (Sec. 1201, [p. 102, line 22 to p. 102, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=102)) Final criteria, and a definition of waters of the United States, would be added to the actions reviewed first in the courts of appeals under section 509(b)(1). (Sec. 1201, [p. 103, line 6 to p. 103, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=103))
+- Bill: [1201](https://pranava0x0.github.io/permittingreform/sections/1201.md)
+- Quote: "In developing any criterion under this subsection, the Administrator shall carry out a rulemaking under section 553 of title 5, United States Code.", [p. 102, line 22 to p. 102, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=102)
+
+### Time for Endangered Species Act section 7 consultation
+
+- Part: Species and water
+- Effect: narrows; affects: States, Tribes, The public
+- Now: Formal consultation concludes within 90 days, and an extension to 150 days or more needs the applicant's consent. Consultation is between the wildlife agency, the federal agency and the permit applicant. Source: [16 U.S.C. 1536(b)(1)](https://www.law.cornell.edu/uscode/text/16/1536)
+- BAAJA: The 90-day period becomes 60 days and the 150-day mark becomes 100 days. (Sec. 1302, [p. 134, line 16 to p. 134, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=134)) An applicant becomes eligible for relief under 5 U.S.C. 706(1) if an extended consultation passes 145 days without the required statement or consent. (Sec. 1302, [p. 135, line 18 to p. 135, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=135)) When an environmental document is required, consultation must finish by the date that document is due, unless the Secretary approves an extension for extraordinary circumstances. (Sec. 1302, [p. 136, line 4 to p. 136, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=136))
+- Bill: [1302](https://pranava0x0.github.io/permittingreform/sections/1302.md)
+- Quote: "the consultation process under subsection (a)(2) shall be completed by not later than the date on which the applicable environmental document (as so defined) for the agency action is completed", [p. 136, line 4 to p. 136, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=136)
+
+### State-run Endangered Species Act consultation
+
+- Part: Species and water
+- Effect: expands; affects: States, The public
+- Now: Only the federal wildlife agencies consult under section 7. States cannot take over that role. Source: [16 U.S.C. 1536(a)(2), (b)](https://www.law.cornell.edu/uscode/text/16/1536)
+- BAAJA: Interior could assign its consultation duties to a state by written agreement of up to 10 years, for projects within that state. (Sec. 1304, [p. 146, line 22 to p. 146, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=146)) The state must publish its complete application at least 60 days before filing, take public comment for at least 30 days and respond to comments. (Sec. 1304, [p. 143, line 11 to p. 143, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=143)) Audits for the first 4 years go out for public comment and Interior must respond within 60 days. (Sec. 1304, [p. 149, line 11 to p. 149, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=149)) District courts would hear suits against a state that fails to carry out its duties, under the same standards as against Interior. (Sec. 1304, [p. 147, line 6 to p. 147, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=147)) A permit applicant may still choose to consult Interior. (Sec. 1304, [p. 148, line 7 to p. 148, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=148))
+- Bill: [1304](https://pranava0x0.github.io/permittingreform/sections/1304.md)
+- Quote: "a State shall be required to respond to public comments received under subparagraph (A)(ii)", [p. 143, line 22 to p. 143, line 24](https://pranava0x0.github.io/permittingreform/bill.pdf#page=143)
+
+### What a state can deny or condition under Clean Water Act section 401
+
+- Part: Species and water
+- Effect: narrows; affects: States, Tribes, Local governments, The public
+- Now: A state certifies that a federally permitted project meets water quality standards and other appropriate state law. Conditions it sets become conditions of the federal permit. Source: [33 U.S.C. 1341(a), (d)](https://www.law.cornell.edu/uscode/text/33/1341)
+- BAAJA: Scope would be limited to 'water quality requirements', meaning sections 301, 302, 303, 306 and 307 and the federal, state and tribal laws implementing them. (Sec. 1202, [p. 122, line 15 to p. 122, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=122)) A certifying authority could deny only on clear and convincing evidence that no modification or reasonable condition would allow certification. (Sec. 1202, [p. 105, line 1 to p. 105, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=105)) Each condition needs clear and convincing evidence that it is necessary, the least burdensome and consistent with the federal permit. (Sec. 1202, [p. 105, line 8 to p. 105, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=105))
+- Bill: [1202](https://pranava0x0.github.io/permittingreform/sections/1202.md)
+- Quote: "deny certification for any reason other than making a determination by clear and convincing evidence that no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements", [p. 105, line 1 to p. 105, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=105)
+
+### Time for a state to act on a section 401 certification
+
+- Part: Species and water
+- Effect: narrows; affects: States, Tribes, The public, Local governments
+- Now: A state must act within a reasonable period, not over one year, or the certification requirement is waived. States must set procedures for public notice of all applications and for public hearings to the extent they deem appropriate. Source: [33 U.S.C. 1341(a)(1)](https://www.law.cornell.edu/uscode/text/33/1341)
+- BAAJA: The federal agency sets a reasonable period of up to 1 year that must account for time needed under state or tribal law for public notice and comment. (Sec. 1202, [p. 114, line 18 to p. 114, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=114)) An extension needs the applicant's written request and the state's written concurrence. (Sec. 1202, [p. 115, line 20 to p. 115, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=115)) Certifying authorities must keep procedures for public notice of all applications and, as they see fit, hearings. (Sec. 1202, [p. 106, line 9 to p. 106, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=106)) For interstate gas pipelines and interstate transmission lines the period is up to 9 months and certification covers only direct point-source discharges. (Sec. 1202, [p. 118, line 23 to p. 119, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=118))
+- Bill: [1202](https://pranava0x0.github.io/permittingreform/sections/1202.md)
+- Quote: "a licensing or permitting agency shall, categorically or on a case-by-case basis for each certification application, establish a reasonable period of time (not to exceed 9 months from the date of receipt of the certification application)", [p. 121, line 12 to p. 121, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=121)
+
+### Reissuing nationwide Clean Water Act permits
+
+- Part: Species and water
+- Effect: narrows; affects: States, Tribes, The public, Consulting parties
+- Now: Nationwide permits and state discharge permits last 5 years. A 2020 court ruling required wildlife consultation to reissue a nationwide permit. Source: [33 U.S.C. 1344(e)](https://www.law.cornell.edu/uscode/text/33/1344)
+- BAAJA: Reissuing a nationwide permit would need no state consultation under ESA section 6(a), no federal consultation under ESA section 7(a)(2) and no section 106 consultation, and NEPA would be met by a programmatic assessment, if the permit does not narrow or raise the threshold for preconstruction requirements. (Sec. 1204, [p. 127, line 16 to p. 127, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=127)) The Corps would consider only effects on water quality requirements and treat a discharge into less than 2 acres as minimal. (Sec. 1204, [p. 125, line 19 to p. 125, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=125)) General permits would last 10 years. (Sec. 1204, [p. 125, line 2 to p. 125, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=125))
+- Bill: [1204](https://pranava0x0.github.io/permittingreform/sections/1204.md), [1203](https://pranava0x0.github.io/permittingreform/sections/1203.md)
+- Quote (Sec. 1204): "no consultation with a Federal agency pursuant to section 7(a)(2) of that Act (16 U.S.C. 1536(a)(2)) is required", [p. 127, line 20 to p. 127, line 22](https://pranava0x0.github.io/permittingreform/bill.pdf#page=127)
+
+### Challenges to Clean Water Act section 404 permits
+
+- Part: Species and water
+- Effect: narrows; affects: The public, Tribes, States, Local governments, Landowners
+- Now: A suit generally has a 6-year limit, is heard in district court, and the ordinary remedies apply. Source: [28 U.S.C. 2401(a)](https://www.law.cornell.edu/uscode/text/28/2401)
+- BAAJA: Suits over individual and general permits, verifications under a general permit, and EPA approval of a state permit program would be barred unless filed within 150 days. (Sec. 1205, [p. 129, line 21 to p. 129, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=129)) Where a draft was published in the Federal Register with at least 30 days of comment, the plaintiff must have filed a detailed comment and the claim must relate to it. (Sec. 1205, [p. 131, line 1 to p. 131, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=131)) A court must remand and may not vacate or enjoin a permit unless activities would present an imminent and substantial danger to human health or the environment for which no other equitable remedy is available. (Sec. 1205, [p. 132, line 9 to p. 132, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=132))
+- Bill: [1205](https://pranava0x0.github.io/permittingreform/sections/1205.md)
+- Quote: "of an individual permit or general permit issued under this section shall be filed not later than the date that is 150 days after the date on which the permit was issued", [p. 129, line 19 to p. 129, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=129)
+
+### Time and court for challenges to biological opinions
+
+- Part: Species and water
+- Effect: narrows; affects: The public, States, Tribes, Local governments
+- Now: Challenges to a biological opinion are brought under general law with a 6-year default limit. Source: [28 U.S.C. 2401(a)](https://www.law.cornell.edu/uscode/text/28/2401)
+- BAAJA: Any person could seek review of a biological opinion only in the D.C. Circuit, by a petition filed within 150 days after the opinion is made public on the agency's website. (Sec. 1305, [p. 154, line 18 to p. 154, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=154))
+- Bill: [1305](https://pranava0x0.github.io/permittingreform/sections/1305.md)
+- Quote: "in the United States Court of Appeals for the District of Columbia Circuit by filing in such court not later than 150 days after the date on which the opinion is made public a written petition for review", [p. 154, line 17 to p. 154, line 21](https://pranava0x0.github.io/permittingreform/bill.pdf#page=154)
+
+### Court review of state certification decisions
+
+- Part: Species and water
+- Effect: narrows; affects: States, Tribes, The public, Local governments
+- Now: Section 401 sets no burden of proof for review of a denial or condition. Source: [33 U.S.C. 1341](https://www.law.cornell.edu/uscode/text/33/1341)
+- BAAJA: A court reviewing a denial must put the burden on the certifying authority to show by clear and convincing evidence that no reasonable modification or condition would allow certification. (Sec. 1202, [p. 117, line 5 to p. 117, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=117)) For a challenged condition, the authority must show by clear and convincing evidence that it is necessary, least burdensome and consistent with the federal permit. (Sec. 1202, [p. 117, line 14 to p. 117, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=117)) A waiver of certification would not be subject to judicial review. (Sec. 1202, [p. 116, line 8 to p. 116, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=116))
+- Bill: [1202](https://pranava0x0.github.io/permittingreform/sections/1202.md)
+- Quote: "a court shall place the burden of proof on the certifying authority to demonstrate, by clear and convincing evidence, that no reasonable modifications to or reasonable conditions on the certification would make it possible to grant the certification", [p. 117, line 5 to p. 117, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=117)
+
+### FERC siting of a line over a state's objection
+
+- Part: Siting and transmission
+- Effect: narrows; affects: States, Local governments, Landowners, Tribes, The public
+- Now: FERC can permit a line only in a national interest corridor the Energy Department has designated, and only if the state lacks authority, has not decided within 1 year, has set conditions that make the line uneconomic, or has denied the application. Source: [16 U.S.C. 824p(b)](https://www.law.cornell.edu/uscode/text/16/824p)
+- BAAJA: The corridor requirement is dropped. (Sec. 2101, [p. 199, line 11 to p. 199, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=199)) FERC 'shall' issue a permit for lines of 230 kilovolts or more that meet the findings, including one of the state-related triggers. (Sec. 2101, [p. 188, line 10 to p. 188, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188)) The state's clock would start when the application is filed with the state. (Sec. 2101, [p. 189, line 3 to p. 189, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=189)) Developers of lines of 345 kilovolts or more could file at FERC at the same time as at the state, but FERC may not issue a permit until it makes one of the state-related findings. (Sec. 2101, [p. 192, line 5 to p. 192, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192))
+- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
+- Quote: "the electric transmission facilities are capable of transmitting electric energy at a voltage of not less than 230 kilovolts", [p. 189, line 17 to p. 189, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=189)
+
+### Views before FERC in a siting case
+
+- Part: Siting and transmission
+- Effect: expands; affects: The public, States, Tribes, Landowners, Local governments
+- Now: FERC must give each state, affected federal agency and tribe, private property owners and other interested persons a reasonable opportunity to present views on need and impact. The statute sets no minimum comment period. Source: [16 U.S.C. 824p(d)](https://www.law.cornell.edu/uscode/text/16/824p)
+- BAAJA: FERC must hold a public comment period of at least 45 days and must take landowner input into account. (Sec. 2101, [p. 188, line 12 to p. 188, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=188)) Affected landowners include owners of land crossed, used as a facility site or abutting the right-of-way, owners of a residence within 500 feet of the right-of-way, and federal, state and local governments. (Sec. 2101, [p. 187, line 8 to p. 187, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=187)) A state may file any part of its state record, and FERC must consider it. (Sec. 2101, [p. 191, line 6 to p. 191, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=191))
+- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
+- Quote: "In authorizing the construction or modification of an electric transmission facility under subsection (b), the Commission shall take into account landowner input.", [p. 190, line 23 to p. 191, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=190)
+
+### Eminent domain and compensation for a FERC-permitted line
+
+- Part: Siting and transmission
+- Effect: changes; affects: Landowners, Local governments
+- Now: A permit holder that cannot agree on compensation, and that FERC finds made good-faith efforts to engage landowners early, may use eminent domain in federal or state court. Federal procedure follows state practice as nearly as practicable. Just compensation is fair market value including severance damages. Source: [16 U.S.C. 824p(e), (f)](https://www.law.cornell.edu/uscode/text/16/824p)
+- BAAJA: Federal court procedure would follow Rule 71.1 of the Federal Rules of Civil Procedure. (Sec. 2101, [p. 192, line 13 to p. 192, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)) Section 2101(e) also strikes subsection (f) of section 216 and replaces it with a cost allocation subsection. (Sec. 2101, [p. 192, line 17 to p. 192, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)) As written, the statutory fair market value language would no longer appear in section 216. (the text is silent on this; confirmed by the summary review) The text does not change the Fifth Amendment's just-compensation requirement. (the text is silent on this; confirmed by the summary review)
+- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
+- Quote: "shall be in accordance with rule 71.1 of the Federal Rules of Civil Procedure", [p. 192, line 13 to p. 192, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=192)
+
+### Payments to places a transmission line crosses
+
+- Part: Siting and transmission
+- Effect: expands; affects: Local governments, States
+- Now: Section 219(b)(4) lists categories of costs FERC may allow utilities to recover as transmission rate incentives. Source: [16 U.S.C. 824s(b)(4)](https://www.law.cornell.edu/uscode/text/16/824s)
+- BAAJA: The list would add all prudently incurred costs of payments to jurisdictions impacted by lines developed under section 216 or 225. (Sec. 2101, [p. 198, line 9 to p. 198, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=198)) The text does not require any payment or set an amount. (the text is silent on this; confirmed by the summary review)
+- Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
+- Quote: "all prudently incurred costs associated with payments to jurisdictions impacted by electric transmission facilities developed pursuant to section 216 or 225", [p. 198, line 9 to p. 198, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=198)
+
+### States referring a utility's local transmission planning to FERC
+
+- Part: Siting and transmission
+- Effect: expands; affects: States, The public, Local governments
+- Now: There is little federal review of transmission a utility plans for itself within its service territory.
+- BAAJA: Within 1 year FERC must set procedures for states to refer a public utility for investigation of its local transmission planning. (Sec. 2104, [p. 220, line 4 to p. 220, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=220)) FERC must notice the investigation for public comment and certify a team that includes up to 3 state-appointed members, then notice the team's report for comment. (Sec. 2104, [p. 221, line 14 to p. 221, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=221)) Remedies include changed processes, a lower return on equity, loss of the prudence presumption and a fine of up to $5,000,000 per facility paid to the referring state. (Sec. 2104, [p. 223, line 7 to p. 223, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=223))
+- Bill: [2104](https://pranava0x0.github.io/permittingreform/sections/2104.md)
+- Quote: "the Commission shall, by rule, establish procedures by which 1 or more States may refer a public utility to the Commission for an investigation into the processes used by the public utility for planning and developing local transmission facilities", [p. 220, line 5 to p. 220, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=220)
+
+### Selected regional projects and FERC siting findings
+
+- Part: Siting and transmission
+- Effect: narrows; affects: States, Local governments, Landowners, The public
+- Now: For each permit, FERC must find that a line is in the public interest, protects or benefits consumers and meets the other findings before issuing a siting permit. Source: [16 U.S.C. 824p(b)](https://www.law.cornell.edu/uscode/text/16/824p)
+- BAAJA: A project selected in a regional or joint interregional plan would be considered to satisfy the findings in paragraphs (2) through (5) and, if applicable, (6) of section 216(b). (Sec. 2103, [p. 217, line 12 to p. 217, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=217)) The planning section lists required process elements, and none addresses state or public participation. (Sec. 2103, [p. 214, line 9 to p. 214, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=214)) Approval of a planning process is not a major Federal action under NEPA. (Sec. 2103, [p. 218, line 5 to p. 218, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=218))
+- Bill: [2103](https://pranava0x0.github.io/permittingreform/sections/2103.md)
+- Quote: "a project that is selected by 1 or more transmission planning regions pursuant to a regional or joint interregional transmission plan in accordance with this section shall be considered to satisfy paragraphs (2) through (5)", [p. 217, line 9 to p. 217, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=217)
+
 ### Courts for challenges to transmission authorizations
 
+- Part: Siting and transmission
 - Effect: changes; affects: States, The public, Local governments, Landowners, Tribes
 - Now: Section 216(h) has no judicial review provision. Review follows each underlying law. Source: [16 U.S.C. 824p(h)](https://www.law.cornell.edu/uscode/text/16/824p)
 - BAAJA: Any order of a federal agency, or of a state agency acting under federal law, to issue, condition or deny a federal authorization for a transmission facility would be reviewed in the courts that review FERC orders under Federal Power Act section 313. (Sec. 2101, [p. 197, line 5 to p. 197, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=197)) 'Federal authorization' would include a Clean Water Act section 401 certification and other state approvals required under federal law, except under the Coastal Zone Management Act. (Sec. 2101, [p. 195, line 11 to p. 195, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=195))
 - Bill: [2101](https://pranava0x0.github.io/permittingreform/sections/2101.md)
 - Quote: "shall be subject to judicial review in the same courts in which an order of the Commission is subject to judicial review under section 313", [p. 197, line 5 to p. 197, line 7](https://pranava0x0.github.io/permittingreform/bill.pdf#page=197)
+
+### Comment period on a notice of intent for an EIS
+
+- Part: Court rules and public comment
+- Effect: changes; affects: The public, Tribes, States, Local governments, Landowners
+- Now: Each notice of intent to prepare an environmental impact statement must request public comment on alternatives, impacts and relevant studies. The statute sets no minimum or maximum comment period. Source: [42 U.S.C. 4336a(c)](https://www.law.cornell.edu/uscode/text/42/4336a)
+- BAAJA: Each notice of intent would be published in the Federal Register with a request for comment. (Sec. 1106, [p. 44, line 9 to p. 44, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=44)) The lead agency would set a comment period of 45 to 60 days after publication, or up to 75 days if the lead agency and the project sponsor agree. (Sec. 1106, [p. 44, line 24 to p. 45, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=44))
+- Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
+- Quote: "The lead agency shall establish a comment period of not less than 45 days and not more than 60 days after the date on which the notice to prepare an environmental impact statement is published in the Federal Register", [p. 44, line 24 to p. 45, line 4](https://pranava0x0.github.io/permittingreform/bill.pdf#page=44)
+
+### Combining categorical exclusions
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, States, Local governments
+- Now: An agency need not prepare an environmental document if the action fits one of its own categorical exclusions, another agency's exclusion adopted under section 109, or another provision of law. Source: [42 U.S.C. 4336(a)(2)](https://www.law.cornell.edu/uscode/text/42/4336)
+- BAAJA: A lead agency could rely on one exclusion or a combination of several. (Sec. 1105, [p. 28, line 8 to p. 28, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) Repeated use of the same or similar exclusions based on size, acreage or dollar thresholds would not count as a combination. (Sec. 1105, [p. 28, line 10 to p. 28, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) An exclusion established by Congress would also qualify. (Sec. 1105, [p. 28, line 14 to p. 28, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) The text adds no notice or comment step for relying on an exclusion. (the text is silent on this; confirmed by the summary review)
+- Bill: [1105](https://pranava0x0.github.io/permittingreform/sections/1105.md)
+- Quote: "1 or a combination of multiple categorical exclusions (excluding multiple applications of the same or similar categorical exclusions that are based on size, acreage, or dollar amount thresholds) of the agency", [p. 28, line 8 to p. 28, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)
+
+### Actions defined as not a major Federal action
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, States, Local governments
+- Now: NEPA excludes seven kinds of action from 'major Federal action', including projects with no or minimal federal funding or involvement and non-discretionary actions. Source: [42 U.S.C. 4336e(10)](https://www.law.cornell.edu/uscode/text/42/4336e)
+- BAAJA: The list would grow to fourteen. (Sec. 1102, [p. 20, line 13 to p. 20, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=20)) New entries include projects whose only federal involvement is a loan or loan guarantee, and routine agency actions costing up to $10,000,000. (Sec. 1102, [p. 18, line 18 to p. 18, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=18)) Others cover lifeline infrastructure repair that adds no more than 20 percent capacity, geothermal observation tests, transmission activities described in a new section 216A(b) of the Federal Power Act and covered activities under Natural Gas Act section 7(i)(1). (Sec. 1102, [p. 19, line 8 to p. 19, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=19)) Actions another agency already evaluated under NEPA, and some Corps projects with a federal share of up to $50,000,000, also qualify. (Sec. 1102, [p. 20, line 9 to p. 20, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=20)) These actions fall outside the Act's review requirements. (Sec. 1102, [p. 16, line 13 to p. 16, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=16))
+- Bill: [1102](https://pranava0x0.github.io/permittingreform/sections/1102.md)
+- Quote: "a proposed agency action, the effects of which were previously evaluated by another agency in compliance with this Act", [p. 20, line 9 to p. 20, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=20)
+
+### State or tribal review standing in for NEPA
+
+- Part: Court rules and public comment
+- Effect: changes; affects: The public, Tribes, States, Local governments
+- Now: An agency need not prepare an environmental document when the action is excluded under a categorical exclusion or 'another provision of law'. The threshold test does not refer to state or tribal reviews. Source: [42 U.S.C. 4336(a)](https://www.law.cornell.edu/uscode/text/42/4336)
+- BAAJA: An agency would not need an environmental document if the action was reviewed under a state or tribal environmental review law or policy and the lead agency finds the review serves a similar function. (Sec. 1105, [p. 28, line 23 to p. 28, line 26](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)) The same applies where another federal law serves a similar function. (Sec. 1105, [p. 29, line 5 to p. 29, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=29)) On a sponsor's request the lead agency must also consider, and as appropriate adopt, state or tribal analysis. (Sec. 1106, [p. 45, line 19 to p. 45, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=45)) The text does not say what notice or comment the earlier review must have had. (the text is silent on this; confirmed by the summary review)
+- Bill: [1105](https://pranava0x0.github.io/permittingreform/sections/1105.md), [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
+- Quote (Sec. 1105): "the proposed agency action relates to a project or action that has been reviewed pursuant to a State environmental review statute or a Tribal environmental review statute, ordinance, resolution, regulation, or formally adopted policy", [p. 28, line 23 to p. 29, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=28)
+
+### New science that arrives after a notice of intent
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, States, Local governments
+- Now: Agencies may use any reliable data source and need not do new research unless it is essential to a reasoned choice among alternatives and the cost and time are not unreasonable. The statute sets no cutoff date for outside information. Source: [42 U.S.C. 4336(b)(3)](https://www.law.cornell.edu/uscode/text/42/4336)
+- BAAJA: No federal agency would have to consider research that becomes public after the notice of intent or the decision to prepare an environmental document, and an agency could not delay past a deadline to wait for it. (Sec. 1106, [p. 43, line 12 to p. 43, line 16](https://pranava0x0.github.io/permittingreform/bill.pdf#page=43)) A savings clause leaves in place Administrative Procedure Act review of information in comments received during a comment period. (Sec. 1106, [p. 44, line 2 to p. 44, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=44))
+- Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
+- Quote: "No Federal agency shall be required to consider any scientific or technical research that becomes publicly available after the date of publication of a notice of intent or decision to prepare an environmental document", [p. 43, line 12 to p. 43, line 17](https://pranava0x0.github.io/permittingreform/bill.pdf#page=43)
+
+### Alternatives the public can ask an agency to study
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, States, Local governments
+- Now: An environmental impact statement studies a reasonable range of alternatives that are technically and economically feasible and meet the purpose and need. Source: [42 U.S.C. 4332(2)(C)(iii)](https://www.law.cornell.edu/uscode/text/42/4332)
+- BAAJA: The lead agency must eliminate any alternative, except no-action, that does not fulfill the purpose and need or meet the goals of an applicable non-federal sponsor. (Sec. 1106, [p. 38, line 6 to p. 38, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) Cooperating agencies must consider only the alternatives the lead agency found reasonable. (Sec. 1106, [p. 41, line 22 to p. 42, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41)) The statement of purpose and need would include the sponsor's goals. (Sec. 1102, [p. 23, line 18 to p. 23, line 19](https://pranava0x0.github.io/permittingreform/bill.pdf#page=23))
+- Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md), [1102](https://pranava0x0.github.io/permittingreform/sections/1102.md)
+- Quote (Sec. 1106): "a cooperating agency shall be bound by the purpose and need of the proposed agency action and consider only those alternatives to the proposed agency action that the lead agency has, consistent with paragraph (1)(C), determined are reasonable", [p. 41, line 22 to p. 42, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41)
+
+### Public tracker and portal for large reviews
+
+- Part: Court rules and public comment
+- Effect: expands; affects: The public, Local governments, Landowners, Tribes
+- Now: The 2023 NEPA amendments called for a study of an online permitting portal, not for a portal or a project tracker. Source: [42 U.S.C. 4336d](https://www.law.cornell.edu/uscode/text/42/4336d)
+- BAAJA: CEQ would keep a public tracker with an entry for every project needing an EIS, and for any EA still open 13 months after its deadline. (Sec. 1132, [p. 98, line 9 to p. 98, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=98)) Entries show location, purpose and need, contacts for the sponsor and lead agency, schedule changes and litigation status. (Sec. 1132, [p. 99, line 10 to p. 99, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=99)) A common authorization portal, targeted for December 1, 2028, must include a way to tell local communities about notices of intent, public meetings and project status. (Sec. 1121, [p. 86, line 24 to p. 87, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=86))
+- Bill: [1132](https://pranava0x0.github.io/permittingreform/sections/1132.md), [1121](https://pranava0x0.github.io/permittingreform/sections/1121.md)
+- Quote (Sec. 1121): "include a mechanism for the dissemination of relevant information (such as a notice of intent for public comment, public meetings, project statuses, or a notice of intent to begin an environmental review) to local communities, as applicable", [p. 86, line 21 to p. 87, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=86)
+
+### Record of the sponsor's outreach before applying
+
+- Part: Court rules and public comment
+- Effect: changes; affects: Local governments, Tribes, The public, States
+- Now: The NEPA statute does not require a sponsor to file a record of its community outreach with an application.
+- BAAJA: A sponsor would file, with its application, a record of stakeholder engagement of up to 20 pages. (Sec. 1102, [p. 21, line 23 to p. 21, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=21)) It lists pre-application contacts with state, local and tribal officials and community entities, the meeting dates, a brief summary of feedback and how feedback shaped the proposal. (Sec. 1102, [p. 22, line 14 to p. 22, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=22)) The bill requires the record, not any particular outreach. (Sec. 1109, [p. 67, line 1 to p. 67, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=67))
+- Bill: [1109](https://pranava0x0.github.io/permittingreform/sections/1109.md), [1102](https://pranava0x0.github.io/permittingreform/sections/1102.md)
+- Quote (Sec. 1109): "a record of stakeholder engagement for the proposed agency action as of the date of the application", [p. 67, line 1 to p. 67, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=67)
+
+### Corridor work and routine drilling placed outside NEPA
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, Landowners, Consulting parties, Local governments
+- Now: Agencies can use categorical exclusions for some of this work. Five routine oil and gas activities on public land have a categorical exclusion that can be set aside in extraordinary circumstances. Source: [42 U.S.C. 15942](https://www.law.cornell.edu/uscode/text/42/15942)
+- BAAJA: Grid capacity work in or next to an existing right-of-way, and interstate gas pipeline repair, looping and compression in covered areas, would be outside NEPA and would not be a section 106 undertaking. (Sec. 2102, [p. 204, line 22 to p. 204, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=204)) Routine oil, gas and geothermal drilling activities on public and national forest land would not be a major Federal action and would carry no NEPA requirements. (Sec. 2229, [p. 351, line 2 to p. 351, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=351)) Clean Water Act and Clean Air Act duties remain for pipelines. (Sec. 2102, [p. 205, line 4 to p. 205, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=205))
+- Bill: [2102](https://pranava0x0.github.io/permittingreform/sections/2102.md), [2229](https://pranava0x0.github.io/permittingreform/sections/2229.md)
+- Quote (Sec. 2102): "shall not be considered an undertaking for purposes of section 306108 of title 54, United States Code, if the covered activity remains within a covered area", [p. 204, line 22 to p. 204, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=204)
+
+### State, tribal and local governments as cooperating agencies
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: States, Tribes, Local governments
+- Now: A lead agency may designate any federal, state, tribal or local agency with jurisdiction by law or special expertise over an environmental impact as a cooperating agency. It may comment by the date in the schedule. Source: [42 U.S.C. 4336a(a)(3)](https://www.law.cornell.edu/uscode/text/42/4336a)
+- BAAJA: The designation test names jurisdiction by law over an environmental effect. (Sec. 1106, [p. 38, line 20 to p. 38, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) It does not mention special expertise. (the text is silent on this; confirmed by the summary review) The lead agency must identify and invite likely agencies within 30 days of the notice of intent or EA decision, and each has 7 days to accept or decline. (Sec. 1106, [p. 38, line 24 to p. 39, line 5](https://pranava0x0.github.io/permittingreform/bill.pdf#page=38)) A cooperating agency's comments are limited to matters within its jurisdiction by law, and designation gives it no authority over the action. (Sec. 1106, [p. 41, line 8 to p. 41, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41))
+- Bill: [1106](https://pranava0x0.github.io/permittingreform/sections/1106.md)
+- Quote: "Comments submitted by a cooperating agency under clause (i) shall be limited to matters relating to the jurisdiction by law of the cooperating agency", [p. 41, line 6 to p. 41, line 10](https://pranava0x0.github.io/permittingreform/bill.pdf#page=41)
+
+### Time to sue over a NEPA decision
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, States, Local governments, Landowners
+- Now: A suit against a federal agency generally must be filed within 6 years. Projects covered by FAST-41 have a 2-year limit. Source: [28 U.S.C. 2401(a); 42 U.S.C. 4370m-6](https://www.law.cornell.edu/uscode/text/28/2401)
+- BAAJA: A claim that an environmental review was not properly conducted under NEPA would be barred unless filed within 150 days after the authorization is published in the Federal Register (where an EIS was prepared) or made public (any other case), unless a shorter deadline applies. (Sec. 1110, [p. 68, line 1 to p. 68, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)) A supplemental document required by court order starts a new 150-day clock, and the claim is limited to information not in the earlier document. (Sec. 1110, [p. 72, line 10 to p. 72, line 13](https://pranava0x0.github.io/permittingreform/bill.pdf#page=72))
+- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
+- Quote: "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law", [p. 68, line 1 to p. 68, line 3](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)
+
+### Who can bring a NEPA claim
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, Local governments, Landowners
+- Now: Any party with standing who is adversely affected may sue. The comment-first requirement applies to FAST-41 covered projects, not to NEPA claims generally. Source: [42 U.S.C. 4370m-6](https://www.law.cornell.edu/uscode/text/42/4370m-6)
+- BAAJA: Where an opportunity for comment was provided, the plaintiff must have submitted a substantive comment, detailed enough to put the agency on notice of the issue, during a public comment period. (Sec. 1110, [p. 68, line 11 to p. 68, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)) The plaintiff, or one of its members, must allege an actual or imminent injury in fact amounting to a direct harm. (Sec. 1110, [p. 68, line 18 to p. 68, line 20](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)) The section says it does not create a cause of action. (Sec. 1110, [p. 74, line 9 to p. 74, line 11](https://pranava0x0.github.io/permittingreform/bill.pdf#page=74))
+- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
+- Quote: "in the case of an authorization for which an opportunity for comment was provided, the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization", [p. 68, line 10 to p. 68, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)
+
+### Which court hears a NEPA claim
+
+- Part: Court rules and public comment
+- Effect: changes; affects: The public, Tribes, States, Local governments, Landowners
+- Now: Claims go to a federal district court unless another statute sends them to a court of appeals.
+- BAAJA: The court of appeals for the circuit where the project will be built or operated would have original and exclusive jurisdiction, with supplemental jurisdiction over related claims on the authorization's validity. (Sec. 1110, [p. 68, line 22 to p. 69, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)) Judges are to be randomly assigned to the maximum extent practicable. (Sec. 1110, [p. 69, line 9 to p. 69, line 12](https://pranava0x0.github.io/permittingreform/bill.pdf#page=69)) Courts must give substantial deference to the agency on the scope and contents of the document and must rule 'as expeditiously as possible', with no fixed deadline. (Sec. 1110, [p. 73, line 25 to p. 74, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=73))
+- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
+- Quote: "The court of appeals of the United States for the circuit in which a project subject to an authorization will be constructed, expanded, or operated shall have original and exclusive jurisdiction over a claim.", [p. 68, line 22 to p. 69, line 2](https://pranava0x0.github.io/permittingreform/bill.pdf#page=68)
+
+### Remedy when a court finds a NEPA violation
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, States, Local governments, Landowners
+- Now: Courts may vacate the approval or enjoin the project.
+- BAAJA: The only remedy would be a remand without vacatur or injunction, with instructions and a deadline of no more than 180 days. (Sec. 1110, [p. 69, line 24 to p. 70, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=69)) The authorization stays in effect and the project may proceed during the remand. (Sec. 1110, [p. 71, line 15 to p. 71, line 18](https://pranava0x0.github.io/permittingreform/bill.pdf#page=71)) A preliminary injunction is allowed only if the authorization is likely to violate a federal law other than NEPA and the National Historic Preservation Act, and the usual harm, equity and public interest tests are met. (Sec. 1110, [p. 70, line 18 to p. 70, line 23](https://pranava0x0.github.io/permittingreform/bill.pdf#page=70))
+- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md)
+- Quote: "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction", [p. 69, line 24 to p. 70, line 1](https://pranava0x0.github.io/permittingreform/bill.pdf#page=69)
+
+### Claims over gaps in the sponsor's outreach record
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Local governments, Tribes
+- Now: No such record is required today, so no claim arises over it.
+- BAAJA: There would be no claim or judicial review of whether a final agency action complies with NEPA for any omission from the list described in section 3(22)(B). (Sec. 1110, [p. 74, line 5 to p. 74, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=74)) In the bill's definitions that list is the sponsor's pre-application engagement with state, local and tribal officials and community entities. (Sec. 1102, [p. 22, line 10 to p. 22, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=22))
+- Bill: [1110](https://pranava0x0.github.io/permittingreform/sections/1110.md), [1102](https://pranava0x0.github.io/permittingreform/sections/1102.md)
+- Quote (Sec. 1110): "there shall not be a claim or judicial review of whether a final agency action complies with the requirements of this Act for any omission from the list described in section 3(22)(B)", [p. 74, line 5 to p. 74, line 8](https://pranava0x0.github.io/permittingreform/bill.pdf#page=74)
+
+### Time to sue over energy and mineral permits under any federal law
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, States, Local governments, Landowners
+- Now: A suit against a federal agency generally must be filed within 6 years. Source: [28 U.S.C. 2401(a)](https://www.law.cornell.edu/uscode/text/28/2401)
+- BAAJA: A civil action under federal law seeking review of a final agency action granting or denying an authorization for an energy, carbon capture or mineral project would be barred unless filed within 150 days after the action is made public, which must happen within 3 days of the action. (Sec. 2201, [p. 284, line 12 to p. 284, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=284)) Courts must expedite, and a remand deadline is up to 180 days unless a longer time is needed to comply with law. (Sec. 2201, [p. 284, line 22 to p. 284, line 25](https://pranava0x0.github.io/permittingreform/bill.pdf#page=284))
+- Bill: [2201](https://pranava0x0.github.io/permittingreform/sections/2201.md)
+- Quote: "a civil action arising under Federal law seeking judicial review of a final agency action granting or denying an authorization shall be barred unless the civil action is filed by the date that is 150 days after", [p. 284, line 10 to p. 284, line 14](https://pranava0x0.github.io/permittingreform/bill.pdf#page=284)
+
+### Asking an agency to revoke or change an issued permit
+
+- Part: Court rules and public comment
+- Effect: narrows; affects: The public, Tribes, States, Local governments
+- Now: Agencies may revoke, suspend or amend authorizations under their own statutes and permit terms, subject to court review.
+- BAAJA: For projects with non-federal sponsors, a federal agency could not take new action to revoke, suspend, amend or alter an authorization in effect on or after September 16, 2026, except in five cases. (Sec. 1401, [p. 159, line 12 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159)) These include a court order, a material breach or violation of law, fraud, a need to prevent specific, urgent, substantial and proximate harm based on new information, or a request from the holder. (Sec. 1401, [p. 160, line 6 to p. 160, line 9](https://pranava0x0.github.io/permittingreform/bill.pdf#page=160)) The agency carries the burden by clear and convincing evidence. (Sec. 1401, [p. 162, line 4 to p. 162, line 6](https://pranava0x0.github.io/permittingreform/bill.pdf#page=162))
+- Bill: [1401](https://pranava0x0.github.io/permittingreform/sections/1401.md)
+- Quote: "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, amend, or alter a Federal authorization or permit in effect on or after September 16, 2026", [p. 159, line 11 to p. 159, line 15](https://pranava0x0.github.io/permittingreform/bill.pdf#page=159)
 
 
 ## Data centers: computing loads, transmission rates and speed
