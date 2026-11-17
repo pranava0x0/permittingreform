@@ -2698,6 +2698,7 @@
    "status": 200,
    "where": [
     "overview.status",
+    "overview.status",
     "timeline.2026-11-11-cloture-filed-sa-6883.source",
     "amend.sa-6883.source"
    ]
@@ -3435,6 +3436,15 @@
    "status": 200,
    "where": [
     "media.2026-03-10-crs-in-focus-if13180-speed-act-as-passed-by-the-house"
+   ]
+  },
+  "https://www.everycrsreport.com/reports/RL30360.html": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status"
    ]
   },
   "https://www.federalregister.gov/documents/2025/02/25/2025-03014/removal-of-national-environmental-policy-act-implementing-regulations": {
@@ -5907,6 +5917,15 @@
     "media.2026-08-03-youtube-politico-heinrich-permitting-energy-affordability"
    ]
   },
+  "https://x.com/AFPGovAffairs/status/2122498597518508353": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-afpgovaffairs-we-applaud-the-senate-for-invoking-cloture-on"
+   ]
+  },
   "https://x.com/APIenergy/status/2110430531632644390": {
    "cls": "ok",
    "kind": "x",
@@ -5914,6 +5933,24 @@
    "status": 200,
    "where": [
     "media.2026-10-14-x-api-icf-permitting-tax-revenue"
+   ]
+  },
+  "https://x.com/APIenergy/status/2119948016912372157": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-apienergy-the-senate-s-vote-to-advance-the-bipartisan-a"
+   ]
+  },
+  "https://x.com/APIenergy/status/2122449242207772965": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-apienergy-congress-has-a-historic-opportunity-to-overha"
    ]
   },
   "https://x.com/AidanRMackenzie": {
@@ -5971,6 +6008,24 @@
     "media.2026-10-26-aidanrmackenzie-x-stanford-eis"
    ]
   },
+  "https://x.com/AidanRMackenzie/status/2120208326265057778": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-aidanrmackenzie-once-baaja-passes-into-law-approvals-won-t-be"
+   ]
+  },
+  "https://x.com/AidanRMackenzie/status/2122092718348276071": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-15-x-aidanrmackenzie-congress-is-on-the-cusp-of-passing-transforma"
+   ]
+  },
   "https://x.com/AlecStapp/status/2079946048672293354": {
    "cls": "ok",
    "kind": "x",
@@ -5989,6 +6044,15 @@
     "media.2026-10-24-appvoices-x-campaign"
    ]
   },
+  "https://x.com/AppVoices/status/2122406869306143061": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-appvoices-call-sen-mark-warner-urging-him-to-vote-no"
+   ]
+  },
   "https://x.com/ArushiSF/status/2106595761748111595": {
    "cls": "ok",
    "kind": "x",
@@ -5996,6 +6060,15 @@
    "status": 200,
    "where": [
     "takes.2026-10-04-arushi-sharma-frank-1"
+   ]
+  },
+  "https://x.com/BGOV/status/2122483744745336993": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-bgov-bipartisan-legislation-to-change-permitting-r"
    ]
   },
   "https://x.com/BenSchifman/status/2110931358696563164": {
@@ -6017,6 +6090,24 @@
     "media.2026-10-21-benschifman-x-dc-claims"
    ]
   },
+  "https://x.com/BenSchifman/status/2120547953198653885": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-11-x-benschifman-rep-peters-analysis-that-the-bipartisan-permi"
+   ]
+  },
+  "https://x.com/BenSchifman/status/2122339146681200754": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-benschifman-baaja-would-not-remove-courts-ability-to-bloc"
+   ]
+  },
   "https://x.com/CJAOurPower/status/2114801026868113865": {
    "cls": "ok",
    "kind": "x",
@@ -6024,6 +6115,33 @@
    "status": 200,
    "where": [
     "media.2026-10-26-cjaourpower-x-webinar"
+   ]
+  },
+  "https://x.com/CJAOurPower/status/2121291111939309950": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-cjaourpower-baaja-at-best-saves-families-a-mere-50-yr-but"
+   ]
+  },
+  "https://x.com/CJAOurPower/status/2122374458673705471": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-cjaourpower-the-billionaire-s-baaja-would-undermine-impor"
+   ]
+  },
+  "https://x.com/CJAOurPower/status/2122397302560358741": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-cjaourpower-now-certain-democrats-are-paying-them-back-wi"
    ]
   },
   "https://x.com/ChrisBarnardDL/status/2105749671180165608": {
@@ -6044,6 +6162,42 @@
     "media.2026-10-20-davidpomerantz-x-gerrard"
    ]
   },
+  "https://x.com/DavidPomerantz/status/2119791095953711378": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-davidpomerantz-the-bill-s-likely-to-pass-now-eei-can-count-v"
+   ]
+  },
+  "https://x.com/DavidPomerantz/status/2120309357959348255": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-davidpomerantz-reasonable-people-can-oppose-baaja-many-peopl"
+   ]
+  },
+  "https://x.com/DavidPomerantz/status/2120933633674621385": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-davidpomerantz-this-has-to-be-a-red-line-for-dems-pull-suppo"
+   ]
+  },
+  "https://x.com/DavidPomerantz/status/2122071292786684257": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-15-x-davidpomerantz-baaja-is-just-a-start-for-utility-accountabil"
+   ]
+  },
   "https://x.com/EPWGOP/status/2113355868825661502": {
    "cls": "ok",
    "kind": "x",
@@ -6051,6 +6205,15 @@
    "status": 200,
    "where": [
     "media.2026-10-22-epwgop-x-mckinsey"
+   ]
+  },
+  "https://x.com/EPWGOP/status/2122430205314895907": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-epwgop-america-needs-to-build-and-we-can-get-there-b"
    ]
   },
   "https://x.com/Earthworks/status/2113330009255420379": {
@@ -6069,6 +6232,24 @@
    "status": 200,
    "where": [
     "media.2026-10-23-energydems-x-cheaper-faster"
+   ]
+  },
+  "https://x.com/EnergyDems/status/2122472315900272745": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-energydems-baaja-helps-america-build-creating-good-payin"
+   ]
+  },
+  "https://x.com/FlintDibble/status/2120589366859075827": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-11-x-flintdibble-american-archaeology-is-facing-an-existential"
    ]
   },
   "https://x.com/JaneAFlegal/status/2076669679045681322": {
@@ -6144,6 +6325,60 @@
     "media.2026-10-26-janeaflegal-x-off-grid"
    ]
   },
+  "https://x.com/JaneAFlegal/status/2119804523611111914": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-janeaflegal-the-senate-votes-on-baaja-today-and-it-s-wort"
+   ]
+  },
+  "https://x.com/JaneAFlegal/status/2120168392825200779": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-janeaflegal-baaja-will-reduce-emissions-on-net"
+   ]
+  },
+  "https://x.com/JaneAFlegal/status/2121658473197064266": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-14-x-janeaflegal-we-have-to-fix-that-now-not-in-2029-gotta-pas"
+   ]
+  },
+  "https://x.com/JaneAFlegal/status/2122426020678758842": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-janeaflegal-calling-baaja-a-data-center-bailout-is-absurd"
+   ]
+  },
+  "https://x.com/JohnCornyn/status/2119937349652033615": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-johncornyn-invoked-73-25-motion-to-invoke-cloture-on-the"
+   ]
+  },
+  "https://x.com/LPPCorg/status/2120544755029279008": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-11-x-lppcorg-lppc-endorses-the-bipartisan-american-afforda"
+   ]
+  },
   "https://x.com/LaCerteDA/status/2113725887069728962": {
    "cls": "ok",
    "kind": "x",
@@ -6160,6 +6395,15 @@
    "status": 200,
    "where": [
     "people.john-thune.social.x"
+   ]
+  },
+  "https://x.com/LeaderJohnThune/status/2120947410365288639": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-leaderjohnthune-reforming-the-permitting-process-will-help-ad"
    ]
   },
   "https://x.com/NATHPO_org/status/2112359143525003621": {
@@ -6179,6 +6423,60 @@
    "status": 200,
    "where": [
     "media.2026-10-22-nathpo_org-x-coalition"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2119830373735485900": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nathpo_org-in-opposition-to-baaja-the-senate-s-permittin"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2120257310992077069": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-nathpo_org-thanks-to-the-25-senators-who-stood-up-for-tr"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2121055334751990112": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-nathpo_org-one-less-talked-about-flaw-in-baaja-is-the-un"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2121299455643136160": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-nathpo_org-baaja-threatens-to-take-away-the-very-tools-t"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2122091272697450672": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-15-x-nathpo_org-baaja-the-senate-s-permitting-reform-bill-ess"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2122467123314217296": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-nathpo_org-baaja-the-senate-s-permitting-reform-bill-is"
    ]
   },
   "https://x.com/NicoPortuondo/status/2110422485111857425": {
@@ -6244,6 +6542,168 @@
     "media.2026-10-23-nicoportuondo-x-pueblo-meeting"
    ]
   },
+  "https://x.com/NicoPortuondo/status/2119804526571999388": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nicoportuondo-lcv-against-the-permitting-deal"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2119887700186546688": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nicoportuondo-the-heritage-foundation-supports-the-updated"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2119887891505832357": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nicoportuondo-still-under-review"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2119889865298804960": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nicoportuondo-i-will-vote-against-the-bill-before-us-today"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2119909302445998340": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nicoportuondo-deb-haaland-continues-to-be-opposed-to-the-pe"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2119921209399738718": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nicoportuondo-no-i-will-not-approve-wind-turbines"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2119932021376225699": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nicoportuondo-we-ve-reached-60-permitting-reform-bill-will"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2119975233293545895": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-nicoportuondo-addressing-energy-affordability-concerns-does"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2120275305051103467": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-nicoportuondo-19-democratic-senators-led-by-sen-schiff-file"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2120506831164629031": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-11-x-nicoportuondo-twenty-two-senate-democrats-voted-to-advance"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2120506831491752212": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-11-x-nicoportuondo-sen-jeanne-shaheen-is-still-undecided-on-the"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2120590130503143887": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-11-x-nicoportuondo-as-soon-as-we-re-looking-at-two-democratic-ch"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2120954185428430944": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-nicoportuondo-sen-hawley-considering-voting-against-permitt"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2120999919376863442": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-nicoportuondo-chip-roy-says-the-freedom-caucus-is-not-an-ay"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2122339058378563760": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-nicoportuondo-the-bill-is-a-hard-won-bipartisan-deal-and-ch"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2122472393071600059": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-nicoportuondo-gop-sponsors-of-the-bipartisan-permitting-bil"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2122472395999252824": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-nicoportuondo-the-list-however-indicates-another-manager-s"
+   ]
+  },
+  "https://x.com/PNWAgNetwork/status/2122443999374127362": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-pnwagnetwork-the-american-farm-bureau-federation-says-a-ma"
+   ]
+  },
   "https://x.com/PacificLegal/status/2107147643411705920": {
    "cls": "ok",
    "kind": "x",
@@ -6260,6 +6720,15 @@
    "status": 200,
    "where": [
     "people.jared-huffman.social.x"
+   ]
+  },
+  "https://x.com/RepHuffman/status/2120311195991244818": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-rephuffman-but-this-500-page-backroom-deal-would-gut-our"
    ]
   },
   "https://x.com/RepJeffries": {
@@ -6280,6 +6749,24 @@
     "media.2026-10-23-reprashida-x-no"
    ]
   },
+  "https://x.com/RepRashida/status/2119903551228899537": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-reprashida-trump-is-begging-democrats-to-pass-the-permit"
+   ]
+  },
+  "https://x.com/RepRashida/status/2120335869311701416": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-reprashida-the-permitting-reform-bill-advanced-by-the-se"
+   ]
+  },
   "https://x.com/RepScottPeters": {
    "cls": "ok",
    "kind": "page",
@@ -6287,6 +6774,15 @@
    "status": 200,
    "where": [
     "people.scott-peters.social.x"
+   ]
+  },
+  "https://x.com/RepScottPeters/status/2120959793032482937": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-repscottpeters-baaja-lowers-costs"
    ]
   },
   "https://x.com/RepTeresaLF/status/2114006840979677187": {
@@ -6319,6 +6815,15 @@
     "media.2026-10-26-saveeastpo-x-no-adverse-effect"
    ]
   },
+  "https://x.com/SaveEastPo/status/2121959861176967186": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-15-x-saveeastpo-congress-shouldn-t-pass-baaja-when-the-white"
+   ]
+  },
   "https://x.com/SenCapito": {
    "cls": "ok",
    "kind": "page",
@@ -6346,6 +6851,60 @@
     "media.2026-10-26-sencapito-x-mckinsey-wv"
    ]
   },
+  "https://x.com/SenCapito/status/2119842865140343268": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-sencapito-a-vote-against-the-bipartisan-american-afford"
+   ]
+  },
+  "https://x.com/SenCapito/status/2121347470836048215": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-sencapito-holds-potential-data-centers-accountable-my-p"
+   ]
+  },
+  "https://x.com/SenCapito/status/2122420539964694779": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-sencapito-the-time-to-act-is-now-american-growth-compet"
+   ]
+  },
+  "https://x.com/SenJeffMerkley/status/2122087800828809278": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-15-x-senjeffmerkley-the-permitting-bill-needs-work-it-opens-the-g"
+   ]
+  },
+  "https://x.com/SenJohnBarrasso/status/2121323035743662207": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-senjohnbarrasso-even-the-new-york-times-is-calling-for-permit"
+   ]
+  },
+  "https://x.com/SenMarkey/status/2122446991418405272": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-senmarkey-we-can-do-better-we-should-not-pass-this-perm"
+   ]
+  },
   "https://x.com/SenMikeLee": {
    "cls": "ok",
    "kind": "page",
@@ -6362,6 +6921,15 @@
    "status": 200,
    "where": [
     "media.2026-09-30-x-senmikelee-introduce-affordability-jobs-act"
+   ]
+  },
+  "https://x.com/SenMikeLee/status/2119940542536859983": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-senmikelee-73-senators-just-voted-yes-to-advance-histori"
    ]
   },
   "https://x.com/SenSchumer": {
@@ -6382,6 +6950,78 @@
     "people.sheldon-whitehouse.social.x"
    ]
   },
+  "https://x.com/SenWhitehouse/status/2119815284466802932": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-senwhitehouse-our-manager-s-amendment-improves-baaja-and-ad"
+   ]
+  },
+  "https://x.com/SenWhitehouse/status/2119900656404140078": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-senwhitehouse-our-permitting-bill-lowers-energy-costs-and-e"
+   ]
+  },
+  "https://x.com/SenWhitehouse/status/2119973503239692785": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-senwhitehouse-dems-are-focused-on-lowering-energy-costs-red"
+   ]
+  },
+  "https://x.com/SenWhitehouse/status/2119973779455590460": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-senwhitehouse-the-ultimate-success-of-this-bill-depends-on"
+   ]
+  },
+  "https://x.com/SenWhitehouse/status/2121287544801493090": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-senwhitehouse-baaja-makes-data-centers-pay-their-fair-share"
+   ]
+  },
+  "https://x.com/SenWhitehouse/status/2121352301470245004": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-senwhitehouse-unions-support-our-permitting-bill-for-a-reas"
+   ]
+  },
+  "https://x.com/SenWhitehouse/status/2121705302890618899": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-14-x-senwhitehouse-nearly-80-of-voters-back-baaja"
+   ]
+  },
+  "https://x.com/SenWhitehouse/status/2122445391790575893": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-senwhitehouse-baaja-is-a-big-step-forward-in-our-fight-agai"
+   ]
+  },
   "https://x.com/SenatePress/status/2119938132543946807": {
    "cls": "ok",
    "kind": "x",
@@ -6389,6 +7029,15 @@
    "status": 200,
    "where": [
     "media.2026-11-09-senate-press-gallery-the-senate-invoked-cloture"
+   ]
+  },
+  "https://x.com/SenatePress/status/2122481506627060065": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-senatepress-by-a-vote-of-70-27-the-senate-invoked-cloture"
    ]
   },
   "https://x.com/SenatorHeinrich": {
@@ -6407,6 +7056,33 @@
    "status": 200,
    "where": [
     "media.2026-10-05-heinrich-x-permitting-reform"
+   ]
+  },
+  "https://x.com/SenatorHeinrich/status/2121062156296687818": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-senatorheinrich-climate-change-is-here-now-and-we-can-t-wait"
+   ]
+  },
+  "https://x.com/SenatorHeinrich/status/2121996789717020966": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-15-x-senatorheinrich-baaja-is-an-opportunity-for-democrats-to-turn"
+   ]
+  },
+  "https://x.com/SenatorHick/status/2119938107529388415": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-senatorhick-democrats-across-the-country-ran-on-lowering"
    ]
   },
   "https://x.com/ShanuMathew93/status/2105682239128314310": {
@@ -6443,6 +7119,33 @@
    "status": 200,
    "where": [
     "media.2026-10-21-shawn_regan-x-good-deal"
+   ]
+  },
+  "https://x.com/Shawn_Regan/status/2119876059386847569": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-x-shawn_regan-tribes-want-permitting-reform-too"
+   ]
+  },
+  "https://x.com/Shawn_Regan/status/2120265458796630441": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-shawn_regan-baaja-doesn-t-run-anything-through-national-p"
+   ]
+  },
+  "https://x.com/Shawn_Regan/status/2122414949913985098": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-shawn_regan-another-reason-to-love-baaja-it-would-make-it"
    ]
   },
   "https://x.com/SiegelScribe": {
@@ -6598,6 +7301,195 @@
     "media.2026-10-23-siegelscribe-x-johnson"
    ]
   },
+  "https://x.com/SiegelScribe/status/2120195536921694631": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-siegelscribe-i-am-optimistic-that-was-a-good-start-to-all"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120223588632694949": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-siegelscribe-voters-sent-an-unmistakable-message-they-want"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120275187350573282": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-siegelscribe-the-congressional-progressive-caucus-is-offic"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120285866350535162": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-siegelscribe-they-won-t-support-a-bill-that-removed-nhpa-s"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120323832170918079": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-siegelscribe-i-don-t-think-we-can-land-the-bill-with-repub"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120343540496834699": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-siegelscribe-majority-leader-thune-just-filled-the-tree-se"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120637537823646073": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-11-x-siegelscribe-who-remains-genuinely-undecided-on-baaja"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120895265330614704": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-siegelscribe-several-members-raised-concerns-about-transmi"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120949496838545660": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-siegelscribe-calls-for-more-constructive-involvement-with"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120960482789970074": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-siegelscribe-we-appreciate-the-house-s-engagement-which-ha"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2120979018518347891": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-siegelscribe-merkley-has-come-out-against-baaja"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2121037235654922261": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-x-siegelscribe-a-group-led-by-sen-alex-padilla-d-calif-is-pi"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2121253157909238017": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-siegelscribe-flagging-more-news-in-this-item-a-baaja-endor"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2121298279677796524": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-siegelscribe-there-are-still-some-issues-that-need-to-be-a"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2121323248952422538": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-siegelscribe-notable-baaja-endorsement-here-from-a-house-r"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2122454074079769072": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-siegelscribe-we-ve-come-too-far-we-could-lose-some-folks-b"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2122458572655337886": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-siegelscribe-we-re-close-to-finishing-up-negotiations-arou"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2122480346239312055": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-siegelscribe-vote-coalition-largely-held-up-but-this-isn-t"
+   ]
+  },
+  "https://x.com/SteveForbesCEO/status/2121333893328499058": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-steveforbesceo-americans-sent-a-clear-message-in-the-midterm"
+   ]
+  },
+  "https://x.com/TedNordhaus/status/2122497701657137463": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-tednordhaus-but-most-estimates-suggest-falling-faster-wit"
+   ]
+  },
+  "https://x.com/ThirdWayEnergy/status/2120165961722413405": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-thirdwayenergy-third-way-statement-on-baaja-s-successful-clo"
+   ]
+  },
   "https://x.com/ThomasHochman/status/2112264083525513461": {
    "cls": "ok",
    "kind": "x",
@@ -6637,6 +7529,15 @@
     "media.2026-10-19-hochman-x-nhpa-thread"
    ]
   },
+  "https://x.com/ThomasHochman/status/2121651172444414172": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-14-x-thomashochman-only-56-percent-opposed-the-bill-incredible"
+   ]
+  },
   "https://x.com/WHCEQ47/status/2008908645837250964": {
    "cls": "ok",
    "kind": "x",
@@ -6644,6 +7545,15 @@
    "status": 200,
    "where": [
     "media.2026-01-07-x-whceq47-ceq-final-rule-nepa-regulations"
+   ]
+  },
+  "https://x.com/alexanderbolton/status/2122480332632883526": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-alexanderbolton-senate-votes-70-27-to-end-debate-on-the-subst"
    ]
   },
   "https://x.com/brianschatz": {
@@ -6664,6 +7574,15 @@
     "media.2026-10-26-citizensclimate-x-provisions"
    ]
   },
+  "https://x.com/citizensclimate/status/2120194884611285203": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-citizensclimate-the-bill-is-projected-to-reduce-carbon-emissi"
+   ]
+  },
   "https://x.com/hausfath/status/2105398276681785416": {
    "cls": "ok",
    "kind": "x",
@@ -6682,6 +7601,33 @@
     "media.2026-09-30-x-hausfath-permitting-cheat-sheet.visual"
    ]
   },
+  "https://x.com/humaneactfund/status/2122472693136011582": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-humaneactfund-this-nearly-500-page-bill-contains-language-t"
+   ]
+  },
+  "https://x.com/jamiedupree/status/2122481019786043611": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-jamiedupree-a-bipartisan-permitting-reform-bill-takes-ano"
+   ]
+  },
+  "https://x.com/jeffsaintjohn/status/2122494554230477056": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-jeffsaintjohn-democrats-and-clean-energy-advocates-backing"
+   ]
+  },
   "https://x.com/jsfreed/status/2112897600022081774": {
    "cls": "ok",
    "kind": "x",
@@ -6689,6 +7635,33 @@
    "status": 200,
    "where": [
     "media.2026-10-21-jsfreed-x-khanna"
+   ]
+  },
+  "https://x.com/jsfreed/status/2121164513953366238": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-13-x-jsfreed-excuse-my-cynicism-when-leftists-who-claim-to"
+   ]
+  },
+  "https://x.com/jsfreed/status/2122383321565171837": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-jsfreed-energy-buildout-unleashed-from-baaja-coauthor"
+   ]
+  },
+  "https://x.com/jsfreed/status/2122406557321499001": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-jsfreed-why-democrats-have-an-opportunity-to-and-shou"
    ]
   },
   "https://x.com/kelseytam/status/2029698808179785935": {
@@ -6700,6 +7673,15 @@
     "media.2026-03-05-x-kelseytam-permitting-talks-back-on"
    ]
   },
+  "https://x.com/mattyglesias/status/2122508916089352457": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-mattyglesias-i-think-the-kumbaya-thesis-is-a-bit-belied-by"
+   ]
+  },
   "https://x.com/ppavnr/status/2114835694015144214": {
    "cls": "ok",
    "kind": "x",
@@ -6707,6 +7689,33 @@
    "status": 200,
    "where": [
     "media.2026-10-26-ppavnr-x-grand-canyon"
+   ]
+  },
+  "https://x.com/ppavnr/status/2120133560715936029": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-ppavnr-it-is-remarkable-to-see-20-dem-votes-for-a-pe"
+   ]
+  },
+  "https://x.com/ppavnr/status/2120142453382787399": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-10-x-ppavnr-one-of-the-shrewdest-decisions-baaja-s-negoti"
+   ]
+  },
+  "https://x.com/ppavnr/status/2122022598523675074": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-15-x-ppavnr-i-personally-disagree-because-i-care-about-en"
    ]
   },
   "https://x.com/senatorhick": {
