@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16",
+ "checked": "2026-11-17",
  "bill": {
   "total": 174,
   "verified": 174
@@ -6235,9 +6235,9 @@
   },
   {
    "where": "amend.vote",
-   "text": "Cloture on the Capito substitute amendment #6883 to H.R.2347, legislative vehicle for the permitting reform bill.",
+   "text": "Cloture Motion Agreed to",
    "speaker": "",
-   "url": "https://www.dailypress.senate.gov/thursday-november-12-2026/",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.xml",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -6256,6 +6256,15 @@
    "text": "Motion to Proceed Agreed to (62-21)",
    "speaker": "",
    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.xml",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "votes.264",
+   "text": "Cloture Motion Agreed to (70-27, 3/5 majority required)",
+   "speaker": "",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.xml",
    "result": "verified",
    "share": 1.0,
    "note": ""

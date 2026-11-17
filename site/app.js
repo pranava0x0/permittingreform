@@ -1906,7 +1906,7 @@
         el("h2", { id: "h-am-floor" }, "Other amendments and votes"),
         A.floor.length ? el("ul", { class: "plain-list" }, A.floor.map((f) => el("li", null, el("strong", null, (f.number || "Unnumbered") + " · " + f.sponsor), " ", f.summary))) : el("p", null, A.floor_note),
         vote ? el("p", null, el("strong", null, S.formatDate(vote.date) + ": "), vote.question + ". ",
-          (vote.result || vote.when) + ". ", ext(vote.url, "Senate floor log")) : null,
+          (vote.result || vote.when) + ". ", ext(vote.url, vote.label || "Senate floor log")) : null,
         (D.recent.votes || []).length ? el("p", null, el("a", { href: "#/positions/votes" }, "Senate roll calls on the bill, with each senator's vote")) : null)];
   }
 

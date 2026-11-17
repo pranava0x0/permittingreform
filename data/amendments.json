@@ -699,10 +699,10 @@
  "vote": {
   "date": "2026-11-16",
   "question": "Ending debate on the substitute, SA 6883",
-  "result": null,
-  "url": "https://www.dailypress.senate.gov/thursday-november-12-2026/",
-  "quote": "Cloture on the Capito substitute amendment #6883 to H.R.2347, legislative vehicle for the permitting reform bill.",
-  "when": "Scheduled for 5:30 p.m."
+  "result": "Agreed to, 70 to 27 (roll call 264)",
+  "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.xml",
+  "label": "Senate roll call 264",
+  "quote": "Cloture Motion Agreed to"
  },
  "highlights": [
   {

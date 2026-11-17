@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16",
+ "checked": "2026-11-17",
  "results": {
   "http://legal-planet.org/2026/11/08/the-revised-permitting-reform-bill/": {
    "cls": "ok",
@@ -420,6 +420,24 @@
    "where": [
     "timeline.2025-12-18-house-passes-speed-act-221-196.source",
     "people.hakeem-jeffries.source"
+   ]
+  },
+  "https://clerk.house.gov/evs/2026/roll315.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-11-09-house-suspension-nuclear.source"
+   ]
+  },
+  "https://clerk.house.gov/evs/2026/roll316.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-11-09-house-suspension-nuclear.source"
    ]
   },
   "https://climate.law.columbia.edu/content/opposition-renewable-energy-facilities-united-states-june-2025-edition": {
@@ -2570,6 +2588,33 @@
     "timeline.2026-09-02-house-passes-protecting-domestic-mining-act-218-201.source"
    ]
   },
+  "https://www.congress.gov/bill/119th-congress/house-bill/5549/all-actions": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-11-11-house-passes-hr5549-hr9084.source"
+   ]
+  },
+  "https://www.congress.gov/bill/119th-congress/house-bill/9084/all-actions": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-11-11-house-passes-hr5549-hr9084.source"
+   ]
+  },
+  "https://www.congress.gov/bill/119th-congress/house-bill/9614/all-actions": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "timeline.2026-11-09-house-suspension-nuclear.source"
+   ]
+  },
   "https://www.crowell.com/en/insights/client-alerts/federal-court-blocks-trump-administration-policies-restricting-wind-and-solar-permitting": {
    "cls": "ok",
    "kind": "page",
@@ -2588,6 +2633,16 @@
     "speed.local-state-siting.5"
    ]
   },
+  "https://www.dailypress.senate.gov/monday-november-16-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.next",
+    "timeline.2026-11-16-senate-cloture-substitute.source"
+   ]
+  },
   "https://www.dailypress.senate.gov/monday-november-9-2026/": {
    "cls": "ok",
    "kind": "page",
@@ -2595,16 +2650,6 @@
    "status": 200,
    "where": [
     "timeline.2026-11-09-senate-cloture-motion-to-proceed.source"
-   ]
-  },
-  "https://www.dailypress.senate.gov/thursday-november-12-2026/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "overview.next",
-    "amend.vote"
    ]
   },
   "https://www.dailypress.senate.gov/thursday-october-1-2026/": {
@@ -5142,6 +5187,26 @@
    "status": 200,
    "where": [
     "votes.258.xml"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-11-16-senate-cloture-substitute.source",
+    "votes.264"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "votes.264.xml",
+    "amend.vote"
    ]
   },
   "https://www.sierraclub.org/press-releases/2026/09/sierra-club-reaction-permitting-bill-introduction": {

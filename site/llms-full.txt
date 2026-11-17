@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-15.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-16.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -27,7 +27,7 @@
 - House Speaker Mike Johnson said on October 23 that he supports the Senate bill. (source: Joshua Siegel, Punchbowl News (X), https://x.com/SiegelScribe/status/2113682338181779731)
 - More opponents declared in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups and nine Democratic attorneys general. More than 100 public lands groups, the People's Environmental Justice Caucus and Rep. Leger Fernández joined them. (source: POLITICO (X), https://x.com/NicoPortuondo/status/2112571938484957230)
 - Support letters the same week came from 19 former economic and national security officials, the five main clean energy trade groups, and API with 137 other organizations. (source: Institute for Progress, https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf)
-- Next step, 2026-11-16: About 5:30 p.m.: a vote to end debate on the sponsors' substitute, SA 6883. It needs 60 votes. Passing the bill is a separate vote. (source: https://www.dailypress.senate.gov/thursday-november-12-2026/)
+- Next step, 2026-11-17: First vote at 2:15 p.m.; the floor schedule does not say on what. Adopting the substitute and passing the bill are separate votes. (source: https://www.dailypress.senate.gov/monday-november-16-2026/)
 
 ## Reading and retrieval
 
@@ -131,7 +131,7 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 - [Data center bills and Communities](https://pranava0x0.github.io/permittingreform/llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.
 - [Timeline, people and media](https://pranava0x0.github.io/permittingreform/llms-full.txt): dated records with source links and attributed positions.
 - [Disputed readings](https://pranava0x0.github.io/permittingreform/issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.
-- [Senate votes](https://pranava0x0.github.io/permittingreform/issues.html#votes): 2026-11-09, ending debate on the motion to proceed to H.R. 2347, 73 to 25; 2026-11-10, the motion to proceed to H.R. 2347, 62 to 21. Every senator's vote is listed.
+- [Senate votes](https://pranava0x0.github.io/permittingreform/issues.html#votes): 2026-11-09, ending debate on the motion to proceed to H.R. 2347, 73 to 25; 2026-11-10, the motion to proceed to H.R. 2347, 62 to 21; 2026-11-16, ending debate on the substitute, SA 6883, 70 to 27. Every senator's vote is listed.
 - [Published estimates](https://pranava0x0.github.io/permittingreform/issues.html#estimates): 18 figures from 8 publishers on emissions, electricity costs, generation and transmission built, LNG exports, economic output, review time, each with its scenario, the provisions it covers and the sentence it was copied from.
 - [Method and check status](https://pranava0x0.github.io/permittingreform/#/method): browser view; equivalent checks are in data/core.json.
 - [Subject comparisons](https://pranava0x0.github.io/permittingreform/#/compare): browser view; retrieve the compare object in data/core.json without JavaScript.
@@ -16521,7 +16521,7 @@ Each question quotes the bill, then what critics and supporters say it means, qu
 
 ## Senate votes
 
-Both votes were on procedure. Neither was a vote on passing the bill.
+All three votes were on procedure. None was a vote on passing the bill.
 
 ### Vote 257, 2026-11-09: Ending debate on the motion to proceed to H.R. 2347
 
@@ -16540,6 +16540,15 @@ Both votes were on procedure. Neither was a vote on passing the bill.
 - Yea (62): Alan Armstrong (R-OK), Jim Banks (R-IN), John Barrasso (R-WY), Marsha Blackburn (R-TN), Richard Blumenthal (D-CT), John Boozman (R-AR), Katie Britt (R-AL), Ted Budd (R-NC), Shelley Capito (R-WV), Bill Cassidy (R-LA), Susan Collins (R-ME), Christopher Coons (D-DE), Tom Cotton (R-AR), Kevin Cramer (R-ND), Mike Crapo (R-ID), Ted Cruz (R-TX), John Curtis (R-UT), Steve Daines (R-MT), John Fetterman (D-PA), Deb Fischer (R-NE), Ruben Gallego (D-AZ), Kirsten Gillibrand (D-NY), Darline Graham (R-SC), Chuck Grassley (R-IA), Bill Hagerty (R-TN), Martin Heinrich (D-NM), John Hoeven (R-ND), Jon Husted (R-OH), Cindy Hyde-Smith (R-MS), Ron Johnson (R-WI), John Kennedy (R-LA), Andy Kim (D-NJ), Angus King (I-ME), Amy Klobuchar (D-MN), James Lankford (R-OK), Mike Lee (R-UT), Cynthia Lummis (R-WY), Roger Marshall (R-KS), David McCormick (R-PA), Ashley Moody (R-FL), Jerry Moran (R-KS), Bernie Moreno (R-OH), Lisa Murkowski (R-AK), Jon Ossoff (D-GA), Rand Paul (R-KY), John Reed (D-RI), Pete Ricketts (R-NE), James Risch (R-ID), Brian Schatz (D-HI), Eric Schmitt (R-MO), Charles Schumer (D-NY), Rick Scott (R-FL), Tim Scott (R-SC), Tim Sheehy (R-MT), Elissa Slotkin (D-MI), Dan Sullivan (R-AK), John Thune (R-SD), Thomas Tillis (R-NC), Raphael Warnock (D-GA), Sheldon Whitehouse (D-RI), Roger Wicker (R-MS), Todd Young (R-IN)
 - Nay (21): Angela Alsobrooks (D-MD), Tammy Baldwin (D-WI), Michael Bennet (D-CO), Cory Booker (D-NJ), Maria Cantwell (D-WA), Tammy Duckworth (D-IL), Richard Durbin (D-IL), Maggie Hassan (D-NH), Mazie Hirono (D-HI), Chris Van Hollen (D-MD), Timothy Kaine (D-VA), Ben Lujan (D-NM), Edward Markey (D-MA), Jeff Merkley (D-OR), Patty Murray (D-WA), Alex Padilla (D-CA), Lisa Blunt Rochester (D-DE), Mike Rounds (R-SD), Bernie Sanders (I-VT), Peter Welch (D-VT), Ron Wyden (D-OR)
 - Not Voting (17): John Cornyn (R-TX), Joni Ernst (R-IA), Josh Hawley (R-MO), John Hickenlooper (D-CO), James Justice (R-WV), Mark Kelly (D-AZ), Catherine Cortez Masto (D-NV), Mitch McConnell (R-KY), Christopher Murphy (D-CT), Gary Peters (D-MI), Jacky Rosen (D-NV), Adam Schiff (D-CA), Jeanne Shaheen (D-NH), Tina Smith (D-MN), Tommy Tuberville (R-AL), Mark Warner (D-VA), Elizabeth Warren (D-MA)
+
+### Vote 264, 2026-11-16: Ending debate on the substitute, SA 6883
+
+- Senate's wording: On the Cloture Motion S.Amdt. 6883 to H.R. 2347 (No short title on file). Needed: three-fifths of all senators (60 votes). Result: Cloture Motion Agreed to.
+- Tally: 70 yea, 27 nay, 3 not voting. Source: [Senate roll call 264](https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm)
+- By party: Republicans 49 yea, 2 nay, 2 not voting; Democrats 20 yea, 24 nay, 1 not voting; Independents 1 yea, 1 nay, 0 not voting
+- Yea (70): Alan Armstrong (R-OK), Jim Banks (R-IN), John Barrasso (R-WY), Marsha Blackburn (R-TN), Richard Blumenthal (D-CT), John Boozman (R-AR), Katie Britt (R-AL), Ted Budd (R-NC), Shelley Capito (R-WV), Bill Cassidy (R-LA), Susan Collins (R-ME), Christopher Coons (D-DE), John Cornyn (R-TX), Tom Cotton (R-AR), Kevin Cramer (R-ND), Mike Crapo (R-ID), Ted Cruz (R-TX), John Curtis (R-UT), Steve Daines (R-MT), Joni Ernst (R-IA), John Fetterman (D-PA), Deb Fischer (R-NE), Ruben Gallego (D-AZ), Kirsten Gillibrand (D-NY), Darline Graham (R-SC), Chuck Grassley (R-IA), Bill Hagerty (R-TN), Martin Heinrich (D-NM), John Hickenlooper (D-CO), John Hoeven (R-ND), Jon Husted (R-OH), Cindy Hyde-Smith (R-MS), Ron Johnson (R-WI), James Justice (R-WV), John Kennedy (R-LA), Andy Kim (D-NJ), Angus King (I-ME), Amy Klobuchar (D-MN), James Lankford (R-OK), Mike Lee (R-UT), Cynthia Lummis (R-WY), Roger Marshall (R-KS), Mitch McConnell (R-KY), David McCormick (R-PA), Jerry Moran (R-KS), Bernie Moreno (R-OH), Lisa Murkowski (R-AK), Jon Ossoff (D-GA), Rand Paul (R-KY), Gary Peters (D-MI), John Reed (D-RI), Pete Ricketts (R-NE), Jacky Rosen (D-NV), Brian Schatz (D-HI), Eric Schmitt (R-MO), Charles Schumer (D-NY), Rick Scott (R-FL), Tim Scott (R-SC), Jeanne Shaheen (D-NH), Tim Sheehy (R-MT), Elissa Slotkin (D-MI), Dan Sullivan (R-AK), John Thune (R-SD), Thomas Tillis (R-NC), Tommy Tuberville (R-AL), Mark Warner (D-VA), Raphael Warnock (D-GA), Sheldon Whitehouse (D-RI), Roger Wicker (R-MS), Todd Young (R-IN)
+- Nay (27): Angela Alsobrooks (D-MD), Tammy Baldwin (D-WI), Michael Bennet (D-CO), Lisa Blunt Rochester (D-DE), Cory Booker (D-NJ), Maria Cantwell (D-WA), Catherine Cortez Masto (D-NV), Tammy Duckworth (D-IL), Richard Durbin (D-IL), Maggie Hassan (D-NH), Josh Hawley (R-MO), Mazie Hirono (D-HI), Timothy Kaine (D-VA), Mark Kelly (D-AZ), Ben Lujan (D-NM), Edward Markey (D-MA), Jeff Merkley (D-OR), Patty Murray (D-WA), Alex Padilla (D-CA), Mike Rounds (R-SD), Bernie Sanders (I-VT), Adam Schiff (D-CA), Tina Smith (D-MN), Chris Van Hollen (D-MD), Elizabeth Warren (D-MA), Peter Welch (D-VT), Ron Wyden (D-OR)
+- Not Voting (3): Ashley Moody (R-FL), Christopher Murphy (D-CT), James Risch (R-ID)
 
 
 ## Published estimates
@@ -17123,7 +17132,7 @@ No Congressional Budget Office estimate of the bill was found through November 1
 ```
 
 ```json
-{"id": "2026-11-09-house-suspension-nuclear", "date": "2026-11-09", "title": "House schedules four nuclear bills folded into the substitute for suspension votes", "branch": "congress_house", "summary": "The House majority leader's schedule lists H.R. 3978, 5549, 9084, 9612 and 9614 under suspension of the rules on Monday, with votes postponed until 6:30 p.m. BPC says four bills incorporated in the Senate bill were scheduled for a suspension vote Nov. 9. Result not yet posted at time of research.", "actors": ["House of Representatives"], "milestone": false, "topics": ["congress"], "sources": [{"title": "Majority Leader weekly schedule", "publisher": "House Majority Leader", "url": "https://www.majorityleader.gov/schedule", "date": "2026-11-09"}, {"title": "Explaining the Senate Permitting Bill", "publisher": "Bipartisan Policy Center", "url": "https://bipartisanpolicy.org/explainer/explaining-the-senate-permitting-bill-the-bipartisan-american-affordability-and-jobs-act/", "date": "2026-11-09", "lk": "blocked"}]}
+{"id": "2026-11-09-house-suspension-nuclear", "date": "2026-11-09", "title": "House passes H.R. 3978, H.R. 9612 and H.R. 9614 under suspension of the rules", "branch": "congress_house", "summary": "The House passed H.R. 3978, 397 to 2 (roll call 315), and H.R. 9612, 394 to 3 (roll call 316), both as amended and each needing two-thirds. It passed H.R. 9614 by voice vote. The majority leader's schedule had listed these with H.R. 5549 and H.R. 9084; BPC says four bills on the list are incorporated in the Senate bill.", "actors": ["House of Representatives"], "milestone": false, "topics": ["congress"], "sources": [{"title": "Roll call 315, H.R. 3978", "publisher": "Office of the Clerk, U.S. House of Representatives", "url": "https://clerk.house.gov/evs/2026/roll315.xml", "date": "2026-11-09"}, {"title": "Roll call 316, H.R. 9612", "publisher": "Office of the Clerk, U.S. House of Representatives", "url": "https://clerk.house.gov/evs/2026/roll316.xml", "date": "2026-11-09"}, {"title": "H.R. 9614: all actions", "publisher": "Congress.gov", "url": "https://www.congress.gov/bill/119th-congress/house-bill/9614/all-actions", "date": "2026-11-16", "lk": "blocked"}, {"title": "Majority Leader weekly schedule", "publisher": "House Majority Leader", "url": "https://www.majorityleader.gov/schedule", "date": "2026-11-09"}, {"title": "Explaining the Senate Permitting Bill", "publisher": "Bipartisan Policy Center", "url": "https://bipartisanpolicy.org/explainer/explaining-the-senate-permitting-bill-the-bipartisan-american-affordability-and-jobs-act/", "date": "2026-11-09", "lk": "blocked"}]}
 ```
 
 ```json
@@ -17152,6 +17161,14 @@ No Congressional Budget Office estimate of the bill was found through November 1
 
 ```json
 {"id": "2026-11-11-cloture-filed-sa-6883", "date": "2026-11-11", "title": "Thune files cloture on SA 6883 and on H.R. 2347", "branch": "congress_senate", "summary": "At 12:29 p.m. Majority Leader Thune filed motions to end debate on the substitute, SA 6883, and on H.R. 2347, the Senate Press Gallery reported.", "actors": ["Majority Leader John Thune"], "milestone": false, "topics": ["congress"], "sources": [{"title": "Wednesday, November 11, 2026", "publisher": "U.S. Senate Daily Press", "url": "https://www.dailypress.senate.gov/wednesday-november-11-2026/", "date": "2026-11-11"}]}
+```
+
+```json
+{"id": "2026-11-11-house-passes-hr5549-hr9084", "date": "2026-11-11", "title": "House passes H.R. 5549 and H.R. 9084 by voice vote under suspension of the rules", "branch": "congress_house", "summary": "The House passed H.R. 5549, and H.R. 9084 as amended, by voice vote under suspension of the rules. Both were on the majority leader's November 9 schedule with three nuclear bills passed that day.", "actors": ["House of Representatives"], "milestone": false, "topics": ["congress"], "sources": [{"title": "H.R. 5549: all actions", "publisher": "Congress.gov", "url": "https://www.congress.gov/bill/119th-congress/house-bill/5549/all-actions", "date": "2026-11-16", "lk": "blocked"}, {"title": "H.R. 9084: all actions", "publisher": "Congress.gov", "url": "https://www.congress.gov/bill/119th-congress/house-bill/9084/all-actions", "date": "2026-11-16", "lk": "blocked"}]}
+```
+
+```json
+{"id": "2026-11-16-senate-cloture-substitute", "date": "2026-11-16", "title": "Senate votes 70 to 27 to end debate on the sponsors' substitute, SA 6883", "branch": "congress_senate", "summary": "The Senate agreed, 70 to 27, to end debate on the Capito substitute amendment, SA 6883, to H.R. 2347 (roll call vote 264). Three senators did not vote. Sixty votes were needed. Adopting the substitute and passing the bill are separate votes.", "actors": ["U.S. Senate", "Sen. Shelley Moore Capito"], "milestone": true, "topics": ["congress"], "sources": [{"title": "Roll Call Vote 119th Congress - 2nd Session, Vote 264", "publisher": "U.S. Senate (senate.gov)", "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm", "date": "2026-11-16"}, {"title": "Monday, November 16, 2026", "publisher": "U.S. Senate Daily Press", "url": "https://www.dailypress.senate.gov/monday-november-16-2026/", "date": "2026-11-16"}]}
 ```
 
 
