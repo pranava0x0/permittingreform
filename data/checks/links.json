@@ -2579,6 +2579,17 @@
     "media.2026-10-06-cbd-fof-200-conservation-groups-esa-letter"
    ]
   },
+  "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883": {
+   "browser": "2026-11-16",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "amend.sa-6883.source",
+    "amend.filed-to-sa-6883.source"
+   ]
+  },
   "https://www.congress.gov/bill/119th-congress/house-bill/1501/all-actions": {
    "cls": "blocked",
    "kind": "page",

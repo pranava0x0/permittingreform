@@ -6072,6 +6072,15 @@
    "note": ""
   },
   {
+   "where": "amend.floor.sa-6883.1",
+   "text": "Submitted and Proposed 11/10/2026",
+   "speaker": "",
+   "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-16"
+  },
+  {
    "where": "amend.floor.sa-6884-6890.0",
    "text": "Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate.",
    "speaker": "",
@@ -6079,6 +6088,15 @@
    "result": "verified",
    "share": 1.0,
    "note": ""
+  },
+  {
+   "where": "amend.floor.filed-to-sa-6883.0",
+   "text": "Amendments to This Amendment (113)",
+   "speaker": "",
+   "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-16"
   },
   {
    "where": "amend.reactions.capito.0",

@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-15",
+ "as_of": "2026-11-16",
  "substitute": {
   "title": "The November 7 substitute",
   "date": "2026-11-07",
@@ -373,12 +373,17 @@
    "sponsor": "Thune for Capito",
    "date": "2026-11-10",
    "status": "pending",
-   "summary": "The sponsors' November 7 substitute, offered as a full replacement for the text of H.R. 2347. Thune filed to end debate on it on November 11.",
+   "summary": "The sponsors' November 7 substitute, submitted on November 10 as a full replacement for the text of H.R. 2347. Thune filed to end debate on it on November 11, and the Senate voted 70 to 27 on November 16 to end debate on it (roll call 264).",
    "sources": [
     {
      "publisher": "U.S. Senate Press Gallery",
      "url": "https://www.dailypress.senate.gov/wednesday-november-11-2026/",
      "quote": "Capito substitute amendment #6883 to H.R.2347, Bipartisan American Affordability and Jobs Act of 2026."
+    },
+    {
+     "publisher": "Congress.gov",
+     "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883",
+     "quote": "Submitted and Proposed 11/10/2026"
     }
    ]
   },
@@ -394,6 +399,21 @@
      "publisher": "Senate floor activity, November 10",
      "url": "https://www.senate.gov/legislative/LIS/floor_activity/11_10_2026_Senate_Floor.htm",
      "quote": "Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate."
+    }
+   ]
+  },
+  {
+   "id": "filed-to-sa-6883",
+   "number": "113 amendments to SA 6883",
+   "sponsor": "filed by senators",
+   "date": "2026-11-16",
+   "status": "pending",
+   "summary": "Congress.gov lists 113 amendments filed to the substitute as of November 16, Thune's seven among them. None has had a roll-call vote. This site has not read their text.",
+   "sources": [
+    {
+     "publisher": "Congress.gov",
+     "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883",
+     "quote": "Amendments to This Amendment (113)"
     }
    ]
   }
