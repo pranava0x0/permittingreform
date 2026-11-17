@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-16",
+ "checked": "2026-11-17",
  "bill": {
   "total": 174,
   "verified": 174
@@ -1140,10 +1140,478 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-16-x-tednordhaus-but-most-estimates-suggest-falling-faster-wit",
+   "text": "But most estimates suggest falling faster with BAAJA than without.",
+   "speaker": "Ted Nordhaus (@TedNordhaus)",
+   "url": "https://x.com/TedNordhaus/status/2122497701657137463",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-siegelscribe-we-ve-come-too-far-we-could-lose-some-folks-b",
+   "text": "We’ve come too far. We could lose some folks but we can gain some people.",
+   "speaker": "Sen. Shelley Moore Capito, as quoted by Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2122454074079769072",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-siegelscribe-we-re-close-to-finishing-up-negotiations-arou",
+   "text": "we’re close to finishing up negotiations around amendments.",
+   "speaker": "Sen. Martin Heinrich, as quoted by Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2122458572655337886",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-siegelscribe-vote-coalition-largely-held-up-but-this-isn-t",
+   "text": "Vote coalition largely held up but this isn’t very telling yet as negotiations continue on amendments before final passage",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2122480346239312055",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-shawn_regan-another-reason-to-love-baaja-it-would-make-it",
+   "text": "Another reason to love BAAJA: it would make it easier to do ecological restoration projects that often get stymied by red tape.",
+   "speaker": "Shawn Regan (@Shawn_Regan)",
+   "url": "https://x.com/Shawn_Regan/status/2122414949913985098",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-senwhitehouse-baaja-is-a-big-step-forward-in-our-fight-agai",
+   "text": "BAAJA is a big step forward in our fight against climate change. The bill lowers emissions by 1.5 gigatons through 2040.",
+   "speaker": "Sen. Sheldon Whitehouse (@SenWhitehouse)",
+   "url": "https://x.com/SenWhitehouse/status/2122445391790575893",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-senmarkey-we-can-do-better-we-should-not-pass-this-perm",
+   "text": "We can do better. We should not pass this permitting bill.",
+   "speaker": "Sen. Ed Markey (@SenMarkey)",
+   "url": "https://x.com/SenMarkey/status/2122446991418405272",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-sencapito-the-time-to-act-is-now-american-growth-compet",
+   "text": "The time to act is now. American growth, competitiveness, and security are on the line. Pass the Bipartisan American Affordability and Jobs Act.",
+   "speaker": "Sen. Shelley Moore Capito (@SenCapito)",
+   "url": "https://x.com/SenCapito/status/2122420539964694779",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-senatepress-by-a-vote-of-70-27-the-senate-invoked-cloture",
+   "text": "By a vote of 70-27, the #Senate invoked cloture on the Capito substitute amendment #6883 to H.R.2347, Bipartisan American Affordability and Jobs Act of 2026.",
+   "speaker": "Senate Press Gallery (@SenatePress)",
+   "url": "https://x.com/SenatePress/status/2122481506627060065",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-pnwagnetwork-the-american-farm-bureau-federation-says-a-ma",
+   "text": "The American Farm Bureau Federation says a major bipartisan Senate permitting bill is a step forward for agriculture, but leaves important concerns unresolved.",
+   "speaker": "PNW Ag Network (@PNWAgNetwork)",
+   "url": "https://x.com/PNWAgNetwork/status/2122443999374127362",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-nicoportuondo-the-list-however-indicates-another-manager-s",
+   "text": "The list, however, indicates another Manager's amendment is on the way!",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2122472395999252824",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-nicoportuondo-the-bill-is-a-hard-won-bipartisan-deal-and-ch",
+   "text": "The bill is a hard-won bipartisan deal, and changing it risks the votes needed to pass it.",
+   "speaker": "White House, as quoted by Nico Portuondo",
+   "url": "https://x.com/NicoPortuondo/status/2122339058378563760",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-nicoportuondo-gop-sponsors-of-the-bipartisan-permitting-bil",
+   "text": "GOP sponsors of the bipartisan permitting bill have circulated a list of amendments that could get votes this week.",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2122472393071600059",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-nathpo_org-baaja-the-senate-s-permitting-reform-bill-is",
+   "text": "BAAJA, the Senate's permitting \"reform\" bill is \"an assimilation-era tactic of telling us how and when we can participate, what matters to our cultures, and which harms we must accept.\"",
+   "speaker": "NATHPO (@NATHPO_org)",
+   "url": "https://x.com/NATHPO_org/status/2122467123314217296",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-mattyglesias-i-think-the-kumbaya-thesis-is-a-bit-belied-by",
+   "text": "I think the kumbaya thesis is a bit belied by the fairly bitter split around BAAJA",
+   "speaker": "Matthew Yglesias (@mattyglesias)",
+   "url": "https://x.com/mattyglesias/status/2122508916089352457",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-jsfreed-why-democrats-have-an-opportunity-to-and-shou",
+   "text": "why Democrats have an opportunity to, and should, deliver on affordability now by backing permitting reform.",
+   "speaker": "Josh Freed (@jsfreed)",
+   "url": "https://x.com/jsfreed/status/2122406557321499001",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-jsfreed-energy-buildout-unleashed-from-baaja-coauthor",
+   "text": "energy buildout unleashed from BAAJA coauthored by @SenWhitehouse and @SenatorHeinrich would SAVE Americans up to $56 BILLION in 10 years.",
+   "speaker": "Josh Freed (@jsfreed)",
+   "url": "https://x.com/jsfreed/status/2122383321565171837",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-jeffsaintjohn-democrats-and-clean-energy-advocates-backing",
+   "text": "Democrats and clean energy advocates backing the Senate bipartisan permitting bill are betting that its reforms will boost cheap, clean energy and grid buildouts more than fossil fuels.",
+   "speaker": "Jeff St. John (@jeffsaintjohn)",
+   "url": "https://x.com/jeffsaintjohn/status/2122494554230477056",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-janeaflegal-calling-baaja-a-data-center-bailout-is-absurd",
+   "text": "Calling BAAJA a data center bailout is absurd.",
+   "speaker": "Jane Flegal (@JaneAFlegal)",
+   "url": "https://x.com/JaneAFlegal/status/2122426020678758842",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-jamiedupree-a-bipartisan-permitting-reform-bill-takes-ano",
+   "text": "A bipartisan permitting reform bill takes another step forward in the Senate. It could get approved by the end of the week.",
+   "speaker": "Jamie Dupree (@jamiedupree)",
+   "url": "https://x.com/jamiedupree/status/2122481019786043611",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-humaneactfund-this-nearly-500-page-bill-contains-language-t",
+   "text": "this nearly 500-page bill contains language that could have disastrous impacts on the #EndangeredSpeciesAct",
+   "speaker": "Humane World Action Fund (@humaneactfund)",
+   "url": "https://x.com/humaneactfund/status/2122472693136011582",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-epwgop-america-needs-to-build-and-we-can-get-there-b",
+   "text": "America needs to build, and we can get there by passing Bipartisan American Affordability and Jobs Act.",
+   "speaker": "Senate EPW Committee Republicans (@EPWGOP)",
+   "url": "https://x.com/EPWGOP/status/2122430205314895907",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-energydems-baaja-helps-america-build-creating-good-payin",
+   "text": "BAAJA helps America build, creating good-paying jobs and delivering economic development to families.",
+   "speaker": "Senate Energy Democrats (@EnergyDems)",
+   "url": "https://x.com/EnergyDems/status/2122472315900272745",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-cjaourpower-the-billionaire-s-baaja-would-undermine-impor",
+   "text": "the Billionaire’s BAAJA would undermine important government-2-government Tribal consultation, leave Tribal lands & waterways unprotected, and take away Tribal Nations’ right to protect sacred & cultural sites.",
+   "speaker": "Raelynn Butler, Muscogee Creek Nation, as posted by Climate Justice Alliance",
+   "url": "https://x.com/CJAOurPower/status/2122374458673705471",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-cjaourpower-now-certain-democrats-are-paying-them-back-wi",
+   "text": "now certain Democrats are paying them back with environmental racism that is part of the “Bipartisan American Affordability & Jobs Act” or BAAJA",
+   "speaker": "Climate Justice Alliance (@CJAOurPower)",
+   "url": "https://x.com/CJAOurPower/status/2122397302560358741",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-bgov-bipartisan-legislation-to-change-permitting-r",
+   "text": "Bipartisan legislation to change permitting rules survived another procedural vote in the Senate Monday",
+   "speaker": "Bloomberg Government (@BGOV)",
+   "url": "https://x.com/BGOV/status/2122483744745336993",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-benschifman-baaja-would-not-remove-courts-ability-to-bloc",
+   "text": "BAAJA would not remove courts' ability to block unlawful actions by the Trump administration.",
+   "speaker": "Ben Schifman (@BenSchifman)",
+   "url": "https://x.com/BenSchifman/status/2122339146681200754",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-appvoices-call-sen-mark-warner-urging-him-to-vote-no",
+   "text": "Call Sen. Mark Warner urging him to vote NO!",
+   "speaker": "Appalachian Voices (@AppVoices)",
+   "url": "https://x.com/AppVoices/status/2122406869306143061",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-apienergy-congress-has-a-historic-opportunity-to-overha",
+   "text": "Congress has a historic opportunity to overhaul America’s permitting system while upholding environmental protections and public input.",
+   "speaker": "American Petroleum Institute (@APIenergy)",
+   "url": "https://x.com/APIenergy/status/2122449242207772965",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-alexanderbolton-senate-votes-70-27-to-end-debate-on-the-subst",
+   "text": "Senate votes 70-27 to end debate on the substitute amendment to permitting reform, taking a big step toward final passage of bill. Sen. Sheldon Whitehouse says the prospects for House passage look good.",
+   "speaker": "Alex Bolton (@alexanderbolton)",
+   "url": "https://x.com/alexanderbolton/status/2122480332632883526",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-x-afpgovaffairs-we-applaud-the-senate-for-invoking-cloture-on",
+   "text": "We applaud the Senate for invoking cloture on the Capito amendment (SA 6883) to H.R. 2347 on a vote of 70-27.",
+   "speaker": "AFP Government Affairs (@AFPGovAffairs)",
+   "url": "https://x.com/AFPGovAffairs/status/2122498597518508353",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-15-x-senjeffmerkley-the-permitting-bill-needs-work-it-opens-the-g",
+   "text": "The permitting bill needs work. It opens the gates to a flood of natural gas for data centers while leaving expanded transmission of renewable energy subject to Trump's obstruction. A bad deal.",
+   "speaker": "Sen. Jeff Merkley (@SenJeffMerkley)",
+   "url": "https://x.com/SenJeffMerkley/status/2122087800828809278",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-15-x-senatorheinrich-baaja-is-an-opportunity-for-democrats-to-turn",
+   "text": "BAAJA is an opportunity for Democrats to turn our affordability promises into action.",
+   "speaker": "Sen. Martin Heinrich (@SenatorHeinrich)",
+   "url": "https://x.com/SenatorHeinrich/status/2121996789717020966",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-15-x-saveeastpo-congress-shouldn-t-pass-baaja-when-the-white",
+   "text": "Congress shouldn't pass BAAJA when the White House is actively operating in bad faith.",
+   "speaker": "Save East Potomac (@SaveEastPo)",
+   "url": "https://x.com/SaveEastPo/status/2121959861176967186",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-15-x-ppavnr-i-personally-disagree-because-i-care-about-en",
+   "text": "I personally disagree because I care about energy affordability & America’s global leadership.",
+   "speaker": "Pavan Venkatakrishnan (@ppavnr)",
+   "url": "https://x.com/ppavnr/status/2122022598523675074",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-15-x-nathpo_org-baaja-the-senate-s-permitting-reform-bill-ess",
+   "text": "BAAJA, the Senate's permitting \"reform\" bill \"essentially does away with the process of tribal consultation on projects that may affect important sacred sites.\"",
+   "speaker": "NATHPO (@NATHPO_org)",
+   "url": "https://x.com/NATHPO_org/status/2122091272697450672",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-15-x-davidpomerantz-baaja-is-just-a-start-for-utility-accountabil",
+   "text": "BAAJA is just a start for utility accountability on transmission, but it’s a good start!",
+   "speaker": "David Pomerantz (@DavidPomerantz)",
+   "url": "https://x.com/DavidPomerantz/status/2122071292786684257",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-15-x-aidanrmackenzie-congress-is-on-the-cusp-of-passing-transforma",
+   "text": "Congress is on the cusp of passing transformative legislation to overhaul American grid policy and build big things fast!",
+   "speaker": "Aidan Mackenzie (@AidanRMackenzie)",
+   "url": "https://x.com/AidanRMackenzie/status/2122092718348276071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-15-santa-fe-new-how-they-voted-nov",
    "text": "creates predictability, consistency, and finality in securing a permit. And it will allow our laws to balance public health, the environment, and the needs of our economy.",
    "speaker": "Shelley Moore Capito, U.S. Senator (R-W.Va.), as quoted by the Santa Fe New Mexican",
    "url": "https://www.santafenewmexican.com/news/briefs/how-they-voted-nov-15-2026/article_9f223b42-50ef-45d1-95a4-0f0a54bed5c3.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-14-x-thomashochman-only-56-percent-opposed-the-bill-incredible",
+   "text": "only 56 percent opposed the bill. Incredible.",
+   "speaker": "Thomas Hochman (@ThomasHochman)",
+   "url": "https://x.com/ThomasHochman/status/2121651172444414172",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-14-x-senwhitehouse-nearly-80-of-voters-back-baaja",
+   "text": "Nearly 80% of voters back BAAJA.",
+   "speaker": "Sen. Sheldon Whitehouse (@SenWhitehouse)",
+   "url": "https://x.com/SenWhitehouse/status/2121705302890618899",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-14-x-janeaflegal-we-have-to-fix-that-now-not-in-2029-gotta-pas",
+   "text": "We have to fix that NOW, not in 2029. Gotta pass BAAJA.",
+   "speaker": "Jane Flegal (@JaneAFlegal)",
+   "url": "https://x.com/JaneAFlegal/status/2121658473197064266",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-steveforbesceo-americans-sent-a-clear-message-in-the-midterm",
+   "text": "Americans sent a clear message in the midterms: put affordability first.",
+   "speaker": "Steve Forbes (@SteveForbesCEO)",
+   "url": "https://x.com/SteveForbesCEO/status/2121333893328499058",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-siegelscribe-there-are-still-some-issues-that-need-to-be-a",
+   "text": "There are still some issues that need to be addressed.",
+   "speaker": "Rep. Hakeem Jeffries, as quoted by Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2121298279677796524",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-siegelscribe-notable-baaja-endorsement-here-from-a-house-r",
+   "text": "Notable BAAJA endorsement here from a House Republican.",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2121323248952422538",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-siegelscribe-flagging-more-news-in-this-item-a-baaja-endor",
+   "text": "Flagging more news in this item: A BAAJA endorsement by @USRepGaryPalmer (R-Ala.)",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2121253157909238017",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-senwhitehouse-unions-support-our-permitting-bill-for-a-reas",
+   "text": "Unions support our permitting bill for a reason: it will create over 100,000 good jobs.",
+   "speaker": "Sen. Sheldon Whitehouse (@SenWhitehouse)",
+   "url": "https://x.com/SenWhitehouse/status/2121352301470245004",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-senwhitehouse-baaja-makes-data-centers-pay-their-fair-share",
+   "text": "BAAJA makes data centers pay their fair share, saving ratepayers $55 BILLION.",
+   "speaker": "Sen. Sheldon Whitehouse (@SenWhitehouse)",
+   "url": "https://x.com/SenWhitehouse/status/2121287544801493090",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-senjohnbarrasso-even-the-new-york-times-is-calling-for-permit",
+   "text": "Even the NEW YORK TIMES is calling for permitting reform. Let’s get it done.",
+   "speaker": "Sen. John Barrasso (@SenJohnBarrasso)",
+   "url": "https://x.com/SenJohnBarrasso/status/2121323035743662207",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-sencapito-holds-potential-data-centers-accountable-my-p",
+   "text": "holds potential data centers accountable my putting in federal law that they pay their own way",
+   "speaker": "Sen. Shelley Moore Capito (@SenCapito)",
+   "url": "https://x.com/SenCapito/status/2121347470836048215",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-nathpo_org-baaja-threatens-to-take-away-the-very-tools-t",
+   "text": "BAAJA threatens to take away the very tools that allow us to hold the federal government accountable and ensure that Tribal Nations have a meaningful voice in decisions affecting our ancestral lands, waters, and sacred places.",
+   "speaker": "Joe Davis, Hoopa Valley Tribe Chairman, as posted by NATHPO",
+   "url": "https://x.com/NATHPO_org/status/2121299455643136160",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-jsfreed-excuse-my-cynicism-when-leftists-who-claim-to",
+   "text": "Excuse my cynicism when Leftists who claim to be THE allies of working people decide to ignore @AFLCIO @IBEW @UAPipeTrades @LIUNA and other unions backing permitting reform.",
+   "speaker": "Josh Freed (@jsfreed)",
+   "url": "https://x.com/jsfreed/status/2121164513953366238",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-13-x-cjaourpower-baaja-at-best-saves-families-a-mere-50-yr-but",
+   "text": "#BAAJA at best saves families a mere $50/yr. BUT IT WILL put our health in danger by locking in fossil fuels & data centers while stripping away courts’ & communities’ power to stop polluting projects.",
+   "speaker": "Climate Justice Alliance (@CJAOurPower)",
+   "url": "https://x.com/CJAOurPower/status/2121291111939309950",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1158,10 +1626,181 @@
    "note": "read in a browser on 2026-11-15"
   },
   {
+   "where": "media.2026-11-12-x-siegelscribe-we-appreciate-the-house-s-engagement-which-ha",
+   "text": "We appreciate the House’s engagement, which has already materially strengthened this important bill from the beginning and during the manager’s amendment process",
+   "speaker": "DOE official, as quoted by Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2120960482789970074",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-siegelscribe-several-members-raised-concerns-about-transmi",
+   "text": "several members raised concerns about transmission provisions of BAAJA. They’re hoping for changes in Senate.",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2120895265330614704",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-siegelscribe-merkley-has-come-out-against-baaja",
+   "text": "Merkley has come out against BAAJA",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2120979018518347891",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-siegelscribe-calls-for-more-constructive-involvement-with",
+   "text": "calls for “more constructive involvement” with House Dems and says it has remaining issues about “environmental rollbacks” despite managers amendment “improvements.”",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2120949496838545660",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-siegelscribe-a-group-led-by-sen-alex-padilla-d-calif-is-pi",
+   "text": "A group led by Sen. Alex Padilla (D-Calif.) is pitching an amendment to BAAJA that would exempt tribal governments from NHPA \"remand without vacatur\" judicial review provisions",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2121037235654922261",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-senatorheinrich-climate-change-is-here-now-and-we-can-t-wait",
+   "text": "Climate change is here now and we can't wait any longer to take action. Pass BAAJA.",
+   "speaker": "Sen. Martin Heinrich (@SenatorHeinrich)",
+   "url": "https://x.com/SenatorHeinrich/status/2121062156296687818",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-repscottpeters-baaja-lowers-costs",
+   "text": "BAAJA lowers costs.",
+   "speaker": "Rep. Scott Peters (@RepScottPeters)",
+   "url": "https://x.com/RepScottPeters/status/2120959793032482937",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-nicoportuondo-sen-hawley-considering-voting-against-permitt",
+   "text": "Sen. Hawley considering voting against permitting reform bill in upcoming votes, unless concessions are made on transmission.",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2120954185428430944",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-nicoportuondo-chip-roy-says-the-freedom-caucus-is-not-an-ay",
+   "text": "Chip Roy says the Freedom Caucus is not an \"aye\" yet on the permitting reform bill.",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2120999919376863442",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-nathpo_org-one-less-talked-about-flaw-in-baaja-is-the-un",
+   "text": "One less-talked-about flaw in BAAJA is the unfunded mandate it places on Tribal and State Historic Preservation Officers.",
+   "speaker": "NATHPO (@NATHPO_org)",
+   "url": "https://x.com/NATHPO_org/status/2121055334751990112",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-leaderjohnthune-reforming-the-permitting-process-will-help-ad",
+   "text": "Reforming the permitting process will help advance the kind of projects that will create new jobs, grow our economy, and increase wages.",
+   "speaker": "Majority Leader John Thune (@LeaderJohnThune)",
+   "url": "https://x.com/LeaderJohnThune/status/2120947410365288639",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-x-davidpomerantz-this-has-to-be-a-red-line-for-dems-pull-suppo",
+   "text": "This has to be a red line for Dems: pull support over any weakening of the provisions to better plan and permit regional/inter-regional transmission",
+   "speaker": "David Pomerantz (@DavidPomerantz)",
+   "url": "https://x.com/DavidPomerantz/status/2120933633674621385",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-12-western-livestock-journal-senate-advances-bill-overhauling",
    "text": "Senators voted 62-21 Nov. 10 to begin consideration of the Bipartisan American Affordability and Jobs Act (BAAJA), following a 73-25 procedural vote Nov. 9. Neither vote constituted final passage, according to Senate records.",
    "speaker": "Charles Wallace, reporter, Western Livestock Journal",
    "url": "https://www.wlj.net/senate-advances-bill-overhauling-federal-permitting-rules/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-11-x-siegelscribe-who-remains-genuinely-undecided-on-baaja",
+   "text": "who remains \"genuinely undecided\" on BAAJA",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2120637537823646073",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-11-x-nicoportuondo-twenty-two-senate-democrats-voted-to-advance",
+   "text": "Twenty-two Senate Democrats voted to advance the bipartisan permitting bill. But their support is far from guaranteed.",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2120506831164629031",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-11-x-nicoportuondo-sen-jeanne-shaheen-is-still-undecided-on-the",
+   "text": "Sen. Jeanne Shaheen is still undecided on the permitting bill and is circulating an amendment to change its Clean Water Act provisions.",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2120506831491752212",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-11-x-nicoportuondo-as-soon-as-we-re-looking-at-two-democratic-ch",
+   "text": "As soon as we're looking at two Democratic chambers in the House and the Senate that can negotiate much more favorable conditions, now Republicans want to move this",
+   "speaker": "Rep. Alexandria Ocasio-Cortez, as quoted by Nico Portuondo",
+   "url": "https://x.com/NicoPortuondo/status/2120590130503143887",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-11-x-lppcorg-lppc-endorses-the-bipartisan-american-afforda",
+   "text": "LPPC endorses the Bipartisan American Affordability and Jobs Act of 2026",
+   "speaker": "LPPC (@LPPCorg)",
+   "url": "https://x.com/LPPCorg/status/2120544755029279008",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-11-x-flintdibble-american-archaeology-is-facing-an-existential",
+   "text": "American archaeology is facing an EXISTENTIAL THREAT",
+   "speaker": "Flint Dibble (@FlintDibble)",
+   "url": "https://x.com/FlintDibble/status/2120589366859075827",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-11-x-benschifman-rep-peters-analysis-that-the-bipartisan-permi",
+   "text": "Rep. Peters' analysis that the bipartisan permitting bill, BAAJA, writes Tribal consultation into law in a way it isn't now seems right to me.",
+   "speaker": "Ben Schifman (@BenSchifman)",
+   "url": "https://x.com/BenSchifman/status/2120547953198653885",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1198,6 +1837,168 @@
    "text": "Without meaningful judicial remedies, the National Environmental Policy Act (NEPA) will be virtually impossible to enforce, especially against bad faith actors.",
    "speaker": "Sambhav Sankar, Senior Vice President of Programs, Earthjustice",
    "url": "https://earthjustice.org/experts/sambhav-sankar/the-permitting-bill-will-let-the-trump-administration-ignore-nepa",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-thirdwayenergy-third-way-statement-on-baaja-s-successful-clo",
+   "text": "THIRD WAY STATEMENT ON BAAJA'S SUCCESSFUL CLOTURE VOTE",
+   "speaker": "Third Way (@ThirdWayEnergy)",
+   "url": "https://x.com/ThirdWayEnergy/status/2120165961722413405",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-siegelscribe-voters-sent-an-unmistakable-message-they-want",
+   "text": "Voters sent an unmistakable message: they want Congress to bring down the cost of living.",
+   "speaker": "New Democrat Coalition leaders, as quoted by Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2120223588632694949",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-siegelscribe-they-won-t-support-a-bill-that-removed-nhpa-s",
+   "text": "they won't support a bill that removed NHPA section",
+   "speaker": "Senior White House official, as quoted by Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2120285866350535162",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-siegelscribe-the-congressional-progressive-caucus-is-offic",
+   "text": "The Congressional Progressive Caucus is officially opposing BAAJA \"unless significant improvements are made\"",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2120275187350573282",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-siegelscribe-majority-leader-thune-just-filled-the-tree-se",
+   "text": "Majority Leader THUNE just filled the tree setting up the coming amendment process on BAAJA.",
+   "speaker": "Joshua Siegel (@SiegelScribe)",
+   "url": "https://x.com/SiegelScribe/status/2120343540496834699",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-siegelscribe-i-don-t-think-we-can-land-the-bill-with-repub",
+   "text": "I don’t think we can land the bill with Republicans if we completely strip it out.",
+   "speaker": "Sen. Martin Heinrich, as quoted by Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2120323832170918079",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-siegelscribe-i-am-optimistic-that-was-a-good-start-to-all",
+   "text": "I am optimistic that was a good start to all of this and we want to keep the dialogue going,",
+   "speaker": "Sen. Martin Heinrich, as quoted by Joshua Siegel",
+   "url": "https://x.com/SiegelScribe/status/2120195536921694631",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-shawn_regan-baaja-doesn-t-run-anything-through-national-p",
+   "text": "BAAJA doesn’t run anything through national parks. It speeds up permitting for energy infrastructure outside of them.",
+   "speaker": "Shawn Regan (@Shawn_Regan)",
+   "url": "https://x.com/Shawn_Regan/status/2120265458796630441",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-reprashida-the-permitting-reform-bill-advanced-by-the-se",
+   "text": "The permitting reform bill advanced by the Senate last night will strip many of those protections",
+   "speaker": "Rep. Rashida Tlaib (@RepRashida)",
+   "url": "https://x.com/RepRashida/status/2120335869311701416",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-rephuffman-but-this-500-page-backroom-deal-would-gut-our",
+   "text": "But this 500-page backroom deal would gut our environmental protections, undermine Tribal sovereignty",
+   "speaker": "Rep. Jared Huffman (@RepHuffman)",
+   "url": "https://x.com/RepHuffman/status/2120311195991244818",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-ppavnr-one-of-the-shrewdest-decisions-baaja-s-negoti",
+   "text": "one of the shrewdest decisions BAAJA’s negotiators made both as a matter of policy and politics were the aggressive, punitive data center provisions.",
+   "speaker": "Pavan Venkatakrishnan (@ppavnr)",
+   "url": "https://x.com/ppavnr/status/2120142453382787399",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-ppavnr-it-is-remarkable-to-see-20-dem-votes-for-a-pe",
+   "text": "it is remarkable to see 20+ Dem votes for a permitting deal of this scope & aggression.",
+   "speaker": "Pavan Venkatakrishnan (@ppavnr)",
+   "url": "https://x.com/ppavnr/status/2120133560715936029",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-nicoportuondo-19-democratic-senators-led-by-sen-schiff-file",
+   "text": "19 Democratic senators, led by Sen. Schiff, file amendment to strike the permitting reform legislation’s proposed changes to the National Historic Preservation Act (NHPA).",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2120275305051103467",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-nathpo_org-thanks-to-the-25-senators-who-stood-up-for-tr",
+   "text": "Thanks to the 25 Senators who stood up for Tribal sovereignty and voted to stop BAAJA.",
+   "speaker": "NATHPO (@NATHPO_org)",
+   "url": "https://x.com/NATHPO_org/status/2120257310992077069",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-janeaflegal-baaja-will-reduce-emissions-on-net",
+   "text": "BAAJA *will* reduce emissions on net",
+   "speaker": "Jane Flegal (@JaneAFlegal)",
+   "url": "https://x.com/JaneAFlegal/status/2120168392825200779",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-davidpomerantz-reasonable-people-can-oppose-baaja-many-peopl",
+   "text": "Reasonable people can oppose BAAJA; many people I respect do. Calling it a \"utility giveaway\" is not supportable, imho.",
+   "speaker": "David Pomerantz (@DavidPomerantz)",
+   "url": "https://x.com/DavidPomerantz/status/2120309357959348255",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-citizensclimate-the-bill-is-projected-to-reduce-carbon-emissi",
+   "text": "The bill is projected to reduce carbon emissions in the long run",
+   "speaker": "Citizens' Climate Lobby (@citizensclimate)",
+   "url": "https://x.com/citizensclimate/status/2120194884611285203",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-10-x-aidanrmackenzie-once-baaja-passes-into-law-approvals-won-t-be",
+   "text": "Once BAAJA passes into law approvals won't be up to him anymore!",
+   "speaker": "Aidan Mackenzie (@AidanRMackenzie)",
+   "url": "https://x.com/AidanRMackenzie/status/2120208326265057778",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1354,6 +2155,204 @@
    "result": "browser",
    "share": 1.0,
    "note": "read in a browser on 2026-11-15"
+  },
+  {
+   "where": "media.2026-11-09-x-shawn_regan-tribes-want-permitting-reform-too",
+   "text": "Tribes want permitting reform too.",
+   "speaker": "Shawn Regan (@Shawn_Regan)",
+   "url": "https://x.com/Shawn_Regan/status/2119876059386847569",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-senwhitehouse-the-ultimate-success-of-this-bill-depends-on",
+   "text": "the ultimate success of this bill depends on the Trump administration getting wind turbines up and spinning to get affordable energy on the grid",
+   "speaker": "Sen. Sheldon Whitehouse (@SenWhitehouse)",
+   "url": "https://x.com/SenWhitehouse/status/2119973779455590460",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-senwhitehouse-our-permitting-bill-lowers-energy-costs-and-e",
+   "text": "Our permitting bill lowers energy costs and emissions, boosts clean energy, and creates good jobs.",
+   "speaker": "Sen. Sheldon Whitehouse (@SenWhitehouse)",
+   "url": "https://x.com/SenWhitehouse/status/2119900656404140078",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-senwhitehouse-our-manager-s-amendment-improves-baaja-and-ad",
+   "text": "Our manager’s amendment improves BAAJA and addresses the thoughtful feedback we have received.",
+   "speaker": "Sen. Sheldon Whitehouse (@SenWhitehouse)",
+   "url": "https://x.com/SenWhitehouse/status/2119815284466802932",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-senwhitehouse-dems-are-focused-on-lowering-energy-costs-red",
+   "text": "Dems are focused on lowering energy costs, reducing emissions and stopping data centers’ free ride.",
+   "speaker": "Sen. Sheldon Whitehouse (@SenWhitehouse)",
+   "url": "https://x.com/SenWhitehouse/status/2119973503239692785",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-senmikelee-73-senators-just-voted-yes-to-advance-histori",
+   "text": "73 senators just voted YES to advance historic permitting reform.",
+   "speaker": "Sen. Mike Lee (@SenMikeLee)",
+   "url": "https://x.com/SenMikeLee/status/2119940542536859983",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-sencapito-a-vote-against-the-bipartisan-american-afford",
+   "text": "A vote against the Bipartisan American Affordability and Jobs Act is a vote against bipartisan compromise.",
+   "speaker": "Sen. Shelley Moore Capito (@SenCapito)",
+   "url": "https://x.com/SenCapito/status/2119842865140343268",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-senatorhick-democrats-across-the-country-ran-on-lowering",
+   "text": "Democrats across the country ran on lowering costs, holding Big Tech accountable, and stopping the Trump administration’s attacks on clean energy.",
+   "speaker": "Sen. John Hickenlooper (@SenatorHick)",
+   "url": "https://x.com/SenatorHick/status/2119938107529388415",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-reprashida-trump-is-begging-democrats-to-pass-the-permit",
+   "text": "Trump is begging Democrats to pass the permitting reform bill because he knows it’s a huge gift to Big Oil and Big Tech",
+   "speaker": "Rep. Rashida Tlaib (@RepRashida)",
+   "url": "https://x.com/RepRashida/status/2119903551228899537",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nicoportuondo-we-ve-reached-60-permitting-reform-bill-will",
+   "text": "We’ve reached 60! Permitting reform bill will proceed.",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2119932021376225699",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nicoportuondo-the-heritage-foundation-supports-the-updated",
+   "text": "The Heritage Foundation supports the updated permitting reform bill",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2119887700186546688",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nicoportuondo-still-under-review",
+   "text": "Still under review",
+   "speaker": "Rep. Hakeem Jeffries, as quoted by Nico Portuondo",
+   "url": "https://x.com/NicoPortuondo/status/2119887891505832357",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nicoportuondo-no-i-will-not-approve-wind-turbines",
+   "text": "No, I will not approve wind turbines.",
+   "speaker": "President Donald Trump, as quoted by Nico Portuondo",
+   "url": "https://x.com/NicoPortuondo/status/2119921209399738718",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nicoportuondo-lcv-against-the-permitting-deal",
+   "text": "LCV against the permitting deal.",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2119804526571999388",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nicoportuondo-i-will-vote-against-the-bill-before-us-today",
+   "text": "I will vote against the bill before us today, but I look forward to working with my colleagues to get permitting reform right.",
+   "speaker": "Sen. Jeff Merkley, as quoted by Nico Portuondo",
+   "url": "https://x.com/NicoPortuondo/status/2119889865298804960",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nicoportuondo-deb-haaland-continues-to-be-opposed-to-the-pe",
+   "text": "Deb Haaland \"continues to be opposed\"to the permitting reform bill",
+   "speaker": "Nico Portuondo (@NicoPortuondo)",
+   "url": "https://x.com/NicoPortuondo/status/2119909302445998340",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nicoportuondo-addressing-energy-affordability-concerns-does",
+   "text": "Addressing [energy affordability] concerns does not need to come at the expense of protecting our land, water, and communities’ voices.",
+   "speaker": "Sen. Chuck Schumer, as quoted by Nico Portuondo",
+   "url": "https://x.com/NicoPortuondo/status/2119975233293545895",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-nathpo_org-in-opposition-to-baaja-the-senate-s-permittin",
+   "text": "in opposition to BAAJA, the Senate's permitting \"reform\" bill.",
+   "speaker": "NATHPO (@NATHPO_org)",
+   "url": "https://x.com/NATHPO_org/status/2119830373735485900",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-johncornyn-invoked-73-25-motion-to-invoke-cloture-on-the",
+   "text": "Invoked, 73-25: Motion to invoke cloture on the motion to proceed to Cal. #453, H.R.2347",
+   "speaker": "Sen. John Cornyn (@JohnCornyn)",
+   "url": "https://x.com/JohnCornyn/status/2119937349652033615",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-janeaflegal-the-senate-votes-on-baaja-today-and-it-s-wort",
+   "text": "The Senate votes on BAAJA today(!!!), and it's worth noting how broad & strong support is",
+   "speaker": "Jane Flegal (@JaneAFlegal)",
+   "url": "https://x.com/JaneAFlegal/status/2119804523611111914",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-davidpomerantz-the-bill-s-likely-to-pass-now-eei-can-count-v",
+   "text": "The bill's likely to pass now. EEI can count votes.",
+   "speaker": "David Pomerantz (@DavidPomerantz)",
+   "url": "https://x.com/DavidPomerantz/status/2119791095953711378",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-x-apienergy-the-senate-s-vote-to-advance-the-bipartisan-a",
+   "text": "The Senate’s vote to advance the Bipartisan American Affordability and Jobs Act puts comprehensive permitting reform within reach.",
+   "speaker": "American Petroleum Institute (@APIenergy)",
+   "url": "https://x.com/APIenergy/status/2119948016912372157",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "media.2026-11-09-the-washington-sun-senators-advance-bipartisan-permitting",
@@ -6072,6 +7071,15 @@
    "note": ""
   },
   {
+   "where": "amend.floor.sa-6883.1",
+   "text": "Submitted and Proposed 11/10/2026",
+   "speaker": "",
+   "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-16"
+  },
+  {
    "where": "amend.floor.sa-6884-6890.0",
    "text": "Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate.",
    "speaker": "",
@@ -6079,6 +7087,15 @@
    "result": "verified",
    "share": 1.0,
    "note": ""
+  },
+  {
+   "where": "amend.floor.filed-to-sa-6883.0",
+   "text": "Amendments to This Amendment (113)",
+   "speaker": "",
+   "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-16"
   },
   {
    "where": "amend.reactions.capito.0",
@@ -6235,9 +7252,9 @@
   },
   {
    "where": "amend.vote",
-   "text": "Cloture on the Capito substitute amendment #6883 to H.R.2347, legislative vehicle for the permitting reform bill.",
+   "text": "Cloture Motion Agreed to",
    "speaker": "",
-   "url": "https://www.dailypress.senate.gov/thursday-november-12-2026/",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.xml",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -6256,6 +7273,15 @@
    "text": "Motion to Proceed Agreed to (62-21)",
    "speaker": "",
    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.xml",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "votes.264",
+   "text": "Cloture Motion Agreed to (70-27, 3/5 majority required)",
+   "speaker": "",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.xml",
    "result": "verified",
    "share": 1.0,
    "note": ""

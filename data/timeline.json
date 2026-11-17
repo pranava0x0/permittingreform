@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-15",
+ "generated": "2026-11-16",
  "events": [
   {
    "id": "2023-06-03-fiscal-responsibility-act-nepa-amendments",
@@ -4202,9 +4202,9 @@
   {
    "id": "2026-11-09-house-suspension-nuclear",
    "date": "2026-11-09",
-   "title": "House schedules four nuclear bills folded into the substitute for suspension votes",
+   "title": "House passes H.R. 3978, H.R. 9612 and H.R. 9614 under suspension of the rules",
    "branch": "congress_house",
-   "summary": "The House majority leader's schedule lists H.R. 3978, 5549, 9084, 9612 and 9614 under suspension of the rules on Monday, with votes postponed until 6:30 p.m. BPC says four bills incorporated in the Senate bill were scheduled for a suspension vote Nov. 9. Result not yet posted at time of research.",
+   "summary": "The House passed H.R. 3978, 397 to 2 (roll call 315), and H.R. 9612, 394 to 3 (roll call 316), both as amended and each needing two-thirds. It passed H.R. 9614 by voice vote. The majority leader's schedule had listed these with H.R. 5549 and H.R. 9084; BPC says four bills on the list are incorporated in the Senate bill.",
    "actors": [
     "House of Representatives"
    ],
@@ -4213,6 +4213,27 @@
     "congress"
    ],
    "sources": [
+    {
+     "title": "Roll call 315, H.R. 3978",
+     "publisher": "Office of the Clerk, U.S. House of Representatives",
+     "url": "https://clerk.house.gov/evs/2026/roll315.xml",
+     "date": "2026-11-09",
+     "verified": true
+    },
+    {
+     "title": "Roll call 316, H.R. 9612",
+     "publisher": "Office of the Clerk, U.S. House of Representatives",
+     "url": "https://clerk.house.gov/evs/2026/roll316.xml",
+     "date": "2026-11-09",
+     "verified": true
+    },
+    {
+     "title": "H.R. 9614: all actions",
+     "publisher": "Congress.gov",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/9614/all-actions",
+     "date": "2026-11-16",
+     "verified": true
+    },
     {
      "title": "Majority Leader weekly schedule",
      "publisher": "House Majority Leader",
@@ -4413,6 +4434,67 @@
      "publisher": "U.S. Senate Daily Press",
      "url": "https://www.dailypress.senate.gov/wednesday-november-11-2026/",
      "date": "2026-11-11",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-11-house-passes-hr5549-hr9084",
+   "date": "2026-11-11",
+   "title": "House passes H.R. 5549 and H.R. 9084 by voice vote under suspension of the rules",
+   "branch": "congress_house",
+   "summary": "The House passed H.R. 5549, and H.R. 9084 as amended, by voice vote under suspension of the rules. Both were on the majority leader's November 9 schedule with three nuclear bills passed that day.",
+   "actors": [
+    "House of Representatives"
+   ],
+   "milestone": false,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "H.R. 5549: all actions",
+     "publisher": "Congress.gov",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/5549/all-actions",
+     "date": "2026-11-16",
+     "verified": true
+    },
+    {
+     "title": "H.R. 9084: all actions",
+     "publisher": "Congress.gov",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/9084/all-actions",
+     "date": "2026-11-16",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-16-senate-cloture-substitute",
+   "date": "2026-11-16",
+   "title": "Senate votes 70 to 27 to end debate on the sponsors' substitute, SA 6883",
+   "branch": "congress_senate",
+   "summary": "The Senate agreed, 70 to 27, to end debate on the Capito substitute amendment, SA 6883, to H.R. 2347 (roll call vote 264). Three senators did not vote. Sixty votes were needed. Adopting the substitute and passing the bill are separate votes.",
+   "actors": [
+    "U.S. Senate",
+    "Sen. Shelley Moore Capito"
+   ],
+   "milestone": true,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Roll Call Vote 119th Congress - 2nd Session, Vote 264",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm",
+     "date": "2026-11-16",
+     "verified": true
+    },
+    {
+     "title": "Monday, November 16, 2026",
+     "publisher": "U.S. Senate Daily Press",
+     "url": "https://www.dailypress.senate.gov/monday-november-16-2026/",
+     "date": "2026-11-16",
      "verified": true
     }
    ]

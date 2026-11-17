@@ -1,0 +1,7 @@
+MEDIA_TYPES = {"gov_press_release", "gov_document", "news", "analysis", "org_statement", "social_x",
+               "social_bluesky", "reddit", "youtube", "podcast", "conference", "court_filing"}
+TYPES = {"gov_press_release", "gov_document", "news", "analysis", "org_statement", "social_x",
+               "social_bluesky", "reddit", "youtube", "podcast", "conference", "court_filing"}
+STANCES = {"supports", "opposes", "mixed", "neutral", "reporting"}
+SECTORS = {"congress", "white_house", "agency", "court", "industry", "trade_association", "think_tank",
+           "environmental_group", "labor", "state_local", "academic", "media"}

@@ -359,6 +359,50 @@
    "set": {
     "title": "E&E News reports Lee's push to change the preservation law is tripping up permitting talks"
    }
+  },
+  "2026-11-09-house-suspension-nuclear": {
+   "reason": "2026-11-16 vote refresh: the result was posted. Tallies and roll-call numbers are from the House Clerk's roll-call records 315 and 316; the voice votes are from the Congress.gov action lists.",
+   "set": {
+    "title": "House passes H.R. 3978, H.R. 9612 and H.R. 9614 under suspension of the rules",
+    "summary": "The House passed H.R. 3978, 397 to 2 (roll call 315), and H.R. 9612, 394 to 3 (roll call 316), both as amended and each needing two-thirds. It passed H.R. 9614 by voice vote. The majority leader's schedule had listed these with H.R. 5549 and H.R. 9084; BPC says four bills on the list are incorporated in the Senate bill.",
+    "sources": [
+     {
+      "title": "Roll call 315, H.R. 3978",
+      "publisher": "Office of the Clerk, U.S. House of Representatives",
+      "url": "https://clerk.house.gov/evs/2026/roll315.xml",
+      "date": "2026-11-09",
+      "verified": true
+     },
+     {
+      "title": "Roll call 316, H.R. 9612",
+      "publisher": "Office of the Clerk, U.S. House of Representatives",
+      "url": "https://clerk.house.gov/evs/2026/roll316.xml",
+      "date": "2026-11-09",
+      "verified": true
+     },
+     {
+      "title": "H.R. 9614: all actions",
+      "publisher": "Congress.gov",
+      "url": "https://www.congress.gov/bill/119th-congress/house-bill/9614/all-actions",
+      "date": "2026-11-16",
+      "verified": true
+     },
+     {
+      "title": "Majority Leader weekly schedule",
+      "publisher": "House Majority Leader",
+      "url": "https://www.majorityleader.gov/schedule",
+      "date": "2026-11-09",
+      "verified": true
+     },
+     {
+      "title": "Explaining the Senate Permitting Bill",
+      "publisher": "Bipartisan Policy Center",
+      "url": "https://bipartisanpolicy.org/explainer/explaining-the-senate-permitting-bill-the-bipartisan-american-affordability-and-jobs-act/",
+      "date": "2026-11-09",
+      "verified": true
+     }
+    ]
+   }
   }
  },
  "people": {
