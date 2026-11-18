@@ -467,13 +467,14 @@ class Positions(unittest.TestCase):
         self.assertEqual(core_js["recent"]["estimates"]["count"], len(CORE["estimates"]["estimates"]))
         full = (ROOT / "site/llms-full.txt").read_text(encoding="utf-8")
         issues = (ROOT / "site/issues.html").read_text(encoding="utf-8")
+        votes = (ROOT / "site/votes.html").read_text(encoding="utf-8")
         index = (ROOT / "site/index.html").read_text(encoding="utf-8")
         for rc in CORE["votes"]["roll_calls"]:
             self.assertIn(f"### Vote {rc['number']}, {rc['date']}", full)
-            self.assertIn(f'id="vote-{rc["number"]}"', issues)
-            self.assertIn(f'issues.html#vote-{rc["number"]}', index)
+            self.assertIn(f'id="vote-{rc["number"]}"', votes)
+            self.assertIn(f'votes.html#vote-{rc["number"]}', index)
             for m in rc["members"]:
-                self.assertIn(html.escape(f"{m[0]} ({m[1]}-{m[2]})"), issues)
+                self.assertIn(html.escape(f"{m[0]} ({m[1]}-{m[2]})"), votes)
         for e in CORE["estimates"]["estimates"]:
             self.assertIn(e["quote"], full)
             self.assertIn(html.escape(e["quote"]), issues)

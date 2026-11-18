@@ -48,6 +48,7 @@ const ROUTES = [
   ['compare', '#/compare', '.view-compare h1'],
   ['amendments', '#/amendments', '.view-amendments h1'],
   ['positions', '#/positions', '.view-positions h1'],
+  ['votes', '#/votes', '.view-votes h1'],
   ['people', '#/people', '.view-people h1'],
   ['data centers', '#/datacenters', '.view-datacenters h1'],
   ['communities', '#/communities', '.view-communities h1'],

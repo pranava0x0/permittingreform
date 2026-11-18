@@ -2761,7 +2761,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "overview.next",
     "amend.merkley-point-of-order.source"
    ]
   },
@@ -2775,6 +2774,15 @@
     "overview.status",
     "timeline.2026-11-11-cloture-filed-sa-6883.source",
     "amend.sa-6883.source"
+   ]
+  },
+  "https://www.dailypress.senate.gov/wednesday-november-18-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.next"
    ]
   },
   "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate": {
@@ -5339,7 +5347,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "overview.status",
     "timeline.2026-11-16-senate-cloture-substitute.source",
     "votes.264"
    ]
@@ -5350,8 +5357,68 @@
    "note": "",
    "status": 200,
    "where": [
-    "votes.264.xml",
-    "amend.vote"
+    "votes.264.xml"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00266.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-11-18-senate-waives-merkley-point-of-order.source",
+    "votes.266"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00266.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "votes.266.xml",
+    "amend.merkley-point-of-order.source"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "timeline.2026-11-18-senate-adopts-substitute.source",
+    "votes.267"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "votes.267.xml",
+    "amend.vote",
+    "amend.sa-6883.source"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "timeline.2026-11-18-senate-cloture-bill.source",
+    "votes.268"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "votes.268.xml"
    ]
   },
   "https://www.sierraclub.org/press-releases/2026/09/sierra-club-reaction-permitting-bill-introduction": {

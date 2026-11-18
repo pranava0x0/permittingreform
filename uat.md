@@ -85,3 +85,14 @@ Senate votes sits first on Positions, so letters, the issue rows and a section's
 | method | 8.0 → 8.0 | 235.0 → 236.0 | 1481.0 → 1487.0 | 0.0 → 0.0 |
 
 The Amendments page grew 11 KB for the 172 filed amendments; its ready time did not move.
+
+## November 18, 2026 (afternoon): roll calls 266 to 268 and the Votes page
+
+Roll calls moved off Debate to their own page, Bill → Votes (`#/votes`). Findings on the way:
+
+- The first UAT run failed the Positions scroll budget at 375 px (3,972 px against 3,857): each roll call added a row.
+- The stated-position table would have shown three columns headed "Nov 18 vote"; headers now name the roll call.
+- Moving the votes off Positions put Disputed readings near the top, and its late-loading list shifted the letters below it (Slow 4G CLS 0 → 0.039). The folded rows now draw at once and only their bodies wait for the readings; CLS is 0 again.
+- A misplaced edit broke the bill section "What others say" block; `make check`, perf and reader paths all passed, and UAT caught it by timing out on `#/bill/sec/1106`.
+
+Perf against `main` at 2c2e667 (cold load, 375x812, Slow 4G): Positions 433 → 435 KB, 2,512 → 2,513 ms ready, CLS 0 → 0; the new Votes page is 9 requests, 405 KB, 2,494 ms ready, CLS 0, 1.3 screens. Other pages within 25 ms.

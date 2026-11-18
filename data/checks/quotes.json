@@ -7350,6 +7350,15 @@
    "note": "read in a browser on 2026-11-16"
   },
   {
+   "where": "amend.floor.sa-6883.2",
+   "text": "Amendment Agreed to (69-27)",
+   "speaker": "",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.xml",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "amend.floor.sa-6884-6890.0",
    "text": "Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate.",
    "speaker": "",
@@ -7453,6 +7462,15 @@
    "text": "Motion to waive the Merkley Budget Point of Order in relation to Capito substitute amendment #6883 (if raised)",
    "speaker": "",
    "url": "https://www.dailypress.senate.gov/tuesday-november-17-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.floor.merkley-point-of-order.2",
+   "text": "Motion Agreed to (70-26, 3/5 majority required)",
+   "speaker": "",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00266.xml",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -9160,9 +9178,9 @@
   },
   {
    "where": "amend.vote",
-   "text": "Cloture Motion Agreed to",
+   "text": "Amendment Agreed to",
    "speaker": "",
-   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.xml",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.xml",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -9190,6 +9208,33 @@
    "text": "Cloture Motion Agreed to (70-27, 3/5 majority required)",
    "speaker": "",
    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.xml",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "votes.266",
+   "text": "Motion Agreed to (70-26, 3/5 majority required)",
+   "speaker": "",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00266.xml",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "votes.267",
+   "text": "Amendment Agreed to (69-27)",
+   "speaker": "",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.xml",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "votes.268",
+   "text": "Cloture Motion Agreed to (65-31, 3/5 majority required)",
+   "speaker": "",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.xml",
    "result": "verified",
    "share": 1.0,
    "note": ""
