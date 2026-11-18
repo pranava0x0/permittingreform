@@ -2628,6 +2628,77 @@
      "verified": true
     }
    ]
+  },
+  {
+   "id": "2026-11-18-senate-waives-merkley-point-of-order",
+   "date": "2026-11-18",
+   "title": "Senate votes 70 to 26 to waive Merkley's budget point of order against the substitute",
+   "branch": "congress_senate",
+   "summary": "Sen. Jeff Merkley raised a budget point of order against the sponsors' substitute, SA 6883. The Senate agreed, 70 to 26, to waive it (roll call vote 266). Sixty votes were needed. Republican Rand Paul and independent Bernie Sanders voted no with 24 Democrats.",
+   "actors": [
+    "U.S. Senate",
+    "Sen. Jeff Merkley"
+   ],
+   "milestone": false,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Roll Call Vote 119th Congress - 2nd Session, Vote 266",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00266.htm",
+     "date": "2026-11-18",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-senate-adopts-substitute",
+   "date": "2026-11-18",
+   "title": "Senate adopts the sponsors' substitute, SA 6883, 69 to 27",
+   "branch": "congress_senate",
+   "summary": "The Senate adopted the Capito substitute amendment, SA 6883, 69 to 27 (roll call vote 267), replacing the text of H.R. 2347 with the permitting bill. Republican Mike Rounds and independent Bernie Sanders voted no with 25 Democrats. Passing the bill is a later vote.",
+   "actors": [
+    "U.S. Senate",
+    "Sen. Shelley Moore Capito"
+   ],
+   "milestone": true,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Roll Call Vote 119th Congress - 2nd Session, Vote 267",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00267.htm",
+     "date": "2026-11-18",
+     "verified": true
+    }
+   ]
+  },
+  {
+   "id": "2026-11-18-senate-cloture-bill",
+   "date": "2026-11-18",
+   "title": "Senate votes 65 to 31 to end debate on H.R. 2347 as amended",
+   "branch": "congress_senate",
+   "summary": "The Senate agreed, 65 to 31, to end debate on H.R. 2347, now carrying the permitting bill (roll call vote 268). Sixty votes were needed. Republicans Josh Hawley and Mike Rounds and independent Bernie Sanders voted no with 28 Democrats. The vote on passing the bill comes next.",
+   "actors": [
+    "U.S. Senate"
+   ],
+   "milestone": true,
+   "topics": [
+    "congress"
+   ],
+   "sources": [
+    {
+     "title": "Roll Call Vote 119th Congress - 2nd Session, Vote 268",
+     "publisher": "U.S. Senate (senate.gov)",
+     "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm",
+     "date": "2026-11-18",
+     "verified": true
+    }
+   ]
   }
  ]
 }

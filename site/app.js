@@ -200,7 +200,7 @@
   }
 
   /* Timeline, Positions, the directory and Coverage share the research bundle. */
-  const RESEARCH_PAGES = ["timeline", "positions", "people", "media"];
+  const RESEARCH_PAGES = ["timeline", "positions", "votes", "people", "media"];
   let newsPromise = null;
   function ensureNews() {
     if (D.timeline) return Promise.resolve(D);
@@ -315,7 +315,7 @@
       pos ? card("#/positions", "Positions on the bill", pos.supports + " support · " + pos.opposes + " oppose") : null,
       ix ? card("#/amendments/reactions", "Reactions to the substitute", ix.reactions.supports + " support · " + ix.reactions.opposes + " oppose") : null,
       card("#/compare", "Compare with other bills", "Current law, SPEED Act, 2024 Senate bill"),
-      rv.length ? card("#/positions/votes", "Senate votes", rv.slice().reverse().map((v) => shortDate(v.date) + ": " + v.yeas + " to " + v.nays).join(" · ")) : null,
+      rv.length ? card("#/votes", "Senate votes", rv.slice().reverse().map((v) => shortDate(v.date) + ": " + v.yeas + " to " + v.nays).join(" · ")) : null,
       re && re.count ? card("#/positions/estimates", "Published estimates", re.count + " figures from " + re.publishers + " publishers") : null);
     const about = el("p", { class: "note overview-note" }, "This is a proposed law. " + num(m.pages) + " pages, " + m.sections + " sections, released " + S.formatDate(m.released) + ". ",
       pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.summary.source.url, "Senate EPW release"), " · ",
@@ -1546,32 +1546,35 @@
   function disputesBlock() {
     const issues = ((D.positions && D.positions.issues) || []).filter((i) => i.disputes && i.disputes.length);
     if (!issues.length) return null;
-    const host = el("div", null, loading("Loading readings"));
     /* One folded row per issue, then four questions and a chip for the rest, as with the voices below:
-       the 375px budget held two issues open but not four (2026-10-26). */
-    ensureTakes().then((T) => fill(host, el("div", { class: "pos-list" }, issues.map((i) => {
+       the 375px budget held two issues open but not four (2026-10-26). The folded heads need only core data,
+       so they draw at once and the readings fill each body when they arrive; nothing on screen moves (2026-11-18). */
+    const bodies = issues.map(() => el("div", null, loading("Loading readings")));
+    const list = el("div", { class: "pos-list" }, issues.map((i, k) => openRow("dispute-group", "disputes-" + i.id,
+      el("span", { class: "event-head" },
+        el("span", { class: "event-title" }, i.title),
+        el("span", { class: "pos-tally" }, plural(i.disputes.length, "disputed question", "disputed questions"))),
+      [bodies[k]])));
+    ensureTakes().then((T) => issues.forEach((i, k) => {
       const rows = i.disputes.map((d, n) => {
         const row = disputeRow(T, i, d);
         row.hidden = n >= VOICES_SHOWN;
         return row;
       });
       const rest = rows.length - VOICES_SHOWN;
-      const head = el("span", { class: "event-head" },
-        el("span", { class: "event-title" }, i.title),
-        el("span", { class: "pos-tally" }, plural(rows.length, "disputed question", "disputed questions")));
-      return openRow("dispute-group", "disputes-" + i.id, head, [
-        el("div", { class: "pos-list" }, rows),
+      fill(bodies[k], [el("div", { class: "pos-list" }, rows),
         rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: (ev) => {
           rows.forEach((r) => { r.hidden = false; });
           ev.currentTarget.remove();
           rows[VOICES_SHOWN].querySelector(".event-toggle").focus();
         } }, "Show " + rest + " more questions") : null]);
-    })))).catch((err) => fill(host, failure(err, "The outside readings")));
+    })).catch((err) => bodies.forEach((b) => fill(b, failure(err, "The outside readings"))));
     return el("section", { class: "block", "aria-labelledby": "h-disputes" },
       el("h2", { id: "h-disputes" }, "Disputed readings"),
       el("p", { class: "facts" }, "Each question quotes the bill, then what critics and supporters say it means, in their own words. This page does not rule on them."),
-      host);
+      list);
   }
+
 
   /* ---------- Senate votes and published estimates ---------- */
 
@@ -1619,20 +1622,26 @@
         (D.amend_index ? S.formatDate(D.amend_index.date) + " " : "") + "substitute."),
       el("div", { class: "table-wrap" }, el("table", { class: "tally vote-stated" },
         el("thead", null, el("tr", null, el("th", { scope: "col" }, "Senator"), el("th", { scope: "col" }, "Stated position"),
-          v.roll_calls.map((rc) => el("th", { scope: "col" }, shortDate(rc.date) + " vote")))),
+          v.roll_calls.map((rc) => el("th", { scope: "col" }, "Vote " + rc.number + ", " + shortDate(rc.date))))),
         el("tbody", null, held.map((m) => el("tr", null,
           el("th", { scope: "row" }, people[m[4]].name + " (" + m[1] + "-" + m[2] + ")"),
           el("td", null, STANCE[people[m[4]].stance] || "No position stated"),
           cast.map((by) => el("td", null, (CAST.filter((c) => c[0] === by[m[0] + "|" + m[2]])[0] || ["", "No record"])[1])))))))]);
   }
 
-  function votesBlock() {
+  /* The Votes page: every roll call on the bill, newest first, then stated positions beside each senator's votes.
+     It sits beside Amendments under Bill, since each vote is a step in the bill's progress (moved off Debate 2026-11-18). */
+  function renderVotes() {
     const v = D.votes;
-    if (!v || !v.roll_calls.length) return null;
-    return el("section", { class: "block", "aria-labelledby": "h-votes" },
-      el("h2", { id: "h-votes" }, "Senate votes"),
-      el("p", { class: "facts" }, v.note),
-      el("div", { class: "pos-list" }, v.roll_calls.slice().reverse().map(voteRow), statedRow(v)));
+    const lede = el("div", { class: "lede" }, el("h1", null, "Senate votes"),
+      el("p", { class: "facts", role: "status" }, v && v.roll_calls.length ? plural(v.roll_calls.length, "roll call", "roll calls") + " on H.R. 2347 · as of " + S.formatDate(v.as_of) : "No roll calls yet."),
+      v ? el("p", { class: "facts" }, v.note) : null,
+      nextStep(),
+      el("p", { class: "facts" }, "Amendments voted on or pending are on the ", el("a", { href: "#/amendments" }, "Amendments"), " page."));
+    if (!v || !v.roll_calls.length) return [lede];
+    return [lede, el("section", { class: "block", "aria-labelledby": "h-votes" },
+      el("h2", { id: "h-votes" }, "Roll calls"),
+      el("div", { class: "pos-list" }, v.roll_calls.slice().reverse().map(voteRow), statedRow(v)))];
   }
 
   const PUB_STANCE = { supports: "Supports the bill", opposes: "Opposes the bill", mixed: "Mixed on the bill" };
@@ -1710,8 +1719,8 @@
           D.people.length + " people and groups tracked · " + plural(letters.length, "letter or joint statement", "letters and joint statements") +
           " · as of " + S.formatDate(D.meta.as_of)),
         D.amend_index ? el("p", { class: "facts" }, "Positions on the bill as introduced " + S.formatDate(D.meta.released) + ". ",
-          el("a", { href: "#/amendments/reactions" }, "Reactions to the " + S.formatDate(D.amend_index.date) + " substitute")) : null),
-      votesBlock(),
+          el("a", { href: "#/amendments/reactions" }, "Reactions to the " + S.formatDate(D.amend_index.date) + " substitute")) : null,
+        D.votes && D.votes.roll_calls.length ? el("p", { class: "facts" }, "How each senator voted: ", el("a", { href: "#/votes" }, "Senate votes")) : null),
       disputesBlock(),
       el("section", { class: "block", "aria-labelledby": "h-letters" },
         el("h2", { id: "h-letters" }, "Letters and joint statements"),
@@ -1907,11 +1916,11 @@
         A.floor.length ? el("ul", { class: "am-reactions" }, A.floor.map(floorItem)) : el("p", null, A.floor_note),
         vote ? el("p", null, el("strong", null, S.formatDate(vote.date) + ": "), vote.question + ". ",
           (vote.result || vote.when) + ". ", ext(vote.url, vote.label || "Senate floor log")) : null,
-        (D.recent.votes || []).length ? el("p", null, el("a", { href: "#/positions/votes" }, "Senate roll calls on the bill, with each senator's vote")) : null),
+        (D.recent.votes || []).length ? el("p", null, el("a", { href: "#/votes" }, "Senate roll calls on the bill, with each senator's vote")) : null),
       A.filed ? filedSection(A.filed) : null];
   }
 
-  const FLOOR_STATUS = { announced: "Announced", submitted: "Submitted", filed: "Filed", pending: "Pending", adopted: "Adopted", rejected: "Rejected", withdrawn: "Withdrawn", tabled: "Tabled" };
+  const FLOOR_STATUS = { announced: "Announced", submitted: "Submitted", filed: "Filed", pending: "Pending", adopted: "Adopted", rejected: "Rejected", withdrawn: "Withdrawn", tabled: "Tabled", waived: "Waived" };
 
   function floorItem(f) {
     return el("li", { class: "am-reaction", id: "floor-" + f.id },
@@ -2111,7 +2120,7 @@
 
   /* ---------- router ---------- */
 
-  const TITLES = { overview: "Overview", issues: "Key issues", bill: "BAAJA", compare: "Compare", amendments: "Amendments", communities: "Communities", datacenters: "Data centers", speed: "Research on project delays", timeline: "Timeline", positions: "Positions", people: "People", media: "Coverage", method: "Method" };
+  const TITLES = { overview: "Overview", issues: "Key issues", bill: "BAAJA", compare: "Compare", amendments: "Amendments", communities: "Communities", datacenters: "Data centers", speed: "Research on project delays", timeline: "Timeline", positions: "Positions", votes: "Senate votes", people: "People", media: "Coverage", method: "Method" };
   // Page URLs stay independent of the navigation groups. Keep sibling links in
   // the DOM while switching pages so keyboard focus survives content updates.
   // Defined in index.html, which draws the menu before first paint.
@@ -2186,7 +2195,9 @@
         pplLimit = 12;
       }
       nodes = renderPeople(); }
-    else if (tab === "positions") { nodes = renderPositions(); keepScroll = parts[1] === "votes" || parts[1] === "estimates"; }
+    else if (tab === "positions" && parts[1] === "votes") { location.replace("#/votes"); return; }
+    else if (tab === "positions") { nodes = renderPositions(); keepScroll = parts[1] === "estimates"; }
+    else if (tab === "votes") nodes = renderVotes();
     else if (tab === "media") nodes = renderMedia();
     else if (tab === "method") nodes = renderMethod();
     else nodes = renderOverview();
@@ -2203,8 +2214,8 @@
       const h = document.getElementById("h-am-react");
       if (h) requestAnimationFrame(() => h.scrollIntoView({ block: "start" }));
     }
-    /* #/positions/votes and #/positions/estimates, linked from the Overview, land on that section. */
-    if (tab === "positions" && (parts[1] === "votes" || parts[1] === "estimates") && location.hash !== lastPath) {
+    /* #/positions/estimates, linked from the Overview, lands on that section. (#/positions/votes redirects to #/votes.) */
+    if (tab === "positions" && parts[1] === "estimates" && location.hash !== lastPath) {
       const h = document.getElementById("h-" + parts[1]);
       if (h) requestAnimationFrame(() => h.scrollIntoView({ block: "start" }));
     }

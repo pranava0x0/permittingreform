@@ -141,24 +141,36 @@ class Page(unittest.TestCase):
         self.assertIn('x === "concerns"', JS)
         self.assertIn('el("span", { class: "stance stance-" + t.stance }, T.stances[t.stance])', JS)
 
-    def test_the_positions_page_runs_votes_readings_letters_then_estimates(self):
-        order = [JS.index(s, JS.index("function renderPositions()")) for s in ("votesBlock(),", "disputesBlock(),", '"h-letters"', "estimatesBlock(),", '"h-issues"', '"h-sectors"')]
+    def test_the_positions_page_runs_readings_letters_then_estimates(self):
+        order = [JS.index(s, JS.index("function renderPositions()")) for s in ("disputesBlock(),", '"h-letters"', "estimatesBlock(),", '"h-issues"', '"h-sectors"')]
         self.assertEqual(order, sorted(order))
         self.assertIn('"None found yet."', JS)
 
     def test_votes_and_estimates_headings_name_the_category_only(self):
         # Headings carry no direction of change; whether a figure rises or falls is in the publisher's sentence.
-        self.assertIn('el("h2", { id: "h-votes" }, "Senate votes")', JS)
+        self.assertIn('el("h1", null, "Senate votes")', JS)
         self.assertIn('el("h2", { id: "h-estimates" }, "Published estimates")', JS)
         news = json.loads((ROOT / "site/data/news.json").read_text(encoding="utf-8"))
         for m in news["estimates"]["metrics"]:
             self.assertNotRegex(m["title"].lower(), r"\b(cut|cuts|lower|higher|saving|savings|reduc\w*|increas\w*|gain\w*|loss\w*|faster|slower|benefit\w*|harm\w*)\b", m)
 
     def test_the_overview_cards_link_to_routes_the_router_lands_on(self):
-        for part in ("votes", "estimates"):
-            self.assertIn('card("#/positions/' + part + '"', JS)
-            self.assertIn('id: "h-' + part + '"', JS)
-        self.assertIn('parts[1] === "votes" || parts[1] === "estimates") && location.hash !== lastPath', JS)
+        self.assertIn('card("#/votes", "Senate votes"', JS)
+        self.assertIn('else if (tab === "votes") nodes = renderVotes();', JS)
+        self.assertIn('card("#/positions/estimates"', JS)
+        self.assertIn('id: "h-estimates"', JS)
+        self.assertIn('parts[1] === "estimates" && location.hash !== lastPath', JS)
+        # The old Debate link still lands on the votes.
+        self.assertIn('tab === "positions" && parts[1] === "votes") { location.replace("#/votes")', JS)
+
+    def test_votes_sit_in_the_bill_group_and_have_a_text_edition(self):
+        index = (ROOT / "site/index.html").read_text(encoding="utf-8")
+        self.assertIn('["amendments","Amendments"],["votes","Votes"],["compare","Compare bills"]', index)
+        self.assertNotIn("votesBlock", JS)
+        votes = (ROOT / "site/votes.html").read_text(encoding="utf-8")
+        self.assertIn('<link rel="canonical" href="https://pranava0x0.github.io/permittingreform/votes.html">', votes)
+        self.assertIn("votes.html", (ROOT / "site/sitemap.xml").read_text(encoding="utf-8"))
+        self.assertIn("votes.html", (ROOT / "site/llms.txt").read_text(encoding="utf-8"))
 
     def test_a_vote_is_shown_beside_a_stated_position_and_never_recolored(self):
         css = (ROOT / "site/styles.css").read_text(encoding="utf-8")

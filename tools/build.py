@@ -738,7 +738,7 @@ def llms_txt(core: dict) -> str:
             f"- [Data center bills and Communities]({m['site_url']}llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.",
             f"- [Timeline, people and media]({m['site_url']}llms-full.txt): dated records with source links and attributed positions.",
             f"- [Disputed readings]({m['site_url']}issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.",
-            f"- [Senate votes]({m['site_url']}issues.html#votes): " + "; ".join(f"{rc['date']}, {rc['question'][0].lower() + rc['question'][1:]}, {rc['yeas']} to {rc['nays']}" for rc in core["votes"]["roll_calls"]) + ". Every senator's vote is listed.",
+            f"- [Senate votes]({m['site_url']}votes.html): " + "; ".join(f"{rc['date']}, {rc['question'][0].lower() + rc['question'][1:]}, {rc['yeas']} to {rc['nays']}" for rc in core["votes"]["roll_calls"]) + ". Every senator's vote is listed.",
             f"- [Published estimates]({m['site_url']}issues.html#estimates): {len(core['estimates']['estimates'])} figures from {len({e['publisher'] for e in core['estimates']['estimates']})} publishers on " + ", ".join(x["title"].lower() if x["id"] != "lng" else x["title"] for x in core["estimates"]["metrics"]) + ", each with its scenario, the provisions it covers and the sentence it was copied from.",
             f"- [Method and check status]({m['site_url']}#/method): browser view; equivalent checks are in data/core.json.",
             f"- [Subject comparisons]({m['site_url']}#/compare): browser view; retrieve the compare object in data/core.json without JavaScript."]
@@ -939,6 +939,7 @@ LAZY_BUNDLES = ("bill", "news", "takes", "amend")
 READER_PAGES = {
     "comparisons": ("Data center and digital permitting bills compared", "Compare BAAJA with data center siting and disclosure proposals, current E-NEPA law and the House and Senate ePermit bills."),
     "issues": ("Key issues in permitting reform", "What S. 5653 would change, the bill sections behind each provision, and how supporters and critics read them."),
+    "votes": ("Senate votes on the permitting bill", "Every Senate roll call on H.R. 2347, the vehicle for S. 5653: the question, the tally, the party split and how each senator voted."),
     "timeline": ("Permitting reform timeline", "Dated legislative, legal and agency events, with source records for each event."),
     "coverage": ("Permitting reform news and coverage", "Reporting, analysis and statements about the permitting bill, with publication dates and links to the originals."),
 }
@@ -993,7 +994,7 @@ def reader_html(core: dict, page: str) -> str:
     elif page == "issues":
         out.append('<p>Jump to: ' + ' · '.join(link("#" + key, name) for key, name in
                    (("datacenters", "Data centers"), ("speed", "Project delays"), ("communities", "Communities"), ("debate", "Debate"),
-                    ("votes", "Senate votes"), ("estimates", "Published estimates"))) + '</p>')
+                    ("estimates", "Published estimates"))) + '</p>' + '<p>Senate roll calls, with every senator\'s vote, are on the ' + link("votes.html", "Senate votes") + ' page.</p>')
         out.append('<h2>What would the bill change?</h2>')
         for h in core["overview"]["headlines"]:
             out.append(f'<h3>{esc(h["title"])}</h3>')
@@ -1037,17 +1038,6 @@ def reader_html(core: dict, page: str) -> str:
                         take = takes[take_id]
                         out.append('<p>' + label + ' · ' + link(take["url"], take["who"]) + ' (' + esc(take["date"]) + '): “' + esc(take["quote"]) + '”</p>')
                 out.append('</section>')
-        votes, party = core["votes"], dict(PARTIES)
-        out.append(f'<h2 id="votes">Senate votes</h2><p>{esc(votes["note"])}</p>')
-        for rc in votes["roll_calls"]:
-            out.append(f'<section id="vote-{rc["number"]}"><h3>{esc(rc["question"])}</h3><p><time datetime="{esc(rc["date"])}">{esc(rc["date"])}</time> · '
-                       f'{rc["yeas"]} yea, {rc["nays"]} nay, {rc["not_voting"]} not voting · needed {esc(rc["required_text"])} · {esc(rc["result"])} · '
-                       + link(rc["url"], f'Senate roll call {rc["number"]}') + '</p>')
-            out.append('<p>' + '; '.join(f'{party[c]}: {y} yea, {n} nay, {nv} not voting' for c, y, n, nv in rc["parties"]) + '</p>')
-            for cast in VOTE_CAST:
-                names = [f'{m[0]} ({m[1]}-{m[2]})' for m in rc["members"] if m[3] == cast]
-                out.append(f'<p><strong>{cast} ({len(names)}):</strong> ' + esc(', '.join(names)) + '</p>')
-            out.append('</section>')
         est = core["estimates"]
         out.append(f'<h2 id="estimates">Published estimates</h2><p>{esc(est["intro"])}</p>' + ''.join(f'<p>{esc(a)}</p>' for a in est.get("absent", [])))
         for metric in est["metrics"]:
@@ -1056,6 +1046,21 @@ def reader_html(core: dict, page: str) -> str:
                 method = (' · ' + link(row["method_url"], "Method")) if row.get("method_url") else ''
                 out.append(f'<p id="est-{esc(row["id"])}"><strong>{esc(publisher_label(core, row["publisher"]))}</strong>, {esc(row["date"])}: {esc(row["text"])} '
                            f'Measured against: {esc(row["scenario"])} Covers: {esc(row["covers"])} “{esc(row["quote"])}” ' + link(row["url"], "Source") + method + '</p>')
+    elif page == "votes":
+        votes, party = core["votes"], dict(PARTIES)
+        out.append(f'<p>{esc(votes["note"])}</p>')
+        upcoming = core["overview"].get("next")
+        if upcoming:
+            out.append(f'<p><strong>Next:</strong> {esc(upcoming["date"])}: {esc(upcoming["text"])} ' + link(upcoming["source"]["url"], upcoming["source"]["label"]) + '</p>')
+        for rc in reversed(votes["roll_calls"]):
+            out.append(f'<section id="vote-{rc["number"]}"><h2>{esc(rc["question"])}</h2><p><time datetime="{esc(rc["date"])}">{esc(rc["date"])}</time> · '
+                       f'{rc["yeas"]} yea, {rc["nays"]} nay, {rc["not_voting"]} not voting · needed {esc(rc["required_text"])} · {esc(rc["result"])} · '
+                       + link(rc["url"], f'Senate roll call {rc["number"]}') + '</p>')
+            out.append('<p>' + '; '.join(f'{party[c]}: {y} yea, {n} nay, {nv} not voting' for c, y, n, nv in rc["parties"]) + '</p>')
+            for cast in VOTE_CAST:
+                names = [f'{m[0]} ({m[1]}-{m[2]})' for m in rc["members"] if m[3] == cast]
+                out.append(f'<p><strong>{cast} ({len(names)}):</strong> ' + esc(', '.join(names)) + '</p>')
+            out.append('</section>')
     else:
         items = core["media" if page == "coverage" else "timeline"]
         for row in sorted(items, key=lambda r: r["date"], reverse=True):
@@ -1221,7 +1226,7 @@ def main() -> int:
     content += ["<h2>Status</h2>", "<ul>", *(f"<li>{sourced(p)}</li>" for p in overview["status"]["points"]), "</ul>"]
     content += ["<h2>Senate votes</h2>", "<ul>",
                 *(f'<li>{html.escape(rc["date"])}: {html.escape(rc["question"])}. {rc["yeas"]} yea, {rc["nays"]} nay, {rc["not_voting"]} not voting. '
-                  f'<a href="{html.escape(rc["url"])}">Senate roll call {rc["number"]}</a> · <a href="issues.html#vote-{rc["number"]}">every senator\'s vote</a></li>'
+                  f'<a href="{html.escape(rc["url"])}">Senate roll call {rc["number"]}</a> · <a href="votes.html#vote-{rc["number"]}">every senator\'s vote</a></li>'
                   for rc in core["votes"]["roll_calls"]), "</ul>",
                 f'<p><a href="issues.html#estimates">Published estimates</a>: {len(core["estimates"]["estimates"])} figures from '
                 f'{len({e["publisher"] for e in core["estimates"]["estimates"]})} publishers on what the bill would do, each with its scenario and source sentence.</p>']

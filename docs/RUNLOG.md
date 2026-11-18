@@ -65,3 +65,9 @@ Read the Senate floor log for November 17 and 18 and the Congressional Record's 
 Added 30 coverage items and one timeline event, and moved the next step to the November 18 votes, which had not happened when the data was cut (8:30 a.m.). Gave the no-JavaScript pages descriptions, Open Graph tags and WebPage records.
 
 UAT found the Overview's "Senate EPW release" link pointing at a roll call (also on main); fixed. Tools: two Sonnet research agents (452K tokens together), Chrome, govinfo, Python and Playwright.
+
+## November 18, 2026: the afternoon votes
+
+Added roll calls 266 to 268 from the Senate's XML: the Senate waived Merkley's budget point of order 70 to 26, adopted the substitute 69 to 27 and ended debate on the bill 65 to 31. Updated the amendment statuses, the Overview, the timeline and the next step (the passage vote, time not yet set).
+
+UAT found the Positions page over its phone scroll budget, since each roll call adds a row, and the stated-position table about to show three columns all headed "Nov 18 vote". The votes moved off Debate to their own Votes page under Bill (`#/votes`, with a `votes.html` text edition), and each column now names its roll call. `#/positions/votes` redirects. Tools: Python, the Senate floor log and roll-call XML, Playwright. No subagents.

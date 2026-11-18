@@ -21,7 +21,7 @@ const only = (name) => (process.env[name] || '').split(',').map((s) => s.trim())
 const ALL_WIDTHS = [{ w: 375, h: 812, touch: true }, { w: 1280, h: 800, touch: false }];
 const WIDTHS = only('CLICK_WIDTHS').length ? ALL_WIDTHS.filter((v) => only('CLICK_WIDTHS').includes(String(v.w))) : ALL_WIDTHS;
 const ALL_ROUTES = ['overview', 'bill', 'bill/sec/1106', 'bill/sec/2107', 'bill/search/transmission', 'compare',
-  'compare/data-center-bills', 'communities', 'communities/tribes', 'datacenters', 'speed', 'timeline', 'positions', 'people', 'media', 'method', 'amendments', 'amendments/reactions', 'amendments/sec/1401', 'amendments/sec/2242-dropped', 'amendments/sec/1602'];
+  'compare/data-center-bills', 'communities', 'communities/tribes', 'datacenters', 'speed', 'timeline', 'positions', 'votes', 'people', 'media', 'method', 'amendments', 'amendments/reactions', 'amendments/sec/1401', 'amendments/sec/2242-dropped', 'amendments/sec/1602'];
 const CLICK_ROUTES = only('CLICK_ROUTES').length ? ALL_ROUTES.filter((r) => only('CLICK_ROUTES').includes(r)) : ALL_ROUTES;
 const unknown = only('CLICK_WIDTHS').filter((w) => !ALL_WIDTHS.some((v) => String(v.w) === w)).concat(only('CLICK_ROUTES').filter((r) => !ALL_ROUTES.includes(r)));
 if (unknown.length) { console.error(`clicks: CLICK_WIDTHS or CLICK_ROUTES names something this crawl does not have: ${unknown.join(', ')}`); process.exit(2); }

@@ -21,14 +21,14 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           compare: window.PR_DATA.compare.groups.reduce((a, g) => a + g.rows.length, 0) + (window.PR_DATA.compare.bills ? window.PR_DATA.compare.bills.rows.length : 0),
           media: Math.min(12,window.PR_DATA.media.length), timeline: Math.min(12,window.PR_DATA.timeline.length),
           communities: window.PR_DATA.communities.pages.length, tribes: window.PR_DATA.communities.rows.filter(r=>r.page==='tribes').length, bills: window.PR_DATA.compare.bills.rows.length,
-          datacenters: window.PR_DATA.datacenters.rows.length, speed: window.PR_DATA.speed.blockers.length, issues: window.PR_DATA.positions.issues.length,
+          datacenters: window.PR_DATA.datacenters.rows.length, speed: window.PR_DATA.speed.blockers.length, issues: window.PR_DATA.positions.issues.length, votes: window.PR_DATA.votes ? window.PR_DATA.votes.roll_calls.length : null,
           people: Math.min(12,window.PR_DATA.people.filter(p=>p.inside_government).length) }));
         const routes = [
           ['overview','.provisions li',10], ['bill','.index li',71],
           ['bill/sec/1106','.para',null], ['compare','.compare tbody tr:not(.row-note)',n.compare],
           ['communities','.part-card',n.communities], ['communities/tribes','.cm-row',n.tribes], ['datacenters','.cm-row',n.datacenters], ['compare/data-center-bills','.compare tbody tr',n.bills], ['speed','.speed-row',n.speed],
           ['compare/data-center-siting','.focused-comparison h3',4], ['compare/data-center-disclosure','.focused-comparison h3',4], ['compare/digital-permitting','.focused-comparison h3',4],
-          ['timeline','.event',n.timeline], ['positions','.pos-issue',n.issues], ['people','.person',n.people], ['media','.media-item',n.media], ['method','.versus dd',null]
+          ['timeline','.event',n.timeline], ['positions','.pos-issue',n.issues], ['votes','.pos-vote',n.votes], ['people','.person',n.people], ['media','.media-item',n.media], ['method','.versus dd',null]
         ];
         for (const [route, selector, expected] of routes) {
           await page.goto(base+'#/'+route);
@@ -66,8 +66,9 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           assert.ok(!(await page.locator('#view').innerText()).includes('[object Object]'),route+' object rendered');
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
           /* Positions went from 4 to 4.75 on 2026-11-15: it gained Senate votes and Published estimates (both folded,
-             both one tap from the Overview and from the jump row), and letters past the newest six moved behind a chip. */
-          const budget = {overview:2.5,bill:2.5,compare:11,'compare/data-center-bills':4,communities:2,'communities/tribes':4,datacenters:5,speed:4,timeline:2,positions:4.75,people:4.5,media:5};
+             both one tap from the Overview and from the jump row), and letters past the newest six moved behind a chip.
+             Senate votes moved to their own page under Bill on 2026-11-18. */
+          const budget = {overview:2.5,bill:2.5,compare:11,'compare/data-center-bills':4,communities:2,'communities/tribes':4,datacenters:5,speed:4,timeline:2,positions:4.75,votes:3,people:4.5,media:5};
           if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')
@@ -314,7 +315,7 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
     const nav = await browser.newPage({viewport:{width:320,height:812},hasTouch:true});
     await nav.goto(base);
     for (const [label, pages] of [
-      ['Bill',['Sections','Amendments','Compare bills']],
+      ['Bill',['Sections','Amendments','Votes','Compare bills']],
       ['Key issues',['Data centers','Delays','Communities','Debate','People']]]) {
       const top = nav.locator('.tabs').getByRole('link',{name:label,exact:true});
       await top.click();
