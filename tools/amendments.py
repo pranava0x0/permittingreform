@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 
 import billtext
@@ -141,6 +142,21 @@ def build(errors: list[str]) -> dict | None:
         if not r["reactions"]:
             del r["reactions"]
 
+    filed = extra.get("filed")
+    if filed:
+        seen = set()
+        for a in filed["items"]:
+            label = f"amendments filed {a.get('number')}"
+            if not re.fullmatch(r"SA \d{4}", a.get("number", "")) or a["number"] in seen:
+                errors.append(f"{label}: needs a unique SA number")
+            seen.add(a.get("number"))
+            if a.get("to") not in ("SA 6883", "H.R. 2347"):
+                errors.append(f"{label}: 'to' must be SA 6883 or H.R. 2347")
+            if not a.get("sponsor") or not a.get("quote") or not str(a.get("url", "")).startswith("https://www.govinfo.gov/"):
+                errors.append(f"{label}: needs a sponsor, a verbatim quote and a govinfo url")
+            if not (filed["from"] <= a.get("date", "") <= filed["to"]):
+                errors.append(f"{label}: date {a.get('date')} outside {filed['from']} to {filed['to']}")
+
     vote = extra.get("vote")
     if vote and not (vote.get("result") or vote.get("when")):
         errors.append("amendments vote: needs a result or a scheduled time ('when')")
@@ -165,6 +181,7 @@ def build(errors: list[str]) -> dict | None:
         "highlights": highlights,
         "floor": extra["floor"],
         "floor_note": extra["floor_note"],
+        "filed": extra.get("filed"),
         "summary_source": {k: summary[k] for k in ("publisher", "date", "url")},
         "reactions": extra["reactions"],
         "vote": extra.get("vote"),

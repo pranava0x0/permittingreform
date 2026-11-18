@@ -42,7 +42,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-11-16"
+DATA_AS_OF = "2026-11-18"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -713,7 +713,7 @@ def llms_txt(core: dict) -> str:
         "Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.",
         "PDF citations use printed bill pages and lines. A matching quote proves occurrence; it does not validate nearby interpretations. Source positions describe the cited item, not every position held by its author.",
         f"- [{AMEND_TITLE}]({m['site_url']}amendments.html): {AMEND_DESCRIPTION}",
-        f"- [Amendments JSON]({m['site_url']}data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments and reactions with sources.",
+        f"- [Amendments JSON]({m['site_url']}data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments, every amendment filed in the Congressional Record, and reactions with sources.",
         *[f"- [{title}]({m['site_url']}{page}.html): {description}" for page, (title, description) in READER_PAGES.items()],
         f"- [{READING_TITLE}]({m['site_url']}reading.html): {READING_DESCRIPTION} No JavaScript needed.",
         f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
@@ -1093,7 +1093,7 @@ def amendments_html(core: dict) -> str:
            '<body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
            f'<h1>{esc(AMEND_TITLE)}</h1><p>{esc(AMEND_DESCRIPTION)}</p>',
            f'<p>Updated {esc(a["as_of"])} · ' + link("index.html#/amendments", "Open interactive view") + '</p>',
-           '<p>Jump to: ' + ' · '.join(link("#" + k, v) for k, v in (("key", "Key changes"), ("substitute", "All changes"), ("reactions", "Reactions"), ("floor", "Other amendments"))) + '</p>',
+           '<p>Jump to: ' + ' · '.join(link("#" + k, v) for k, v in (("key", "Key changes"), ("substitute", "All changes"), ("reactions", "Reactions"), ("floor", "Other amendments"), ("filed", "Filed amendments"))) + '</p>',
            '<h2 id="key">Key changes</h2><ul>' + ''.join(f'<li><a href="#sec-{esc(h["id"])}">{esc(h["label"])}, Sec. {esc(h["n"])}</a>: {esc(h["t"])} {pcite(h)}</li>' for h in a["highlights"]) + '</ul>',
            f'<h2 id="substitute">{esc(sub["title"])}</h2>',
            f'<p>{esc(sub["summary"])} ' + ' · '.join(link(s["url"], s["label"]) for s in sub["links"]) + '</p>',
@@ -1128,6 +1128,15 @@ def amendments_html(core: dict) -> str:
         for st in f.get("positions", []):
             out.append(f'<p>{esc(st["who"])} ({esc(st["stance"])}): “{esc(st["quote"])}” {link(st["url"], st["publisher"])}</p>')
         out.append('</section>')
+    filed = a.get("filed")
+    if filed:
+        out.append(f'<h2 id="filed">Filed amendments ({len(filed["items"])})</h2><p>{esc(filed["note"])} Source: {esc(filed["source"])}, {esc(filed["from"])} to {esc(filed["to"])}.</p><ul>')
+        for f in filed["items"]:
+            to = "the substitute" if f["to"] == "SA 6883" else f["to"]
+            what = f' {esc(f["subject"])}' if f.get("subject") else ""
+            out.append(f'<li id="filed-{esc(f["number"][3:])}"><strong>{esc(f["number"])}</strong>, {esc(f["sponsor"])}, {esc(f["date"])}, to {esc(to)}.{what} '
+                       f'“{esc(f["quote"])}” {link(f["url"], "Congressional Record")}</li>')
+        out.append('</ul>')
     out.append('<h2 id="reactions">Reactions to the substitute</h2><p>Statements on the November 7 substitute. Positions on the bill as introduced are on the <a href="issues.html#debate">Key issues</a> page.</p>')
     for st in amendments.STANCES:
         rows = [x for x in a["reactions"] if x["stance"] == st]

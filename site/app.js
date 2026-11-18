@@ -1904,10 +1904,41 @@
           el("p", { class: "where" }, unchanged.map((r, i) => [i ? ", " : null, secLink(r.n)])))),
       el("section", { class: "block", "aria-labelledby": "h-am-floor" },
         el("h2", { id: "h-am-floor" }, "Other amendments and votes"),
-        A.floor.length ? el("ul", { class: "plain-list" }, A.floor.map((f) => el("li", null, el("strong", null, (f.number || "Unnumbered") + " · " + f.sponsor), " ", f.summary))) : el("p", null, A.floor_note),
+        A.floor.length ? el("ul", { class: "am-reactions" }, A.floor.map(floorItem)) : el("p", null, A.floor_note),
         vote ? el("p", null, el("strong", null, S.formatDate(vote.date) + ": "), vote.question + ". ",
           (vote.result || vote.when) + ". ", ext(vote.url, vote.label || "Senate floor log")) : null,
-        (D.recent.votes || []).length ? el("p", null, el("a", { href: "#/positions/votes" }, "Senate roll calls on the bill, with each senator's vote")) : null)];
+        (D.recent.votes || []).length ? el("p", null, el("a", { href: "#/positions/votes" }, "Senate roll calls on the bill, with each senator's vote")) : null),
+      A.filed ? filedSection(A.filed) : null];
+  }
+
+  const FLOOR_STATUS = { announced: "Announced", submitted: "Submitted", filed: "Filed", pending: "Pending", adopted: "Adopted", rejected: "Rejected", withdrawn: "Withdrawn", tabled: "Tabled" };
+
+  function floorItem(f) {
+    return el("li", { class: "am-reaction", id: "floor-" + f.id },
+      el("p", { class: "am-who" }, el("strong", null, (f.number || "Unnumbered") + " · " + f.sponsor), " ",
+        el("span", { class: "where" }, (FLOOR_STATUS[f.status] || f.status) + " · " + S.formatDate(f.date))),
+      el("p", null, f.summary),
+      el("p", { class: "where" }, f.sources.map((s, i) => [i ? " · " : null, ext(s.url, s.publisher)])));
+  }
+
+  /* Every amendment filed to the substitute or the bill, by sponsor, each linked to its text in the Congressional Record. */
+  function filedSection(F) {
+    const bySponsor = new Map();
+    F.items.forEach((a) => { if (!bySponsor.has(a.sponsor)) bySponsor.set(a.sponsor, []); bySponsor.get(a.sponsor).push(a); });
+    const groups = Array.from(bySponsor.entries()).sort((x, y) => y[1].length - x[1].length || x[0].localeCompare(y[0]));
+    const toSub = F.items.filter((a) => a.to === "SA 6883").length;
+    return el("section", { class: "block", id: "am-filed", "aria-labelledby": "h-am-filed" },
+      el("h2", { id: "h-am-filed" }, "Filed amendments", el("span", { class: "credit-inline" }, "Descriptions AI-written")),
+      el("p", { class: "facts" }, F.items.length + " filed " + S.formatDate(F.from).replace(/, \d{4}$/, "") + " to " + S.formatDate(F.to) + " · " +
+        toSub + " to the substitute, " + (F.items.length - toSub) + " to H.R. 2347 · " + groups.length + " sponsors · ", F.source),
+      el("p", { class: "sub-note" }, F.note),
+      el("div", { class: "rows am-stances" }, groups.map(([who, items]) => el("details", { class: "section-fold am-stance" },
+        el("summary", null, el("h3", null, who), el("span", { class: "row-count" }, items.length)),
+        el("ul", { class: "am-reactions" }, items.map((a) => el("li", { class: "am-reaction", id: "filed-" + a.number.replace(/\D/g, "") },
+          el("p", { class: "am-who" }, el("strong", null, a.number), " ", el("span", { class: "where" }, S.formatDate(a.date) + " · to " + (a.to === "SA 6883" ? "the substitute" : a.to))),
+          a.subject ? el("p", null, a.subject) : null,
+          el("blockquote", null, "“" + a.quote + "”"),
+          el("p", { class: "where" }, ext(a.url, "Text in the Congressional Record")))))))));
   }
 
   function hunkNode(A, h) {

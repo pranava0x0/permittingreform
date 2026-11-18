@@ -135,6 +135,37 @@ class Substitute(unittest.TestCase):
         for k, label in amendments.STANCE_LABELS.items():
             self.assertIn(f'["{k}", "{label}"]', js)
 
+    def test_filed_amendments_are_unique_cited_and_printed(self):
+        filed = AMEND["filed"]["items"]
+        self.assertGreater(len(filed), 100)
+        numbers = [a["number"] for a in filed]
+        self.assertEqual(len(numbers), len(set(numbers)))
+        page = build.amendments_html(CORE)
+        for a in filed:
+            self.assertIn(a["to"], ("SA 6883", "H.R. 2347"))
+            self.assertIn(f'id="filed-{a["number"][3:]}"', page)
+            self.assertIn(html.escape(a["url"]), page)
+        # The floor entry's count is the list's count.
+        count = next(f for f in AMEND["floor"] if f["id"] == "filed-to-sa-6883")
+        self.assertIn(f"prints {len(filed)} amendments", count["summary"])
+        to_sub = sum(a["to"] == "SA 6883" for a in filed)
+        self.assertIn(f"{to_sub} to the substitute and {len(filed) - to_sub} to H.R. 2347", count["summary"])
+        # Every floor status the build accepts has a label in the browser.
+        js = (ROOT / "site/app.js").read_text(encoding="utf-8")
+        m = re.search(r"const FLOOR_STATUS = \{([^}]*)\}", js)
+        self.assertEqual(set(re.findall(r'(\w+):', m.group(1))), set(amendments.FLOOR_STATUS))
+
+    def test_a_filed_amendment_without_a_record_link_fails_the_build(self):
+        bad = copy.deepcopy(json.loads((ROOT / "data/amendments.json").read_text(encoding="utf-8")))
+        bad["filed"]["items"][0]["url"] = "https://example.com/"
+        bad["filed"]["items"][1]["number"] = bad["filed"]["items"][0]["number"]
+        real = amendments.load
+        with patch.object(amendments, "load", side_effect=lambda path: bad if path.name == "amendments.json" else real(path)):
+            errors = []
+            amendments.build(errors)
+        self.assertTrue(any("govinfo url" in e for e in errors), errors)
+        self.assertTrue(any("unique SA number" in e for e in errors), errors)
+
     def test_key_changes_reuse_cited_notes(self):
         rows = {r["id"]: r for r in AMEND["rows"]}
         self.assertGreaterEqual(len(AMEND["highlights"]), 6)

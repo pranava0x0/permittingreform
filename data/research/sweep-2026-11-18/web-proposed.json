@@ -39,10 +39,1818 @@
    ],
    "sector": "academic",
    "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-17",
+   "type": "news",
+   "outlet": "Source New Mexico",
+   "title": "New Mexico US Sen. Heinrich’s permitting bill takes another step toward US Senate passage",
+   "url": "https://sourcenm.com/2026/11/17/new-mexico-us-sen-heinrichs-permitting-bill-takes-another-step-toward-us-senate-passage/",
+   "summary": "Source NM reports the Senate voted 70-27 to end debate on the substitute Heinrich co-wrote, that Sen. Luján voted no, and that Al Gore and Pueblo governors urged senators to wait or reject it.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The vote clears the way for the U.S. Senate to take a final vote on the bill as early as this week.",
+    "speaker": "Source New Mexico (reporting)"
+   },
+   "topics": [
+    "cloture",
+    "tribal"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-17",
+   "type": "news",
+   "outlet": "Oklahoma Energy Today",
+   "title": "Stage set for vote this week on permitting reform Act",
+   "url": "https://okenergytoday.com/2026/11/stage-set-for-vote-this-week-on-permitting-reform-act/",
+   "summary": "Oklahoma Energy Today reports Sens. Lankford and Armstrong voted for cloture and quotes Armstrong urging passage on the Senate floor.",
+   "stance": "reporting",
+   "quote": {
+    "text": "After ten years of endless debate, we finally have industry, labor, and a broad bipartisan coalition aligned",
+    "speaker": "Sen. Alan Armstrong (R-Okla.)"
+   },
+   "topics": [
+    "cloture",
+    "house-path"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-16",
+   "type": "news",
+   "outlet": "HNGN",
+   "title": "Senate Advances Permitting Bill 70-27 As Jeffries Opposes It",
+   "url": "https://www.hngn.com/articles/273848/20261116/senate-advances-permitting-bill-70-27-jeffries-opposes-it.htm",
+   "summary": "HNGN reports the 70-27 cloture vote on the substitute, House Democratic leader Jeffries saying the bill falls short, and analysts putting lame-duck passage odds at 20 to 25 percent.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The vote cleared the 60-vote threshold with room to spare, but the bill has a harder path in the House.",
+    "speaker": "HNGN (reporting)"
+   },
+   "topics": [
+    "cloture",
+    "house-path"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-16",
+   "type": "analysis",
+   "outlet": "Canary Media",
+   "author": "Jeff St. John",
+   "title": "Permitting reform is a big, controversial bet for the energy transition",
+   "url": "https://www.canarymedia.com/articles/politics/permitting-reform-uncertain-bet",
+   "summary": "Canary Media's chief reporter lays out the bill as a three-part bet by Democrats and clean energy advocates, and notes the Senate voted 70-27 Monday to end debate.",
+   "stance": "mixed",
+   "quote": {
+    "text": "The Senate bipartisan permitting bill is essentially an enormous three-part bet by the Democrats and clean energy advocates who support it.",
+    "speaker": "Jeff St. John, Canary Media"
+   },
+   "topics": [
+    "clean-energy",
+    "cloture"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "news",
+   "outlet": "KOSU",
+   "author": "Sarah Liese (Twilla)",
+   "title": "Senate expected to vote on permitting bill tribal leaders in Oklahoma, beyond oppose",
+   "url": "https://www.kosu.org/news/2026-11-18/senate-expected-to-vote-on-permitting-bill-tribal-leaders-in-oklahoma-beyond-oppose",
+   "summary": "KOSU reports tribal nations and preservation groups ask senators to reject the bill, quotes NCAI President Mark Macarro, and notes the Crow Tribe has expressed approval.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Any amendment to S. 5653 merely puts lipstick on a pig",
+    "speaker": "Mark Macarro, President, NCAI"
+   },
+   "topics": [
+    "tribal",
+    "section-106"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-17",
+   "type": "news",
+   "outlet": "KBFT",
+   "title": "Congress returns to work with Indian Country on the agenda — and on the menu",
+   "url": "https://kbft.org/congress-returns-to-work-with-indian-country-on-the-agenda-and-on-the-menu/",
+   "summary": "KBFT's Indian Country roundup reports the 70-27 cloture vote cleared a path for final passage before Thanksgiving, over what it calls widespread opposition in Indian Country.",
+   "stance": "reporting",
+   "quote": {
+    "text": "the Senate has cleared a path for final passage of BAAJA in H.R.2347 before the Thanksgiving break",
+    "speaker": "KBFT (reporting)"
+   },
+   "topics": [
+    "tribal",
+    "cloture"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-16",
+   "type": "news",
+   "outlet": "The Guardian",
+   "author": "Oliver Milman",
+   "title": "Passing bill to speed up gas projects and datacenters would be ‘serious mistake’, Al Gore says",
+   "url": "https://www.theguardian.com/us-news/2026/nov/16/al-gore-baaja-cop-31-climate",
+   "summary": "The Guardian reports former Vice President Al Gore, at the COP31 summit in Antalya, called passing the bill a serious mistake given the midterm results.",
+   "stance": "reporting",
+   "quote": {
+    "text": "I think it would be a serious mistake, particularly in the wake of the astonishing election results last week",
+    "speaker": "Al Gore, former Vice President"
+   },
+   "topics": [
+    "data-centers",
+    "lame-duck"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-16",
+   "type": "gov_document",
+   "outlet": "Congressional Record, Senate, Nov 16, 2026 (Energy, pp. S5676-S5678)",
+   "author": "Sen. Edward Markey (D-Mass.)",
+   "title": "Energy",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm",
+   "summary": "Sen. Markey says on the Senate floor that the permitting bill is sold as an affordability fix but makes it harder for communities to challenge projects, and raises data centers on public lands.",
+   "stance": "opposes",
+   "quote": {
+    "text": "Part of how this bill makes it easier to do all of those things is by making it harder for you, for your community, to do anything about it, now or forever.",
+    "speaker": "Sen. Edward Markey (D-Mass.)"
+   },
+   "topics": [
+    "data-centers",
+    "judicial-review"
+   ],
+   "sector": "congress",
+   "route": "direct"
+  },
+  {
+   "date": "2026-11-17",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Emily Pontecorvo",
+   "title": "How Tribal Rights Became Central to the Permitting Debate",
+   "url": "https://heatmap.news/politics/nhpa-permitting-bill",
+   "summary": "Heatmap reports nearly 30 Democrats back a Schiff amendment to strike the historic preservation section, that Murkowski and Schatz filed a narrower fix, and that Padilla and western Democrats proposed exempting tribal claims from the judicial review limit.",
+   "stance": "reporting",
+   "quote": {
+    "text": "The amendment filed by Senators Murkowski and Schatz on Tuesday would make one small change, ensuring that all projects that receive federal funding go through NHPA reviews instead of just those that also require some form of federal approval.",
+    "speaker": "Emily Pontecorvo, Heatmap News"
+   },
+   "topics": [
+    "tribal",
+    "section-106",
+    "amendments"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
   }
  ],
- "amendments": [],
- "amendment_count": null,
- "point_of_order": null,
- "not_found": []
+ "amendments": [
+  {
+   "number": "SA 6849",
+   "sponsor": "Sen. Cruz (R-TX)",
+   "subject": "Adds a section titled 'Prohibition On Certain Exports'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5417-2.htm",
+   "quote": "SEC. ___. PROHIBITION ON CERTAIN EXPORTS. (a) In General.--The Energy Policy and Conservation Act is amended by inserting after",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6850",
+   "sponsor": "Sen. Cruz (R-TX)",
+   "subject": "Adds a section titled 'Permitting For International Bridges And Land Ports Of Entry'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5417-3.htm",
+   "quote": "SEC. ___. PERMITTING FOR INTERNATIONAL BRIDGES AND LAND PORTS OF ENTRY. Section 6 of the International Bridge Act of 1972 (33",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6851",
+   "sponsor": "Sen. Cruz (R-TX)",
+   "subject": "Adds a section titled 'Study On New Technologies To Recycle Spent Nuclear Fuel'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5417-4.htm",
+   "quote": "SEC. ___. STUDY ON NEW TECHNOLOGIES TO RECYCLE SPENT NUCLEAR FUEL. (a) Definitions.--In this section: (1) National",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6852",
+   "sponsor": "Sen. Cruz (R-TX)",
+   "subject": "Adds a Judiciary Committee division titled 'Stopping Climate Shakedowns'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5418.htm",
+   "quote": "DIVISION __--COMMITTEE ON THE JUDICIARY SEC. __01. STOPPING CLIMATE SHAKEDOWNS. (a) Congressional Declaration; Purposes;",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6853",
+   "sponsor": "Sen. Cruz (R-TX)",
+   "subject": "Adds a section titled 'Natural Gas Exports'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5419.htm",
+   "quote": "SEC. ____. NATURAL GAS EXPORTS. (a) Finding.--Congress finds that expanding natural gas exports will lead to increased investment",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6854",
+   "sponsor": "Sen. Murkowski (R-AK)",
+   "subject": "Rewrites the substitute's passage on projects whose only federal involvement is a loan, grant or other financial assistance not primarily for historic preservation.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5419-2.htm",
+   "quote": "Beginning on page 456, strike line 5 and all that follows through page 458, line 14, and insert the following: ``(ii) a project,",
+   "date": "2026-11-10",
+   "to": "H.R. 2347",
+   "topic": "tribal-section-106",
+   "reported_in": {
+    "url": "https://heatmap.news/politics/nhpa-permitting-bill",
+    "quote": "The amendment filed by Senators Murkowski and Schatz on Tuesday would make one small change, ensuring that all projects that receive federal funding go through NHPA reviews instead of just those that also require some form of federal approval.",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "number": "SA 6855",
+   "sponsor": "Sen. Schatz (D-HI)",
+   "subject": "Adds a division titled 'Native American Housing Assistance And Self-Determination Modernization Act Of 2026'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5420.htm",
+   "quote": "At the end of the amendment, add the following: DIVISION D--NATIVE AMERICAN HOUSING ASSISTANCE AND SELF-DETERMINATION",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6856",
+   "sponsor": "Sen. Schatz (D-HI)",
+   "subject": "Adds a division titled 'Indian Affairs'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5428.htm",
+   "quote": "At the end of the amendment, add the following: DIVISION D--INDIAN AFFAIRS SEC. 4001. AUTHORITY REAFFIRMED. (a) Reaffirmation.--",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6857",
+   "sponsor": "Sen. Hawley (R-MO)",
+   "subject": "Amends the text: Beginning on page 238, strike line 24 and all that follows through page 239, line 5, and insert the following: (ii) in clause (i), by striking ``1 year after the later of",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5428-2.htm",
+   "quote": "Beginning on page 238, strike line 24 and all that follows through page 239, line 5, and insert the following: (ii) in clause",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6858",
+   "sponsor": "Sen. Hawley (R-MO)",
+   "subject": "Amends the text: Beginning on page 242, strike line 11 and all that follows through page 245, line 14, and insert the following: (e) Just Compensation for Takings of Private Property; Cos",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5428-3.htm",
+   "quote": "Beginning on page 242, strike line 11 and all that follows through page 245, line 14, and insert the following: (e) Just",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6859",
+   "sponsor": "Sen. Hawley (R-MO)",
+   "subject": "Amends the text: On page 239, line 19, strike ``230'' and insert ``765''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5428-4.htm",
+   "quote": "On page 239, line 19, strike ``230'' and insert ``765''.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6860",
+   "sponsor": "Sen. Hawley (R-MO)",
+   "subject": "Amends the text: On page 238, line 10, strike ``shall'' and insert ``may''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5428-5.htm",
+   "quote": "On page 238, line 10, strike ``shall'' and insert ``may''.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6861",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 110, strike line 8 and all that follows through page 111, line 7, and insert the following: ``(1) Certification with conditions.-- ``(A) In general.--If",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5429.htm",
+   "quote": "Beginning on page 110, strike line 8 and all that follows through page 111, line 7, and insert the following: ``(1) Certification",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6862",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Strikes title II of division A of the substitute.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5429-2.htm",
+   "quote": "Strike title II of division A.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6863",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: On page 120, strike line 3 and insert the following: ``(vi) Failure to provide information.--If an applicant to which a certifying authority identified information missin",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5429-3.htm",
+   "quote": "On page 120, strike line 3 and insert the following: ``(vi) Failure to provide information.--If an applicant to which a",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6864",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 126, strike line 14 and all that follows through page 128, line 19, and insert the following: mission line project that may result in a point source dis",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5429-4.htm",
+   "quote": "Beginning on page 126, strike line 14 and all that follows through page 128, line 19, and insert the following: mission line",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6865",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 111, strike line 18 and all that follows through page 112, line 19, and insert the following: a preponderance of the evidence that-- ``(I) no modificati",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5429-5.htm",
+   "quote": "Beginning on page 111, strike line 18 and all that follows through page 112, line 19, and insert the following: a preponderance",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6866",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: On page 130, strike lines 7 through 15 and insert the following: ``(3) Water quality requirements.--The term `water quality requirements' means-- ``(A) any limitation, st",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5429-6.htm",
+   "quote": "On page 130, strike lines 7 through 15 and insert the following: ``(3) Water quality requirements.--The term `water quality",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6867",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: On page 31, line 19 of the amendment, strike ``a similar'' and insert ``an identical''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5429-7.htm",
+   "quote": "On page 31, line 19 of the amendment, strike ``a similar'' and insert ``an identical''.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6868",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 72 of the amendment, strike line 8 and all that follows through page 77, line 20, and insert the following: ``(1) is filed not later than 2 years days a",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5429-8.htm",
+   "quote": "Beginning on page 72 of the amendment, strike line 8 and all that follows through page 77, line 20, and insert the following:",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6869",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 4 of the amendment, strike line 4 and all that follows through page 109, line 7.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5430.htm",
+   "quote": "Beginning on page 4 of the amendment, strike line 4 and all that follows through page 109, line 7. On page 143, lines 20 and 21",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6870",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: On page 132, strike line 21 and all that follows through page 134, line 13, and insert the following: ``(3) Considerations.--In determining the environmental effects of a",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5430-2.htm",
+   "quote": "On page 132, strike line 21 and all that follows through page 134, line 13, and insert the following: ``(3) Considerations.--In",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6871",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: On page 120, line 18, insert ``and the evaluation and documentation of those materials by the certifying authority'' after ``clause (ii)''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5430-3.htm",
+   "quote": "On page 120, line 18, insert ``and the evaluation and documentation of those materials by the certifying authority'' after",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6872",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Strike section 1305.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5430-4.htm",
+   "quote": "Strike section 1305.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6873",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 141 of the amendment, strike line 10 and all that follows through page 142, line 2, and insert the following: ``(2)(A) The terms `best scientific and co",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5430-5.htm",
+   "quote": "Beginning on page 141 of the amendment, strike line 10 and all that follows through page 142, line 2, and insert the following:",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6874",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 145 of the amendment, strike line 22 and all that follows through page 146, line 2, and insert the following: ``(A) In general.--The Secretary may not a",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5430-6.htm",
+   "quote": "Beginning on page 145 of the amendment, strike line 22 and all that follows through page 146, line 2, and insert the following:",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6875",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Strikes title III of division A of the substitute.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5431.htm",
+   "quote": "Strike title III of division A.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6876",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 486, strike line 1 and all that follows through page 487, line 10.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5431-2.htm",
+   "quote": "Beginning on page 486, strike line 1 and all that follows through page 487, line 10.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6877",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 462, strike line 11 and all that follows through page 466, line 8, and insert the following: ``(bb) shall identify whether any historic properties are p",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5431-3.htm",
+   "quote": "Beginning on page 462, strike line 11 and all that follows through page 466, line 8, and insert the following: ``(bb) shall",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6878",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 145 of the amendment, strike line 4 and all that follows through page 156, line 4, and insert the following: ``(1) Indian tribe.--The term `Indian tribe",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5431-4.htm",
+   "quote": "Beginning on page 145 of the amendment, strike line 4 and all that follows through page 156, line 4, and insert the following:",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6879",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 145 of the amendment, strike line 15 and all that follows through page 146, line 2, and insert the following: ``(4) Tribal trust resources.--The term `t",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5432.htm",
+   "quote": "Beginning on page 145 of the amendment, strike line 15 and all that follows through page 146, line 2, and insert the following:",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6880",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: On page 144 of the amendment, line 19, insert ``as of the date of enactment of the Bipartisan American Affordability and Jobs Act of 2026'' before ``shall''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5432-2.htm",
+   "quote": "On page 144 of the amendment, line 19, insert ``as of the date of enactment of the Bipartisan American Affordability and Jobs Act",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6882",
+   "sponsor": "Sen. Schiff (D-CA)",
+   "subject": "Strikes title III of division B of the substitute, which NCAI describes as the National Historic Preservation Act (Section 106) title.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5471.htm",
+   "quote": "Strike title III of division B.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347",
+   "topic": "tribal-section-106",
+   "reported_in": {
+    "url": "https://heatmap.news/politics/nhpa-permitting-bill",
+    "quote": "nearly 30 Democrats have signed onto an amendment proposed by California Senator Adam Schiff",
+    "date": "2026-11-17"
+   }
+  },
+  {
+   "number": "SA 6884",
+   "sponsor": "Sen. Thune (R-SD)",
+   "subject": "Thune amendment adding an effective date of 1 day after enactment.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520.htm",
+   "quote": "At the end add the following. ``This Act shall take effect 1 day after the date of enactment.''",
+   "date": "2026-11-10",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6885",
+   "sponsor": "Sen. Thune (R-SD)",
+   "subject": "Thune amendment changing '1 day' to '2 days'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-2.htm",
+   "quote": "Strike ``1 day''and insert ``2 days''.",
+   "date": "2026-11-10",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6886",
+   "sponsor": "Sen. Thune (R-SD)",
+   "subject": "Amends the text: At the end add the following.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-3.htm",
+   "quote": "At the end add the following. ``This Act shall take effect 3 days after the date of enactment.''",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6887",
+   "sponsor": "Sen. Thune (R-SD)",
+   "subject": "Amends the text: Strike ``3 days''and insert ``4 days''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-4.htm",
+   "quote": "Strike ``3 days''and insert ``4 days''.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6888",
+   "sponsor": "Sen. Thune (R-SD)",
+   "subject": "Amends the text: At the end add the following.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-5.htm",
+   "quote": "At the end add the following. ``This Act shall take effect 5 days after the date of enactment.''",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6889",
+   "sponsor": "Sen. Thune (R-SD)",
+   "subject": "Amends the text: Strike ``5 days''and insert ``6 days''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-6.htm",
+   "quote": "Strike ``5 days''and insert ``6 days''.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6890",
+   "sponsor": "Sen. Thune (R-SD)",
+   "subject": "Amends the text: Strike ``6 days''and insert ``7 days''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-7.htm",
+   "quote": "Strike ``6 days''and insert ``7 days''.",
+   "date": "2026-11-10",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6891",
+   "sponsor": "Sen. Johnson (R-WI)",
+   "subject": "Adds a section titled 'Guidance Out Of Darkness Act'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5576-4.htm",
+   "quote": "SEC. ___. GUIDANCE OUT OF DARKNESS ACT. (a) Short Title.--This section may be cited as the ``Guidance Out Of Darkness Act'' or",
+   "date": "2026-11-11",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6892",
+   "sponsor": "Sen. Kennedy (R-LA)",
+   "subject": "Adds a section titled 'Definition Of The Term ``Coastal Political Subdivision'' Under The Gulf Of Mexico Energy Security Act Of 2006'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5577.htm",
+   "quote": "SEC. ___. DEFINITION OF THE TERM ``COASTAL POLITICAL SUBDIVISION'' UNDER THE GULF OF MEXICO ENERGY SECURITY ACT OF 2006. Section",
+   "date": "2026-11-11",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6893",
+   "sponsor": "Sen. Smith (D-MN)",
+   "subject": "Amends the text: On page 242, strike lines 3 through 10 and insert the following: (d) Rights-of-Way.--Section 216(e) of the Federal Power Act (16 U.S.C.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5577-2.htm",
+   "quote": "On page 242, strike lines 3 through 10 and insert the following: (d) Rights-of-Way.--Section 216(e) of the Federal Power Act (16",
+   "date": "2026-11-11",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6894",
+   "sponsor": "Sen. Smith (D-MN)",
+   "subject": "Amends the text: On page 239, lines 3 through 5, strike ``the application was filed with the State commission or other entity'' and insert ``the State commission or other entity determine",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5577-3.htm",
+   "quote": "On page 239, lines 3 through 5, strike ``the application was filed with the State commission or other entity'' and insert ``the",
+   "date": "2026-11-11",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6895",
+   "sponsor": "Sen. Shaheen (D-NH)",
+   "subject": "Adds a section titled 'Clean Water Act Permitting And State Certification'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5577-4.htm",
+   "quote": "Beginning on page 110, strike line 1 and all that follows through page 133, line 3, and insert the following: SEC. 1202. CLEAN",
+   "date": "2026-11-11",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6896",
+   "sponsor": "Sen. Alsobrooks (D-MD)",
+   "subject": "Amends the text: Beginning on page 111, strike line 8 and all that follows through page 130, line 15, and insert the following: ``(2) Scope of certification.-- ``(A) In general.--The scop",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5579.htm",
+   "quote": "Beginning on page 111, strike line 8 and all that follows through page 130, line 15, and insert the following: ``(2) Scope of",
+   "date": "2026-11-11",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6897",
+   "sponsor": "Sen. Alsobrooks (D-MD)",
+   "subject": "Rewrites the remedy section on what a court may order after finding an environmental review unlawful.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5581.htm",
+   "quote": "Beginning on page 74 of the amendment, strike line 20 and all that follows through page 76, line 14, and insert the following:",
+   "date": "2026-11-11",
+   "to": "SA 6883",
+   "topic": "judicial-review"
+  },
+  {
+   "number": "SA 6898",
+   "sponsor": "Sen. Blunt Rochester (D-DE)",
+   "subject": "Amends the text: On page 17, line 17, insert ``, including mortgage insurance,'' after ``loan guarantee''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5582.htm",
+   "quote": "On page 17, line 17, insert ``, including mortgage insurance,'' after ``loan guarantee''.",
+   "date": "2026-11-11",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6899",
+   "sponsor": "Sen. Blunt Rochester (D-DE)",
+   "subject": "Amends the text: Beginning on page 126, strike line 14 and all that follows through page 130, line 15, and insert the following: mission line project that may result in a point source dis",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5582-2.htm",
+   "quote": "Beginning on page 126, strike line 14 and all that follows through page 130, line 15, and insert the following: mission line",
+   "date": "2026-11-11",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6900",
+   "sponsor": "Sen. Blunt Rochester (D-DE)",
+   "subject": "Amends the text: On page 75, lines 2 and 3 of the amendment, strike ``, without vacatur or issuance of an injunction,''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-11/html/CREC-2026-11-11-pt1-PgS5582-3.htm",
+   "quote": "On page 75, lines 2 and 3 of the amendment, strike ``, without vacatur or issuance of an injunction,''.",
+   "date": "2026-11-11",
+   "to": "SA 6883",
+   "topic": "judicial-review"
+  },
+  {
+   "number": "SA 6901",
+   "sponsor": "Sen. Duckworth (D-IL)",
+   "subject": "Amends the text: Beginning on page 118, strike line 21 and all that follows through page 123, line 21, and insert the following: ``(iv) Acknowledgment of receipt.--Not later than 10 days ",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5595-2.htm",
+   "quote": "Beginning on page 118, strike line 21 and all that follows through page 123, line 21, and insert the following: ``(iv)",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6902",
+   "sponsor": "Sen. Budd (R-NC)",
+   "subject": "Amends the text: In section 216(b) of the Federal Power Act (as amended by section 2101(b)(3) of the amendment), strike paragraph (5) and insert the following: ``(5) the electric transmis",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5596.htm",
+   "quote": "In section 216(b) of the Federal Power Act (as amended by section 2101(b)(3) of the amendment), strike paragraph (5) and insert",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6903",
+   "sponsor": "Sen. Schmitt (R-MO)",
+   "subject": "Amends the text: Beginning on page 237 of the amendment, strike line 14 and all that follows through page 241, line 13, and insert the following: ``(4) Impact on productive agricultural o",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5596-2.htm",
+   "quote": "Beginning on page 237 of the amendment, strike line 14 and all that follows through page 241, line 13, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6904",
+   "sponsor": "Sen. Schmitt (R-MO)",
+   "subject": "Amends the text: Beginning on page 237, strike line 17 and all that follows through page 238, line 2, and insert the following: ``(5) Landowner input.-- ``(A) In general.--The term `lando",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5597.htm",
+   "quote": "Beginning on page 237, strike line 17 and all that follows through page 238, line 2, and insert the following: ``(5) Landowner",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6905",
+   "sponsor": "Sen. Marshall (R-KS)",
+   "subject": "Adds Medicare Advantage prior-authorization requirements, unrelated to permitting.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5597-2.htm",
+   "quote": "SEC. 2. ESTABLISHING REQUIREMENTS WITH RESPECT TO THE USE OF PRIOR AUTHORIZATION UNDER MEDICARE ADVANTAGE PLANS. (a) In",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6906",
+   "sponsor": "Sen. Marshall (R-KS)",
+   "subject": "Adds a section titled 'Short Title'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5598.htm",
+   "quote": "TITLE __--HOSPITAL AND INSURER PRICE TRANSPARENCY SEC. _01. SHORT TITLE. This title may be cited as the ``Patients Deserve Price",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6907",
+   "sponsor": "Sen. Marshall (R-KS)",
+   "subject": "Adds a section titled 'Competition In Credit Card Transactions'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5608.htm",
+   "quote": "SEC. ___. COMPETITION IN CREDIT CARD TRANSACTIONS. (a) Short Title.--This section may be cited as the ``Credit Card Competition",
+   "date": "2026-11-12",
+   "to": "H.R. 2347"
+  },
+  {
+   "number": "SA 6908",
+   "sponsor": "Sen. Hagerty (R-TN)",
+   "subject": "Amends the text: On page 249, strike lines 5 through 17 and insert the following: ``(1) ERCOT and tva.--This section shall not apply within-- ``(A) the area referred to in section 212(k)(",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5609.htm",
+   "quote": "On page 249, strike lines 5 through 17 and insert the following: ``(1) ERCOT and tva.--This section shall not apply within--",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6909",
+   "sponsor": "Sen. Cornyn (R-TX)",
+   "subject": "Adds a section titled 'Reauthorization'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5609-2.htm",
+   "quote": "At the appropriate place in title I of division B, insert the following: SEC. 21__. REAUTHORIZATION. Section 40101 of the",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6910",
+   "sponsor": "Sen. Murkowski (R-AK)",
+   "subject": "Amends the text: In section 2252, strike subsection (b) and insert the following: (b) Identification of Preferred Routes.-- (1) In general.-- (A) Initial identification.--Not later than 2",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5609-3.htm",
+   "quote": "In section 2252, strike subsection (b) and insert the following: (b) Identification of Preferred Routes.-- (1) In general.-- (A)",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6911",
+   "sponsor": "Sen. Paul (R-KY)",
+   "subject": "Adds a section titled 'Defense Of Environment And Property'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5610.htm",
+   "quote": "At the appropriate place in title II of division A, insert the following: SEC. 12__. DEFENSE OF ENVIRONMENT AND PROPERTY. (a)",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6912",
+   "sponsor": "Sen. Kim (D-NJ)",
+   "subject": "Bars a permit applicant from federal damages for a permitting decision unless a disclosure condition in the text is met.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5611.htm",
+   "quote": "On page 198, between lines 18 and 19, insert the following: (d) Disclosures.--Notwithstanding any other provision of law, a",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "data-centers"
+  },
+  {
+   "number": "SA 6913",
+   "sponsor": "Sen. Kim (D-NJ)",
+   "subject": "Amends the text: Beginning on page 71 of the amendment, strike line 22 and all that follows through page 72, line 4, and insert the following: ``(1) is filed on or after the date of enact",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5611-2.htm",
+   "quote": "Beginning on page 71 of the amendment, strike line 22 and all that follows through page 72, line 4, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6914",
+   "sponsor": "Sen. Kim (D-NJ)",
+   "subject": "Amends the text: In section 2107, add at the end the following: (c) Electric Bill Transparency.--Each electric utility (as defined in section 3 of the Public Utility Regulatory Policies A",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5611-3.htm",
+   "quote": "In section 2107, add at the end the following: (c) Electric Bill Transparency.--Each electric utility (as defined in section 3 of",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6915",
+   "sponsor": "Sen. Kim (D-NJ)",
+   "subject": "Amends the text: On page 17 of the amendment, between lines 4 and 5, insert the following: ``(B) Inclusion.--The term `major Federal action' includes any proposed agency action that invol",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5611-4.htm",
+   "quote": "On page 17 of the amendment, between lines 4 and 5, insert the following: ``(B) Inclusion.--The term `major Federal action'",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6916",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Bars use of the Act or federal funds for certain projects absent express authorization of Congress.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5611-5.htm",
+   "quote": "SEC. __. PROHIBITION TO CARRY OUT CERTAIN PROJECTS. (a) In General.--Nothing in this Act provides the authorization of Congress,",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "clean-energy"
+  },
+  {
+   "number": "SA 6917",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Adds a section titled 'Terminated Federal Awards'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5611-6.htm",
+   "quote": "At the end of title IV of division A, add the following: SEC. 1404. TERMINATED FEDERAL AWARDS. (a) Requirement.--No agency or",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6918",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Adds a section titled 'Prohibition On Duties And Tariff-Rate Quotas On Wind Turbines'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5611-7.htm",
+   "quote": "At the end of title IV of division A, add the following: SEC. 1404. PROHIBITION ON DUTIES AND TARIFF-RATE QUOTAS ON WIND",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "clean-energy"
+  },
+  {
+   "number": "SA 6919",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Strikes title IV of division A of the substitute.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5612.htm",
+   "quote": "Strike title IV of division A.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6920",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: On page 170 of the amendment, line 5, strike ``an'' and insert ``a final and publicly disclosed''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5612-2.htm",
+   "quote": "On page 170 of the amendment, line 5, strike ``an'' and insert ``a final and publicly disclosed''. On page 170 of the amendment,",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6921",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Adds a section titled 'Data Center And Associated Infrastructure Exclusion'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5612-3.htm",
+   "quote": "On page 18, line 7, insert ``, excluding financial assistance provided for the construction of a data center'' after ``action''.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6922",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Adds a section titled 'Prevention Of Executive Actions And Repeal Of Executive Documents'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5612-4.htm",
+   "quote": "At the end of title IV of division A, add the following: SEC. 1404. PREVENTION OF EXECUTIVE ACTIONS AND REPEAL OF EXECUTIVE",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6923",
+   "sponsor": "Sen. Lujan (D-NM)",
+   "subject": "Amends the text: On page 170, line 13, insert ``but excluding a lease,'' after ``necessary,''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5613.htm",
+   "quote": "On page 170, line 13, insert ``but excluding a lease,'' after ``necessary,''. On page 182, line 7, insert ``but excluding a",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 6924",
+   "sponsor": "Sen. Lujan (D-NM)",
+   "subject": "Changes the Section 106 text so a step must come before the area of potential effects, historic properties and adverse effects are determined.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5613-2.htm",
+   "quote": "On page 460, line 23, insert ``before establishing the area of potential effects, identifying any historic properties, or",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 6925",
+   "sponsor": "Sen. Lujan (D-NM)",
+   "subject": "Amends the text: Beginning on page 490, strike line 22 and all that follows through page 491, line 6, and insert the following: of this subsection that is brought by a party described in ",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5613-3.htm",
+   "quote": "Beginning on page 490, strike line 22 and all that follows through page 491, line 6, and insert the following: of this subsection",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 6926",
+   "sponsor": "Sen. Lujan (D-NM)",
+   "subject": "Rewrites the Section 106 text on visual, atmospheric and audible effects on historic properties.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5613-4.htm",
+   "quote": "On page 456, strike lines 1 through 6 and insert the following: ``(i) any visual, atmospheric, or audible element, unless the",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 6927",
+   "sponsor": "Sen. Lujan (D-NM)",
+   "subject": "Amends the text: Beginning on page 466, strike line 1 and all that follows through page 468, line 25, and insert the following: ``(BB) document any adverse effects of the undertaking, or ",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5613-5.htm",
+   "quote": "Beginning on page 466, strike line 1 and all that follows through page 468, line 25, and insert the following: ``(BB) document",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 6928",
+   "sponsor": "Sen. Lujan (D-NM)",
+   "subject": "Amends the text: Starting on page 374 of the amendment, strike line 16 and all that follows through page 375, line 13, and insert the following: ``(B) Plan of operations.--The term `plan ",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5614.htm",
+   "quote": "Starting on page 374 of the amendment, strike line 16 and all that follows through page 375, line 13, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6929",
+   "sponsor": "Sen. Lujan (D-NM)",
+   "subject": "Amends the text: Starting on page 379 of the amendment, strike line 16 and all that follows through page 384, line 18, and insert the following: (c) Abandoned Hardrock Mine Fund.-- (1) Es",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5614-2.htm",
+   "quote": "Starting on page 379 of the amendment, strike line 16 and all that follows through page 384, line 18, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6930",
+   "sponsor": "Sen. Lujan (D-NM)",
+   "subject": "Amends the text: On page 376 of the amendment, line 10, strike ``as many'' and insert ``not more than 3''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5614-3.htm",
+   "quote": "On page 376 of the amendment, line 10, strike ``as many'' and insert ``not more than 3''.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6931",
+   "sponsor": "Sen. Booker (D-NJ)",
+   "subject": "Amends the text: In section 1401(b)(4), strike subparagraph (F) and insert the following: (F) Source of funds.-- (i) In general.--Amounts awarded under subparagraph (D)-- (I) shall be pai",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5614-4.htm",
+   "quote": "In section 1401(b)(4), strike subparagraph (F) and insert the following: (F) Source of funds.-- (i) In general.--Amounts awarded",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6932",
+   "sponsor": "Sen. Booker (D-NJ)",
+   "subject": "Amends the text: On page 181 of the amendment, between lines 4 and 5, insert the following: (5) Exclusion.--Paragraph (1) does not apply to a Federal authorization or permit that was issu",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5614-5.htm",
+   "quote": "On page 181 of the amendment, between lines 4 and 5, insert the following: (5) Exclusion.--Paragraph (1) does not apply to a",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6933",
+   "sponsor": "Sen. Van Hollen (D-MD)",
+   "subject": "Limits a court's grant of remand for projects that already have a federal authorization or permit.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5614-6.htm",
+   "quote": "On page 181 of the amendment, between lines 4 and 5, insert the following: (5) Voluntary remand.-- (A) In general.--For a project",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "judicial-review"
+  },
+  {
+   "number": "SA 6934",
+   "sponsor": "Sen. Van Hollen (D-MD)",
+   "subject": "Amends the text: In section 2107, add at the end the following: (c) Curtailment of Computational Loads.-- (1) Definitions.--In this subsection: (A) Commission.--The term ``Commission'' me",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5614-7.htm",
+   "quote": "In section 2107, add at the end the following: (c) Curtailment of Computational Loads.-- (1) Definitions.--In this subsection:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6935",
+   "sponsor": "Sen. Van Hollen (D-MD)",
+   "subject": "Adds a section titled 'Water Quality Criteria'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5615.htm",
+   "quote": "Beginning on page 109, strike line 9 and all that follows through page 133, line 7, and insert the following: SEC. 1201. WATER",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6936",
+   "sponsor": "Sen. Padilla (D-CA)",
+   "subject": "Amends the text: On page 172 of the amendment, line 2, insert ``, including the discretionary or nondiscretionary issuance, application, or enforcement of those laws or regulations'' afte",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5617.htm",
+   "quote": "On page 172 of the amendment, line 2, insert ``, including the discretionary or nondiscretionary issuance, application, or",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6937",
+   "sponsor": "Sen. Schiff (D-CA)",
+   "subject": "Amends the text: Beginning on page 141 of the amendment, strike line 12 and all that follows through page 142, line 2, and insert the following: ``(A) mean all relevant scientific and com",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5617-2.htm",
+   "quote": "Beginning on page 141 of the amendment, strike line 12 and all that follows through page 142, line 2, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6938",
+   "sponsor": "Sen. Schiff (D-CA)",
+   "subject": "Amends the text: At the end of section 1401, add the following: (d) Applicability.--This section does not apply to any project for which the Federal Government has been found by a Federal",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5617-3.htm",
+   "quote": "At the end of section 1401, add the following: (d) Applicability.--This section does not apply to any project for which the",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6939",
+   "sponsor": "Sen. Schiff (D-CA)",
+   "subject": "Amends the text: At the end of section 1402, add the following: (d) Applicability.--This section does not apply to any specific type of covered project for which the Federal Government ha",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5617-4.htm",
+   "quote": "At the end of section 1402, add the following: (d) Applicability.--This section does not apply to any specific type of covered",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6940",
+   "sponsor": "Sen. Schiff (D-CA)",
+   "subject": "Adds a section titled 'Offshore Energy'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5618.htm",
+   "quote": "Strike section 2251 of the amendment and insert the following: SEC. 2251. OFFSHORE ENERGY. (a) Leases, Easements, and",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6941",
+   "sponsor": "Sen. Schiff (D-CA)",
+   "subject": "Adds a section titled 'Terminated Federal Awards'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5618-2.htm",
+   "quote": "At the end of title IV of division A, add the following: SEC. 1404. TERMINATED FEDERAL AWARDS. (a) Requirement.--The Secretary of",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6942",
+   "sponsor": "Sen. Padilla (D-CA)",
+   "subject": "Amends the text: On page 483, line 23, strike ``clause (ii)'' and insert ``clauses (ii) and (iii)''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5618-3.htm",
+   "quote": "On page 483, line 23, strike ``clause (ii)'' and insert ``clauses (ii) and (iii)''. On page 484, line 17, insert ``and clause",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6943",
+   "sponsor": "Sen. Padilla (D-CA)",
+   "subject": "Amends the text: On page 17, line 20 of the amendment, insert ``, and assistance described in subparagraph (D)'' after ``Code''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5619.htm",
+   "quote": "On page 17, line 20 of the amendment, insert ``, and assistance described in subparagraph (D)'' after ``Code''. On page 23 of the",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6944",
+   "sponsor": "Sen. Padilla (D-CA)",
+   "subject": "Amends the text: On page 170, between lines 14 and 15, insert the following: (3) New action; any other action.--The terms ``new action'' and ``any other action'' do not include an action ",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5619-2.htm",
+   "quote": "On page 170, between lines 14 and 15, insert the following: (3) New action; any other action.--The terms ``new action'' and ``any",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6945",
+   "sponsor": "Sen. Padilla (D-CA)",
+   "subject": "Amends the text: In section 1401(b)(4)(F) of the amendment, add at the end the following: (iii) Applicability of limitation.--Notwithstanding any other provision of law, the limitation on",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5619-3.htm",
+   "quote": "In section 1401(b)(4)(F) of the amendment, add at the end the following: (iii) Applicability of limitation.--Notwithstanding any",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6946",
+   "sponsor": "Sen. Padilla (D-CA)",
+   "subject": "Adds a section titled 'Prohibition Of Oil And Gas Exploration, Development, And Production On The Outer Continental Shelf Off The Coast Of California, Oregon, And Washington'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5619-4.htm",
+   "quote": "At the end of subtitle F of title II of division B, add the following: SEC. 2253. PROHIBITION OF OIL AND GAS EXPLORATION,",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6947",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: Strike section 2211.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5620.htm",
+   "quote": "Strike section 2211.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6948",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: Strike section 2215.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5620-2.htm",
+   "quote": "Strike section 2215.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6949",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: On page 376, strike lines 3 through 14 and insert the following: ``(2) Authorization.--Notwithstanding subsections (a) and (b), where public land is needed by the proprie",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5620-3.htm",
+   "quote": "On page 376, strike lines 3 through 14 and insert the following: ``(2) Authorization.--Notwithstanding subsections (a) and (b),",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6950",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Adds a section titled 'Definitions'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5620-4.htm",
+   "quote": "At the end of division B, add the following: TITLE IV--MINING REFORM SEC. 2401. DEFINITIONS. In this title: (1) Applicant.--The",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6951",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: On page 299, strike lines 4 through 6 and insert the following: ``(B) is located on the distribution system, any subsystem thereof, or behind a customer meter;",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5627.htm",
+   "quote": "On page 299, strike lines 4 through 6 and insert the following: ``(B) is located on the distribution system, any subsystem",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6952",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: Strike section 2215(a) and insert the following: (a) Multiple Mill Sites.--Section 2337 of the Revised Statutes (30 U.S.C.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5627-2.htm",
+   "quote": "Strike section 2215(a) and insert the following: (a) Multiple Mill Sites.--Section 2337 of the Revised Statutes (30 U.S.C. 42) is",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6953",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: Beginning on page 74 of the amendment, strike line 20 and all that follows through page 76, line 14, and insert the following: ``(5) Remedy.-- ``(A) In general.--Notwiths",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5628.htm",
+   "quote": "Beginning on page 74 of the amendment, strike line 20 and all that follows through page 76, line 14, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "judicial-review"
+  },
+  {
+   "number": "SA 6954",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: On page 46, lines 11 through 13 of the amendment, strike ``after the date of publication of a notice of intent or decision to prepare an environmental document'' and inse",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5628-2.htm",
+   "quote": "On page 46, lines 11 through 13 of the amendment, strike ``after the date of publication of a notice of intent or decision to",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6955",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: Beginning on page 146 of the amendment, strike line 3 and all that follows through page 155, line 25, and insert the following: ``(B) Limitation.--For any project or agen",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5628-3.htm",
+   "quote": "Beginning on page 146 of the amendment, strike line 3 and all that follows through page 155, line 25, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6956",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Adds a section titled 'Programmatic Environmental Document'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5629.htm",
+   "quote": "Beginning on page 47 of the amendment, strike line 4 and all that follows through page 72, line 24, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6957",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: Beginning on page 449, strike line 1 and all that follows through page 483, line 7, and insert the following: (2) Tribal programs.-- (A) In general.--Chapter 3027 of titl",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5632.htm",
+   "quote": "Beginning on page 449, strike line 1 and all that follows through page 483, line 7, and insert the following: (2) Tribal",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6958",
+   "sponsor": "Sen. Cortez Masto (D-NV)",
+   "subject": "Adds a section titled 'Reinstatement Of Rules For Wagering Losses'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5635.htm",
+   "quote": "At the end of division C, add the following: SEC. 3002. REINSTATEMENT OF RULES FOR WAGERING LOSSES. (a) In General.--Section",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6959",
+   "sponsor": "Sen. Cortez Masto (D-NV)",
+   "subject": "Replaces division C with the Southern Nevada Economic Development and Conservation Act.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5635-2.htm",
+   "quote": "On page 494, strike lines 10 through 15 and insert the following: DIVISION C--SOUTHERN NEVADA ECONOMIC DEVELOPMENT AND",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6960",
+   "sponsor": "Sen. King (I-ME)",
+   "subject": "Amends the text: On page 6 of the amendment, strike lines 12 through 15 and insert the following: ``(1) Agency cerpo.--The term `agency CERPO' means-- ``(A) with respect to a key permitti",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5641.htm",
+   "quote": "On page 6 of the amendment, strike lines 12 through 15 and insert the following: ``(1) Agency cerpo.--The term `agency CERPO'",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6961",
+   "sponsor": "Sen. King (I-ME)",
+   "subject": "Adds a section titled 'Temporary Expedited Authorizations For Low- Conflict Wind Energy Projects On Private Land'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5641-2.htm",
+   "quote": "At the end of subtitle B of title II of division B of the amendment, add the following: SEC. 2216. TEMPORARY EXPEDITED",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6962",
+   "sponsor": "Sen. King (I-ME)",
+   "subject": "Waives federal approval requirements for certain wind projects and bars agencies from stopping them.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5646.htm",
+   "quote": "SEC. ___. WAIVER AND LIMITATION FOR CERTAIN WIND PROJECTS. (a) Waiver.--Congress waives the requirement to obtain any approval,",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "clean-energy"
+  },
+  {
+   "number": "SA 6963",
+   "sponsor": "Sen. King (I-ME)",
+   "subject": "Waives federal approval requirements for certain wind projects and bars agencies from stopping them.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5647.htm",
+   "quote": "SEC. ___. WAIVER AND LIMITATION FOR CERTAIN WIND PROJECTS. (a) Waiver.--Congress waives the requirement to obtain any approval,",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "clean-energy"
+  },
+  {
+   "number": "SA 6964",
+   "sponsor": "Sen. King (I-ME)",
+   "subject": "Adds a section titled 'Administrative Requirements For Military Aviation And Installation Assurance Clearinghouse'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5648.htm",
+   "quote": "SEC. ____. ADMINISTRATIVE REQUIREMENTS FOR MILITARY AVIATION AND INSTALLATION ASSURANCE CLEARINGHOUSE. (a) In General.--Section",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6965",
+   "sponsor": "Sen. Markey (D-MA)",
+   "subject": "Adds a section titled 'Office Of Public Engagement And Participation'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5649.htm",
+   "quote": "At the appropriate place in title V of division A, insert the following: SEC. 15__. OFFICE OF PUBLIC ENGAGEMENT AND",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6966",
+   "sponsor": "Sen. Markey (D-MA)",
+   "subject": "Amends the text: On page 56 of the amendment, strike line 2 and insert the following: of the dispute or display.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5650.htm",
+   "quote": "On page 56 of the amendment, strike line 2 and insert the following: of the dispute or display. ``(v) Scope of",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6967",
+   "sponsor": "Sen. Markey (D-MA)",
+   "subject": "Amends the text: At the end of section 2117, add the following: (g) Environmental Impacts.-- (1) Definitions.--In this subsection: (A) Administrator.--The term ``Administrator'' means the",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5650-2.htm",
+   "quote": "At the end of section 2117, add the following: (g) Environmental Impacts.-- (1) Definitions.--In this subsection: (A)",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6968",
+   "sponsor": "Sen. Markey (D-MA)",
+   "subject": "Adds interagency consultation to development of the Data Center Community Toolkit.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5652.htm",
+   "quote": "On page 345, between lines 2 and 3, insert the following: (3) Interagency consultation.--In developing the Data Center Community",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "data-centers"
+  },
+  {
+   "number": "SA 6969",
+   "sponsor": "Sen. Markey (D-MA)",
+   "subject": "Amends the text: On page 345, strike lines 4 through 21 and insert the following: (1) In general.--At the request of a State, local, or Tribal government, the Secretary shall-- (A) reques",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5652-2.htm",
+   "quote": "On page 345, strike lines 4 through 21 and insert the following: (1) In general.--At the request of a State, local, or Tribal",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "data-centers"
+  },
+  {
+   "number": "SA 6970",
+   "sponsor": "Sen. Wyden (D-OR)",
+   "subject": "Adds a section titled 'Publication Of Reports On Investigations Relating To Effects On National Security Of The Import Of Certain Articles'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5652-3.htm",
+   "quote": "SEC. ____. PUBLICATION OF REPORTS ON INVESTIGATIONS RELATING TO EFFECTS ON NATIONAL SECURITY OF THE IMPORT OF CERTAIN ARTICLES.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6971",
+   "sponsor": "Sen. Wyden (D-OR)",
+   "subject": "Adds a subtitle prohibiting construction of data centers on federal land.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5652-4.htm",
+   "quote": "At the end of title II of division B, add the following: Subtitle H--Prohibition of Construction of Data Centers on Federal Land",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "data-centers"
+  },
+  {
+   "number": "SA 6972",
+   "sponsor": "Sen. Scott of Florida (R-FL)",
+   "subject": "Amends the text: On page 245, strike line 2 and insert the following: ance with this subsection.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5652-5.htm",
+   "quote": "On page 245, strike line 2 and insert the following: ance with this subsection. ``(5) Savings provision.--Nothing in this section",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6973",
+   "sponsor": "Sen. Scott of Florida (R-FL)",
+   "subject": "Amends the text: In section 1204, add at the end the following: (c) Compliance With Biological Opinion and Reinstatement of Approval of Florida State Dredged and Fill Permitting Program.-",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5652-6.htm",
+   "quote": "In section 1204, add at the end the following: (c) Compliance With Biological Opinion and Reinstatement of Approval of Florida",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6974",
+   "sponsor": "Sen. Kelly (D-AZ)",
+   "subject": "Amends the text: On page 181 of the amendment, strike lines 5 through 7 and insert the following: (c) Savings Clause.--Nothing in this section-- (1) limits or modifies any authority under",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5653.htm",
+   "quote": "On page 181 of the amendment, strike lines 5 through 7 and insert the following: (c) Savings Clause.--Nothing in this section--",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6975",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 480, strike line 18 and all that follows through page 482, line 16, and insert the following: ``(C) Preliminary injunctions.-- ``(i) In general.--Subjec",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5653-2.htm",
+   "quote": "Beginning on page 480, strike line 18 and all that follows through page 482, line 16, and insert the following: ``(C) Preliminary",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6976",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 111, strike line 9 and all that follows through page 112, line 19, and insert the following: ``(A) In general.--The scope of a certification provided un",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5653-3.htm",
+   "quote": "Beginning on page 111, strike line 9 and all that follows through page 112, line 19, and insert the following: ``(A) In",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6977",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 125, strike line 2 and all that follows through page 130, line 15, and insert the following: ``(1) Burdens of proof.-- ``(A) In general.--When reviewing",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5653-4.htm",
+   "quote": "Beginning on page 125, strike line 2 and all that follows through page 130, line 15, and insert the following: ``(1) Burdens of",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6978",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 194 of the amendment, strike line 19 and all that follows through page 195, line 17, and insert the following: (ii) reasonable attorney fees and costs o",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5654.htm",
+   "quote": "Beginning on page 194 of the amendment, strike line 19 and all that follows through page 195, line 17, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6979",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 176 of the amendment, strike line 1 and all that follows through page 178, line 2, and insert the following: (III) reasonable attorney fees and costs of",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5654-2.htm",
+   "quote": "Beginning on page 176 of the amendment, strike line 1 and all that follows through page 178, line 2, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6980",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Adds a section titled 'Projects In The Operational Right-Of-Way'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5654-3.htm",
+   "quote": "Beginning on page 142 of the amendment, strike line 9 and all that follows through page 149, line 24, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6981",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 74 of the amendment, strike line 20 and all that follows through page 78, line 4, and insert the following: ``(5) Preliminary injunctions.-- ``(A) In ge",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5655.htm",
+   "quote": "Beginning on page 74 of the amendment, strike line 20 and all that follows through page 78, line 4, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "judicial-review"
+  },
+  {
+   "number": "SA 6982",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: On page 140, strike lines 4 through 17 and insert the following: ized under the permit would present a danger to human health or the environment; and ``(C) with respect t",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5655-2.htm",
+   "quote": "On page 140, strike lines 4 through 17 and insert the following: ized under the permit would present a danger to human health or",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6983",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 135, strike line 19 and all that follows through page 136, line 2, and insert the following: ``(B) Requirement.--Clauses (i) through (iv) of subparagrap",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5655-3.htm",
+   "quote": "Beginning on page 135, strike line 19 and all that follows through page 136, line 2, and insert the following: ``(B)",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6984",
+   "sponsor": "Sen. Moran (R-KS)",
+   "subject": "Amends the text: On page 242, strike line 2 and insert the following: the siting of the applicable facility.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5655-4.htm",
+   "quote": "On page 242, strike line 2 and insert the following: the siting of the applicable facility. ``(6) Land restoration plans.-- ``(A)",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6985",
+   "sponsor": "Sen. Curtis (R-UT)",
+   "subject": "Amends the text: On page 371 of the amendment, line 19, strike ``comprising less than 10 acres''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656.htm",
+   "quote": "On page 371 of the amendment, line 19, strike ``comprising less than 10 acres''.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6986",
+   "sponsor": "Sen. Cantwell (D-WA)",
+   "subject": "Adds a section titled 'Rule Of Construction For Indian Tribes'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-2.htm",
+   "quote": "At the appropriate place in title II of division A, insert the following: SEC. 12__. RULE OF CONSTRUCTION FOR INDIAN TRIBES.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6987",
+   "sponsor": "Sen. Cantwell (D-WA)",
+   "subject": "Adds a section titled 'Rule Of Construction For Indian Tribes'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-3.htm",
+   "quote": "At the appropriate place in title II of division A, insert the following: SEC. 12__. RULE OF CONSTRUCTION FOR INDIAN TRIBES.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6988",
+   "sponsor": "Sen. Cantwell (D-WA)",
+   "subject": "Amends the text: On page 422, line 20, strike ``are reasonably related to the effects of'' and insert ``reasonably related to''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-4.htm",
+   "quote": "On page 422, line 20, strike ``are reasonably related to the effects of'' and insert ``reasonably related to''.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6989",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 110, strike line 8 and all that follows through page 111, line 7, and insert the following: ``(1) Effect of certain certification actions.-- ``(A) Certi",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-5.htm",
+   "quote": "Beginning on page 110, strike line 8 and all that follows through page 111, line 7, and insert the following: ``(1) Effect of",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6990",
+   "sponsor": "Sen. Durbin (D-IL)",
+   "subject": "Amends the text: Beginning on page 74 of the amendment, strike line 20 and all that follows through page 77, line 2.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-6.htm",
+   "quote": "Beginning on page 74 of the amendment, strike line 20 and all that follows through page 77, line 2. On page 77, line 3 of the",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "judicial-review"
+  },
+  {
+   "number": "SA 6991",
+   "sponsor": "Sen. Gallego (D-AZ)",
+   "subject": "Amends the text: Strike section 2215.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-7.htm",
+   "quote": "Strike section 2215.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6992",
+   "sponsor": "Sen. Cantwell (D-WA)",
+   "subject": "Amends the text: At the end of section 1204, add the following: (c) EPA Final Determinations.--Notwithstanding any other provision of law, each determination of the Administrator of the E",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-8.htm",
+   "quote": "At the end of section 1204, add the following: (c) EPA Final Determinations.--Notwithstanding any other provision of law, each",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6993",
+   "sponsor": "Sen. Cantwell (D-WA)",
+   "subject": "Amends the text: On page 422, line 20, strike ``are reasonably related to the effects of'' and insert ``reasonably related to''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-9.htm",
+   "quote": "On page 422, line 20, strike ``are reasonably related to the effects of'' and insert ``reasonably related to''.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6994",
+   "sponsor": "Sen. Cantwell (D-WA)",
+   "subject": "Amends the text: Beginning on page 145 of the amendment, strike line 21 and all that follows through page 146, line 16, and insert the following: ``(2) Limitations on assumptions.--The Se",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5656-10.htm",
+   "quote": "Beginning on page 145 of the amendment, strike line 21 and all that follows through page 146, line 16, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6995",
+   "sponsor": "Sen. Cantwell (D-WA)",
+   "subject": "Amends the text: In section 1401, add at the end the following: (d) Exclusion of Certain Federal Land in Alaska.-- (1) Definitions.--In this subsection: (A) Arctic national wildlife refug",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5657.htm",
+   "quote": "In section 1401, add at the end the following: (d) Exclusion of Certain Federal Land in Alaska.-- (1) Definitions.--In this",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6996",
+   "sponsor": "Sen. Duckworth (D-IL)",
+   "subject": "Adds a section titled 'Reconductoring And Other Activities In Existing Rights-Of-Way'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5657-2.htm",
+   "quote": "Starting on page 238 of the amendment, line 7, strike all that follows through page 269, line 9, and insert the following: (1) in",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6997",
+   "sponsor": "Sen. Duckworth (D-IL)",
+   "subject": "Adds a section titled 'Reconductoring And Other Activities In Existing Rights-Of-Way'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5660.htm",
+   "quote": "Beginning on page 249, strike line 23 and all that follows through page 256, line 2, and insert the following: (j) Land",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6998",
+   "sponsor": "Sen. Duckworth (D-IL)",
+   "subject": "Amends the text: On page 72, line 8 of the amendment, strike ``150 days'' and insert ``4 years''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5662.htm",
+   "quote": "On page 72, line 8 of the amendment, strike ``150 days'' and insert ``4 years''. On page 77, line 15 of the amendment, strike",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 6999",
+   "sponsor": "Sen. Murkowski (R-AK)",
+   "subject": "Rewrites the Section 106 text on how determinations apply to the continuation and operation of a project after approval.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5662-2.htm",
+   "quote": "Beginning on page 461, strike line 8 and all that follows through page 464, line 13, and insert the following: ``(ix) the",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 7000",
+   "sponsor": "Sen. Murkowski (R-AK)",
+   "subject": "Sets Historic Preservation Fund authorization of $400,000,000 a year for 2027 through 2036 for grants to Tribal Historic Preservation Officers.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5663.htm",
+   "quote": "On page 491 of the amendment, strike lines 17 through 22 and insert the following: ``For each of fiscal years 2027 through 2036,",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 7001",
+   "sponsor": "Sen. Booker (D-NJ)",
+   "subject": "Amends the text: Beginning on page 74 of the amendment, strike line 20 and all that follows through page 78, line 4, and insert the following: ``(5) Treatment of supplemental or revised e",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5663-2.htm",
+   "quote": "Beginning on page 74 of the amendment, strike line 20 and all that follows through page 78, line 4, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883",
+   "topic": "judicial-review"
+  },
+  {
+   "number": "SA 7002",
+   "sponsor": "Sen. Markey (D-MA)",
+   "subject": "Amends the text: Beginning on page 111, strike line 16 and all that follows through page 130, line 15, and insert the following: ``(i) deny certification for any reason other than making ",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5663-3.htm",
+   "quote": "Beginning on page 111, strike line 16 and all that follows through page 130, line 15, and insert the following: ``(i) deny",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7003",
+   "sponsor": "Sen. Britt (R-AL)",
+   "subject": "Amends the text: On page 296, line 22, insert ``or section 2107 of the Bipartisan American Affordability and Jobs Act of 2026'' after ``section''.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5665.htm",
+   "quote": "On page 296, line 22, insert ``or section 2107 of the Bipartisan American Affordability and Jobs Act of 2026'' after ``section''.",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7004",
+   "sponsor": "Sen. Smith (D-MN)",
+   "subject": "Amends the text: Beginning on page 169 of the amendment, strike line 22 and all that follows through page 172, line 2, and insert the following: (1) Covered project or action.-- (A) In ge",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5665-2.htm",
+   "quote": "Beginning on page 169 of the amendment, strike line 22 and all that follows through page 172, line 2, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7005",
+   "sponsor": "Sen. Ossoff (D-GA)",
+   "subject": "Amends the text: At the end of section 2213, add the following: (f) In general.--The applicable Secretary shall ensure an appropriate process for permitting eligible projects under this s",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5666.htm",
+   "quote": "At the end of section 2213, add the following: (f) In general.--The applicable Secretary shall ensure an appropriate process for",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7006",
+   "sponsor": "Sen. Moran (R-KS)",
+   "subject": "Amends the text: On page 242, strike line 2 and insert the following: the siting of the applicable facility.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5666-2.htm",
+   "quote": "On page 242, strike line 2 and insert the following: the siting of the applicable facility. ``(6) Land restoration.-- ``(A) In",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7007",
+   "sponsor": "Sen. Warnock (D-GA)",
+   "subject": "Amends the text: At the end of section 1205, add the following: (f) In General.--the applicable Secretary shall ensure an appropriate process for permitting and certifying projects under ",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5666-3.htm",
+   "quote": "At the end of section 1205, add the following: (f) In General.--the applicable Secretary shall ensure an appropriate process for",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7008",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Amends the text: Beginning on page 141 of the amendment, strike line 10 and all that follows through page 142, line 2, and insert the following: ``(2)(A) The terms `best scientific and co",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-12/html/CREC-2026-11-12-pt1-PgS5666-4.htm",
+   "quote": "Beginning on page 141 of the amendment, strike line 10 and all that follows through page 142, line 2, and insert the following:",
+   "date": "2026-11-12",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7009",
+   "sponsor": "Sen. Moran (R-KS)",
+   "subject": "Amends the text: On page 242, strike line 2 and insert the following: the siting of the applicable facility.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5685-3.htm",
+   "quote": "On page 242, strike line 2 and insert the following: the siting of the applicable facility. ``(6) Land restoration.-- ``(A) In",
+   "date": "2026-11-16",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7010",
+   "sponsor": "Sen. Paul (R-KY)",
+   "subject": "Amends the text: Strike section 2116 of the amendment (relating to Transmission Organization governance).",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5685-4.htm",
+   "quote": "Strike section 2116 of the amendment (relating to Transmission Organization governance).",
+   "date": "2026-11-16",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7011",
+   "sponsor": "Sen. Alsobrooks (D-MD)",
+   "subject": "Adds a section titled 'Clean Water Act Permitting And State Certification'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5686.htm",
+   "quote": "Strike title II of division A and insert the following: TITLE II--CLEAN WATER ACT SEC. 1201. CLEAN WATER ACT PERMITTING AND STATE",
+   "date": "2026-11-16",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7012",
+   "sponsor": "Sen. Ossoff (D-GA)",
+   "subject": "Amends the text: On page 1 of the amendment, strike lines 13 and 14 and insert the following: (f) Accelerated Permitting for Projects Using Domestic Content.-- (1) Prioritization.--In pro",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5689.htm",
+   "quote": "On page 1 of the amendment, strike lines 13 and 14 and insert the following: (f) Accelerated Permitting for Projects Using",
+   "date": "2026-11-16",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7013",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 169 of the amendment, strike line 22 and all that follows through page 170, line 3, and insert the following: (1) Covered project or action.-- (A) In ge",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5690.htm",
+   "quote": "Beginning on page 169 of the amendment, strike line 22 and all that follows through page 170, line 3, and insert the following:",
+   "date": "2026-11-16",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7014",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Amends the text: Beginning on page 181 of the amendment, strike line 22 and all that follows through page 187, line 16, and insert the following: (2) Data center or high-density computing",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5690-2.htm",
+   "quote": "Beginning on page 181 of the amendment, strike line 22 and all that follows through page 187, line 16, and insert the following:",
+   "date": "2026-11-16",
+   "to": "SA 6883",
+   "topic": "data-centers"
+  },
+  {
+   "number": "SA 7015",
+   "sponsor": "Sen. Bennet (D-CO)",
+   "subject": "Amends the text: Beginning on page 1 of the amendment strike line 3 and all that follows through page 35, line 20, and insert the following: (2) Tribal programs.-- (A) In general.--Chapte",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5691.htm",
+   "quote": "Beginning on page 1 of the amendment strike line 3 and all that follows through page 35, line 20, and insert the following: (2)",
+   "date": "2026-11-16",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 7016",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Adds a section titled 'Dispatchable Energy Systems Market Access'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5694.htm",
+   "quote": "Strike section 2108 of the amendment and insert the following: SEC. 2108. DISPATCHABLE ENERGY SYSTEMS MARKET ACCESS. (a)",
+   "date": "2026-11-16",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7017",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Adds a section titled 'Ensuring Community Benefits'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5696.htm",
+   "quote": "At the appropriate place in title I of division B, insert the following: SEC. 21__. ENSURING COMMUNITY BENEFITS. (a)",
+   "date": "2026-11-16",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7018",
+   "sponsor": "Sen. Welch (D-VT)",
+   "subject": "Adds a section titled 'Shared Utility Rewards For Grid Efficiency'.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5697.htm",
+   "quote": "At the appropriate place in title I of division B, insert the following: SEC. 21__. SHARED UTILITY REWARDS FOR GRID EFFICIENCY.",
+   "date": "2026-11-16",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7019",
+   "sponsor": "Sen. Murkowski (R-AK)",
+   "subject": "Amends the text: On page 5 of the amendment, strike lines 3 and 4 and insert the following: zation.''; (4) in subsection (a)(7) (as added by paragraph (3))-- (A) in subparagraph (B)(ii), ",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5700.htm",
+   "quote": "On page 5 of the amendment, strike lines 3 and 4 and insert the following: zation.''; (4) in subsection (a)(7) (as added by",
+   "date": "2026-11-16",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 7020",
+   "sponsor": "Sen. Schatz (D-HI)",
+   "subject": "Lowers the Historic Preservation Fund figure from $400,000,000 to $300,000,000 and adds a new subtitle.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5701.htm",
+   "quote": "On page 1 of the amendment, line 7, strike ``$400,000,000'' and insert ``$300,000,000''. At the end of subtitle D of title",
+   "date": "2026-11-16",
+   "to": "SA 6883",
+   "topic": "tribal-section-106"
+  },
+  {
+   "number": "SA 7022",
+   "sponsor": "Sen. Lee (R-UT)",
+   "subject": "Technical and conforming corrections to the substitute by its four sponsors, plus text on landowner input and land restoration for transmission siting and public release of federal permits.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm",
+   "quote": "On page 73, line 9, strike ``9(b)'' and insert ``19(b)''. On page 120, lines 12 and 13, strike ``subclause'' and insert",
+   "date": "2026-11-17",
+   "to": "SA 6883"
+  },
+  {
+   "number": "SA 7023",
+   "sponsor": "Sen. Merkley (D-OR)",
+   "subject": "Adds a staff-shortage reason to the text on federal agency deadlines.",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5726.htm",
+   "quote": "On page 61, line 2 of the amendment, strike ``or''. On page 61, line 7 of the amendment, strike the period and insert ``; or''.",
+   "date": "2026-11-17",
+   "to": "SA 6883"
+  }
+ ],
+ "amendment_count": {
+  "count": 128,
+  "as_of": "2026-11-17",
+  "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5726-2.htm",
+  "quote": "SA 7022. Mr. LEE (for himself, Mr. Heinrich, Mrs. Capito, and Mr. Whitehouse) submitted an amendment intended to be proposed to amendment SA 6883",
+  "method": "Counted from the Congressional Record 'Text of Amendments' headers on govinfo (Nov 10 to Nov 17, SA 6849 to SA 7023): 128 headed 'to amendment SA 6883' (125 filed through Nov 16, 3 on Nov 17), plus 44 headed 'to the bill H.R. 2347'. Congress.gov (blocked, 403 via r.jina.ai) showed 113 as of Nov 16 in the site's existing data; the two counts differ and congress.gov could not be read to reconcile them. SA 6884 and 6885 are Thune amendments to SA 6883 and are inside the 128."
+ },
+ "point_of_order": {
+  "found": false,
+  "what_source_says": "The Record and the Press Gallery name a Merkley point of order against substitute amendment No. 6883 and set the vote for 11:45 a.m. on Nov 18, but give no Budget Act section or claim. No news or official source read says which section or what it asserts.",
+  "sources": [
+   {
+    "publisher": "Congressional Record, Senate, Nov 17, 2026 (Orders for Wednesday)",
+    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5727-3.htm",
+    "date": "2026-11-17",
+    "quote": "if Senator Merkley or his designee raises a point of order on substitute amendment No. 6883, the Senate vote in relation to the point of order at 11:45 a.m."
+   },
+   {
+    "publisher": "U.S. Senate Press Gallery",
+    "url": "https://www.dailypress.senate.gov/tuesday-november-17-2026/",
+    "date": "2026-11-17",
+    "quote": "Motion to waive the Merkley Budget Point of Order in relation to Capito substitute amendment #6883 (if raised)"
+   }
+  ]
+ },
+ "not_found": [
+  {
+   "what": "Amendment text and per-amendment pages on congress.gov (SA 6883 and 'Amendments to This Amendment' count)",
+   "why": "congress.gov returns 403 'Just a moment' through r.jina.ai; count taken from the Congressional Record on govinfo instead (128 to SA 6883, 44 to H.R. 2347 through Nov 17), which differs from the 113 in the site's Nov 16 data."
+  },
+  {
+   "what": "Budget Act section and claim behind the Merkley point of order",
+   "why": "The Congressional Record (Nov 17) and Senate Press Gallery name the point of order and its 11:45 a.m. vote but give no section or reason; no news or official source read describes it. Searches for Merkley, Byrd or Budget Act with BAAJA returned only 2025 reconciliation items."
+  },
+  {
+   "what": "NCAI release 'NCAI Warns BAAJA (S. 5653) Manager's Amendment Still Threatens Tribal Sovereignty and Sacred Places; Vote No on Cloture' (https://www.ncai.org/news/ncai-warns-baaja-s-5653)",
+   "why": "Page carries no date; text says 'Ahead of Monday's scheduled Senate cloture vote', so it may be Nov 13 to 16 and may fall before the window. Verbatim quote available: 'Any amendment to S. 5653 merely puts lipstick on a pig.' (Mark Macarro, NCAI President). Not added as an item for lack of a verifiable date."
+  },
+  {
+   "what": "The Hill (6223468, 6225607, 6223994), Yahoo/Politico syndication, Axios, E&E News, Politico, Punchbowl post-Nov 16 stories",
+   "why": "The Hill and Yahoo return a bot-block stub through r.jina.ai; E&E, Politico, Axios, Punchbowl are paywalled and no free text for Nov 16 or later was reachable."
+  },
+  {
+   "what": "Post-Nov 16 statements from API, ACP, EEI, NAM, Chamber, SEIA, NRDC, Earthjustice, Sierra Club, Evergreen, senator offices (Heinrich, Whitehouse, Capito, Cortez Masto, Schumer, EPW, ENR)",
+   "why": "Press pages checked Nov 18 list nothing on the cloture vote or amendments dated Nov 16 or later; the latest BAAJA releases are Nov 8 to 15 (already held or before the window)."
+  }
+ ]
 }

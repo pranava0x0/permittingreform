@@ -2602,6 +2602,32 @@
      "verified": true
     }
    ]
+  },
+  {
+   "id": "2026-11-17-managers-amendment-sa-7022",
+   "date": "2026-11-17",
+   "title": "The four sponsors file a managers' amendment, SA 7022",
+   "branch": "congress_senate",
+   "summary": "Sen. Lee, for the four sponsors, filed SA 7022 to the substitute. Besides technical corrections it adds landowner notice, land restoration and conduct rules for transmission permits, makes federal permits public, and raises the Historic Preservation Fund from $200 million to $300 million a year.",
+   "actors": [
+    "U.S. Senate",
+    "Sen. Mike Lee"
+   ],
+   "milestone": false,
+   "topics": [
+    "congress",
+    "transmission",
+    "historic-preservation"
+   ],
+   "sources": [
+    {
+     "title": "Text of Amendments, SA 7022",
+     "publisher": "Congressional Record",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm",
+     "date": "2026-11-17",
+     "verified": true
+    }
+   ]
   }
  ]
 }
