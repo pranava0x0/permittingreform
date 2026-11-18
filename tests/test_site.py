@@ -105,6 +105,11 @@ class Page(unittest.TestCase):
         self.assertNotIn("fonts.googleapis", HTML + CSS)
         self.assertNotIn("@import", CSS)
 
+    def test_named_links_point_at_the_source_they_name(self):
+        # The Overview's "Senate EPW release" link once took the first status point's source, which became a roll call.
+        self.assertIn('ext(o.summary.source.url, "Senate EPW release")', JS)
+        self.assertNotRegex(JS, r'status\.points\[\d+\]\.source')
+
     def test_canonical_url_matches_the_build_setting(self):
         self.assertIn(f'<link rel="canonical" href="{build.SITE_URL}">', HTML)
 

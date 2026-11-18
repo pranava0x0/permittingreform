@@ -149,6 +149,8 @@ def web_quotes(core: dict) -> list[dict]:
         for it in items:
             for i, src in enumerate(it.get("sources", [])):
                 rows.append({"where": f"amend.{where}.{it.get('id', 'main')}.{i}", "text": src["quote"], "speaker": it.get("who", ""), "url": src["url"]})
+    for a in (amend.get("filed") or {"items": []})["items"]:
+        rows.append({"where": f"amend.filed.{a['number']}", "text": a["quote"], "speaker": a["sponsor"], "url": a["url"]})
     if amend.get("vote"):
         rows.append({"where": "amend.vote", "text": amend["vote"]["quote"], "speaker": "", "url": amend["vote"]["url"]})
     # A roll call's result line is checked against the Senate's XML record: the HTML page builds the same line with scripts.

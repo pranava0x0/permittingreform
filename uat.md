@@ -63,3 +63,25 @@ Senate votes sits first on Positions, so letters, the issue rows and a section's
 `tests/clicks.cjs` passed: 184 views loaded and 5,023 controls clicked at 375 and 1280 pixels (163 hidden, 2 disabled), 0 problems, about 34 minutes. Slowest click 7,575 ms (Compare, a bill-text link); 7 clicks took over a second.
 
 **Tab separators (same day).** A short vertical rule now sits between neighbouring tabs and between neighbouring subtabs. It is drawn over each link's left edge and takes no room: at 375 pixels the five tabs and five subtabs keep the same boxes, the header still ends at 138 pixels and the page heading starts at 154, so taps and screens to every answer are unchanged.
+
+## November 18, 2026: managers' amendment and filed amendments
+
+`make final`: perf, reader paths and UAT (102 rendered states) pass; the click crawl loaded 186 views and clicked 4,845 controls with 0 problems (none over 1 s). The first UAT run failed: two new status lines and a longer next-step line pushed the fourth provision 20 px below the first phone screen. The next-step line is shorter now. Before is `main` at 78772f9, cold load at 375x812, Slow 4G.
+
+| Page | Requests | Transfer KB | Slow 4G ready ms | CLS |
+|---|---|---|---|---|
+| overview | 8.0 → 8.0 | 235.0 → 236.0 | 1506.0 → 1509.0 | 0.0 → 0.0 |
+| bill index | 8.0 → 8.0 | 235.0 → 236.0 | 1492.0 → 1495.0 | 0.0 → 0.0 |
+| section 1101 | 9.0 → 9.0 | 338.0 → 339.0 | 1507.0 → 1522.0 | 0.0 → 0.0 |
+| compare | 8.0 → 8.0 | 235.0 → 236.0 | 1511.0 → 1510.0 | 0.0 → 0.0 |
+| amendments | 9.0 → 9.0 | 314.0 → 325.0 | 2493.0 → 2499.0 | 0.0 → 0.0 |
+| positions | 10.0 → 10.0 | 426.0 → 433.0 | 2497.0 → 2512.0 | 0.0 → 0.0 |
+| people | 9.0 → 9.0 | 396.0 → 404.0 | 2493.0 → 2495.0 | 0.0 → 0.0 |
+| data centers | 8.0 → 8.0 | 235.0 → 236.0 | 1484.0 → 1505.0 | 0.0 → 0.0 |
+| communities | 8.0 → 8.0 | 235.0 → 236.0 | 1486.0 → 1491.0 | 0.0 → 0.0 |
+| speed | 9.0 → 9.0 | 265.0 → 266.0 | 1484.0 → 1495.0 | 0.0 → 0.0 |
+| timeline | 9.0 → 9.0 | 396.0 → 404.0 | 2487.0 → 2501.0 | 0.0 → 0.0 |
+| coverage | 9.0 → 9.0 | 396.0 → 404.0 | 2489.0 → 2502.0 | 0.0 → 0.0 |
+| method | 8.0 → 8.0 | 235.0 → 236.0 | 1481.0 → 1487.0 | 0.0 → 0.0 |
+
+The Amendments page grew 11 KB for the 172 filed amendments; its ready time did not move.

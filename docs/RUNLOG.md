@@ -57,3 +57,11 @@ Grouped Topics, Debate and People and groups under Key issues; kept Timeline and
 ## November 3, 2026: related bill comparisons
 
 Read the official texts of six data center bills, both ePermit bills and the E-NEPA statute. Compared the two ePermit versions directly, then checked their implementation dates and contracting clauses against section 1121. Matched the three BAAJA baselines to printed passages. Added version-specific source links to the interactive and static comparisons and the agent exports. Tools: GovInfo, Python, Playwright, Chrome and GitHub. No subagents or separately metered token count.
+
+## November 18, 2026: managers' amendment, filed amendments, coverage through November 18
+
+Read the Senate floor log for November 17 and 18 and the Congressional Record's Text of Amendments for November 10 to 17. Added SA 7022 (the sponsors' managers' amendment), SA 6882 (Schiff, striking the historic preservation title), the Merkley budget point of order, and a list of all 172 filed amendments with links to their text.
+
+Added 30 coverage items and one timeline event, and moved the next step to the November 18 votes, which had not happened when the data was cut (8:30 a.m.). Gave the no-JavaScript pages descriptions, Open Graph tags and WebPage records.
+
+UAT found the Overview's "Senate EPW release" link pointing at a roll call (also on main); fixed. Tools: two Sonnet research agents (452K tokens together), Chrome, govinfo, Python and Playwright.

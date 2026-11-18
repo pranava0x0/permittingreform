@@ -1,6 +1,7 @@
 """The build: no dangling references, and the committed site data matches its sources."""
 import html
 import json
+import re
 import sys
 import tempfile
 from unittest.mock import patch
@@ -80,6 +81,18 @@ class Build(unittest.TestCase):
                 self.assertIn(html.escape(row["summary"]), page)
                 for ref in row.get("sources", [row]):
                     self.assertIn(html.escape(ref["url"]), page)
+
+    def test_static_pages_carry_search_and_share_metadata(self):
+        # Each no-JavaScript page names itself for search engines, link previews and answer engines.
+        for name in (*build.READER_PAGES, "amendments", "reading"):
+            page = (ROOT / f"site/{name}.html").read_text()
+            url = f"{build.SITE_URL}{name}.html"
+            self.assertEqual(page.count("<title>"), 1, name)
+            self.assertRegex(page, r'<meta name="description" content="[^"]{60,}">', name)
+            self.assertIn(f'<meta property="og:url" content="{url}">', page)
+            record = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', page, re.S).group(1))
+            self.assertEqual((record["@type"], record["url"], record["dateModified"]), ("WebPage", url, CORE["meta"]["as_of"]))
+            self.assertEqual(record["about"]["legislationIdentifier"], "S. 5653")
 
     def test_full_export_keeps_every_community_quote_citation(self):
         full = build.llms_full(CORE, PARAS)

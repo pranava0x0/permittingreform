@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-16.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-18.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -8,6 +8,8 @@
 
 ## Status
 
+- On November 16 the Senate agreed, 70 to 27, to end debate on the sponsors' substitute, SA 6883. Sixty votes were needed. Adopting the substitute and passing the bill are later votes. (source: Senate roll call vote 264, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm)
+- On November 17 the four sponsors filed a managers' amendment to the substitute, SA 7022. It adds landowner protections for transmission permits, makes federal permits public and raises the Historic Preservation Fund to $300 million a year. Senators had filed 172 amendments to the substitute or the bill by then. (source: Congressional Record, November 17, https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm)
 - The Senate agreed on November 9, 73 to 25, to end debate on taking up H.R. 2347, the vehicle for the permitting bill. Voting no were 23 Democrats, Republican Mike Rounds and independent Bernie Sanders. (source: Senate roll call vote 257, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm)
 - On November 10 the Senate agreed to take up the bill, 62 to 21, with 17 senators not voting. Neither vote was on passage. (source: Senate roll call vote 258, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm)
 - Majority Leader John Thune then offered the sponsors' substitute as amendment SA 6883. On November 11 he filed motions to end debate on it and on H.R. 2347. (source: U.S. Senate Press Gallery, Nov. 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
@@ -27,21 +29,21 @@
 - House Speaker Mike Johnson said on October 23 that he supports the Senate bill. (source: Joshua Siegel, Punchbowl News (X), https://x.com/SiegelScribe/status/2113682338181779731)
 - More opponents declared in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups and nine Democratic attorneys general. More than 100 public lands groups, the People's Environmental Justice Caucus and Rep. Leger Fernández joined them. (source: POLITICO (X), https://x.com/NicoPortuondo/status/2112571938484957230)
 - Support letters the same week came from 19 former economic and national security officials, the five main clean energy trade groups, and API with 137 other organizations. (source: Institute for Progress, https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf)
-- Senate Majority Leader Thune filed cloture on November 11 on both the substitute, SA 6883, and the bill, H.R. 2347. The Senate invoked cloture on the substitute on November 16, 70 to 27. (source: Senate floor log, November 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
+- Senate Majority Leader Thune filed cloture on November 11 on both the substitute, SA 6883, and the bill, H.R. 2347. (source: Senate floor log, November 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
 - Under Senate rules, cloture allows up to 30 more hours on the substitute before the vote to adopt it; the cloture motion on the bill is then pending, and invoking it would lead to a vote on passage. (source: Congressional Research Service, Filibusters and Cloture in the Senate, https://www.everycrsreport.com/reports/RL30360.html)
-- Next step, 2026-11-17: First vote at 2:15 p.m.; the floor schedule does not say on what. Adopting the substitute and passing the bill are separate votes. (source: https://www.dailypress.senate.gov/monday-november-16-2026/)
+- Next step, 2026-11-18: Votes from 11:45 a.m. on adopting the substitute and on ending debate on the bill. Neither is the vote on passage. (source: https://www.dailypress.senate.gov/tuesday-november-17-2026/)
 
 ## Reading and retrieval
 
 Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.
 PDF citations use printed bill pages and lines. A matching quote proves occurrence; it does not validate nearby interpretations. Source positions describe the cited item, not every position held by its author.
 - [Amendments to the permitting bill](https://pranava0x0.github.io/permittingreform/amendments.html): What the November 7 substitute changes in each section of the September 30 text, with page and line cites in both PDFs, other amendments filed or announced, and who has said they support or oppose them.
-- [Amendments JSON](https://pranava0x0.github.io/permittingreform/data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments and reactions with sources.
+- [Amendments JSON](https://pranava0x0.github.io/permittingreform/data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments, every amendment filed in the Congressional Record, and reactions with sources.
 - [Data center and digital permitting bills compared](https://pranava0x0.github.io/permittingreform/comparisons.html): Compare BAAJA with data center siting and disclosure proposals, current E-NEPA law and the House and Senate ePermit bills.
 - [Key issues in permitting reform](https://pranava0x0.github.io/permittingreform/issues.html): What S. 5653 would change, the bill sections behind each provision, and how supporters and critics read them.
 - [Permitting reform timeline](https://pranava0x0.github.io/permittingreform/timeline.html): Dated legislative, legal and agency events, with source records for each event.
 - [Permitting reform news and coverage](https://pranava0x0.github.io/permittingreform/coverage.html): Reporting, analysis and statements about the permitting bill, with publication dates and links to the originals.
-- [No-JavaScript section index](https://pranava0x0.github.io/permittingreform/reading.html)
+- [Bill sections, summarized and cited](https://pranava0x0.github.io/permittingreform/reading.html): Every section of the September 30, 2026 BAAJA text (S. 5653) with a plain-language summary, a link to its PDF page and its full text with cited analysis. No JavaScript needed.
 - [Full text and analysis](https://pranava0x0.github.io/permittingreform/llms-full.txt): all sections, comparisons, timeline, people and media with citations.
 - [Tracker JSON](https://pranava0x0.github.io/permittingreform/data/core.json): the same data the browser renders, including check coverage.
 - [Bill paragraph JSON](https://pranava0x0.github.io/permittingreform/data/bill.json): section number to [printed page, line, indent level, text] arrays.

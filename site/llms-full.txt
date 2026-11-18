@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-16.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-18.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -8,6 +8,8 @@
 
 ## Status
 
+- On November 16 the Senate agreed, 70 to 27, to end debate on the sponsors' substitute, SA 6883. Sixty votes were needed. Adopting the substitute and passing the bill are later votes. (source: Senate roll call vote 264, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm)
+- On November 17 the four sponsors filed a managers' amendment to the substitute, SA 7022. It adds landowner protections for transmission permits, makes federal permits public and raises the Historic Preservation Fund to $300 million a year. Senators had filed 172 amendments to the substitute or the bill by then. (source: Congressional Record, November 17, https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm)
 - The Senate agreed on November 9, 73 to 25, to end debate on taking up H.R. 2347, the vehicle for the permitting bill. Voting no were 23 Democrats, Republican Mike Rounds and independent Bernie Sanders. (source: Senate roll call vote 257, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm)
 - On November 10 the Senate agreed to take up the bill, 62 to 21, with 17 senators not voting. Neither vote was on passage. (source: Senate roll call vote 258, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm)
 - Majority Leader John Thune then offered the sponsors' substitute as amendment SA 6883. On November 11 he filed motions to end debate on it and on H.R. 2347. (source: U.S. Senate Press Gallery, Nov. 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
@@ -27,21 +29,21 @@
 - House Speaker Mike Johnson said on October 23 that he supports the Senate bill. (source: Joshua Siegel, Punchbowl News (X), https://x.com/SiegelScribe/status/2113682338181779731)
 - More opponents declared in the week of October 20: the All Pueblo Council of Governors, 13 preservation groups and nine Democratic attorneys general. More than 100 public lands groups, the People's Environmental Justice Caucus and Rep. Leger Fernández joined them. (source: POLITICO (X), https://x.com/NicoPortuondo/status/2112571938484957230)
 - Support letters the same week came from 19 former economic and national security officials, the five main clean energy trade groups, and API with 137 other organizations. (source: Institute for Progress, https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf)
-- Senate Majority Leader Thune filed cloture on November 11 on both the substitute, SA 6883, and the bill, H.R. 2347. The Senate invoked cloture on the substitute on November 16, 70 to 27. (source: Senate floor log, November 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
+- Senate Majority Leader Thune filed cloture on November 11 on both the substitute, SA 6883, and the bill, H.R. 2347. (source: Senate floor log, November 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
 - Under Senate rules, cloture allows up to 30 more hours on the substitute before the vote to adopt it; the cloture motion on the bill is then pending, and invoking it would lead to a vote on passage. (source: Congressional Research Service, Filibusters and Cloture in the Senate, https://www.everycrsreport.com/reports/RL30360.html)
-- Next step, 2026-11-17: First vote at 2:15 p.m.; the floor schedule does not say on what. Adopting the substitute and passing the bill are separate votes. (source: https://www.dailypress.senate.gov/monday-november-16-2026/)
+- Next step, 2026-11-18: Votes from 11:45 a.m. on adopting the substitute and on ending debate on the bill. Neither is the vote on passage. (source: https://www.dailypress.senate.gov/tuesday-november-17-2026/)
 
 ## Reading and retrieval
 
 Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.
 PDF citations use printed bill pages and lines. A matching quote proves occurrence; it does not validate nearby interpretations. Source positions describe the cited item, not every position held by its author.
 - [Amendments to the permitting bill](https://pranava0x0.github.io/permittingreform/amendments.html): What the November 7 substitute changes in each section of the September 30 text, with page and line cites in both PDFs, other amendments filed or announced, and who has said they support or oppose them.
-- [Amendments JSON](https://pranava0x0.github.io/permittingreform/data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments and reactions with sources.
+- [Amendments JSON](https://pranava0x0.github.io/permittingreform/data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments, every amendment filed in the Congressional Record, and reactions with sources.
 - [Data center and digital permitting bills compared](https://pranava0x0.github.io/permittingreform/comparisons.html): Compare BAAJA with data center siting and disclosure proposals, current E-NEPA law and the House and Senate ePermit bills.
 - [Key issues in permitting reform](https://pranava0x0.github.io/permittingreform/issues.html): What S. 5653 would change, the bill sections behind each provision, and how supporters and critics read them.
 - [Permitting reform timeline](https://pranava0x0.github.io/permittingreform/timeline.html): Dated legislative, legal and agency events, with source records for each event.
 - [Permitting reform news and coverage](https://pranava0x0.github.io/permittingreform/coverage.html): Reporting, analysis and statements about the permitting bill, with publication dates and links to the originals.
-- [No-JavaScript section index](https://pranava0x0.github.io/permittingreform/reading.html)
+- [Bill sections, summarized and cited](https://pranava0x0.github.io/permittingreform/reading.html): Every section of the September 30, 2026 BAAJA text (S. 5653) with a plain-language summary, a link to its PDF page and its full text with cited analysis. No JavaScript needed.
 - [Full text and analysis](https://pranava0x0.github.io/permittingreform/llms-full.txt): all sections, comparisons, timeline, people and media with citations.
 - [Tracker JSON](https://pranava0x0.github.io/permittingreform/data/core.json): the same data the browser renders, including check coverage.
 - [Bill paragraph JSON](https://pranava0x0.github.io/permittingreform/data/bill.json): section number to [printed page, line, indent level, text] arrays.
@@ -17173,6 +17175,10 @@ No Congressional Budget Office estimate of the bill was found through November 1
 {"id": "2026-11-16-senate-cloture-substitute", "date": "2026-11-16", "title": "Senate votes 70 to 27 to end debate on the sponsors' substitute, SA 6883", "branch": "congress_senate", "summary": "The Senate agreed, 70 to 27, to end debate on the Capito substitute amendment, SA 6883, to H.R. 2347 (roll call vote 264). Three senators did not vote. Sixty votes were needed. Adopting the substitute and passing the bill are separate votes.", "actors": ["U.S. Senate", "Sen. Shelley Moore Capito"], "milestone": true, "topics": ["congress"], "sources": [{"title": "Roll Call Vote 119th Congress - 2nd Session, Vote 264", "publisher": "U.S. Senate (senate.gov)", "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00264.htm", "date": "2026-11-16"}, {"title": "Monday, November 16, 2026", "publisher": "U.S. Senate Daily Press", "url": "https://www.dailypress.senate.gov/monday-november-16-2026/", "date": "2026-11-16"}]}
 ```
 
+```json
+{"id": "2026-11-17-managers-amendment-sa-7022", "date": "2026-11-17", "title": "The four sponsors file a managers' amendment, SA 7022", "branch": "congress_senate", "summary": "Sen. Lee, for the four sponsors, filed SA 7022 to the substitute. Besides technical corrections it adds landowner notice, land restoration and conduct rules for transmission permits, makes federal permits public, and raises the Historic Preservation Fund from $200 million to $300 million a year.", "actors": ["U.S. Senate", "Sen. Mike Lee"], "milestone": false, "topics": ["congress", "transmission", "historic-preservation"], "sources": [{"title": "Text of Amendments, SA 7022", "publisher": "Congressional Record", "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm", "date": "2026-11-17"}]}
+```
+
 
 ## People
 
@@ -17544,6 +17550,106 @@ No Congressional Budget Office estimate of the bill was found through November 1
 ## Media
 
 ```json
+{"id": "2026-11-18-kosu-senate-expected-to-vote-on-permitting-bill-tribal-leade", "date": "2026-11-18", "type": "news", "outlet": "KOSU", "author": "Sarah Liese (Twilla)", "title": "Senate expected to vote on permitting bill tribal leaders in Oklahoma, beyond oppose", "url": "https://www.kosu.org/news/2026-11-18/senate-expected-to-vote-on-permitting-bill-tribal-leaders-in-oklahoma-beyond-oppose", "summary": "KOSU reports tribal nations and preservation groups ask senators to reject the bill, quotes NCAI President Mark Macarro, and notes the Crow Tribe has expressed approval.", "stance": "reporting", "quote": {"text": "Any amendment to S. 5653 merely puts lipstick on a pig", "speaker": "Mark Macarro, President, NCAI"}, "topics": ["tribal", "historic-preservation"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-siegelscribe-update-sen-schiff-is-still-pushing-for-c", "date": "2026-11-17", "type": "social_x", "outlet": "X / @SiegelScribe", "author": "Joshua Siegel", "title": "Update: Sen. Schiff is still “pushing for consideration of his amendment via a floor vote prior to final passage of the bill” to strip NHPA section of BAAJA, a spokesman told me “The amendment is strictly germane…and has the support of two-thirds of the Democratic Caucus”", "url": "https://x.com/SiegelScribe/status/2122744229516485116", "summary": "Siegel reports Sen. Schiff is pushing for a floor vote on an amendment to strip the NHPA section, which his office says two-thirds of Democrats support.", "stance": "reporting", "quote": {"text": "The amendment is strictly germane…and has the support of two-thirds of the Democratic Caucus", "speaker": "Spokesman for Sen. Adam Schiff, as quoted by Joshua Siegel"}, "topics": ["congress", "tribal", "historic-preservation"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-siegelscribe-senate-epw-top-dem-sheldon-whitehouse-te", "date": "2026-11-17", "type": "social_x", "outlet": "X / @SiegelScribe", "author": "Joshua Siegel", "title": "Senate EPW top Dem Sheldon Whitehouse tells me coming out of Dem lunch that negotiators are “finishing up the hotline on amendments and hoping to get agreement there”", "url": "https://x.com/SiegelScribe/status/2122775557670572148", "summary": "Siegel reports negotiators are finishing a hotline on amendments after the Democratic lunch.", "stance": "reporting", "quote": {"text": "finishing up the hotline on amendments and hoping to get agreement there", "speaker": "Sen. Sheldon Whitehouse, as quoted by Joshua Siegel"}, "topics": ["congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-siegelscribe-scoop-senate-permitting-reform-negotiato", "date": "2026-11-17", "type": "social_x", "outlet": "X / @SiegelScribe", "author": "Joshua Siegel", "title": "SCOOP: Senate permitting reform negotiators have finalized changes to BAAJA ahead of the final vote expected this week.", "url": "https://x.com/SiegelScribe/status/2122801049446580509", "summary": "Siegel reports the four negotiators have finalized a managers' amendment with compromise tribal and NHPA changes and tweaks to landowner compensation for transmission.", "stance": "reporting", "quote": {"text": "I obtained the new managers' amendment text.", "speaker": "Joshua Siegel"}, "topics": ["congress", "tribal", "historic-preservation", "transmission"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-siegelscribe-scoop-in-punchbowlnews-am-senate-negotia", "date": "2026-11-17", "type": "social_x", "outlet": "X / @SiegelScribe", "author": "Joshua Siegel", "title": "Scoop in @PunchbowlNews AM: Senate negotiators near deal on changes to NHPA section of BAAJA to shore up votes amid tribal pushback.", "url": "https://x.com/SiegelScribe/status/2122667684777402860", "summary": "Siegel reports negotiators are close to an NHPA change led by Sens. Murkowski and Schatz that requires NHPA review for certain federally funded projects.", "stance": "reporting", "quote": {"text": "The change specifies that certain projects receiving federal funding have to go through NHPA reviews.", "speaker": "Joshua Siegel"}, "topics": ["congress", "tribal", "historic-preservation"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-siegelscribe-on-the-second-round-of-managers-amendmen", "date": "2026-11-17", "type": "social_x", "outlet": "X / @SiegelScribe", "author": "Joshua Siegel", "title": "On the second round of managers amendment changes to the bill that are expected, Sen. Whitehouse told me it would be a mix of “technical things that are actually technical improvements and bipartisan things that can move smoothly.”", "url": "https://x.com/SiegelScribe/status/2122776169334620360", "summary": "Siegel reports Whitehouse expects a second managers' amendment mixing technical edits and bipartisan changes.", "stance": "reporting", "quote": {"text": "technical things that are actually technical improvements and bipartisan things that can move smoothly", "speaker": "Sen. Sheldon Whitehouse, as quoted by Joshua Siegel"}, "topics": ["congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-siegelscribe-more-in-pm-epw-ranker-sen-whitehouse-tol", "date": "2026-11-17", "type": "social_x", "outlet": "X / @SiegelScribe", "author": "Joshua Siegel", "title": "More in PM: EPW ranker Sen. Whitehouse told me the 4 negotiators plan to oppose the standalone amendments that get floor votes even if they agree w/underlying policy in order to uphold the deal.", "url": "https://x.com/SiegelScribe/status/2122824853040312440", "summary": "Siegel reports Whitehouse says the four sponsors will vote against standalone floor amendments to protect the deal.", "stance": "reporting", "quote": {"text": "That’s pretty standard on bipartisan bills that the sponsors stand by the bill.", "speaker": "Sen. Sheldon Whitehouse, as quoted by Joshua Siegel"}, "topics": ["congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-nicoportuondo-thune-speaks-in-favor-of-baaja-on-senate", "date": "2026-11-17", "type": "social_x", "outlet": "X / @NicoPortuondo", "author": "Nico Portuondo", "title": "Thune speaks in favor of BAAJA on Senate floor, points to the Potomac Interceptor rupture this year as an example of infrastructure fixes taking too long.", "url": "https://x.com/NicoPortuondo/status/2122717171826790663", "summary": "Portuondo reports Majority Leader Thune spoke for BAAJA on the floor, citing the Potomac Interceptor rupture.", "stance": "reporting", "quote": {"text": "points to the Potomac Interceptor rupture this year as an example of infrastructure fixes taking too long", "speaker": "Nico Portuondo"}, "topics": ["congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-nicoportuondo-sen-capito-says-the-upcoming-manager-s-a", "date": "2026-11-17", "type": "social_x", "outlet": "X / @NicoPortuondo", "author": "Nico Portuondo", "title": "Sen. Capito says the upcoming manager's amendment will aim to address two major concerns raised by other senators: Tribal sovereignty and landowner rights related to transmission lines crossing farmland and private property.", "url": "https://x.com/NicoPortuondo/status/2122791698564817322", "summary": "Portuondo reports Capito says the managers' amendment targets Tribal sovereignty and transmission landowner rights.", "stance": "reporting", "quote": {"text": "Tribal sovereignty and landowner rights related to transmission lines crossing farmland and private property", "speaker": "Sen. Shelley Moore Capito, as reported by Nico Portuondo"}, "topics": ["congress", "tribal", "historic-preservation", "transmission"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-nicoportuondo-sen-cantwell-says-some-permitting-reform", "date": "2026-11-17", "type": "social_x", "outlet": "X / @NicoPortuondo", "author": "Nico Portuondo", "title": "Sen. Cantwell says some permitting reform bill provisions are \"dangerous\", calls to slow down consideration.", "url": "https://x.com/NicoPortuondo/status/2122762503604097027", "summary": "Portuondo reports Sen. Cantwell called some provisions dangerous and urged slowing down; he says she joins Wyden and Merkley as a future committee chair concerned with BAAJA.", "stance": "reporting", "quote": {"text": "Cantwell joins Wyden and Merkley as a future committee chair concerned with BAAJA.", "speaker": "Nico Portuondo"}, "topics": ["congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-x-nathpo_org-thanks-to-senatorcantwell-for-speaking-o", "date": "2026-11-17", "type": "social_x", "outlet": "X / @NATHPO_org", "author": "NATHPO", "title": "Thanks to @SenatorCantwell for speaking out against the threat BAAJA poses to Tribal sovereignty and Native places, and for elevating the voices of Tribal Leaders who want to reform permitting, but not at the expense of their rights and sacred places!", "url": "https://x.com/NATHPO_org/status/2122763859526385692", "summary": "NATHPO thanks Sen. Cantwell for her floor remarks against the bill's effect on Tribal sovereignty.", "stance": "opposes", "quote": {"text": "Thanks to @SenatorCantwell for speaking out against the threat BAAJA poses to Tribal sovereignty and Native places", "speaker": "NATHPO"}, "topics": ["tribal", "historic-preservation"], "sector": "state_local"}
+```
+
+```json
+{"id": "2026-11-17-x-nathpo_org-in-an-ltte-posted-this-morning-nathpo-ex", "date": "2026-11-17", "type": "social_x", "outlet": "X / @NATHPO_org", "author": "NATHPO", "title": "In an LTTE posted this morning, NATHPO Executive Director Ira L. Matt (Séliš), along with Patagonia CEO Ryan Gellert and Tracy Stone-Manning, President of The Wilderness Society, responded to a recent NYT editorial advocating for passage of BAAJA.", "url": "https://x.com/NATHPO_org/status/2122806735253741678", "summary": "NATHPO says its director, Patagonia's CEO and the Wilderness Society's president answered the New York Times editorial backing BAAJA in a letter to the editor.", "stance": "opposes", "quote": {"text": "responded to a recent NYT editorial advocating for passage of BAAJA", "speaker": "NATHPO"}, "topics": ["tribal", "historic-preservation"], "sector": "state_local"}
+```
+
+```json
+{"id": "2026-11-17-x-leaderjohnthune-the-bipartisan-american-affordability-an", "date": "2026-11-17", "type": "social_x", "outlet": "X / @LeaderJohnThune", "author": "John Thune", "title": "The Bipartisan American Affordability and Jobs Act restores the balanced approach to permitting that’s needed.", "url": "https://x.com/LeaderJohnThune/status/2122737183102836765", "summary": "Majority Leader Thune says BAAJA restores a balanced approach and holds Washington officials accountable.", "stance": "supports", "quote": {"text": "It ensures local stakeholders have a say in community projects and holds bureaucrats in Washington accountable for blocking needed projects.", "speaker": "Sen. John Thune"}, "topics": ["congress"], "sector": "congress"}
+```
+
+```json
+{"id": "2026-11-17-x-epwgop-permitting-reform-isn-t-just-holding-bac", "date": "2026-11-17", "type": "social_x", "outlet": "X / @EPWGOP", "author": "U.S. Senate EPW Committee GOP", "title": "Permitting reform isn’t just holding back energy projects, it impacts our ability to build roads, bridges, housing, manufacturing facilities, broadband deployment – you name it.", "url": "https://x.com/EPWGOP/status/2122838444296847848", "summary": "EPW Republicans argue permitting delays hold back roads, housing, broadband and manufacturing as well as energy.", "stance": "supports", "quote": {"text": "Permitting reform isn’t just holding back energy projects, it impacts our ability to build roads, bridges, housing, manufacturing facilities, broadband deployment – you name it.", "speaker": "Senate EPW Committee Republicans"}, "topics": ["congress"], "sector": "congress"}
+```
+
+```json
+{"id": "2026-11-17-x-envirointegrity-breaking-news-eip-strongly-opposes-the-p", "date": "2026-11-17", "type": "social_x", "outlet": "X / @EnviroIntegrity", "author": "Environmental Integrity Project", "title": "BREAKING NEWS: EIP strongly opposes the \"permitting reform\" bill being debated in the U.S. Senate (Bill 5653), which advanced on a procedural vote last night.", "url": "https://x.com/EnviroIntegrity/status/2122766724722565417", "summary": "The Environmental Integrity Project says it strongly opposes S. 5653 the day after the November 16 procedural vote.", "stance": "opposes", "quote": {"text": "EIP strongly opposes the \"permitting reform\" bill being debated in the U.S. Senate (Bill 5653)", "speaker": "Environmental Integrity Project"}, "topics": ["congress"], "sector": "environmental_group"}
+```
+
+```json
+{"id": "2026-11-17-x-davidpomerantz-no-substantive-changes-to-transmission-h", "date": "2026-11-17", "type": "social_x", "outlet": "X / @DavidPomerantz", "author": "David Pomerantz", "title": "No substantive changes to transmission here.", "url": "https://x.com/DavidPomerantz/status/2122834711341089235", "summary": "Pomerantz reads the new managers' amendment as leaving transmission largely unchanged apart from added landowner protections.", "stance": "mixed", "quote": {"text": "Some new stuff to protect landowners, e.g. guardrails around notice/consultation, requiring FERC to consider landowner input, allowing FERC to attach land restoration conditions.", "speaker": "David Pomerantz"}, "topics": ["congress", "transmission"], "sector": "think_tank"}
+```
+
+```json
+{"id": "2026-11-17-x-ceidotorg-the-senate-bill-contains-no-geographic-l", "date": "2026-11-17", "type": "social_x", "outlet": "X / @ceidotorg", "author": "Competitive Enterprise Institute", "title": "“The Senate bill contains no geographic limits on FERC's permitting power,” former FERC Chairman Mark Christie tells CEI's Daren Bakst.", "url": "https://x.com/ceidotorg/status/2122769248279826607", "summary": "CEI relays former FERC Chairman Mark Christie's warning that S. 5653 puts no geographic limit on FERC's permitting authority.", "stance": "opposes", "quote": {"text": "The Senate bill contains no geographic limits on FERC's permitting power", "speaker": "Mark Christie, former FERC Chairman"}, "topics": ["transmission"], "sector": "think_tank"}
+```
+
+```json
+{"id": "2026-11-17-x-apienergy-it-s-a-historic-opportunity", "date": "2026-11-17", "type": "social_x", "outlet": "X / @APIenergy", "author": "American Petroleum Institute", "title": "“It’s a historic opportunity.", "url": "https://x.com/APIenergy/status/2122780549362393489", "summary": "API posts its president urging passage of BAAJA as a historic opportunity.", "stance": "supports", "quote": {"text": "We have a bipartisan agreement", "speaker": "Mike Sommers, API President and CEO"}, "topics": ["congress"], "sector": "trade_association"}
+```
+
+```json
+{"id": "2026-11-17-x-aidanrmackenzie-senator-merkley-s-sign-is-false-baaja-do", "date": "2026-11-17", "type": "social_x", "outlet": "X / @AidanRMackenzie", "author": "Aidan Mackenzie", "title": "Senator Merkley’s sign is false BAAJA does not “lock in” projects, it requires agencies to identify specific conditions before revoking permits (illegality is covered) Few data centers even require federal permits — BAAJA’s main effect is making data centers pay more!", "url": "https://x.com/AidanRMackenzie/status/2122877582957768809", "summary": "Mackenzie disputes a sign Sen. Merkley displayed while speaking against BAAJA on the floor, saying the bill does not lock in projects.", "stance": "supports", "quote": {"text": "Few data centers even require federal permits — BAAJA’s main effect is making data centers pay more!", "speaker": "Aidan Mackenzie"}, "topics": ["congress", "data-centers", "permit-certainty"], "sector": "think_tank"}
+```
+
+```json
+{"id": "2026-11-17-x-aidanrmackenzie-pretty-big-news-the-funding-for-the-hist", "date": "2026-11-17", "type": "social_x", "outlet": "X / @AidanRMackenzie", "author": "Aidan Mackenzie", "title": "Pretty big news: the funding for the Historic Preservation Fund has been increased from $200M per year to $300M per year!", "url": "https://x.com/AidanRMackenzie/status/2122816886450610527", "summary": "Mackenzie highlights that the new managers' amendment raises Historic Preservation Fund funding from $200M to $300M a year.", "stance": "supports", "quote": {"text": "The fund exists to support state and Tribal review and consultation, allowing better quality review to get done faster", "speaker": "Aidan Mackenzie"}, "topics": ["congress", "tribal", "historic-preservation"], "sector": "think_tank"}
+```
+
+```json
+{"id": "2026-11-17-source-new-mexico-new-mexico-us-sen-heinrich-s-permitting-bi", "date": "2026-11-17", "type": "news", "outlet": "Source New Mexico", "title": "New Mexico US Sen. Heinrich’s permitting bill takes another step toward US Senate passage", "url": "https://sourcenm.com/2026/11/17/new-mexico-us-sen-heinrichs-permitting-bill-takes-another-step-toward-us-senate-passage/", "summary": "Source NM reports the Senate voted 70-27 to end debate on the substitute Heinrich co-wrote, that Sen. Luján voted no, and that Al Gore and Pueblo governors urged senators to wait or reject it.", "stance": "reporting", "quote": {"text": "The vote clears the way for the U.S. Senate to take a final vote on the bill as early as this week.", "speaker": "Source New Mexico (reporting)"}, "topics": ["congress", "tribal"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-oklahoma-energy-today-stage-set-for-vote-this-week-on-permit", "date": "2026-11-17", "type": "news", "outlet": "Oklahoma Energy Today", "title": "Stage set for vote this week on permitting reform Act", "url": "https://okenergytoday.com/2026/11/stage-set-for-vote-this-week-on-permitting-reform-act/", "summary": "Oklahoma Energy Today reports Sens. Lankford and Armstrong voted for cloture and quotes Armstrong urging passage on the Senate floor.", "stance": "reporting", "quote": {"text": "After ten years of endless debate, we finally have industry, labor, and a broad bipartisan coalition aligned", "speaker": "Sen. Alan Armstrong (R-Okla.)"}, "topics": ["congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-kbft-congress-returns-to-work-with-indian-country-on-the-age", "date": "2026-11-17", "type": "news", "outlet": "KBFT", "title": "Congress returns to work with Indian Country on the agenda — and on the menu", "url": "https://kbft.org/congress-returns-to-work-with-indian-country-on-the-agenda-and-on-the-menu/", "summary": "KBFT's Indian Country roundup reports the 70-27 cloture vote cleared a path for final passage before Thanksgiving, over what it calls widespread opposition in Indian Country.", "stance": "reporting", "quote": {"text": "the Senate has cleared a path for final passage of BAAJA in H.R.2347 before the Thanksgiving break", "speaker": "KBFT (reporting)"}, "topics": ["tribal", "congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-heatmap-news-how-tribal-rights-became-central-to-the-permitt", "date": "2026-11-17", "type": "news", "outlet": "Heatmap News", "author": "Emily Pontecorvo", "title": "How Tribal Rights Became Central to the Permitting Debate", "url": "https://heatmap.news/politics/nhpa-permitting-bill", "summary": "Heatmap reports nearly 30 Democrats back a Schiff amendment to strike the historic preservation section, that Murkowski and Schatz filed a narrower fix, and that Padilla and western Democrats proposed exempting tribal claims from the judicial review limit.", "stance": "reporting", "quote": {"text": "The amendment filed by Senators Murkowski and Schatz on Tuesday would make one small change, ensuring that all projects that receive federal funding go through NHPA reviews instead of just those that also require some form of federal approval.", "speaker": "Emily Pontecorvo, Heatmap News"}, "topics": ["tribal", "historic-preservation", "congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-17-common-dreams-21-senate-democrats-join-gop-to-end-debate-on", "date": "2026-11-17", "type": "news", "outlet": "Common Dreams", "author": "Jake Johnson", "title": "21 Senate Democrats Join GOP to End Debate on Big Oil-Backed ‘Kill Switch for Future Climate Action’", "url": "https://www.commondreams.org/news/senate-invokes-cloture-baaja", "summary": "Common Dreams reports that 21 Democrats joined Republicans in the 70-27 cloture vote, with Cortez Masto the one Democrat who flipped to no, and quotes Oil Change International's Elizabeth Bast calling the bill a kill switch for future climate action.", "stance": "opposes", "quote": {"text": "BAAJA would act as a kill switch for future climate action without offering any meaningful emissions reductions", "speaker": "Elizabeth Bast, executive director, Oil Change International"}, "topics": ["congress", "tribal", "nepa"], "sector": "media"}
+```
+
+```json
 {"id": "2026-11-16-x-tednordhaus-but-most-estimates-suggest-falling-faster-wit", "date": "2026-11-16", "type": "social_x", "outlet": "X / @TedNordhaus", "author": "Ted Nordhaus", "title": "But most estimates suggest falling faster with BAAJA than without.", "url": "https://x.com/TedNordhaus/status/2122497701657137463", "summary": "Nordhaus says most estimates suggest U.S. emissions would fall faster with BAAJA than without it.", "stance": "supports", "quote": {"text": "But most estimates suggest falling faster with BAAJA than without.", "speaker": "Ted Nordhaus (@TedNordhaus)"}, "topics": ["wind-solar"], "sector": "think_tank"}
 ```
 
@@ -17593,6 +17699,10 @@ No Congressional Budget Office estimate of the bill was found through November 1
 
 ```json
 {"id": "2026-11-16-x-nicoportuondo-gop-sponsors-of-the-bipartisan-permitting-bil", "date": "2026-11-16", "type": "social_x", "outlet": "X / @NicoPortuondo", "author": "Nico Portuondo", "title": "GOP sponsors of the bipartisan permitting bill have circulated a list of amendments that could…", "url": "https://x.com/NicoPortuondo/status/2122472393071600059", "summary": "Portuondo reports Republican sponsors circulated a list of amendments that could get votes this week.", "stance": "reporting", "quote": {"text": "GOP sponsors of the bipartisan permitting bill have circulated a list of amendments that could get votes this week.", "speaker": "Nico Portuondo (@NicoPortuondo)"}, "topics": ["congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-16-x-nathpo_org-nathpo-executive-director-ira-l-matt-s-l", "date": "2026-11-16", "type": "social_x", "outlet": "X / @NATHPO_org", "author": "NATHPO", "title": "NATHPO Executive Director Ira L. Matt (Séliš) issued the following statement following tonight's vote in the Senate to advance the Bipartisan American Affordability and Jobs Act of 2026 (BAAJA), the Senate's permitting \"reform\" bill:", "url": "https://x.com/NATHPO_org/status/2122484719271153853", "summary": "NATHPO posts its executive director's statement after the November 16 vote to end debate on the substitute.", "stance": "opposes", "quote": {"text": "issued the following statement following tonight's vote in the Senate to advance the Bipartisan American Affordability and Jobs Act of 2026 (BAAJA)", "speaker": "NATHPO"}, "topics": ["tribal", "historic-preservation", "congress"], "sector": "state_local"}
 ```
 
 ```json
@@ -17665,6 +17775,22 @@ No Congressional Budget Office estimate of the bill was found through November 1
 
 ```json
 {"id": "2026-11-16-x-afpgovaffairs-we-applaud-the-senate-for-invoking-cloture-on", "date": "2026-11-16", "type": "social_x", "outlet": "X / @AFPGovAffairs", "author": "AFP Government Affairs", "title": "We applaud the Senate for invoking cloture on the Capito amendment (SA 6883) to H.R. 2347 on a…", "url": "https://x.com/AFPGovAffairs/status/2122498597518508353", "summary": "Americans for Prosperity's government affairs account applauds the 70-27 cloture vote on the Capito amendment.", "stance": "supports", "quote": {"text": "We applaud the Senate for invoking cloture on the Capito amendment (SA 6883) to H.R. 2347 on a vote of 70-27.", "speaker": "AFP Government Affairs (@AFPGovAffairs)"}, "topics": ["congress"], "sector": "think_tank"}
+```
+
+```json
+{"id": "2026-11-16-the-guardian-passing-bill-to-speed-up-gas-projects-and-datac", "date": "2026-11-16", "type": "news", "outlet": "The Guardian", "author": "Oliver Milman", "title": "Passing bill to speed up gas projects and datacenters would be ‘serious mistake’, Al Gore says", "url": "https://www.theguardian.com/us-news/2026/nov/16/al-gore-baaja-cop-31-climate", "summary": "The Guardian reports former Vice President Al Gore, at the COP31 summit in Antalya, called passing the bill a serious mistake given the midterm results.", "stance": "reporting", "quote": {"text": "I think it would be a serious mistake, particularly in the wake of the astonishing election results last week", "speaker": "Al Gore, former Vice President"}, "topics": ["data-centers", "congress"], "sector": "media"}
+```
+
+```json
+{"id": "2026-11-16-congressional-record-energy-senate-floor-remarks", "date": "2026-11-16", "type": "gov_document", "outlet": "Congressional Record", "author": "Sen. Ed Markey", "title": "Energy (Senate floor remarks)", "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm", "summary": "Sen. Markey says on the Senate floor that the permitting bill is sold as an affordability fix but makes it harder for communities to challenge projects, and raises data centers on public lands.", "stance": "opposes", "quote": {"text": "Part of how this bill makes it easier to do all of those things is by making it harder for you, for your community, to do anything about it, now or forever.", "speaker": "Sen. Edward Markey (D-Mass.)"}, "topics": ["data-centers", "courts"], "sector": "congress"}
+```
+
+```json
+{"id": "2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti", "date": "2026-11-16", "type": "org_statement", "outlet": "Center for Progressive Reform (scholars' letter)", "title": "Re: The Bipartisan American Affordability and Jobs Act of 2026 (S. 5653 / H.R. 2347): Twelve Provisions That Should Not Become Law", "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf", "summary": "Environmental and energy law scholars write to Senate Democratic leaders that BAAJA would damage NEPA, the Clean Water Act and the Endangered Species Act; the letter is dated November 13 and was updated with more signatures on November 16.", "stance": "opposes", "quote": {"text": "would inflict permanent, sweeping damage on the nation's core environmental laws", "speaker": "Environmental and energy law scholars (letter signatories)"}, "topics": ["nepa", "courts"], "sector": "academic"}
+```
+
+```json
+{"id": "2026-11-16-canary-media-permitting-reform-is-a-big-controversial-bet-fo", "date": "2026-11-16", "type": "analysis", "outlet": "Canary Media", "author": "Jeff St. John", "title": "Permitting reform is a big, controversial bet for the energy transition", "url": "https://www.canarymedia.com/articles/politics/permitting-reform-uncertain-bet", "summary": "Canary Media's chief reporter lays out the bill as a three-part bet by Democrats and clean energy advocates, and notes the Senate voted 70-27 Monday to end debate.", "stance": "mixed", "quote": {"text": "The Senate bipartisan permitting bill is essentially an enormous three-part bet by the Democrats and clean energy advocates who support it.", "speaker": "Jeff St. John, Canary Media"}, "topics": ["wind-solar", "congress"], "sector": "media"}
 ```
 
 ```json

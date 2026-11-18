@@ -42,7 +42,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-11-16"
+DATA_AS_OF = "2026-11-18"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -713,9 +713,9 @@ def llms_txt(core: dict) -> str:
         "Independent tracker. BAAJA is the September 30, 2026 draft, not enacted law. Summaries are AI-assisted. Verify legal claims against the official PDF and compare the specified versions, not later amendments.",
         "PDF citations use printed bill pages and lines. A matching quote proves occurrence; it does not validate nearby interpretations. Source positions describe the cited item, not every position held by its author.",
         f"- [{AMEND_TITLE}]({m['site_url']}amendments.html): {AMEND_DESCRIPTION}",
-        f"- [Amendments JSON]({m['site_url']}data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments and reactions with sources.",
+        f"- [Amendments JSON]({m['site_url']}data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments, every amendment filed in the Congressional Record, and reactions with sources.",
         *[f"- [{title}]({m['site_url']}{page}.html): {description}" for page, (title, description) in READER_PAGES.items()],
-        f"- [No-JavaScript section index]({m['site_url']}reading.html)",
+        f"- [{READING_TITLE}]({m['site_url']}reading.html): {READING_DESCRIPTION} No JavaScript needed.",
         f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
         f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
         f"- [Bill paragraph JSON]({m['site_url']}data/bill.json): section number to [printed page, line, indent level, text] arrays.",
@@ -944,6 +944,27 @@ READER_PAGES = {
 }
 
 
+def static_head(core: dict, page: str, title: str, description: str) -> str:
+    """The <head> of a no-JavaScript page: title, description, canonical, Open Graph and a WebPage record."""
+    esc = html.escape
+    url = f"{SITE_URL}{page}.html"
+    record = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": url,
+              "dateModified": core["meta"]["as_of"], "inLanguage": "en",
+              "isPartOf": {"@type": "WebSite", "name": "Permitting Reform", "url": SITE_URL},
+              "about": {"@type": "Legislation", "name": "Bipartisan American Affordability and Jobs Act of 2026",
+                        "legislationIdentifier": "S. 5653", "legislationJurisdiction": "US"}}
+    return "".join([
+        '<!doctype html><html lang="en"><head><meta charset="utf-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n',
+        f'<title>{esc(title)} · BAAJA (S. 5653)</title><meta name="description" content="{esc(description)}">\n',
+        f'<link rel="canonical" href="{url}"><link rel="stylesheet" href="styles.css">\n',
+        '<meta property="og:type" content="article"><meta property="og:site_name" content="Permitting Reform">',
+        f'<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}">',
+        f'<meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">\n',
+        '<script type="application/ld+json">' + json.dumps(record, ensure_ascii=False).replace("</", "<\\/") + '</script>\n',
+        '</head>'])
+
+
 def reader_html(core: dict, page: str) -> str:
     esc = html.escape
 
@@ -954,11 +975,8 @@ def reader_html(core: dict, page: str) -> str:
     route = {"coverage": "media", "comparisons": "compare"}.get(page, page)
     nav = [link("index.html", "Overview"), link("reading.html", "Bill")]
     nav.extend(link(key + ".html", name) for key, name in (("issues", "Key issues"), ("timeline", "Timeline"), ("coverage", "Coverage")))
-    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
-           '<meta name="viewport" content="width=device-width, initial-scale=1">',
-           f'<title>{esc(title)} · BAAJA (S. 5653)</title><meta name="description" content="{esc(description)}">',
-           f'<link rel="canonical" href="{SITE_URL}{page}.html"><link rel="stylesheet" href="styles.css">',
-           '</head><body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
+    out = [static_head(core, page, title, description),
+           '<body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
            f'<h1>{esc(title)}</h1><p>{esc(description)}</p>',
            f'<p>{esc(core["meta"]["short_title"])} · Updated {esc(core["meta"]["as_of"])} · ' +
            link("index.html#/" + route, "Open interactive view") + '</p>']
@@ -1053,6 +1071,11 @@ AMEND_DESCRIPTION = ("What the November 7 substitute changes in each section of 
 AMEND_STATUS = {"edited": "Edited", "new": "New", "dropped": "Dropped", "moved": "Renumbered", "unchanged": "Unchanged"}
 
 
+def record_quotes(text: str) -> str:
+    """The Congressional Record prints quotation marks as `` and ''; show them as the bill does (app.js recordQuotes)."""
+    return text.replace("``", "\u2018").replace("''", "\u2019")
+
+
 def amendments_html(core: dict) -> str:
     """The Amendments view as plain HTML for readers without JavaScript and for crawlers."""
     esc = html.escape
@@ -1071,14 +1094,11 @@ def amendments_html(core: dict) -> str:
     nav = [link("index.html", "Overview"), link("reading.html", "Bill"), link("issues.html", "Key issues"),
            link("timeline.html", "Timeline"), link("coverage.html", "Coverage")]
     c = a["counts"]
-    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
-           '<meta name="viewport" content="width=device-width, initial-scale=1">',
-           f'<title>{esc(AMEND_TITLE)} · BAAJA (S. 5653)</title><meta name="description" content="{esc(AMEND_DESCRIPTION)}">',
-           f'<link rel="canonical" href="{SITE_URL}amendments.html"><link rel="stylesheet" href="styles.css">',
-           '</head><body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
+    out = [static_head(core, "amendments", AMEND_TITLE, AMEND_DESCRIPTION),
+           '<body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
            f'<h1>{esc(AMEND_TITLE)}</h1><p>{esc(AMEND_DESCRIPTION)}</p>',
            f'<p>Updated {esc(a["as_of"])} · ' + link("index.html#/amendments", "Open interactive view") + '</p>',
-           '<p>Jump to: ' + ' · '.join(link("#" + k, v) for k, v in (("key", "Key changes"), ("substitute", "All changes"), ("reactions", "Reactions"), ("floor", "Other amendments"))) + '</p>',
+           '<p>Jump to: ' + ' · '.join(link("#" + k, v) for k, v in (("key", "Key changes"), ("substitute", "All changes"), ("reactions", "Reactions"), ("floor", "Other amendments"), ("filed", "Filed amendments"))) + '</p>',
            '<h2 id="key">Key changes</h2><ul>' + ''.join(f'<li><a href="#sec-{esc(h["id"])}">{esc(h["label"])}, Sec. {esc(h["n"])}</a>: {esc(h["t"])} {pcite(h)}</li>' for h in a["highlights"]) + '</ul>',
            f'<h2 id="substitute">{esc(sub["title"])}</h2>',
            f'<p>{esc(sub["summary"])} ' + ' · '.join(link(s["url"], s["label"]) for s in sub["links"]) + '</p>',
@@ -1113,6 +1133,15 @@ def amendments_html(core: dict) -> str:
         for st in f.get("positions", []):
             out.append(f'<p>{esc(st["who"])} ({esc(st["stance"])}): “{esc(st["quote"])}” {link(st["url"], st["publisher"])}</p>')
         out.append('</section>')
+    filed = a.get("filed")
+    if filed:
+        out.append(f'<h2 id="filed">Filed amendments ({len(filed["items"])})</h2><p>{esc(filed["note"])} Source: {esc(filed["source"])}, {esc(filed["from"])} to {esc(filed["to"])}.</p><ul>')
+        for f in filed["items"]:
+            to = "the substitute" if f["to"] == "SA 6883" else f["to"]
+            what = f' {esc(f["subject"])}' if f.get("subject") else ""
+            out.append(f'<li id="filed-{esc(f["number"][3:])}"><strong>{esc(f["number"])}</strong>, {esc(f["sponsor"])}, {esc(f["date"])}, to {esc(to)}.{what} '
+                       f'“{esc(record_quotes(f["quote"]))}” {link(f["url"], "Congressional Record")}</li>')
+        out.append('</ul>')
     out.append('<h2 id="reactions">Reactions to the substitute</h2><p>Statements on the November 7 substitute. Positions on the bill as introduced are on the <a href="issues.html#debate">Key issues</a> page.</p>')
     for st in amendments.STANCES:
         rows = [x for x in a["reactions"] if x["stance"] == st]
@@ -1125,13 +1154,14 @@ def amendments_html(core: dict) -> str:
     return "\n".join(out + ['</main></body></html>']) + "\n"
 
 
+READING_TITLE = "Bill sections, summarized and cited"
+READING_DESCRIPTION = ("Every section of the September 30, 2026 BAAJA text (S. 5653) with a plain-language summary, "
+                       "a link to its PDF page and its full text with cited analysis.")
+
+
 def reading_html(core: dict) -> str:
     esc = html.escape
-    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
-           '<meta name="viewport" content="width=device-width,initial-scale=1">',
-           '<title>Section index · Permitting Reform</title>',
-           f'<link rel="canonical" href="{SITE_URL}reading.html">',
-           '<link rel="stylesheet" href="styles.css"></head><body>',
+    out = [static_head(core, "reading", READING_TITLE, READING_DESCRIPTION) + '<body>',
            '<main id="main"><h1>Permitting Reform: section index</h1>',
            '<p>September 30, 2026 BAAJA draft. Proposed changes; AI-assisted summaries.</p>',
            f'<p>{esc(review_coverage(core))}</p>',
