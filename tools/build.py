@@ -994,7 +994,7 @@ def reader_html(core: dict, page: str) -> str:
     elif page == "issues":
         out.append('<p>Jump to: ' + ' · '.join(link("#" + key, name) for key, name in
                    (("datacenters", "Data centers"), ("speed", "Project delays"), ("communities", "Communities"), ("debate", "Debate"),
-                    ("estimates", "Published estimates"))) + '</p>' + '<p>Senate roll calls, with every senator\'s vote, are on the ' + link("votes.html", "Senate votes") + ' page.</p>')
+                    ("estimates", "Published estimates"))) + '</p>' + '<p id="votes">Senate roll calls, with every senator\'s vote, are on the ' + link("votes.html", "Senate votes") + ' page.</p>')
         out.append('<h2>What would the bill change?</h2>')
         for h in core["overview"]["headlines"]:
             out.append(f'<h3>{esc(h["title"])}</h3>')
