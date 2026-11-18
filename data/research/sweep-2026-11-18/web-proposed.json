@@ -1,0 +1,48 @@
+{
+ "items": [
+  {
+   "date": "2026-11-17",
+   "type": "news",
+   "outlet": "Common Dreams",
+   "author": "Jake Johnson",
+   "title": "21 Senate Democrats Join GOP to End Debate on Big Oil-Backed ‘Kill Switch for Future Climate Action’",
+   "url": "https://www.commondreams.org/news/senate-invokes-cloture-baaja",
+   "summary": "Common Dreams reports that 21 Democrats joined Republicans in the 70-27 cloture vote, with Cortez Masto the one Democrat who flipped to no, and quotes Oil Change International's Elizabeth Bast calling the bill a kill switch for future climate action.",
+   "stance": "opposes",
+   "quote": {
+    "text": "BAAJA would act as a kill switch for future climate action without offering any meaningful emissions reductions",
+    "speaker": "Elizabeth Bast, executive director, Oil Change International"
+   },
+   "topics": [
+    "cloture",
+    "tribal",
+    "nepa"
+   ],
+   "sector": "media",
+   "route": "r.jina.ai"
+  },
+  {
+   "date": "2026-11-16",
+   "type": "org_statement",
+   "outlet": "Center for Progressive Reform (scholars' letter)",
+   "title": "Re: The Bipartisan American Affordability and Jobs Act of 2026 (S. 5653 / H.R. 2347): Twelve Provisions That Should Not Become Law",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "summary": "Environmental and energy law scholars write to Senate Democratic leaders that BAAJA would damage NEPA, the Clean Water Act and the Endangered Species Act; the letter is dated November 13 and was updated with more signatures on November 16.",
+   "stance": "opposes",
+   "quote": {
+    "text": "would inflict permanent, sweeping damage on the nation's core environmental laws",
+    "speaker": "Environmental and energy law scholars (letter signatories)"
+   },
+   "topics": [
+    "nepa",
+    "judicial-review"
+   ],
+   "sector": "academic",
+   "route": "r.jina.ai"
+  }
+ ],
+ "amendments": [],
+ "amendment_count": null,
+ "point_of_order": null,
+ "not_found": []
+}

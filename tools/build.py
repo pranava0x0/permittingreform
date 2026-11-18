@@ -715,7 +715,7 @@ def llms_txt(core: dict) -> str:
         f"- [{AMEND_TITLE}]({m['site_url']}amendments.html): {AMEND_DESCRIPTION}",
         f"- [Amendments JSON]({m['site_url']}data/amend.json): every section's status in the November 7 substitute, change notes with page-and-line cites in either PDF, word-level redlines, floor amendments and reactions with sources.",
         *[f"- [{title}]({m['site_url']}{page}.html): {description}" for page, (title, description) in READER_PAGES.items()],
-        f"- [No-JavaScript section index]({m['site_url']}reading.html)",
+        f"- [{READING_TITLE}]({m['site_url']}reading.html): {READING_DESCRIPTION} No JavaScript needed.",
         f"- [Full text and analysis]({m['site_url']}llms-full.txt): all sections, comparisons, timeline, people and media with citations.",
         f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
         f"- [Bill paragraph JSON]({m['site_url']}data/bill.json): section number to [printed page, line, indent level, text] arrays.",
@@ -944,6 +944,27 @@ READER_PAGES = {
 }
 
 
+def static_head(core: dict, page: str, title: str, description: str) -> str:
+    """The <head> of a no-JavaScript page: title, description, canonical, Open Graph and a WebPage record."""
+    esc = html.escape
+    url = f"{SITE_URL}{page}.html"
+    record = {"@context": "https://schema.org", "@type": "WebPage", "name": title, "description": description, "url": url,
+              "dateModified": core["meta"]["as_of"], "inLanguage": "en",
+              "isPartOf": {"@type": "WebSite", "name": "Permitting Reform", "url": SITE_URL},
+              "about": {"@type": "Legislation", "name": "Bipartisan American Affordability and Jobs Act of 2026",
+                        "legislationIdentifier": "S. 5653", "legislationJurisdiction": "US"}}
+    return "".join([
+        '<!doctype html><html lang="en"><head><meta charset="utf-8">',
+        '<meta name="viewport" content="width=device-width, initial-scale=1">\n',
+        f'<title>{esc(title)} · BAAJA (S. 5653)</title><meta name="description" content="{esc(description)}">\n',
+        f'<link rel="canonical" href="{url}"><link rel="stylesheet" href="styles.css">\n',
+        '<meta property="og:type" content="article"><meta property="og:site_name" content="Permitting Reform">',
+        f'<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(description)}">',
+        f'<meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">\n',
+        '<script type="application/ld+json">' + json.dumps(record, ensure_ascii=False).replace("</", "<\\/") + '</script>\n',
+        '</head>'])
+
+
 def reader_html(core: dict, page: str) -> str:
     esc = html.escape
 
@@ -954,11 +975,8 @@ def reader_html(core: dict, page: str) -> str:
     route = {"coverage": "media", "comparisons": "compare"}.get(page, page)
     nav = [link("index.html", "Overview"), link("reading.html", "Bill")]
     nav.extend(link(key + ".html", name) for key, name in (("issues", "Key issues"), ("timeline", "Timeline"), ("coverage", "Coverage")))
-    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
-           '<meta name="viewport" content="width=device-width, initial-scale=1">',
-           f'<title>{esc(title)} · BAAJA (S. 5653)</title><meta name="description" content="{esc(description)}">',
-           f'<link rel="canonical" href="{SITE_URL}{page}.html"><link rel="stylesheet" href="styles.css">',
-           '</head><body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
+    out = [static_head(core, page, title, description),
+           '<body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
            f'<h1>{esc(title)}</h1><p>{esc(description)}</p>',
            f'<p>{esc(core["meta"]["short_title"])} · Updated {esc(core["meta"]["as_of"])} · ' +
            link("index.html#/" + route, "Open interactive view") + '</p>']
@@ -1071,11 +1089,8 @@ def amendments_html(core: dict) -> str:
     nav = [link("index.html", "Overview"), link("reading.html", "Bill"), link("issues.html", "Key issues"),
            link("timeline.html", "Timeline"), link("coverage.html", "Coverage")]
     c = a["counts"]
-    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
-           '<meta name="viewport" content="width=device-width, initial-scale=1">',
-           f'<title>{esc(AMEND_TITLE)} · BAAJA (S. 5653)</title><meta name="description" content="{esc(AMEND_DESCRIPTION)}">',
-           f'<link rel="canonical" href="{SITE_URL}amendments.html"><link rel="stylesheet" href="styles.css">',
-           '</head><body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
+    out = [static_head(core, "amendments", AMEND_TITLE, AMEND_DESCRIPTION),
+           '<body><main><nav aria-label="Tracker pages">' + ' · '.join(nav) + '</nav>',
            f'<h1>{esc(AMEND_TITLE)}</h1><p>{esc(AMEND_DESCRIPTION)}</p>',
            f'<p>Updated {esc(a["as_of"])} · ' + link("index.html#/amendments", "Open interactive view") + '</p>',
            '<p>Jump to: ' + ' · '.join(link("#" + k, v) for k, v in (("key", "Key changes"), ("substitute", "All changes"), ("reactions", "Reactions"), ("floor", "Other amendments"))) + '</p>',
@@ -1125,13 +1140,14 @@ def amendments_html(core: dict) -> str:
     return "\n".join(out + ['</main></body></html>']) + "\n"
 
 
+READING_TITLE = "Bill sections, summarized and cited"
+READING_DESCRIPTION = ("Every section of the September 30, 2026 BAAJA text (S. 5653) with a plain-language summary, "
+                       "a link to its PDF page and its full text with cited analysis.")
+
+
 def reading_html(core: dict) -> str:
     esc = html.escape
-    out = ['<!doctype html><html lang="en"><head><meta charset="utf-8">',
-           '<meta name="viewport" content="width=device-width,initial-scale=1">',
-           '<title>Section index · Permitting Reform</title>',
-           f'<link rel="canonical" href="{SITE_URL}reading.html">',
-           '<link rel="stylesheet" href="styles.css"></head><body>',
+    out = [static_head(core, "reading", READING_TITLE, READING_DESCRIPTION) + '<body>',
            '<main id="main"><h1>Permitting Reform: section index</h1>',
            '<p>September 30, 2026 BAAJA draft. Proposed changes; AI-assisted summaries.</p>',
            f'<p>{esc(review_coverage(core))}</p>',
