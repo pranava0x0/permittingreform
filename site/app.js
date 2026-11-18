@@ -318,7 +318,7 @@
       rv.length ? card("#/positions/votes", "Senate votes", rv.slice().reverse().map((v) => shortDate(v.date) + ": " + v.yeas + " to " + v.nays).join(" · ")) : null,
       re && re.count ? card("#/positions/estimates", "Published estimates", re.count + " figures from " + re.publishers + " publishers") : null);
     const about = el("p", { class: "note overview-note" }, "This is a proposed law. " + num(m.pages) + " pages, " + m.sections + " sections, released " + S.formatDate(m.released) + ". ",
-      pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.status.points[0].source.url, "Senate EPW release"), " · ",
+      pdfLink(1, "Bill PDF", "plain"), " · ", ext(o.summary.source.url, "Senate EPW release"), " · ",
       el("a", { href: "#/method" }, D.checks.inference && (D.checks.inference.stale || D.checks.inference.flagged || D.checks.inference.unchecked) ? "Review incomplete" : "Review status"));
 
     const status = el("section", { class: "block", "aria-labelledby": "h-status" },
