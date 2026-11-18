@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-17",
+ "checked": "2026-11-18",
  "results": {
   "http://legal-planet.org/2026/11/08/the-revised-permitting-reform-bill/": {
    "cls": "ok",
@@ -456,6 +456,15 @@
    "status": 200,
    "where": [
     "amend.oci.source"
+   ]
+  },
+  "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti"
    ]
   },
   "https://ctmirror.org/2026/07/22/tweed-new-haven-airport-expansion/": {
@@ -1219,6 +1228,16 @@
     "media.2026-11-06-heatmap-levin"
    ]
   },
+  "https://heatmap.news/politics/nhpa-permitting-bill": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-heatmap-news-how-tribal-rights-became-central-to-the-permitt",
+    "amend.sa-6882.source"
+   ]
+  },
   "https://heatmap.news/politics/permitting-bill-nepa": {
    "cls": "ok",
    "kind": "page",
@@ -1426,6 +1445,15 @@
    "where": [
     "people.hakeem-jeffries.source",
     "people.hakeem-jeffries.quote"
+   ]
+  },
+  "https://kbft.org/congress-returns-to-work-with-indian-country-on-the-agenda-and-on-the-menu/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-kbft-congress-returns-to-work-with-indian-country-on-the-age"
    ]
   },
   "https://kfgo.com/?p=1372744": {
@@ -1650,6 +1678,15 @@
    "where": [
     "takes.2026-10-26-oilchange-1",
     "media.2026-10-26-oilchange-disaster-for-communities"
+   ]
+  },
+  "https://okenergytoday.com/2026/11/stage-set-for-vote-this-week-on-permitting-reform-act/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "little readable text (script-rendered page)",
+   "status": 202,
+   "where": [
+    "media.2026-11-17-oklahoma-energy-today-stage-set-for-vote-this-week-on-permit"
    ]
   },
   "https://oklahoma.gov/governor/newsroom/newsroom/2026/governor-stitt-appoints-alan-armstrong-as-us-senator.html": {
@@ -1905,6 +1942,16 @@
     "people.joey-sanchez.source",
     "people.joey-sanchez.quote",
     "media.2026-11-10-source-new-mexico-all-pueblo-council-of"
+   ]
+  },
+  "https://sourcenm.com/2026/11/17/new-mexico-us-sen-heinrichs-permitting-bill-takes-another-step-toward-us-senate-passage/": {
+   "browser": "2026-11-18",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-11-17-source-new-mexico-new-mexico-us-sen-heinrich-s-permitting-bi"
    ]
   },
   "https://subscriber.politicopro.com/article/2026/07/new-england-gas-crunch-puts-sheldon-whitehouse-in-a-bind-pro-00992265": {
@@ -2402,6 +2449,15 @@
     "media.2026-11-09-clean-energy-and-signon-letter-bipartisan-american"
    ]
   },
+  "https://www.canarymedia.com/articles/politics/permitting-reform-uncertain-bet": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-canary-media-permitting-reform-is-a-big-controversial-bet-fo"
+   ]
+  },
   "https://www.canarymedia.com/articles/transmission/senate-permitting-bill-power-lines": {
    "cls": "ok",
    "kind": "page",
@@ -2559,6 +2615,15 @@
     "media.2026-11-10-common-dreams-days-after-midterm-blowout"
    ]
   },
+  "https://www.commondreams.org/news/senate-invokes-cloture-baaja": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-common-dreams-21-senate-democrats-join-gop-to-end-debate-on"
+   ]
+  },
   "https://www.commondreams.org/news/senate-permitting-bill": {
    "cls": "ok",
    "kind": "page",
@@ -2650,7 +2715,6 @@
    "note": "",
    "status": 200,
    "where": [
-    "overview.next",
     "timeline.2026-11-16-senate-cloture-substitute.source"
    ]
   },
@@ -2689,6 +2753,16 @@
    "status": 200,
    "where": [
     "timeline.2026-11-10-senate-motion-to-proceed.source"
+   ]
+  },
+  "https://www.dailypress.senate.gov/tuesday-november-17-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.next",
+    "amend.merkley-point-of-order.source"
    ]
   },
   "https://www.dailypress.senate.gov/wednesday-november-11-2026/": {
@@ -3852,6 +3926,15 @@
     "compare.data-center-siting.Data center construction on federal land (S. 5658)"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5471.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.sa-6882.source"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf": {
    "cls": "ok",
    "kind": "pdf",
@@ -3861,6 +3944,36 @@
     "people.mike-lee.source",
     "people.mike-lee.quote",
     "media.2026-11-10-congressional-record-senate-congressional-record-senate-november"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-congressional-record-energy-senate-floor-remarks"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "timeline.2026-11-17-managers-amendment-sa-7022.source",
+    "amend.filed-to-sa-6883.source",
+    "amend.sa-7022.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5727-3.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.merkley-point-of-order.source"
    ]
   },
   "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf": {
@@ -4166,6 +4279,16 @@
    "status": 200,
    "where": [
     "timeline.2025-07-15-interior-memo-secretary-review-wind-solar.source"
+   ]
+  },
+  "https://www.kosu.org/news/2026-11-18/senate-expected-to-vote-on-permitting-bill-tribal-leaders-in-oklahoma-beyond-oppose": {
+   "browser": "2026-11-18",
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-11-18-kosu-senate-expected-to-vote-on-permitting-bill-tribal-leade"
    ]
   },
   "https://www.kslaw.com/Insights/Articles/The-Senate-Permitting-Deal-What-It-Would-Change-and-What-to-Do-Now": {
@@ -5216,6 +5339,7 @@
    "note": "",
    "status": 200,
    "where": [
+    "overview.status",
     "timeline.2026-11-16-senate-cloture-substitute.source",
     "votes.264"
    ]
@@ -5292,6 +5416,15 @@
    "status": 200,
    "where": [
     "speed.interconnection.3"
+   ]
+  },
+  "https://www.theguardian.com/us-news/2026/nov/16/al-gore-baaja-cop-31-climate": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-the-guardian-passing-bill-to-speed-up-gas-projects-and-datac"
    ]
   },
   "https://www.thirdway.org/blog/one-baaja-blast-please": {
@@ -5953,6 +6086,15 @@
     "media.2026-11-16-x-apienergy-congress-has-a-historic-opportunity-to-overha"
    ]
   },
+  "https://x.com/APIenergy/status/2122780549362393489": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-apienergy-it-s-a-historic-opportunity"
+   ]
+  },
   "https://x.com/AidanRMackenzie": {
    "cls": "ok",
    "kind": "page",
@@ -6024,6 +6166,24 @@
    "status": 200,
    "where": [
     "media.2026-11-15-x-aidanrmackenzie-congress-is-on-the-cusp-of-passing-transforma"
+   ]
+  },
+  "https://x.com/AidanRMackenzie/status/2122816886450610527": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-aidanrmackenzie-pretty-big-news-the-funding-for-the-hist"
+   ]
+  },
+  "https://x.com/AidanRMackenzie/status/2122877582957768809": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-aidanrmackenzie-senator-merkley-s-sign-is-false-baaja-do"
    ]
   },
   "https://x.com/AlecStapp/status/2079946048672293354": {
@@ -6198,6 +6358,15 @@
     "media.2026-11-15-x-davidpomerantz-baaja-is-just-a-start-for-utility-accountabil"
    ]
   },
+  "https://x.com/DavidPomerantz/status/2122834711341089235": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-davidpomerantz-no-substantive-changes-to-transmission-h"
+   ]
+  },
   "https://x.com/EPWGOP/status/2113355868825661502": {
    "cls": "ok",
    "kind": "x",
@@ -6214,6 +6383,15 @@
    "status": 200,
    "where": [
     "media.2026-11-16-x-epwgop-america-needs-to-build-and-we-can-get-there-b"
+   ]
+  },
+  "https://x.com/EPWGOP/status/2122838444296847848": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-epwgop-permitting-reform-isn-t-just-holding-bac"
    ]
   },
   "https://x.com/Earthworks/status/2113330009255420379": {
@@ -6241,6 +6419,15 @@
    "status": 200,
    "where": [
     "media.2026-11-16-x-energydems-baaja-helps-america-build-creating-good-payin"
+   ]
+  },
+  "https://x.com/EnviroIntegrity/status/2122766724722565417": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-envirointegrity-breaking-news-eip-strongly-opposes-the-p"
    ]
   },
   "https://x.com/FlintDibble/status/2120589366859075827": {
@@ -6406,6 +6593,15 @@
     "media.2026-11-12-x-leaderjohnthune-reforming-the-permitting-process-will-help-ad"
    ]
   },
+  "https://x.com/LeaderJohnThune/status/2122737183102836765": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-leaderjohnthune-the-bipartisan-american-affordability-an"
+   ]
+  },
   "https://x.com/NATHPO_org/status/2112359143525003621": {
    "cls": "ok",
    "kind": "x",
@@ -6477,6 +6673,33 @@
    "status": 200,
    "where": [
     "media.2026-11-16-x-nathpo_org-baaja-the-senate-s-permitting-reform-bill-is"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2122484719271153853": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-x-nathpo_org-nathpo-executive-director-ira-l-matt-s-l"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2122763859526385692": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-nathpo_org-thanks-to-senatorcantwell-for-speaking-o"
+   ]
+  },
+  "https://x.com/NATHPO_org/status/2122806735253741678": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-nathpo_org-in-an-ltte-posted-this-morning-nathpo-ex"
    ]
   },
   "https://x.com/NicoPortuondo/status/2110422485111857425": {
@@ -6693,6 +6916,34 @@
    "status": 200,
    "where": [
     "media.2026-11-16-x-nicoportuondo-the-list-however-indicates-another-manager-s"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2122717171826790663": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-nicoportuondo-thune-speaks-in-favor-of-baaja-on-senate"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2122762503604097027": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-nicoportuondo-sen-cantwell-says-some-permitting-reform"
+   ]
+  },
+  "https://x.com/NicoPortuondo/status/2122791698564817322": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-nicoportuondo-sen-capito-says-the-upcoming-manager-s-a",
+    "amend.sa-7022.source"
    ]
   },
   "https://x.com/PNWAgNetwork/status/2122443999374127362": {
@@ -7463,6 +7714,63 @@
     "media.2026-11-16-x-siegelscribe-vote-coalition-largely-held-up-but-this-isn-t"
    ]
   },
+  "https://x.com/SiegelScribe/status/2122667684777402860": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-siegelscribe-scoop-in-punchbowlnews-am-senate-negotia"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2122744229516485116": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-siegelscribe-update-sen-schiff-is-still-pushing-for-c",
+    "amend.sa-6882.source"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2122775557670572148": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-siegelscribe-senate-epw-top-dem-sheldon-whitehouse-te"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2122776169334620360": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-siegelscribe-on-the-second-round-of-managers-amendmen"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2122801049446580509": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-siegelscribe-scoop-senate-permitting-reform-negotiato",
+    "amend.sa-7022.source"
+   ]
+  },
+  "https://x.com/SiegelScribe/status/2122824853040312440": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-siegelscribe-more-in-pm-epw-ranker-sen-whitehouse-tol",
+    "amend.sa-6882.source"
+   ]
+  },
   "https://x.com/SteveForbesCEO/status/2121333893328499058": {
    "cls": "ok",
    "kind": "x",
@@ -7563,6 +7871,15 @@
    "status": 200,
    "where": [
     "people.brian-schatz.social.x"
+   ]
+  },
+  "https://x.com/ceidotorg/status/2122769248279826607": {
+   "cls": "ok",
+   "kind": "x",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-17-x-ceidotorg-the-senate-bill-contains-no-geographic-l"
    ]
   },
   "https://x.com/citizensclimate/status/2114746787101594004": {
