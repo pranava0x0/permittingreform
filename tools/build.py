@@ -1071,6 +1071,11 @@ AMEND_DESCRIPTION = ("What the November 7 substitute changes in each section of 
 AMEND_STATUS = {"edited": "Edited", "new": "New", "dropped": "Dropped", "moved": "Renumbered", "unchanged": "Unchanged"}
 
 
+def record_quotes(text: str) -> str:
+    """The Congressional Record prints quotation marks as `` and ''; show them as the bill does (app.js recordQuotes)."""
+    return text.replace("``", "\u2018").replace("''", "\u2019")
+
+
 def amendments_html(core: dict) -> str:
     """The Amendments view as plain HTML for readers without JavaScript and for crawlers."""
     esc = html.escape
@@ -1135,7 +1140,7 @@ def amendments_html(core: dict) -> str:
             to = "the substitute" if f["to"] == "SA 6883" else f["to"]
             what = f' {esc(f["subject"])}' if f.get("subject") else ""
             out.append(f'<li id="filed-{esc(f["number"][3:])}"><strong>{esc(f["number"])}</strong>, {esc(f["sponsor"])}, {esc(f["date"])}, to {esc(to)}.{what} '
-                       f'“{esc(f["quote"])}” {link(f["url"], "Congressional Record")}</li>')
+                       f'“{esc(record_quotes(f["quote"]))}” {link(f["url"], "Congressional Record")}</li>')
         out.append('</ul>')
     out.append('<h2 id="reactions">Reactions to the substitute</h2><p>Statements on the November 7 substitute. Positions on the bill as introduced are on the <a href="issues.html#debate">Key issues</a> page.</p>')
     for st in amendments.STANCES:

@@ -1921,6 +1921,11 @@
       el("p", { class: "where" }, f.sources.map((s, i) => [i ? " · " : null, ext(s.url, s.publisher)])));
   }
 
+  /* The Record prints quotation marks as `` and ''; show them as the printed bill does. */
+  function recordQuotes(t) {
+    return t.replace(/``/g, "‘").replace(/''/g, "’");
+  }
+
   /* Every amendment filed to the substitute or the bill, by sponsor, each linked to its text in the Congressional Record. */
   function filedSection(F) {
     const bySponsor = new Map();
@@ -1937,7 +1942,7 @@
         el("ul", { class: "am-reactions" }, items.map((a) => el("li", { class: "am-reaction", id: "filed-" + a.number.replace(/\D/g, "") },
           el("p", { class: "am-who" }, el("strong", null, a.number), " ", el("span", { class: "where" }, S.formatDate(a.date) + " · to " + (a.to === "SA 6883" ? "the substitute" : a.to))),
           a.subject ? el("p", null, a.subject) : null,
-          el("blockquote", null, "“" + a.quote + "”"),
+          el("blockquote", null, "“" + recordQuotes(a.quote) + "”"),
           el("p", { class: "where" }, ext(a.url, "Text in the Congressional Record")))))))));
   }
 
