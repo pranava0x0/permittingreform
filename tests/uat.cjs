@@ -67,8 +67,9 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
           const height = await page.evaluate(()=>document.documentElement.scrollHeight);
           /* Positions went from 4 to 4.75 on 2026-11-15: it gained Senate votes and Published estimates (both folded,
              both one tap from the Overview and from the jump row), and letters past the newest six moved behind a chip.
-             Senate votes moved to their own page under Bill on 2026-11-18. */
-          const budget = {overview:2.5,bill:2.5,compare:11,'compare/data-center-bills':4,communities:2,'communities/tribes':4,datacenters:5,speed:4,timeline:2,positions:4.75,votes:3,people:4.5,media:5};
+             Senate votes moved to their own page under Bill on 2026-11-18.
+             Overview went from 2.5 to 2.55 on 2026-11-19: its opening line now states the last floor action and its result. */
+          const budget = {overview:2.55,bill:2.5,compare:11,'compare/data-center-bills':4,communities:2,'communities/tribes':4,datacenters:5,speed:4,timeline:2,positions:4.75,votes:3,people:4.5,media:5};
           if (width < 1024 && budget[route]) assert.ok(height <= page.viewportSize().height * budget[route], route+' scroll budget at '+width+': '+height);
           results.push({width,theme,route,count,height});
           if (theme === 'light' && [375,1280].includes(width) && route === 'compare/data-center-bills')

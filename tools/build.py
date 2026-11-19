@@ -706,6 +706,7 @@ def llms_txt(core: dict) -> str:
         "## Status",
         "",
         *(f"- {p['text']} (source: {p['source']['label']}, {p['source']['url']})" for p in core["overview"]["status"]["points"]),
+        *([f"- Latest, {core['overview']['latest']['date']}: {core['overview']['latest']['text']} (source: {core['overview']['latest']['source']['url']})"] if core["overview"].get("latest") else []),
         *([f"- Next step, {core['overview']['next']['date']}: {core['overview']['next']['text']} (source: {core['overview']['next']['source']['url']})"] if core["overview"].get("next") else []),
         "",
         "## Reading and retrieval",
@@ -1049,7 +1050,9 @@ def reader_html(core: dict, page: str) -> str:
     elif page == "votes":
         votes, party = core["votes"], dict(PARTIES)
         out.append(f'<p>{esc(votes["note"])}</p>')
-        upcoming = core["overview"].get("next")
+        latest, upcoming = core["overview"].get("latest"), core["overview"].get("next")
+        if latest:
+            out.append(f'<p><strong>Latest:</strong> {esc(latest["date"])}: {esc(latest["text"])} ' + link(latest["source"]["url"], latest["source"]["label"]) + '</p>')
         if upcoming:
             out.append(f'<p><strong>Next:</strong> {esc(upcoming["date"])}: {esc(upcoming["text"])} ' + link(upcoming["source"]["url"], upcoming["source"]["label"]) + '</p>')
         for rc in reversed(votes["roll_calls"]):
@@ -1214,7 +1217,7 @@ def main() -> int:
     # What a crawler, an answer engine or a reader without JavaScript gets from the home page:
     # the summary, where the bill stands, the next step and each headline provision, all sourced.
     overview = core["overview"]
-    summary, upcoming = overview["summary"], overview.get("next")
+    summary, latest, upcoming = overview["summary"], overview.get("latest"), overview.get("next")
 
     def sourced(record: dict) -> str:
         source = record["source"]
@@ -1222,7 +1225,7 @@ def main() -> int:
         return f'{date}{html.escape(record["text"])} <a href="{html.escape(source["url"])}">{html.escape(source["label"])}</a>'
 
     content = [f'<h1>{html.escape(core["meta"]["short_title"])}</h1>']
-    content += [f"<p>{sourced(record)}</p>" for record in (summary, upcoming) if record]
+    content += [f"<p>{sourced(record)}</p>" for record in (summary, latest, upcoming) if record]
     content += ["<h2>Status</h2>", "<ul>", *(f"<li>{sourced(p)}</li>" for p in overview["status"]["points"]), "</ul>"]
     content += ["<h2>Senate votes</h2>", "<ul>",
                 *(f'<li>{html.escape(rc["date"])}: {html.escape(rc["question"])}. {rc["yeas"]} yea, {rc["nays"]} nay, {rc["not_voting"]} not voting. '
