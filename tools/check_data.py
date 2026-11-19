@@ -53,8 +53,9 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     out.append(("overview summary", o["summary"]["text"]))
     out.append(("overview money note", o["money_note"]))
     out += [("overview status", p["text"]) for p in o["status"]["points"]]
-    if o.get("next"):
-        out.append(("overview next", o["next"]["text"]))
+    for key in ("latest", "next"):
+        if o.get(key):
+            out.append((f"overview {key}", o[key]["text"]))
     out += [(f"overview headline {h['id']}", h["title"] + ". " + h["text"]) for h in o["headlines"]]
     out += [("overview clock", c["what"]) for c in o["clocks"]] + [("overview money", c["what"]) for c in o["money"]]
     for g in core["compare"]["groups"]:
@@ -317,9 +318,12 @@ def check(core: dict) -> tuple[list[str], dict]:
     summ = core["overview"].get("summary") or {}
     if not summ.get("text") or not http(summ.get("source", {}).get("url")):
         errs.append("overview summary: needs text and a source link")
-    nxt = core["overview"].get("next")
-    if nxt and (not DATE_RE.match(nxt.get("date", "")) or not http(nxt.get("source", {}).get("url"))):
-        errs.append("overview next: needs a YYYY-MM-DD date and a source link")
+    for key in ("latest", "next"):
+        rec = core["overview"].get(key)
+        if rec and (not DATE_RE.match(rec.get("date", "")) or not http(rec.get("source", {}).get("url"))):
+            errs.append(f"overview {key}: needs a YYYY-MM-DD date and a source link")
+    if core["overview"].get("latest"):
+        dated("overview latest", core["overview"]["latest"]["date"])
     for t in (core.get("takes") or {}).get("takes", []):
         dated(f"take {t['id']}", t["date"])
         if not http(t["url"]):

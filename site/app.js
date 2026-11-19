@@ -275,11 +275,17 @@
     return new Date().toLocaleDateString("sv"); // Swedish format is YYYY-MM-DD
   }
 
-  /* The scheduled vote, on the Overview and above the roll calls. A date in the past says so, rather than reading as upcoming. */
+  /* Where the bill stands, on the Overview and above the roll calls: the last floor action with its
+     result, then the next vote while its date is today or later. A past "next" is dropped rather than
+     shown as "previously scheduled" with no outcome; the latest action already says what happened. */
   function nextStep() {
+    const l = D.overview.latest;
     const n = D.overview.next;
-    return n ? el("p", { class: "next-step" }, el("strong", null, n.date >= localToday() ? "Next Senate vote: " : "Previously scheduled: "),
-      ext(n.source.url, S.formatDate(n.date)), ". " + n.text) : null;
+    const upcoming = n && n.date >= localToday() ? n : null;
+    if (!l && !upcoming) return null;
+    return el("p", { class: "next-step" },
+      l ? [el("strong", null, "Latest, " + S.formatDate(l.date).replace(/, \d{4}$/, "") + ": "), l.text + " ", ext(l.source.url, l.source.label), upcoming ? " " : null] : null,
+      upcoming ? [el("strong", null, "Next: "), upcoming.text + " ", ext(upcoming.source.url, upcoming.source.label)] : null);
   }
 
   /* "What others say" links for sections that have outside readings. */

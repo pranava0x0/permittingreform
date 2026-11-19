@@ -171,12 +171,20 @@
    }
   ]
  },
- "next": {
+ "latest": {
   "date": "2026-11-18",
-  "text": "The vote on passing the bill. The Senate had not set its time as of 3:20 p.m. on November 18.",
+  "text": "The Senate adopted the substitute, 69 to 27, and ended debate, 65 to 31.",
   "source": {
-   "label": "Senate floor log, November 18",
-   "url": "https://www.dailypress.senate.gov/wednesday-november-18-2026/"
+   "label": "Roll call 268",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm"
+  }
+ },
+ "next": {
+  "date": "2026-11-19",
+  "text": "The passage vote, not yet scheduled on Nov. 19.",
+  "source": {
+   "label": "Floor log",
+   "url": "https://www.dailypress.senate.gov/thursday-november-19-2026/"
   }
  },
  "headlines": [

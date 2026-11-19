@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18",
+ "checked": "2026-11-19",
  "bill": {
   "total": 174,
   "verified": 174
@@ -1140,6 +1140,15 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-19-the-spokesman-review-cantwell-murray-and-northwest-tribal-le",
+   "text": "But this bill, as it’s currently drafted, is not the answer.",
+   "speaker": "Sen. Maria Cantwell, as quoted by The Spokesman-Review",
+   "url": "https://www.spokesman.com/stories/2026/nov/19/cantwell-murray-and-northwest-tribal-leaders-oppos/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-18-kosu-senate-expected-to-vote-on-permitting-bill-tribal-leade",
    "text": "Any amendment to S. 5653 merely puts lipstick on a pig",
    "speaker": "Mark Macarro, President, NCAI",
@@ -1147,6 +1156,42 @@
    "result": "browser",
    "share": 1.0,
    "note": "read in a browser on 2026-11-18"
+  },
+  {
+   "where": "media.2026-11-18-kgou-opmx-senate-expected-to-vote-on-permitting-bill-tribal",
+   "text": "Any amendment to S. 5653 merely puts lipstick on a pig",
+   "speaker": "Mark Macarro, NCAI President, as quoted by KGOU",
+   "url": "https://www.kgou.org/indigenous-news/2026-11-18/senate-expected-to-vote-on-permitting-bill-tribal-leaders-in-oklahoma-beyond-oppose",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-18-heatmap-news-the-surprising-senate-votes-in-the-bipartisan-p",
+   "text": "Mike Rounds, the junior senator from South Dakota, is the only Republican to vote no in every roll call.",
+   "speaker": "Robinson Meyer, Heatmap",
+   "url": "https://heatmap.news/daily/senate-vote-permitting-bil",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-18-common-dreams-schumer-faces-fresh-call-to-step-aside-over-la",
+   "text": "Sen. Schumer’s alignment with Republicans over a majority of his own Democratic caucus in voting to advance this terrible pro-polluter, pro-data center permitting bill is all the reason needed to demand that Schumer step down as leader of the Senate Democrats.",
+   "speaker": "Jim Walsh, policy director, Food & Water Watch, as quoted by Common Dreams",
+   "url": "https://www.commondreams.org/news/schumer-baaja",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-18-bloomberg-law-senate-permitting-legislation-advances-setting",
+   "text": "Lawmakers voted 65-31 to bring to a close debate on the bill, which would speed up permitting reviews for energy and infrastructure projects.",
+   "speaker": "Kellie Lunney, Bloomberg Law",
+   "url": "https://news.bloomberglaw.com/health-law-and-business/senate-permitting-legislation-advances-setting-up-final-push",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "media.2026-11-17-x-siegelscribe-update-sen-schiff-is-still-pushing-for-c",
@@ -7368,6 +7413,15 @@
    "note": ""
   },
   {
+   "where": "amend.floor.sa-6884-6890.1",
+   "text": "Thune Amendment No. 6884 (to Amendment No. 6883), to change the enactment date (by voice vote, Senate tabled the amendment).",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgD1039.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "amend.floor.filed-to-sa-6883.0",
    "text": "submitted an amendment intended to be proposed to amendment SA 6883",
    "speaker": "",
@@ -7378,6 +7432,15 @@
   },
   {
    "where": "amend.floor.filed-to-sa-6883.1",
+   "text": "SA 7027. Mr. VAN HOLLEN submitted an amendment intended to be proposed to amendment SA 6883",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5771.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.floor.filed-to-sa-6883.2",
    "text": "Amendments to This Amendment (113)",
    "speaker": "",
    "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/6883",
@@ -7408,6 +7471,15 @@
    "text": "I obtained the new managers' amendment text.",
    "speaker": "",
    "url": "https://x.com/SiegelScribe/status/2122801049446580509",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.floor.sa-7022.3",
+   "text": "will be included as part of the managers' amendment when we are able to adopt that.",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5729-6.htm",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -9172,6 +9244,42 @@
    "text": "On page 61, line 2 of the amendment, strike ``or''. On page 61, line 7 of the amendment, strike the period and insert ``; or''.",
    "speaker": "Sen. Merkley (D-OR)",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5726.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.filed.SA 7024",
+   "text": "Beginning on page 449, strike line 1 and all that follows through page 494, line 9, and insert the following:",
+   "speaker": "Sen. Bennet (D-CO)",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5771-3.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.filed.SA 7025",
+   "text": "On page 1 of the amendment, strike lines 13 and 14 and insert the following: (f) Accelerated Permitting for Projects Using Domestic Content.--",
+   "speaker": "Sen. Ossoff (D-GA)",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5775.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.filed.SA 7026",
+   "text": "Beginning on page 1 of the amendment, strike line 3 and all that follows through page 2, line 9, and insert the following: (5) Voluntary remand.--",
+   "speaker": "Sen. Van Hollen (D-MD)",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5777.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.filed.SA 7027",
+   "text": "At the end of section 1401(b), add the following: (5) Voluntary remand.-- (A) In general.--For a project",
+   "speaker": "Sen. Van Hollen (D-MD)",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5777-2.htm",
    "result": "verified",
    "share": 1.0,
    "note": ""

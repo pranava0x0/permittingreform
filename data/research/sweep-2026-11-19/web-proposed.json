@@ -1,0 +1,151 @@
+{
+ "items": [
+  {
+   "date": "2026-11-18",
+   "type": "news",
+   "outlet": "Bloomberg Law",
+   "author": "Kellie Lunney",
+   "title": "Senate Permitting Legislation Advances, Setting up Final Push",
+   "url": "https://news.bloomberglaw.com/health-law-and-business/senate-permitting-legislation-advances-setting-up-final-push",
+   "summary": "Lunney reports the Senate voted 65-31 to close debate on the bill, approved another managers' amendment 69-27, and expects a final passage vote early Friday.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Lawmakers voted 65-31 to bring to a close debate on the bill, which would speed up permitting reviews for energy and infrastructure projects.",
+    "speaker": "Kellie Lunney, Bloomberg Law"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media",
+   "route": "direct"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "The Surprising Senate Votes in the Bipartisan Permitting Bill",
+   "url": "https://heatmap.news/daily/senate-vote-permitting-bil",
+   "summary": "Meyer tallies who has stayed with or left the bill across the cloture votes, noting Hawley and several Democrats voted no on the Nov. 18 cloture vote.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Mike Rounds, the junior senator from South Dakota, is the only Republican to vote no in every roll call.",
+    "speaker": "Robinson Meyer, Heatmap"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media",
+   "route": "direct"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "gov_document",
+   "outlet": "U.S. Senate Daily Press",
+   "title": "Wednesday, November 18, 2026",
+   "url": "https://www.dailypress.senate.gov/wednesday-november-18-2026/",
+   "summary": "The Senate's floor log records the 70-26 waiver of the Merkley budget point of order, 69-27 adoption of the Capito substitute #6883, and 65-31 cloture on H.R. 2347.",
+   "stance": "reporting",
+   "quote": {
+    "text": "By a vote of 70-26, the Senate agreed to the motion to waive the Budget Act with respect to the Merkley budget point-of-order in relation to Capito substitute amendment #6883 to H.R. 2347, the legislative vehicle for permitting reform.",
+    "speaker": "U.S. Senate Daily Press"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "congress",
+   "route": "direct"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "news",
+   "outlet": "KGOU / OPMX",
+   "author": "Sarah Liese",
+   "title": "Senate expected to vote on permitting bill tribal leaders in Oklahoma, beyond oppose",
+   "url": "https://www.kgou.org/indigenous-news/2026-11-18/senate-expected-to-vote-on-permitting-bill-tribal-leaders-in-oklahoma-beyond-oppose",
+   "summary": "Liese reports tribal leaders including Muscogee Nation Principal Chief David Hill and NCAI President Mark Macarro oppose the bill's Section 106 changes ahead of the final vote.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Any amendment to S. 5653 merely puts lipstick on a pig",
+    "speaker": "Mark Macarro, NCAI President, as quoted by KGOU"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media",
+   "route": "direct"
+  },
+  {
+   "date": "2026-11-19",
+   "type": "news",
+   "outlet": "The Spokesman-Review",
+   "author": "Orion Donovan Smith",
+   "title": "Cantwell, Murray and Northwest tribal leaders oppose bipartisan permitting reform bill as it nears Senate passage",
+   "url": "https://www.spokesman.com/stories/2026/nov/19/cantwell-murray-and-northwest-tribal-leaders-oppos/",
+   "summary": "Donovan Smith reports Sen. Cantwell and Northwest tribal leaders made a last appeal against the bill's Section 106 changes, with Murray, Wyden and Merkley also opposed.",
+   "stance": "reporting",
+   "quote": {
+    "text": "But this bill, as it’s currently drafted, is not the answer.",
+    "speaker": "Sen. Maria Cantwell, as quoted by The Spokesman-Review"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media",
+   "route": "direct"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "news",
+   "outlet": "Common Dreams",
+   "author": "Stephen Prager",
+   "title": "Schumer Faces Fresh Call to Step Aside Over Latest Vote With GOP on Polluter-Friendly Permitting Bill",
+   "url": "https://www.commondreams.org/news/schumer-baaja",
+   "summary": "Prager reports Food & Water Watch's Jim Walsh called for Sen. Schumer to step down as Democratic leader after he was among 14 Democrats voting for cloture 65-31.",
+   "stance": "opposes",
+   "quote": {
+    "text": "Sen. Schumer’s alignment with Republicans over a majority of his own Democratic caucus in voting to advance this terrible pro-polluter, pro-data center permitting bill is all the reason needed to demand that Schumer step down as leader of the Senate Democrats.",
+    "speaker": "Jim Walsh, policy director, Food & Water Watch, as quoted by Common Dreams"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media",
+   "route": "direct"
+  }
+ ],
+ "not_found": [
+  {
+   "what": "The Hill, Senate advances major permitting reform bill (thehill.com/policy/energy-environment/6227652-baaja-bipartisan-permitting-reform-bill-vote/)",
+   "why": "403 to curl; r.jina.ai blocked thehill.com until Nov 19 14:49 UTC"
+  },
+  {
+   "what": "Source NM, Heinrich permitting bill takes another step (Nov 17)",
+   "why": "403 to curl; also already in held-urls and dated before window"
+  },
+  {
+   "what": "newsfromthestates.com/node/438745 and /438267",
+   "why": "Cloudflare challenge page (403), not readable"
+  },
+  {
+   "what": "Brushwood Media Network / Center Square, Senate passes energy permitting overhaul, sends to House (Nov 19)",
+   "why": "Fetched, but it reports the 65-31 cloture vote as final passage, contradicting the Senate Daily Press log; excluded as inaccurate"
+  },
+  {
+   "what": "Tangle, The Senate considers permitting reform (Nov 18)",
+   "why": "Fetched but body is members-only; no quotable text beyond the intro, which is pre-vote"
+  },
+  {
+   "what": "Senator press releases and floor statements (Capito, Lee, Whitehouse, Heinrich, Merkley, Schiff, Markey, Padilla, Wyden, Sanders, Hawley, Rounds) dated Nov 18 or later",
+   "why": "Search found none indexed; the EPW/Capito release found is dated Nov 9 and the Merkley statement Nov 9 (both pre-window, Merkley held)"
+  },
+  {
+   "what": "Utility Dive, E&E News, POLITICO, Reuters, AP, Axios, Roll Call, Latitude Media coverage of Nov 18 votes",
+   "why": "Searches surfaced no Nov 18 or later articles from these outlets"
+  },
+  {
+   "what": "Trade group and environmental group statements reacting to Nov 18 votes",
+   "why": "None found dated Nov 18 or later; NCAI statement found is dated Nov 16"
+  }
+ ]
+}

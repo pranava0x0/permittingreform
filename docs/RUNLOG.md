@@ -71,3 +71,9 @@ UAT found the Overview's "Senate EPW release" link pointing at a roll call (also
 Added roll calls 266 to 268 from the Senate's XML: the Senate waived Merkley's budget point of order 70 to 26, adopted the substitute 69 to 27 and ended debate on the bill 65 to 31. Updated the amendment statuses, the Overview, the timeline and the next step (the passage vote, time not yet set).
 
 UAT found the Positions page over its phone scroll budget, since each roll call adds a row, and the stated-position table about to show three columns all headed "Nov 18 vote". The votes moved off Debate to their own Votes page under Bill (`#/votes`, with a `votes.html` text edition), and each column now names its roll call. `#/positions/votes` redirects. Tools: Python, the Senate floor log and roll-call XML, Playwright. No subagents.
+
+## November 19, 2026: the November 18 Record
+
+Read the Congressional Record for November 18 on govinfo and the Senate floor log for November 19. SA 7022 had not been acted on; the Senate tabled SA 6884 and SA 6886 by voice vote, and SA 6885 and SA 6887 fell with them. Added the four amendments filed November 18 (SA 7024 to 7027; 176 in all) and moved the next step to the November 19 session, where votes were expected but not yet scheduled at 9 a.m.
+
+Mapped SA 7022's 14 edit instructions to sections of the substitute, with all three readings for each section it revises (`data/research/sa-7022-map.md`). Added five coverage items. Tools: two Sonnet research agents (map, 198K tokens; news, 170K tokens), govinfo, the Senate floor log, Python and Playwright.

@@ -9844,6 +9844,86 @@
     "congress"
    ],
    "sector": "media"
+  },
+  {
+   "date": "2026-11-18",
+   "type": "news",
+   "outlet": "Bloomberg Law",
+   "author": "Kellie Lunney",
+   "title": "Senate Permitting Legislation Advances, Setting up Final Push",
+   "url": "https://news.bloomberglaw.com/health-law-and-business/senate-permitting-legislation-advances-setting-up-final-push",
+   "summary": "Bloomberg Law reports the 65-31 vote to end debate and says a final passage vote is expected early Friday unless senators agree to an earlier time.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Lawmakers voted 65-31 to bring to a close debate on the bill, which would speed up permitting reviews for energy and infrastructure projects.",
+    "speaker": "Kellie Lunney, Bloomberg Law"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media",
+   "id": "2026-11-18-bloomberg-law-senate-permitting-legislation-advances-setting",
+   "verified": true
+  },
+  {
+   "date": "2026-11-18",
+   "type": "news",
+   "outlet": "Heatmap News",
+   "author": "Robinson Meyer",
+   "title": "The Surprising Senate Votes in the Bipartisan Permitting Bill",
+   "url": "https://heatmap.news/daily/senate-vote-permitting-bil",
+   "summary": "Meyer tallies who has stayed with or left the bill across the cloture votes, noting Hawley and several Democrats voted no on the Nov. 18 cloture vote.",
+   "stance": "reporting",
+   "quote": {
+    "text": "Mike Rounds, the junior senator from South Dakota, is the only Republican to vote no in every roll call.",
+    "speaker": "Robinson Meyer, Heatmap"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media",
+   "id": "2026-11-18-heatmap-news-the-surprising-senate-votes-in-the-bipartisan-p",
+   "verified": true
+  },
+  {
+   "date": "2026-11-19",
+   "type": "news",
+   "outlet": "The Spokesman-Review",
+   "author": "Orion Donovan Smith",
+   "title": "Cantwell, Murray and Northwest tribal leaders oppose bipartisan permitting reform bill as it nears Senate passage",
+   "url": "https://www.spokesman.com/stories/2026/nov/19/cantwell-murray-and-northwest-tribal-leaders-oppos/",
+   "summary": "Donovan Smith reports Sen. Cantwell and Northwest tribal leaders made a last appeal against the bill's Section 106 changes, with Murray, Wyden and Merkley also opposed.",
+   "stance": "reporting",
+   "quote": {
+    "text": "But this bill, as it’s currently drafted, is not the answer.",
+    "speaker": "Sen. Maria Cantwell, as quoted by The Spokesman-Review"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "media",
+   "id": "2026-11-19-the-spokesman-review-cantwell-murray-and-northwest-tribal-le",
+   "verified": true
+  },
+  {
+   "date": "2026-11-18",
+   "type": "news",
+   "outlet": "Common Dreams",
+   "author": "Stephen Prager",
+   "title": "Schumer Faces Fresh Call to Step Aside Over Latest Vote With GOP on Polluter-Friendly Permitting Bill",
+   "url": "https://www.commondreams.org/news/schumer-baaja",
+   "summary": "Prager reports Food & Water Watch's Jim Walsh called for Sen. Schumer to step down as Democratic leader after he was among 14 Democrats voting for cloture 65-31.",
+   "stance": "opposes",
+   "quote": {
+    "text": "Sen. Schumer’s alignment with Republicans over a majority of his own Democratic caucus in voting to advance this terrible pro-polluter, pro-data center permitting bill is all the reason needed to demand that Schumer step down as leader of the Senate Democrats.",
+    "speaker": "Jim Walsh, policy director, Food & Water Watch, as quoted by Common Dreams"
+   },
+   "topics": [
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "id": "2026-11-18-common-dreams-schumer-faces-fresh-call-to-step-aside-over-la",
+   "verified": true
   }
  ]
 }
