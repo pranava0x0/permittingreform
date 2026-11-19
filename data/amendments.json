@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-18",
+ "as_of": "2026-11-19",
  "substitute": {
   "title": "The November 7 substitute",
   "date": "2026-11-07",
@@ -396,29 +396,39 @@
    "id": "sa-6884-6890",
    "number": "SA 6884 to SA 6890",
    "sponsor": "Thune",
-   "date": "2026-11-10",
-   "status": "pending",
-   "summary": "Seven amendments the majority leader proposed after the substitute, with a motion to commit the bill to the Finance Committee. Their text was not read; congress.gov refused the request.",
+   "date": "2026-11-18",
+   "status": "tabled",
+   "summary": "Seven amendments the majority leader proposed after the substitute, with a motion to commit the bill to the Finance Committee. On November 18 the Senate tabled SA 6884 and SA 6886 by voice vote, and SA 6885 and SA 6887, which amended those two, fell with them. SA 6888 to SA 6890 were not among the amendments the Record lists as pending that morning. Their text was not read; congress.gov refused the request.",
    "sources": [
     {
      "publisher": "Senate floor activity, November 10",
      "url": "https://www.senate.gov/legislative/LIS/floor_activity/11_10_2026_Senate_Floor.htm",
      "quote": "Thune to commit to Senate Committee on Finance with instructions to report back forthwith with the following amendment (SA 6888) made in Senate."
+    },
+    {
+     "publisher": "Congressional Record, Daily Digest, November 18",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgD1039.htm",
+     "quote": "Thune Amendment No. 6884 (to Amendment No. 6883), to change the enactment date (by voice vote, Senate tabled the amendment)."
     }
    ]
   },
   {
    "id": "filed-to-sa-6883",
-   "number": "172 filed amendments",
+   "number": "176 filed amendments",
    "sponsor": "filed by senators",
-   "date": "2026-11-17",
+   "date": "2026-11-18",
    "status": "filed",
-   "summary": "The Congressional Record prints 172 amendments filed from November 10 to 17: 128 to the substitute and 44 to H.R. 2347. Congress.gov listed 113 to the substitute on November 16; its pages refused this site's request, so the two counts were not reconciled. The full list is below.",
+   "summary": "The Congressional Record prints 176 amendments filed from November 10 to 18: 131 to the substitute and 45 to H.R. 2347. Congress.gov listed 113 to the substitute on November 16; its pages refused this site's request, so the two counts were not reconciled. The full list is below.",
    "sources": [
     {
      "publisher": "Congressional Record, November 17",
      "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm",
      "quote": "submitted an amendment intended to be proposed to amendment SA 6883"
+    },
+    {
+     "publisher": "Congressional Record, November 18",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5771.htm",
+     "quote": "SA 7027. Mr. VAN HOLLEN submitted an amendment intended to be proposed to amendment SA 6883"
     },
     {
      "publisher": "Congress.gov, November 16",
@@ -433,7 +443,7 @@
    "sponsor": "Lee, for the four sponsors",
    "date": "2026-11-17",
    "status": "submitted",
-   "summary": "The sponsors' managers' amendment. Besides technical corrections it makes federal permits public, adds landowner notice, land restoration and conduct rules for transmission permits, says when federal funding brings a project under historic preservation review, and raises the Historic Preservation Fund from $200 million to $300 million a year. Capito said it answers concerns about Tribal sovereignty and landowners along transmission lines.",
+   "summary": "The sponsors' managers' amendment. Besides technical corrections it makes federal permits public, adds landowner notice, land restoration and conduct rules for transmission permits, says when federal funding brings a project under historic preservation review, and raises the Historic Preservation Fund from $200 million to $300 million a year. Capito said it answers concerns about Tribal sovereignty and landowners along transmission lines. The Senate had not acted on it by the end of November 18. That evening Sen. Lisa Murkowski said some changes for Tribes \"will be included as part of the managers' amendment when we are able to adopt that.\"",
    "sources": [
     {
      "publisher": "Congressional Record, November 17",
@@ -449,6 +459,11 @@
      "publisher": "Joshua Siegel, Punchbowl News (X)",
      "url": "https://x.com/SiegelScribe/status/2122801049446580509",
      "quote": "I obtained the new managers' amendment text."
+    },
+    {
+     "publisher": "Congressional Record, November 18",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5729-6.htm",
+     "quote": "will be included as part of the managers' amendment when we are able to adopt that."
     }
    ]
   },
@@ -508,7 +523,7 @@
    ]
   }
  ],
- "floor_note": "No other amendment proposed in the sources checked as of November 18.",
+ "floor_note": "No other amendment proposed in the sources checked as of November 19.",
  "reactions": [
   {
    "id": "capito",
@@ -879,7 +894,7 @@
  "filed": {
   "source": "Congressional Record, Senate, Text of Amendments",
   "from": "2026-11-10",
-  "to": "2026-11-17",
+  "to": "2026-11-18",
   "note": "Every amendment the Congressional Record prints as filed to the substitute (SA 6883) or to H.R. 2347, with its opening words. Descriptions of what an amendment does are AI-written from its text; amendments without one change page-and-line text of the substitute.",
   "items": [
    {
@@ -2319,6 +2334,42 @@
     "subject": "Adds a staff-shortage reason to the text on federal agency deadlines.",
     "quote": "On page 61, line 2 of the amendment, strike ``or''. On page 61, line 7 of the amendment, strike the period and insert ``; or''.",
     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5726.htm"
+   },
+   {
+    "number": "SA 7024",
+    "sponsor": "Sen. Bennet (D-CO)",
+    "date": "2026-11-18",
+    "to": "H.R. 2347",
+    "subject": "Replaces pages 449 to 494, the end of the historic preservation title, with new text that starts with support and audit rules for Tribal historic preservation programs.",
+    "quote": "Beginning on page 449, strike line 1 and all that follows through page 494, line 9, and insert the following:",
+    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5771-3.htm"
+   },
+   {
+    "number": "SA 7025",
+    "sponsor": "Sen. Ossoff (D-GA)",
+    "date": "2026-11-18",
+    "to": "SA 6883",
+    "subject": "Amends Ossoff's SA 7005: solar projects on federal land that certify they will meet domestic content requirements get priority in permitting.",
+    "quote": "On page 1 of the amendment, strike lines 13 and 14 and insert the following: (f) Accelerated Permitting for Projects Using Domestic Content.--",
+    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5775.htm"
+   },
+   {
+    "number": "SA 7026",
+    "sponsor": "Sen. Van Hollen (D-MD)",
+    "date": "2026-11-18",
+    "to": "SA 6883",
+    "subject": "Amends Van Hollen's SA 6933 on court remands for projects that already hold a federal permit.",
+    "quote": "Beginning on page 1 of the amendment, strike line 3 and all that follows through page 2, line 9, and insert the following: (5) Voluntary remand.--",
+    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5777.htm"
+   },
+   {
+    "number": "SA 7027",
+    "sponsor": "Sen. Van Hollen (D-MD)",
+    "date": "2026-11-18",
+    "to": "SA 6883",
+    "subject": "Limits a court's grant of a remand an agency requests for a project that already holds a federal permit, if the request was pending on November 11, 2026.",
+    "quote": "At the end of section 1401(b), add the following: (5) Voluntary remand.-- (A) In general.--For a project",
+    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5777-2.htm"
    }
   ]
  }

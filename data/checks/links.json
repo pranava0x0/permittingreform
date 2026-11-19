@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-18",
+ "checked": "2026-11-19",
  "results": {
   "http://legal-planet.org/2026/11/08/the-revised-permitting-reform-bill/": {
    "cls": "ok",
@@ -1004,6 +1004,15 @@
     "media.2026-06-16-heatmap-daily-freedom-senate-permit-certainty-bill"
    ]
   },
+  "https://heatmap.news/daily/senate-vote-permitting-bil": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-18-heatmap-news-the-surprising-senate-votes-in-the-bipartisan-p"
+   ]
+  },
   "https://heatmap.news/daily/sunzia-martin-heinrich": {
    "cls": "ok",
    "kind": "page",
@@ -1658,6 +1667,15 @@
    "status": 200,
    "where": [
     "media.2026-11-09-bgov-support-to-proceed"
+   ]
+  },
+  "https://news.bloomberglaw.com/health-law-and-business/senate-permitting-legislation-advances-setting-up-final-push": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-18-bloomberg-law-senate-permitting-legislation-advances-setting"
    ]
   },
   "https://newsweek.com/trump-wind-turbines-bipartisan-energy-permitting-bill-12691384": {
@@ -2604,6 +2622,15 @@
     "media.cnn-2026-09-30-rpa-senate-vote"
    ]
   },
+  "https://www.commondreams.org/news/schumer-baaja": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-18-common-dreams-schumer-faces-fresh-call-to-step-aside-over-la"
+   ]
+  },
   "https://www.commondreams.org/news/senate-advances-permitting-reform": {
    "cls": "ok",
    "kind": "page",
@@ -2727,6 +2754,15 @@
     "timeline.2026-11-09-senate-cloture-motion-to-proceed.source"
    ]
   },
+  "https://www.dailypress.senate.gov/thursday-november-19-2026/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.next"
+   ]
+  },
   "https://www.dailypress.senate.gov/thursday-october-1-2026/": {
    "cls": "ok",
    "kind": "page",
@@ -2774,15 +2810,6 @@
     "overview.status",
     "timeline.2026-11-11-cloture-filed-sa-6883.source",
     "amend.sa-6883.source"
-   ]
-  },
-  "https://www.dailypress.senate.gov/wednesday-november-18-2026/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "overview.next"
    ]
   },
   "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate": {
@@ -3984,6 +4011,33 @@
     "amend.merkley-point-of-order.source"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgD1039.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.sa-6884-6890.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5729-6.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.sa-7022.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5771.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.filed-to-sa-6883.source"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf": {
    "cls": "ok",
    "kind": "pdf",
@@ -4269,6 +4323,15 @@
     "people.tim-kaine.source",
     "people.tim-kaine.quote",
     "media.2026-11-09-office-of-sen-kaine-statement-on-permitting"
+   ]
+  },
+  "https://www.kgou.org/indigenous-news/2026-11-18/senate-expected-to-vote-on-permitting-bill-tribal-leaders-in-oklahoma-beyond-oppose": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-18-kgou-opmx-senate-expected-to-vote-on-permitting-bill-tribal"
    ]
   },
   "https://www.klgates.com/DOE-Directs-FERC-to-Take-Action-on-Large-Load-Interconnection-10-30-2025": {
@@ -5455,6 +5518,15 @@
    "status": 200,
    "where": [
     "media.2026-11-10-solar-power-world-senate-advances-federal-energy"
+   ]
+  },
+  "https://www.spokesman.com/stories/2026/nov/19/cantwell-murray-and-northwest-tribal-leaders-oppos/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-19-the-spokesman-review-cantwell-murray-and-northwest-tribal-le"
    ]
   },
   "https://www.supplyht.com/articles/107521-asa-supports-bipartisan-permitting-reform-to-strengthen-us-manufacturing": {
