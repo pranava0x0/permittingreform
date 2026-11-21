@@ -9,14 +9,28 @@
  "status": {
   "points": [
    {
-    "text": "On November 18 the Senate adopted the sponsors' substitute, SA 6883, 69 to 27, after voting 70 to 26 to waive Sen. Jeff Merkley's budget point of order against it. It then voted 65 to 31 to end debate on the bill. The vote on passing the bill comes next.",
+    "text": "On November 19 the Senate passed the bill, 62 to 33. It passed without the managers' amendment: Sen. Jeff Merkley objected when the sponsors asked to vote on it and on a list of 19 amendments.",
+    "source": {
+     "label": "Congressional Record, November 19",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5797-2.htm"
+    }
+   },
+   {
+    "text": "The bill goes back to the House, which is on a district work period through November 29.",
+    "source": {
+     "label": "Congressional Record, House, November 19",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgD1050-2.htm"
+    }
+   },
+   {
+    "text": "On November 18 the Senate adopted the sponsors' substitute, SA 6883, 69 to 27, after voting 70 to 26 to waive Sen. Jeff Merkley's budget point of order against it. It then voted 65 to 31 to end debate on the bill.",
     "source": {
      "label": "Senate roll call vote 268",
      "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm"
     }
    },
    {
-    "text": "On November 17 the four sponsors filed a managers' amendment to the substitute, SA 7022. It adds landowner protections for transmission permits, makes federal permits public and raises the Historic Preservation Fund to $300 million a year. Senators had filed 172 amendments to the substitute or the bill by then.",
+    "text": "On November 17 the four sponsors filed a managers' amendment to the substitute, SA 7022. It would add landowner protections for transmission permits, make federal permits public and raise the Historic Preservation Fund to $300 million a year. Senators had filed 172 amendments to the substitute or the bill by then.",
     "source": {
      "label": "Congressional Record, November 17",
      "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm"
@@ -172,19 +186,19 @@
   ]
  },
  "latest": {
-  "date": "2026-11-18",
-  "text": "The Senate adopted the substitute, 69 to 27, and ended debate, 65 to 31.",
+  "date": "2026-11-19",
+  "text": "The Senate passed it, 62 to 33, without the managers' amendment.",
   "source": {
-   "label": "Roll call 268",
-   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm"
+   "label": "Roll call 270",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm"
   }
  },
  "next": {
-  "date": "2026-11-19",
-  "text": "The passage vote, not yet scheduled on Nov. 19.",
+  "date": "2026-11-30",
+  "text": "The House returns; no vote set yet.",
   "source": {
-   "label": "Floor log",
-   "url": "https://www.dailypress.senate.gov/thursday-november-19-2026/"
+   "label": "House schedule",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgD1050-2.htm"
   }
  },
  "headlines": [
