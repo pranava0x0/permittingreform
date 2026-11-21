@@ -40,6 +40,15 @@ The Amendments view compares `site/substitute.pdf` with the September 30 text. T
 2. Drop pieces written before the text was public (September 30, 2026) and anything known only from a search snippet.
 3. `python3 tools/check_quotes.py`. A page that refuses scripts needs a read in a browser, recorded in `data/checks/browser.json` with the exact quotes.
 
+## Claims to check
+
+Run a refresh with the project skill `.claude/skills/permitting-refresh/SKILL.md`; it sets the order and the commands. Claims that coverage makes about the bill live in `data/claims.json`: the claim quoted from the item, and the passages of the Senate-passed text (`data/bill/substitute_sections.json`) a reader would compare it with. The site points at the text and never says whether a claim holds.
+
+1. Research files carry `claims` on each item that asserts what the bill does (see the newest `data/research/sweep-*/CONTRACT.md`).
+2. After integrating, `python3 tools/claim_sections.py pending` lists claims with no row; `draft` writes ranked sections and candidate spans to `data/research/claims_draft.json`. The ranking is keyword scoring: read each section and pick the passage yourself.
+3. A claim with nothing in the text to point at (a forecast, a motive, how the bill was written) goes in `skipped` with a reason.
+4. `make claims` (part of `make check`) fails on a passage that is not in the section exactly once and on any pending claim.
+
 ## Claim cites
 
 Every sentence that says what the bill does must carry a passage from the bill: summary sentences and key points (`data/bill/point_cites.json`), and headlines, the comparison tables' BAAJA cells, added provisions and the Communities and Data centers rows (`data/bill/row_cites.json`). `tools/infer_check.py` writes both from verdicts whose evidence span is in the text word for word. The build stops while any claim has no passage or a flagged verdict. A claim that the text is silent ("No export provisions.") counts once the review supports it with no span.
@@ -123,3 +132,8 @@ See [docs/data-sources.md](docs/data-sources.md) for sources that refuse scripts
 - 2026-11-19. The Senate adopted SA 6883 without SA 7022; the Nov 18 Record shows no action on it, and Murkowski said that evening the Tribal changes "will be included as part of the managers' amendment when we are able to adopt that." Keep SA 7022 "submitted" until the Record shows a disposition.
 - 2026-11-19. SA 7022 is 14 page-and-line edit instructions (`data/research/sa-7022-map.md`). Instructions 12 to 14 cite pages three higher than the repo's SA 6883 print (459, 461, 491 against 456, 458, 488); the Record may cite a different print of SA 6883. Place them by text, and settle which print before building the "show earlier versions" view.
 - 2026-11-19. News reports can mislabel floor actions: Bloomberg Law called the adopted substitute "another manager's amendment", and a Center Square story reported cloture as passage. Write the summary from the roll call, not the article.
+
+- 2026-11-21. A claim in coverage gets passages from the Senate-passed text, never a verdict. Keyword suggestions (`tools/claim_sections.py draft`) put the right section first for direct claims (lawsuit deadlines → 1110, cost allocation → 2107) and miss broad ones ("undercuts the Clean Water Act, NEPA, and the ESA"), so a reader picks every passage. Forecasts, motives and accounts of how the bill was written go in `skipped` with a reason: 27 of 81 claims in the first pass.
+- 2026-11-21. `make paths` gates the tap count: an answer that takes more taps than `tests/reader_paths.json`, starts more than 0.25 screens lower, or disappears fails `make final`. The first run reproduced all 36 existing paths exactly and failed on the one new path until it was added, which is the known-good and known-bad check for the gate.
+- 2026-11-21. `tools/refresh_status.py` read the Nov 20 Record before any news did: Capito's floor remarks, the Senate's pro forma order (Nov 24 and 27, back Nov 30) and Rep. Stansbury's Nov 19 House speech, which no sweep had found. Run it first.
+- 2026-11-21. Inside Climate News and National Indigenous Times answer scripts and headless Chrome with 403 (Cloudflare); the logged-in Chrome reads both. Record the quotes in `data/checks/browser.json`.

@@ -33,6 +33,7 @@ from urllib.parse import quote
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import amendments  # noqa: E402
 import billtext  # noqa: E402
+import claims as claimrefs  # noqa: E402
 import roll_call  # noqa: E402
 
 ROOT = billtext.ROOT
@@ -640,6 +641,14 @@ def build() -> tuple[dict, dict, list[str]]:
 
     votes = load_votes(extra["people"], errors)
     estimates = load_estimates(errors)
+    # Claims in coverage and the passed-text passages to check them against
+    # (data/claims.json; tools/claims.py). The site points at the text and
+    # never rates the claim.
+    claim_doc = load(claimrefs.CLAIMS) if claimrefs.CLAIMS.exists() else {"claims": []}
+    claims_by_url = claimrefs.resolve(claim_doc["claims"], {it["url"] for it in extra["media"]}, errors)
+    for it in extra["media"]:
+        if it["url"] in claims_by_url:
+            it["claims"] = claims_by_url[it["url"]]
     for it in extra["media"] + takes["takes"] + estimates["estimates"]:
         stamp(it)
     for b in (speed or {}).get("blockers", []):
@@ -651,6 +660,9 @@ def build() -> tuple[dict, dict, list[str]]:
 
     all_points = [p for sec in sections for p in sec["points"]]
     checks["points"] = {"total": len(all_points), "cited": sum(1 for p in all_points if "c" in p)}
+    checks["claims"] = {"claims": len(claim_doc["claims"]), "items": len(claims_by_url),
+                        "passages": sum(len(c["review"]) for v in claims_by_url.values() for c in v),
+                        "sections": len({r["n"] for v in claims_by_url.values() for c in v for r in c["review"]})}
     checks["takes"] = {"total": len(takes["takes"]), "sections": len({n for t in takes["takes"] for n in t["sections"]})}
     all_sents = [t for sec in sections for para in sec["ps"] for t in para]
     checks["cites"] = {
@@ -721,6 +733,7 @@ def llms_txt(core: dict) -> str:
         f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
         f"- [Bill paragraph JSON]({m['site_url']}data/bill.json): section number to [printed page, line, indent level, text] arrays.",
         f"- [Timeline, people and media JSON]({m['site_url']}data/news.json): dated events, positions and coverage, each with its sources; `votes` holds each Senate roll call with every senator's vote, and `estimates` holds published figures on what the bill would do, each with its scenario and source sentence.",
+        "- Claims to check: a coverage item in `media` may carry `claims`, each a claim quoted from the item with `review` passages of the Senate-passed text (H.R. 2347 as amended by SA 6883) a reader would compare it with: section, subsection label, verbatim text and page-and-line cite in substitute.pdf. They point at the text; they are not findings about whether the claim holds.",
         f"- [Outside readings JSON]({m['site_url']}data/takes.json): what named industry groups, advocates, lawyers and analysts say sections would do, each with its verbatim quote, source link and the bill passage it concerns.",
         "- Fetch sections/{number}.md for one section. Each file includes its summary with a page-and-line cite after every sentence, cited key points, quotes, outside readings of what the section would do (quoted from their sources), comparison notes and full statutory text.",
         "- Browser search: #/bill/search/{URL-encoded query}; section: #/bill/sec/{number}; passage: #/bill/sec/{number}/{page}-{line}; cited range: #/bill/sec/{number}/{page}-{line}-{page}-{line}. Fragment routes require JavaScript; use the Markdown or JSON endpoints for HTTP retrieval.",
@@ -1068,8 +1081,18 @@ def reader_html(core: dict, page: str) -> str:
         items = core["media" if page == "coverage" else "timeline"]
         for row in sorted(items, key=lambda r: r["date"], reverse=True):
             refs = [link(row["url"], row["outlet"])] if page == "coverage" else [link(s["url"], s.get("title") or s.get("publisher") or s["url"]) for s in row["sources"]]
+            checks_html = ""
+            for c in row.get("claims", []):
+                lis = []
+                for r in c["review"]:
+                    pdf = link(r["pdf"], f'p. {r["c"][0]}, line {r["c"][1]}')
+                    look = f' Check {esc(r["look"])}.' if r.get("look") else ""
+                    lis.append(f'<li>Sec. {esc(r["n"])}{esc(r["at"])}, {esc(r["h"])} ({pdf}): &ldquo;{esc(r["t"])}&rdquo;{look}</li>')
+                checks_html += (f'<p>{esc(c["about"])}: &ldquo;{esc(c["quote"])}&rdquo; ({esc(c["speaker"])}). '
+                                'Where to check it in the Senate-passed text (this site does not rate claims):</p>'
+                                '<ul>' + "".join(lis) + '</ul>')
             out.append(f'<article id="{esc(row["id"])}"><h2>{esc(row["title"])}</h2><time datetime="{esc(row["date"])}">{esc(row["date"])}</time>'
-                       f'<p>{esc(row["summary"])}</p><p>{" · ".join(refs)}</p></article>')
+                       f'<p>{esc(row["summary"])}</p>{checks_html}<p>{" · ".join(refs)}</p></article>')
     return '\n'.join(out + ['</main></body></html>']) + '\n'
 
 

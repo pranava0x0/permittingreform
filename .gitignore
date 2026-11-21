@@ -16,3 +16,4 @@ data/cache/
 
 # UAT captures: reproducible with tools/uat_shots.py
 uat-screenshots/
+data/research/claims_draft.json

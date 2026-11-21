@@ -1,0 +1,150 @@
+{
+ "vote-date": {
+  "taps": 0,
+  "screens": 0.46
+ },
+ "vote-status": {
+  "taps": 1,
+  "screens": 0.67
+ },
+ "who-for-against": {
+  "taps": 2,
+  "screens": 1.15
+ },
+ "why-split": {
+  "taps": 2,
+  "screens": 2.41
+ },
+ "what-it-does": {
+  "taps": 0,
+  "screens": 0.71
+ },
+ "nepa-deadlines": {
+  "taps": 1,
+  "screens": 0.81
+ },
+ "lawsuits": {
+  "taps": 1,
+  "screens": 0.87
+ },
+ "permit-certainty": {
+  "taps": 1,
+  "screens": 0.93
+ },
+ "dc-costs": {
+  "taps": 1,
+  "screens": 0.99
+ },
+ "transmission": {
+  "taps": 1,
+  "screens": 1.05
+ },
+ "exclusions": {
+  "taps": 1,
+  "screens": 1.11
+ },
+ "cwa": {
+  "taps": 1,
+  "screens": 1.17
+ },
+ "esa": {
+  "taps": 1,
+  "screens": 1.23
+ },
+ "tribes-106": {
+  "taps": 1,
+  "screens": 1.3
+ },
+ "tribes-dispute": {
+  "taps": 3,
+  "screens": 0.94
+ },
+ "vs-current-law": {
+  "taps": 3,
+  "screens": 1.11
+ },
+ "vs-earlier-bills": {
+  "taps": 1,
+  "screens": 2.15
+ },
+ "vs-speed-courts": {
+  "taps": 4,
+  "screens": 1.61
+ },
+ "cost-allocation": {
+  "taps": 3,
+  "screens": 3.09
+ },
+ "dc-page": {
+  "taps": 2,
+  "screens": 0.85
+ },
+ "counties": {
+  "taps": 4,
+  "screens": 0.87
+ },
+ "wind-solar": {
+  "taps": 1,
+  "screens": 0.67
+ },
+ "agency-deadlines": {
+  "taps": 1,
+  "screens": 2.03
+ },
+ "amend-key-changes": {
+  "taps": 1,
+  "screens": 0.61
+ },
+ "amend-section": {
+  "taps": 2,
+  "screens": 0.57
+ },
+ "amend-reactions": {
+  "taps": 2,
+  "screens": 2.24
+ },
+ "bill-positions": {
+  "taps": 1,
+  "screens": 1.04
+ },
+ "senate-votes": {
+  "taps": 1,
+  "screens": 0.63
+ },
+ "how-each-senator-voted": {
+  "taps": 2,
+  "screens": 1.02
+ },
+ "stated-vs-vote": {
+  "taps": 2,
+  "screens": 1.26
+ },
+ "estimates-emissions": {
+  "taps": 2,
+  "screens": 1.85
+ },
+ "estimates-prices": {
+  "taps": 2,
+  "screens": 1.91
+ },
+ "estimates-time": {
+  "taps": 2,
+  "screens": 2.18
+ },
+ "amend-vs-bills": {
+  "taps": 2,
+  "screens": 3.22
+ },
+ "coverage": {
+  "taps": 1,
+  "screens": 0.34
+ },
+ "timeline": {
+  "taps": 1,
+  "screens": 0.61
+ },
+ "claim-check": {
+  "taps": 2,
+  "screens": 0.68
+ }
+}

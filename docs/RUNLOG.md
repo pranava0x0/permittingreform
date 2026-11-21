@@ -85,3 +85,12 @@ Mapped SA 7022's 14 edit instructions to sections of the substitute, with all th
 - 177 amendments filed Nov 10 to 19 (SA 7030 added). The House is on a district work period through Nov 29; the Senate is adjourned to Nov 30.
 - News: 21 items dated Nov 19 to 20, each quote checked against the fetched page; one summary corrected (API's release names S. 5653, the Senate passed H.R. 2347).
 - Gates: make check, make quotes (1,042 verified, 0 missing), make links, make final.
+
+## November 21, 2026 (afternoon): claims and where to check them
+
+- Coverage: 72 new items. 48 X posts dated Nov 17 to 21 (collected with `tools/x_collect.js` from 47 handles and 6 searches), 23 articles, statements and releases dated Nov 10 to 20, and Rep. Stansbury's Nov 19 House floor speech from the Record (PgH6300-3). Substacks, an aggregator, two partisan blogs and two duplicates were left out.
+- Claims to check: `data/claims.json` ties 54 claims in 30 items to 148 passages in 25 sections of the Senate-passed text (SA 6883 as adopted). Each passage was found word for word, and each has a subsection label and a page-and-line cite in `substitute.pdf`. 27 collected claims were skipped with a reason (forecasts, motives, how the bill was written). The Coverage page shows the passages under each item, behind a "Claims to check" filter. The site does not rate claims.
+- Tools: `tools/claims.py` and `tools/claim_sections.py` (suggest, pending, draft, check; `make claims` is part of `make check`), `tools/refresh_status.py` (floor status from roll-call XML, the Record, the House schedule and the Senate floor log), a reader-path baseline gate (`tests/reader_paths.json`), and the project skill `.claude/skills/permitting-refresh/SKILL.md`.
+- Floor: no new roll calls on the bill. The Nov 20 Record has the Senate's order for pro forma sessions on Nov 24 and 27, returning 3 p.m. Nov 30.
+- Gates: make check, make quotes (1,211 checked: 1,114 by script, 97 in a browser, 0 missing), make links, make final.
+- Agents: Claude Sonnet (X sweep, 186K tokens; article sweep, 307K tokens) and Claude Opus (passage mapping, 246K tokens); the main session (Claude Opus) chose items, reviewed the mapping and wrote the code.

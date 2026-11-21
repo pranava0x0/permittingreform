@@ -1,0 +1,73 @@
+{
+ "items": [
+  {
+   "date": "2026-11-19",
+   "type": "gov_document",
+   "outlet": "Congressional Record (House)",
+   "author": "Rep. Melanie Stansbury",
+   "title": "OPPOSITION TO PERMITTING DEAL",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgH6300-3.htm",
+   "summary": "In a one-minute House floor speech the day the Senate passed the bill, Rep. Stansbury (D-N.M.) opposed it and asked members to vote no.",
+   "stance": "opposes",
+   "quote": {
+    "text": "No matter how they try to spin it, this bill, even as amended, undermines Tribal sovereignty",
+    "speaker": "Rep. Melanie Stansbury (D-N.M.), House floor"
+   },
+   "topics": [
+    "congress",
+    "house",
+    "tribal"
+   ],
+   "sector": "congress",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "this bill, even as amended, undermines Tribal sovereignty",
+     "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+     "about": "Tribal sovereignty"
+    },
+    {
+     "text": "undercuts the Clean Water Act, NEPA, and the Endangered Species Act",
+     "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+     "about": "Environmental laws"
+    },
+    {
+     "text": "locks in dangerous oil and gas and mining projects that could threaten sacred sites",
+     "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+     "about": "Permits once issued"
+    },
+    {
+     "text": "we know that Donald Trump plans to use it to build data centers because he said so himself",
+     "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+     "about": "Data centers"
+    },
+    {
+     "text": "a deal cut behind closed doors without public hearings, without Tribal consultation, and without public input",
+     "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+     "about": "How the bill was written"
+    }
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "type": "gov_document",
+   "outlet": "Congressional Record (Senate)",
+   "author": "Sen. Shelley Moore Capito",
+   "title": "Bipartisan American Affordability and Jobs Act of 2026",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-20/html/CREC-2026-11-20-pt1-PgS5832-4.htm",
+   "summary": "The day after passage, Sen. Capito thanked the people who worked on the bill on the Senate floor, said she had spoken with House Natural Resources Chairman Westerman that morning, and urged the House to act; Sen. Whitehouse added his thanks.",
+   "stance": "supports",
+   "quote": {
+    "text": "So I hope our House counterparts, when they return, will act quickly and send this bill to President Trump's desk without delay.",
+    "speaker": "Sen. Shelley Moore Capito (R-W.Va.), Senate floor"
+   },
+   "topics": [
+    "congress",
+    "house"
+   ],
+   "sector": "congress",
+   "route": "direct"
+  }
+ ],
+ "not_found": []
+}

@@ -278,6 +278,9 @@ def media(known: dict) -> list[dict] | None:
         it["stance"] = it.get("stance") if it.get("stance") in STANCES else "reporting"
         it["topics"] = topics(it.get("topics"), known)
         it["verified"] = bool(it.get("verified"))
+        # Sweep-only keys: claims go to data/claims.json (tools/claim_sections.py), route is provenance.
+        it.pop("claims", None)
+        it.pop("route", None)
         if it.get("quote") and not (it["quote"].get("text")):
             del it["quote"]
         out.append(it)

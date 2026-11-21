@@ -10,24 +10,24 @@
   "unchecked": 18
  },
  "links": {
-  "blocked": 52,
-  "browser": 46,
+  "blocked": 54,
+  "browser": 48,
   "checked": "2026-11-21",
   "dead": 0,
   "error": 1,
-  "ok": 790,
-  "total": 843
+  "ok": 881,
+  "total": 936
  },
  "quotes": {
   "bill_total": 174,
   "bill_verified": 174,
-  "browser": 90,
+  "browser": 97,
   "checked": "2026-11-21",
   "missing": 0,
   "near": 0,
-  "total": 1132,
+  "total": 1211,
   "unreachable": 0,
   "unverifiable": 0,
-  "verified": 1042
+  "verified": 1114
  }
 }
