@@ -11,7 +11,8 @@ Reads, in order (all answer scripts; REFRESH.md has the history of each route):
   Congressional Record  govinfo CREC mods.xml for each day from floor_state.checked to today;
                      granule titles naming the bill (BILL_TITLES)
   House floor        docs.house.gov/floor week page for this week and next; lines naming H.R. 2347
-  Senate floor log   dailypress.senate.gov home page with a cache-busting query
+  Senate floor log   dailypress.senate.gov home page with a cache-busting query; lines naming the
+                     bill that are not in floor_state.floor_log_seen count as new
 
 It reports; it never edits site data. A person records votes with tools/roll_call.py and
 writes the overview, timeline and votes rows from the primary pages it lists.
@@ -47,6 +48,14 @@ def fetch(url: str, timeout: int = 30) -> tuple[int, str]:
             return r.status, r.read().decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
         return e.code, ""
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
+        return 0, f"{type(e).__name__}: {e}"
+
+
+def unpublished(status: int) -> bool:
+    """A roll number with no vote yet: 404, or the Senate's 200 'Roll Call Vote
+    Unavailable' page. Anything else (429, 5xx, a network error) is a failed check."""
+    return status in (200, 404)
 
 
 def tag(xml: str, name: str) -> str:
@@ -61,6 +70,9 @@ def senate(after: int, errors: list[str]) -> list[dict]:
     while misses < 2 and n < after + 60:
         status, xml = fetch(SENATE_XML.format(n=n))
         if status != 200 or "<vote_result>" not in xml:
+            if not unpublished(status):
+                errors.append(f"{SENATE_XML.format(n=n)}: HTTP {status} {xml[:80]}".strip())
+                break  # stop here so --write cannot advance past a roll that was never read
             misses += 1
             n += 1
             continue
@@ -80,6 +92,9 @@ def house(after: int, errors: list[str]) -> list[dict]:
     while misses < 2 and n < after + 120:
         status, xml = fetch(HOUSE_XML.format(n=n))
         if status != 200 or "<vote-result>" not in xml:
+            if not unpublished(status):
+                errors.append(f"{HOUSE_XML.format(n=n)}: HTTP {status} {xml[:80]}".strip())
+                break  # stop here so --write cannot advance past a roll that was never read
             misses += 1
             n += 1
             continue
@@ -136,7 +151,10 @@ def floor_log(errors: list[str]) -> dict:
         errors.append(f"Senate floor log: HTTP {status}")
         return {"url": url, "lines": []}
     text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", page))
-    lines = sorted({text[max(0, m.start() - 200): m.end() + 200].strip() for m in BILL.finditer(text)})[:8]
+    # One entry per timestamp ("2:25 p.m. Senator Lankford spoke on permitting reform."), so an
+    # entry reads the same on every run and floor_log_seen can tell new ones from old.
+    entries = re.split(r"(?=\b\d{1,2}:\d{2} [ap]\.m\. )", text)
+    lines = sorted({e.strip()[:400] for e in entries if re.match(r"\d{1,2}:\d{2} [ap]\.m\. ", e) and BILL.search(e)})
     convene = re.search(r"(?:convene|adjourned until)[^<]{0,120}?(?:a\.m\.|p\.m\.|noon)", text, re.I)
     return {"url": url, "lines": lines, "next": convene.group(0) if convene else ""}
 
@@ -159,8 +177,10 @@ def main() -> int:
         "senate_floor": floor_log(errors),
         "errors": errors,
     }
+    seen_log = set(state.get("floor_log_seen", []))
+    rep["senate_floor"]["new"] = [x for x in rep["senate_floor"]["lines"] if x not in seen_log]
     touches = (any(r["bill"] for r in rep["senate"] + rep["house"]) or rep["record"]
-               or any(w["mentions"] for w in rep["house_floor"]))
+               or any(w["mentions"] for w in rep["house_floor"]) or rep["senate_floor"]["new"])
     if a.json:
         print(json.dumps(rep, ensure_ascii=False, indent=1))
     else:
@@ -176,14 +196,17 @@ def main() -> int:
             for m in w["mentions"]:
                 print(f"    ... {m}")
         sf = rep["senate_floor"]
-        print(f"  Senate floor log: {len(sf['lines'])} line(s) on the bill; {sf.get('next', '')}")
+        print(f"  Senate floor log: {len(sf['lines'])} line(s) on the bill, {len(sf['new'])} new since the last --write; {sf.get('next', '')}")
+        for x in sf["new"]:
+            print(f"    ... {x}")
         for e in errors:
             print(f"  FETCH ERROR: {e}")
         print("touches the bill: " + ("yes" if touches else "no"))
     if a.write and not errors:
         new = {"senate_last": max([state["senate_last"]] + [r["number"] for r in rep["senate"]]),
                "house_last": max([state["house_last"]] + [r["number"] for r in rep["house"]]),
-               "checked": today.isoformat()}
+               "checked": today.isoformat(),
+               "floor_log_seen": sorted(set(state.get("floor_log_seen", [])) | set(rep["senate_floor"]["lines"]))}
         STATE.write_text(json.dumps(new, indent=1) + "\n")
     if errors:
         return 2
