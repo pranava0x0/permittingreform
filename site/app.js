@@ -1314,6 +1314,7 @@
   let mediaStance = "all";
   let mediaTopic = "all";
   let mediaVisual = false;
+  let mediaClaims = false;
   let mediaText = "";
   const MEDIA_PAGE = 12;
   let mediaMore = false;
@@ -1331,13 +1332,14 @@
       (mediaStance === "all" || it.stance === mediaStance) &&
       (mediaTopic === "all" || (it.topics || []).indexOf(mediaTopic) >= 0) &&
       (!mediaVisual || (it.visuals && it.visuals.length)) &&
+      (!mediaClaims || (it.claims && it.claims.length)) &&
       (!needle || (it.title + " " + it.outlet + " " + (it.summary || "") + " " + (it.author || "")).toLowerCase().indexOf(needle) >= 0))
       .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   }
 
   function mediaItems(list) {
     if (!list.length) return el("p", { class: "empty" }, "No items match.");
-    return el("ul", { class: "media-list" + (brief ? " brief" : "") }, list.map((it) => {
+    return el("ul", { class: "media-list" + (brief ? " brief" : "") + (mediaClaims ? " claims-on" : "") }, list.map((it) => {
       const g = MEDIA_TYPES.find((t) => t[0] === mediaGroup(it.type));
       return el("li", { class: "media-item" },
         el("h2", null, ext(it.url, it.title)),
@@ -1351,8 +1353,21 @@
           it.quote && it.quote.text ? [it.summary ? " " : null, el("q", { class: "inline-quote" }, it.quote.text), it.quote.speaker ? " (" + it.quote.speaker + ")" : null] : null) : null,
         it.visuals && it.visuals.length ? el("ul", { class: "visuals" }, it.visuals.map((v) => el("li", null,
           el("strong", null, "Cheat sheet: " + v.title + ". "), v.text + " ", ext(v.url, "View image")))) : null,
+        it.claims && it.claims.length ? claimChecks(it.claims) : null,
         null);
     }));
+  }
+
+  /* Claims an item makes about the bill, each with the passages of the Senate-passed text to read
+     against it. The site points at the text; it does not say whether the claim holds (data/claims.json). */
+  function claimChecks(list) {
+    return el("div", { class: "claims" },
+      el("p", { class: "claims-note" }, "Where to check " + (list.length > 1 ? "these claims" : "this claim") + " in the Senate-passed text. This site does not rate claims."),
+      list.map((c) => el("div", { class: "claim" },
+        el("p", null, el("strong", null, c.about + ": "), el("q", null, c.quote), " (" + c.speaker + ")"),
+        el("ul", null, c.review.map((r) => el("li", null,
+          el("a", { href: r.href }, "Sec. " + r.n + r.at), ", " + r.h + " (", ext(r.pdf, "p. " + r.c[0] + ", line " + r.c[1]), "): ",
+          el("q", null, r.t), r.look ? " Check " + r.look + "." : null))))));
   }
 
   /* A More that would reveal nothing is hidden once the list is laid out, and measured again when the width changes (Codex, PR 17). */
@@ -1361,7 +1376,7 @@
       const b = li.querySelector(":scope > * .more-toggle, :scope > .more-toggle");
       if (!b) return;
       const lead = li.querySelector(":scope > .lead");
-      const hidden = li.querySelector(":scope > .visuals, :scope > .quote, :scope > .actions, :scope > .social, :scope > .sources");
+      const hidden = li.querySelector(":scope > .visuals, :scope > .claims, :scope > .quote, :scope > .actions, :scope > .social, :scope > .sources");
       b.hidden = !hidden && (!lead || lead.scrollHeight <= lead.clientHeight + 1);
     });
   }
@@ -1383,10 +1398,13 @@
       countHost.textContent = "Showing " + Math.min(mediaLimit, list.length) + " of " + list.length + " matching items (" + D.media.length + " total)";
     };
     const visualCount = D.media.filter((it) => it.visuals && it.visuals.length).length;
+    const claimCount = D.media.filter((it) => it.claims && it.claims.length).length;
     const typeChips = el("div", { class: "filters", role: "group", "aria-label": "Source type" },
       MEDIA_TYPES.filter((t) => counts[t[0]]).map((t) => chip(t[1], mediaType === t[0], () => { mediaType = t[0]; mediaLimit = MEDIA_PAGE; route(); }, counts[t[0]])),
       visualCount ? [el("span", { class: "filter-gap" }),
         chip("Cheat sheets", mediaVisual, () => { mediaVisual = !mediaVisual; mediaLimit = MEDIA_PAGE; route(); }, visualCount)] : null,
+      claimCount ? [el("span", { class: "filter-gap" }),
+        chip("Claims to check", mediaClaims, () => { mediaClaims = !mediaClaims; mediaLimit = MEDIA_PAGE; route(); }, claimCount)] : null,
       briefChip());
     const wordFilter = el("div", { class: "word-filter" },
       el("label", { class: "sr-only", "for": "media-filter" }, "Filter by word"),
@@ -1403,7 +1421,7 @@
       Object.keys(D.topics).filter((t) => topicCounts[t]).map((t) =>
         chip(D.topics[t], mediaTopic === t, () => { mediaTopic = t; mediaLimit = MEDIA_PAGE; route(); }, topicCounts[t])));
     refresh();
-    const active = mediaVisual + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
+    const active = mediaVisual + mediaClaims + (mediaStance !== "all") + (mediaTopic !== "all") + !brief;
     /* Search, a Filters toggle and the source-type chips stay pinned while the list scrolls. */
     const panel = el("div", { class: "filter-panel", hidden: !(mediaMore || active) }, stanceChips, topicChips);
     const toggle = el("button", { type: "button", class: "chip filter-toggle", "aria-expanded": panel.hidden ? "false" : "true", onclick: (ev) => {
@@ -1758,6 +1776,8 @@
     if (ck.cites) rows.push(["Claim cites", ck.cites.summary.cited + " of " + ck.cites.summary.total + " summary sentences and " + ck.cites.rows.cited + " of " + ck.cites.rows.total +
       " other claims cite a passage from the section they describe. The build stops on a claim without one."]);
     if (D.amend_index) rows.push(["Amendment notes", "Each change note cites a passage found word for word in the September or November text."]);
+    if (ck.claims && ck.claims.claims) rows.push(["Claims to check", ck.claims.claims + " claims in " + ck.claims.items + " coverage items point to " + ck.claims.passages +
+      " passages of the Senate-passed text, each found there word for word. The site lists where to read; it does not rate the claims."]);
     if (ck.takes) rows.push(["Outside readings", ck.takes.total + " readings of specific sections, quoted from their sources. They are the sources' claims, not checked findings."]);
     if (ck.inference) {
       const i = ck.inference;

@@ -100,6 +100,10 @@ def prose_fields(core: dict) -> list[tuple[str, str]]:
     out += [(f"media {it['id']} summary", it["summary"]) for it in core["media"] if it.get("summary")]
     out += [(f"media {it['id']} visual", v["title"] + ". " + v["text"]) for it in core["media"] for v in it.get("visuals", [])]
     out += [(f"take {t['id']} claim", t["claim"]) for t in (core.get("takes") or {}).get("takes", [])]
+    for it in core["media"]:
+        for c in it.get("claims", []):
+            out.append((f"claim {c['id']} about", c["about"]))
+            out += [(f"claim {c['id']} look", r["look"]) for r in c["review"] if r.get("look")]
     out += [(f"media {it['id']} letter ask", it["letter"]["ask"]) for it in core["media"]
             if isinstance(it.get("letter"), dict) and isinstance(it["letter"].get("ask"), str)]
     out += [(f"positions {i['id']} title", i["title"]) for i in (core.get("positions") or {}).get("issues", [])]

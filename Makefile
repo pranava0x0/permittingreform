@@ -2,9 +2,9 @@
 PY := python3
 PROSE := .test-artifacts/prose.md
 
-.PHONY: check build test data quotes-bill quotes links infer prose design serve final progress browser-quotes
+.PHONY: check build test data quotes-bill quotes links infer prose design serve final progress browser-quotes claims status paths
 
-check: build test data quotes-bill prose design
+check: build test data quotes-bill claims prose design
 	@echo "make check: all gates green"
 
 build:
@@ -19,6 +19,20 @@ data:
 
 quotes-bill:
 	$(PY) tools/check_quotes.py --bill-only
+
+# Claims in coverage and the passed-text passages to check them against. Fails while a
+# claim collected in a sweep sits on a coverage item with no row (or skip reason) in data/claims.json.
+claims:
+	$(PY) tools/claim_sections.py check
+	$(PY) tools/claim_sections.py pending
+
+# Network: what happened on the floor since data/research/floor_state.json (exit 10 = touches the bill).
+status:
+	-$(PY) tools/refresh_status.py
+
+# Reader paths alone, against the baseline in tests/reader_paths.json (serve site/ first).
+paths:
+	node tools/reader_paths.cjs $(if $(WRITE),--write,)
 
 # Network: fetches every cited page (cached under data/cache/).
 quotes:

@@ -139,6 +139,8 @@ def web_quotes(core: dict) -> list[dict]:
         q = it.get("quote")
         if q:
             rows.append({"where": f"media.{it['id']}", "text": q["text"], "speaker": q.get("speaker", ""), "url": it["url"]})
+        for c in it.get("claims", []):
+            rows.append({"where": f"claims.{c['id']}", "text": c["quote"], "speaker": c.get("speaker", ""), "url": it["url"]})
     for t in (core.get("takes") or {}).get("takes", []):
         rows.append({"where": f"takes.{t['id']}", "text": t["quote"], "speaker": t.get("speaker", ""), "url": t["url"]})
     for b in (core.get("speed") or {}).get("blockers", []):

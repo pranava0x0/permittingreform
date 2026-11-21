@@ -1,8 +1,20 @@
 // Measures how far each reader question's answer is from the Overview at 375x812:
 // taps from landing, and how far down the page the answer starts (in screen heights).
-// Usage: node tools/reader_paths.cjs [base-url]   (serve site/ first; needs playwright on NODE_PATH)
+// Usage: node tools/reader_paths.cjs [base-url] [--write]   (serve site/ first; needs playwright on NODE_PATH)
+//
+// Gate: tests/reader_paths.json holds each path's taps and screens. A path that takes more taps
+// than its baseline, starts more than SLACK screens lower, or disappears fails the run (exit 1),
+// so a refresh cannot quietly make an answer harder to reach. --write records the current
+// numbers as the new baseline: do that only when a path got shorter, or with a dated reason in
+// the commit when a design change makes one longer on purpose.
 const { chromium } = require('playwright');
-const base = process.argv[2] || 'http://127.0.0.1:8766/';
+const fs = require('fs');
+const path = require('path');
+const args = process.argv.slice(2);
+const WRITE = args.includes('--write');
+const base = args.find((a) => !a.startsWith('--')) || 'http://127.0.0.1:8766/';
+const BASELINE = path.join(__dirname, '..', 'tests', 'reader_paths.json');
+const SLACK = 0.25;
 const H = 812;
 
 // Each path: id (matches docs/reader-questions.md), steps (each one tap), target (where the answer starts).
@@ -53,6 +65,8 @@ const PATHS = [
   ['amend-vs-bills', [{ href: '#/compare' }, { row: 'row-cost' }], '#row-cost .sub-note'],
   ['coverage', [{ tab: 'media' }], '.media-item'],
   ['timeline', [{ tab: 'timeline' }], '.event'],
+  // A claim in coverage and the passed-text passages to check it against (data/claims.json).
+  ['claim-check', [{ tab: 'media' }, { sel: 'button.chip:has-text("Claims to check")' }], '.claims'],
 ];
 
 (async () => {
@@ -79,4 +93,27 @@ const PATHS = [
   }
   console.log(JSON.stringify(rows));
   await b.close();
+  if (WRITE) {
+    fs.writeFileSync(BASELINE, JSON.stringify(Object.fromEntries(rows.map((r) => [r.id, { taps: r.taps, screens: r.screens }])), null, 1) + '\n');
+    console.log('reader_paths: baseline written to tests/reader_paths.json');
+    return;
+  }
+  if (!fs.existsSync(BASELINE)) { console.log('reader_paths: no baseline at tests/reader_paths.json; run with --write once'); process.exit(1); }
+  const was = JSON.parse(fs.readFileSync(BASELINE, 'utf8'));
+  const now = Object.fromEntries(rows.map((r) => [r.id, r]));
+  const bad = [];
+  for (const [id, w] of Object.entries(was)) {
+    const n = now[id];
+    if (!n) { bad.push(id + ': path missing'); continue; }
+    if (n.taps > w.taps) bad.push(`${id}: ${n.taps} taps, baseline ${w.taps}`);
+    if (n.screens > w.screens + SLACK) bad.push(`${id}: starts ${n.screens} screens down, baseline ${w.screens} (+${SLACK} allowed)`);
+  }
+  const fresh = rows.filter((r) => !was[r.id]).map((r) => r.id);
+  const shorter = rows.filter((r) => was[r.id] && (r.taps < was[r.id].taps || r.screens < was[r.id].screens - SLACK)).map((r) => r.id);
+  const taps = rows.reduce((a, r) => a + r.taps, 0);
+  console.log(`reader_paths: ${rows.length} paths, ${taps} taps in all (baseline ${Object.values(was).reduce((a, w) => a + w.taps, 0)})` +
+    (shorter.length ? `; shorter: ${shorter.join(', ')} (run with --write to lock in)` : '') +
+    (fresh.length ? `; not in baseline: ${fresh.join(', ')} (run with --write)` : ''));
+  for (const x of bad) console.log('  LONGER: ' + x);
+  if (bad.length || fresh.length) process.exit(1);
 })();

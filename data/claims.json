@@ -1,0 +1,1369 @@
+{
+ "_about": "Claims made in coverage items (X posts, articles, statements) about what the bill would do, each with the passages of the Senate-passed text (SA 6883 as adopted November 18, 2026) that a reader would compare the claim with. The site does not say whether a claim is right. quote is the source's words, copied from the page at media_url; review[].text is a verbatim span of the passed text, which tools/build.py locates and cites; look, when present, names what in the passage to compare. tools/claim_sections.py suggests sections; a person picks the passages. skipped holds collected claims left out, each with a reason.",
+ "text": "Senate-passed text: H.R. 2347 as amended by SA 6883",
+ "claims": [
+  {
+   "id": "c-2026-11-19-crec-1",
+   "media_url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgH6300-3.htm",
+   "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+   "quote": "this bill, even as amended, undermines Tribal sovereignty",
+   "about": "Tribal sovereignty",
+   "review": [
+    {
+     "section": "2301",
+     "text": "If the State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government fails to respond within 30 days of receipt of a request for review of any report or finding by the applicable Federal official, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens when no response comes"
+    },
+    {
+     "section": "2301",
+     "text": "Nothing in this subsection— “(A) authorizes the Secretary to consult on behalf of an Indian tribe; or “(B) relieves a Federal agency of the obligation to consult with an Indian tribe under section 302706(b).",
+     "look": "which consultation duties remain"
+    },
+    {
+     "section": "1110",
+     "text": "there shall be no administrative or judicial review of such final agency action based on a claim of failure to comply with the requirements of this Act.",
+     "look": "which actions on Tribal trust resources are covered"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-crec-2",
+   "media_url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgH6300-3.htm",
+   "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+   "quote": "undercuts the Clean Water Act, NEPA, and the Endangered Species Act",
+   "about": "Environmental laws",
+   "review": [
+    {
+     "section": "1202",
+     "text": "The scope of a certification provided under this section shall be limited to ensuring compliance with water quality requirements.",
+     "look": "what a State may consider"
+    },
+    {
+     "section": "1102",
+     "text": "any proposed agency action associated with a covered activity (as defined in subsection (i)(1) of section 7 of the Natural Gas Act (15 U.S.C. 717f));",
+     "look": "which actions are excluded"
+    },
+    {
+     "section": "1303",
+     "text": "any project that is categorically excluded from the requirements of the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.) pursuant to section 1316 of the Moving Ahead for Progress in the 21st Century Act (23 U.S.C. 109 note; Public Law 112–141) shall be exempt from paragraphs (2), (3), and (4) of subsection (a).",
+     "look": "which projects are exempt from which consultation steps"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-crec-3",
+   "media_url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgH6300-3.htm",
+   "speaker": "Rep. Melanie Stansbury (D-N.M.)",
+   "quote": "locks in dangerous oil and gas and mining projects that could threaten sacred sites",
+   "about": "Permits once issued",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "2215",
+     "text": "the proprietor may— “(A) locate and include within the plan of operations as many mill site claims under this subsection as are reasonably necessary for its operations; and “(B) use or occupy public land in accordance with an approved plan of operations.",
+     "look": "how many mill sites a claimant may locate"
+    },
+    {
+     "section": "2301",
+     "text": "The term ‘undertaking’ means a project, activity, or program that— “(i) requires a Federal permit, license, or approval; and “(ii) is subject to substantial Federal control and responsibility.",
+     "look": "which projects count"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-enr-1",
+   "media_url": "https://www.enr.com/articles/64380-senate-passes-permitting-reform-bill-to-speed-infrastructure-construction",
+   "speaker": "Bryan Gottlieb, Engineering News-Record",
+   "quote": "The bill also would require many lawsuits challenging National Environmental Policy Act reviews to be filed within 150 days of the applicable authorization, subject to specified conditions and exceptions.",
+   "about": "NEPA suit filing window",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    },
+    {
+     "section": "1110",
+     "text": "the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization, with such comment being sufficiently detailed to put the applicable Federal agency on notice of the particular issue on which the party seeks judicial review;",
+     "look": "who may bring a claim"
+    },
+    {
+     "section": "1110",
+     "text": "is filed by a party alleging (or has an individual member alleging) an actual or imminent injury in fact amounting to a direct harm.",
+     "look": "who may bring a claim"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-enr-2",
+   "media_url": "https://www.enr.com/articles/64380-senate-passes-permitting-reform-bill-to-speed-infrastructure-construction",
+   "speaker": "Bryan Gottlieb, Engineering News-Record",
+   "quote": "Agencies would have 45 days after publishing a final environmental impact statement to issue a record of decision, followed by deadlines of 90 or 120 days for outstanding federal authorization decisions, depending on whether the agency participated in the environmental review.",
+   "about": "Record of decision deadlines",
+   "review": [
+    {
+     "section": "1106",
+     "text": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, the lead agency shall issue a record of decision.",
+     "look": "the number of days"
+    },
+    {
+     "section": "1106",
+     "text": "Not later than 90 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, all Federal agencies participating in the environmental review shall issue a decision on all outstanding authorizations for the proposed agency action.",
+     "look": "the number of days and which agencies"
+    },
+    {
+     "section": "1106",
+     "text": "Not later than 120 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, all Federal agencies not participating in the environmental review shall issue and make public a decision on all outstanding authorizations for the proposed agency action.",
+     "look": "the number of days and which agencies"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-enr-3",
+   "media_url": "https://www.enr.com/articles/64380-senate-passes-permitting-reform-bill-to-speed-infrastructure-construction",
+   "speaker": "Bryan Gottlieb, Engineering News-Record",
+   "quote": "The bill would also restrict federal agencies from revoking, suspending or materially altering certain previously issued permits for projects that have secured necessary federal approvals.",
+   "about": "Permit revocation limits",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    },
+    {
+     "section": "1401",
+     "text": "(D) such action is necessary to prevent immediate, specific, urgent, substantial, and proximate harm or damage to life, property, human health, the environment, national security, or defense that is based on new information that was not considered in the underlying environmental review process",
+     "look": "the exceptions to the bar"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-sahan-1",
+   "media_url": "https://sahanjournal.com/climate-environment/us-senate-passes-permitting-bill-tribal-opposition-boundary-waters/",
+   "speaker": "Nicolas Scibelli, Sahan Journal",
+   "quote": "Tribes would have 45 days to respond to Section 106 reports for projects, a timeline many tribal groups say is insufficient.",
+   "about": "Section 106 tribal response time",
+   "review": [
+    {
+     "section": "2301",
+     "text": "If the State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government fails to respond within 30 days of receipt of a request for review of any report or finding by the applicable Federal official, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens when no response comes"
+    },
+    {
+     "section": "2301",
+     "text": "has entered the consultation process required for purposes of this subsection, but does not provide any substantive objections by the date that is 45 days after the date of receipt of a report or finding, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens without objections"
+    },
+    {
+     "section": "2301",
+     "text": "not later than 30 days after the date of receipt of the objections, the applicable Federal official— “(I) shall provide a response explaining how the Federal agency has considered the substantive objections in the report; and “(II) may provide a supplemental report.",
+     "look": "what the agency must do after an objection"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-sahan-2",
+   "media_url": "https://sahanjournal.com/climate-environment/us-senate-passes-permitting-bill-tribal-opposition-boundary-waters/",
+   "speaker": "Nicolas Scibelli, Sahan Journal",
+   "quote": "The bill includes shortened permitting timelines and reduces legal avenues to block projects in court, while also making federal leases automatically renewable.",
+   "about": "Timelines and litigation",
+   "review": [
+    {
+     "section": "1106",
+     "text": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, the lead agency shall issue a record of decision.",
+     "look": "the number of days"
+    },
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    },
+    {
+     "section": "1110",
+     "text": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency with—",
+     "look": "which remedies a court may order"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-nbc-1",
+   "media_url": "https://www.nbcnews.com/politics/congress/senate-passes-sweeping-bill-simplifying-permitting-rules-build-america-rcna610196",
+   "speaker": "Sahil Kapur, NBC News",
+   "quote": "The legislation would revise and speed up environmental reviews with tighter deadlines; accelerate electricity transmission; restrict the power of federal agencies to revoke existing permits; and reduce chokepoints for approving and completing projects.",
+   "about": "Reviews, transmission, permit revocation",
+   "review": [
+    {
+     "section": "1106",
+     "text": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, the lead agency shall issue a record of decision.",
+     "look": "the number of days"
+    },
+    {
+     "section": "2101",
+     "text": "the Commission shall, after notice and an opportunity for hearing, including a public comment period of at least 45 days, issue one or more permits to individual or joint applicants for the construction or modification of electric transmission facilities necessary in the national interest if the Commission finds that",
+     "look": "when the Commission may issue a permit"
+    },
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-nbc-2",
+   "media_url": "https://www.nbcnews.com/politics/congress/senate-passes-sweeping-bill-simplifying-permitting-rules-build-america-rcna610196",
+   "speaker": "Bipartisan Policy Center, as cited by NBC News",
+   "quote": "the bill would require “new data centers of 20 megawatts or more to pay the full incremental cost of the infrastructure built to serve them,” according to the Bipartisan Policy Center",
+   "about": "Data center costs",
+   "review": [
+    {
+     "section": "2107",
+     "text": "it is the policy of the United States that computational load owners and computational load operators bear the full cost of any electric service that they require and the full cost of any infrastructure built to serve them, regardless of whether they take the electric service that they request, so that such costs are not borne by other customers, including residential customers;",
+     "look": "who pays the cost"
+    },
+    {
+     "section": "2107",
+     "text": "No portion of the retail incremental cost may be allocated to, or recovered in the rates of, any customer other than a computational load owner or a computational load operator.",
+     "look": "who pays the cost"
+    },
+    {
+     "section": "2107",
+     "text": "means 1 or more buildings, structures, or installations at a single location that primarily contain information technology infrastructure used for— “(i) creating, executing, and delivering software applications and services; “(ii) artificial intelligence training, deployment, and delivery; “(iii) cryptocurrency mining;",
+     "look": "which sites are covered and whether a size threshold appears"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-wri-1",
+   "media_url": "https://www.wri.org/insights/bipartisan-american-affordability-jobs-act-energy-permitting-bill-explained",
+   "speaker": "Mark Falinski, World Resources Institute",
+   "quote": "It contains provisions designed to reduce the amount of time it would take to permit projects, limits the time projects are subject to litigation and legal review, and prevents current and future presidential administrations from retroactively canceling projects that have advanced through the permitting process.",
+   "about": "Timelines, litigation, cancellations",
+   "review": [
+    {
+     "section": "1106",
+     "text": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, the lead agency shall issue a record of decision.",
+     "look": "the number of days"
+    },
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    },
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-aaf-1",
+   "media_url": "https://www.americanactionforum.org/insight/bipartisan-permitting-reform-proposal-baaja-overview-and-analysis/",
+   "speaker": "American Action Forum",
+   "quote": "The legislation would refine and expand the federal backstop siting authority, allowing FERC to intervene if states delay or block interstate transmission lines.",
+   "about": "FERC backstop siting",
+   "review": [
+    {
+     "section": "2101",
+     "text": "the Commission shall, after notice and an opportunity for hearing, including a public comment period of at least 45 days, issue one or more permits to individual or joint applicants for the construction or modification of electric transmission facilities necessary in the national interest if the Commission finds that",
+     "look": "when the Commission may issue a permit"
+    },
+    {
+     "section": "2101",
+     "text": "in clause (i), by striking “the later of” in the matter preceding subclause (I) and all that follows through the semicolon at the end of subclause (II) and inserting “the date on which the application was filed with the State commission or other entity;”",
+     "look": "what starts the clock for State action"
+    },
+    {
+     "section": "2101",
+     "text": "The Commission shall have no authority to issue a permit under subsection (b) for the construction or modification of an electric transmission facility within a State except as provided in paragraph (1) of that subsection.",
+     "look": "where the Commission may act"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-aaf-2",
+   "media_url": "https://www.americanactionforum.org/insight/bipartisan-permitting-reform-proposal-baaja-overview-and-analysis/",
+   "speaker": "American Action Forum",
+   "quote": "For example, it would expand the categorical exemptions—certain activities deemed not to have a significant environmental impact and therefore exempt from NEPA review—which would reduce the total number of energy projects requiring such review.",
+   "about": "NEPA categorical exclusions",
+   "review": [
+    {
+     "section": "1105",
+     "text": "(5) the proposed agency action relates to a project or action that has been reviewed pursuant to a State environmental review statute or a Tribal environmental review statute, ordinance, resolution, regulation, or formally adopted policy and the lead agency determines that the review serves a similar function as Federal agency compliance with this Act; or",
+     "look": "which other reviews can stand in for a NEPA review"
+    },
+    {
+     "section": "1108",
+     "text": "A Federal agency may adopt a categorical exclusion of another Federal agency listed in the record required under subsection (b) for which the categorical exclusion was established consistent with this subsection.",
+     "look": "which categorical exclusions an agency may use"
+    },
+    {
+     "section": "1102",
+     "text": "any proposed agency action associated with transmission activities described in section 216A(b) of the Federal Power Act;",
+     "look": "which actions are excluded"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-csm-1",
+   "media_url": "https://www.csmonitor.com/USA/Politics/2026/1118/permitting-reform-energy-projects-congress",
+   "speaker": "Hinckley and Babcock, Christian Science Monitor",
+   "quote": "But BAAJA would allow projects to continue, and would expand the type of projects that are exempted from NEPA review.",
+   "about": "NEPA remedy and exemptions",
+   "review": [
+    {
+     "section": "1110",
+     "text": "An authorization remanded under paragraph (5)(A) shall remain in effect while the Federal agency corrects any errors or deficiencies found by the reviewing court.",
+     "look": "whether the project may continue during remand"
+    },
+    {
+     "section": "1102",
+     "text": "any proposed agency action associated with transmission activities described in section 216A(b) of the Federal Power Act;",
+     "look": "which actions are excluded"
+    },
+    {
+     "section": "1102",
+     "text": "any proposed agency action associated with a covered activity (as defined in subsection (i)(1) of section 7 of the Natural Gas Act (15 U.S.C. 717f));",
+     "look": "which actions are excluded"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-csm-2",
+   "media_url": "https://www.csmonitor.com/USA/Politics/2026/1118/permitting-reform-energy-projects-congress",
+   "speaker": "Hinckley and Babcock, Christian Science Monitor",
+   "quote": "The Clean Water Act would only apply to “direct point source discharge” into U.S. waters, rather than the entire project.",
+   "about": "Clean Water Act scope",
+   "review": [
+    {
+     "section": "1202",
+     "text": "Notwithstanding the first sentence of subsection (a)(1), any applicant for a certificate of public convenience and necessity for a project under section 7 of the Natural Gas Act (15 U.S.C. 717f) or a Federal authorization or permit required to construct, modify, or operate an interstate transmission line project that may result in a direct point source discharge into the waters of the United States",
+     "look": "which projects need a State certification"
+    },
+    {
+     "section": "1202",
+     "text": "The scope of a certification provided under this section shall be limited to ensuring compliance with water quality requirements.",
+     "look": "what a State may consider"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-csm-3",
+   "media_url": "https://www.csmonitor.com/USA/Politics/2026/1118/permitting-reform-energy-projects-congress",
+   "speaker": "Hinckley and Babcock, Christian Science Monitor",
+   "quote": "Similarly, select projects would be exempted from the Endangered Species Act, and federal agencies would have less time to review a project’s impact on an endangered species.",
+   "about": "ESA exemptions and review time",
+   "review": [
+    {
+     "section": "1303",
+     "text": "any project that is categorically excluded from the requirements of the National Environmental Policy Act of 1969 (42 U.S.C. 4321 et seq.) pursuant to section 1316 of the Moving Ahead for Progress in the 21st Century Act (23 U.S.C. 109 note; Public Law 112–141) shall be exempt from paragraphs (2), (3), and (4) of subsection (a).",
+     "look": "which projects are exempt from which consultation steps"
+    },
+    {
+     "section": "1302",
+     "text": "(1) in subparagraph (A), by striking “90-day” and inserting “60-day”; (2) in subparagraph (B)— (A) in the matter preceding clause (i)— (i) by striking “90 days” and inserting “60 days”; and (ii) by striking “90th day” and inserting “60th day”; (B) in clause (i), in the matter preceding subclause (I), by striking “150th day” and inserting “100th day”;",
+     "look": "the number of days"
+    },
+    {
+     "section": "1302",
+     "text": "the consultation process under subsection (a)(2) shall be completed by not later than the date on which the applicable environmental document (as so defined) for the agency action is completed in accordance with section 107(g)",
+     "look": "when consultation must finish"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-12-kunc-1",
+   "media_url": "https://www.kunc.org/2026-11-12/indigenous-leaders-voice-concerns-about-sovereignty-amid-senate-advancement-of-baaja-bill",
+   "speaker": "Crystal C'Bearing, Northern Arapaho Tribal Historic Preservation Officer",
+   "quote": "The bill, the Title III historic preservation specifically, is written in a way that will take away our tribal sovereignty and our ability to consult on federal projects,",
+   "about": "Title III tribal consultation",
+   "review": [
+    {
+     "section": "2301",
+     "text": "If the State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government fails to respond within 30 days of receipt of a request for review of any report or finding by the applicable Federal official, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens when no response comes"
+    },
+    {
+     "section": "2301",
+     "text": "has entered the consultation process required for purposes of this subsection, but does not provide any substantive objections by the date that is 45 days after the date of receipt of a report or finding, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens without objections"
+    },
+    {
+     "section": "2301",
+     "text": "Nothing in this subsection— “(A) authorizes the Secretary to consult on behalf of an Indian tribe; or “(B) relieves a Federal agency of the obligation to consult with an Indian tribe under section 302706(b).",
+     "look": "which consultation duties remain"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-12-kunc-2",
+   "media_url": "https://www.kunc.org/2026-11-12/indigenous-leaders-voice-concerns-about-sovereignty-amid-senate-advancement-of-baaja-bill",
+   "speaker": "Daniel Spaulding, KUNC",
+   "quote": "C’Bearing is concerned about Title III, which would change federal historic preservation law by narrowing which projects require review and placing new limits on the consultation process.",
+   "about": "Title III review scope",
+   "review": [
+    {
+     "section": "2301",
+     "text": "The term ‘undertaking’ means a project, activity, or program that— “(i) requires a Federal permit, license, or approval; and “(ii) is subject to substantial Federal control and responsibility.",
+     "look": "which projects count"
+    },
+    {
+     "section": "2301",
+     "text": "a project, activity, or program for which the only Federal involvement is a loan, loan guarantee, grant (including a capitalization grant), cost-share award, or other form of financial assistance that is not for the primary purpose of historic preservation,",
+     "look": "which federally funded projects are excluded"
+    },
+    {
+     "section": "2301",
+     "text": "has entered the consultation process required for purposes of this subsection, but does not provide any substantive objections by the date that is 45 days after the date of receipt of a report or finding, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens without objections"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-ict-1",
+   "media_url": "https://nit.com.au/20-11-2026/27633/bill-opposed-by-tribes-passes-second-procedural-vote",
+   "speaker": "ICT News, from National Indigenous Times",
+   "quote": "The proposed language removes the current obligation for federal agencies to consult with tribes regarding projects.",
+   "about": "Section 106 tribal consultation duty",
+   "review": [
+    {
+     "section": "2301",
+     "text": "On the provision of a response under clause (iv)(I), the obligation of the applicable Federal official to consult for purposes of this subsection shall be considered to be fulfilled with respect to the report.",
+     "look": "when the duty to consult ends"
+    },
+    {
+     "section": "2301",
+     "text": "Nothing in this subsection— “(A) authorizes the Secretary to consult on behalf of an Indian tribe; or “(B) relieves a Federal agency of the obligation to consult with an Indian tribe under section 302706(b).",
+     "look": "which consultation duties remain"
+    },
+    {
+     "section": "2301",
+     "text": "If the State Historic Preservation Officer, Tribal Historic Preservation Officer, Indian tribe, Native Hawaiian organization, or local government fails to respond within 30 days of receipt of a request for review of any report or finding by the applicable Federal official, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens when no response comes"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-ict-2",
+   "media_url": "https://nit.com.au/20-11-2026/27633/bill-opposed-by-tribes-passes-second-procedural-vote",
+   "speaker": "ICT News, from National Indigenous Times",
+   "quote": "one of the methods used to expedite approval processes is a proposal to strip tribes of rights to object to projects involving sacred or religious sites.",
+   "about": "Tribal objection rights and sacred sites",
+   "review": [
+    {
+     "section": "2301",
+     "text": "has entered the consultation process required for purposes of this subsection, but does not provide any substantive objections by the date that is 45 days after the date of receipt of a report or finding, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens without objections"
+    },
+    {
+     "section": "2301",
+     "text": "not later than 30 days after the date of receipt of the objections, the applicable Federal official— “(I) shall provide a response explaining how the Federal agency has considered the substantive objections in the report; and “(II) may provide a supplemental report.",
+     "look": "what the agency must do after an objection"
+    },
+    {
+     "section": "2302",
+     "text": "Nothing in this section requires a recipient of a grant under this subsection to disclose information to the public about the location, character, or ownership of a historic property",
+     "look": "what need not be disclosed"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-dailycaller-1",
+   "media_url": "https://dailycaller.com/2026/11/20/senate-passes-permitting-reform-bipartisan-american-affordability-jobs-act/",
+   "speaker": "Daily Caller",
+   "quote": "The bill would also eliminate Interior Department drilling permits for certain oil and gas wells on nonfederal land, while preserving applicable state requirements.",
+   "about": "Nonfederal oil and gas permits",
+   "review": [
+    {
+     "section": "2211",
+     "text": "but subject to any applicable State or Tribal requirements and subsection (c), the Secretary of the Interior shall not require a permit to drill for an oil and gas lease under the Mineral Leasing Act (30 U.S.C. 181 et seq.) for an action occurring within an oil and gas drilling or spacing unit if—",
+     "look": "which wells are covered"
+    },
+    {
+     "section": "2211",
+     "text": "Subsection (a) shall not apply to— (1) any land located within the boundaries of an Indian reservation, pueblo, or rancheria;",
+     "look": "which lands are excluded"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-dailycaller-2",
+   "media_url": "https://dailycaller.com/2026/11/20/senate-passes-permitting-reform-bipartisan-american-affordability-jobs-act/",
+   "speaker": "Sen. Jeff Merkley",
+   "quote": "This bill could make it easier to build more data centers powered by ‘behind the meter’ natural gas plants,",
+   "about": "Behind-the-meter generation",
+   "review": [
+    {
+     "section": "2108",
+     "text": "is located behind the meter of a retail customer of a distribution utility (as defined in section 217(a)); “(C) has a rated capacity of not less than 5 kilowatts and not more than 5 megawatts;",
+     "look": "the capacity range"
+    },
+    {
+     "section": "2117",
+     "text": "(G) backup and onsite generation, including capacity, fuel source, and anticipated use;",
+     "look": "what the program covers"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-truthout-1",
+   "media_url": "https://truthout.org/articles/15-democrats-join-gop-to-pass-big-oil-backed-permitting-bill-in-the-senate",
+   "speaker": "Jake Johnson, Common Dreams",
+   "quote": "The measure would also exempt pipeline expansions from National Environmental Policy Act (NEPA) review, potentially bar future administrations from rolling back previously approved projects, and restrict states’ and tribes’ ability to block projects under the Clean Water Act.",
+   "about": "Pipelines, NEPA, Clean Water Act section 401",
+   "review": [
+    {
+     "section": "1102",
+     "text": "any proposed agency action associated with a covered activity (as defined in subsection (i)(1) of section 7 of the Natural Gas Act (15 U.S.C. 717f));",
+     "look": "which actions are excluded"
+    },
+    {
+     "section": "2102",
+     "text": "A covered activity and any Federal agency action authorizing that covered activity— “(A) shall not be considered a major Federal action under the National Environmental Policy Act of 1969",
+     "look": "which activities are covered"
+    },
+    {
+     "section": "1202",
+     "text": "Notwithstanding the first sentence of subsection (a)(1), any applicant for a certificate of public convenience and necessity for a project under section 7 of the Natural Gas Act (15 U.S.C. 717f) or a Federal authorization or permit required to construct, modify, or operate an interstate transmission line project that may result in a direct point source discharge into the waters of the United States",
+     "look": "which projects need a State certification"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-truthout-2",
+   "media_url": "https://truthout.org/articles/15-democrats-join-gop-to-pass-big-oil-backed-permitting-bill-in-the-senate",
+   "speaker": "Jake Johnson, Common Dreams",
+   "quote": "BAAJA would limit the authority of federal courts to block energy projects due to violations of environmental protection laws.",
+   "about": "Federal court authority",
+   "review": [
+    {
+     "section": "1110",
+     "text": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency with—",
+     "look": "which remedies a court may order"
+    },
+    {
+     "section": "1110",
+     "text": "a court may issue a preliminary injunction for the applicable authorization when— “(I) there is a substantial likelihood the authorization violates a Federal law other than— “(aa) this Act; or “(bb) division A of subtitle III of title 54, United States Code;",
+     "look": "which laws can support a preliminary injunction"
+    },
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-13-esc-1",
+   "media_url": "https://www.endangered.org/florida-conservation-groups-urge-senators-scott-and-moody-to-reject-permitting-bill-threatening-clean-water-and-endangered-wildlife/",
+   "speaker": "Endangered Species Coalition",
+   "quote": "The legislation would make concerning changes to the ESA, NEPA, and CWA, such as restricting the scientific data that federal agencies may consider to develop protections for imperiled species, narrowing the scope of projects that need environmental review, shortening consultation timelines, and limiting state authority to review certain water pollution impacts of federally permitted projects.",
+   "about": "ESA data, NEPA scope, Clean Water Act state review",
+   "review": [
+    {
+     "section": "1301",
+     "text": "The terms ‘best scientific and commercial data available’ and ‘best scientific data available’— “(A) mean all relevant and objective scientific and commercial information available at the time of the agency action; and “(B) include credible and reliable data, quantitative analyses, conceptual and numerical models, and model results that—",
+     "look": "what counts as the best available data"
+    },
+    {
+     "section": "1302",
+     "text": "(1) in subparagraph (A), by striking “90-day” and inserting “60-day”; (2) in subparagraph (B)— (A) in the matter preceding clause (i)— (i) by striking “90 days” and inserting “60 days”; and (ii) by striking “90th day” and inserting “60th day”; (B) in clause (i), in the matter preceding subclause (I), by striking “150th day” and inserting “100th day”;",
+     "look": "the number of days"
+    },
+    {
+     "section": "1202",
+     "text": "The scope of a certification provided under this section shall be limited to ensuring compliance with water quality requirements.",
+     "look": "what a State may consider"
+    },
+    {
+     "section": "1102",
+     "text": "grants (including capitalization grants), cost-share awards, or other forms of financial assistance where a Federal agency does not exercise predominant control and responsibility over the subsequent use of such financial assistance or the environmental effect of the action;",
+     "look": "the control standard"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-13-esc-2",
+   "media_url": "https://www.endangered.org/florida-conservation-groups-urge-senators-scott-and-moody-to-reject-permitting-bill-threatening-clean-water-and-endangered-wildlife/",
+   "speaker": "Endangered Species Coalition",
+   "quote": "The bill would also restrict opportunities for communities to challenge certain harmful permitting decisions.",
+   "about": "Challenges to permitting decisions",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    },
+    {
+     "section": "1110",
+     "text": "the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization, with such comment being sufficiently detailed to put the applicable Federal agency on notice of the particular issue on which the party seeks judicial review;",
+     "look": "who may bring a claim"
+    },
+    {
+     "section": "1110",
+     "text": "is filed by a party alleging (or has an individual member alleging) an actual or imminent injury in fact amounting to a direct harm.",
+     "look": "who may bring a claim"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-10-esc-1",
+   "media_url": "https://www.endangered.org/endangered-species-coalition-statement-on-senate-advancement-of-the-bipartisan-affordability-and-jobs-act/",
+   "speaker": "Endangered Species Coalition",
+   "quote": "Among the Endangered Species Coalition’s concerns are provisions that define the standard for the “best available science” in a way that will block the protection of vulnerable whales, marine mammals, and other imperiled species.",
+   "about": "ESA best available science",
+   "review": [
+    {
+     "section": "1301",
+     "text": "The terms ‘best scientific and commercial data available’ and ‘best scientific data available’— “(A) mean all relevant and objective scientific and commercial information available at the time of the agency action; and “(B) include credible and reliable data, quantitative analyses, conceptual and numerical models, and model results that—",
+     "look": "what counts as the best available data"
+    },
+    {
+     "section": "1301",
+     "text": "(iii) are impartially gathered and objectively applied without presumptions or policy prescriptions that bias the application.",
+     "look": "the standard for the data"
+    },
+    {
+     "section": "1306",
+     "text": "the Secretary shall accept and integrate State-collected data, subject to the condition that the State-collected data meets the definition of ‘best scientific and commercial data available’.",
+     "look": "which State data the Secretary must accept"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-10-esc-2",
+   "media_url": "https://www.endangered.org/endangered-species-coalition-statement-on-senate-advancement-of-the-bipartisan-affordability-and-jobs-act/",
+   "speaker": "Endangered Species Coalition",
+   "quote": "The bill also expands opportunities for states to assume responsibilities under the Endangered Species Act despite significant questions about whether many states possess the resources, expertise, or commitment to carry out those duties effectively.",
+   "about": "State assumption of ESA duties",
+   "review": [
+    {
+     "section": "1304",
+     "text": "with the written agreement of the Secretary and a State, which may be in the form of a memorandum of understanding, the Secretary may assign, and the State may assume, the consultation responsibilities of the Secretary within the boundary of the State under subsections (a), (b), and (c) of section 7.",
+     "look": "which duties a State may take over"
+    },
+    {
+     "section": "1304",
+     "text": "A State may not assume responsibility under the program until the date on which— “(i) the implementing regulation takes effect; and “(ii) the State certifies to the Secretary that the State has secured the financial, legal, personnel, and other resources",
+     "look": "what a State must show first"
+    },
+    {
+     "section": "1304",
+     "text": "the Secretary may not assign the consultation responsibilities of the Secretary described in paragraph (4)(A) to any State for a project or agency action (as referred to in section 7) that exceeds the boundaries of the State.",
+     "look": "which projects a State may not take over"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-benton-1",
+   "media_url": "https://www.benton.org/blog/senate-sends-broadband-permitting-reform-bills-house",
+   "speaker": "Taglang, Benton Institute for Broadband & Society",
+   "quote": "The exclusion applies to NEPA only; other environmental and historic preservation laws would still apply, subject to the changes described below.",
+   "about": "Broadband NEPA exclusion scope",
+   "review": [
+    {
+     "section": "1102",
+     "text": "for the deployment of a broadband service (as defined in section 60102(a)(2) of the Infrastructure Investment and Jobs Act (47 U.S.C. 1702(a)(2)) provided to end-user locations through wireline facilities; “(II) on a previously analyzed right-of-way;",
+     "look": "which broadband projects are excluded"
+    },
+    {
+     "section": "2301",
+     "text": "a project, activity, or program for which the only Federal involvement is a loan, loan guarantee, grant (including a capitalization grant), cost-share award, or other form of financial assistance that is not for the primary purpose of historic preservation,",
+     "look": "which federally funded projects are excluded"
+    },
+    {
+     "section": "2102",
+     "text": "Nothing in this subsection affects the applicability of any requirement under— “(A) the Federal Water Pollution Control Act (33 U.S.C. 1251 et seq.) (commonly known as the ‘Clean Water Act’); “(B) the Clean Air Act (42 U.S.C. 7401 et seq.);",
+     "look": "which other laws still apply"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-benton-2",
+   "media_url": "https://www.benton.org/blog/senate-sends-broadband-permitting-reform-bills-house",
+   "speaker": "Taglang, Benton Institute for Broadband & Society",
+   "quote": "BAAJA would raise that bar to “predominant control and responsibility,” so more grant-funded projects could fall outside NEPA.",
+   "about": "Federal control standard for NEPA",
+   "review": [
+    {
+     "section": "1102",
+     "text": "grants (including capitalization grants), cost-share awards, or other forms of financial assistance where a Federal agency does not exercise predominant control and responsibility over the subsequent use of such financial assistance or the environmental effect of the action;",
+     "look": "the control standard"
+    },
+    {
+     "section": "1102",
+     "text": "the Department of Transportation shall be considered to have predominant control and responsibility over the subsequent use of financial assistance described in that clause for the purpose of any project that receives more than $10,000,000 of financial assistance from the Department of Transportation.",
+     "look": "the dollar threshold"
+    },
+    {
+     "section": "1102",
+     "text": "a proposed agency action subject to the requirements of this Act that the agency carrying out the proposed agency action determines is subject to substantial Federal control and responsibility.",
+     "look": "what counts as a major Federal action"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-benton-3",
+   "media_url": "https://www.benton.org/blog/senate-sends-broadband-permitting-reform-bills-house",
+   "speaker": "Taglang, Benton Institute for Broadband & Society",
+   "quote": "BAAJA would also exclude from NEPA the repair, reconstruction, or replacement of \"lifeline infrastructure\" in the immediate vicinity of existing facilities, as long as the work does not change the facility's function or increase its capacity by more than 20 percent.",
+   "about": "Lifeline infrastructure exclusion",
+   "review": [
+    {
+     "section": "1102",
+     "text": "any proposed agency action associated with a project to repair, reconstruct, restore, retrofit, or replace lifeline infrastructure (as defined in section 4 of the Earthquake Hazards Reduction Act of 1977 (42 U.S.C. 7703) and referred to in this clause as ‘lifeline infrastructure’),",
+     "look": "which projects are excluded"
+    },
+    {
+     "section": "1102",
+     "text": "if the head of the relevant Federal agency determines the repair, reconstruction, restoration, retrofit, or replacement is in the immediate vicinity of the lifeline infrastructure and does not alter the function or increase the capacity of the lifeline infrastructure by more than 20 percent as compared to the capacity of the original condition of the lifeline infrastructure,",
+     "look": "the capacity limit and who decides"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-grist-1",
+   "media_url": "https://grist.org/energy/what-congress-bill-to-speed-up-energy-projects-would-mean-for-you-permitting-reform-baaja/",
+   "speaker": "Austin Corona, Grist",
+   "quote": "The bill would speed up environmental and historic preservation reviews, narrow the potential impacts agencies must consider, restrict who can sue over them, and shorten the deadline for doing so.",
+   "about": "Review scope, standing, and deadline",
+   "review": [
+    {
+     "section": "2301",
+     "text": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics of the historic property;",
+     "look": "which effects count"
+    },
+    {
+     "section": "1110",
+     "text": "the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization, with such comment being sufficiently detailed to put the applicable Federal agency on notice of the particular issue on which the party seeks judicial review;",
+     "look": "who may bring a claim"
+    },
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-grist-2",
+   "media_url": "https://grist.org/energy/what-congress-bill-to-speed-up-energy-projects-would-mean-for-you-permitting-reform-baaja/",
+   "speaker": "Austin Corona, Grist",
+   "quote": "Controversially, the bill would also prevent states from using the Clean Water Act to block power lines or pipelines crossing waterways unless they directly discharge into the water.",
+   "about": "State Clean Water Act authority",
+   "review": [
+    {
+     "section": "1202",
+     "text": "Notwithstanding the first sentence of subsection (a)(1), any applicant for a certificate of public convenience and necessity for a project under section 7 of the Natural Gas Act (15 U.S.C. 717f) or a Federal authorization or permit required to construct, modify, or operate an interstate transmission line project that may result in a direct point source discharge into the waters of the United States",
+     "look": "which projects need a State certification"
+    },
+    {
+     "section": "1202",
+     "text": "The scope of a certification provided under this section shall be limited to ensuring compliance with water quality requirements.",
+     "look": "what a State may consider"
+    },
+    {
+     "section": "1202",
+     "text": "deny certification for any reason other than making a determination by clear and convincing evidence that— “(I) no modification to or reasonable condition on the certification would make it possible to grant the certification without violating water quality requirements;",
+     "look": "when a State may deny certification"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-grist-3",
+   "media_url": "https://grist.org/energy/what-congress-bill-to-speed-up-energy-projects-would-mean-for-you-permitting-reform-baaja/",
+   "speaker": "Austin Corona, Grist",
+   "quote": "It would give the federal government greater authority to override states that block interstate power lines and require regional grid operators to approve lines that improve reliability and affordability.",
+   "about": "Federal transmission siting authority",
+   "review": [
+    {
+     "section": "2101",
+     "text": "the Commission shall, after notice and an opportunity for hearing, including a public comment period of at least 45 days, issue one or more permits to individual or joint applicants for the construction or modification of electric transmission facilities necessary in the national interest if the Commission finds that",
+     "look": "when the Commission may issue a permit"
+    },
+    {
+     "section": "2101",
+     "text": "The Commission shall have no authority to issue a permit under subsection (b) for the construction or modification of an electric transmission facility within a State except as provided in paragraph (1) of that subsection.",
+     "look": "where the Commission may act"
+    },
+    {
+     "section": "2103",
+     "text": "Criteria governing the selection by transmission planning regions, for construction or modification, of regional and interregional transmission facilities that— “(A) provide improved reliability; “(B) protect or benefit consumers; and “(C) are consistent with the public interest.",
+     "look": "the selection criteria"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-grist-4",
+   "media_url": "https://grist.org/energy/what-congress-bill-to-speed-up-energy-projects-would-mean-for-you-permitting-reform-baaja/",
+   "speaker": "Austin Corona, Grist",
+   "quote": "Most data centers wouldn’t see big changes because of the bill, as they are overwhelmingly constructed on private land whose development is overseen by local and state governments.",
+   "about": "Data centers on private land",
+   "review": [
+    {
+     "section": "2117",
+     "text": "authorizes the Secretary to approve, disapprove, condition, delay, or otherwise participate in a State, local, or Tribal decision regarding the siting or development of a computational load site;",
+     "look": "who decides siting"
+    },
+    {
+     "section": "2117",
+     "text": "the Secretary shall provide State, local, and Tribal governments, on request, with objective and technically sound information, resources, and technical assistance",
+     "look": "what the program provides"
+    },
+    {
+     "section": "2107",
+     "text": "means 1 or more buildings, structures, or installations at a single location that primarily contain information technology infrastructure used for— “(i) creating, executing, and delivering software applications and services; “(ii) artificial intelligence training, deployment, and delivery; “(iii) cryptocurrency mining;",
+     "look": "which sites are covered and whether a size threshold appears"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-uschamber-1",
+   "media_url": "https://www.uschamber.com/energy/key-vote-letter-in-support-of-s-5653-the-bipartisan-american-affordability-and-jobs-act-of-2026",
+   "speaker": "U.S. Chamber of Commerce",
+   "quote": "The Bipartisan American Affordability and Jobs Act would help restore confidence in America's permitting system by creating more predictable review timelines, encouraging greater use of digital permitting tools, strengthening agency accountability, and ensuring environmental reviews remain focused on the issues that matter most.",
+   "about": "Review timelines and digital permitting",
+   "review": [
+    {
+     "section": "1106",
+     "text": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, the lead agency shall issue a record of decision.",
+     "look": "the number of days"
+    },
+    {
+     "section": "1132",
+     "text": "shall maintain, as a component of the Dashboard, an online database, to be known as the “Environmental Review and Permitting Tracker”, to track the status of Federal environmental documents and authorizations for each transparency project.",
+     "look": "what the database tracks"
+    },
+    {
+     "section": "1403",
+     "text": "all Federal agencies shall render decisions on all applicable covered applications not later than 1 year after the date on which the latest of the covered applications was submitted.",
+     "look": "the number of days"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-17-icn-1",
+   "media_url": "https://insideclimatenews.org/news/17112026/baaja-permitting-bill/",
+   "speaker": "Inside Climate News",
+   "quote": "But the more-controversial Section 1401 of the bill makes a finished permit very hard to take back.",
+   "about": "Permit revocation limits",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "place the burden of proof on the Federal department or agency to demonstrate that 1 or more of the matters described in subparagraphs (A) through (F) of that paragraph applies.",
+     "look": "who carries the burden of proof"
+    },
+    {
+     "section": "1401",
+     "text": "the reinstatement of the Federal authorization or permit and the termination of any action by the Federal department or agency preventing the construction or operation of the covered project or action;",
+     "look": "what relief is available"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-17-icn-2",
+   "media_url": "https://insideclimatenews.org/news/17112026/baaja-permitting-bill/",
+   "speaker": "Inside Climate News",
+   "quote": "An agency that interferes in bad faith could owe the developer a quarter to half of what it has spent.",
+   "about": "Bad-faith interference damages",
+   "review": [
+    {
+     "section": "1401",
+     "text": "interfered with a Federal authorization or permit in bad faith or interfered in bad faith with the construction or operation of a project that has secured all necessary Federal authorizations or permits, costs in an amount not less than 25 percent and not more than 50 percent of the total of all development and construction costs",
+     "look": "the percentage range and what it is measured against"
+    },
+    {
+     "section": "1401",
+     "text": "the reinstatement of the Federal authorization or permit and the termination of any action by the Federal department or agency preventing the construction or operation of the covered project or action;",
+     "look": "what relief is available"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-17-icn-3",
+   "media_url": "https://insideclimatenews.org/news/17112026/baaja-permitting-bill/",
+   "speaker": "Inside Climate News",
+   "quote": "And it affects any permit in effect on or after Nov. 6, so it starts protecting approvals already on the books, not just future ones.",
+   "about": "Permit protection start date",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "means a project or action with a non-Federal project sponsor that has secured all necessary Federal authorizations or permits for construction or operation.",
+     "look": "which projects are covered"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-hunton-1",
+   "media_url": "https://www.hunton.com/the-nickel-report/federal-bipartisan-permitting-legislation-expected-to-clear-senate-today-and-head-to-the-house",
+   "speaker": "Elizabeth L. Horner, Hunton Andrews Kurth",
+   "quote": "The bill also provides new methods of challenging federal agency action (or inaction) on pending applications for federal authorizations as well as revocations of previously issued federal authorizations.",
+   "about": "Challenges to agency inaction and revocation",
+   "review": [
+    {
+     "section": "1403",
+     "text": "may obtain judicial review of the compliance by a Federal department or agency with the deadline established under subsection (b) with respect to the covered application by filing a complaint in—",
+     "look": "who may petition and when"
+    },
+    {
+     "section": "1401",
+     "text": "may obtain review of such action in— (i) a United States district court in which the project is at least partially located; or (ii) the United States District Court for the District of Columbia.",
+     "look": "where a holder may sue"
+    },
+    {
+     "section": "1401",
+     "text": "place the burden of proof on the Federal department or agency to demonstrate that 1 or more of the matters described in subparagraphs (A) through (F) of that paragraph applies.",
+     "look": "who carries the burden of proof"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-canary-1",
+   "media_url": "https://canarymedia.com/articles/land-use/tribal-rights-energy-permitting-debate",
+   "speaker": "Julia Tilton, Canary Media",
+   "quote": "In the end, the bill’s initial NHPA language was amended in response to concerns over sections that weakened tribal consultation and allowed for Interior Department oversight of Tribal Historic Preservation Offices.",
+   "about": "Historic preservation language",
+   "review": [
+    {
+     "section": "2301",
+     "text": "Periodically, but not less frequently than every 2 years after the date on which a tribal program has been approved to assume functions and responsibilities under section 302702, the Secretary, in consultation with the Council under applicable provisions of this division, and in cooperation with the Tribal Historic Preservation Officer, shall evaluate the tribal program to determine whether the tribal program is consistent with this division.",
+     "look": "who evaluates Tribal programs"
+    },
+    {
+     "section": "2301",
+     "text": "If, at any time, the Secretary determines that a major aspect of a tribal program is not consistent with this division, the Secretary shall disapprove the tribal program and suspend in whole or in part contracts or cooperative agreements with the Indian tribe and the Tribal Historic Preservation Officer",
+     "look": "what happens if a program is found inconsistent"
+    },
+    {
+     "section": "2301",
+     "text": "Nothing in this subsection— “(A) authorizes the Secretary to consult on behalf of an Indian tribe; or “(B) relieves a Federal agency of the obligation to consult with an Indian tribe under section 302706(b).",
+     "look": "which consultation duties remain"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-canary-2",
+   "media_url": "https://canarymedia.com/articles/land-use/tribal-rights-energy-permitting-debate",
+   "speaker": "Julia Tilton, Canary Media",
+   "quote": "Some influential tribal organizations believe that the proposed changes to the NHPA under the permitting bill would infringe on their sovereignty — and water down the already imperfect government-to-government consultation process.",
+   "about": "Historic preservation changes and Tribal sovereignty",
+   "review": [
+    {
+     "section": "2301",
+     "text": "On the provision of a response under clause (iv)(I), the obligation of the applicable Federal official to consult for purposes of this subsection shall be considered to be fulfilled with respect to the report.",
+     "look": "when the duty to consult ends"
+    },
+    {
+     "section": "2301",
+     "text": "Nothing in this subsection— “(A) authorizes the Secretary to consult on behalf of an Indian tribe; or “(B) relieves a Federal agency of the obligation to consult with an Indian tribe under section 302706(b).",
+     "look": "which consultation duties remain"
+    },
+    {
+     "section": "2301",
+     "text": "Periodically, but not less frequently than every 2 years after the date on which a tribal program has been approved to assume functions and responsibilities under section 302702, the Secretary, in consultation with the Council under applicable provisions of this division, and in cooperation with the Tribal Historic Preservation Officer, shall evaluate the tribal program to determine whether the tribal program is consistent with this division.",
+     "look": "who evaluates Tribal programs"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-nathpoorg-1",
+   "media_url": "https://x.com/NATHPO_org/status/2123255892439187897",
+   "speaker": "National Association of Tribal Historic Preservation Officers",
+   "quote": "BAAJA would so severely restrict the types of projects, as well as the harms those projects might cause, on which Agencies must consult with Tribes, that it effectively eliminates consultation for most federal projects.",
+   "about": "Tribal consultation scope",
+   "review": [
+    {
+     "section": "2301",
+     "text": "The term ‘undertaking’ means a project, activity, or program that— “(i) requires a Federal permit, license, or approval; and “(ii) is subject to substantial Federal control and responsibility.",
+     "look": "which projects count"
+    },
+    {
+     "section": "2301",
+     "text": "a project, activity, or program for which the only Federal involvement is a loan, loan guarantee, grant (including a capitalization grant), cost-share award, or other form of financial assistance that is not for the primary purpose of historic preservation,",
+     "look": "which federally funded projects are excluded"
+    },
+    {
+     "section": "2301",
+     "text": "any visual, atmospheric, or audible element, unless the visual, atmospheric, or audible element would have a direct impact on a historic property that would significantly diminish the eligible characteristics of the historic property;",
+     "look": "which effects count"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-nathpoorg-2",
+   "media_url": "https://x.com/NATHPO_org/status/2123132965362553244",
+   "speaker": "National Association of Tribal Historic Preservation Officers",
+   "quote": "as BAAJA currently does",
+   "about": "Tribal sovereignty and Native places",
+   "review": [
+    {
+     "section": "2301",
+     "text": "has entered the consultation process required for purposes of this subsection, but does not provide any substantive objections by the date that is 45 days after the date of receipt of a report or finding, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens without objections"
+    },
+    {
+     "section": "2301",
+     "text": "Nothing in this subsection— “(A) authorizes the Secretary to consult on behalf of an Indian tribe; or “(B) relieves a Federal agency of the obligation to consult with an Indian tribe under section 302706(b).",
+     "look": "which consultation duties remain"
+    },
+    {
+     "section": "2302",
+     "text": "Nothing in this section requires a recipient of a grant under this subsection to disclose information to the public about the location, character, or ownership of a historic property",
+     "look": "what need not be disclosed"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-aidanrmackenzie-1",
+   "media_url": "https://x.com/AidanRMackenzie/status/2123227808579154057",
+   "speaker": "Aidan Mackenzie",
+   "quote": "BAAJA does not weaken *a single* substantive environmental standard (changes speed up processing and limit litigation)",
+   "about": "Standards versus timing and litigation",
+   "review": [
+    {
+     "section": "1202",
+     "text": "The scope of a certification provided under this section shall be limited to ensuring compliance with water quality requirements.",
+     "look": "what a State may consider"
+    },
+    {
+     "section": "1106",
+     "text": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, the lead agency shall issue a record of decision.",
+     "look": "the number of days"
+    },
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-aidanrmackenzie-2",
+   "media_url": "https://x.com/AidanRMackenzie/status/2123156116263825802",
+   "speaker": "Aidan Mackenzie",
+   "quote": "In fact it does not give any money to data centers at all!",
+   "about": "Federal money for data centers",
+   "review": [
+    {
+     "section": "2117",
+     "text": "the Secretary shall provide State, local, and Tribal governments, on request, with objective and technically sound information, resources, and technical assistance",
+     "look": "what the program provides"
+    },
+    {
+     "section": "2117",
+     "text": "limits the authority of the Secretary under any other provision of law to provide financial assistance, including grants, loans, loan guarantees, or other assistance, for a project or to an entity associated with a computational load site.",
+     "look": "whether financial assistance is addressed"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-aidanrmackenzie-3",
+   "media_url": "https://x.com/AidanRMackenzie/status/2123156116263825802",
+   "speaker": "Aidan Mackenzie",
+   "quote": "BAAJA makes data centers pay double to connect to the grid (See Section 2107: Ratepayer protection)",
+   "about": "Data center grid connection costs",
+   "review": [
+    {
+     "section": "2107",
+     "text": "to provide a transmission rate that includes the embedded cost and a reasonable assessment of the incremental cost of transmission service to eligible computational load customers;",
+     "look": "what the rate includes"
+    },
+    {
+     "section": "2107",
+     "text": "No portion of the retail incremental cost may be allocated to, or recovered in the rates of, any customer other than a computational load owner or a computational load operator.",
+     "look": "who pays the cost"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-janeaflegal-1",
+   "media_url": "https://x.com/JaneAFlegal/status/2123825211606778258",
+   "speaker": "Jane Flegal",
+   "quote": "States can ban them! The federal government can ban them!",
+   "about": "Siting authority over data centers",
+   "review": [
+    {
+     "section": "2117",
+     "text": "authorizes the Secretary to approve, disapprove, condition, delay, or otherwise participate in a State, local, or Tribal decision regarding the siting or development of a computational load site;",
+     "look": "who decides siting"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-janeaflegal-1",
+   "media_url": "https://x.com/JaneAFlegal/status/2123478217939947566",
+   "speaker": "Jane Flegal",
+   "quote": "BAAJA does not facilitate the building of data centers on public lands, nothing in the bill prevents illegally issued permits from being set aside or reversed",
+   "about": "Reversal of illegally issued permits",
+   "review": [
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    },
+    {
+     "section": "1110",
+     "text": "a court may issue a preliminary injunction for the applicable authorization when— “(I) there is a substantial likelihood the authorization violates a Federal law other than— “(aa) this Act; or “(bb) division A of subtitle III of title 54, United States Code;",
+     "look": "which laws can support a preliminary injunction"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-thirdwayenergy-1",
+   "media_url": "https://x.com/ThirdWayEnergy/status/2123883580887904757",
+   "speaker": "Third Way Climate and Energy",
+   "quote": "Legal protections against unlawful permits, however, remain strong.",
+   "about": "Review of unlawful permits",
+   "review": [
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    },
+    {
+     "section": "1110",
+     "text": "a court may issue a preliminary injunction for the applicable authorization when— “(I) there is a substantial likelihood the authorization violates a Federal law other than— “(aa) this Act; or “(bb) division A of subtitle III of title 54, United States Code;",
+     "look": "which laws can support a preliminary injunction"
+    },
+    {
+     "section": "1401",
+     "text": "place the burden of proof on the Federal department or agency to demonstrate that 1 or more of the matters described in subparagraphs (A) through (F) of that paragraph applies.",
+     "look": "who carries the burden of proof"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-appvoices-1",
+   "media_url": "https://x.com/AppVoices/status/2123166135835308515",
+   "speaker": "Appalachian Voices",
+   "quote": "The bill would make it easier to build polluting facilities while limiting public input.",
+   "about": "Public input and polluting facilities",
+   "review": [
+    {
+     "section": "1110",
+     "text": "the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization, with such comment being sufficiently detailed to put the applicable Federal agency on notice of the particular issue on which the party seeks judicial review;",
+     "look": "who may bring a claim"
+    },
+    {
+     "section": "1110",
+     "text": "is filed by a party alleging (or has an individual member alleging) an actual or imminent injury in fact amounting to a direct harm.",
+     "look": "who may bring a claim"
+    },
+    {
+     "section": "1105",
+     "text": "(5) the proposed agency action relates to a project or action that has been reviewed pursuant to a State environmental review statute or a Tribal environmental review statute, ordinance, resolution, regulation, or formally adopted policy and the lead agency determines that the review serves a similar function as Federal agency compliance with this Act; or",
+     "look": "which other reviews can stand in for a NEPA review"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-18-ceidotorg-1",
+   "media_url": "https://x.com/ceidotorg/status/2123039523198103729",
+   "speaker": "Competitive Enterprise Institute",
+   "quote": "S. 5653, the Bipartisan American Affordability and Jobs Act, would cut NEPA's legal challenge window from six years to 150 days.",
+   "about": "NEPA challenge window",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-thomashochman-1",
+   "media_url": "https://x.com/ThomasHochman/status/2123627467768213904",
+   "speaker": "Thomas Hochman",
+   "quote": "there is only one Clean Air Act provision in BAAJA",
+   "about": "Clean Air Act provisions",
+   "review": [
+    {
+     "section": "1601",
+     "text": "Section 319(b) of the Clean Air Act (42 U.S.C. 7619(b)) is amended",
+     "look": "which Clean Air Act provision is amended"
+    },
+    {
+     "section": "2102",
+     "text": "Nothing in this subsection affects the applicability of any requirement under— “(A) the Federal Water Pollution Control Act (33 U.S.C. 1251 et seq.) (commonly known as the ‘Clean Water Act’); “(B) the Clean Air Act (42 U.S.C. 7401 et seq.);",
+     "look": "which other laws still apply"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-siegelscribe-1",
+   "media_url": "https://x.com/SiegelScribe/status/2123623560673391091",
+   "speaker": "Joshua Siegel",
+   "quote": "this bill kicks off Democrats bringing down energy costs, lowering emissions, creating well paying jobs, and ending the free ride for data centers.",
+   "about": "Data center costs",
+   "review": [
+    {
+     "section": "2107",
+     "text": "No portion of the retail incremental cost may be allocated to, or recovered in the rates of, any customer other than a computational load owner or a computational load operator.",
+     "look": "who pays the cost"
+    },
+    {
+     "section": "2107",
+     "text": "it is the policy of the United States that computational load owners and computational load operators bear the full cost of any electric service that they require and the full cost of any infrastructure built to serve them, regardless of whether they take the electric service that they request, so that such costs are not borne by other customers, including residential customers;",
+     "look": "who pays the cost"
+    }
+   ]
+  }
+ ],
+ "skipped": [
+  {
+   "media_url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgH6300-3.htm",
+   "quote": "we know that Donald Trump plans to use it to build data centers because he said so himself",
+   "why": "A statement about what the President said and intends; no provision describes his plans."
+  },
+  {
+   "media_url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgH6300-3.htm",
+   "quote": "a deal cut behind closed doors without public hearings, without Tribal consultation, and without public input",
+   "why": "A description of how the bill was negotiated; the text does not record that process."
+  },
+  {
+   "media_url": "https://www.duluthnewstribune.com/news/local/klobuchar-smith-divided-on-permitting-bill",
+   "quote": "In a statement late Thursday, Smith said she opposed the bill because it would make it easier for Twin Metals to build a copper-nickel mine in the same watershed as the Boundary Waters Canoe Area Wilderness, and it would violate tribal sovereignty.",
+   "why": "Names one mine and a watershed that no provision mentions, and characterizes the bill as a violation of sovereignty."
+  },
+  {
+   "media_url": "https://www.duluthnewstribune.com/news/local/klobuchar-smith-divided-on-permitting-bill",
+   "quote": "Once it clears the House, America will build again, and American families will save thousands of dollars a year.",
+   "why": "A forecast of household savings; no provision states an amount."
+  },
+  {
+   "media_url": "https://www.wri.org/insights/bipartisan-american-affordability-jobs-act-energy-permitting-bill-explained",
+   "quote": "modeling from Rhodium Group suggests that this bill would reduce household electricity bills by $50 to $78 per year in 2040, compared to the bill not passing.",
+   "why": "A modeled forecast of household bills in 2040; no provision states an amount."
+  },
+  {
+   "media_url": "https://www.lee.senate.gov/news/press-releases/senate-resoundingly-passes-mike-lees-landmark-bipartisan-american-affordability-and-jobs-act/",
+   "quote": "Starting next year, the first year after this bill has become law, the average American family is going to save at a minimum, hundreds of dollars every year on their electric power bill.",
+   "why": "A forecast of household electric bill savings; no provision states an amount."
+  },
+  {
+   "media_url": "https://nam.org/senate-passes-permitting-reform-a-major-bipartisan-win-for-manufacturers/",
+   "quote": "The Bipartisan American Affordability and Jobs Act could cut those costs by more than a third, saving manufacturers more than $4 billion annually that could instead be invested in new facilities, expanded operations and good-paying American jobs.",
+   "why": "A forecast of manufacturer savings; no provision states an amount."
+  },
+  {
+   "media_url": "https://x.com/CJAOurPower/status/2123880179974144495",
+   "quote": "BAAJA threatens to dismantle more than half a century of environmental protections.",
+   "why": "A broad characterization of the bill; it names no provision."
+  },
+  {
+   "media_url": "https://x.com/CJAOurPower/status/2123078238222323875",
+   "quote": "BAAJA is the biggest rollback in environmental protections, an attack on Tribal sovereignty, & a giveaway to AI & the fossil fuel industry.",
+   "why": "A broad characterization of the bill and a motive; it names no provision."
+  },
+  {
+   "media_url": "https://x.com/CJAOurPower/status/2123779467965288640",
+   "quote": "BAAJA may give us savings of a mere $15 a month, at best, in 15 years, while exponentially increasing asthma and cancer-causing pollution in our neighborhoods.",
+   "why": "A forecast of household savings and health effects; no provision states an amount."
+  },
+  {
+   "media_url": "https://x.com/NATHPO_org/status/2123618183269773758",
+   "quote": "The bill was written behind closed doors without consulting Tribal Nations.",
+   "why": "A description of how the bill was written; the text does not record that process."
+  },
+  {
+   "media_url": "https://x.com/ThirdWayEnergy/status/2124150590729060785",
+   "quote": "BAAJA would put federal dollars towards those costs so that Americans have more money in their wallets at the end of the day.",
+   "why": "A claim about transmission costs on power bills; no passage found that assigns federal money to those costs."
+  },
+  {
+   "media_url": "https://x.com/ThirdWayEnergy/status/2123476395930063287",
+   "quote": "But BAAJA would actually SAVE Americans $36–$56 billion by 2035.",
+   "why": "A forecast of national savings; no provision states an amount."
+  },
+  {
+   "media_url": "https://x.com/ThirdWayEnergy/status/2123416125828481141",
+   "quote": "BAAJA could reduce residential electricity prices and bills nationally by 3–4% in less than a decade.",
+   "why": "A forecast of electricity prices; no provision states a price effect."
+  },
+  {
+   "media_url": "https://x.com/ThirdWayEnergy/status/2123483950374932945",
+   "quote": "BAAJA would lower electricity prices across the country.",
+   "why": "A forecast of electricity prices; no provision states a price effect."
+  },
+  {
+   "media_url": "https://x.com/SenMarkey/status/2123116369856102558",
+   "quote": "Right now, Congress is getting ready to vote on a permitting bill that gives Big Tech a Big Blank Check to build in our communities.",
+   "why": "A characterization of the bill; it names no provision."
+  },
+  {
+   "media_url": "https://x.com/SenMarkey/status/2123174898377912325",
+   "quote": "They want this permitting bill to pass as-is so it can “boost data center builds.”",
+   "why": "A statement about what others want from the bill; it names no provision."
+  },
+  {
+   "media_url": "https://x.com/SenMarkey/status/2123140603638612260",
+   "quote": "Donald Trump is demanding that Democrats line up and support a permitting bill that says he will build mines, pipelines, power plants, and data centers.",
+   "why": "A statement about what the President demands and intends; no provision describes his plans."
+  },
+  {
+   "media_url": "https://x.com/SenMarkey/status/2123176438744416326",
+   "quote": "Americans want more than just saving $5 per month fifteen years from now.",
+   "why": "A comparison of forecast savings; no provision states an amount."
+  },
+  {
+   "media_url": "https://x.com/SenMarkey/status/2123133038242451707",
+   "quote": "Tribal leaders have made their voices clear: the permitting bill before Congress is an attack on Tribal sovereignty.",
+   "why": "A statement about what Tribal leaders have said, without a provision claim."
+  },
+  {
+   "media_url": "https://x.com/RepRashida/status/2123069523649560697",
+   "quote": "They advanced a “permitting reform” bill that’ll allow Big Tech to poison our communities",
+   "why": "A characterization of the bill; it names no provision."
+  },
+  {
+   "media_url": "https://x.com/SenJohnBarrasso/status/2123089826585219307",
+   "quote": "We are not dictating what gets built.",
+   "why": "A statement of legislative intent; it names no provision."
+  },
+  {
+   "media_url": "https://x.com/LeaderJohnThune/status/2123483581032862106",
+   "quote": "It’s estimated that this bill will save the average household hundreds of dollars each year",
+   "why": "A forecast of household savings; no provision states an amount."
+  },
+  {
+   "media_url": "https://x.com/mattyglesias/status/2123554687810945077",
+   "quote": "The emissions impact of BAAJA without tax credits is very similar to the impact of IRA without transmission reforms.",
+   "why": "A forecast of emissions effects; no provision states an amount."
+  },
+  {
+   "media_url": "https://x.com/citizensclimate/status/2123655796114268402",
+   "quote": "Improved permitting means more clean energy built and less climate pollution.",
+   "why": "A forecast of clean energy and emissions effects; no provision states an amount."
+  },
+  {
+   "media_url": "https://x.com/NATHPO_org/status/2123824190021140568",
+   "quote": "We can and must reform permitting without trampling on Tribal sovereignty and endangering Native places!",
+   "why": "A statement of what should be done; it names no provision."
+  },
+  {
+   "media_url": "https://x.com/RepScottPeters/status/2123616915448865263",
+   "quote": "BAAJA lowers costs and lowers emissions.",
+   "why": "A forecast of costs and emissions; no provision states an amount."
+  }
+ ]
+}
