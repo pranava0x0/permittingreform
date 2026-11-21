@@ -1,6 +1,6 @@
 {
- "as_of": "2026-11-18",
- "note": "All six votes were on procedure or on the substitute. None was a vote on passing the bill.",
+ "as_of": "2026-11-21",
+ "note": "Seven roll calls on the bill. The last, on November 19, passed it 62 to 33; the six before it were on procedure or on the substitute.",
  "roll_calls": [
   {
    "number": 257,
@@ -3671,6 +3671,624 @@
      "D",
      "GA",
      "Yea"
+    ],
+    [
+     "Elizabeth Warren",
+     "D",
+     "MA",
+     "Nay"
+    ],
+    [
+     "Peter Welch",
+     "D",
+     "VT",
+     "Nay"
+    ],
+    [
+     "Sheldon Whitehouse",
+     "D",
+     "RI",
+     "Yea"
+    ],
+    [
+     "Roger Wicker",
+     "R",
+     "MS",
+     "Yea"
+    ],
+    [
+     "Ron Wyden",
+     "D",
+     "OR",
+     "Nay"
+    ],
+    [
+     "Todd Young",
+     "R",
+     "IN",
+     "Yea"
+    ]
+   ]
+  },
+  {
+   "number": 270,
+   "date": "2026-11-19",
+   "question": "Passing H.R. 2347, as amended",
+   "official_question": "On Passage of the Bill H.R. 2347",
+   "measure": "H.R. 2347",
+   "required": "1/2",
+   "result": "Bill Passed",
+   "yeas": 62,
+   "nays": 33,
+   "not_voting": 5,
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm",
+   "xml_url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.xml",
+   "xml_fetched": "2026-11-21",
+   "quote": "Bill Passed (62-33)",
+   "members": [
+    [
+     "Angela Alsobrooks",
+     "D",
+     "MD",
+     "Nay"
+    ],
+    [
+     "Alan Armstrong",
+     "R",
+     "OK",
+     "Yea"
+    ],
+    [
+     "Tammy Baldwin",
+     "D",
+     "WI",
+     "Nay"
+    ],
+    [
+     "Jim Banks",
+     "R",
+     "IN",
+     "Yea"
+    ],
+    [
+     "John Barrasso",
+     "R",
+     "WY",
+     "Yea"
+    ],
+    [
+     "Michael Bennet",
+     "D",
+     "CO",
+     "Nay"
+    ],
+    [
+     "Marsha Blackburn",
+     "R",
+     "TN",
+     "Yea"
+    ],
+    [
+     "Richard Blumenthal",
+     "D",
+     "CT",
+     "Nay"
+    ],
+    [
+     "Lisa Blunt Rochester",
+     "D",
+     "DE",
+     "Nay"
+    ],
+    [
+     "Cory Booker",
+     "D",
+     "NJ",
+     "Nay"
+    ],
+    [
+     "John Boozman",
+     "R",
+     "AR",
+     "Yea"
+    ],
+    [
+     "Katie Britt",
+     "R",
+     "AL",
+     "Yea"
+    ],
+    [
+     "Ted Budd",
+     "R",
+     "NC",
+     "Yea"
+    ],
+    [
+     "Maria Cantwell",
+     "D",
+     "WA",
+     "Nay"
+    ],
+    [
+     "Shelley Capito",
+     "R",
+     "WV",
+     "Yea"
+    ],
+    [
+     "Bill Cassidy",
+     "R",
+     "LA",
+     "Not Voting"
+    ],
+    [
+     "Susan Collins",
+     "R",
+     "ME",
+     "Yea"
+    ],
+    [
+     "Christopher Coons",
+     "D",
+     "DE",
+     "Yea"
+    ],
+    [
+     "John Cornyn",
+     "R",
+     "TX",
+     "Not Voting"
+    ],
+    [
+     "Catherine Cortez Masto",
+     "D",
+     "NV",
+     "Nay"
+    ],
+    [
+     "Tom Cotton",
+     "R",
+     "AR",
+     "Yea"
+    ],
+    [
+     "Kevin Cramer",
+     "R",
+     "ND",
+     "Yea"
+    ],
+    [
+     "Mike Crapo",
+     "R",
+     "ID",
+     "Yea"
+    ],
+    [
+     "Ted Cruz",
+     "R",
+     "TX",
+     "Yea"
+    ],
+    [
+     "John Curtis",
+     "R",
+     "UT",
+     "Yea"
+    ],
+    [
+     "Steve Daines",
+     "R",
+     "MT",
+     "Yea"
+    ],
+    [
+     "Tammy Duckworth",
+     "D",
+     "IL",
+     "Nay"
+    ],
+    [
+     "Richard Durbin",
+     "D",
+     "IL",
+     "Nay"
+    ],
+    [
+     "Joni Ernst",
+     "R",
+     "IA",
+     "Yea"
+    ],
+    [
+     "John Fetterman",
+     "D",
+     "PA",
+     "Yea"
+    ],
+    [
+     "Deb Fischer",
+     "R",
+     "NE",
+     "Yea"
+    ],
+    [
+     "Ruben Gallego",
+     "D",
+     "AZ",
+     "Yea"
+    ],
+    [
+     "Kirsten Gillibrand",
+     "D",
+     "NY",
+     "Nay"
+    ],
+    [
+     "Darline Graham",
+     "R",
+     "SC",
+     "Yea"
+    ],
+    [
+     "Chuck Grassley",
+     "R",
+     "IA",
+     "Yea"
+    ],
+    [
+     "Bill Hagerty",
+     "R",
+     "TN",
+     "Yea"
+    ],
+    [
+     "Maggie Hassan",
+     "D",
+     "NH",
+     "Nay"
+    ],
+    [
+     "Josh Hawley",
+     "R",
+     "MO",
+     "Nay"
+    ],
+    [
+     "Martin Heinrich",
+     "D",
+     "NM",
+     "Yea"
+    ],
+    [
+     "John Hickenlooper",
+     "D",
+     "CO",
+     "Yea"
+    ],
+    [
+     "Mazie Hirono",
+     "D",
+     "HI",
+     "Nay"
+    ],
+    [
+     "John Hoeven",
+     "R",
+     "ND",
+     "Yea"
+    ],
+    [
+     "Jon Husted",
+     "R",
+     "OH",
+     "Yea"
+    ],
+    [
+     "Cindy Hyde-Smith",
+     "R",
+     "MS",
+     "Yea"
+    ],
+    [
+     "Ron Johnson",
+     "R",
+     "WI",
+     "Yea"
+    ],
+    [
+     "James Justice",
+     "R",
+     "WV",
+     "Yea"
+    ],
+    [
+     "Timothy Kaine",
+     "D",
+     "VA",
+     "Nay"
+    ],
+    [
+     "Mark Kelly",
+     "D",
+     "AZ",
+     "Nay"
+    ],
+    [
+     "John Kennedy",
+     "R",
+     "LA",
+     "Yea"
+    ],
+    [
+     "Andy Kim",
+     "D",
+     "NJ",
+     "Nay"
+    ],
+    [
+     "Angus King",
+     "I",
+     "ME",
+     "Yea"
+    ],
+    [
+     "Amy Klobuchar",
+     "D",
+     "MN",
+     "Yea"
+    ],
+    [
+     "James Lankford",
+     "R",
+     "OK",
+     "Yea"
+    ],
+    [
+     "Mike Lee",
+     "R",
+     "UT",
+     "Yea"
+    ],
+    [
+     "Ben Lujan",
+     "D",
+     "NM",
+     "Nay"
+    ],
+    [
+     "Cynthia Lummis",
+     "R",
+     "WY",
+     "Yea"
+    ],
+    [
+     "Edward Markey",
+     "D",
+     "MA",
+     "Nay"
+    ],
+    [
+     "Roger Marshall",
+     "R",
+     "KS",
+     "Yea"
+    ],
+    [
+     "Mitch McConnell",
+     "R",
+     "KY",
+     "Not Voting"
+    ],
+    [
+     "David McCormick",
+     "R",
+     "PA",
+     "Yea"
+    ],
+    [
+     "Jeff Merkley",
+     "D",
+     "OR",
+     "Nay"
+    ],
+    [
+     "Ashley Moody",
+     "R",
+     "FL",
+     "Yea"
+    ],
+    [
+     "Jerry Moran",
+     "R",
+     "KS",
+     "Yea"
+    ],
+    [
+     "Bernie Moreno",
+     "R",
+     "OH",
+     "Yea"
+    ],
+    [
+     "Lisa Murkowski",
+     "R",
+     "AK",
+     "Yea"
+    ],
+    [
+     "Christopher Murphy",
+     "D",
+     "CT",
+     "Not Voting"
+    ],
+    [
+     "Patty Murray",
+     "D",
+     "WA",
+     "Nay"
+    ],
+    [
+     "Jon Ossoff",
+     "D",
+     "GA",
+     "Nay"
+    ],
+    [
+     "Alex Padilla",
+     "D",
+     "CA",
+     "Nay"
+    ],
+    [
+     "Rand Paul",
+     "R",
+     "KY",
+     "Yea"
+    ],
+    [
+     "Gary Peters",
+     "D",
+     "MI",
+     "Yea"
+    ],
+    [
+     "John Reed",
+     "D",
+     "RI",
+     "Yea"
+    ],
+    [
+     "Pete Ricketts",
+     "R",
+     "NE",
+     "Yea"
+    ],
+    [
+     "James Risch",
+     "R",
+     "ID",
+     "Yea"
+    ],
+    [
+     "Jacky Rosen",
+     "D",
+     "NV",
+     "Yea"
+    ],
+    [
+     "Mike Rounds",
+     "R",
+     "SD",
+     "Nay"
+    ],
+    [
+     "Bernie Sanders",
+     "I",
+     "VT",
+     "Nay"
+    ],
+    [
+     "Brian Schatz",
+     "D",
+     "HI",
+     "Yea"
+    ],
+    [
+     "Adam Schiff",
+     "D",
+     "CA",
+     "Nay"
+    ],
+    [
+     "Eric Schmitt",
+     "R",
+     "MO",
+     "Yea"
+    ],
+    [
+     "Charles Schumer",
+     "D",
+     "NY",
+     "Yea"
+    ],
+    [
+     "Rick Scott",
+     "R",
+     "FL",
+     "Yea"
+    ],
+    [
+     "Tim Scott",
+     "R",
+     "SC",
+     "Yea"
+    ],
+    [
+     "Jeanne Shaheen",
+     "D",
+     "NH",
+     "Nay"
+    ],
+    [
+     "Tim Sheehy",
+     "R",
+     "MT",
+     "Yea"
+    ],
+    [
+     "Elissa Slotkin",
+     "D",
+     "MI",
+     "Yea"
+    ],
+    [
+     "Tina Smith",
+     "D",
+     "MN",
+     "Nay"
+    ],
+    [
+     "Dan Sullivan",
+     "R",
+     "AK",
+     "Yea"
+    ],
+    [
+     "John Thune",
+     "R",
+     "SD",
+     "Yea"
+    ],
+    [
+     "Thomas Tillis",
+     "R",
+     "NC",
+     "Yea"
+    ],
+    [
+     "Tommy Tuberville",
+     "R",
+     "AL",
+     "Not Voting"
+    ],
+    [
+     "Chris Van Hollen",
+     "D",
+     "MD",
+     "Nay"
+    ],
+    [
+     "Mark Warner",
+     "D",
+     "VA",
+     "Yea"
+    ],
+    [
+     "Raphael Warnock",
+     "D",
+     "GA",
+     "Nay"
     ],
     [
      "Elizabeth Warren",

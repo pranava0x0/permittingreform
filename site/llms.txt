@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-19.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-21.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -8,8 +8,10 @@
 
 ## Status
 
-- On November 18 the Senate adopted the sponsors' substitute, SA 6883, 69 to 27, after voting 70 to 26 to waive Sen. Jeff Merkley's budget point of order against it. It then voted 65 to 31 to end debate on the bill. The vote on passing the bill comes next. (source: Senate roll call vote 268, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm)
-- On November 17 the four sponsors filed a managers' amendment to the substitute, SA 7022. It adds landowner protections for transmission permits, makes federal permits public and raises the Historic Preservation Fund to $300 million a year. Senators had filed 172 amendments to the substitute or the bill by then. (source: Congressional Record, November 17, https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm)
+- On November 19 the Senate passed the bill, 62 to 33. It passed without the managers' amendment: Sen. Jeff Merkley objected when the sponsors asked to vote on it and on a list of 19 amendments. (source: Congressional Record, November 19, https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5797-2.htm)
+- The bill goes back to the House, which is on a district work period through November 29. (source: Congressional Record, House, November 19, https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgD1050-2.htm)
+- On November 18 the Senate adopted the sponsors' substitute, SA 6883, 69 to 27, after voting 70 to 26 to waive Sen. Jeff Merkley's budget point of order against it. It then voted 65 to 31 to end debate on the bill. (source: Senate roll call vote 268, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm)
+- On November 17 the four sponsors filed a managers' amendment to the substitute, SA 7022. It would add landowner protections for transmission permits, make federal permits public and raise the Historic Preservation Fund to $300 million a year. Senators had filed 172 amendments to the substitute or the bill by then. (source: Congressional Record, November 17, https://www.govinfo.gov/content/pkg/CREC-2026-11-17/html/CREC-2026-11-17-pt1-PgS5725-4.htm)
 - The Senate agreed on November 9, 73 to 25, to end debate on taking up H.R. 2347, the vehicle for the permitting bill. Voting no were 23 Democrats, Republican Mike Rounds and independent Bernie Sanders. (source: Senate roll call vote 257, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00257.htm)
 - On November 10 the Senate agreed to take up the bill, 62 to 21, with 17 senators not voting. Neither vote was on passage. (source: Senate roll call vote 258, https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00258.htm)
 - Majority Leader John Thune then offered the sponsors' substitute as amendment SA 6883. On November 11 he filed motions to end debate on it and on H.R. 2347. (source: U.S. Senate Press Gallery, Nov. 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
@@ -31,8 +33,8 @@
 - Support letters the same week came from 19 former economic and national security officials, the five main clean energy trade groups, and API with 137 other organizations. (source: Institute for Progress, https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf)
 - Senate Majority Leader Thune filed cloture on November 11 on both the substitute, SA 6883, and the bill, H.R. 2347. (source: Senate floor log, November 11, https://www.dailypress.senate.gov/wednesday-november-11-2026/)
 - Under Senate rules, cloture allows up to 30 more hours on the substitute before the vote to adopt it; the cloture motion on the bill is then pending, and invoking it would lead to a vote on passage. (source: Congressional Research Service, Filibusters and Cloture in the Senate, https://www.everycrsreport.com/reports/RL30360.html)
-- Latest, 2026-11-18: The Senate adopted the substitute, 69 to 27, and ended debate, 65 to 31. (source: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.htm)
-- Next step, 2026-11-19: The passage vote, not yet scheduled on Nov. 19. (source: https://www.dailypress.senate.gov/thursday-november-19-2026/)
+- Latest, 2026-11-19: The Senate passed it, 62 to 33, without the managers' amendment. (source: https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm)
+- Next step, 2026-11-30: The House returns; no vote set yet. (source: https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgD1050-2.htm)
 
 ## Reading and retrieval
 
@@ -137,7 +139,7 @@ Saved AI review: 794 supported, 0 flagged, 18 unchecked of 812 statements; check
 - [Data center bills and Communities](https://pranava0x0.github.io/permittingreform/llms-full.txt): BAAJA beside the Ratepayer Protection Act, GRID Savings Act, Power for the People Act, GRID Act and current policy; and who can comment, consult, plan or sue.
 - [Timeline, people and media](https://pranava0x0.github.io/permittingreform/llms-full.txt): dated records with source links and attributed positions.
 - [Disputed readings](https://pranava0x0.github.io/permittingreform/issues.html#debate): contested questions, each with the bill passage it turns on and critics' and supporters' readings quoted from their sources.
-- [Senate votes](https://pranava0x0.github.io/permittingreform/votes.html): 2026-11-09, ending debate on the motion to proceed to H.R. 2347, 73 to 25; 2026-11-10, the motion to proceed to H.R. 2347, 62 to 21; 2026-11-16, ending debate on the substitute, SA 6883, 70 to 27; 2026-11-18, waiving the budget point of order against the substitute, SA 6883, 70 to 26; 2026-11-18, adopting the sponsors' substitute, SA 6883, 69 to 27; 2026-11-18, ending debate on H.R. 2347, as amended, 65 to 31. Every senator's vote is listed.
+- [Senate votes](https://pranava0x0.github.io/permittingreform/votes.html): 2026-11-09, ending debate on the motion to proceed to H.R. 2347, 73 to 25; 2026-11-10, the motion to proceed to H.R. 2347, 62 to 21; 2026-11-16, ending debate on the substitute, SA 6883, 70 to 27; 2026-11-18, waiving the budget point of order against the substitute, SA 6883, 70 to 26; 2026-11-18, adopting the sponsors' substitute, SA 6883, 69 to 27; 2026-11-18, ending debate on H.R. 2347, as amended, 65 to 31; 2026-11-19, passing H.R. 2347, as amended, 62 to 33. Every senator's vote is listed.
 - [Published estimates](https://pranava0x0.github.io/permittingreform/issues.html#estimates): 18 figures from 8 publishers on emissions, electricity costs, generation and transmission built, LNG exports, economic output, review time, each with its scenario, the provisions it covers and the sentence it was copied from.
 - [Method and check status](https://pranava0x0.github.io/permittingreform/#/method): browser view; equivalent checks are in data/core.json.
 - [Subject comparisons](https://pranava0x0.github.io/permittingreform/#/compare): browser view; retrieve the compare object in data/core.json without JavaScript.

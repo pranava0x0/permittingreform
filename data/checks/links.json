@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-19",
+ "checked": "2026-11-21",
  "results": {
   "http://legal-planet.org/2026/11/08/the-revised-permitting-reform-bill/": {
    "cls": "ok",
@@ -2754,15 +2754,6 @@
     "timeline.2026-11-09-senate-cloture-motion-to-proceed.source"
    ]
   },
-  "https://www.dailypress.senate.gov/thursday-november-19-2026/": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "overview.next"
-   ]
-  },
   "https://www.dailypress.senate.gov/thursday-october-1-2026/": {
    "cls": "ok",
    "kind": "page",
@@ -4038,6 +4029,36 @@
     "amend.filed-to-sa-6883.source"
    ]
   },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgD1050-2.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "overview.next"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5797-2.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.status",
+    "amend.sa-7030.source",
+    "amend.sa-7022.source"
+   ]
+  },
+  "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5824.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "amend.sa-7030.source"
+   ]
+  },
   "https://www.govinfo.gov/content/pkg/FR-2025-02-25/pdf/2025-03014.pdf": {
    "cls": "ok",
    "kind": "pdf",
@@ -4323,15 +4344,6 @@
     "people.tim-kaine.source",
     "people.tim-kaine.quote",
     "media.2026-11-09-office-of-sen-kaine-statement-on-permitting"
-   ]
-  },
-  "https://www.kgou.org/indigenous-news/2026-11-18/senate-expected-to-vote-on-permitting-bill-tribal-leaders-in-oklahoma-beyond-oppose": {
-   "cls": "ok",
-   "kind": "page",
-   "note": "",
-   "status": 200,
-   "where": [
-    "media.2026-11-18-kgou-opmx-senate-expected-to-vote-on-permitting-bill-tribal"
    ]
   },
   "https://www.klgates.com/DOE-Directs-FERC-to-Take-Action-on-Large-Load-Interconnection-10-30-2025": {
@@ -5482,6 +5494,25 @@
    "status": 200,
    "where": [
     "votes.268.xml"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.htm": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "overview.latest",
+    "votes.270"
+   ]
+  },
+  "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.xml": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "votes.270.xml"
    ]
   },
   "https://www.sierraclub.org/press-releases/2026/09/sierra-club-reaction-permitting-bill-introduction": {

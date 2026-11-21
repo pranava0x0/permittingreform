@@ -1,5 +1,5 @@
 {
- "as_of": "2026-11-19",
+ "as_of": "2026-11-21",
  "substitute": {
   "title": "The November 7 substitute",
   "date": "2026-11-07",
@@ -414,11 +414,11 @@
   },
   {
    "id": "filed-to-sa-6883",
-   "number": "176 filed amendments",
+   "number": "177 filed amendments",
    "sponsor": "filed by senators",
-   "date": "2026-11-18",
+   "date": "2026-11-19",
    "status": "filed",
-   "summary": "The Congressional Record prints 176 amendments filed from November 10 to 18: 131 to the substitute and 45 to H.R. 2347. Congress.gov listed 113 to the substitute on November 16; its pages refused this site's request, so the two counts were not reconciled. The full list is below.",
+   "summary": "The Congressional Record prints 177 amendments filed from November 10 to 19: 132 to the substitute and 45 to H.R. 2347. Congress.gov listed 113 to the substitute on November 16; its pages refused this site's request, so the two counts were not reconciled. The full list is below.",
    "sources": [
     {
      "publisher": "Congressional Record, November 17",
@@ -438,12 +438,32 @@
    ]
   },
   {
+   "id": "sa-7030",
+   "number": "SA 7030",
+   "sponsor": "Lee, for the four sponsors",
+   "date": "2026-11-19",
+   "status": "blocked",
+   "summary": "A revised version of the managers' amendment, filed the day of the passage vote. It rewrites the data center definition's exclusion for communications services and applies it at three more places in the substitute. Capito asked consent for a vote with 60 needed to adopt it; Merkley objected.",
+   "sources": [
+    {
+     "publisher": "Congressional Record, November 19",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5824.htm",
+     "quote": "SA 7030. Mr. LEE (for himself, Mr. Heinrich, Mrs. Capito, and Mr. Whitehouse) submitted an amendment intended to be proposed to amendment SA 6883"
+    },
+    {
+     "publisher": "Congressional Record, November 19",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5797-2.htm",
+     "quote": "the following be the only amendment in order"
+    }
+   ]
+  },
+  {
    "id": "sa-7022",
    "number": "SA 7022",
    "sponsor": "Lee, for the four sponsors",
-   "date": "2026-11-17",
-   "status": "submitted",
-   "summary": "The sponsors' managers' amendment. Besides technical corrections it makes federal permits public, adds landowner notice, land restoration and conduct rules for transmission permits, says when federal funding brings a project under historic preservation review, and raises the Historic Preservation Fund from $200 million to $300 million a year. Capito said it answers concerns about Tribal sovereignty and landowners along transmission lines. The Senate had not acted on it by the end of November 18. That evening Sen. Lisa Murkowski said some changes for Tribes \"will be included as part of the managers' amendment when we are able to adopt that.\"",
+   "date": "2026-11-19",
+   "status": "blocked",
+   "summary": "The sponsors' managers' amendment. Besides technical corrections it makes federal permits public, adds landowner notice, land restoration and conduct rules for transmission permits, says when federal funding brings a project under historic preservation review, and raises the Historic Preservation Fund from $200 million to $300 million a year. Capito said it answers concerns about Tribal sovereignty and landowners along transmission lines. On November 19 Sen. Capito asked consent to vote on a revised version, SA 7030. Sen. Merkley objected, and the Senate passed the bill without it.",
    "sources": [
     {
      "publisher": "Congressional Record, November 17",
@@ -464,6 +484,11 @@
      "publisher": "Congressional Record, November 18",
      "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5729-6.htm",
      "quote": "will be included as part of the managers' amendment when we are able to adopt that."
+    },
+    {
+     "publisher": "Congressional Record, November 19",
+     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5797-2.htm",
+     "quote": "Objection is heard. Mrs. CAPITO. Let's go to the vote."
     }
    ]
   },
@@ -523,7 +548,7 @@
    ]
   }
  ],
- "floor_note": "No other amendment proposed in the sources checked as of November 19.",
+ "floor_note": "No other amendment proposed in the sources checked as of November 21.",
  "reactions": [
   {
    "id": "capito",
@@ -894,7 +919,7 @@
  "filed": {
   "source": "Congressional Record, Senate, Text of Amendments",
   "from": "2026-11-10",
-  "to": "2026-11-18",
+  "to": "2026-11-19",
   "note": "Every amendment the Congressional Record prints as filed to the substitute (SA 6883) or to H.R. 2347, with its opening words. Descriptions of what an amendment does are AI-written from its text; amendments without one change page-and-line text of the substitute.",
   "items": [
    {
@@ -2370,6 +2395,15 @@
     "subject": "Limits a court's grant of a remand an agency requests for a project that already holds a federal permit, if the request was pending on November 11, 2026.",
     "quote": "At the end of section 1401(b), add the following: (5) Voluntary remand.-- (A) In general.--For a project",
     "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5777-2.htm"
+   },
+   {
+    "number": "SA 7030",
+    "sponsor": "Sen. Lee (R-UT)",
+    "date": "2026-11-19",
+    "to": "SA 6883",
+    "subject": "The sponsors' revised managers' amendment; see SA 7030 above.",
+    "quote": "On page 73, line 9, strike ``9(b)'' and insert ``19(b)''.",
+    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5824.htm"
    }
   ]
  }

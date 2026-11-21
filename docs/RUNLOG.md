@@ -77,3 +77,11 @@ UAT found the Positions page over its phone scroll budget, since each roll call 
 Read the Congressional Record for November 18 on govinfo and the Senate floor log for November 19. SA 7022 had not been acted on; the Senate tabled SA 6884 and SA 6886 by voice vote, and SA 6885 and SA 6887 fell with them. Added the four amendments filed November 18 (SA 7024 to 7027; 176 in all) and moved the next step to the November 19 session, where votes were expected but not yet scheduled at 9 a.m.
 
 Mapped SA 7022's 14 edit instructions to sections of the substitute, with all three readings for each section it revises (`data/research/sa-7022-map.md`). Added five coverage items. Tools: two Sonnet research agents (map, 198K tokens; news, 170K tokens), govinfo, the Senate floor log, Python and Playwright.
+
+## November 21, 2026: Senate passage
+
+- Senate roll call 270 (Nov 19): H.R. 2347 passed, 62 to 33 (47 R and 15 in the Democratic caucus yea). Roll calls 269 and 271 to 279 were on other business.
+- Merkley objected to consent requests to vote on a list of 19 amendments and on SA 7030, the sponsors' refiled managers' amendment; the bill passed without either. SA 7022 and SA 7030 are marked blocked. SA 7030 adds the communications exclusion to the data center definition at pages 289, 339 and 341 and narrows it to cable and telecommunications service.
+- 177 amendments filed Nov 10 to 19 (SA 7030 added). The House is on a district work period through Nov 29; the Senate is adjourned to Nov 30.
+- News: 21 items dated Nov 19 to 20, each quote checked against the fetched page; one summary corrected (API's release names S. 5653, the Senate passed H.R. 2347).
+- Gates: make check, make quotes (1,042 verified, 0 missing), make links, make final.

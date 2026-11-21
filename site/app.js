@@ -1926,7 +1926,7 @@
       A.filed ? filedSection(A.filed) : null];
   }
 
-  const FLOOR_STATUS = { announced: "Announced", submitted: "Submitted", filed: "Filed", pending: "Pending", adopted: "Adopted", rejected: "Rejected", withdrawn: "Withdrawn", tabled: "Tabled", waived: "Waived" };
+  const FLOOR_STATUS = { announced: "Announced", submitted: "Submitted", filed: "Filed", pending: "Pending", adopted: "Adopted", rejected: "Rejected", withdrawn: "Withdrawn", tabled: "Tabled", waived: "Waived", blocked: "Blocked, no vote" };
 
   function floorItem(f) {
     return el("li", { class: "am-reaction", id: "floor-" + f.id },

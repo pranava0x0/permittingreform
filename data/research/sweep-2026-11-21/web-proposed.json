@@ -1,0 +1,410 @@
+[
+ {
+  "date": "2026-11-19",
+  "type": "news",
+  "outlet": "CQ Roll Call",
+  "author": "David Jordan",
+  "title": "Sweeping permitting overhaul passes Senate, on to House",
+  "url": "https://www.rollcall.com/2026/11/19/sweeping-permitting-overhaul-passes-senate-on-to-house",
+  "summary": "Roll Call reports the Senate passed the permitting bill on Thursday night and that it seemingly has the votes in the House, with Speaker Johnson saying the week before that it can pass there.",
+  "stance": "neutral",
+  "quote": {
+   "text": "The bill now moves on to the House, where it seemingly has the votes to pass.",
+   "speaker": "David Jordan, reporter, Roll Call"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-19",
+  "type": "news",
+  "outlet": "CBS News",
+  "author": "Kaia Hubbard",
+  "title": "Senate passes bipartisan permitting reform bill designed to boost energy projects",
+  "url": "https://www.cbsnews.com/news/senate-bipartisan-permitting-reform-bill-energy-baaja-trump/",
+  "summary": "CBS reports the 62-33 Senate passage and says the bill faces an uncertain House future over transmission provisions and Democratic objections.",
+  "stance": "neutral",
+  "quote": {
+   "text": "This bill is years in the making",
+   "speaker": "Sen. John Thune, Senate Majority Leader, as quoted by CBS News"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-19",
+  "type": "news",
+  "outlet": "CNBC",
+  "author": "Garrett Downs",
+  "title": "Senate passes BAAJA permitting reform bill backed by AI, energy sectors",
+  "url": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
+  "summary": "CNBC reports the 62-33 Senate vote split Democrats and that the bill must still clear the House before reaching President Trump.",
+  "stance": "neutral",
+  "quote": {
+   "text": "No big, bipartisan bill is going to be perfect for everyone, but we have a real opportunity to make electricity more affordable for families.",
+   "speaker": "Sen. Martin Heinrich, D-N.M., in a statement to CNBC"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "news",
+  "outlet": "Deseret News",
+  "author": "Leah Bowers",
+  "title": "Permitting bill passes through the Senate despite some opposition",
+  "url": "https://www.deseret.com/politics/2026/11/20/permitting-bill-passes-senate-with-support-from-sen-lee-gov-cox/",
+  "summary": "Deseret News reports the Senate vote, says negotiators hope to enact the bill in the lame-duck session, and carries Sen. Lee's defense of its data center provisions against critics.",
+  "stance": "mixed",
+  "quote": {
+   "text": "BAAJA actually makes data centers pay more to interconnect to the grid to ensure other customers’ rates don’t increase",
+   "speaker": "Sen. Mike Lee, R-Utah, as quoted by Deseret News"
+  },
+  "topics": [
+   "congress",
+   "data-centers"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "news",
+  "outlet": "Native News Online",
+  "author": "Levi Rickert",
+  "title": "Despite Strong Tribal Opposition, U.S. Senate Approves BAAJA in Late-Night Vote",
+  "url": "https://nativenewsonline.net/sovereignty/despite-strong-tribal-opposition-u-s-senate-approves-baaja-in-late-night-vote/",
+  "summary": "Native News Online reports passage over Tribal opposition to Section 106 changes, carries Sen. Padilla's no-vote statement, and says the House is on recess until Nov. 30.",
+  "stance": "opposes",
+  "quote": {
+   "text": "The bill threatens Tribal sovereignty, and I am deeply concerned that it could allow the destruction of ancestral lands, sacred places, and cultural resources",
+   "speaker": "Sen. Alex Padilla, D-Calif., in a statement quoted by Native News Online"
+  },
+  "topics": [
+   "congress",
+   "tribal",
+   "nhpa-106"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-19",
+  "type": "news",
+  "outlet": "Politico (via Yahoo News)",
+  "author": "Nico Portuondo and Anthony Cruz",
+  "title": "Senate passes landmark permitting deal",
+  "url": "https://www.yahoo.com/news/politics/articles/senate-passes-landmark-permitting-deal-032244694.html",
+  "summary": "Politico reports Speaker Johnson told it he would first try to pass the Senate bill under suspension of the rules and, failing that, bring it up under a rule.",
+  "stance": "neutral",
+  "quote": {
+   "text": "It may be a suspension bill, but if not, we'll do it by rule.",
+   "speaker": "Speaker Mike Johnson, R-La., as quoted by Politico"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "news",
+  "outlet": "Bloomberg (via Energy Connects)",
+  "author": "Ari Natter",
+  "title": "Senate Passes Landmark Bill to Overhaul US Energy Permitting",
+  "url": "https://www.energyconnects.com/news/renewables/2026/november/senate-passes-landmark-bill-to-overhaul-us-energy-permitting/",
+  "summary": "Bloomberg reports House Natural Resources Chairman Westerman doubts there is time to change the bill, and that Jeffries and some Republicans have said they want changes.",
+  "stance": "neutral",
+  "quote": {
+   "text": "If the Senate gets it done then I think that’s what we’ll have to pass in the House",
+   "speaker": "Rep. Bruce Westerman, R-Ark., House Natural Resources chairman, as quoted by Bloomberg"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "news",
+  "outlet": "ICT",
+  "author": "Stewart Huntington",
+  "title": "Affordability and jobs act passes Senate",
+  "url": "https://ictnews.org/news/affordability-and-jobs-act-passes-senate/",
+  "summary": "ICT reports Tribal advocates are turning to the House after the Senate vote, and carries the NDN Collective's call for the House to vote against the bill.",
+  "stance": "opposes",
+  "quote": {
+   "text": "The House still has the chance to do the right thing and vote against BAAJA, allowing the next Congress to take up permitting reform",
+   "speaker": "Wizipan Garriot, president of NDN Collective, as quoted by ICT"
+  },
+  "topics": [
+   "congress",
+   "tribal",
+   "house"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "news",
+  "outlet": "Outdoor Life",
+  "author": "Christine Peterson",
+  "title": "Senate Passes BAAJA, the Massive Permitting Bill That Will Expedite Development on Public Lands",
+  "url": "https://www.outdoorlife.com/conservation/senate-passes-baaja-permitting-reform/",
+  "summary": "Outdoor Life reports the 62-33 passage, conservation and Tribal concerns about public lands and data centers, and that any House change would require another Senate vote.",
+  "stance": "mixed",
+  "quote": {
+   "text": "I negotiated the deal based on what was actually possible to get signed into law",
+   "speaker": "Sen. Martin Heinrich, D-N.M., in an email to Outdoor Life"
+  },
+  "topics": [
+   "congress",
+   "public-lands",
+   "house"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-19",
+  "type": "org_statement",
+  "outlet": "U.S. Chamber of Commerce",
+  "author": null,
+  "title": "U.S. Chamber: Senate Vote on Permitting Bill Marks Turning Point for American Energy and Infrastructure",
+  "url": "https://www.uschamber.com/energy/u-s-chamber-senate-vote-on-permitting-bill-marks-turning-point-for-american-energy-and-infrastructure",
+  "summary": "The Chamber welcomed Senate passage and urged House members to pass the bill quickly and send it to the President.",
+  "stance": "supports",
+  "quote": {
+   "text": "We now urge members in the House to quickly pass and send this legislation to the President's desk so crucial projects can finally move forward.",
+   "speaker": "Neil Bradley, executive vice president and chief policy officer, U.S. Chamber of Commerce"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "trade_association"
+ },
+ {
+  "date": "2026-11-19",
+  "type": "org_statement",
+  "outlet": "American Petroleum Institute",
+  "author": null,
+  "title": "API Applauds Senate Passage of Bipartisan Permitting Reform Legislation",
+  "url": "https://www.api.org/news-policy-and-issues/news/2026/11/19/api-applauds-senate-passage-of-bipartisan-permitting-reform-legislation",
+  "summary": "API welcomed Senate passage of S. 5653 and credited the four sponsors, without addressing House timing.",
+  "stance": "supports",
+  "quote": {
+   "text": "Today’s bipartisan Senate vote marks a major breakthrough on historic permitting reforms that would deliver more affordable energy for consumers, cut costly delays, and build much-needed critical infrastructure.",
+   "speaker": "Mike Sommers, president and CEO, American Petroleum Institute"
+  },
+  "topics": [
+   "congress",
+   "oil-gas"
+  ],
+  "sector": "trade_association"
+ },
+ {
+  "date": "2026-11-19",
+  "type": "org_statement",
+  "outlet": "Natural Resources Defense Council",
+  "author": null,
+  "title": "Senate Permitting Bill Remains Unacceptable",
+  "url": "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-remains-unacceptable",
+  "summary": "NRDC said it opposes the Senate-passed bill and urged the House to reject it and try again next year.",
+  "stance": "opposes",
+  "quote": {
+   "text": "The House should not pass a bill that gives President Trump a blank check to reward oil and gas companies and data center developers.",
+   "speaker": "Manish Bapna, president and CEO, NRDC"
+  },
+  "topics": [
+   "congress",
+   "house",
+   "environment"
+  ],
+  "sector": "environmental_group"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "org_statement",
+  "outlet": "Environmental Defense Fund",
+  "author": null,
+  "title": "Statement on U.S. Senate passage of permitting reform legislation",
+  "url": "https://www.edf.org/media/statement-us-senate-passage-permitting-reform-legislation",
+  "summary": "EDF said the bill gets some things right on transmission and data center costs, regretted that the Senate adopted no improvements, and urged the House to make changes.",
+  "stance": "mixed",
+  "quote": {
+   "text": "we urge the House to make meaningful improvements as it considers the legislation this session",
+   "speaker": "Fred Krupp, president, Environmental Defense Fund"
+  },
+  "topics": [
+   "congress",
+   "house",
+   "environment"
+  ],
+  "sector": "environmental_group"
+ },
+ {
+  "date": "2026-11-19",
+  "type": "gov_press_release",
+  "outlet": "Sen. Martin Heinrich",
+  "author": null,
+  "title": "Heinrich: Senate Passage of Landmark Bipartisan Permitting Deal Will Lower Electricity Bills, Hold Data Centers Accountable, Create Over One Hundred Thousand Jobs, Reduce Carbon Emissions",
+  "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-senate-passage-of-landmark-bipartisan-permitting-deal-will-lower-electricity-bills-hold-data-centers-accountable-create-over-one-hundred-thousand-jobs-reduce-carbon-emissions",
+  "summary": "Heinrich, a lead sponsor, welcomed Senate passage and said the bill must still pass the House before reaching the President.",
+  "stance": "supports",
+  "quote": {
+   "text": "I'm proud of what we've accomplished. Now let's get this bill across the finish line and signed into law.",
+   "speaker": "Sen. Martin Heinrich, D-N.M."
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "congress"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "gov_press_release",
+  "outlet": "Senate Environment and Public Works Committee (Chairman Capito)",
+  "author": null,
+  "title": "Capito Commends BAAJA Passage, Thanks Supporters and Urges House Approval",
+  "url": "https://www.epw.senate.gov/press/rep/capito-commends-baaja-passage-thanks-supporters-and-urges-house-approval/",
+  "summary": "Capito's post-passage floor speech urged House colleagues to act quickly when they return and send the bill to President Trump.",
+  "stance": "supports",
+  "quote": {
+   "text": "I hope our colleagues in the House will act quickly.",
+   "speaker": "Sen. Shelley Moore Capito, R-W.Va., EPW Chairman"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "congress"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "news",
+  "outlet": "Utility Dive",
+  "author": "Diana DiGangi",
+  "title": "Permitting reform bill heads to House as Democratic divisions persist",
+  "url": "https://www.utilitydive.com/news/senate-passes-baaja-permitting-bill/875334/",
+  "summary": "Utility Dive reports the 62-33 vote (47 Republicans, 15 Democratic caucus members) and Democratic divisions over whether to take the bill now or wait for the next Congress.",
+  "stance": "neutral",
+  "quote": {
+   "text": "There will be no better deal on the table",
+   "speaker": "Rep. Scott Peters, D-Calif., in a statement quoted by Utility Dive"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "news",
+  "outlet": "Canary Media",
+  "author": "Dan McCarthy",
+  "title": "Senate OKs permitting bill that would boost clean and dirty energy",
+  "url": "https://www.canarymedia.com/articles/clean-energy/senate-oks-permitting-bill-that-would-boost-clean-and-dirty-energy",
+  "summary": "Canary reports the Senate vote, the split among decarbonization advocates, and Sierra Club's call for the House to reject the bill.",
+  "stance": "mixed",
+  "quote": {
+   "text": "must reject the Senate’s fast-tracked bill and demand debate and consideration to deliver for the people, not corporate polluters and Donald Trump",
+   "speaker": "Loren Blackford, executive director, Sierra Club, as quoted by Canary Media"
+  },
+  "topics": [
+   "congress",
+   "house",
+   "environment"
+  ],
+  "sector": "press"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "gov_press_release",
+  "outlet": "The White House",
+  "author": null,
+  "title": "WHAT THEY ARE SAYING: Send the Bipartisan American Affordability and Jobs Act to President Trump’s Desk",
+  "url": "https://www.whitehouse.gov/releases/2026/11/what-they-are-saying-send-the-bipartisan-american-affordability-and-jobs-act-to-president-trumps-desk/",
+  "summary": "The White House release quotes President Trump on Senate passage and says the House now has the opportunity to finish the job and send the bill to his desk.",
+  "stance": "supports",
+  "quote": {
+   "text": "Last night, landmark permitting reform legislation passed the Senate. It’s one of the biggest things that you will see.",
+   "speaker": "President Donald J. Trump, as quoted in the White House release"
+  },
+  "topics": [
+   "congress",
+   "house",
+   "white-house"
+  ],
+  "sector": "government"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "gov_press_release",
+  "outlet": "New Democrat Coalition",
+  "author": null,
+  "title": "New Democrat Coalition Leaders Release Statement on Senate Passage of Bipartisan Permitting Reform",
+  "url": "https://newdemocratcoalition.house.gov/media-center/press-releases/new-democrat-coalition-leaders-release-statement-on-senate-passage-of-bipartisan-permitting-reform",
+  "summary": "The coalition's leaders welcomed Senate passage, regretted that the managers' amendment was left out, and said they would seek changes in the House while urging action before year end.",
+  "stance": "supports",
+  "quote": {
+   "text": "We are deeply disappointed that amendments, including the bipartisan Manager’s Amendment, were held up procedurally and left out of this bill.",
+   "speaker": "Rep. Brad Schneider, D-Ill., Rep. Nikki Budzinski, D-Ill., and Rep. Scott Peters, D-Calif., New Democrat Coalition leaders"
+  },
+  "topics": [
+   "congress",
+   "house",
+   "managers-amendment"
+  ],
+  "sector": "congress"
+ },
+ {
+  "date": "2026-11-19",
+  "type": "gov_press_release",
+  "outlet": "Senate Environment and Public Works Committee (Ranking Member Whitehouse)",
+  "author": null,
+  "title": "Whitehouse Cheers Senate Passage of Landmark Bipartisan American Affordability and Jobs Act",
+  "url": "https://www.epw.senate.gov/press/dem/whitehouse-cheers-senate-passage-of-landmark-bipartisan-american-affordability-and-jobs-act/",
+  "summary": "Whitehouse, a lead sponsor, welcomed Senate passage and said the bill now heads to the House.",
+  "stance": "supports",
+  "quote": {
+   "text": "Americans will quickly begin getting some relief on their energy bills if the House follows suit.",
+   "speaker": "Sen. Sheldon Whitehouse, D-R.I., EPW Ranking Member"
+  },
+  "topics": [
+   "congress",
+   "house"
+  ],
+  "sector": "congress"
+ },
+ {
+  "date": "2026-11-20",
+  "type": "analysis",
+  "outlet": "Heatmap",
+  "author": "Emily Pontecorvo",
+  "title": "The Permitting Bill’s Next Battleground",
+  "url": "https://heatmap.news/politics/baaja-house",
+  "summary": "Heatmap lays out the House path: Johnson's plan to try suspension the week after Thanksgiving, the two-thirds math, Democratic splits, and the Senate sponsors' wish to pass the stalled tribal amendment later.",
+  "stance": "neutral",
+  "quote": {
+   "text": "said earlier this week that he would try to pass BAAJA under suspension, a process that would send it straight to the floor for a vote the week after Thanksgiving",
+   "speaker": "Emily Pontecorvo, reporter, Heatmap, describing Speaker Mike Johnson"
+  },
+  "topics": [
+   "congress",
+   "house",
+   "managers-amendment"
+  ],
+  "sector": "press"
+ }
+]

@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-19",
+ "checked": "2026-11-21",
  "bill": {
   "total": 174,
   "verified": 174
@@ -1140,10 +1140,199 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-20-utility-dive-permitting-reform-bill-heads-to-house-as-democratic-divi",
+   "text": "There will be no better deal on the table",
+   "speaker": "Rep. Scott Peters, D-Calif., in a statement quoted by Utility Dive",
+   "url": "https://www.utilitydive.com/news/senate-passes-baaja-permitting-bill/875334/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-the-white-house-what-they-are-saying-send-the-bipartisan-american-aff",
+   "text": "Last night, landmark permitting reform legislation passed the Senate. It’s one of the biggest things that you will see.",
+   "speaker": "President Donald J. Trump, as quoted in the White House release",
+   "url": "https://www.whitehouse.gov/releases/2026/11/what-they-are-saying-send-the-bipartisan-american-affordability-and-jobs-act-to-president-trumps-desk/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-senate-environment-and-public-works-committee-chairman-capito-capito",
+   "text": "I hope our colleagues in the House will act quickly.",
+   "speaker": "Sen. Shelley Moore Capito, R-W.Va., EPW Chairman",
+   "url": "https://www.epw.senate.gov/press/rep/capito-commends-baaja-passage-thanks-supporters-and-urges-house-approval/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-outdoor-life-senate-passes-baaja-the-massive-permitting-bill-that-wil",
+   "text": "I negotiated the deal based on what was actually possible to get signed into law",
+   "speaker": "Sen. Martin Heinrich, D-N.M., in an email to Outdoor Life",
+   "url": "https://www.outdoorlife.com/conservation/senate-passes-baaja-permitting-reform/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-new-democrat-coalition-new-democrat-coalition-leaders-release-stateme",
+   "text": "We are deeply disappointed that amendments, including the bipartisan Manager’s Amendment, were held up procedurally and left out of this bill.",
+   "speaker": "Rep. Brad Schneider, D-Ill., Rep. Nikki Budzinski, D-Ill., and Rep. Scott Peters, D-Calif., New Democrat Coalition leaders",
+   "url": "https://newdemocratcoalition.house.gov/media-center/press-releases/new-democrat-coalition-leaders-release-statement-on-senate-passage-of-bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-native-news-online-despite-strong-tribal-opposition-u-s-senate-approv",
+   "text": "The bill threatens Tribal sovereignty, and I am deeply concerned that it could allow the destruction of ancestral lands, sacred places, and cultural resources",
+   "speaker": "Sen. Alex Padilla, D-Calif., in a statement quoted by Native News Online",
+   "url": "https://nativenewsonline.net/sovereignty/despite-strong-tribal-opposition-u-s-senate-approves-baaja-in-late-night-vote/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-ict-affordability-and-jobs-act-passes-senate",
+   "text": "The House still has the chance to do the right thing and vote against BAAJA, allowing the next Congress to take up permitting reform",
+   "speaker": "Wizipan Garriot, president of NDN Collective, as quoted by ICT",
+   "url": "https://ictnews.org/news/affordability-and-jobs-act-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-heatmap-the-permitting-bill-s-next-battleground",
+   "text": "said earlier this week that he would try to pass BAAJA under suspension, a process that would send it straight to the floor for a vote the week after Thanksgiving",
+   "speaker": "Emily Pontecorvo, reporter, Heatmap, describing Speaker Mike Johnson",
+   "url": "https://heatmap.news/politics/baaja-house",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-environmental-defense-fund-statement-on-u-s-senate-passage-of-permitt",
+   "text": "we urge the House to make meaningful improvements as it considers the legislation this session",
+   "speaker": "Fred Krupp, president, Environmental Defense Fund",
+   "url": "https://www.edf.org/media/statement-us-senate-passage-permitting-reform-legislation",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-deseret-news-permitting-bill-passes-through-the-senate-despite-some-o",
+   "text": "BAAJA actually makes data centers pay more to interconnect to the grid to ensure other customers’ rates don’t increase",
+   "speaker": "Sen. Mike Lee, R-Utah, as quoted by Deseret News",
+   "url": "https://www.deseret.com/politics/2026/11/20/permitting-bill-passes-senate-with-support-from-sen-lee-gov-cox/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-canary-media-senate-oks-permitting-bill-that-would-boost-clean-and-di",
+   "text": "must reject the Senate’s fast-tracked bill and demand debate and consideration to deliver for the people, not corporate polluters and Donald Trump",
+   "speaker": "Loren Blackford, executive director, Sierra Club, as quoted by Canary Media",
+   "url": "https://www.canarymedia.com/articles/clean-energy/senate-oks-permitting-bill-that-would-boost-clean-and-dirty-energy",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-bloomberg-via-energy-connects-senate-passes-landmark-bill-to-overhaul",
+   "text": "If the Senate gets it done then I think that’s what we’ll have to pass in the House",
+   "speaker": "Rep. Bruce Westerman, R-Ark., House Natural Resources chairman, as quoted by Bloomberg",
+   "url": "https://www.energyconnects.com/news/renewables/2026/november/senate-passes-landmark-bill-to-overhaul-us-energy-permitting/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-u-s-chamber-of-commerce-u-s-chamber-senate-vote-on-permitting-bill-ma",
+   "text": "We now urge members in the House to quickly pass and send this legislation to the President's desk so crucial projects can finally move forward.",
+   "speaker": "Neil Bradley, executive vice president and chief policy officer, U.S. Chamber of Commerce",
+   "url": "https://www.uschamber.com/energy/u-s-chamber-senate-vote-on-permitting-bill-marks-turning-point-for-american-energy-and-infrastructure",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-19-the-spokesman-review-cantwell-murray-and-northwest-tribal-le",
    "text": "But this bill, as it’s currently drafted, is not the answer.",
    "speaker": "Sen. Maria Cantwell, as quoted by The Spokesman-Review",
    "url": "https://www.spokesman.com/stories/2026/nov/19/cantwell-murray-and-northwest-tribal-leaders-oppos/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-senate-environment-and-public-works-committee-ranking-member-whitehou",
+   "text": "Americans will quickly begin getting some relief on their energy bills if the House follows suit.",
+   "speaker": "Sen. Sheldon Whitehouse, D-R.I., EPW Ranking Member",
+   "url": "https://www.epw.senate.gov/press/dem/whitehouse-cheers-senate-passage-of-landmark-bipartisan-american-affordability-and-jobs-act/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-sen-martin-heinrich-heinrich-senate-passage-of-landmark-bipartisan-pe",
+   "text": "I'm proud of what we've accomplished. Now let's get this bill across the finish line and signed into law.",
+   "speaker": "Sen. Martin Heinrich, D-N.M.",
+   "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-senate-passage-of-landmark-bipartisan-permitting-deal-will-lower-electricity-bills-hold-data-centers-accountable-create-over-one-hundred-thousand-jobs-reduce-carbon-emissions",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-politico-via-yahoo-news-senate-passes-landmark-permitting-deal",
+   "text": "It may be a suspension bill, but if not, we'll do it by rule.",
+   "speaker": "Speaker Mike Johnson, R-La., as quoted by Politico",
+   "url": "https://www.yahoo.com/news/politics/articles/senate-passes-landmark-permitting-deal-032244694.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-natural-resources-defense-council-senate-permitting-bill-remains-unac",
+   "text": "The House should not pass a bill that gives President Trump a blank check to reward oil and gas companies and data center developers.",
+   "speaker": "Manish Bapna, president and CEO, NRDC",
+   "url": "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-remains-unacceptable",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-cq-roll-call-sweeping-permitting-overhaul-passes-senate-on-to-house",
+   "text": "The bill now moves on to the House, where it seemingly has the votes to pass.",
+   "speaker": "David Jordan, reporter, Roll Call",
+   "url": "https://www.rollcall.com/2026/11/19/sweeping-permitting-overhaul-passes-senate-on-to-house",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-cnbc-senate-passes-baaja-permitting-reform-bill-backed-by-ai-energy-s",
+   "text": "No big, bipartisan bill is going to be perfect for everyone, but we have a real opportunity to make electricity more affordable for families.",
+   "speaker": "Sen. Martin Heinrich, D-N.M., in a statement to CNBC",
+   "url": "https://www.cnbc.com/2026/11/20/baaja-bill-senate-passes-permitting-reform.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-cbs-news-senate-passes-bipartisan-permitting-reform-bill-designed-to",
+   "text": "This bill is years in the making",
+   "speaker": "Sen. John Thune, Senate Majority Leader, as quoted by CBS News",
+   "url": "https://www.cbsnews.com/news/senate-bipartisan-permitting-reform-bill-energy-baaja-trump/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-19-american-petroleum-institute-api-applauds-senate-passage-of-bipartisa",
+   "text": "Today’s bipartisan Senate vote marks a major breakthrough on historic permitting reforms that would deliver more affordable energy for consumers, cut costly delays, and build much-needed critical infrastructure.",
+   "speaker": "Mike Sommers, president and CEO, American Petroleum Institute",
+   "url": "https://www.api.org/news-policy-and-issues/news/2026/11/19/api-applauds-senate-passage-of-bipartisan-permitting-reform-legislation",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1156,15 +1345,6 @@
    "result": "browser",
    "share": 1.0,
    "note": "read in a browser on 2026-11-18"
-  },
-  {
-   "where": "media.2026-11-18-kgou-opmx-senate-expected-to-vote-on-permitting-bill-tribal",
-   "text": "Any amendment to S. 5653 merely puts lipstick on a pig",
-   "speaker": "Mark Macarro, NCAI President, as quoted by KGOU",
-   "url": "https://www.kgou.org/indigenous-news/2026-11-18/senate-expected-to-vote-on-permitting-bill-tribal-leaders-in-oklahoma-beyond-oppose",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
   },
   {
    "where": "media.2026-11-18-heatmap-news-the-surprising-senate-votes-in-the-bipartisan-p",
@@ -7449,6 +7629,24 @@
    "note": "read in a browser on 2026-11-16"
   },
   {
+   "where": "amend.floor.sa-7030.0",
+   "text": "SA 7030. Mr. LEE (for himself, Mr. Heinrich, Mrs. Capito, and Mr. Whitehouse) submitted an amendment intended to be proposed to amendment SA 6883",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5824.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.floor.sa-7030.1",
+   "text": "the following be the only amendment in order",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5797-2.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "amend.floor.sa-7022.0",
    "text": "Any action that is a Federal authorization or permit shall be made public",
    "speaker": "",
@@ -7480,6 +7678,15 @@
    "text": "will be included as part of the managers' amendment when we are able to adopt that.",
    "speaker": "",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-18/html/CREC-2026-11-18-pt1-PgS5729-6.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "amend.floor.sa-7022.4",
+   "text": "Objection is heard. Mrs. CAPITO. Let's go to the vote.",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5797-2.htm",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -9285,6 +9492,15 @@
    "note": ""
   },
   {
+   "where": "amend.filed.SA 7030",
+   "text": "On page 73, line 9, strike ``9(b)'' and insert ``19(b)''.",
+   "speaker": "Sen. Lee (R-UT)",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-19/html/CREC-2026-11-19-pt1-PgS5824.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "amend.vote",
    "text": "Amendment Agreed to",
    "speaker": "",
@@ -9343,6 +9559,15 @@
    "text": "Cloture Motion Agreed to (65-31, 3/5 majority required)",
    "speaker": "",
    "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00268.xml",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "votes.270",
+   "text": "Bill Passed (62-33)",
+   "speaker": "",
+   "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1192/vote_119_2_00270.xml",
    "result": "verified",
    "share": 1.0,
    "note": ""
