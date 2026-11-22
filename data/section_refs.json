@@ -1532,19 +1532,6 @@
    ]
   },
   {
-   "media_url": "https://heatmap.news/politics/baaja-house",
-   "sections": [
-    {
-     "n": "2301",
-     "quote": "ensuring that all federally funded projects that might affect tribal resources require tribal consultation, not just those that require federal permits."
-    },
-    {
-     "n": "2302",
-     "quote": "It also increased the annual funding authorization for state and tribal historic preservation offices by $100 million, to $300 million."
-    }
-   ]
-  },
-  {
    "media_url": "https://www.edf.org/media/statement-us-senate-passage-permitting-reform-legislation",
    "sections": [
     {
@@ -1873,6 +1860,10 @@
   {
    "media_url": "https://www.ucs.org/about/news/baaja-amendment-fails-improve-bill",
    "why": "Argues the substitute leaves the bill unbalanced and weakens four environmental laws, without describing a specific provision."
+  },
+  {
+   "media_url": "https://heatmap.news/politics/baaja-house",
+   "why": "Its section-level details describe the managers' amendment (SA 7030), which never came to a vote, not the Senate-passed text; the rest is the House vote count."
   }
  ],
  "unread": [
