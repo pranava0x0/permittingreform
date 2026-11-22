@@ -67,6 +67,8 @@ const PATHS = [
   ['timeline', [{ tab: 'timeline' }], '.event'],
   // A claim in coverage and the passed-text passages to check it against (data/claims.json).
   ['claim-check', [{ tab: 'media' }, { sel: 'button.chip:has-text("Claims to check")' }], '.claims'],
+  // Commentary and statements grouped by position on the bill, each row naming the sections it discusses (data/section_refs.json).
+  ['commentary-opposes', [{ tab: 'media' }, { sel: 'button.chip:has-text("Commentary")' }, fold('Opposes the bill\\d+')], 'details.media-fold[open] .secs'],
 ];
 
 (async () => {

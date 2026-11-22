@@ -1303,8 +1303,7 @@
     ["all", "All", null],
     ["gov", "Government", ["gov_press_release", "gov_document", "court_filing"]],
     ["news", "News", ["news"]],
-    ["analysis", "Analysis", ["analysis"]],
-    ["statement", "Statements", ["org_statement"]],
+    ["commentary", "Commentary", ["analysis", "org_statement"]],
     ["x", "X", ["social_x"]],
     ["bluesky", "Bluesky", ["social_bluesky"]],
     ["reddit", "Reddit", ["reddit"]],
@@ -1353,9 +1352,36 @@
           it.quote && it.quote.text ? [it.summary ? " " : null, el("q", { class: "inline-quote" }, it.quote.text), it.quote.speaker ? " (" + it.quote.speaker + ")" : null] : null) : null,
         it.visuals && it.visuals.length ? el("ul", { class: "visuals" }, it.visuals.map((v) => el("li", null,
           el("strong", null, "Cheat sheet: " + v.title + ". "), v.text + " ", ext(v.url, "View image")))) : null,
+        it.secs && it.secs.length ? secRefs(it.secs) : null,
         it.claims && it.claims.length ? claimChecks(it.claims) : null,
         null);
     }));
+  }
+
+  /* The sections of the Senate-passed text an item discusses, each linked to where the site
+     shows it; with More open, the item's own words about each (data/section_refs.json). */
+  function secRefs(list) {
+    return el("div", { class: "secs" },
+      el("p", null, "Sections: ", list.map((x, i) => [i ? ", " : null,
+        el("a", { href: x.href, title: x.h }, (i ? "" : "Sec. ") + x.n)])),
+      el("ul", { class: "sec-quotes" }, list.map((x) => el("li", null,
+        el("a", { href: x.href }, "Sec. " + x.n), " " + x.h, x.q ? [": ", el("q", null, x.q)] : null))));
+  }
+
+  /* Commentary and statements, folded by the item's position on the bill. */
+  const COMMENTARY_GROUPS = [["Supports the bill", ["supports"]], ["Opposes the bill", ["opposes"]],
+    ["Mixed", ["mixed"]], ["Explains, takes no side", ["neutral", "reporting"]]];
+
+  function commentaryGroups(list) {
+    if (!list.length) return el("p", { class: "empty" }, "No items match.");
+    /* A position is on this bill only once its text was public; earlier pieces are on permitting reform in general. */
+    const after = list.filter((it) => it.date >= D.meta.released);
+    const before = list.filter((it) => it.date < D.meta.released);
+    const fold = (label, items) => items.length ? el("details", { class: "section-fold media-fold" },
+      el("summary", null, label, el("span", { class: "chip-count" }, items.length)), mediaItems(items)) : null;
+    return el("div", { class: "rows media-groups" },
+      COMMENTARY_GROUPS.map(([label, keys]) => fold(label, after.filter((it) => keys.indexOf(it.stance) >= 0))),
+      fold("Before the text was public (" + S.formatDate(D.meta.released) + ")", before));
   }
 
   /* Claims an item makes about the bill, each with the passages of the Senate-passed text to read
@@ -1376,7 +1402,7 @@
       const b = li.querySelector(":scope > * .more-toggle, :scope > .more-toggle");
       if (!b) return;
       const lead = li.querySelector(":scope > .lead");
-      const hidden = li.querySelector(":scope > .visuals, :scope > .claims, :scope > .quote, :scope > .actions, :scope > .social, :scope > .sources");
+      const hidden = li.querySelector(":scope > .visuals, :scope > .claims, :scope > .secs > .sec-quotes, :scope > .quote, :scope > .actions, :scope > .social, :scope > .sources");
       b.hidden = !hidden && (!lead || lead.scrollHeight <= lead.clientHeight + 1);
     });
   }
@@ -1388,6 +1414,13 @@
     const countHost = el("p", { class: "facts", role: "status" });
     const refresh = () => {
       const list = mediaList();
+      if (mediaType === "commentary" && mediaStance === "all") {
+        fill(listHost, commentaryGroups(list));
+        pruneMore(listHost);
+        listHost.querySelectorAll("details.media-fold").forEach((d) => d.addEventListener("toggle", () => pruneMore(d)));
+        countHost.textContent = list.length + " matching items, grouped by position (" + D.media.length + " total)";
+        return;
+      }
       const rest = Math.max(0, list.length - mediaLimit);
       fill(listHost, mediaItems(rest > 0 ? list.slice(0, mediaLimit) : list),
         rest > 0 ? el("button", { type: "button", class: "chip show-rest", onclick: () => {

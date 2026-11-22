@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-21",
+ "checked": "2026-11-22",
  "bill": {
   "total": 174,
   "verified": 174
@@ -595,9 +595,9 @@
    "text": "Permitting reform cannot wait, and the time to act is now.",
    "speaker": "Michele Stockwell",
    "url": "https://bpcaction.org/bpc-action-urges-congress-to-pass-the-bipartisan-american-affordability-and-jobs-act/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "people.liza-reed",
@@ -613,9 +613,9 @@
    "text": "The Bipartisan American Affordability and Jobs Act of 2026 is a true, heroic breakthrough for permitting reform",
    "speaker": "Marc Levitt",
    "url": "https://thebreakthrough.org/press/release-breakthrough-institute-statement-on-the-bipartisan-american-affordability-and-jobs-act-of-2026",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "people.aidan-mackenzie",
@@ -660,7 +660,7 @@
    "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
    "result": "browser",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": "read in a browser on 2026-11-22"
   },
   {
    "where": "people.brent-gardner",
@@ -1203,6 +1203,168 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-20-the-white-house-what-they-are-saying-send-the-bipartisan-american-aff.1102",
+   "text": "It also helps multifamily developers by ensuring that the use of federal grants and loans does not automatically trigger a National Environmental Policy Act (NEPA) review.",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/releases/2026/11/what-they-are-saying-send-the-bipartisan-american-affordability-and-jobs-act-to-president-trumps-desk/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-the-white-house-what-they-are-saying-send-the-bipartisan-american-aff.1106",
+   "text": "For projects that still need a NEPA review, the bill sets enforceable deadlines for agencies to complete it.",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/releases/2026/11/what-they-are-saying-send-the-bipartisan-american-affordability-and-jobs-act-to-president-trumps-desk/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-the-white-house-what-they-are-saying-send-the-bipartisan-american-aff.2109",
+   "text": "It speeds up transmission projects, encourages grid-enhancing advanced transmission technologies, and gives investors more certainty",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/releases/2026/11/what-they-are-saying-send-the-bipartisan-american-affordability-and-jobs-act-to-president-trumps-desk/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-the-senate-passed-baaja-62-33-now-the-house-can-stop-it-call",
+   "text": "BAAJA is not law yet, and it can still be defeated.",
+   "speaker": "Forest Service Employees for Environmental Ethics",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "claims.c-2026-11-20-fseee-1",
+   "text": "Logging, mining, and drilling approvals would be nearly impossible to revisit or revoke, and taxpayers could owe corporate developers up to half of project costs if agencies try.",
+   "speaker": "FSEEE",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "claims.c-2026-11-20-fseee-2",
+   "text": "Agencies could entirely skip public comment on environmental assessments.",
+   "speaker": "FSEEE",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "claims.c-2026-11-20-fseee-3",
+   "text": "Challenges must be filed within 150 days, and courts could no longer halt unlawful projects, only send the paperwork back while bulldozers continue steamrolling the land’s ecological values.",
+   "speaker": "FSEEE",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-20-the-senate-passed-baaja-62-33-now-the-house-can-stop-it-call.1110",
+   "text": "Challenges must be filed within 150 days, and courts could no longer halt unlawful projects, only send the paperwork back while bulldozers continue steamrolling the land’s ecological values.",
+   "speaker": "",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-20-the-senate-passed-baaja-62-33-now-the-house-can-stop-it-call.1401",
+   "text": "Logging, mining, and drilling approvals would be nearly impossible to revisit or revoke, and taxpayers could owe corporate developers up to half of project costs if agencies try.",
+   "speaker": "",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "media.2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt",
+   "text": "The Senate voted to put western states back in the driver’s seat by ensuring state wildlife experts lead on endangered species decisions",
+   "speaker": "Sen. Cynthia Lummis",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-20-western-caucus-1",
+   "text": "BAAJA modernizes NEPA to deliver faster, more predictable environmental reviews without changing NEPA’s core purpose.",
+   "speaker": "Senate Western Caucus release",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-20-western-caucus-2",
+   "text": "It also clarifies judicial review through earlier filing deadlines, public comment prerequisites, burden-of-proof clarity, and scheduled remands to fix permit deficiencies.",
+   "speaker": "Senate Western Caucus release",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-20-western-caucus-3",
+   "text": "BAAJA provides project certainty across a variety of energy sources in the federal permitting process by ensuring previously issued permits cannot be rescinded without justification based on significant circumstances or violations of federal law.",
+   "speaker": "Senate Western Caucus release",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt.1102",
+   "text": "It establishes firm deadlines for environmental reviews and documents, updates the definition of “major federal action,” and sets a statute of limitations of 150 days.",
+   "speaker": "",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt.1106",
+   "text": "It establishes firm deadlines for environmental reviews and documents, updates the definition of “major federal action,” and sets a statute of limitations of 150 days.",
+   "speaker": "",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt.1110",
+   "text": "It establishes firm deadlines for environmental reviews and documents, updates the definition of “major federal action,” and sets a statute of limitations of 150 days.",
+   "speaker": "",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt.1305",
+   "text": "requires a petition for judicial review to be filed within 150 days after the biological opinion is issued and made public.",
+   "speaker": "",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt.1401",
+   "text": "BAAJA provides project certainty across a variety of energy sources in the federal permitting process by ensuring previously issued permits cannot be rescinded without justification based on significant circumstances or violations of federal law.",
+   "speaker": "",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-20-senate-environment-and-public-works-committee-chairman-capito-capito",
    "text": "I hope our colleagues in the House will act quickly.",
    "speaker": "Sen. Shelley Moore Capito, R-W.Va., EPW Chairman",
@@ -1266,6 +1428,15 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-20-new-democrat-coalition-new-democrat-coalition-leaders-release-stateme.2107",
+   "text": "The bill also includes the toughest restrictions on data centers – requiring that they pay for their power and grid upgrades instead of passing those costs on to working families.",
+   "speaker": "",
+   "url": "https://newdemocratcoalition.house.gov/media-center/press-releases/new-democrat-coalition-leaders-release-statement-on-senate-passage-of-bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-20-native-news-online-despite-strong-tribal-opposition-u-s-senate-approv",
    "text": "The bill threatens Tribal sovereignty, and I am deeply concerned that it could allow the destruction of ancestral lands, sacred places, and cultural resources",
    "speaker": "Sen. Alex Padilla, D-Calif., in a statement quoted by Native News Online",
@@ -1311,6 +1482,24 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-20-national-association-of-manu-senate-passes-permitting-reform-a-major-bipartisan.1302",
+   "text": "Allowing for quicker Endangered Species Act consultations",
+   "speaker": "",
+   "url": "https://nam.org/senate-passes-permitting-reform-a-major-bipartisan-win-for-manufacturers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-national-association-of-manu-senate-passes-permitting-reform-a-major-bipartisan.1601",
+   "text": "Updating the Clean Air Act to account for emissions from prescribed burns used to prevent wildfires",
+   "speaker": "",
+   "url": "https://nam.org/senate-passes-permitting-reform-a-major-bipartisan-win-for-manufacturers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-20-ict-affordability-and-jobs-act-passes-senate",
    "text": "The House still has the chance to do the right thing and vote against BAAJA, allowing the next Congress to take up permitting reform",
    "speaker": "Wizipan Garriot, president of NDN Collective, as quoted by ICT",
@@ -1329,9 +1518,36 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-20-heatmap-the-permitting-bill-s-next-battleground.2301",
+   "text": "ensuring that all federally funded projects that might affect tribal resources require tribal consultation, not just those that require federal permits.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/baaja-house",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-heatmap-the-permitting-bill-s-next-battleground.2302",
+   "text": "It also increased the annual funding authorization for state and tribal historic preservation offices by $100 million, to $300 million.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/baaja-house",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-20-environmental-defense-fund-statement-on-u-s-senate-passage-of-permitt",
    "text": "we urge the House to make meaningful improvements as it considers the legislation this session",
    "speaker": "Fred Krupp, president, Environmental Defense Fund",
+   "url": "https://www.edf.org/media/statement-us-senate-passage-permitting-reform-legislation",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-environmental-defense-fund-statement-on-u-s-senate-passage-of-permitt.2107",
+   "text": "It also helps shield families from the costs of data center growth.",
+   "speaker": "",
    "url": "https://www.edf.org/media/statement-us-senate-passage-permitting-reform-legislation",
    "result": "verified",
    "share": 1.0,
@@ -1513,9 +1729,9 @@
    "text": "there is only one Clean Air Act provision in BAAJA",
    "speaker": "Thomas Hochman",
    "url": "https://x.com/ThomasHochman/status/2123627467768213904",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "media.2026-11-19-x-siegelscribe-news-senjeffmerkley-says-in-statement-to-me-that-the-s",
@@ -1599,9 +1815,36 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-19-senate-environment-and-public-works-committee-ranking-member-whitehou.1402",
+   "text": "including by preventing future administrations from arbitrarily blocking entire classes of energy projects",
+   "speaker": "",
+   "url": "https://www.epw.senate.gov/press/dem/whitehouse-cheers-senate-passage-of-landmark-bipartisan-american-affordability-and-jobs-act/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-19-senate-environment-and-public-works-committee-ranking-member-whitehou.2107",
+   "text": "ensure that rapidly growing data centers pay the full cost of their associated transmission needs rather than passing those costs on to families and small businesses.",
+   "speaker": "",
+   "url": "https://www.epw.senate.gov/press/dem/whitehouse-cheers-senate-passage-of-landmark-bipartisan-american-affordability-and-jobs-act/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-19-sen-martin-heinrich-heinrich-senate-passage-of-landmark-bipartisan-pe",
    "text": "I'm proud of what we've accomplished. Now let's get this bill across the finish line and signed into law.",
    "speaker": "Sen. Martin Heinrich, D-N.M.",
+   "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-senate-passage-of-landmark-bipartisan-permitting-deal-will-lower-electricity-bills-hold-data-centers-accountable-create-over-one-hundred-thousand-jobs-reduce-carbon-emissions",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-19-sen-martin-heinrich-heinrich-senate-passage-of-landmark-bipartisan-pe.2107",
+   "text": "Require data centers to contribute approximately $55 billion toward transmission costs over the next decade",
+   "speaker": "",
    "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-senate-passage-of-landmark-bipartisan-permitting-deal-will-lower-electricity-bills-hold-data-centers-accountable-create-over-one-hundred-thousand-jobs-reduce-carbon-emissions",
    "result": "verified",
    "share": 1.0,
@@ -1657,8 +1900,8 @@
    "text": "Hunton will provide a more in-depth analysis of impacts to project development in the final, amended Senate text in a forthcoming post.",
    "speaker": "Hunton",
    "url": "https://www.hunton.com/the-nickel-report/federal-bipartisan-permitting-legislation-expected-to-clear-senate-today-and-head-to-the-house",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -1666,8 +1909,8 @@
    "text": "The bill also provides new methods of challenging federal agency action (or inaction) on pending applications for federal authorizations as well as revocations of previously issued federal authorizations.",
    "speaker": "Elizabeth L. Horner, Hunton Andrews Kurth",
    "url": "https://www.hunton.com/the-nickel-report/federal-bipartisan-permitting-legislation-expected-to-clear-senate-today-and-head-to-the-house",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -2526,9 +2769,153 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-16-congressional-record-energy-senate-floor-remarks.1110",
+   "text": "This bill eliminates the ability to vacate permits under the National Environmental Policy Act and the National Historic Preservation Act.",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-congressional-record-energy-senate-floor-remarks.1401",
+   "text": "And the provisions that are meant to protect clean energy projects from Trump's blockade actually give him massive new powers to permit his favored fossil fuel projects and prevent future administrations from doing anything about it.",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-congressional-record-energy-senate-floor-remarks.2107",
+   "text": "Now, it is true that this bill would make it possible to have data centers pay more of their fair share and prevent them from jacking up electricity costs for ratepayers.",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-congressional-record-energy-senate-floor-remarks.2117",
+   "text": "This bill also includes language that would establish a data center community assistance program",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-congressional-record-energy-senate-floor-remarks.2301",
+   "text": "Tribes have been rightfully outraged by the attack on their sovereignty through the rollback of the National Historic Preservation Act.",
+   "speaker": "",
+   "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti",
    "text": "would inflict permanent, sweeping damage on the nation's core environmental laws",
    "speaker": "Environmental and energy law scholars (letter signatories)",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1102",
+   "text": "The bill declares that agency actions associated with interstate gas pipelines are not “major Federal actions” requiring environmental review.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1105",
+   "text": "The bill dramatically expands categorical exclusions as a means of avoiding meaningful NEPA review and lets agencies combine and borrow them.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1106",
+   "text": "Agencies must drop any alternative that does not meet the developer's goals and may ignore science published after the very beginning of the review process.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1110",
+   "text": "Even when a court finds that an agency violated NEPA, it could not vacate the approval or halt the project, which would proceed while the agency redoes its work.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1202",
+   "text": "States and Tribes could impose conditions only to meet water quality requirements.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1203",
+   "text": "it doubles discharge permit terms to 10 years.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1204",
+   "text": "The bill expands nationwide dredge-and-fill permits and sets a 150-day deadline to challenge them.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1304",
+   "text": "It also allows states — many of which have limited expertise and resources devoted to non-game species — to take over the consultation process from expert federal agencies.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1401",
+   "text": "Agencies could not revoke, suspend, or materially alter almost any federal permit in effect on or after November 6, 2026, or otherwise “interfere with” a permitted project.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.1402",
+   "text": "Developers could sue the United States if permits for their type of project are delayed or denied more often than in the prior 10 years.",
+   "speaker": "",
+   "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti.2301",
+   "text": "Agencies “may,” but need not, consult Tribes when identifying historic properties.",
+   "speaker": "",
    "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
    "result": "verified",
    "share": 1.0,
@@ -2539,6 +2926,96 @@
    "text": "The Senate bipartisan permitting bill is essentially an enormous three-part bet by the Democrats and clean energy advocates who support it.",
    "speaker": "Jeff St. John, Canary Media",
    "url": "https://www.canarymedia.com/articles/politics/permitting-reform-uncertain-bet",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-canary-media-permitting-reform-is-a-big-controversial-bet-fo.2107",
+   "text": "the bill does contain provisions that would significantly increase what new data centers must pay for the grid infrastructure required to supply them with the power they need.",
+   "speaker": "",
+   "url": "https://www.canarymedia.com/articles/politics/permitting-reform-uncertain-bet",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-16-263-congress-should-press-pause-on-baaja",
+   "text": "BAAJA’s good parts are reason enough to get the rest of it right; its bad parts should worry you whatever your views on environmental policy",
+   "speaker": "Steve Vladeck",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-16-vladeck-1",
+   "text": "A court that finds a NEPA violation could only send the decision back to the agency to fix it within 180 days, and the project could proceed under its permit in the meantime.",
+   "speaker": "Steve Vladeck",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-16-vladeck-2",
+   "text": "Under the bill, as the Congressional Research Service (CRS) and others summarize it, challengers would have 150 days to sue.",
+   "speaker": "Steve Vladeck",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-16-vladeck-3",
+   "text": "Critically, none of the exceptions would cover a new administration that concludes its predecessor issued a permit unlawfully.",
+   "speaker": "Steve Vladeck",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-263-congress-should-press-pause-on-baaja.1110",
+   "text": "But the biggest change here is to the potential remedies.",
+   "speaker": "",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-263-congress-should-press-pause-on-baaja.1401",
+   "text": "Then there’s Section 1401, the heart of the project-certainty title.",
+   "speaker": "",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-263-congress-should-press-pause-on-baaja.1502",
+   "text": "authorize construction of uranium enrichment facilities while the Nuclear Regulatory Commission’s already-weakened licensing process is still underway, and let some projects proceed without a public hearing.",
+   "speaker": "",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-263-congress-should-press-pause-on-baaja.2105",
+   "text": "end incumbent utilities’ first dibs on new regional lines",
+   "speaker": "",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-16-263-congress-should-press-pause-on-baaja.2107",
+   "text": "and make data centers pay for the transmission they use.",
+   "speaker": "",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -2620,9 +3097,9 @@
    "text": "only 56 percent opposed the bill. Incredible.",
    "speaker": "Thomas Hochman (@ThomasHochman)",
    "url": "https://x.com/ThomasHochman/status/2121651172444414172",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "media.2026-11-14-x-senwhitehouse-nearly-80-of-voters-back-baaja",
@@ -2895,6 +3372,69 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-12-the-senate-permitting-bill-deserves-a-hard-look-before-a-vot",
+   "text": "If a Senate permitting bill becomes law, NEPA cases may be virtually futile.",
+   "speaker": "David Tatel, retired D.C. Circuit judge",
+   "url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-12-tatel-1",
+   "text": "Rather, it strips federal judges of the authority to halt or pause a project’s authorization until the agency fixes errors in its environmental review.",
+   "speaker": "David Tatel",
+   "url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-12-tatel-2",
+   "text": "And it authorizes construction of the project to proceed even as the agency considers its effects.",
+   "speaker": "David Tatel",
+   "url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-12-the-senate-permitting-bill-deserves-a-hard-look-before-a-vot.1110",
+   "text": "Rather, it strips federal judges of the authority to halt or pause a project’s authorization until the agency fixes errors in its environmental review.",
+   "speaker": "",
+   "url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-12-the-impact-of-permitting-reform-on-state-level-residential-e",
+   "text": "Residential electricity prices and bills decline in at least 46 states in 2035 with the full set of modeled BAAJA provisions.",
+   "speaker": "Rhodium Group",
+   "url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-12-rhodium-1",
+   "text": "BAAJA includes ratepayer protections that make data centers pay for the costs their growth adds to the grid, reducing bills for residential consumers and other customer classes.",
+   "speaker": "Rhodium Group",
+   "url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-12-the-impact-of-permitting-reform-on-state-level-residential-e.2107",
+   "text": "BAAJA includes ratepayer protections that make data centers pay for the costs their growth adds to the grid, reducing bills for residential consumers and other customer classes.",
+   "speaker": "",
+   "url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-12-kunc-boise-state-public-radi-indigenous-leaders-voice-concerns-about-sovereignt",
    "text": "Our legislation will prevent unneeded and unnecessary delays and endless litigation that could block growth,",
    "speaker": "Sen. Shelley Moore Capito",
@@ -2994,6 +3534,78 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-11-white-and-case-senate-permitting-bill-bolsters.2101",
+   "text": "BAAJA revises Section 216 of the FPA to authorize FERC to issue construction permits directly to interstate transmission facilities operating at 230 kV or higher",
+   "speaker": "",
+   "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-white-and-case-senate-permitting-bill-bolsters.2103",
+   "text": "BAAJA directs FERC to require transmission providers to establish long-term interregional transmission planning processes utilizing a unified timeline, common modeling assumptions, and a joint process",
+   "speaker": "",
+   "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-white-and-case-senate-permitting-bill-bolsters.2105",
+   "text": "BAAJA amends the FPA to eliminate any federal right of first refusal (ROFR) for incumbent utilities",
+   "speaker": "",
+   "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-white-and-case-senate-permitting-bill-bolsters.2106",
+   "text": "BAAJA adds a new Section 318 to the FPA requiring the consolidation of generator interconnection and regional transmission planning processes across a 20-year demand forecast horizon",
+   "speaker": "",
+   "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-white-and-case-senate-permitting-bill-bolsters.2107",
+   "text": "To implement this mandate, the proposed legislation directs FERC to issue a Policy Statement within 90 days of bill passage.",
+   "speaker": "",
+   "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-white-and-case-senate-permitting-bill-bolsters.2110",
+   "text": "directing FERC to initiate a rulemaking governing the deployment of artificial intelligence and machine learning in generator interconnection study processes.",
+   "speaker": "",
+   "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-white-and-case-senate-permitting-bill-bolsters.2116",
+   "text": "the proposed legislation adds a new section to the Federal Power Act making RTO/ISO corporate governance explicitly subject to FERC’s jurisdiction.",
+   "speaker": "",
+   "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-white-and-case-senate-permitting-bill-bolsters.2117",
+   "text": "The proposed legislation also establishes the U.S. Department of Energy (DOE) Data Center Community Assistance Program.",
+   "speaker": "",
+   "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-11-planetizen-bill-to-overhaul-energy",
    "text": "The Bipartisan American Affordability and Jobs Act of 2026 still needs to pass the House of Representatives.",
    "speaker": "Zachary Whalen, reporter",
@@ -3015,6 +3627,33 @@
    "where": "media.2026-11-11-earthjustice-the-permitting-bill-will",
    "text": "Without meaningful judicial remedies, the National Environmental Policy Act (NEPA) will be virtually impossible to enforce, especially against bad faith actors.",
    "speaker": "Sambhav Sankar, Senior Vice President of Programs, Earthjustice",
+   "url": "https://earthjustice.org/experts/sambhav-sankar/the-permitting-bill-will-let-the-trump-administration-ignore-nepa",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-earthjustice-the-permitting-bill-will.1106",
+   "text": "Section 1106 exposes the agency to serious liability if it doesn’t hit tight deadlines for issuing NEPA analyses",
+   "speaker": "",
+   "url": "https://earthjustice.org/experts/sambhav-sankar/the-permitting-bill-will-let-the-trump-administration-ignore-nepa",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-earthjustice-the-permitting-bill-will.1110",
+   "text": "Section 1110 of BAAJA says that “the only remedy the court may order to redress [a NEPA] violation is to remand, without vacatur or issuance of an injunction, the applicable order to the agency.”",
+   "speaker": "",
+   "url": "https://earthjustice.org/experts/sambhav-sankar/the-permitting-bill-will-let-the-trump-administration-ignore-nepa",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-11-earthjustice-the-permitting-bill-will.1401",
+   "text": "Section 1401 of BAAJA says that the agency can’t revoke or modify a permit after it has been issued except under very limited exceptions.",
+   "speaker": "",
    "url": "https://earthjustice.org/experts/sambhav-sankar/the-permitting-bill-will-let-the-trump-administration-ignore-nepa",
    "result": "verified",
    "share": 1.0,
@@ -3264,6 +3903,69 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-10-mcguirewoods-addressing-concerns-of-utilities.1401",
+   "text": "the amendment clarifies that federal agencies may modify or revoke permits in response to court orders",
+   "speaker": "",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-mcguirewoods-addressing-concerns-of-utilities.2101",
+   "text": "requires developers to pursue state approval for one year before seeking federal intervention instead of going through state and federal approvals simultaneously.",
+   "speaker": "",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-mcguirewoods-addressing-concerns-of-utilities.2104",
+   "text": "The amendment preserves provisions allowing state regulators and the Federal Energy Regulatory Commission (FERC) to scrutinize certain local transmission investments that could increase electricity costs.",
+   "speaker": "",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-mcguirewoods-addressing-concerns-of-utilities.2105",
+   "text": "preserves existing utility rights to build transmission infrastructure (right of first refusal)",
+   "speaker": "",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-mcguirewoods-addressing-concerns-of-utilities.2106",
+   "text": "It exempts certain vertically integrated utilities from new coordinated generation and transmission planning requirements",
+   "speaker": "",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-mcguirewoods-addressing-concerns-of-utilities.2117",
+   "text": "the amendment establishes a new Department of Energy technical assistance program to help state, local and tribal governments evaluate proposed data center projects.",
+   "speaker": "",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-mcguirewoods-addressing-concerns-of-utilities.2301",
+   "text": "the amendment removes several controversial changes to the National Historic Preservation Act",
+   "speaker": "",
+   "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-10-inside-climate-news-senate-advances-permitting-overhaul",
    "text": "The Senate voted Monday to advance long-sought bipartisan legislation to speed permitting of big energy projects, amid acrimony over whether the bill’s support for clean energy will be overwhelmed by the fossil fuel industry’s expansion plans.",
    "speaker": "Inside Climate News (reporter)",
@@ -3330,6 +4032,60 @@
    "where": "media.2026-11-10-earthjustice-congress-tweaks-permitting-bill",
    "text": "Earthjustice is urging senators to shelve this version, then come back in the new year and give these reforms the full attention they require.",
    "speaker": "Earthjustice (organization)",
+   "url": "https://earthjustice.org/?p=57975",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-earthjustice-congress-tweaks-permitting-bill.1110",
+   "text": "It would prohibit courts from issuing any meaningful relief to address NEPA violations.",
+   "speaker": "",
+   "url": "https://earthjustice.org/?p=57975",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-earthjustice-congress-tweaks-permitting-bill.1203",
+   "text": "it extends the duration of water pollution permits, meaning that permitting authorities would have to wait longer before mandating new techniques for treating hazardous water pollutants like PFAS.",
+   "speaker": "",
+   "url": "https://earthjustice.org/?p=57975",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-earthjustice-congress-tweaks-permitting-bill.1204",
+   "text": "It would make it easier for industry and developers to fill wetlands and other waters rather than pursuing other available alternatives.",
+   "speaker": "",
+   "url": "https://earthjustice.org/?p=57975",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-earthjustice-congress-tweaks-permitting-bill.1304",
+   "text": "BAAJA would allow it to delegate this duty to states.",
+   "speaker": "",
+   "url": "https://earthjustice.org/?p=57975",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-earthjustice-congress-tweaks-permitting-bill.1401",
+   "text": "Section 1401 of the bill would still give the Trump administration very broad authority to fast-track projects of all kinds (not just clean energy projects).",
+   "speaker": "",
+   "url": "https://earthjustice.org/?p=57975",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-10-earthjustice-congress-tweaks-permitting-bill.2106",
+   "text": "It also eliminates planning requirements in areas that lie outside Regional Transmission Organizations, effectively excluding the southeast U.S. from these mandates.",
+   "speaker": "",
    "url": "https://earthjustice.org/?p=57975",
    "result": "verified",
    "share": 1.0,
@@ -3561,6 +4317,15 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-09-weekend-amendment-fails-to-address-fossil-fuel-giveaways-in-",
+   "text": "If enacted as currently drafted, BAAJA would be the most significant legislative reversal in environmental and community protections in decades.",
+   "speaker": "David Watkins, Union of Concerned Scientists",
+   "url": "https://www.ucs.org/about/news/baaja-amendment-fails-improve-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-09-the-washington-sun-senators-advance-bipartisan-permitting",
    "text": "Sen. Tammy Duckworth (D-Illinois) voted no, saying she was concerned the package could hand Trump more power.",
    "speaker": "Mara Hoplamazian, reporter, The Washington Sun",
@@ -3577,6 +4342,87 @@
    "result": "browser",
    "share": 1.0,
    "note": "read in a browser on 2026-11-15"
+  },
+  {
+   "where": "media.2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t",
+   "text": "BAAJA will do an incredibly effective job at removing much of the remaining protective measures that these three laws still have.",
+   "speaker": "Katie Bilodeau, Wilderness Watch",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "claims.c-2026-11-09-bilodeau-1",
+   "text": "If Congress passes S. 5653, however, that obligation goes away because the bill redefines “major Federal action” to exclude federal funding, no matter how many millions of dollars that might be and to what extent that funding could be used to destroy the wild.",
+   "speaker": "Katie Bilodeau",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "claims.c-2026-11-09-bilodeau-2",
+   "text": "S. 5653 prohibits agencies from rescinding previous authorizations—no matter how destructive they might be—with a provision called “project certainty.”",
+   "speaker": "Katie Bilodeau",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "claims.c-2026-11-09-bilodeau-3",
+   "text": "For agency decisions that violate NEPA, the ESA, or the Clean Water Act, however, S. 5653 shortens this six-year window to 150 days for citizen suits.",
+   "speaker": "Katie Bilodeau",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "claims.c-2026-11-09-bilodeau-4",
+   "text": "BAAJA gives the government 180 days to fix the means (the process) so they can justify the decision that courts must keep.",
+   "speaker": "Katie Bilodeau",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t.1102",
+   "text": "S. 5653 ignorantly or maliciously redefines and grossly enlarges categories of activities that our government will no longer consider “major Federal actions.”",
+   "speaker": "",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t.1110",
+   "text": "For agency decisions that violate NEPA, the ESA, or the Clean Water Act, however, S. 5653 shortens this six-year window to 150 days for citizen suits.",
+   "speaker": "",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t.1304",
+   "text": "We never got to discuss how the bill threatens to turn over ESA consultation to the states",
+   "speaker": "",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t.1401",
+   "text": "S. 5653 prohibits agencies from rescinding previous authorizations—no matter how destructive they might be—with a provision called “project certainty.”",
+   "speaker": "",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
   },
   {
    "where": "media.2026-11-09-source-new-mexico-us-senate-advances-new",
@@ -3610,6 +4456,78 @@
    "text": "The #Senate invoked cloture on the motion to proceed to H.R. 2347, vehicle for the permitting reform bill, 73-25.",
    "speaker": "Senate Press Gallery",
    "url": "https://x.com/SenatePress/status/2119938132543946807",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri",
+   "text": "Farm Bureau shares BAAJA’s goal of timely, predictable permitting, and the bill’s environmental review reforms and Section 404 improvements are real progress.",
+   "speaker": "American Farm Bureau Federation",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-09-farm-bureau-1",
+   "text": "Its transmission title would shift siting authority from states to federal regulators and broaden federal eminent domain, while giving landowners limited notice, short windows to participate and narrow avenues for challenge.",
+   "speaker": "American Farm Bureau Federation",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-09-farm-bureau-2",
+   "text": "Lawsuits must be filed within 150 days by parties who substantially participated in the comment process, and courts would generally send flawed reviews back to agencies for correction rather than vacating them.",
+   "speaker": "American Farm Bureau Federation",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-09-farm-bureau-3",
+   "text": "Consultation timelines would be shortened to align with NEPA, so producers are not waiting years to learn whether a project affects listed species.",
+   "speaker": "American Farm Bureau Federation",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri.1110",
+   "text": "Lawsuits must be filed within 150 days by parties who substantially participated in the comment process, and courts would generally send flawed reviews back to agencies for correction rather than vacating them.",
+   "speaker": "",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri.1302",
+   "text": "Consultation timelines would be shortened to align with NEPA, so producers are not waiting years to learn whether a project affects listed species.",
+   "speaker": "",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri.1304",
+   "text": "Qualified state agencies could take on some consultation duties from the U.S. Fish and Wildlife Service, though applicants could opt out.",
+   "speaker": "",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri.2101",
+   "text": "By removing the corridor requirement and setting a 230 kV threshold, BAAJA would make federal condemnation available to far more projects nationwide.",
+   "speaker": "",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -3660,9 +4578,27 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-09-office-of-sen-sen-merkley-statement-on.1202",
+   "text": "“The bill restricts states’ ability to raise and address clean water concerns on gas pipelines as well as transmission lines.",
+   "speaker": "",
+   "url": "https://www.merkley.senate.gov/sen-merkley-statement-on-senate-permitting-legislation/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-09-office-of-sen-kaine-statement-on-permitting",
    "text": "For this reason, I am voting against today’s procedural motion. I will seek to amend the bill to address my concerns and, if successful, could support it with appropriate changes.",
    "speaker": "Tim Kaine, U.S. Senator (D-Va.)",
+   "url": "https://www.kaine.senate.gov/press-releases/kaine-statement-on-permitting-reform-legislation",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-office-of-sen-kaine-statement-on-permitting.2301",
+   "text": "But, I have serious concerns about the section of the bill that makes significant changes to the National Historic Preservation Act.",
+   "speaker": "",
    "url": "https://www.kaine.senate.gov/press-releases/kaine-statement-on-permitting-reform-legislation",
    "result": "verified",
    "share": 1.0,
@@ -3682,14 +4618,59 @@
    "text": "We support the elements of the legislation that help accelerate needed transmission, clean energy deployment, and grid modernization; but the current package goes too far in weakening essential environmental safeguards and public participation requirements.",
    "speaker": "Manish Bapna, President and CEO, NRDC",
    "url": "https://www.nrdc.org/press-releases/president-trump-undermines-baaja-senate-debate-begins",
-   "result": "browser",
-   "share": 1.0,
-   "note": "read in a browser on 2026-11-15"
+   "result": "missing",
+   "share": 0.7931034482758621,
+   "note": ""
   },
   {
    "where": "media.2026-11-09-national-association-of-us-senate-advances-bipartisan",
    "text": "NACo continues to support this important legislation, which delivers long-needed commonsense reforms to the federal permitting process while advancing county priorities.",
    "speaker": "National Association of Counties",
+   "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-national-association-of-us-senate-advances-bipartisan.1102",
+   "text": "The bill amends this existing exclusion to clarify that replacing or repairing the cable in wireline communications infrastructure is not subject to that limit.",
+   "speaker": "",
+   "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-national-association-of-us-senate-advances-bipartisan.1601",
+   "text": "The ANS adds provisions from the proposed bipartisan Wildfire Emissions Prevention Act (S. 5045).",
+   "speaker": "",
+   "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-national-association-of-us-senate-advances-bipartisan.1602",
+   "text": "The ANS adds reauthorization of the U.S. Environmental Protection Agency’s (EPA) Brownfields program through fiscal year (FY) 2031.",
+   "speaker": "",
+   "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-national-association-of-us-senate-advances-bipartisan.2117",
+   "text": "The ANS would create a new Data Center Community Assistance Program within the U.S. Department of Energy (DOE).",
+   "speaker": "",
+   "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-national-association-of-us-senate-advances-bipartisan.2301",
+   "text": "The ANS would make substantive changes from the original text’s reforms to the National Historic Preservation Act (NHPA).",
+   "speaker": "",
    "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
    "result": "verified",
    "share": 1.0,
@@ -3732,6 +4713,60 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-09-executive-office-of-s-5653-bipartisan-american.1202",
+   "text": "The bill would prevent States from abusing the Clean Water Act Section 401 certification system to block pipelines, transmission, or other infrastructure.",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-executive-office-of-s-5653-bipartisan-american.1304",
+   "text": "It would also empower States by allowing them to take responsibility for consultations under section 7 of the Endangered Species Act.",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-executive-office-of-s-5653-bipartisan-american.1401",
+   "text": "The permit-certainty provisions of this bill would allow industry and innovators to build today in confidence that their permits will be good tomorrow.",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-executive-office-of-s-5653-bipartisan-american.2106",
+   "text": "The bill requires FERC to plan generation and transmission together across regions.",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-executive-office-of-s-5653-bipartisan-american.2107",
+   "text": "Data centers connecting to the grid at scale will bear their own transmission costs, and States will be empowered to use revenue from large computational loads to lower electricity bills for working families.",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-executive-office-of-s-5653-bipartisan-american.2110",
+   "text": "It directs the Federal Energy Regulatory Commission (FERC) to modernize the generator interconnection queue using Super Intelligence and automation",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-09-environmental-defense-fund-statement-senate-to-hold",
    "text": "The latest version has important reforms to get clean energy on the grid and upgrade our aging infrastructure, but it also unwinds protections for our air, water and communities,",
    "speaker": "Fred Krupp, President, Environmental Defense Fund",
@@ -3768,9 +4803,45 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-09-clean-air-task-revisions-to-baaja-permitting.1401",
+   "text": "The goal of section 1401 is to maintain validly-issued federal authorizations and permits by preventing the executive branch from taking actions to cancel or modify them.",
+   "speaker": "",
+   "url": "https://www.catf.us/2026/11/revisions-baaja-permitting-certainty-provisions-fall-short-addressing-risks/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-clean-air-task-revisions-to-baaja-permitting.1402",
+   "text": "unlike section 1402, is not limited to energy projects or infrastructure.",
+   "speaker": "",
+   "url": "https://www.catf.us/2026/11/revisions-baaja-permitting-certainty-provisions-fall-short-addressing-risks/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-09-bommarito-consulting-baajas-first-senate-vote",
    "text": "No senator switched sides. Roll calls 257 and 258 differ for 17 senators. Every difference involves a senator who did not vote in one of the two roll calls.",
    "speaker": "Michael Bommarito, Bommarito Consulting",
+   "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
+   "result": "missing",
+   "share": 0.8333333333333334,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-bommarito-consulting-baajas-first-senate-vote.2101",
+   "text": "Two years for state consideration rather than one before FERC can use its backstop authority.",
+   "speaker": "",
+   "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-09-bommarito-consulting-baajas-first-senate-vote.2301",
+   "text": "Her office explicitly says she opposed final passage because the historic-preservation changes undermine Tribal sovereignty and consultation.",
+   "speaker": "",
    "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
    "result": "verified",
    "share": 1.0,
@@ -3862,9 +4933,27 @@
    "text": "We support the elements of the legislation that help accelerate needed transmission, clean energy deployment, and grid modernization; but the current package goes too far in weakening essential environmental safeguards and public participation requirements.",
    "speaker": "Manish Bapna, President and CEO, NRDC",
    "url": "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-still-needs-improvements",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-11-15"
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-08-natural-resources-defense-senate-permitting-bill-still.1110",
+   "text": "removes meaningful judicial remedies under NEPA and NHPA making it impossible for a court to stop construction of a project under either statute before it damages communities or the environment.",
+   "speaker": "",
+   "url": "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-still-needs-improvements",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-08-natural-resources-defense-senate-permitting-bill-still.1401",
+   "text": "The project certainty changes do not address key concerns about preventing unlawful permits from being rescinded—a key issue given the Trump Administration’s actions.",
+   "speaker": "",
+   "url": "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-still-needs-improvements",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "media.2026-11-07-mlex-us-senators-introduce-amendments",
@@ -3885,6 +4974,78 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.1401",
+   "text": "Under the new bill text, agencies will be explicitly allowed to revoke or alter permits “in response to an order by a court”.",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.1402",
+   "text": "The new bill extends that baseline to 10 years, potentially diluting the influence of Trumpian permitting practices over the next administration.",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.2101",
+   "text": "And it creates a new federal siting backstop, which allows the federal government to step in and approve the route for a line if a state has refused to do so.",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.2104",
+   "text": "allows states and FERC to exercise oversight over local transmission projects that can drive up electricity costs.",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.2106",
+   "text": "The new version of the bill also exempts vertically integrated utilities that aren’t in an electricity market from an otherwise mandatory new process that will require utilities to plan their long-term transmission and their power plant expansion at the same time.",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.2107",
+   "text": "The bill lays out how these new power lines should be paid for, via a cost allocation formula that says customers who benefit from the lines need to pay for them.",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.2117",
+   "text": "the bill would additionally create a new federal Data Center Community Assistance Program within the Energy Department",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.2301",
+   "text": "it eliminates a much-maligned provision that would let the Interior Secretary assume the role of a tribal historic preservation officer in certain cases.",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-07-evergreen-action-why-were-supporting-the",
    "text": "Evergreen Action, the organization I lead, is supporting the Senate's permitting bill (BAAJA). Here's why.",
    "speaker": "Lena Moffitt, Evergreen Action",
@@ -3894,9 +5055,108 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-07-evergreen-action-why-were-supporting-the.2101",
+   "text": "The bill would provide the federal government with the authority to approve lines found to be in the public interest.",
+   "speaker": "",
+   "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-evergreen-action-why-were-supporting-the.2102",
+   "text": "would exempt reconductoring lines or installing these technologies from additional environmental reviews",
+   "speaker": "",
+   "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-evergreen-action-why-were-supporting-the.2103",
+   "text": "The bill would also require regional transmission organizations (RTOs, such as PJM in the east, MISO in the Midwest and great planes, SPP in the west) to conduct consistent, interregional planning for transmission.",
+   "speaker": "",
+   "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-evergreen-action-why-were-supporting-the.2104",
+   "text": "It would allow states to demand federal regulators investigate if utilities are proposing the construction of costly local transmission lines rather than regional or interregional lines",
+   "speaker": "",
+   "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-evergreen-action-why-were-supporting-the.2107",
+   "text": "directing federal regulators to develop rules requiring data centers to pay not only for any necessary upgrades to the grid needed for their facilities, but also for the use of existing grid assets.",
+   "speaker": "",
+   "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-evergreen-action-why-were-supporting-the.2108",
+   "text": "The bill would let groups of home and business-owned batteries and distributed resources sell power or energy demand reduction into wholesale electricity markets",
+   "speaker": "",
+   "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-evergreen-action-why-were-supporting-the.2110",
+   "text": "it would make it faster and easier for new energy generation to plug into the grid by requiring the automation of interconnection studies and the standardization of connection fees.",
+   "speaker": "",
+   "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-07-defenders-of-wildlife-revised-permitting-bill-fails",
    "text": "Defenders of Wildlife remains opposed to the Bipartisan American Affordability and Jobs Act (BAAJA) following revisions that leave the bill's most damaging provisions affecting the Endangered Species Act largely unchanged.",
    "speaker": "Defenders of Wildlife release",
+   "url": "https://defenders.org/newsroom/revised-permitting-bill-fails-address-threats-endangered-species-act",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-defenders-of-wildlife-revised-permitting-bill-fails.1302",
+   "text": "The standard formal consultation period would shrink from 90 to 60 days without corresponding increases in agency staffing or funding",
+   "speaker": "",
+   "url": "https://defenders.org/newsroom/revised-permitting-bill-fails-address-threats-endangered-species-act",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-defenders-of-wildlife-revised-permitting-bill-fails.1303",
+   "text": "Certain highway projects and nationwide water permit reissuances would be exempt from requirements intended to ensure federal actions do not jeopardize endangered species.",
+   "speaker": "",
+   "url": "https://defenders.org/newsroom/revised-permitting-bill-fails-address-threats-endangered-species-act",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-defenders-of-wildlife-revised-permitting-bill-fails.1304",
+   "text": "The bill would allow states to assume federal Endangered Species Act consultation responsibilities, potentially creating inconsistent processes across the country.",
+   "speaker": "",
+   "url": "https://defenders.org/newsroom/revised-permitting-bill-fails-address-threats-endangered-species-act",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-07-defenders-of-wildlife-revised-permitting-bill-fails.1305",
+   "text": "The bill would impose a 150-day deadline for certain challenges involving Endangered Species Act decisions, replacing the generally applicable six-year period",
+   "speaker": "",
    "url": "https://defenders.org/newsroom/revised-permitting-bill-fails-address-threats-endangered-species-act",
    "result": "verified",
    "share": 1.0,
@@ -3918,7 +5178,25 @@
    "url": "https://www.sierraclub.org/press-releases/2026/11/sierra-club-we-cannot-support-permitting-bill-currently-written",
    "result": "browser",
    "share": 1.0,
-   "note": "read in a browser on 2026-11-15"
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-06-sierra-club-sierra-club-we-cannot.1202",
+   "text": "Ensure states can protect water quality under the Clean Water Act",
+   "speaker": "",
+   "url": "https://www.sierraclub.org/press-releases/2026/11/sierra-club-we-cannot-support-permitting-bill-currently-written",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-06-sierra-club-sierra-club-we-cannot.1402",
+   "text": "prevent the ability for the fossil fuel industry to sue for billions of dollars over “disparate treatment” for permit delays or denials",
+   "speaker": "",
+   "url": "https://www.sierraclub.org/press-releases/2026/11/sierra-club-we-cannot-support-permitting-bill-currently-written",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
   },
   {
    "where": "media.2026-11-06-punchbowl-white-house-counters-jeffries",
@@ -3933,6 +5211,24 @@
    "where": "media.2026-11-06-public-citizen-public-citizen-opposes-senate",
    "text": "The bill's provisions on transmission and ratepayer protections are strong and sorely needed, and they ought to be enacted. Unfortunately, the bill's drawbacks are greater, more immediate, and more certain.",
    "speaker": "David Arkush, Director of Public Citizen's Climate Program",
+   "url": "https://www.citizen.org/news/public-citizen-opposes-senate-permitting-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-public-citizen-public-citizen-opposes-senate.1402",
+   "text": "Under BAAJA, his actions will form most of the baseline by which courts assess whether future administrations are discriminating against a given form of energy.",
+   "speaker": "",
+   "url": "https://www.citizen.org/news/public-citizen-opposes-senate-permitting-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-public-citizen-public-citizen-opposes-senate.2107",
+   "text": "The bill’s provisions on transmission and ratepayer protections are strong and sorely needed, and they ought to be enacted.",
+   "speaker": "",
    "url": "https://www.citizen.org/news/public-citizen-opposes-senate-permitting-bill/",
    "result": "verified",
    "share": 1.0,
@@ -3957,9 +5253,144 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-06-heatmap-levin.1401",
+   "text": "making it far more difficult — in some cases, potentially impossible — to revoke permits for a project once the federal government has issued them.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/mike-levin-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-heatmap-levin.2107",
+   "text": "It includes ratepayer protection provisions that require data centers to pay all of the costs of upgrading the grid so that they can hook up to it.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/mike-levin-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-heatmap-levin.2301",
+   "text": "weakens tribal consultation under the National Historic Preservation Act.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/mike-levin-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-06-congressional-research-service-bipartisan-american-affordability-and",
    "text": "Section 1101 of BAAJA would specify that NEPA prescribes a procedure to inform the public about environmental effects of federal actions, describes the result of the NEPA process as an informational document, and does not mandate a particular outcome.",
    "speaker": "Congressional Research Service report R49510",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1101",
+   "text": "Section 1101 of BAAJA would specify that NEPA prescribes a procedure to inform the public about environmental effects of federal actions",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1102",
+   "text": "Section 1102 would reorganize NEPA's definitions, remove two existing definitions, modify several existing definitions, add 15 new definitions, and make conforming amendments.",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1103",
+   "text": "Section 1103 would require federal agencies to update their agency-specific NEPA procedures and direct the Council on Environmental Quality (CEQ) to promote standardized implementation of NEPA.",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1104",
+   "text": "Section 1104 would require federal agencies to implement NEPA consistent with minimum functional requirements and data and technology standards",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1105",
+   "text": "Section 1105 would amend the process for determining whether and what level of environmental review applies to a proposed action.",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1106",
+   "text": "add interagency scheduling, coordination, and deadline requirements; eliminate consideration of certain alternatives",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1107",
+   "text": "Section 1107 would extend the timeline for reliance on programmatic environmental documents.",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1108",
+   "text": "Section 1108 would require CEQ to maintain a central public record of all categorical exclusions (CEs)",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1109",
+   "text": "Section 1109 would establish application completeness and level of review determination deadlines",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1110",
+   "text": "including a 150-day statute of limitations to file a claim and a general prohibition on any judicial remedy imposing vacatur or injunctive relief if based on a NEPA violation",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1121",
+   "text": "Section 1121 would also increase authorized annual CEQ appropriations from $1 million to $5 million.",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-06-congressional-research-service-bipartisan-american-affordability-and.1132",
+   "text": "Subtitle C (Sections 1131-1133) would require CEQ to maintain an online database to provide information on and track the status of environmental reviews",
+   "speaker": "",
    "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
    "result": "verified",
    "share": 1.0,
@@ -3984,13 +5415,22 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-06-center-for-climate-new-nationwide-analysis-bipartisan.2110",
+   "text": "The modeled emissions reductions are driven by BAAJA’s interconnection provisions, which address lengthy studies, uncertain upgrade costs, and project withdrawals",
+   "speaker": "",
+   "url": "https://www.c2es.org/?p=25710",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-04-semiconductor-industry-association-sia-urges-senate-to",
    "text": "Permitting reform will help America build faster. That is why SIA is pleased to support the Bipartisan American Affordability and Jobs Act of 2026.",
    "speaker": "Michael Robbins, President and CEO, SIA",
    "url": "https://www.semiconductors.org/sia-urges-senate-to-pass-bipartisan-permitting-reform-legislation-to-boost-u-s-competitiveness/",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-11-15"
+   "note": ""
   },
   {
    "where": "media.2026-11-04-heatmap-blue-wave",
@@ -4011,13 +5451,130 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-02-rhodium-group-estimating-the-us-energy.1106",
+   "text": "establishes deadlines for environmental reviews and decisions beyond what was required in the 2023 FRA",
+   "speaker": "",
+   "url": "https://rhg.com/?p=24167",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-02-rhodium-group-estimating-the-us-energy.1110",
+   "text": "to 150 days, and reduces the available remedy when finding against the federal government to remand without vacatur.",
+   "speaker": "",
+   "url": "https://rhg.com/?p=24167",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-02-rhodium-group-estimating-the-us-energy.1202",
+   "text": "BAAJA limits Clean Water Act §401 state review to specific water quality requirements, establishes firm timelines for such reviews",
+   "speaker": "",
+   "url": "https://rhg.com/?p=24167",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-02-rhodium-group-estimating-the-us-energy.1304",
+   "text": "allows states to assume §7 consultation responsibilities in certain circumstances",
+   "speaker": "",
+   "url": "https://rhg.com/?p=24167",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-02-rhodium-group-estimating-the-us-energy.1401",
+   "text": "Sections 1401 and 1402 of the bill take novel approaches to attempt to limit executive branch interference with the federal permitting process.",
+   "speaker": "",
+   "url": "https://rhg.com/?p=24167",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-02-rhodium-group-estimating-the-us-energy.1402",
+   "text": "Sections 1401 and 1402 of the bill take novel approaches to attempt to limit executive branch interference with the federal permitting process.",
+   "speaker": "",
+   "url": "https://rhg.com/?p=24167",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-02-rhodium-group-estimating-the-us-energy.2101",
+   "text": "BAAJA simplifies the federal backstop siting authorities for interstate transmission lines, institutes new interregional planning requirements and codifies existing regional planning requirements",
+   "speaker": "",
+   "url": "https://rhg.com/?p=24167",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-02-rhodium-group-estimating-the-us-energy.2107",
+   "text": "The ratepayer protection provisions require utility regulators to attribute the cost impacts of meeting increased demand from large computational loads",
+   "speaker": "",
+   "url": "https://rhg.com/?p=24167",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-02-apta-transit-endorsement",
    "text": "Too many public transit and passenger rail projects spend years in review before construction can begin",
    "speaker": "Paul P. Skoutelas, American Public Transportation Association",
    "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
    "result": "browser",
    "share": 1.0,
-   "note": "read in a browser on 2026-11-03"
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-02-apta-transit-endorsement.1102",
+   "text": "the bill exempts repairs or replacements of existing facilities from NEPA review if they preserve the facilities’ function and increase capacity by no more than 20 percent.",
+   "speaker": "",
+   "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-02-apta-transit-endorsement.1105",
+   "text": "It also authorizes Federal agencies to accept comparable State environmental reviews that meet Federal requirements",
+   "speaker": "",
+   "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-02-apta-transit-endorsement.1106",
+   "text": "imposes enforceable deadlines on Federal agencies",
+   "speaker": "",
+   "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-02-apta-transit-endorsement.1110",
+   "text": "limits litigation delays by allowing projects to proceed while Federal agencies address court-identified deficiencies during an environmental review.",
+   "speaker": "",
+   "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-11-02-apta-transit-endorsement.2301",
+   "text": "the bill streamlines the National Historic Preservation Act Section 106 review process by establishing statutory deadlines and strengthening oversight",
+   "speaker": "",
+   "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
   },
   {
    "where": "media.2026-10-30-r-street-institute-baaja-blast-part-2",
@@ -4029,18 +5586,171 @@
    "note": ""
   },
   {
-   "where": "media.2026-10-30-breakthrough-institute-the-faulty-logic-at",
-   "text": "Since these reflexive pronouncements, more modeling has been released, which shows the ways in which BAAJA’s passage is likely to lower, not raise, emissions.",
-   "speaker": "Breakthrough Institute, analysis",
-   "url": "https://thebreakthrough.org/issues/energy/the-faulty-logic-at-the-heart-of-environmentalist-opposition-to-baaja",
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1110",
+   "text": "BAAJA would modify NEPA to reduce the statute to 150 days from a decision being made public.",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
    "result": "verified",
    "share": 1.0,
    "note": ""
   },
   {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1202",
+   "text": "The proposed bill would limit state review of Section 401 permits to “water quality requirements”",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1203",
+   "text": "National Pollutant Discharge Elimination System (NPDES) permits would be extended to a maximum 10-year renewal cycle instead of the current 5-year cycle.",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1205",
+   "text": "a 150-day limitation on seeking judicial review was proposed as a means to avoid litigation being drawn out and increasing costs unnecessarily.",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1302",
+   "text": "reduce the specified timelines for Section 7 consultation (interagency consultation)",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1304",
+   "text": "allow individual states to create their own ESA programs where they believe they are better equipped than federal agencies to carry out the ESA reviews",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1305",
+   "text": "limit initiation of judicial review to 150 days after the opinion is made public and sets the jurisdiction for such review as the District of Columbia Circuit",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1401",
+   "text": "Section 1401 starts by defining a “Federal Authorization or Permit” and then states that, once a project or action has received federal permitting, it shall not be impeded by a federal agency or department unless under certain conditions",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1402",
+   "text": "Section 1402 creates a standard by which a project developer can sue for disparate treatment in an attempt to recover damages and construct their project.",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.1403",
+   "text": "Finally, Section 1403 addresses unreasonable delays and will primarily solve problems for developers surrounding investment uncertainty.",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-30-r-street-institute-baaja-blast-part-2.2107",
+   "text": "we laid out our concerns with the ratepayer protection portions of the proposed bill that direct FERC to revise the 1994 Transmission Pricing Policy Statement",
+   "speaker": "",
+   "url": "https://www.rstreet.org/?p=103280",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-10-30-breakthrough-institute-the-faulty-logic-at",
+   "text": "Since these reflexive pronouncements, more modeling has been released, which shows the ways in which BAAJA’s passage is likely to lower, not raise, emissions.",
+   "speaker": "Breakthrough Institute, analysis",
+   "url": "https://thebreakthrough.org/issues/energy/the-faulty-logic-at-the-heart-of-environmentalist-opposition-to-baaja",
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
+  },
+  {
    "where": "media.2026-10-29-resources-for-the-projected-effects-of-the",
    "text": "We project near-term emissions reductions from the power sector of roughly 200 million tonnes (Mt) of carbon dioxide, with cumulative carbon dioxide emissions from the power sector declining by about 1.8 gigatonnes (Gt) through 2041 as compared to the baseline.",
    "speaker": "Kevin Rennert and Aaron Bergman, authors",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-29-resources-for-the-projected-effects-of-the.1401",
+   "text": "Our representation of the permitting certainty provisions of BAAJA (Sections 1401–1403 of the released bill text) reflects the stated intent of those provisions to ensure durability of federal permits",
+   "speaker": "",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-29-resources-for-the-projected-effects-of-the.1402",
+   "text": "Our representation of the permitting certainty provisions of BAAJA (Sections 1401–1403 of the released bill text) reflects the stated intent of those provisions to ensure durability of federal permits",
+   "speaker": "",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-29-resources-for-the-projected-effects-of-the.1403",
+   "text": "Our representation of the permitting certainty provisions of BAAJA (Sections 1401–1403 of the released bill text) reflects the stated intent of those provisions to ensure durability of federal permits",
+   "speaker": "",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-29-resources-for-the-projected-effects-of-the.2101",
+   "text": "It would expand the Federal Energy Regulatory Commission’s authority to permit certain interstate transmission lines, establish regional and interregional transmission planning requirements",
+   "speaker": "",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-29-resources-for-the-projected-effects-of-the.2109",
+   "text": "encourage greater use of advanced transmission technologies and existing transmission line rights-of-way",
+   "speaker": "",
+   "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-29-resources-for-the-projected-effects-of-the.2110",
+   "text": "and reform generator interconnection processes",
+   "speaker": "",
    "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
    "result": "verified",
    "share": 1.0,
@@ -4056,6 +5766,15 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-28-the-white-house-the-economic-benefits-of.1106",
+   "text": "In particular, agencies would be required to complete EISs within two years.",
+   "speaker": "",
+   "url": "https://www.whitehouse.gov/research/2026/10/the-economic-benefits-of-permitting-reform/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-28-plf-coalition-letter",
    "text": "This coalition urges Congress to seize this bipartisan opportunity to enact meaningful permitting reform.",
    "speaker": "Joe Luppino-Esposito, Pacific Legal Foundation",
@@ -4063,6 +5782,33 @@
    "result": "verified",
    "share": 1.0,
    "note": ""
+  },
+  {
+   "where": "refs.2026-10-28-plf-coalition-letter.1110",
+   "text": "The bipartisan deal, released last month, would streamline reviews under the National Environmental Policy Act (NEPA), shorten deadlines for legal challenges, and reform judicial remedies to provide greater certainty for projects.",
+   "speaker": "",
+   "url": "https://pacificlegal.org/press-release/pacific-legal-foundation-leads-more-than-35-coalition-partners-urging-congress-to-advance-permitting-deal/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-27-duckworth-doe-awards.2101",
+   "text": "BAAJA’s transmission title would require the Federal Energy Regulatory Commission (FERC) to permit an interstate transmission line if a State withholds approval for more than one year or denies the application and FERC finds the line consistent with the public interest.",
+   "speaker": "",
+   "url": "https://www.duckworth.senate.gov/news/press-releases/duckworth-colleagues-to-committee-leadership-trump-must-begin-restoring-illegally-cancelled-energy-projects-before-critical-vote-on-bipartisan-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-26-tlingit-haida-title-iii.2301",
+   "text": "By calling on Congress to withdraw Title III of BAAJA, the resolution seeks to protect not only existing safeguards under the National Historic Preservation Act",
+   "speaker": "",
+   "url": "https://tlingitandhaida.gov/news/alaska-tribes-and-native-corporations-take-stand-to-protect-tribal-sovereignty-sacred-places-lands-and-waters/",
+   "result": "verified",
+   "share": 1.0,
+   "note": "read with curl"
   },
   {
    "where": "media.2026-10-26-taitdl-x-utility-lobbying",
@@ -4335,6 +6081,15 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-22-santafenewmexican-editorial.2107",
+   "text": "With more than 400 pages in the law, the bill offers everything from faster permitting for transmission lines and energy projects and requirements for data centers that would protect ratepayers.",
+   "speaker": "",
+   "url": "https://www.santafenewmexican.com/opinion/editorials/on-confirmations-permitting-and-a-senator-who-has-some-explanations-to-make/article_57edd9cd-59eb-456c-adaa-b343137d5f7f.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-22-rollcall-aides-seek-industry-aid",
    "text": "Capital will come off the sidelines because you know your permits are going to be valid no matter what the political lens might happen to be at a given time",
    "speaker": "Adam Tomlinson, staff director for Sen. Capito",
@@ -4452,6 +6207,15 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-21-nationaltrust-coalition-letter-post.2301",
+   "text": "We strongly support the letter’s concerns about the historic preservation provisions of S. 5653 as drafted.",
+   "speaker": "",
+   "url": "https://savingplaces.org/section106/updates/preservation-coalition-letter-s5653",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-21-jsfreed-x-khanna",
    "text": "The permitting deal would impose the first binding requirements on data centers to pay for electricity infrastructure it uses and more",
    "speaker": "Josh Freed, Third Way",
@@ -4482,6 +6246,24 @@
    "where": "media.2026-10-21-american-petroleum-institute-leadership-stakeholder-letter-on",
    "text": "we urge you to bring the Bipartisan American Affordability and Jobs Act of 2026 (S. 5653) to the floor and deliver much-needed permitting reform for American consumers this year",
    "speaker": "Undersigned organisations (lead: American Petroleum Institute)",
+   "url": "https://www.api.org/-/media/Files/misc/2026/Leadership-Stakeholder-Letter-BAAJA.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-21-american-petroleum-institute-leadership-stakeholder-letter-on.1202",
+   "text": "Comprehensive reforms to the National Environmental Policy Act (NEPA), Clean Water Act Section 401, the Nationwide Permit program, and judicial review processes are critical to addressing these challenges",
+   "speaker": "",
+   "url": "https://www.api.org/-/media/Files/misc/2026/Leadership-Stakeholder-Letter-BAAJA.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-21-american-petroleum-institute-leadership-stakeholder-letter-on.1204",
+   "text": "Comprehensive reforms to the National Environmental Policy Act (NEPA), Clean Water Act Section 401, the Nationwide Permit program, and judicial review processes are critical to addressing these challenges",
+   "speaker": "",
    "url": "https://www.api.org/-/media/Files/misc/2026/Leadership-Stakeholder-Letter-BAAJA.pdf",
    "result": "verified",
    "share": 1.0,
@@ -4527,6 +6309,42 @@
    "where": "media.2026-10-20-former-officials-letter",
    "text": "we believe Congress has a generational opportunity to strengthen our nation's industrial capacity in the face of unprecedented competition from China",
    "speaker": "Letter signers",
+   "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-20-former-officials-letter.2101",
+   "text": "It addresses key constraints stifling American industry by requiring interregional transmission planning, strengthening the federal backstop for nationally significant transmission lines, and creating a faster, more predictable process for connecting new generation to the grid.",
+   "speaker": "",
+   "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-20-former-officials-letter.2103",
+   "text": "It addresses key constraints stifling American industry by requiring interregional transmission planning, strengthening the federal backstop for nationally significant transmission lines, and creating a faster, more predictable process for connecting new generation to the grid.",
+   "speaker": "",
+   "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-20-former-officials-letter.2107",
+   "text": "Among many other important reforms, the Act also requires data centers to pay for the new transmission built to serve them, as well as their fair share of existing system costs, which would reduce costs for other customers.",
+   "speaker": "",
+   "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-20-former-officials-letter.2110",
+   "text": "It addresses key constraints stifling American industry by requiring interregional transmission planning, strengthening the federal backstop for nationally significant transmission lines, and creating a faster, more predictable process for connecting new generation to the grid.",
+   "speaker": "",
    "url": "https://ifp.org/wp-content/uploads/econ-policy-national-security-officials-endorse-baaja.pdf",
    "result": "verified",
    "share": 1.0,
@@ -4582,9 +6400,9 @@
    "text": "The bill would dramatically curtail the rights and powers of Tribes enshrined in Section 106 of the NHPA",
    "speaker": "NRDC",
    "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-20"
+   "note": ""
   },
   {
    "where": "media.2026-10-19-mackenzie-x-nhpa",
@@ -4641,9 +6459,90 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-16-nathpo-heritage-not-a-bargaining-chip.2301",
+   "text": "sent a letter to Senate leaders expressing their opposition to the bill, which undermines the rights of Tribal Nations to protect their sacred places and cultural resources.",
+   "speaker": "",
+   "url": "https://nathpo.org/2026/10/16/nathpo-october-16th-2026-news-release/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-16-mondaq-akin-senate-unveils-permitting-bill",
    "text": "The bill seeks to address longstanding concerns that federal permitting and environmental review processes have become increasingly complex, unpredictable, and vulnerable to litigation.",
    "speaker": "Akin Gump",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-mondaq-akin-senate-unveils-permitting-bill.1202",
+   "text": "Limits Section 401 certification reviews to compliance with water quality requirements and prohibits states or tribes from denying certifications for broader policy reasons unrelated to water quality.",
+   "speaker": "",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-mondaq-akin-senate-unveils-permitting-bill.1204",
+   "text": "Limits the Environmental Protection Agency’s (EPA) Section 404(c) veto authority to the period before the Army Corps of Engineers issues a permit and extends the duration of Section 404 nationwide permits from five years to ten years.",
+   "speaker": "",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-mondaq-akin-senate-unveils-permitting-bill.1302",
+   "text": "Shortens Section 7 consultation timelines, reducing the initial consultation period from 90 days to 60 days and shortening related biological opinion deadlines.",
+   "speaker": "",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-mondaq-akin-senate-unveils-permitting-bill.1304",
+   "text": "Establishes a new program allowing states, subject to federal approval and oversight, to assume certain ESA Section 7 consultation responsibilities currently performed by the U.S. Fish and Wildlife Service.",
+   "speaker": "",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-mondaq-akin-senate-unveils-permitting-bill.1402",
+   "text": "Creates new causes of action for unreasonable permitting delays and alleged disparate treatment of specific project categories",
+   "speaker": "",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-mondaq-akin-senate-unveils-permitting-bill.2101",
+   "text": "Expands FERC’s authority to permit interstate transmission projects after states have had one year to act on an application, while establishing new planning, cost-allocation, and reliability requirements.",
+   "speaker": "",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-mondaq-akin-senate-unveils-permitting-bill.2103",
+   "text": "Establishes new regional and interregional transmission planning requirements, including mandatory long-term planning processes and new mechanisms to identify and develop transmission projects that improve reliability and reduce congestion.",
+   "speaker": "",
+   "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-mondaq-akin-senate-unveils-permitting-bill.2109",
+   "text": "Requires utilities to evaluate and deploy advanced transmission technologies when benefits outweigh costs and directs FERC to improve generator interconnection processes through automation and advanced computing tools.",
+   "speaker": "",
    "url": "https://www.mondaq.com/unitedstates/water/1855136/senate-unveils-bipartisan-comprehensive-permitting-reform-bill",
    "result": "verified",
    "share": 1.0,
@@ -4671,6 +6570,123 @@
    "where": "media.2026-10-16-covington-senate-unveils-permitting-bill",
    "text": "To some extent BAAJA would codify environmental review reforms which have been developed under several Administrations; in other respects, the proposed changes would be novel and potentially far-reaching.",
    "speaker": "Covington authors",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1101",
+   "text": "Codify that NEPA is procedural and does not mandate any particular outcome (Section 1101), reinforcing the Supreme Court’s 2025 decision in Seven County Infrastructure Coalition v. Eagle County;",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1102",
+   "text": "Expand the exclusions from the definition of “major federal action” to cover, among others, transmission and pipeline repairs and upgrades within existing rights-of-way and actions whose effects another agency has already evaluated (Section 1102);",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1106",
+   "text": "Require a record of decision within 45 days of a final EIS, and remaining federal authorizations within 90 days (for participating agencies) or 120 days (for other agencies) after environmental review is complete (Section 1106);",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1109",
+   "text": "Require sponsors to submit an inventory of required authorizations and a “record of stakeholder engagement” documenting pre-application outreach (Section 1109);",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1110",
+   "text": "Limit standing to parties that submitted a comment sufficiently detailed to put the agency on notice of the specific issue later litigated and that allege a direct harm (Section 1110);",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1205",
+   "text": "Make remand without vacatur the default remedy for many challenges, with a cure period of no more than 180 days, during which authorizations generally remain in effect (Sections 1110, 1205, 2301);",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1302",
+   "text": "Generally require ESA Section 7 consultation to conclude on the NEPA schedule and shorten the base consultation period from 90 to 60 days (Section 1302)",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1401",
+   "text": "Prohibit agencies from revoking, suspending, amending, or otherwise interfering with covered authorizations except on five enumerated grounds, place a clear-and-convincing burden on the agency, and authorize reinstatement, attorney fees, delay costs, and monetary damages (Section 1401); and",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.1402",
+   "text": "Create new causes of action addressing unreasonable permitting delay and denials or delays resulting from a pattern of disparate treatment against a category of energy projects (Sections 1402–03).",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.2102",
+   "text": "Exempt reconductoring and other capacity upgrades within existing rights-of-way from NEPA and NHPA review (Section 2102)",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.2106",
+   "text": "Require regions to plan generation and transmission together over a 20-year horizon, publish planned connection points with upfront costs, and adopt deposits and withdrawal penalties to discourage speculative interconnection requests (Section 2106); and",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.2107",
+   "text": "Require covered computational loads of 20 MW or more to bear both embedded and incremental transmission costs, and prohibit shifting certain generation, transmission, and distribution costs onto other customers (Section 2107);",
+   "speaker": "",
+   "url": "https://www.insideenergyandenvironment.com/?p=9071",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-16-covington-senate-unveils-permitting-bill.2301",
+   "text": "require NHPA Section 106 consultation to begin with NEPA review and generally conclude by the NEPA deadline (Section 2301); and",
+   "speaker": "",
    "url": "https://www.insideenergyandenvironment.com/?p=9071",
    "result": "verified",
    "share": 1.0,
@@ -4735,6 +6751,24 @@
    "text": "The BAAJA severely weakens Tribal opportunities to engage as sovereign governments, curtails Tribal consultation requirements, and restricts access to legal recourse in court.",
    "speaker": "Native American Rights Fund",
    "url": "https://narf.org/baaja-reform-bill/",
+   "result": "missing",
+   "share": 0.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-narf-tribal-analysis-act-now.1204",
+   "text": "BAAJA’s proposed changes to the Clean Water Act’s Nationwide Permit program would weaken environmental protections and oversight.",
+   "speaker": "",
+   "url": "https://narf.org/baaja-reform-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-narf-tribal-analysis-act-now.2301",
+   "text": "they called on Congress to delay the bill until the next Congress can engage in meaningful Tribal consultation—or, at minimum, remove the historic preservation title in its entirety.",
+   "speaker": "",
+   "url": "https://narf.org/baaja-reform-bill/",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -4743,6 +6777,60 @@
    "where": "media.2026-10-15-foley-hoag-baaja-blast-transmission",
    "text": "It must pass both chambers and be signed by the President, and it is not expected to be taken up until after the midterm elections",
    "speaker": "Foley Hoag",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-foley-hoag-baaja-blast-transmission.2101",
+   "text": "BAAJA significantly expands FERC’s siting authority, removing the requirement that a line sit in a NIETC.",
+   "speaker": "",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-foley-hoag-baaja-blast-transmission.2102",
+   "text": "Reconductoring within existing rights-of-way is excluded from NEPA review and is not an undertaking under NHPA Section 106.",
+   "speaker": "",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-foley-hoag-baaja-blast-transmission.2103",
+   "text": "All planning regions must use a common set of input assumptions and models and a common list of benefits.",
+   "speaker": "",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-foley-hoag-baaja-blast-transmission.2109",
+   "text": "The bill requires public utilities to deploy advanced transmission technologies where the benefit-cost ratio exceeds one or face a FERC-determined penalty, which may include a reduced return on equity.",
+   "speaker": "",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-foley-hoag-baaja-blast-transmission.2110",
+   "text": "FERC must begin a rulemaking within one year requiring public utility transmission providers to share and employ, as appropriate, queue management practices that use AI, machine learning, and automation to speed interconnection studies",
+   "speaker": "",
+   "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-foley-hoag-baaja-blast-transmission.2252",
+   "text": "Offshore wind lines from the Outer Continental Shelf are expressly covered by FERC’s permitting authority and eligible for cost allocation.",
+   "speaker": "",
    "url": "https://foleyhoag.com/news-and-insights/blogs/energy-and-climate-counsel/2026/october/baaja-blast-what-the-senate-permitting-bill-means-for-transmission-developers/",
    "result": "verified",
    "share": 1.0,
@@ -4761,6 +6849,15 @@
    "where": "media.2026-10-15-106-strong-coalition-launch-letter",
    "text": "Section 106 asks our government to do something profoundly reasonable: stop, look, and listen before destroying places Americans value",
    "speaker": "Greg Werkheiser, 106 Strong",
+   "url": "https://www.106strong.com/60th-anniversary-press-release",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-15-106-strong-coalition-launch-letter.2301",
+   "text": "In a letter to Congress released today, 106 Strong calls for the defeat of S. 5653, warning that its historic preservation provisions would remove the public’s voice from Section 106 review, attack Tribal sovereignty",
+   "speaker": "",
    "url": "https://www.106strong.com/60th-anniversary-press-release",
    "result": "verified",
    "share": 1.0,
@@ -4788,6 +6885,78 @@
    "where": "media.2026-10-14-save-the-manatee-opposition-statement",
    "text": "We respectfully urge all members of Congress, especially the Florida Delegation, to oppose this dangerous legislation.",
    "speaker": "Save the Manatee Club",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-14-save-the-manatee-opposition-statement.1101",
+   "text": "Section 1101 alters the very purpose of NEPA by establishing a merely “informational document” procedure, and stating that “nothing in this Act mandates a particular outcome.”",
+   "speaker": "",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-14-save-the-manatee-opposition-statement.1102",
+   "text": "Under Section 1102, “major Federal action” exclusions are expanded to entirely strip NEPA reviews from accompanying grid transmission updates, electrical storage installations",
+   "speaker": "",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-14-save-the-manatee-opposition-statement.1107",
+   "text": "Section 1107 extends the life of programmatic environmental reviews from five to ten years",
+   "speaker": "",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-14-save-the-manatee-opposition-statement.1110",
+   "text": "These sweeping changes are heavily exacerbated by Section 1110, which severely limits judicial review and strips federal courts of their ability to vacate or halt a project under NEPA.",
+   "speaker": "",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-14-save-the-manatee-opposition-statement.1203",
+   "text": "Specifically, the Permitting Bill will narrow the scope of impacts considered for dredging and filling permitting under the CWA, and Section 1203 will double standard NPDES permit lifespans from five to ten years.",
+   "speaker": "",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-14-save-the-manatee-opposition-statement.1301",
+   "text": "The Permitting Bill’s redefinition of “best scientific and commercial data” further threatens manatees, their habitats, and the integrity of the ESA.",
+   "speaker": "",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-14-save-the-manatee-opposition-statement.1302",
+   "text": "Section 1302 of the Act rolls back established timelines, changing standard periods to an arbitrary “60-day” window.",
+   "speaker": "",
+   "url": "https://savethemanatee.org/opposition-statement-s-5653/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-14-save-the-manatee-opposition-statement.1304",
+   "text": "Section 1304 of the Act upends this by creating an assignment program where “the Secretary may assign, and the State may assume, the consultation responsibilities of the Secretary",
+   "speaker": "",
    "url": "https://savethemanatee.org/opposition-statement-s-5653/",
    "result": "verified",
    "share": 1.0,
@@ -4839,6 +7008,15 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-14-crs-in12746-ferc-backstop-siting.2101",
+   "text": "This analysis compares aspects of current law and policy with how Section 2101 of BAAJA would affect FERC's backstop siting authority.",
+   "speaker": "",
+   "url": "https://www.everycrsreport.com/files/2026-10-14_IN12746_ff95bbd2dde5cfb4f9bfff5c9e26135018754e2a.html",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-13-wicker-weekly-report-backs-bill",
    "text": "would fundamentally update the way the government approves new domestic energy and infrastructure projects.",
    "speaker": "Sen. Roger Wicker",
@@ -4848,9 +7026,36 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-13-wicker-weekly-report-backs-bill.1110",
+   "text": "The bill would trim the fat from the climate litigation industry, shrinking the six-year window to 150 days",
+   "speaker": "",
+   "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-13-wicker-weekly-report-backs-bill.1202",
+   "text": "States’ reviews would be limited to scientific facts, and developers could seek redress in the courts if states exceed that scope.",
+   "speaker": "",
+   "url": "https://www.wicker.senate.gov/2026/10/13/wicker-backs-landmark-permit-reform-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-13-washington-monthly-populist-permitting-deal",
    "text": "could lower electricity costs and speed the green energy transition by targeting utilities",
    "speaker": "Kainoa Lowman, Washington Monthly",
+   "url": "https://washingtonmonthly.com/2026/10/13/the-senates-surprisingly-populist-permitting-reform-deal/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-13-washington-monthly-populist-permitting-deal.2104",
+   "text": "BAAJA allows FERC, at a state’s request, to review such projects and penalize utilities for imprudent investments.",
+   "speaker": "",
    "url": "https://washingtonmonthly.com/2026/10/13/the-senates-surprisingly-populist-permitting-reform-deal/",
    "result": "verified",
    "share": 1.0,
@@ -4870,9 +7075,9 @@
    "text": "While it includes compromises in some areas, BAAJA codifies Tribal protections and would stop the current administration from ending those protections.",
    "speaker": "Ben Schifman, Institute for Progress",
    "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "media.2026-10-13-heatmap-trump-revolution-wind-permit",
@@ -4896,6 +7101,42 @@
    "where": "media.2026-10-13-cbd-185-groups-back-door-deal-letter",
    "text": "A coalition of 185 community, labor, climate and environmental justice organizations today urged congressional leaders to oppose anti-environmental permitting legislation.",
    "speaker": "Center for Biological Diversity (press release)",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-13-cbd-185-groups-back-door-deal-letter.1106",
+   "text": "Capping the time limit for NEPA reviews at one to two years",
+   "speaker": "",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-13-cbd-185-groups-back-door-deal-letter.1110",
+   "text": "Giving communities only 150 days to challenge federal permits in court",
+   "speaker": "",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-13-cbd-185-groups-back-door-deal-letter.1202",
+   "text": "Narrowing state and Tribal authority under the Clean Water Act to protect waterways",
+   "speaker": "",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-13-cbd-185-groups-back-door-deal-letter.1402",
+   "text": "Creating a new right for gas pipeline and power plant developers to sue for taxpayer money over permit denials and delays.",
+   "speaker": "",
    "url": "https://biologicaldiversity.org/w/news/press-releases/185-groups-slam-permitting-bills-sweetheart-deal-for-data-centers-2026-10-13/",
    "result": "verified",
    "share": 1.0,
@@ -4947,9 +7188,45 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-09-nam-what-they-are-saying-manufacturing-associations-rally-behind-permitting-bill.2101",
+   "text": "NEMA is pleased that the bill would expedite transmission permitting, require the use of proven advanced transmission technologies and provide greater legal and investment certainty.",
+   "speaker": "",
+   "url": "https://nam.org/what-they-are-saying-manufacturing-associations-rally-behind-bipartisan-permitting-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-nam-what-they-are-saying-manufacturing-associations-rally-behind-permitting-bill.2109",
+   "text": "NEMA is pleased that the bill would expedite transmission permitting, require the use of proven advanced transmission technologies and provide greater legal and investment certainty.",
+   "speaker": "",
+   "url": "https://nam.org/what-they-are-saying-manufacturing-associations-rally-behind-bipartisan-permitting-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-09-heinrich-supporter-roundup-data-centers",
    "text": "ensure that rapidly growing data centers pay the full cost of their associated transmission needs",
    "speaker": "Office of Sen. Martin Heinrich (press release)",
+   "url": "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-heinrich-supporter-roundup-data-centers.1204",
+   "text": "The housing sector stands to benefit from many of these federal permitting reforms, including an increase in acreage thresholds under the Clean Water Act’s (CWA) Nationwide Permit program along with extending the statutory timeframe from five to 10 years for the CWA permit programs.",
+   "speaker": "",
+   "url": "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-heinrich-supporter-roundup-data-centers.2101",
+   "text": "It sets firm deadlines on environmental reviews, speeds approvals for the transmission lines and power projects the country needs, and gives the federal government tools to move interstate power lines forward when they stall.",
+   "speaker": "",
    "url": "https://www.energy.senate.gov/press/dem/what-theyre-saying-heinrichs-bipartisan-permitting-reform-deal-will-deliver-cheaper-energy-more-jobs-responsible-growth/",
    "result": "verified",
    "share": 1.0,
@@ -4965,9 +7242,135 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-09-heatmap-data-centers-permitting-collide.1202",
+   "text": "the bill’s changes to the Clean Water Act would take away a provision under the law previously cited by Democratic governors to block pipeline expansions",
+   "speaker": "",
+   "url": "https://heatmap.news/plus/the-fight/spotlight/data-centers-permitting",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-09-gt-senate-negotiators-agreement-text",
    "text": "The bill seeks to accelerate energy infrastructure, renewable energy, transmission, pipeline, and mining project approvals through mandatory agency deadlines and streamlined permitting",
    "speaker": "Greenberg Traurig",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.1110",
+   "text": "Court challenges are limited to 150 days after project authorization is issued.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.1204",
+   "text": "Limits EPA’s Section 404(c) veto authority; must be exercised within the Corps’ permit application review period.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.1302",
+   "text": "Section 7 Consultation: Time period for consultations shortened from 90 days to 60 days; extended time period shortened from 150 days to 100 days.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.1305",
+   "text": "Judicial review of ESA biological opinions must be initiated within 150 days from the date the opinion was published.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.1401",
+   "text": "Prohibits federal agencies from taking actions to revoke, rescind, terminate, amend, or alter a federal authorization or permit in effect on or after Sept. 16, 2026, unless required by a court of competent jurisdiction",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.1402",
+   "text": "Permit applicants may seek judicial review alleging that a permit was improperly denied or unreasonably delayed due to a pattern of disparate treatment by the federal government for the specific type of project.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.2101",
+   "text": "FERC would serve as lead agency for covered transmission facilities, and specified federal and state authorization decisions would be reviewable in the courts that review FERC orders.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.2103",
+   "text": "FERC would establish requirements for regional and joint interregional planning, including common assumptions and models, consideration of upgrades to existing rights-of-way, and a common set of transmission benefits.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.2104",
+   "text": "States may refer concerns about a utility’s local transmission-planning practices to FERC, which may order changes to those practices and impose other remedies, including reducing the utility’s return on equity or imposing a fine in specified circumstances.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.2105",
+   "text": "The bill also would prohibit a federal right of first refusal for facilities selected in a regional or interregional plan for cost allocation.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.2107",
+   "text": "For covered data center and high-density computing loads of at least 20 megawatts, the bill would bar utilities from shifting incremental costs to other customers and require financial assurances for necessary generation, transmission, or distribution upgrades.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.2109",
+   "text": "The bill also would require FERC to promote use of advanced transmission technologies, including best-available conductors, and to require deployment when the Commission’s benefit-cost test is met.",
+   "speaker": "",
+   "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-09-gt-senate-negotiators-agreement-text.2110",
+   "text": "FERC would be directed to revise generator-interconnection procedures to encourage use of computing technologies, including artificial intelligence and automation, in processing requests.",
+   "speaker": "",
    "url": "https://www.gtlaw.com/en/insights/2026/10/senate-negotiators-reach-agreement-on-permitting-reform-text",
    "result": "verified",
    "share": 1.0,
@@ -4986,6 +7389,24 @@
    "where": "media.2026-10-08-naco-county-advocacy-hub",
    "text": "Contact your senators and urge them to support the Bipartisan American Affordability and Jobs Act of 2026",
    "speaker": "National Association of Counties (advocacy hub)",
+   "url": "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub",
+   "result": "missing",
+   "share": 0.75,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-08-naco-county-advocacy-hub.1110",
+   "text": "Deadline to file legal challenges to covered NEPA decisions under the bill's permitting-certainty provisions.",
+   "speaker": "",
+   "url": "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-08-naco-county-advocacy-hub.2107",
+   "text": "Prevent data centers from passing grid infrastructure costs down to ratepayers",
+   "speaker": "",
    "url": "https://www.naco.org/resource/bipartisan-american-affordability-and-jobs-act-2026-permitting-reform-county-advocacy-hub",
    "result": "verified",
    "share": 1.0,
@@ -5046,6 +7467,96 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.1106",
+   "text": "For projects requiring an environmental impact statement, the lead agency would generally have 45 days to issue a record of decision after publication of the final environmental impact statement.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.1110",
+   "text": "The legislation would establish a 150-day statute of limitations for certain legal challenges to federal actions under NEPA.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.1132",
+   "text": "The legislation would establish a unified federal permitting information system to provide a centralized, real-time portal for environmental reviews and authorizations.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.1202",
+   "text": "The bill would establish new timelines for certain state reviews under Section 401 of the Clean Water Act and limit the scope of those reviews to whether a proposed project would comply with applicable water quality requirements.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.1204",
+   "text": "It also would make changes to Section 404 permitting for certain activities, including certain pipelines, transportation projects, utility lines, and telecommunications projects.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.1302",
+   "text": "It also would shorten the standard consultation period from 90 days to 60 days, subject to specified extensions, and establish additional requirements for consultations associated with projects undergoing NEPA review.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.1401",
+   "text": "The bill generally would prohibit federal agencies from revoking, rescinding, withdrawing, terminating, suspending, amending or altering certain permits and federal authorizations that are in effect on or after September 16, 2026.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.2101",
+   "text": "The legislation would establish new requirements for regional and interregional transmission planning and expand the Federal Energy Regulatory Commission's role in certain interstate transmission projects.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.2107",
+   "text": "The bill would require electric utilities, before constructing or upgrading generation, transmission or distribution facilities needed to serve a data center, to require the data center to provide financial assurances or contributions sufficient to cover the associated infrastructure costs.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-iedc-senate-permitting-package-economic-developers.2301",
+   "text": "The bill would maintain tribal consultation requirements under Section 106 of the National Historic Preservation Act while establishing timelines for completing historic preservation reviews.",
+   "speaker": "",
+   "url": "https://www.iedconline.org/news/2026/10/07/this-week-in-iedc-news/senate-bipartisan-permitting-reform-package-what-economic-developers-need-to-know/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-07-heatmap-hardhat-union-yet-to-endorse",
    "text": "reviewing the language and holding discussions with stakeholders across our industries.",
    "speaker": "IBEW spokesperson",
@@ -5064,9 +7575,45 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-07-epw-supporter-roundup-bipartisan-bill.1204",
+   "text": "The housing sector stands to benefit from many of these federal permitting reforms, including an increase in acreage thresholds under the Clean Water Act’s (CWA) Nationwide Permit program along with extending the statutory timeframe from five to 10 years for the CWA permit programs.",
+   "speaker": "",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-07-epw-supporter-roundup-bipartisan-bill.2101",
+   "text": "It sets firm deadlines on environmental reviews, speeds approvals for the transmission lines and power projects the country needs, and gives the federal government tools to move interstate power lines forward when they stall.",
+   "speaker": "",
+   "url": "https://www.epw.senate.gov/public/index.cfm/2026/10/what-they-re-saying-bipartisan-permitting-reform-will-deliver-cheaper-energy-more-jobs-responsible-growth",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-06-cbd-fof-200-conservation-groups-esa-letter",
    "text": "The bill includes sweeping attacks on the Endangered Species Act that would gut protections for nearly every endangered species across the country.",
    "speaker": "Center for Biological Diversity and Friends of the Earth (joint release)",
+   "url": "https://www.commondreams.org/newswire/hundreds-of-organizations-oppose-endangered-species-attacks-in-permitting-legislation",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-06-cbd-fof-200-conservation-groups-esa-letter.1304",
+   "text": "It would also surrender authority to states to conduct Section 7 consultations — one of the most important safeguards against harm from federal agency actions.",
+   "speaker": "",
+   "url": "https://www.commondreams.org/newswire/hundreds-of-organizations-oppose-endangered-species-attacks-in-permitting-legislation",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-06-cbd-fof-200-conservation-groups-esa-letter.1305",
+   "text": "The bill also includes judicial review provisions that would make meaningful review of certain Endangered Species Act challenges much more difficult.",
+   "speaker": "",
    "url": "https://www.commondreams.org/newswire/hundreds-of-organizations-oppose-endangered-species-attacks-in-permitting-legislation",
    "result": "verified",
    "share": 1.0,
@@ -5158,9 +7705,9 @@
    "text": "There is no doubt that these provisions are good for clean energy—really good.",
    "speaker": "Christy Goldfuss",
    "url": "https://www.nrdc.org/bio/christy-goldfuss/hard-questions-permitting-bill",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-05"
+   "note": ""
   },
   {
    "where": "media.2026-10-02-ncshpo-more-than-streamline",
@@ -5325,9 +7872,72 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-01-heatmap-data-center-double-tap.2107",
+   "text": "The proposal would force AI data centers to pay for any new transmission infrastructure required to serve them — while still paying full freight to use the rest of the power grid.",
+   "speaker": "",
+   "url": "https://heatmap.news/daily/data-center-permitting-deal",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-01-heatmap-climate-tech-winners-losers",
    "text": "The bill requires utilities to conduct recurring evaluations on technologies that could increase the capacity of existing transmission infrastructure",
    "speaker": "Katie Brigham",
+   "url": "https://heatmap.news/climate-tech/baaja-climate-tech",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-heatmap-climate-tech-winners-losers.2107",
+   "text": "The bill certainly won’t stop the buildout so much as change who pays for some of the infrastructure required to serve it, shifting the cost of new power lines and grid upgrades from ratepayers onto the tech giants and developers themselves.",
+   "speaker": "",
+   "url": "https://heatmap.news/climate-tech/baaja-climate-tech",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-heatmap-climate-tech-winners-losers.2108",
+   "text": "BAAJA would speed things up by requiring operators to allow VPPs into their markets within 18 months of the bill’s passage and setting a low, 100-kilowatt threshold for device networks to be considered VPP-eligible.",
+   "speaker": "",
+   "url": "https://heatmap.news/climate-tech/baaja-climate-tech",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-heatmap-climate-tech-winners-losers.2109",
+   "text": "The bill requires utilities to conduct recurring evaluations on technologies that could increase the capacity of existing transmission infrastructure, such as higher-capacity replacement wires or monitoring systems that determine when the lines can safely carry more power.",
+   "speaker": "",
+   "url": "https://heatmap.news/climate-tech/baaja-climate-tech",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-heatmap-climate-tech-winners-losers.2110",
+   "text": "Since the bill requires regional grids to streamline their queues, this could reduce demand for their services.",
+   "speaker": "",
+   "url": "https://heatmap.news/climate-tech/baaja-climate-tech",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-heatmap-climate-tech-winners-losers.2215",
+   "text": "It clarifies that miners can use as much federal land as is “reasonably necessary” to store waste rock and tailings, and opens additional federal land for hard-rock mining leases.",
+   "speaker": "",
+   "url": "https://heatmap.news/climate-tech/baaja-climate-tech",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-heatmap-climate-tech-winners-losers.2223",
+   "text": "It would also require the Interior Department to hold annual geothermal lease sales, and drop the federal drilling permit requirement for geothermal exploration on non-federal land, so long as the government owns less than half of the underground resource.",
+   "speaker": "",
    "url": "https://heatmap.news/climate-tech/baaja-climate-tech",
    "result": "verified",
    "share": 1.0,
@@ -5352,9 +7962,117 @@
    "note": ""
   },
   {
+   "where": "refs.2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right.2103",
+   "text": "It also requires grid planners to conduct interregional transmission planning.",
+   "speaker": "",
+   "url": "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right.2107",
+   "text": "The bill also includes numerous other significant provisions: the inclusion of distributed energy resources (DERs) in wholesale markets, mandating rulemaking to protect ratepayers from the incremental costs of large loads, and rulemaking to mandate the usage of advanced transmission technologies.",
+   "speaker": "",
+   "url": "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right.2108",
+   "text": "The bill also includes numerous other significant provisions: the inclusion of distributed energy resources (DERs) in wholesale markets, mandating rulemaking to protect ratepayers from the incremental costs of large loads, and rulemaking to mandate the usage of advanced transmission technologies.",
+   "speaker": "",
+   "url": "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-cpe-bipartisan-permitting-bill-gets-transmission-right.2109",
+   "text": "The bill also includes numerous other significant provisions: the inclusion of distributed energy resources (DERs) in wholesale markets, mandating rulemaking to protect ratepayers from the incremental costs of large loads, and rulemaking to mandate the usage of advanced transmission technologies.",
+   "speaker": "",
+   "url": "https://publicenterprise.org/the-bipartisan-permitting-bill-gets-transmission-right-2/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-10-01-artificial-weights-permitting-bill-procedural-reforms",
    "text": "The most important reform in BAAJA is that violations of NEPA and NHPA can no longer be the basis for stopping a project. Instead, if a court finds a violation, it remands to the agency to correct the error",
    "speaker": "Alex Mechanick",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-artificial-weights-permitting-bill-procedural-reforms.1109",
+   "text": "the Act requires agencies to notify project sponsors within 60 days of submission if their applications were complete, or if incomplete, request in writing the additional information that the agency needs to determine that the application is complete.",
+   "speaker": "",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-artificial-weights-permitting-bill-procedural-reforms.1110",
+   "text": "The most important reform in BAAJA is that violations of NEPA and NHPA can no longer be the basis for stopping a project.",
+   "speaker": "",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-artificial-weights-permitting-bill-procedural-reforms.1202",
+   "text": "States—which currently are not effectively constrained under the CWA—are restricted under BAAJA to make certification decisions only on the basis of whether a project complies with water quality requirements.",
+   "speaker": "",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-artificial-weights-permitting-bill-procedural-reforms.1302",
+   "text": "Conversely, BAAJA trims the 90-day ESA consultation period down to 60 days.",
+   "speaker": "",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-artificial-weights-permitting-bill-procedural-reforms.1305",
+   "text": "ESA cases regarding biological opinions are channeled to the D.C. Circuit",
+   "speaker": "",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-artificial-weights-permitting-bill-procedural-reforms.1401",
+   "text": "Second, on revocations, terminations, and alterations (and the like) of authorizations or permits, BAAJA requires that the government justify the action on narrow grounds.",
+   "speaker": "",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-artificial-weights-permitting-bill-procedural-reforms.2101",
+   "text": "if the states do not approve the project within a year, FERC is required to approve the project if FERC determines it to be in the national interest",
+   "speaker": "",
+   "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-10-01-artificial-weights-permitting-bill-procedural-reforms.2109",
+   "text": "One promising, albeit isolated reform is the direction that FERC conduct a rulemaking that requires utilities to conduct a benefit-cost analysis of deploying advanced transmission technologies on a recurring basis.",
+   "speaker": "",
    "url": "https://artificialweights.substack.com/p/the-permitting-bill-its-procedural",
    "result": "verified",
    "share": 1.0,
@@ -5493,7 +8211,34 @@
    "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
    "result": "browser",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-27"
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-09-30-tpa-taxpayer-watchdog-welcomes-permitting-deal.1106",
+   "text": "The proposal would accelerate environmental reviews— including introducing a two-year deadline for Environmental Impact Statement reviews and a one-year deadline for Environmental Assessment reviews.",
+   "speaker": "",
+   "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-09-30-tpa-taxpayer-watchdog-welcomes-permitting-deal.1110",
+   "text": "It would also impose a 150-day deadline for legal challenges under the Clean Water Act (CWA), Endangered Species Act (ESA), National Environmental Policy Act (NEPA), and National Historic Preservation Act (NHPA).",
+   "speaker": "",
+   "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "refs.2026-09-30-tpa-taxpayer-watchdog-welcomes-permitting-deal.2107",
+   "text": "However, lawmakers should improve and clarify the proposal’s provisions requiring data centers to cover their associated transmission costs.",
+   "speaker": "",
+   "url": "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-22"
   },
   {
    "where": "media.2026-09-30-the-hill-senators-reach-bipartisan-deal-permitting",
@@ -5536,14 +8281,41 @@
    "text": "The transmission provisions contained in the bill are desperately needed; the question is do those benefits outweigh the cost of the rollbacks to the foundational environmental laws of this country.",
    "speaker": "Manish Bapna, NRDC President and CEO",
    "url": "https://www.nrdc.org/press-releases/permitting-bill-desperately-needed-must-improve",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-01"
+   "note": ""
   },
   {
    "where": "media.2026-09-30-niskanen-center-supports-affordability-jobs-act",
    "text": "The U.S. must dramatically accelerate transmission buildout to bring Americans reliable power at a lower cost.",
    "speaker": "Liza Reed, Niskanen Center",
+   "url": "https://www.niskanencenter.org/niskanen-center-supports-introduction-of-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-niskanen-center-supports-affordability-jobs-act.2101",
+   "text": "Streamlining the Federal Energy Regulatory Commission’s existing backstop siting authority by eliminating the prerequisite corridor designation by DOE;",
+   "speaker": "",
+   "url": "https://www.niskanencenter.org/niskanen-center-supports-introduction-of-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-niskanen-center-supports-affordability-jobs-act.2103",
+   "text": "Requiring interregional transmission planning and cost allocation; and",
+   "speaker": "",
+   "url": "https://www.niskanencenter.org/niskanen-center-supports-introduction-of-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-niskanen-center-supports-affordability-jobs-act.2105",
+   "text": "Codifying the prohibition on a federal right of first refusal for transmission selected in a regional plan and extending that prohibition to lines selected in an interregional plan.",
+   "speaker": "",
    "url": "https://www.niskanencenter.org/niskanen-center-supports-introduction-of-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
    "result": "verified",
    "share": 1.0,
@@ -5577,9 +8349,261 @@
    "note": ""
   },
   {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.1102",
+   "text": "BAAJA would narrow that definition so that NEPA review would not be required for federal loans, certain grant programs, and repairs of essential infrastructure, among other actions.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.1110",
+   "text": "The new bill says that cases will skip the district court system and go straight to the relevant court of appeals.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.1202",
+   "text": "BAAJA would also codify several regulatory changes to Section 401 of the Clean Water Act that Trump’s EPA proposed earlier this year to limit state power.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.1204",
+   "text": "Another part of the Clean Water Act, Section 404, instructs the Army Corps of Engineers to establish so-called “general permits” for the discharge of dredged material into U.S. waters.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.1302",
+   "text": "Finally, the bill would limit project review under the Endangered Species Act to 145 days, tops, and require that it be complete by the time any parallel NEPA review is done.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.1303",
+   "text": "The bill would also exclude certain highway and transit projects from ESA review at all if they are within an existing right-of-way",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.1402",
+   "text": "This “permitting certainty” provision applies to at least 46 kinds of projects, including all common fuel types, renewables, pipelines, mines, refineries, battery storage, and fossil fuel export terminals.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.2105",
+   "text": "If grids decide that they need to build new power lines, then the new law says that local utilities don’t have an automatic monopoly or a federal “right of first refusal” to build those lines.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.2107",
+   "text": "BAAJA would change the law so that utilities could charge data centers and other energy-hungry facilities for both the new and the old infrastructure.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.2110",
+   "text": "BAAJA would require regional grids to adopt a particular kind of streamlined interconnection queue that is already used in the Great Plains’ power grid.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.2221",
+   "text": "including carving out a categorical exclusion (which rules out the most onerous forms of environmental review) for “observation test projects,”",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.2223",
+   "text": "mandating that the Department of the Interior hold lease sales every year for geothermal drilling projects and that canceled lease sales be promptly filled in by a replacement sale.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.2225",
+   "text": "The bill also junks entirely the need for a federal drilling permit to do geothermal exploration on non-federal land.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.2231",
+   "text": "mandating that the Federal Energy Regulatory Commission write a report “describing any market barriers” to the deployment of hydropower.",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-heatmap-senate-big-bipartisan-permitting-deal-explained.2233",
+   "text": "The bill also waives the necessity of FERC to approve maintenance and other types of work on existing hydropower infrastructure",
+   "speaker": "",
+   "url": "https://heatmap.news/politics/bipartisan-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-09-30-green-tape-permitting-grand-bargain-is-here",
    "text": "Third and most importantly, injunctions and vacatur are eliminated outright for NEPA-specific claims.",
    "speaker": "Thomas Hochman",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.1110",
+   "text": "First, BAAJA changes the statute of limitations for NEPA lawsuits from six years to 150 days.",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.1202",
+   "text": "BAAJA limits review to compliance with water quality requirements – specifically, those set forth in Sections 301, 302, 303, 306, and 307 of the Clean Water Act.",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.1204",
+   "text": "BAAJA extends the term of Nationwide Permits – a sort of pre-approved general permit for categories of activities with minimal environmental impacts – from five years to ten years.",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.1304",
+   "text": "First, BAAJA allows states to assume primary responsibility for Section 7 consultation, creating a cooperative federalism approach that more closely mirrors laws like the Clean Air Act.",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.1402",
+   "text": "Finally, BAAJA introduces a certainty construct that has not appeared in any of the recent certainty bills, creating a new cause of action where there is evidence of broad mistreatment of a category of projects.",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.1403",
+   "text": "Like FREEDOM, BAAJA creates deadlines for all federal project permits, and creates a cause of action for applicants to enforce those deadlines.",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.2101",
+   "text": "Additionally, it expands FERC’s backstop authority by eliminating the requirement that lines fall within a DOE-designated corridor",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.2104",
+   "text": "The provision lets a state ask FERC to police a utility’s spending on local transmission",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.2215",
+   "text": "On mining, BAAJA includes the much-discussed Mining Regulatory Clarity Act, which fixes the legal uncertainty surrounding miners’ use of federal land for waste rock and tailings in the aftermath of the Rosemont decision.",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.2223",
+   "text": "The CLEAN Act requires Interior to hold geothermal lease sales every year and puts firm deadlines on geothermal drilling permit decisions",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.2225",
+   "text": "The HEATS Act exempts geothermal wells on non-federal land from federal drilling permits (and NEPA review) where the federal government owns less than half of the subsurface geothermal estate and the operator holds a state permit",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.2232",
+   "text": "Finally, on hydropower, BAAJA adds a requirement that mandatory Section 4(e) conditions imposed by land management agencies must be reasonably related to the effects of the project.",
+   "speaker": "",
+   "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-green-tape-permitting-grand-bargain-is-here.2301",
+   "text": "Finally, BAAJA creates a firm deadline for review: consultation must wrap up by the time the NEPA document is completed.",
+   "speaker": "",
    "url": "https://www.greentape.pub/p/the-permitting-grand-bargain-is-here",
    "result": "verified",
    "share": 1.0,
@@ -5622,6 +8646,33 @@
    "note": ""
   },
   {
+   "where": "refs.2026-09-30-cbd-democrats-abandon-environmental-laws-permitting-reform.1202",
+   "text": "Additional provisions gut parts of the Clean Water Act, including the Section 401 authority of states to protect their rivers and streams from the impacts of building pipelines",
+   "speaker": "",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-cbd-democrats-abandon-environmental-laws-permitting-reform.1204",
+   "text": "the EPA’s Section 404(c) permit veto authority, which has been used to stop projects like the Pebble Mine in Alaska",
+   "speaker": "",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-cbd-democrats-abandon-environmental-laws-permitting-reform.1304",
+   "text": "the legislation guts the Endangered Species Act by allowing states to take over the Section 7 consultation process with minimal safeguards",
+   "speaker": "",
+   "url": "https://biologicaldiversity.org/w/news/press-releases/democrats-abandon-environmental-laws-to-advance-pro-fossil-fuel-permitting-reform-2026-09-30/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-09-30-canary-media-senate-permitting-bill-power-lines",
    "text": "If Congress wanted to expand and de-congest the nation’s transmission grid, these are the policy changes that can get that done",
    "speaker": "Rob Gramlich, Grid Strategies",
@@ -5640,22 +8691,31 @@
    "note": ""
   },
   {
+   "where": "refs.2026-09-30-c2es-transmission-reforms-modeling-analysis.2110",
+   "text": "permitting and transmission reforms under debate in Congress, including expanded interregional transmission and interconnection queue reforms, could significantly reduce power sector emissions",
+   "speaker": "",
+   "url": "https://www.c2es.org/press-release/new-analysis-finds-federal-transmission-reforms-would-slash-power-sector-emissions-boost-grid-reliability-and-save-consumers-billions/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-09-30-breakthrough-institute-supports-affordability-jobs-act",
    "text": "The Bipartisan American Affordability and Jobs Act of 2026 is a true, heroic breakthrough for permitting reform",
    "speaker": "Marc Levitt, Breakthrough Institute",
    "url": "https://thebreakthrough.org/press/release-breakthrough-institute-statement-on-the-bipartisan-american-affordability-and-jobs-act-of-2026",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "media.2026-09-30-bpc-action-urges-congress-to-pass-the-bill",
    "text": "BPC Action is proud to endorse the Bipartisan American Affordability and Jobs Act",
    "speaker": "Michele Stockwell, BPC Action",
    "url": "https://bpcaction.org/bpc-action-urges-congress-to-pass-the-bipartisan-american-affordability-and-jobs-act/",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "media.2026-09-30-bluesky-willpoffwebster-ambitious-permitting-bill",
@@ -5685,6 +8745,24 @@
    "note": ""
   },
   {
+   "where": "refs.2026-09-30-api-welcomes-affordability-jobs-act.1110",
+   "text": "Establish clearer rules for legal challenges, including a 150-day filing deadline and requirements that challengers demonstrate direct harm.",
+   "speaker": "",
+   "url": "https://www.api.org/news-policy-and-issues/news/2026/09/30/api-welcomes-bipartisan-american-affordability-and-jobs-act-to-modernize-permitt",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-api-welcomes-affordability-jobs-act.1202",
+   "text": "Clarify the scope of environmental reviews so agencies focus on impacts directly associated with a project, while keeping Clean Water Act Section 401 reviews focused only on water-quality impacts associated with a discharge.",
+   "speaker": "",
+   "url": "https://www.api.org/news-policy-and-issues/news/2026/09/30/api-welcomes-bipartisan-american-affordability-and-jobs-act-to-modernize-permitt",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-09-30-ap-abc-news-senate-reaches-bipartisan-deal-permitting",
    "text": "appears to adopt a fossil fuel industry wish-list",
    "speaker": "Brad Campbell, Conservation Law Foundation",
@@ -5706,6 +8784,51 @@
    "where": "media.2026-09-30-acore-statement-supporting-affordability-jobs-act",
    "text": "Clean energy builders and financers have made it clear they intend to keep investing in clean energy.",
    "speaker": "Ray Long, ACORE President and CEO",
+   "url": "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-acore-statement-supporting-affordability-jobs-act.1401",
+   "text": "Prevention of arbitrary cancellation of projects and redress to discriminatory treatment of certain resources.",
+   "speaker": "",
+   "url": "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-acore-statement-supporting-affordability-jobs-act.2101",
+   "text": "Streamlined authority for the Federal Energy Regulatory Commission to use its backstop permitting capabilities.",
+   "speaker": "",
+   "url": "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-acore-statement-supporting-affordability-jobs-act.2106",
+   "text": "Interregional and regional transmission planning, including a more efficient consolidated planning process.",
+   "speaker": "",
+   "url": "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-acore-statement-supporting-affordability-jobs-act.2109",
+   "text": "Streamlined permitting, and requirements for the evaluation and deployment of advanced transmission technologies to achieve near term efficiencies and cost saving.",
+   "speaker": "",
+   "url": "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-09-30-acore-statement-supporting-affordability-jobs-act.2110",
+   "text": "Implementation of technologies and practices to reduce interconnection queue delays to bring needed generation and storage on-line.",
+   "speaker": "",
    "url": "https://acore.org/news/acore-statement-supporting-the-bipartisan-american-affordability-and-jobs-act-of-2026/",
    "result": "verified",
    "share": 1.0,
@@ -6481,9 +9604,9 @@
    "text": "No chair can carry a comprehensive deal alone.",
    "speaker": "Elizabeth McCarthy, Breakthrough Institute",
    "url": "https://thebreakthrough.org/issues/environmental-regulatory-reform/the-fall-of-permitting-reform",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "media.2025-10-23-ee-news-whitehouse-threatens-to-blow-up-permitting-talks",
@@ -6814,9 +9937,9 @@
    "text": "it would also hamstring states and Tribes from using another Clean Water Act authority to protect their waters from spills and contaminated runoff from oil and gas pipelines",
    "speaker": "Christy Goldfuss, NRDC",
    "url": "https://www.nrdc.org/bio/christy-goldfuss/hard-questions-permitting-bill",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-05"
+   "note": ""
   },
   {
    "where": "takes.2026-10-01-national-association-of-home-1",
@@ -6850,9 +9973,9 @@
    "text": "I was deeply saddened to see that the permitting bill proposes curtailing the authority that allowed Bristol Bay to be protected.",
    "speaker": "Christy Goldfuss, NRDC",
    "url": "https://www.nrdc.org/bio/christy-goldfuss/hard-questions-permitting-bill",
-   "result": "browser",
+   "result": "verified",
    "share": 1.0,
-   "note": "read in a browser on 2026-10-05"
+   "note": ""
   },
   {
    "where": "takes.2026-10-05-heatmap-2",
@@ -7462,36 +10585,36 @@
    "text": "The bill limits Tribal participation in decisions concerning federally connected projects and what Tribal interests are protected",
    "speaker": "NRDC assessment",
    "url": "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill",
-   "result": "browser",
-   "share": 1.0,
-   "note": "read in a browser on 2026-10-20"
+   "result": "missing",
+   "share": 0.75,
+   "note": ""
   },
   {
    "where": "takes.2026-10-13-ifp-tribal-1",
    "text": "NHPA’s Tribal consultation requirement, THPO authority, or other sources of duties to Tribes (treaties, the trust responsibility, NAGPRA, and the consultation executive orders) are unchanged in BAAJA.",
    "speaker": "Ben Schifman, Institute for Progress",
    "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "takes.2026-10-13-ifp-tribal-2",
    "text": "would ensure natural features important to Tribes can be treated as historic properties under NHPA",
    "speaker": "Ben Schifman, Institute for Progress",
    "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "takes.2026-10-13-ifp-tribal-3",
    "text": "Without BAAJA, Tribes face the narrowed ACHP rule now — ACHP has already voted in favor of it — then years of litigation and a new administration’s rulemaking process to attempt to reverse it.",
    "speaker": "Ben Schifman, Institute for Progress",
    "url": "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "dead: HTTP 404"
   },
   {
    "where": "takes.2026-10-19-hochman-x-1",
@@ -8029,9 +11152,9 @@
    "text": "On average, 4.2 years elapsed between publication of an environmental impact statement or environmental assessment and conclusion of the corresponding legal challenge at the appellate level.",
    "speaker": "Breakthrough Institute",
    "url": "https://thebreakthrough.org/issues/energy/understanding-nepa-litigation",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "blocked: HTTP 403"
   },
   {
    "where": "speed.interconnection.0",
@@ -8218,9 +11341,9 @@
    "text": "More than one-third of issued permits took a year or longer to process.",
    "speaker": "EPA Office of Inspector General",
    "url": "https://19january2021snapshot.epa.gov/sites/static/files/2015-10/documents/20111121-12-p-0083_glance.pdf",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
+   "result": "unreachable",
+   "share": 0.0,
+   "note": "error: URLError: <urlopen error timed out>"
   },
   {
    "where": "speed.agency-capacity.0",
@@ -8920,8 +12043,8 @@
    "text": "At the end add the following. ``This Act shall take effect 1 day after the date of enactment.''",
    "speaker": "Sen. Thune (R-SD)",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520.htm",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -8929,8 +12052,8 @@
    "text": "Strike ``1 day''and insert ``2 days''.",
    "speaker": "Sen. Thune (R-SD)",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-2.htm",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -8938,8 +12061,8 @@
    "text": "At the end add the following. ``This Act shall take effect 3 days after the date of enactment.''",
    "speaker": "Sen. Thune (R-SD)",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-3.htm",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -8947,8 +12070,8 @@
    "text": "Strike ``3 days''and insert ``4 days''.",
    "speaker": "Sen. Thune (R-SD)",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-4.htm",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -8956,8 +12079,8 @@
    "text": "At the end add the following. ``This Act shall take effect 5 days after the date of enactment.''",
    "speaker": "Sen. Thune (R-SD)",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-5.htm",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -8965,8 +12088,8 @@
    "text": "Strike ``5 days''and insert ``6 days''.",
    "speaker": "Sen. Thune (R-SD)",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-6.htm",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {
@@ -8974,8 +12097,8 @@
    "text": "Strike ``6 days''and insert ``7 days''.",
    "speaker": "Sen. Thune (R-SD)",
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/html/CREC-2026-11-10-pt1-PgS5520-7.htm",
-   "result": "verified",
-   "share": 1.0,
+   "result": "missing",
+   "share": 0.0,
    "note": ""
   },
   {

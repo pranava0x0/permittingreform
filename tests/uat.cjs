@@ -106,6 +106,15 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       assert.equal(await page.locator('.filter-toggle').innerText(), 'Filters (2)');
       await page.getByRole('group',{name:'Topic',exact:true}).getByRole('button',{name:'All topics'}).click();
       await page.getByRole('group',{name:'Position',exact:true}).getByRole('button',{name:'All positions'}).click();
+      // Commentary folds by position on the bill; items from before the text was public sit in their own fold, and section links route inside the site.
+      await page.goto(base+'#/media');
+      await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button',{name:/^Commentary/}).click();
+      const folds = await page.locator('details.media-fold > summary').allInnerTexts();
+      assert.ok(folds.some((t)=>/^Supports the bill/.test(t)) && folds.some((t)=>/^Opposes the bill/.test(t)) && folds.some((t)=>/^Before the text/.test(t)), folds.join('|'));
+      const grouped = await page.evaluate(()=>[...document.querySelectorAll('details.media-fold > summary .chip-count')].reduce((n,e)=>n+Number(e.textContent),0));
+      assert.equal(grouped, await page.evaluate(()=>PR_DATA.media.filter(x=>x.type==='analysis'||x.type==='org_statement').length));
+      assert.ok(await page.evaluate(()=>[...document.querySelectorAll('.secs a')].length > 50 && [...document.querySelectorAll('.secs a')].every(a=>a.getAttribute('href').startsWith('#/'))));
+      await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').first().click();
       await page.goto(base+'#/media');
       const mediaCount = await page.evaluate(()=>PR_DATA.media.length);
       await page.locator('.show-rest').click();

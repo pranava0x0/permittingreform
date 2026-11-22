@@ -1227,6 +1227,367 @@
      "look": "who pays the cost"
     }
    ]
+  },
+  {
+   "id": "c-2026-11-20-western-caucus-1",
+   "media_url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "speaker": "Senate Western Caucus release",
+   "quote": "BAAJA modernizes NEPA to deliver faster, more predictable environmental reviews without changing NEPA’s core purpose.",
+   "about": "NEPA review deadlines",
+   "review": [
+    {
+     "section": "1106",
+     "text": "Not later than 45 days after the date on which the lead agency publishes an environmental impact statement for a proposed agency action, the lead agency shall issue a record of decision.",
+     "look": "the number of days"
+    },
+    {
+     "section": "1106",
+     "text": "a lead agency shall complete and make public the environmental assessment, if applicable, not later than the date that is 1 year after the earlier of",
+     "look": "the deadline, and whether public comment on an environmental assessment is required"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-western-caucus-2",
+   "media_url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "speaker": "Senate Western Caucus release",
+   "quote": "It also clarifies judicial review through earlier filing deadlines, public comment prerequisites, burden-of-proof clarity, and scheduled remands to fix permit deficiencies.",
+   "about": "Judicial review rules",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    },
+    {
+     "section": "1110",
+     "text": "the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization, with such comment being sufficiently detailed to put the applicable Federal agency on notice of the particular issue on which the party seeks judicial review;",
+     "look": "who may bring a claim"
+    },
+    {
+     "section": "1401",
+     "text": "place the burden of proof on the Federal department or agency to demonstrate that 1 or more of the matters described in subparagraphs (A) through (F) of that paragraph applies.",
+     "look": "who carries the burden of proof"
+    },
+    {
+     "section": "1110",
+     "text": "a reasonable schedule and deadline for the agency to act on remand, which shall not exceed 180 days after the date on which the order of the court was entered",
+     "look": "the remand deadline"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-western-caucus-3",
+   "media_url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "speaker": "Senate Western Caucus release",
+   "quote": "BAAJA provides project certainty across a variety of energy sources in the federal permitting process by ensuring previously issued permits cannot be rescinded without justification based on significant circumstances or violations of federal law.",
+   "about": "Permit certainty",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    },
+    {
+     "section": "1401",
+     "text": "place the burden of proof on the Federal department or agency to demonstrate that 1 or more of the matters described in subparagraphs (A) through (F) of that paragraph applies.",
+     "look": "who carries the burden of proof"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-16-vladeck-1",
+   "media_url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "speaker": "Steve Vladeck",
+   "quote": "A court that finds a NEPA violation could only send the decision back to the agency to fix it within 180 days, and the project could proceed under its permit in the meantime.",
+   "about": "Court remedies",
+   "review": [
+    {
+     "section": "1110",
+     "text": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency with",
+     "look": "the remedy a court may order"
+    },
+    {
+     "section": "1110",
+     "text": "a reasonable schedule and deadline for the agency to act on remand, which shall not exceed 180 days after the date on which the order of the court was entered",
+     "look": "the remand deadline"
+    },
+    {
+     "section": "1110",
+     "text": "An authorization remanded under paragraph (5)(A) shall remain in effect while the Federal agency corrects any errors or deficiencies found by the reviewing court.",
+     "look": "whether the authorization stays in effect"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-16-vladeck-2",
+   "media_url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "speaker": "Steve Vladeck",
+   "quote": "Under the bill, as the Congressional Research Service (CRS) and others summarize it, challengers would have 150 days to sue.",
+   "about": "Lawsuit deadlines",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-16-vladeck-3",
+   "media_url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "speaker": "Steve Vladeck",
+   "quote": "Critically, none of the exceptions would cover a new administration that concludes its predecessor issued a permit unlawfully.",
+   "about": "Permit certainty exceptions",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-12-tatel-1",
+   "media_url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "speaker": "David Tatel",
+   "quote": "Rather, it strips federal judges of the authority to halt or pause a project’s authorization until the agency fixes errors in its environmental review.",
+   "about": "Court remedies",
+   "review": [
+    {
+     "section": "1110",
+     "text": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency with",
+     "look": "the remedy a court may order"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-12-tatel-2",
+   "media_url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "speaker": "David Tatel",
+   "quote": "And it authorizes construction of the project to proceed even as the agency considers its effects.",
+   "about": "Projects during remand",
+   "review": [
+    {
+     "section": "1110",
+     "text": "An authorization remanded under paragraph (5)(A) shall remain in effect while the Federal agency corrects any errors or deficiencies found by the reviewing court.",
+     "look": "whether the authorization stays in effect"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-09-bilodeau-1",
+   "media_url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "speaker": "Katie Bilodeau",
+   "quote": "If Congress passes S. 5653, however, that obligation goes away because the bill redefines “major Federal action” to exclude federal funding, no matter how many millions of dollars that might be and to what extent that funding could be used to destroy the wild.",
+   "about": "Federal funding and NEPA",
+   "review": [
+    {
+     "section": "1102",
+     "text": "grants (including capitalization grants), cost-share awards, or other forms of financial assistance where a Federal agency does not exercise predominant control and responsibility over the subsequent use of such financial assistance or the environmental effect of the action;",
+     "look": "the control standard"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-09-bilodeau-2",
+   "media_url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "speaker": "Katie Bilodeau",
+   "quote": "S. 5653 prohibits agencies from rescinding previous authorizations—no matter how destructive they might be—with a provision called “project certainty.”",
+   "about": "Permit certainty",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-09-bilodeau-3",
+   "media_url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "speaker": "Katie Bilodeau",
+   "quote": "For agency decisions that violate NEPA, the ESA, or the Clean Water Act, however, S. 5653 shortens this six-year window to 150 days for citizen suits.",
+   "about": "Lawsuit deadlines",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-09-bilodeau-4",
+   "media_url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "speaker": "Katie Bilodeau",
+   "quote": "BAAJA gives the government 180 days to fix the means (the process) so they can justify the decision that courts must keep.",
+   "about": "Court remedies",
+   "review": [
+    {
+     "section": "1110",
+     "text": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency with",
+     "look": "the remedy a court may order"
+    },
+    {
+     "section": "1110",
+     "text": "a reasonable schedule and deadline for the agency to act on remand, which shall not exceed 180 days after the date on which the order of the court was entered",
+     "look": "the remand deadline"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-fseee-1",
+   "media_url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "speaker": "FSEEE",
+   "quote": "Logging, mining, and drilling approvals would be nearly impossible to revisit or revoke, and taxpayers could owe corporate developers up to half of project costs if agencies try.",
+   "about": "Permit certainty and payments",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "costs in an amount not less than 25 percent and not more than 50 percent of the total of all development and construction costs incurred by the holder",
+     "look": "the amount and when it is owed"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-fseee-2",
+   "media_url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "speaker": "FSEEE",
+   "quote": "Agencies could entirely skip public comment on environmental assessments.",
+   "about": "Environmental assessments",
+   "review": [
+    {
+     "section": "1106",
+     "text": "a lead agency shall complete and make public the environmental assessment, if applicable, not later than the date that is 1 year after the earlier of",
+     "look": "the deadline, and whether public comment on an environmental assessment is required"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-fseee-3",
+   "media_url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "speaker": "FSEEE",
+   "quote": "Challenges must be filed within 150 days, and courts could no longer halt unlawful projects, only send the paperwork back while bulldozers continue steamrolling the land’s ecological values.",
+   "about": "Lawsuit deadlines and remedies",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    },
+    {
+     "section": "1110",
+     "text": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency with",
+     "look": "the remedy a court may order"
+    },
+    {
+     "section": "1110",
+     "text": "An authorization remanded under paragraph (5)(A) shall remain in effect while the Federal agency corrects any errors or deficiencies found by the reviewing court.",
+     "look": "whether the authorization stays in effect"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-09-farm-bureau-1",
+   "media_url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "speaker": "American Farm Bureau Federation",
+   "quote": "Its transmission title would shift siting authority from states to federal regulators and broaden federal eminent domain, while giving landowners limited notice, short windows to participate and narrow avenues for challenge.",
+   "about": "Federal transmission siting",
+   "review": [
+    {
+     "section": "2101",
+     "text": "the Commission shall, after notice and an opportunity for hearing, including a public comment period of at least 45 days, issue one or more permits to individual or joint applicants for the construction or modification of electric transmission facilities necessary in the national interest if the Commission finds that",
+     "look": "when the Commission may issue a permit"
+    },
+    {
+     "section": "2101",
+     "text": "capable of transmitting electric energy at a voltage of not less than 230 kilovolts",
+     "look": "the voltage threshold"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-09-farm-bureau-2",
+   "media_url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "speaker": "American Farm Bureau Federation",
+   "quote": "Lawsuits must be filed within 150 days by parties who substantially participated in the comment process, and courts would generally send flawed reviews back to agencies for correction rather than vacating them.",
+   "about": "Lawsuit deadlines and remedies",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    },
+    {
+     "section": "1110",
+     "text": "the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization, with such comment being sufficiently detailed to put the applicable Federal agency on notice of the particular issue on which the party seeks judicial review;",
+     "look": "who may bring a claim"
+    },
+    {
+     "section": "1110",
+     "text": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency with",
+     "look": "the remedy a court may order"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-09-farm-bureau-3",
+   "media_url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "speaker": "American Farm Bureau Federation",
+   "quote": "Consultation timelines would be shortened to align with NEPA, so producers are not waiting years to learn whether a project affects listed species.",
+   "about": "ESA consultation deadlines",
+   "review": [
+    {
+     "section": "1302",
+     "text": "the consultation process under subsection (a)(2) shall be completed by not later than the date on which the applicable environmental document (as so defined) for the agency action is completed in accordance with section 107(g)",
+     "look": "when consultation must finish"
+    },
+    {
+     "section": "1302",
+     "text": "(1) in subparagraph (A), by striking “90-day” and inserting “60-day”; (2) in subparagraph (B)— (A) in the matter preceding clause (i)— (i) by striking “90 days” and inserting “60 days”; and (ii) by striking “90th day” and inserting “60th day”; (B) in clause (i), in the matter preceding subclause (I), by striking “150th day” and inserting “100th day”;",
+     "look": "the number of days"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-12-rhodium-1",
+   "media_url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
+   "speaker": "Rhodium Group",
+   "quote": "BAAJA includes ratepayer protections that make data centers pay for the costs their growth adds to the grid, reducing bills for residential consumers and other customer classes.",
+   "about": "Data center costs",
+   "review": [
+    {
+     "section": "2107",
+     "text": "it is the policy of the United States that computational load owners and computational load operators bear the full cost of any electric service that they require and the full cost of any infrastructure built to serve them, regardless of whether they take the electric service that they request, so that such costs are not borne by other customers, including residential customers;",
+     "look": "who pays the cost"
+    },
+    {
+     "section": "2107",
+     "text": "No portion of the retail incremental cost may be allocated to, or recovered in the rates of, any customer other than a computational load owner or a computational load operator.",
+     "look": "who pays the cost"
+    }
+   ]
   }
  ],
  "skipped": [
@@ -1364,6 +1725,31 @@
    "media_url": "https://x.com/RepScottPeters/status/2123616915448865263",
    "quote": "BAAJA lowers costs and lowers emissions.",
    "why": "A forecast of costs and emissions; no provision states an amount."
+  },
+  {
+   "media_url": "https://www.ucs.org/about/news/baaja-amendment-fails-improve-bill",
+   "quote": "To get bipartisan support for negligible reductions in emissions, this deal would convert compliance with the National Environmental Policy Act, Endangered Species Act, National Historic Preservation Act, and Clean Water Act into largely voluntary exercises.",
+   "why": "A summary judgment on four laws at once (\"largely voluntary\"); it names no provision to compare."
+  },
+  {
+   "media_url": "https://www.ucs.org/about/news/baaja-amendment-fails-improve-bill",
+   "quote": "Instead of righting this imbalance, the Senate permitting deal will lock in fossil fuel projects now and for generations to come.",
+   "why": "A forecast of which projects get built."
+  },
+  {
+   "media_url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "quote": "Thus, NEPA and the NHPA would become largely toothless—at least on their own.",
+   "why": "A conclusion about how much force two laws keep; the remedy passages are under the claim on the same item about remand."
+  },
+  {
+   "media_url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "quote": "All “NEPA lawsuits” are APA lawsuits.",
+   "why": "A statement about current law (every NEPA suit is brought under the APA), not about the bill."
+  },
+  {
+   "media_url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
+   "quote": "When modeled standalone, the transmission provisions reduce electricity bills by 1-2% nationally in 2035.",
+   "why": "A modeled result for 2035."
   }
  ]
 }

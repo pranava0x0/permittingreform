@@ -11692,6 +11692,192 @@
    ],
    "sector": "congress",
    "verified": true
+  },
+  {
+   "type": "org_statement",
+   "outlet": "Union of Concerned Scientists",
+   "author": "David Watkins",
+   "title": "Weekend Amendment Fails to Address Fossil Fuel Giveaways in Senate Permitting Deal",
+   "url": "https://www.ucs.org/about/news/baaja-amendment-fails-improve-bill",
+   "summary": "UCS's David Watkins says the substitute amendment improves the transmission and permit-certainty language but leaves the bill's imbalance in place and would make compliance with four environmental laws largely voluntary.",
+   "stance": "opposes",
+   "quote": {
+    "text": "If enacted as currently drafted, BAAJA would be the most significant legislative reversal in environmental and community protections in decades.",
+    "speaker": "David Watkins, Union of Concerned Scientists"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "historic-preservation",
+    "fossil"
+   ],
+   "sector": "environmental_group",
+   "date": "2026-11-09",
+   "id": "2026-11-09-weekend-amendment-fails-to-address-fossil-fuel-giveaways-in-",
+   "verified": true
+  },
+  {
+   "type": "gov_press_release",
+   "outlet": "Sen. Cynthia Lummis (Senate Western Caucus)",
+   "author": "Sen. Cynthia Lummis",
+   "title": "Senate Western Caucus Applauds Passage of Bipartisan Permitting Bill that Delivers Wins for the West",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "summary": "Senate Western Caucus chair Lummis and colleagues, including Capito, Lee, Thune, Barrasso and Murkowski, welcome the 62-33 Senate passage and describe what the bill does for NEPA, the Clean Water Act and the Endangered Species Act.",
+   "stance": "supports",
+   "quote": {
+    "text": "The Senate voted to put western states back in the driver’s seat by ensuring state wildlife experts lead on endangered species decisions",
+    "speaker": "Sen. Cynthia Lummis"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "permit-certainty"
+   ],
+   "sector": "congress",
+   "date": "2026-11-20",
+   "id": "2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "One First (Substack)",
+   "author": "Steve Vladeck",
+   "title": "263. Congress Should Press Pause on BAAJA",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "summary": "Georgetown law professor Steve Vladeck (an Earthjustice trustee, as he discloses) praises the transmission title but argues the judicial-review limits and project-certainty title warrant more deliberation than a lame-duck vote allows.",
+   "stance": "mixed",
+   "quote": {
+    "text": "BAAJA’s good parts are reason enough to get the rest of it right; its bad parts should worry you whatever your views on environmental policy",
+    "speaker": "Steve Vladeck"
+   },
+   "topics": [
+    "courts",
+    "nepa",
+    "permit-certainty",
+    "transmission",
+    "data-centers"
+   ],
+   "sector": "academic",
+   "date": "2026-11-16",
+   "id": "2026-11-16-263-congress-should-press-pause-on-baaja",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "Bloomberg Law",
+   "author": "David Tatel",
+   "title": "The Senate Permitting Bill Deserves a ‘Hard Look’ Before a Vote",
+   "url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "summary": "Retired D.C. Circuit Judge David Tatel argues the bill's remedy limits would leave NEPA suits with no meaningful relief, including suits brought under the Administrative Procedure Act.",
+   "stance": "opposes",
+   "quote": {
+    "text": "If a Senate permitting bill becomes law, NEPA cases may be virtually futile.",
+    "speaker": "David Tatel, retired D.C. Circuit judge"
+   },
+   "topics": [
+    "courts",
+    "nepa"
+   ],
+   "sector": "court",
+   "date": "2026-11-12",
+   "id": "2026-11-12-the-senate-permitting-bill-deserves-a-hard-look-before-a-vot",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "CounterPunch",
+   "author": "Katie Bilodeau",
+   "title": "The “Bipartisan American Affordability and Jobs Act” Reveals That Ecosystems and the People Who Defend Them are “Red Tape”",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "summary": "Wilderness Watch legislative director Katie Bilodeau argues the bill redefines major federal action, locks in permits through project certainty and cuts the lawsuit window to 150 days.",
+   "stance": "opposes",
+   "quote": {
+    "text": "BAAJA will do an incredibly effective job at removing much of the remaining protective measures that these three laws still have.",
+    "speaker": "Katie Bilodeau, Wilderness Watch"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "permit-certainty",
+    "courts"
+   ],
+   "sector": "environmental_group",
+   "date": "2026-11-09",
+   "id": "2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t",
+   "verified": true
+  },
+  {
+   "type": "org_statement",
+   "outlet": "Forest Service Employees for Environmental Ethics",
+   "author": "Forest Service Employees for Environmental Ethics",
+   "title": "The Senate Passed BAAJA 62–33 – Now the House Can Stop It. Call Your Representative!",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "summary": "FSEEE tells members the Senate passed the bill 62-33 and urges calls to House members, saying the bill locks in permits, limits public comment and removes courts' power to halt unlawful projects.",
+   "stance": "opposes",
+   "quote": {
+    "text": "BAAJA is not law yet, and it can still be defeated.",
+    "speaker": "Forest Service Employees for Environmental Ethics"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "date": "2026-11-20",
+   "id": "2026-11-20-the-senate-passed-baaja-62-33-now-the-house-can-stop-it-call",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "American Farm Bureau Federation",
+   "author": "American Farm Bureau Federation",
+   "title": "Senate Permitting Bill Needs Additional Protections for Agriculture",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "summary": "The Farm Bureau backs the bill's NEPA, ESA and NHPA changes but says its transmission siting title and Clean Water Act provisions fall short for landowners.",
+   "stance": "mixed",
+   "quote": {
+    "text": "Farm Bureau shares BAAJA’s goal of timely, predictable permitting, and the bill’s environmental review reforms and Section 404 improvements are real progress.",
+    "speaker": "American Farm Bureau Federation"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "transmission",
+    "clean-water-act",
+    "historic-preservation"
+   ],
+   "sector": "trade_association",
+   "date": "2026-11-09",
+   "id": "2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "Rhodium Group",
+   "author": "Hannah Kolus, Michael Gaffney, Nathan Wiens, Ben King",
+   "title": "The Impact of Permitting Reform on State-level Residential Electricity Prices and Bills",
+   "url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
+   "summary": "Rhodium Group models key provisions on transmission, pipelines, data-center ratepayer protection and wind permit certainty and finds lower residential electricity prices and bills in at least 46 states by 2035.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Residential electricity prices and bills decline in at least 46 states in 2035 with the full set of modeled BAAJA provisions.",
+    "speaker": "Rhodium Group"
+   },
+   "topics": [
+    "transmission",
+    "data-centers",
+    "wind-solar"
+   ],
+   "sector": "think_tank",
+   "date": "2026-11-12",
+   "id": "2026-11-12-the-impact-of-permitting-reform-on-state-level-residential-e",
+   "verified": true
   }
  ]
 }
