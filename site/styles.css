@@ -370,6 +370,7 @@ mark { background: var(--mark); color: var(--on-mark); padding: 0 1px; border-ra
 }
 .brief > .media-item:not(.open) > .quote, .brief > .media-item:not(.open) > .visuals, .brief > .media-item:not(.open) > .claims { display: none; }
 .brief.claims-on > .media-item > .claims { display: block; }
+.brief > .media-item:not(.open) > .secs > .sec-quotes { display: none; }
 .brief > .person:not(.open) > .quote blockquote { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .brief > .person:not(.open) > .social, .brief > .person:not(.open) > .sources { display: none; }
 .person-more { margin: 2px 0 0; }
@@ -501,6 +502,11 @@ tr.target > * { outline: 1px solid var(--rule); outline-offset: -1px; }
 .claims ul { margin: 0 0 6px; padding-left: 18px; }
 .claims li + li { margin-top: 2px; }
 .claims-note { color: var(--text-muted); }
+.secs { margin: 4px 0 8px; font-size: var(--fs-small); }
+.secs p { margin: 0; }
+.sec-quotes { margin: 4px 0 0; padding-left: 18px; }
+.sec-quotes li + li { margin-top: 2px; }
+.media-fold .media-list { margin-top: 4px; }
 .media-tags { display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: center; margin: 0 0 6px; }
 
 /* ---------- positions ---------- */

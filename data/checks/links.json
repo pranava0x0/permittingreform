@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-21",
+ "checked": "2026-11-22",
  "results": {
   "http://legal-planet.org/2026/11/08/the-revised-permitting-reform-bill/": {
    "cls": "ok",
@@ -23,10 +23,10 @@
    ]
   },
   "https://19january2021snapshot.epa.gov/sites/static/files/2015-10/documents/20111121-12-p-0083_glance.pdf": {
-   "cls": "ok",
-   "kind": "pdf",
-   "note": "",
-   "status": 200,
+   "cls": "error",
+   "kind": "page",
+   "note": "URLError: <urlopen error timed out>",
+   "status": null,
    "where": [
     "speed.cwa-401-404.0"
    ]
@@ -208,10 +208,10 @@
    ]
   },
   "https://bpcaction.org/bpc-action-urges-congress-to-pass-the-bipartisan-american-affordability-and-jobs-act/": {
-   "cls": "ok",
+   "cls": "dead",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 404",
+   "status": 404,
    "where": [
     "people.michele-stockwell.source",
     "people.michele-stockwell.quote",
@@ -1420,10 +1420,10 @@
    ]
   },
   "https://ifp.org/wp-content/uploads/BAAJA-protects-Tribal-consultation-from-ACHPs-regulatory-rollback.pdf": {
-   "cls": "ok",
-   "kind": "pdf",
-   "note": "",
-   "status": 200,
+   "cls": "dead",
+   "kind": "page",
+   "note": "HTTP 404",
+   "status": 404,
    "where": [
     "takes.2026-10-13-ifp-tribal-1",
     "takes.2026-10-13-ifp-tribal-2",
@@ -1484,10 +1484,10 @@
    ]
   },
   "https://insidelines.pjm.com/ferc-accepts-pjm-reliability-backstop-proposal/": {
-   "cls": "ok",
+   "cls": "error",
    "kind": "page",
-   "note": "little readable text (script-rendered page)",
-   "status": 202,
+   "note": "RemoteDisconnected: Remote end closed connection without response",
+   "status": null,
    "where": [
     "timeline.2026-09-29-ferc-pjm-reliability-backstop-order.source"
    ]
@@ -1673,6 +1673,15 @@
     "media.2026-10-16-nathpo-heritage-not-a-bargaining-chip"
    ]
   },
+  "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/": {
+   "cls": "error",
+   "kind": "page",
+   "note": "RemoteDisconnected: Remote end closed connection without response",
+   "status": null,
+   "where": [
+    "media.2026-11-20-the-senate-passed-baaja-62-33-now-the-house-can-stop-it-call"
+   ]
+  },
   "https://nativenewsonline.net/sovereignty/despite-strong-tribal-opposition-u-s-senate-approves-baaja-in-late-night-vote/": {
    "cls": "ok",
    "kind": "page",
@@ -1751,6 +1760,15 @@
     "media.2026-11-09-bgov-support-to-proceed"
    ]
   },
+  "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-the-senate-permitting-bill-deserves-a-hard-look-before-a-vot"
+   ]
+  },
   "https://news.bloomberglaw.com/health-law-and-business/senate-permitting-legislation-advances-setting-up-final-push": {
    "cls": "ok",
    "kind": "page",
@@ -1791,10 +1809,10 @@
    ]
   },
   "https://okenergytoday.com/2026/11/stage-set-for-vote-this-week-on-permitting-reform-act/": {
-   "cls": "ok",
+   "cls": "error",
    "kind": "page",
-   "note": "little readable text (script-rendered page)",
-   "status": 202,
+   "note": "RemoteDisconnected: Remote end closed connection without response",
+   "status": null,
    "where": [
     "media.2026-11-17-oklahoma-energy-today-stage-set-for-vote-this-week-on-permit"
    ]
@@ -1903,6 +1921,15 @@
     "estimates.rhodium-bills",
     "estimates.rhodium-buildout",
     "estimates.rhodium-lng"
+   ]
+  },
+  "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf": {
+   "cls": "ok",
+   "kind": "pdf",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-12-the-impact-of-permitting-reform-on-state-level-residential-e"
    ]
   },
   "https://rmi.org/resources/understanding-fercs-large-load-orders/": {
@@ -2112,10 +2139,10 @@
    ]
   },
   "https://swacca.org/nine-democratic-state-attorneys-general-raise-concerns-over-bipartisan-permitting-reform-bill/": {
-   "cls": "ok",
+   "cls": "error",
    "kind": "page",
-   "note": "little readable text (script-rendered page)",
-   "status": 202,
+   "note": "RemoteDisconnected: Remote end closed connection without response",
+   "status": null,
    "where": [
     "timeline.2026-10-22-nine-ags-letter.source",
     "media.2026-10-22-nine-ags-letter"
@@ -2131,37 +2158,37 @@
    ]
   },
   "https://thebreakthrough.org/issues/energy/the-faulty-logic-at-the-heart-of-environmentalist-opposition-to-baaja": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "media.2026-10-30-breakthrough-institute-the-faulty-logic-at"
    ]
   },
   "https://thebreakthrough.org/issues/energy/understanding-nepa-litigation": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "speed.nepa-litigation.3"
    ]
   },
   "https://thebreakthrough.org/issues/environmental-regulatory-reform/the-fall-of-permitting-reform": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "media.2025-11-18-breakthrough-institute-fall-of-permitting-reform"
    ]
   },
   "https://thebreakthrough.org/press/release-breakthrough-institute-statement-on-the-bipartisan-american-affordability-and-jobs-act-of-2026": {
-   "cls": "ok",
+   "cls": "blocked",
    "kind": "page",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 403",
+   "status": 403,
    "where": [
     "people.marc-levitt.source",
     "people.marc-levitt.quote",
@@ -2214,7 +2241,7 @@
   "https://tlingitandhaida.gov/news/alaska-tribes-and-native-corporations-take-stand-to-protect-tribal-sovereignty-sacred-places-lands-and-waters/": {
    "cls": "ok",
    "kind": "page",
-   "note": "",
+   "note": "read with curl",
    "status": 200,
    "where": [
     "media.2026-10-26-tlingit-haida-title-iii"
@@ -2287,10 +2314,10 @@
    ]
   },
   "https://westernpriorities.org/2026/10/doj-moves-to-kill-offshore-wind-permits-as-congress-weighs-permitting-bill/": {
-   "cls": "ok",
+   "cls": "error",
    "kind": "page",
-   "note": "little readable text (script-rendered page)",
-   "status": 202,
+   "note": "HTTP 502",
+   "status": 502,
    "where": [
     "takes.2026-10-23-cwp-1",
     "timeline.2026-10-22-public-lands-groups-letter.source",
@@ -2889,6 +2916,15 @@
    "status": 403,
    "where": [
     "timeline.2026-11-09-house-suspension-nuclear.source"
+   ]
+  },
+  "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/": {
+   "cls": "blocked",
+   "kind": "page",
+   "note": "HTTP 403",
+   "status": 403,
+   "where": [
+    "media.2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t"
    ]
   },
   "https://www.crowell.com/en/insights/client-alerts/federal-court-blocks-trump-administration-policies-restricting-wind-and-solar-permitting": {
@@ -3817,6 +3853,15 @@
    "status": 200,
    "where": [
     "overview.status"
+   ]
+  },
+  "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri"
    ]
   },
   "https://www.federalregister.gov/documents/2025/02/25/2025-03014/removal-of-national-environmental-policy-act-implementing-regulations": {
@@ -5010,6 +5055,15 @@
     "people.ben-ray-lujan.quote"
    ]
   },
+  "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt"
+   ]
+  },
   "https://www.majorityleader.gov/schedule": {
    "cls": "ok",
    "kind": "page",
@@ -5261,11 +5315,10 @@
    ]
   },
   "https://www.nrdc.org/bio/christy-goldfuss/hard-questions-permitting-bill": {
-   "browser": "2026-10-05",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "takes.2026-10-02-nrdc-2",
     "takes.2026-10-02-nrdc-1",
@@ -5273,11 +5326,10 @@
    ]
   },
   "https://www.nrdc.org/media/nrdc-assessment-baaja-2026-permitting-transmission-bill": {
-   "browser": "2026-10-20",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "takes.2026-10-19-nrdc-1",
     "media.2026-10-19-nrdc-assessment-baaja"
@@ -5293,31 +5345,28 @@
    ]
   },
   "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-still-needs-improvements": {
-   "browser": "2026-11-15",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "media.2026-11-08-natural-resources-defense-senate-permitting-bill-still"
    ]
   },
   "https://www.nrdc.org/press-releases/permitting-bill-desperately-needed-must-improve": {
-   "browser": "2026-10-01",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "media.2026-09-30-nrdc-permitting-bill-desperately-needed-must-improve"
    ]
   },
   "https://www.nrdc.org/press-releases/president-trump-undermines-baaja-senate-debate-begins": {
-   "browser": "2026-11-15",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "media.2026-11-09-natural-resources-defense-president-trump-undermines-baaja"
    ]
@@ -5692,11 +5741,10 @@
    ]
   },
   "https://www.semiconductors.org/sia-urges-senate-to-pass-bipartisan-permitting-reform-legislation-to-boost-u-s-competitiveness/": {
-   "browser": "2026-11-15",
-   "cls": "blocked",
+   "cls": "ok",
    "kind": "page",
-   "note": "HTTP 403",
-   "status": 403,
+   "note": "",
+   "status": 200,
    "where": [
     "media.2026-11-04-semiconductor-industry-association-sia-urges-senate-to"
    ]
@@ -5913,6 +5961,15 @@
     "media.2026-11-19-the-spokesman-review-cantwell-murray-and-northwest-tribal-le"
    ]
   },
+  "https://www.stevevladeck.com/p/263-congress-should-press-pause-on": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-16-263-congress-should-press-pause-on-baaja"
+   ]
+  },
   "https://www.supplyht.com/articles/107521-asa-supports-bipartisan-permitting-reform-to-strengthen-us-manufacturing": {
    "cls": "ok",
    "kind": "page",
@@ -6006,6 +6063,15 @@
    "status": 200,
    "where": [
     "timeline.2025-04-11-ferc-order-1920-b-rehearing.source"
+   ]
+  },
+  "https://www.ucs.org/about/news/baaja-amendment-fails-improve-bill": {
+   "cls": "ok",
+   "kind": "page",
+   "note": "",
+   "status": 200,
+   "where": [
+    "media.2026-11-09-weekend-amendment-fails-to-address-fossil-fuel-giveaways-in-"
    ]
   },
   "https://www.upstreamonline.com/environment/us-senators-unveil-400-page-bill-to-speed-up-energy-permitting/2-1-2052062": {
@@ -8802,19 +8868,19 @@
    ]
   },
   "https://x.com/ThomasHochman/status/2121651172444414172": {
-   "cls": "ok",
+   "cls": "dead",
    "kind": "x",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 404",
+   "status": 404,
    "where": [
     "media.2026-11-14-x-thomashochman-only-56-percent-opposed-the-bill-incredible"
    ]
   },
   "https://x.com/ThomasHochman/status/2123627467768213904": {
-   "cls": "ok",
+   "cls": "dead",
    "kind": "x",
-   "note": "",
-   "status": 200,
+   "note": "HTTP 404",
+   "status": 404,
    "where": [
     "media.2026-11-19-x-thomashochman-senator-merkley-is-currently-on-the-floor-implying-th"
    ]

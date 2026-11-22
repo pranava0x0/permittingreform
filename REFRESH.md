@@ -49,6 +49,14 @@ Run a refresh with the project skill `.claude/skills/permitting-refresh/SKILL.md
 3. A claim with nothing in the text to point at (a forecast, a motive, how the bill was written) goes in `skipped` with a reason.
 4. `make claims` (part of `make check`) fails on a passage that is not in the section exactly once and on any pending claim.
 
+## Sections discussed
+
+`data/section_refs.json` lists the sections of the passed text that each commentary, statement, report or government release discusses, with the item's own words about each section (`make quotes` checks them against the page). The Coverage page shows them as links on each row, and the Commentary chip folds those items by position on the bill.
+
+1. `python3 tools/build.py` fails on any `analysis`, `org_statement`, `gov_press_release` or `gov_document` item dated on or after the text's release that has no section link (from this file, `data/claims.json` or `data/takes.json`) and no row in `none` or `unread`.
+2. A sweep item's `sections` go into `refs`; a piece that names no provision goes in `none` with one sentence saying why; a page no script or browser could read goes in `unread`.
+3. Map a section only when the piece names it or describes it so specifically that one section fits. Agents also re-read the stance on the bill; record a changed stance in `data/curation.json` with the sentence that shows it.
+
 ## Claim cites
 
 Every sentence that says what the bill does must carry a passage from the bill: summary sentences and key points (`data/bill/point_cites.json`), and headlines, the comparison tables' BAAJA cells, added provisions and the Communities and Data centers rows (`data/bill/row_cites.json`). `tools/infer_check.py` writes both from verdicts whose evidence span is in the text word for word. The build stops while any claim has no passage or a flagged verdict. A claim that the text is silent ("No export provisions.") counts once the review supports it with no span.
@@ -137,3 +145,6 @@ See [docs/data-sources.md](docs/data-sources.md) for sources that refuse scripts
 - 2026-11-21. `make paths` gates the tap count: an answer that takes more taps than `tests/reader_paths.json`, starts more than 0.25 screens lower, or disappears fails `make final`. The first run reproduced all 36 existing paths exactly and failed on the one new path until it was added, which is the known-good and known-bad check for the gate.
 - 2026-11-21. `tools/refresh_status.py` read the Nov 20 Record before any news did: Capito's floor remarks, the Senate's pro forma order (Nov 24 and 27, back Nov 30) and Rep. Stansbury's Nov 19 House speech, which no sweep had found. Run it first.
 - 2026-11-21. Inside Climate News and National Indigenous Times answer scripts and headless Chrome with 403 (Cloudflare); the logged-in Chrome reads both. Record the quotes in `data/checks/browser.json`.
+- 2026-11-22. Section refs for 124 commentary items took two Sonnet agents about 8 minutes each (280K and 308K tokens). Each wrote 36 refs, 24 none and 2 unreadable. Two of 72 mappings were too loose and were dropped (a "cooperating agency" line filed under 1106; a quote from a senator read as a 1401 mapping). Six stances changed on re-reading; the commonest error was `neutral` on a release that argues for the bill.
+- 2026-11-22. Stance before September 30 is a stance on permitting reform, not on this bill. The Commentary view puts those items in their own fold rather than under "Supports the bill".
+- 2026-11-22. A sweep item that carries `claims` fails `make claims` until each claim has a row in `data/claims.json` or a skip, even when the item is integrated without them, because `pending` reads the sweep's `*-proposed.json`. Reuse passages already chosen for the same provision (1110 deadline and remedy, 1401 bar and exceptions): `claim_sections.py draft` ranked Historic Preservation first for a claim about four environmental laws.

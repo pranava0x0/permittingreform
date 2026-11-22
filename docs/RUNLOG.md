@@ -94,3 +94,13 @@ Mapped SA 7022's 14 edit instructions to sections of the substitute, with all th
 - Floor: no new roll calls on the bill. The Nov 20 Record has the Senate's order for pro forma sessions on Nov 24 and 27, returning 3 p.m. Nov 30.
 - Gates: make check, make quotes (1,211 checked: 1,114 by script, 97 in a browser, 0 missing), make links, make final.
 - Agents: Claude Sonnet (X sweep, 186K tokens; article sweep, 307K tokens) and Claude Opus (passage mapping, 246K tokens); the main session (Claude Opus) chose items, reviewed the mapping and wrote the code.
+
+## November 22, 2026: sections discussed in commentary, grouped by position
+
+- Floor: no new roll calls or Record entries on the bill (`refresh_status.py`, exit 0). The House is out until Nov 30.
+- Sections discussed: `data/section_refs.json` names the sections of the passed text each commentary, statement, report or government release discusses, each with the item's own words about it. 72 items have refs from this pass and 48 are in `none` (they discuss the bill only as a whole). 4 could not be read: two Breakthrough Institute pages behind Cloudflare, a BPC Action page that is gone, and a paywalled Washington Post editorial. With the sections already linked through claims and readings, every commentary item dated after Sept 30 has links, a `none` row or an `unread` row, and the build enforces that.
+- Coverage page: rows show the sections they discuss as links. With More open, each section shows the item's words about it. A Commentary chip (analysis plus statements) folds the list into Supports the bill, Opposes the bill, Mixed, Explains, and Before the text was public.
+- Stances: six changed after re-reading the pages (National Trust to mixed; C2ES and AEI to supports; Canary Media, a Heatmap analysis and the Nov 10 Record to reporting).
+- New coverage: 8 commentary items dated Nov 9 to 20 (UCS, the Senate Western Caucus, Steve Vladeck, Judge David Tatel in Bloomberg Law, Wilderness Watch in CounterPunch, FSEEE, the Farm Bureau, Rhodium's state bill report). Two personal Substacks were left out. Their 24 claims: 19 mapped to passages, 5 skipped with reasons.
+- Agents: Claude Sonnet (section refs, 280K and 308K tokens; commentary sweep, 205K tokens). The main session (Claude Opus) reviewed each mapping, wrote the code and chose the claim passages.
+

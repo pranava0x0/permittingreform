@@ -1,0 +1,622 @@
+[
+ {
+  "id": "2026-10-27-duckworth-doe-awards",
+  "date": "2026-10-27",
+  "type": "gov_press_release",
+  "outlet": "Office of Sen. Tammy Duckworth",
+  "title": "Four senators seek restored grants before Senate considers taking up the bill",
+  "url": "https://www.duckworth.senate.gov/news/press-releases/duckworth-colleagues-to-committee-leadership-trump-must-begin-restoring-illegally-cancelled-energy-projects-before-critical-vote-on-bipartisan-permitting-reform-bill",
+  "stance": "mixed",
+  "summary": "Tammy Duckworth, Ron Wyden, Jeff Merkley and Ed Markey asked the bill’s sponsors to secure the release of canceled Energy Department grants before the Senate decides on November 9 whether to end debate on taking up the permitting bill. They did not commit to supporting that motion."
+ },
+ {
+  "id": "2026-10-28-the-white-house-the-economic-benefits-of",
+  "date": "2026-10-28",
+  "type": "gov_document",
+  "outlet": "The White House (Council of Economic Advisers)",
+  "title": "The Economic Benefits of Permitting Reform",
+  "url": "https://www.whitehouse.gov/research/2026/10/the-economic-benefits-of-permitting-reform/",
+  "stance": "neutral",
+  "summary": "The Council of Economic Advisers estimates long-run GDP and tax-revenue effects of cutting federal review times to the levels BAAJA requires."
+ },
+ {
+  "id": "2026-10-28-plf-coalition-letter",
+  "date": "2026-10-28",
+  "type": "org_statement",
+  "outlet": "Pacific Legal Foundation",
+  "title": "Pacific Legal Foundation and more than 35 partners urge passage",
+  "url": "https://pacificlegal.org/press-release/pacific-legal-foundation-leads-more-than-35-coalition-partners-urging-congress-to-advance-permitting-deal/",
+  "stance": "supports",
+  "summary": "A coalition including Americans for Prosperity and ClearPath Action asked congressional leaders to pass BAAJA, citing property rights and more predictable permits."
+ },
+ {
+  "id": "2026-10-29-resources-for-the-projected-effects-of-the",
+  "date": "2026-10-29",
+  "type": "analysis",
+  "outlet": "Resources for the Future",
+  "title": "Projected Effects of the Bipartisan American Affordability and Jobs Act on the Power Sector",
+  "url": "https://www.rff.org/publications/issue-briefs/projected-effects-of-the-bipartisan-american-affordability-and-jobs-act-on-the-power-sector/",
+  "stance": "neutral",
+  "summary": "RFF ran the power-sector provisions of BAAJA through the ReEDS model and reports emissions, electricity-system cost and transmission effects relative to a baseline."
+ },
+ {
+  "id": "2026-10-30-r-street-institute-baaja-blast-part-2",
+  "date": "2026-10-30",
+  "type": "analysis",
+  "outlet": "R Street Institute",
+  "title": "BAAJA Blast Part 2: What Does Permitting Reform Mean for the Environment?",
+  "url": "https://www.rstreet.org/?p=103280",
+  "stance": "mixed",
+  "summary": "R Street reviews the NEPA, Clean Water Act, Endangered Species Act and permit-certainty titles that fall under the Environment and Public Works Committee, and says it has reservations but supports the bill overall."
+ },
+ {
+  "id": "2026-10-30-breakthrough-institute-the-faulty-logic-at",
+  "date": "2026-10-30",
+  "type": "analysis",
+  "outlet": "Breakthrough Institute",
+  "title": "The Faulty Logic at the Heart of Environmentalist Opposition to BAAJA",
+  "url": "https://thebreakthrough.org/issues/energy/the-faulty-logic-at-the-heart-of-environmentalist-opposition-to-baaja",
+  "stance": "supports",
+  "summary": "Breakthrough argued that critics' emissions estimates depend on their assumptions and said more recent modeling shows lower emissions. Its per-year figures attributed to RFF and SEIA do not match either organisation's own page (see resolved)."
+ },
+ {
+  "id": "2026-11-02-rhodium-group-estimating-the-us-energy",
+  "date": "2026-11-02",
+  "type": "analysis",
+  "outlet": "Rhodium Group",
+  "title": "Estimating the US Energy System Impacts of the Bipartisan American Affordability and Jobs Act",
+  "url": "https://rhg.com/?p=24167",
+  "stance": "neutral",
+  "summary": "Rhodium modeled transmission, gas pipeline and data-center ratepayer provisions of the initial text introduced September 30 against a current-policy baseline, and reports 2040 ranges for emissions, household bills and clean-resource build."
+ },
+ {
+  "id": "2026-11-02-apta-transit-endorsement",
+  "date": "2026-11-02",
+  "type": "org_statement",
+  "outlet": "American Public Transportation Association",
+  "title": "Transit association endorses S. 5653",
+  "url": "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/",
+  "stance": "supports",
+  "summary": "The American Public Transportation Association endorsed the bill, citing shorter reviews for repairs to existing transit and passenger rail facilities."
+ },
+ {
+  "id": "2026-11-04-semiconductor-industry-association-sia-urges-senate-to",
+  "date": "2026-11-04",
+  "type": "org_statement",
+  "outlet": "Semiconductor Industry Association",
+  "title": "SIA Urges Senate to Pass Bipartisan Permitting Reform Legislation to Boost U.S. Competitiveness",
+  "url": "https://www.semiconductors.org/sia-urges-senate-to-pass-bipartisan-permitting-reform-legislation-to-boost-u-s-competitiveness/",
+  "stance": "supports",
+  "summary": "SIA said it supports the bill (S. 5653) and called for passage."
+ },
+ {
+  "id": "2026-11-04-heatmap-blue-wave",
+  "date": "2026-11-04",
+  "type": "analysis",
+  "outlet": "Heatmap",
+  "title": "What Does the Blue Wave Mean for Permitting Reform?",
+  "url": "https://heatmap.news/politics/midterms-permitting-reform",
+  "stance": "reporting",
+  "summary": "Reports that after the Nov. 3 elections the bill's odds are worse, that Rep. Huffman wants the Senate to wait, and that Whitehouse and Heinrich plan to proceed with the Nov. 9 vote."
+ },
+ {
+  "id": "2026-11-06-us-chamber-of-coalition-letter-bipartisan-american",
+  "date": "2026-11-06",
+  "type": "org_statement",
+  "outlet": "U.S. Chamber of Commerce",
+  "title": "Coalition letter: Bipartisan American Affordability and Jobs Act of 2026 (PDF)",
+  "url": "https://www.uschamber.com/assets/documents/Coalition-Letter_Bipartisan-American-Affordability-and-Jobs-Act_11.9.26.pdf",
+  "stance": "supports",
+  "summary": "The U.S. Chamber of Commerce and coalition signers urged Congress to pass the Bipartisan American Affordability and Jobs Act of 2026 in a letter dated November 6, 2026. The letter does not cite S. 5653 and does not mention the November 7 substitute."
+ },
+ {
+  "id": "2026-11-06-sierra-club-sierra-club-we-cannot",
+  "date": "2026-11-06",
+  "type": "org_statement",
+  "outlet": "Sierra Club",
+  "title": "Sierra Club: We Cannot Support the Permitting Bill As Currently Written",
+  "url": "https://www.sierraclub.org/press-releases/2026/11/sierra-club-we-cannot-support-permitting-bill-currently-written",
+  "stance": "opposes",
+  "summary": "Sierra Club said the bill has provisions that would help clean energy and lower bills, and that it cannot support the legislation without fundamental changes."
+ },
+ {
+  "id": "2026-11-06-public-citizen-public-citizen-opposes-senate",
+  "date": "2026-11-06",
+  "type": "org_statement",
+  "outlet": "Public Citizen",
+  "title": "Public Citizen Opposes Senate Permitting Bill",
+  "url": "https://www.citizen.org/news/public-citizen-opposes-senate-permitting-bill/",
+  "stance": "opposes",
+  "summary": "Public Citizen said the bill's transmission and ratepayer provisions should be enacted and that its drawbacks outweigh them."
+ },
+ {
+  "id": "2026-11-06-heatmap-levin",
+  "date": "2026-11-06",
+  "type": "analysis",
+  "outlet": "Heatmap",
+  "title": "How an Undecided Congressman Is Thinking Through the Permitting Bill",
+  "url": "https://heatmap.news/politics/mike-levin-permitting-bill",
+  "stance": "reporting",
+  "summary": "Interview with Rep. Mike Levin (D-Calif.), who is undecided on the bill, plus context on Jeffries' and Sen. Mark Kelly's positions."
+ },
+ {
+  "id": "2026-11-06-congressional-research-service-bipartisan-american-affordability-and",
+  "date": "2026-11-06",
+  "type": "gov_document",
+  "outlet": "Congressional Research Service",
+  "title": "Bipartisan American Affordability and Jobs Act (BAAJA) of 2026: Analysis of Division A, Title I, Including National Environmental Policy Act Provisions",
+  "url": "https://www.everycrsreport.com/files/2026-11-06_R49510_b559f79c9bbc7bc0070642c04bd7a99b70d3e75d.html",
+  "stance": "neutral",
+  "summary": "CRS compares each NEPA provision of Division A, Title I as introduced with current law; the report gives statutory deadlines and appropriation levels, not outcome estimates."
+ },
+ {
+  "id": "2026-11-06-chamber-coalition-letter",
+  "date": "2026-11-06",
+  "type": "org_statement",
+  "outlet": "U.S. Chamber of Commerce",
+  "title": "Coalition in Support of the Bipartisan American Affordability and Jobs Act of 2026",
+  "url": "https://www.uschamber.com/energy/coalition-in-support-of-the-bipartisan-american-affordability-and-jobs-act-of-2026",
+  "stance": "supports",
+  "summary": "Coalition letter signed by the U.S. Chamber and national and regional organizations urging passage of the bill."
+ },
+ {
+  "id": "2026-11-06-center-for-climate-new-nationwide-analysis-bipartisan",
+  "date": "2026-11-06",
+  "type": "analysis",
+  "outlet": "Center for Climate and Energy Solutions (C2ES)",
+  "title": "New Nationwide Analysis: Bipartisan Transmission Reforms Would Boost Clean Energy, Cut Power Sector Emissions, Lower Electricity Bills, and Strengthen Grid Reliability",
+  "url": "https://www.c2es.org/?p=25710",
+  "stance": "neutral",
+  "summary": "C2ES and Greenline Insights modeled the bill's interconnection and transmission provisions to 2035 and stated that a delay to 2030 would forgo part of the modeled benefits. The release does not say which text was modeled."
+ },
+ {
+  "id": "2026-11-07-heatmap-last-minute-changes",
+  "date": "2026-11-07",
+  "type": "analysis",
+  "outlet": "Heatmap",
+  "title": "The Last-Minute Changes to the Senate Permitting Deal, Explained",
+  "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+  "stance": "reporting",
+  "summary": "Walks through the manager's amendment changes on transmission, permit certainty and data centers, and notes the cloture vote needs 60 votes."
+ },
+ {
+  "id": "2026-11-07-evergreen-action-why-were-supporting-the",
+  "date": "2026-11-07",
+  "type": "org_statement",
+  "outlet": "Evergreen Action",
+  "title": "Why We're Supporting the Permitting Bill",
+  "url": "https://www.evergreenaction.com/blog/why-were-supporting-the-permitting-bill",
+  "stance": "supports",
+  "summary": "Evergreen Action's leader wrote that the organisation supports the bill and set out why."
+ },
+ {
+  "id": "2026-11-07-defenders-of-wildlife-revised-permitting-bill-fails",
+  "date": "2026-11-07",
+  "type": "org_statement",
+  "outlet": "Defenders of Wildlife",
+  "title": "Revised Permitting Bill Fails to Address Threats to Endangered Species Act",
+  "url": "https://defenders.org/newsroom/revised-permitting-bill-fails-address-threats-endangered-species-act",
+  "stance": "opposes",
+  "summary": "Defenders of Wildlife said it remained opposed to the bill after the revisions and asked the Senate to reject it and leave negotiations to the next Congress."
+ },
+ {
+  "id": "2026-11-08-sierra-club-sierra-club-baaja-remains",
+  "date": "2026-11-08",
+  "type": "org_statement",
+  "outlet": "Sierra Club",
+  "title": "Sierra Club: BAAJA Remains Fundamentally Flawed Despite Manager’s Amendment",
+  "url": "https://www.sierraclub.org/press-releases/2026/11/sierra-club-baaja-remains-fundamentally-flawed-despite-manager-s-amendment",
+  "stance": "opposes",
+  "summary": "Sierra Club said the manager's amendment released Nov. 7 improved the bill but left it flawed, called for an open amendment process, and said it could not support the bill unless more changes were made."
+ },
+ {
+  "id": "2026-11-08-natural-resources-defense-senate-permitting-bill-still",
+  "date": "2026-11-08",
+  "type": "org_statement",
+  "outlet": "Natural Resources Defense Council",
+  "title": "Senate Permitting Bill Still Needs Improvements; Opposed as Written",
+  "url": "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-still-needs-improvements",
+  "stance": "opposes",
+  "summary": "NRDC said it supports the bill's transmission, clean energy and grid provisions and opposes the package as currently written."
+ },
+ {
+  "id": "2026-11-09-the-washington-post-opinion-senate-advances-potentially",
+  "date": "2026-11-09",
+  "type": "analysis",
+  "outlet": "The Washington Post",
+  "title": "Opinion: Senate advances potentially historic permitting reform bill",
+  "url": "https://www.washingtonpost.com/opinions/2026/11/09/senate-advances-potentially-historic-permitting-reform-bill/",
+  "stance": "supports",
+  "summary": "The Post's editorial board wrote that the Senate advanced the permitting deal 73-25 on Monday night and said the bill could mark a historic achievement."
+ },
+ {
+  "id": "2026-11-09-solar-energy-industries-solar-and-storage-industry",
+  "date": "2026-11-09",
+  "type": "org_statement",
+  "outlet": "Solar Energy Industries Association",
+  "title": "Solar and Storage Industry Statement on Bipartisan Permitting Reform Bill Passing First Procedural Vote",
+  "url": "https://seia.org/?p=18691",
+  "stance": "supports",
+  "summary": "SEIA's CEO said the bill delivers lower energy costs, a better grid and more U.S.-made energy, and the statement cites SEIA's own analysis."
+ },
+ {
+  "id": "2026-11-09-senate-democratic-caucus-leader-schumer-statement-after",
+  "date": "2026-11-09",
+  "type": "gov_press_release",
+  "outlet": "Senate Democratic Caucus",
+  "title": "Leader Schumer Statement After Permitting Reform Bill Advances In The Senate",
+  "url": "https://www.democrats.senate.gov/newsroom/press-releases/leader-schumer-statement-after-permitting-reform-bill-advances-in-the-senate",
+  "stance": "mixed",
+  "summary": "Schumer said he is voting to move the debate forward despite outstanding concerns with parts of the bill that he will seek to address through amendments. He credited Sens. Whitehouse and Heinrich."
+ },
+ {
+  "id": "2026-11-09-office-of-sen-van-hollen-statement-on",
+  "date": "2026-11-09",
+  "type": "gov_press_release",
+  "outlet": "Office of Sen. Chris Van Hollen",
+  "title": "Van Hollen Statement on Current Opposition to Moving Forward with Permitting Reform Legislation",
+  "url": "https://www.vanhollen.senate.gov/news/press-releases/van-hollen-statement-on-current-opposition-to-moving-forward-with-permitting-reform-legislation",
+  "stance": "opposes",
+  "summary": "Van Hollen said he voted against moving forward, citing offshore wind and Chesapeake Bay provisions, and said he is putting forward changes."
+ },
+ {
+  "id": "2026-11-09-office-of-sen-senator-markey-statement-on",
+  "date": "2026-11-09",
+  "type": "gov_press_release",
+  "outlet": "Office of Sen. Edward J. Markey",
+  "title": "Senator Markey Statement on Permitting Reform Deal",
+  "url": "https://www.markey.senate.gov/news/press-releases/senator-markey-statement-on-permitting-reform-deal",
+  "stance": "opposes",
+  "summary": "Markey said he will vote against the motion to invoke cloture, citing timing, transparency, and threats to clean air, water and Tribes."
+ },
+ {
+  "id": "2026-11-09-office-of-sen-sen-merkley-statement-on",
+  "date": "2026-11-09",
+  "type": "gov_press_release",
+  "outlet": "Office of Sen. Jeff Merkley",
+  "title": "Sen. Merkley Statement on Senate Permitting Legislation",
+  "url": "https://www.merkley.senate.gov/sen-merkley-statement-on-senate-permitting-legislation/",
+  "stance": "opposes",
+  "summary": "Merkley said transmission permitting reform is essential, said the bill accelerates the extraction and burning of fossil fuels, and said he would vote against the bill before the Senate that day."
+ },
+ {
+  "id": "2026-11-09-office-of-sen-kaine-statement-on-permitting",
+  "date": "2026-11-09",
+  "type": "gov_press_release",
+  "outlet": "Office of Sen. Tim Kaine",
+  "title": "Kaine Statement on Permitting Reform Legislation",
+  "url": "https://www.kaine.senate.gov/press-releases/kaine-statement-on-permitting-reform-legislation",
+  "stance": "mixed",
+  "summary": "Kaine said he is voting against the procedural motion over changes to the National Historic Preservation Act and will seek amendments that could lead him to support the bill."
+ },
+ {
+  "id": "2026-11-09-natural-resources-defense-president-trump-undermines-baaja",
+  "date": "2026-11-09",
+  "type": "org_statement",
+  "outlet": "Natural Resources Defense Council",
+  "title": "President Trump Undermines BAAJA As Senate Debate Begins",
+  "url": "https://www.nrdc.org/press-releases/president-trump-undermines-baaja-senate-debate-begins",
+  "stance": "mixed",
+  "summary": "NRDC's release says NRDC announced opposition to BAAJA as written in the Manager's Amendment over the weekend and that an amendment process keeps the door open to fixes; its president said NRDC supports the bill's transmission, clean energy and grid provisions and said the current package weakens environmental safeguards and public participation requirements."
+ },
+ {
+  "id": "2026-11-09-national-association-of-us-senate-advances-bipartisan",
+  "date": "2026-11-09",
+  "type": "org_statement",
+  "outlet": "National Association of Counties",
+  "title": "U.S. Senate advances Bipartisan American Affordability and Jobs Act in initial procedural vote",
+  "url": "https://www.naco.org/news/us-senate-advances-bipartisan-american-affordability-and-jobs-act-initial-procedural-vote",
+  "stance": "supports",
+  "summary": "NACo said the November 7 substitute kept county provisions such as cooperating-agency status in NEPA reviews and that it continues to support the bill, ahead of the November 9 vote. A later November 10 update on the same page reports the 73-25 cloture vote."
+ },
+ {
+  "id": "2026-11-09-executive-office-of-s-5653-bipartisan-american",
+  "date": "2026-11-09",
+  "type": "gov_document",
+  "outlet": "Executive Office of the President, Office of Management and Budget",
+  "title": "S. 5653 - Bipartisan American Affordability and Jobs Act of 2026 (Statement of Administration Policy)",
+  "url": "https://www.whitehouse.gov/wp-content/uploads/2026/11/SAP-S5653.pdf",
+  "stance": "supports",
+  "summary": "The Statement of Administration Policy, dated November 9, 2026, says the Administration strongly supports passage of S. 5653 and that his advisors would recommend the President sign it. The SAP does not say which text it reacts to (the September 30 bill or the November 7 substitute), and it names no requested changes in the portion read."
+ },
+ {
+  "id": "2026-11-09-environmental-defense-fund-statement-senate-to-hold",
+  "date": "2026-11-09",
+  "type": "org_statement",
+  "outlet": "Environmental Defense Fund",
+  "title": "Statement: Senate to hold initial vote on permitting bill",
+  "url": "https://www.edf.org/media/statement-senate-hold-initial-vote-permitting-bill",
+  "stance": "mixed",
+  "summary": "EDF's president said the latest version contains reforms to get clean energy on the grid and also unwinds protections for air, water and communities, and that EDF would keep working for improvements; the statement says a positive vote that day would let the process move forward."
+ },
+ {
+  "id": "2026-11-09-clean-energy-and-signon-letter-bipartisan-american",
+  "date": "2026-11-09",
+  "type": "org_statement",
+  "outlet": "Clean Energy and business coalition letter (C2ES listed as host)",
+  "title": "Sign-on Letter: Bipartisan American Affordability and Jobs Act of 2026 (Senate Committee Leadership)",
+  "url": "https://www.c2es.org/wp-content/uploads/2026/11/Sign-on-Letter_Bipartisan-American-Affordability-and-Jobs-Act-of-2026_Senate-Committee-Leadership-1.pdf",
+  "stance": "supports",
+  "summary": "Eighty-six organisations signed a letter dated November 9, 2026 to the four Senate committee leaders encouraging passage of the bill. The letter does not mention the November 7 substitute."
+ },
+ {
+  "id": "2026-11-09-clean-air-task-revisions-to-baaja-permitting",
+  "date": "2026-11-09",
+  "type": "org_statement",
+  "outlet": "Clean Air Task Force",
+  "title": "Revisions to BAAJA permitting certainty provisions fall short of addressing risks",
+  "url": "https://www.catf.us/2026/11/revisions-baaja-permitting-certainty-provisions-fall-short-addressing-risks/",
+  "stance": "mixed",
+  "summary": "CATF says the November 7 manager's amendment reduces but does not eliminate risks that section 1401 poses to future greenhouse-gas and other pollution control standards."
+ },
+ {
+  "id": "2026-11-09-bommarito-consulting-baajas-first-senate-vote",
+  "date": "2026-11-09",
+  "type": "analysis",
+  "outlet": "Bommarito Consulting",
+  "title": "BAAJA’s First Senate Vote: Who Voted Yes, Who Voted No",
+  "url": "https://bommaritollc.com/insights/baaja-senate-vote-november-2026/",
+  "stance": "reporting",
+  "summary": "The consultancy's roll-call comparison, updated Nov. 11, compares roll calls 257 and 258 and lists the senators who did not vote on one or the other."
+ },
+ {
+  "id": "2026-11-09-american-clean-power-acp-urges-senators-to",
+  "date": "2026-11-09",
+  "type": "org_statement",
+  "outlet": "American Clean Power Association",
+  "title": "ACP Urges Senators to Move Permitting Reform Forward",
+  "url": "https://cleanpower.org/news/acp-urges-senators-to-move-permitting-reform-forward/",
+  "stance": "supports",
+  "summary": "ACP said the Senate vote was a step toward modernizing permitting and urged senators to vote yes on cloture."
+ },
+ {
+  "id": "2026-11-10-third-way-statement-on-the-successful",
+  "date": "2026-11-10",
+  "type": "org_statement",
+  "outlet": "Third Way",
+  "title": "Statement on the Successful Cloture Vote for the Bipartisan American Affordability and Jobs Act",
+  "url": "https://www.thirdway.org/press/statement-on-the-successful-cloture-vote-for-the-bipartisan-american-affordability-and-jobs-act",
+  "stance": "supports",
+  "summary": "Third Way said it supports passing the bill this year, cited the Senate's support, and thanked the negotiators for the manager's amendment. The statement gives no vote tally."
+ },
+ {
+  "id": "2026-11-10-office-of-sen-senator-armstrong-praises-senate",
+  "date": "2026-11-10",
+  "type": "gov_press_release",
+  "outlet": "Office of Sen. Alan Armstrong",
+  "title": "Senator Armstrong Praises Senate Vote to Advance Landmark Bipartisan Permitting Reform Legislation",
+  "url": "https://www.armstrong.senate.gov/senator-armstrong-praises-senate-vote-to-advance-landmark-bipartisan-permitting-reform-legislation/",
+  "stance": "supports",
+  "summary": "Armstrong said the 73-25 cloture vote on the motion to proceed to H.R. 2347 was a major step forward and urged the Senate to pass the bill."
+ },
+ {
+  "id": "2026-11-10-office-of-sen-bennet-statement-on-permitting",
+  "date": "2026-11-10",
+  "type": "gov_press_release",
+  "outlet": "Office of Sen. Michael Bennet",
+  "title": "Bennet Statement on Permitting Reform Vote",
+  "url": "https://www.bennet.senate.gov/2026/11/10/bennet-statement-on-permitting-reform-vote/",
+  "stance": "opposes",
+  "summary": "Bennet said he voted against advancing the bill, citing protection of Tribal cultural resources and changes to public engagement, and that he wants the bill vetted more thoroughly."
+ },
+ {
+  "id": "2026-11-10-mcguirewoods-addressing-concerns-of-utilities",
+  "date": "2026-11-10",
+  "type": "analysis",
+  "outlet": "McGuireWoods",
+  "title": "Addressing Concerns of Utilities and Other Stakeholders, Senate Advances Bipartisan Permitting Reform Legislation",
+  "url": "https://www.mcguirewoods.com/client-resources/alerts/2026/11/addressing-concerns-of-utilities-and-other-stakeholders-senate-advances-bipartisan-permitting-reform-legislation/",
+  "stance": "neutral",
+  "summary": "The McGuireWoods alert describes the November 7 substitute's changes for utilities, including exemptions for certain vertically integrated utilities and a one-year state-approval step before federal siting, and the 73-25 cloture vote."
+ },
+ {
+  "id": "2026-11-10-earthjustice-congress-tweaks-permitting-bill",
+  "date": "2026-11-10",
+  "type": "org_statement",
+  "outlet": "Earthjustice",
+  "title": "Congress Tweaks Permitting Bill, But Deal Remains Fatally Flawed",
+  "url": "https://earthjustice.org/?p=57975",
+  "stance": "opposes",
+  "summary": "Earthjustice's analysis of the Nov. 7 substitute says it leaves the 'forever permits' issue unfixed, leaves the 'best available science' definition compromised, and adds nuclear fuel-cycle licensing provisions, and urges senators to shelve the version."
+ },
+ {
+  "id": "2026-11-10-congressional-record-senate-congressional-record-senate-november",
+  "date": "2026-11-10",
+  "type": "gov_document",
+  "outlet": "Congressional Record (Senate)",
+  "title": "Congressional Record, Senate, November 10, 2026 (floor remarks, permitting reform)",
+  "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
+  "stance": "supports",
+  "summary": "Lee's floor remarks on permitting reform state that current permitting processes delay energy projects and that more energy on the grid is needed."
+ },
+ {
+  "id": "2026-11-11-white-and-case-senate-permitting-bill-bolsters",
+  "date": "2026-11-11",
+  "type": "analysis",
+  "outlet": "White & Case LLP",
+  "title": "Senate permitting bill bolsters data center provisions, moves to full vote",
+  "url": "https://www.whitecase.com/insight-alert/senate-permitting-bill-bolsters-data-center-provisions-moves-full-vote",
+  "stance": "neutral",
+  "summary": "The White & Case alert (dated 11 November 2026) says the Senate cleared cloture on Nov. 9 following the Nov. 7 release of the Manager's Substitute Amendment, and summarizes the bill's data center and large load provisions."
+ },
+ {
+  "id": "2026-11-11-earthjustice-the-permitting-bill-will",
+  "date": "2026-11-11",
+  "type": "analysis",
+  "outlet": "Earthjustice",
+  "title": "The permitting bill will let the Trump administration ignore NEPA",
+  "url": "https://earthjustice.org/experts/sambhav-sankar/the-permitting-bill-will-let-the-trump-administration-ignore-nepa",
+  "stance": "opposes",
+  "summary": "Earthjustice's Sankar wrote that Section 1110 limits a court's NEPA remedy to remand without vacatur or injunction and argued that the Administrative Procedure Act would not preserve injunctive relief."
+ },
+ {
+  "id": "2026-11-16-congressional-record-energy-senate-floor-remarks",
+  "date": "2026-11-16",
+  "type": "gov_document",
+  "outlet": "Congressional Record",
+  "title": "Energy (Senate floor remarks)",
+  "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-16/html/CREC-2026-11-16-pt1-PgS5676.htm",
+  "stance": "opposes",
+  "summary": "Sen. Markey says on the Senate floor that the permitting bill is sold as an affordability fix but makes it harder for communities to challenge projects, and raises data centers on public lands."
+ },
+ {
+  "id": "2026-11-16-center-for-progressive-reform-scholars-letter-re-the-biparti",
+  "date": "2026-11-16",
+  "type": "org_statement",
+  "outlet": "Center for Progressive Reform (scholars' letter)",
+  "title": "Re: The Bipartisan American Affordability and Jobs Act of 2026 (S. 5653 / H.R. 2347): Twelve Provisions That Should Not Become Law",
+  "url": "https://cpr-assets.s3.amazonaws.com/wp/uploads/2026/11/legal-scholars-baaja-senate-ltr-111626-update.pdf",
+  "stance": "opposes",
+  "summary": "Environmental and energy law scholars write to Senate Democratic leaders that BAAJA would damage NEPA, the Clean Water Act and the Endangered Species Act; the letter is dated November 13 and was updated with more signatures on November 16."
+ },
+ {
+  "id": "2026-11-16-canary-media-permitting-reform-is-a-big-controversial-bet-fo",
+  "date": "2026-11-16",
+  "type": "analysis",
+  "outlet": "Canary Media",
+  "title": "Permitting reform is a big, controversial bet for the energy transition",
+  "url": "https://www.canarymedia.com/articles/politics/permitting-reform-uncertain-bet",
+  "stance": "mixed",
+  "summary": "Canary Media's chief reporter lays out the bill as a three-part bet by Democrats and clean energy advocates, and notes the Senate voted 70-27 Monday to end debate."
+ },
+ {
+  "id": "2026-11-19-u-s-chamber-of-commerce-u-s-chamber-senate-vote-on-permitting-bill-ma",
+  "date": "2026-11-19",
+  "type": "org_statement",
+  "outlet": "U.S. Chamber of Commerce",
+  "title": "U.S. Chamber: Senate Vote on Permitting Bill Marks Turning Point for American Energy and Infrastructure",
+  "url": "https://www.uschamber.com/energy/u-s-chamber-senate-vote-on-permitting-bill-marks-turning-point-for-american-energy-and-infrastructure",
+  "stance": "supports",
+  "summary": "The Chamber welcomed Senate passage and urged House members to pass the bill quickly and send it to the President."
+ },
+ {
+  "id": "2026-11-19-senate-epw-committee-majorit-senate-passes-capito-s-bipartisan-american-afforda",
+  "date": "2026-11-19",
+  "type": "gov_press_release",
+  "outlet": "Senate EPW Committee (Majority)",
+  "title": "Senate Passes Capito’s Bipartisan American Affordability and Jobs Act",
+  "url": "https://www.epw.senate.gov/press/rep/senate-passes-capitos-bipartisan-american-affordability-and-jobs-act/",
+  "stance": "supports",
+  "summary": "Capito says passage is a step toward addressing affordability and urges House leaders to pass BAAJA expeditiously."
+ },
+ {
+  "id": "2026-11-19-senate-environment-and-public-works-committee-ranking-member-whitehou",
+  "date": "2026-11-19",
+  "type": "gov_press_release",
+  "outlet": "Senate Environment and Public Works Committee (Ranking Member Whitehouse)",
+  "title": "Whitehouse Cheers Senate Passage of Landmark Bipartisan American Affordability and Jobs Act",
+  "url": "https://www.epw.senate.gov/press/dem/whitehouse-cheers-senate-passage-of-landmark-bipartisan-american-affordability-and-jobs-act/",
+  "stance": "supports",
+  "summary": "Whitehouse, a lead sponsor, welcomed Senate passage and said the bill now heads to the House."
+ },
+ {
+  "id": "2026-11-19-sen-martin-heinrich-heinrich-senate-passage-of-landmark-bipartisan-pe",
+  "date": "2026-11-19",
+  "type": "gov_press_release",
+  "outlet": "Sen. Martin Heinrich",
+  "title": "Heinrich: Senate Passage of Landmark Bipartisan Permitting Deal Will Lower Electricity Bills, Hold Data Centers Accountable, Create Over One Hundred Thousand Jobs, Reduce Carbon Emissions",
+  "url": "https://www.heinrich.senate.gov/newsroom/press-releases/heinrich-senate-passage-of-landmark-bipartisan-permitting-deal-will-lower-electricity-bills-hold-data-centers-accountable-create-over-one-hundred-thousand-jobs-reduce-carbon-emissions",
+  "stance": "supports",
+  "summary": "Heinrich, a lead sponsor, welcomed Senate passage and said the bill must still pass the House before reaching the President."
+ },
+ {
+  "id": "2026-11-19-natural-resources-defense-council-senate-permitting-bill-remains-unac",
+  "date": "2026-11-19",
+  "type": "org_statement",
+  "outlet": "Natural Resources Defense Council",
+  "title": "Senate Permitting Bill Remains Unacceptable",
+  "url": "https://www.nrdc.org/press-releases/nrdc-senate-permitting-bill-remains-unacceptable",
+  "stance": "opposes",
+  "summary": "NRDC said it opposes the Senate-passed bill and urged the House to reject it and try again next year."
+ },
+ {
+  "id": "2026-11-19-american-petroleum-institute-api-applauds-senate-passage-of-bipartisa",
+  "date": "2026-11-19",
+  "type": "org_statement",
+  "outlet": "American Petroleum Institute",
+  "title": "API Applauds Senate Passage of Bipartisan Permitting Reform Legislation",
+  "url": "https://www.api.org/news-policy-and-issues/news/2026/11/19/api-applauds-senate-passage-of-bipartisan-permitting-reform-legislation",
+  "stance": "supports",
+  "summary": "API welcomed Senate passage and credited the four sponsors, without addressing House timing."
+ },
+ {
+  "id": "2026-11-20-the-white-house-what-they-are-saying-send-the-bipartisan-american-aff",
+  "date": "2026-11-20",
+  "type": "gov_press_release",
+  "outlet": "The White House",
+  "title": "WHAT THEY ARE SAYING: Send the Bipartisan American Affordability and Jobs Act to President Trump’s Desk",
+  "url": "https://www.whitehouse.gov/releases/2026/11/what-they-are-saying-send-the-bipartisan-american-affordability-and-jobs-act-to-president-trumps-desk/",
+  "stance": "supports",
+  "summary": "The White House release quotes President Trump on Senate passage and says the House now has the opportunity to finish the job and send the bill to his desk."
+ },
+ {
+  "id": "2026-11-20-senate-environment-and-public-works-committee-chairman-capito-capito",
+  "date": "2026-11-20",
+  "type": "gov_press_release",
+  "outlet": "Senate Environment and Public Works Committee (Chairman Capito)",
+  "title": "Capito Commends BAAJA Passage, Thanks Supporters and Urges House Approval",
+  "url": "https://www.epw.senate.gov/press/rep/capito-commends-baaja-passage-thanks-supporters-and-urges-house-approval/",
+  "stance": "supports",
+  "summary": "Capito's post-passage floor speech urged House colleagues to act quickly when they return and send the bill to President Trump."
+ },
+ {
+  "id": "2026-11-20-sen-mike-lee-senate-resoundingly-passes-mike-lee-s-landmark-bipartisan-american",
+  "date": "2026-11-20",
+  "type": "gov_press_release",
+  "outlet": "Sen. Mike Lee",
+  "title": "Senate Resoundingly Passes Mike Lee’s Landmark Bipartisan American Affordability and Jobs Act",
+  "url": "https://www.lee.senate.gov/news/press-releases/senate-resoundingly-passes-mike-lees-landmark-bipartisan-american-affordability-and-jobs-act/",
+  "stance": "supports",
+  "summary": "Lee celebrates Senate passage, says families will save hundreds of dollars a year on power bills, and urges the House to act quickly."
+ },
+ {
+  "id": "2026-11-20-new-democrat-coalition-new-democrat-coalition-leaders-release-stateme",
+  "date": "2026-11-20",
+  "type": "gov_press_release",
+  "outlet": "New Democrat Coalition",
+  "title": "New Democrat Coalition Leaders Release Statement on Senate Passage of Bipartisan Permitting Reform",
+  "url": "https://newdemocratcoalition.house.gov/media-center/press-releases/new-democrat-coalition-leaders-release-statement-on-senate-passage-of-bipartisan-permitting-reform",
+  "stance": "supports",
+  "summary": "The coalition's leaders welcomed Senate passage, regretted that the managers' amendment was left out, and said they would seek changes in the House while urging action before year end."
+ },
+ {
+  "id": "2026-11-20-national-association-of-manu-senate-passes-permitting-reform-a-major-bipartisan",
+  "date": "2026-11-20",
+  "type": "org_statement",
+  "outlet": "National Association of Manufacturers",
+  "title": "Senate Passes Permitting Reform, a Major Bipartisan Win for Manufacturers",
+  "url": "https://nam.org/senate-passes-permitting-reform-a-major-bipartisan-win-for-manufacturers/",
+  "stance": "supports",
+  "summary": "NAM says Senate passage is a win for manufacturers and cites its estimate that the bill could cut permitting costs by more than a third."
+ },
+ {
+  "id": "2026-11-20-heatmap-the-permitting-bill-s-next-battleground",
+  "date": "2026-11-20",
+  "type": "analysis",
+  "outlet": "Heatmap",
+  "title": "The Permitting Bill’s Next Battleground",
+  "url": "https://heatmap.news/politics/baaja-house",
+  "stance": "neutral",
+  "summary": "Heatmap lays out the House path: Johnson's plan to try suspension the week after Thanksgiving, the two-thirds math, Democratic splits, and the Senate sponsors' wish to pass the stalled tribal amendment later."
+ },
+ {
+  "id": "2026-11-20-environmental-defense-fund-statement-on-u-s-senate-passage-of-permitt",
+  "date": "2026-11-20",
+  "type": "org_statement",
+  "outlet": "Environmental Defense Fund",
+  "title": "Statement on U.S. Senate passage of permitting reform legislation",
+  "url": "https://www.edf.org/media/statement-us-senate-passage-permitting-reform-legislation",
+  "stance": "mixed",
+  "summary": "EDF said the bill gets some things right on transmission and data center costs, regretted that the Senate adopted no improvements, and urged the House to make changes."
+ },
+ {
+  "id": "2026-11-20-american-enterprise-institut-baaja-now-or-baaja-later",
+  "date": "2026-11-20",
+  "type": "analysis",
+  "outlet": "American Enterprise Institute (The Honest Broker)",
+  "title": "BAAJA Now or BAAJA Later?",
+  "url": "https://www.aei.org/commentary/baaja-now-or-baaja-later/",
+  "stance": "neutral",
+  "summary": "Pielke compares lame-duck and next-Congress passage using post-midterm precedents and cites Democrats split on timing, including Jeffries and Huffman."
+ }
+]

@@ -1999,6 +1999,42 @@
    "set": {
     "summary": "At an EPW hearing Whitehouse said it made little sense to pursue bipartisan permitting reform while the administration would not faithfully execute the law, citing the Revolution Wind stop-work order and canceled solar approvals. He also said he might oppose routine water and highway bills."
    }
+  },
+  "2026-10-21-nationaltrust-coalition-letter-post": {
+   "reason": "2026-11-22 section-refs pass (data/research/sweep-2026-11-22): stance on the bill re-read from the page; backs faster, more predictable reviews and objects only to the historic preservation provisions.",
+   "set": {
+    "stance": "mixed"
+   }
+  },
+  "2026-11-06-center-for-climate-new-nationwide-analysis-bipartisan": {
+   "reason": "2026-11-22 section-refs pass (data/research/sweep-2026-11-22): stance on the bill re-read from the page; a modeling release that argues for the bill.",
+   "set": {
+    "stance": "supports"
+   }
+  },
+  "2026-11-16-canary-media-permitting-reform-is-a-big-controversial-bet-fo": {
+   "reason": "2026-11-22 section-refs pass (data/research/sweep-2026-11-22): stance on the bill re-read from the page; a news analysis that sets out both sides and takes none.",
+   "set": {
+    "stance": "reporting"
+   }
+  },
+  "2026-11-20-heatmap-the-permitting-bill-s-next-battleground": {
+   "reason": "2026-11-22 section-refs pass (data/research/sweep-2026-11-22): stance on the bill re-read from the page; a news analysis of the House vote count that quotes both sides and takes none.",
+   "set": {
+    "stance": "reporting"
+   }
+  },
+  "2026-11-20-american-enterprise-institut-baaja-now-or-baaja-later": {
+   "reason": "2026-11-22 section-refs pass (data/research/sweep-2026-11-22): stance on the bill re-read from the page; the piece ends \"Pass BAAJA now.\".",
+   "set": {
+    "stance": "supports"
+   }
+  },
+  "2026-11-10-congressional-record-senate-congressional-record-senate-november": {
+   "reason": "2026-11-22 section-refs pass (data/research/sweep-2026-11-22): stance on the bill re-read from the page; the full Senate daily Record for the day, which takes no position.",
+   "set": {
+    "stance": "reporting"
+   }
   }
  }
 }

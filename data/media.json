@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21",
+ "generated": "2026-11-22",
  "items": [
   {
    "id": "2026-11-21-x-thirdwayenergy-there-s-a-line-item-for-transmission-costs-when-you",
@@ -281,6 +281,53 @@
    "verified": true
   },
   {
+   "type": "org_statement",
+   "outlet": "Forest Service Employees for Environmental Ethics",
+   "author": "Forest Service Employees for Environmental Ethics",
+   "title": "The Senate Passed BAAJA 62–33 – Now the House Can Stop It. Call Your Representative!",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "summary": "FSEEE tells members the Senate passed the bill 62-33 and urges calls to House members, saying the bill locks in permits, limits public comment and removes courts' power to halt unlawful projects.",
+   "stance": "opposes",
+   "quote": {
+    "text": "BAAJA is not law yet, and it can still be defeated.",
+    "speaker": "Forest Service Employees for Environmental Ethics"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "date": "2026-11-20",
+   "id": "2026-11-20-the-senate-passed-baaja-62-33-now-the-house-can-stop-it-call",
+   "verified": true
+  },
+  {
+   "type": "gov_press_release",
+   "outlet": "Sen. Cynthia Lummis (Senate Western Caucus)",
+   "author": "Sen. Cynthia Lummis",
+   "title": "Senate Western Caucus Applauds Passage of Bipartisan Permitting Bill that Delivers Wins for the West",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "summary": "Senate Western Caucus chair Lummis and colleagues, including Capito, Lee, Thune, Barrasso and Murkowski, welcome the 62-33 Senate passage and describe what the bill does for NEPA, the Clean Water Act and the Endangered Species Act.",
+   "stance": "supports",
+   "quote": {
+    "text": "The Senate voted to put western states back in the driver’s seat by ensuring state wildlife experts lead on endangered species decisions",
+    "speaker": "Sen. Cynthia Lummis"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "permit-certainty"
+   ],
+   "sector": "congress",
+   "date": "2026-11-20",
+   "id": "2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt",
+   "verified": true
+  },
+  {
    "date": "2026-11-20",
    "type": "gov_press_release",
    "outlet": "Senate Environment and Public Works Committee (Chairman Capito)",
@@ -460,7 +507,7 @@
    "title": "The Permitting Bill’s Next Battleground",
    "url": "https://heatmap.news/politics/baaja-house",
    "summary": "Heatmap lays out the House path: Johnson's plan to try suspension the week after Thanksgiving, the two-thirds math, Democratic splits, and the Senate sponsors' wish to pass the stalled tribal amendment later.",
-   "stance": "neutral",
+   "stance": "reporting",
    "quote": {
     "text": "said earlier this week that he would try to pass BAAJA under suspension, a process that would send it straight to the floor for a vote the week after Thanksgiving",
     "speaker": "Emily Pontecorvo, reporter, Heatmap, describing Speaker Mike Johnson"
@@ -660,7 +707,7 @@
    "title": "BAAJA Now or BAAJA Later?",
    "url": "https://www.aei.org/commentary/baaja-now-or-baaja-later/",
    "summary": "Pielke compares lame-duck and next-Congress passage using post-midterm precedents and cites Democrats split on timing, including Jeffries and Huffman.",
-   "stance": "neutral",
+   "stance": "supports",
    "quote": {
     "text": "No one likes the permitting system we have today, so there is a consensus on the need for reform.",
     "speaker": "Roger Pielke Jr."
@@ -2904,7 +2951,7 @@
    "url": "https://www.canarymedia.com/articles/politics/permitting-reform-uncertain-bet",
    "verified": true,
    "summary": "Canary Media's chief reporter lays out the bill as a three-part bet by Democrats and clean energy advocates, and notes the Senate voted 70-27 Monday to end debate.",
-   "stance": "mixed",
+   "stance": "reporting",
    "quote": {
     "text": "The Senate bipartisan permitting bill is essentially an enormous three-part bet by the Democrats and clean energy advocates who support it.",
     "speaker": "Jeff St. John, Canary Media"
@@ -2914,6 +2961,30 @@
     "congress"
    ],
    "sector": "media"
+  },
+  {
+   "type": "analysis",
+   "outlet": "One First (Substack)",
+   "author": "Steve Vladeck",
+   "title": "263. Congress Should Press Pause on BAAJA",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "summary": "Georgetown law professor Steve Vladeck (an Earthjustice trustee, as he discloses) praises the transmission title but argues the judicial-review limits and project-certainty title warrant more deliberation than a lame-duck vote allows.",
+   "stance": "mixed",
+   "quote": {
+    "text": "BAAJA’s good parts are reason enough to get the rest of it right; its bad parts should worry you whatever your views on environmental policy",
+    "speaker": "Steve Vladeck"
+   },
+   "topics": [
+    "courts",
+    "nepa",
+    "permit-certainty",
+    "transmission",
+    "data-centers"
+   ],
+   "sector": "academic",
+   "date": "2026-11-16",
+   "id": "2026-11-16-263-congress-should-press-pause-on-baaja",
+   "verified": true
   },
   {
    "id": "2026-11-15-x-senjeffmerkley-the-permitting-bill-needs-work-it-opens-the-g",
@@ -3670,6 +3741,49 @@
     "text": "Senators voted 62-21 Nov. 10 to begin consideration of the Bipartisan American Affordability and Jobs Act (BAAJA), following a 73-25 procedural vote Nov. 9. Neither vote constituted final passage, according to Senate records.",
     "speaker": "Charles Wallace, reporter, Western Livestock Journal"
    }
+  },
+  {
+   "type": "analysis",
+   "outlet": "Bloomberg Law",
+   "author": "David Tatel",
+   "title": "The Senate Permitting Bill Deserves a ‘Hard Look’ Before a Vote",
+   "url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "summary": "Retired D.C. Circuit Judge David Tatel argues the bill's remedy limits would leave NEPA suits with no meaningful relief, including suits brought under the Administrative Procedure Act.",
+   "stance": "opposes",
+   "quote": {
+    "text": "If a Senate permitting bill becomes law, NEPA cases may be virtually futile.",
+    "speaker": "David Tatel, retired D.C. Circuit judge"
+   },
+   "topics": [
+    "courts",
+    "nepa"
+   ],
+   "sector": "court",
+   "date": "2026-11-12",
+   "id": "2026-11-12-the-senate-permitting-bill-deserves-a-hard-look-before-a-vot",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "Rhodium Group",
+   "author": "Hannah Kolus, Michael Gaffney, Nathan Wiens, Ben King",
+   "title": "The Impact of Permitting Reform on State-level Residential Electricity Prices and Bills",
+   "url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
+   "summary": "Rhodium Group models key provisions on transmission, pipelines, data-center ratepayer protection and wind permit certainty and finds lower residential electricity prices and bills in at least 46 states by 2035.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Residential electricity prices and bills decline in at least 46 states in 2035 with the full set of modeled BAAJA provisions.",
+    "speaker": "Rhodium Group"
+   },
+   "topics": [
+    "transmission",
+    "data-centers",
+    "wind-solar"
+   ],
+   "sector": "think_tank",
+   "date": "2026-11-12",
+   "id": "2026-11-12-the-impact-of-permitting-reform-on-state-level-residential-e",
+   "verified": true
   },
   {
    "date": "2026-11-12",
@@ -4615,7 +4729,7 @@
    "url": "https://www.govinfo.gov/content/pkg/CREC-2026-11-10/pdf/CREC-2026-11-10-senate.pdf",
    "verified": true,
    "summary": "Lee's floor remarks on permitting reform state that current permitting processes delay energy projects and that more energy on the grid is needed.",
-   "stance": "supports",
+   "stance": "reporting",
    "topics": [
     "transmission",
     "permit-certainty",
@@ -5122,6 +5236,30 @@
    "sector": "trade_association"
   },
   {
+   "type": "org_statement",
+   "outlet": "Union of Concerned Scientists",
+   "author": "David Watkins",
+   "title": "Weekend Amendment Fails to Address Fossil Fuel Giveaways in Senate Permitting Deal",
+   "url": "https://www.ucs.org/about/news/baaja-amendment-fails-improve-bill",
+   "summary": "UCS's David Watkins says the substitute amendment improves the transmission and permit-certainty language but leaves the bill's imbalance in place and would make compliance with four environmental laws largely voluntary.",
+   "stance": "opposes",
+   "quote": {
+    "text": "If enacted as currently drafted, BAAJA would be the most significant legislative reversal in environmental and community protections in decades.",
+    "speaker": "David Watkins, Union of Concerned Scientists"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "historic-preservation",
+    "fossil"
+   ],
+   "sector": "environmental_group",
+   "date": "2026-11-09",
+   "id": "2026-11-09-weekend-amendment-fails-to-address-fossil-fuel-giveaways-in-",
+   "verified": true
+  },
+  {
    "id": "2026-11-09-the-washington-sun-senators-advance-bipartisan-permitting",
    "date": "2026-11-09",
    "type": "news",
@@ -5161,6 +5299,30 @@
     "text": "This could mark a historic achievement and a chance to reinvigorate the country’s ability to meet its energy needs.",
     "speaker": "The Washington Post Editorial Board"
    }
+  },
+  {
+   "type": "analysis",
+   "outlet": "CounterPunch",
+   "author": "Katie Bilodeau",
+   "title": "The “Bipartisan American Affordability and Jobs Act” Reveals That Ecosystems and the People Who Defend Them are “Red Tape”",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "summary": "Wilderness Watch legislative director Katie Bilodeau argues the bill redefines major federal action, locks in permits through project certainty and cuts the lawsuit window to 150 days.",
+   "stance": "opposes",
+   "quote": {
+    "text": "BAAJA will do an incredibly effective job at removing much of the remaining protective measures that these three laws still have.",
+    "speaker": "Katie Bilodeau, Wilderness Watch"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "permit-certainty",
+    "courts"
+   ],
+   "sector": "environmental_group",
+   "date": "2026-11-09",
+   "id": "2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t",
+   "verified": true
   },
   {
    "id": "2026-11-09-source-new-mexico-us-senate-advances-new",
@@ -5246,6 +5408,30 @@
     "text": "The #Senate invoked cloture on the motion to proceed to H.R. 2347, vehicle for the permitting reform bill, 73-25.",
     "speaker": "Senate Press Gallery"
    }
+  },
+  {
+   "type": "analysis",
+   "outlet": "American Farm Bureau Federation",
+   "author": "American Farm Bureau Federation",
+   "title": "Senate Permitting Bill Needs Additional Protections for Agriculture",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "summary": "The Farm Bureau backs the bill's NEPA, ESA and NHPA changes but says its transmission siting title and Clean Water Act provisions fall short for landowners.",
+   "stance": "mixed",
+   "quote": {
+    "text": "Farm Bureau shares BAAJA’s goal of timely, predictable permitting, and the bill’s environmental review reforms and Section 404 improvements are real progress.",
+    "speaker": "American Farm Bureau Federation"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "transmission",
+    "clean-water-act",
+    "historic-preservation"
+   ],
+   "sector": "trade_association",
+   "date": "2026-11-09",
+   "id": "2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri",
+   "verified": true
   },
   {
    "id": "2026-11-09-senate-democratic-caucus-leader-schumer-statement-after",
@@ -6133,7 +6319,7 @@
    "url": "https://www.c2es.org/?p=25710",
    "verified": true,
    "summary": "C2ES and Greenline Insights modeled the bill's interconnection and transmission provisions to 2035 and stated that a delay to 2030 would forgo part of the modeled benefits. The release does not say which text was modeled.",
-   "stance": "neutral",
+   "stance": "supports",
    "topics": [
     "transmission",
     "wind-solar",
@@ -7319,7 +7505,7 @@
    "url": "https://savingplaces.org/section106/updates/preservation-coalition-letter-s5653",
    "verified": true,
    "summary": "The National Trust posts the coalition letter and says it supports faster reviews but not at the cost of Section 106 protections. It urges senators to oppose the bill as written.",
-   "stance": "opposes",
+   "stance": "mixed",
    "quote": {
     "text": "We support making federal reviews more efficient and predictable, but not at the expense of these essential protections or the voices of the communities they serve.",
     "speaker": "National Trust for Historic Preservation"

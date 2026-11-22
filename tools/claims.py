@@ -23,6 +23,7 @@ import billtext
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 CLAIMS = DATA / "claims.json"
+REFS = DATA / "section_refs.json"
 PASSED = DATA / "bill/substitute_sections.json"
 DIFF = DATA / "bill/substitute_diff.json"
 SUB_PDF = "substitute.pdf"  # the passed text's print (tools/amendments.py SUB_PDF)
@@ -174,6 +175,69 @@ def resolve(claims: list[dict], media_urls: set[str], errors: list[str]) -> dict
         by_url.setdefault(c.get("media_url"), []).append(
             {"id": c.get("id"), "speaker": c.get("speaker"), "quote": c.get("quote"), "about": c.get("about"), "review": out_review})
     return by_url
+
+
+def sec_key(n: str) -> tuple[int, str]:
+    return (int(n) if n.isdigit() else 10**6, n)
+
+
+def resolve_refs(doc: dict, media_urls: set[str], errors: list[str]) -> dict[str, list[dict]]:
+    """Validate data/section_refs.json and return, by media URL, the sections of the
+    passed text a commentary or report discusses: number, heading, where the site
+    shows it, and the item's own words about it (checked against the page by
+    tools/check_quotes.py). A row in `none` records a piece that names no provision."""
+    secs = passed_sections()
+    rows = diff_rows()
+    by_url: dict[str, list[dict]] = {}
+    seen: set[str] = set()
+    for r in doc.get("refs", []):
+        url = r.get("media_url")
+        where = f"section ref {url}"
+        if url in seen:
+            errors.append(f"{where}: listed twice")
+        seen.add(url)
+        if url not in media_urls:
+            errors.append(f"{where}: not a coverage item")
+        if not r.get("sections"):
+            errors.append(f"{where}: names no section")
+        out = []
+        for s in r.get("sections", []):
+            n = s.get("n", "")
+            sec = secs.get(n)
+            if not sec:
+                errors.append(f"{where}: section {n} is not in the passed text")
+                continue
+            if len(str(s.get("quote", "")).split()) < 4:
+                errors.append(f"{where}: section {n} needs the item's own words about it")
+                continue
+            if any(o["n"] == n for o in out):
+                errors.append(f"{where}: section {n} listed twice")
+                continue
+            out.append({"n": n, "h": sec["heading"], "href": section_href(n, rows), "q": s["quote"]})
+        by_url[url] = sorted(out, key=lambda o: sec_key(o["n"]))
+    for key in ("none", "unread"):
+        for r in doc.get(key, []):
+            url = r.get("media_url")
+            if url in seen:
+                errors.append(f"section ref {url}: listed twice across refs, none and unread")
+            seen.add(url)
+            if url not in media_urls:
+                errors.append(f"section ref {url}: not a coverage item")
+            if not str(r.get("why", "")).strip():
+                errors.append(f"section ref {url}: {key} without a reason")
+    return by_url
+
+
+# Coverage types that are commentary, reports or statements: each one dated on or after the
+# text's release must name its sections, or say in data/section_refs.json why it names none.
+REF_TYPES = ("analysis", "org_statement", "gov_press_release", "gov_document")
+
+
+def unmapped(media: list[dict], doc: dict, released: str) -> list[dict]:
+    """Commentary and reports with no section link and no `none` or `unread` row."""
+    listed = {r.get("media_url") for key in ("refs", "none", "unread") for r in doc.get(key, [])}
+    return [it for it in media if it["type"] in REF_TYPES and it["date"] >= released
+            and not it.get("secs") and it["url"] not in listed]
 
 
 def _score(tokens: Counter, flat: str, singles: list[str], phrases: list[str], idf: dict[str, float]) -> float:

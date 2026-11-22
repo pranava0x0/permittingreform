@@ -1,6 +1,6 @@
 # Bipartisan American Affordability and Jobs Act of 2026: permitting reform tracker
 
-> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-21.
+> Section index, plain-language summaries, verbatim quotes with page and line cites, and a comparison with the SPEED Act and the Energy Permitting Reform Act of 2024. Bill text released 2026-09-30; 417 pages, 71 sections. Data as of 2026-11-22.
 
 - Site: https://pranava0x0.github.io/permittingreform/
 - Bill PDF (official): https://www.epw.senate.gov/public/_cache/files/5/c/5c5f5935-b224-48e7-abea-e60c30e7a4cf/7935BF3C85967B6F56F6F4858FD3221B7E0AEB02D04BE391CAFBD1B884CE3DC5.bipartisan-american-affordability-and-jobs-act-text.pdf
@@ -52,6 +52,7 @@ PDF citations use printed bill pages and lines. A matching quote proves occurren
 - [Tracker JSON](https://pranava0x0.github.io/permittingreform/data/core.json): the same data the browser renders, including check coverage.
 - [Bill paragraph JSON](https://pranava0x0.github.io/permittingreform/data/bill.json): section number to [printed page, line, indent level, text] arrays.
 - [Timeline, people and media JSON](https://pranava0x0.github.io/permittingreform/data/news.json): dated events, positions and coverage, each with its sources; `votes` holds each Senate roll call with every senator's vote, and `estimates` holds published figures on what the bill would do, each with its scenario and source sentence.
+- Sections discussed: a commentary or report in `media` may carry `secs`, the sections of the Senate-passed text it discusses: number `n`, heading `h`, the site route `href`, and `q`, the item's own words about that section, checked against its page.
 - Claims to check: a coverage item in `media` may carry `claims`, each a claim quoted from the item with `review` passages of the Senate-passed text (H.R. 2347 as amended by SA 6883) a reader would compare it with: section, subsection label, verbatim text and page-and-line cite in substitute.pdf. They point at the text; they are not findings about whether the claim holds.
 - [Outside readings JSON](https://pranava0x0.github.io/permittingreform/data/takes.json): what named industry groups, advocates, lawyers and analysts say sections would do, each with its verbatim quote, source link and the bill passage it concerns.
 - Fetch sections/{number}.md for one section. Each file includes its summary with a page-and-line cite after every sentence, cited key points, quotes, outside readings of what the section would do (quoted from their sources), comparison notes and full statutory text.

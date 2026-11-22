@@ -185,10 +185,13 @@
   "https://www.protectingtaxpayers.org/press/taxpayer-watchdog-welcomes-bipartisan-permitting-deal/": {
    "quotes": [
     "America desperately needs permitting reform, and this bipartisan proposal contains plenty of promising ideas for taxpayers and consumers to welcome.",
-    "Projects should not spend years or even decades navigating duplicative reviews and regulatory uncertainty before construction can begin."
+    "Projects should not spend years or even decades navigating duplicative reviews and regulatory uncertainty before construction can begin.",
+    "The proposal would accelerate environmental reviews— including introducing a two-year deadline for Environmental Impact Statement reviews and a one-year deadline for Environmental Assessment reviews.",
+    "It would also impose a 150-day deadline for legal challenges under the Clean Water Act (CWA), Endangered Species Act (ESA), National Environmental Policy Act (NEPA), and National Historic Preservation Act (NHPA).",
+    "However, lawmakers should improve and clarify the proposal’s provisions requiring data centers to cover their associated transmission costs."
    ],
-   "opened": "2026-10-27",
-   "title": "Taxpayer Watchdog Welcomes Bipartisan Permitting Deal"
+   "opened": "2026-11-22",
+   "title": "Taxpayer Watchdog Welcomes Bipartisan Permitting Deal - Taxpayers Protection Alliance"
   },
   "https://www.husted.senate.gov/media/press-releases/husted-bill-to-protect-americans-from-footing-the-bill-for-new-data-centers-blocked-from-passage/": {
    "quotes": [
@@ -329,10 +332,15 @@
    ]
   },
   "https://www.apta.com/press-release/apta-endorses-bipartisan-senate-permitting-reform-bill/": {
-   "opened": "2026-11-03",
-   "title": "APTA Endorses Bipartisan Senate Permitting Reform Bill",
+   "opened": "2026-11-22",
+   "title": "APTA Endorses Bipartisan Senate Permitting Reform Bill - APTA",
    "quotes": [
-    "Too many public transit and passenger rail projects spend years in review before construction can begin"
+    "Too many public transit and passenger rail projects spend years in review before construction can begin",
+    "the bill exempts repairs or replacements of existing facilities from NEPA review if they preserve the facilities’ function and increase capacity by no more than 20 percent.",
+    "It also authorizes Federal agencies to accept comparable State environmental reviews that meet Federal requirements",
+    "imposes enforceable deadlines on Federal agencies",
+    "limits litigation delays by allowing projects to proceed while Federal agencies address court-identified deficiencies during an environmental review.",
+    "the bill streamlines the National Historic Preservation Act Section 106 review process by establishing statutory deadlines and strengthening oversight"
    ],
    "reader": "Full article opened in the web reader; direct Chrome access was blocked."
   },
@@ -497,10 +505,12 @@
    ]
   },
   "https://www.sierraclub.org/press-releases/2026/11/sierra-club-we-cannot-support-permitting-bill-currently-written": {
-   "opened": "2026-11-15",
-   "title": "Sierra Club: We Cannot Support the Permitting Bill As Currently Written",
+   "opened": "2026-11-22",
+   "title": "Sierra Club: We Cannot Support the Permitting Bill As Currently Written | Sierra Club",
    "quotes": [
-    "The Sierra Club cannot support this legislation without fundamental changes. Congressional Democrats must demand the following:"
+    "The Sierra Club cannot support this legislation without fundamental changes. Congressional Democrats must demand the following:",
+    "Ensure states can protect water quality under the Clean Water Act",
+    "prevent the ability for the fossil fuel industry to sue for billions of dollars over “disparate treatment” for permit delays or denials"
    ]
   },
   "https://www.semiconductors.org/sia-urges-senate-to-pass-bipartisan-permitting-reform-legislation-to-boost-u-s-competitiveness/": {
@@ -1351,6 +1361,37 @@
     "But the more-controversial Section 1401 of the bill makes a finished permit very hard to take back.",
     "An agency that interferes in bad faith could owe the developer a quarter to half of what it has spent.",
     "And it affects any permit in effect on or after Nov. 6, so it starts protecting approvals already on the books, not just future ones."
+   ]
+  },
+  "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/": {
+   "opened": "2026-11-22",
+   "title": "The Senate Passed BAAJA 62–33 – Now the House Can Stop It. Call Your Representative! - Forest Service Employees for Environmental Ethics",
+   "quotes": [
+    "BAAJA is not law yet, and it can still be defeated.",
+    "Logging, mining, and drilling approvals would be nearly impossible to revisit or revoke, and taxpayers could owe corporate developers up to half of project costs if agencies try.",
+    "Agencies could entirely skip public comment on environmental assessments.",
+    "Challenges must be filed within 150 days, and courts could no longer halt unlawful projects, only send the paperwork back while bulldozers continue steamrolling the land’s ecological values."
+   ]
+  },
+  "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/": {
+   "opened": "2026-11-22",
+   "title": "The “Bipartisan American Affordability and Jobs Act” Reveals That Ecosystems and the People Who Defend Them are “Red Tape” - CounterPunch.org",
+   "quotes": [
+    "BAAJA will do an incredibly effective job at removing much of the remaining protective measures that these three laws still have.",
+    "If Congress passes S. 5653, however, that obligation goes away because the bill redefines “major Federal action” to exclude federal funding, no matter how many millions of dollars that might be and to what extent that funding could be used to destroy the wild.",
+    "S. 5653 prohibits agencies from rescinding previous authorizations—no matter how destructive they might be—with a provision called “project certainty.”",
+    "For agency decisions that violate NEPA, the ESA, or the Clean Water Act, however, S. 5653 shortens this six-year window to 150 days for citizen suits.",
+    "BAAJA gives the government 180 days to fix the means (the process) so they can justify the decision that courts must keep.",
+    "S. 5653 ignorantly or maliciously redefines and grossly enlarges categories of activities that our government will no longer consider “major Federal actions.”",
+    "We never got to discuss how the bill threatens to turn over ESA consultation to the states"
+   ]
+  },
+  "https://www.hunton.com/the-nickel-report/federal-bipartisan-permitting-legislation-expected-to-clear-senate-today-and-head-to-the-house": {
+   "opened": "2026-11-22",
+   "title": "Federal Bipartisan Permitting Legislation Expected to Clear Senate Today and Head to the House",
+   "quotes": [
+    "Hunton will provide a more in-depth analysis of impacts to project development in the final, amended Senate text in a forthcoming post.",
+    "The bill also provides new methods of challenging federal agency action (or inaction) on pending applications for federal authorizations as well as revocations of previously issued federal authorizations."
    ]
   }
  }

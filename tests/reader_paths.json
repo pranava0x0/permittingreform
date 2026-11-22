@@ -146,5 +146,9 @@
  "claim-check": {
   "taps": 2,
   "screens": 0.68
+ },
+ "commentary-opposes": {
+  "taps": 3,
+  "screens": 0.68
  }
 }

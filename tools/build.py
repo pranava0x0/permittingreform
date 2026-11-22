@@ -43,7 +43,7 @@ SITE_URL = "https://pranava0x0.github.io/permittingreform/"
 REPO_URL = "https://github.com/pranava0x0/permittingreform"
 PDF_NAME = "bill.pdf"
 # The date the datasets were last captured and checked. Bump on a data refresh, not on a rebuild.
-DATA_AS_OF = "2026-11-21"
+DATA_AS_OF = "2026-11-22"
 
 PRIOR_BILLS = [
     {"label": "SPEED Act (H.R. 4776), engrossed in House", "url": "https://www.govinfo.gov/content/pkg/BILLS-119hr4776eh/html/BILLS-119hr4776eh.htm"},
@@ -649,6 +649,27 @@ def build() -> tuple[dict, dict, list[str]]:
     for it in extra["media"]:
         if it["url"] in claims_by_url:
             it["claims"] = claims_by_url[it["url"]]
+    # The sections each commentary or report discusses (data/section_refs.json), with the
+    # sections its claims and readings already point at. Each links to where the site shows
+    # that section; a ref from section_refs.json carries the item's own words about it.
+    ref_doc = load(claimrefs.REFS) if claimrefs.REFS.exists() else {"refs": [], "none": []}
+    refs_by_url = claimrefs.resolve_refs(ref_doc, {it["url"] for it in extra["media"]}, errors)
+    pass_rows = claimrefs.diff_rows()
+    pass_secs = claimrefs.passed_sections()
+    take_secs: dict[str, set[str]] = {}
+    for t in takes["takes"]:
+        take_secs.setdefault(t["url"], set()).update(t["sections"])
+    for it in extra["media"]:
+        secs = {s["n"]: s for s in refs_by_url.get(it["url"], [])}
+        linked = {r["n"] for c in it.get("claims", []) for r in c["review"]} | take_secs.get(it["url"], set())
+        for n in linked:
+            if n not in secs and n in pass_secs:
+                secs[n] = {"n": n, "h": pass_secs[n]["heading"], "href": claimrefs.section_href(n, pass_rows)}
+        if secs:
+            it["secs"] = sorted(secs.values(), key=lambda s: claimrefs.sec_key(s["n"]))
+    for it in claimrefs.unmapped(extra["media"], ref_doc, bill["meta"]["released"]):
+        errors.append(f"media {it['id']}: a commentary or report with no row in data/section_refs.json "
+                      "(map its sections, or add it to none or unread with a reason)")
     for it in extra["media"] + takes["takes"] + estimates["estimates"]:
         stamp(it)
     for b in (speed or {}).get("blockers", []):
@@ -663,6 +684,9 @@ def build() -> tuple[dict, dict, list[str]]:
     checks["claims"] = {"claims": len(claim_doc["claims"]), "items": len(claims_by_url),
                         "passages": sum(len(c["review"]) for v in claims_by_url.values() for c in v),
                         "sections": len({r["n"] for v in claims_by_url.values() for c in v for r in c["review"]})}
+    checks["section_refs"] = {"items": sum(1 for it in extra["media"] if it.get("secs")),
+                              "quoted": sum(1 for it in extra["media"] for x in it.get("secs", []) if x.get("q")),
+                              "none": len(ref_doc.get("none", []))}
     checks["takes"] = {"total": len(takes["takes"]), "sections": len({n for t in takes["takes"] for n in t["sections"]})}
     all_sents = [t for sec in sections for para in sec["ps"] for t in para]
     checks["cites"] = {
@@ -733,6 +757,7 @@ def llms_txt(core: dict) -> str:
         f"- [Tracker JSON]({m['site_url']}data/core.json): the same data the browser renders, including check coverage.",
         f"- [Bill paragraph JSON]({m['site_url']}data/bill.json): section number to [printed page, line, indent level, text] arrays.",
         f"- [Timeline, people and media JSON]({m['site_url']}data/news.json): dated events, positions and coverage, each with its sources; `votes` holds each Senate roll call with every senator's vote, and `estimates` holds published figures on what the bill would do, each with its scenario and source sentence.",
+        "- Sections discussed: a commentary or report in `media` may carry `secs`, the sections of the Senate-passed text it discusses: number `n`, heading `h`, the site route `href`, and `q`, the item's own words about that section, checked against its page.",
         "- Claims to check: a coverage item in `media` may carry `claims`, each a claim quoted from the item with `review` passages of the Senate-passed text (H.R. 2347 as amended by SA 6883) a reader would compare it with: section, subsection label, verbatim text and page-and-line cite in substitute.pdf. They point at the text; they are not findings about whether the claim holds.",
         f"- [Outside readings JSON]({m['site_url']}data/takes.json): what named industry groups, advocates, lawyers and analysts say sections would do, each with its verbatim quote, source link and the bill passage it concerns.",
         "- Fetch sections/{number}.md for one section. Each file includes its summary with a page-and-line cite after every sentence, cited key points, quotes, outside readings of what the section would do (quoted from their sources), comparison notes and full statutory text.",
@@ -1091,8 +1116,13 @@ def reader_html(core: dict, page: str) -> str:
                 checks_html += (f'<p>{esc(c["about"])}: &ldquo;{esc(c["quote"])}&rdquo; ({esc(c["speaker"])}). '
                                 'Where to check it in the Senate-passed text (this site does not rate claims):</p>'
                                 '<ul>' + "".join(lis) + '</ul>')
+            secs_html = ""
+            if row.get("secs"):
+                secs_html = ('<p>Sections it discusses: ' + ", ".join(
+                    f'Sec. {esc(x["n"])} ({esc(x["h"])})' + (f': &ldquo;{esc(x["q"])}&rdquo;' if x.get("q") else "")
+                    for x in row["secs"]) + '</p>')
             out.append(f'<article id="{esc(row["id"])}"><h2>{esc(row["title"])}</h2><time datetime="{esc(row["date"])}">{esc(row["date"])}</time>'
-                       f'<p>{esc(row["summary"])}</p>{checks_html}<p>{" · ".join(refs)}</p></article>')
+                       f'<p>{esc(row["summary"])}</p>{secs_html}{checks_html}<p>{" · ".join(refs)}</p></article>')
     return '\n'.join(out + ['</main></body></html>']) + '\n'
 
 

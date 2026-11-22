@@ -1,0 +1,550 @@
+{
+ "items": [
+  {
+   "type": "org_statement",
+   "outlet": "Union of Concerned Scientists",
+   "author": "David Watkins",
+   "title": "Weekend Amendment Fails to Address Fossil Fuel Giveaways in Senate Permitting Deal",
+   "url": "https://www.ucs.org/about/news/baaja-amendment-fails-improve-bill",
+   "summary": "UCS's David Watkins says the substitute amendment improves the transmission and permit-certainty language but leaves the bill's imbalance in place and would make compliance with four environmental laws largely voluntary.",
+   "stance": "opposes",
+   "quote": {
+    "text": "If enacted as currently drafted, BAAJA would be the most significant legislative reversal in environmental and community protections in decades.",
+    "speaker": "David Watkins, Union of Concerned Scientists"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "historic-preservation",
+    "fossil"
+   ],
+   "sector": "environmental_group",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "To get bipartisan support for negligible reductions in emissions, this deal would convert compliance with the National Environmental Policy Act, Endangered Species Act, National Historic Preservation Act, and Clean Water Act into largely voluntary exercises.",
+     "speaker": "David Watkins, Union of Concerned Scientists",
+     "about": "core environmental laws made voluntary"
+    },
+    {
+     "text": "Instead of righting this imbalance, the Senate permitting deal will lock in fossil fuel projects now and for generations to come.",
+     "speaker": "David Watkins, Union of Concerned Scientists",
+     "about": "fossil fuel project lock-in"
+    }
+   ],
+   "sections": [],
+   "date": "2026-11-09",
+   "id": "2026-11-09-weekend-amendment-fails-to-address-fossil-fuel-giveaways-in-",
+   "verified": true
+  },
+  {
+   "type": "gov_press_release",
+   "outlet": "Sen. Cynthia Lummis (Senate Western Caucus)",
+   "author": "Sen. Cynthia Lummis",
+   "title": "Senate Western Caucus Applauds Passage of Bipartisan Permitting Bill that Delivers Wins for the West",
+   "url": "https://www.lummis.senate.gov/press-releases/senate-western-caucus-applauds-passage-of-bipartisan-permitting-bill-that-delivers-wins-for-the-west/",
+   "summary": "Senate Western Caucus chair Lummis and colleagues, including Capito, Lee, Thune, Barrasso and Murkowski, welcome the 62-33 Senate passage and describe what the bill does for NEPA, the Clean Water Act and the Endangered Species Act.",
+   "stance": "supports",
+   "quote": {
+    "text": "The Senate voted to put western states back in the driver’s seat by ensuring state wildlife experts lead on endangered species decisions",
+    "speaker": "Sen. Cynthia Lummis"
+   },
+   "topics": [
+    "congress",
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "permit-certainty"
+   ],
+   "sector": "congress",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "BAAJA modernizes NEPA to deliver faster, more predictable environmental reviews without changing NEPA’s core purpose.",
+     "speaker": "Senate Western Caucus release",
+     "about": "NEPA review deadlines"
+    },
+    {
+     "text": "It also clarifies judicial review through earlier filing deadlines, public comment prerequisites, burden-of-proof clarity, and scheduled remands to fix permit deficiencies.",
+     "speaker": "Senate Western Caucus release",
+     "about": "Clean Water Act judicial review"
+    },
+    {
+     "text": "BAAJA provides project certainty across a variety of energy sources in the federal permitting process by ensuring previously issued permits cannot be rescinded without justification based on significant circumstances or violations of federal law.",
+     "speaker": "Senate Western Caucus release",
+     "about": "permit rescission limits"
+    }
+   ],
+   "sections": [
+    {
+     "n": "1110",
+     "quote": "It establishes firm deadlines for environmental reviews and documents, updates the definition of “major federal action,” and sets a statute of limitations of 150 days."
+    },
+    {
+     "n": "1305",
+     "quote": "requires a petition for judicial review to be filed within 150 days after the biological opinion is issued and made public."
+    },
+    {
+     "n": "1401",
+     "quote": "BAAJA provides project certainty across a variety of energy sources in the federal permitting process by ensuring previously issued permits cannot be rescinded without justification based on significant circumstances or violations of federal law."
+    }
+   ],
+   "date": "2026-11-20",
+   "id": "2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "Though the Heavens Fall (Substack)",
+   "author": "John Crabtree",
+   "title": "[UPDATE] Senate Passes BAAJA",
+   "url": "https://crabtreej.substack.com/p/update-senate-passes-baaja",
+   "summary": "Crabtree reports the 62-33 passage and argues the bill weakens tribal consultation under NHPA Section 106 and shortens and narrows review under NEPA, the Clean Water Act and the Endangered Species Act.",
+   "stance": "opposes",
+   "quote": {
+    "text": "BAAJA (S. 5653) takes a sledgehammer to Section 106 of the National Historic Preservation Act, thereby weakening Native Nations’ rights to be consulted on projects that could damage their lands, waters and sacred places.",
+    "speaker": "John Crabtree"
+   },
+   "topics": [
+    "tribal",
+    "historic-preservation",
+    "nepa",
+    "esa",
+    "clean-water-act"
+   ],
+   "sector": "media",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "BAAJA (S. 5653) takes a sledgehammer to Section 106 of the National Historic Preservation Act, thereby weakening Native Nations’ rights to be consulted on projects that could damage their lands, waters and sacred places.",
+     "speaker": "John Crabtree",
+     "about": "NHPA Section 106 tribal consultation"
+    },
+    {
+     "text": "Adding insult to injury, it would allow federal officials to decide which Tribal lands are “sacred enough” to warrant protection from development.",
+     "speaker": "John Crabtree",
+     "about": "sacred sites determination"
+    },
+    {
+     "text": "The legislation would dramatically shorten review timelines under NEPA (National Environmental Policy Act), the Clean Water Act and the Endangered Species Act.",
+     "speaker": "John Crabtree",
+     "about": "shortened review timelines"
+    }
+   ],
+   "sections": [
+    {
+     "n": "2301",
+     "quote": "BAAJA (S. 5653) takes a sledgehammer to Section 106 of the National Historic Preservation Act, thereby weakening Native Nations’ rights to be consulted on projects that could damage their lands, waters and sacred places."
+    }
+   ],
+   "date": "2026-11-20",
+   "id": "2026-11-20-update-senate-passes-baaja",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "One First (Substack)",
+   "author": "Steve Vladeck",
+   "title": "263. Congress Should Press Pause on BAAJA",
+   "url": "https://www.stevevladeck.com/p/263-congress-should-press-pause-on",
+   "summary": "Georgetown law professor Steve Vladeck (an Earthjustice trustee, as he discloses) praises the transmission title but argues the judicial-review limits and project-certainty title warrant more deliberation than a lame-duck vote allows.",
+   "stance": "mixed",
+   "quote": {
+    "text": "BAAJA’s good parts are reason enough to get the rest of it right; its bad parts should worry you whatever your views on environmental policy",
+    "speaker": "Steve Vladeck"
+   },
+   "topics": [
+    "courts",
+    "nepa",
+    "permit-certainty",
+    "transmission",
+    "data-centers"
+   ],
+   "sector": "academic",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "A court that finds a NEPA violation could only send the decision back to the agency to fix it within 180 days, and the project could proceed under its permit in the meantime.",
+     "speaker": "Steve Vladeck",
+     "about": "NEPA remedy limited to remand",
+     "sections_hint": [
+      "1110"
+     ]
+    },
+    {
+     "text": "Under the bill, as the Congressional Research Service (CRS) and others summarize it, challengers would have 150 days to sue.",
+     "speaker": "Steve Vladeck",
+     "about": "150-day lawsuit deadline",
+     "sections_hint": [
+      "1110"
+     ]
+    },
+    {
+     "text": "Critically, none of the exceptions would cover a new administration that concludes its predecessor issued a permit unlawfully.",
+     "speaker": "Steve Vladeck",
+     "about": "project certainty exceptions",
+     "sections_hint": [
+      "1401"
+     ]
+    },
+    {
+     "text": "Thus, NEPA and the NHPA would become largely toothless—at least on their own.",
+     "speaker": "Steve Vladeck",
+     "about": "NEPA and NHPA remedies"
+    }
+   ],
+   "sections": [
+    {
+     "n": "1110",
+     "quote": "But the biggest change here is to the potential remedies."
+    },
+    {
+     "n": "1401",
+     "quote": "Then there’s Section 1401, the heart of the project-certainty title."
+    },
+    {
+     "n": "2105",
+     "quote": "end incumbent utilities’ first dibs on new regional lines"
+    },
+    {
+     "n": "2107",
+     "quote": "and make data centers pay for the transmission they use."
+    },
+    {
+     "n": "1502",
+     "quote": "authorize construction of uranium enrichment facilities while the Nuclear Regulatory Commission’s already-weakened licensing process is still underway, and let some projects proceed without a public hearing."
+    }
+   ],
+   "date": "2026-11-16",
+   "id": "2026-11-16-263-congress-should-press-pause-on-baaja",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "Bloomberg Law",
+   "author": "David Tatel",
+   "title": "The Senate Permitting Bill Deserves a ‘Hard Look’ Before a Vote",
+   "url": "https://news.bgov.com/legal-exchange-insights-and-commentary/the-senate-permitting-bill-deserves-a-hard-look-before-a-vote",
+   "summary": "Retired D.C. Circuit Judge David Tatel argues the bill's remedy limits would leave NEPA suits with no meaningful relief, including suits brought under the Administrative Procedure Act.",
+   "stance": "opposes",
+   "quote": {
+    "text": "If a Senate permitting bill becomes law, NEPA cases may be virtually futile.",
+    "speaker": "David Tatel, retired D.C. Circuit judge"
+   },
+   "topics": [
+    "courts",
+    "nepa"
+   ],
+   "sector": "court",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "Rather, it strips federal judges of the authority to halt or pause a project’s authorization until the agency fixes errors in its environmental review.",
+     "speaker": "David Tatel",
+     "about": "court power to halt projects"
+    },
+    {
+     "text": "And it authorizes construction of the project to proceed even as the agency considers its effects.",
+     "speaker": "David Tatel",
+     "about": "construction during remand"
+    },
+    {
+     "text": "All “NEPA lawsuits” are APA lawsuits.",
+     "speaker": "David Tatel",
+     "about": "APA suits covered by remedy limit"
+    }
+   ],
+   "sections": [
+    {
+     "n": "1110",
+     "quote": "Rather, it strips federal judges of the authority to halt or pause a project’s authorization until the agency fixes errors in its environmental review."
+    }
+   ],
+   "date": "2026-11-12",
+   "id": "2026-11-12-the-senate-permitting-bill-deserves-a-hard-look-before-a-vot",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "CounterPunch",
+   "author": "Katie Bilodeau",
+   "title": "The “Bipartisan American Affordability and Jobs Act” Reveals That Ecosystems and the People Who Defend Them are “Red Tape”",
+   "url": "https://www.counterpunch.org/2026/11/09/the-bipartisan-american-affordability-and-jobs-act-reveals-that-ecosystems-and-the-people-who-defend-them-are-red-tape/",
+   "summary": "Wilderness Watch legislative director Katie Bilodeau argues the bill redefines major federal action, locks in permits through project certainty and cuts the lawsuit window to 150 days.",
+   "stance": "opposes",
+   "quote": {
+    "text": "BAAJA will do an incredibly effective job at removing much of the remaining protective measures that these three laws still have.",
+    "speaker": "Katie Bilodeau, Wilderness Watch"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "clean-water-act",
+    "permit-certainty",
+    "courts"
+   ],
+   "sector": "environmental_group",
+   "route": "r.jina.ai",
+   "claims": [
+    {
+     "text": "If Congress passes S. 5653, however, that obligation goes away because the bill redefines “major Federal action” to exclude federal funding, no matter how many millions of dollars that might be and to what extent that funding could be used to destroy the wild.",
+     "speaker": "Katie Bilodeau",
+     "about": "federal funding excluded from NEPA"
+    },
+    {
+     "text": "S. 5653 prohibits agencies from rescinding previous authorizations—no matter how destructive they might be—with a provision called “project certainty.”",
+     "speaker": "Katie Bilodeau",
+     "about": "project certainty bars rescission"
+    },
+    {
+     "text": "For agency decisions that violate NEPA, the ESA, or the Clean Water Act, however, S. 5653 shortens this six-year window to 150 days for citizen suits.",
+     "speaker": "Katie Bilodeau",
+     "about": "150-day citizen suit window"
+    },
+    {
+     "text": "BAAJA gives the government 180 days to fix the means (the process) so they can justify the decision that courts must keep.",
+     "speaker": "Katie Bilodeau",
+     "about": "remand instead of vacatur"
+    }
+   ],
+   "sections": [
+    {
+     "n": "1102",
+     "quote": "S. 5653 ignorantly or maliciously redefines and grossly enlarges categories of activities that our government will no longer consider “major Federal actions.”"
+    },
+    {
+     "n": "1110",
+     "quote": "For agency decisions that violate NEPA, the ESA, or the Clean Water Act, however, S. 5653 shortens this six-year window to 150 days for citizen suits."
+    },
+    {
+     "n": "1401",
+     "quote": "S. 5653 prohibits agencies from rescinding previous authorizations—no matter how destructive they might be—with a provision called “project certainty.”"
+    },
+    {
+     "n": "1304",
+     "quote": "We never got to discuss how the bill threatens to turn over ESA consultation to the states"
+    }
+   ],
+   "date": "2026-11-09",
+   "id": "2026-11-09-the-bipartisan-american-affordability-and-jobs-act-reveals-t",
+   "verified": true
+  },
+  {
+   "type": "org_statement",
+   "outlet": "Forest Service Employees for Environmental Ethics",
+   "author": "Forest Service Employees for Environmental Ethics",
+   "title": "The Senate Passed BAAJA 62–33 – Now the House Can Stop It. Call Your Representative!",
+   "url": "https://nationalforestadvocates.org/tell-your-senators-to-vote-no-on-the-bipartisan-american-affordability-and-jobs-act-of/",
+   "summary": "FSEEE tells members the Senate passed the bill 62-33 and urges calls to House members, saying the bill locks in permits, limits public comment and removes courts' power to halt unlawful projects.",
+   "stance": "opposes",
+   "quote": {
+    "text": "BAAJA is not law yet, and it can still be defeated.",
+    "speaker": "Forest Service Employees for Environmental Ethics"
+   },
+   "topics": [
+    "nepa",
+    "courts",
+    "permit-certainty",
+    "congress"
+   ],
+   "sector": "environmental_group",
+   "route": "r.jina.ai",
+   "claims": [
+    {
+     "text": "Logging, mining, and drilling approvals would be nearly impossible to revisit or revoke, and taxpayers could owe corporate developers up to half of project costs if agencies try.",
+     "speaker": "FSEEE",
+     "about": "project certainty and compensation"
+    },
+    {
+     "text": "Agencies could entirely skip public comment on environmental assessments.",
+     "speaker": "FSEEE",
+     "about": "public comment on EAs"
+    },
+    {
+     "text": "Challenges must be filed within 150 days, and courts could no longer halt unlawful projects, only send the paperwork back while bulldozers continue steamrolling the land’s ecological values.",
+     "speaker": "FSEEE",
+     "about": "150-day deadline and remand only"
+    }
+   ],
+   "sections": [
+    {
+     "n": "1401",
+     "quote": "Logging, mining, and drilling approvals would be nearly impossible to revisit or revoke, and taxpayers could owe corporate developers up to half of project costs if agencies try."
+    },
+    {
+     "n": "1110",
+     "quote": "Challenges must be filed within 150 days, and courts could no longer halt unlawful projects, only send the paperwork back while bulldozers continue steamrolling the land’s ecological values."
+    }
+   ],
+   "date": "2026-11-20",
+   "id": "2026-11-20-the-senate-passed-baaja-62-33-now-the-house-can-stop-it-call",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "Gloria’s Substack",
+   "author": "Gloria J. Maloney",
+   "title": "The AI Land Grab Behind America’s “Affordability” Bill",
+   "url": "https://gloriajmaloney.substack.com/p/the-ai-land-grab-behind-americas",
+   "summary": "Maloney argues the bill was rushed through a lame-duck Senate and favors AI data centers and fossil projects, and walks through its changes to NEPA and the Clean Water Act.",
+   "stance": "opposes",
+   "quote": {
+    "text": "Critics argue the bill is a rushed corporate giveaway that favors artificial intelligence data centers and fossil fuel projects over important environmental laws, Tribal rights, and democratic oversight.",
+    "speaker": "Gloria J. Maloney"
+   },
+   "topics": [
+    "nepa",
+    "clean-water-act",
+    "data-centers",
+    "congress"
+   ],
+   "sector": "media",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "BAAJA’s changes to the Clean Water Act would weaken environmental protections by reducing EPA oversight, doubling pollution permit lengths from five to ten years, and limiting states’ and Tribal Nations’ power to challenge or set conditions on projects.",
+     "speaker": "Gloria J. Maloney",
+     "about": "Clean Water Act changes"
+    },
+    {
+     "text": "The bill would limit NEPA’s scope by excluding some federally funded projects, allowing alternative reviews and combined categorical exclusions, and setting strict deadlines that limit public comments and agency review.",
+     "speaker": "Gloria J. Maloney",
+     "about": "NEPA scope and deadlines"
+    }
+   ],
+   "sections": [
+    {
+     "n": "1203",
+     "quote": "doubling pollution permit lengths from five to ten years"
+    }
+   ],
+   "date": "2026-11-21",
+   "id": "2026-11-21-the-ai-land-grab-behind-america-s-affordability-bill",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "American Farm Bureau Federation",
+   "author": "American Farm Bureau Federation",
+   "title": "Senate Permitting Bill Needs Additional Protections for Agriculture",
+   "url": "https://www.fb.org/intel/policy/senate-permitting-bill-needs-additional-protections-for-agriculture",
+   "summary": "The Farm Bureau backs the bill's NEPA, ESA and NHPA changes but says its transmission siting title and Clean Water Act provisions fall short for landowners.",
+   "stance": "mixed",
+   "quote": {
+    "text": "Farm Bureau shares BAAJA’s goal of timely, predictable permitting, and the bill’s environmental review reforms and Section 404 improvements are real progress.",
+    "speaker": "American Farm Bureau Federation"
+   },
+   "topics": [
+    "nepa",
+    "esa",
+    "transmission",
+    "clean-water-act",
+    "historic-preservation"
+   ],
+   "sector": "trade_association",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "Its transmission title would shift siting authority from states to federal regulators and broaden federal eminent domain, while giving landowners limited notice, short windows to participate and narrow avenues for challenge.",
+     "speaker": "American Farm Bureau Federation",
+     "about": "transmission siting and eminent domain"
+    },
+    {
+     "text": "Lawsuits must be filed within 150 days by parties who substantially participated in the comment process, and courts would generally send flawed reviews back to agencies for correction rather than vacating them.",
+     "speaker": "American Farm Bureau Federation",
+     "about": "NEPA lawsuit deadline and remand"
+    },
+    {
+     "text": "Consultation timelines would be shortened to align with NEPA, so producers are not waiting years to learn whether a project affects listed species.",
+     "speaker": "American Farm Bureau Federation",
+     "about": "ESA consultation timelines"
+    }
+   ],
+   "sections": [
+    {
+     "n": "1110",
+     "quote": "Lawsuits must be filed within 150 days by parties who substantially participated in the comment process, and courts would generally send flawed reviews back to agencies for correction rather than vacating them."
+    },
+    {
+     "n": "1302",
+     "quote": "Consultation timelines would be shortened to align with NEPA, so producers are not waiting years to learn whether a project affects listed species."
+    },
+    {
+     "n": "1304",
+     "quote": "Qualified state agencies could take on some consultation duties from the U.S. Fish and Wildlife Service, though applicants could opt out."
+    },
+    {
+     "n": "2101",
+     "quote": "By removing the corridor requirement and setting a 230 kV threshold, BAAJA would make federal condemnation available to far more projects nationwide."
+    }
+   ],
+   "date": "2026-11-09",
+   "id": "2026-11-09-senate-permitting-bill-needs-additional-protections-for-agri",
+   "verified": true
+  },
+  {
+   "type": "analysis",
+   "outlet": "Rhodium Group",
+   "author": "Hannah Kolus, Michael Gaffney, Nathan Wiens, Ben King",
+   "title": "The Impact of Permitting Reform on State-level Residential Electricity Prices and Bills",
+   "url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
+   "summary": "Rhodium Group models key provisions on transmission, pipelines, data-center ratepayer protection and wind permit certainty and finds lower residential electricity prices and bills in at least 46 states by 2035.",
+   "stance": "neutral",
+   "quote": {
+    "text": "Residential electricity prices and bills decline in at least 46 states in 2035 with the full set of modeled BAAJA provisions.",
+    "speaker": "Rhodium Group"
+   },
+   "topics": [
+    "transmission",
+    "data-centers",
+    "wind-solar"
+   ],
+   "sector": "think_tank",
+   "route": "direct",
+   "claims": [
+    {
+     "text": "BAAJA includes ratepayer protections that make data centers pay for the costs their growth adds to the grid, reducing bills for residential consumers and other customer classes.",
+     "speaker": "Rhodium Group",
+     "about": "data center ratepayer protection"
+    },
+    {
+     "text": "When modeled standalone, the transmission provisions reduce electricity bills by 1-2% nationally in 2035.",
+     "speaker": "Rhodium Group",
+     "about": "transmission provisions and bills"
+    }
+   ],
+   "sections": [
+    {
+     "n": "2107",
+     "quote": "BAAJA includes ratepayer protections that make data centers pay for the costs their growth adds to the grid, reducing bills for residential consumers and other customer classes."
+    }
+   ],
+   "date": "2026-11-12",
+   "id": "2026-11-12-the-impact-of-permitting-reform-on-state-level-residential-e",
+   "verified": true
+  }
+ ],
+ "not_found": [
+  {
+   "what": "https://www.staradvertiser.com/2026/11/15/editorial/our-view/editorial-reach-accord-on-baaja-permitting-bill/",
+   "why": "HTTP 403 to webfetch.py and no readable text via r.jina.ai"
+  },
+  {
+   "what": "https://www.novoco.com/notes-from-novogradac/bipartisan-permitting-proposal-would-reshape-renewable-energy-approvals-project-certainty-and-grid-access",
+   "why": "HTTP 403; also appears to be an early-October alert"
+  },
+  {
+   "what": "Law-firm client alerts dated Nov 7 or later",
+   "why": "every alert found (Brownstein Oct 5, Akin Oct 6, King & Spalding, Holland & Knight, McGuireWoods, Foley Hoag, B&D, Greenberg Traurig) is dated October or already held; none dated November 7 or later surfaced"
+  },
+  {
+   "what": "Hyperallergic, Nov 13, tribal groups urge Congress to halt the bill",
+   "why": "fetched only a 2-minute news item behind a sign-up wall; straight news, not used"
+  },
+  {
+   "what": "CRS and CBO products dated Nov 7 or later",
+   "why": "only CRS R49506 (Nov 5, before the window) found"
+  }
+ ]
+}
