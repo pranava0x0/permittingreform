@@ -114,6 +114,10 @@ const base = process.env.UAT_BASE || 'http://127.0.0.1:8766/';
       const grouped = await page.evaluate(()=>[...document.querySelectorAll('details.media-fold > summary .chip-count')].reduce((n,e)=>n+Number(e.textContent),0));
       assert.equal(grouped, await page.evaluate(()=>PR_DATA.media.filter(x=>x.type==='analysis'||x.type==='org_statement').length));
       assert.ok(await page.evaluate(()=>[...document.querySelectorAll('.secs a')].length > 50 && [...document.querySelectorAll('.secs a')].every(a=>a.getAttribute('href').startsWith('#/'))));
+      // Leaf rules (DESIGN.md 2026-11-16): fold rows are touch targets, and section and claim text keep the 75-character measure of the paragraphs beside them.
+      await page.locator('details.media-fold > summary').nth(1).click();
+      assert.ok(await page.evaluate(()=>{ const f=document.querySelector('details.media-fold[open]'); const lead=f.querySelector('.media-item > p'); const secs=[...f.querySelectorAll('.secs p, .sec-quotes li')];
+        return f.querySelector('summary').getBoundingClientRect().height>=44 && secs.length && secs.every(e=>getComputedStyle(e).maxWidth===getComputedStyle(lead).maxWidth); }), 'commentary fold: 44 px row and 75ch measure');
       await page.getByRole('group',{name:'Source type',exact:true}).getByRole('button').first().click();
       await page.goto(base+'#/media');
       const mediaCount = await page.evaluate(()=>PR_DATA.media.length);

@@ -816,4 +816,4 @@ ins { background: var(--ins-bg); color: var(--ins-text); text-decoration: underl
 .person-stance .muted { font-size: var(--fs-small); }
 
 /* Reading measure: long card text stopped at about 110 characters a line on desktop (UAT 2026-11-16). */
-.study p, .study .voice-quote, .media-item > p, .pos-body > p, .cm-body p, .event p { max-width: 75ch; }
+.study p, .study .voice-quote, .media-item > p, .secs p, .sec-quotes li, .claims p, .claims li, .pos-body > p, .cm-body p, .event p { max-width: 75ch; }

@@ -1,5 +1,5 @@
 {
- "checked": "2026-11-22",
+ "checked": "2026-11-24",
  "bill": {
   "total": 174,
   "verified": 174
@@ -1140,6 +1140,114 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-23-senate-environment-and-public--whitehouse-urges-swift-house-passage-of-",
+   "text": "Democrats should not deny Americans the data center accountability they have demanded over ghost stories being told to try to deliberately mislead people.",
+   "speaker": "Sen. Sheldon Whitehouse",
+   "url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-23-senate-environment-1",
+   "text": "BAAJA would end data center free-loading and require current and future data centers to pay for the upgrades to the grid that their huge electricity consumption requires, without passing off any of their costs to consumers, which they are currently doing.",
+   "speaker": "Sen. Sheldon Whitehouse",
+   "url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-23-senate-environment-2",
+   "text": "The legislation provides greater certainty for projects that have already been permitted and financed, including by preventing the current and future administrations from arbitrarily revoking permits, while establishing clear timelines for environmental reviews and legal challenges.",
+   "speaker": "Sen. Sheldon Whitehouse",
+   "url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-23-senate-environment-and-public--whitehouse-urges-swift-house-passage-of-.1401",
+   "text": "The legislation provides greater certainty for projects that have already been permitted and financed, including by preventing the current and future administrations from arbitrarily revoking permits, while establishing clear timelines for environmental reviews and legal challenges.",
+   "speaker": "",
+   "url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-23-senate-environment-and-public--whitehouse-urges-swift-house-passage-of-.2107",
+   "text": "BAAJA would ensure that data centers pay the full cost of their associated transmission needs plus upgrades to the larger transmission network, rather than passing those costs on to families and small businesses.",
+   "speaker": "",
+   "url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-23-office-of-rep--sean-casten-casten-statement-on-senate-permitting-re",
+   "text": "If we are compelled to vote only on the Senate-passed text, I will vote No, with confidence in our ability to craft a better version in the 120th Congress.",
+   "speaker": "Rep. Sean Casten",
+   "url": "https://casten.house.gov/media/press-releases/casten-statement-on-senate-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-23-office-of-rep-sean-1",
+   "text": "overhauling sections 1401 and 1402, which make it impossible for a future administration to undo the damage being done by the Trump Administration’s willful disregard of current environmental law and judicial precedent",
+   "speaker": "Rep. Sean Casten",
+   "url": "https://casten.house.gov/media/press-releases/casten-statement-on-senate-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-23-office-of-rep--sean-casten-casten-statement-on-senate-permitting-re.1401",
+   "text": "overhauling sections 1401 and 1402, which make it impossible for a future administration to undo the damage being done by the Trump Administration’s willful disregard of current environmental law and judicial precedent",
+   "speaker": "",
+   "url": "https://casten.house.gov/media/press-releases/casten-statement-on-senate-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-23-office-of-rep--sean-casten-casten-statement-on-senate-permitting-re.1402",
+   "text": "overhauling sections 1401 and 1402, which make it impossible for a future administration to undo the damage being done by the Trump Administration’s willful disregard of current environmental law and judicial precedent",
+   "speaker": "",
+   "url": "https://casten.house.gov/media/press-releases/casten-statement-on-senate-permitting-reform",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-23-liskow---lewis-baaja-update--senate-approves-bipartisan",
+   "text": "In order to reach the President for his signature, the House must approve the Senate text without changes.",
+   "speaker": "Liskow & Lewis",
+   "url": "https://www.liskow.com/insights/baaja-update-senate-approves-bipartisan-permitting-reform-legislation-102oajr/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-23-bommarito-consulting-baaja-in-the-house--the-vote--the-positi",
+   "text": "“After Thanksgiving” is an expectation, not a scheduled vote.",
+   "speaker": "Bommarito Consulting",
+   "url": "https://bommaritollc.com/insights/baaja-house-vote/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-23-american-action-forum-permitting-reform",
+   "text": "The BAAJA is that legislative unicorn.",
+   "speaker": "Douglas Holtz-Eakin, American Action Forum",
+   "url": "https://www.americanactionforum.org/daily-dish/permitting-reform/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "claims.c-2026-11-20-thirdwayenergy-1",
    "text": "Legal protections against unlawful permits, however, remain strong.",
    "speaker": "Third Way Climate and Energy",
@@ -1162,6 +1270,15 @@
    "text": "There will be no better deal on the table",
    "speaker": "Rep. Scott Peters, D-Calif., in a statement quoted by Utility Dive",
    "url": "https://www.utilitydive.com/news/senate-passes-baaja-permitting-bill/875334/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-union-of-concerned-scientists-in-huge-win-for-fossil-fuel-industry--us",
+   "text": "The House should reject BAAJA and negotiate a better bill in the new Congress in January",
+   "speaker": "David Watkins, Union of Concerned Scientists",
+   "url": "https://www.ucs.org/about/news/senate-permitting-bill-win-fossil-fuel",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1282,6 +1399,15 @@
    "result": "browser",
    "share": 1.0,
    "note": "read in a browser on 2026-11-22"
+  },
+  {
+   "where": "media.2026-11-20-the-boston-globe-commentary--r-i--trades-council-backs-bi",
+   "text": "Every month a construction project is unnecessarily delayed represents another month that skilled workers are deprived of employment opportunities.",
+   "speaker": "Michael F. Sabitoni, LIUNA",
+   "url": "https://www.bostonglobe.com/2026/11/20/metro/ri-commentary-energy-construction-jobs-unions/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "media.2026-11-20-senate-western-caucus-applauds-passage-of-bipartisan-permitt",
@@ -1419,6 +1545,78 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-20-office-of-sen--jon-husted-husted-backed-package-to-advance-america",
+   "text": "Permitting reform is affordability.",
+   "speaker": "Sen. Jon Husted",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-20-office-of-sen-jon-1",
+   "text": "Limit lawsuits by requiring claims under the National Environmental Policy Act to be filed within 150 days.",
+   "speaker": "Sen. Jon Husted",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-20-office-of-sen-jon-2",
+   "text": "Protect issued permits by limiting the circumstances under which federal agencies can rescind or suspend valid permits.",
+   "speaker": "Sen. Jon Husted",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-20-office-of-sen-jon-3",
+   "text": "Set deadlines for environmental reviews, requiring environmental assessments within one year and full environmental impact statements within two years.",
+   "speaker": "Sen. Jon Husted",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-20-office-of-sen-jon-4",
+   "text": "BAAJA also includes language Husted negotiated, similar to provisions in his Ratepayer Protection Act, to protect consumers from footing the bill for data center energy and infrastructure costs.",
+   "speaker": "Office of Sen. Jon Husted",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-office-of-sen--jon-husted-husted-backed-package-to-advance-america.1110",
+   "text": "Limit lawsuits by requiring claims under the National Environmental Policy Act to be filed within 150 days.",
+   "speaker": "",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-office-of-sen--jon-husted-husted-backed-package-to-advance-america.1401",
+   "text": "Protect issued permits by limiting the circumstances under which federal agencies can rescind or suspend valid permits.",
+   "speaker": "",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-20-office-of-sen--jon-husted-husted-backed-package-to-advance-america.2107",
+   "text": "BAAJA also includes language Husted negotiated, similar to provisions in his Ratepayer Protection Act, to protect consumers from footing the bill for data center energy and infrastructure costs.",
+   "speaker": "",
+   "url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-20-new-democrat-coalition-new-democrat-coalition-leaders-release-stateme",
    "text": "We are deeply disappointed that amendments, including the bipartisan Manager’s Amendment, were held up procedurally and left out of this bill.",
    "speaker": "Rep. Brad Schneider, D-Ill., Rep. Nikki Budzinski, D-Ill., and Rep. Scott Peters, D-Calif., New Democrat Coalition leaders",
@@ -1518,24 +1716,6 @@
    "note": ""
   },
   {
-   "where": "refs.2026-11-20-heatmap-the-permitting-bill-s-next-battleground.2301",
-   "text": "ensuring that all federally funded projects that might affect tribal resources require tribal consultation, not just those that require federal permits.",
-   "speaker": "",
-   "url": "https://heatmap.news/politics/baaja-house",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
-  },
-  {
-   "where": "refs.2026-11-20-heatmap-the-permitting-bill-s-next-battleground.2302",
-   "text": "It also increased the annual funding authorization for state and tribal historic preservation offices by $100 million, to $300 million.",
-   "speaker": "",
-   "url": "https://heatmap.news/politics/baaja-house",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
-  },
-  {
    "where": "media.2026-11-20-environmental-defense-fund-statement-on-u-s-senate-passage-of-permitt",
    "text": "we urge the House to make meaningful improvements as it considers the legislation this session",
    "speaker": "Fred Krupp, president, Environmental Defense Fund",
@@ -1608,6 +1788,15 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-20-defenders-of-wildlife-senate-passes-deeply-flawed-permitting-b",
+   "text": "The House must now stop BAAJA from becoming law.",
+   "speaker": "Andrew Bowman, Defenders of Wildlife",
+   "url": "https://defenders.org/newsroom/senate-passes-deeply-flawed-permitting-bill-house-must-stop-it",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-20-daily-caller-senate-passes-landmark-permitting-reform-bill",
    "text": "But at the demand of the fossil fuel titans, this bill also accelerates the extraction and burning of fossil fuels,",
    "speaker": "Sen. Jeff Merkley",
@@ -1666,6 +1855,15 @@
    "text": "must reject the Senate’s fast-tracked bill and demand debate and consideration to deliver for the people, not corporate polluters and Donald Trump",
    "speaker": "Loren Blackford, executive director, Sierra Club, as quoted by Canary Media",
    "url": "https://www.canarymedia.com/articles/clean-energy/senate-oks-permitting-bill-that-would-boost-clean-and-dirty-energy",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "media.2026-11-20-brownstein-hyatt-farber-schrec-senate-turns-bipartisan-consensus-into-c",
+   "text": "If Speaker Mike Johnson (R-LA) is unable to move the bill through the House Rules Committee, he will need a bipartisan coalition to help pass it via suspension of the rules, which would need the support of two-thirds of those present to pass.",
+   "speaker": "Brownstein Hyatt Farber Schreck",
+   "url": "https://www.bhfs.com/insight/senate-turns-bipartisan-consensus-into-continued-progress-on-permitting-reform/",
    "result": "verified",
    "share": 1.0,
    "note": ""
@@ -1896,6 +2094,51 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-19-national-trust-for-historic-pr-senate-passage-of-the-bipartisan-america",
+   "text": "The National Trust urges the House of Representatives to oppose BAAJA and its Historic Preservation Title.",
+   "speaker": "Brent Leggs, National Trust for Historic Preservation",
+   "url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-19-national-trust-for-1",
+   "text": "It allows federal officials to unilaterally determine that projects will have no adverse effect on historic properties, diminishing the role of States, Tribes, local governments, and other consulting parties.",
+   "speaker": "Brent Leggs, National Trust for Historic Preservation",
+   "url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-19-national-trust-for-2",
+   "text": "It also significantly narrows the scope of projects subject to review, excluding nearly all projects receiving federal financial assistance and activities not under the substantial control of a federal agency.",
+   "speaker": "Brent Leggs, National Trust for Historic Preservation",
+   "url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "claims.c-2026-11-19-national-trust-for-3",
+   "text": "Additionally, it restricts the ability of courts to provide meaningful remedies when historic properties are threatened and fails to ensure that historic properties identified after an initial 30-day review period receive appropriate consideration.",
+   "speaker": "Brent Leggs, National Trust for Historic Preservation",
+   "url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
+   "where": "refs.2026-11-19-national-trust-for-historic-pr-senate-passage-of-the-bipartisan-america.2301",
+   "text": "It also significantly narrows the scope of projects subject to review, excluding nearly all projects receiving federal financial assistance and activities not under the substantial control of a federal agency.",
+   "speaker": "",
+   "url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-19-hunton-andrews-kurth-the-nic-federal-bipartisan-permitting-legislation-expected",
    "text": "Hunton will provide a more in-depth analysis of impacts to project development in the final, amended Senate text in a forthcoming post.",
    "speaker": "Hunton",
@@ -1912,6 +2155,15 @@
    "result": "missing",
    "share": 0.0,
    "note": ""
+  },
+  {
+   "where": "media.2026-11-19-friends-of-the-earth-friends-of-the-earth-condemns-senate-pas",
+   "text": "we urge every House member with a conscience to vote ‘no’ on BAAJA at every opportunity.",
+   "speaker": "Erich Pica, Friends of the Earth",
+   "url": "https://foe.org/news/friends-of-the-earth-condemns-senate-passage-of-trumps-disastrous-permitting-bill/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
   },
   {
    "where": "media.2026-11-19-cq-roll-call-sweeping-permitting-overhaul-passes-senate-on-to-house",
@@ -1968,6 +2220,15 @@
    "note": ""
   },
   {
+   "where": "media.2026-11-19-cleantechnica--sierra-club-sta-sierra-club-reacts-to-senate-passage-of-",
+   "text": "They must reject the Senate’s fast-tracked bill and demand debate and consideration to deliver for the people, not corporate polluters and Donald Trump.",
+   "speaker": "Loren Blackford, Sierra Club",
+   "url": "https://cleantechnica.com/2026/11/19/sierra-club-reacts-to-senate-passage-of-baaja-house-must-reject-the-senate-fast-tracked-bill/",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "media.2026-11-19-christian-science-monitor-us-could-ease-paths-for-energy-projects-there-are-ris",
    "text": "We need the savings for consumers and the improvements to the environment right away,",
    "speaker": "Sen. Sheldon Whitehouse",
@@ -2002,6 +2263,96 @@
    "result": "verified",
    "share": 1.0,
    "note": ""
+  },
+  {
+   "where": "media.2026-11-19-center-for-western-priorities-senate-passes-baaja--which-weakens-bedro",
+   "text": "The House should reject BAAJA and let the new Congress write a permitting bill that builds clean energy without sacrificing America’s public lands.",
+   "speaker": "Aaron Weiss, Center for Western Priorities",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "claims.c-2026-11-19-center-for-western-1",
+   "text": "bars federal agencies from revoking or materially changing any permit in effect on or after November 6, 2026, with limited exceptions.",
+   "speaker": "Center for Western Priorities",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "claims.c-2026-11-19-center-for-western-2",
+   "text": "allows developers to collect 50 to 100 percent of a project’s expected construction cost if they show an administration deliberately slowed or denied permits for their industry, in any of nearly 50 categories, including coal, oil, and gas projects.",
+   "speaker": "Center for Western Priorities",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "claims.c-2026-11-19-center-for-western-3",
+   "text": "bars a judge who finds a flawed environmental review from canceling the permit or halting construction, and lets construction continue while the agency redoes the review.",
+   "speaker": "Center for Western Priorities",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "claims.c-2026-11-19-center-for-western-4",
+   "text": "requires lawsuits to be filed within 150 days of a project’s approval, and, where a comment period was offered, limits who can sue to those who raised the issue in detailed comments and can show direct harm.",
+   "speaker": "Center for Western Priorities",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "claims.c-2026-11-19-center-for-western-5",
+   "text": "allows mining companies to claim an unlimited number of “mill sites” on public land to dump waste rock and tailings.",
+   "speaker": "Center for Western Priorities",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "refs.2026-11-19-center-for-western-priorities-senate-passes-baaja--which-weakens-bedro.1110",
+   "text": "requires lawsuits to be filed within 150 days of a project’s approval, and, where a comment period was offered, limits who can sue to those who raised the issue in detailed comments and can show direct harm.",
+   "speaker": "",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "refs.2026-11-19-center-for-western-priorities-senate-passes-baaja--which-weakens-bedro.1401",
+   "text": "bars federal agencies from revoking or materially changing any permit in effect on or after November 6, 2026, with limited exceptions.",
+   "speaker": "",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "refs.2026-11-19-center-for-western-priorities-senate-passes-baaja--which-weakens-bedro.1402",
+   "text": "allows developers to collect 50 to 100 percent of a project’s expected construction cost if they show an administration deliberately slowed or denied permits for their industry, in any of nearly 50 categories, including coal, oil, and gas projects.",
+   "speaker": "",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
+  },
+  {
+   "where": "refs.2026-11-19-center-for-western-priorities-senate-passes-baaja--which-weakens-bedro.2215",
+   "text": "allows mining companies to claim an unlimited number of “mill sites” on public land to dump waste rock and tailings.",
+   "speaker": "",
+   "url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "result": "browser",
+   "share": 1.0,
+   "note": "read in a browser on 2026-11-23"
   },
   {
    "where": "media.2026-11-19-cbs-news-senate-passes-bipartisan-permitting-reform-bill-designed-to",
@@ -5001,6 +5352,15 @@
    "note": ""
   },
   {
+   "where": "refs.2026-11-07-heatmap-last-minute-changes.2103",
+   "text": "The bill lays out how these new power lines should be paid for, via a cost allocation formula that says customers who benefit from the lines need to pay for them.",
+   "speaker": "",
+   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
+  },
+  {
    "where": "refs.2026-11-07-heatmap-last-minute-changes.2104",
    "text": "allows states and FERC to exercise oversight over local transmission projects that can drive up electricity costs.",
    "speaker": "",
@@ -5012,15 +5372,6 @@
   {
    "where": "refs.2026-11-07-heatmap-last-minute-changes.2106",
    "text": "The new version of the bill also exempts vertically integrated utilities that aren’t in an electricity market from an otherwise mandatory new process that will require utilities to plan their long-term transmission and their power plant expansion at the same time.",
-   "speaker": "",
-   "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
-   "result": "verified",
-   "share": 1.0,
-   "note": ""
-  },
-  {
-   "where": "refs.2026-11-07-heatmap-last-minute-changes.2107",
-   "text": "The bill lays out how these new power lines should be paid for, via a cost allocation formula that says customers who benefit from the lines need to pay for them.",
    "speaker": "",
    "url": "https://heatmap.news/energy/managers-amendment-policy-permitting-bill",
    "result": "verified",
@@ -11341,9 +11692,9 @@
    "text": "More than one-third of issued permits took a year or longer to process.",
    "speaker": "EPA Office of Inspector General",
    "url": "https://19january2021snapshot.epa.gov/sites/static/files/2015-10/documents/20111121-12-p-0083_glance.pdf",
-   "result": "unreachable",
-   "share": 0.0,
-   "note": "error: URLError: <urlopen error timed out>"
+   "result": "verified",
+   "share": 1.0,
+   "note": ""
   },
   {
    "where": "speed.agency-capacity.0",

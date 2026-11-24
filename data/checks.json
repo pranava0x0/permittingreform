@@ -21,13 +21,13 @@
  "quotes": {
   "bill_total": 174,
   "bill_verified": 174,
-  "browser": 113,
-  "checked": "2026-11-22",
+  "browser": 124,
+  "checked": "2026-11-24",
   "missing": 14,
   "near": 0,
-  "total": 1558,
-  "unreachable": 14,
+  "total": 1597,
+  "unreachable": 13,
   "unverifiable": 0,
-  "verified": 1417
+  "verified": 1446
  }
 }
