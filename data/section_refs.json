@@ -1662,6 +1662,79 @@
      "quote": "BAAJA includes ratepayer protections that make data centers pay for the costs their growth adds to the grid, reducing bills for residential consumers and other customer classes."
     }
    ]
+  },
+  {
+   "media_url": "https://casten.house.gov/media/press-releases/casten-statement-on-senate-permitting-reform",
+   "sections": [
+    {
+     "n": "1401",
+     "quote": "overhauling sections 1401 and 1402, which make it impossible for a future administration to undo the damage being done by the Trump Administration’s willful disregard of current environmental law and judicial precedent"
+    },
+    {
+     "n": "1402",
+     "quote": "overhauling sections 1401 and 1402, which make it impossible for a future administration to undo the damage being done by the Trump Administration’s willful disregard of current environmental law and judicial precedent"
+    }
+   ]
+  },
+  {
+   "media_url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "sections": [
+    {
+     "n": "1401",
+     "quote": "bars federal agencies from revoking or materially changing any permit in effect on or after November 6, 2026, with limited exceptions."
+    },
+    {
+     "n": "1402",
+     "quote": "allows developers to collect 50 to 100 percent of a project’s expected construction cost if they show an administration deliberately slowed or denied permits for their industry, in any of nearly 50 categories, including coal, oil, and gas projects."
+    },
+    {
+     "n": "1110",
+     "quote": "requires lawsuits to be filed within 150 days of a project’s approval, and, where a comment period was offered, limits who can sue to those who raised the issue in detailed comments and can show direct harm."
+    },
+    {
+     "n": "2215",
+     "quote": "allows mining companies to claim an unlimited number of “mill sites” on public land to dump waste rock and tailings."
+    }
+   ]
+  },
+  {
+   "media_url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "sections": [
+    {
+     "n": "1110",
+     "quote": "Limit lawsuits by requiring claims under the National Environmental Policy Act to be filed within 150 days."
+    },
+    {
+     "n": "1401",
+     "quote": "Protect issued permits by limiting the circumstances under which federal agencies can rescind or suspend valid permits."
+    },
+    {
+     "n": "2107",
+     "quote": "BAAJA also includes language Husted negotiated, similar to provisions in his Ratepayer Protection Act, to protect consumers from footing the bill for data center energy and infrastructure costs."
+    }
+   ]
+  },
+  {
+   "media_url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "sections": [
+    {
+     "n": "2301",
+     "quote": "It also significantly narrows the scope of projects subject to review, excluding nearly all projects receiving federal financial assistance and activities not under the substantial control of a federal agency."
+    }
+   ]
+  },
+  {
+   "media_url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "sections": [
+    {
+     "n": "2107",
+     "quote": "BAAJA would ensure that data centers pay the full cost of their associated transmission needs plus upgrades to the larger transmission network, rather than passing those costs on to families and small businesses."
+    },
+    {
+     "n": "1401",
+     "quote": "The legislation provides greater certainty for projects that have already been permitted and financed, including by preventing the current and future administrations from arbitrarily revoking permits, while establishing clear timelines for environmental reviews and legal challenges."
+    }
+   ]
   }
  ],
  "none": [
@@ -1864,6 +1937,42 @@
   {
    "media_url": "https://heatmap.news/politics/baaja-house",
    "why": "Its section-level details describe the managers' amendment (SA 7030), which never came to a vote, not the Senate-passed text; the rest is the House vote count."
+  },
+  {
+   "media_url": "https://www.americanactionforum.org/daily-dish/permitting-reform/",
+   "why": "Cites published estimates of timelines, bills and transmission capacity for the bill as a whole; names no provision."
+  },
+  {
+   "media_url": "https://cleantechnica.com/2026/11/19/sierra-club-reacts-to-senate-passage-of-baaja-house-must-reject-the-senate-fast-tracked-bill/",
+   "why": "A statement on the bill as a whole; names no provision."
+  },
+  {
+   "media_url": "https://www.liskow.com/insights/baaja-update-senate-approves-bipartisan-permitting-reform-legislation-102oajr/",
+   "why": "Reports the Senate vote and what the House must do next; names no provision."
+  },
+  {
+   "media_url": "https://defenders.org/newsroom/senate-passes-deeply-flawed-permitting-bill-house-must-stop-it",
+   "why": "Objects to the bill's effect on the Endangered Species Act and other laws in general terms; names no provision."
+  },
+  {
+   "media_url": "https://www.ucs.org/about/news/senate-permitting-bill-win-fossil-fuel",
+   "why": "Objects to the bill's effect on NEPA and the Clean Water Act in general terms; names no provision."
+  },
+  {
+   "media_url": "https://foe.org/news/friends-of-the-earth-condemns-senate-passage-of-trumps-disastrous-permitting-bill/",
+   "why": "A statement on the bill as a whole; names no provision."
+  },
+  {
+   "media_url": "https://www.bhfs.com/insight/senate-turns-bipartisan-consensus-into-continued-progress-on-permitting-reform/",
+   "why": "Reports the Senate vote and House procedure; names no provision."
+  },
+  {
+   "media_url": "https://www.bostonglobe.com/2026/11/20/metro/ri-commentary-energy-construction-jobs-unions/",
+   "why": "Backs the bill as a whole on jobs and project delays; names no provision."
+  },
+  {
+   "media_url": "https://bommaritollc.com/insights/baaja-house-vote/",
+   "why": "Tracks House positions and procedure; names no provision."
   }
  ],
  "unread": [

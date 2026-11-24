@@ -104,3 +104,11 @@ Mapped SA 7022's 14 edit instructions to sections of the substitute, with all th
 - New coverage: 8 commentary items dated Nov 9 to 20 (UCS, the Senate Western Caucus, Steve Vladeck, Judge David Tatel in Bloomberg Law, Wilderness Watch in CounterPunch, FSEEE, the Farm Bureau, Rhodium's state bill report). Two personal Substacks were left out. Their 24 claims: 19 mapped to passages, 5 skipped with reasons.
 - Agents: Claude Sonnet (section refs, 280K and 308K tokens; commentary sweep, 205K tokens). The main session (Claude Opus) reviewed each mapping, wrote the code and chose the claim passages.
 
+## November 23, 2026: commentary since passage, leaf checks on the Commentary view
+
+- Floor: no new roll calls or Record entries on the bill. The House returns Nov 30.
+- Coverage: 14 commentary items dated Nov 19 to 23: Rep. Casten, Sens. Husted and Whitehouse, the National Trust, Defenders of Wildlife, UCS, the Center for Western Priorities, Friends of the Earth, the Sierra Club (as carried by CleanTechnica), American Action Forum, a LIUNA leader in the Boston Globe, two law-firm alerts (Brownstein, Liskow) and Bommarito's House tracker. Five cite sections (1110, 1401, 1402, 2107, 2215, 2301); nine discuss the bill as a whole. Heinrich's committee copy of his Nov 19 release was left out as a duplicate.
+- Claims: 27 collected; 15 tied to passages of the passed text and 12 skipped (verdicts on the whole bill, modeled estimates, and one statement about laws the bill leaves alone).
+- Leaf checks on the Commentary folds at 375, 768 and 1280 px: tap to first item 27 to 45 ms, fold rows 48 px, chips and More 44 px on touch screens, no sideways scroll. Section lines and claim blocks ran past the 75-character measure at 768 px and up; they now share the paragraphs' cap, and `tests/uat.cjs` checks it.
+- Agents: Claude Sonnet (commentary sweep, 282K tokens). The main session (Claude Opus) chose items, mapped claims, ran the leaf audit and wrote the fix.
+

@@ -1588,6 +1588,286 @@
      "look": "who pays the cost"
     }
    ]
+  },
+  {
+   "id": "c-2026-11-23-office-of-rep-sean-1",
+   "media_url": "https://casten.house.gov/media/press-releases/casten-statement-on-senate-permitting-reform",
+   "speaker": "Rep. Sean Casten",
+   "quote": "overhauling sections 1401 and 1402, which make it impossible for a future administration to undo the damage being done by the Trump Administration’s willful disregard of current environmental law and judicial precedent",
+   "about": "Permit certainty",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    },
+    {
+     "section": "1402",
+     "text": "damages in an amount equal to not less than 50 percent and not more than 100 percent of the total reasonably expected cost of construction of the project",
+     "look": "the amount and what an applicant must show"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-center-for-western-1",
+   "media_url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "speaker": "Center for Western Priorities",
+   "quote": "bars federal agencies from revoking or materially changing any permit in effect on or after November 6, 2026, with limited exceptions.",
+   "about": "Permit certainty",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-center-for-western-2",
+   "media_url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "speaker": "Center for Western Priorities",
+   "quote": "allows developers to collect 50 to 100 percent of a project’s expected construction cost if they show an administration deliberately slowed or denied permits for their industry, in any of nearly 50 categories, including coal, oil, and gas projects.",
+   "about": "Disparate treatment damages",
+   "review": [
+    {
+     "section": "1402",
+     "text": "damages in an amount equal to not less than 50 percent and not more than 100 percent of the total reasonably expected cost of construction of the project",
+     "look": "the amount and what an applicant must show"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-center-for-western-3",
+   "media_url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "speaker": "Center for Western Priorities",
+   "quote": "bars a judge who finds a flawed environmental review from canceling the permit or halting construction, and lets construction continue while the agency redoes the review.",
+   "about": "Court remedies",
+   "review": [
+    {
+     "section": "1110",
+     "text": "the only remedy the court may order to redress that violation is to remand, without vacatur or issuance of an injunction, the applicable authorization to the agency with—",
+     "look": "which remedies a court may order"
+    },
+    {
+     "section": "1110",
+     "text": "An authorization remanded under paragraph (5)(A) shall remain in effect while the Federal agency corrects any errors or deficiencies found by the reviewing court.",
+     "look": "whether the project may continue during remand"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-center-for-western-4",
+   "media_url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "speaker": "Center for Western Priorities",
+   "quote": "requires lawsuits to be filed within 150 days of a project’s approval, and, where a comment period was offered, limits who can sue to those who raised the issue in detailed comments and can show direct harm.",
+   "about": "Lawsuit deadlines",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    },
+    {
+     "section": "1110",
+     "text": "the claim is filed by a party that submitted a substantive comment during a public comment period associated with that authorization, with such comment being sufficiently detailed to put the applicable Federal agency on notice of the particular issue on which the party seeks judicial review;",
+     "look": "who may bring a claim"
+    },
+    {
+     "section": "1110",
+     "text": "is filed by a party alleging (or has an individual member alleging) an actual or imminent injury in fact amounting to a direct harm.",
+     "look": "who may bring a claim"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-center-for-western-5",
+   "media_url": "https://westernpriorities.org/2026/11/senate-passes-baaja-which-weakens-bedrock-environmental-laws-and-locks-in-trumps-future-attacks-on-public-lands/",
+   "speaker": "Center for Western Priorities",
+   "quote": "allows mining companies to claim an unlimited number of “mill sites” on public land to dump waste rock and tailings.",
+   "about": "Mill sites",
+   "review": [
+    {
+     "section": "2215",
+     "text": "the proprietor may— “(A) locate and include within the plan of operations as many mill site claims under this subsection as are reasonably necessary for its operations; and “(B) use or occupy public land in accordance with an approved plan of operations.",
+     "look": "how many mill sites a claimant may locate"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-office-of-sen-jon-1",
+   "media_url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "speaker": "Sen. Jon Husted",
+   "quote": "Limit lawsuits by requiring claims under the National Environmental Policy Act to be filed within 150 days.",
+   "about": "Lawsuit deadlines",
+   "review": [
+    {
+     "section": "1110",
+     "text": "is filed not later than 150 days after the date on which, unless a shorter deadline is specified under Federal law— “(A) in the case of a claim in which an environmental impact statement was prepared, the applicable authorization was published in the Federal Register; and “(B) in the case of any other claim, the authorization was made public;",
+     "look": "the number of days and when the clock starts"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-office-of-sen-jon-2",
+   "media_url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "speaker": "Sen. Jon Husted",
+   "quote": "Protect issued permits by limiting the circumstances under which federal agencies can rescind or suspend valid permits.",
+   "about": "Permit certainty",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "(B) the holder of the Federal authorization or permit has materially breached the terms of the Federal authorization or permit or otherwise materially violated applicable law; (C) the Federal authorization or permit was obtained through fraud, intentional concealment, or material misrepresentation;",
+     "look": "the exceptions to the bar"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-office-of-sen-jon-3",
+   "media_url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "speaker": "Sen. Jon Husted",
+   "quote": "Set deadlines for environmental reviews, requiring environmental assessments within one year and full environmental impact statements within two years.",
+   "about": "NEPA review deadlines",
+   "review": [
+    {
+     "section": "1106",
+     "text": "a lead agency shall complete and make public the environmental assessment, if applicable, not later than the date that is 1 year after the earlier of",
+     "look": "the deadline, and whether public comment on an environmental assessment is required"
+    },
+    {
+     "section": "1106",
+     "text": "the lead agency shall publish an environmental impact statement, if applicable, not later than the date that is 2 years after the earlier of",
+     "look": "the deadline and when it starts"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-20-office-of-sen-jon-4",
+   "media_url": "https://www.husted.senate.gov/media/press-releases/husted-backed-package-to-advance-americas-permitting-process-lower-energy-costs-passes-senate/",
+   "speaker": "Office of Sen. Jon Husted",
+   "quote": "BAAJA also includes language Husted negotiated, similar to provisions in his Ratepayer Protection Act, to protect consumers from footing the bill for data center energy and infrastructure costs.",
+   "about": "Data center costs",
+   "review": [
+    {
+     "section": "2107",
+     "text": "it is the policy of the United States that computational load owners and computational load operators bear the full cost of any electric service that they require and the full cost of any infrastructure built to serve them, regardless of whether they take the electric service that they request, so that such costs are not borne by other customers, including residential customers;",
+     "look": "who pays the cost"
+    },
+    {
+     "section": "2107",
+     "text": "No portion of the retail incremental cost may be allocated to, or recovered in the rates of, any customer other than a computational load owner or a computational load operator.",
+     "look": "who pays the cost"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-national-trust-for-1",
+   "media_url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "speaker": "Brent Leggs, National Trust for Historic Preservation",
+   "quote": "It allows federal officials to unilaterally determine that projects will have no adverse effect on historic properties, diminishing the role of States, Tribes, local governments, and other consulting parties.",
+   "about": "Section 106 findings",
+   "review": [
+    {
+     "section": "2301",
+     "text": "document any adverse effects of the undertaking, or determine that the proposed project, activity, or program is an undertaking for which there are no adverse effects of the undertaking",
+     "look": "who makes the finding"
+    },
+    {
+     "section": "2301",
+     "text": "has entered the consultation process required for purposes of this subsection, but does not provide any substantive objections by the date that is 45 days after the date of receipt of a report or finding, the applicable Federal official shall proceed to the determination under paragraph (3)(A).",
+     "look": "the number of days and what happens without objections"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-national-trust-for-2",
+   "media_url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "speaker": "Brent Leggs, National Trust for Historic Preservation",
+   "quote": "It also significantly narrows the scope of projects subject to review, excluding nearly all projects receiving federal financial assistance and activities not under the substantial control of a federal agency.",
+   "about": "Section 106 scope",
+   "review": [
+    {
+     "section": "2301",
+     "text": "a project, activity, or program for which the only Federal involvement is a loan, loan guarantee, grant (including a capitalization grant), cost-share award, or other form of financial assistance that is not for the primary purpose of historic preservation",
+     "look": "which projects are left out"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-19-national-trust-for-3",
+   "media_url": "https://savingplaces.org/press-center/media-resources/baaja-senate-statement",
+   "speaker": "Brent Leggs, National Trust for Historic Preservation",
+   "quote": "Additionally, it restricts the ability of courts to provide meaningful remedies when historic properties are threatened and fails to ensure that historic properties identified after an initial 30-day review period receive appropriate consideration.",
+   "about": "Section 106 remedies and timing",
+   "review": [
+    {
+     "section": "2301",
+     "text": "the only remedy the court may order is to remand, without vacatur or issuance of an injunction, the applicable agency action to the Federal agency with",
+     "look": "the remedy a court may order"
+    },
+    {
+     "section": "2301",
+     "text": "Not later than 30 days after the date of receipt of a request for review of a proposed project, activity, or program under this section, the applicable Federal official shall determine",
+     "look": "the 30-day step"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-23-senate-environment-1",
+   "media_url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "speaker": "Sen. Sheldon Whitehouse",
+   "quote": "BAAJA would end data center free-loading and require current and future data centers to pay for the upgrades to the grid that their huge electricity consumption requires, without passing off any of their costs to consumers, which they are currently doing.",
+   "about": "Data center costs",
+   "review": [
+    {
+     "section": "2107",
+     "text": "it is the policy of the United States that computational load owners and computational load operators bear the full cost of any electric service that they require and the full cost of any infrastructure built to serve them, regardless of whether they take the electric service that they request, so that such costs are not borne by other customers, including residential customers;",
+     "look": "who pays the cost"
+    },
+    {
+     "section": "2107",
+     "text": "No portion of the retail incremental cost may be allocated to, or recovered in the rates of, any customer other than a computational load owner or a computational load operator.",
+     "look": "who pays the cost"
+    }
+   ]
+  },
+  {
+   "id": "c-2026-11-23-senate-environment-2",
+   "media_url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "speaker": "Sen. Sheldon Whitehouse",
+   "quote": "The legislation provides greater certainty for projects that have already been permitted and financed, including by preventing the current and future administrations from arbitrarily revoking permits, while establishing clear timelines for environmental reviews and legal challenges.",
+   "about": "Permit certainty and deadlines",
+   "review": [
+    {
+     "section": "1401",
+     "text": "a Federal department or agency shall not take any new action that would revoke, rescind, withdraw, terminate, suspend, vacate, remand, reopen, materially amend, or materially alter a Federal authorization or permit in effect on or after November 6, 2026,",
+     "look": "which actions are barred and from what date"
+    },
+    {
+     "section": "1401",
+     "text": "place the burden of proof on the Federal department or agency to demonstrate that 1 or more of the matters described in subparagraphs (A) through (F) of that paragraph applies.",
+     "look": "who carries the burden of proof"
+    },
+    {
+     "section": "1106",
+     "text": "the lead agency shall publish an environmental impact statement, if applicable, not later than the date that is 2 years after the earlier of",
+     "look": "the deadline and when it starts"
+    }
+   ]
   }
  ],
  "skipped": [
@@ -1750,6 +2030,66 @@
    "media_url": "https://rhg.com/wp-content/uploads/2026/11/The-Impact-of-Permitting-Reform-on-State-level-Residential-Electricity-Prices-and-Bills.pdf",
    "quote": "When modeled standalone, the transmission provisions reduce electricity bills by 1-2% nationally in 2035.",
    "why": "A modeled result for 2035."
+  },
+  {
+   "media_url": "https://casten.house.gov/media/press-releases/casten-statement-on-senate-permitting-reform",
+   "quote": "BAAJA fails to eliminate the economic disincentives stacked against cheaper energy and weakens critical environmental laws that keep dirtier energy sources offline.",
+   "why": "A judgment on the bill as a whole; names no provision."
+  },
+  {
+   "media_url": "https://www.americanactionforum.org/daily-dish/permitting-reform/",
+   "quote": "if federal agencies comply with BAAJA’s legal review deadlines, permitting timelines would be shortened to 2.5 months for transmission, 5.5 months for solar, less than a month for geothermal, 7 months for offshore wind, 4 months for gas pipelines, and 4.5 months for onshore wind.",
+   "why": "A modeled estimate of permitting timelines."
+  },
+  {
+   "media_url": "https://www.americanactionforum.org/daily-dish/permitting-reform/",
+   "quote": "Rhodium Group, an independent research and data analytics provider, projected that the bill would create annual savings of $50 to $78 in the average household electricity bill in 2040",
+   "why": "A modeled estimate of household bills in 2040."
+  },
+  {
+   "media_url": "https://www.americanactionforum.org/daily-dish/permitting-reform/",
+   "quote": "Resources for the Future estimated total U.S. transmission capacity would be 30 percent higher by 2041 if BAAJA becomes law and is implemented, with inter-regional electricity transferring capacity more than doubling.",
+   "why": "A modeled estimate of transmission capacity in 2041."
+  },
+  {
+   "media_url": "https://cleantechnica.com/2026/11/19/sierra-club-reacts-to-senate-passage-of-baaja-house-must-reject-the-senate-fast-tracked-bill/",
+   "quote": "the Senate rushed a deeply flawed bill that furthers the buildout of fossil fuels, strips away power from communities and Tribes, threatens our clean water and public lands, and endangers wildlife.",
+   "why": "A judgment on the bill and how it passed; names no provision."
+  },
+  {
+   "media_url": "https://defenders.org/newsroom/senate-passes-deeply-flawed-permitting-bill-house-must-stop-it",
+   "quote": "The sweeping legislation would undermine the Endangered Species Act, weaken environmental review and protections for clean water, facilitate fossil fuel projects, open public lands to major new development and make it easier to power energy-hungry data centers.",
+   "why": "A summary judgment on several laws at once; names no provision to compare."
+  },
+  {
+   "media_url": "https://defenders.org/newsroom/senate-passes-deeply-flawed-permitting-bill-house-must-stop-it",
+   "quote": "Yet BAAJA would weaken this landmark law at the very moment the Trump administration is dismantling other fundamental ESA protections.",
+   "why": "A judgment on the bill's effect on the ESA in general terms."
+  },
+  {
+   "media_url": "https://www.ucs.org/about/news/senate-permitting-bill-win-fossil-fuel",
+   "quote": "If passed by the House and signed into law, BAAJA would undermine core environmental protections, including the National Environmental Policy Act (NEPA) and the Clean Water Act, while locking in fossil fuel projects for generations to come.",
+   "why": "A summary judgment on several laws at once; names no provision to compare."
+  },
+  {
+   "media_url": "https://www.ucs.org/about/news/senate-permitting-bill-win-fossil-fuel",
+   "quote": "The shortcuts in this bill will mean more pollution and less transparency for already overburdened communities, with questionable upsides for renewable energy.",
+   "why": "A forecast of effects on pollution and communities."
+  },
+  {
+   "media_url": "https://foe.org/news/friends-of-the-earth-condemns-senate-passage-of-trumps-disastrous-permitting-bill/",
+   "quote": "a reckless attack on our clean air, clean water, wildlife, public lands, oceans, and communities.",
+   "why": "A judgment on the bill as a whole."
+  },
+  {
+   "media_url": "https://www.bostonglobe.com/2026/11/20/metro/ri-commentary-energy-construction-jobs-unions/",
+   "quote": "they worked together to develop legislation that would streamline federal permitting, provide greater certainty for previously approved projects, modernize our nation’s energy infrastructure, and maintain important environmental safeguards.",
+   "why": "An account of how the bill was written."
+  },
+  {
+   "media_url": "https://www.epw.senate.gov/press/dem/whitehouse-urges-swift-house-passage-of-permitting-reform-data-center-accountability-bill/",
+   "quote": "BAAJA has no direct effect on the laws that could authorize data centers on public lands, such as the Federal Land Policy and Management Act (FLPMA).",
+   "why": "A statement about what the bill leaves alone; no passage names those laws."
   }
  ]
 }
